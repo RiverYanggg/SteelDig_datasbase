@@ -1,0 +1,303 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-12mn-9al-3cr-1.4c-0.04nb__723k-9h",
+      "paper_id": "10.1002_srin.202400475",
+      "alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.04nb",
+      "process_id": "proc_723k-9h",
+      "sample_label": "0.04Nb steel aged at 723 K for 9 h",
+      "aliases": [
+        "0.04Nb steel (723 K/9 h)",
+        "0.04Nb steel aged at 723 K/9 h"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_casting",
+      "sequence": "1",
+      "type": "casting",
+      "method": "centrifugal casting under near-rapid solidification (induction melting in water-cooled copper crucible, re-melting and pouring into rotating copper mold)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Produces steel strips with dimensions 60 × 70 × 2.5 mm."
+    },
+    {
+      "processing_step_id": "step_2_aging_723k_9h",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "723 K",
+      "temperature_unit": "K",
+      "duration": "9 h",
+      "atmosphere": "vacuum (tubular vacuum furnace)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Extended aging at 723 K for 9 h was performed to study the effect of aging time on microstructure and mechanical properties."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_0.04Nb_723K_9h",
+      "overall_structure": "Duplex microstructure of ferrite and austenite, with irregular ferrite dispersed in the austenite matrix, intragranular κ-carbides, and submicron NbC particles; no observable new diffraction peaks after aging at 723 K for 9 h.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_0.04Nb_723K_9h",
+          "region": "bulk",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "ferrite (δ)",
+              "crystal_structure": "bcc",
+              "volume_fraction": "18.8 vol%",
+              "morphology": "irregular-shaped ferrite islands; phase boundaries with austenite become irregular with numerous bulges as aging time prolongs",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_723K_9h",
+              "type": "κ-carbide",
+              "size": {
+                "value": "9 nm",
+                "unit": "nm"
+              },
+              "distribution": "intragranular, uniformly dispersed in austenite",
+              "coherency": "coherent (cube-on-cube orientation relationship [100]γ // [100]κ)"
+            },
+            {
+              "precipitate_id": "ppt_NbC_723K_9h",
+              "type": "NbC",
+              "size": {
+                "value": "significantly increases with prolongation of the 723 K aging period (qualitative)",
+                "unit": null
+              },
+              "distribution": "submicron white particles within the austenite matrix",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interfaces_0.04Nb_723K_9h",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_austenite_ferrite",
+          "microstructure_id": "micro_0.04Nb_723K_9h",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "ferrite (δ)",
+          "coherence": null
+        },
+        {
+          "interface_id": "intf_austenite_kappa",
+          "microstructure_id": "micro_0.04Nb_723K_9h",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "κ-carbide",
+          "coherence": "coherent"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "inter_dislocation_kappa",
+          "microstructure_id": "micro_0.04Nb_723K_9h",
+          "interaction_type": "dislocation shearing of precipitates",
+          "qualitative_or_quantitative_description": "Due to their small size, the nano-scale κ-carbides could be sheared by dislocations under plastic deformation."
+        }
+      ],
+      "slip_behavior": "Nano-scale κ-carbides could be sheared by dislocations under plastic deformation.",
+      "phase_evolution": "Primary phases remain ferrite and austenite after aging at 723 K for 3, 6, and 9 h; no observable new diffraction peak in the XRD patterns.",
+      "interface_notes": "The phase boundaries between ferrite and austenite become irregular and feature numerous irregular bulges as the aging time prolongs."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "tensile_0.04Nb_723K_9h",
+      "measurement_conditions": {
+        "temperature": "ambient temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "2.5 × 10^-4 s^-1",
+        "specimen_geometry": "gauge width 4 mm, gauge length 12 mm",
+        "test_standard": null,
+        "other_conditions": "Each steel strip underwent a minimum of four repetitions during testing."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "1019 ± 3 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 3 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1072 ± 3 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 3 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "5 ± 1 %",
+              "unit": "%",
+              "uncertainty": "± 1 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "0.04Nb steel aged at 723 K for 9 h fractures earliest, near 4% strain (Figure 13b).",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_0.04Nb_723K_9h",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.02nb",
+        "benchmark_process_id": "proc_723k-9h",
+        "benchmark_sample_id": null,
+        "comparison_metric": "yield strength and total elongation at 723 K/9 h",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_0.04Nb_723K_9h",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "D/max-2500 instrument at 40 kV, scanning range 30°–100°, speed 4°/min",
+      "measurement_conditions": null,
+      "purpose": "Identify constituent phases after aging at 723 K for 3, 6, and 9 h.",
+      "key_findings": "Primary phases remain ferrite and austenite; no observable new diffraction peak."
+    },
+    {
+      "characterization_id": "char_sem_0.04Nb_723K_9h",
+      "microstructure_id": "micro_0.04Nb_723K_9h",
+      "technique": "scanning electron microscopy (SEM)",
+      "instrument_or_setup": "Apollo 300 thermal field emission SEM equipped with EBSD detector",
+      "measurement_conditions": null,
+      "purpose": "Examine the microstructure and measure ferrite content in the 723 K/6 h and 9 h aged 0.04Nb steel.",
+      "key_findings": "Ferrite content in 0.04Nb steel aged 723 K/9 h is 18.8 vol%; phase boundaries become irregular with bulges; NbC particle size increases with prolonged aging."
+    },
+    {
+      "characterization_id": "char_tem_0.04Nb_723K_9h",
+      "microstructure_id": "micro_0.04Nb_723K_9h",
+      "technique": "transmission electron microscopy (TEM) dark field and selected area electron diffraction (SAED)",
+      "instrument_or_setup": "JEOL JEM-2100 TEM operating at 200 kV",
+      "measurement_conditions": null,
+      "purpose": "Characterize intragranular κ-carbides in the 0.04Nb steel aged at 723 K for 6 and 9 h.",
+      "key_findings": "After 9 h, κ-carbide volume fraction is 19.5 vol% and average size is 9 nm; SAED shows [100]γ // [100]κ coherent orientation relationship."
+    },
+    {
+      "characterization_id": "char_tensile_0.04Nb_723K_9h",
+      "microstructure_id": null,
+      "technique": "uniaxial tensile test",
+      "instrument_or_setup": "MTS Criterion 44 universal testing machine",
+      "measurement_conditions": "ambient temperature, strain rate 2.5 × 10^-4 s^-1",
+      "purpose": "Measure yield strength, tensile strength, and total elongation of the 723 K/9 h aged 0.04Nb steel.",
+      "key_findings": "Yield strength 1019 ± 3 MPa, tensile strength 1072 ± 3 MPa, total elongation 5 ± 1 %."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_dft_kappa_Nb",
+      "simulation_method": "spin-polarized density functional theory (DFT) within GGA-PBE",
+      "software_used": "Vienna Ab Initio Simulation Package (VASP)",
+      "potential_model_or_database": "PAW potentials; U = 2.59 eV for Fe atoms; kinetic energy cutoff 500 eV; Gaussian smearing width 0.05 eV",
+      "boundary_and_initial_conditions": "2×2×2 supercell of κ-carbide (Fe3AlC, E21); vacuum spacing 15 Å; 6×6×6 Monkhorst-Pack k-point sampling; two Nb substitution sites considered (Fe-site and Al-site)",
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "formation energy equation",
+          "equation_role": "E_F = E_DFT - Σ N_X μ_X",
+          "parameters": [
+            {
+              "name": "E_F (Fe24Al8C8)",
+              "value": "0.891 eV",
+              "unit": "eV"
+            },
+            {
+              "name": "E_F (Fe23NbAl8C8)",
+              "value": "2.826 eV",
+              "unit": "eV"
+            },
+            {
+              "name": "E_F (Fe24Al7NbC8)",
+              "value": "1.453 eV",
+              "unit": "eV"
+            }
+          ],
+          "model_note": "Nb doping significantly increases the formation energy of κ-carbide."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_thermocalc",
+      "simulation_method": "Thermo-Calc equilibrium phase diagram calculation and diffusion coefficient calculation",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": "TCFE10 (phase diagram); TCFE10_MOBFE5 (diffusion coefficients)",
+      "boundary_and_initial_conditions": "Fe-12Mn-9Al-1.4C-3Cr-xNb (wt%, x = 0–0.05) system; diffusion coefficients calculated over 673–873 K",
+      "validation_against_experiment": null,
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "The 0.04Nb steel aged at 723 K for 9 h shows a yield strength of 1019 ± 3 MPa but a low total elongation of 5 ± 1 %, indicating that extending the 723 K aging from 6 h to 9 h markedly reduces ductility.",
+    "Extended 723 K aging does not markedly alter the yield strength of the Nb-containing steels because κ-carbide precipitation strengthening intensifies while dislocation strengthening diminishes and grain-boundary strengthening remains relatively unchanged.",
+    "NbC particles in the 0.04Nb steel significantly increase in size with prolongation of the 723 K aging period (qualitative SEM observation; no 9 h numeric NbC size is reported)."
+  ]
+}

@@ -1,0 +1,499 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-9mn-5al-0.3c__qa-800",
+      "paper_id": "10.1016_j.msea.2024.146503",
+      "alloy_id": "alloy_fe-9mn-5al-0.3c",
+      "process_id": "proc_qa-800",
+      "sample_label": "QA-800",
+      "aliases": [
+        "QA-800",
+        "800 °C annealed specimen"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The ingot was heated to 1100 °C for 2 h (homogenization) as the first step of the whole processing route preceding forging."
+    },
+    {
+      "processing_step_id": "step_forging",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "forging",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The heated ingot was further forged into a square forging ingot measuring 80 mm × 70 mm."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "reheated to 1100 °C, initial rolling temp ~1050 °C, finishing rolling temp ~950 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h hold before rolling",
+      "atmosphere": null,
+      "cooling_medium": "air cooled to room temperature",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "from 80 to 12 mm thickness in eight passes",
+      "processing_steps_notes": "The forging ingot was reheated to 1100 °C for 2 h and hot rolled from 80 to 12 mm in eight passes; initial rolling temperature ~1050 °C, finishing rolling temperature ~950 °C; then air cooled to room temperature (sample HR)."
+    },
+    {
+      "processing_step_id": "step_iq_1050",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "intercritical quenching (IQ)",
+      "temperature": "1050 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": "water quenching (higher cooling rate than air cooling)",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled plate reheated to 1050 °C (ferrite + austenite dual-phase region) for 1 h, followed by water quenching (sample IQ-1050). This is the parent state of QA-800."
+    },
+    {
+      "processing_step_id": "step_annealing_800",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "intercritical annealing",
+      "temperature": "800 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": "air cooling",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The water-quenched plate was annealed for 1 h at 800 °C, then air cooled (sample QA-800). As annealing temperature increased to 800 °C, small austenite grains grew up and C, Mn in austenite were diluted, raising Ms so martensite transformation occurred during air cooling."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_qa800_overall",
+      "overall_structure": "Micro-laminated (banded) microstructure retained after intercritical quenching and annealing, consisting of δ-ferrite band and tempered martensite lamellar; after annealing a large number of fine austenite (retained + reverted) grains are widely distributed in the tempered martensite region, and newly formed martensite from austenite (during air cooling) exists in the tempered martensite region of QA-800 (red box in Fig. 3(h)).",
+      "number_of_phases": "4",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_delta_ferrite_band",
+          "region": "δ-ferrite band (laminated)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "BCC (A2)",
+              "volume_fraction": null,
+              "morphology": "elongated band / lamellar (coarse δ-ferrite grains)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_tempered_martensite",
+          "region": "tempered martensite lamellar",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "tempered martensite",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "lath / lamellar; coarse lath and blocky structure with low band contrast",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "geometrically necessary dislocations (GND)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "4.63 ×10^14 m^-2 (BCC phase of QA-800)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_austenite",
+          "region": "tempered martensite region (matensitic lath gaps)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "austenite (retained austenite after quenching + reverted austenite)",
+              "crystal_structure": "FCC (A1)",
+              "volume_fraction": "~48 % (XRD); ~49 % (EBSD)",
+              "morphology": "fine, widely distributed grains among tempered martensitic laths; blocky and coarse regions in BC maps",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "geometrically necessary dislocations (GND)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "2.66 ×10^14 m^-2 (FCC phase of QA-800)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "Austenite grain size distribution of QA-800 peaks in the <1.6 µm bin (at/just above 30 %), decreases monotonically across intermediate bins, with a small secondary rise in the >4.8 µm bin (below 10 %); around 90 % of the austenite grains are less than 4.8 µm.",
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_new_martensite",
+          "region": "tempered martensite region of QA-800",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "newly formed martensite (from austenite during air cooling)",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "new martensite formed from austenite by martensitic transformation in tempered martensite region",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "intf_qa800",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_deltaF_temperedM",
+          "microstructure_id": "micro_delta_ferrite_band",
+          "phase_1_name": "δ-ferrite",
+          "phase_2_name": "tempered martensite",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "crack_at_deltaF_temperedM_interface",
+          "microstructure_id": "micro_delta_ferrite_band",
+          "interaction_type": "crack initiation / second crack formation at phase interface",
+          "qualitative_or_quantitative_description": "During tensile tests dislocation accumulation at the interfaces of δ-ferrite band and tempered martensite lamellar, together with the hardness difference between the two phases, promoted stress concentration at their interfaces to induce crack initiation; the crack was captured by δ-ferrite and propagated into and along the δ-ferrite band forming second cracks (deep valleys). The crack propagating into the soft δ-ferrite could be blunted, producing high resistance to cracking, and strain-induced martensitic transformation caused volume expansion promoting crack closure. Second cracks were observed at the interface between δ and γ/α."
+        }
+      ],
+      "slip_behavior": "Dislocation gliding started sequentially in ferrite and austenite as well as tempered martensite according to the difference of phase hardness; decreasing GND density in the annealed tempered martensite and austenite made dislocation slip easier, lowering yield strength.",
+      "phase_evolution": "During annealing, reverted austenite nucleated and grew at martensite lath gaps with diffusion of C and Mn into austenite grains and Al into martensite/ferrite; with increasing annealing temperature block boundaries were progressively replaced by austenitic grain (AG) boundaries. For QA-800, small austenite grains grew up and C, Mn in austenite were diluted, raising the Ms temperature so that part of the extremely unstable austenite underwent martensitic transformation in advance during air cooling of annealing.",
+      "interface_notes": "Sufficient high-angle grain boundaries of coarse δ-ferrite were deficient and could not effectively hinder microcrack propagation, so cleavage morphology formed in δ-ferrite ({100} cleavage is the natural BCC failure mode)."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_qa800_mechanical",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "0.375 min^-1",
+        "specimen_geometry": "rod-shaped sample size of M10*60 mm with gauge length of 25 mm",
+        "test_standard": null,
+        "other_conditions": "Tensile axis parallel to the rolling direction of the hot-rolled plate; measured on electronic tensile testing machine WDW-100E at room temperature."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "parallel to rolling direction (tensile axis)",
+              "value": "469",
+              "unit": "MPa",
+              "uncertainty": "± 4"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "parallel to rolling direction (tensile axis)",
+              "value": "719",
+              "unit": "MPa",
+              "uncertainty": "± 10"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "parallel to rolling direction (tensile axis)",
+              "value": "50.4",
+              "unit": "%",
+              "uncertainty": "± 3.2",
+              "type": "total elongation"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve of QA-800 (gold curve in Fig. 5a): lower strength plateau (~700–850 MPa) with large elongation, extending to ~50 % strain; true stress-strain curve (black, Fig. 10d) with necking point near the 0.4 true-strain tick followed by a near-vertical drop.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            "Work hardening rate (WHR) curve of QA-800 (Fig. 5b and Fig. 10d): falls steeply from ~8000 MPa near ε≈0, plateaus a little above the 1000 MPa gridline with a small rise before necking; three-stage behaviour (I/II/III) with curves diverging after ε≈0.15 reflecting TRIP activity."
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_qa800_austenite_stability",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "XRD scanning areas of 10*10 mm before tensile tests and 5*20 mm after tensile tests",
+        "test_standard": null,
+        "other_conditions": "SFE and austenite fractions obtained by XRD Rietveld refinement (FullProf) before/after tensile testing."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {
+          "stacking_fault_energy_SFE": "~31.53 mJ·m^-2",
+          "stacking_fault_probability_SFP": "~5.59 ×10^-4",
+          "rms_microstrain_epsilon250": "~9.68 ×10^-5"
+        },
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_qa800_comparative",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": "TRIP 590T/400Y (SAE J2745-2007)",
+        "comparison_metric": "The experimental steel after QA treatment (including QA-800) could substitute for TRIP 590T/400Y high strength automobile plates; PSE of all QA specimens exceeded 30 GPa%, and QA-800 reached ~36.2 GPa%.",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_sem_ecc",
+      "microstructure_id": "micro_tempered_martensite",
+      "technique": "Field-emission scanning electron microscopy (FE-SEM)",
+      "instrument_or_setup": "MIRA-3 LMH FE-SEM; specimens polished (PG-1A polishing machine) and etched with 10 % nitric acid alcohol",
+      "measurement_conditions": "Room temperature; secondary-electron imaging; QA-800 panel Fig. 3(h) with 5 µm scale bar",
+      "purpose": "Observe laminated microstructure and tempered martensite morphology of QA specimens",
+      "key_findings": "QA-800 (Fig. 3h) shows δ-ferrite, tempered martensite (M) and austenite (A) labeled, with a red dashed box marking a region of new martensite formed from austenite during air cooling; fine reverted austenite grains observed among tempered martensitic laths. Carbides were NOT precipitated at 800 °C (only at 620 °C)."
+    },
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_austenite",
+      "technique": "Electron backscatter diffraction (EBSD) with band contrast / KAM / boundary distribution maps",
+      "instrument_or_setup": "Oxford Instruments EBSD probe; HKL Channel5 software and Python; specimens electrochemically polished in 10 % perchloric acid + 5 % glycerol + 85 % ethyl alcohol at 15–20 V and 0.8–1.2 A",
+      "measurement_conditions": "Step size 150 nm; 50 µm scale bar maps",
+      "purpose": "Measure austenite distribution and volume fraction, GND density, and grain-boundary character of QA specimens",
+      "key_findings": "QA-800 (Fig. 4f and Fig. 7f): large, coarse austenite blocks/bands; KAM map essentially uniform dark blue (lowest apparent misorientation); grain-boundary map very sparse (lowest boundary density); EBSD austenite volume fraction ~49 %. GND density BCC 4.63 ×10^14 m^-2, FCC 2.66 ×10^14 m^-2."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_austenite",
+      "technique": "X-ray diffraction (XRD) with Rietveld refinement",
+      "instrument_or_setup": "SmartLab XRD with Cu-Kα radiation at 40 kV and 150 mA; FullProf software for Rietveld refinement",
+      "measurement_conditions": "Scanning step size 0.02°, scanning speed 2°/min; specimens 10*10 mm before and 5*20 mm after tensile test",
+      "purpose": "Measure austenite content and estimate stacking fault energy (SFE) of QA specimens",
+      "key_findings": "XRD austenite volume fraction of QA-800 ~48 %; Rietveld-refined parameters give SFE ~31.53 mJ·m^-2, SFP ~5.59 ×10^-4, ε²₅₀ ~9.68 ×10^-5; austenite fraction after tensile test is lower than before, confirming TRIP."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "Electronic tensile testing machine WDW-100E",
+      "measurement_conditions": "Room temperature, strain rate 0.375 min^-1, rod-shaped specimen M10*60 mm, gauge length 25 mm, tensile axis parallel to rolling direction",
+      "purpose": "Measure tensile properties (YS, TS, TE) of QA-800 and other treatment states",
+      "key_findings": "QA-800: YS 469 ± 4 MPa, TS 719 ± 10 MPa, TE 50.4 ± 3.2 %, yield-tensile ratio 0.65, PSE 36.2 ± 2.9 GPa%."
+    },
+    {
+      "characterization_id": "char_fracture_sem",
+      "microstructure_id": null,
+      "technique": "SEM fracture surface characterization",
+      "instrument_or_setup": "FE-SEM (secondary-electron imaging)",
+      "measurement_conditions": "50 µm scale bar; QA-800 fracture surface (Fig. 6d)",
+      "purpose": "Characterize tensile fracture morphology of QA specimens",
+      "key_findings": "QA-800 (Fig. 6d) shows a mixed fracture: quasi-cleavage at top, a dimple band, a cleavage layer with cleavage step, alternating cleavage/dimple layers, and a second crack at the bottom."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermocalc",
+      "simulation_method": "Thermodynamic equilibrium calculation (CALPHAD)",
+      "software_used": "Thermo-Calc with TCFE 12 database",
+      "potential_model_or_database": "TCFE 12 database",
+      "boundary_and_initial_conditions": "Temperature range ~500–1600 °C; composition Fe-8.9Mn-4.6Al-0.29C (wt.%)",
+      "validation_against_experiment": "Predicted δ-ferrite begins to precipitate at ~1485 °C; austenite forms at ~1390 °C; austenite fraction reaches maximum ~91.4 % at ~970 °C (δ-ferrite minimum ~8.6 %); cementite (A1) precipitates at ~617 °C. These justified the choice of 1050 °C quench and 620–800 °C annealing temperatures.",
+      "analytical_models": [
+        {
+          "model_name": "GND density equation (Eq. 1)",
+          "equation_role": "ρ^GND = 2·KAM_ave/(μ·b)",
+          "parameters": [
+            {
+              "name": "b (Burger's vector)",
+              "value": "2.887 Å for BCC, 2.563 Å for FCC (measured by XRD)",
+              "unit": "Å"
+            },
+            {
+              "name": "μ (EBSD step size)",
+              "value": "150",
+              "unit": "nm"
+            }
+          ],
+          "model_note": "GND densities of BCC and FCC phases for QA-800 are 4.63 and 2.66 ×10^14 m^-2."
+        },
+        {
+          "model_name": "Average KAM equation (Eq. 2)",
+          "equation_role": "KAM_ave = exp[(1/N)Σ ln KAM_i]",
+          "parameters": [],
+          "model_note": "Average local misorientation of the calculated area."
+        },
+        {
+          "model_name": "SFE estimation equation (Eq. 3)",
+          "equation_role": "SFE = [6.6·G<111>·a0·A^-0.37/(√3·π)]·(ε²50/SFP)",
+          "parameters": [],
+          "model_note": "Parameters obtained by Rietveld refinement of XRD profiles; gives SFE ~31.53 mJ·m^-2 for QA-800."
+        },
+        {
+          "model_name": "Austenitic stability equation (Eq. 4)",
+          "equation_role": "Vε = V0·exp(-k·ε)",
+          "parameters": [
+            {
+              "name": "k (austenitic mechanical stability)",
+              "value": "~1.50",
+              "unit": "dimensionless"
+            }
+          ],
+          "model_note": "Higher k means lower austenitic stability; QA-800 k ~1.50 indicates notable TRIP effect."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "QA-800: yield-tensile ratio 0.65 (lowest among QA specimens) and product of strength and elongation (PSE) 36.2 ± 2.9 GPa% (Table 3).",
+    "QA-800 austenite volume fraction by EBSD ~49 % and by XRD ~48 % (Table 2).",
+    "The austenitic stability constant k of QA-800 is ~1.50 (second highest among QA specimens), indicating relatively low austenitic stability and a notable TRIP effect; SFE ~31.53 mJ·m^-2 which lies between 20 and 40 mJ·m^-2, so TWIP effect was supposed to exist during deformation.",
+    "For QA-800, newly formed martensite during air cooling of the annealing treatment deteriorated ductility; less austenite experienced the TRIP effect than in QA-740, giving a relatively lower total elongation (50.4 %) than QA-740 (62.4 %).",
+    "QA-800 block boundary density decreased and AG boundary density instead decreased at 800 °C (due to some coarse austenite grains); the lowest block-boundary and GND densities contributed to the lowest yield strength among QA specimens.",
+    "Grain boundary classification used in the study: 5°–15°, 15°–45°, and >45°; high-angle boundaries (>15°) are regarded as critical to mechanical properties; AG boundaries (15°–45°) and block boundaries (>45°) were the two highest boundary densities; a Python machine-learning model (Li et al.) was used to identify boundary types and calculate boundary density.",
+    "The steel after QA treatment (including QA-800) exhibited a wide yield strength grade range of 460–620 MPa with excellent ductility (40–63 %) and low yield-tensile ratio (0.65–0.75), being a typical third-generation advanced high-strength steel."
+  ]
+}

@@ -1,0 +1,591 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-8al-1c__st-1100c-2h-wq",
+      "paper_id": "10.1016_j.msea.2023.145675",
+      "alloy_id": "alloy_fe-30mn-8al-1c",
+      "process_id": "proc_st-1100c-2h-wq",
+      "sample_label": "Al-8 (1100 °C)",
+      "aliases": {
+        "value": "Fe30Mn8Al1C after 1100 °C/2 h solution treatment"
+      }
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "b0016 describes the laboratory fabrication route: ingots were homogenized at 1200 °C for 5 h before hot rolling into rods.",
+        "block_id": [
+          "b0016"
+        ]
+      },
+      "processing_step_id": "step_homogenization",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "homogenization"
+      },
+      "temperature": {
+        "value": "1200 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": {
+        "value": "5 h"
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Ingots (each steel melted in a 50 kg high-frequency vacuum induction furnace and cast into a 150 mm diameter ingot) were homogenized at 1200 °C for 5 h before hot rolling; shared fabrication route for the Fe30Mn8Al1C steel."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0016 states the homogenized ingots were hot rolled into rods of 16 mm diameter and air-cooled to room temperature.",
+        "block_id": [
+          "b0016"
+        ]
+      },
+      "processing_step_id": "step_hot_rolling",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "mechanical processing"
+      },
+      "method": {
+        "value": "hot rolling"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": {
+        "value": "air cooling to room temperature"
+      },
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Hot rolled into rods with a diameter of 16 mm, then air-cooled to room temperature (parent process proc_hot-rolled)."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0027 states specimens with different Al content were solution treated at 1100 °C for 2 h followed by water quenching; b0017 gives the general 1050–1100 °C/2 h/WQ schedule; b0084 labels Fig. 8(d) as the Al-content effect after 1100 °C.",
+        "block_id": [
+          "b0017",
+          "b0027",
+          "b0084"
+        ]
+      },
+      "processing_step_id": "step_solution_treatment_1100c",
+      "sequence": {
+        "value": "3"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "solution treatment"
+      },
+      "temperature": {
+        "value": "1100 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": {
+        "value": "2 h"
+      },
+      "atmosphere": null,
+      "cooling_medium": {
+        "value": "water quenching"
+      },
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Solution treated at 1100 °C for 2 h followed by water quenching; used to reveal the influence of solution temperature on the Al-series compositions (Fig. 2d, Fig. 8d). Distinctive step of this sample (state 1100 °C–2 h–WQ)."
+      }
+    }
+  ],
+  "structures": [],
+  "interfaces": [],
+  "properties": [
+    {
+      "source": {
+        "reason": "Density of the Fe30Mn8Al1C alloy (Al-8) is reported in Table 1 (b0019 / figure_unlabelled_002) and the Archimedes measuring method in b0016; this composition/density applies to the Al-8 sample regardless of solution temperature.",
+        "block_id": [
+          "b0016",
+          "b0019",
+          "figure_unlabelled_002"
+        ]
+      },
+      "property_set_id": "prop_density_Al8",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": {
+          "value": "Mass density measured by the Archimedes drainage method (room temperature)",
+          "source": {
+            "reason": "b0016 states density was measured by the Archimedes drainage method.",
+            "block_id": [
+              "b0016"
+            ]
+          }
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": {
+          "source": {
+            "reason": "Table 1 lists the measured density of the Al-8 steel (Fe30Mn8Al1C, C 0.98/Mn 30.22/Al 8.08, Fe Bal.) as 6.90 g/cm3.",
+            "block_id": [
+              "b0019",
+              "figure_unlabelled_002"
+            ]
+          },
+          "value": {
+            "value": "6.90"
+          },
+          "unit": {
+            "value": "g/cm3"
+          }
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    },
+    {
+      "source": {
+        "reason": "The paper only reports qualitative tensile/work-hardening behaviour for the 1100 °C Al-series (Fig. 2d, Fig. 8d); this record captures those sample-specific conditions without importing the 1050 °C tabulated values.",
+        "block_id": [
+          "b0017",
+          "b0027",
+          "b0075",
+          "b0084"
+        ]
+      },
+      "property_set_id": "prop_tensile_Al8_1100c",
+      "measurement_conditions": {
+        "temperature": {
+          "value": "ambient temperature",
+          "source": {
+            "reason": "b0017 states the tensile tests were carried out at ambient temperature.",
+            "block_id": [
+              "b0017"
+            ]
+          }
+        },
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": {
+          "value": "1.1 × 10^-3 s^-1",
+          "source": {
+            "reason": "b0017 gives an initial strain rate of 1.1 × 10^-3 s^-1 for the tensile tests.",
+            "block_id": [
+              "b0017"
+            ]
+          }
+        },
+        "specimen_geometry": {
+          "value": "standard tensile specimen, gauge length 25 mm and diameter 5 mm, tensile axis parallel to the rod axis",
+          "source": {
+            "reason": "b0017 describes the tensile specimen geometry.",
+            "block_id": [
+              "b0017"
+            ]
+          }
+        },
+        "test_standard": null,
+        "other_conditions": {
+          "value": "This sample: Fe30Mn8Al1C (Al-8) solution treated at 1100 °C for 2 h followed by water quenching; data presented in Fig. 2(d) and Fig. 8(d) for the Al series, no tabulated numerical values for the 1100 °C condition",
+          "source": {
+            "reason": "b0027 and b0084 identify the 1100 °C Al-series tensile/work-hardening results shown in Fig. 2(d) and Fig. 8(d).",
+            "block_id": [
+              "b0027",
+              "b0084"
+            ]
+          }
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": {
+            "value": "Engineering stress-strain curves of the Al-series (6–12% Al) solution treated at 1100 °C for 2 h (Fig. 2d); no numerical values are tabulated for this condition.",
+            "source": {
+              "reason": "b0027 and Fig. 2(d) caption (b0030) show stress-strain curves for different Al content after 1100 °C/2 h treatment.",
+              "block_id": [
+                "b0027",
+                "b0030"
+              ]
+            }
+          },
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "source": {
+                "reason": "b0075 notes the 1100 °C results are similar, and figure_008 describes Fig. 8(d) (Al labels 6Al–12Al at 1100 °C, WH ordering and larger true strain).",
+                "block_id": [
+                  "b0075",
+                  "figure_008"
+                ]
+              },
+              "description": {
+                "value": "Work-hardening-rate curves of the Al-series after 1100 °C/2 h solution treatment (Fig. 8d) retain the ordering seen at 1050 °C (highest rate for 6% Al, lowest for 12% Al), and the true stress-strain curves extend to noticeably larger true strain than after the 1050 °C treatment; no numerical WH-rate values are given for Al-8 at 1100 °C."
+              }
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "source": {
+        "reason": "b0027 states that comparing the Al-series after 1100 °C (Fig. 2d) with 1050 °C (Fig. 2c) there is a slight decrease in yield strength with increasing solution treatment temperature, attributed to an increase in grain size; no numerical values or percentages are given.",
+        "block_id": [
+          "b0027"
+        ]
+      },
+      "performance_id": "perf_Al8_1100c_vs_1050c",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": {
+          "value": "alloy_fe-30mn-8al-1c"
+        },
+        "benchmark_process_id": {
+          "value": "proc_st-1050c-2h-wq"
+        },
+        "benchmark_sample_id": null,
+        "comparison_metric": {
+          "value": "yield strength (effect of solution temperature)"
+        },
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "b0017 describes the tensile testing setup; b0075/b0084/figure_008 describe the work-hardening analysis including the 1100 °C Al-series.",
+        "block_id": [
+          "b0017",
+          "b0075",
+          "b0084"
+        ]
+      },
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": {
+        "value": "uniaxial tensile testing"
+      },
+      "instrument_or_setup": {
+        "value": "MTS tensile machine"
+      },
+      "measurement_conditions": {
+        "value": "ambient temperature; initial strain rate 1.1 × 10^-3 s^-1; round specimen gauge length 25 mm, diameter 5 mm, tensile axis parallel to rod axis; two specimens tested and values averaged"
+      },
+      "purpose": {
+        "value": "Measure stress-strain response and strain-hardening rate of the solution-treated low-density steels, including the Al-series after 1100 °C treatment (Fig. 2d, Fig. 8d)"
+      },
+      "key_findings": {
+        "value": "Alloying content mainly changes work-hardening capacity rather than the peak true stress; after 1100 °C solution treatment the Al-series stress-strain curves reach larger true strain than after 1050 °C."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0017 describes the Charpy impact testing conditions (MTS impact tester, -40 °C, V-notch perpendicular to rod axis).",
+        "block_id": [
+          "b0017"
+        ]
+      },
+      "characterization_id": "char_charpy",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Charpy V-notch impact testing"
+      },
+      "instrument_or_setup": {
+        "value": "MTS impact tester (500 J capacity)"
+      },
+      "measurement_conditions": {
+        "value": "at -40 °C; V-notch perpendicular to the rod axis; two solution-treated specimens tested, data averaged"
+      },
+      "purpose": {
+        "value": "Measure impact toughness of solution-treated low-density steels"
+      },
+      "key_findings": {
+        "value": "Impact toughness is mainly controlled by the κ-carbide size; high toughness only for low Al/low C/high Mn compositions (quantitative values reported for the 1050 °C series)."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0020 gives the EBSD methodology used for the solution-treated low-density steels.",
+        "block_id": [
+          "b0020"
+        ]
+      },
+      "characterization_id": "char_ebsd",
+      "microstructure_id": null,
+      "technique": {
+        "value": "electron back-scattered diffraction (EBSD)"
+      },
+      "instrument_or_setup": {
+        "value": "EBSD system attached to a field emission gun scanning electron microscope (FEI Quanta 650, Thermo Fisher Scientific)"
+      },
+      "measurement_conditions": {
+        "value": "operating voltage 20 kV, step size 0.5 μm; specimens electro-polished in 7% Nital at room temperature; grain size by linear intercept with 15° boundary definition using Channel 5 software"
+      },
+      "purpose": {
+        "value": "Determine phase distribution, austenite grain size and twin-boundary fraction of the solution-treated steels"
+      },
+      "key_findings": {
+        "value": "Microstructural parameters (Table 3) are reported for the Al-series after solution treatment (1050 °C condition)."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0021 gives the TEM methodology used to examine κ-carbide precipitation.",
+        "block_id": [
+          "b0021"
+        ]
+      },
+      "characterization_id": "char_tem",
+      "microstructure_id": null,
+      "technique": {
+        "value": "transmission electron microscopy (TEM) dark-field imaging and selected-area electron diffraction (SAED)"
+      },
+      "instrument_or_setup": {
+        "value": "TEM (Tecnai G2 F20 S-TWIN, Thermo Fisher Scientific) operated at 200 kV"
+      },
+      "measurement_conditions": {
+        "value": "thin foils twin-jet electro-polished in 10% perchloric acid + 90% ethanol at 20 V and -20 °C"
+      },
+      "purpose": {
+        "value": "Characterize κ-carbide size/distribution and the κ/γ orientation relationship in the solution-treated steels"
+      },
+      "key_findings": {
+        "value": "κ-carbide size increases with C and Al content and decreases with Mn content; orientation relationship (001)κ || (001)γ (data reported for the 1050 °C series)."
+      }
+    }
+  ],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "b0062–b0064 and b0081 present the linear density model fitted to the experimental densities of the studied steels, including the Al series to which this alloy belongs.",
+        "block_id": [
+          "b0062",
+          "b0063",
+          "b0064",
+          "b0081"
+        ]
+      },
+      "computation_id": "comp_density_model",
+      "simulation_method": {
+        "value": "empirical linear least-squares regression of measured density on alloying content"
+      },
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": {
+        "value": "Predicted densities match measurements for the series (e.g. Fe30Mn11Al1.0C predicted 6.6 g/cm3 vs measured 6.6 g/cm3; Fe30Mn11Al1.5C predicted 6.55 vs measured 6.56 g/cm3); a comparison with a previously reported relation shows a much smaller C coefficient."
+      },
+      "analytical_models": [
+        {
+          "model_name": {
+            "value": "Alloying-content density model (Eq. 3)"
+          },
+          "equation_role": {
+            "value": "Predicts the mass density (g/cm3) of Fe–Mn–Al–C low-density steels from C, Al and Mn content in mass%"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "constant"
+              },
+              "value": {
+                "value": "8.10"
+              },
+              "unit": {
+                "value": "g/cm3"
+              }
+            },
+            {
+              "name": {
+                "value": "C coefficient"
+              },
+              "value": {
+                "value": "-0.102"
+              },
+              "unit": {
+                "value": "g/cm3 per mass% C"
+              }
+            },
+            {
+              "name": {
+                "value": "Al coefficient"
+              },
+              "value": {
+                "value": "-0.10"
+              },
+              "unit": {
+                "value": "g/cm3 per mass% Al"
+              }
+            },
+            {
+              "name": {
+                "value": "Mn coefficient"
+              },
+              "value": {
+                "value": "-0.01"
+              },
+              "unit": {
+                "value": "g/cm3 per mass% Mn"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "ρ = 8.10 - 0.102C - 0.10Al - 0.01Mn; fitted to the experimental densities of the studied alloy series, which includes Fe30Mn8Al1C (Al-8)."
+          }
+        }
+      ]
+    },
+    {
+      "source": {
+        "reason": "b0068–b0071 present the particle-shear strengthening model and the fitted yield-strength–κ-carbide-size relationship derived across the studied compositions.",
+        "block_id": [
+          "b0068",
+          "b0069",
+          "b0071"
+        ]
+      },
+      "computation_id": "comp_shear_strengthening",
+      "simulation_method": {
+        "value": "linear regression of yield strength against the square root of κ-carbide size (particle-shear strengthening analysis)"
+      },
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": {
+        "value": "Linear dependence of yield strength on d_Car^0.5 was obtained for the solution-treated series; fitted slope 97.1 MPa/nm^1/2 and flow stress at zero carbide contribution ~478 MPa."
+      },
+      "analytical_models": [
+        {
+          "model_name": {
+            "value": "Particle shear strengthening (Eq. 4)"
+          },
+          "equation_role": {
+            "value": "Describes the shear strength contribution from κ-carbides"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "alpha (particle-nature constant)"
+              },
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": {
+                "value": "f (κ-carbide volume fraction)"
+              },
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": {
+                "value": "d_Car (average κ-carbide diameter)"
+              },
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": {
+                "value": "fitted slope"
+              },
+              "value": {
+                "value": "97.1"
+              },
+              "unit": {
+                "value": "MPa/nm^1/2"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "σ_shear = α f^(1/2) d_Car^(1/2); the linear fit R_p0.2 = 478 + 97.1 d_Car^0.5 (Fig. 7a) covers the whole series."
+          }
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Measured chemical composition of the alloy used for this sample (Fe30Mn8Al1C, steel designation 'Al-8', Table 1): C 0.98, Mn 30.22, Al 8.08 (mass%), Fe balance; measured density 6.90 g/cm3.",
+    "For this sample (Fe30Mn8Al1C solution treated at 1100 °C/2 h + water quenching) the paper reports only a slight decrease of yield strength relative to the 1050 °C condition (Fig. 2d), attributed to an increase of grain size with increasing solution-treatment temperature; no quantitative values are given.",
+    "Important caveat on data attribution: the paper's quantitative mechanical properties (Table 2) and microstructural parameters (Table 3) are explicitly for solution treatment at 1050 °C for 2 h, i.e. they belong to the sibling 1050 °C sample, NOT to this 1100 °C sample. Table 3 caption says 'after solution-treatment' but the text (b0042) fixes that condition at 1050 °C; Table 2 caption explicitly states 1050 °C. These values were therefore not entered into this sample's formal fields.",
+    "For context only (values belong to the sibling Al-8/1050 °C condition, NOT this sample): UTS 826 ± 2 MPa, YS 548 ± 4 MPa, UE 74 ± 1.1%, A 74.0 ± 1%, Akv-40 294 ± 11 J, σ_TS 1370 MPa, σ_FS 2154 MPa (Table 2); D_FCC-G/T 28.3 ± 12 μm, f_Tw 50.3%, no BCC/ferrite fraction, D_κ-carbides 0 nm (no κ-carbides detected by TEM) (Table 3).",
+    "After the 1100 °C solution treatment the true stress-strain curves of the Al series extend to noticeably larger true strain than after 1050 °C, while the work-hardening-rate ordering (highest for lowest Al content) is retained (Fig. 8d).",
+    "The paper's design conclusion relevant to the Al-8 composition: only three steels (Fe30Mn6Al1C 354 J, Fe30Mn8Al1C 294 J, Fe30Mn10Al1C 237 J) possessed high impact toughness, linked to the absence or very small size of κ-carbides (these tabulated toughness values correspond to the 1050 °C treatment)."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "identity": {
+    "paper_id": "10.1016_j.ijplas.2025.104353",
+    "equation_id": "equation_039",
+    "block_id": "b0141",
+    "equation_number": "39",
+    "is_image": false,
+    "latex_hint": "$$\n\\gamma = \\left\\{ \\begin{array}{c} \\gamma_ {m}, \\text {   if   } \\theta_ {i} \\geq 1 0 ^ {\\circ} \\\\ \\gamma_ {m} \\frac {\\theta_ {i}}{\\theta_ {m}} \\left[ 1 - \\ln \\left(\\frac {\\theta_ {i}}{\\theta_ {m}}\\right) \\right], \\text {   if   } \\theta_ {i} <   1 0 ^ {\\circ} \\end{array} \\right.\\tag{39}\n$$"
+  },
+  "latex": "\\gamma = \\left\\{ \\begin{array}{c} \\gamma_ {m}, \\text {   if   } \\theta_ {i} \\geq 1 0 ^ {\\circ} \\\\ \\gamma_ {m} \\frac {\\theta_ {i}}{\\theta_ {m}} \\left[ 1 - \\ln \\left(\\frac {\\theta_ {i}}{\\theta_ {m}}\\right) \\right], \\text {   if   } \\theta_ {i} <   1 0 ^ {\\circ} \\end{array} \\right.\\tag{39}",
+  "purpose": "计算晶界能 γ：当晶界取向差 θ_i ≥ 10° 时取高角晶界能 γ_m；当 θ_i < 10° 时按 Read–Shockley 低角晶界能公式计算。",
+  "applicability_conditions": "分段公式：θ_i ≥ 10° 为高角晶界（能量取常值 γ_m），θ_i < 10° 为低角晶界（按 Read–Shockley 关系计算）；临界取向差取 10°（Popova et al., 2015）。论文未给出材料体系限制。",
+  "symbols": [
+    {
+      "symbol": "γ",
+      "meaning": "晶界能 (grain boundary energy)",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "γ_m",
+      "meaning": "高角晶界的晶界能 (grain boundary energy of a high angle boundary)，由式(40) γ_m = μbθ_m/[4π(1-υ)] 给出",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "θ_i",
+      "meaning": "晶粒 i 与其相邻晶粒之间的晶界取向差角 (grain boundary misorientation angle between the cell i and its neighbor)，由该晶粒取向与相邻晶粒取向之差计算",
+      "unit": "°",
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "θ_m",
+      "meaning": "高角晶界的晶界取向差角 (grain boundary misorientation angle of a high angle boundary)，临界值取 10°",
+      "unit": "°",
+      "value": "10°",
+      "is_constant": true
+    },
+    {
+      "symbol": "10°",
+      "meaning": "区分高角晶界与低角晶界的临界取向差阈值（θ_i ≥ 10° 视为高角晶界，θ_i < 10° 视为低角晶界）",
+      "unit": "°",
+      "value": "10°",
+      "is_constant": true
+    },
+    {
+      "symbol": "ln",
+      "meaning": "自然对数",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    }
+  ],
+  "unmapped": [
+    "该晶界能公式引自 Chen et al., 2021a。",
+    "上下文 where 从句中的 θ 与式中的 θ_i 含义相同。",
+    "γ_m 由式(40)计算：γ_m = μbθ_m/[4π(1-υ)]。"
+  ]
+}

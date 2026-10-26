@@ -1,0 +1,617 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-9al-1.5c-2ni__hr-ufc",
+      "paper_id": "10.1016_j.jmrt.2024.07.188",
+      "alloy_id": "alloy_fe-20mn-9al-1.5c-2ni",
+      "process_id": "proc_hr-ufc",
+      "sample_label": "2Ni",
+      "aliases": [
+        "2Ni steel",
+        "UFCed 2Ni steel",
+        "Fe-20Mn-9Al-1.5C-2Ni"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": "high-purity Ar (vacuum induction melting atmosphere)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "As-cast ingot (vacuum induction melted under high-purity Ar) homogenized at 1200 °C for 2 h; identical route applied to all four Fe–20Mn–9Al-1.5C-xNi-yCr alloys."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling (HR)",
+      "temperature": "initial 1040–1060 °C; finishing 950–970 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "95% thickness reduction",
+      "processing_steps_notes": "Ingots hot-rolled to 4 mm-thick sheets with 95% thickness reduction; initial rolling temperature 1040–1060 °C and finishing rolling temperature 950–970 °C."
+    },
+    {
+      "processing_step_id": "step_ufc",
+      "sequence": "3",
+      "type": "cooling",
+      "method": "online ultrafast cooling (UFC) using in-house ADCOS-PM efficient-use-water device",
+      "temperature": "to ambient temperature",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water (efficient-use-water ultrafast cooling device)",
+      "heating_or_cooling_rate": "~40 °C/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "The hot-rolled plate was online ultrafast cooled (UFCed) to ambient temperature at a cooling rate of ~40 °C/s; this is the final step producing the UFCed (as-received) state labelled 2Ni."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_2ni_ufc",
+      "overall_structure": "Fully recrystallized, single-phase equiaxed face-centred cubic (FCC) γ austenite containing a high fraction of Σ3 twin boundaries; no B2 (BCC) phase detected by EBSD or XRD. Ni-rich nanoscale κ-carbides (and no detectable LRO domains) are distributed in the γ matrix.",
+      "number_of_phases": "1 (γ austenite) plus nanoscale κ-carbide precipitates",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_2ni_gamma_matrix",
+          "region": "bulk (rolling-direction section)",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "face-centred cubic (FCC)",
+              "volume_fraction": "single phase (~100%, essentially fully red in EBSD phase maps)",
+              "morphology": "equiaxed grains with annealing twins / high fraction of Σ3 twin boundaries",
+              "grain_size": "8.95 μm (excluding twin boundaries); 3.73 μm (including twin boundaries)",
+              "texture": "no strong texture (equiaxed grains in mixed colours)"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "8.95",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "no strong texture"
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_2ni_kappa_precipitates",
+          "region": "intragranular, within γ matrix",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "orthorhombic / perovskite E21-type",
+              "volume_fraction": "very low (low superlattice intensity; quantitative estimate not possible from DF)",
+              "morphology": "cuboidal",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_2ni",
+              "type": "κ-carbide (Ni-rich, AlNi3C-type)",
+              "size": {
+                "value": "10",
+                "unit": "nm"
+              },
+              "distribution": "homogeneously distributed in the γ matrix (orthorhombic κ-carbides)",
+              "coherency": "coherent with the γ austenite matrix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_2ni_deformed",
+      "overall_structure": "Deformation substructure of the 2Ni steel, dominated by planar slip. With increasing strain, planar slip bands multiply and the spacing between them refines; near final failure high-density dislocations, very fine slip bands and a small number of stacking faults appear, but no deformation twins were detected throughout plastic deformation.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_2ni_deformed",
+          "region": "gauge section (RD), interrupted tensile specimens at 5%, 10% and close to final failure (LD)",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "γ austenite (deformed)",
+              "crystal_structure": "face-centred cubic (FCC)",
+              "volume_fraction": null,
+              "morphology": "grains with planar slip bands, refined slip bands and stacking faults",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation slip bands (planar slip on (1-11), (−111) and (200) planes; [011](1-11), [011](−111) and [011](200) systems)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "high-density dislocations and very fine slip bands near final failure",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "stacking faults (found near fracture)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_2ni_deformed",
+              "type": "κ-carbides (sheared by planar slip)",
+              "size": {
+                "value": "~10",
+                "unit": "nm"
+              },
+              "distribution": "wavy, banded/modulated distribution in the matrix",
+              "coherency": "coherent (sheared by dislocations)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "intf_2ni",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_2ni_kappa_gamma",
+          "microstructure_id": "micro_2ni_kappa_precipitates",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "γ austenite",
+          "coherence": "coherent (coherent nano κ-carbides in austenite; ductility largely unimpaired due to coherence between κ-carbides and austenite)"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "intf_2ni_shear",
+          "microstructure_id": "micro_2ni_deformed",
+          "interaction_type": "dislocation shearing of κ-carbide precipitates / planar slip penetrating grains and cutting through κ-carbides",
+          "qualitative_or_quantitative_description": "In 2Ni steel, residual dislocation planar slip after deformation penetrates the grain and cuts through the κ-carbides; the shearing (shear-strengthening) mechanism is the predominant precipitate-dislocation interaction, giving ordering, coherency and modulus-mismatch strengthening contributions."
+        }
+      ],
+      "slip_behavior": "Planar slip is the primary deformation mode of the 2Ni steel; slip bands are relatively uniformly distributed and multiply with increasing strain while their spacing decreases. Three groups of slip systems form: [011](1-11), [011](−111) and [011](200). Near final failure, high-density dislocations, very fine slip bands and a small number of stacking faults are present, but no deformation twins were detected throughout the entire plastic deformation.",
+      "phase_evolution": "Ni addition lowers the κ-carbide formation energy and promotes the nucleation/growth of Ni-rich κ-carbides (AlNi3C structure), and no deformation-induced phase transformation (e.g. twinning) is reported for 2Ni steel.",
+      "interface_notes": "κ-carbide volume fraction is very low and could not be quantified from dark-field images because the foil thickness is uncertain; only the κ-carbide/austenite coherent interface is relevant for 2Ni steel."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_2ni_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": "air (ambient laboratory testing)",
+        "strain_rate": "crosshead speed 3 mm/min",
+        "specimen_geometry": "gauge length 25 mm, thickness 3 mm, width 7 mm, cut by EDM along the rolling direction (RD)",
+        "test_standard": null,
+        "other_conditions": "At least three tensile specimens of each steel were deformed to fracture to ensure reproducibility; interrupted tests to engineering strains of 3% (or 5%) and 10%"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction (RD)",
+              "value": "1202 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction (RD)",
+              "value": "1283 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction (RD)",
+              "value": "34.1%",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering and true stress–strain curves for 2Ni steel (red curve, Fig. 4a,b); engineering curve peaks just above 1200 MPa and terminates near strain 0.33; true stress terminates earliest near ~0.25 true strain",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            "Three strain-hardening stages (I, II, III); Stage I sharp decrease, Stage II increase, Stage III decrease; strain-hardening rate of 2Ni drops to zero near true strain 0.25 (earliest of the four steels)"
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_2ni_fracture",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": "air",
+        "strain_rate": "crosshead speed 3 mm/min",
+        "specimen_geometry": "tensile specimen, gauge length 25 mm, thickness 3 mm, width 7 mm",
+        "test_standard": null,
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_2ni_comparison",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": [
+        {
+          "benchmark_alloy_id": "alloy_fe-20mn-9al-1.5c-2ni",
+          "benchmark_process_id": "proc_hr-ufc",
+          "benchmark_sample_id": "sample_fe-20mn-9al-1.5c-2ni__hr-ufc",
+          "comparison_metric": "Total elongation: the 2Ni5Cr steel shows an increment of ~16% in total elongation compared with the no-Cr steel (i.e. the 2Ni steel, used here as the Cr-free baseline)",
+          "improvement_percentage": "~16%"
+        },
+        {
+          "benchmark_alloy_id": null,
+          "benchmark_process_id": "proc_hr-ufc",
+          "benchmark_sample_id": null,
+          "comparison_metric": "Ni/Cr synergy: the 2Ni steel has the highest yield strength (1202 MPa) and ultimate tensile strength (1283 MPa) among the four UFCed Fe–20Mn–9Al-1.5C-xNi-yCr steels; addition of Cr to the 2Ni-based steels lowers yield strength (1202→1071 MPa) and tensile strength (1283→1187 MPa) while raising total elongation (34.1→54.5%)",
+          "improvement_percentage": null
+        }
+      ]
+    },
+    {
+      "performance_id": "perf_2ni_strength_mechanisms",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": "Linear superposition yield-strength model σys = σ0 + σss + σgb + σprep",
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": [
+        {
+          "benchmark_alloy_id": null,
+          "benchmark_process_id": null,
+          "benchmark_sample_id": null,
+          "comparison_metric": "Calculated versus measured yield strength for the 2Ni steel: calculated mechanism contributions (σ0 ≈ 42 MPa, σgb ≈ 231.3 MPa, σss ≈ 509.5 MPa, σprep) sum below the experimental YS of 1202 MPa; the experimental value lies above the calculated bar in Fig. 11",
+          "improvement_percentage": null
+        }
+      ]
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_2ni_gamma_matrix",
+      "technique": "Electron back-scatter diffraction (EBSD) – IPF maps and phase maps",
+      "instrument_or_setup": "Zeiss Ultra55 scanning electron microscope; specimens vibration-polished with 50 nm colloidal silica for 2.5–24 h in a Buehler-VibroMet 2",
+      "measurement_conditions": "as-UFCed (undeformed) plate section; 20 µm scale-bar IPF and phase maps",
+      "purpose": "Determine microstructure, phase constitution, twin-boundary fraction and average grain size (excluding/including twin boundaries) of the 2Ni steel",
+      "key_findings": "2Ni steel is fully recrystallized single equiaxed FCC γ austenite with a high fraction of Σ3 twin boundaries and no B2 phase; average grain sizes 8.95 μm (excluding twins) and 3.73 μm (including twins)"
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_2ni_gamma_matrix",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "2θ = 30–100°; 2Ni trace (red) among four stacked traces",
+      "purpose": "Phase identification of the 2Ni steel",
+      "key_findings": "2Ni steel shows only the five FCC austenite reflections γ(111), γ(200), γ(220), γ(311) and γ(222); no B2/BCC reflection present, confirming single-phase γ austenite"
+    },
+    {
+      "characterization_id": "char_tem_bf",
+      "microstructure_id": "micro_2ni_gamma_matrix",
+      "technique": "Transmission electron microscopy (TEM) bright-field imaging with selected-area electron diffraction (SADP)",
+      "instrument_or_setup": "FEI Tecnai G2 F20 operating at 200 kV; specimens thinned by Struers TenuPol-3 electrochemical double-jet (10 vol% perchloric acid + 90 vol% ethanol, 20 V, −30 °C)",
+      "measurement_conditions": "1 µm scale-bar bright-field images; SADP along the [011]γ zone axis",
+      "purpose": "Confirm the γ austenite matrix, twins and dislocation structure of the 2Ni steel",
+      "key_findings": "2Ni microstructure is all γ austenite phase with annealing twins and dislocation lines; SADP indexed on [011]γ with weak κ spots (011κ, 100κ)"
+    },
+    {
+      "characterization_id": "char_tem_df_hrtem",
+      "microstructure_id": "micro_2ni_kappa_precipitates",
+      "technique": "TEM dark-field (DF) imaging and high-resolution TEM (HRTEM) with FFT/IFFT analysis",
+      "instrument_or_setup": "FEI Tecnai G2 F20 TEM; Image-Pro Plus software for >200 domain measurements",
+      "measurement_conditions": "DF taken from {110}κ reflections (20 nm scale bar); HRTEM along [011]γ (10 nm scale bar); IFFT from {011} and {100} superlattice reflections",
+      "purpose": "Image and measure the κ-carbides / LRO domains in the 2Ni steel",
+      "key_findings": "2Ni steel contains the largest, brightest cuboidal κ-carbides of the four steels with an average size of 10 nm (IFFT/Image-Pro Plus value ~10.69 nm); the ordered structures are κ-carbides (not LRO domains)"
+    },
+    {
+      "characterization_id": "char_sem_fracture",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM) fractography",
+      "instrument_or_setup": "SEM (secondary-electron imaging)",
+      "measurement_conditions": "fibre zone of the fracture surface; 200 µm scale bar; macroscopic fracture-surface insets",
+      "purpose": "Characterize the fracture mode of the 2Ni steel",
+      "key_findings": "2Ni steel fibre zone shows a dense dimpled microvoid-coalescence morphology with larger, deeper rounded holes and rough tear ridges, i.e. ductile fracture with no cleavage facets"
+    },
+    {
+      "characterization_id": "char_tensile_test",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing with laser extensometer; interrupted tensile tests",
+      "instrument_or_setup": "Gotech electronic universal testing machine; laser extensometer; specimens cut by electrical discharge machining (EDM)",
+      "measurement_conditions": "crosshead speed 3 mm/min; gauge length 25 mm, thickness 3 mm, width 7 mm; along RD; at least three specimens per steel; interrupted at 3% (or 5%) and 10% engineering strain",
+      "purpose": "Measure room-temperature tensile properties and provide interrupted specimens for substructure analysis of the 2Ni steel",
+      "key_findings": "2Ni steel: YS 1202 MPa, TS 1283 MPa, TEL 34.1%, TS×TEL 43.75 GPa-%"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_2ni_formation_energy",
+      "simulation_method": "First-principles (DFT) formation-energy calculations of possible κ-carbide structures",
+      "software_used": "Materials Project database (https://legacy.materialsproject.org/)",
+      "potential_model_or_database": "Density functional theory (DFT) with generalized gradient approximation (GGA) and Perdew–Burke–Ernzerhof (PBE) functional",
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "The calculated formation-energy trend (Ni lowers, Cr raises the κ-carbide formation energy) is stated to be consistent with the dark-field TEM images of Fig. 1i–1l showing that Ni-containing steels have larger κ-carbides.",
+      "analytical_models": [
+        {
+          "model_name": "Formation energy of Ni-rich κ-carbide (AlNi3C)",
+          "equation_role": "Determines whether Ni-rich κ-carbides are energetically favourable to form and the lowering of the nucleation barrier",
+          "parameters": [
+            {
+              "name": "formation energy of AlNi3C",
+              "value": "−0.181",
+              "unit": "eV/atom"
+            },
+            {
+              "name": "formation energy of ideal κ-carbide (Fe,Mn)3AlC",
+              "value": "−0.160",
+              "unit": "eV/atom"
+            },
+            {
+              "name": "formation energy of Fe2NiC",
+              "value": "0.082",
+              "unit": "eV/atom"
+            },
+            {
+              "name": "formation energy of Cr-rich carbide Cr21(FeC3)2",
+              "value": "−0.049",
+              "unit": "eV/atom"
+            }
+          ],
+          "model_note": "For the 2Ni steel, Ni atoms preferentially displace Fe/Mn atoms to form Ni-rich κ-carbides with AlNi3C structure; its formation energy (−0.181 eV/atom) is lower than that of ideal κ-carbides (−0.160 eV/atom), reducing the nucleation energy barrier and promoting κ-carbide formation and growth; Fe2NiC (0.082 eV/atom) is unfavourable. Cr21(FeC3)2 (−0.049 eV/atom) is 0.111 eV/atom higher than (Fe,Mn)3AlC, raising the nucleation barrier for Cr-containing steels."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_2ni_strengthening_model",
+      "simulation_method": "Analytical strengthening-mechanism model of yield strength (linear superposition of mechanisms)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Calculated contributions are compared with the experimentally measured YS of the 2Ni steel (1202 MPa); predicted and measured yield strengths are stated to be in very good agreement (experimental value lies above the summed calculated contributions in Fig. 11).",
+      "analytical_models": [
+        {
+          "model_name": "Yield strength superposition",
+          "equation_role": "σys = σ0 + σss + σgb + σprep (Eq. 1); dislocation strengthening disregarded for fully recrystallized steel",
+          "parameters": [
+            {
+              "name": "σ0 (friction stress, = 3τ0, τ0 = 2×10^-4 G with G = 70 GPa)",
+              "value": "42",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": null
+        },
+        {
+          "model_name": "Hall–Petch grain-boundary strengthening",
+          "equation_role": "σgb = KHP·d_eff^(−0.5)",
+          "parameters": [
+            {
+              "name": "KHP",
+              "value": "446.8",
+              "unit": "MPa·μm^0.5"
+            },
+            {
+              "name": "d_eff (2Ni)",
+              "value": "3.73",
+              "unit": "μm"
+            },
+            {
+              "name": "σgb (2Ni)",
+              "value": "231.3",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "d_eff values (3.51, 3.73, 3.72, 2.2 μm for 3Cr, 2Ni, 2Ni3Cr, 2Ni5Cr) from EBSD; calculated σgb = 238.5, 231.3, 231.7 and 301.2 MPa respectively."
+        },
+        {
+          "model_name": "Solid-solution strengthening (empirical)",
+          "equation_role": "σss = 279[C] + 1.5[Mn] + 20.5[Al] + 2.9[Ni] + 3.9[Cr]",
+          "parameters": [
+            {
+              "name": "σss (2Ni)",
+              "value": "509.5",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "Calculated σss = 515.4, 509.5, 557.2 and 554.1 MPa for 3Cr, 2Ni, 2Ni3Cr, 2Ni5Cr respectively."
+        },
+        {
+          "model_name": "Precipitation strengthening by shearing (ordering + coherency + modulus mismatch)",
+          "equation_role": "σprep = max(σorder, σcoh + σmod) (Eqs. 2–4); shearing is the dominant mechanism as dislocations shear the κ-carbides",
+          "parameters": [
+            {
+              "name": "As (strong-obstacle factor)",
+              "value": "0.64",
+              "unit": null
+            },
+            {
+              "name": "M (Taylor factor)",
+              "value": "3.06",
+              "unit": null
+            },
+            {
+              "name": "ΔG (shear-modulus difference austenite/κ-carbide)",
+              "value": "23.3",
+              "unit": "GPa"
+            },
+            {
+              "name": "b (Burgers vector)",
+              "value": "0.264",
+              "unit": "nm"
+            },
+            {
+              "name": "αε",
+              "value": "2.6",
+              "unit": null
+            },
+            {
+              "name": "m",
+              "value": "0.85",
+              "unit": null
+            },
+            {
+              "name": "εc (lattice-parameter mismatch)",
+              "value": "0.9",
+              "unit": "%"
+            },
+            {
+              "name": "γAPB (antiphase boundary energy)",
+              "value": "0.35",
+              "unit": "J/m^2"
+            }
+          ],
+          "model_note": "For the 2Ni steel σcoh+σmod is dominant and no σorder bars appear (Fig. 10b); the size distribution and volume fraction of κ-carbides are used to compute σprep, which is then compared with the experimental YS."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Measured chemical composition of the 2Ni steel (Table 1, wt.%): C 1.23, Si 0.35, Mn 21.0, P 0.010, S 0.001, Al 9.35, Mo 0.57, Ni 2.05, Cr 0.05, Ti 0.01, Nb 0.03, Fe Bal. (nominal Fe–20Mn–9Al-1.5C-2Ni, x = 2 wt% Ni, y = 0 wt% Cr).",
+    "TS × TEL of the 2Ni steel is 43.75 GPa-%, the lowest TS×TEL combination among the four 'This study' steels (3Cr 62.07, 2Ni 43.75, 2Ni3Cr 55.36, 2Ni5Cr 59.94 GPa-%).",
+    "The volume fraction of κ-carbides in the 2Ni steel is very low (low superlattice diffraction intensity) and a quantitative estimate could not be given from dark-field images because the sheet/foil thickness is uncertain.",
+    "No deformation twins were detected throughout the entire plastic deformation of the 2Ni steel; its strain hardenability mainly benefits from the DSBR (dynamic slip band refinement) effect, and a small number of stacking faults appear only at very high strain near final failure.",
+    "The 2Ni steel has the largest κ-carbides (and the highest yield strength) of the four Fe–20Mn–9Al-1.5C-xNi-yCr steels; the average κ-carbide/LRO domain sizes of the series decrease from ~10.69 nm (2Ni) through ~5.46 nm (2Ni3Cr) and ~2.14 nm (2Ni5Cr) to ~1.75 nm (3Cr).",
+    "SADPs of the 2Ni steel were labelled [011]γ//[011]κ with primary γ spots (000γ, 111γ, 200γ) plus weaker κ spots (011κ, 100κ); the paper caption states the SADPs were taken along the [001]γ zone axis, which disagrees with the [011] zone-axis labels printed on the patterns.",
+    "Ni addition to the 2Ni steel has an equivalent atomic-radius argument: Ni (1.24 Å) and Fe (1.27 Å)/Mn (1.32 Å) radii are comparable, so Ni preferentially displaces Fe/Mn to form Ni-rich κ-carbides, and this reduces the κ-carbide formation energy and enlarges the κ-carbides."
+  ]
+}

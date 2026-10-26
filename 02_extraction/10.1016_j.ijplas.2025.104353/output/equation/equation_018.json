@@ -1,0 +1,104 @@
+{
+  "identity": {
+    "paper_id": "10.1016_j.ijplas.2025.104353",
+    "equation_id": "equation_018",
+    "block_id": "b0075",
+    "equation_number": "18",
+    "is_image": false,
+    "latex_hint": "$$\nk _ {s} (\\varepsilon + \\Delta \\varepsilon) = \\left(\\frac {\\ln Z _ {P} ^ {(I)} + \\ln Z _ {P} ^ {(I I)} (\\varepsilon + \\Delta \\varepsilon)}{2 M a x \\bigl (\\ln Z _ {P} ^ {(I)} , \\ln Z _ {P} ^ {(I I)} (\\varepsilon + \\Delta \\varepsilon) \\bigr)}\\right) ^ {\\frac {n _ {c} \\varphi_ {d} ^ {(I)} \\sqrt {\\bigl (\\ln Z _ {P} ^ {(I I)} (\\varepsilon + \\Delta \\varepsilon) - \\ln Z _ {P} ^ {(I)} \\bigr) ^ {2}}}{\\ln Z _ {P} ^ {(I)}}}\\tag{18}\n$$"
+  },
+  "latex": "k _ {s} (\\varepsilon + \\Delta \\varepsilon) = \\left(\\frac {\\ln Z _ {P} ^ {(I)} + \\ln Z _ {P} ^ {(II)} (\\varepsilon + \\Delta \\varepsilon)}{2 Max \\bigl(\\ln Z _ {P} ^ {(I)}, \\ln Z _ {P} ^ {(II)} (\\varepsilon + \\Delta \\varepsilon) \\bigr)}\\right) ^ {\\frac {n _ {c} \\varphi_ {d} ^ {(I)} \\sqrt {\\bigl(\\ln Z _ {P} ^ {(II)} (\\varepsilon + \\Delta \\varepsilon) - \\ln Z _ {P} ^ {(I)} \\bigr) ^ {2}}}{\\ln Z _ {P} ^ {(I)}}}",
+  "purpose": "定义变变形条件（两阶段变形）下的应力软化系数 k_s，用于量化第一阶段 DRX 和 Z_p 变化对第二阶段饱和应力软化的影响。",
+  "applicability_conditions": "适用于变形条件发生瞬时变化的两阶段变形过程；当第一阶段为未再结晶状态（φ_d^(I)=0）或两阶段变形条件恒定时（ln Z_P^(I)=ln Z_P^(II)(ε+Δε)），k_s 等于 1。",
+  "symbols": [
+    {
+      "symbol": "k_s(ε+Δε)",
+      "meaning": "应力软化系数（stress softening coefficient），在 ε+Δε 应变下的取值",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "Z_P^(I)",
+      "meaning": "第一阶段（变变形条件之前）的 Z_p 值",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "Z_P^(II)(ε+Δε)",
+      "meaning": "第二阶段（变变形条件下）在 ε+Δε 应变处的 Z_p 值",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "ln Z_P^(I)",
+      "meaning": "第一阶段 Z_p 值的自然对数",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "ln Z_P^(II)(ε+Δε)",
+      "meaning": "第二阶段在 ε+Δε 应变处 Z_p 值的自然对数",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "Max(ln Z_P^(I), ln Z_P^(II)(ε+Δε))",
+      "meaning": "ln Z_P^(I) 与 ln Z_P^(II)(ε+Δε) 中的最大值",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "(ln Z_P^(I) + ln Z_P^(II)(ε+Δε)) / (2 Max(ln Z_P^(I), ln Z_P^(II)(ε+Δε)))",
+      "meaning": "归一化值，用于保证 k_s ≤ 1",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "sqrt((ln Z_P^(II)(ε+Δε) - ln Z_P^(I))^2) / ln Z_P^(I)",
+      "meaning": "两阶段 Z_p 的相对变化量",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "n_c",
+      "meaning": "材料常数（material constant）",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "φ_d^(I)",
+      "meaning": "第一阶段的 DRX 分数（动态再结晶分数）",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "ε",
+      "meaning": "应变",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "Δε",
+      "meaning": "应变增量",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    }
+  ],
+  "unmapped": [
+    "k_s 在未再结晶状态（φ_d^(I)=0）下等于 1，表明此时饱和应力的净变化 Δσ_s^(ν) 不受变条件影响。",
+    "在恒定变形条件（ln Z_P^(I)=ln Z_P^(II)(ε+Δε)）下 k_s 也等于 1。",
+    "随着两阶段 Z_p 的差异增大，第二阶段流动规律与恒定变形条件下的结果差异更加显著；第一阶段的 DRX 状态会显著影响第二阶段的应力软化。"
+  ]
+}

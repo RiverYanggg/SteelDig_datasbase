@@ -1,0 +1,161 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_001",
+  "family": "generalist",
+  "image_type": "chart_flow",
+  "description": "A single flowchart-style composite figure (Fig. 1) that maps the yield-strength (YS) prediction framework, built from six dashed-outline modules joined by labelled arrows (\"Model selection\", \"Algorithm optimization\", \"Experimental verification\", \"Feature filtering\"). Top-left module: a grid of algorithm abbreviations (DT, KNN, XGB, CatB, ET, LGBM, AdaB) with \"ET selected\" below it, plus an inset \"Extra Trees Fitting Performance\" scatter plot (Actual Values/MPa vs Predicted Values/MPa) whose point cloud lies along the diagonal, blue points and a pink trend line. Top-right module, \"GA optimized ET (GA-ET)\", shows five schematic decision trees with red and white nodes separated by \"...\", and prints R²=0.997, RMSE=31.6, MAPE=4.39% on pink tabs. Middle-left module pairs a purple-dot/red-star scatter with three blue text boxes: \"177 original data training model\", \"Data enhancement using GMM method\", \"Capture features, data expansion 599\". Middle-right module places an engineering stress–strain plot (x: Engineering Strain/%, y: Engineering Stress/MPa, ticks to ~1400; annotated \"Air cooling\"; small pale-blue inset legend) beside a grouped/box bar chart (x: three annealing conditions; y: YS(MPa); legend \"Data Train\" red, \"GA-ETs Train\" blue) with the note \"GA-ET has the best performance\". Bottom module \"Feature filtering\" lists Dislocation, Fine grain, Solid solution and Orowan strengthening with σ_YS = σ_0 + σ_g + σ_d + σ_Orowan.",
+  "confidence": "medium",
+  "subfigures": [
+    {
+      "panel": "top-left",
+      "description": "Dashed module listing six learning algorithms (DT, KNN, XGB, CatB, LGBM, AdaB) with the label 'ET selected', plus an inset scatter titled 'Extra Trees Fitting Performance' (Actual Values/MPa vs Predicted Values/MPa) showing points tightly along the diagonal.",
+      "confidence": "medium"
+    },
+    {
+      "panel": "top-right",
+      "description": "Dashed module labelled 'GA optimized ET (GA-ET)' containing five schematic decision-tree diagrams with red internal nodes and white leaf nodes, separated by '...', and three printed metrics: R²=0.997, RMSE=31.6, MAPE=4.39%.",
+      "confidence": "high"
+    },
+    {
+      "panel": "mid-left",
+      "description": "Dashed module with a 2D feature scatter (purple dots, red stars, one green star) and three text boxes reading '177 original data training model', 'Data enhancement using GMM method' and 'Capture features, data expansion 599'; an arrow labelled 'Model selection' leaves it toward the algorithm module.",
+      "confidence": "high"
+    },
+    {
+      "panel": "mid-right (left plot)",
+      "description": "Engineering stress–strain curve: x-axis 'Engineering Strain/%', y-axis 'Engineering Stress/MPa' with ticks to about 1400, text annotation 'Air cooling', multiple coloured curves and a small inset fitting-performance legend that is too small to read.",
+      "confidence": "medium"
+    },
+    {
+      "panel": "mid-right (right plot)",
+      "description": "Grouped bar/box chart with y-axis 'YS(MPa)' (ticks 0, 20, 40) for three x-axis conditions, red bars labelled 'Data Train' and blue bars labelled 'GA-ETs Train'; the blue GA-ETs bars are higher, matching the note 'GA-ET has the best performance'.",
+      "confidence": "medium"
+    },
+    {
+      "panel": "bottom-middle",
+      "description": "Dashed module 'Feature filtering' containing four coloured boxes — Dislocation strengthening, Fine grain strengthening, Solid solution strengthening, Orowan strengthening — and the equation σ_YS = σ_0 + σ_g + σ_d + σ_Orowan.",
+      "confidence": "high"
+    },
+    {
+      "panel": "bottom-left text",
+      "description": "Text block reading '177 pieces of original data were collected from the existing literature, including four strengthening mechanisms and YS', with an arrow into the data-enhancement module.",
+      "confidence": "high"
+    },
+    {
+      "panel": "right text",
+      "description": "Text block describing verification methods: (1) low-density steel annealed at different temperatures prepared by air cooling, with strengthening-mechanism contribution values and YS measured; (2) ten validation sets constructed from literature data for prediction and error analysis. Text is cropped at the right edge.",
+      "confidence": "medium"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "The figure is a process flowchart of six dashed-outline modules connected by four labelled arrows: 'Model selection', 'Algorithm optimization', 'Experimental verification' and 'Feature filtering'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The model-selection module lists the candidate algorithms DT, KNN, XGB, CatB, ET, LGBM and AdaB, and indicates 'ET selected'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "An inset scatter titled 'Extra Trees Fitting Performance' plots Actual Values/MPa against Predicted Values/MPa with points lying along the diagonal.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "The GA-ET module prints three performance metrics: R²=0.997, RMSE=31.6 and MAPE=4.39%.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The data-preparation module states '177 original data training model' and 'Capture features, data expansion 599', with 'Data enhancement using GMM method'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The 'Feature filtering' module names the four mechanisms used (Dislocation strengthening, Fine grain strengthening, Solid solution strengthening, Orowan strengthening) and gives the superposition equation σ_YS = σ_0 + σ_g + σ_d + σ_Orowan.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "A text block on the left states '177 pieces of original data were collected from the existing literature, including four strengthening mechanisms and YS'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The stress–strain panel is annotated 'Air cooling' and uses axes Engineering Strain/% (x) and Engineering Stress/MPa (y) with y ticks up to about 1400.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "The bar panel compares 'Data Train' (red) with 'GA-ETs Train' (blue) for three annealing conditions on a YS(MPa) axis, and the panel is annotated 'GA-ET has the best performance'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "A right-hand text block states the verification methods: (1) low-density steel with different annealing temperatures prepared by air cooling, with strengthening-mechanism contributions and YS measured; (2) ten validation sets constructed from literature data for prediction and error analysis.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "The caption states that Fig. 1 is a 'Flowchart of the yield strength prediction framework'.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_001"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states that the framework integrates quantitative contribution data of four core strengthening mechanisms, uses GMM for data expansion, and applies an ensemble-learning algorithm to map strengthening mechanisms to yield strength.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_001"
+        }
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "measured_quantities": [
+    "yield strength (MPa)",
+    "R²",
+    "RMSE (MPa)",
+    "MAPE (%)",
+    "engineering stress (MPa)",
+    "engineering strain (%)"
+  ],
+  "sample_hints": [
+    "ET selected",
+    "GA optimized ET (GA-ET)",
+    "GA-ETs Train",
+    "Data Train",
+    "Air cooling",
+    "177 original data training model",
+    "data expansion 599",
+    "ten validation sets"
+  ],
+  "unreadable_items": [
+    "mid-right bar chart: x-axis annealing-condition tick labels are small and only partially readable (appear as three similar three-digit temperature values in °C)",
+    "mid-right stress–strain plot: the small inset legend/fitting-performance text is illegible at the supplied resolution",
+    "right-hand verification text block is cropped at the right margin, so the trailing words of each sentence are cut off",
+    "tick values of the inset 'Extra Trees Fitting Performance' scatter axes are unreadable"
+  ],
+  "image_paths": [
+    "images/7679da4513f42c1ebd87e9ec3c35be7969dad130d250c43108a093a8fd2ae584.jpg"
+  ]
+}

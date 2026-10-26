@@ -1,0 +1,461 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-8al-0.6c__age-550c-30h",
+      "paper_id": "10.1016_j.jmrt.2025.05.166",
+      "alloy_id": "alloy_fe-20mn-8al-0.6c",
+      "process_id": "proc_age-550c-30h",
+      "sample_label": "M1-30",
+      "aliases": [
+        "M1-30",
+        "M1 aged 30 h",
+        "30 h aged Ti/V-free steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "high-vacuum electric-arc melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "high vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The material was melted in a high-vacuum electric-arc melting furnace."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling followed by water quenching",
+      "temperature": "1000 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "from 20 to 2 mm",
+      "processing_steps_notes": "The ingots were hot rolled from 20 to 2 mm at 1000 °C followed by water quenching."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1000 °C",
+      "temperature_unit": "°C",
+      "duration": "30 min",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The samples were solution-processed at 1000 °C for 30 min and water quenched; this state is named M1-SS and is the parent process of the aging treatment."
+    },
+    {
+      "processing_step_id": "step_aging_550c_30h",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "550 °C",
+      "temperature_unit": "°C",
+      "duration": "30 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Aging at 550 °C for 30 h followed by water quenching; the resulting aged M1 steel is named M1-30."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_M1-30",
+      "overall_structure": "Equiaxed austenite grains containing straight annealing twins; the matrix remains single-phase austenite after 30 h aging at 550 °C (thermodynamic calculations confirm single-phase austenite after aging), and contains a large number of fine κ-carbides uniformly distributed within the grain interior.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_M1-30_matrix",
+          "region": "matrix / grain interior (equiaxed austenite grains)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "face-centered cubic (FCC)",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains",
+              "grain_size": "45.3 ± 9.3 μm",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "45.3 ± 9.3 μm",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_M1-30_kappa",
+              "type": "κ-carbide",
+              "size": {
+                "value": "10.8 ± 6.2 nm",
+                "unit": "nm"
+              },
+              "distribution": "uniformly distributed within the matrix (intragranular); number density of around 7 × 10^22 m^-3",
+              "coherency": "highly coherent with the austenite matrix"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_M1-30",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_kappa_austenite",
+          "microstructure_id": "micro_M1-30_matrix",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "austenite",
+          "coherence": "high coherence (κ-carbides show much higher coherence with the matrix than (Ti, V)C carbides)"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_planar_slip_softening",
+          "microstructure_id": "micro_M1-30_matrix",
+          "interaction_type": "planar dislocation slip with shearing of coherent κ-carbides (glide plane softening)",
+          "qualitative_or_quantitative_description": "The deformation mode of M1 is planar slip of dislocations; the highly coherent κ-carbides are cut (sheared) by dislocations, destroying the coherency relationship and softening the glide plane, which reduces the work-hardening rate of M1-30. The homogeneous precipitation of κ-carbides prevents refinement of the slip band and reduces the work-hardening index of M1 after aging."
+        }
+      ],
+      "slip_behavior": "Planar dislocation slip (SFE ~70 mJ/m^2); the slip-band spacing of M2 is significantly smaller than that of M1, but both steels deform by planar slip.",
+      "phase_evolution": "Supersaturated austenite matrix decomposes into solute-depleted and solute-enriched regions; when sufficient driving force is attained the solute-enriched regions transform into L-ordered domains and carbon ordering forms κ-carbides (generally attributed to spinodal decomposition). In the Ti/V-free M1 matrix with homogeneous chemical composition, κ-carbides exhibit a uniform distribution.",
+      "interface_notes": "In M1-30 no (Ti, V)C carbides are present (the table shows '-' for M1-30); κ-carbides are the only intragranular precipitate and are highly coherent with the matrix."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_M1-30_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": "2 mm thick, 58 mm long tensile specimens fabricated along the rolling direction; 12.5 mm extensometer to measure gauge-length deformation",
+        "test_standard": null,
+        "other_conditions": "Yield strength determined at a 0.2 % offset; specimens ground with silicon carbide abrasive papers to remove surface scratches."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "860 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "1004 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction",
+              "value": "40 %",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "value": "Significant reduction in work-hardening rate after aging (solid black vs dashed lines); the aged M1 work hardening is divided into two stages (Stage I rapid slip of dislocations, Stage II planar slip of dislocations), whereas solution-treated M1 shows three stages.",
+              "unit": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_M1-30_vs_M2-30",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-20mn-8al-0.6c (M2, Ti/V-modified steel)",
+        "benchmark_process_id": "proc_age-550c-30h",
+        "benchmark_sample_id": null,
+        "comparison_metric": "Ultimate tensile strength: Ti/V-free M1-30 = 1004 MPa vs Ti/V-modified M2-30 = 1096 MPa; yield strength comparable (M1-30 860 MPa vs M2-30 884 MPa); M1-30 shows a significant reduction in work-hardening rate after aging whereas M2-30 maintains its work-hardening capacity.",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_OM_M1-30",
+      "microstructure_id": "micro_M1-30_matrix",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": "Optical microscope (OM, NOVEL, MR5000) at 200 × magnification",
+      "measurement_conditions": "Metallographic samples extracted parallel to the rolled surface; ground with SiC papers and polished with 1.5 μm diamond suspension; etched with 3 % FeCl3 + 10 % HCl (in ethanol) for 10–20 s; grain size measured per GB/T 6394-2002.",
+      "purpose": "Characterize phase morphology and measure grain size of M1-30.",
+      "key_findings": "M1-30 exhibits equiaxed grain morphology similar to M1-SS; grain size shows no significant change after aging, maintaining an average of 45.3 ± 9.3 μm."
+    },
+    {
+      "characterization_id": "char_TEM_M1-30",
+      "microstructure_id": "micro_M1-30_matrix",
+      "technique": "Transmission electron microscopy (TEM): bright-field (BF) and dark-field (DF) imaging and selected area electron diffraction (SAED)",
+      "instrument_or_setup": "TEM, Thermo Fisher Scientific, Talos F200X G2",
+      "measurement_conditions": "TEM samples mechanically ground to 50 μm, 3 mm discs punched and thinned with a Gatan precision ion polishing system; BF/DF images with 100 nm scale bars and SAED patterns with 2 1/nm scale bars.",
+      "purpose": "Investigate morphology, crystal structure, chemical composition and dislocation configuration of the κ-carbides in M1-30.",
+      "key_findings": "Fig. 4(a–c) BF, DF and SAED show a large number of κ-carbides with number density around 7 × 10^22 m^-3 uniformly distributed in the Ti/V-free M1 steel; SAED (ZA=[0 1̄ 1]) shows matrix reflections (111), (200), (111) and extra κ reflections."
+    },
+    {
+      "characterization_id": "char_TEM_deformed_M1-30",
+      "microstructure_id": "micro_M1-30_matrix",
+      "technique": "TEM of the uniformly deformed region after tensile testing",
+      "instrument_or_setup": "TEM, Thermo Fisher Scientific, Talos F200X G2",
+      "measurement_conditions": "Post-tensile gauge region; TEM BF images with 200 nm scale bars.",
+      "purpose": "Determine the deformation mode (slip behavior) of M1-30 after tensile testing.",
+      "key_findings": "Deformation mode of M1 is the plane (planar) slip of dislocations; dense dark dislocation tangles/cell walls and slip bands are observed; slip-band spacing of M2 is significantly smaller than that of M1."
+    },
+    {
+      "characterization_id": "char_tensile_M1-30",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "Electronic universal testing machine (SUNS, UTM5105X)",
+      "measurement_conditions": "2 mm thick, 58 mm long specimens along the rolling direction; strain rate 10^-3 s^-1; room temperature; 12.5 mm extensometer; yield strength at 0.2 % offset.",
+      "purpose": "Measure the mechanical properties (yield strength, elongation, work-hardening rate) of M1-30.",
+      "key_findings": "M1-30 yield strength 860 MPa with elongation reduced to ~40 %; work-hardening rate significantly reduced compared with M1-SS."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermo_M1-30",
+      "simulation_method": "Thermodynamic calculation of phase composition",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "M1 steel composition after aging treatment at 550 °C for 30 h.",
+      "validation_against_experiment": "Consistent with TEM observations that the matrix remains single-phase austenite after aging.",
+      "analytical_models": []
+    },
+    {
+      "computation_id": "comp_SFE_M1",
+      "simulation_method": "Stacking fault energy calculation using the Olson–Cohen thermodynamic model",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Composition of M1; ρ = 2.8 × 10^-5 mol/m^2 for M1; σ^{γ/ε} = 10 mJ/m^2 interfacial energy; grain-size effect term ~1–2 mJ/m^2.",
+      "validation_against_experiment": "Consistent with TEM observation that the deformation mode of M1 is dislocation slip.",
+      "analytical_models": [
+        {
+          "model_name": "Olson–Cohen SFE model",
+          "equation_role": "SFE = 2ρΔG^{γ→ε} + 2σ^{γ/ε} + 2ρΔG_ex ; ΔG_ex = 170.06 exp(−D/18.55)",
+          "parameters": [
+            {
+              "name": "ρ (molar surface density on {111} planes, M1)",
+              "value": "2.8 × 10^-5",
+              "unit": "mol/m^2"
+            },
+            {
+              "name": "σ^{γ/ε} (interfacial energy)",
+              "value": "10",
+              "unit": "mJ/m^2"
+            },
+            {
+              "name": "calculated SFE of M1",
+              "value": "70",
+              "unit": "mJ/m^2"
+            }
+          ],
+          "model_note": "Ti and V elements have little influence on the SFE; M2 SFE is ~78 mJ/m^2. The high SFE indicates the deformation mode is dislocation slip."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_strengthening_M1-30",
+      "simulation_method": "Quantitative yield-strength contribution calculation based on strengthening mechanisms",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "M1-30: single-phase austenite matrix with uniformly precipitated κ-carbides (r = 10.8 nm, f = 7.4 %); no (Ti, V)C carbides.",
+      "validation_against_experiment": "Calculated mechanism contributions sum to the measured yield strength in Fig. 10; the increase in yield strength of M1 after aging is mainly due to shear strengthening of κ-carbides.",
+      "analytical_models": [
+        {
+          "model_name": "Overall yield strength superposition",
+          "equation_role": "σy = σ0 + σG + σD + σP",
+          "parameters": [
+            {
+              "name": "σ0 (matrix strength: lattice friction + solution strengthening)",
+              "value": null,
+              "unit": "MPa"
+            },
+            {
+              "name": "σD (dislocation strengthening, essentially neglected)",
+              "value": "0",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "Both M1 and M2 underwent high-temperature solution treatment so dislocation strengthening can be essentially neglected."
+        },
+        {
+          "model_name": "Hall–Petch grain-boundary strengthening",
+          "equation_role": "σG = ky D^(−1/2)",
+          "parameters": [
+            {
+              "name": "ky (Hall–Petch constant)",
+              "value": "683",
+              "unit": "MPa μm^1/2"
+            },
+            {
+              "name": "D (average austenite grain size of M1-30)",
+              "value": "45.3",
+              "unit": "μm"
+            }
+          ],
+          "model_note": null
+        },
+        {
+          "model_name": "κ-carbide shearing strengthening",
+          "equation_role": "σS = σcs + σms + σos",
+          "parameters": [
+            {
+              "name": "M (Taylor factor for FCC)",
+              "value": "3.06",
+              "unit": null
+            },
+            {
+              "name": "α (constant)",
+              "value": "2.6",
+              "unit": null
+            },
+            {
+              "name": "εc (constrained lattice parameter misfit)",
+              "value": "0.6",
+              "unit": null
+            },
+            {
+              "name": "G (shear modulus of austenite)",
+              "value": "70.7",
+              "unit": "GPa"
+            },
+            {
+              "name": "b (Burgers vector)",
+              "value": "0.26",
+              "unit": "nm"
+            },
+            {
+              "name": "ΔG (modulus misfit between austenite and κ-carbides)",
+              "value": "23.7",
+              "unit": "GPa"
+            },
+            {
+              "name": "m (constant for FCC metals)",
+              "value": "0.85",
+              "unit": null
+            },
+            {
+              "name": "r (mean radius of κ-carbides)",
+              "value": "10.8",
+              "unit": "nm"
+            },
+            {
+              "name": "f (volume fraction of κ-carbides)",
+              "value": "7.4",
+              "unit": "%"
+            }
+          ],
+          "model_note": "Because the critical size of κ-carbides is greater than 20 nm, the shearing mechanism is adopted; chemical and stacking-fault strengthening have little impact. Coherency strengthening (eq. 3), modulus-mismatch strengthening (eq. 4) and order strengthening (eq. 5)."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_workhardening_CJ_M1-30",
+      "simulation_method": "Crussard–Jaoul (CJ) analysis of work-hardening behavior",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "True stress–true strain data of M1-30 tensile test.",
+      "validation_against_experiment": "Work-hardening of aged M1 divided into two stages (Stage I rapid slip, Stage II planar slip), consistent with reduced work-hardening rate observed in tensile curves (Fig. 7).",
+      "analytical_models": [
+        {
+          "model_name": "Crussard–Jaoul equation",
+          "equation_role": "ln(dσ/dε) = (n − 1) ln ε + ln(n k)",
+          "parameters": [],
+          "model_note": "Used to extract the work-hardening index n of M1-30 (Fig. 11a)."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The stacking fault energy (SFE) of M1 was calculated as approximately 70 mJ/m^2 (M2 ~78 mJ/m^2), indicating that the deformation mode of the material is dislocation slip; Ti and V have little influence on the SFE.",
+    "The number density of κ-carbides in M1-30 is around 7 × 10^22 m^-3.",
+    "The κ-carbide shearing strengthening in M1-30 is unchanged in nature from that of κ-carbides that precipitate uniformly; the yield strength increase of M1 after aging is mainly due to shear strengthening of the κ-carbides.",
+    "In M1-30 there are no (Ti, V)C carbides (Table 3 reports '-' for M1 for both solution-treated and 30 h aged conditions); only κ-carbides are present with volume fraction 7.4 ± 3.4 % and mean radius 10.8 ± 6.2 nm.",
+    "Adding Ti and V does not alter the austenitic phase composition of the low-density steel but refines the grain size (M1 42.4 ± 7.8 μm → M2 32.3 ± 10.4 μm in the solution-treated state)."
+  ]
+}

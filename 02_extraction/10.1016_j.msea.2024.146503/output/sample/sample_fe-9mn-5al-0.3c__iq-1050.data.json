@@ -1,0 +1,442 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-9mn-5al-0.3c__iq-1050",
+      "paper_id": "10.1016_j.msea.2024.146503",
+      "alloy_id": "alloy_fe-9mn-5al-0.3c",
+      "process_id": "proc_iq-1050",
+      "sample_label": "IQ-1050",
+      "aliases": [
+        "IQ-1050",
+        "IO-1050",
+        "intercritically quenched steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "5 kg vacuum-induction-melted ingot heated to 1100 °C for 2 h prior to forging. Depicted as the homogenization plateau in Fig. 1."
+    },
+    {
+      "processing_step_id": "step_2_forging",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "forging",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The homogenized ingot was forged into a square forging ingot measuring 80 mm × 70 mm."
+    },
+    {
+      "processing_step_id": "step_3_reheat_before_rolling",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "reheating",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The forging ingot was reheated to 1100 °C and held for 2 h before hot rolling."
+    },
+    {
+      "processing_step_id": "step_4_hot_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "initial rolling temperature approximately 1050 °C; finishing rolling temperature approximately 950 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "from 80 to 12 mm thickness in eight passes",
+      "processing_steps_notes": "Hot rolled from 80 to 12 mm thickness in eight passes; thermomechanical rolling in the dual-phase region produced the micro-laminated δ-ferrite/martensite structure."
+    },
+    {
+      "processing_step_id": "step_5_air_cooling_to_HR",
+      "sequence": "5",
+      "type": "cooling",
+      "method": "air cooling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled plate air cooled to room temperature; the resulting hot-rolled sample was labeled HR, which is the parent state of IQ-1050."
+    },
+    {
+      "processing_step_id": "step_6_intercritical_reheat_1050",
+      "sequence": "6",
+      "type": "heat treatment",
+      "method": "intercritical reheating (austenitization in ferrite + austenite dual-phase region)",
+      "temperature": "1050 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The hot-rolled plate was reheated to 1050 °C, located in the ferrite and austenite dual-phase region, and held for 1 h. 1050 °C was selected as quenching temperature because around 970 °C the austenite fraction reaches a maximum (~91.4 %) and, allowing for Thermo-Calc discrepancy, 1050 °C makes the austenite volume large enough."
+    },
+    {
+      "processing_step_id": "step_7_water_quenching",
+      "sequence": "7",
+      "type": "heat treatment",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Water quenching of the 1050 °C reheated plate; the corresponding sample was labeled IQ-1050. The higher cooling rate of water quenching than air cooling inhibited α-ferrite transformation and increased the Ms temperature, giving a larger martensite region and fewer retained austenite."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_iq-1050",
+      "overall_structure": "Micro-laminated (banded) microstructure inherited from the hot-rolled state (heredity), consisting of δ-ferrite bands and a lath martensite region; before quenching the plate was held in the ferrite + austenite dual-phase region at 1050 °C, so prior austenite grains grew and the δ-ferrite bands became thinner and were partly divided into discontinuous δ-ferrite grains. The martensite region of IQ-1050 was larger and retained austenite fewer than in HR.",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_iq-1050_deltaferrite",
+          "region": "δ-ferrite bands (banded regions of the laminated structure)",
+          "related_sequence": "7",
+          "phases_present": [
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "BCC (A2)",
+              "volume_fraction": null,
+              "morphology": "banded; after 1050 °C holding the δ-ferrite bands became thinner and even divided into some discontinuous δ-ferrite grains by prior austenite",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "geometrically necessary dislocations (GND)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "8.23 ×10^14 m^-2 (BCC phase, including ferrite and martensite)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_iq-1050_martensite",
+          "region": "lath martensite region (larger than in HR)",
+          "related_sequence": "7",
+          "phases_present": [
+            {
+              "phase_name": "lath martensite",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "lath martensite with prior austenite grain boundaries (PAGB) that moved to δ-ferrite; martensite region larger than in HR",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "geometrically necessary dislocations (GND)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "8.23 ×10^14 m^-2 (BCC phase, including ferrite and martensite)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_iq-1050_austenite",
+          "region": "retained austenite within the martensite region",
+          "related_sequence": "7",
+          "phases_present": [
+            {
+              "phase_name": "retained austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~7 % (by EBSD)",
+              "morphology": "the scarcest among the panels; present only as small isolated patches in the martensite region",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "geometrically necessary dislocations (GND)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "5.01 ×10^14 m^-2 (FCC phase)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_iq-1050",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_iq1050_deltaferrite_martensite",
+          "microstructure_id": "micro_iq-1050_deltaferrite",
+          "phase_1_name": "δ-ferrite",
+          "phase_2_name": "lath martensite",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "During holding at 1050 °C all martensite in the hot-rolled steel reversed into austenite; C and Mn diffusion into austenite increased the austenite volume fraction, giving more lath martensite at room temperature. Prior austenite grains grew up and prior austenite grain boundaries (PAGB) moved to δ-ferrite, thinning and segmenting the δ-ferrite bands into discontinuous grains. The high heating temperature lowered the Mn content of the reversed austenite, decreasing austenite stability and raising Ms; the higher cooling rate of water quenching than air cooling further inhibited α-ferrite transformation and raised Ms, so the martensite region of IQ-1050 was larger and retained austenite fewer at room temperature.",
+      "interface_notes": "Heating to 1050 °C largely decreased the GND density of the hot-rolled microstructure, but considerable martensitic transformation during quenching caused volume expansion, still resulting in high GND densities of lath martensite and retained austenite."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_iq-1050_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "0.375 min^-1",
+        "specimen_geometry": "rod-shaped sample size of M10*60 mm, gauge length 25 mm; tensile axis parallel to the rolling direction of the hot-rolled plate",
+        "test_standard": null,
+        "other_conditions": "electronic tensile testing machine (WDW-100E)"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "parallel to rolling direction",
+              "value": "575 ± 13 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 13 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "parallel to rolling direction",
+              "value": "929 ± 30 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 30 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "parallel to rolling direction",
+              "value": "2.0 ± 0.3 %",
+              "unit": "%",
+              "uncertainty": "± 0.3 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve for IQ-1050 shown in Fig. 5(a) (curve labelled IQ-1050); peaks near 900 MPa at ~2 % strain as read from the figure.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        }
+      },
+      "hardness": [],
+      "fracture_toughness": {
+        "value": null,
+        "unit": null
+      },
+      "fatigue_properties": {
+        "fatigue_limit": null,
+        "cycles_to_failure": null
+      },
+      "creep_properties": {
+        "steady_state_creep_rate": null,
+        "rupture_life": null
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_iq-1050_comparison",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": "proc_hr",
+        "benchmark_sample_id": "sample_fe-9mn-5al-0.3c__hr",
+        "comparison_metric": "After intercritical quenching, the yield strength of IQ-1050 (~575 MPa) was improved compared with HR, but tensile strength declined (~929 MPa vs HR ~1107 MPa) and total elongation was the poorest of all specimens (~2.0 %), indicating premature failure.",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_fesem",
+      "microstructure_id": "micro_iq-1050_deltaferrite",
+      "technique": "Field-emission scanning electron microscopy (FE-SEM)",
+      "instrument_or_setup": "MIRA-3 LMH FE-SEM; specimens polished (PG-1A) and etched with 10 % nitric acid alcohol",
+      "measurement_conditions": "secondary-electron imaging; scale bars 50, 10, 5, 1 µm",
+      "purpose": "Observe the laminated microstructure of IQ-1050 and the morphology of δ-ferrite bands and lath martensite.",
+      "key_findings": "Fig. 3(c,d) shows the laminated banding persists in IQ-1050; δ-ferrite appears as thinner, discontinuous grains, prior austenite grain boundaries (PAGB) are arrowed, and a large lath martensite region fills the field."
+    },
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_iq-1050_austenite",
+      "technique": "Electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "EBSD (Oxford Instruments) probe; specimens electrochemically polished in 10 % perchloric acid, 5 % glycerol, 85 % ethyl alcohol at 15~20 V and 0.8-1.2 A; HKL Channel5 software and Python used for analysis",
+      "measurement_conditions": "band contrast (BC) maps and austenite (red) distribution maps, 50 µm scale bar; step size 150 nm for KAM/GND",
+      "purpose": "Determine the distribution and volume fraction of austenite, and (via KAM) the GND density of the δ-ferrite/martensite in IQ-1050.",
+      "key_findings": "IQ-1050 shows the coarsest ferrite bands and only sparse, isolated red austenite; EBSD austenite volume fraction of IQ-1050 is ~7 %. BCC-phase GND density is 8.23 ×10^14 m^-2 and FCC-phase 5.01 ×10^14 m^-2."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "SmartLab XRD with Cu-Kα radiation at 40 kV and 150 mA; scanning step size 0.02° and scanning speed 2°/min; FullProf software for Rietveld refinement",
+      "measurement_conditions": "scanning areas of 10*10 mm before tensile tests; specimens prepared as for EBSD",
+      "purpose": "Measure austenite content and (for QA specimens) obtain SFE parameters.",
+      "key_findings": "For IQ-1050, XRD austenite volume fraction was not measured (Table 2 entry is '/')."
+    },
+    {
+      "characterization_id": "char_thermocalc",
+      "microstructure_id": null,
+      "technique": "Thermodynamic equilibrium calculation",
+      "instrument_or_setup": "Thermo-Calc software with TCFE 12 database",
+      "measurement_conditions": "equilibrium phase fraction and phase-composition vs temperature",
+      "purpose": "Calculate the phase volume fraction diagram of the present steel to justify quenching/intercritical annealing temperatures.",
+      "key_findings": "δ-ferrite begins to precipitate at ~1485 °C; austenite forms by peritectic reaction (δ-F + L → A) at ~1390 °C; at ~970 °C austenite fraction reaches a maximum (~91.4 %) while δ-ferrite is minimum (~8.6 %); the A1 (cementite precipitation) temperature is ~617 °C."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile test",
+      "instrument_or_setup": "Electronic tensile testing machine WDW-100E",
+      "measurement_conditions": "room temperature; strain rate 0.375 min^-1; rod-shaped M10*60 mm specimen, gauge length 25 mm; tensile axis parallel to the rolling direction",
+      "purpose": "Measure tensile properties of IQ-1050 (YS, TS, TE).",
+      "key_findings": "IQ-1050: YS 575 ± 13 MPa, TS 929 ± 30 MPa, TE 2.0 ± 0.3 % (poorest ductility among all specimens)."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermocalc_equilibrium",
+      "simulation_method": "CALPHAD equilibrium thermodynamic calculation",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": "TCFE 12 database",
+      "boundary_and_initial_conditions": "Alloy composition Fe-8.9Mn-4.6Al-0.29C (wt.%) with P, S < 0.005 wt.%; temperature range ~500-1600 °C",
+      "validation_against_experiment": "The calculated dual-phase (δ-ferrite + austenite) window and A1 ≈ 617 °C were used to select the 1050 °C quenching temperature and the 620/680/740/800 °C annealing temperatures.",
+      "analytical_models": []
+    },
+    {
+      "computation_id": "comp_gnd_density_iq1050",
+      "simulation_method": "GND density calculation from EBSD kernel average misorientation (KAM)",
+      "software_used": "HKL Channel5 software and Python (EBSD data analysis)",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "EBSD step size μ = 150 nm; Burgers vector b = 2.887 Å for BCC and 2.563 Å for FCC (measured by XRD)",
+      "validation_against_experiment": "Computed BCC and FCC GND densities of IQ-1050 compare with values reported for strained Hadfield austenitic steel (~9.80 ×10^14 /m^2 at true strain ~0.05).",
+      "analytical_models": [
+        {
+          "model_name": "GND density",
+          "equation_role": "ρ_GND = 2·KAM_ave / (μ·b)",
+          "parameters": [
+            {
+              "name": "b (BCC)",
+              "value": "2.887",
+              "unit": "Å"
+            },
+            {
+              "name": "b (FCC)",
+              "value": "2.563",
+              "unit": "Å"
+            },
+            {
+              "name": "μ (EBSD step size)",
+              "value": "150",
+              "unit": "nm"
+            }
+          ],
+          "model_note": "KAM_ave = exp((1/N) Σ ln KAM_i); ρ_GND is GND density of the calculated area, KAM_ave the average local misorientation."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "IQ-1050 yield-to-tensile ratio = 0.62 and product of strength and elongation (PSE) = 1.9 ± 0.4 GPa % (Table 3).",
+    "For IQ-1050, the density of block boundaries (boundaries with misorientation > 45°) was higher than that of austenitic grain (AG) boundaries, in contrast to HR; this increased block-boundary density contributed to the yield strength of IQ-1050, and the red block-boundary bar density was highest at IQ-1050 (a little above the 0.8 µm^-1 gridline) among all conditions (Fig. 8(b)).",
+    "IQ-1050 had a poorer tensile strength (929 ± 30 MPa) and ductility (2.0 ± 0.3 %); more lath martensite in IQ-1050 than HR contributed to its higher yield strength (575 ± 13 MPa) but readily induced stress concentration during deformation causing premature failure.",
+    "The GND densities of austenite in HR and IQ-1050 were similar (FCC ~8.37 ×10^14 /m^2 for HR and ~5.01 ×10^14 /m^2 for IQ-1050)."
+  ]
+}

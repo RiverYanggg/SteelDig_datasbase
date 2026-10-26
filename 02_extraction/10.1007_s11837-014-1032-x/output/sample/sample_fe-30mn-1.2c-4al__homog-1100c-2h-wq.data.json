@@ -1,0 +1,218 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-1.2c-4al__homog-1100c-2h-wq",
+      "paper_id": "10.1007_s11837-014-1032-x",
+      "alloy_id": "alloy_fe-30mn-1.2c-4al",
+      "process_id": "proc_homog-1100c-2h-wq",
+      "sample_label": null,
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1",
+      "sequence": "1",
+      "type": "melting and casting",
+      "method": "vacuum-induction melting (VIM) and casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "400 mbar Ar",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Synthesized from a 4-kg ingot; five Cu molds moved stepwise inside the furnace and were successively filled with melt."
+    },
+    {
+      "processing_step_id": "step_2",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "10×50×130 mm³ blocks hot rolled into 2±0.1 mm thick, ~500 mm long sheets",
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_3",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "reheating (solution treatment) and water quenching",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_4",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": "Ar",
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "No subsequent aging (as-homogenized state; 0 h aging)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "Fully recrystallized single-phase austenitic (fcc) microstructure with average grain size ~20 µm and some retained Mn microsegregations; no cracks, pores, or macrosegregations in the final material.",
+      "number_of_phases": 1,
+      "microstructure_counts": 1,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": "bulk",
+          "related_sequence": [
+            "2",
+            "3"
+          ],
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "face-centered cubic (fcc)",
+              "volume_fraction": null,
+              "morphology": "single austenite phase prevailing at room temperature",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~20",
+              "unit": "µm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "props_1",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": "tensile specimens prepared from 2 mm thick sheet segments",
+        "test_standard": null,
+        "other_conditions": "All plotted values are averages of three measurements for every material state."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "~350–450",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "~460–600",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "~8–55",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk",
+            "value": "~200",
+            "scale": "HBW",
+            "unit": "HBW",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "tensile testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "room temperature; initial strain rate 10^-3 s^-1",
+      "purpose": "mechanical screening of yield strength, ultimate tensile strength and total elongation",
+      "key_findings": "as-homogenized 4 wt.% Al sample: YS ~350–450 MPa (Fig. 3a) and hardness ~200 HBW (Fig. 3d); tensile strength cluster ~460–600 MPa with elongation ~8–55% (Fig. 4)."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "rolling plane of samples ground to a thickness of 1 mm",
+      "purpose": "phase characterization/screening",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_metallography",
+      "microstructure_id": "micro_1",
+      "technique": "optical metallography (grinding and polishing)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "cross-sections prepared in the plane perpendicular to the rolling direction",
+      "purpose": "microstructure investigation",
+      "key_findings": "no cracks, pores, or macrosegregations in the final materials; fully recrystallized microstructure with grain size ~20 µm and some retained Mn microsegregations."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "For the Fe-30Mn-1.2C-xAl set, the 4 wt.% Al and 6 wt.% Al alloys are only very weakly affected by the applied aging treatments in terms of their mechanical data, in contrast to Fe-30Mn-1.2C (weakening/embrittlement) and Fe-30Mn-1.2C-8Al (strengthening). [b0024]",
+    "With 4 wt.% Al (below 5 wt.%), a single austenite phase prevails at room temperature and the TWIP effect prevails as the deformation mechanism, classifying this as a single-phase austenitic TWIP (SIMPLEX) steel. [b0015, b0031]",
+    "The mechanical data for the intermediate 2–6 wt.% Al alloys fall between the respective values of the Al-free Fe-30Mn-1.2C alloy and the 8 wt.% Al alloy. [b0024]"
+  ]
+}

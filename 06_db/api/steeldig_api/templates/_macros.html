@@ -1,0 +1,52 @@
+{# 复用的小组件 #}
+
+{% macro fmt_num(v, digits=1) -%}
+  {%- if v is none -%}<span class="muted">—</span>
+  {%- else -%}{{ ('{:,.%df}' % digits).format(v) }}
+  {%- endif -%}
+{%- endmacro %}
+
+{% macro value_cell(p) -%}
+  {%- if p.value_kind == 'range' -%}
+    {{ p.value_low_canonical | round(1) }}–{{ p.value_high_canonical | round(1) }}
+  {%- elif p.value_kind == 'open_high' -%}
+    ≤ {{ p.value_high_canonical | round(1) }}
+  {%- elif p.value_kind == 'open_low' -%}
+    ≥ {{ p.value_low_canonical | round(1) }}
+  {%- elif p.value_canonical is not none -%}
+    {{ p.value_canonical | round(1) | int if p.value_canonical == p.value_canonical|round(0) else p.value_canonical | round(1) }}
+  {%- else -%}
+    <span class="muted">{{ p.value_raw or '—' }}</span>
+  {%- endif -%}
+{%- endmacro %}
+
+{% macro family_badge(fk) -%}
+  {%- if fk -%}<span class="badge violet">{{ family_label(fk) }}</span>
+  {%- else -%}<span class="badge ghost">未分类</span>{%- endif -%}
+{%- endmacro %}
+
+{% macro prov(src_ids, paper_id) -%}
+  {%- if src_ids -%}
+    <span class="prop-sources">
+    {%- for block_id in src_ids -%}
+      <a class="prop-src" href="/evidence/{{ paper_id | urlencode }}/{{ block_id | urlencode }}" title="查看原文证据 {{ block_id }}">◈ {{ '1 条证据' if src_ids|length == 1 else '证据 ' ~ loop.index }}</a>
+    {%- endfor -%}
+    </span>
+  {%- else -%}
+    <span class="prop-src" title="无直接引用">◇ 无引用</span>
+  {%- endif -%}
+{%- endmacro %}
+
+{% macro pager(page, pages, base) -%}
+  {% if pages > 1 %}
+  <div class="pager">
+    {% if page > 1 %}<a href="{{ base }}&page={{ page-1 }}">上一页</a>{% else %}<span class="off">上一页</span>{% endif %}
+    {% for p in page_window(page, pages) %}
+      {% if p == '…' %}<span class="off">…</span>
+      {% elif p == page %}<span class="on">{{ p }}</span>
+      {% else %}<a href="{{ base }}&page={{ p }}">{{ p }}</a>{% endif %}
+    {% endfor %}
+    {% if page < pages %}<a href="{{ base }}&page={{ page+1 }}">下一页</a>{% else %}<span class="off">下一页</span>{% endif %}
+  </div>
+  {% endif %}
+{%- endmacro %}

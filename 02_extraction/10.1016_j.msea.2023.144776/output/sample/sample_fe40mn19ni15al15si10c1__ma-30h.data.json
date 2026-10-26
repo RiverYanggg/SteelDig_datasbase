@@ -1,0 +1,163 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__ma-30h",
+      "paper_id": "10.1016_j.msea.2023.144776",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_ma-30h",
+      "sample_label": "30 h milled",
+      "aliases": [
+        "30 h",
+        "milled 30 h"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_mechanical_milling",
+      "sequence": "1",
+      "type": "mechanical processing",
+      "method": "mechanical alloying / high-energy ball milling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": "30 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Milled in a planetary ball mill (Retsch PM 400/2) at 200 rpm; ball-to-powder ratio 10:1; WC vials and WC balls; toluene used as a process-control reagent to avoid oxidation; milling stopped intermittently for 20 min after every 1 h to avoid overheating; 2–3 g of powder sampled after every 5 h to study phase evolution."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_ma30h_powder",
+      "overall_structure": "Multiphase structure after 30 h of mechanical alloying: BCC (major phase) + γ-brass type + residual/undissolved Si; no B2-type phase has formed yet at 30 h.",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_ma30h",
+          "region": null,
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "BCC",
+              "crystal_structure": "BCC (cI2), a = 0.286 nm",
+              "volume_fraction": "73.0 (weight fraction, %)",
+              "morphology": null,
+              "grain_size": "15 nm (crystallite size)",
+              "texture": null
+            },
+            {
+              "phase_name": "γ-brass type",
+              "crystal_structure": "γ-brass type (cI52), a = 0.872 nm",
+              "volume_fraction": "23.5 (weight fraction, %)",
+              "morphology": null,
+              "grain_size": "12 nm (crystallite size)",
+              "texture": null
+            },
+            {
+              "phase_name": "Si",
+              "crystal_structure": "Si, a = 0.543 nm",
+              "volume_fraction": "3.5 (weight fraction, %)",
+              "morphology": "residual/undissolved Si",
+              "grain_size": "13 nm (crystallite size)",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "2.67 ×10^18 m^-2 (BCC phase)",
+              "lattice_distortion": null
+            },
+            {
+              "type": "lattice strain (microstrain)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": "Microstrain (×10⁻⁴): BCC 13,195; γ-brass type 15,445; Si 13,044"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_rietveld_30h",
+      "microstructure_id": "micro_ma30h",
+      "technique": "High-resolution X-Ray diffraction (XRD) with Rietveld refinement",
+      "instrument_or_setup": "EMPYREAN, PANalytical XRD with Co-Kα source (40 kV, 40 mA, scan rate 5° min⁻¹); Rietveld refinement in GSAS-II",
+      "measurement_conditions": "30 h milled powder",
+      "purpose": "Phase identification, lattice parameter, phase/weight fraction, crystallite size, microstrain and dislocation density of the milled powder",
+      "key_findings": "30 h milled powder consists of BCC (73.0 wt%, a = 0.286 nm), γ-brass type (23.5 wt%, a = 0.872 nm) and residual Si (3.5 wt%, a = 0.543 nm); refinement quality GoF = 1.14, χ² = 1.29"
+    },
+    {
+      "characterization_id": "char_sem_particlesize_30h",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM) and image analysis (particle size histograms)",
+      "instrument_or_setup": "Evo 18 Carl Zeiss SEM; particle size measured using ImageJ software",
+      "measurement_conditions": "30 h milled powder",
+      "purpose": "Determine size, shape and morphology of the milled powder particles",
+      "key_findings": "Average particle size of the 30 h milled powder is ~5 ± 1.5 µm (Fig. 2(h)); particle population becomes finer and more homogeneous with milling time"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_rietveld_dislden_30h",
+      "simulation_method": "Rietveld refinement (general structural analysis system, GSAS-II) with dislocation-density and microstrain analysis",
+      "software_used": "GSAS-II",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Dislocation density from microstrain and crystallite size",
+          "equation_role": "ρ_dd = (3√(2π)·<ε²>^(1/2))/(t·b) (Eq.2); β = 4ε·tanθ (Eq.3)",
+          "parameters": [
+            {
+              "name": "t (crystallite size, BCC, 30 h)",
+              "value": "15",
+              "unit": "nm"
+            },
+            {
+              "name": "a (lattice parameter, BCC, 30 h)",
+              "value": "0.286",
+              "unit": "nm"
+            },
+            {
+              "name": "b (Burgers vector, BCC)",
+              "value": "(√3/2)·a",
+              "unit": "nm"
+            },
+            {
+              "name": "ρ_dd (BCC, 30 h)",
+              "value": "2.67 ×10^18",
+              "unit": "m^-2"
+            }
+          ],
+          "model_note": "Burgers vector b = (√3/2)·a for BCC; the resulting BCC dislocation density for the 30 h powder is 2.67 ×10^18 m^-2 (Table 2)."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "For the 30 h milled powder, the Rietveld refinement quality metrics are GoF = 1.14 and χ² = 1.29 (Table 2).",
+    "The B2-type phase is absent in the 30 h milled powder (Table 2 lists only BCC, γ-brass type and Si columns for 30 h); the partially ordered B2-type phase appears only at 35 h of milling.",
+    "The average particle size of the 30 h milled powder is ~5 ± 1.5 µm (Fig. 2(h)).",
+    "The dislocation density in Table 2 is tabulated only for the BCC phase for all milling times; for the 30 h powder it is 2.67 ×10^18 m^-2 while γ-brass type and Si dislocation densities are not reported.",
+    "Phase-evolution sequence with milling stated in the text: elemental peaks vanish by ~5 h, Al alloys first, Ni/Mn peaks disappear after 20 h, solid solution forms after 25 h (BCC a = 0.286 nm + γ-brass type a = 0.872 nm), and the B2-type ordered phase coexists from 35 h; thus at 30 h the powder is BCC + γ-brass type + residual Si."
+  ]
+}

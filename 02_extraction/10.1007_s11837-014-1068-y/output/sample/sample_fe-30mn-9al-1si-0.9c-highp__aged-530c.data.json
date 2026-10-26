@@ -1,0 +1,282 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-1si-0.9c-highp__aged-530c",
+      "paper_id": "10.1007_s11837-014-1068-y",
+      "alloy_id": "alloy_fe-30mn-9al-1si-0.9c-highp",
+      "process_id": "proc_aged-530c",
+      "sample_label": "High-P (0.043%) aged at 530°C",
+      "aliases": "0.94% Si, 0.043% P aged 10 h at 530°C"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050°C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Parent solution-treatment step for the cast high-P steel before 530°C aging (process definition lists proc_st-1050c-2h as parent)."
+    },
+    {
+      "processing_step_id": "step_aging_530c_10h",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "aging / age hardening",
+      "temperature": "530°C",
+      "temperature_unit": "°C",
+      "duration": "10 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Age hardening at 530°C for 10 h to precipitate nano-sized κ-carbide; this is the main process condition for this sample."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_aged_530c",
+      "overall_structure": "Austenitic matrix with coherent nano-sized κ-carbide precipitates formed via spinodal decomposition and short-range ordering during 530°C aging; aged 10 h at 530°C.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_austenite_kappa",
+          "region": "bulk (austenite matrix)",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "E2₁ cubic perovskite",
+              "volume_fraction": null,
+              "morphology": "nano-sized coherent precipitates (ordered domains)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa",
+              "type": "κ-carbide ((Fe,Mn)₃AlCₓ)",
+              "size": null,
+              "distribution": "homogeneous/coherent precipitation in austenite matrix",
+              "coherency": "coherent"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_set_kappa_austenite",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_kappa_gamma",
+          "microstructure_id": "micro_austenite_kappa",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "κ-carbide",
+          "coherence": "coherent; cube-on-cube orientation relationship ⟨100⟩κ//⟨100⟩γ and {001}κ//{001}γ"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "inter_p_kappa",
+          "microstructure_id": "micro_austenite_kappa",
+          "interaction_type": "phosphorus substitution in κ-carbide creating open-volume defects on {100}",
+          "qualitative_or_quantitative_description": "Phosphorus substitution for aluminum positions in κ-carbide is predicted to reduce the {100} cleavage stress by 45%."
+        }
+      ],
+      "slip_behavior": "planar slip and shear localization due to shearing of κ-carbide precipitates; {111} glide-plane decohesion at high strain rates.",
+      "phase_evolution": "short-range ordering (occurs during quench in high-P steel) → spinodal decomposition → coherent κ-carbide precipitation and coarsening.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_mech_highp_aged10h",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "high strain rate (instrumented Charpy impact)",
+        "specimen_geometry": "fatigue precracked Charpy specimen",
+        "test_standard": "Schindler single-specimen method; ASTM E 1820; ASTM E 813",
+        "other_conditions": "DFT = J_Id (critical J integral near onset of stable crack growth)"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk",
+            "value": "340 ± 10 BHN",
+            "scale": "BHN",
+            "unit": "BHN",
+            "uncertainty": "± 10"
+          }
+        ],
+        "fracture_toughness": {
+          "value": "100 kJ/m²",
+          "unit": "kJ/m²"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_dft_vs_4130",
+      "service_conditions": {
+        "operating_temperature": null,
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "SAE 4130 (cast Cr-Mo steel)",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "dynamic fracture toughness (DFT)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_apt_carbon",
+      "microstructure_id": "micro_austenite_kappa",
+      "technique": "Atom probe tomography (APT)",
+      "instrument_or_setup": "local-electrode atom-probe tomograph (NUCAPT)",
+      "measurement_conditions": "carbon concentration maps (2–6 at.% C scale); 0.043% P steel aged 10 h at 530°C",
+      "purpose": "Characterize spinodal decomposition / carbon partitioning during aging",
+      "key_findings": "0.043% P steel aged 10 h at 530°C shows modulated spinodal microstructure with carbon amplitude of 6.0 at.% and carbon-rich domains a few nm to ~15 nm long."
+    },
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": "micro_austenite_kappa",
+      "technique": "Transmission electron microscopy (TEM), dark-field imaging",
+      "instrument_or_setup": null,
+      "measurement_conditions": "dark-field ⟨100⟩κ κ-carbide superlattice reflections",
+      "purpose": "Observe κ-carbide ordered domains / precipitation in high-P steel",
+      "key_findings": "High-P (0.043% P) steel exhibits SRO during quench and larger κ-carbide ordered domains than low-P steel."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_austenite_kappa",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Confirm phase constitution / ordering in high-P aged steel",
+      "key_findings": "Used with TEM and APT to study κ-carbide precipitation in the 0.043% P steel."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_p_in_kappa",
+      "simulation_method": "First-principles (ab initio / DFT) calculations",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Predicted P substitution in κ-carbide reduces {100} cleavage stress by 45%, consistent with the observed notch-toughness reduction of aged high-P steels.",
+      "analytical_models": [
+        {
+          "model_name": "Phosphorus substitution for aluminum in κ-carbide",
+          "equation_role": "predicts cleavage stress reduction on {100}",
+          "parameters": [
+            {
+              "name": "cleavage stress reduction",
+              "value": "45%",
+              "unit": null
+            }
+          ],
+          "model_note": null
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_sro_kinetics",
+      "simulation_method": "Random walk estimate of short-range ordering (SRO) kinetics",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "SRO kinetics of P and Al into κ-carbide corner positions during quenching",
+          "equation_role": "estimate SRO kinetics",
+          "parameters": [
+            {
+              "name": "relative SRO rate (P vs Al)",
+              "value": "P SRO may be an order of magnitude faster than Al",
+              "unit": null
+            }
+          ],
+          "model_note": "Thermodynamic preference of P for Al corner positions not included in the calculation."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Chemical composition (Table I, wt.%): Si 0.92, C 0.94, Mn 29.10, P 0.043, S 0.006, Mo 0.33, Al 8.28, Cu 0.09; Table IV refers to this heat as '0.94% Si, 0.043% P'.",
+    "After 10 h at 530°C, the APT carbon amplitude for the 0.043% P steel is 6.0 at.% (compared with 4.4 at.% for the 0.006% P steel).",
+    "The high-phosphorus (0.043% P) specimens exhibited short-range ordering (SRO) that took place during the quench and prior to spinodal decomposition.",
+    "Room-temperature Charpy V-notch impact energy for the 0.043% P steel aged 10 h at 530°C reads just above ~20 J/cm² from Figure 9 (no exact numeric labels printed).",
+    "Fracture of the aged 0.043% P, 0.94% Si specimen produced a dendritic pattern with cleavage along {100}.",
+    "The DFT of this sample (100 kJ/m²) is much lower than the 1.07% Si low-P specimens aged for similar times at 530°C (376 kJ/m²).",
+    "In the 530°C age-hardening curve (Fig. 2b, '1% Si' steel), the 0.043% P steel attains peak hardness near 380 BHN around 30 h."
+  ]
+}

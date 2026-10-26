@@ -1,0 +1,219 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-0.875mn-0.125al__dft-castep-gga-pbe",
+      "paper_id": "10.1007_s12598-018-1074-2",
+      "alloy_id": "alloy_fe-0.875mn-0.125al",
+      "process_id": "proc_dft-castep-gga-pbe",
+      "sample_label": "Fe0.875Mn0.125Al",
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_dft_castep_gga_pbe",
+      "sequence": "1",
+      "type": "computational / DFT first-principles calculation",
+      "method": "First-principles DFT geometry optimization and property calculation (CASTEP, GGA-PBE)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Computational study with no experimental thermal/mechanical processing. Ultrasonic pseudopotentials; GGA-PBE exchange-correlation; 8×8×8 Monkhorst–Pack k-point mesh; 450 eV plane-wave cutoff; total energy converged to 2×10^-6 eV; forces below 0.5 eV·nm⁻¹."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "Cubic supercell structure with space group Pm-3m; Mn atoms substitute for Fe atoms on the Fe sublattice of B2-type FeAl; 16-atom cell with one Mn atom replacing one Fe atom; optimized lattice parameter a = b = c = 0.572 nm.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": null,
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "Fe0.875Mn0.125Al (B2-type cubic, space group Pm-3m)",
+              "crystal_structure": "cubic (Pm-3m)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "props_dft_1",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "First-principles DFT calculation (CASTEP, GGA-PBE); 8×8×8 Monkhorst–Pack k-point mesh; 450 eV plane-wave cutoff."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": "264.7 GPa",
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "elastic_constants": [
+          {
+            "symbol": "C11",
+            "value": "265.2 GPa"
+          },
+          {
+            "symbol": "C12",
+            "value": "143.0 GPa"
+          },
+          {
+            "symbol": "C44",
+            "value": "150.4 GPa"
+          }
+        ],
+        "bulk_modulus": "184.1 GPa",
+        "shear_modulus": "105.0 GPa",
+        "poissons_ratio": "0.260",
+        "pugh_ratio_B_G": "1.75",
+        "hardness": [
+          {
+            "region": null,
+            "value": "12.8",
+            "scale": "Vickers",
+            "unit": "GPa",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        },
+        "anisotropy_indices": {
+          "universal_anisotropic_index_AU": "1.03",
+          "anisotropy_AB": "0",
+          "anisotropy_AG": "0.093",
+          "shear_anisotropic_factors_A1_A2_A3": "2.46"
+        }
+      },
+      "thermodynamic": {
+        "formation_enthalpy": "-0.376 eV·atom⁻¹",
+        "cohesive_energy": "-6.920 eV·atom⁻¹"
+      },
+      "physical": {
+        "density": {
+          "value": "5870.8",
+          "unit": "kg·m⁻³"
+        },
+        "thermal_properties": {
+          "debye_temperature": "614.0 K",
+          "longitudinal_sound_velocity_vl": "7430.0 m·s⁻¹",
+          "transverse_sound_velocity_vs": "4229.0 m·s⁻¹",
+          "average_sound_velocity_vm": "4700.8 m·s⁻¹"
+        },
+        "electrical_properties": {
+          "electronic_conductivity": "Metallic character (nonzero DOS at the Fermi level); good electronic conductivity"
+        },
+        "magnetic_properties": {
+          "magnetic_character": "Magnetic characteristics due to dissymmetric up and down spin states"
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      },
+      "bonding_characteristics": "Combination of mainly covalent and metallic bonds (hybridization of low Al-p, Fe-d and Mn-d states); weaker covalent bond effect."
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [
+    {
+      "computation_id": "comp_dft_castep_gga_pbe",
+      "simulation_method": "Density functional theory (DFT) first-principles calculation",
+      "software_used": "CASTEP (Cambridge Sequential Total Energy Package)",
+      "potential_model_or_database": "GGA-PBE exchange-correlation; ultrasoft pseudopotentials; valence states: Fe 3d^6 4s^2, Mn 3d^5 4s^2, Al 3s^2 3p^1",
+      "boundary_and_initial_conditions": "Monkhorst–Pack 8×8×8 k-point mesh; 450 eV plane-wave cutoff; total energy converged to 2×10^-6 eV; forces reduced to 0.5 eV·nm⁻¹",
+      "validation_against_experiment": "Calculated lattice parameters show good agreement with other experimental and calculated values.",
+      "analytical_models": [
+        {
+          "model_name": "Formation enthalpy and cohesive energy",
+          "equation_role": "Thermodynamic stability evaluation (Eqs. 1–2)",
+          "parameters": [],
+          "model_note": "E_coh and ΔH_f computed from total energies of the compound and isolated/bulk atomic references."
+        },
+        {
+          "model_name": "Voigt–Reuss–Hill (VRH) approximation",
+          "equation_role": "Bulk modulus, shear modulus, Young's modulus and Poisson's ratio from elastic constants (Eqs. 4–9)",
+          "parameters": [],
+          "model_note": "B_VRH = B_V = B_R = (C11+2C12)/3; G_V, G_R and G_VRH = (G_V+G_R)/2; E and σ from B and G."
+        },
+        {
+          "model_name": "Empirical Vickers hardness model",
+          "equation_role": "H_V = 2(k²G)^0.585 − 3 (Eq. 10)",
+          "parameters": [
+            {
+              "name": "k",
+              "value": "G/B (Pugh's modulus ratio)",
+              "unit": null
+            }
+          ],
+          "model_note": "Empirical model for anisotropic structures."
+        },
+        {
+          "model_name": "Anisotropy indices",
+          "equation_role": "A^U, A_B, A_G and A_1 = A_2 = A_3 (Eqs. 11–14)",
+          "parameters": [],
+          "model_note": "Universal anisotropic index, bulk/shear anisotropy and shear anisotropic factors listed in Table 3."
+        },
+        {
+          "model_name": "Debye temperature and sound velocity model",
+          "equation_role": "Θ_D, v_m, v_l, v_s (Eqs. 15–18)",
+          "parameters": [],
+          "model_note": "Debye temperature from average sound velocity; velocities from B, G and density."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Fe0.875Mn0.125Al is thermodynamically stable (negative formation enthalpy −0.376 eV·atom⁻¹ and negative cohesive energy −6.920 eV·atom⁻¹).",
+    "Fe0.875Mn0.125Al satisfies the cubic mechanical stability criteria (C11−C12 > 0, C11 > 0, C44 > 0, C11+2C12 > 0), hence is mechanically stable.",
+    "Fe0.875Mn0.125Al is classified as brittle because its B/G ratio (1.75) is not greater than the 1.75 ductility threshold.",
+    "In the descending anisotropy order, Fe0.875Mn0.125Al ranks just above FeAl (A^U = 1.03), i.e., second lowest elastic anisotropy among the studied Fe–Mn–Al alloys."
+  ]
+}

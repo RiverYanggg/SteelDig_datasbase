@@ -1,0 +1,116 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_017",
+  "family": "generalist",
+  "image_type": "chart_plot",
+  "description": "A two-panel figure of horizontal bar charts that both rank the same four strengthening-mechanism features of medium-manganese low-density steel. (a), titled \"Feature Importance Ranking\", has x-axis \"Feature Importance\" spanning 0.0-0.5 with ticks every 0.1; y-categories, top to bottom, are Dislocation strengthening, Orowan strengthening, Fine grain strengthening, Solid solution strengthening. The Dislocation strengthening bar is by far the longest, ending just short of the 0.5 axis end; Orowan strengthening ends between 0.2 and 0.3; Fine grain strengthening ends just below 0.2; Solid solution strengthening is a short bar ending near 0.05. (b), titled \"SHAP Feature Importance\", plots \"Mean |SHAP value|\" on an x-axis from 0 to 600 with ticks every 100, for the identical four categories in the identical order: dislocation strengthening again dominates (bar ending close to 600), Orowan strengthening ends between 100 and 200, fine grain strengthening near 100, and solid solution strengthening is a very short bar. Both panels therefore agree on one ranking and jointly argue that dislocation strengthening is the dominant contributor to yield strength, Orowan strengthening second, with fine-grain and solid-solution strengthening clearly minor. Neither panel prints numeric data labels or sample labels.",
+  "confidence": "high",
+  "subfigures": [
+    {
+      "panel": "(a)",
+      "description": "Horizontal bar chart titled 'Feature Importance Ranking'; x-axis 'Feature Importance' 0.0-0.5 (ticks every 0.1). Four bars in order Dislocation strengthening, Orowan strengthening, Fine grain strengthening, Solid solution strengthening; the first bar nearly reaches 0.5, the last is the shortest (near 0.05).",
+      "confidence": "high"
+    },
+    {
+      "panel": "(b)",
+      "description": "Horizontal bar chart titled 'SHAP Feature Importance'; x-axis 'Mean |SHAP value|' 0-600 (ticks every 100). Same four feature labels in the same top-to-bottom order; the Dislocation strengthening bar extends nearly to 600, with the other three bars progressively much shorter.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "Panel (a) is a horizontal bar chart titled 'Feature Importance Ranking' with x-axis label 'Feature Importance' scaled 0.0 to 0.5 and ticks every 0.1; no unit is given.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panel (a) ranks four features from top to bottom as Dislocation strengthening, Orowan strengthening, Fine grain strengthening, Solid solution strengthening.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "In panel (a) the Dislocation strengthening bar is the longest, terminating just short of the 0.5 end of the axis, while the Solid solution strengthening bar is the shortest, ending near 0.05.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "In panel (a) Orowan strengthening ends between the 0.2 and 0.3 ticks, and Fine grain strengthening ends just below the 0.2 tick.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panel (b) is a horizontal bar chart titled 'SHAP Feature Importance' with x-axis label 'Mean |SHAP value|' scaled 0 to 600 in increments of 100.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "In panel (b) the Dislocation strengthening bar is the longest, ending close to the 600 axis end; Orowan strengthening ends between 100 and 200; Fine grain strengthening ends at about the 100 tick; Solid solution strengthening is a very short bar.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panels (a) and (b) use the identical four feature labels in the identical top-to-bottom order, so both methods give the same ranking of strengthening mechanisms.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Neither panel prints numeric data labels on the bars, nor any sample name, composition or legend.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption labels (a) as feature importance analysis and (b) as a 'SHAP summary chart', although panel (b) in the pixels is a bar chart of mean |SHAP value| rather than a beeswarm-style SHAP summary plot.",
+      "source": "caption",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "The citing text states the interpretability analysis was focused on the composition Fe-9.7Mn-2.04Al-0.99Si-0.52V-0.42 C.",
+      "source": "citation",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "The citing text states that Fig. 17 shows dislocation strengthening as the dominant mechanism contributing to yield strength, explainable by the Taylor hardening model.",
+      "source": "citation",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "The citing text states the second key strengthening mechanism is Orowan strengthening by second-phase particles such as NbC and VC, which dislocations bypass.",
+      "source": "citation",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "The citing text states the data-driven model predicts yield strength of medium-manganese low-density steel and uses SHAP for interpretability analysis.",
+      "source": "citation",
+      "evidence": [],
+      "confidence": "medium"
+    }
+  ],
+  "measured_quantities": [
+    "feature importance (dimensionless, 0.0-0.5 scale)",
+    "mean |SHAP value| (dimensionless, 0-600 scale)"
+  ],
+  "sample_hints": [
+    "Fe-9.7Mn-2.04Al-0.99Si-0.52V-0.42 C",
+    "Dislocation strengthening",
+    "Orowan strengthening",
+    "Fine grain strengthening",
+    "Solid solution strengthening"
+  ],
+  "unreadable_items": [],
+  "image_paths": [
+    "images/16ce355cfb178c1a089cc1b112d10b94371b789439271e0b5a215eea08277a7a.jpg",
+    "images/995df09283a306b689af2f29196f266035e36db60e7af42992232833b850303f.jpg"
+  ]
+}

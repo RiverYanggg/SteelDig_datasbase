@@ -1,0 +1,320 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30.5mn-8al-1c__st-1050c-1h-wq",
+      "paper_id": "10.1016_j.ijfatigue.2025.109477",
+      "alloy_id": "alloy_fe-30.5mn-8al-1c",
+      "process_id": "proc_st-1050c-1h-wq",
+      "sample_label": "ST",
+      "aliases": [
+        "ST sample",
+        "solution-treated sample"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1",
+      "sequence": "1",
+      "type": "melting",
+      "method": "vacuum melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "A 50 kg ingot was prepared by vacuum melting."
+    },
+    {
+      "processing_step_id": "step_2",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "forging",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "forged into a billet with a cross-section of 30 mm × 30 mm"
+    },
+    {
+      "processing_step_id": "step_3",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "hot-rolled to a final thickness of 4 mm"
+    },
+    {
+      "processing_step_id": "step_4",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution treatment at 1050 °C for 1 h, followed by water quenching to room temperature; this condition is referred to as ST (fully austenitic reference condition without aging-induced κ-carbides)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_st",
+      "overall_structure": "Fully austenitic microstructure; fully equiaxed, single-phase austenitic grain structure with no second phase visible.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "microstructure_st_1",
+          "region": "whole sample (bulk)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_st",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_st_gb",
+          "microstructure_id": "microstructure_st_1",
+          "interaction_type": "dislocation–grain boundary strain localization",
+          "qualitative_or_quantitative_description": "The ST sample exhibits the highest KAM intensity and the steepest gradients at grain boundaries, indicative of severe strain localization and impeded slip transmission with dislocation pile-ups during cyclic loading."
+        }
+      ],
+      "slip_behavior": "Planar dislocation slip occurs via the 'glide plane softening' effect from short-range ordering (SRO); SRO-driven softening is weak and spatially heterogeneous, promoting cross-slip and local strain concentration, giving low slip reversibility in ST. Under fatigue, ST shows local wavy slip (cross slip) at Δσ/2 = 180 MPa and kink bands at Δσ/2 = 315 MPa.",
+      "phase_evolution": null,
+      "interface_notes": "Grain boundaries in ST show the highest KAM intensity and steepest gradients, indicating severe strain localization and impeded slip transmission with dislocation pile-ups."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "properties_st_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": "laboratory air (room-temperature tensile test)",
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": "flat dog-bone specimen; 55 mm overall length; central reduced gauge section 15 mm length × 5 mm width × 2.5 mm thickness; R13 mm shoulder fillet radius; tensile axis parallel to rolling direction",
+        "test_standard": null,
+        "other_conditions": "sample surfaces mechanically polished then electro-polished in 8 vol.% perchloric acid in ethanol for 30 s at 25 V; universal testing machine Shimadzu AG-Xplus 250 kN"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "tensile axis parallel to rolling direction",
+              "value": "337 ± 32 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 32 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "tensile axis parallel to rolling direction",
+              "value": "784 ± 15 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 15 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "tensile axis parallel to rolling direction",
+              "value": "57.7 ± 1.3 %",
+              "unit": "%",
+              "uncertainty": "± 1.3 %",
+              "elongation_type": "uniform elongation (UE)"
+            },
+            {
+              "direction": "tensile axis parallel to rolling direction",
+              "value": "72.0 ± 0.8 %",
+              "unit": "%",
+              "uncertainty": "± 0.8 %",
+              "elongation_type": "total elongation (TE)"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "ST engineering stress–strain curve (green) in Fig. 4: lowest yield (~300–400 MPa), gradual work hardening to a broad rounded peak between 700–800 MPa near 55–60% strain, longest elongation extending to about 72% strain.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "properties_st_fatigue",
+      "measurement_conditions": {
+        "temperature": "ambient air (room temperature)",
+        "temperature_unit": null,
+        "environment": "ambient air",
+        "strain_rate": null,
+        "specimen_geometry": "flat dog-bone specimen; same dimensions as tensile samples (55 mm overall length; 15 mm × 5 mm × 2.5 mm gauge; R13 mm shoulder fillet); loading axis parallel to rolling direction",
+        "test_standard": null,
+        "other_conditions": "stress-controlled tension–tension fatigue; sinusoidal waveform; frequency 20 Hz; stress ratio R = 0.1; servo-hydraulic machine Shimadzu EHF-EV050K2A-020-1"
+      },
+      "mechanical": {
+        "tensile_properties": null,
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": {
+          "fatigue_limit": "157.5 MPa",
+          "cycles_to_failure": null,
+          "fatigue_strength_coefficient": "1510",
+          "fatigue_strength_exponent": "-0.15",
+          "rmse_log10_Nf": "0.0429"
+        },
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "performance_st",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "room temperature",
+          "max": "room temperature",
+          "unit": null
+        },
+        "stress_state": "tension–tension cyclic loading (stress-controlled)",
+        "environment": "ambient air"
+      },
+      "lifetime_prediction": {
+        "model_used": "Basquin equation (Δσ/2 = σ'_f (2Nf)^b)",
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-30.5mn-8al-1c",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": "aged samples (550-6, 600-6, 650-6)",
+        "comparison_metric": "fatigue strength (maximum stress amplitude sustained for 10^7 cycles without failure) and fatigue life",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_st_ebsd_undeformed",
+      "microstructure_id": "microstructure_st_1",
+      "technique": "EBSD (IPF mapping)",
+      "instrument_or_setup": "TESCAN MIRA3 SEM equipped with Oxford EBSD detector",
+      "measurement_conditions": "surface prepared by mechanical polishing followed by electropolishing",
+      "purpose": "characterize the undeformed ST microstructure",
+      "key_findings": "fully equiaxed, single-phase austenitic grain structure with no second phase visible"
+    },
+    {
+      "characterization_id": "char_st_sem_fracture",
+      "microstructure_id": null,
+      "technique": "SEM (fractography)",
+      "instrument_or_setup": "JEOL JSM-7800F SEM",
+      "measurement_conditions": "post-fractured samples; stress amplitudes Δσ/2 = 180 MPa and 315 MPa",
+      "purpose": "examine fracture surfaces and lateral surfaces of post-fractured ST samples",
+      "key_findings": "three-zone fracture morphology (crack initiation, propagation, rapid fracture) with surface crack initiation and radial inward propagation; area fraction of crack initiation+propagation zones fΔ = 0.53 at 180 MPa and 0.25 at 315 MPa; rapid fracture zone predominantly dimples (microvoid coalescence, ductile); widely spaced fatigue striations in crack propagation zone."
+    },
+    {
+      "characterization_id": "char_st_ebsd_crackpath",
+      "microstructure_id": "microstructure_st_1",
+      "technique": "EBSD (BC+IPF superimposed maps, KAM maps, Schmid factor maps)",
+      "instrument_or_setup": "EBSD step size 0.8 μm; AZtecCrystal post-processing software",
+      "measurement_conditions": "adjacent to main cracks at stress amplitude 225 MPa",
+      "purpose": "elucidate crack-path characteristics and local plastic strain fields",
+      "key_findings": "ST crack path within large austenite grains is relatively straight; cracks propagate transgranularly along slip bands ({111} planes); ST shows the highest KAM intensity and steepest gradients at grain boundaries (severe strain localization)."
+    },
+    {
+      "characterization_id": "char_st_tem_def",
+      "microstructure_id": "microstructure_st_1",
+      "technique": "TEM (bright-field)",
+      "instrument_or_setup": "JEOL JEM-2100F microscope operating at 200 kV",
+      "measurement_conditions": "TEM foils extracted from gauge sections of deformed specimens; fatigued at Δσ/2 = 180 MPa and 315 MPa",
+      "purpose": "characterize deformation microstructures in post-fractured ST sample",
+      "key_findings": "ST shows persistent Lüder's bands (PLBs) - dense dislocation arrays aligned along primary slip planes at Δσ/2 = 180 MPa; more intensely localized bands at Δσ/2 = 315 MPa."
+    },
+    {
+      "characterization_id": "char_st_sem_surface",
+      "microstructure_id": "microstructure_st_1",
+      "technique": "SEM (surface deformation observation)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "fatigued at Δσ/2 = 180 MPa and 315 MPa",
+      "purpose": "observe surface deformation features of fatigued ST sample",
+      "key_findings": "ST shows local wavy slip (cross slip) at Δσ/2 = 180 MPa and kink bands at Δσ/2 = 315 MPa, indicating irreversible, highly localized deformation."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_st_basquin",
+      "simulation_method": "Fatigue finite-life analysis using the Basquin equation",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "stress-controlled tension–tension fatigue; R = 0.1; frequency 20 Hz; ambient air",
+      "validation_against_experiment": "fitted to measured S–N data; RMSE of log10 Nf = 0.0429 for ST",
+      "analytical_models": [
+        {
+          "model_name": "Basquin equation",
+          "equation_role": "relates stress amplitude (Δσ/2) to reversals to failure (2Nf) in the finite-life regime",
+          "parameters": [
+            {
+              "name": "σ'_f (fatigue strength coefficient)",
+              "value": "1510",
+              "unit": null
+            },
+            {
+              "name": "b (fatigue strength exponent)",
+              "value": "-0.15",
+              "unit": null
+            }
+          ],
+          "model_note": "Δσ/2 = σ'_f (2Nf)^b"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "ST sample tested at Δσ/2 = 180 MPa shows crack-initiation-plus-propagation zone area fraction fΔ = 0.53; at Δσ/2 = 315 MPa, fΔ = 0.25, the smallest among ST/aged samples, consistent with its shorter fatigue life (b0041, figure_006).",
+    "ST rapid fracture zones are predominantly characterized by dimples, indicating a microvoid coalescence mechanism and ductile failure at both Δσ/2 = 180 MPa and 315 MPa (b0043, figure_008).",
+    "In the ST sample, fatigue striations in the crack propagation zone are relatively sparse/widely spaced at 180 MPa and wavy, widely spaced at 315 MPa, indicating a higher crack propagation rate than in 550-6 and 600-6 (b0042, figure_007).",
+    "In the ST sample, the fatigue crack path within large austenite grains is relatively straight, whereas aged samples show greater path tortuosity and microbranching (b0045, figure_009).",
+    "ST lacks intragranular κ-carbides and therefore exhibits the lowest fatigue strength (157.5 MPa at 10^7 cycles) among ST, 550-6 (162 MPa), 600-6 (175.5 MPa) and 650-6 (171 MPa) (b0035, b0066)."
+  ]
+}

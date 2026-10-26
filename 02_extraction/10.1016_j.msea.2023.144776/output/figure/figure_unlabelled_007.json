@@ -1,0 +1,124 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_unlabelled_007",
+  "family": "generalist",
+  "image_type": "chart_table",
+  "description": "A single-panel table rendered as an image, reporting CALPHAD (Thermo-Calc) single-point equilibrium calculations for a low-density high entropy steel at five temperatures. The columns are headed \"Condition\", \"Predicted Phases\" and \"Mol\". At 1200°C (1473 K) the only predicted phase is Liquid (contains Fe, Mn, Ni, Al, Si, C) with Mol = 1.0. At 1100°C (1373 K) the table lists Liquid 0.40, BCC_A2#1 (contains Fe, Mn, Ni, Al, Si, C) 0.48 and B2 (contains Ni, Al) 0.12. At 800°C (1073 K): BCC_A2#1 0.75, B2 0.23 and BCC_A2#2 (contains Mn, C) 0.02. At 500°C (773 K): BCC_A2#1 0.69, B2 0.28, BCC_A2#2 0.02 and M3Si (contains Fe, Mn, Si) 0.01. At 300°C (573 K): BCC_A2#1 0.26, B2 0.29, BCC_A2#2 0.02, M3Si 0.11 and BCC_A2#3 (contains Fe, Mn, Si) 0.32. The Mol values sum to 1.0 at every temperature. The table therefore shows liquid present only down to 1100°C (solidification between 1200 and 1100°C), a BCC_A2#1 + B2 solid state below that, B2 ordering rising steadily on cooling, and two additional phases (M3Si silicide below 500°C and BCC_A2#3 at 300°C) forming at low temperature.",
+  "confidence": "high",
+  "subfigures": [
+    {
+      "panel": "table",
+      "description": "A three-column table ('Condition', 'Predicted Phases', 'Mol') listing equilibrium phase assemblages and their mole fractions at 1200°C (1473 K), 1100°C (1373 K), 800°C (1073 K), 500°C (773 K) and 300°C (573 K). Every row and every 'Mol' value is legible; no header or cell is cropped.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "The table has exactly three columns headed 'Condition', 'Predicted Phases' and 'Mol'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "At 1200°C (1473 K) the single predicted phase is 'Liquid (contains Fe, Mn, Ni, Al, Si, C)' with Mol = 1.0.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "At 1100°C (1373 K) three phases coexist: Liquid (0.40), BCC_A2#1 (contains Fe, Mn, Ni, Al, Si, C) (0.48) and B2 (contains Ni, Al) (0.12).",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The liquid phase present at 1200°C and 1100°C is absent from the 800°C, 500°C and 300°C rows, so solidification is bracketed between 1100°C and 800°C.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "BCC_A2#1 is the majority phase from 800°C (0.75) through 500°C (0.69) but drops to 0.26 at 300°C.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The B2 mole fraction increases monotonically on cooling from 0.12 (1100°C) to 0.23 (800°C), 0.28 (500°C) and 0.29 (300°C).",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "M3Si (contains Fe, Mn, Si) first appears at 500°C with Mol = 0.01 and rises to 0.11 at 300°C.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "BCC_A2#3 (contains Fe, Mn, Si) appears only at 300°C, with Mol = 0.32, the second largest fraction at that temperature.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "BCC_A2#2 is reported at 0.02 at every temperature from 800°C downwards, and is annotated '(contains Mn, C)' only in the 800°C row.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The Mol values sum to 1.0 in each of the five condition rows (1.0; 0.40+0.48+0.12; 0.75+0.23+0.02; 0.69+0.28+0.02+0.01; 0.26+0.29+0.02+0.11+0.32).",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption states these data are single-point equilibrium results of the high entropy steel at different temperatures obtained by CALPHAD modelling using Thermo-Calc software.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "caption"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption/title identifies the material as the low-density high entropy steel Fe40Mn19Ni15Al15Si10C1.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "caption"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The table gives no composition column, no reference to a database or thermodynamic description, and no Gibbs energy or enthalpy values — only temperature, phase name, contained elements and mole fraction.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    }
+  ],
+  "measured_quantities": [
+    "equilibrium phase mole fraction (Mol, dimensionless)",
+    "temperature (°C and K)"
+  ],
+  "sample_hints": [
+    "Fe40Mn19Ni15Al15Si10C1",
+    "low-density high entropy steel",
+    "high entropy steel",
+    "Liquid",
+    "BCC_A2#1",
+    "BCC_A2#2",
+    "BCC_A2#3",
+    "B2",
+    "M3Si"
+  ],
+  "unreadable_items": [],
+  "image_paths": [
+    "images/4522521c7a5049ba0cfe87f8c8e331e0bb6c376179dafea8294eb8a2c0306449.jpg"
+  ]
+}

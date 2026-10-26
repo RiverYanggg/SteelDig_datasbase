@@ -1,0 +1,255 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-11al-1.2c__cr-10",
+      "paper_id": "10.1016_j.matchar.2021.111013",
+      "alloy_id": "alloy_fe-30mn-11al-1.2c",
+      "process_id": "proc_cr-10",
+      "sample_label": "10% rolling reduction",
+      "aliases": [
+        "10% cold rolled",
+        "Fig. 3(a)",
+        "Fig. 4(a)"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution treatment was applied to the sheets prior to cold rolling; it is the parent process (proc_solution-1100c-1h) of the 10% cold-rolling step."
+    },
+    {
+      "processing_step_id": "step_cold_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "10% (ε = 0.1)",
+      "processing_steps_notes": "Cold rolled to 10% thickness reduction (ε = 0.1) after solution treatment at 1100 °C for 1 h; grouped in the low-to-medium reduction (10%–50%) stage I producing a Taylor-lattice-type low energy dislocation structure."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_cr10",
+      "overall_structure": "Taylor-lattice-type low energy dislocation structure (LEDS) produced by planar dislocation glide; consists of multiple slip bands. Characteristic of stage I (10%–50% rolling reduction), with gradual refinement of the slip-band spacing.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_cr10_matrix",
+          "region": "bulk (longitudinal section, RD×ND)",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": "Almost random initial texture (weak)"
+            },
+            {
+              "phase_name": "κ'-carbides",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "nano-sized particles",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "planar dislocation slip bands (Taylor lattice)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "dislocation pile-ups at slip-band intersections",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": "Almost random distribution prior to cold rolling; overall rolling texture is weak"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_cr10",
+              "type": "κ'-carbides",
+              "size": {
+                "value": "nano-sized",
+                "unit": null
+              },
+              "distribution": "uniformly distributed in the austenitic matrix",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_cr10_slipbands",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_cr10_pileup_intersection",
+          "microstructure_id": "micro_cr10_matrix",
+          "interaction_type": "dislocation pile-up at the intersection of non-coplanar slip bands",
+          "qualitative_or_quantitative_description": "The interaction of the non-coplanar slip bands was not strong enough to completely impede dislocation glide, so dislocations could cross the intersection, making the slip bands run across the whole grain; dislocation cross slip might occur at the intersection."
+        }
+      ],
+      "slip_behavior": "Planar dislocation glide dominates; Taylor-lattice structure formed by multiple slip bands. Dislocation cross slip might occur at the intersections of slip bands.",
+      "phase_evolution": "No phase transformation reported for 10% reduction; austenitic matrix with κ'-carbides retained from the as-quenched state.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_cr10_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": "dog-bone-shaped tensile specimen, gauge length 16 mm, width 4 mm, cut along the rolling direction",
+        "test_standard": null,
+        "other_conditions": "Uniaxial tensile test using SHIMADZU AG-X 50KN universal testing machine; three parallel tensile tests per condition"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_cr10_om",
+      "microstructure_id": "micro_cr10_matrix",
+      "technique": "optical microscopy (OM)",
+      "instrument_or_setup": "electrolytically polished then etched with 1 g ferric chloride + 10 ml hydrochloric acid + 10 ml deionized water; longitudinal section RD×ND",
+      "measurement_conditions": null,
+      "purpose": "observe and characterize the cold-rolled microstructure morphology of the 10% reduction sample (Fig. 3(a))",
+      "key_findings": "10% reduction: equiaxed grains crossed by sets of fine, straight, parallel slip bands whose spacing differs from grain to grain, indicating inhomogeneous deformation more pronounced in favorably oriented grains."
+    },
+    {
+      "characterization_id": "char_cr10_tem",
+      "microstructure_id": "micro_cr10_matrix",
+      "technique": "transmission electron microscopy (TEM)",
+      "instrument_or_setup": "JEOL 2100 transmission electron microscope; specimens prepared by twin jet electro-polishing with 30% nitric acid + 70% methyl alcohol",
+      "measurement_conditions": null,
+      "purpose": "detailed investigation of the Taylor-lattice / slip-band substructure of the 10% rolled sample (Fig. 4(a))",
+      "key_findings": "The Taylor lattice consists of multiple slip bands; dislocations in the slip bands are approximately parallel and dislocation pile-ups occur at the intersections of the slip bands (green arrows, Fig. 4(a))."
+    },
+    {
+      "characterization_id": "char_cr10_xrd_texture",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD) texture analysis",
+      "instrument_or_setup": "Rigaku D/MAX 2500PC x-ray diffractometer; incomplete pole figures {111}, {200}, {220} measured on the RD×TD plane; ODF and f_max calculated by the Arbitrarily Defined Cells method",
+      "measurement_conditions": null,
+      "purpose": "characterize the texture evolution with cold rolling reduction (10% column of Fig. 8)",
+      "key_findings": "The overall texture intensity of the steel is weak; the initial texture is almost random. The α-fiber increases monotonically with rolling reduction while the Cu {112}<111> and S components increase at low-to-medium reductions before decreasing."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_cr10_tau_c",
+      "simulation_method": "analytical calculation of the critical shear stress for deformation twinning",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Calculated critical stress ~1.48 GPa is much higher than the maximum resolved shear stress ~0.75 GPa, yet twinning is observed; attributed to SRO-dislocation interaction and local stress concentration.",
+      "analytical_models": [
+        {
+          "model_name": "critical shear stress for deformation twinning",
+          "equation_role": "τ_c = 2γ_SF / b_p",
+          "parameters": [
+            {
+              "name": "γ_SF (stacking fault energy)",
+              "value": "~108",
+              "unit": "mJ/m²"
+            },
+            {
+              "name": "b_p (Burgers vector of a partial dislocation)",
+              "value": "0.146",
+              "unit": "nm"
+            },
+            {
+              "name": "τ_c (critical shear stress)",
+              "value": "~1.48",
+              "unit": "GPa"
+            }
+          ],
+          "model_note": "SFE (~108 mJ/m²) and b_p (0.146 nm) are alloy-level values; the calculation concerns the twinning mechanism relevant to cold rolling of this steel."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The 10% cold-rolled sample lies in stage I (10%–50% rolling reduction) of the two-stage microstructure evolution and is characterized as a Taylor-lattice-type low energy dislocation structure (LEDS) arising from planar dislocation glide (b0023).",
+    "For the 10% rolled condition the tensile properties are only shown as the 10% curve in Fig. 1; no numeric yield strength, ultimate tensile strength or elongation values are reported in the text for this specific sample (b0020, figure_001).",
+    "The strengthening mechanism of the steel at low rolling reduction (10–30%) is the refinement of the slip-band spacing (b0065).",
+    "The stacking fault energy of the steel is ~108 mJ/m² and the Burgers vector of a partial dislocation is 0.146 nm (alloy-level values) (b0007, b0045)."
+  ]
+}

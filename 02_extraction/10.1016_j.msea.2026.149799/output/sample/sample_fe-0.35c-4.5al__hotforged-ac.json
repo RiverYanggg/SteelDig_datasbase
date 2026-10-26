@@ -1,0 +1,354 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-0.35c-4.5al__hotforged-ac",
+      "paper_id": "10.1016_j.msea.2026.149799",
+      "alloy_id": "alloy_fe-0.35c-4.5al",
+      "process_id": "proc_hotforged-ac",
+      "sample_label": "before rolling (hot-forged)",
+      "aliases": [
+        "hot-forged experimental steel prior to rolling",
+        "control group"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "b0015 states the tested steel was fabricated via VIM; this is the primary melting step of the material studied, preceding homogenization.",
+        "block_id": [
+          "b0015"
+        ]
+      },
+      "processing_step_id": "step_vim_melting",
+      "sequence": {
+        "value": "0"
+      },
+      "type": {
+        "value": "melting"
+      },
+      "method": {
+        "value": "vacuum induction melting (VIM)"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": {
+        "value": "vacuum"
+      },
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "The tested steel was fabricated via VIM (vacuum induction melting) prior to homogenization/forging."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0015 explicitly reports the ingot was homogenized at 1200 °C for 4 h before forging; figure_001a shows the 'holding' 4 h isotherm of the first thermal cycle.",
+        "block_id": [
+          "b0015",
+          "figure_001"
+        ]
+      },
+      "processing_step_id": "step_1_homogenization",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "homogenization"
+      },
+      "temperature": {
+        "value": "1200 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": {
+        "value": "4 h"
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "The steel ingot was homogenized at 1200 °C for 4 h."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0015 states the ingot was hot forged to a thickness of 40 mm; figure_001a shows a 'forging' step in the first thermal cycle.",
+        "block_id": [
+          "b0015",
+          "figure_001"
+        ]
+      },
+      "processing_step_id": "step_2_hot_forging",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "mechanical processing"
+      },
+      "method": {
+        "value": "hot forging"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Hot forged to a thickness of 40 mm (forging temperature not reported)."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0015 states the steel was air cooled to room temperature after hot forging; figure_001a shows 'air cooling' following the forging step.",
+        "block_id": [
+          "b0015",
+          "figure_001"
+        ]
+      },
+      "processing_step_id": "step_3_air_cooling",
+      "sequence": {
+        "value": "3"
+      },
+      "type": {
+        "value": "cooling"
+      },
+      "method": {
+        "value": "air cooling"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": {
+        "value": "air"
+      },
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Air cooled to room temperature after hot forging."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "The pre-rolling hot-forged state is characterized in b0028 (Fig. 3a-c control group) and b0045 as coarse δ-ferrite with M/A constituents and no obvious lamellae.",
+        "block_id": [
+          "b0028",
+          "b0045",
+          "figure_003"
+        ]
+      },
+      "structure_id": "structure_hotforged_preroll",
+      "overall_structure": {
+        "value": "No obvious lamellar structure before rolling. The microstructure is mainly composed of coarse δ-ferrite and M/A (martensite/austenite) constituents; δ-ferrite predominates, with martensite and austenite coexisting in the gaps of δ-ferrite. The large-sized grains are δ-ferrite and most austenite transformed into martensite after hot forging."
+      },
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "b0028 (Fig. 3a-c control group: no obvious lamellae, mainly coarse δ-ferrite and M/A constituents), b0045 (δ-ferrite predominating, large-sized grains, martensite/austenite in the gaps), and figure_003a-c (SEM/TEM of steel before hot rolling: coarse grains labelled Martensite/Austenite and δ-Ferrite, needle/plate-like features, no carbides).",
+            "block_id": [
+              "b0028",
+              "b0045",
+              "figure_003"
+            ]
+          },
+          "microstructure_id": "micro_hotforged",
+          "region": {
+            "value": "bulk (RD-ND plane)"
+          },
+          "related_sequence": {
+            "value": "2"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "b0028 (Fig. 3a-c control group) and b0045 describe the before-rolling microstructure as mainly coarse/large-grained δ-ferrite predominating; b0009 gives coarse δ-ferrite grain size >50 μm for this alloy.",
+                "block_id": [
+                  "b0028",
+                  "b0045",
+                  "b0009"
+                ]
+              },
+              "phase_name": {
+                "value": "δ-ferrite"
+              },
+              "crystal_structure": {
+                "value": "BCC (body-centered cubic)"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "coarse, large-sized grains; predominant phase; needle/plate-like features; no obvious lamellar banding"
+              },
+              "grain_size": {
+                "value": "coarse (>50 μm; reported for the alloy's stable coarse δ-ferrite at room temperature)"
+              },
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "b0028 and b0045 report M/A (martensite/austenite) constituents in the gaps of δ-ferrite before rolling.",
+                "block_id": [
+                  "b0028",
+                  "b0045"
+                ]
+              },
+              "phase_name": {
+                "value": "martensite"
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": {
+                "value": "M/A (martensite/austenite) constituents coexisting in the gaps of δ-ferrite; most austenite transformed into martensite after hot forging"
+              },
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "b0028 and b0045 state martensite and austenite coexist in the gaps of δ-ferrite in the pre-rolling condition.",
+                "block_id": [
+                  "b0028",
+                  "b0045"
+                ]
+              },
+              "phase_name": {
+                "value": "austenite"
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": {
+                "value": "M/A (martensite/austenite) constituents coexisting with martensite in the gaps of δ-ferrite"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "source": {
+                "reason": "figure_003b (TEM of the pre-rolling condition, 1 µm) shows dark polygonal grains with internal dislocation lines.",
+                "block_id": [
+                  "figure_003"
+                ]
+              },
+              "type": {
+                "value": "dislocations"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "b0017 gives the SEM/instrument details; b0028 attributes Fig. 3a to the pre-rolling control; figure_003a describes this SEM micrograph.",
+        "block_id": [
+          "b0017",
+          "b0028",
+          "figure_003"
+        ]
+      },
+      "characterization_id": "char_sem_hotforged",
+      "microstructure_id": "micro_hotforged",
+      "technique": {
+        "value": "SEM"
+      },
+      "instrument_or_setup": {
+        "value": "Apreo S HiVac SEM equipped with Oxford Aztec EBSD detector; RD-ND plane; etched with 5 vol% HNO3-ethanol solution"
+      },
+      "measurement_conditions": {
+        "value": "Observations on the RD-ND plane"
+      },
+      "purpose": {
+        "value": "Characterize the microstructure of the hot-forged steel before rolling (control group)"
+      },
+      "key_findings": {
+        "value": "Coarse grains labelled Martensite/Austenite in the upper region and δ-Ferrite below, with needle/plate-like features and no obvious lamellar banding (Fig. 3a, 25 µm scale bar)."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0017 gives the TEM/instrument details; b0028 attributes Fig. 3b-c to the pre-rolling control; figure_003b-c describes these TEM micrographs.",
+        "block_id": [
+          "b0017",
+          "b0028",
+          "figure_003"
+        ]
+      },
+      "characterization_id": "char_tem_hotforged",
+      "microstructure_id": "micro_hotforged",
+      "technique": {
+        "value": "TEM"
+      },
+      "instrument_or_setup": {
+        "value": "JEM-F200 (CF-HR) TEM; specimens ground to 80 µm, punched into 3 mm discs, twin-jet electropolished with 5 vol% HClO4 acetic acid solution"
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "High-resolution observation of the hot-forged (pre-rolling) microstructure"
+      },
+      "key_findings": {
+        "value": "Fig. 3b (1 µm scale bar) shows dark polygonal grains with internal dislocation lines, no lamellae or carbides visible; Fig. 3c (500 nm) shows banded/needle contrast labelled Martensite/Austenite (upper) and δ-Ferrite (lower)."
+      }
+    }
+  ],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "b0015 states Thermo-Calc was used to calculate the equilibrium phase diagram and phase composition at each temperature for the tested steel; b0024 notes consistency with the predicted carbide stability range.",
+        "block_id": [
+          "b0015",
+          "b0024"
+        ]
+      },
+      "computation_id": "comp_thermocalc_equilibrium",
+      "simulation_method": {
+        "value": "equilibrium thermodynamic calculation of phase diagram and phase composition vs temperature (alloy-level; applies to the tested steel of which this sample is a processing state)"
+      },
+      "software_used": {
+        "value": "Thermo-Calc"
+      },
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": {
+        "value": "Tested steel composition (C 0.35, Si 0.26, Mn 1.47, Al 4.50, Cr 0.26, Mo 0.28, Ni 1.47, Fe Bal, wt.%)"
+      },
+      "validation_against_experiment": {
+        "value": "The calculated carbide stability temperature range (≤750 °C) is consistent with observed carbide presence at low rolling temperature (Fig. 6a)."
+      },
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "The hot-forged 'before rolling' steel is the control group / parent state for the four rolled conditions R650, R750, R850 and R950; no tensile or Charpy impact property values are reported for this pre-rolling state (all mechanical data in Table 4/Fig. 5 belong to the rolled samples).",
+    "In the before-rolling state δ-ferrite predominates as large-sized grains; martensite and austenite coexist in the gaps of δ-ferrite, indicating that most austenite transformed into martensite after hot forging (b0045).",
+    "The studied steel was fabricated via VIM (vacuum induction melting), the ingot being homogenized at 1200 °C for 4 h, hot forged to 40 mm and air cooled (b0015)."
+  ]
+}

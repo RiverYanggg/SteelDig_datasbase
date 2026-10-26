@@ -1,0 +1,161 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-9al-1.5c-2ni-3cr__s1100",
+      "paper_id": "10.1016_j.jmrt.2024.01.272",
+      "alloy_id": "alloy_fe-20mn-9al-1.5c-2ni-3cr",
+      "process_id": "proc_s1100",
+      "sample_label": "S1100",
+      "aliases": [
+        "samples quenched after holding at 1100 °C for 3 min"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Upstream ingot-preparation step shared by all heat-treatment conditions of this alloy."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1050–950 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "to produce a 6 mm sheet",
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_air_cooling",
+      "sequence": "3",
+      "type": "cooling",
+      "method": "air cooling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_single_stage_1100",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "single-stage heat treatment (holding then quenching)",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "3 min",
+      "atmosphere": null,
+      "cooling_medium": "quenching to room temperature (water quench)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "For comparison of tensile properties only."
+    }
+  ],
+  "structures": [],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_s1100_tensile",
+      "measurement_conditions": {
+        "temperature": "25 °C",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "3 mm/min",
+        "specimen_geometry": "gauge length 25 mm, gauge width 4 mm, gauge thickness 5 mm, along rolling direction",
+        "test_standard": null,
+        "other_conditions": "measured values are averages of three tests per condition"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "827 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "998 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Fig. 4(a) engineering stress–strain curve of S1100 (cyan): peaks just below the 1000 MPa gridline and extends furthest, to ~60% strain; Fig. 4(b) gives the corresponding true stress–strain and strain-hardening-rate curves; three strain-hardening stages I, II, III with a rate maximum of ~2000 MPa near strain 0.20–0.22",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_s1100_tensile",
+      "microstructure_id": null,
+      "technique": "room-temperature tensile testing",
+      "instrument_or_setup": "AI-7000-LAU10 instrument",
+      "measurement_conditions": "room temperature (25 °C), constant rate 3 mm/min, specimens machined along the rolling direction with gauge length 25 mm, gauge width 4 mm, gauge thickness 5 mm; yield strength determined as 0.2% offset strength; averages of three tests",
+      "purpose": "measure the tensile properties (yield strength and ultimate tensile strength) of the S1100 condition for comparison with S1000, S1050 and MHT",
+      "key_findings": "S1100 yield strength 827 MPa and ultimate tensile strength 998 MPa, both lower than the other conditions; the engineering stress–strain curve peaks just below 1000 MPa but extends to ~60% strain"
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "S1100 was produced 'For comparison of tensile properties only' — it was not subjected to the full microstructural characterization (SEM/EBSD/TEM) or the Charpy impact testing performed on S1000, S1050 and MHT, so no grain size, grain-boundary fraction, precipitate or impact-energy data are reported for this sample.",
+    "From Fig. 4(a) the S1100 (cyan) engineering stress–strain curve peaks just below the 1000 MPa gridline and extends furthest, to about 60% strain; however no numeric total-elongation value for S1100 is given in the text or in Table 1 (which reports only S1000, S1050 and MHT)."
+  ]
+}

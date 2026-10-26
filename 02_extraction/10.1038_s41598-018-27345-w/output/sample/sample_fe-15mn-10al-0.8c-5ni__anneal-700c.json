@@ -1,0 +1,509 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-15mn-10al-0.8c-5ni__anneal-700c",
+      "paper_id": "10.1038_s41598-018-27345-w",
+      "alloy_id": "alloy_fe-15mn-10al-0.8c-5ni",
+      "process_id": "proc_anneal-700c",
+      "sample_label": "Fe-15Mn-10Al-0.8C-5Ni, 700 °C",
+      "aliases": [
+        "Ni-containing sample annealed at 700 °C",
+        "5 wt.% Ni, 700 °C",
+        "Fe-15Mn-10Al-0.5C-5Ni, 700 °C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "b0017 (Materials) describes the alloy synthesis starting with induction furnace melting.",
+        "block_id": [
+          "b0017"
+        ]
+      },
+      "processing_step_id": "step_melting",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "melting"
+      },
+      "method": {
+        "value": "melted in an induction furnace"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "The experimental alloys were melted in an induction furnace."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0017 states the alloys were solution heat-treated for 35 min at 1250 °C in a protective argon atmosphere and then water quenched; this is the parent process step of the 700 °C annealing.",
+        "block_id": [
+          "b0017"
+        ]
+      },
+      "processing_step_id": "step_solution_treatment",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "solution heat treatment"
+      },
+      "temperature": {
+        "value": "1250"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": {
+        "value": "35 min"
+      },
+      "atmosphere": {
+        "value": "protective argon atmosphere"
+      },
+      "cooling_medium": {
+        "value": "water quenched"
+      },
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "source": {
+        "reason": "b0017 reports the sample dimensions used for the subsequent annealing treatments.",
+        "block_id": [
+          "b0017"
+        ]
+      },
+      "processing_step_id": "step_cutting",
+      "sequence": {
+        "value": "3"
+      },
+      "type": {
+        "value": "mechanical processing"
+      },
+      "method": {
+        "value": "cut into 3-mm (length) × 3-mm (width) × 1-mm (thickness) samples"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Materials cut into 3-mm × 3-mm × 1-mm samples prior to annealing."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0017 lists 700 °C among the annealing treatments; b0013 and b0008 describe the microstructure formed after annealing at 700 °C. The process snapshot also notes the holding time is not reported.",
+        "block_id": [
+          "b0017",
+          "b0013",
+          "b0008"
+        ]
+      },
+      "processing_step_id": "step_annealing_700c",
+      "sequence": {
+        "value": "4"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "annealing (isothermal holding)"
+      },
+      "temperature": {
+        "value": "700"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Annealing treatments were conducted at 500 °C, 700 °C, 900 °C and 1050 °C; holding time not explicitly reported. This sample corresponds to the 700 °C treatment."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "Assembled from Table 1 (b0022) phase listing for the 5Ni alloy at 700 °C, the microstructural description in b0013/b0008, and Fig. 2 SEM/TEM panels (figure_002).",
+        "block_id": [
+          "b0022",
+          "b0013",
+          "b0008",
+          "figure_002"
+        ]
+      },
+      "structure_id": "struct_ni700c",
+      "overall_structure": {
+        "value": "Austenite (γ) matrix containing cuboidal κ-carbides (<100 nm), coarse B2 particles (2–7 μm) with flat interfaces and sharp edges, and B2 stringer bands (the former α/ferrite phase replaced by stringers) after annealing at 700 °C",
+        "source": {
+          "reason": "Table 1/Table 2 (b0022) list the matrix phase as γ with cuboidal κ (<100 nm), coarse B2 (2–7 μm) and B2 stringer bands at 700 °C for the 5Ni alloy; b0013/b0008 state the α phase in the 5% Ni sample was replaced by B2 stringer bands at 700 °C and below; b0026 describes the coarse B2 morphology.",
+          "block_id": [
+            "b0022",
+            "b0013",
+            "b0008",
+            "b0026"
+          ]
+        }
+      },
+      "number_of_phases": {
+        "value": 3,
+        "source": {
+          "reason": "Three distinct phases are reported for this condition: γ (austenite), κ-carbide and B2.",
+          "block_id": [
+            "b0022",
+            "b0013"
+          ]
+        }
+      },
+      "microstructure_counts": {
+        "value": "γ austenite matrix + cuboidal κ precipitates + coarse B2 particles + B2 stringer bands (former α phase)",
+        "source": {
+          "reason": "Qualitative description of the microstructural constituents reported for the 700 °C Ni-containing condition.",
+          "block_id": [
+            "b0022",
+            "b0013"
+          ]
+        }
+      },
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "Overall γ-matrix microstructure at 700 °C from Table 1 (b0022), the microstructural description (b0013) and TEM/SEM panels of Fig. 2 (figure_002).",
+            "block_id": [
+              "b0022",
+              "b0013",
+              "figure_002"
+            ]
+          },
+          "microstructure_id": "micro_gamma_ni700c",
+          "region": {
+            "value": "matrix (austenite γ grains)",
+            "source": {
+              "reason": "Table 1 (b0022) lists the matrix phase as γ at 700 °C for the 5Ni alloy; b0013 states κ-carbides form nano-sized blocks in the austenite phase at 500–700 °C.",
+              "block_id": [
+                "b0022",
+                "b0013"
+              ]
+            }
+          },
+          "related_sequence": {
+            "value": "4",
+            "source": {
+              "reason": "This microstructure results from the 700 °C annealing step (sequence 4).",
+              "block_id": [
+                "b0017"
+              ]
+            }
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "Table 1 (b0022) reports γ as the matrix phase at 700 °C for the 5Ni alloy.",
+                "block_id": [
+                  "b0022"
+                ]
+              },
+              "phase_name": {
+                "value": "γ (austenite)"
+              },
+              "crystal_structure": {
+                "value": "fcc"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "matrix"
+              },
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "b0022/table_001 list cuboidal κ (< 100 nm) at 700 °C; b0010/b0013 describe κ as the L1'2 perovskite Fe3AlC-type phase.",
+                "block_id": [
+                  "b0022",
+                  "b0010",
+                  "b0013"
+                ]
+              },
+              "phase_name": {
+                "value": "κ-carbide"
+              },
+              "crystal_structure": {
+                "value": "L1'2 (ordered perovskite, Fe3AlC-type)"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "cuboidal"
+              },
+              "grain_size": {
+                "value": "< 100 nm"
+              },
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "b0022/table_001 list coarse B2 particles (2–7 μm) in the γ matrix at 700 °C; b0026 describes B2 with flat interfaces and sharp edges formed in the γ phase; b0013 states the discs are Ni-Al type in Ni-containing samples.",
+                "block_id": [
+                  "b0022",
+                  "b0026",
+                  "b0013"
+                ]
+              },
+              "phase_name": {
+                "value": "B2"
+              },
+              "crystal_structure": {
+                "value": "bcc (NiAl-type in the Ni-containing sample)"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "coarse particles with flat interfaces and sharp edges"
+              },
+              "grain_size": {
+                "value": "2–7 μm"
+              },
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "source": {
+                "reason": "b0022/table_001 report cuboidal κ (< 100 nm) at 700 °C; b0013 states κ-carbides formed nano-sized blocks in the austenite phase at 500–700 °C.",
+                "block_id": [
+                  "b0022",
+                  "b0013"
+                ]
+              },
+              "precipitate_id": "precip_kappa_cuboid_ni700c",
+              "type": {
+                "value": "κ-carbide (cuboidal, nano-sized blocks in γ)"
+              },
+              "size": {
+                "value": {
+                  "value": "< 100 nm"
+                },
+                "unit": null
+              },
+              "distribution": {
+                "value": "within γ austenite grains"
+              },
+              "coherency": null
+            },
+            {
+              "source": {
+                "reason": "b0022/table_001 list coarse B2 particles (2–7 μm) in the matrix at 700 °C for the 5Ni alloy.",
+                "block_id": [
+                  "b0022"
+                ]
+              },
+              "precipitate_id": "precip_b2_coarse_ni700c",
+              "type": {
+                "value": "B2 (coarse NiAl-type particles)"
+              },
+              "size": {
+                "value": {
+                  "value": "2–7 μm"
+                },
+                "unit": null
+              },
+              "distribution": {
+                "value": "in γ matrix"
+              },
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "source": {
+            "reason": "B2 stringer band constituent at 700 °C from Table 1 (b0022), b0013 and the SEM panels (Fig. 2c,d, figure_002).",
+            "block_id": [
+              "b0022",
+              "b0013",
+              "figure_002"
+            ]
+          },
+          "microstructure_id": "micro_b2_stringer_ni700c",
+          "region": {
+            "value": "B2 stringer bands (replacing the prior α/ferrite phase)",
+            "source": {
+              "reason": "b0013 and b0008 state that at 500–700 °C the ferrite (α) phase in the 5% Ni sample was replaced by B2 stringer bands; b0022/table_001 list B2 stringer bands at 700 °C.",
+              "block_id": [
+                "b0013",
+                "b0008",
+                "b0022"
+              ]
+            }
+          },
+          "related_sequence": {
+            "value": "4",
+            "source": {
+              "reason": "B2 stringer bands form as a result of the 700 °C annealing step.",
+              "block_id": [
+                "b0017",
+                "b0013"
+              ]
+            }
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "b0013/b0008 state the ferrite phase in the 5% Ni sample was replaced by B2 stringer bands at 500–700 °C; b0022/table_001 list B2 Stringer Bands at 700 °C.",
+                "block_id": [
+                  "b0013",
+                  "b0008",
+                  "b0022"
+                ]
+              },
+              "phase_name": {
+                "value": "B2 (stringer bands)"
+              },
+              "crystal_structure": {
+                "value": "bcc (NiAl-type in the Ni-containing sample)"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "stringer bands (elongated bands replacing prior α phase)"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "source": {
+                "reason": "b0022/table_001 list B2 stringer bands at 700 °C for the 5Ni alloy; b0013 describes them as replacing the ferrite phase.",
+                "block_id": [
+                  "b0022",
+                  "b0013"
+                ]
+              },
+              "precipitate_id": "precip_b2_stringer_ni700c",
+              "type": {
+                "value": "B2 stringer bands"
+              },
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": {
+                "value": "replacing the prior α (ferrite) phase"
+              },
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_ni700c",
+      "phase_interfaces": [
+        {
+          "source": {
+            "reason": "κ-carbides form within the γ matrix at 700 °C (b0022, b0013); b0012 notes that the characteristics of ordered phases depend on their degree of coherency with the matrix, but coherence for this specific interface is not explicitly quantified.",
+            "block_id": [
+              "b0022",
+              "b0013",
+              "b0012"
+            ]
+          },
+          "interface_id": "if_gamma_kappa_ni700c",
+          "microstructure_id": "micro_gamma_ni700c",
+          "phase_1_name": {
+            "value": "γ (austenite)"
+          },
+          "phase_2_name": {
+            "value": "κ-carbide"
+          },
+          "coherence": null
+        },
+        {
+          "source": {
+            "reason": "Coarse B2 particles form in the γ matrix at 700 °C (b0022); b0026 describes these B2 particles as having flat interfaces and sharp edges.",
+            "block_id": [
+              "b0022",
+              "b0026"
+            ]
+          },
+          "interface_id": "if_gamma_b2_ni700c",
+          "microstructure_id": "micro_gamma_ni700c",
+          "phase_1_name": {
+            "value": "γ (austenite)"
+          },
+          "phase_2_name": {
+            "value": "B2"
+          },
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": {
+        "value": "According to the Orowan mechanism, the increase in shear stress (Δτ) is proportional to the inverse of the precipitates' diameter (Δτ ∝ R^−1.25); as precipitate size decreases the resistance to shear increases.",
+        "source": {
+          "reason": "b0039 discusses the Orowan mechanism as the origin of increased shear resistance in the α matrix due to nano-sized B2 discs; it is the paper's general rationale for precipitate strengthening.",
+          "block_id": [
+            "b0039"
+          ]
+        }
+      },
+      "phase_evolution": {
+        "value": "At 500–700 °C the α (ferrite) phase in the Ni-containing sample was replaced by B2 stringer bands, while κ-carbides formed nano-sized blocks in the austenite phase; coarse B2 particles also formed in the γ matrix.",
+        "source": {
+          "reason": "b0013 and b0008 describe the transformation of the α phase into B2 stringer bands at low annealing temperatures and the formation of nano-sized κ in austenite.",
+          "block_id": [
+            "b0013",
+            "b0008"
+          ]
+        }
+      },
+      "interface_notes": {
+        "value": "Coarse B2 particles formed in the γ phase have flat interfaces and sharp edges; nano-indentation yields compound hardness values of matrix + particles because the technique cannot measure isolated nano-sized precipitates.",
+        "source": {
+          "reason": "b0026 describes the flat-interface/sharp-edge morphology of coarse B2 in γ; b0042 and b0026 note the composite nature of the nano-indentation measurement.",
+          "block_id": [
+            "b0026",
+            "b0042"
+          ]
+        }
+      }
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

@@ -1,0 +1,167 @@
+{
+  "identity": {
+    "paper_id": "10.1016_j.mtcomm.2024.108270",
+    "equation_id": "equation_006",
+    "block_id": "b0050",
+    "equation_number": "6",
+    "is_image": false,
+    "latex_hint": "$$\n\\begin{array}{l} \\sigma_ {f l o w} = \\left(\\sigma_ {0} + k \\quad (d _ {f} ^ {\\frac {- 1}{2}} - d _ {0} ^ {\\frac {- 1}{2}}) + \\alpha M G b ((\\rho_ {f} ^ {\\frac {1}{2}} - \\rho_ {0} ^ {\\frac {1}{2}}) + B \\varepsilon^ {n}\\right) \\\\ \\left[ 1 + C \\ln \\left(\\frac {\\dot {\\varepsilon}}{\\dot {\\varepsilon} _ {0}}\\right) \\right] \\quad \\left[ 1 - \\left(\\frac {T - T _ {r}}{T _ {m} - T _ {r}}\\right) ^ {m} \\right] \\end{array}\\tag{6}\n$$"
+  },
+  "latex": "\\sigma_{flow} = \\left(\\sigma_{0} + k(d_{f}^{-1/2} - d_{0}^{-1/2}) + \\alpha M G b((\\rho_{f}^{1/2} - \\rho_{0}^{1/2}) + B\\varepsilon^{n}\\right)\\left[1 + C\\ln\\left(\\frac{\\dot{\\varepsilon}}{\\dot{\\varepsilon}_{0}}\\right)\\right]\\left[1 - \\left(\\frac{T - T_{r}}{T_{m} - T_{r}}\\right)^{m}\\right]",
+  "purpose": "Modified Johnson–Cook constitutive model that expresses the flow stress of the material as a function of grain-size refinement (Hall–Petch type term) and dislocation-density strengthening during multi-axial forging (MAF), combined with strain-hardening, strain-rate and thermal-softening terms.",
+  "applicability_conditions": "Developed for the low-density Fe-30Mn-9Al-0.8 C steel during the multi-axial forging (MAF) process; implemented into a 3-D finite element model via an ABAQUS VUMAT subroutine using six state-dependent variables (SDVs).",
+  "symbols": [
+    {
+      "symbol": "\\sigma_{flow}",
+      "meaning": "Flow stress of the material (predicted by the modified J–C model)",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "\\sigma_{0}",
+      "meaning": "Initial/base flow stress (original J–C yield term)",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "k",
+      "meaning": "Grain-size strengthening (Hall–Petch type) coefficient",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "d_{f}",
+      "meaning": "Grain size during MAF",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "d_{0}",
+      "meaning": "Initial grain size",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "\\alpha",
+      "meaning": "Taylor constant",
+      "unit": null,
+      "value": "0.24",
+      "is_constant": true
+    },
+    {
+      "symbol": "M",
+      "meaning": "Average Taylor factor",
+      "unit": null,
+      "value": "3.0",
+      "is_constant": true
+    },
+    {
+      "symbol": "G",
+      "meaning": "Shear modulus",
+      "unit": "GPa",
+      "value": "61 GPa",
+      "is_constant": true
+    },
+    {
+      "symbol": "b",
+      "meaning": "Burgers vector",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "\\rho_{f}",
+      "meaning": "Dislocation density during MAF",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "\\rho_{0}",
+      "meaning": "Initial dislocation density",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "B",
+      "meaning": "Strain hardening coefficient of the J–C model",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "\\varepsilon",
+      "meaning": "Equivalent plastic strain",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "n",
+      "meaning": "Strain hardening exponent of the J–C model",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "C",
+      "meaning": "Strain rate sensitivity coefficient of the J–C model",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "\\dot{\\varepsilon}",
+      "meaning": "Strain rate",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "\\dot{\\varepsilon}_{0}",
+      "meaning": "Reference strain rate",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "T",
+      "meaning": "Temperature",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "T_{r}",
+      "meaning": "Reference temperature",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "T_{m}",
+      "meaning": "Melting temperature",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "m",
+      "meaning": "Thermal softening exponent of the J–C model",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    }
+  ],
+  "unmapped": [
+    "The modified J–C model (Eq. 6) integrates the influence of the strain-dependent dislocation density (Eq. 7) and the grain size (Eq. 8) parameters, both of which contribute to the yield strength after each MAF pass.",
+    "The original J–C model parameters of the current material have been evaluated in the authors' previous study [26]; material properties are summarized in Table 4.",
+    "The implemented VUMAT subroutine uses six state-dependent variables (SDVs) as shown in Table 3."
+  ]
+}

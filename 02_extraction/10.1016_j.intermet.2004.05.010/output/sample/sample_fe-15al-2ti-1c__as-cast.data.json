@@ -1,0 +1,264 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-15al-2ti-1c__as-cast",
+      "paper_id": "10.1016_j.intermet.2004.05.010",
+      "alloy_id": "alloy_fe-15al-2ti-1c",
+      "process_id": "proc_as-cast",
+      "sample_label": "Fe-15Al-2Ti-1C",
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_casting",
+      "sequence": "1",
+      "type": "casting",
+      "method": "vacuum induction melting and casting into cylindrical copper moulds",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum (during induction melting)",
+      "cooling_medium": "cylindrical copper moulds (32 mm diameter × 186 mm length)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "As-cast terminal state; no further heat treatment reported."
+    },
+    {
+      "processing_step_id": "step_2_specimen_prep",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "spark erosion cutting and surface grinding",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Mechanical test specimens cut from cast ingots by spark erosion along the longitudinal axis of the ingot (casting direction); specimen surfaces ground."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "As-cast two-phase microstructure: Fe-Al (A2 bcc) matrix dendrites with TiC precipitates",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": null,
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "Fe-Al matrix (A2)",
+              "crystal_structure": "A2 (disordered bcc)",
+              "volume_fraction": null,
+              "morphology": "equiaxed and columnar dendrites (size 30, 30×80 μm)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "TiC",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "Fibrous, lamellar (in eutectic)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_1",
+              "type": "TiC",
+              "size": {
+                "value": "1.5",
+                "unit": "μm"
+              },
+              "distribution": null,
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_1",
+          "microstructure_id": "micro_1",
+          "phase_1_name": "Fe-Al matrix (A2)",
+          "phase_2_name": "TiC",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": null,
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_set_rt",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-4 s^-1",
+        "specimen_geometry": "compression: (6×6×10) mm³; tension: flat (3.5×5) mm² cross-section, 15 mm gauge length",
+        "test_standard": null,
+        "other_conditions": "specimens cut along longitudinal (casting) direction; surfaces ground; Brinell hardness with load 62.5 g and 2.5 mm diameter ball"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "compression",
+              "value": "485",
+              "unit": "MPa",
+              "uncertainty": null
+            },
+            {
+              "direction": "tension",
+              "value": "420",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [],
+          "elongation": [
+            {
+              "direction": "tension",
+              "value": "3.3",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Room-temperature compression: parabolic work hardening behaviour (Fig. 2a, curve 2). Room-temperature tension: linear elastic loading followed by abrupt fracture between the 300 and 400 MPa gridlines (Fig. 3a, curve 2).",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "value": "parabolic work hardening behaviour (typical for most disordered polycrystalline metallic materials)",
+              "unit": null
+            }
+          ]
+        },
+        "hardness": [
+          {
+            "region": "matrix",
+            "value": "197",
+            "scale": "Brinell",
+            "unit": "HB",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_set_elevated",
+      "measurement_conditions": {
+        "temperature": "elevated temperatures up to 800 °C (tension additionally at 650 °C and 800 °C)",
+        "temperature_unit": "°C",
+        "environment": "protective argon atmosphere",
+        "strain_rate": "10^-4 s^-1",
+        "specimen_geometry": "compression: (6×6×10) mm³; tension: flat (3.5×5) mm² cross-section, 15 mm gauge length",
+        "test_standard": null,
+        "other_conditions": "held 30 min at testing temperature before loading; temperature checked by NiCr–Ni thermocouple on specimen surface"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "compression",
+              "value": "yield stress decreases monotonically with increasing temperature (no yield stress anomaly); near the 500 MPa gridline at room temperature and converging to 0–100 MPa by 800 °C (Fig. 5, no numeric labels)",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_1",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "Fe-15Al (binary reference)",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Matrix Brinell hardness and yield stress in compression at room temperature",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_sem_fracture",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM) of fracture surfaces",
+      "instrument_or_setup": "SEM-Hitachi S-530, 20 kV, working distance 15 mm, secondary electrons (SE)",
+      "measurement_conditions": null,
+      "purpose": "Investigation of fracture surfaces of ruptured tensile specimens",
+      "key_findings": "Fe-15Al-2Ti-1C shows coarse transgranular cleavage facets and a large smooth cleavage plane (Fig. 4b)."
+    },
+    {
+      "characterization_id": "char_brinell",
+      "microstructure_id": null,
+      "technique": "Brinell hardness test",
+      "instrument_or_setup": "load 62.5 g, indentation ball 2.5 mm diameter",
+      "measurement_conditions": null,
+      "purpose": "Measurement of matrix hardness",
+      "key_findings": "Matrix hardness 197 HB for Fe-15Al-2Ti-1C."
+    },
+    {
+      "characterization_id": "char_mech_testing",
+      "microstructure_id": null,
+      "technique": "Uniaxial compression and tension testing",
+      "instrument_or_setup": "ZWICK 1474 universal testing machine; deformation rate 10^-4 s^-1",
+      "measurement_conditions": "room temperature and elevated temperatures (up to 800 °C) in protective argon atmosphere at elevated temperatures",
+      "purpose": "Determination of yield stress, work hardening and ductility",
+      "key_findings": "Room temperature: yield stress in compression 485 MPa, yield stress in tension 420 MPa, total elongation 3.3%."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Fe-15Al-2Ti-1C exhibits the highest room-temperature ductility (≈3.3%) of all Fe-15Al-based alloys [b0035].",
+    "Room-temperature fracture mode is TGC (transgranular cleavage); SEM fractograph (Fig. 4b) shows coarse transgranular cleavage facets and a large smooth cleavage plane [b0033, b0035, figure_004].",
+    "At 650 °C and 800 °C, compressive yield stress exceeds tensile yield stress (tension–compression asymmetry) for Fe-15Al-2Ti-1C; no numeric labels are printed for this alloy in Figs. 7 and 8 [b0040, figure_007, figure_008].",
+    "Room-temperature tension–compression asymmetry: yield stress in compression (485 MPa) is higher than yield stress in tension (420 MPa) [b0029, b0033].",
+    "A good correlation between matrix hardness and yield stress in compression was observed for Fe-15Al-based alloys with Ti and V [b0023]."
+  ]
+}

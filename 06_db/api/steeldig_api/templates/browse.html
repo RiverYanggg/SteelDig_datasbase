@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% from "_macros.html" import pager, family_badge %}
+{% block title %}样品库{% endblock %}
+
+{% block content %}
+<div class="page-head">
+  <div>
+    <h1>样品库</h1>
+    <p>共 {{ '{:,}'.format(total) }} 个样品符合条件 · 性能单位已归一，可直接比较</p>
+  </div>
+  <div class="spacer"></div>
+  <span class="badge ghost">第 {{ page }} / {{ pages }} 页</span>
+</div>
+
+<div class="grid" style="grid-template-columns: 236px minmax(0,1fr); gap:20px">
+  <aside>
+    <form class="card filters" method="get" action="/browse" style="padding:16px">
+      <div class="group">
+        <h4>合金族</h4>
+        <div class="chips">
+          <a class="chip {{ 'on' if not sel.family }}" href="/browse">全部</a>
+          {% for f in families %}
+            {% if f.n %}
+            <a class="chip {{ 'on' if sel.family == f.family_key }}"
+               href="/browse?family={{ f.family_key }}">{{ family_label(f.family_key) }}
+               <span class="n">{{ f.n }}</span></a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="group">
+        <h4>元素</h4>
+        <div class="chips">
+          <a class="chip {{ 'on' if not sel.element }}" href="/browse">不限</a>
+          {% for e in elements %}
+            <a class="chip {{ 'on' if sel.element == e.element }}"
+               href="/browse?element={{ e.element }}">{{ e.element }}<span class="n">{{ e.n }}</span></a>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="group">
+        <h4>屈服强度 / MPa</h4>
+        <div class="range">
+          <input name="ys_min" value="{{ sel.ys_min or '' }}" placeholder="最小" inputmode="numeric">
+          <span>–</span>
+          <input name="ys_max" value="{{ sel.ys_max or '' }}" placeholder="最大" inputmode="numeric">
+        </div>
+      </div>
+
+      <div class="group">
+        <h4>延伸率 ≥ %</h4>
+        <input class="range" name="el_min" value="{{ sel.el_min or '' }}" placeholder="例如 40"
+               style="width:100%;height:32px;border:1px solid var(--border-strong);border-radius:8px;padding:0 8px">
+      </div>
+
+      <div class="group">
+        <h4>年份 ≥</h4>
+        <input name="year_from" value="{{ sel.year_from or '' }}" placeholder="例如 2015"
+               style="width:100%;height:32px;border:1px solid var(--border-strong);border-radius:8px;padding:0 8px">
+      </div>
+
+      <div class="group">
+        <h4>排序</h4>
+        <select name="sort" style="width:100%;height:32px;border:1px solid var(--border-strong);border-radius:8px;padding:0 6px;background:#fff">
+          <option value="ys"  {{ 'selected' if sel.sort=='ys' }}>屈服强度 ↓</option>
+          <option value="uts" {{ 'selected' if sel.sort=='uts' }}>抗拉强度 ↓</option>
+          <option value="el"  {{ 'selected' if sel.sort=='el' }}>延伸率 ↓</option>
+          <option value="year"{{ 'selected' if sel.sort=='year' }}>年份 ↓</option>
+        </select>
+      </div>
+
+      {% if sel.family %}<input type="hidden" name="family" value="{{ sel.family }}">{% endif %}
+      {% if sel.element %}<input type="hidden" name="element" value="{{ sel.element }}">{% endif %}
+      <div style="display:flex;gap:8px;margin-top:14px">
+        <button type="submit" class="chip on" style="flex:1;justify-content:center;height:34px">应用筛选</button>
+        <a class="chip" href="/browse" style="height:34px;align-items:center">重置</a>
+      </div>
+    </form>
+  </aside>
+
+  <div>
+    <div class="card" style="padding:0">
+      <div class="table-wrap">
+        <table class="data">
+          <thead>
+            <tr>
+              <th>样品</th><th>成分</th><th>合金族</th>
+              <th class="num">YS/MPa</th><th class="num">UTS/MPa</th><th class="num">EL/%</th>
+              <th class="num">硬度</th><th class="num">年份</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for r in rows %}
+            <tr>
+              <td>
+                <a href="/samples/{{ r.paper_id }}/{{ r.sample_id }}">{{ r.sample_id | replace('sample_','') | truncate(40, true) }}</a>
+                <div class="muted" style="font-size:11px">{{ r.label or '' }} · {{ r.paper_id }}</div>
+              </td>
+              <td class="mono" style="font-size:12px">{{ r.formula or '—' }}</td>
+              <td>{{ family_badge(r.family_key) }}</td>
+              <td class="num">{% if r.yield_strength_mpa %}<b>{{ r.yield_strength_mpa | round(0) | int }}</b>{% else %}<span class="muted">—</span>{% endif %}</td>
+              <td class="num">{{ r.tensile_strength_mpa | round(0) | int if r.tensile_strength_mpa else '—' }}</td>
+              <td class="num">{{ r.elongation_pct | round(1) if r.elongation_pct is not none else '—' }}</td>
+              <td class="num">{% if r.hardness %}{{ r.hardness | round(0) | int }} <span class="muted" style="font-size:11px">{{ r.hardness_scale }}</span>{% else %}<span class="muted">—</span>{% endif %}</td>
+              <td class="num muted">{{ r.year or '—' }}</td>
+            </tr>
+          {% else %}
+            <tr><td colspan="8"><div class="empty"><b>没有符合条件的样品</b>试着放宽屈服强度或年份区间</div></td></tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    {{ pager(page, pages, base_url) }}
+  </div>
+</div>
+{% endblock %}

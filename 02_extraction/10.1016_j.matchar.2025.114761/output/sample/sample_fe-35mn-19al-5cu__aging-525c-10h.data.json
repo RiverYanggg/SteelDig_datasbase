@@ -1,0 +1,336 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-35mn-19al-5cu__aging-525c-10h",
+      "paper_id": "10.1016_j.matchar.2025.114761",
+      "alloy_id": "alloy_fe-35mn-19al-5cu",
+      "process_id": "proc_aging-525c-10h",
+      "sample_label": "19Al aged at 525 °C for 10 h",
+      "aliases": [
+        "19Al 525 °C aging 10 h"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "melting/casting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "argon",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Alloy ingots with nominal composition Fe-35Mn-19Al-5Cu (at.%) produced by melting high-purity (>99.9 %) raw materials in a vacuum induction furnace under an argon atmosphere."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "24 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingots homogenized at 1200 °C for 24 h."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled into plates with a thickness of 4 mm."
+    },
+    {
+      "processing_step_id": "step_cutting",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "electrical discharge machining",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Plates cut into 10 × 5 × 2 mm³ samples using electrical discharge machining for Vickers hardness measurements and microstructure characterizations."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "10 min",
+      "atmosphere": "argon",
+      "cooling_medium": "oil quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Samples solution treated at 1100 °C for 10 min under an argon atmosphere, followed by oil quenching."
+    },
+    {
+      "processing_step_id": "step_aging",
+      "sequence": "6",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "525 °C",
+      "temperature_unit": "°C",
+      "duration": "10 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution-treated samples aged at temperatures between 525 °C and 650 °C for 1, 3, 6 and 10 h, followed by water quenching. This sample corresponds to the 525 °C / 10 h condition."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_aging_525c_10h",
+      "overall_structure": "α (BCC) matrix that remains largely untransformed with only a small amount of β-Mn (12.1%) precipitated. β-Mn primarily precipitated along α grain boundaries, with a small amount of short rod-shaped β-Mn also within the α grains.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_bulk_525c_10h",
+          "region": "bulk",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "α (BCC)",
+              "crystal_structure": "Body-centered cubic (BCC)",
+              "volume_fraction": null,
+              "morphology": "matrix (dominant, largely untransformed)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "β-Mn",
+              "crystal_structure": null,
+              "volume_fraction": "12.1%",
+              "morphology": "thin network along α grain boundaries; a small amount of short rod-shaped β-Mn within α grains",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "α-Mn",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "sparse particles (blue in phase maps)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "elongated, banded lath-like grains with internal streaking (FSD image of the 19Al 525 °C × 10 h condition)",
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_beta_Mn",
+              "type": "β-Mn",
+              "size": null,
+              "distribution": "primarily along α grain boundaries, with a small amount within the α grains",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "intf_betaMn_alpha_525c10h",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_betaMn_alpha",
+          "microstructure_id": "micro_bulk_525c_10h",
+          "phase_1_name": "β-Mn",
+          "phase_2_name": "α (BCC)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "α → α + FCC Cu-rich phase → α-Mn + β-Mn + BCC phase → β-Mn + BCC phase + FCC Cu-rich phase (general aging sequence proposed for Fe-Mn-Al-Cu low-density steels); for this low-temperature 525 °C/10 h condition the transformation is only at an early stage (12.1% β-Mn).",
+      "interface_notes": "For the 19Al alloy aged at 525 °C for 10 h the β-Mn precipitates decorate the α grain boundaries; no quantitative interface (coherency/size) data are reported for this specific condition."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "ps_vickers_19Al_525c_10h",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "10 × 5 × 2 mm³ sample",
+        "test_standard": null,
+        "other_conditions": "Vickers hardness measured with a load of 9.8 N for 15 s; each sample tested 5 times and the hardness given by the average of 5 measurements."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "614.4 HV",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": "± 17.3 HV"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.66 g/cm³",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "ps_vickers_19Al_solution_treated_baseline",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "10 × 5 × 2 mm³ sample",
+        "test_standard": null,
+        "other_conditions": "Baseline (parent process proc_st-1100c-10min-oq); Vickers hardness measured with a load of 9.8 N for 15 s, average of 5 measurements."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "263.8 HV",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": "± 1.1 HV"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.66 g/cm³",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_vickers_hardness",
+      "microstructure_id": null,
+      "technique": "Vickers hardness testing",
+      "instrument_or_setup": "HVS-1000 digital microhardness tester",
+      "measurement_conditions": "Load 9.8 N, dwell 15 s; each sample tested 5 times and value given by the average of 5 measurements",
+      "purpose": "Measure the Vickers hardness of the 19Al alloy after aging at 525 °C for 10 h",
+      "key_findings": "The 19Al alloy aged at 525 °C for 10 h has a Vickers hardness of 614.4 ± 17.3 HV; the solution-treated baseline is 263.8 ± 1.1 HV."
+    },
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_bulk_525c_10h",
+      "technique": "Electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "GeminiSEM 300 SEM; scanning step size 1.5 μm for low magnification and 0.05 μm for high magnification",
+      "measurement_conditions": "Electrolytically polished with 10 % perchloric acid and 90 % ethanol",
+      "purpose": "Identify constituent phases and their distribution in the aged 19Al alloy",
+      "key_findings": "For the 19Al alloy aged at 525 °C for 10 h the phase map is dominated by an α (BCC) matrix with a thin green β-Mn network along the grain boundaries and only minor α-Mn; β-Mn precipitation is 12.1 %."
+    },
+    {
+      "characterization_id": "char_sem_se",
+      "microstructure_id": "micro_bulk_525c_10h",
+      "technique": "Secondary electron (SE) scanning electron microscopy",
+      "instrument_or_setup": "ZEISS Sigma 300 SEM operated at 5 kV",
+      "measurement_conditions": "Electrolytically polished with 10 % perchloric acid and 90 % ethanol",
+      "purpose": "Observe the precipitation of secondary phases (α-Mn, β-Mn) in the aged 19Al alloy",
+      "key_findings": "At 525 °C the α matrix of the 19Al alloy stays almost featureless even after 10 h of aging, consistent with the very slow β-Mn precipitation."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "For the 19Al alloy, aging at 525 °C is the mildest aging condition studied: hardness rises only slightly from 562.3 ± 8.9 HV (1 h) to 614.4 ± 17.3 HV (10 h), and the α→β-Mn transformation is far from complete (only 12.1 % β-Mn after 10 h).",
+    "The increase in Al content slows the precipitation kinetics of β-Mn during low-temperature aging; at 525 °C only a small amount of β-Mn formed in the 19Al alloy even after 10 h, whereas the 15Al alloy almost completely transformed to β-Mn within 3 h at 525 °C.",
+    "The β-Mn primarily precipitated along α grain boundaries, while a small amount of short rod-shaped β-Mn was also observed within the α grains for the 19Al alloy aged at 525 °C."
+  ]
+}

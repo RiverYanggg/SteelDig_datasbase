@@ -1,0 +1,634 @@
+{
+  "schema_version": "sample-discover-v1",
+  "paper_id": "10.1016_j.msea.2023.144776",
+  "domain": "materials",
+  "paper": {
+    "paper_id": "10.1016_j.msea.2023.144776",
+    "doi": "10.1016/j.msea.2023.144776",
+    "title": "Low-density Fe40Mn19Ni15Al15Si10C1 high entropy steel processed by mechanical alloying and spark plasma sintering: Phase evolution, microstructure and mechanical properties",
+    "authors": [
+      "Harsh Jain",
+      "Yagnesh Shadangi",
+      "Dibyendu Chakravarty",
+      "Kausik Chattopadhyay",
+      "Ashutosh Kumar Dubey",
+      "N.K. Mukhopadhyay"
+    ],
+    "publication_year": "2023",
+    "journal": "Materials Science and Engineering: A",
+    "keywords": [
+      "High entropy steel",
+      "Mechanical milling and spark plasma sintering",
+      "Phase evolution and microstructure",
+      "Thermal stability",
+      "Mechanical properties",
+      "Strengthening mechanisms"
+    ],
+    "research_type": "experimental (with CALPHAD/thermodynamic modelling)",
+    "paper_scope": "Synthesis and characterization of a novel non-equiatomic low-density Fe40Mn19Ni15Al15Si10C1 high entropy steel prepared by 35 h mechanical alloying followed by spark plasma sintering, systematically studying phase evolution with milling time, thermal stability by annealing (400-800 °C), resulting microstructure (BCC + B2 + gamma-brass + Fe5Si3 silicide) and mechanical properties (microhardness, elastic modulus, compressive strength) correlated with thermodynamic parameters, CALPHAD predictions and strengthening mechanisms."
+  },
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "alloy_name": "Fe40Mn19Ni15Al15Si10C1 low-density high entropy steel",
+      "aliases": [
+        "Fe40Mn19Ni15Al15Si10C1 HES",
+        "non-equiatomic low-density high entropy steel",
+        "FeMnNiAlSiC HES",
+        "non-equiatomic HES",
+        "HES",
+        "high entropy steel",
+        "Fe Mn Ni Al Si C high entropy steel",
+        "quinary low-density high entropy steel"
+      ],
+      "description": "Novel non-equiatomic low-density high entropy steel (HES) designed to form a multi-phase microstructure (mainly BCC ferrite as major phase plus partially ordered B2) for high mechanical strength and high-temperature phase stability; synthesized from elemental powders by mechanical alloying followed by spark plasma sintering.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Ni",
+        "Al",
+        "Si",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "46.00",
+          "atomic_percent": "40"
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "21.50",
+          "atomic_percent": "19"
+        },
+        {
+          "element": "Ni",
+          "weight_percent": "18.13",
+          "atomic_percent": "15"
+        },
+        {
+          "element": "Al",
+          "weight_percent": "8.34",
+          "atomic_percent": "15"
+        },
+        {
+          "element": "Si",
+          "weight_percent": "5.78",
+          "atomic_percent": "10"
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.25",
+          "atomic_percent": "1"
+        }
+      ],
+      "alloys_notes": "Nominal composition reported as Fe40Mn19Ni15Al15Si10C1 (at.%) with the corresponding wt.% (Fe-46.00%, Mn-21.50%, Ni-18.13%, Al-8.34%, Si-5.78%, C-0.25%). Starting elemental powders were 99.2% pure. Theoretical density calculated by rule of mixture is 6.55 g/cc; measured density of SPSed pellet ~6.49±0.3 g/cc (relative density ~99%).",
+      "source": {
+        "reason": "The paper reports a single, specific non-equiatomic high entropy steel composition; the elemental powder was taken in the proportion Fe40Mn19Ni15Al15Si10C1 (at.%) (Fe-46.00%, Mn-21.50%, Ni-18.13%, Al-8.34%, Si-5.78%, C-0.25%; wt.%). All processing states (milling, annealing, SPS) share this same composition, so only one alloy is defined.",
+        "block_id": [
+          "b0011",
+          "b0020",
+          "b0018"
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_premixed-0h",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_name": "Pre-mixed elemental powder (0 h milling)",
+      "state_label": "pre-mixed powder (0 h)",
+      "aliases": [
+        "pre-mixed powder",
+        "0 h",
+        "pre-milled powder",
+        "initial powder blend"
+      ],
+      "parent_process_ids": [],
+      "description": "Starting elemental powder blend of Fe, Mn, Ni, Al, Si and C in the HES proportion before any milling (0 h), showing XRD peaks of the individual elements.",
+      "processes_notes": null,
+      "source": {
+        "reason": "The XRD pattern of the pre-mixed powder of alloying elements at 0 h revealing the diffraction peaks of the individual elements is characterized (Fig. 1(a)); this is the starting reference state of the alloy before alloying.",
+        "block_id": [
+          "b0034",
+          "b0020",
+          "b0038"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ma-5h",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_name": "Mechanically milled for 5 h",
+      "state_label": "5 h milled",
+      "aliases": [
+        "5 h of milling",
+        "5 h"
+      ],
+      "parent_process_ids": [
+        "proc_premixed-0h"
+      ],
+      "description": "Powder mechanically alloyed (planetary ball mill, 200 rpm, BPR 10:1, WC vials/balls, toluene) for 5 h; low intensity peaks of all the elements have vanished indicating the onset of alloying.",
+      "processes_notes": "Mechanical alloying performed in a planetary ball mill (Retsch PM 400/2) at 200 rpm with ball-to-powder ratio 10:1; milling stopped for 20 min after every 1 h to avoid overheating.",
+      "source": {
+        "reason": "Phase evolution study reports that low intensity peaks of all the elements have vanished after 5 h of milling, defining this as a distinct milling-time state.",
+        "block_id": [
+          "b0038",
+          "b0020"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ma-10h",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_name": "Mechanically milled for 10 h",
+      "state_label": "10 h milled",
+      "aliases": [
+        "10 h",
+        "10 h milling"
+      ],
+      "parent_process_ids": [
+        "proc_ma-5h"
+      ],
+      "description": "Powder mechanically alloyed for 10 h; SEM morphology and particle size distribution histogram recorded at this milling stage.",
+      "processes_notes": null,
+      "source": {
+        "reason": "SEM micrographs and particle size distribution histograms are reported for the powder milled at 10 h (Fig. 2(f)), making it a distinct characterized milling state.",
+        "block_id": [
+          "b0047",
+          "b0041"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ma-15h",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_name": "Mechanically milled for 15 h",
+      "state_label": "15 h milled",
+      "aliases": [
+        "15 h",
+        "15 h milling"
+      ],
+      "parent_process_ids": [
+        "proc_ma-10h"
+      ],
+      "description": "Powder mechanically alloyed for 15 h; the intensity of Al diffraction peaks diminishes, indicating Al has the highest alloying rate.",
+      "processes_notes": null,
+      "source": {
+        "reason": "The phase evolution text explicitly describes that the intensity of Al diminishes after 15 h of milling, distinguishing this milling state.",
+        "block_id": [
+          "b0038"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ma-20h",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_name": "Mechanically milled for 20 h",
+      "state_label": "20 h milled",
+      "aliases": [
+        "20 h",
+        "20 h milling"
+      ],
+      "parent_process_ids": [
+        "proc_ma-15h"
+      ],
+      "description": "Powder mechanically alloyed for 20 h; intense Ni and Mn peaks are no longer evident in the XRD pattern and particle size decreases drastically.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Text reports that after 20 h the intense peaks of Ni and Mn are not evident and that the average particle size decreased drastically after 20 h of milling, defining a distinct state.",
+        "block_id": [
+          "b0038",
+          "b0041"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ma-25h",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_name": "Mechanically milled for 25 h",
+      "state_label": "25 h milled",
+      "aliases": [
+        "25 h",
+        "25 h milled powder"
+      ],
+      "parent_process_ids": [
+        "proc_ma-20h"
+      ],
+      "description": "Powder mechanically alloyed for 25 h; solid solution formed with BCC (a = 0.286 nm) and gamma-brass type (a = 0.872 nm) phases; Rietveld phase fraction/crystallite size/dislocation density reported (Table 2).",
+      "processes_notes": null,
+      "source": {
+        "reason": "The paper states that the solid solution has been formed after 25 h of milling (BCC + gamma-brass type) and tabulates its phase fraction, crystallite size and dislocation density (Table 2).",
+        "block_id": [
+          "b0038",
+          "b0046",
+          "b0040"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ma-30h",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_name": "Mechanically milled for 30 h",
+      "state_label": "30 h milled",
+      "aliases": [
+        "30 h",
+        "30 h milled powder"
+      ],
+      "parent_process_ids": [
+        "proc_ma-25h"
+      ],
+      "description": "Powder mechanically alloyed for 30 h; BCC + gamma-brass type + residual Si phases; Rietveld phase fraction, crystallite size and dislocation density reported (Table 2) and particle size histogram (Fig. 2(h)).",
+      "processes_notes": null,
+      "source": {
+        "reason": "Table 2 tabulates the phase fraction, lattice strain, crystallite size and dislocation density for the 30 h milled powder, and Fig. 2(h) gives its particle size distribution, defining a distinct state.",
+        "block_id": [
+          "b0046",
+          "b0047"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ma-35h",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_name": "Mechanically milled for 35 h (as-milled powder)",
+      "state_label": "35 h milled powder",
+      "aliases": [
+        "35 h milled sample",
+        "35 h milled powder",
+        "35 h",
+        "as-milled powder",
+        "milled powder"
+      ],
+      "parent_process_ids": [
+        "proc_ma-30h"
+      ],
+      "description": "Powder mechanically alloyed for 35 h (the final as-milled state used for annealing and SPS); forms a multi-phase structure of BCC (major), gamma-brass type and partially ordered B2-type plus a trace of undissolved Si, with nanocrystalline grains (mean particle size 3-5 um, crystallite size ~10-17 nm).",
+      "processes_notes": "This is the reference as-milled state from which the annealed and SPSed samples are derived.",
+      "source": {
+        "reason": "The 35 h milled powder is the main as-milled research object; its multi-phase constitution, nanocrystalline structure and characterization (XRD Rietveld Fig. 1(c,d), TEM Fig. 3, EDS Table 3) are extensively reported.",
+        "block_id": [
+          "b0039",
+          "b0040",
+          "b0042",
+          "b0020"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_anneal-400c-1h-wq",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_name": "Annealed at 400 °C for 1 h then water quenched",
+      "state_label": "400 °C annealed",
+      "aliases": [
+        "400 °C",
+        "400 °C annealed powder",
+        "400°C"
+      ],
+      "parent_process_ids": [
+        "proc_ma-35h"
+      ],
+      "description": "35 h milled powder encapsulated in quartz tube under argon and annealed at 400 °C for 1 h followed by water quenching; phases BCC + gamma-brass type + B2 (Table 4).",
+      "processes_notes": "Annealing series carried out on the 35 h milled powder at 400, 500, 600 and 800 °C, each 1 h + water quenching, for thermal stability study.",
+      "source": {
+        "reason": "The paper annealed the 35 h milled sample for 1 h at 400 °C followed by water quenching and reports the resulting phase constitution, so this is a distinct heat-treated state.",
+        "block_id": [
+          "b0023",
+          "b0043",
+          "b0061"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_anneal-500c-1h-wq",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_name": "Annealed at 500 °C for 1 h then water quenched",
+      "state_label": "500 °C annealed",
+      "aliases": [
+        "500 °C",
+        "500 °C annealed powder",
+        "500°C"
+      ],
+      "parent_process_ids": [
+        "proc_ma-35h"
+      ],
+      "description": "35 h milled powder annealed at 500 °C for 1 h followed by water quenching; the alloy remains thermally stable (BCC + gamma-brass type + B2) at this temperature.",
+      "processes_notes": "Upper bound of thermal stability (~500 °C) of the milled powder.",
+      "source": {
+        "reason": "Anneal at 500 °C for 1 h followed by water quenching is a distinct condition; the paper reports the phases and states the milled powder is thermally stable up to ~500 °C.",
+        "block_id": [
+          "b0023",
+          "b0043",
+          "b0061"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_anneal-600c-1h-wq",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_name": "Annealed at 600 °C for 1 h then water quenched",
+      "state_label": "600 °C annealed",
+      "aliases": [
+        "600 °C",
+        "600 °C annealed powder",
+        "600°C"
+      ],
+      "parent_process_ids": [
+        "proc_ma-35h"
+      ],
+      "description": "35 h milled powder annealed at 600 °C for 1 h followed by water quenching; forms BCC + gamma-brass type + B2 + Fe5Si3-type silicide phase.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Annealing at 600 °C is a distinct condition at which the Fe5Si3-type silicide phase is reported; Table 4 gives its phase fraction and lattice parameter.",
+        "block_id": [
+          "b0023",
+          "b0043",
+          "b0061"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_anneal-800c-1h-wq",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_name": "Annealed at 800 °C for 1 h then water quenched",
+      "state_label": "800 °C annealed",
+      "aliases": [
+        "800 °C",
+        "800 °C annealed powder",
+        "800°C"
+      ],
+      "parent_process_ids": [
+        "proc_ma-35h"
+      ],
+      "description": "35 h milled powder annealed at 800 °C for 1 h followed by water quenching; BCC + gamma-brass type + increased B2-type + Fe5Si3-type silicide, with no new phase change but an increased amount of B2.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Annealing at 800 °C is a distinct condition; text states that at 800 °C no phase change occurred but the amount of B2-type phase increased, and Table 4 lists its phases.",
+        "block_id": [
+          "b0023",
+          "b0043",
+          "b0061"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_sps-900c-50mpa-15min",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_name": "Spark plasma sintered at 900 °C, 50 MPa, 15 min",
+      "state_label": "SPSed",
+      "aliases": [
+        "SPSed sample",
+        "spark plasma sintered sample",
+        "SPSed pellet",
+        "SPSed HES"
+      ],
+      "parent_process_ids": [
+        "proc_ma-35h"
+      ],
+      "description": "35 h milled powder consolidated by spark plasma sintering at 900 °C under 50 MPa with a heating rate of 100 °C/min and holding time of 15 min; retains BCC (major) + partially ordered B2 + trace gamma-brass type and forms Fe5Si3-type silicide, with relative density ~99%.",
+      "processes_notes": "The SPSed pellet (~30 mm diameter, ~9 mm thickness) was sectioned by wire EDM for microhardness and compression testing.",
+      "source": {
+        "reason": "The 35 h milled powder was consolidated by SPS at 900 °C, 50 MPa, 100 °C/min, 15 min; this is the final bulk research object on which mechanical properties were measured.",
+        "block_id": [
+          "b0020",
+          "b0044",
+          "b0029"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__premixed-0h",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_premixed-0h",
+      "sample_label": "pre-mixed powder (0 h)",
+      "aliases": [
+        "0 h",
+        "pre-mixed powder"
+      ],
+      "source": {
+        "reason": "Composition Fe40Mn19Ni15Al15Si10C1 in the pre-milled (0 h) state, characterized by XRD showing diffraction peaks of the individual alloying elements.",
+        "block_id": [
+          "b0034",
+          "b0020"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__ma-5h",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_ma-5h",
+      "sample_label": "5 h milled",
+      "aliases": [
+        "5 h",
+        "milled 5 h"
+      ],
+      "source": {
+        "reason": "HES powder after 5 h of mechanical alloying, a distinct milling-time state in the phase evolution study.",
+        "block_id": [
+          "b0038"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__ma-10h",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_ma-10h",
+      "sample_label": "10 h milled",
+      "aliases": [
+        "10 h",
+        "milled 10 h"
+      ],
+      "source": {
+        "reason": "HES powder after 10 h of mechanical alloying, characterized by SEM morphology and particle size distribution.",
+        "block_id": [
+          "b0047",
+          "b0041"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__ma-15h",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_ma-15h",
+      "sample_label": "15 h milled",
+      "aliases": [
+        "15 h",
+        "milled 15 h"
+      ],
+      "source": {
+        "reason": "HES powder after 15 h of mechanical alloying, at which the Al diffraction peaks diminish.",
+        "block_id": [
+          "b0038"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__ma-20h",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_ma-20h",
+      "sample_label": "20 h milled",
+      "aliases": [
+        "20 h",
+        "milled 20 h"
+      ],
+      "source": {
+        "reason": "HES powder after 20 h of mechanical alloying, at which Ni and Mn intense peaks disappear and particle size decreases drastically.",
+        "block_id": [
+          "b0038",
+          "b0041"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__ma-25h",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_ma-25h",
+      "sample_label": "25 h milled",
+      "aliases": [
+        "25 h",
+        "milled 25 h"
+      ],
+      "source": {
+        "reason": "HES powder after 25 h of mechanical alloying forming a BCC + gamma-brass type solid solution, with tabulated structural parameters.",
+        "block_id": [
+          "b0046",
+          "b0038"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__ma-30h",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_ma-30h",
+      "sample_label": "30 h milled",
+      "aliases": [
+        "30 h",
+        "milled 30 h"
+      ],
+      "source": {
+        "reason": "HES powder after 30 h of mechanical alloying with tabulated phase fraction and crystallite size (Table 2) and particle size histogram.",
+        "block_id": [
+          "b0046",
+          "b0047"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__ma-35h",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_ma-35h",
+      "sample_label": "35 h milled powder",
+      "aliases": [
+        "35 h milled sample",
+        "35 h milled powder",
+        "as-milled powder"
+      ],
+      "source": {
+        "reason": "The 35 h mechanically alloyed powder - the main as-milled HES state, characterized by XRD/Rietveld, TEM and EDS.",
+        "block_id": [
+          "b0039",
+          "b0042",
+          "b0040"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__anneal-400c-1h-wq",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_anneal-400c-1h-wq",
+      "sample_label": "400 °C annealed",
+      "aliases": [
+        "400 °C",
+        "400 °C annealed powder"
+      ],
+      "source": {
+        "reason": "35 h milled HES powder annealed at 400 °C for 1 h then water quenched, a distinct thermal-stability condition.",
+        "block_id": [
+          "b0023",
+          "b0043"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__anneal-500c-1h-wq",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_anneal-500c-1h-wq",
+      "sample_label": "500 °C annealed",
+      "aliases": [
+        "500 °C",
+        "500 °C annealed powder"
+      ],
+      "source": {
+        "reason": "35 h milled HES powder annealed at 500 °C for 1 h then water quenched, the temperature up to which the alloy remains thermally stable.",
+        "block_id": [
+          "b0023",
+          "b0043"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__anneal-600c-1h-wq",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_anneal-600c-1h-wq",
+      "sample_label": "600 °C annealed",
+      "aliases": [
+        "600 °C",
+        "600 °C annealed powder"
+      ],
+      "source": {
+        "reason": "35 h milled HES powder annealed at 600 °C for 1 h then water quenched, at which the Fe5Si3-type silicide forms.",
+        "block_id": [
+          "b0023",
+          "b0043"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__anneal-800c-1h-wq",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_anneal-800c-1h-wq",
+      "sample_label": "800 °C annealed",
+      "aliases": [
+        "800 °C",
+        "800 °C annealed powder"
+      ],
+      "source": {
+        "reason": "35 h milled HES powder annealed at 800 °C for 1 h then water quenched, with an increased amount of the B2-type phase.",
+        "block_id": [
+          "b0023",
+          "b0043"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__sps-900c-50mpa-15min",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_sps-900c-50mpa-15min",
+      "sample_label": "SPSed sample",
+      "aliases": [
+        "SPSed sample",
+        "SPSed pellet",
+        "spark plasma sintered sample"
+      ],
+      "source": {
+        "reason": "The 35 h milled HES powder consolidated by spark plasma sintering at 900 °C/50 MPa/15 min - the final bulk material whose microstructure, density and mechanical properties were measured.",
+        "block_id": [
+          "b0020",
+          "b0044",
+          "b0054"
+        ]
+      }
+    }
+  ],
+  "unmapped_findings": [
+    "The paper reports measured properties of the SPSed HES: density ~6.49±0.3 g/cc (relative density ~99%, theoretical density 6.55 g/cc), microhardness ~7.8±0.3 GPa, elastic modulus ~184±5 GPa, ultimate compressive strength ~2046±160 MPa and compressive ductility ~19%.",
+    "Melting point of the HES composition was estimated as 1638 K (machine-learning approach) and 1620 K (rule of mixture).",
+    "Thermodynamic parameters of the non-equiatomic FeMnNiAlSiC HES: mixing enthalpy dHmix = -8.4 kJ/mol, configurational entropy dSconf = 12.4 J/K-mol, size mismatch delta = 7.6%, Omega = 2.4, VEC = 6.9 (predicted BCC/dual-phase).",
+    "CALPHAD (Thermo-Calc, TCFE8 database) property diagram and single-point equilibrium calculations predict phases from 25 °C to 1200 °C (liquid, BCC_A2#1, B2, BCC_A2#2, M3Si, BCC_A2#3); some differences vs experimental results attributed to the database used.",
+    "Strengthening mechanism analysis indicates grain-boundary (52.55%) and dislocation (30.00%) strengthening are dominant, with precipitation (5.70%) and solid-solution (6.14%) contributions; calculated theoretical strength 2164 MPa vs measured 2046 MPa.",
+    "Multiple other HEAs, high entropy steels and conventional steels (e.g., Fe40.4Ni11.3Mn34.8Al7.5Cr6, Fe40Mn40Co10Cr10, Cr20Mn10Fe35Ni35, Fe40Cr25Ni15Al15Co5, FeMnNiCrAlSi-C) are cited from earlier literature only for comparison/context and are not research objects of this study."
+  ]
+}

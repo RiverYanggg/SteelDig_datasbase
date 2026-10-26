@@ -1,0 +1,446 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30.5mn-8.0al-1.2c__anneal-600c-24h",
+      "paper_id": "10.1016_j.scriptamat.2012.08.038",
+      "alloy_id": "alloy_fe-30.5mn-8.0al-1.2c",
+      "process_id": "proc_anneal-600c-24h",
+      "sample_label": "8Al, 1 h/600 °C/24 h",
+      "aliases": [
+        "8Al long annealed",
+        "long annealed 8Al",
+        "8Al",
+        "600 °C/24 h"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "Ar",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Melted in an induction furnace under Ar atmosphere."
+    },
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "2",
+      "type": "casting",
+      "method": "casting to round bars",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cast to round bars, 25 mm in diameter."
+    },
+    {
+      "processing_step_id": "step_reheating",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "reheating",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": "30 min",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cast ingots reheated to 1200 °C for 30 min prior to hot rolling."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "75%",
+      "processing_steps_notes": "Hot-rolled to 75% thickness reduction at 1100 °C."
+    },
+    {
+      "processing_step_id": "step_hot_roll_quench",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled material water quenched."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "6",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": "Ar",
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution-treated for 2 h at 1100 °C under Ar, then quenched in water; parent process of the long annealing."
+    },
+    {
+      "processing_step_id": "step_long_annealing",
+      "sequence": "7",
+      "type": "heat treatment",
+      "method": "long annealing treatment",
+      "temperature": "600",
+      "temperature_unit": "°C",
+      "duration": "24 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Long annealing treatment for the 8Al steel is 600 °C/24 h, producing cuboidal nanosized κ-carbides; corresponds to the '8Al, 1 h/600 °C/24 h' state."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_long_annealed_8al_precipitation_state",
+      "overall_structure": "Long annealed 8Al steel contains a uniform distribution of intragranular cuboidal nanosized κ-carbides in an austenite matrix; the high volume fraction of precipitates produces narrow matrix channels of about 2–3 nm width.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_long_annealed_8al",
+          "region": "intragranular (grain interior)",
+          "related_sequence": "7",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "face-centered cubic (austenite)",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": "cube/cube orientation relationship with κ-carbides"
+            },
+            {
+              "phase_name": "κ-carbide ((Fe,Mn)3AlC)",
+              "crystal_structure": "L'1_2-type structure",
+              "volume_fraction": "high volume fraction",
+              "morphology": "cuboidal",
+              "grain_size": "10 × 20 nm",
+              "texture": "cube/cube orientation relationship with the austenite matrix"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_long_annealed_8al",
+              "type": "nanosized κ-carbide ((Fe,Mn)3AlC)",
+              "size": {
+                "value": "10 × 20 nm",
+                "unit": null
+              },
+              "distribution": "uniform, intragranular; narrow matrix channels of about 2–3 nm width between precipitates",
+              "coherency": "cube/cube orientation relationship with the austenite matrix; shearable by dislocations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_long_annealed_8al_deformed",
+      "overall_structure": "Upon straining to 0.15 true strain the long annealed 8Al steel develops planar dislocation substructures consisting of dense dislocation arrays spaced between 100 and 300 nm; cuboidal κ-carbides within the arrays are frequently sheared by dislocations.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_long_annealed_8al_deformed_015",
+          "region": "grain interior",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "face-centered cubic (austenite)",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide ((Fe,Mn)3AlC)",
+              "crystal_structure": "L'1_2-type structure",
+              "volume_fraction": null,
+              "morphology": "cuboidal (sheared particles)",
+              "grain_size": "10 × 20 nm",
+              "texture": "cube/cube orientation relationship with the austenite matrix"
+            }
+          ],
+          "defects": [
+            {
+              "type": "planar dislocation substructures consisting of dense dislocation arrays spaced between 100 and 300 nm",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_sheared_long_annealed_8al",
+              "type": "nanosized κ-carbide ((Fe,Mn)3AlC)",
+              "size": {
+                "value": "10 × 20 nm",
+                "unit": null
+              },
+              "distribution": "within dense dislocation arrays; frequently sheared by dislocations",
+              "coherency": "cube/cube orientation relationship with the austenite matrix; shearable"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_long_annealed_8al",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_kappa_austenite",
+          "microstructure_id": "micro_long_annealed_8al",
+          "phase_1_name": "κ-carbide ((Fe,Mn)3AlC)",
+          "phase_2_name": "austenite (γ)",
+          "coherence": "cube/cube orientation relationship with the austenite matrix"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_dislocation_kappa_shearing",
+          "microstructure_id": "micro_long_annealed_8al_deformed_015",
+          "interaction_type": "dislocation–κ-carbide shearing",
+          "qualitative_or_quantitative_description": "Within the dense dislocation arrays, cuboidal κ-carbides are frequently sheared by dislocations; shearing of the cuboidal κ-carbides enhances planar slip and results in the combination of high strength (YS 990 MPa, UTS 1180 MPa) and ductility (UE 37%)."
+        },
+        {
+          "interaction_id": "di_planar_slip",
+          "microstructure_id": "micro_long_annealed_8al_deformed_015",
+          "interaction_type": "planar slip promoted by shearable precipitates",
+          "qualitative_or_quantitative_description": "The enhancement of planar slip by shearing of cuboidal κ-carbides results in planar dislocation substructures; plasticity is mainly concentrated through the dislocation boundaries of such substructures."
+        }
+      ],
+      "slip_behavior": "Planar slip; planar dislocation substructures (dense dislocation arrays) stabilized by shearable nanosized κ-carbides.",
+      "phase_evolution": null,
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_long_annealed_8al_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "5 × 10^-4 s^-1",
+        "specimen_geometry": "cylindrical tensile samples with gauges of 6 mm diameter and 40 mm length",
+        "test_standard": null,
+        "other_conditions": "Interrupted tensile tests to different strain levels were also performed."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "990 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1180 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "37%",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Nearly linear stress–strain curve after yielding, without a concave (multiple-hardening) shape (see Figure 1).",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "direction": null,
+              "value": "8Al steels ~2 GPa at the early stages of deformation (lower hardening capacity than 2Al steels ~2.6 GPa); single hardening regime fairly constant during deformation",
+              "unit": "GPa",
+              "uncertainty": null
+            },
+            {
+              "direction": null,
+              "value": "8Al-600°C/24h single nearly constant hardening regime close to 2 GPa; drops to ~1.9 GPa around 1200 MPa, broad maximum near 2.2 GPa at ~1350 MPa, then falls to ~1.2 GPa at ~1550 MPa",
+              "unit": "GPa",
+              "uncertainty": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_long_annealed_8al_vs_short_annealed_8al",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-30.5mn-8.0al-1.2c",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Long annealing (600 °C/24 h) vs short annealing (450 °C/1 h) of the 8Al steel: YS rises from 540 to 990 MPa and UTS from 895 to 1180 MPa, while uniform elongation falls from 65% to 37%.",
+        "improvement_percentage": null
+      }
+    },
+    {
+      "performance_id": "perf_long_annealed_8al_vs_2al_solid_solution",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-30.5mn-2.1al-1.2c",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "The precipitation state of the long annealed 8Al steel yields a remarkable increase in yield strength compared to the 2Al steel in solid solution (YS = 420 MPa for 2Al vs YS = 990 MPa for long annealed 8Al).",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_ecci_long_annealed_8al",
+      "microstructure_id": "micro_long_annealed_8al_deformed_015",
+      "technique": "Electron Channeling Contrast Imaging (ECCI)",
+      "instrument_or_setup": "Zeiss Crossbeam instrument (XB 1540, Carl Zeiss SMT AG, Germany) with an EBSD-based set-up for controlled diffraction conditions",
+      "measurement_conditions": "Long annealed 8Al steel tensile deformed to 0.15 true strain; longitudinal section with observation direction perpendicular to the tensile axis",
+      "purpose": "Characterize the dislocation patterning / planar dislocation substructures of the deformed long annealed 8Al steel",
+      "key_findings": "Planar dislocation substructures consisting of dense dislocation arrays spaced between 100 and 300 nm; cuboidal κ-carbides sheared by dislocations within the arrays."
+    },
+    {
+      "characterization_id": "char_darkfield_tem_kappa_long_annealed_8al",
+      "microstructure_id": "micro_long_annealed_8al",
+      "technique": "Dark-field transmission electron microscopy (TEM)",
+      "instrument_or_setup": "Phillips CM20 microscope; thin foils electropolished in 30% nitric acid in methanol at −30 °C and 10 V",
+      "measurement_conditions": "Long annealed 8Al sample; 20 nm scale bar",
+      "purpose": "Image the distribution of κ-carbides and assess particle shearing in the long annealed 8Al steel",
+      "key_findings": "Bright cuboidal κ-carbides (10 × 20 nm) arranged in rows separated by narrow matrix channels; sheared particles indicated by arrows; confirms uniform intragranular distribution."
+    },
+    {
+      "characterization_id": "char_saed_long_annealed_8al",
+      "microstructure_id": "micro_long_annealed_8al",
+      "technique": "Selected area electron diffraction (SAED)",
+      "instrument_or_setup": "Phillips CM20 microscope",
+      "measurement_conditions": "Diffraction pattern of the long annealed 8Al precipitation state",
+      "purpose": "Determine the crystal structure and orientation relationship of the κ-carbides",
+      "key_findings": "Confirms the κ-carbides maintain a cube/cube orientation relationship with the austenite matrix."
+    },
+    {
+      "characterization_id": "char_tensile_long_annealed_8al",
+      "microstructure_id": null,
+      "technique": "Tensile testing (to failure and interrupted to different strain levels)",
+      "instrument_or_setup": "Zwick ZH 100 tensile machine",
+      "measurement_conditions": "Room temperature, initial strain rate 5 × 10^-4 s^-1, cylindrical specimens 6 mm diameter × 40 mm gauge",
+      "purpose": "Measure mechanical properties and study microstructural evolution as a function of strain",
+      "key_findings": "Long annealed 8Al: YS 990 MPa, UTS 1180 MPa, UE 37%; nearly linear flow curve indicating a single hardening regime."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The 8Al steels exhibit less hardening capacity than the 2Al steels (early-stage hardening: 2Al ~2.6 GPa; 8Al ~2 GPa) and contain a single hardening regime that remains fairly constant during deformation; the short annealed 8Al steel exhibits greater hardening than the long annealed 8Al steel.",
+    "Despite the low strain hardening capacity of the long annealed 8Al steel (YS 990 MPa; UTS 1180 MPa), the alloy exhibits a considerably high ductility (UE 37%).",
+    "Similar precipitation states to that of the long annealed 8Al steel have been reported in annealed Fe–Mn–Al–C steels between 450 and 650 °C, with yield strength values up to 1400 MPa attained in ultrahigh carbon (1.8 wt.%) Fe–Mn–Al–C steels."
+  ]
+}

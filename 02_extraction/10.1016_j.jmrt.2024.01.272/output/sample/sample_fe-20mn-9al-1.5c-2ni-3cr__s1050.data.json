@@ -1,0 +1,448 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-9al-1.5c-2ni-3cr__s1050",
+      "paper_id": "10.1016_j.jmrt.2024.01.272",
+      "alloy_id": "alloy_fe-20mn-9al-1.5c-2ni-3cr",
+      "process_id": "proc_s1050",
+      "sample_label": "S1050",
+      "aliases": [
+        "single-stage heat treatment at 1050 °C",
+        "S1050 steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingot homogenized at 1200 °C for 2 h before hot rolling; shared pre-treatment for all conditions of this alloy."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1050–950",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "rolled to a 6 mm sheet",
+      "processing_steps_notes": "Hot rolled at temperatures of 1050–950 °C to produce a 6 mm sheet; shared pre-treatment."
+    },
+    {
+      "processing_step_id": "step_air_cooling",
+      "sequence": "3",
+      "type": "cooling",
+      "method": "air cooling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "air",
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "After hot rolling, air cooled to room temperature; shared pre-treatment."
+    },
+    {
+      "processing_step_id": "step_s1050_single_stage",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "single-stage heat treatment at 1050 °C for 3 min followed by quenching",
+      "temperature": "1050",
+      "temperature_unit": "°C",
+      "duration": "3 min",
+      "atmosphere": null,
+      "cooling_medium": "quenching to room temperature (water quench per Fig. 1 blue quench tank)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Defining step of the S1050 sample: '(2) heat treatment at 1050 °C for 3 min followed by quenching to room temperature, hereinafter referred to as S1050'."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_s1050",
+      "overall_structure": "Fully austenitic matrix with annealing twins (Σ3-dominated) and equiaxed grains; nanoscale κ-carbide co-gridded with the austenite matrix; intragranular B2 particles; the elongated intergranular Cr7C3 precipitates seen in S1000 are absent because Cr7C3 dissolves at 1050 °C.",
+      "number_of_phases": "3 (austenite, κ-carbide, B2; Cr7C3 only in S1000)",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_s1050_matrix",
+          "region": "bulk / grain interior and grain boundaries",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC (indexed to [011]γ zone axis)",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains with annealing twins",
+              "grain_size": "3.84 μm (effective grain size d_eff, twins included)",
+              "texture": "annealing twins with Σ3-orientation relationship to parent grains; dominant misorientation peak near 60°"
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "nanoscale particles co-gridded with austenite; faint superlattice reflections in SAED; orientation relationship [011]γ // [011]κ",
+              "grain_size": "3–10 nm",
+              "texture": null
+            },
+            {
+              "phase_name": "B2",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "dark faceted intra-granular particles in the austenite",
+              "grain_size": "20–160 nm",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "pores/microvoids (dark rounded pores observed in SEM)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "3.84",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "misorientation angle distribution dominated by a peak near 60° (Σ3 annealing twins)"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_s1050",
+              "type": "κ-carbide",
+              "size": "3–10 nm",
+              "distribution": "co-gridded within the austenite matrix (uniform)",
+              "coherency": "coherent / co-gridded with austenite"
+            },
+            {
+              "precipitate_id": "ppt_b2_s1050",
+              "type": "B2",
+              "size": "20–160 nm",
+              "distribution": "intra-granular in austenite",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_cr7c3_s1050",
+              "type": "Cr7C3",
+              "size": null,
+              "distribution": "absent — intergranular Cr7C3 dissolves when temperature increases to 1050 °C",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_s1050",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_ak_s1050",
+          "microstructure_id": "micro_s1050_matrix",
+          "phase_1_name": "austenite",
+          "phase_2_name": "κ-carbide",
+          "coherence": "coherent/co-gridded; orientation relationship [011]γ // [011]κ"
+        },
+        {
+          "interface_id": "if_ab2_s1050",
+          "microstructure_id": "micro_s1050_matrix",
+          "phase_1_name": "austenite",
+          "phase_2_name": "B2",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_crack_gb_s1050",
+          "microstructure_id": "micro_s1050_matrix",
+          "interaction_type": "crack propagation vs. grain boundaries and twins",
+          "qualitative_or_quantitative_description": "After intergranular precipitates are eliminated in S1050, grains grow and special boundaries interfere with RHAGBs; further intergranular crack propagation is inhibited and cracks propagate along special boundaries (straight cracking) or are deflected, producing a hybrid intergranular + transgranular ductile fracture. Crack propagation energy rises to 26.64 J (from 9.87 J in S1000)."
+        },
+        {
+          "interaction_id": "di_twin_s1050",
+          "microstructure_id": "micro_s1050_matrix",
+          "interaction_type": "crack–twin boundary interaction",
+          "qualitative_or_quantitative_description": "Cracks are seen to travel 'across the twins' (yellow dashed lines in Fig. 8c,d) and to be deflected at boundaries."
+        }
+      ],
+      "slip_behavior": "Slip bands on the quasi-cleavage plane are observed on the S1050 impact fracture surface (post-deformation fracture feature).",
+      "phase_evolution": "Cr7C3 at the austenite grain boundaries dissolves as the temperature is raised to 1050 °C; austenite grains grow relative to S1000 (3.17 μm → 3.84 μm); κ-carbide and B2 remain.",
+      "interface_notes": "Proportion of 'special' boundaries (Σ ≤ 29, by length) is 68.3 % for S1050 — the lowest of the three conditions (S1000 71.7 %, MHT 71.2 %)."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_s1050",
+      "measurement_conditions": {
+        "temperature": "25 °C (room temperature)",
+        "temperature_unit": "°C",
+        "environment": "ambient/room temperature",
+        "strain_rate": "3 mm/min",
+        "specimen_geometry": "Tensile: gauge length 25 mm, gauge width 4 mm, gauge thickness 5 mm, machined along the rolling direction. Impact: standard Charpy V-notch 5 mm × 10 mm × 55 mm.",
+        "test_standard": "standard Charpy V-notch impact specimen",
+        "other_conditions": "Measured tensile and impact properties are the averages of three tests per condition"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "945 ± 14 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 14 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "1113 ± 3 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 3 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction",
+              "value": "55.8 ± 0.4 %",
+              "unit": "%",
+              "uncertainty": "± 0.4 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress–strain curve for S1050 (blue curve) in Fig. 4(a); corresponding true stress–true strain and strain-work-hardening curves in Fig. 4(b).",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "value": "maximum ~2000 MPa at a strain interval of 0.20–0.22",
+              "unit": "MPa",
+              "direction": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.78",
+          "unit": "g/cm^3"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_s1050",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "25",
+          "max": "25",
+          "unit": "°C"
+        },
+        "stress_state": "uniaxial tensile and dynamic Charpy V-notch impact loading",
+        "environment": "room temperature (ambient)"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": [
+        {
+          "benchmark_alloy_id": "alloy_fe-20mn-9al-1.5c-2ni-3cr",
+          "benchmark_process_id": "proc_s1000",
+          "benchmark_sample_id": null,
+          "comparison_metric": "Charpy impact energy",
+          "improvement_percentage": "42.8 J for S1050 vs 29.2 J for S1000 (S1050 higher)"
+        },
+        {
+          "benchmark_alloy_id": "alloy_fe-20mn-9al-1.5c-2ni-3cr",
+          "benchmark_process_id": "proc_s1000",
+          "benchmark_sample_id": null,
+          "comparison_metric": "crack propagation energy",
+          "improvement_percentage": "26.64 J for S1050 vs 9.87 J for S1000"
+        },
+        {
+          "benchmark_alloy_id": "alloy_fe-20mn-9al-1.5c-2ni-3cr",
+          "benchmark_process_id": null,
+          "benchmark_sample_id": null,
+          "comparison_metric": "impact toughness (MHT relative to S1050)",
+          "improvement_percentage": "MHT impact toughness (55.1 J) is 29 % higher than S1050"
+        }
+      ]
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_sem_s1050",
+      "microstructure_id": "micro_s1050_matrix",
+      "technique": "field-emission scanning electron microscopy (SEM)",
+      "instrument_or_setup": "Zeiss Ultra 55 field-emission SEM",
+      "measurement_conditions": "SEM specimens mechanically polished then etched in 40 ml HNO3 + 100 ml ethyl alcohol",
+      "purpose": "Characterize matrix microstructure, annealing twins and grain-boundary precipitates; examine tensile and impact fracture surfaces",
+      "key_findings": "S1050 shows an austenitic matrix with twins and no elongated grain-boundary precipitates (unlike S1000); tensile fracture is dimpled; impact fracture shows quasi-cleavage planes with slip bands and microcracks."
+    },
+    {
+      "characterization_id": "char_ebsd_s1050",
+      "microstructure_id": "micro_s1050_matrix",
+      "technique": "electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "EBSD probe on Zeiss Ultra 55 SEM; specimens chemically polished with colloidal silica without etching",
+      "measurement_conditions": "Grain boundaries with Σ ≤ 29 classified as low-energy (special) boundaries; Σ3 fraction limited to 2/3 maximum",
+      "purpose": "Measure effective grain size (including twins), misorientation angle distribution and proportion of special boundaries",
+      "key_findings": "S1050 effective grain size 3.84 μm; dominant misorientation peak near 60° (Σ3 twins); proportion of special boundaries (Σ ≤ 29) = 68.3 %."
+    },
+    {
+      "characterization_id": "char_tem_s1050",
+      "microstructure_id": "micro_s1050_matrix",
+      "technique": "transmission electron microscopy (TEM) and selected area electron diffraction (SAED)",
+      "instrument_or_setup": "FEI Tecnai G2 F20 TEM; specimens 0.5 mm thick ground to 80 μm and twin-jet electrochemically polished in 10 % perchloric acid + 90 % methanol",
+      "measurement_conditions": null,
+      "purpose": "Identify phase composition and precipitate sizes (κ-carbide, B2, Cr7C3)",
+      "key_findings": "κ-carbide (3–10 nm) co-gridded with austenite ([011]γ // [011]κ); B2 particles 20–160 nm present intra-granularly; grain-boundary Cr7C3 dissolved at 1050 °C."
+    },
+    {
+      "characterization_id": "char_eds_s1050",
+      "microstructure_id": "micro_s1050_matrix",
+      "technique": "energy dispersive spectroscopy (EDS)",
+      "instrument_or_setup": "EDS in SEM mode",
+      "measurement_conditions": "C content not measurable by EDS; C calculated via lattice parameter equations (1) and (2)",
+      "purpose": "Measure Mn, Al, Ni and Cr contents of the austenite",
+      "key_findings": "Austenite composition of S1050: 21.09 ± 0.86 Mn, 9.00 ± 0.11 Al, 2.19 ± 0.16 Ni, 3.16 ± 0.17 Cr, 1.22 ± 0.03 C, Fe Bal."
+    },
+    {
+      "characterization_id": "char_tensile_s1050",
+      "microstructure_id": null,
+      "technique": "uniaxial tensile testing",
+      "instrument_or_setup": "AI-7000-LAU10 instrument",
+      "measurement_conditions": "Room temperature; constant strain rate 3 mm/min; specimen gauge length 25 mm, width 4 mm, thickness 5 mm; yield strength measured at 0.2 % offset",
+      "purpose": "Measure yield strength, ultimate tensile strength and total elongation",
+      "key_findings": "S1050: YS 945 ± 14 MPa, UTS 1113 ± 3 MPa, total elongation 55.8 ± 0.4 %; avg of three tests."
+    },
+    {
+      "characterization_id": "char_impact_s1050",
+      "microstructure_id": null,
+      "technique": "instrumented Charpy V-notch impact testing",
+      "instrument_or_setup": "L222.4452-DE pendulum impact test instrument",
+      "measurement_conditions": "Ambient temperature; standard Charpy V-notch specimens 5 mm × 10 mm × 55 mm; load–displacement curves recorded; energies separated into crack initiation and crack propagation energies",
+      "purpose": "Measure impact energy and separate crack initiation/propagation contributions",
+      "key_findings": "S1050 impact energy 42.8 ± 0.4 J (avg of three tests); crack propagation energy 26.64 J; displacement 6.30 mm."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "calc_s1050_strengthening",
+      "simulation_method": "Analytical strengthening-contribution calculation (no simulation software)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Calculated precipitation/precipitate strengthening σ_PPT = 216 MPa for S1050 (obtained as σ_YS − σ0 − σ_GR) is used to explain the maintained high yield strength; solid-solution and grain-boundary contributions are 609 MPa and 120 MPa respectively.",
+      "analytical_models": [
+        {
+          "model_name": "Yield strength superposition",
+          "equation_role": "σ_YS = σ0 + σ_GR + σ_PPT",
+          "parameters": [
+            {
+              "name": "σ0 (solid-solution/lattice friction, S1050)",
+              "value": "609",
+              "unit": "MPa"
+            },
+            {
+              "name": "σ_GR (grain boundary, S1050)",
+              "value": "120",
+              "unit": "MPa"
+            },
+            {
+              "name": "σ_PPT (precipitation, S1050, derived)",
+              "value": "216",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "Applied to S1050 to decompose the yield strength."
+        },
+        {
+          "model_name": "Solid-solution / lattice friction stress",
+          "equation_role": "σ0 = 97 + 279 wt% C + 1.5 wt% Mn + 20.5 wt% Al + 2.9 wt% Ni + 3.9 wt% Cr",
+          "parameters": [],
+          "model_note": "Gives solid-solution strengthening of 609 MPa for S1050."
+        },
+        {
+          "model_name": "Hall–Petch grain boundary strengthening",
+          "equation_role": "σ_GR = K · d_eff^(−1/2)",
+          "parameters": [
+            {
+              "name": "K (Hall–Petch slope)",
+              "value": "461",
+              "unit": "MPa μm^(1/2)"
+            },
+            {
+              "name": "d_eff (S1050)",
+              "value": "3.84",
+              "unit": "μm"
+            }
+          ],
+          "model_note": "Grain-boundary strength of S1050 = 120 MPa."
+        },
+        {
+          "model_name": "Lattice-parameter / C-content equations",
+          "equation_role": "a_γ = λ√(h²+k²+l²)/(2 sinθ) (eq. 1); a_γ = 3.578 + 0.033X_C + 0.00095X_Mn − 0.0002X_Ni + 0.0006X_Cr + 0.0056X_Al (eq. 2)",
+          "parameters": [],
+          "model_note": "Used to calculate the C content in austenite because EDS is unreliable for C; applied to the S1050 austenite composition."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Charpy V-notch impact energy of S1050 (single-stage heat treatment at 1050 °C for 3 min + water quench) = 42.8 ± 0.4 J, average of three tests; this value is reported in Table 1 and Fig. 5 but has no dedicated schema field.",
+    "Crack propagation energy of S1050 = 26.64 J (intermediate between S1000 = 9.87 J and MHT = 36.78 J); Charpy load–displacement displacement of S1050 = 6.30 mm.",
+    "Proportion of 'special' grain boundaries (Σ ≤ 29, by length) for S1050 = 68.3 % — the lowest among S1000 (71.7 %), S1050 (68.3 %) and MHT (71.2 %).",
+    "Austenite chemical composition of S1050 measured by EDS (Table 2): Mn 21.09 ± 0.86, Al 9.00 ± 0.11, Ni 2.19 ± 0.16, Cr 3.16 ± 0.17, C 1.22 ± 0.03 (Fe balance); C calculated via lattice-parameter equations.",
+    "Strengthening contribution decomposition for S1050: solid-solution strengthening 609 MPa, grain-boundary (Hall–Petch) strengthening 120 MPa, and derived precipitation strengthening σ_PPT = 216 MPa.",
+    "Solid-solution strengthening effects of S1000, S1050 and MHT are 601, 609, and 599 MPa respectively (values are similar).",
+    "Grain-boundary strength values of S1000, S1050, and MHT are 145, 120, and 63 MPa respectively.",
+    "Steel density measured by the drainage method is 6.78 g/cm^3, about 14 % lower than pure iron (7.87 g/cm^3).",
+    "The strain-hardening rate of all steels passes through three stages; in the second stage the strain-hardening rate reaches a maximum of 2000 MPa at a strain interval of 0.20–0.22 (statement applies to S1000, S1050 and MHT collectively).",
+    "Impact fracture of S1050 shows quasi-cleavage planes with slip bands and microcracks/microvoids, i.e., an intermediate fracture mode between the intergranular fracture of S1000 and the fully ductile dimpled fracture of MHT."
+  ]
+}

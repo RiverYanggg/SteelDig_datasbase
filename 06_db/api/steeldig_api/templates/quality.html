@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% block title %}数据质量{% endblock %}
+
+{% block content %}
+<div class="page-head">
+  <div><h1>数据质量</h1><p>error 级问题会阻断发布；warn 级入库但打标记</p></div>
+  <div class="spacer"></div>
+  <span class="badge {{ 'red' if issues | selectattr('severity','equalto','error') | list else 'green' }}">
+    {{ '存在 error' if issues | selectattr('severity','equalto','error') | list else '无 error · 可发布' }}
+  </span>
+</div>
+
+<div class="grid" style="margin-bottom:16px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr))">
+  {% for c in coverage %}
+  <div class="card kpi"><span class="label">{{ c.k }}</span>
+    <span class="value">{{ '{:,}'.format(c.n) }}</span></div>
+  {% endfor %}
+</div>
+
+<div class="grid g2" style="margin-bottom:16px">
+  <div class="card">
+    <div class="card-head"><div><h3>质量问题</h3><div class="sub">按规则聚合</div></div></div>
+    <table class="data">
+      <thead><tr><th>规则</th><th>级别</th><th class="num">数量</th></tr></thead>
+      <tbody>
+      {% for i in issues %}
+        <tr><td class="mono" style="font-size:12px">{{ i.rule_code }}</td>
+          <td><span class="badge {{ 'red' if i.severity=='error' else ('amber' if i.severity=='warn' else 'ghost') }}">{{ i.severity }}</span></td>
+          <td class="num">{{ '{:,}'.format(i.n) }}</td></tr>
+      {% else %}
+        <tr><td colspan="3"><div class="empty">没有记录</div></td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div><h3>block_id 对齐</h3><div class="sub">合成 id → 真实证据块</div></div></div>
+    <table class="data">
+      <thead><tr><th>方法</th><th class="num">数量</th></tr></thead>
+      <tbody>
+      {% for r in resolution %}
+        <tr><td class="mono" style="font-size:12px">{{ r.method }}</td><td class="num">{{ '{:,}'.format(r.n) }}</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    <div class="prop-name" style="margin-top:16px">图观察项溯源状态</div>
+    <table class="data" style="margin-top:6px">
+      <tbody>
+      {% for s in status %}
+        <tr><td class="mono" style="font-size:12px">{{ s.block_status }}</td><td class="num">{{ '{:,}'.format(s.n) }}</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom:16px">
+  <div class="card-head">
+    <div><h3>人工校订</h3><div class="sub">事实层可被重跑覆盖，人工修改统一落在 curate.change 并自动重放</div></div>
+    <div class="spacer"></div>
+    <span class="badge ghost">{{ cure.total }} 条</span>
+  </div>
+  <div class="grid g4" style="margin-bottom:12px">
+    <div class="kpi"><span class="label">生效</span><span class="value">{{ cure.applied }}</span></div>
+    <div class="kpi"><span class="label">已撤销</span><span class="value">{{ cure.reverted }}</span></div>
+    <div class="kpi"><span class="label">失败</span><span class="value">{{ cure.failed }}</span></div>
+    <div class="kpi"><span class="label">涉及论文</span><span class="value">{{ cure.papers }}</span></div>
+  </div>
+  <table class="data">
+    <thead><tr><th>#</th><th>操作</th><th>目标</th><th>论文</th><th>说明</th><th>作者</th><th>状态</th></tr></thead>
+    <tbody>
+    {% for c in recent_changes %}
+      <tr>
+        <td class="mono">{{ c.change_id }}</td>
+        <td>{{ {'update':'修正','delete':'删除','create':'新增'}.get(c.op, c.op) }}</td>
+        <td class="mono" style="font-size:12px">{{ c.target_table }}{% if c.field %} · {{ c.field }}{% endif %}</td>
+        <td class="mono" style="font-size:11.5px">{{ c.paper_id }}</td>
+        <td class="muted" style="font-size:12px">{{ (c.note or '') | truncate(40, true) }}</td>
+        <td>{{ c.author }}</td>
+        <td><span class="badge {{ 'green' if c.status=='applied' else 'ghost' }}">{{ c.status }}</span></td>
+      </tr>
+    {% else %}
+      <tr><td colspan="7"><div class="empty">还没有人工校订记录</div></td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<div class="grid g2" style="margin-bottom:16px">
+  <div class="card">
+    <div class="card-head"><div><h3>运行版本</h3><div class="sub">多批次 × 多模型</div></div></div>
+    <table class="data">
+      <thead><tr><th>run</th><th>模型</th><th>批次</th><th class="num">论文</th></tr></thead>
+      <tbody>
+      {% for r in runs %}
+        <tr><td class="mono" style="font-size:12px">{{ r.run_id }}</td>
+          <td>{{ r.model or '—' }}</td><td class="mono muted" style="font-size:12px">{{ r.source_batch or '—' }}</td>
+          <td class="num">{{ r.paper_count }}</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div><h3>规则目录</h3><div class="sub">可扩展的质量门禁</div></div></div>
+    <table class="data">
+      <thead><tr><th>规则</th><th>级别</th><th>说明</th></tr></thead>
+      <tbody>
+      {% for r in rules %}
+        <tr><td class="mono" style="font-size:11.5px">{{ r.rule_code }}</td>
+          <td><span class="badge {{ 'red' if r.severity=='error' else ('amber' if r.severity=='warn' else 'ghost') }}">{{ r.severity }}</span></td>
+          <td class="muted" style="font-size:12px">{{ (r.description or '') | truncate(64, true) }}</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

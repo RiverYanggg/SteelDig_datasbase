@@ -1,0 +1,333 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-9al-1.2c-6cr__ac",
+      "paper_id": "10.1016_j.msea.2021.141583",
+      "alloy_id": "alloy_fe-28mn-9al-1.2c-6cr",
+      "process_id": "proc_ac",
+      "sample_label": "as-cast 6Cr strip",
+      "aliases": [
+        "6Cr as-cast",
+        "as-cast 6Cr"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "melting / alloying",
+      "method": "induction melting of high purity Fe (99.99%), Mn (99.9%), Al (99.9%), C (99.8%) and Cr (99.9%)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Alloy ingot was made from high purity elements and reheated to melt by an induction coil before casting."
+    },
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "2",
+      "type": "casting (near-rapid solidification)",
+      "method": "centrifugal casting: liquid metal poured into a copper mold",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "Ar atmosphere",
+      "cooling_medium": "copper mold",
+      "heating_or_cooling_rate": "maximum cooling rate about 5×10^3 K/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Mold rotating speed 600 r/min; obtained strip size (60–80) mm × 60 mm × 2.5 mm; this as-cast state received no post-solidification heat treatment."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_6cr_ac",
+      "overall_structure": "Two-phase austenite (γ) + ferrite (δ) microstructure with austenite as the major matrix phase; δ-ferrite uniformly distributed in the austenite matrix. For the 6Cr strip the ferrite fraction is 14.8 vol% and the δ(110) reflection is clearly stronger than in 0Cr and 3Cr, indicating Cr promotes ferrite; ferrite particles are predominantly angular/block-like.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_aus_6cr_ac",
+          "region": "austenite matrix",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": "major matrix phase",
+              "morphology": "continuous matrix",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "high (heavy dislocation content; more dislocations than 0Cr; slightly higher than 9Cr)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "kappa_6cr_ac",
+              "type": "κ-carbide",
+              "size": "too small to identify",
+              "distribution": "in austenite matrix (superlattice very weak in SADP)",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_ferrite_6cr_ac",
+          "region": "ferrite particles dispersed in the austenite matrix",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (δ)",
+              "crystal_structure": null,
+              "volume_fraction": "14.8 vol%",
+              "morphology": "predominantly angular/block-like particles, more numerous and coarser than 3Cr",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "only a few dislocations occasionally observed in the ferrite",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "do3_6cr_ac",
+              "type": "DO3 phase (nano-scale ordered domains in ferrite)",
+              "size": "nano-scale",
+              "distribution": "clearly appear in ferrite of 6Cr strip (DF images)",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_6cr_ac",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_aus_ferrite_6cr_ac",
+          "microstructure_id": "micro_ferrite_6cr_ac",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "ferrite (δ)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_block_6cr_ac",
+          "microstructure_id": "micro_ferrite_6cr_ac",
+          "interaction_type": "dislocation blocking at phase interfaces",
+          "qualitative_or_quantitative_description": "Increase of δ-ferrite fraction in Cr-containing strips can block dislocation propagation due to more phase-interface areas, which may decrease the plasticity."
+        }
+      ],
+      "slip_behavior": "Slip bands are observed in austenite of the strips during deformation; average spacing between slip bands ~80 nm in as-cast 6Cr (vs ~90 nm in as-cast 0Cr), and average widths of slip bands in as-cast 6Cr are 12.5 nm. Narrow slip-band spacing suggests higher strain-hardening rate.",
+      "phase_evolution": "Solidification follows the FA (ferrite-to-austenite) mode: L (liquid) → L+δ (high-temperature ferrite) → L+δ+γ (austenite) → δ+γ. δ-ferrite first nucleated and grew from the melt during near-rapid solidification.",
+      "interface_notes": "In the as-cast 0Cr strip κ-carbides are visible only at the austenite/ferrite phase boundary (DF image), i.e. phase boundaries are preferred precipitation sites; for 6Cr the austenite/ferrite interfaces add barriers to dislocation glide."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_6cr_ac_tensile",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1 × 10^-3 s^-1",
+        "specimen_geometry": "gauge size of 20 mm × 4 mm × 1 mm",
+        "test_standard": null,
+        "other_conditions": "Tensile tests on a MTS Criterion Model 44 tester with 10 kN capacity; each test supported by more than three tensile specimens; values shown are averaged over 3 measurements (as-cast condition)."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "652 ± 5 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 5 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "953 ± 9 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 9 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "31.6 ± 1 %",
+              "unit": "%",
+              "uncertainty": "± 1 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve of as-cast 6Cr rises to a high stress level (close to the 1000 MPa gridline) and terminates near 22–26% strain, with a small load drop before final fracture.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "value": "2266 MPa",
+              "unit": "MPa",
+              "note": "average strain hardening rate in the steady hardening stage"
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.46 g/cm³",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_6cr_ac_compare",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": "proc_ac",
+        "benchmark_sample_id": null,
+        "comparison_metric": "As-cast 6Cr compared with as-cast Cr-free (0Cr): yield strength 652±5 MPa is lower than 0Cr (724±16 MPa); ultimate tensile strength 953±9 MPa is higher than 0Cr (924±24 MPa); total elongation 31.6±1 % is lower than 0Cr (40.8±8 %); steady-stage strain hardening rate (2266 MPa) is higher than 0Cr (1626 MPa). Cr addition increases strength and strain-hardening rate while reducing total elongation of as-cast strips.",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_6cr_ac",
+      "microstructure_id": "micro_aus_6cr_ac",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "D/Max-2200, Cu target, operated at 40 kV and 40 mA",
+      "measurement_conditions": "scan rate of 4° per min; 2θ range ~30–100°",
+      "purpose": "Identify constituent phases and determine austenite lattice parameter",
+      "key_findings": "As-cast 6Cr strip is composed of austenite (γ) + ferrite (δ) with austenite as major matrix phase; the δ(110) reflection (2θ = 44.1°) is clearly separated and stronger than in 0Cr and 3Cr; austenite lattice constant of 6Cr is 3.56 Å."
+    },
+    {
+      "characterization_id": "char_om_6cr_ac",
+      "microstructure_id": "micro_ferrite_6cr_ac",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": "Zeiss Axio imager A2m",
+      "measurement_conditions": "20 µm scale bar micrographs",
+      "purpose": "Observe ferrite distribution and morphology",
+      "key_findings": "Ferrite uniformly distributed in austenite matrix; 6Cr shows predominantly angular/block-like ferrite particles, more numerous and coarser than in 3Cr."
+    },
+    {
+      "characterization_id": "char_tem_6cr_ac",
+      "microstructure_id": "micro_aus_6cr_ac",
+      "technique": "Transmission electron microscopy (TEM) with selected-area diffraction patterns (SADP)",
+      "instrument_or_setup": "JEM-2100F, operated at a voltage of 200 kV",
+      "measurement_conditions": "bright-field and dark-field imaging; 500 nm scale bars",
+      "purpose": "Examine dislocations and carbide/ordered phases in austenite and ferrite",
+      "key_findings": "Austenite of 6Cr shows heavy dislocation content; κ-carbide superlattice is very weak in austenite SADP (indexed [001]γ) and κ-carbide sizes too small to identify. In the ferrite a DO3 superlattice is observed and nano-scale DO3 phases clearly appear in DF images of the 6Cr strip."
+    },
+    {
+      "characterization_id": "char_icp_6cr_ac",
+      "microstructure_id": null,
+      "technique": "Inductively Coupled Plasma mass spectrometry (ICP)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Determine actual chemical composition of strips",
+      "key_findings": "Measured composition of the 6Cr strip: Fe Bal., Mn 29.1, Al 9.9, C 1.2, Cr 6.8 wt.%."
+    },
+    {
+      "characterization_id": "char_density_6cr_ac",
+      "microstructure_id": null,
+      "technique": "Electronic water displacement density measurement",
+      "instrument_or_setup": "SJ-600G Electronic Water Displacement Density Analyzer",
+      "measurement_conditions": null,
+      "purpose": "Measure average density of the strips",
+      "key_findings": "Measured average density of the 6Cr strip is 6.46 g/cm³."
+    },
+    {
+      "characterization_id": "char_tensile_6cr_ac",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "MTS Criterion Model 44 mechanical property tester, 10 kN capacity",
+      "measurement_conditions": "gauge size 20 mm × 4 mm × 1 mm; strain rate 1 × 10^-3 s^-1; values averaged over 3 measurements",
+      "purpose": "Measure yield strength, ultimate tensile strength and total elongation",
+      "key_findings": "As-cast 6Cr: YS 652±5 MPa, UTS 953±9 MPa, TE 31.6±1 %."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Measured (ICP) composition of the as-cast 6Cr strip: Fe Bal., Mn 29.1, Al 9.9, C 1.2, Cr 6.8 wt.% (Table 1).",
+    "Nominal/series composition of the studied alloy system is Fe–28Mn–9Al-1.2C-xCr (x = 0, 3, 6, 9) wt.%.",
+    "As-cast 6Cr strip constituent phases by XRD: austenite (γ) + ferrite (δ), austenite as major matrix phase; austenite lattice constant 3.56 Å; δ(110) reflection at 2θ = 44.1°.",
+    "Ferrite fraction of as-cast 6Cr strip measured by Gatan Digital Micrograph: 14.8 vol%; Cr addition changes ferrite shape from rod-like to block-like (6Cr is block-like).",
+    "Only a few dislocations are occasionally observed in the ferrite of all strips; the as-cast 6Cr austenite has heavy dislocation content (slightly higher than 9Cr).",
+    "In the as-cast 6Cr and 9Cr strips a DO3 superlattice belonging to an ordered ferrite phase is observed, and nano-scale DO3 phases clearly appear in ferrite dark-field images.",
+    "Cr addition suppressed the precipitation of nano-scale κ-carbides in the austenite of as-cast strips; the κ-carbide superlattice in the 6Cr austenite SADP is very weak and κ-carbide sizes are too small to identify.",
+    "As-cast 6Cr strip produced under near-rapid solidification: strip size (60–80) mm × 60 mm × 2.5 mm; no post-solidification heat treatment.",
+    "For the as-cast 6Cr strip after tensile fracture, average spacing between slip bands is ~80 nm and average width of slip bands is 12.5 nm; finer slip bands with smaller spacing normally accompany higher ductility, but as-cast 6Cr has the lowest elongation due to its high initial dislocation density."
+  ]
+}

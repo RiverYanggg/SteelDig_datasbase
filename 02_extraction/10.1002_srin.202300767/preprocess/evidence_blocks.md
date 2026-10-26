@@ -1,0 +1,417 @@
+[BLOCK b0001]
+Effect of Al Content on Inclusions in Fe-15Mn- Al-C Low-Density Steel
+
+[BLOCK b0002]
+Lei Cao, Guocheng Wang,\* Yuanyou Xiao, and Ke Tao
+
+[BLOCK b0003]
+Three experiments of Fe-15Mn- Al-C ( = 1, 3, 5) low-density steel with different Al contents are carried out, and the characteristics of inclusions are observed through field-emission scanning electron microscopy. The results show that the types of inclusions in the three samples are almost the same, mainly $\mathsf { A l } _ { 2 } \mathsf { O } _ { 3 } , \mathsf { A l N } ,$ MnS, TiN, ${ \sf A l } _ { 2 } { \sf O } _ { 3 }$ -MnS, AlN-MnS, TiN-MnS, and $\mathsf { A l } _ { 2 } \mathsf { O } _ { 3 } { \cdot } \mathsf { A l N } { \cdot } \mathsf { M n S } .$ The number percentage of ${ \sf A l } _ { 2 } { \sf O } _ { 3 }$ decreases, while the number percentage of AlN increases with the increase of Al content in the three samples. As the Al content increases, the number of inclusions between 1 and 5 μm decreases, while the number between 5 and 10 μm increases. FactSage8.2 software calculation shows that an increase in Al content leads to an increase in the liquidus and a decrease in the solidus of the steel; at the same time, it causes the austenite region to narrow and expands the ferrite region. The change in the solidification route leads to a delay in the solidification fraction of AlN, MnS, and TiN inclusions precipitation. At last, the 2D mismatch theory shows that the mismatch degrees of $\mathbf { \Delta A l _ { 2 } O _ { 3 } } / \mathbf { M n S } ,$ AlN/MnS, TiN/MnS, and $\mathsf { A l N } / \mathsf { A l } _ { 2 } \mathsf { O } _ { 3 }$ are 8.41%, 8.94%, 11.65%, and 11.66%, respectively.
+
+[BLOCK b0004]
+of Fe–Mn–Al–C low-density steel, the high content of Mn and Al can have a serious impact on the precipitation of inclusions.
+
+[BLOCK b0005]
+Currently, some work has been conducted on the impact of changes in Al content on the characteristics of inclusions in medium/high Mn steel. Yu et al.<sup>[10]</sup> found that the increase in Al content resulted in an increase in the types of inclusions, and the morphology evolution order of inclusions is: spherical irregular (polyhedral) spherical. Alba et al.<sup>[11]</sup> found that the content of Al increased from 0.5% to 3%, and the number percentage of AlN-MnS inclusions in Fe-5Mn-<sup>x</sup>Al-C steel sharply increased. Wang et al.<sup>[12]</sup> studied that the inclusion with the highest number of inclusions in steel changed from MnS to AlN, as the Al content increased from 0.87% to 6.76%. In addition, they found that AlN inclusions could
+
+[BLOCK b0006]
+1. Introduction
+
+[BLOCK b0007]
+In recent years, Fe–Mn–Al–C low-density steel has been applied in important fields such as automobiles, ships, and aerospace, due to its excellent wear resistance, corrosion resistance, and lightweight.<sup>[1–5]</sup> Mn element has the effect of expanding the austenite zone, and its induced twinning effect is beneficial for hindering the propagation of cracks in the material, significantly improving the plasticity of the steel.<sup>[6]</sup> When the Al content in the steel increases by 1%, the density of the steel decreases by about 1.3%.<sup>[7,8]</sup> The high content of Al can reduce the strain hardening rate of the steel, and improve the formability and low-temperature toughness.<sup>[9]</sup> However, in the smelting process form in the liquid phase when the Al content is higher than 3.28%. Xin et al.<sup>[13]</sup> believed that the number density of inclusions in Fe-16Mn-<sup>x</sup>Al-0.6C steel increased first and then decreased, while the size of inclusions showed a change of first decreasing and then increasing when the Al content increased from 0.002% to 2.1%. Park et al.<sup>[14]</sup> investigated that the number percentage of AlN inclusions in Fe-20Mn-<sup>x</sup>Al steels gradually increased as the Al content increased from 1% to 6%. Wang et al.<sup>[15]</sup> investigated that when the Al content increased from 0.002% to 2.1%, the main type of inclusions in Fe-16Mn-<sup>x</sup>Al-C steel changed from MnO/(MnO MnS) to AlN. They also found that AlN inclusions can worsen the hot ductility of steel in samples with Al content of 0.033% and 0.54%. Wang et al.<sup>[16]</sup> studied that the main composite inclusions transform from ${ \mathrm { A l } } _ { 2 } { \mathrm { O } } _ { 3 }$ -MnS to AlN-MnS inclusions with the increase of Al content. At the same time, the number percentage of AlN-MnS inclusions first increases and then decreases. Meanwhile, Jin et al.<sup>[17]</sup> confirmed through experiments and theoretical calculations that AlN can provide heterogeneous nucleation sites for MnS inclusions. In our previous study, we reported that an increase in Mn content is beneficial for expanding the FCC zone and leading to an advance in the solidification fraction of AlN. MnS, and TiN inclusions precipitation.<sup>[18]</sup> However, there are few reports on the effects of changes in Al content on the solidification route and inclusion formation of Fe-15Mn-<sup>x</sup>Al-C steel.
+
+[BLOCK b0008]
+In the current work, three smelting experiments of Fe-15Mn-<sup>x</sup>Al-C (<sup>x</sup> = 1, 3, 5) low-density steel with different Al contents were conducted under laboratory conditions to study the effect of Al content on the solidification route and inclusions formation of steel. The formation mechanism of various types of inclusions was discussed based on changes in Al content.
+
+[BLOCK b0009]
+2. Experimental Section
+
+[BLOCK b0010]
+2.1. Smelting Process
+
+[BLOCK b0011]
+Three smelting experiments of Fe-15Mn-<sup>x</sup>Al-C (<sup>x</sup> = 1, 3, 5) lowdensity steel with different Al contents were conducted under laboratory conditions. The first smelting experiment process is as follows: First, iron powder (700 g) and ferrous oxalate $( \mathrm { F e C } _ { 2 } \mathrm { O } _ { 4 } { \cdot } \mathrm { H } _ { 2 } \mathrm { O }$ , 1.575 g) are placed in an alumina crucible and then placed in a tubular furnace for heating. When the tubular furnace was heated to 1873 K, kept for 40 min, and then deoxi dizer was added. First, 225 g of ferromanganese was added and kept for 20 min. Then 11 g of aluminum particles were added that were wrapped in the pure iron sheet and kept for 60 min. Finally, the sample was cooled to room temperature in a tubular furnace. The operating steps and the amount of ferromanganese added in the three groups of experiments were consistent. The mass of pure aluminum particles added to the second and third groups was 28 and 48 g, respectively. The chemical composition of iron powder, ferromanganese, and aluminum particles is shown in .
+
+[BLOCK b0012]
+2.2. Analytical Methods
+
+[BLOCK b0013]
+The chemical composition of three steels was detected using chemical analysis methods. The content of T.O and T.N was measured by a carbon sulfur analyzer. The carbon sulfur analyzer detected the content of C and S. Inductively coupled plasma mass spectrometry measured the content of Al, Si, Ti, Mn, and P.
+
+[BLOCK b0014]
+The inclusions in the experimental samples were observed in two methods. 1) Metallographic observation. Solid steel was cut into cylinders using an electric discharge wire-cutting machine. Subsequently, metallographic sandpaper and metallographic polishing paste were used to process the sample into a mirror surface. 2) Preparation of inclusion powder by nonaqueous solvent electrolytic separation. After electrolytic separation, a magnet was used to separate the inclusion particles from the solution containing ethanol and collect them on a carbon strip.<sup>[19–21]</sup> The samples prepared by the above two methods were used for field-emission scanning electron microscopy (Model: ZEISS ΣIGMA HD) with energy dispersive spectrometer (Model: Oxford-X-Max 50 mm<sup>2</sup>) of the morphology and type of inclusions. The size, type, and number of inclusions were detected using an automatic inclusion analysis system, with a detection area of 52 mm<sup>2</sup>.
+
+[BLOCK b0015]
+Table 1. Chemical content of experimental raw materials (mass percentage, %).
+
+[BLOCK b0016]
+<sup>a)</sup>– Represents trace amounts.
+
+[BLOCK b0017]
+<table><tr><td>Raw material</td><td>C</td><td>Si</td><td>Mn</td><td>P</td><td>S</td><td>Ti</td><td>Al</td></tr><tr><td>Iron powder</td><td>0.35</td><td>0.01</td><td>0.046</td><td>0.022</td><td>0.013</td><td>0.0086</td><td>-</td></tr><tr><td>Ferromanganese</td><td>0.76</td><td>1.46</td><td>65.860</td><td>-</td><td>0.032</td><td>-</td><td>-</td></tr><tr><td>Aluminum particles</td><td> $^{-a)}$ </td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>99.999</td></tr></table>
+
+[BLOCK b0018]
+3. Results
+
+[BLOCK b0019]
+3.1. Chemical Composition
+
+[BLOCK b0020]
+The chemical contents of the three steels are listed in . <sup>Table 2</sup>Three experimental steels were named based on their Al content: $1 \# ( \mathsf { A l } = 0 . 8 6 8 \% )$ , 2 # (Al = 2.766%), and 3 # (Al = 4.695%). The N content in steel decreases with the increase of Al content, while the O content slightly increases with the increase of Al content. The content of Si and Ti is ≈0.32% and 60 ppm.
+
+[BLOCK b0021]
+3.2. Morphology and Type of Inclusions
+
+[BLOCK b0022]
+shows the morphology and type of inclusions in 1 # sample. Figure 1a shows an elongated ${ \mathrm { A l } } _ { 2 } { \mathrm { O } } _ { 3 }$ inclusion with a length higher than 8 μm. Figure 1b shows an approximately elliptical AlN inclusion. Figure 1c shows the extracted elongated AlN inclusion with a size of ≈12 μm. Figure 1d shows a single-particle MnS inclusion, and Figure 1e shows an angular TiN inclusion. Figure 1f shows ${ \mathrm { A l } } _ { 2 } { \mathrm { O } } _ { 3 }$ -MnS composite inclusion in the inner and outer layers. Figure 1g shows the element surface distribution of AlN-MnS inclusions. Figure 1h indicates the TiN-MnS composite inclusion, and it can be observed that there is a clear interfacial relationship between MnS and TiN inclusions. Figure 1i shows the 3D morphology of $\mathrm { A l _ { 2 } O _ { 3 } { \cdot } A l N { \cdot } M n S }$ inclusions. By scanning the elemental surface distribution in Figure 1i, the composition of the composite inclusions can be clearly observed.
+
+[BLOCK b0023]
+shows the morphology and type of inclusions in 2 # <sup>Figure 2</sup>sample. Figure 2a shows a single AlN inclusion with a size of ≈23 μm. Figure 2b shows the 3D of MnS inclusions with an octahedron. Figure 2c shows a single-particle TiN inclusion like a boot. Figure 2d shows the $\mathrm { A l } _ { 2 } \mathrm { O } _ { 3 }$ -MnS composite inclusion, where black represents the $\mathrm { A l } _ { 2 } \mathrm { O } _ { 3 }$ inclusion and gray represents the MnS inclusion. Figure 2e shows the AlN-MnS inclusion, and it can be observed that there is a close binding relationship between MnS and AlN inclusions. Figure 2f shows the $\mathrm { A l } _ { 2 } \mathrm { O } _ { 3 ^ { - } }$ AlN-MnS composite inclusions, which are $\mathrm { A l } _ { 2 } \mathrm { O } _ { 3 } ,$ , AlN, and MnS inclusions from the inside out. Figure 2g shows the TiN-MnS inclusion.
+
+[BLOCK b0024]
+shows the 3D morphology and type of inclusions <sup>Figure 3</sup>extracted from 3 # sample. Figure 3a,b shows AlN inclusions with single and multiple particles with polyhedral structures. Figure 3c,d shows octahedral MnS inclusions with a size of ≈10 μm. Figure 3e,f shows TiN inclusions, which exhibit elongated shapes with lengths higher than 30 μm. Figure 3g shows the $\mathrm { A l } _ { 2 } \mathrm { O } _ { 3 }$ -MnS inclusion, with the $\mathrm { A l } _ { 2 } \mathrm { O } _ { 3 }$ inclusion located at the bottom and the MnS inclusion located above the ${ \mathrm { A l } } _ { 2 } { \mathrm { O } } _ { 3 }$ inclusion.
+
+[BLOCK b0025]
+Table 2. Chemical content of experimental steel (mass percentage, %).
+
+[BLOCK b0026]
+<table><tr><td>No.</td><td>C</td><td>Si</td><td>Mn</td><td>Al</td><td>N</td><td>P</td><td>S</td><td>O</td><td>Ti</td><td>Fe</td></tr><tr><td>1 #</td><td>0.41</td><td>0.32</td><td>14.85</td><td>0.868</td><td>0.0032</td><td>0.043</td><td>0.014</td><td>0.0005</td><td>0.0057</td><td>Bal.</td></tr><tr><td>2 #</td><td>0.41</td><td>0.32</td><td>14.86</td><td>2.766</td><td>0.0029</td><td>0.045</td><td>0.014</td><td>0.0005</td><td>0.0059</td><td>Bal.</td></tr><tr><td>3 #</td><td>0.41</td><td>0.31</td><td>14.83</td><td>4.695</td><td>0.0021</td><td>0.045</td><td>0.016</td><td>0.0013</td><td>0.0060</td><td>Bal.</td></tr></table>
+
+[BLOCK b0027]
+Figure 1. Morphology and type of inclusions in 1 # sample. a–e) single particle inclusions and f–i) composite inclusions.
+
+[BLOCK b0028]
+Figure 2. Morphology and type of inclusions in 2 # sample. a–c) single particle inclusions and ${ \mathsf { d } } { \mathsf { - g } } )$ composite inclusions.
+
+[BLOCK b0029]
+Figure 3. Morphology and type of inclusions in 3 # sample. a,b) AlN; c,d) MnS; e,f ) TiN; and g–i) composite inclusions.
+
+[BLOCK b0030]
+Figure 3h shows the TiN-MnS composite inclusion, whose morphology is the shape of a cigarette bag. Figure 3i shows the inclusion of AlN-MnS, and it is clear from morphology that the binding between MnS and AlN inclusions is very tight, and the connection between them is not like a physical way.
+
+[BLOCK b0031]
+3.3. Number and Size Distribution of Inclusions
+
+[BLOCK b0032]
+shows the number percentage of inclusions in 1 # to 3 # samples. From Figure 4, the number percentage of single ${ \mathrm { A l } } _ { 2 } { \mathrm { O } } _ { 3 }$ inclusions in the steel decreases, the number percentage of single AlN inclusions gradually increases, while the number percentage of single MnS inclusions first increases and then decreases as the increasing of Al content. The number percentage of single TiN inclusions does not change significantly with the increase of Al content. The number percentage of ${ \mathrm { . } } { \mathrm { A l } } _ { 2 } { \mathrm { O } } _ { 3 }$ -MnS inclusions increases with the increase of Al, while the number percentage of AlN-MnS and TiN-MnS inclusions shows a decreasing trend. $\mathrm { A l } _ { 2 } \mathrm { O } _ { 3 } .$ -AlN-MnS inclusions exist in 1 # and 2 # samples but were not observed in 3 # sample.
+
+[BLOCK b0033]
+shows the size distribution of inclusions in 1 # to 3 # <sup>Figure 5</sup>samples. From Figure 5, it can be observed that the number of inclusions with sizes between 1 and 5 μm accounts for 58.4%, 53.6%, and 48.2% of the total number in 1 # to 3 # samples, respectively. The number of inclusions with sizes between 5 and 10 μm accounts for 32.3%, 34.6%, and 46.9% of the total number in 1 # to 3 # samples, respectively. The number of inclusions with sizes higher than 10 μm accounts for 9.4%, 11.8%, and 4.9% of the total number in 1 # to 3 # samples, respectively. In 1 # to 3 # samples, the number of inclusions with sizes ranging from 1 to 5 μm decreases with increasing Al content, the number of inclu sions with sizes ranging from 5 to 10 μm increases with increasing Al content, and the number of inclusions with sizes higher than 10 μm shows a trend of first increasing and then decreasing with increasing Al content.
+
+[BLOCK b0034]
+Figure 4. Number percentage of inclusions in three samples.
+
+[BLOCK b0035]
+Figure 5. Size distribution of inclusions in three samples.
+
+[BLOCK b0036]
+4. Discussion
+
+[BLOCK b0037]
+4.1. Effect of Al Content on the Solidification Route of Steel
+
+[BLOCK b0038]
+To investigate the effect of Al content on the solidification route of three samples, the phase diagram module in FactSage 8.2 was used to calculate the Fe–C–Si–Mn–P–S–Al–O–N–Ti system and the calculation results are shown in . shows the <sup>Figure 6 Table 3</sup>phase composition of the corresponding numbers in Figure 6. It can be seen that the solidification route of 1 # sample is: $\mathrm { L } \longrightarrow \mathrm { L } + \mathrm { F C C } \longrightarrow \mathrm { F C C } _ { : }$ , while the solidification route of 2 # and 3 # samples is: $\mathrm { L \longrightarrow L + B C C \longrightarrow L + B C C + F C C \longrightarrow L + F C C \longrightarrow }$ FCC and $\operatorname { L } \to \operatorname { L } + \operatorname { B C C } \to \operatorname { L } + \operatorname { B C C } + \operatorname { F C C } \to \operatorname { B C C } + \operatorname { F C C } \to \operatorname { F C C }$ respectively. The increasing content of Al leads to the solidification route of 2 # and 3 # samples passing through the BCC phase, and the area where the FCC phase exists decreases.
+
+[BLOCK b0039]
+The liquidus temperature and solidus temperature of the samples were obtained using the FactSage 8.2. The liquidus temperature (<sup>T</sup> ) of 1 # to 3 # samples are 1702, 1740, and 1796 K, and the solidus temperature $( T _ { \mathrm { { S } } } )$ are 1588, 1560, and 1532 K, respectively. The liquidus temperature increases with the increasing content of Al, while the solidus temperature decreases. The precipitation of inclusions is closely related to the liquidus temperature and solidus temperature. Therefore, it is necessary to discuss the effect of changes in Al content on the formation of various inclusions in the steel.
+
+[BLOCK b0040]
+4.2. Effect of Al Content on Inclusion Formation
+
+[BLOCK b0041]
+4.2.1. Effect of Al Content on the Formation of AlN Inclusions
+
+[BLOCK b0042]
+The chemical reaction equation for the formation of AlN inclusions is shown in Equation $( 1 ) ^ { [ 2 2 ] }$
+
+[BLOCK b0043]
+$$
+\begin{array}{r l} \mathrm{AlN} _ {\mathrm{(s)}} & = [ \mathrm{Al} ] + [ \mathrm{N} ] \cdot \Delta G _ {\mathrm{AlN}} ^ {\theta} = - R T \cdot \ln K _ {\mathrm{AlN}} ^ {E} \\ & = 3 0 3 5 0 0 - 1 3 4. 6 T \mathrm{Jmol} ^ {- 1} \end{array}\tag{1}
+$$
+
+[BLOCK b0044]
+When $a _ { \mathrm { A l N } } = 1$ , the $K _ { \mathrm { A l N } } ^ { E }$ could be expressed as
+
+[BLOCK b0045]
+$$
+K _ {\mathrm{AlN}} ^ {E} = \frac {a _ {[ \mathrm{Al} ]} \cdot a _ {[ \mathrm{N} ]}}{a _ {\mathrm{AlN}}} = a _ {[ \mathrm{Al} ]} \cdot a _ {[ \mathrm{N} ]} = f _ {[ \mathrm{Al} ]} \cdot f _ {[ \mathrm{N} ]} \cdot [ \mathrm{pctAl} ] \cdot [ \mathrm{pctN} ]\tag{2}
+$$
+
+[BLOCK b0046]
+In the above equation, $a _ { \mathrm { A l N } } , a _ { \mathrm { [ A l ] } } ,$ , and $a _ { [ \mathsf { N } ] }$ denote the activity of AlN, Al, and N in the steel. $f _ { [ \mathrm { A l l } ] }$ and $f _ { \mathrm { [ N ] } }$ denote the activity coefficients of Al and N, and [pct Al] and [pct N] are the mass fractions of Al and N in the steel. Taking the logarithm at the base of 10 at both sites of Equation (2) and (3) can be obtained
+
+[BLOCK b0047]
+(a)
+
+[BLOCK b0048]
+(b)
+
+[BLOCK b0049]
+(c) Figure 6. Calculation results of solidification routes, liquidus, and solidus temperatures for three samples. a) 1 #; b) 2 #; and c) 3 #.
+
+[BLOCK b0050]
+$$
+\log K _ {\mathrm{AlN}} ^ {E} = \log f _ {[ \mathrm{Al} ]} + \log f _ {[ \mathrm{N} ]} + \log ([ \mathrm{pctAl} ] \cdot [ \mathrm{pctN} ])\tag{3}
+$$
+
+[BLOCK b0051]
+The calculation formula for the interaction coefficient is:
+
+[BLOCK b0052]
+$$
+\log f _ {i} = \sum e _ {i} ^ {j} [ \mathrm{pct} j ] + \sum r _ {i} ^ {j} [ \mathrm{pct} j ] ^ {2}\tag{4}
+$$
+
+[BLOCK b0053]
+where $i = \mathsf { A l } ,$ N, Ti, Mn, $\mathrm { S } ; j = \mathrm { C } _ { \mathrm { \mathrm { \mathrm { \scriptsize ~ { \scriptsize ~ { ~ \small ~ { ~ \scriptsize ~ { ~ c ~ } ~ } ~ } } } } } }$ , Si, Mn, P, S, Al, N, O, Ti.
+
+[BLOCK b0054]
+The interaction coefficients are shown in $4 . ^ { [ 2 3 - 3 9 ] }$ The <sup>Table 4</sup>theoretical concentration of AlN inclusions formed in 1 # to 3 # samples is expressed as:
+
+[BLOCK b0055]
+$$
+\log ([ \mathrm{pctAl} ] \cdot [ \mathrm{pctN} ]) = - \frac {1 5 8 5 1}{T} + 7. 2 2 5\tag{5}
+$$
+
+[BLOCK b0056]
+$$
+\log ([ \mathrm{pctAl} ] \cdot [ \mathrm{pctN} ]) = - \frac {1 5 8 5 1}{T} + 7. 2 0 0\tag{6}
+$$
+
+[BLOCK b0057]
+$$
+\log ([ \mathrm{pctAl} ] \cdot [ \mathrm{pctN} ]) = - \frac {1 5 8 5 1}{T} + 7. 1 8 7\tag{7}
+$$
+
+[BLOCK b0058]
+During the solidification stage, elements at the solidification front will be enriched due to segregation. Based on the Clyne– Kurz model,<sup>[40]</sup> the content of elements at the solidification front can be obtained:
+
+[BLOCK b0059]
+$$
+C _ {\mathrm{L}} = C _ {0} [ 1 - (1 - 2 \Omega k) z _ {\mathrm{s}} ] ^ {\frac {(k - 1)}{(1 - 2 \Omega k)}}\tag{8}
+$$
+
+[BLOCK b0060]
+Among them, $C _ { \mathrm { { L } } }$ represents the actual contents of elements at the solidification front, and $C _ { 0 }$ represents the initial contents of elements in the steel. <sup>k</sup> represents the equilibrium distribution coefficient. $z _ { \mathrm { s } }$ represents the solidification fraction. Ω denotes the inverse diffusion coefficient:<sup>[41]</sup>
+
+[BLOCK b0061]
+$$
+\Omega = \alpha \left[ 1 - \exp \left(- \frac {1}{\alpha}\right) \right] - \frac {1}{2} \exp \left(- \frac {1}{2 \alpha}\right)\tag{9}
+$$
+
+[BLOCK b0062]
+$$
+\alpha = \frac {D \cdot t _ {\mathrm{f}}}{(0 . 5 \lambda) ^ {2}}\tag{10}
+$$
+
+[BLOCK b0063]
+here <sup>D</sup> denotes the diffusion coefficient. The values of <sup>k</sup> and <sup>D</sup> are shown in $5 . ^ { [ 4 2 - 4 4 ] }$ <sup>t</sup> represents the solidification time. <sup>Table 5</sup>λ represents the distance between the secondary dendrite arms. The expressions for <sup>t</sup> and λ are as follows:<sup>[43]</sup> $t _ { \mathrm { f } }$
+
+[BLOCK b0064]
+$$
+t _ {\mathrm{f}} = \frac {T _ {\mathrm{L}} - T _ {\mathrm{s}}}{R _ {\mathrm{C}}}\tag{11}
+$$
+
+[BLOCK b0065]
+$$
+\lambda = 1 4 3. 9 R _ {\mathrm{C}} ^ {- 0. 3 6 1 6} \cdot [ \mathrm{pctC} ] ^ {(0. 5 5 0 1 - 1. 9 9 6 [ \mathrm{pctC} ])}\tag{12}
+$$
+
+[BLOCK b0066]
+<sup>R</sup> represents the cooling rate.
+
+[BLOCK b0067]
+The actual concentration product $( \mathrm { Q } _ { \mathrm { A l N } } )$ of AlN inclusion can be expressed as:
+
+[BLOCK b0068]
+$$
+Q _ {\mathrm{AlN}} = C _ {\mathrm{L}} ^ {\mathrm{Al}} \cdot C _ {\mathrm{L}} ^ {\mathrm{N}}\tag{13}
+$$
+
+[BLOCK b0069]
+The relationship between solidification temperature $( T _ { \mathrm { f } } )$ and solidification fraction is:
+
+[BLOCK b0070]
+Table 3. The phase composition corresponds to the number in Figure 6.
+
+[BLOCK b0071]
+<table><tr><td>Number</td><td>Phase</td><td>Number</td><td>Phase</td></tr><tr><td>1</td><td>L</td><td>7</td><td> $L + Al_{2}O_{3} + AlN$ </td></tr><tr><td>2</td><td> $L + Al_{2}O_{3}$ </td><td>8</td><td> $L + Al_{2}O_{3} + AlN + BCC$ </td></tr><tr><td>3</td><td> $L + Al_{2}O_{3} + FCC$ </td><td>9</td><td> $L + Al_{2}O_{3} + AlN + BCC + FCC$ </td></tr><tr><td>4</td><td> $L + Al_{2}O_{3} + AlN + FCC$ </td><td>10</td><td> $L + Al_{2}O_{3} + AlN + BCC + FCC + MnS$ </td></tr><tr><td>5</td><td> $L + Al_{2}O_{3} + AlN + FCC + MnS$ </td><td>11</td><td> $Al_{2}O_{3} + AlN + BCC + FCC + MnS$ </td></tr><tr><td>6</td><td> $Al_{2}O_{3} + AlN + FCC + MnS$ </td><td></td><td></td></tr></table>
+
+[BLOCK b0072]
+Table 4. First-Order and second-order interaction coefficient (1873 K).<sup>[23–39]</sup>
+
+[BLOCK b0073]
+<sup>a)</sup>(): r <sup>j</sup><sub>i</sub> .
+
+[BLOCK b0074]
+<table><tr><td rowspan="2">i</td><td colspan="9">j</td></tr><tr><td>C</td><td>Si</td><td>Mn</td><td>P</td><td>S</td><td>Al</td><td>O</td><td>N</td><td>Ti</td></tr><tr><td rowspan="2">Al</td><td> $0.091^{[24]}$ </td><td> $0.0056^{[24]}$ </td><td> $0^{[23]}$ </td><td>-</td><td> $0.03^{[24]}$ </td><td> $0.045^{[24]}$ </td><td> $-6.6^{[24]}$ </td><td> $-0.053^{[24]}$ </td><td>-</td></tr><tr><td> $(-0.004)^{[25]}$ </td><td> $(-0.0006)^{[25]}$ </td><td> $(0)^{[23]}$ </td><td> $(-)^{a)}$ </td><td>(-)</td><td> $(-0.001)^{[25]}$ </td><td> $(39.823)^{[26]}$ </td><td> $(-0.004)^{[27]}$ </td><td> $(-0.0019)^{[28]}$ </td></tr><tr><td rowspan="2">N</td><td> $0.13^{[24]}$ </td><td> $0.047^{[24]}$ </td><td> $-0.021^{[24]}$ </td><td> $0.045^{[24]}$ </td><td> $0.007^{[24]}$ </td><td> $-0.028^{[24]}$ </td><td> $0.05^{[24]}$ </td><td> $0^{[24]}$ </td><td> $-0.53^{[24]}$ </td></tr><tr><td>(-)</td><td> $(0.0013)^{[29]}$ </td><td> $(0)^{[30]}$ </td><td>(-)</td><td>(-)</td><td> $(0)^{[31]}$ </td><td>(-)</td><td> $(0)^{[31]}$ </td><td> $(0)^{[32]}$ </td></tr><tr><td rowspan="2">Ti</td><td> $-0.165^{[24]}$ </td><td> $0.05^{[24]}$ </td><td> $0.0043^{[24]}$ </td><td> $-0.0064^{[24]}$ </td><td> $-0.11^{[24]}$ </td><td>-</td><td> $-1.8^{[24]}$ </td><td> $-1.8^{[24]}$ </td><td> $0.013^{[24]}$ </td></tr><tr><td>(-)</td><td> $(0)^{[33]}$ </td><td>(-)</td><td>(-)</td><td>(-)</td><td> $(0)^{[34]}$ </td><td> $(-0.355)^{[35]}$ </td><td> $(0)^{[36]}$ </td><td> $(0)^{[37]}$ </td></tr><tr><td rowspan="2">Mn</td><td> $-0.07^{[24]}$ </td><td>-</td><td>-</td><td> $-0.0035^{[24]}$ </td><td> $-0.048^{[24]}$ </td><td>-</td><td> $-0.083^{[24]}$ </td><td> $-0.091^{[24]}$ </td><td>-</td></tr><tr><td>(-)</td><td> $(0)^{[38]}$ </td><td> $(0)^{[25]}$ </td><td>(-)</td><td>(-)</td><td>(-)</td><td>(-)</td><td>(-)</td><td>(-)</td></tr><tr><td rowspan="2">S</td><td> $0.11^{[24]}$ </td><td> $0.063^{[24]}$ </td><td> $-0.026^{[24]}$ </td><td> $0.029^{[24]}$ </td><td> $-0.028^{[24]}$ </td><td> $0.035^{[24]}$ </td><td> $-0.27^{[24]}$ </td><td> $0.01^{[24]}$ </td><td> $-0.072^{[24]}$ </td></tr><tr><td> $(0.0058)^{[39]}$ </td><td> $(0.0017)^{[39]}$ </td><td> $(0)^{[39]}$ </td><td> $(0.0006)^{[39]}$ </td><td> $(-0.0009)^{[39]}$ </td><td> $(0.0009)^{[39]}$ </td><td>(-)</td><td>(-)</td><td>(-)</td></tr></table>
+
+[BLOCK b0075]
+Table 5. The equilibrium distribution coefficient and diffusion coefficient.<sup>[42–44]</sup>
+
+[BLOCK b0076]
+<table><tr><td>Element</td><td> $k(\delta)$ </td><td> $D^{\delta}/[cm^{2}s^{-1}]$ </td><td> $k(\gamma)$ </td><td> $D^{\gamma}/[cm^{2}s^{-1}]$ </td></tr><tr><td>Al</td><td>0.6</td><td>5.9exp(−241417/RT)</td><td>0.6</td><td>5.9exp(−241417/RT)</td></tr><tr><td>N</td><td>0.25</td><td>0.008exp(−79078/RT)</td><td>0.48</td><td>0.91exp(−168490/RT)</td></tr><tr><td>Mn</td><td>0.77</td><td>0.76exp(−224430/RT)</td><td>0.785</td><td>0.055exp(−249366/RT)</td></tr><tr><td>S</td><td>0.05</td><td>4.56exp(−214639/RT)</td><td>0.035</td><td>2.4exp(−223426/RT)</td></tr><tr><td>Ti</td><td>0.38</td><td>3.15exp(−247693/RT)</td><td>0.33</td><td>0.15exp(−250956/RT)</td></tr></table>
+
+[BLOCK b0077]
+$$
+T _ {\mathrm{f}} = T _ {0} - \frac {T _ {0} - T _ {\mathrm{L}}}{1 - z _ {\mathrm{s}} (T _ {\mathrm{L}} - T _ {\mathrm{S}}) / (T _ {0} - T _ {\mathrm{S}})}\tag{14}
+$$
+
+[BLOCK b0078]
+where $\begin{array} { r } { T _ { 0 } = 1 8 0 9 \mathrm { K } . } \end{array}$
+
+[BLOCK b0079]
+The relationship among log<sup>K</sup> , log<sup>Q</sup> , and $z _ { \mathrm { s } }$ can be obtained through Equation (5)–(14), as shown in . <sup>Figure 7</sup>In Figure 7, the solidification fractions of AlN inclusions precipitated in 1 # to 3 # samples are 0.46, 0.22, and 0.51, respectively. The solidification fraction of AlN inclusion precipitation advances from 0.46 to 0.22 with the increasing content of Al from 1% to 3%, and the solidification fraction of AlN inclusions precipitates is delayed from 0.22 to 0.51 with the increasing content of Al from 3% to 5%. The main reason for this phenomenon is the
+
+[BLOCK b0080]
+Figure 7. Relationship among logK , ${ \mathsf { l o g Q } } _ { \mathsf { A l N } } ,$ and $z _ { s } .$
+
+[BLOCK b0081]
+different degrees of segregation of Al and N during the solidification stages. From Figure 8, it can be seen that the degree of segregation of N element is much higher than that of Al element. Therefore, when there is no significant difference in N content in the steel, the increasing in content of Al promotes the precipitation of AlN inclusions. In 3 # sample, the solubility of N significantly decreased, leading to a delay in the solidification fraction of AlN inclusion precipitation. Consequently, the solidification fraction of AlN inclusion precipitation is delayed as a result of the combined action of the Al and N elements.
+
+[BLOCK b0082]
+Figure 8. Al and N elements segregation ratios in three samples during the solidification stages.
+
+[BLOCK b0083]
+4.2.2. Effect of Al Content on the Formation of TiN Inclusions
+
+[BLOCK b0084]
+The chemical reaction equation of TiN inclusions formation is expressed as follows<sup>[45]</sup>
+
+[BLOCK b0085]
+$$
+\begin{array}{r l} \mathrm{TiN} _ {\mathrm{(s)}} & = [ \mathrm{Ti} ] + [ \mathrm{N} ] \cdot \Delta G _ {\mathrm{TiN}} ^ {\theta} = - \mathrm{RT} \cdot \ln K _ {\mathrm{TiN}} ^ {E} \\ & = 2 9 1 0 0 0 - 1 0 7. 9 1 T \mathrm{Jmol} ^ {- 1} \end{array}\tag{15}
+$$
+
+[BLOCK b0086]
+The relationship between the theoretical concentration of TiN inclusions formed in 1 # to 3 # samples and temperature (the thermodynamic calculation process is the same as the AlN inclusions):
+
+[BLOCK b0087]
+$$
+\log ([ \mathrm{pctTi} ] \cdot [ \mathrm{pctN} ]) = - \frac {1 5 1 9 8}{T} + 5. 9 0 2\tag{16}
+$$
+
+[BLOCK b0088]
+$$
+\log ([ \mathrm{pctTi} ] \cdot [ \mathrm{pctN} ]) = - \frac {1 5 1 9 8}{T} + 5. 9 5 4\tag{17}
+$$
+
+[BLOCK b0089]
+$$
+\log ([ \mathrm{pctTi} ] \cdot [ \mathrm{pctN} ]) = - \frac {1 5 1 9 8}{T} + 6. 0 0 9\tag{18}
+$$
+
+[BLOCK b0090]
+The relationship among log $K _ { \mathrm { T i N } }$ $\mathrm { l o g } Q _ { \mathrm { T i N } } ,$ and $z _ { \mathrm { s } }$ is shown in . From Figure 9, the solidification fractions of TiN <sup>Figure 9</sup>inclusions precipitated in 1 # to 3 # samples are 0.89, 0.93, and 0.94, respectively. Obviously, the increasing content of Al leads to a delay in the solidification fraction of TiN inclusions precipitation. The solidification fraction of TiN inclusion precipitation changes from 0.89 to 0.93 when the Al content increased from 1% to 3%, and the solidification fraction of TiN inclusion precipitation changes from 0.93 to 0.94 when the Al content increased from 3% to 5%.
+
+[BLOCK b0091]
+Figure 9. Relationship among logK<sub>TiN</sub>, $\mathsf { l o g Q } _ { \mathsf { T i N } } ,$ and $z _ { s } .$
+
+[BLOCK b0092]
+Figure 10. Relationship among $\mathsf { l o g K } _ { \mathsf { M n S } }$ ${ \mathsf { l o g Q } } _ { { \mathsf { M n S } } } ,$ and $z _ { s } .$
+
+[BLOCK b0093]
+Table 6. Lattice parameters of different inclusion.
+
+[BLOCK b0094]
+<table><tr><td>Inclusion</td><td>Lattice parameters [Å]</td><td>References</td></tr><tr><td>AlN</td><td> $a_{\text{AlN}} = b_{\text{AlN}} = 3.110, c_{\text{AlN}} = 4.980$ </td><td>[48]</td></tr><tr><td>MnS</td><td> $a_{\text{MnS}} = b_{\text{MnS}} = c_{\text{MnS}} = 5.224$ </td><td>[49]</td></tr><tr><td> $Al_2O_3$ </td><td> $a_{\text{Al}_2\text{O}_3} = b_{\text{Al}_2\text{O}_3} = 4.759, c_{\text{Al}_2\text{O}_3} = 12.991$ </td><td>[50]</td></tr><tr><td>TiN</td><td> $a_{\text{MnS}} = b_{\text{MnS}} = c_{\text{MnS}} = 4.242$ </td><td>[5]</td></tr></table>
+
+[BLOCK b0095]
+4.2.3. Effect of Al Content on the Formation of MnS Inclusions
+
+[BLOCK b0096]
+The chemical reaction equation of MnS inclusions formation is shown in Equation $( 1 9 ) ! ^ { [ 4 6 ] }$
+
+[BLOCK b0097]
+$$
+\begin{array}{r l} \mathrm{MnS} _ {\mathrm{(s)}} & = [ \mathrm{Mn} ] + [ \mathrm{S} ] \cdot \Delta G ^ {\theta} = - \mathrm{RT} \cdot \ln K _ {\mathrm{MnS}} ^ {E} \\ & = 1 6 8 8 2 2 - 9 8. 8 7 T \mathrm{Jmol} ^ {- 1} \end{array}\tag{19}
+$$
+
+[BLOCK b0098]
+Figure 11. Calculation results of mismatch degree of composite inclusions. Table 7. Calculation results of mismatch degree between different inclusions.
+
+[BLOCK b0099]
+The theoretical concentration product of MnS inclusions formed in 1 # to 3 # samples can be expressed by Equation (20)–(22):
+
+[BLOCK b0100]
+$$
+\log ([ \mathrm{pctMn} ] \cdot [ \mathrm{pctS} ]) = - \frac {8 8 1 7}{T} + 5. 4 8 2\tag{20}
+$$
+
+[BLOCK b0101]
+$$
+\log ([ \mathrm{pctMn} ] \cdot [ \mathrm{pctS} ]) = - \frac {8 8 1 7}{T} + 5. 4 8 2\tag{21}
+$$
+
+[BLOCK b0102]
+$$
+\log ([ \mathrm{pctMn} ] \cdot [ \mathrm{pctS} ]) = - \frac {8 8 1 7}{T} + 5. 3 3 1\tag{22}
+$$
+
+[BLOCK b0103]
+The relationship among log $\mathrm { \Delta } _ { \mathrm { \prime } } K _ { \mathrm { M n S } } , \log Q _ { \mathrm { M n S } } ,$ and $z _ { \mathrm { s } }$ is shown in . In Figure 10, the solidification fractions of MnS inclu-<sup>Figure 10</sup>sions precipitated in samples 1 # to 3 # are 0.77, 0.81, and 0.85, respectively. It can be seen that the increasing content of Al leads to a delay in the solidification fraction of MnS inclusions precipitation. When the Al content increases from 1% to 5%, the solidification fraction of MnS inclusion precipitation changes from
+
+[BLOCK b0104]
+<table><tr><td>Interface</td><td colspan="3">MnS(100)/Al2O3(001)</td><td colspan="3">MnS(110)/Al2O3(001)</td><td colspan="3">MnS(111)/Al2O3(001)</td></tr><tr><td>[uvw]MnS</td><td>[002]</td><td>[022]</td><td>[020]</td><td>[002]</td><td>[222]</td><td>[220]</td><td>[-101]</td><td>[-211]</td><td>[-110]</td></tr><tr><td>[uvw]Al2O3</td><td>[-100]</td><td>[-110]</td><td>[010]</td><td>[-1-10]</td><td>[-200]</td><td>[-110]</td><td>[-100]</td><td>[-110]</td><td>[010]</td></tr><tr><td>dMnS [Å]</td><td>5.224</td><td>7.388</td><td>5.224</td><td>5.224</td><td>9.048</td><td>7.388</td><td>3.694</td><td>6.398</td><td>3.694</td></tr><tr><td>dAl2O3 [Å]</td><td>4.759</td><td>8.243</td><td>4.759</td><td>4.759</td><td>9.518</td><td>8.243</td><td>4.759</td><td>8.243</td><td>4.759</td></tr><tr><td>θ [°]</td><td>30</td><td>15</td><td>0</td><td>0</td><td>5.264</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>δ [%]</td><td></td><td>12.59</td><td></td><td></td><td>8.41</td><td></td><td></td><td>28.83</td><td></td></tr><tr><td>Interface</td><td colspan="9">AIN(001)/Al2O3(001)</td></tr><tr><td>[uvw]AIN</td><td colspan="3">[-2-10]</td><td colspan="3">[-300]</td><td colspan="3">[-110]</td></tr><tr><td>[uvw]Al2O3</td><td colspan="3">[-100]</td><td colspan="3">[-110]</td><td colspan="3">[010]</td></tr><tr><td>dAIN [Å]</td><td colspan="3">5.387</td><td colspan="3">9.330</td><td colspan="3">5.387</td></tr><tr><td>dAl2O3 [Å]</td><td colspan="3">4.759</td><td colspan="3">8.243</td><td colspan="3">4.759</td></tr><tr><td>θ [°]</td><td colspan="3">0</td><td colspan="3">0</td><td colspan="3">0</td></tr><tr><td>δ [%]</td><td></td><td></td><td></td><td colspan="3">11.66</td><td></td><td></td><td></td></tr><tr><td>Interface</td><td colspan="3">MnS(100)/AIN(100)</td><td colspan="3">MnS(110)/AIN(110)</td><td colspan="3">MnS(111)/AIN(111)</td></tr><tr><td>[uvw]MnS</td><td>[001]</td><td>[011]</td><td>[010]</td><td>[001]</td><td>[-111]</td><td>[-110]</td><td>[-101]</td><td>[-211]</td><td>[-110]</td></tr><tr><td>[uvw]AIN</td><td>[011]</td><td>[020]</td><td>[01-1]</td><td>[001]</td><td>[-111]</td><td>[-110]</td><td>[-101]</td><td>[-211]</td><td>[-110]</td></tr><tr><td>dMnS [Å]</td><td>4.069</td><td>5.754</td><td>4.069</td><td>4.069</td><td>7.048</td><td>5.754</td><td>2.877</td><td>4.984</td><td>2.877</td></tr><tr><td>dAIN [Å]</td><td>3.705</td><td>5.240</td><td>3.705</td><td>5.240</td><td>9.076</td><td>7.410</td><td>3.705</td><td>6.418</td><td>3.705</td></tr><tr><td>θ [°]</td><td colspan="3">0</td><td colspan="3">0</td><td colspan="3">0</td></tr><tr><td>δ [%]</td><td colspan="3">8.94</td><td colspan="3">28.78</td><td colspan="3">28.78</td></tr><tr><td>Interface</td><td colspan="9">(110)TiN/(100)MnS</td></tr><tr><td>[uvw]TiN</td><td colspan="3">[001]</td><td colspan="3">[-111]</td><td colspan="3">[-110]</td></tr><tr><td>[uvw]MnS</td><td colspan="3">[001]</td><td colspan="3">[011]</td><td colspan="3">[010]</td></tr><tr><td>dTiN [Å]</td><td colspan="3">0.431</td><td colspan="3">0.746</td><td colspan="3">0.609</td></tr><tr><td>dMnS [Å]</td><td colspan="3">0.537</td><td colspan="3">0.759</td><td colspan="3">0.537</td></tr><tr><td>θ [°]</td><td colspan="3">0</td><td colspan="3">6.06</td><td colspan="3">0</td></tr><tr><td>δ [%]</td><td></td><td></td><td></td><td colspan="3">11.65</td><td></td><td></td><td></td></tr></table>
+
+[BLOCK b0105]
+0.77 to 0.85, and the delay interval is the same as the change interval of Al content. From the experimental results, it was found that the S content in 3 # sample was higher than that in 1 # and 2 # samples, while MnS inclusions were still delayed in precipitation.
+
+[BLOCK b0106]
+4.3. Precipitation Mechanism of Complex Inclusion
+
+[BLOCK b0107]
+Multiple types of composite inclusions were observed in the detection of experimental results, namely, $\mathsf { A l } _ { 2 } \mathsf { O } _ { 3 } { \cdot } \mathsf { M } \mathsf { n } \mathsf { S } .$ , AlN-MnS, $\mathrm { A l } _ { 2 } \mathrm { O } _ { 3 } { \cdot } \mathrm { A l N } { \cdot } \mathrm { M n S } ,$ , and TiN-MnS. Through the observation results, it can be clearly observed that there is an interface relationship between the composite inclusions. The precipitation order of single-particle inclusions is: $\mathrm { A l _ { 2 } O _ { 3 } } > \mathrm { A l N } > \mathrm { M n S } > \mathrm { T i N } .$ Therefore, it can be speculated that the later formed inclusions can nucleate and grow at the heterogeneous nucleation sites of the first formed inclusions. To investigate the effectiveness of MnS inclusions nucleation on $\mathrm { A l } _ { 2 } \mathrm { O } _ { 3 } ,$ AlN, TiN surfaces, and AlN inclusions nucleation on ${ \mathrm { A l } } _ { 2 } { \mathrm { O } } _ { 3 }$ surfaces, the mismatch degree (δ) as suggested by Bramfit,<sup>[47]</sup> substrates’ capacity to promote heterogeneous phase nucleation was assessed. The calculation of mismatch is shown in Equation (23):
+
+[BLOCK b0108]
+$$
+\delta_ {\mathrm {(hkl) _ {n}}} ^ {\mathrm {(hkl) _ {s}}} = \frac {1}{3} \left[ \sum_ {i = 1} ^ {3} \frac {| d _ {[ \mathrm{uvw} ] _ {s}} ^ {i} \cos \theta - d _ {[ \mathrm{uvw} ] _ {n}} ^ {i} |}{d _ {[ \mathrm{uvw} ] _ {n}} ^ {i}} \right] \times 100\% \tag{1.1}\tag{23}
+$$
+
+[BLOCK b0109]
+In the equation, the low-index lattice planes of the substrate and nucleation phase are represented by (hkl) and $( \mathrm { h k l } ) _ { \mathrm { n } } .$ . The low-index crystal orientation in (hkl) and (hkl) is represented by $[ \mathrm { u v w } ] _ { \mathrm { s } }$ and $[ \mathrm { \ u v w ] _ { n } } ,$ , respectively. The interatomic spacing along [uvw] and $[ \mathrm { u v w } ] _ { \mathrm { n } }$ is represented by the $d _ { \mathrm { [ u v w ] { s } } } ^ { i }$ and $d _ { \mathrm { [ u v w ] n } } ^ { i } .$ , respectively. θ denotes the angle between $[ \mathrm { { u v w } ] _ { s } }$ and [uvw] .
+
+[BLOCK b0110]
+The lattice parameters of different inclusions are shown in Table ${ \bf 6 , ^ { [ 5 , 4 8 - 5 0 ] } }$ and the calculation results of mismatch degree at the interfaces of different inclusions are shown in . From Figure 11, the mismatch degrees of $\mathsf { A l } _ { 2 } \mathsf { O } _ { 3 } / \mathsf { M n S }$ AlN/MnS, TiN/MnS, and $\mathsf { A l N } / \mathsf { A l } _ { 2 } \mathsf { O } _ { 3 }$ are 8.41%, 8.94%, 11.65%, and 11.66%, respectively. This indicates that $\mathrm { A l } _ { 2 } \mathrm { O } _ { 3 } , \mathrm { A l N }$ , and TiN could provide nucleation sites for the nucleation of MnS, and ${ \mathrm { A l } } _ { 2 } { \mathrm { O } } _ { 3 }$ could also provide heterogeneous nucleation sites for AlN. The detailed calculation results are shown in .
+
+[BLOCK b0111]
+<sup>Table 7</sup>shows the formation process of inclusions in three <sup>Figure 12</sup>steels during smelting and solidification. A large number of single-particle ${ \mathrm { A l } } _ { 2 } { \mathrm { O } } _ { 3 }$ inclusions are formed during the smelting process when the Al content is 1%. With the increasing content of Al, the precipitation amount of single-particle ${ \mathrm { A l } } _ { 2 } { \mathrm { O } } _ { 3 }$ inclusions in the 3% and 5% samples decreases. In the subsequent solidification process, AlN, MnS, and TiN inclusions begin to precipitate, in the order of $\mathrm { A l N } > \mathrm { M n S } > \mathrm { T i N }$ . The solidification fraction of AlN inclusion precipitation is advanced with the Al content increased from 1% to 3%, and the solidification fraction of AlN inclusion precipitation is delayed with the Al content increased from 3% to 5%. The solidification fraction of MnS and TiN inclusions precipitated is delayed with the increasing content of Al. In solid steel, the first precipitated inclusions can provide nucleation sites for the later precipitated inclusions. Therefore, $\mathsf { A l } _ { 2 } \mathsf { O } _ { 3 } { \cdot } \mathsf { M } \mathsf { n } \mathsf { S } _ { \mathrm { \Omega } }$ , AlN-MnS, and TiN-MnS composite inclusions were observed in solid steel. Due to the presence of relatively small amounts of single-particle ${ \mathrm { A l } } _ { 2 } { \mathrm { O } } _ { 3 }$ inclusions in samples containing 5% Al, no $\mathrm { A l } _ { 2 } \mathrm { O } _ { 3 } – \mathrm { A l N } – \mathrm { M n S }$ inclusions were observed in the steel.
+
+[BLOCK b0112]
+Figure 12. Evolution of inclusions during smelting and solidification process in three samples.
+
+[BLOCK b0113]
+5. Conclusion
+
+[BLOCK b0114]
+By studying the effect of different Al contents on the formation of inclusions in Fe-15Mn-<sup>x</sup>Al-C (<sup>x</sup> = 1, 3, 5) steel, the main conclusions are as follows: 1) The types of inclusions in Fe-15Mn-<sup>x</sup>Al-C $( x = 1 , 3 , 5 )$ low-density steel are almost the same, mainly $\mathrm { A l } _ { 2 } \mathrm { O } _ { 3 } ,$ AlN, MnS, TiN, $\mathbf { A l } _ { 2 } \mathbf { O } _ { 3 } { \cdot } \mathbf { M } \mathbf { n } \mathbf { S }$ , AlN-MnS, TiN-MnS, and $\mathrm { A l } _ { 2 } \mathrm { O } _ { 3 ^ { - } }$ AlN-MnS. As the Al content in the three samples increases, the number percentage of ${ \mathrm { A l } } _ { 2 } { \mathrm { O } } _ { 3 }$ decreases, while the numbe percentage of AlN increases. The number percentage of ${ \mathrm { A l } } _ { 2 } { \mathrm { O } } _ { 3 }$ -MnS inclusions increases with the increasing content of Al, while the number percentage of AlN-MnS and TiN-MnS inclusions decreases. As the Al content increases, the number of inclusions between 1 and 5 m decreases, while the number between 5 and 10 μm increases; 2) The increasing content of Al leads to an increase in the liquidus and a decrease in the solidus of the steel. At the same time, it causes the FCC region to narrow and expands the BCC region, and the solidification route of steel samples with 3% and 5% Al content passes through the BCC region; 3) The changes in the liquidus, solidus, and solidification route of the sample result in changes in the precipitation time of inclusions. When the Al content increases from 1% to 3%, the solidification route changes from FCC to FCC and BCC, which leads to an advance in the solidification fraction of AlN precipitation. Furthermore, when the Al content increases from 3% to 5%, although the solidification route is still FCC and BCC, high content of Al leads to a significant decrease in N solubility. Therefore, the comprehensive results of Al and N elements delay the precipitation of AlN. However, the solidification fraction of MnS and TiN inclusions precipitated is delayed with the increasing content of Al; and 4) The mismatch degrees of $\mathsf { A l } _ { 2 } \mathsf { O } _ { 3 } / \mathsf { M n S }$ , AlN/MnS, TiN/MnS, and $\mathsf { A l N } / \mathsf { A l } _ { 2 } \mathsf { O } _ { 3 }$ are 8.41%. 8.94%, 11.65%, and 11.66%, respectively. This indicates that $\mathrm { A l } _ { 2 } \mathrm { O } _ { 3 } ,$ AlN. and TiN could provide nucleation sites for the nucleation of MnS, and ${ \mathrm { A l } } _ { 2 } { \mathrm { O } } _ { 3 }$ could also provide nucleation sites for AlN.
+
+[BLOCK b0115]
+www.advancedsciencenews.com
+
+[BLOCK b0116]
+Acknowledgements
+
+[BLOCK b0117]
+The work was financially supported by the National Natural Science Foundation of China (grant no. 52174318) and the Open Funds of State Key Laboratory of Baiyunebo Rare Earth Resources Research and Comprehensive Utilization (2022-141).
+
+[BLOCK b0118]
+Conflict of Interest
+
+[BLOCK b0119]
+The authors declare no conflict of interest.
+
+[BLOCK b0120]
+Data Availability Statement
+
+[BLOCK b0121]
+The data that support the findings of this study are available from the corresponding author upon reasonable request.
+
+[BLOCK b0122]
+Keywords
+
+[BLOCK b0123]
+Al contents, inclusions, low-density steels, thermodynamics
+
+[BLOCK b0124]
+Received: November 8, 2023 Revised: February 10, 2024 Published online: March 19, 2024

@@ -1,0 +1,180 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-8.5mn-0.2c__annealed-1000c",
+      "paper_id": "10.1007_s11837-014-1084-y",
+      "alloy_id": "alloy_fe-8.5mn-0.2c",
+      "process_id": "proc_annealed-1000c",
+      "sample_label": "annealed at 1000 degrees C",
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_annealing_1000c",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": "1000 °C",
+      "temperature_unit": "°C",
+      "duration": "various times (1 min, 136 s, 5 min)",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Annealing of two-phase austenite-ferrite 8.5Mn-0.2C alloys at 1000 °C; ferrite recrystallization is complete at 1000 °C."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_af_1000c",
+      "overall_structure": "Two-phase austenite-ferrite microstructure; at 1000 °C ferrite recrystallization is complete, giving coarse, blocky, equiaxed austenite grains in a fully recrystallised, equiaxed ferrite matrix.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_af_1000c_136s",
+          "region": "bulk (EBSD map area)",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": "coarse, blocky, equiaxed grains",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "ferrite (α)",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains, fully recrystallised",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "equiaxed ferrite grains (fully recrystallised); coarse, blocky, equiaxed austenite grains",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interfaces_af",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_alpha_gamma",
+          "microstructure_id": "micro_af_1000c_136s",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "ferrite (α)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "Austenite volume fraction is predicted to change with temperature, which is an additional parameter in the evolution of properties with annealing temperature.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_tensile_1000c",
+      "measurement_conditions": null,
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "650–720 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "props_density_alloy",
+      "measurement_conditions": null,
+      "mechanical": null,
+      "physical": {
+        "density": {
+          "value": "varies with Al content (≈7.2 g/cm³ near ~6 wt.% Al to ≈6.6 g/cm³ near ~12 wt.% Al)",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_af_1000c_136s",
+      "technique": "EBSD (electron backscatter diffraction)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "annealed 136 s at 1000 °C; BC (band contrast) and IPF (inverse pole figure) maps",
+      "purpose": "phase mapping (austenite highlighted) and ferrite recrystallization/grain morphology assessment",
+      "key_findings": "at 1000 °C austenite is coarse, blocky and equiaxed; ferrite is fully recrystallised with equiaxed grains"
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "tensile testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "tensile strength measured as a function of annealing temperature (750–1050 °C) and time (1 min, 136 s, 5 min)",
+      "purpose": "determine influence of annealing parameters and chemistry on tensile strength",
+      "key_findings": "TS decreases with annealing temperature/time; at 1000 °C TS is in the 650–720 MPa band"
+    },
+    {
+      "characterization_id": "char_pycnometry",
+      "microstructure_id": null,
+      "technique": "pycnometry (picnometry)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "measure density of the quaternary 0.2C-8.5Mn alloys",
+      "key_findings": "density decreases with increasing Al content, tracking the Thermo-Calc prediction"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermocalc_density",
+      "simulation_method": "CALPHAD thermodynamic calculation",
+      "software_used": "Thermo-Calc (Thermo-Calc Software, Inc., McMurray, PA, USA)",
+      "potential_model_or_database": "database with the latest assessment by Lindahl and Selleby, with volume data from the commercial TCFE7 Steels/Fe-alloys database version 7",
+      "boundary_and_initial_conditions": "phase fractions of austenite and ferrite calculated in the same range of temperatures used for preparing the experimental alloys; density then evaluated at room temperature",
+      "validation_against_experiment": "agreement excellent at lower Al contents; at higher Al contents the κ-phase (not considered in the calculation) might explain the difference",
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "Increasing the annealing temperature and/or time leads to a decrease in tensile strength, with yield strength behaving in a similar way; the observed change is relatively small in MPa/°C (b0055).",
+    "Al and Si are both important solid-solution strengtheners in these 8.5Mn-0.2C austenite-ferrite alloys (b0055).",
+    "Ferrite recrystallization is complete at 1000 °C, unlike at 800 °C where pancake-shaped ferrite grains and incomplete recrystallization are observed; IPF maps show a higher degree of orientation variation at the lower temperatures and recovery has probably taken place (b0056).",
+    "The evolution of properties with annealing temperature and time is attributed to recovery and recrystallization of both phases (mainly at lower annealing temperatures) and most likely to grain growth at the highest temperatures; the predicted change in austenite volume fraction with temperature is an additional parameter (b0059)."
+  ]
+}

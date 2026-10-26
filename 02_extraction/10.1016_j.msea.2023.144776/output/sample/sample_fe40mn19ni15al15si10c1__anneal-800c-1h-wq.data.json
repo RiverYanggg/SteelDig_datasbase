@@ -1,0 +1,161 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__anneal-800c-1h-wq",
+      "paper_id": "10.1016_j.msea.2023.144776",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_anneal-800c-1h-wq",
+      "sample_label": "800 °C annealed",
+      "aliases": [
+        "800 °C",
+        "800 °C annealed powder"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_ma_35h",
+      "sequence": "1",
+      "type": "mechanical processing",
+      "method": "mechanical alloying (high-energy ball milling)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": "35 h",
+      "atmosphere": "toluene (process control reagent, used to avoid oxidation)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Elemental powders of Fe, Mn, Ni, Al, Si and C (99.2% pure) taken in the Fe40Mn19Ni15Al15Si10C1 proportion, milled in a planetary ball mill (Retsch PM 400/2) at 200 rpm; ball-to-powder ratio 10:1; WC vials and WC balls; milling stopped intermittently for 20 min after every 1 h to avoid overheating."
+    },
+    {
+      "processing_step_id": "step_anneal_800c_1h_wq",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": "800 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": "argon (35 h milled powder encapsulated in a quartz tube back filled with argon)",
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "35 h milled sample annealed for 1 h at 800 °C as part of the thermal-stability series (400, 500, 600 and 800 °C), followed by water quenching."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_anneal800c",
+      "overall_structure": "Multiphase structure: BCC (ferrite) as major phase together with partially ordered B2-type, γ-brass type and Fe5Si3-type silicide. At 800 °C no new phase change occurred relative to the milled powder but the amount of the B2-type phase increased.",
+      "number_of_phases": 4,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_anneal800c",
+          "region": null,
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "BCC (ferrite)",
+              "crystal_structure": "BCC (cI2); a = 0.286 nm",
+              "volume_fraction": "42.00 %",
+              "morphology": null,
+              "grain_size": {
+                "value": "28",
+                "unit": "nm"
+              },
+              "texture": null
+            },
+            {
+              "phase_name": "γ-brass type",
+              "crystal_structure": "γ-brass type (cI52); a = 0.872 nm",
+              "volume_fraction": "4.00 %",
+              "morphology": null,
+              "grain_size": {
+                "value": "22",
+                "unit": "nm"
+              },
+              "texture": null
+            },
+            {
+              "phase_name": "B2-type",
+              "crystal_structure": "partially ordered B2-type (cP2); a = 0.289 nm",
+              "volume_fraction": "40.00 %",
+              "morphology": null,
+              "grain_size": {
+                "value": "25",
+                "unit": "nm"
+              },
+              "texture": null
+            },
+            {
+              "phase_name": "Fe5Si3-type",
+              "crystal_structure": "Fe5Si3 type (hP16); a = b = 0.667 nm, c = 0.468 nm",
+              "volume_fraction": "14.00 %",
+              "morphology": null,
+              "grain_size": {
+                "value": "20",
+                "unit": "nm"
+              },
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_fe5si3_anneal800c",
+              "type": "Fe5Si3-type silicide intermetallic",
+              "size": null,
+              "distribution": null,
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_annealed_800c",
+      "microstructure_id": null,
+      "technique": "Ex-situ X-ray diffraction (XRD)",
+      "instrument_or_setup": "Rigaku X-ray diffractometer, Cu-Kα source, 40 kV, 15 mA, scan rate 5° min-1",
+      "measurement_conditions": "Room temperature, ex-situ on powders annealed at R.T., 400, 500, 600 and 800 °C; the 800 °C pattern is shown in Fig. 5(f).",
+      "purpose": "To follow the phase evolution / thermal stability of the milled powder after annealing at increasing temperatures.",
+      "key_findings": "At 800 °C no new phase change occurred relative to the milled powder but the amount of B2-type phase increased; Fe5Si3-type silicide, formed at 600 °C, grows further up to 800 °C."
+    },
+    {
+      "characterization_id": "char_rietveld_800c",
+      "microstructure_id": "micro_anneal800c",
+      "technique": "Rietveld refinement (GSAS-II)",
+      "instrument_or_setup": "GSAS-II; pseudo-Voigt profile; Chebyschev-I background with 10 coefficients",
+      "measurement_conditions": "800 °C annealed powder; refinement quality wR = 2.84, GoF = 1.29, χ² = 1.67",
+      "purpose": "To determine phase fraction, lattice parameter, volume and crystallite size of the phases present in the 800 °C annealed sample.",
+      "key_findings": "BCC 42.00% (a = 0.286 nm, 28 nm), γ-brass type 4.00% (a = 0.872 nm, 22 nm), B2 40.00% (a = 0.289 nm, 25 nm), Fe5Si3 type 14.00% (a = b = 0.667 nm, c = 0.468 nm, 20 nm)."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_calphad_800c",
+      "simulation_method": "CALPHAD single-point equilibrium calculation",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": "TCFE8 database",
+      "boundary_and_initial_conditions": "Temperature 800 °C (1073 K); composition Fe40Mn19Ni15Al15Si10C1 (mole fractions Mn = 0.19, Ni = 0.15, Al = 0.15, Si = 0.10, C = 0.01); Pressure = 100000 Pa; System size = 1.0 mol.",
+      "validation_against_experiment": "Some difference exists between the experimental and CALPHAD-predicted phases; this was attributed to using the TCFE8 database instead of TCHEA3.",
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "The 800 °C annealed specimen is a loose powder used to assess thermal stability / phase evolution; it was not consolidated by SPS, so the mechanical properties reported for the SPSed pellet (microhardness ~7.8 ± 0.3 GPa, elastic modulus 184 ± 5 GPa, compressive strength 2046 ± 160 MPa, ductility ~19%) do not apply to this sample state.",
+    "At 800 °C annealing, no new phase change occurred compared with the lower annealing temperatures, but the phase fraction of the B2-type phase increased (B2 = 40.00% at 800 °C).",
+    "Rietveld volumes of the 800 °C annealed phases (Table 4): BCC 23.39 Å³, γ-brass type 663.05 Å³, B2 24.13 Å³ and Fe5Si3 type 180.31 Å³.",
+    "The 35 h milled powder was annealed in a quartz tube back-filled with argon and then water quenched."
+  ]
+}

@@ -1,0 +1,535 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-13al-1.3c-5cr__dp1000-5",
+      "paper_id": "10.1016_j.scriptamat.2025.116668",
+      "alloy_id": "alloy_fe-30mn-13al-1.3c-5cr",
+      "process_id": "proc_dp1000-5",
+      "sample_label": "DP1000-5",
+      "aliases": [
+        "DP1000–5"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "solidification / casting",
+      "method": "vacuum induction melting under argon atmosphere, cast into ingot",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "argon",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Melted in a vacuum induction furnace under argon atmosphere and cast into ingot."
+    },
+    {
+      "processing_step_id": "step_forging",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "forging to thick slab",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingot forged to thick slab."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenization at 1200 °C for 2 h applied before hot rolling."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "hot rolling (HR)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "to 6 mm thickness",
+      "processing_steps_notes": "Hot rolled to 6 mm thickness."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "solution treatment / isothermal holding then water quench",
+      "temperature": "1050 °C",
+      "temperature_unit": "°C",
+      "duration": "0.5 h",
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "HR plates were heated to 1050 °C and isothermally held for 0.5 h, then quenched in water."
+    },
+    {
+      "processing_step_id": "step_cold_rolling",
+      "sequence": "6",
+      "type": "mechanical processing",
+      "method": "cold rolling (CR)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "to 3 mm thickness",
+      "processing_steps_notes": "Cold rolled to 3 mm thickness. This CR state constitutes the parent process proc_cr."
+    },
+    {
+      "processing_step_id": "step_annealing_1000_5",
+      "sequence": "7",
+      "type": "heat treatment",
+      "method": "annealing then water quench",
+      "temperature": "1000 °C",
+      "temperature_unit": "°C",
+      "duration": "5 min",
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "CR sheet annealed at 1000 °C for 5 min and then quenched in water; this is the defining treatment of the DP1000-5 specimen."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_dp1000-5_overall",
+      "overall_structure": "Austenite-ferrite duplex microstructure: fully recrystallized (95.2%) austenitic matrix containing two types of ferrite, i.e. granular α ferrite grains and banded δ ferrite elongated along the RD, plus intragranular κ-carbide nanoparticles.",
+      "number_of_phases": "3 (austenite FCC, granular α ferrite, banded δ ferrite) plus κ-carbide precipitates",
+      "microstructure_counts": {
+        "rexed_austenite_fraction": "95.2%",
+        "ferrite_fraction_by_XRD": "17.8%",
+        "alpha_ferrite_fraction_by_EBSD": "4.1%",
+        "delta_ferrite_fraction_by_EBSD": "9.3%"
+      },
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_rex_austenite",
+          "region": "matrix",
+          "related_sequence": "7",
+          "phases_present": [
+            {
+              "phase_name": "recrystallized austenite (γ, FCC)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "95.2% (Rex-γ fraction)",
+              "morphology": "fully recrystallized austenitic matrix with annealing twins",
+              "grain_size": "7.40 ± 5.13 µm",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "7.40",
+              "unit": "µm"
+            },
+            "grain_size_distribution": "± 5.13 µm (standard deviation)",
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_intragranular",
+              "type": "intragranular κ-carbide nanoparticles (Mn/Al/C-rich)",
+              "size": {
+                "value": "0.86 ± 0.20 nm",
+                "unit": "nm"
+              },
+              "distribution": "within austenite grains (intragranular), formed during water quenching",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_alpha_ferrite",
+          "region": "at austenite boundaries and triple points",
+          "related_sequence": "7",
+          "phases_present": [
+            {
+              "phase_name": "granular α ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": "4.1% (α fraction by EBSD)",
+              "morphology": "granular, located at grain boundaries and triple points of austenite; thinner and discontinuous in DP1000-5",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_delta_ferrite",
+          "region": "banded regions elongated along the rolling direction",
+          "related_sequence": "7",
+          "phases_present": [
+            {
+              "phase_name": "δ ferrite bands",
+              "crystal_structure": "BCC",
+              "volume_fraction": "9.3% (δ fraction by EBSD)",
+              "morphology": "band-like, elongated along the RD; sparse and thin after annealing at 1000 °C for 5 min",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_carbides_dissolution",
+          "region": "grain boundaries and prior precipitate sites",
+          "related_sequence": "7",
+          "phases_present": [
+            {
+              "phase_name": "Cr7C3 carbides and intergranular κ-carbides",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "largely dissolved at 1000 °C (dark particles detectable by XRD at 950–1000 °C, absent at 1050 °C)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "intf_dp1000-5",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_alpha_gamma",
+          "microstructure_id": "micro_alpha_ferrite",
+          "phase_1_name": "granular α ferrite",
+          "phase_2_name": "austenite (γ)",
+          "coherence": null
+        },
+        {
+          "interface_id": "intf_delta_gamma",
+          "microstructure_id": "micro_delta_ferrite",
+          "phase_1_name": "δ ferrite bands",
+          "phase_2_name": "austenite (γ)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "def_crack_nucleation_alpha_gamma",
+          "microstructure_id": "micro_alpha_ferrite",
+          "interaction_type": "crack nucleation at α/γ interface",
+          "qualitative_or_quantitative_description": "In DP1000-5, a tensile crack was nucleated at the α/γ interface and then propagated along the normal direction (ND) until it encountered a δ ferrite band parallel to the RD."
+        },
+        {
+          "interaction_id": "def_crack_deflection_delta_bands",
+          "microstructure_id": "micro_delta_ferrite",
+          "interaction_type": "crack capture, deflection and blunting by δ ferrite bands",
+          "qualitative_or_quantitative_description": "δ ferrite bands parallel to the RD capture and deflect ND-propagating cracks, which may then propagate into the soft δ ferrite bands and get blunted through dislocation emission and local plastic dissipation near the crack tip, delocalizing the plastic strain; more δ ferrite bands increase the frequency of capturing and deflecting the ND cracks that cause tensile failure."
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": "During annealing at 1000 °C for 5 min, Cr7C3 carbides, the intergranular κ-carbides and ferrite significantly transformed to austenite, resulting in high Mn/Al/C concentrations in austenite for high-density nanosized κ-carbide precipitation during water quenching; recrystallization of the CR structure is essentially complete (95.2% Rex-γ).",
+      "interface_notes": "DP1000-5 was tested along the RD; the δ ferrite bands are oriented parallel to the RD, unlike DP1000-5-TD where δ/γ interfaces are perpendicular to the tensile axis."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_dp1000-5_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": "flat dog-bone-shaped tensile specimen, gage length 25 mm, length direction along the rolling direction (RD)",
+        "test_standard": null,
+        "other_conditions": "Uniaxial tensile tests; three measurements made for each heat treatment and average values taken."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "1035",
+              "unit": "MPa",
+              "uncertainty": "± 5"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "1250",
+              "unit": "MPa",
+              "uncertainty": "± 15"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "41.4",
+              "unit": "%",
+              "uncertainty": "± 0.5"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve of DP1000-5 (red solid curve) shown in Fig. 3a, extending past 40% strain at a lower plateau stress.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.36",
+          "unit": "g·cm^-3"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_dp1000-5_nanoindentation",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "etched sample",
+        "test_standard": null,
+        "other_conditions": "Nanoindentation tests conducted on the etched sample to study the mechanical response of different microstructural constituents."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_dp1000-5_comparative",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "uniaxial tension along the rolling direction (RD)",
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "SUTS × TE product",
+        "improvement_percentage": null
+      },
+      "notes": "DP1000-5 exhibits an SUTS × TE product exceeding 8 GPa·g⁻¹·cm³·%, whereas 2000 series aerospace Al alloys and Ti6Al4V are below 4 GPa·g⁻¹·cm³·%, existing duplex Fe-Mn-Al-C steels span 2.7–6.5 GPa·g⁻¹·cm³·% and austenitic Fe-Mn-Al-C steels span 2.9–7.4 GPa·g⁻¹·cm³·%."
+    },
+    {
+      "performance_id": "perf_dp1000-5_rd_vs_td",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "uniaxial tension along RD compared to TD",
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-30mn-13al-1.3c-5cr",
+        "benchmark_process_id": "proc_dp1000-5",
+        "benchmark_sample_id": "sample_fe-30mn-13al-1.3c-5cr__dp1000-5-td",
+        "comparison_metric": "TE",
+        "improvement_percentage": null
+      },
+      "notes": "The TD counterpart DP1000-5-TD shows similar YS/UTS but lower TE than DP1000-5, attributed to the orientation of the δ ferrite bands relative to the tensile axis."
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Diffraction angle 2θ = 35–80°, annealed samples including 1000 °C/5 min",
+      "purpose": "Identify phase constituents (austenite FCC, ferrite BCC, β-Mn, carbides) and determine ferrite fraction",
+      "key_findings": "FCC and BCC peaks present; β-Mn only at 700–900 °C; κ-carbides and Cr7C3 carbides appear at 950–1000 °C and disappear at 1050 °C; ferrite fraction of DP1000-5 = 17.8%."
+    },
+    {
+      "characterization_id": "char_sem",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM)",
+      "instrument_or_setup": "ZEISS Gemini 300",
+      "measurement_conditions": "Secondary-electron imaging of crack regions in DP1000-5",
+      "purpose": "Examine crack nucleation, deflection and propagation in the deformed DP1000-5 specimen",
+      "key_findings": "A tensile crack in DP1000-5 nucleated at the α/γ interface, propagated along ND, and was deflected along the RD upon encountering a δ ferrite band parallel to the RD."
+    },
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": "micro_rex_austenite",
+      "technique": "Transmission electron microscopy (TEM) and selected-area electron diffraction (SAED)",
+      "instrument_or_setup": "FEI Tecnai G20",
+      "measurement_conditions": "Bright-field imaging and SAED of DP1000-5 (1 µm overview, 20 nm high-magnification inset)",
+      "purpose": "Identify ferrite and austenite phases and intragranular κ-carbide nanoparticles",
+      "key_findings": "SAED of point ② indexes ferrite ((1̄32), (13̄2), (200), B = [023]); SAED of point ③ indexes austenite ((11̄1)γ, (200)γ, (1̄1̄1)γ) plus κ-carbides ((01̄1)κ, (100)κ, B = [011]); a 20 nm inset resolves intragranular κ-carbide nanoparticles with r = 0.86 ± 0.20 nm and f = 1.56%."
+    },
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": null,
+      "technique": "Electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "Scanning Auger Nanoprobe, PHI 710",
+      "measurement_conditions": "Phase (PH) and grain-reference-orientation-deviation (GROD) mappings; high-angle boundaries >15°; Rex fraction determined with GROD < 2°",
+      "purpose": "Quantify recrystallized austenite fraction, α and δ ferrite fractions and γ grain size",
+      "key_findings": "DP1000-5: Rex-γ fraction 95.2%, γ grain size 7.40 ± 5.13 µm, α fraction 4.1%, δ fraction 9.3%; GROD map almost uniform yellow with black ferrite bands indicating full recrystallization and annealing twins."
+    },
+    {
+      "characterization_id": "char_nanoindentation",
+      "microstructure_id": null,
+      "technique": "Nanoindentation",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Etched sample",
+      "purpose": "Study the mechanical response of different microstructural constituents",
+      "key_findings": "For DP1000-5, ferrite is clearly softer than the recrystallized austenite, explaining the lower YS of specimens annealed at 950 °C."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Room temperature, strain rate 10^-3 s^-1, flat dog-bone specimens with 25 mm gage length along RD (DP1000-5)",
+      "purpose": "Measure YS, UTS, TE and derive specific strength of DP1000-5",
+      "key_findings": "DP1000-5: YS 1035 ± 5 MPa, UTS 1250 ± 15 MPa, TE 41.4 ± 0.5 %, SYS 162.7 ± 0.8 MPa·g⁻¹·cm³, SUTS 196.5 ± 2.4 MPa·g⁻¹·cm³."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_equilibrium_phase_fractions",
+      "simulation_method": "Equilibrium (thermodynamic) phase fraction calculation",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Temperature range 550–1400 °C",
+      "validation_against_experiment": "Calculated ferrite fraction remains almost constant at about 33% between 991 °C and 1250 °C and increases to a maximum as temperature decreases from 991 °C to 854 °C; measured (XRD) ferrite fraction is largest at 900 °C and decreases above 900 °C, indicating ferrite-to-austenite transformation.",
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "DP1000-5 specific yield strength (SYS) = 162.7 ± 0.8 MPa·g⁻¹·cm³ and specific ultimate tensile strength (SUTS) = 196.5 ± 2.4 MPa·g⁻¹·cm³ (Table 1).",
+    "DP1000-5 microstructural constituent fractions (Table 1): Rex-γ fraction 95.2%, γ grain size 7.40 ± 5.13 µm, ferrite fraction by XRD 17.8%, α fraction by EBSD 4.1%, δ fraction by EBSD 9.3%.",
+    "Annealidng of the CR structure at 1000 °C for 5 min is identified as the realized optimum condition: it yields a fully recrystallized austenitic matrix with granular α ferrite and δ ferrite bands, giving the best SUTS-TE combination (UTS 1250 MPa, TE 41.4%).",
+    "Nanoindentation on DP1000-5 (Fig. S4) shows ferrite is clearly softer than the recrystallized austenite, which explains why specimens annealed at 950 °C have lower YS than those annealed at higher temperatures.",
+    "The engineering stress-strain curve of DP1000-5 (red solid curve, Fig. 3a) extends past 40% strain at a lower plateau stress, while DP1000-1 peaks highest among the long curves."
+  ]
+}

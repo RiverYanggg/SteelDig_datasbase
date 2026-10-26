@@ -1,0 +1,123 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-9al-20mn-1c__600c-30min-wq",
+      "paper_id": "10.1016_j.jmrt.2020.02.088",
+      "alloy_id": "alloy_fe-9al-20mn-1c",
+      "process_id": "proc_600c-30min-wq",
+      "sample_label": "9Al-20Mn-1C 600 °C — Tempered",
+      "aliases": [
+        "9Al-20Mn-1C tempered at 600 °C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_casting",
+      "sequence": "1",
+      "type": "solidification / casting",
+      "method": "vacuum induction furnace casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "100 kW vacuum induction furnace, 0.5 kg ingots (Table 1 composition ranges)"
+    },
+    {
+      "processing_step_id": "step_2_hot_rolling_1150c_wq",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot-rolling",
+      "temperature": "1150",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled at 1150 °C obtaining 5 mm flat-products, followed by water quenching (this is the parent process proc_hot-rolled-1150c)"
+    },
+    {
+      "processing_step_id": "step_3_tempering_600c_30min_wq",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "tempering (600 °C heat treatment)",
+      "temperature": "600",
+      "temperature_unit": "°C",
+      "duration": "30 min",
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Heat treated at 600 °C for 30 min, followed by water quenching; tempering at 600 °C triggers slight/incipient transformations (discontinuous precipitation and precipitation transformation) in general"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_9al20mn1c_600c",
+      "overall_structure": "Equiaxed austenite grains in which each grain contains fine parallel striations of a single orientation (direction changing grain to grain); no austenite transformation was detected at 600 °C, and secondary phases were detected only along grain boundaries (probably κ + α, with κ and/or M3C carbides along γ boundaries).",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_9al20mn1c_600c_gb",
+          "region": "bulk (grain interiors + grain boundaries)",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "γ-austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "equiaxed polygonal grains containing fine, closely spaced parallel striations (one striation orientation per grain)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "E2_1 (KAPPA_E21)",
+              "volume_fraction": null,
+              "morphology": "continuous grain-boundary film / rib-like band along γ boundaries",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "α-ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "along grain boundaries, appearing continuous with the adjacent grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": "Fine, closely spaced parallel striations inside every grain; each grain hosts striations of a single orientation and the striation direction changes from grain to grain"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_gb_kappa_alpha",
+              "type": "κ + α (probably), with κ and/or M3C carbides along γ grain boundaries",
+              "size": null,
+              "distribution": "along γ grain boundaries (continuous grain-boundary film)",
+              "coherency": "continuous with the adjacent grain (evidence of continuity)"
+            }
+          ]
+        },
+        "block_id"
+      ],
+      "b0084": "b0086",
+      "figure_010": "figure_011"
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

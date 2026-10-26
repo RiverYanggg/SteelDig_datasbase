@@ -1,0 +1,168 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_005",
+  "family": "generalist",
+  "image_type": "chart_plot",
+  "description": "Fig. 5 is a nine-panel composite of parity (scatter) plots, labelled (a)–(i), comparing nine machine-learning models for predicting steel microhardness. All panels share identical axes: x = \"Experimental microhardness (HV)\" and y = \"Prediction microhardness (HV)\", both spanning 300–800 HV, with a dash-dot 1:1 diagonal; each legend separates orange \"Testing Data\" from blue \"Training Data\". Panel values printed inside each plot are: (a) SVR RMSE 0.39, R² 0.85; (b) ET RMSE 0.45, R² 0.80; (c) MLP RMSE 0.44, R² 0.81; (d) Ridge RMSE 0.43, R² 0.82; (e) LightGBM RMSE 0.62, R² 0.63; (f) XGBoost RMSE 0.46, R² 0.79; (g) RF RMSE 0.52, R² 0.74; (h) LR RMSE 0.48, R² 0.76; and (i) DT RMSE 0.54, R² 0.72. Training points (blue) hug the diagonal in every panel, while testing points (orange) scatter more widely, several at 500–600 HV falling well below the line in (b), (e), (g) and (i). The figure's argument is that SVR gives the best fit, with ET, MLP, Ridge and XGBoost close behind, whereas LightGBM is clearly the poorest; overall accuracy degrades as orange points depart from the diagonal.",
+  "confidence": "high",
+  "subfigures": [
+    {
+      "panel": "(a)",
+      "description": "Parity plot for the SVR model, axes 300–800 HV, with RMSE 0.39 and R² 0.85 printed inside the panel — the best metrics of the nine. Blue training points lie tightly on the 1:1 line; orange testing points spread slightly below it.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(b)",
+      "description": "Parity plot for the ET model, RMSE 0.45, R² 0.80. A few orange testing points at ~500–550 HV fall clearly below the diagonal.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(c)",
+      "description": "Parity plot for the MLP model, RMSE 0.44, R² 0.81, with the same 300–800 HV axes and Testing/Training Data legend.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(d)",
+      "description": "Parity plot for the Ridge model, RMSE 0.43, R² 0.82, showing a similarly tight blue training cloud along the diagonal.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(e)",
+      "description": "Parity plot for the LightGBM model, RMSE 0.62 and R² 0.63 — the worst metrics of the nine; testing points deviate markedly below the line at 450–650 HV.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(f)",
+      "description": "Parity plot for the XGBoost model, RMSE 0.46, R² 0.79, with scattered orange testing points below the diagonal around 500–600 HV.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(g)",
+      "description": "Parity plot for the RF model, RMSE 0.52, R² 0.74; several testing points sit well below the 1:1 line near 600 HV.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(h)",
+      "description": "Parity plot for the LR model, RMSE 0.48, R² 0.76, with a moderately tight training cloud and scattered testing points.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(i)",
+      "description": "Parity plot for the DT model, RMSE 0.54, R² 0.72; testing points at ~500–550 HV lie below the diagonal.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "All nine panels are scatter parity plots with identical axes: x = 'Experimental microhardness (HV)' and y = 'Prediction microhardness (HV)', each running 300 to 800 HV, and a dash-dot 1:1 reference line.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Each panel's legend distinguishes two point classes: orange 'Testing Data' and blue 'Training Data'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Printed inside panel (a): SVR, RMSE 0.39, R² 0.85 — the highest R² and lowest RMSE of all nine panels.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Printed inside panel (e): LightGBM, RMSE 0.62, R² 0.63 — the lowest R² and highest RMSE of all nine panels.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Printed metrics: (b) ET RMSE 0.45 / R² 0.80; (c) MLP RMSE 0.44 / R² 0.81; (d) Ridge RMSE 0.43 / R² 0.82; (f) XGBoost RMSE 0.46 / R² 0.79; (g) RF RMSE 0.52 / R² 0.74; (h) LR RMSE 0.48 / R² 0.76; (i) DT RMSE 0.54 / R² 0.72.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "In every panel the blue training points lie tightly along the 1:1 diagonal, whereas orange testing points are more scattered, with several at roughly 500–600 HV falling below the line (notably in panels b, e, g and i).",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption states the panels correspond, in order (a)–(i), to the SVR, ET, MLP, Ridge, LightGBM, XGBoost, RF, LR and DT models.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_005"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states the nine models were trained with Bayesian-optimised hyperparameters under ten-fold cross-validation, using the three features {G, δEc, DEc} as inputs and microhardness as output.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "figure_005"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text reports R² values of 0.85, 0.80, 0.81, 0.82, 0.63, 0.79, 0.74, 0.76 and 0.72 and RMSE values of 0.39, 0.45, 0.44, 0.43, 0.62, 0.46, 0.52, 0.48 and 0.54 for SVR, ET, MLP, Ridge, LightGBM, XGBoost, RF, LR and DT respectively, matching the printed panel values.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "figure_005"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text concludes the SVR model gives the best prediction capability (highest R² 0.85, lowest RMSE 0.39), and warns of overfitting risk for ET, XGBoost and DT despite their R² values of 0.80, 0.79 and 0.72.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "figure_005"
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "measured_quantities": [
+    "microhardness (HV)",
+    "coefficient of determination R² (dimensionless)",
+    "RMSE (unit not printed on the panels)"
+  ],
+  "sample_hints": [
+    "SVR",
+    "ET",
+    "MLP",
+    "Ridge",
+    "LightGBM",
+    "XGBoost",
+    "RF",
+    "LR",
+    "DT"
+  ],
+  "unreadable_items": [
+    "RMSE unit is not printed in any panel (value given without units)",
+    "Panel letters (a),(c),(f),(h) are partially clipped at the top-left corner but remain identifiable"
+  ],
+  "image_paths": [
+    "images/0f5599aad328cc6fac36be98bc31c2de3a805c3752f95e68d26f3eccb0b7a38a.jpg",
+    "images/9816eeb25450d72890c462737dfcaf5628072c76e9b806a6e64222c3100d2706.jpg",
+    "images/d4fcfe37080c245a88d9902071b7f717afe5cb194b9814fe3a3ea24a9682215c.jpg",
+    "images/f60b897e247c2c65b07a3e195cc26efc3b89b41564fd2aff8007e96de7c251f3.jpg",
+    "images/7b858bcb6a6bc51e11bd8c56d9634cf85b3ebd30c25c1a0363aa664381b373c9.jpg",
+    "images/63cd3257df88951f70752c67c7efc7649ea8ec6c4c2ff8780688d849250c7ed4.jpg",
+    "images/c41d5ed61142b4d45fcd04582b10616c0aa7895d1896c9bd9770a5d365b48f6d.jpg",
+    "images/ec8ffcf50cffcb59ae51d45d69180c6f0f29d8774e02f9d0ae6aa1fc20b2e94c.jpg",
+    "images/4945ce3c5aa355e9c44b94c2e1fffecf9b6405a747a068e9490464a9fc1f653f.jpg"
+  ]
+}

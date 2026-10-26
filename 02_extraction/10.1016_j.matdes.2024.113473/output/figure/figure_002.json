@@ -1,0 +1,136 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_002",
+  "family": "generalist",
+  "image_type": "chart_plot",
+  "description": "Fig. 2 is a full 12 x 12 correlation scatter-matrix (pair-plot) drawn in blue, with no panel letters — all cells are arranged in one grid. The twelve variables, in row and column order, are C (wt.%), Si (wt.%), Mn (wt.%), Cr (wt.%), S (wt.%), Ni (wt.%), P (wt.%), Fe (wt.%), Mo (wt.%), V (wt.%), W (wt.%) and Microhardness (HV); each label is printed on both the bottom x-axis and the left y-axis. The twelve diagonal cells hold filled light-blue probability-density histograms; the 132 off-diagonal cells are unfitted scatter plots of one variable against another using identical small blue circular markers. Every cell carries its own tick labels, e.g. C 1.5-2.0, Cr 5-10, Fe 80-90, P 0.05-0.15, W 0.5-1.5, Microhardness 400-600 HV. No correlation coefficient, p-value, regression line or data count is printed anywhere. Scatter cells involving Cr trend upward against Microhardness, Ni and Mo trend upward more weakly, while Fe (wt.%) forms a downward band against C, Cr, Ni and Mo — partly a compositional closure effect. The matrix is the correlation screen used before machine-learning prediction of microhardness.",
+  "confidence": "high",
+  "subfigures": [
+    {
+      "panel": "diagonal cells (12)",
+      "description": "One filled light-blue probability-density histogram per variable (C, Si, Mn, Cr, S, Ni, P, Fe, Mo, V, W in wt.% and Microhardness (HV)), each with its own labelled tick marks on the outer axes. These histograms are the density plots the citing text uses to rank element-microhardness correlations.",
+      "confidence": "high"
+    },
+    {
+      "panel": "upper-right triangle (66 cells)",
+      "description": "Scatter plots of every variable pair, each cell with its own axis ticks; e.g. the Cr column against C, Si, Mn shows broad clouds, whereas Fe rows against C, Cr, Ni, Mo show clear downward-sloping bands. No fitted lines or correlation values are drawn.",
+      "confidence": "high"
+    },
+    {
+      "panel": "lower-left triangle (66 cells)",
+      "description": "Mirror images (axes exchanged) of the same variable pairs; they reproduce the same trends, e.g. Microhardness vs Cr rising and Microhardness vs Fe falling.",
+      "confidence": "high"
+    },
+    {
+      "panel": "last row / last column (Microhardness (HV))",
+      "description": "The Microhardness (HV) row and column, spanning roughly 400-600 HV on the y-axis of the last row, show the composition-microhardness relationships: upward trends with Cr, Ni and Mo and a downward trend with Fe.",
+      "confidence": "medium"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "The figure is a complete 12 x 12 scatter matrix in which both triangles are populated (no mirrored-cell suppression), so each variable pair appears twice with exchanged axes.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The variable labels printed on both the bottom axis and the left axis are, in order: C (wt.%), Si (wt.%), Mn (wt.%), Cr (wt.%), S (wt.%), Ni (wt.%), P (wt.%), Fe (wt.%), Mo (wt.%), V (wt.%), W (wt.%) and Microhardness (HV).",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The 12 diagonal cells contain filled light-blue probability-density histograms rather than scatter points.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Printed tick values visible per axis include C 1.5 and 2.0; Si 0.5 and 1.0; Mn 1 and 2; Cr 5 and 10; S 0.5 and 1.0; Ni 1 and 2; P 0.05, 0.10 and 0.15; Fe 80, 85 and 90; Mo 0.5, 1.0 and 1.5; V 1 and 2; W 0.5, 1.0 and 1.5; Microhardness (HV) 400, 500 and 600.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Scatter cells of Cr (wt.%) against Microhardness (HV) show an upward trend, whereas Fe (wt.%) against C, Cr, Ni and Mo forms a distinctly downward-sloping band.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "No correlation coefficient, p-value, regression line, confidence ellipse or dataset size is printed in any cell of the matrix.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Every off-diagonal cell uses the same marker style: small filled blue circles.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption consists only of the sentence \"Fig. 2. Correlation scatter matrix graph.\" and names no variables, no sample and no numeric value.",
+      "source": "caption",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states that the diagonal probability density histograms indicate Cr exhibits a positive correlation with microhardness, followed by Ni and Mo, whereas Mn, V and W showed weaker correlations.",
+      "source": "citation",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states that Cr, Ni and Mo can form solid-solution alloys and carbides as strengthening phases, and that Ni can reduce the grain size of the alloys.",
+      "source": "citation",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text frames the figure as revealing the correlation between chemical composition and microhardness of the alloy.",
+      "source": "citation",
+      "evidence": [],
+      "confidence": "high"
+    }
+  ],
+  "measured_quantities": [
+    "microhardness (HV)",
+    "C (wt.%)",
+    "Si (wt.%)",
+    "Mn (wt.%)",
+    "Cr (wt.%)",
+    "S (wt.%)",
+    "Ni (wt.%)",
+    "P (wt.%)",
+    "Fe (wt.%)",
+    "Mo (wt.%)",
+    "V (wt.%)",
+    "W (wt.%)",
+    "probability density (diagonal histograms, unitless)"
+  ],
+  "sample_hints": [
+    "Fe-C-Cr-Mn-Si steel",
+    "C (wt.%)",
+    "Si (wt.%)",
+    "Mn (wt.%)",
+    "Cr (wt.%)",
+    "S (wt.%)",
+    "Ni (wt.%)",
+    "P (wt.%)",
+    "Fe (wt.%)",
+    "Mo (wt.%)",
+    "V (wt.%)",
+    "W (wt.%)",
+    "Microhardness (HV)"
+  ],
+  "unreadable_items": [
+    "Bottom-axis tick labels of the Cr (wt.%) column appear inconsistent with the 5-10 range printed on that variable's y-axis; the small print is partially readable at the supplied resolution",
+    "Exact tick values for the Mn, Ni, Mo and V column axes are only partially legible",
+    "Number of data points per cell and any statistical significance values are not printed, so they cannot be extracted"
+  ],
+  "image_paths": [
+    "images/70a3705c39fa20c78e9d17f173da058f8f9790ef2ec7bb5ba0ea97dcf0d04ea0.jpg"
+  ]
+}

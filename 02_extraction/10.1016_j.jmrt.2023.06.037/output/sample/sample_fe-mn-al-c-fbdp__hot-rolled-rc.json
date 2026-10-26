@@ -1,0 +1,444 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-mn-al-c-fbdp__hot-rolled-rc",
+      "paper_id": "10.1016_j.jmrt.2023.06.037",
+      "alloy_id": "alloy_fe-mn-al-c-fbdp",
+      "process_id": "proc_hot-rolled-rc",
+      "sample_label": "F-BDP steel",
+      "aliases": [
+        "ferrite-base duplex phase Fe-Mn-Al-C steel (hot rolled + rapidly cooled)"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "Homogenization step of the general Fe-Mn-Al-C thermal-mechanical processing route that also applies to hot-rolled F-BDP steel",
+        "block_id": [
+          "b0047"
+        ]
+      },
+      "processing_step_id": "step_homogenization",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "homogenization of the forging ingot"
+      },
+      "temperature": {
+        "value": "1100-1250 °C",
+        "source": {
+          "reason": "b0047 states the forging ingot is homogenized at 1100-1250 °C, defining the first step of the hot-rolling route",
+          "block_id": [
+            "b0047"
+          ]
+        }
+      },
+      "temperature_unit": {
+        "value": "°C",
+        "source": {
+          "reason": "temperature given in °C in b0047",
+          "block_id": [
+            "b0047"
+          ]
+        }
+      },
+      "duration": {
+        "value": "1-3 h",
+        "source": {
+          "reason": "b0047 states homogenization for 1e3 h",
+          "block_id": [
+            "b0047"
+          ]
+        }
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Performed on the forging ingot prior to hot rolling",
+        "source": {
+          "reason": "b0047 describes this as the ingot homogenization step",
+          "block_id": [
+            "b0047"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "Hot-rolling step defining the 'hot rolled' state of the F-BDP sample",
+        "block_id": [
+          "b0040",
+          "b0047"
+        ]
+      },
+      "processing_step_id": "step_hot_rolling",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "mechanical processing"
+      },
+      "method": {
+        "value": "hot rolling"
+      },
+      "temperature": {
+        "value": "between 1100 and 850 °C",
+        "source": {
+          "reason": "b0047 states the ingot is hot-rolled between 1100 and 850 °C",
+          "block_id": [
+            "b0047"
+          ]
+        }
+      },
+      "temperature_unit": {
+        "value": "°C",
+        "source": {
+          "reason": "temperature given in °C in b0047",
+          "block_id": [
+            "b0047"
+          ]
+        }
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": {
+        "value": "2-5 mm thickness",
+        "source": {
+          "reason": "b0047 states the ingot is hot-rolled to 2e5 mm thickness",
+          "block_id": [
+            "b0047"
+          ]
+        }
+      },
+      "processing_steps_notes": {
+        "value": "In some cases reheating among different rolling passes is needed to avoid crack generation during hot rolling; a large rolling reduction can provide enough recrystallization driving force and inhibit segregation of Fe3Al or FeAl",
+        "source": {
+          "reason": "b0047 explicitly describes the reheating-between-passes requirement and the effect of large rolling reduction",
+          "block_id": [
+            "b0047"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "Rapid cooling to room temperature is the step that generates the F-BDP as-hot-rolled microstructure and defines the class",
+        "block_id": [
+          "b0040",
+          "b0047"
+        ]
+      },
+      "processing_step_id": "step_rapid_cooling",
+      "sequence": {
+        "value": "3"
+      },
+      "type": {
+        "value": "cooling"
+      },
+      "method": {
+        "value": "rapid cooling to room temperature"
+      },
+      "temperature": {
+        "value": "room temperature",
+        "source": {
+          "reason": "b0040/b0047 state the steel is rapidly cooled to room temperature after hot rolling",
+          "block_id": [
+            "b0040",
+            "b0047"
+          ]
+        }
+      },
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "The cooling rate after hot rolling strongly influences intergranular k-carbide formation [44]",
+        "source": {
+          "reason": "b0047 notes that cooling rate after hot rolling strongly influences intergranular k-carbide formation, relevant to the rapidly-cooled F-BDP state",
+          "block_id": [
+            "b0047"
+          ]
+        }
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "Overall description of the hot-rolled/rapidly-cooled F-BDP microstructure and its constituent phases",
+        "block_id": [
+          "b0041",
+          "b0045"
+        ]
+      },
+      "structure_id": "struct_fbdp_hot_rolled",
+      "overall_structure": {
+        "value": "typical bimodal banded structure of δ-ferrite and austenite (ferrite-base duplex phase)",
+        "source": {
+          "reason": "b0045 states that the microstructures of hot-rolled and cold-rolled F-BDP steels are the typical bimodal banded structure of δ-ferrite and austenite",
+          "block_id": [
+            "b0045"
+          ]
+        }
+      },
+      "number_of_phases": {
+        "value": "7",
+        "source": {
+          "reason": "Table 1 lists the F-BDP constituent phases as α, δ, B2, DO3, γ, κ, α′ (seven phase constituents)",
+          "block_id": [
+            "b0041",
+            "figure_unlabelled_002"
+          ]
+        }
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "δ-ferrite is one of the two banded duplex constituents of hot-rolled F-BDP steel",
+            "block_id": [
+              "b0045"
+            ]
+          },
+          "microstructure_id": "micro_delta_ferrite",
+          "region": {
+            "value": "bulk, banded along the rolling direction"
+          },
+          "related_sequence": {
+            "value": "2"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "b0045 describes the F-BDP microstructure as a bimodal banded structure of δ-ferrite and austenite; δ-ferrite is the banded ferritic constituent",
+                "block_id": [
+                  "b0045"
+                ]
+              },
+              "phase_name": {
+                "value": "δ-ferrite (δ)"
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": {
+                "value": "banded, elongated along the rolling direction"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "source": {
+            "reason": "Austenite is one of the two banded duplex constituents of hot-rolled F-BDP steel, described as ultrafine and uniformly distributed",
+            "block_id": [
+              "b0045",
+              "b0103"
+            ]
+          },
+          "microstructure_id": "micro_austenite",
+          "region": {
+            "value": "distributed on the ferrite matrix"
+          },
+          "related_sequence": {
+            "value": "3"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "b0103 states that in F-BDP steels uniformly distributed ultrafine austenite sits on the ferrite matrix; b0045 identifies austenite as the second constituent of the banded duplex structure",
+                "block_id": [
+                  "b0045",
+                  "b0103"
+                ]
+              },
+              "phase_name": {
+                "value": "austenite (γ)"
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": {
+                "value": "ultrafine, uniformly distributed on the ferrite matrix"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "source": {
+            "reason": "κ-carbide generated at the austenite/δ-ferrite interface in hot-rolled F-BDP steel",
+            "block_id": [
+              "b0045"
+            ]
+          },
+          "microstructure_id": "micro_kappa_carbide",
+          "region": {
+            "value": "austenite/δ-ferrite interface"
+          },
+          "related_sequence": {
+            "value": "3"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "b0045 states κ-carbide is generated along the interface between austenite and δ-ferrite in F-BDP steels; b0070 gives the L1_2 ordered perovskite-like structure of κ-carbide",
+                "block_id": [
+                  "b0045",
+                  "b0070"
+                ]
+              },
+              "phase_name": {
+                "value": "κ-carbide"
+              },
+              "crystal_structure": {
+                "value": "L1_2 ordered (perovskite-like)"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "generated along the interface between austenite and δ-ferrite"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "source": {
+                "reason": "b0045 places κ-carbide at the austenite/δ-ferrite interface; b0047 notes the strong influence of cooling rate after hot rolling on intergranular κ-carbide formation",
+                "block_id": [
+                  "b0045",
+                  "b0047"
+                ]
+              },
+              "precipitate_id": "ppt_kappa_interface",
+              "type": {
+                "value": "κ-carbide ((Fe,Mn)AlC-type)"
+              },
+              "size": null,
+              "distribution": {
+                "value": "along the interface between austenite and δ-ferrite (intergranular); cooling rate after hot rolling strongly influences intergranular κ-carbide formation"
+              },
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "source": {
+        "reason": "Interfacial description of hot-rolled F-BDP steel: austenite/δ-ferrite interfaces decorated by κ-carbide and the TRIP interaction between ultrafine austenite and ferrite",
+        "block_id": [
+          "b0045",
+          "b0047",
+          "b0103"
+        ]
+      },
+      "interface_set_id": "int_fbdp_1",
+      "phase_interfaces": [
+        {
+          "source": {
+            "reason": "b0045 states that in F-BDP steels κ-carbide is generated along the interface between austenite and δ-ferrite",
+            "block_id": [
+              "b0045"
+            ]
+          },
+          "interface_id": "int_gamma_delta",
+          "microstructure_id": "micro_kappa_carbide",
+          "phase_1_name": {
+            "value": "austenite (γ)"
+          },
+          "phase_2_name": {
+            "value": "δ-ferrite (δ)"
+          },
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "source": {
+            "reason": "b0103 describes the TRIP-enabled martensite transformation of ultrafine austenite and its interaction with the ferrite matrix in F-BDP steels",
+            "block_id": [
+              "b0103"
+            ]
+          },
+          "interaction_id": "int_trip_martensite",
+          "microstructure_id": "micro_austenite",
+          "interaction_type": {
+            "value": "TRIP - strain-induced martensite transformation of ultrafine austenite"
+          },
+          "qualitative_or_quantitative_description": {
+            "value": "In F-BDP steels the uniformly distributed ultrafine austenite on the ferrite matrix enables martensite transformation during plastic deformation; the volume expansion caused by martensite transformation drives the ferrite to undergo plastic deformation, resulting in stress relaxation and transfer, and the non-uniformity of plastic deformation improves during further deformation"
+          }
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": {
+        "value": "Ultrafine austenite transforms to martensite (α′) during plastic deformation (TRIP effect); α′ is listed among the F-BDP constituent phases in Table 1",
+        "source": {
+          "reason": "b0103 states ultrafine austenite enables martensite transformation during plastic deformation, and Table 1 lists α′ among F-BDP constituent phases",
+          "block_id": [
+            "b0041",
+            "b0103"
+          ]
+        }
+      },
+      "interface_notes": {
+        "value": "The cooling rate after hot rolling strongly influences intergranular κ-carbide formation, which occurs at the austenite/δ-ferrite interface in F-BDP steel",
+        "source": {
+          "reason": "b0047 links cooling rate after hot rolling to intergranular κ-carbide formation; b0045 places κ-carbide at the austenite/δ-ferrite interface",
+          "block_id": [
+            "b0045",
+            "b0047"
+          ]
+        }
+      }
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": [
+    "F-BDP steel is one of four Fe-Mn-Al-C low-density steel classes obtained after hot rolling and rapidly cooling to room temperature; its composition window (Table 1) is 3.0<X_Mn<10.0, 3.0<X_Al<9.0 and X_C<0.4 (wt.%), with constituent phases α, δ, B2, DO3, γ, κ and α′ [b0040, b0041].",
+    "In F-BDP steels the uniformly distributed ultrafine austenite on the ferrite matrix enables martensite transformation during plastic deformation; the volume expansion caused by the martensite transformation drives the ferrite to undergo plastic deformation, causing stress relaxation and transfer, and the synergistic effect between ferrite plastic deformation and the TRIP effect dominates the strain hardening of F-BDP steels [b0103].",
+    "The strain hardening rate curve of F-BDP steels presents various stages; for the Fe-3.9Mn-5.8Al-0.35C F-BDP steel five stages are described: (I) dislocation motion in ferrite causes a sharp decrease in strain hardening rate; (II) limited TRIP and TWIP at low strain plus dislocation slip in ferrite and austenite lead to a peak and a long continuous hardening stage; (III) dislocations overcome obstacles so the hardening rate decreases; (IV) rapid increase of martensite transformation rate plus activated TWIP gives TRIP + TWIP + dislocation strengthening; (V) martensite transformation rate significantly decreases with loss of austenite and local non-uniform deformation slows the hardening-rate decrease [b0104, b0106].",
+    "The strain hardening mechanism of F-BDP steels mainly involves TRIP and TWIP effects; the TRIP effect is more crucial and is closely related to the grain orientation and mechanical stability of austenite, with higher-Schmid-factor austenite grains more likely to undergo martensite transformation [b0107].",
+    "Austenite stability in F-BDP steels is reported to be affected by: (1) grain size (coarser austenite grains give poorer stability); (2) C content in austenite (larger C content gives higher stability); (3) the constraining effect from adjacent phases surrounding austenite; and (4) austenite volume fraction [b0107].",
+    "The F-BDP class is described together with A-BDP and single ferrite/austenite steels as the room-temperature microstructures into which hot-rolled and rapidly cooled Fe-Mn-Al-C low-density steels are divided, and a large rolling reduction can provide enough recrystallization driving force to inhibit segregation of Fe3Al or FeAl [b0040, b0047]."
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-9al-0.9c__hr-cr",
+      "paper_id": "10.1016_j.msea.2022.144324",
+      "alloy_id": "alloy_fe-28mn-9al-0.9c",
+      "process_id": "proc_hr-cr",
+      "sample_label": null,
+      "aliases": [
+        "28Mn0Ni",
+        "HR+CR",
+        "28Mn0Ni in HR + CR condition"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1423 K",
+      "temperature_unit": "K",
+      "duration": "2.5 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The sound portion of the 30 kg vacuum-induction-melted 28Mn0Ni ingot was homogenized at 1423 K for 2.5 h before hot rolling."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1323 K",
+      "temperature_unit": "K",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "After homogenization the ingot was hot rolled at 1323 K; final hot rolled plate thickness ~13 mm. This condition is denoted HR."
+    },
+    {
+      "processing_step_id": "step_cold_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": "room temperature",
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "~50% reduction in thickness",
+      "processing_steps_notes": "Samples cut from hot-rolled plates were cold rolled at room temperature in several passes to ~50% reduction in thickness (~6 mm thick sheets); the state is denoted HR+CR. Cold reduction was capped at 50% for all three alloys (15Mn5Ni cracked beyond 50%) to allow comparison at a common degree of cold work."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_28mn0ni_hrcr",
+      "overall_structure": "Single-phase austenite (γ, FCC) Ni-free low-density steel in the hot rolled + 50% cold rolled (HR+CR) condition. Austenite grains are equiaxed (in HR) and mostly deformed by planar slip, as reflected by parallel slip bands; no traces of deformation twinning or martensite transformation. No second phase (B2) is present.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_28mn0ni_hrcr",
+          "region": "bulk",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "single phase (~100%)",
+              "morphology": "equiaxed grains in HR condition; grains deformed by planar slip after cold rolling",
+              "grain_size": "5–7 μm (equiaxed γ-matrix grain size in HR condition)",
+              "texture": "nearly random texture in HR condition"
+            }
+          ],
+          "defects": [
+            {
+              "type": "planar slip bands (parallel slip bands from planar slip deformation)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "5–7",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "nearly random (HR condition)"
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_28mn0ni_hrcr",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "interaction_id": "defect_planar_slip_28mn0ni_hrcr",
+          "microstructure_id": "micro_28mn0ni_hrcr",
+          "interaction_type": "planar slip (dislocation glide on parallel slip planes)",
+          "qualitative_or_quantitative_description": "Cold rolling produced parallel planar slip bands within the austenite grains, indicating that austenite deformed mostly by planar slip; no deformation twinning or martensite was observed."
+        }
+      ],
+      "slip_behavior": "Austenite deformed mostly by planar slip as reflected by parallel slip bands; no deformation twinning and no martensite transformation.",
+      "phase_evolution": null,
+      "interface_notes": "28Mn0Ni is single-phase austenite in the HR+CR condition, so there are no phase interfaces; the strain is accommodated by intragranular planar slip."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_hardness_28mn0ni_hrcr",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": "ASTM E-140-02",
+        "other_conditions": "Bulk Vickers hardness, AFFRI Vickers tester, peak load 30 kg (~300 N), dwell time 15 s; hardness averaged over ten measurements per sample."
+      },
+      "mechanical": {
+        "tensile_properties": null,
+        "hardness": [
+          {
+            "region": "bulk (HR+CR, 50% cold reduction)",
+            "value": "~450",
+            "scale": "Vickers (VHN)",
+            "unit": "VHN",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_tensile_28mn0ni_hrcr",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "~3 × 10^-4 s^-1 (initial); constant cross-head speed 0.5 mm min^-1",
+        "specimen_geometry": "flat tensile specimens, gauge length 30 mm, width 6 mm, thickness 4–5 mm",
+        "test_standard": "ASTM E8M",
+        "other_conditions": "Tensile tests triplicated for each condition; average of three readings reported."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "1350 ± 10",
+              "unit": "MPa",
+              "uncertainty": "± 10 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1500 ± 10",
+              "unit": "MPa",
+              "uncertainty": "± 10 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "10 ± 0.4",
+              "unit": "%",
+              "uncertainty": "± 0.4 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress–engineering strain curve of 28Mn0Ni in HR+CR (50% cold reduction) shown in Fig. 9a; strength rises steeply to ~1450–1500 MPa within ~0.02 strain with negligible strain hardening.",
+          "stress_strain_distribution": null,
+          "strain_hardening_rate": [
+            "negligible strain hardening; uniform strain (just before necking) less than 3%"
+          ]
+        },
+        "hardness": null,
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_28mn0ni_hrcr_comparison",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-28mn-9al-0.9c-5ni",
+        "benchmark_process_id": "proc_hr-cr",
+        "benchmark_sample_id": null,
+        "comparison_metric": "After 50% cold reduction all three alloys attained similar strength levels/hardness, but the maximum rate of work hardening occurred in the single-phase (Ni-free) 28Mn0Ni alloy; at 50% cold reduction the hardness of 15Mn5Ni was ~20 VHN higher than that of 28Mn0Ni.",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_oim_ebsd_28mn0ni_hrcr",
+      "microstructure_id": "micro_28mn0ni_hrcr",
+      "technique": "Orientation imaging microscopy (OIM) / EBSD",
+      "instrument_or_setup": "Zeiss Supra 55 FEG-Scanning Electron Microscope (SEM) equipped with Oxford EDS and Nordley EBSD detectors; samples polished to colloidal silica ~100 nm surface finish; TSL-OIM software",
+      "measurement_conditions": "Step size 120 nm (fine-grained) or 250 nm (coarse-grained) over ~100×100 μm² and ~200×200 μm² areas; three scans per sample; KAM and GOS of 2° criterion used to delineate recrystallized microstructure; Σ3 CSL boundaries for twin fraction.",
+      "purpose": "Analyze microstructure, phase distribution, grain orientations, grain size and twin fractions of cold rolled samples.",
+      "key_findings": "For 28Mn0Ni in HR+CR: single-phase austenite (phase map uniformly FCC); equiaxed randomly oriented grains with parallel planar slip bands visible in the image quality map; no deformation twinning or martensite."
+    },
+    {
+      "characterization_id": "char_xrd_28mn0ni_hrcr",
+      "microstructure_id": "micro_28mn0ni_hrcr",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Rigaku XRD instrument, Co-Kα radiation at 45 kV and 135 mA, beam size ~2 mm",
+      "measurement_conditions": "Selected samples in HR+CR condition; 2θ range 40–120°",
+      "purpose": "Phase identification of cold rolled and heat-treated samples.",
+      "key_findings": "28Mn0Ni alloy in the cold rolled (HR+CR) condition showed peaks corresponding to γ-phase only (single-phase austenite)."
+    },
+    {
+      "characterization_id": "char_hardness_28mn0ni_hrcr",
+      "microstructure_id": null,
+      "technique": "Vickers bulk hardness testing",
+      "instrument_or_setup": "AFFRI Vickers hardness tester, peak load 30 kg (~300 N)",
+      "measurement_conditions": "Dwell time 15 s; ASTM E-140-02; hardness averaged over ten measurements per sample; room temperature",
+      "purpose": "Evaluate the change in bulk hardness with degree of cold rolling.",
+      "key_findings": "28Mn0Ni hardness increased with cold reduction and saturated to ~450 VHN at 50% cold reduction."
+    },
+    {
+      "characterization_id": "char_tensile_28mn0ni_hrcr",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "Walter+Bai AG testing machine",
+      "measurement_conditions": "Room temperature; constant cross-head speed 0.5 mm min^-1 (initial strain rate ~3 × 10^-4 s^-1); flat specimens gauge length 30 mm, width 6 mm, thickness 4–5 mm; ASTM E8M; tests triplicated.",
+      "purpose": "Evaluate strength and ductility of the chosen alloys in different processing conditions.",
+      "key_findings": "28Mn0Ni in HR+CR (50% cold reduction): YS 1350 ± 10 MPa, UTS 1500 ± 10 MPa, TE 10 ± 0.4 %, with negligible strain hardening (uniform strain <3%)."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The equal-channel-free cold rolling route was applied to all three alloys for a common degree of cold work; all three alloys could be rolled successfully without cracking at room temperature up to 50% reduction in thickness, whereas the 15Mn5Ni alloy cracked beyond 50% reduction (reason for capping reduction at 50%).",
+    "In the parent hot rolled (HR) condition the 28Mn0Ni alloy hardness was reported as ~256 ± 5 VHN; the hardness rose with cold reduction and saturated to ~450 VHN at 50% reduction (this HR value is the 0% cold-reduction start point for the current HR+CR sample's process chain).",
+    "The 28Mn0Ni alloy is described as the Ni-free reference composition that is single-phase austenite in the hot rolled condition and B2-free (B2 volume fraction 0), in contrast to the Ni-containing grades that contain B2 stringers.",
+    "Nominal/measured composition of the 28Mn0Ni alloy (Table 1, wt.%): Mn 28.3 ± 0.4, Al 9.0 ± 0.05, C 0.9 ± 0.01, Ni not detected (Ni-free), Fe balance."
+  ]
+}

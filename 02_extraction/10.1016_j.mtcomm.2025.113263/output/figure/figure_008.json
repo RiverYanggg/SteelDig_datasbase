@@ -1,0 +1,142 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_008",
+  "family": "generalist",
+  "image_type": "chart_plot",
+  "description": "Fig. 8 is a three-panel composite of line-with-marker charts comparing three optimization algorithms for an Extra Trees yield-strength model. All panels share the same x-axis categories — Grid Search-ET, Bayesian-ET and Our — under the axis title \"Comparison of optimization algorithms\", and a smooth black curve is drawn through the three data points; every panel has a light-to-dark purple/grey gradient background and a black frame. (a) plots RMSE on a y-axis spanning 30-90 with ticks every 10 and prints 80.239 (Grid Search-ET), 80.721 (Bayesian-ET) and 31.6 (Our); the fitted curve peaks above 80 between the first two points, then falls steeply, and the \"Our\" point is enclosed in a red dashed circle. (b) plots MAPE on a y-axis from 4 to 13 and prints 11.037, 11.423 and 4.39, with the \"Our\" point again circled in red. (c) plots R² on a y-axis from 0.970 to 1.000 in 0.005 steps and prints 0.972, 0.976 and 0.997, the last circled. Together the three panels make one argument: the model denoted \"Our\" is lowest in error and highest in R².",
+  "confidence": "high",
+  "subfigures": [
+    {
+      "panel": "(a)",
+      "description": "Line-plus-marker plot of RMSE (y-axis 30-90, ticks every 10) versus optimization algorithm (Grid Search-ET, Bayesian-ET, Our). Data labels printed: 80.239, 80.721 and 31.6. The smooth curve rises to an unlabelled peak between the first two points and drops steeply to the third, which is highlighted with a red dashed circle.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(b)",
+      "description": "Line-plus-marker plot of MAPE (y-axis 4-13, integer ticks) versus the same three algorithms. Data labels printed: 11.037, 11.423 and 4.39; the 4.39 point for 'Our' is circled in red. The interpolating curve again overshoots between the first two points and falls steeply afterwards.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(c)",
+      "description": "Line-plus-marker plot of R² (y-axis 0.970 to 1.000, ticks every 0.005) versus the same three algorithms. Data labels printed: 0.972, 0.976 and 0.997; the 0.997 value for 'Our' is circled in red. Here the curve rises monotonically, gently at first and steeply toward 'Our'.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "Panel (a) plots RMSE with printed data labels 80.239 (Grid Search-ET), 80.721 (Bayesian-ET) and 31.6 (Our) on a y-axis spanning 30 to 90 with ticks every 10 units.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "In panel (a) the 'Our' data point is highlighted with a red dashed circle, marking the lowest RMSE of the three algorithms.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panel (b) plots MAPE with printed data labels 11.037 (Grid Search-ET), 11.423 (Bayesian-ET) and 4.39 (Our); the y-axis spans 4 to 13 with integer ticks and the 'Our' point is circled in red.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panel (c) plots R² with printed data labels 0.972 (Grid Search-ET), 0.976 (Bayesian-ET) and 0.997 (Our) on a y-axis from 0.970 to 1.000 with ticks every 0.005; the 0.997 point is circled in red.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The third x-axis category in all three panels is labelled 'Our' rather than with an algorithm name, so the algorithm identity is not stated in the figure itself.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "In panels (a) and (b) the smoothed curve bulges to a maximum between the Grid Search-ET and Bayesian-ET points; that interior extremum carries no printed value.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "All three panels have a vertical purple-to-grey gradient background, black axis frames, and the shared x-axis title 'Comparison of optimization algorithms'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The extra-trees model optimized by grid search and Bayesian optimization gave RMSE values of 80.239 MPa and 80.721 MPa, whereas the GA-Extra trees model gave 31.60 MPa.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "figure_008"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states that the GA-Extra trees model also showed superior MAPE and R², so optimizing the Extra Trees model with GA is the most suitable approach.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "figure_008"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The study compares GA with alternative optimization technologies such as Bayesian optimization using the same model performance evaluation index.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "figure_008"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption describes the figure only as a 'Performance comparison of different optimization algorithms', which identifies the three metrics only via the panel axis labels.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "figure_008"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "observation": "The figure identifies 'Our' with the GA-Extra trees configuration only indirectly: the printed axis label is 'Our', while the citing sentences assign the GA-Extra trees identity to it.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "figure_008"
+        }
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "measured_quantities": [
+    "RMSE (MPa)",
+    "MAPE (%)",
+    "R²"
+  ],
+  "sample_hints": [
+    "Grid Search-ET",
+    "Bayesian-ET",
+    "Our",
+    "Extra Trees",
+    "GA-Extra trees"
+  ],
+  "unreadable_items": [],
+  "image_paths": [
+    "images/a8b496b5c2a234ab1707b3b42af67277e8aafa83f80485add1dbd698190c86cf.jpg",
+    "images/f16218e6aed4453c35032014b418f2689baec216a8089e58bfcf006519309d90.jpg",
+    "images/4c33784fcdc5093042340eeb61e916f8f2857c91271d2227590ea1d5e492ead0.jpg"
+  ]
+}

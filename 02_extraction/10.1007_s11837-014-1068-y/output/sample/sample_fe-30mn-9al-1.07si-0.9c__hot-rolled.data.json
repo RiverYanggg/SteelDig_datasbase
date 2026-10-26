@@ -1,0 +1,268 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-1.07si-0.9c__hot-rolled",
+      "paper_id": "10.1007_s11837-014-1068-y",
+      "alloy_id": "alloy_fe-30mn-9al-1.07si-0.9c",
+      "process_id": "proc_hot-rolled",
+      "sample_label": "Wrought 1.01% Si hot-rolled",
+      "aliases": "hot-rolled Fe-30Mn-9Al-1.01Si-0.9C-0.5Mo"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "0",
+      "type": "casting / melt treatment",
+      "method": "casting (calcium-treated melt)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cast plates of a calcium-treated, low-phosphorus (0.006% P) Fe-30Mn-9Al-1.01Si-0.9C-0.5Mo steel."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "1",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "900",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "84%",
+      "processing_steps_notes": "Cast plates were hot rolled at 900°C to an 84% reduction in thickness."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "900",
+      "temperature_unit": "°C",
+      "duration": "10 min",
+      "atmosphere": null,
+      "cooling_medium": "water quenched",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution treated for 10 min at 900°C and water quenched to produce an equiaxed grain structure 10–20 µm in average diameter."
+    },
+    {
+      "processing_step_id": "step_peak_aging",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "530",
+      "temperature_unit": "°C",
+      "duration": "60 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Peak aging (60 h at 530°C) produced κ-carbide precipitation on grain boundaries and lowered elongation from 54% to 14%."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_wrought_solution_treated",
+      "overall_structure": "Equiaxed austenite grain structure, 10–20 µm in average diameter (hot-rolled, solution treated 10 min at 900°C and water quenched)",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_wrought_solution_treated",
+          "region": null,
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "equiaxed grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "10–20",
+              "unit": "µm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_wrought_peak_aged",
+      "overall_structure": "Equiaxed polygonal austenite grains with preferential grain-boundary κ-carbide precipitation and banding from alloy segregation (peak-aged 60 h at 530°C)",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_wrought_peak_aged",
+          "region": null,
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "equiaxed polygonal grains",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide ((Fe,Mn)3AlCx, E21 cubic perovskite)",
+              "crystal_structure": "E21 cubic perovskite",
+              "volume_fraction": null,
+              "morphology": "grain-boundary precipitates",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_gb",
+              "type": "κ-carbide ((Fe,Mn)3AlCx)",
+              "size": null,
+              "distribution": "grain boundaries (preferential grain-boundary etching)",
+              "coherency": "coherent, cube-on-cube orientation relationship with austenite (<100>κ//<100>γ and {001}κ//{001}γ)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_gamma_kappa",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_gamma_kappa_1",
+          "microstructure_id": "micro_wrought_peak_aged",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "κ-carbide",
+          "coherence": "coherent, cube-on-cube orientation relationship (<100>κ//<100>γ and {001}κ//{001}γ)"
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": null,
+      "interface_notes": "Peak aging produced κ-carbide precipitation on austenite grain boundaries in the wrought sample."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_wrought_tensile",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "900–1000",
+              "unit": "MPa",
+              "uncertainty": "approximate, read from Fig. 7 gridlines (solution-treated, 0.1 h aging time)"
+            },
+            {
+              "direction": null,
+              "value": "1100–1200",
+              "unit": "MPa",
+              "uncertainty": "approximate, read from Fig. 7 gridlines (aged 50 h)"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "54",
+              "unit": "%",
+              "uncertainty": null
+            },
+            {
+              "direction": null,
+              "value": "14",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_wrought_vs_cast",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "At equivalent ultimate tensile strengths, grain refinement from hot rolling produced better ductility than the cast material",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_dic_optical_microscopy",
+      "microstructure_id": "micro_wrought_peak_aged",
+      "technique": "Optical microscopy, differential interference contrast (DIC)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "etched with nital; DIC imaging",
+      "purpose": "Reveal the peak-aged microstructure of the hot-rolled Fe-30Mn-9Al-1.01Si-0.9C-0.5Mo sample.",
+      "key_findings": "Equiaxed polygonal grain structure; preferential grain-boundary etching from κ-carbide precipitation; banding from alloy segregation."
+    },
+    {
+      "characterization_id": "char_tensile_testing",
+      "microstructure_id": null,
+      "technique": "Tensile testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Compare cast and wrought tensile strength as a function of aging time and elongation.",
+      "key_findings": "Grain refinement from hot rolling improved ductility at equivalent ultimate strengths; tensile strength increased by 200 MPa with aging; elongation fell from 54% to 14% at peak aging."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The wrought (hot-rolled) sample is a calcium-treated, low-phosphorus (0.006% P) Fe-30Mn-9Al-1.01Si-0.9C-0.5Mo steel; Table I row 1 (Si 1.01, C 0.89, Mn 30.20, P 0.006, S 0.001, Mo 0.31, Al 8.85 wt.%) is the closest listed chemistry, although the text cites the alloy nominally as 0.5Mo.",
+    "Tensile strength in the wrought alloy increased by 200 MPa with aging (b0040).",
+    "Fig. 7(b) indicates the wrought sample spans roughly 16–55% elongation with UTS from just below 1200 MPa down to between 900 and 1000 MPa as elongation increases (approximate values read from gridlines).",
+    "The fully austenitic microstructure and annealing-twin/equiaxed-grain refinement behavior of hot rolling are discussed generally in the introduction (b0007, figure_001), but the explicit 50 µm average grain size in figure_001 belongs to a different hot-rolled alloy (Fe-29Mn-6Al-0.9C-0.29Si-0.44Nb-0.44Mo), not this sample."
+  ]
+}

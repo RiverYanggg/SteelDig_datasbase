@@ -1,0 +1,273 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-c-3ni__prep-powder",
+      "paper_id": "10.1016_j.jmrt.2024.10.125",
+      "alloy_id": "alloy_fe-30mn-9al-c-3ni",
+      "process_id": "proc_prep-powder",
+      "sample_label": "PREP powder",
+      "aliases": [
+        "Fe–30Mn–9Al–C–3Ni powder",
+        "PREP-prepared Fe–30Mn–9Al–C–3Ni powder"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "论文明确说明 Fe–30Mn–9Al–C–3Ni 粉末由等离子旋转电极法(PREP)制备，设备为 PREP-22，构成该粉末样本的制备步骤。",
+        "block_id": [
+          "b0019",
+          "b0031",
+          "b0058"
+        ]
+      },
+      "processing_step_id": "step_prep",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "powder production / manufacturing"
+      },
+      "method": {
+        "value": "plasma rotating electrode process (PREP)"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Spherical Fe–30Mn–9Al–C–3Ni powder (particle diameter 15–53 μm) was PREP-prepared using equipment from Advanced Corporation for Materials and Equipments (PREP-22). The PREP-prepared powder was cooled relatively slowly, so a small amount of carbon remained dissolved in the α-Fe phase."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "粉末表征章节给出粉末的球形形貌、元素分布、内部结构及 γ/α 两相物相组成。",
+        "block_id": [
+          "b0030",
+          "b0031",
+          "figure_002",
+          "figure_004"
+        ]
+      },
+      "structure_id": "struct_powder",
+      "overall_structure": {
+        "value": "Highly spherical Fe–30Mn–9Al–C–3Ni powder with no satellites or irregular particles; solid (non-hollow) particles; Fe, Mn, Al and Ni uniformly distributed across particles."
+      },
+      "number_of_phases": {
+        "value": 2
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "第 3.1 节描述 PREP 粉末的表面形貌、元素分布、实心性及物相组成。",
+            "block_id": [
+              "b0030",
+              "b0031",
+              "figure_002",
+              "figure_004"
+            ]
+          },
+          "microstructure_id": "micro_powder_particles",
+          "region": {
+            "value": "powder particle (surface and cross-section)"
+          },
+          "related_sequence": {
+            "value": "1"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "XRD 图 4 显示粉末以 γ-Fe(M) 衍射峰为主，作者指出 γ-Fe(M) 相占主导。",
+                "block_id": [
+                  "b0031",
+                  "figure_004"
+                ]
+              },
+              "phase_name": {
+                "value": "γ-Fe(M)"
+              },
+              "crystal_structure": {
+                "value": "fcc (austenite)"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "dominant phase"
+              },
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "XRD 图 4 中除 γ-Fe(M) 外还存在少量 α-Fe(M) 衍射峰。",
+                "block_id": [
+                  "b0031",
+                  "figure_004"
+                ]
+              },
+              "phase_name": {
+                "value": "α-Fe(M)"
+              },
+              "crystal_structure": {
+                "value": "bcc (ferrite)"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "minor phase"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "source": {
+                "reason": "粉末颗粒截面 SEM 显示内部致密实心，具有胞状/枝晶凝固组织与外缘，无内部孔隙或空心。",
+                "block_id": [
+                  "b0030",
+                  "figure_002"
+                ]
+              },
+              "type": {
+                "value": "no internal pores or hollow core; particles are solid"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "2.2 节列出所用粒径分析仪；3.1 节给出粒径分布与 D50 结果。",
+        "block_id": [
+          "b0025",
+          "b0030",
+          "figure_003"
+        ]
+      },
+      "characterization_id": "char_psd",
+      "microstructure_id": null,
+      "technique": {
+        "value": "laser particle-size analysis"
+      },
+      "instrument_or_setup": {
+        "value": "Bettersize 3000Plus laser particle-size analyzer"
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Determine the particle-size distribution of the PREP-prepared Fe–30Mn–9Al–C–3Ni powder"
+      },
+      "key_findings": {
+        "value": "Particles mainly distributed in the 15–53 μm range; median particle size (D50) = 35.69 μm; unimodal, narrow distribution."
+      }
+    },
+    {
+      "source": {
+        "reason": "2.2 节列出粉末综合性能测试仪；3.1 节给出 Hall 流动性值。",
+        "block_id": [
+          "b0025",
+          "b0030"
+        ]
+      },
+      "characterization_id": "char_flowability",
+      "microstructure_id": null,
+      "technique": {
+        "value": "powder flowability measurement (Hall flow)"
+      },
+      "instrument_or_setup": {
+        "value": "powder comprehensive performance tester"
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Characterize the flowability of the PREP-prepared powder"
+      },
+      "key_findings": {
+        "value": "Powder exhibited excellent flowability with a Hall value of 14 s/50 g, suitable for SLM."
+      }
+    },
+    {
+      "source": {
+        "reason": "2.2 节列出 XRD 设备与测试参数；3.1 节与图 4 给出物相结果。",
+        "block_id": [
+          "b0025",
+          "b0031",
+          "figure_004"
+        ]
+      },
+      "characterization_id": "char_xrd_powder",
+      "microstructure_id": "micro_powder_particles",
+      "technique": {
+        "value": "X-ray diffraction (XRD)"
+      },
+      "instrument_or_setup": {
+        "value": "Bruker D8 Advance X-ray diffractometer"
+      },
+      "measurement_conditions": {
+        "value": "continuous scanning, 2θ range 30–100°, Cu target, 2°/min"
+      },
+      "purpose": {
+        "value": "Determine the crystal structure / phase constitution of the powder"
+      },
+      "key_findings": {
+        "value": "Diffraction peaks for both γ-Fe(M) and α-Fe(M) phases; γ-Fe(M) dominates."
+      }
+    },
+    {
+      "source": {
+        "reason": "2.2 节列出 SEM 设备；3.1 节与图 2 给出粉末形貌、EDS 元素分布与截面结果。",
+        "block_id": [
+          "b0025",
+          "b0030",
+          "figure_002"
+        ]
+      },
+      "characterization_id": "char_sem_powder",
+      "microstructure_id": "micro_powder_particles",
+      "technique": {
+        "value": "scanning electron microscopy (SEM) with EDS elemental mapping"
+      },
+      "instrument_or_setup": {
+        "value": "ZEISS Sigma300 scanning electron microscope"
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Observe powder morphology, element distribution, and particle cross-section"
+      },
+      "key_findings": {
+        "value": "Powder is highly spherical with no satellites or irregular particles; Fe, Mn, Al and Ni are uniformly distributed; cross-section reveals solid particles (no hollow/pores). The C distribution was not mapped because the conductive tape contains a large amount of C."
+      }
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Powder particle diameter is 15–53 μm and the median particle size (D50) was determined to be 35.69 μm (Fig. 3).",
+    "Powder flowability: Hall value of 14 s/50 g, which is suitable for SLM.",
+    "The PREP-prepared Fe–30Mn–9Al–C–3Ni powder is highly spherical with no satellites or irregular particles observed, and lacks hollow particles.",
+    "The particle-size distribution is unimodal and narrow, consistent with the reported good flowability.",
+    "The cross-sectional image of a particle reveals the solid nature of the powder, showing a cellular/dendritic solidification network and a distinct outer rim, with no internal pores.",
+    "Elemental C distribution is not included in the EDS maps because the conductive tape holding the powder contains a large amount of C.",
+    "γ-Fe(M) phase dominates because the PREP-prepared powder was cooled relatively slowly, resulting in a small amount of carbon dissolved in the α-Fe phase that promotes the formation of the ferrite phase.",
+    "Chemical composition of the Fe–30Mn–9Al–C–3Ni powder (ICP-OES, wt%): Mn 29.95, Al 8.63, C 1.20, Ni 3.45, O 0.01, Fe Bal. (Table 1)."
+  ]
+}

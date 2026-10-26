@@ -1,0 +1,295 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-10al-15mn-0.8c-5ni__ann-900c-10min",
+      "paper_id": "10.1002_srin.202501163",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_id": "proc_ann-900c-10min",
+      "sample_label": "A10",
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_melting",
+      "sequence": "1",
+      "type": "casting / primary processing",
+      "method": "vacuum arc melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "argon (backfilled after 10^-5 mbar vacuum)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingot remelted 5–6 times without breaking vacuum in AM500-Edmund Buhler GmbH arc melter to improve elemental intermixing."
+    },
+    {
+      "processing_step_id": "step_2_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": "muffle furnace",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_3_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1050 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air cooled",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "14 to 3 mm (nine passes)",
+      "processing_steps_notes": "75-ton rolling mill; finish rolling temperature 900 °C."
+    },
+    {
+      "processing_step_id": "step_4_cold_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": "room temperature",
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "3 to 2 mm",
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_5_annealing",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": "900 °C",
+      "temperature_unit": "°C",
+      "duration": "10 min",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Sample A10 corresponds to the 10 min annealed condition of the standard-route CR sheet (samples A5/A10/A15/A30 denoted by annealing time)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_A10",
+      "overall_structure": "Annealed (900 °C, 10 min, water quench) standard-route CR sheet: austenitic γ matrix with B2 stringer bands (≈16%) aligned along prior rolling direction, plus intragranular needle-like IG-B2 and coarse intergranular GB-B2 precipitates; unrecrystallized γ (URE-γ) retains pancake structure, and recrystallized γ (RE-γ) grains are present.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "m_A10_gamma_matrix",
+          "region": "bulk matrix",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "γ (austenite)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "matrix; URE-γ coarse elongated pancake grains and RE-γ grains",
+              "grain_size": null,
+              "texture": "URE-γ pancake structure elongated along prior rolling direction"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": "URE-γ pancake structure; RE-γ grain size increases with annealing time"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "IG-B2",
+              "type": "B2 intermetallic (Fe(Ni,Mn)Al)",
+              "size": null,
+              "distribution": "needle-shaped; nucleated mainly inside URE-γ at shear bands",
+              "coherency": "high coherency strain / activation-energy barrier (BCC B2 in FCC γ)"
+            },
+            {
+              "precipitate_id": "GB-B2",
+              "type": "B2 intermetallic (Fe(Ni,Mn)Al)",
+              "size": null,
+              "distribution": "coarse, irregular; nucleated along prior austenite grain boundaries",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "m_A10_B2_stringer",
+          "region": "bands aligned along prior rolling direction",
+          "related_sequence": "3–4",
+          "phases_present": [
+            {
+              "phase_name": "B2 (Fe(Ni,Mn)Al)",
+              "crystal_structure": "ordered BCC",
+              "volume_fraction": "16%",
+              "morphology": "lamellar stringer bands",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_A10",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_gamma_B2",
+          "microstructure_id": "m_A10_gamma_matrix",
+          "phase_1_name": "γ (austenite)",
+          "phase_2_name": "B2",
+          "coherence": "high coherency strain (BCC B2 in FCC γ)"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_A10_stringer_decohesion",
+          "microstructure_id": "m_A10_B2_stringer",
+          "interaction_type": "B2 stringer band de-cohesion / micro-crack nucleation",
+          "qualitative_or_quantitative_description": "Macrovoids nucleate inside B2 stringer bands; thicker bands crack at regular intervals; stringer band segment decohesion and microcrack merger lead to premature (biaxial) failure."
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": "δ-ferrite transformed into lamellar B2 stringer bands by hot/cold rolling; annealing adds intragranular IG-B2 and intergranular GB-B2 precipitation.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_A10",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1 mm/min (crosshead velocity)",
+        "specimen_geometry": "ASTM E8, rolling direction (RD), gauge length 12.5 mm, gauge width 3 mm, thickness 2 mm",
+        "test_standard": "ASTM E8",
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "~15%",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "A10 engineering stress–strain curve shown in Figure 5a (dark red); lower in stress than A15 and higher than A30, extending to ~15% strain.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "0.69 kJ/mol (95.8 J/cm³)",
+          "unit": "kJ/mol (J/cm³)"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_A10",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": null,
+      "comparative_performance": [
+        {
+          "benchmark_alloy_id": null,
+          "benchmark_process_id": null,
+          "benchmark_sample_id": "A15",
+          "comparison_metric": "tensile strength",
+          "improvement_percentage": null
+        }
+      ]
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_A10_tensile",
+      "microstructure_id": null,
+      "technique": "uniaxial tensile test",
+      "instrument_or_setup": "100 kN Instron 5982 with 10 mm gauge extensometer",
+      "measurement_conditions": "room temperature; 1 mm/min crosshead velocity; ASTM E8 RD specimens (gauge 12.5 × 3 × 2 mm)",
+      "purpose": "measure engineering stress–strain response and absorbed energy (toughness)",
+      "key_findings": "A10 toughness 0.69 kJ/mol (95.8 J/cm³); elongation ≈15%; tensile strength lower than A15."
+    },
+    {
+      "characterization_id": "char_A10_fracture_SEM",
+      "microstructure_id": "m_A10_B2_stringer",
+      "technique": "SEM fractography (FESEM)",
+      "instrument_or_setup": "FESEM (Apreo S)",
+      "measurement_conditions": null,
+      "purpose": "fracture surface analysis at deformed tensile gauge",
+      "key_findings": "A10 fracture surface shows 'B2 stringer' and 'micro-crack' features (50 µm scale bar)."
+    },
+    {
+      "characterization_id": "char_A10_microstructure",
+      "microstructure_id": "struct_A10",
+      "technique": "optical microscopy and FESEM",
+      "instrument_or_setup": "Leica DM2700 M (optical); FESEM Apreo S",
+      "measurement_conditions": "etched in 3% nital",
+      "purpose": "microstructural characterization of annealed samples",
+      "key_findings": "annealed samples retain B2 stringer bands, intragranular IG-B2 and intergranular GB-B2; URE-γ pancake structure persists."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "A10（标准路线，900 °C/10 min）未出现在图 3 的 3×3 FESEM 显微照片阵列中（该阵列仅展示 A5/A15/A30），因此论文未单独报道 A10 的 IG-B2/GB-B2 具体尺寸与体积分数数值（参见 b0021、b0022）。"
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-12al-10mn-1c__hot-rolled-1150c",
+      "paper_id": "10.1016_j.jmrt.2020.02.088",
+      "alloy_id": "alloy_fe-12al-10mn-1c",
+      "process_id": "proc_hot-rolled-1150c",
+      "sample_label": "12Al-10Mn-1C Hot-rolled",
+      "aliases": [
+        "12Al-10Mn-1C hot-rolled"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "1",
+      "type": "casting",
+      "method": "vacuum induction furnace casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Steels produced by casting using a 100 kW vacuum induction furnace, resulting in 0.5 kg ingots."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot-rolling",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled at 1150 °C obtaining 5 mm flat-products."
+    },
+    {
+      "processing_step_id": "step_water_quenching",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled products followed by water quenching (as-received condition)."
+    }
+  ],
+  "structures": [],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_12al10mn1c_hotrolled_hardness",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Vickers macro-hardness, 5 kg load, 5 indentations per sample, hot-rolled (as-received) condition"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "hot-rolled (as-received)",
+            "value": "401 HV",
+            "scale": "Vickers (HV)",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om",
+      "microstructure_id": null,
+      "technique": "Optical microscopy",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Through-thickness embedding, grinding and polishing performed separately for hot-rolled and heat-treated samples",
+      "purpose": "microstructural observation of the alloys in hot-rolled and tempered conditions",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_sem_eds",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (secondary electron imaging, SEI) with energy dispersive X-ray spectroscopy (EDX/EDS)",
+      "instrument_or_setup": "20 kV",
+      "measurement_conditions": "Performed only on selected microstructures",
+      "purpose": "analyse phase morphologies and chemical compositions; EDS provides qualitative local phase composition",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_vickers_macrohardness",
+      "microstructure_id": null,
+      "technique": "Vickers macro-hardness testing",
+      "instrument_or_setup": "5 kg load",
+      "measurement_conditions": "5 indentations per sample",
+      "purpose": "macro-hardness measurement of the alloys in the different processing conditions",
+      "key_findings": "Hot-rolled 12Al-10Mn-1C hardness = 401 HV"
+    },
+    {
+      "characterization_id": "char_data_analysis_minitab",
+      "microstructure_id": null,
+      "technique": "Statistical data-consistency analysis",
+      "instrument_or_setup": "Minitab18® software",
+      "measurement_conditions": null,
+      "purpose": "verify consistency of acquired data and exclude outliers",
+      "key_findings": null
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The 12Al-10Mn-1C alloy recorded the highest hot-rolled (as-received) hardness among the tested Fe–Mn–Al–C grades at 401 HV (Table 5, also Table 4 and Table 9).",
+    "Hot-rolled 12Al-10Mn-1C serves as the as-received reference condition for the study; no austenite transformation is described for the hot-rolled state itself, only for the 600 °C and 800 °C tempered conditions.",
+    "Comparative (involves other samples): 800 °C tempering left the hardness of 12Al-10Mn-1C essentially unchanged (hot-rolled 401 HV vs 800 °C tempered 399 HV), attributed to its wide inter-lamellar spacing (Table 5, Table 9).",
+    "No phase-volume-fraction (CALPHAD) diagram is provided for the 12Al-10Mn-1C composition; the diagrams in the paper cover 9Al-10Mn-0.4C, 9Al-10Mn-1C, 9Al-20Mn-1C, 9Al-30Mn-1C, 12Al-20Mn-1C and 12Al-30Mn-1C."
+  ]
+}

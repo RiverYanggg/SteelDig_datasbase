@@ -1,0 +1,946 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-c-3ni__slm-p70",
+      "paper_id": "10.1016_j.jmrt.2024.10.125",
+      "alloy_id": "alloy_fe-30mn-9al-c-3ni",
+      "process_id": "proc_slm-p70",
+      "sample_label": "P-70",
+      "aliases": [
+        "P-70",
+        "SLM-printed at 70 W"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "This is the powder feedstock step feeding the SLM process of this sample (parent process proc_prep-powder); describes powder preparation and properties.",
+        "block_id": [
+          "b0019",
+          "b0022",
+          "b0030",
+          "b0058"
+        ]
+      },
+      "processing_step_id": "step_prep_powder",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "powder preparation"
+      },
+      "method": {
+        "value": "plasma rotating electrode process (PREP)"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Spherical Fe–30Mn–9Al–C–3Ni powder (particle diameter 15–53 μm) PREP-prepared (Advanced Corporation for Materials and Equipment, PREP-22); composition by ICP-OES (wt%): Mn 29.95, Al 8.63, C 1.20, Ni 3.45, O 0.01, Fe Bal. Highly spherical, narrow particle-size distribution, low oxygen content, no hollow particles; median particle size D50 = 35.69 μm, Hall flowability 14 s/50 g."
+      }
+    },
+    {
+      "source": {
+        "reason": "The sample P-70 is defined by SLM printing at 70 W; these are the exact printing parameters for this sample.",
+        "block_id": [
+          "b0020",
+          "b0023"
+        ]
+      },
+      "processing_step_id": "step_slm_70w",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "additive manufacturing"
+      },
+      "method": {
+        "value": "selective laser melting (SLM)"
+      },
+      "temperature": {
+        "value": "200 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": null,
+      "atmosphere": {
+        "value": "argon (99.99% pure); oxygen content in forming chamber maintained below 300 ppm"
+      },
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Printed on SLM Solutions SLM280; laser power 70 W (laser energy density 58.33 J/mm³), scanning speed 750 mm/s, spot diameter 0.1 mm, layer thickness 0.02 mm, hatch space 0.08 mm; substrate preheated to 200 °C; 67° rotation angle applied to each layer; two sample sizes (75×12×12 mm and 10×10×10 mm). Sample denoted P-70."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "Overall microstructural description for the P-70 sample.",
+        "block_id": [
+          "b0033",
+          "b0036",
+          "b0040",
+          "b0042",
+          "b0059"
+        ]
+      },
+      "structure_id": "struct_p70",
+      "overall_structure": {
+        "value": "SLM-printed P-70 consists predominantly of the austenite phase (γ-Fe(M), fcc) with a small amount of nano-sized κ carbide and no α-Fe(M) ferrite (ferrite formation suppressed by fast cooling during SLM). The transverse cross-section shows fine equiaxed grains with random orientation (no preferred crystallographic texture)."
+      },
+      "number_of_phases": {
+        "value": 2,
+        "source": {
+          "reason": "Paper states each SLM-printed sample contains austenite as the predominant phase with a small amount of nano-sized κ carbide, and that the printed alloy mainly comprises austenite without any α-Fe(M) phase.",
+          "block_id": [
+            "b0033",
+            "b0059"
+          ]
+        }
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "Descriptor of the P-70 microstructure (predominantly austenite + nano κ carbide, equiaxed fine grains, high porosity).",
+            "block_id": [
+              "b0033",
+              "b0040",
+              "b0042",
+              "b0036",
+              "b0059"
+            ]
+          },
+          "microstructure_id": "micro_p70_transverse",
+          "region": {
+            "value": "transverse cross-section (x-y)"
+          },
+          "related_sequence": {
+            "value": "2"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "XRD of the printed alloy shows only γ-Fe(M) fcc reflections; EBSD IPF maps of the transverse section (P-70) reveal fine equiaxed grains in random orientations.",
+                "block_id": [
+                  "b0033",
+                  "figure_005",
+                  "b0040",
+                  "figure_007",
+                  "b0042",
+                  "figure_008"
+                ]
+              },
+              "phase_name": {
+                "value": "γ-Fe(M) austenite"
+              },
+              "crystal_structure": {
+                "value": "fcc"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "fine equiaxed grains, random orientations"
+              },
+              "grain_size": {
+                "value": "average 8.1 μm"
+              },
+              "texture": {
+                "value": "random orientation, no dominant texture"
+              }
+            },
+            {
+              "source": {
+                "reason": "Conclusion states each SLM-printed sample contained austenite as the predominant phase with a small amount of nano-sized κ carbide; TEM (of P-110) showed κ carbide uniformly distributed as nanoscale particles.",
+                "block_id": [
+                  "b0033",
+                  "b0041",
+                  "b0067",
+                  "b0043",
+                  "figure_009"
+                ]
+              },
+              "phase_name": {
+                "value": "κ carbide"
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": {
+                "value": "nanoscale particles uniformly distributed in the austenite matrix"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "source": {
+                "reason": "P-70 was determined to be 4.75% porous (highest among the SLM samples); Fig. 6(a) shows a dense field of dark angular pores.",
+                "block_id": [
+                  "b0036",
+                  "figure_006"
+                ]
+              },
+              "type": {
+                "value": "pores (porosity)"
+              },
+              "porosity": {
+                "value": "4.75%"
+              },
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "source": {
+                "reason": "At 70 W, numerous unfused powder particles were observed on the surface and in the sample (Fig. 11(a)); P-70 fractured with poor tensile performance owing to numerous unfused powder particles.",
+                "block_id": [
+                  "b0048",
+                  "figure_011",
+                  "b0053"
+                ]
+              },
+              "type": {
+                "value": "unfused powder particles / lack of fusion"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "source": {
+                "reason": "P-70 exhibited fractures caused by decohesion and internal cracks (Fig. 13(a)); also one bright white angular particle in the OM cross-section.",
+                "block_id": [
+                  "b0053",
+                  "figure_006"
+                ]
+              },
+              "type": {
+                "value": "internal cracks / microcracks and decohesion"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "source": {
+                "reason": "Average grain size of P-70 transverse cross-section determined to be 8.1 μm.",
+                "block_id": [
+                  "b0042",
+                  "figure_008"
+                ]
+              },
+              "value": {
+                "value": "8.1"
+              },
+              "unit": {
+                "value": "μm"
+              }
+            },
+            "grain_size_distribution": {
+              "value": "Right-skewed histogram; tallest bar at the lowest few μm bins reaching just below the 16% fraction, long thin tail extending to ~44 μm"
+            },
+            "texture": {
+              "value": "random orientation, no preferred texture"
+            }
+          },
+          "precipitates": [
+            {
+              "source": {
+                "reason": "Conclusion states each SLM-printed sample (incl. P-70) contains a small amount of nano-sized κ carbide; TEM shows κ uniformly dispersed as nanoscale particles with a [011]γ∥[011]κ orientation relationship.",
+                "block_id": [
+                  "b0059",
+                  "b0043",
+                  "figure_009"
+                ]
+              },
+              "precipitate_id": "kappa_p70",
+              "type": {
+                "value": "κ carbide"
+              },
+              "size": {
+                "value": {
+                  "value": "nanoscale"
+                },
+                "unit": null
+              },
+              "distribution": {
+                "value": "uniformly distributed in the austenite matrix"
+              },
+              "coherency": {
+                "value": "[011]γ ∥ [011]κ orientation relationship with austenite (established by SADP on the SLM alloy / P-110)"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "source": {
+        "reason": "Phase evolution on printing and interface-related observations applicable to the SLM-printed alloy (P-70 among them).",
+        "block_id": [
+          "b0031",
+          "b0033",
+          "b0043"
+        ]
+      },
+      "interface_set_id": "iface_p70",
+      "phase_interfaces": [
+        {
+          "source": {
+            "reason": "Conclusion states each SLM-printed sample contains austenite plus a small amount of nano-sized κ carbide; the [011]γ∥[011]κ relationship was determined by SADP.",
+            "block_id": [
+              "b0059",
+              "b0043",
+              "figure_009"
+            ]
+          },
+          "interface_id": "iface_gamma_kappa_p70",
+          "microstructure_id": "micro_p70_transverse",
+          "phase_1_name": {
+            "value": "austenite (γ-Fe(M))"
+          },
+          "phase_2_name": {
+            "value": "κ carbide"
+          },
+          "coherence": {
+            "value": "Oriented (coherent) relationship [011]γ ∥ [011]κ reported by SADP; nano-sized κ carbide uniformly dispersed in the austenite matrix. (OR established by TEM of P-110, representative of the SLM alloy; P-70 similarly contains nano κ carbide per the conclusion.)"
+          }
+        }
+      ],
+      "defect_interactions": [
+        {
+          "source": {
+            "reason": "Fractographic description of the P-70 sample's fracture behavior and its link to unfused powder particles.",
+            "block_id": [
+              "b0053",
+              "figure_013"
+            ]
+          },
+          "interaction_id": "defect_fracture_p70",
+          "microstructure_id": "micro_p70_transverse",
+          "interaction_type": {
+            "value": "Pore/unfused-particle–driven fracture and decohesion"
+          },
+          "qualitative_or_quantitative_description": {
+            "value": "P-70 exhibited ductile dimple fractures together with fractures caused by decohesion and internal cracks; it exhibited poor tensile performance owing to numerous unfused powder particles in the sample."
+          }
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": {
+        "value": "The PREP powder contains both γ-Fe(M) and α-Fe(M) phases (γ dominant); after SLM printing at every laser power the alloy comprises mainly the austenite phase with no α-Fe(M), because ferrite formation is suppressed by fast cooling during SLM."
+      },
+      "interface_notes": {
+        "value": "Ferrite diffraction patterns were not detected in the SLM-printed alloy. The nanoscale κ carbide orientation relationship and its uniform dispersion were characterized by TEM (bright-field, SADP, dark-field and HRTEM) on the SLM alloy."
+      }
+    }
+  ],
+  "properties": [
+    {
+      "source": {
+        "reason": "Tensile properties of the P-70 sample.",
+        "block_id": [
+          "b0050",
+          "b0070",
+          "figure_012"
+        ]
+      },
+      "property_set_id": "props_p70_tensile",
+      "measurement_conditions": {
+        "source": {
+          "reason": "Room-temperature tensile testing conditions described in the mechanical testing section.",
+          "block_id": [
+            "b0027"
+          ]
+        },
+        "temperature": {
+          "value": "room temperature"
+        },
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": {
+          "value": "dog-bone-shaped tensile sample, gauge length 25 mm, diameter 5 mm"
+        },
+        "test_standard": null,
+        "other_conditions": {
+          "value": "Suns universal testing machine; Reliant electronic extensometer; loading rate 1 mm/min"
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "source": {
+                "reason": "Text and Table 2 give the P-70 yield strength as 776.9 MPa.",
+                "block_id": [
+                  "b0050",
+                  "b0070"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "776.9 MPa"
+              },
+              "unit": {
+                "value": "MPa"
+              },
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "source": {
+                "reason": "Text and Table 2 give the P-70 tensile strength as 986.4 MPa.",
+                "block_id": [
+                  "b0050",
+                  "b0070"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "986.4 MPa"
+              },
+              "unit": {
+                "value": "MPa"
+              },
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "source": {
+                "reason": "Text and Table 2 give the P-70 elongation as 23.10%.",
+                "block_id": [
+                  "b0050",
+                  "b0070"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "23.10%"
+              },
+              "unit": {
+                "value": "%"
+              },
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": {
+            "value": "Fig. 12 engineering stress–strain curves; P-70 is the black curve, the lowest of the SLM curves but still plateauing above 1000 MPa and ending in an abrupt vertical fracture drop."
+          },
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {},
+      "radiation_properties": {}
+    },
+    {
+      "source": {
+        "reason": "Microhardness of the P-70 sample (cross-section and longitudinal section).",
+        "block_id": [
+          "figure_014",
+          "b0055",
+          "b0027"
+        ]
+      },
+      "property_set_id": "props_p70_hardness",
+      "measurement_conditions": {
+        "source": {
+          "reason": "Microhardness testing conditions as described in the mechanical testing section.",
+          "block_id": [
+            "b0027"
+          ]
+        },
+        "temperature": {
+          "value": "room temperature"
+        },
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": {
+          "value": "horizontal and vertical cross-sections"
+        },
+        "test_standard": null,
+        "other_conditions": {
+          "value": "microhardness tester, load 0.5 kg for 10 s; each value is the arithmetic mean of five measurement points"
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "source": {
+              "reason": "Fig. 14(b) bar chart lists P-70 hardness values as 279 (longitudinal) / 278 (cross) HV.",
+              "block_id": [
+                "figure_014",
+                "b0055"
+              ]
+            },
+            "region": {
+              "value": "cross-section"
+            },
+            "value": {
+              "value": "278 HV"
+            },
+            "scale": {
+              "value": "HV"
+            },
+            "unit": {
+              "value": "HV"
+            },
+            "uncertainty": null
+          },
+          {
+            "source": {
+              "reason": "Fig. 14(b) bar chart lists P-70 hardness values as 279 (longitudinal) / 278 (cross) HV.",
+              "block_id": [
+                "figure_014",
+                "b0055"
+              ]
+            },
+            "region": {
+              "value": "longitudinal section"
+            },
+            "value": {
+              "value": "279 HV"
+            },
+            "scale": {
+              "value": "HV"
+            },
+            "unit": {
+              "value": "HV"
+            },
+            "uncertainty": null
+          }
+        ]
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {},
+      "radiation_properties": {}
+    },
+    {
+      "source": {
+        "reason": "Physical property (density) for the P-70 sample.",
+        "block_id": [
+          "b0023",
+          "b0039"
+        ]
+      },
+      "property_set_id": "props_p70_physical",
+      "measurement_conditions": {
+        "source": {
+          "reason": "Density/surface property measurement methods.",
+          "block_id": [
+            "b0025"
+          ]
+        },
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": {
+          "value": "Archimedes principle (relative density); laser confocal microscope (Zeiss LSM 900) for surface roughness"
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": []
+      },
+      "physical": {
+        "density": {
+          "source": {
+            "reason": "Paper reports the minimum density among samples as 6.78 g/cm³; this minimum corresponds to the P-70 sample, which has the lowest relative density (98.27%) among the SLM samples. Note: text does not explicitly name P-70.",
+            "block_id": [
+              "b0023",
+              "b0039"
+            ]
+          },
+          "value": {
+            "value": "6.78 g/cm³"
+          },
+          "unit": {
+            "value": "g/cm³"
+          }
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {},
+      "radiation_properties": {}
+    }
+  ],
+  "performance": [
+    {
+      "source": {
+        "reason": "Comparative performance conclusion for SLM P-70 versus the as-cast Fe–30Mn–9Al–C–3Ni alloy.",
+        "block_id": [
+          "b0050",
+          "b0070"
+        ]
+      },
+      "performance_id": "perf_p70_vs_cast",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "source": {
+          "reason": "Paper compares SLM-printed samples (including P-70) to the as-cast counterpart, stating SLM samples have higher strength and plasticity due to grain-refining from rapid cooling; Table gives P-70 (776.9 MPa YS, 986.4 MPa TS, 23.10% EL) vs As-cast (772.3 MPa YS, 879.0 MPa TS, 20.53% EL).",
+          "block_id": [
+            "b0050",
+            "b0070",
+            "figure_012"
+          ]
+        },
+        "benchmark_alloy_id": {
+          "value": "alloy_fe-30mn-9al-c-3ni"
+        },
+        "benchmark_process_id": null,
+        "benchmark_sample_id": {
+          "value": "As-cast"
+        },
+        "comparison_metric": {
+          "value": "yield strength, tensile strength, elongation (mechanical properties)"
+        },
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "XRD method and its findings for the SLM-printed samples incl. P-70.",
+        "block_id": [
+          "b0025",
+          "b0033",
+          "figure_005"
+        ]
+      },
+      "characterization_id": "char_xrd_p70",
+      "microstructure_id": "micro_p70_transverse",
+      "technique": {
+        "value": "X-ray diffraction (XRD)"
+      },
+      "instrument_or_setup": {
+        "value": "Bruker D8 Advance X-ray diffractometer, Cu target, continuous scanning 30–100° at 2°/min"
+      },
+      "measurement_conditions": {
+        "value": "room temperature, 2θ = 30–100°"
+      },
+      "purpose": {
+        "value": "Determine the crystal structure/phases of the SLM-printed alloy"
+      },
+      "key_findings": {
+        "value": "P-70 pattern contains only γ-Fe(M) fcc reflections (no α-Fe(M)); FWHM of the (111) peak of P-70 = 0.289 (largest of the five samples, implying smallest average grain size)."
+      }
+    },
+    {
+      "source": {
+        "reason": "EBSD method and grain-structure findings for P-70.",
+        "block_id": [
+          "b0025",
+          "b0040",
+          "figure_007",
+          "b0042",
+          "figure_008"
+        ]
+      },
+      "characterization_id": "char_ebsd_p70",
+      "microstructure_id": "micro_p70_transverse",
+      "technique": {
+        "value": "Electron backscatter diffraction (EBSD) / inverse pole figure (IPF) mapping"
+      },
+      "instrument_or_setup": {
+        "value": "Oxford Symmetry S2 EBSD; TSL OIM analysis software; step size 0.3–0.7 μm, accelerator voltage 15–20 kV"
+      },
+      "measurement_conditions": {
+        "value": "electrolytically polished samples (perchloric-acid/ethanol)"
+      },
+      "purpose": {
+        "value": "Characterize grain morphology, orientation and grain size"
+      },
+      "key_findings": {
+        "value": "P-70 transverse cross-section shows fine equiaxed grains with random orientations (no texture); average grain size 8.1 μm (smallest among the SLM samples)."
+      }
+    },
+    {
+      "source": {
+        "reason": "OM method and porosity finding for the P-70 sample.",
+        "block_id": [
+          "b0025",
+          "b0036",
+          "figure_006"
+        ]
+      },
+      "characterization_id": "char_om_p70",
+      "microstructure_id": "micro_p70_transverse",
+      "technique": {
+        "value": "Optical microscopy (OM)"
+      },
+      "instrument_or_setup": {
+        "value": "Leica DMi8 M/C/A optical microscope"
+      },
+      "measurement_conditions": {
+        "value": "electrolytically polished transverse cross-sections"
+      },
+      "purpose": {
+        "value": "Evaluate porosity in the printed samples"
+      },
+      "key_findings": {
+        "value": "P-70 cross-section is 4.75% porous (densest field of dark irregular pores with one bright white angular particle); porosity is highest among the SLM samples."
+      }
+    },
+    {
+      "source": {
+        "reason": "SEM surface characterization method and P-70 surface finding.",
+        "block_id": [
+          "b0025",
+          "b0048",
+          "figure_011"
+        ]
+      },
+      "characterization_id": "char_sem_surface_p70",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Scanning electron microscopy (SEM) of surfaces"
+      },
+      "instrument_or_setup": {
+        "value": "ZEISS Sigma300 scanning electron microscope"
+      },
+      "measurement_conditions": {
+        "value": "as-printed surfaces"
+      },
+      "purpose": {
+        "value": "Evaluate surface morphology / defects"
+      },
+      "key_findings": {
+        "value": "At 70 W, numerous unfused powder particles and pores are present on the surface; the P-70 surface is the roughest, annotated 'Lack of fusion' and 'Hole'."
+      }
+    },
+    {
+      "source": {
+        "reason": "Fracture-surface characterization and finding for the P-70 sample.",
+        "block_id": [
+          "b0053",
+          "figure_013"
+        ]
+      },
+      "characterization_id": "char_sem_fracture_p70",
+      "microstructure_id": null,
+      "technique": {
+        "value": "SEM fractography of tensile fracture surfaces"
+      },
+      "instrument_or_setup": {
+        "value": "scanning electron microscope"
+      },
+      "measurement_conditions": {
+        "value": "fracture surfaces of tensile specimens"
+      },
+      "purpose": {
+        "value": "Identify fracture mechanisms"
+      },
+      "key_findings": {
+        "value": "P-70 exhibited ductile dimple fractures plus fractures caused by decohesion and internal cracks, with poor tensile performance due to numerous unfused powder particles (Fig. 13(a) panel was not supplied in the figure group)."
+      }
+    },
+    {
+      "source": {
+        "reason": "Roughness measurement method and P-70 value.",
+        "block_id": [
+          "b0025",
+          "b0044",
+          "figure_010"
+        ]
+      },
+      "characterization_id": "char_roughness_p70",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Surface roughness / 2D and 3D topography (laser confocal profilometry)"
+      },
+      "instrument_or_setup": {
+        "value": "Zeiss LSM 900 laser confocal microscope"
+      },
+      "measurement_conditions": {
+        "value": "as-printed surfaces"
+      },
+      "purpose": {
+        "value": "Measure surface roughness Sa of each sample"
+      },
+      "key_findings": {
+        "value": "P-70 surface roughness Sa = 20.71 μm (roughest of all the samples); 3D topography maximum height 144.6 μm."
+      }
+    },
+    {
+      "source": {
+        "reason": "Density measurement method and P-70 relative density value.",
+        "block_id": [
+          "b0025",
+          "b0039"
+        ]
+      },
+      "characterization_id": "char_density_p70",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Archimedes density / relative density measurement"
+      },
+      "instrument_or_setup": {
+        "value": "Archimedes principle"
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Determine relative density of the SLM samples"
+      },
+      "key_findings": {
+        "value": "P-70 relative density = 98.27%, the lowest among P-70/P-90/P-110/P-130/P-150."
+      }
+    },
+    {
+      "source": {
+        "reason": "Tensile testing method and P-70 values.",
+        "block_id": [
+          "b0027",
+          "b0050",
+          "b0070"
+        ]
+      },
+      "characterization_id": "char_tensile_p70",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Room-temperature uniaxial tensile testing"
+      },
+      "instrument_or_setup": {
+        "value": "Suns universal testing machine with Reliant electronic extensometer"
+      },
+      "measurement_conditions": {
+        "value": "room temperature; dog-bone sample, gauge length 25 mm, diameter 5 mm; loading rate 1 mm/min"
+      },
+      "purpose": {
+        "value": "Measure tensile properties (YS, TS, elongation)"
+      },
+      "key_findings": {
+        "value": "P-70 yield strength 776.9 MPa, tensile strength 986.4 MPa, elongation 23.10%."
+      }
+    },
+    {
+      "source": {
+        "reason": "Microhardness method and P-70 values.",
+        "block_id": [
+          "b0027",
+          "figure_014",
+          "b0055"
+        ]
+      },
+      "characterization_id": "char_microhardness_p70",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Vickers microhardness testing"
+      },
+      "instrument_or_setup": {
+        "value": "microhardness tester, load 0.5 kg, dwell 10 s"
+      },
+      "measurement_conditions": {
+        "value": "horizontal (cross) and vertical (longitudinal) cross-sections; mean of five points"
+      },
+      "purpose": {
+        "value": "Measure hardness of the printed samples"
+      },
+      "key_findings": {
+        "value": "P-70 hardness: 278 HV (cross-section) and 279 HV (longitudinal section)."
+      }
+    },
+    {
+      "source": {
+        "reason": "TEM method; the TEM study was performed on P-110 but describes the SLM-printed alloy microstructure (κ carbide, no ferrite). Attributed to the alloy rather than specifically to P-70.",
+        "block_id": [
+          "b0025",
+          "b0043",
+          "figure_009"
+        ]
+      },
+      "characterization_id": "char_tem_p70",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Transmission electron microscopy (TEM)/HRTEM (noted for the SLM alloy)"
+      },
+      "instrument_or_setup": {
+        "value": "FEI Tecnai F30 scanning transmission electron microscope; plasma polishing sample preparation"
+      },
+      "measurement_conditions": {
+        "value": "TEM samples prepared by plasma polishing"
+      },
+      "purpose": {
+        "value": "Study dislocations, κ carbide and orientation relationships in the SLM-printed alloy"
+      },
+      "key_findings": {
+        "value": "For the SLM alloy (studied on P-110): dense dislocation tangles in austenite, uniformly dispersed nanoscale κ carbide with [011]γ∥[011]κ; no ferrite detected."
+      }
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "XRD (111) peak FWHM of the P-70 sample = 0.289 (largest among P-70/P-90/P-110/P-130/P-150), consistent with the smallest average grain size.",
+    "Reduction of area (Z) of the P-70 sample = 25.79% (from the mechanical-properties table in Fig. 14).",
+    "Relative density of the P-70 sample = 98.27%, the lowest of the five SLM samples (porosity 4.75%, the highest).",
+    "P-70 surface roughness Sa = 20.71 μm (roughest of the SLM samples); its 3D surface topography maximum height is 144.6 μm.",
+    "P-70 fractured by ductile dimple fracture plus fracture caused by decohesion and internal cracks; it showed poor tensile performance owing to numerous unfused powder particles (Fig. 13(a) panel itself was not supplied).",
+    "SEM surface morphology of P-70 (70 W) shows numerous unfused powder particles and pores annotated 'Lack of fusion' and 'Hole', making it the roughest surface of the series.",
+    "The small amount of nano-sized κ carbide with a [011]γ∥[011]κ orientation relationship and the absence of ferrite were experimentally established by TEM on the SLM alloy (measured on P-110), not specifically on P-70."
+  ]
+}

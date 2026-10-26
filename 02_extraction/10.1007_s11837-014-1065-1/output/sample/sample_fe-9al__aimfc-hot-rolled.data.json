@@ -1,0 +1,248 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-9al__aimfc-hot-rolled",
+      "paper_id": "10.1007_s11837-014-1065-1",
+      "alloy_id": "alloy_fe-9al",
+      "process_id": "proc_aimfc-hot-rolled",
+      "sample_label": "Fe-9Al AIMFC",
+      "aliases": [
+        "Fe-9Al (AIMFC)",
+        "AIMFC Fe-9Al",
+        "Fe-9Al AIMFC hot-rolled"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_aimfc_melting",
+      "sequence": "1",
+      "type": "melting and casting",
+      "method": "air induction melting with flux cover (AIMFC)",
+      "temperature": "1900 K",
+      "temperature_unit": "K",
+      "duration": "2 min",
+      "atmosphere": "air, with protective flux cover (Al2O3, CaO, MgO, CaF2)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "30-kg heats of Fe-9 wt.% Al were prepared by Inductotherm medium-frequency AIM of 50-kg capacity; commercial purity Al and Fe used; iron charge cleaned by pickling in dilute hydrochloric acid and charged into an alumina-lined crucible; preheated flux (Al2O3, CaO, MgO, CaF2) added after iron melting; cleaned/preheated aluminum plunged into molten iron; melt top poured into split cast iron molds."
+    },
+    {
+      "processing_step_id": "step_2_hot_forging",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot forging",
+      "temperature": "1373 K",
+      "temperature_unit": "K",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "80-mm-diameter AIMFC ingots preheated in a hearth furnace at 1373 K for 1 h and hot-forged in a 1-tonne pneumatic forge hammer with die platens at room temperature."
+    },
+    {
+      "processing_step_id": "step_3_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1373 K",
+      "temperature_unit": "K",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "50%",
+      "processing_steps_notes": "24-mm-thick forged billet sections preheated at 1373 K for 1 h and hot rolled 50% with 1-mm reduction per pass; samples reheated after every six rolling passes; final thickness 12 mm."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_hot_rolled",
+      "overall_structure": "Annealed, coarse-grained microstructure after hot rolling; large polygonal grains with moderate dark pitting and clear grain boundaries.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1_hot_rolled",
+          "region": "hot-rolled plate (bulk)",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "disordered Fe-Al solid solution (α-Fe(Al)) with expected short-range ordering",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "microcracks",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "228",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_1",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "interaction_id": "inter_1_microcrack_hydrogen",
+          "microstructure_id": "micro_1_hot_rolled",
+          "interaction_type": "microcrack formation due to hydrogen embrittlement",
+          "qualitative_or_quantitative_description": "Microcracks were observed in hot-rolled Fe-9Al AIMFC plates; attributed to hydrogen embrittlement from the high residual hydrogen concentration in the as-cast ingots (H 0.0052 wt.%)."
+        }
+      ],
+      "phase_evolution": null,
+      "interface_notes": "Single-phase Fe-Al solid solution; no phase interfaces reported. Fe-9Al AIMFC ingots were completely free from gas porosity but exhibited microcracks."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_room_temp_hot_rolled",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "hot-rolled Fe-9Al AIMFC; each hardness data point is an average of five measurements; each tensile data point is an average of three tests."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "318",
+              "unit": "MPa",
+              "uncertainty": "± 8.0"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "349",
+              "unit": "MPa",
+              "uncertainty": "± 6.3"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "0.1",
+              "unit": "%",
+              "uncertainty": "± 0.1"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk (hot-rolled plate)",
+            "value": "263",
+            "scale": "Vickers",
+            "unit": "HV",
+            "uncertainty": "± 8.9"
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_comparison_vs_vim",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-9al",
+        "benchmark_process_id": "VIM",
+        "benchmark_sample_id": "Fe-9Al VIM hot-rolled",
+        "comparison_metric": "room-temperature tensile ductility (total elongation) and hot-workability",
+        "improvement_percentage": "Fe-9Al AIMFC failed at very low stress during the room-temperature tensile test without significant elongation (EL 0.1 ± 0.1%), whereas Fe-9Al VIM exhibited about 9% total elongation; the hot-working response of Fe-9Al AIMFC was poor with microcracks in hot-rolled plates."
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_optical_microscopy",
+      "microstructure_id": "micro_1_hot_rolled",
+      "technique": "optical microscopy",
+      "instrument_or_setup": null,
+      "measurement_conditions": "hot-rolled, etched; bright-field optical micrograph (Fig. 4c); 250 µm scale bar printed only in panel (a).",
+      "purpose": "Characterize the annealed hot-rolled microstructure (grain size, porosity/second-phase particles).",
+      "key_findings": "Large grains with moderate dark pitting and clear grain boundaries; annealed coarse-grained microstructure."
+    },
+    {
+      "characterization_id": "char_chemical_composition",
+      "microstructure_id": null,
+      "technique": "chemical composition analysis (combustion/inert gas fusion); hydrogen by RH-444 Leco gas analyzer",
+      "instrument_or_setup": "RH-444 Leco Gas analyzer (hydrogen analysis)",
+      "measurement_conditions": null,
+      "purpose": "Determine chemical composition of the Fe-9Al AIMFC ingot (Al, Si, Mn, S, C, O, H, N).",
+      "key_findings": "Fe-9Al AIMFC: Al 9.20, Si 0.16, Mn 0.046, S 0.0015, C 0.017, O 0.0050, H 0.0052, N 0.0015 wt.%."
+    },
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": null,
+      "technique": "Vickers hardness testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "room temperature; bulk hardness; each data point average of five measurements.",
+      "purpose": "Measure hardness of hot-rolled Fe-9Al AIMFC.",
+      "key_findings": "263 ± 8.9 HV; the melting process has no influence on hardness of Fe-7 and Fe-9 Al alloys."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "room-temperature tensile testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "room temperature; each tensile data point average of three tests.",
+      "purpose": "Measure room-temperature tensile properties (UTS, YS, EL) of hot-rolled Fe-9Al AIMFC.",
+      "key_findings": "UTS 349 ± 6.3 MPa, YS 318 ± 8.0 MPa, EL total 0.1 ± 0.1%; Fe-9Al AIMFC failed at very low stress levels during tensile test without significant elongation."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Fe-9Al AIMFC as-cast ingots were completely free from gas porosity but exhibited microcracks (unlike Fe-7Al AIMFC ingots, which were free from microcracks); the microcracks are attributed to hydrogen embrittlement from the higher hydrogen concentration in the Fe-9Al AIMFC ingots (H 0.0052 wt.% in Table I).",
+    "The hot-working response of Fe-9Al AIMFC was poor, in contrast to the excellent hot workability of the same alloy produced by VIM; microcracks were observed in hot-rolled plates and may persist even after hot working.",
+    "Fe-9Al AIMFC failed at very low stress levels during the room-temperature tensile test without exhibiting any significant elongation, whereas Fe-9Al VIM exhibited about 9% total elongation.",
+    "Fe-9Al AIMFC ingots exhibited a higher hydrogen concentration (0.0052 wt.%) than Fe-9Al VIM (0.0021 wt.%), attributed to hydrogen pick-up during pouring/solidification exposure to the atmosphere and the higher aluminum level.",
+    "Aluminum recovery during AIMFC was 95–98%, comparable to VIM (96–98%); the recovery applies to Fe-7Al and Fe-9Al AIMFC melts."
+  ]
+}

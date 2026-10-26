@@ -1,0 +1,446 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-0.35c-4.5al__rolled-650c-ac",
+      "paper_id": "10.1016_j.msea.2026.149799",
+      "alloy_id": "alloy_fe-0.35c-4.5al",
+      "process_id": "proc_rolled-650c-ac",
+      "sample_label": "R650",
+      "aliases": [
+        "R650 specimen",
+        "R650 steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "4 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Steel ingot (fabricated via VIM) homogenized at 1200 °C for 4 h prior to hot forging."
+    },
+    {
+      "processing_step_id": "step_hot_forging",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot forging",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot forged to a thickness of 40 mm, then air cooled to room temperature."
+    },
+    {
+      "processing_step_id": "step_reheat_650",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "reheating / austenitization hold",
+      "temperature": "650 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Specimens placed in a box furnace and heated to 650 °C and held for 2 h before rolling."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "650 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "60 %",
+      "processing_steps_notes": "Hot rolling deformation with 60 % reduction ratio, reducing plate thickness from 40 mm to 16 mm."
+    },
+    {
+      "processing_step_id": "step_air_cooling",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "air cooling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "After rolling, samples were air cooled to room temperature, yielding R650."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_r650_lamellar",
+      "overall_structure": "Lamellar structure with alternating δ-ferrite (δ-F) lamellae (light) and carbide/ferrite (C/F) composite lamellae (dark); both lamellae types show continuous banded distribution parallel to RD. No martensite present.",
+      "number_of_phases": "2 (δ-ferrite + carbide/ferrite composite)",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_r650_lamellar",
+          "region": "RD-ND plane (bulk)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "δ-ferrite (δ-F)",
+              "crystal_structure": "BCC",
+              "volume_fraction": "48.5 ± 2.5 vol%",
+              "morphology": "lamellae (light areas, continuous banded)",
+              "grain_size": null,
+              "texture": "dominant <001> orientation"
+            },
+            {
+              "phase_name": "carbide/ferrite composite (C/F)",
+              "crystal_structure": null,
+              "volume_fraction": "51.5 ± 2.5 vol%",
+              "morphology": "lamellae (dark areas, continuous banded); ultra-fine spherical carbides dispersed in ferrite matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "martensite (M)",
+              "crystal_structure": null,
+              "volume_fraction": "0 vol%",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "3.9 × 10^14 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": "dominant orientation <001> (low-temperature rolling zone); fine red/purple lamellar banded grains in IPF"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_r650_carbides",
+              "type": "ultra-fine spherical carbides: MC, M3C, M23C6, M7C3",
+              "size": {
+                "value": "158.3 ± 76.9 nm",
+                "unit": "nm"
+              },
+              "distribution": "dispersed as ultra-fine spherical particles in the ferrite matrix of the C/F lamellae; high distribution density 1.7 ± 0.2 μm^-2; mainly concentrated outside the δ-ferrite lamellae; diameter <250 nm",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_r650",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_dF_CF",
+          "microstructure_id": "micro_r650_lamellar",
+          "phase_1_name": "δ-ferrite lamella",
+          "phase_2_name": "carbide/ferrite composite lamella",
+          "coherence": "obvious boundaries exist between the lamellae; boundary nearly free of carbides"
+        },
+        {
+          "interface_id": "if_carbide_ferrite",
+          "microstructure_id": "micro_r650_lamellar",
+          "phase_1_name": "carbide particle",
+          "phase_2_name": "ferrite matrix",
+          "coherence": "bonding force at the carbide/ferrite interface is greater than at the ferrite/ferrite interface; interfacial stress partly transferred to carbides"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_dislocation_pinning",
+          "microstructure_id": "micro_r650_lamellar",
+          "interaction_type": "Orowan dislocation pinning/pile-up at carbides",
+          "qualitative_or_quantitative_description": "After impact deformation numerous dislocations are blocked by carbides and pile up in regions adjacent to carbides; when carbide diameter exceeds 10 nm numerous dislocations and atomic shearing observed at ferrite/carbide boundaries (Orowan mechanism); carbides (diameter <250 nm) pin dislocations, increasing dislocation density and strain hardening capacity."
+        },
+        {
+          "interaction_id": "di_crack_deflection",
+          "microstructure_id": "micro_r650_lamellar",
+          "interaction_type": "crack blunting / deflection / interface separation",
+          "qualitative_or_quantitative_description": "Crack tip becomes significantly blunted and stops propagating on penetrating the carbide/ferrite lamellae; interface separation disperses crack-tip stress; spherical carbides act as microvoid nucleation sites at carbide/ferrite interfaces, and secondary defects propagate along the horizontal lamellae direction."
+        }
+      ],
+      "slip_behavior": "In δ-ferrite lamellae cracks propagate in plane strain along the lamellar orientation; in carbide/ferrite lamellae the crack front is blunted (plane stress) and forced to deflect/branch along lamellar boundaries.",
+      "phase_evolution": "Supersaturated martensite breaks down under large plastic deformation during low-temperature rolling; deformation energy activates diffusion of C, Cr and Mn which enrich at defect sites (dislocations, grain boundaries) and precipitate carbides; new ferrite forms in low-carbon regions near carbides, producing composite lamellae with carbides dispersed in a ferrite matrix.",
+      "interface_notes": "The carbide/ferrite composite lamellae bear most of the crack propagation resistance; carbides are concentrated outside δ-ferrite lamellae."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_r650_mechanical",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "Tensile: rod-shaped specimen, gauge length 25 mm, diameter 5 mm, sampled along RD; Charpy: 10 mm × 10 mm × 55 mm V-notch bar, notch machined on rolled surface, impact direction perpendicular to RD",
+        "test_standard": null,
+        "other_conditions": "Tensile crosshead speed 1.5 mm/min"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "868.7 ± 16.4 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 16.4 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "19.0 ± 3.2 %",
+              "unit": "%",
+              "uncertainty": "± 3.2 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve (Fig. 5d): long plateau near ~860 MPa with the largest elongation of the four conditions",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "value": "hump-shaped θ curve; peak near true strain 0.035 at ~2400 (R650)",
+              "unit": null
+            }
+          ]
+        },
+        "hardness": [
+          {
+            "region": "carbide/ferrite composite lamellae",
+            "value": "3.64 GPa",
+            "scale": "nanoindentation (GPa)",
+            "unit": "GPa",
+            "uncertainty": null
+          },
+          {
+            "region": "δ-ferrite lamellae",
+            "value": "2.92–2.93 GPa",
+            "scale": "nanoindentation (GPa)",
+            "unit": "GPa",
+            "uncertainty": null
+          },
+          {
+            "region": "C/F (carbide/ferrite) — Table 3",
+            "value": "3.6 ± 0.6 GPa",
+            "scale": "nanoindentation (GPa)",
+            "unit": "GPa",
+            "uncertainty": "± 0.6 GPa"
+          },
+          {
+            "region": "F (ferrite) — Table 3",
+            "value": "2.9 ± 0.3 GPa",
+            "scale": "nanoindentation (GPa)",
+            "unit": "GPa",
+            "uncertainty": "± 0.3 GPa"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_r650",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "room temperature",
+          "max": "room temperature",
+          "unit": "°C"
+        },
+        "stress_state": "impact (Charpy V-notch, plane strain in δ-ferrite; plane stress in carbide/ferrite lamellae) and uniaxial tension along RD",
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": "sample_fe-0.35c-4.5al__rolled-750c-ac",
+        "comparison_metric": "Impact absorption energy (IAE)",
+        "improvement_percentage": "R750 impact absorption energy decreased by approximately 60 % compared with R650"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om",
+      "microstructure_id": "micro_r650_lamellar",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": "Optical microscope; phase-proportion statistics via Image-J software",
+      "measurement_conditions": "RD-ND plane, 50 μm scale bar",
+      "purpose": "Reveal macrostructure and lamellar banding of R650",
+      "key_findings": "Alternating light δ-ferrite and dark carbide/ferrite lamellae, both continuously banded; C/F = 51.5 ± 2.5 vol%"
+    },
+    {
+      "characterization_id": "char_sem",
+      "microstructure_id": "micro_r650_lamellar",
+      "technique": "Scanning electron microscopy (SEM)",
+      "instrument_or_setup": "Apreo S HiVac SEM equipped with Oxford Aztec EBSD detector",
+      "measurement_conditions": "RD-ND plane; ground and polished then etched with 5 vol% HNO3-ethanol",
+      "purpose": "Observe lamellar arrangement and carbide distribution",
+      "key_findings": "Banded carbide/ferrite lamella against δ-ferrite with finely dispersed particles (1 μm inset)"
+    },
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_r650_lamellar",
+      "technique": "Electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "Oxford Aztec EBSD detector on Apreo S HiVac SEM",
+      "measurement_conditions": "RD-ND plane; electro-polished with 5 vol% HClO4-ethanol; 20 μm scale bar",
+      "purpose": "Determine grain boundaries, KAM, GOS and texture; validate nanoindentation alignment",
+      "key_findings": "HAGBs 49.6 %, GOS≤2° 12.3 %, dislocation density 3.9 × 10^14 m^-2 (Table 3); nearly uniform low KAM (0.48–0.55°) with faint lamellar streaks; dominant <001> orientation"
+    },
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": "micro_r650_lamellar",
+      "technique": "Transmission electron microscopy (TEM)",
+      "instrument_or_setup": "JEM-F200 (CF-HR) TEM",
+      "measurement_conditions": "Specimens ground to 80 μm, punched into 3 mm discs, twin-jet electropolished with 5 vol% HClO4 acetic acid; 1 μm and 500 nm scale bars",
+      "purpose": "High-resolution observation of carbides and ferrite/carbide boundaries",
+      "key_findings": "Dark spherical carbides dispersed in ferrite bounded by a boundary nearly free of carbides; carbide size 158.3 ± 76.9 nm"
+    },
+    {
+      "characterization_id": "char_nanoindentation",
+      "microstructure_id": "micro_r650_lamellar",
+      "technique": "Nanoindentation",
+      "instrument_or_setup": "G200X nanoindenter with Berkovich-type tip; hardness via Oliver-Pharr method",
+      "measurement_conditions": "Peak load 5 mN; loading/unloading rate 500 μN/s; indentation distribution validated by EBSD",
+      "purpose": "Measure local phase hardness",
+      "key_findings": "C/F composite lamellae 3.64 GPa vs δ-ferrite 2.92–2.93 GPa (difference 0.72 GPa); Table 3: C/F 3.6 ± 0.6 GPa, F 2.9 ± 0.3 GPa"
+    },
+    {
+      "characterization_id": "char_eds",
+      "microstructure_id": "micro_r650_lamellar",
+      "technique": "Energy dispersive spectroscopy (EDS)",
+      "instrument_or_setup": "EDS coupled with TEM",
+      "measurement_conditions": "Carbide regions in R650",
+      "purpose": "Determine elemental enrichment in carbides",
+      "key_findings": "Carbide regions strongly enriched in C and Mn, weakly enriched in Cr, not enriched in Al; combined with SAED, carbides identified as MC, M3C, M23C6, M7C3"
+    },
+    {
+      "characterization_id": "char_hrtem",
+      "microstructure_id": "micro_r650_lamellar",
+      "technique": "HRTEM and IFFT",
+      "instrument_or_setup": "High-resolution TEM with inverse fast Fourier transform filtering",
+      "measurement_conditions": "Carbide/ferrite boundaries in impact-fractured R650; 5 nm scale bar",
+      "purpose": "Analyze dislocation characteristics and atomic shearing at ferrite/carbide boundaries",
+      "key_findings": "Dislocations blocked and piled up adjacent to carbides; when carbide diameter exceeds 10 nm numerous dislocations and atomic shearing at ferrite/carbide boundaries (Orowan mechanism)"
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile test",
+      "instrument_or_setup": "Tensile testing machine",
+      "measurement_conditions": "Rod specimen, gauge length 25 mm, diameter 5 mm, RD; crosshead speed 1.5 mm/min; room temperature",
+      "purpose": "Measure strength and elongation",
+      "key_findings": "R650 UTS 868.7 ± 16.4 MPa, TE 19.0 ± 3.2 %, SPP 16.5 ± 1.5 GPa%"
+    },
+    {
+      "characterization_id": "char_charpy",
+      "microstructure_id": null,
+      "technique": "Charpy impact test",
+      "instrument_or_setup": "Instrumented Charpy impact tester",
+      "measurement_conditions": "10 mm × 10 mm × 55 mm V-notch bar, notch on rolled surface, impact direction perpendicular to RD; room temperature",
+      "purpose": "Measure impact absorption energy and crack initiation/propagation energies",
+      "key_findings": "R650 IAE 207.5 ± 29.3 J; toughness propagation stage present"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermocalc",
+      "simulation_method": "CALPHAD thermodynamic equilibrium calculation",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Equilibrium phase diagram and phase fractions vs temperature computed for the tested steel composition",
+      "validation_against_experiment": "Predicted carbide stability temperature range (<750 °C) consistent with the decreasing carbide/ferrite proportion from 650 °C to 750 °C observed by OM",
+      "analytical_models": [
+        {
+          "model_name": "Iron-carbon equilibrium phase diagram and phase-fraction vs temperature",
+          "equation_role": "Determine phase composition at each rolling temperature and the carbide precipitation/dissolution range",
+          "parameters": [
+            {
+              "name": "carbide stability temperature",
+              "value": "≤750",
+              "unit": "°C"
+            }
+          ],
+          "model_note": "Carbides fall to zero at ~710 °C; used to justify retained carbide/ferrite composite lamellae at low rolling temperature (R650)"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "R650 room-temperature impact absorption energy (IAE) = 207.5 ± 29.3 J (Table 4), the highest of the four rolling conditions; abstract/conclusion states the impact energy reaches up to 207.5 J.",
+    "R650 crack initiation energy Ei and propagation energy Ep: main text states Ei = 59.6 J and Ep = 147.9 J, whereas the Fig. 5b annotation prints Ei = 92.93 J and Ep = 147.90 J for R650; these two sources disagree.",
+    "R650 strength-plasticity product (SPP = Rm × A) = 16.5 ± 1.5 GPa% (Table 4); abstract/text also quote 16.51 GPa·%.",
+    "R650 HAGBs = 49.6 %, GOS ≤ 2° = 12.3 %, dislocation density = 3.9 × 10^14 m^-2 (Table 3).",
+    "R650 KAM value reported in the range 0.48–0.55° for the low-temperature rolling zone, indicating high dislocation density.",
+    "R650 dominant texture orientation is <001> (low-temperature rolling zone), shifting to <101> at high temperature.",
+    "R650 nano-hardness: carbide/ferrite composite lamellae 3.64 GPa vs δ-ferrite 2.92–2.93 GPa, hardness difference 0.72 GPa (Table 3 gives C/F 3.6 ± 0.6 GPa, F 2.9 ± 0.3 GPa).",
+    "R650 has no martensite (M = 0 vol%).",
+    "Carbides in the R650 carbide/ferrite lamellae identified by SAED as MC, M3C, M23C6 and M7C3; carbide regions are C- and Mn-rich, weakly Cr-enriched and not Al-enriched (EDS).",
+    "Work-hardening rate (θ) curve of R650 is hump-shaped (peak near true strain 0.035 at ~2400), attributed to Orowan pinning of dislocations by carbides (diameter <250 nm); this delays necking and contributes to the strength-plasticity synergy.",
+    "Fracture mechanism of R650 is ductile with a mixed-mode pattern: crack blunting resists propagation perpendicular to the lamellae while lamellar separation and microvoids (nucleated at carbides) drive horizontal crack propagation; tensile fracture shows a serrated delamination morphology.",
+    "R650 tensile fracture deflection was confined within δ-ferrite lamellae and ran parallel to the lamellar orientation."
+  ]
+}

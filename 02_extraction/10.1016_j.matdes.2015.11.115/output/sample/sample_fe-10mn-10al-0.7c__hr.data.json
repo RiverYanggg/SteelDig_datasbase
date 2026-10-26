@@ -1,0 +1,502 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-10mn-10al-0.7c__hr",
+      "paper_id": "10.1016_j.matdes.2015.11.115",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_id": "proc_hr",
+      "sample_label": "HR",
+      "aliases": [
+        "hot rolled specimen",
+        "as-hot-rolled plate"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_vim",
+      "sequence": "1",
+      "type": "melting/casting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "A 20 kg ingot of the Fe–10Mn–10Al–0.7C steel was prepared by vacuum induction melting method."
+    },
+    {
+      "processing_step_id": "step_heating_1200",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "heating (pre-forging)",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The ingot was heated to 1200 °C prior to forging."
+    },
+    {
+      "processing_step_id": "step_forging",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "forging",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The ingot was forged to a forging blank with cross section of about 40 mm × 60 mm."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The forging blank was homogenized at 1200 °C for 1 h before hot rolling."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "5",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "880",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The forging blank was hot-rolled to a plate of 3 mm thickness, with the finishing rolling temperature around 880 °C."
+    },
+    {
+      "processing_step_id": "step_water_quenching",
+      "sequence": "6",
+      "type": "cooling",
+      "method": "water quenching",
+      "temperature": "300",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The hot-rolled plate was water quenched to about 300 °C, giving the reference HR state before annealing."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_hr",
+      "overall_structure": "Hot-rolled (HR) specimen: typical banded microstructure, very inhomogeneous, composed of large α phase areas and γ phase areas; coarse ferrite formed during the early stage of solidification is observed; κ-carbide present along ferrite/austenite (α/γ) and ferrite/ferrite (α/α) boundaries.",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_hr_banded_rnd",
+          "region": "RD–ND (rolling direction–normal direction) plane",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "α ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": "~0.5 (read from Fig. 14 at HR)",
+              "morphology": "coarse ferrite formed during the early stage of solidification; elongated dark bands (typical banded structure)",
+              "grain_size": null,
+              "texture": "banded, elongated parallel to RD"
+            },
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~0.48 (read from Fig. 14 at HR)",
+              "morphology": "elongated light bands",
+              "grain_size": null,
+              "texture": "banded, elongated parallel to RD"
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations inherited from the hot rolling process",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": "typical banded structure presented in RD–ND plane, bands elongated along RD"
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_hr_inhomogeneous_rdtd",
+          "region": "RD–TD (rolling direction–transverse direction) plane",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "α ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "large continuous α phase area (with some γ phase or κ-carbide dispersed)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "large continuous γ phase area (with some α phase or κ-carbide dispersed)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": "very inhomogeneous microstructure",
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_hr_boundary_kappa",
+          "region": "ferrite/austenite (α/γ) and ferrite/ferrite (α/α) boundaries",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "perovskite (FCC-based, space group Pm3m)",
+              "volume_fraction": null,
+              "morphology": "particles decorating α/γ and α/α boundaries (SEM, Fig. 3(c))",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_hr_kappa_along_boundaries",
+              "type": "κ-carbide",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "along ferrite/austenite (α/γ) and ferrite/ferrite (α/α) boundaries",
+              "coherency": "κ-carbide peaks not seen in XRD of the HR specimen, probably due to low volume fraction of κ-carbide or the coherency of κ-carbide and α matrix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_hr_phases_from_thermocalc",
+      "overall_structure": "Equilibrium phase constitution of the Fe–10Mn–10Al–0.7C steel calculated by Thermo-Calc predicts ferrite (α), austenite (γ) and κ-carbide (κ); ferrite forms first during solidification, then austenite by peritectic reaction; κ-carbide appears by eutectoid reaction γ → α + κ below ~823 °C.",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_hr_thermocalc",
+          "region": null,
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "α ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "perovskite (space group Pm3m)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_hr",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_hr_alpha_gamma",
+          "microstructure_id": "micro_hr_boundary_kappa",
+          "phase_1_name": "α ferrite",
+          "phase_2_name": "γ austenite",
+          "coherence": null
+        },
+        {
+          "interface_id": "iface_hr_alpha_alpha",
+          "microstructure_id": "micro_hr_boundary_kappa",
+          "phase_1_name": "α ferrite",
+          "phase_2_name": "α ferrite",
+          "coherence": "κ-carbide along α/α boundaries; coherency with α matrix suggested as a reason κ XRD peaks are absent in HR"
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "In the hot-rolled specimen κ-carbide is present along α/γ and α/α boundaries (SEM, Fig. 3(c)); κ-carbide peaks are absent from the HR XRD pattern, probably due to the low volume fraction of κ-carbide, or the coherency of κ-carbide and α matrix.",
+      "interface_notes": "EDS confirmed the phases: α phase is Al-rich, γ phase is Mn-rich and C-rich, while κ-carbide is Mn-rich and Al-rich."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_hr_physical",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "density measured by a densitometry based on Archimedes Principles"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.80 g/cm³",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_hr_tensile_from_fig16",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "3×10^-4 s^-1",
+        "specimen_geometry": "gage length 50 mm, gage width 12.5 mm",
+        "test_standard": null,
+        "other_conditions": "tensile axis parallel to the rolling direction; HR data point shown in Fig. 16"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "parallel to rolling direction",
+              "value": "just below 1100 MPa (value read from Fig. 16 at HR)",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "parallel to rolling direction",
+              "value": "just above 1100 MPa (value read from Fig. 16 at HR)",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "parallel to rolling direction",
+              "value": "near/below 10% (value read from Fig. 16 at HR)",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Fig. 16 shows tensile strength, yield strength, ultimate elongation and product of strength and ductility against annealing temperature including the HR state; no separate HR engineering stress–strain curve is reported",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_hr_xrd",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Rigaku, D/Max-RB, Cu target operated at 40 kV and 150 mA",
+      "measurement_conditions": "room temperature",
+      "purpose": "constituent phase identification",
+      "key_findings": "In the hot rolled (HR) specimen, peaks of κ-carbide are not seen, probably due to the low volume fraction of κ-carbide, or the coherency of κ-carbide and α matrix. α and γ related reflections are present in all specimens."
+    },
+    {
+      "characterization_id": "char_hr_om",
+      "microstructure_id": "micro_hr_banded_rnd",
+      "technique": "optical microscopy (OM)",
+      "instrument_or_setup": "Zeiss AxioCam MRc5",
+      "measurement_conditions": "specimens mechanically polished and etched by 8% Nital",
+      "purpose": "microstructure examination of the hot rolled specimen",
+      "key_findings": "RD–ND plane shows a typical banded structure with coarse ferrite formed during the early stage of solidification; RD–TD plane shows a very inhomogeneous microstructure with large α phase area and γ phase area."
+    },
+    {
+      "characterization_id": "char_hr_sem_eds",
+      "microstructure_id": "micro_hr_boundary_kappa",
+      "technique": "field-emission scanning electron microscopy (FE-SEM) with energy dispersive spectrometer (EDS)",
+      "instrument_or_setup": "FEI Quanta 450 operated at an acceleration voltage of 20 kV, equipped with EDS",
+      "measurement_conditions": "specimens mechanically polished and etched by 8% Nital",
+      "purpose": "observe κ-carbide distribution and confirm phases by composition",
+      "key_findings": "SEM clearly shows κ-carbide along α/γ and α/α boundaries in the HR specimen; EDS confirms α phase is Al-rich, γ phase is Mn-rich and C-rich, while κ-carbide is Mn-rich and Al-rich."
+    },
+    {
+      "characterization_id": "char_hr_densitometry",
+      "microstructure_id": null,
+      "technique": "densitometry based on Archimedes Principles",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "measure the density of the steel",
+      "key_findings": "Density of the present steel is about 6.80 g/cm³, about 13% lower than pure Fe."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_hr_thermocalc",
+      "simulation_method": "CALPHAD equilibrium phase diagram calculation",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": "TCFE7 database",
+      "boundary_and_initial_conditions": "Equilibrium calculation of phase fractions vs temperature (above 550 °C) for the Fe–10Mn–10Al–0.7C composition",
+      "validation_against_experiment": "The calculated κ-carbide dissolution temperature (~823 °C) is lower than the actual dissolution temperature measured between 850 °C and 900 °C, attributed to thermodynamic calculation error and the difference between equilibrium and disequilibrium. Calculated fractions are atomic-based whereas XRD-measured fractions are volume-based.",
+      "analytical_models": [
+        {
+          "model_name": "Thermo-Calc equilibrium phase fractions",
+          "equation_role": "Predict fractions of ferrite (α), austenite (γ) and κ-carbide (κ) as a function of temperature",
+          "parameters": [
+            {
+              "name": "κ-carbide eutectoid dissolution temperature",
+              "value": "823",
+              "unit": "°C"
+            },
+            {
+              "name": "ferrite fraction minimum temperature",
+              "value": "around 1000",
+              "unit": "°C"
+            }
+          ],
+          "model_note": "Ferrite expected to form first during solidification, austenite by peritectic reaction; κ-carbide appears by eutectoid reaction γ → α + κ below 823 °C."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The chemical composition of the hot rolled steel was measured to be 10.4 wt.% Mn, 9.7 wt.% Al, 0.70 wt.% C, and Fe balance (b0016).",
+    "The measured density of the present (hot rolled) steel is about 6.80 g/cm³, about 13% lower than pure Fe (b0016, b0076).",
+    "Lattice parameters obtained from XRD profiles: the lattice parameter of α phase changes in the range 2.89–2.91 Å, of γ phase in the range 3.65–3.67 Å, and of κ-carbide in the range 3.76–3.79 Å (b0027).",
+    "The lattices of α and γ phase (the main phase constituents) are slightly expanded by Mn, Al and C atoms, which contributes to the low density of the steel (b0027).",
+    "The hot-rolled plate was produced with a thickness of 3 mm, with a finishing rolling temperature around 880 °C, and then water quenched to about 300 °C (b0015).",
+    "This hot-rolled + water-quenched plate (HR) is the common precursor/reference state for all subsequent annealing treatments (700–1200 °C for 1 h) studied in the paper (b0015, figure_001)."
+  ]
+}

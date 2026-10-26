@@ -1,0 +1,153 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-8mn-3al-1si-0.2c__ac",
+      "paper_id": "10.1016_j.matchemphys.2025.130877",
+      "alloy_id": "alloy_fe-8mn-3al-1si-0.2c",
+      "process_id": "proc_ac",
+      "sample_label": "M2-AC",
+      "aliases": [
+        "M2 as cast"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "b0023 states the ingots were fabricated by vacuum arc melting (M2 = Fe-8Mn-3Al-1Si-0.2C), which defines the as-cast (AC) state of this sample.",
+        "block_id": [
+          "b0023"
+        ]
+      },
+      "processing_step_id": "step_vacuum_arc_melting",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "fabrication / melting"
+      },
+      "method": {
+        "value": "vacuum arc melting"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": {
+        "value": "vacuum"
+      },
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "The two steel compositions (Fe–8Mn–3Al-0.2C = M1 and Fe–8Mn–3Al–1Si-0.2C = M2) were fabricated using a vacuum arc melting furnace. M2 is the Si-containing alloy whose as-cast condition (M2-AC) is this sample."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0023 and the process definition / Table 1 'As cast' row (M1-AC / M2-AC) describe remelting 4 times (flipping the ingot) as the step producing the as-cast ingot.",
+        "block_id": [
+          "b0023",
+          "table_001",
+          "b0037"
+        ]
+      },
+      "processing_step_id": "step_remelting",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "fabrication / melting"
+      },
+      "method": {
+        "value": "remelting 4 times by flipping the ingot before each remelt"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": {
+        "value": "vacuum"
+      },
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "The melted ingot was remelted 4 times by flipping the ingot before each remelt to ensure complete and uniform melting of the raw materials throughout the ingot. No further thermo-mechanical treatment was applied to the as-cast state."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "The only microstructural information reported for the as-cast M2 condition is the M2-AC optical micrograph in Fig. 3 (figure_003).",
+        "block_id": [
+          "figure_003"
+        ]
+      },
+      "structure_id": "struct_M2_AC",
+      "overall_structure": {
+        "value": "As-cast M2 (M2-AC) sample shown by optical micrograph (200 µm scale bar) exhibits a coarse etched grain structure; no phases or phase fractions are quantified for the as-cast condition."
+      },
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "figure_003 M2-AC inset (as-cast/homogenised state, 200 µm scale bar) shows a coarse etched grain structure; the paper reports no quantitative phase or grain-size data for the as-cast condition.",
+            "block_id": [
+              "figure_003"
+            ]
+          },
+          "microstructure_id": "micro_M2_AC",
+          "region": null,
+          "related_sequence": {
+            "value": "2"
+          },
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": {
+              "value": "coarse etched grain structure (qualitative; no numeric distribution reported)"
+            },
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "b0024 states OM was used to obtain microstructural images of the samples; figure_003 contains the M2-AC optical micrograph (as-cast/homogenised state, 200 µm scale bar) with the etching procedure noted in b0024.",
+        "block_id": [
+          "b0024",
+          "figure_003"
+        ]
+      },
+      "characterization_id": "char_om_M2_AC",
+      "microstructure_id": "micro_M2_AC",
+      "technique": {
+        "value": "Optical microscopy (OM)"
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": {
+        "value": "Etched with 2 % Nital solution (2 ml Nitric acid + 98 ml Ethanol) for 10–15 s to reveal the microstructure; optical micrograph scale bar 200 µm"
+      },
+      "purpose": {
+        "value": "Microstructural imaging of the as-cast M2 sample (M2-AC)"
+      },
+      "key_findings": {
+        "value": "Coarse etched grain structure observed in the as-cast/homogenised condition M2."
+      }
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The as-cast M2 (M2-AC) sample is the vacuum-arc-melted Fe–8Mn–3Al–1Si–0.2C (M2) ingot after 4× remelting; for this as-cast state the paper reports only an optical micrograph (coarse etched grain structure, Fig. 3, 200 µm scale bar) and no tensile, hardness, or quantitative phase-fraction data — those are reported only for the M2-HR and M2-IA conditions.",
+    "The as-cast condition is common to both alloys: Table 1 maps 'As cast' to M1-AC (3Al-0Si) and M2-AC (3Al-1Si); this sample corresponds to M2-AC."
+  ]
+}

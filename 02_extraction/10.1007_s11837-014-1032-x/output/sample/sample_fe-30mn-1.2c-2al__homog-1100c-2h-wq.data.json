@@ -1,0 +1,261 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-1.2c-2al__homog-1100c-2h-wq",
+      "paper_id": "10.1007_s11837-014-1032-x",
+      "alloy_id": "alloy_fe-30mn-1.2c-2al",
+      "process_id": "proc_homog-1100c-2h-wq",
+      "sample_label": null,
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_vim_cast",
+      "sequence": "1",
+      "type": "synthesis",
+      "method": "vacuum induction melting (VIM) and casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "400 mbar Ar",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Five different alloys synthesized in one operation using five movable Cu molds successively filled from a 4-kg ingot; Al charged through an air lock."
+    },
+    {
+      "processing_step_id": "step_2_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "10×50×130 mm³ blocks hot rolled into 2±0.1 mm thick and ~500 mm long sheets."
+    },
+    {
+      "processing_step_id": "step_3_reheat_wq",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "reheating and water quenching",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_4_homogenization",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": "Ar",
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "No subsequent aging (0 h aging); this defines the as-homogenized state."
+    },
+    {
+      "processing_step_id": "step_5_cut_segments",
+      "sequence": "5",
+      "type": "mechanical processing",
+      "method": "cutting perpendicular to the rolling direction into segments",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Segments with dimensions 2×60×55 mm³ for each alloy composition."
+    },
+    {
+      "processing_step_id": "step_6_scale_removal",
+      "sequence": "6",
+      "type": "surface preparation",
+      "method": "low-pressure, fine-grit sandblasting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Scales removed from surfaces after the heat treatments."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "Fully recrystallized single-phase austenitic microstructure with ~20 µm grain size and retained Mn microsegregations; metallographic analysis showed no cracks, pores, or macrosegregations.",
+      "number_of_phases": 1,
+      "microstructure_counts": 1,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": null,
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "retained Mn microsegregations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~20",
+              "unit": "µm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interfaces_1",
+      "phase_interfaces": [],
+      "defect_interactions": [],
+      "slip_behavior": "TWIP effect prevails: dislocation-based strain hardening followed at higher loads by mechanical twinning (single-phase austenitic TWIP / SIMPLEX steel).",
+      "phase_evolution": null,
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_tensile_RT",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "initial strain rate 10^-3 s^-1; plotted values represent averages of three measurements per material state"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_hardness",
+      "measurement_conditions": null,
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "~200",
+            "scale": "HBW",
+            "unit": null,
+            "uncertainty": "flat ~200 HBW over 0–6 wt.% Al (all plotted conditions); exact printed value for the 2Al as-homogenized condition not given"
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_metallography",
+      "microstructure_id": "micro_1",
+      "technique": "metallographic analysis (grinding and polishing with standard metallographic techniques)",
+      "instrument_or_setup": "cross-sections perpendicular to the rolling direction",
+      "measurement_conditions": null,
+      "purpose": "check for cracks, pores, macrosegregations and characterize the recrystallized grain structure",
+      "key_findings": "No cracks, pores, or macrosegregations; fully recrystallized microstructure with ~20 µm grain size and retained Mn microsegregations."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "rolling plane of samples ground to a thickness of 1 mm",
+      "measurement_conditions": null,
+      "purpose": "phase characterization",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "tensile testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "room temperature, initial strain rate 10^-3 s^-1",
+      "purpose": "measure yield strength, ultimate tensile strength, and total elongation",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": null,
+      "technique": "hardness measurement (Brinell HBW)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "hardness screening across alloy compositions and aging conditions",
+      "key_findings": "Hardness nearly flat at ~200 HBW over the 0–6 wt.% Al range."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "In Fig. 3a, the yield strength for the 0–4 wt.% Al region (including Fe-30Mn-1.2C-2Al) stays roughly between the 350 and 450 MPa gridlines; the exact printed YS value for the as-homogenized 2Al condition is not given in the text or figure.",
+    "In Fig. 4, the 2Al (pale cyan) data points form a cluster at roughly 460–600 MPa tensile strength with elongation to fracture spanning ~8% to ~55%; this includes the as-homogenized 2Al condition, but individual condition values are not printed.",
+    "The mechanical values plotted for the Fe-30Mn-1.2C-xAl RAP matrix (Fig. 3) are averages of three measurements for every material state, reproduced from an earlier publication (Ref. 49).",
+    "For alloys with intermediate Al contents (2–6 wt.% Al), the mechanical data fall between the behavior of the Al-free alloy (weakening/embrittlement on aging) and the 8 wt.% Al alloy (strengthening on aging); the 2Al variant shows a much smaller influence of aging on tensile behavior than the 8 wt.% Al variant.",
+    "As a single-phase austenitic TWIP (SIMPLEX) steel (30 wt.% Mn, 2 wt.% Al), the primary strain-hardening mechanism is dislocation-based hardening followed at higher loads by mechanical twinning (the TWIP effect).",
+    "A temperature-sensitive constitutive model for low-stacking-fault-energy fcc steels with mechanical twinning is presented (blocks b0036–b0100), but no sample-specific computational result is reported for this Fe-30Mn-1.2C-2Al as-homogenized sample."
+  ]
+}

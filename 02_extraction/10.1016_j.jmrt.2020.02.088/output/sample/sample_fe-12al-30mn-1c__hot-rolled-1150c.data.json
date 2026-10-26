@@ -1,0 +1,182 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-12al-30mn-1c__hot-rolled-1150c",
+      "paper_id": "10.1016_j.jmrt.2020.02.088",
+      "alloy_id": "alloy_fe-12al-30mn-1c",
+      "process_id": "proc_hot-rolled-1150c",
+      "sample_label": "12Al-30Mn-1C Hot-rolled",
+      "aliases": [
+        "12Al-30Mn-1C hot-rolled"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "1",
+      "type": "casting",
+      "method": "vacuum induction melting and casting into ingots",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum (100 kW vacuum induction furnace)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Resulting ingots had a mass of 0.5 kg."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing (thermo-mechanical)",
+      "method": "hot-rolling",
+      "temperature": "1150",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled to 5 mm flat products."
+    },
+    {
+      "processing_step_id": "step_water_quenching",
+      "sequence": "3",
+      "type": "cooling",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_hot_rolled_reference",
+      "overall_structure": "Hot-rolled (as-received) reference state obtained by hot-rolling the as-cast ingot at 1150 °C to 5 mm and water quenching; the study does not present dedicated micrographs of the hot-rolled 12Al-30Mn-1C condition (microstructural characterization focuses on the 600 °C and 800 °C tempered states).",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": []
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "props_hardness_hot_rolled_12al30mn1c",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": "Vickers method",
+        "other_conditions": "5 kg load applied for all indentations; 5 indentations per sample"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "324 HV",
+            "scale": "Vickers (HV)",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_optical_microscopy",
+      "microstructure_id": null,
+      "technique": "Optical microscopy",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Through-thickness embedding, grinding and polishing performed separately for hot-rolled and heat-treated samples",
+      "purpose": "Analyse all alloys at the different processing conditions, including the hot-rolling condition",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_vickers_macrohardness",
+      "microstructure_id": null,
+      "technique": "Vickers macro-hardness testing",
+      "instrument_or_setup": "Vickers hardness tester",
+      "measurement_conditions": "5 kg load applied for all indentations; 5 indentations per sample",
+      "purpose": "Macro-hardness measurement with statistical analysis of the different processing conditions",
+      "key_findings": "Hot-rolled 12Al-30Mn-1C hardness = 324 HV (Table 5)."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_calphad_phase_fraction_12al30mn1c",
+      "simulation_method": "CALPHAD thermodynamic equilibrium calculation of phase amounts vs temperature",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Equilibrium phase amounts (mol) computed as a function of temperature (0–1300 °C) for the 12Al-30Mn-1C composition",
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Phase volume fraction diagram (Fig. 12(d))",
+          "equation_role": "Predicts equilibrium phase fractions and austenite (FCC_A1) thermodynamic stability versus temperature, indicating the gradient between hot-rolling (1150 °C) and tempering equilibria",
+          "parameters": [
+            {
+              "name": "FCC_A1 amount",
+              "value": "~0.72 mol near 1000 °C",
+              "unit": "mol"
+            },
+            {
+              "name": "BCC_2SL amount",
+              "value": "~0.80 mol plateau between roughly 400 and 600 °C",
+              "unit": "mol"
+            },
+            {
+              "name": "KAPPA_E21 amount",
+              "value": "~0.20 mol up to about 300 °C",
+              "unit": "mol"
+            }
+          ],
+          "model_note": "Shows that for 12Al alloys the austenite (FCC_A1) stability is lower at 800 °C than at 1150 °C, used to explain tempering-induced austenite decomposition."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Nominal composition of the alloy is 12 wt% Al, 30 wt% Mn, 1 wt% C, Fe balance, which falls within the tested ranges of Table 1 (Al 9–12, Mn 10–20–30, C 0.4–1 wt%).",
+    "This sample represents the hot-rolled (as-received) reference condition (hot-rolling at 1150 °C to 5 mm flat products followed by water quenching), which is the baseline to which all 600 °C and 800 °C tempering treatments (30 min, water quenched) are compared.",
+    "For the same alloy (12Al-30Mn-1C) the 800 °C tempered condition reached 352 HV (Table 5), but that value belongs to a different (tempered) sample and is not part of this hot-rolled sample.",
+    "Minitab18 software was used to verify the consistency of acquired hardness data, with outliers excluded before plotting.",
+    "The paper reports that at 800 °C the 12Al-30Mn-1C austenite grains were fully spinodally decomposed with the finest and least dense acicular κ-carbide network (Fig. 8(e),(f)), but these findings pertain to the tempered state, not to this hot-rolled sample."
+  ]
+}

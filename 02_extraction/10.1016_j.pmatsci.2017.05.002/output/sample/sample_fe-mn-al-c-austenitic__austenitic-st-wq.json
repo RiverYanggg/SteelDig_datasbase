@@ -1,0 +1,837 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-mn-al-c-austenitic__austenitic-st-wq",
+      "paper_id": "10.1016_j.pmatsci.2017.05.002",
+      "alloy_id": "alloy_fe-mn-al-c-austenitic",
+      "process_id": "proc_austenitic-st-wq",
+      "sample_label": "solution treated and water quenched",
+      "aliases": [
+        "ST+WQ austenitic steel",
+        "solution treated and water quenched condition"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "b0107 states age-hardenable austenitic Fe-Mn-Al-C cold rolled strips are solution treated at 900–1100 °C in the single austenite phase area; b0118 gives solution treatment temperatures ~900–1100 °C; b0230/b0235 report solution treatment of the Fe-30Mn-1.2C-xAl series (solutionized 1100 °C/2 h, water quenched samples).",
+        "block_id": [
+          "b0107",
+          "b0118",
+          "b0230",
+          "b0235"
+        ]
+      },
+      "processing_step_id": "step_solution_treatment",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "solution treatment (solutionizing)"
+      },
+      "temperature": {
+        "value": "900–1100 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Solution treatment is carried out in the single austenite (γ) phase area. For the reviewed tensile series the steels were solutionized at 1100 °C for 2 h (Fig. 27) or at 1000 °C/1 h (Fig. 22a). Cold rolled strips of age-hardenable austenitic Fe-Mn-Al-C steels are solution treated in this range prior to quenching."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0107 states the solution treated strips are quenched in water, oil or other quench media; b0118 states austenitic steels are usually fast cooled (water quenched) from solution treatment temperatures (~900–1100 °C) to room temperature to avoid coarse κ-carbide and/or α-particles.",
+        "block_id": [
+          "b0107",
+          "b0118"
+        ]
+      },
+      "processing_step_id": "step_water_quenching",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "cooling"
+      },
+      "method": {
+        "value": "water quenching"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": {
+        "value": "water"
+      },
+      "heating_or_cooling_rate": {
+        "value": "fast cooling"
+      },
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Fast cooling (water quenching) from the solution treatment temperature to room temperature to avoid formation of coarse intergranular κ-carbide and/or α-particles. Quenching may be in water, oil or other quench media."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "b0302 states the solution treated austenitic microstructure is a single γ-phase with SROs or nano-sized κ0-carbides distributed in the matrix, depending on composition and cooling rate; b0118/b0255 describe water quenching producing a single austenite phase with SROs; b0127 reports SRO size <2 nm in solution treated and water quenched Fe–28Mn–9Al–0.8C and Fe-30Mn-8Al-1.2C; b0122 gives coherency and lattice misfit <3%; b0128 states high Al/C alloys form κ' during water quenching.",
+        "block_id": [
+          "b0118",
+          "b0122",
+          "b0127",
+          "b0128",
+          "b0255",
+          "b0302"
+        ]
+      },
+      "structure_id": "struct_single_austenite_st_wq",
+      "overall_structure": {
+        "value": "Single-phase austenite (γ) with short-range orders (SROs) or uniformly distributed nano-sized κ'-carbides in the matrix, the decomposition products of austenite depending on the Al and C contents and on the cooling rate after solution treatment. Alloys with high Al and C form κ' directly during water quenching; alloys with lower Al develop only SRO."
+      },
+      "number_of_phases": {
+        "value": 1
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_austenite_matrix",
+          "region": {
+            "value": "bulk matrix"
+          },
+          "related_sequence": {
+            "value": "2"
+          },
+          "phases_present": [
+            {
+              "phase_name": {
+                "value": "austenite (γ)"
+              },
+              "crystal_structure": {
+                "value": "FCC"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "equiaxed polygonal grains containing annealing twins"
+              },
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": {
+                "value": "κ'-carbide (SRO / L'12-ordered metastable (Fe,Mn)3AlCx, x<1)"
+              },
+              "crystal_structure": {
+                "value": "ordered FCC L'12 (perovskite-type E21)"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "coherent nano-sized particles / short-range ordered zones"
+              },
+              "grain_size": {
+                "value": "<2 nm (SRO size)"
+              },
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_kappa_prime",
+              "type": {
+                "value": "κ'-carbide (metastable (Fe,Mn)3AlCx, x<1)"
+              },
+              "size": {
+                "value": {
+                  "value": "<2 nm"
+                },
+                "unit": {
+                  "value": "nm"
+                }
+              },
+              "distribution": {
+                "value": "randomly distributed / homogeneous within the austenite matrix"
+              },
+              "coherency": {
+                "value": "coherent with the austenite matrix (lattice misfit < 3%)"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "source": {
+        "reason": "b0122 gives the cube-on-cube orientation relationship and lattice misfit <3% for coherent κ' in austenite; b0124 gives the precipitation sequence; b0167 gives lattice parameters and coherence; b0214 describes glide plane softening by SRO; b0186 states planar glide dominance.",
+        "block_id": [
+          "b0122",
+          "b0124",
+          "b0167",
+          "b0186",
+          "b0214"
+        ]
+      },
+      "interface_set_id": "iface_gamma_kappa_prime",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_gamma_kappa_coherent",
+          "microstructure_id": "micro_austenite_matrix",
+          "phase_1_name": {
+            "value": "austenite (γ)"
+          },
+          "phase_2_name": {
+            "value": "κ'-carbide"
+          },
+          "coherence": {
+            "value": "coherent (lattice misfit < 3%); cube-on-cube orientation relationship [100]κ//[100]γ and [010]κ//[010]γ"
+          }
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "int_sro_dislocation",
+          "microstructure_id": "micro_austenite_matrix",
+          "interaction_type": {
+            "value": "dislocation–SRO/κ'-carbide interaction (glide plane softening, shearing of κ'-carbides)"
+          },
+          "qualitative_or_quantitative_description": {
+            "value": "The initial dislocation moving through the FCC lattice destroys the SRO and faces higher resistance than following dislocations, localising plastic deformation into slip bands (glide plane softening); in highly alloyed/aged steels cuboidal κ'-carbides are sheared by dislocations, enhancing planar slip."
+          }
+        }
+      ],
+      "slip_behavior": {
+        "value": "Planar glide dominates the plastic deformation of austenitic Fe-Mn-Al-C steels regardless of SFE and aging conditions; no dislocation cell formation is observed."
+      },
+      "phase_evolution": {
+        "value": "γ → γ' + γ'' → γ' + L12 (SRO) → γ' + κ' (spinodal decomposition followed by an ordering reaction); the L12 phase transforms to the E21 κ'-carbide by further ordering of carbon atoms."
+      },
+      "interface_notes": {
+        "value": "In the γ (FCC) phase the lattice parameter of the κ phase is 0.383–0.386 nm and γ/κ interfaces are coherent (lattice mismatch < 3%), whereas in the α (BCC) phase the κ lattice parameter is 0.387–0.389 nm and α/κ interfaces are semicoherent (mismatch 6%)."
+      }
+    }
+  ],
+  "properties": [
+    {
+      "source": {
+        "reason": "Tensile property entries are for austenitic Fe-Mn-Al-C steels in the solution treated and water quenched condition (Fig. 25, Table 2, and Section 7.2.1).",
+        "block_id": [
+          "b0043",
+          "b0045",
+          "b0222",
+          "b0229",
+          "b0230",
+          "figure_025"
+        ]
+      },
+      "property_set_id": "prop_tensile_st_wq_austenitic",
+      "measurement_conditions": {
+        "temperature": {
+          "value": "room temperature"
+        },
+        "temperature_unit": {
+          "value": "°C"
+        },
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": {
+          "value": "tensile specimens; geometry normalised to ASTM E-8 (gauge length 50 mm, width 12.5 mm, thickness 1 mm) for the TE comparison of Fig. 25"
+        },
+        "test_standard": {
+          "value": "ASTM E-8 (for the TE conversion used in Fig. 25)"
+        },
+        "other_conditions": {
+          "value": "solution treated and water quenched condition; tensile direction parallel to strip rolling direction"
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "source": {
+                "reason": "b0018 gives the yield-strength range of the Fe-Mn-Al-C low-density steel class (of which the austenitic steels are the most promising and are reviewed in the solution treated + water quenched state).",
+                "block_id": [
+                  "b0018"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "0.4–1.0 GPa"
+              },
+              "unit": {
+                "value": "GPa"
+              },
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "source": {
+                "reason": "Table 2 (classification of low density steels) gives the tensile property of the austenitic class as UTS ~800–1500 MPa.",
+                "block_id": [
+                  "b0043",
+                  "b0045",
+                  "figure_unlabelled_002"
+                ]
+              },
+              "direction": {
+                "value": "parallel to strip rolling direction"
+              },
+              "value": {
+                "value": "800–1500 MPa"
+              },
+              "unit": {
+                "value": "MPa"
+              },
+              "uncertainty": null
+            },
+            {
+              "source": {
+                "reason": "Fig. 25 banana diagram for solution-treated and water-quenched strips places the γ single-phase austenitic field at UTS ~700–1250 MPa.",
+                "block_id": [
+                  "b0222",
+                  "figure_025"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "700–1250 MPa"
+              },
+              "unit": {
+                "value": "MPa"
+              },
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "source": {
+                "reason": "Table 2 gives total elongation TE ~30–80% for the austenitic class.",
+                "block_id": [
+                  "b0043",
+                  "b0045",
+                  "figure_unlabelled_002"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "30–80%"
+              },
+              "unit": {
+                "value": "%"
+              },
+              "uncertainty": null
+            },
+            {
+              "source": {
+                "reason": "Fig. 25 banana diagram places the γ single-phase austenitic field at TE ~50–100% for solution-treated and water-quenched strips.",
+                "block_id": [
+                  "b0222",
+                  "figure_025"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "50–100%"
+              },
+              "unit": {
+                "value": "%"
+              },
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": {
+            "source": {
+              "reason": "b0028 gives the elastic modulus of austenitic steels as 195 GPa (γ-Fe) vs 207 GPa for α-Fe; b0036 reports that a decrease of around 20% in Young's modulus is observed relative to HSLA (E 210 GPa) for cold rolled Fe-20Mn-(7–10)Al-(0.7–1.2)C strips.",
+              "block_id": [
+                "b0028",
+                "b0036"
+              ]
+            },
+            "value": {
+              "value": "195 GPa (austenite, γ-Fe)"
+            },
+            "unit": {
+              "value": "GPa"
+            }
+          },
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "source": {
+                "reason": "b0202/b0186/b0213 describe the strain hardening behaviour of solution treated austenitic Fe-Mn-Al-C steels (planar glide dominance; negative work hardening in highly Al/C-alloyed water quenched steels).",
+                "block_id": [
+                  "b0186",
+                  "b0202",
+                  "b0213"
+                ]
+              },
+              "value": {
+                "value": "Strain hardening is dominated by planar glide/planar slip; strain hardening rate of Al-containing austenitic steels is always lower than that of Al-free Mn TWIP steel, and highly alloyed or peak-aged ST+WQ steels can show near-horizontal or negative work hardening."
+              },
+              "unit": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": {
+          "source": {
+            "reason": "b0028 gives the density of the austenitic structure as 8.15 g/cm3 for γ-Fe; b0030 gives the density equation for Fe-Mn-Al-C austenitic alloys.",
+            "block_id": [
+              "b0028",
+              "b0030"
+            ]
+          },
+          "value": {
+            "value": "8.15 g/cm3 (γ-Fe austenite); ρ_austenitic (g/cm3) = 8.15 − 0.101(wt%Al) − 0.41(wt%C) − 0.0085(wt%Mn)"
+          },
+          "unit": {
+            "value": "g/cm3"
+          }
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "value": "far inferior to 304 stainless steel; comparable to conventional high strength steels",
+          "source": {
+            "reason": "b0289 states the corrosion resistance of Fe–Mn–Al–C alloys in aqueous environments is far inferior to 304 stainless steel and comparable to conventional high strength steels.",
+            "block_id": [
+              "b0289"
+            ]
+          }
+        },
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "source": {
+        "reason": "Impact-toughness/fracture-toughness data for austenitic Fe-Mn-Al-C steels in the solution treated condition.",
+        "block_id": [
+          "b0263",
+          "b0270"
+        ]
+      },
+      "property_set_id": "prop_impact_toughness_st_wq",
+      "measurement_conditions": {
+        "temperature": {
+          "value": "room temperature"
+        },
+        "temperature_unit": {
+          "value": "°C"
+        },
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": {
+          "value": "Charpy V-notch (CVN) impact specimens"
+        },
+        "test_standard": null,
+        "other_conditions": {
+          "value": "as-solution treated (solutionized + quenched) condition"
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "source": {
+            "reason": "b0263 states solution treated Fe-Mn-Al-C(Si) steels show a high CVN impact energy of 200 J/cm2 at room temperature; b0270 gives the dynamic fracture toughness of 71.5 J/cm2 in the solution-treated condition.",
+            "block_id": [
+              "b0263",
+              "b0270"
+            ]
+          },
+          "value": {
+            "value": "200 J/cm2 (CVN impact energy at room temperature); dynamic fracture toughness 71.5 J/cm2 in the solution-treated condition"
+          },
+          "unit": {
+            "value": "J/cm2"
+          }
+        },
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "source": {
+        "reason": "b0263/b0271 state that the impact toughness of austenitic Fe-Mn-Al-C steels in the solution treated and water quenched state (~200 J/cm2 at room temperature) is equivalent to a typical austenitic stainless steel, better than conventional AHSS steels but lower than austenite stainless steels.",
+        "block_id": [
+          "b0263",
+          "b0271"
+        ]
+      },
+      "performance_id": "perf_impact_toughness_st_wq",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": {
+          "value": "impact loading (Charpy V-notch)"
+        },
+        "environment": {
+          "value": "room temperature"
+        }
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": {
+          "value": "austenitic Cr-Ni stainless steel"
+        },
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": {
+          "value": "CVN impact energy at room temperature"
+        },
+        "improvement_percentage": null
+      }
+    },
+    {
+      "source": {
+        "reason": "b0273 states the E_spec of Fe-Mn-Al-C steels is about 0.5 J/mm3 for Al >7%, similar to Mn TWIP steels and ~50% higher than conventional deep drawing steels.",
+        "block_id": [
+          "b0273"
+        ]
+      },
+      "performance_id": "perf_specific_energy_absorption_st_wq",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": {
+          "value": "dynamic compression (high strain rate 10^3–10^4 /s)"
+        },
+        "environment": {
+          "value": "room temperature"
+        }
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": {
+          "value": "Mn TWIP steel and conventional deep drawing steels (DC04, HC300LA, IF)"
+        },
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": {
+          "value": "specific energy absorption (E_spec)"
+        },
+        "improvement_percentage": {
+          "value": "~50% higher than conventional deep drawing steels (0.16–0.25 J/mm3)"
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "b0281 states that in the as-quenched condition Fe-Mn-Al-C steels have a higher fatigue strength than austenitic Cr–Ni steels but are inferior to martensitic Cr steels.",
+        "block_id": [
+          "b0281"
+        ]
+      },
+      "performance_id": "perf_fatigue_strength_comparison",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": {
+          "value": "cyclic loading (constant strain amplitude)"
+        },
+        "environment": {
+          "value": "room temperature"
+        }
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": {
+          "value": "austenitic Cr-Ni steel and martensitic Cr steel"
+        },
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": {
+          "value": "fatigue strength"
+        },
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "b0127 and b0189 report TEM detection of <2 nm SROs (weak superlattice reflections) in solution treated and water quenched austenitic Fe-Mn-Al-C steels.",
+        "block_id": [
+          "b0127",
+          "b0189"
+        ]
+      },
+      "characterization_id": "char_tem_sro",
+      "microstructure_id": "micro_austenite_matrix",
+      "technique": {
+        "value": "transmission electron microscopy (TEM)"
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": {
+        "value": "solution treated and water quenched specimens"
+      },
+      "purpose": {
+        "value": "to detect short-range ordering (weak superlattice reflections) and L'12 ordering in the austenite"
+      },
+      "key_findings": {
+        "value": "SROs about 2 nm in size were detected by weak superlattice reflections, randomly distributed in solution treated and water quenched Fe–28Mn–9Al–0.8C and Fe-30Mn-8Al-1.2C steels."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0036/b0038 state the Young's moduli were measured using the resonance method.",
+        "block_id": [
+          "b0036",
+          "b0038"
+        ]
+      },
+      "characterization_id": "char_resonance_emodulus",
+      "microstructure_id": null,
+      "technique": {
+        "value": "resonance method (dynamic Young's-modulus measurement)"
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "to measure the Young's modulus of Fe-Mn-Al-C steels after different processing steps"
+      },
+      "key_findings": {
+        "value": "The E moduli of Fe-(15–28)Mn-(7–10)Al-(0.7–1.2)C steels and of as-cast Fe-(5–40)Mn-10Al-1C steels were measured using the resonance method."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0108/b0117 describe optical microstructures of austenitic low density steels in hot rolled and cold rolled + annealed conditions.",
+        "block_id": [
+          "b0108",
+          "b0117"
+        ]
+      },
+      "characterization_id": "char_optical_microscopy",
+      "microstructure_id": null,
+      "technique": {
+        "value": "optical microscopy"
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "to characterise the microstructure of austenitic low density steels"
+      },
+      "key_findings": {
+        "value": "The austenitic Fe-Mn-Al-C microstructure after hot rolling generally shows an equiaxed austenitic grain structure containing annealing twins."
+      }
+    }
+  ],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "b0073/b0092 describe the FactSage 6.4 and CALPHAD calculations of Fe-Mn-Al-C phase diagrams; b0083 describes the deviation from experiments.",
+        "block_id": [
+          "b0073",
+          "b0083",
+          "b0092"
+        ]
+      },
+      "computation_id": "comp_calphad_phase_equilibria",
+      "simulation_method": {
+        "value": "CALPHAD thermodynamic calculation of phase equilibria"
+      },
+      "software_used": {
+        "value": "FactSage 6.4; Thermo-Calc Steels database"
+      },
+      "potential_model_or_database": {
+        "value": "FSstel database; Chin et al. Fe–Al–Mn–C description; Connétable et al. Fe–Al–C database"
+      },
+      "boundary_and_initial_conditions": {
+        "value": "graphite formation suppressed; isothermal sections at 900 °C and polythermal sections for Fe-Mn-Al-C compositions"
+      },
+      "validation_against_experiment": {
+        "value": "Calculations from different databases are similar but deviate from experimental phase boundaries, especially at high Mn and Al contents; calculated formation temperatures of α, (γ+κ) and M23C6 are systematically lower than measured."
+      },
+      "analytical_models": []
+    },
+    {
+      "source": {
+        "reason": "b0030 gives Eq. (2) for the density of austenitic Fe-Mn-Al-C alloys; b0139/b0140 give the critical lattice constant and Eq. (3) for intragranular κ0 precipitation; b0141 states Al >7% and C >0.7% are needed.",
+        "block_id": [
+          "b0030",
+          "b0139",
+          "b0140",
+          "b0141"
+        ]
+      },
+      "computation_id": "comp_analytical_models_austenitic",
+      "simulation_method": {
+        "value": "empirical/analytical composition–property models"
+      },
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": {
+            "value": "Austenitic density equation"
+          },
+          "equation_role": {
+            "value": "density of Fe-Mn-Al-C austenitic alloys as a function of composition (Eq. 2)"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "Al coefficient"
+              },
+              "value": {
+                "value": "-0.101"
+              },
+              "unit": {
+                "value": "g/cm3 per wt% Al"
+              }
+            },
+            {
+              "name": {
+                "value": "C coefficient"
+              },
+              "value": {
+                "value": "-0.41"
+              },
+              "unit": {
+                "value": "g/cm3 per wt% C"
+              }
+            },
+            {
+              "name": {
+                "value": "Mn coefficient"
+              },
+              "value": {
+                "value": "-0.0085"
+              },
+              "unit": {
+                "value": "g/cm3 per wt% Mn"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "ρ_austenitic (g/cm3) = 8.15 − 0.101(wt%Al) − 0.41(wt%C) − 0.0085(wt%Mn); 1.3% density reduction per 1 wt% Al addition."
+          }
+        },
+        {
+          "model_name": {
+            "value": "Huang composition boundary for intragranular κ0 precipitation"
+          },
+          "equation_role": {
+            "value": "composition boundary for precipitation of the intragranular κ0 phase in Fe-Mn-Al-C alloys (Eq. 3)"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "critical austenite lattice constant"
+              },
+              "value": {
+                "value": "~0.3670"
+              },
+              "unit": {
+                "value": "nm"
+              }
+            },
+            {
+              "name": {
+                "value": "austenite lattice constant increase"
+              },
+              "value": {
+                "value": "0.00094"
+              },
+              "unit": {
+                "value": "nm per %Al"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "0.098(wt%Al) + 0.208(wt%C) = 1 − 0.0054(wt%Mn); intragranular κ0 precipitates only when Al > 7% and C > 0.7%."
+          }
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Water quenching of austenitic Fe-Mn-Al-C steels can produce a single austenite phase with SROs that exhibits a high tensile strength and high ductility (b0255).",
+    "Fast cooling (water quenching) from solution treatment is used to avoid formation of coarse intergranular κ-carbide and/or α-particles; slow cooling or coiling produces κ-carbides about 3–6 times larger than those obtained after solutionizing, quenching and aging at around 550 °C, decreasing ductility and toughness (b0118).",
+    "The effective Al composition window for the best combination of mechanical properties in austenitic Fe-Mn-Al-C steels is narrow (between 7 and 10% Al); typical compositions are 15–30% Mn, 7–10% Al and 0.7–1.2% C with balance Fe (b0305).",
+    "The strength decreases but elongation increases as the solution temperature is increased (due to a larger austenite grain size); the strength increases as the cooling rate after solution treatment is decreased, due to the formation of a higher density of SRO or κ0-precipitates (b0239).",
+    "For Fe-30Mn-1.2C-xAl steels in the range 0–9% Al the microstructure after solution treatment is a single-phase austenite; δ-ferrite is introduced when the Al content exceeds 10% (b0230).",
+    "In alloys containing high Al (>7%) and C (>1.0%), metastable κ-carbides (L'12) may form during quenching after solution treatment, increasing strength without impairing elongation (b0230).",
+    "The addition of 2.5% Al to an Fe-18Mn-0.6C alloy suppresses deformation-induced twinning in the solution heat-treated and water quenched condition (b0182)."
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-11al-1.2c__cr-30",
+      "paper_id": "10.1016_j.matchar.2021.111013",
+      "alloy_id": "alloy_fe-30mn-11al-1.2c",
+      "process_id": "proc_cr-30",
+      "sample_label": "30% rolling reduction",
+      "aliases": [
+        "30% cold rolled",
+        "Fig. 3(b)",
+        "Fig. 4(b)"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "Section 2 (Material and experimental procedure) states that the sheets were cold rolled after solution treatment at 1100 °C for 1 h.",
+        "block_id": [
+          "b0014"
+        ]
+      },
+      "processing_step_id": "step_solution_treatment",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "solution treatment"
+      },
+      "temperature": {
+        "value": "1100"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": {
+        "value": "1 h"
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Sheets with different thickness were solution treated at 1100 °C for 1 h prior to cold rolling (parent process proc_solution-1100c-1h)."
+      }
+    },
+    {
+      "source": {
+        "reason": "The sample identity is the 30% cold-rolled condition; text states the sheets were cold rolled to reductions of 10% to 90%, and b0024/b0031 report the 30% condition character.",
+        "block_id": [
+          "b0014",
+          "b0024",
+          "b0031"
+        ]
+      },
+      "processing_step_id": "step_cold_rolling_30",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "mechanical processing"
+      },
+      "method": {
+        "value": "cold rolling"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": {
+        "value": "30% (ε = 0.3)"
+      },
+      "processing_steps_notes": {
+        "value": "Sheets cold rolled to 30% thickness reduction after solution treatment; belongs to the low-to-medium reduction stage (10%–50%). Its microstructure is the Taylor-lattice-type low energy dislocation structure with refined slip bands (average slip band spacing ~231 nm)."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "b0023 describes stage I (10%–50%) as the Taylor-lattice-type LEDS from planar glide; b0024 gives the multiple-slip-band Taylor lattice, slip band spacing (30% = 231 nm) and Fig. 4(b) TEM for the 30% condition; Fig. 3(b) optical micrograph shows denser slip bands at 30%; Fig. 2/b0022 provides the retained austenite + κ'-carbide constituent.",
+        "block_id": [
+          "b0022",
+          "b0023",
+          "b0024",
+          "b0031",
+          "b0032",
+          "figure_003",
+          "figure_004"
+        ]
+      },
+      "structure_id": "struct_cr30_taylor_lattice",
+      "overall_structure": {
+        "value": "Typical low energy dislocation structure (LEDS) of Taylor-lattice type resulting from planar dislocation glide (stage I, 10%–50% rolling reduction); composed of multiple interacting slip bands whose spacing gradually refines. Microstructure is essentially austenite with uniformly distributed nano-sized κ'-carbides; grains remain roughly equiaxed."
+      },
+      "number_of_phases": {
+        "value": 2
+      },
+      "microstructure_counts": {
+        "value": "Taylor lattice of multiple slip bands; average slip band spacing 231 nm (30% reduction)."
+      },
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_cr30_slipband_taylorlattice",
+          "region": {
+            "value": "longitudinal section (RD × ND); bulk"
+          },
+          "related_sequence": {
+            "value": "2"
+          },
+          "phases_present": [
+            {
+              "phase_name": {
+                "value": "austenite (γ)"
+              },
+              "crystal_structure": {
+                "value": "FCC"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "matrix containing multiple intersecting slip bands (Taylor lattice)"
+              },
+              "grain_size": null,
+              "texture": {
+                "value": "weak; Cu {112}<111> and S {123}<111> components increase at low-to-medium reductions"
+              }
+            },
+            {
+              "phase_name": {
+                "value": "κ'-carbide"
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": {
+                "value": "nano-sized, uniformly distributed in the austenitic matrix"
+              },
+              "grain_size": {
+                "value": "nano-sized"
+              },
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": {
+                "value": "dislocations / slip bands (planar glide, Taylor lattice)"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": {
+                "value": "dislocation pile-ups at intersections of slip bands"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": {
+              "value": "almost random initially; Cu and S components increase at low-to-medium rolling reduction"
+            }
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "kappa_prime_carbide",
+              "type": {
+                "value": "κ'-carbide"
+              },
+              "size": {
+                "value": "nano-sized"
+              },
+              "distribution": {
+                "value": "uniformly distributed in the austenitic matrix"
+              },
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

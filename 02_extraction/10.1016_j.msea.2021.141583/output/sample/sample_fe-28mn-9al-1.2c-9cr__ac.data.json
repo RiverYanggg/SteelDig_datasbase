@@ -1,0 +1,383 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-9al-1.2c-9cr__ac",
+      "paper_id": "10.1016_j.msea.2021.141583",
+      "alloy_id": "alloy_fe-28mn-9al-1.2c-9cr",
+      "process_id": "proc_ac",
+      "sample_label": "as-cast 9Cr strip",
+      "aliases": [
+        "9Cr as-cast",
+        "as-cast 9Cr"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_near_rapid_solidification",
+      "sequence": "1",
+      "type": "solidification",
+      "method": "centrifugal casting under near-rapid solidification (liquid metal poured into a copper mold at a rotating speed of 600 r/min)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "Ar",
+      "cooling_medium": "copper mold",
+      "heating_or_cooling_rate": "about 5×10^3 K/s (calculated maximum cooling rate)",
+      "reduction_ratio": null,
+      "processing_steps_notes": "An alloy ingot made from high purity Fe/Mn/Al/C/Cr was reheated to melt by an induction coil, then the liquid metal was poured into a copper mold at a rotating speed of 600 r/min in Ar atmosphere; the obtained strip size was (60–80) mm × 60 mm × 2.5 mm. This as-cast terminal state received no post-solidification heat treatment (annealing at 550 °C for 5 h applies to separate annealed samples)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_as_cast_9Cr",
+      "overall_structure": "Two-phase austenite (γ) + δ-ferrite; austenite is the major matrix phase and δ-ferrite uniformly distributes in the austenite matrix. Cr addition promotes ferrite (δ(110) intensity increases). No κ-carbide superlattice in the austenite of 9Cr; instead Cr23C6 carbides form at austenite grain boundaries, and nano-scale DO3 phase appears in the ferrite.",
+      "number_of_phases": "2 main phases (austenite γ + ferrite δ), plus Cr23C6 carbide at austenite grain boundaries and DO3 ordered phase in ferrite",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_austenite_matrix_9Cr",
+          "region": "matrix",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "austenite, lattice constant 3.55 Å",
+              "volume_fraction": null,
+              "morphology": "major continuous matrix phase",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "Cr23C6",
+              "crystal_structure": "cubic, lattice constant 1.054 nm",
+              "volume_fraction": null,
+              "morphology": "granular or banded, located at austenite grain boundaries",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "very high, but slightly lower than that of the 6Cr strip (no κ-carbide superlattice in SADP)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_Cr23C6_9Cr",
+              "type": "Cr23C6 carbide",
+              "size": {
+                "value": "~100",
+                "unit": "nm (width)"
+              },
+              "distribution": "at austenite grain boundaries",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_kappa_9Cr",
+              "type": "κ-carbide",
+              "size": null,
+              "distribution": "suppressed; no κ-carbide superlattice observed in austenite SADP of the as-cast 9Cr strip",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_ferrite_9Cr",
+          "region": "dispersed particles in the austenite matrix (block-like, some interconnected)",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "ferrite (bcc, δ)",
+              "volume_fraction": "19.6 vol%",
+              "morphology": "block-like, some particles linked/interconnected forming irregular networks in the austenite matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "DO3 (ordered phase in ferrite)",
+              "crystal_structure": "DO3 ordered structure (superlattice reflections with hkl all odd or all even); zone [011]δ+[011]DO3",
+              "volume_fraction": null,
+              "morphology": "nano-scale particles clearly appearing in ferrite",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "only a few dislocations occasionally observed in the ferrite (in all strips)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_DO3_9Cr",
+              "type": "DO3 ordered phase (nano-scale)",
+              "size": null,
+              "distribution": "within the ferrite phase",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_9Cr_as_cast",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_Cr23C6_austenite_gb",
+          "microstructure_id": "micro_austenite_matrix_9Cr",
+          "phase_1_name": "Cr23C6",
+          "phase_2_name": "austenite (γ) grain boundary",
+          "coherence": null
+        },
+        {
+          "interface_id": "if_ferrite_austenite",
+          "microstructure_id": "micro_ferrite_9Cr",
+          "phase_1_name": "δ-ferrite",
+          "phase_2_name": "austenite (γ)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_Cr23C6_cracking_9Cr",
+          "microstructure_id": "micro_austenite_matrix_9Cr",
+          "interaction_type": "intergranular cracking along grain-boundary Cr23C6 carbides",
+          "qualitative_or_quantitative_description": "Cr23C6 carbides in granular or banded shapes with a width of about 100 nm at austenite grain boundaries may lead to inter-granular cracking along coarsening carbides at the grain boundary; formation of Cr23C6 carbides at austenite grain boundaries is a reason for the lowest ductility of as-cast and annealed 9 wt% Cr strips."
+        },
+        {
+          "interaction_id": "di_ferrite_interface_dislocation",
+          "microstructure_id": "micro_ferrite_9Cr",
+          "interaction_type": "δ-ferrite/austenite phase interfaces block dislocation propagation",
+          "qualitative_or_quantitative_description": "Increase of δ-ferrite fraction in Cr-containing strips blocks dislocation propagation due to more phase-interface areas, which may decrease the plasticity."
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": "Under near-rapid solidification, δ-ferrite first nucleated and grew from the melt (FA solidification mode: L → L+δ → L+δ+γ → δ+γ). With Cr addition the ferrite (δ) fraction increases and κ-carbide precipitation is suppressed; at 9 wt% Cr, Cr23C6 carbides form at austenite grain boundaries instead of κ-carbides.",
+      "interface_notes": "The 9Cr strip shows the largest ferrite contribution (strongest δ-related XRD reflections) and forms Cr23C6 at austenite grain boundaries; no κ-carbide superlattice is observed in its austenite SADP."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_tensile_as_cast_9Cr",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1 × 10^-3 s^-1",
+        "specimen_geometry": "gauge size of 20 mm × 4 mm × 1 mm",
+        "test_standard": null,
+        "other_conditions": "Tensile tests by MTS Criterion Model 44 (10 kN capacity); values averaged over 3 measurements"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "740 ± 8 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 8 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "979 ± 22 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 22 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "20.3 ± 5 %",
+              "unit": "%",
+              "uncertainty": "± 5 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering and true stress–strain and strain hardening rate curves for as-cast 0Cr/3Cr/6Cr/9Cr are presented in Fig. 3; the 9Cr curve attains the highest stress (close to 1000 MPa) with a small load drop before fracture and terminates near 22–26% strain.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "direction": null,
+              "value": "2385 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.43",
+          "unit": "g/cm3"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_as_cast_9Cr_comparison",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-28mn-9al-1.2c-0cr (Cr-free / 0Cr strip)",
+        "benchmark_process_id": "proc_ac",
+        "benchmark_sample_id": "sample 0Cr as-cast strip",
+        "comparison_metric": "yield strength, ultimate tensile strength and total elongation",
+        "improvement_percentage": "As-cast yield strength of 9Cr (740 MPa) is even higher than that of the Cr-free 0Cr strip (724 MPa); however the total elongation of 9Cr (20.3%) is the lowest among the as-cast strips (vs 40.8% for 0Cr). UTS of 9Cr (979 MPa) is higher than that of 0Cr (924 MPa)."
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_OM",
+      "microstructure_id": "micro_ferrite_9Cr",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": "Zeiss Axio imager A2m",
+      "measurement_conditions": "as-cast 9Cr strip polished metallographic section; 20 µm scale bars",
+      "purpose": "Characterize ferrite distribution/fraction and morphology in the austenite matrix",
+      "key_findings": "9Cr as-cast strip shows the densest population of block-like ferrite; some particles are linked/interconnected forming irregular networks in the austenite matrix; ferrite morphologies changed from rod-like (0Cr) to block-like with increasing Cr."
+    },
+    {
+      "characterization_id": "char_TEM",
+      "microstructure_id": "micro_austenite_matrix_9Cr",
+      "technique": "Transmission electron microscopy (TEM) with selected-area diffraction patterns (SADP)",
+      "instrument_or_setup": "JEM-2100F operated at 200 kV",
+      "measurement_conditions": "BF and DF imaging of austenite and ferrite in as-cast strips; 500 nm scale bars (200 nm for DF of 0Cr)",
+      "purpose": "Observe dislocations, κ-carbides, Cr23C6 and DO3 phases in austenite and ferrite",
+      "key_findings": "High (but slightly lower than 6Cr) dislocation density in austenite of 9Cr with no κ-carbide superlattice; granular/banded Cr23C6 at austenite grain boundaries (SADP [011]Cr23C6); nano-scale DO3 phase in the ferrite (SADP [011]δ+[011]DO3)."
+    },
+    {
+      "characterization_id": "char_XRD",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "D/Max-2200, Cu target, operated at 40 kV and 40 mA",
+      "measurement_conditions": "scan rate of 4° per min",
+      "purpose": "Identify constituent phases and determine austenite lattice constant",
+      "key_findings": "As-cast 9Cr strip consists of austenite (γ) + ferrite (δ); δ(110) intensity is highest of the four traces; austenite lattice constant is 3.55 Å for the 9Cr strip."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "MTS Criterion Model 44 mechanical property tester with a 10 kN capacity",
+      "measurement_conditions": "specimen gauge 20 mm × 4 mm × 1 mm; strain rate 1 × 10^-3 s^-1; each test supported by more than three tensile specimens",
+      "purpose": "Measure yield strength, ultimate tensile strength, total elongation and strain hardening behavior",
+      "key_findings": "As-cast 9Cr strip: YS 740±8 MPa, UTS 979±22 MPa, TE 20.3±5 %; highest strain hardening rate (average 2385 MPa in steady stage) among as-cast strips."
+    },
+    {
+      "characterization_id": "char_ICP",
+      "microstructure_id": null,
+      "technique": "Inductively Coupled Plasma mass spectrometry (ICP)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Determine actual composition of the strips",
+      "key_findings": "9Cr strip measured composition: Mn 27.7, Al 9.5, C 1.3, Cr 9.3 wt.%, Fe balance."
+    },
+    {
+      "characterization_id": "char_density",
+      "microstructure_id": null,
+      "technique": "Electronic water displacement density measurement",
+      "instrument_or_setup": "SJ-600G Electronic Water Displacement Density Analyzer",
+      "measurement_conditions": null,
+      "purpose": "Measure average density of the strips",
+      "key_findings": "Measured average density of the 9Cr strip was 6.43 g/cm3."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_jade_xrd_analysis_9Cr",
+      "simulation_method": null,
+      "software_used": "JADE (XRD analysis software)",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "XRD lattice-parameter refinement by JADE",
+          "equation_role": "Determination of austenite lattice constant from XRD reflections",
+          "parameters": [
+            {
+              "name": "austenite lattice constant (9Cr strip)",
+              "value": "3.55",
+              "unit": "Å"
+            }
+          ],
+          "model_note": "JADE was used to analyze XRD results to obtain austenite lattice constants; value for the 9Cr strip is 3.55 Å."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "For the as-cast 9Cr strip, addition of 9 wt% Cr suppresses κ-carbide precipitation in austenite (no κ-carbide superlattice in the SADP) and instead Cr23C6 carbides precipitate at austenite grain boundaries, which is stated to be the main reason for the lowest ductility and high strain hardening rate of as-cast (and annealed) 9Cr strips.",
+    "The dislocation density in the austenite of the as-cast 9Cr strip is still very high but slightly lower than that of the 6Cr strip; the solubility-related effect of 9 wt% Cr (higher solid solubility of C, Cr23C6 precipitation) is cited to reduce dislocation formation relative to 3Cr/6Cr.",
+    "The as-cast strip is reported to be almost free of casting defects due to the higher feeding capacity of the melt under great centrifugal force, with any present casting defects randomly distributed.",
+    "Slip-band spacing/width statistics after tensile fracture (Fig. 12, Fig. 13) were measured only for the 0Cr and 6Cr strips (as-cast 0Cr ~90 nm spacing / 13.4 nm width; as-cast 6Cr ~80 nm spacing / 12.5 nm width), so no slip-band values are reported for the 9Cr as-cast strip."
+  ]
+}

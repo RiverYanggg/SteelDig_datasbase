@@ -1,0 +1,211 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-9al-0.9c__hr",
+      "paper_id": "10.1016_j.msea.2022.144324",
+      "alloy_id": "alloy_fe-28mn-9al-0.9c",
+      "process_id": "proc_hr",
+      "sample_label": null,
+      "aliases": [
+        "28Mn0Ni",
+        "HR",
+        "28Mn0Ni in HR condition"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "vacuum induction melting (VIM)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Three low-density steel grades with different Mn and Ni content were prepared by the vacuum induction melting route; the sound portion of the 30 kg ingot was used."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1423",
+      "temperature_unit": "K",
+      "duration": "2.5",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The sound portion of the 30 kg ingot was homogenized at 1423 K for 2.5 h prior to hot rolling."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1323",
+      "temperature_unit": "K",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "final hot rolled plate thickness ~13 mm",
+      "processing_steps_notes": "Hot rolled at 1323 K to a final plate thickness of about 13 mm; this processing condition is hereafter referred to as HR. The details of the hot rolling process were reported elsewhere [21]."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_28mn0ni_hr",
+      "overall_structure": "Single-phase austenitic (γ) low-density steel in the hot rolled (HR) condition; 28Mn0Ni is Ni-free and B2-free. Equiaxed γ-matrix grains with nearly random texture, similar grain size to the other two alloys. Among the three alloys, 28Mn0Ni contained the lowest volume fraction of κ-carbides.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_28mn0ni_hr_gamma",
+          "region": "bulk (as-hot-rolled plate)",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "single phase (essentially 1; predominant microstructure)",
+              "morphology": "equiaxed grains",
+              "grain_size": "5–7 μm"
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": null,
+              "volume_fraction": "lowest among the three alloys (28Mn0Ni < 28Mn5Ni < 15Mn5Ni)",
+              "morphology": null,
+              "grain_size": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "annealing twins (twin fraction ~28–40%; the higher-Mn LDS alloys contained a higher twin fraction than 15Mn5Ni)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "5–7",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "equiaxed; similar grain sizes among all three alloys",
+            "texture": "nearly random"
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "props_28mn0ni_hr",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "bulk specimen (Vickers hardness)",
+        "test_standard": "ASTM E-140-02",
+        "other_conditions": "AFFRI Vickers hardness tester; peak load 30 kg (~300 N); dwell time 15 s; hardness averaged over ten measurements per sample; HR-condition value reported in [21]"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk",
+            "value": "~256 ± 5 VHN",
+            "scale": "Vickers (VHN)",
+            "unit": "VHN",
+            "uncertainty": "± 5"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_vickers_hardness",
+      "microstructure_id": null,
+      "technique": "Vickers hardness testing",
+      "instrument_or_setup": "AFFRI Vickers hardness tester",
+      "measurement_conditions": "Peak load 30 kg (~300 N), dwell time 15 s, per ASTM E-140-02; average of ten measurements",
+      "purpose": "Evaluate bulk hardness of the alloys in HR, cold rolled and heat-treated conditions",
+      "key_findings": "28Mn0Ni in HR condition exhibited ~256 ± 5 VHN [21]"
+    },
+    {
+      "characterization_id": "char_ebsd_oim",
+      "microstructure_id": "micro_28mn0ni_hr_gamma",
+      "technique": "Orientation imaging microscopy (OIM)-EBSD",
+      "instrument_or_setup": "Zeiss Supra 55 FEG-Scanning electron microscope equipped with EDS and Nordley EBSD detectors (Oxford); TSL-OIM software",
+      "measurement_conditions": "Step size 120 nm (fine-grained) and 250 nm (coarse-grained) over ~100×100 μm² and ~200×200 μm² areas; three scans per sample; polished to colloidal silica ~100 nm finish",
+      "purpose": "Determine grain orientations, grain size, twin fraction (Σ3 CSL boundaries), KAM (strain localization) and GOS (recrystallization)",
+      "key_findings": "HR 28Mn0Ni: equiaxed austenite grains (d ~5–7 μm), nearly random texture, single-phase austenite (B2-free)"
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Rigaku XRD instrument with Co-Kα radiation at 45 kV and 135 mA, beam size ~2 mm",
+      "measurement_conditions": "Co-Kα radiation, 45 kV, 135 mA, beam size ~2 mm",
+      "purpose": "Phase identification of the alloys in cold rolled and heat-treated conditions",
+      "key_findings": null
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "In the hot rolled (HR) condition the three LDS alloys (28Mn0Ni, 28Mn5Ni, 15Mn5Ni) exhibited about 20–70% of total tensile elongation to failure at room temperature, with the 15Mn5Ni alloy displaying the lowest ductility (reported in the authors' previous study [21]).",
+    "The HR microstructures of all three alloys were reported in a previous study [21] and are used in the present work as the starting condition for cold rolling.",
+    "28Mn0Ni in the HR condition is the Ni-free, single-phase austenitic (B2-free) LDS reference material; unlike the Ni-containing alloys it contains no prior B2 phase, which is why it recrystallizes and grain-coarsens faster than the Ni-bearing alloys after cold rolling and heat treatment.",
+    "The alloy composition (Table 1) for 28Mn0Ni is Mn 28.3 ± 0.4 wt.%, Al 9.0 ± 0.05 wt.%, C 0.9 ± 0.01 wt.%, Ni not added/detected, Fe balance."
+  ]
+}

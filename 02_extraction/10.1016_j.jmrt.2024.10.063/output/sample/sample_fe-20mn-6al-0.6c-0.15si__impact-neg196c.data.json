@@ -1,0 +1,332 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-6al-0.6c-0.15si__impact-neg196c",
+      "paper_id": "10.1016_j.jmrt.2024.10.063",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_id": "proc_impact-neg196c",
+      "sample_label": "impact sample tested at -196°C",
+      "aliases": [
+        "-196°C impact sample"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting_casting",
+      "sequence": "1",
+      "type": "melting and casting",
+      "method": "vacuum induction melting and casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": "air (air cooled to RT)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The experimental steel was melted and cast in a 50 kg vacuum induction furnace and then air cooled to RT."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1250 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The ingot was reheated to 1250 °C and held for 2 h for homogenization."
+    },
+    {
+      "processing_step_id": "step_forging",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "forging",
+      "temperature": "1100–950 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "furnace cooling to RT",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingot forged into round bars with a diameter of 60 mm followed by cooling to RT in the furnace; starting and finishing forging temperatures were 1100 and 950 °C."
+    },
+    {
+      "processing_step_id": "step_impact_neg196c",
+      "sequence": "4",
+      "type": "mechanical testing (impact)",
+      "method": "Charpy impact test",
+      "temperature": "-196 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": "tested in liquid nitrogen",
+      "cooling_medium": "liquid nitrogen (-196 °C)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Instrumented Charpy impact test on 10 × 10 × 55 mm specimens with a 2 mm depth V-notch using a PST752H-4 WANCE impact tester."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_initial_austenite",
+      "overall_structure": "Fully austenitic equiaxed grain structure (single phase); no isothermal martensite forms at -196 °C, indicating a very stable austenite.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_initial_austenite",
+          "region": "bulk / initial as-forged",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains",
+              "grain_size": "~10–50 µm"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": "grains ~10–50 µm (from IPF map)",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_near_fracture_neg196c",
+      "overall_structure": "Cross-section near the impact fracture surface after testing at -196 °C: primary crack path is zigzag; most regions show transgranular fracture; only a few regions experienced planar glide during impact deformation.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_near_fracture_neg196c",
+          "region": "near fracture surface cross-section",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "primary crack (zigzag, transgranular path)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": "significant local orientation gradient adjacent to the primary cracks within grain interiors"
+            },
+            {
+              "type": "planar glide / slip-band traces (few localized regions)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_near_fracture_neg196c",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "interaction_id": "int_crack_transgranular_neg196c",
+          "microstructure_id": "micro_near_fracture_neg196c",
+          "interaction_type": "transgranular crack propagation",
+          "qualitative_or_quantitative_description": "Primary crack propagation path at the fracture surface exhibits a zigzag shape and most regions show transgranular fracture; the misorientation difference between the regions on both sides of the crack is less than 15°, implying the two regions were in the same grain before cracking."
+        }
+      ],
+      "slip_behavior": "Planar glide is observed only in a few regions near the fracture after impact at -196 °C (sparse, locally confined slip-band traces); planar glide is difficult to activate at low temperature under high strain rate.",
+      "phase_evolution": null,
+      "interface_notes": "Secondary cracks were present only in the sample tested at RT, not at -196 °C; the -196 °C sample shows no secondary cracks."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_impact_neg196c",
+      "measurement_conditions": {
+        "temperature": "-196",
+        "temperature_unit": "°C",
+        "environment": "Charpy impact test; specimen tested in liquid nitrogen",
+        "strain_rate": null,
+        "specimen_geometry": "10 × 10 × 55 mm with a 2 mm depth V-notch",
+        "test_standard": "ISO evaluation procedure",
+        "other_conditions": "Instrumented Charpy impact test on a PST752H-4 WANCE impact tester; load-deflection curves recorded."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "188 J",
+          "unit": "J"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_impact_test_neg196c",
+      "microstructure_id": null,
+      "technique": "Instrumented Charpy impact test",
+      "instrument_or_setup": "PST752H-4 WANCE impact tester",
+      "measurement_conditions": "Tested at -196 °C; specimens 10 × 10 × 55 mm with a 2 mm depth V-notch; load-deflection curves recorded",
+      "purpose": "Measure the impact load-deflection response and absorbed energy at cryogenic temperature",
+      "key_findings": "W_all = 188 J; W_initiation = 112 J; peak load just above 30 kN; RC = 10.9957; F_in almost equal to F_m."
+    },
+    {
+      "characterization_id": "char_fracture_surface_neg196c",
+      "microstructure_id": "micro_near_fracture_neg196c",
+      "technique": "Fracture surface observation by SEM and 3D optical microscopy",
+      "instrument_or_setup": "VHX-5000 ultra-depth of field 3D microscope and SEM",
+      "measurement_conditions": "Fracture surface and radial zone after Charpy impact at -196 °C",
+      "purpose": "Characterize the macroscopic and microscopic fracture morphology",
+      "key_findings": "Fracture surface appeared significantly flatter; combination of ductile and brittle fracture; high-density large dimples and tear edges indicating quasi-cleavage cracks."
+    },
+    {
+      "characterization_id": "char_ebsd_near_fracture_neg196c",
+      "microstructure_id": "micro_near_fracture_neg196c",
+      "technique": "Electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "Apreo S HiVac SEM; Gatan/685.C automated argon ion-beam cross-section polishing",
+      "measurement_conditions": "Cross-section near the fracture surface; EBSD step size 0.8 μm",
+      "purpose": "Analyze the microstructure near the fracture surface and the crack path",
+      "key_findings": "Primary crack path is zigzag; most regions show transgranular fracture; misorientation difference across the crack is less than 15°."
+    },
+    {
+      "characterization_id": "char_sem_near_fracture_neg196c",
+      "microstructure_id": "micro_near_fracture_neg196c",
+      "technique": "Scanning electron microscopy (SEM) of regions near fracture",
+      "instrument_or_setup": "SEM",
+      "measurement_conditions": "Regions near the fracture after Charpy impact at -196 °C (20 µm scale bar)",
+      "purpose": "Observe planar-glide/slip-band features near the fracture",
+      "key_findings": "Only few regions experienced planar glide; the planar-glide/slip-band traces are sparse and confined to small localised regions."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_sfe_neg196c",
+      "simulation_method": "Thermodynamic stacking fault energy (SFE) estimation",
+      "software_used": null,
+      "potential_model_or_database": "Thermodynamic parameter expressions and values from Table 1 (Ref. [6])",
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "The computed SFE at -196 °C (32 mJ/m²) is consistent with the observed suppression of DIMT and occurrence of mechanical twinning/planar glide.",
+      "analytical_models": [
+        {
+          "model_name": "SFE equation (eq. 2)",
+          "equation_role": "SFE = 2 ρ_A ΔG^(γ→ε) + 2 σ^(γ/ε)",
+          "parameters": [
+            {
+              "name": "σ^(γ/ε) interface surface energy",
+              "value": "15",
+              "unit": "mJ/m²"
+            }
+          ],
+          "model_note": "ρ_A is the molar atomic density on the {111} plane; ΔG^(γ→ε) is the austenite-to-ε-martensite transformation free energy."
+        },
+        {
+          "model_name": "ρ_A equation (eq. 3)",
+          "equation_role": "ρ_A = (4/√3)·(1/(N α_γ²))",
+          "parameters": [
+            {
+              "name": "α_γ austenite lattice parameter",
+              "value": "0.36757",
+              "unit": "nm"
+            }
+          ],
+          "model_note": "N is the Avogadro constant; α_γ determined from XRD analysis."
+        },
+        {
+          "model_name": "ΔG^(γ→ε) equation (eq. 4)",
+          "equation_role": "ΔG^(γ→ε) = Σ X_i ΔG_i^(γ→ε) + Σ X_i X_j ΔG_ij^(γ→ε) + X_C ΔG_FeMnAl/C^(γ→ε) + ΔG_mg^(γ→ε)",
+          "parameters": [],
+          "model_note": "Thermodynamic expressions and required parameters are listed in Table 1 (ΔG_i, ΔG_ij, magnetic term)."
+        },
+        {
+          "model_name": "SFE result at -196 °C",
+          "equation_role": "Computed SFE value",
+          "parameters": [
+            {
+              "name": "SFE at -196 °C",
+              "value": "32",
+              "unit": "mJ/m²"
+            }
+          ],
+          "model_note": "SFE of the experimental steel estimated at 32, 40 and 61 mJ/m² for -196 °C, -77 °C and RT respectively; the -196 °C value (32 mJ/m²) is within the 18–35 mJ/m² window where mechanical twinning is the main mechanism."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Charpy impact absorbed energy W_all of the Fe-20Mn-6Al-0.6C-0.15Si steel at -196 °C is 188 J (compared with 277 J at -77 °C and 327 J at RT).",
+    "Crack initiation energy W_initiation at -196 °C is 112 J (compared with 68 J at -77 °C and 57 J at RT); the high W_initiation indicates stronger resistance to crack initiation at lower temperature.",
+    "Rebound compliance (RC, absolute slope from F_iu to F_a) at -196 °C is 10.9957 (compared with 4.6215 at -77 °C and 3.7864 at RT), indicating that unstable cracks propagate more rapidly at lower temperature.",
+    "At -196 °C the crack initiation load F_in is almost equal to the maximum load F_m because no obvious change occurs in the slope of the compliance-changing-rate (CCR) curve.",
+    "The ratio F_iu/F_m at -196 °C approaches ~0.98 (compared with ~0.83 at RT), suggesting cracks rapidly propagate from the stable to the unstable regime.",
+    "Characteristic impact loads at -196 °C (Fig. 9): general yield load F_gy ≈ 22 kN, maximum load F_m ≈ 32 kN, crack initiation load F_in ≈ 31.5 kN.",
+    "The load-deflection curve of the -196 °C impact sample peaks just above 30 kN at ~4 mm deflection and terminates near 10 mm deflection.",
+    "Only few regions experienced planar glide during impact deformation at -196 °C (sparse, locally confined slip bands), which explains the weak resistance to crack propagation at this temperature.",
+    "The fracture surface of the impact sample tested at -196 °C appeared significantly flatter than at -77 °C and RT, and no obvious fibrous zone was observed at -196 °C.",
+    "Secondary cracks were observed near the fracture after impact testing at RT but not at -196 °C; their absence at -196 °C is associated with the lower crack propagation energy."
+  ]
+}

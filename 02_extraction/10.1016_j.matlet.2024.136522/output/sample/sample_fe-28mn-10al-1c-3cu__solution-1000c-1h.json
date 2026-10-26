@@ -1,0 +1,249 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-10al-1c-3cu__solution-1000c-1h",
+      "paper_id": "10.1016_j.matlet.2024.136522",
+      "alloy_id": "alloy_fe-28mn-10al-1c-3cu",
+      "process_id": "proc_solution-1000c-1h",
+      "sample_label": "3Cu steel under solid solution treatment",
+      "aliases": [
+        "3Cu steel (solution treated)"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "The only processing step that defines this solution-treated sample is solution treatment at 1000°C for 1 h; aging produces a different (aged) sample and is therefore excluded.",
+        "block_id": [
+          "b0011"
+        ]
+      },
+      "processing_step_id": "step_solution_treatment",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "solution treatment"
+      },
+      "temperature": {
+        "value": "1000 °C",
+        "source": {
+          "reason": "Materials and methods state the Fe-28Mn-10Al-1C-(0,3)Cu steel is processed by solution treatment at 1000°C for 1 h, which defines this sample's state.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "temperature_unit": {
+        "value": "°C",
+        "source": {
+          "reason": "The solution treatment temperature is given as 1000℃.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "duration": {
+        "value": "1 h",
+        "source": {
+          "reason": "The solution treatment duration is given as 1 h.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Solution treatment is applied to the steel prior to an aging treatment (550°C for 3 h); the solution-treated state is the parent state for the subsequent aging treatment.",
+        "source": {
+          "reason": "The text describes the sequential processing (solution treatment then aging) and identifies the solution-treated condition as the precursor state.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "Defines the solution-treated 3Cu steel microstructure: an FCC austenitic matrix whose lattice parameter under solid solution treatment is a = 0.3689 nm (XRD); no precipitates are reported for the solution-treated state (the reported κ-carbide and Cu-rich phases belong to the aged state).",
+        "block_id": [
+          "b0011",
+          "b0014",
+          "b0022"
+        ]
+      },
+      "structure_id": "structure_solution_treated_austenite",
+      "overall_structure": {
+        "value": "Austenitic (γ) matrix of the 3Cu austenitic low-density steel after solution treatment; FCC austenite with lattice parameter a = 0.3689 nm determined by XRD.",
+        "source": {
+          "reason": "The 3Cu steel is an austenitic low-density steel, and the text reports the austenitic matrix lattice parameter under solid solution treatment (a = 0.3689 nm, by XRD).",
+          "block_id": [
+            "b0011",
+            "b0014",
+            "b0022"
+          ]
+        }
+      },
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_solution_treated_matrix",
+          "region": null,
+          "related_sequence": {
+            "value": "1"
+          },
+          "phases_present": [
+            {
+              "phase_name": {
+                "value": "austenite (γ)",
+                "source": {
+                  "reason": "The steel is described as an austenitic low-density steel whose matrix is austenite (γ).",
+                  "block_id": [
+                    "b0001",
+                    "b0011"
+                  ]
+                }
+              },
+              "crystal_structure": {
+                "value": "FCC",
+                "source": {
+                  "reason": "The austenitic matrix of Fe-Mn-Al-C low-density steel is face-centred cubic, and the paper refers to FCC structures in this system.",
+                  "block_id": [
+                    "b0007",
+                    "b0013"
+                  ]
+                }
+              },
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "XRD was used in this study to calculate the austenitic matrix lattice parameter, explicitly reported for the solution-treated 3Cu steel.",
+        "block_id": [
+          "b0014",
+          "b0022"
+        ]
+      },
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_solution_treated_matrix",
+      "technique": {
+        "value": "X-ray diffraction (XRD)",
+        "source": {
+          "reason": "The lattice parameter of the austenitic matrix under solution treatment was obtained by XRD calculation.",
+          "block_id": [
+            "b0014",
+            "b0022"
+          ]
+        }
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Determination of the lattice parameter of the austenitic matrix of the solution-treated steel.",
+        "source": {
+          "reason": "The text states the lattice parameters of 0Cu and 3Cu steel under solid solution treatment were obtained by XRD calculations.",
+          "block_id": [
+            "b0022"
+          ]
+        }
+      },
+      "key_findings": {
+        "value": "Lattice parameter of the austenitic matrix of the 3Cu steel under solid solution treatment: a = 0.3689 nm (0Cu steel: a = 0.3687 nm); both exceed the critical austenite lattice parameter ~a = 0.3670 nm.",
+        "source": {
+          "reason": "The XRD-calculated lattice parameter for the 3Cu steel under solid solution treatment is a = 0.3689 nm, and the critical lattice parameter is stated as ~a = 0.3670 nm.",
+          "block_id": [
+            "b0014",
+            "b0022"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "Materials and methods describe HR-TEM/EDS (and SAED is used) as the study's microstructural characterization techniques for this steel.",
+        "block_id": [
+          "b0011",
+          "b0013"
+        ]
+      },
+      "characterization_id": "char_hrtem_eds_saed",
+      "microstructure_id": null,
+      "technique": {
+        "value": "High-resolution transmission electron microscopy (HR-TEM) with energy dispersive spectrometer (EDS) and selected area electron diffraction (SAED)",
+        "source": {
+          "reason": "Materials and methods describe HR-TEM with an EDS detector as the microstructural examination technique, and SAED is used for phase identification.",
+          "block_id": [
+            "b0011",
+            "b0013"
+          ]
+        }
+      },
+      "instrument_or_setup": {
+        "value": "JEOL JEM-2100F HR-TEM with EDS detector",
+        "source": {
+          "reason": "The instrument is specified as HR-TEM, JEOL JEM-2100F, with an EDS detector.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "measurement_conditions": {
+        "value": "TEM specimens 3 mm in diameter, mechanically polished to about 100 μm thickness, then twin-jet electro-polished in 10 % perchloric acid alcohol",
+        "source": {
+          "reason": "The specimen preparation procedure for TEM observation is given in Materials and methods.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "purpose": {
+        "value": "Microstructural examination of the studied steel (the reported TEM/SAED results pertain to the aged 3Cu steel).",
+        "source": {
+          "reason": "The text states the microstructure is examined by HR-TEM with EDS; the presented micrographs/SAED are of aged 3Cu steel.",
+          "block_id": [
+            "b0011",
+            "b0013",
+            "b0014"
+          ]
+        }
+      },
+      "key_findings": null
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Lattice parameter of the solution-treated 3Cu steel austenitic matrix determined by XRD: a = 0.3689 nm (the 0Cu steel counterpart under the same solution treatment is a = 0.3687 nm). Both values exceed the critical austenite lattice parameter ~a = 0.3670 nm, below which intragranular κ-carbide cannot precipitate. [b0014, b0022]",
+    "Adding Cu to Fe-28Mn-10Al-1C steel increases the lattice parameter of the austenitic matrix (0.3687 nm for 0Cu vs. 0.3689 nm for 3Cu under solid solution treatment), which is beneficial for the precipitation of κ-carbide. [b0022]",
+    "Using the empirical composition-boundary formula 0.208(wt.%C) + 0.098(wt.%Al) = 1 − 0.0054(wt.%Mn) [Eq. 2], the critical Al content for κ-carbide precipitation in 0Cu steel was calculated as 6.52 wt%; it was further inferred that the Mn and C content in 3Cu steel exceeded the critical values required for intragranular κ-carbide precipitation. This precipitation-ability analysis relates to the precipitation (aged) state rather than the solution-treated state. [b0023, b0024]",
+    "Excluded from formal fields because they belong to the sibling AGED 3Cu steel (aging at 550°C for 3 h), not to this solution-treated sample: the κ-carbide/Cu-rich phase co-precipitation mechanism (κ-carbide precipitates earlier than Cu-rich phase; κ-carbide promotes Cu-rich phase precipitation); the cube-on-cube orientation relationships [110]γ//[110]κ//[110]Cu and (111)γ//(111)κ//(111)Cu; lattice misfits (κ-carbide/austenite 2.3%, Cu-rich phase/austenite 1.0%, κ-carbide/Cu-rich phase 3.4%, all <5% giving coherence); interfacial energies (κ-carbide/austenite 0.025 J/m², Cu/austenite 0.086 J/m²); and Cu-rich phase (FCC, d(002)=0.182 nm, a=0.3652 nm; irregular oval ~10 nm, bars ~30 nm) and κ-carbide (a=0.3775 nm) precipitate data. [b0007, b0014, b0017, b0018, b0025, b0027]"
+  ]
+}

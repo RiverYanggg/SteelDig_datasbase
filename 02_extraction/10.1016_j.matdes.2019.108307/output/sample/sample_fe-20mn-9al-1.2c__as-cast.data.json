@@ -1,0 +1,351 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-9al-1.2c__as-cast",
+      "paper_id": "10.1016_j.matdes.2019.108307",
+      "alloy_id": "alloy_fe-20mn-9al-1.2c",
+      "process_id": "proc_as-cast",
+      "sample_label": "as-cast 0Cr",
+      "aliases": [
+        "0Cr as-cast",
+        "as-cast Cr-free steel strip"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "cold-crucible levitation melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "A 100 g alloy ingot was prepared by melting 99.99% pure iron, 99.9% pure manganese, 99.9% pure aluminum, 99.9% pure chromium and 99.8% high-purity graphite by a cold-crucible levitation melting setup (x=0 for the 0Cr steel)."
+    },
+    {
+      "processing_step_id": "step_2_casting",
+      "sequence": "2",
+      "type": "casting / solidification",
+      "method": "centrifugal casting under near-rapid solidification",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "argon",
+      "cooling_medium": "copper mold rotating at 600 rpm",
+      "heating_or_cooling_rate": "1–1 × 10^4 K/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "The ingot was remelted by induction melting and the molten metal was poured into a copper mold rotating at 600 rpm, yielding as-cast steel strips of 80 mm × 60 mm × 2.5 mm. The near-rapid solidification was carried out under an argon atmosphere at a cooling rate of 1–1 × 10^4 K/s."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_as-cast_0Cr",
+      "overall_structure": "γ-austenite matrix with irregularly shaped δ-ferrite distributed in it; the ferrite is short rod-shaped in the as-cast 0Cr strip. Nano-scale κ-carbides precipitate in the γ-austenite and an ordered DO3 phase forms in the δ-ferrite.",
+      "number_of_phases": "4",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_as-cast_0Cr",
+          "region": "0.5 mm from the strip surface along the thickness direction",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ-austenite",
+              "crystal_structure": "fcc (austenite)",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "bcc (δ-ferrite)",
+              "volume_fraction": "3%",
+              "morphology": "short rod-shape / irregularly shaped, distributed in the γ-austenite matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "perovskite (L'12), ideal stoichiometry (Fe, Mn)3AlC",
+              "volume_fraction": "3%",
+              "morphology": "nano-scale precipitates within γ-austenite",
+              "grain_size": "6 nm",
+              "texture": null
+            },
+            {
+              "phase_name": "DO3",
+              "crystal_structure": "ordered body-centered cubic (space group Fm3m), lattice parameter a = 0.565 nm in the ferrite",
+              "volume_fraction": null,
+              "morphology": "ordered nano-scale precipitates in the δ-ferrite",
+              "grain_size": "26 ± 3 nm",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa",
+              "type": "κ-carbide (Fe, Mn)3AlC",
+              "size": {
+                "value": "6 nm",
+                "unit": "nm"
+              },
+              "distribution": "distributed in the γ-austenite",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_DO3",
+              "type": "DO3 ordered phase",
+              "size": {
+                "value": "26 ± 3 nm",
+                "unit": "nm"
+              },
+              "distribution": "precipitated in the δ-ferrite",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_as-cast_0Cr",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_kappa_gamma",
+          "microstructure_id": "micro_as-cast_0Cr",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "γ-austenite",
+          "coherence": "orientation relationship of [110] // [110] between κ-carbide and γ-austenite"
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "In the as-cast condition a double peak between 43.5° and 45.0° ((110)δ and (220)DO3) is present; the Cr element promotes the transformation from δ-ferrite to the ordered DO3 phase (relevant context for the 0Cr strip).",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_as-cast_0Cr_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "2.5 × 10^-4 s^-1",
+        "specimen_geometry": "gage width 4 mm, gage length 12 mm",
+        "test_standard": "GB/T-228.1-2010",
+        "other_conditions": "Tensile tests performed at least 3 times by a MTS Criterion 44 Mechanical Property Tester; specimens machined from the steel strips."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "836 ± 7 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 7 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "972 ± 22 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 22 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "35 ± 8 %",
+              "unit": "%",
+              "uncertainty": "± 8 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "value": "the as-cast 0Cr (Cr-free) strain hardening rate curve exhibits a 'hump', similar to the hump associated with deformation twinning in a TWIP steel",
+              "unit": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_as-cast_0Cr_physical",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Measured by an AccuPyc II 1340 Gas Displacement Density Analyzer."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.71 g/cm3",
+          "unit": "g/cm3"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_XRD",
+      "microstructure_id": "micro_as-cast_0Cr",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Rigaku D/Max-2200 X-ray Diffractometer, Cu target operated at 40 kV and 40 mA with a graphite monochromator, radiation wavelength λ = 0.154056 nm",
+      "measurement_conditions": "scanning angle 30°–100°, continuous scanning with a speed of 4°/min",
+      "purpose": "phase identification of the as-cast (and annealed) low-density steel strips",
+      "key_findings": "The as-cast 0Cr strip mainly consists of austenite and ferrite; a double peak between 43.5° and 45.0° corresponds to (110)δ and (220)DO3."
+    },
+    {
+      "characterization_id": "char_SEM",
+      "microstructure_id": "micro_as-cast_0Cr",
+      "technique": "Scanning Electron Microscopy (SEM)",
+      "instrument_or_setup": "Phenom Pro SEM",
+      "measurement_conditions": "after mechanical polishing and etching (3.3 vol% nitric acid + 3.3 vol% acetic acid + 0.1 vol% hydrofluoric acid, etching time 3 s); SEM photographs taken at a position 0.5 mm from the strip surface along the thickness direction",
+      "purpose": "characterize the microstructure, morphology and volume fraction of δ-ferrite",
+      "key_findings": "Irregularly shaped δ-ferrite (short rod-shape in the as-cast 0Cr strip) is distributed in the γ-austenite matrix; the volume fraction of δ-ferrite in the as-cast 0Cr steel strip is 3%."
+    },
+    {
+      "characterization_id": "char_TEM",
+      "microstructure_id": "micro_as-cast_0Cr",
+      "technique": "Transmission Electron Microscopy (TEM) with selected-area diffraction patterns (SADP)",
+      "instrument_or_setup": "JEOL-2010F operated at 200 kV; specimens prepared by twin-jet electrolytic polishing at −30 °C and 30 V with a mixed solution of 10% perchloric acid and 90% alcohol",
+      "measurement_conditions": "SADP taken along [110] zone axis",
+      "purpose": "elucidate the nano-scale precipitated phases (κ-carbides in γ-austenite and DO3 in δ-ferrite)",
+      "key_findings": "In the as-cast 0Cr strip, κ-carbides with volume fraction 3% and average size 6 nm are present in the γ-austenite; the δ-ferrite contains DO3 ordered phase of size 26 ± 3 nm; measured lattice parameters are 0.387 nm (κ-carbide) and 0.375 nm (γ-austenite)."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "uniaxial tensile test",
+      "instrument_or_setup": "MTS Criterion 44 Mechanical Property Tester",
+      "measurement_conditions": "room temperature; constant strain rate 2.5 × 10^-4 s^-1; in accordance with Chinese Standard GB/T-228.1-2010; gage width 4 mm and gage length 12 mm; at least 3 tests",
+      "purpose": "measure yield strength, ultimate tensile strength and total elongation",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_density",
+      "microstructure_id": null,
+      "technique": "Gas displacement density measurement",
+      "instrument_or_setup": "AccuPyc II 1340 Gas Displacement Density Analyzer",
+      "measurement_conditions": null,
+      "purpose": "measure the average density of the steel strips",
+      "key_findings": "The measured average density of the 0Cr steel strips is 6.71 g/cm3."
+    },
+    {
+      "characterization_id": "char_composition",
+      "microstructure_id": null,
+      "technique": "chemical composition analysis",
+      "instrument_or_setup": "Inductively Coupled Plasma Mass Spectrometry (ICP) and CS2800 carbon-sulfur analyzer",
+      "measurement_conditions": null,
+      "purpose": "measure the chemical compositions of the steel strips",
+      "key_findings": "The measured composition of the 0Cr steel strip is Mn 20.43, Al 9.16, C 1.17, Cr 0, S 0.0006, Fe Bal. (wt.%)."
+    },
+    {
+      "characterization_id": "char_image_analysis",
+      "microstructure_id": "micro_as-cast_0Cr",
+      "technique": "image analysis for phase fraction measurement",
+      "instrument_or_setup": "Image-Pro Plus (IPP) image processing software",
+      "measurement_conditions": "measured at ten different positions",
+      "purpose": "measure the average phase fraction of the steel strips",
+      "key_findings": null
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Measured chemical composition of the as-cast 0Cr steel strip (wt.%): Mn 20.43, Al 9.16, C 1.17, Cr 0, S 0.0006, Fe Bal. (Table 1).",
+    "The product of ultimate tensile strength and total elongation (UTS × TE) for the as-cast 0Cr steel strip is 34.0 GPa % (Table 2).",
+    "Measured lattice parameters in the as-cast 0Cr steel strip: κ-carbide = 0.387 nm and γ-austenite = 0.375 nm.",
+    "The ideal stoichiometry of the κ-carbide is (Fe, Mn)3AlC with a perovskite crystal structure; Fe or Mn atoms occupy the cornered positions, Al atoms occupy the face-center positions, and C is in the center of the cube (½, ½, ½).",
+    "The ordered DO3 phase in the ferrite is a body-centered cubic crystal with a lattice parameter a = 0.565 nm, in which Fe or Mn atoms occupy cornered positions and Al or Fe/Mn atoms occupy every other centered positions.",
+    "The annealing treatment increases the yield strength of 0Cr, 3Cr and 6Cr steel strips by 131 MPa, 277 MPa and 141 MPa respectively (cited increment for 0Cr = 131 MPa; concerns the annealed state, not the as-cast sample)."
+  ]
+}

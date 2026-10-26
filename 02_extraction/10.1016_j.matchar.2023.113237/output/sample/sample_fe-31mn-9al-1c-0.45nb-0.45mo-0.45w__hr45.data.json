@@ -1,0 +1,411 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-31mn-9al-1c-0.45nb-0.45mo-0.45w__hr45",
+      "paper_id": "10.1016_j.matchar.2023.113237",
+      "alloy_id": "alloy_fe-31mn-9al-1c-0.45nb-0.45mo-0.45w",
+      "process_id": "proc_hr45",
+      "sample_label": "HR45",
+      "aliases": [
+        "HR45 sample"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_melting",
+      "sequence": "1",
+      "type": "casting/melting",
+      "method": "high-frequency vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The steel was fabricated using a high-frequency vacuum induction melting furnace."
+    },
+    {
+      "processing_step_id": "step_2_hot_forging",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot forging",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-forged into billets with a thickness of 110 mm at 1150 °C and then air cooling to room temperature."
+    },
+    {
+      "processing_step_id": "step_3_reheating",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "reheating",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The hot-forged billets were initially reheated at 1150 °C before hot rolling."
+    },
+    {
+      "processing_step_id": "step_4_hot_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "45%",
+      "processing_steps_notes": "Hot-rolled into plates with a thickness of 60 mm corresponding to a hot-rolling reduction of 45%; the number of passes was 4 for the HR45 sample."
+    },
+    {
+      "processing_step_id": "step_5_water_quenching",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "After hot rolling the plates were water quenched to room temperature; the fast cooling produced κ-carbides without further aging."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_HR45_austenite_matrix",
+      "overall_structure": "Fully austenitic microstructure consisting of equiaxed FCC austenite grains with a large fraction of first-order annealing twins (Σ3 <111> 60° grain boundaries); micron-sized polygonal (Nb,Mo,W)C stringers, homogeneously dispersed submicron spherical (Nb,Mo,W)C particles, and nano-sized κ-carbides inside the austenite grains.",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_HR45",
+          "region": "bulk (hot-rolled plate)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ, FCC)",
+              "crystal_structure": "face-centered cubic (FCC)",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains with abundant first-order annealing twins (Σ3, 60°<111>)",
+              "grain_size": "45.11 μm (mean austenite grain size, excluding twin boundaries; effective grain size including twin boundaries 21.82 μm)",
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide (Fe,Mn)3AlCx",
+              "crystal_structure": "L′12-type ordered (perovskite-like) structure",
+              "volume_fraction": "3.5 ± 0.33%",
+              "morphology": "nano-sized particles homogeneously precipitated inside the austenite grains during water quenching (dark-field speckle)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "(Nb,Mo,W)C",
+              "crystal_structure": "face-centered cubic (FCC), MC-type complex carbide; lattice parameter 4.36 Å",
+              "volume_fraction": "~0.193% (submicron-sized particles)",
+              "morphology": "two populations — micron-sized polygonal particles (sizes ranging 1 to 25 μm) distributed along the rolling direction in grain boundaries and grain interiors; submicron-sized spherical particles distributed homogeneously in the austenite matrix",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "geometrically necessary dislocations (GNDs) / local strain concentration",
+              "porosity": null,
+              "inclusions": [
+                "micron-sized (Nb,Mo,W)C",
+                "submicron-sized (Nb,Mo,W)C"
+              ],
+              "dislocation_density": "2.71 × 10^13 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "45.11",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "effective grain size including annealing twin boundaries = 21.82 μm",
+            "texture": "no strong texture reported; Σ3 (60°<111>) annealing twin boundaries account for 67% of the boundaries with misorientation >15°"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_HR45_kappa",
+              "type": "κ-carbide (Fe,Mn)3AlCx, L′12-type ordered structure",
+              "size": {
+                "value": "0.81 ± 0.26",
+                "unit": "nm"
+              },
+              "distribution": "homogeneously precipitated inside the austenite grains",
+              "coherency": "coherent (shearable by dislocations)"
+            },
+            {
+              "precipitate_id": "ppt_HR45_submicron_NbMoWC",
+              "type": "(Nb,Mo,W)C MC-type complex carbide, FCC",
+              "size": {
+                "value": "261 ± 36",
+                "unit": "nm"
+              },
+              "distribution": "homogeneously distributed in the austenite matrix (submicron spherical particles)",
+              "coherency": "incoherent, bypassed by dislocations via Orowan mechanism"
+            },
+            {
+              "precipitate_id": "ppt_HR45_micron_NbMoWC",
+              "type": "(Nb,Mo,W)C MC-type complex carbide, FCC",
+              "size": {
+                "value": "1–25",
+                "unit": "μm"
+              },
+              "distribution": "micron-sized polygonal particles distributed along the rolling direction in the grain boundary and grain interior",
+              "coherency": "incoherent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_HR45_deformed_substructures",
+      "overall_structure": "Deformation substructures formed by predominant dislocation planar glide after interrupted tensile tests at engineering strains of 0.1, 0.2 and 0.4 — planar slip bands, Taylor lattice, and microbands.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_HR45_eps0.1",
+          "region": "bulk (deformed, εe = 0.1)",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ, FCC)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "arrays of planar slip bands distributed homogeneously within the austenite matrix; Taylor lattice formed by intersections of two non-coplanar {111} slip traces",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "planar slip bands / dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_HR45_eps0.2",
+          "region": "bulk (deformed, εe = 0.2)",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ, FCC)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "more closely spaced slip bands than at εe = 0.1",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "closely spaced planar slip bands",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_HR45_eps0.4",
+          "region": "bulk (deformed, εe = 0.4)",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ, FCC)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "microbands with ill-defined and distinct boundaries",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "microbands delineated by dislocation walls consisting of GNDs",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_HR45",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_HR45_kappa_austenite",
+          "microstructure_id": "micro_HR45",
+          "phase_1_name": "κ-carbide (Fe,Mn)3AlCx",
+          "phase_2_name": "austenite",
+          "coherence": "coherent; sheared by dislocations generating anti-phase boundaries (APBs)"
+        },
+        {
+          "interface_id": "int_HR45_NbMoWC_austenite",
+          "microstructure_id": "micro_HR45",
+          "phase_1_name": "(Nb,Mo,W)C",
+          "phase_2_name": "austenite",
+          "coherence": "incoherent; dislocations bypass via Orowan mechanism; strain/stress concentration at interfaces due to deformation discrepancy"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "int_HR45_shear_kappa",
+          "microstructure_id": "micro_HR45",
+          "interaction_type": "dislocation shearing of κ-carbides",
+          "qualitative_or_quantitative_description": "Shearing of κ-carbides by leading dislocations produces APBs and generates a preferential glide path (glide plane softening), leading to planar slip bands and Taylor lattice formation."
+        },
+        {
+          "interaction_id": "int_HR45_orowan",
+          "microstructure_id": "micro_HR45",
+          "interaction_type": "Orowan bypassing of (Nb,Mo,W)C",
+          "qualitative_or_quantitative_description": "Dislocations bypass incoherent (Nb,Mo,W)C particles via the Orowan mechanism; strengthening contribution 6.5 MPa for HR45."
+        },
+        {
+          "interaction_id": "int_HR45_crack_nucleation",
+          "microstructure_id": "micro_HR45",
+          "interaction_type": "intergranular (Nb,Mo,W)C microcrack nucleation / debonding",
+          "qualitative_or_quantitative_description": "Intergranular (Nb,Mo,W)C particles act as preferential nucleation sites for microcracks; strain/stress concentration partially alleviated by debonding of intragranular (Nb,Mo,W)C particles and microvoid formation. Intergranular (Nb,Mo,W)C particles virtually played no detrimental effect on toughness."
+        }
+      ],
+      "slip_behavior": "Predominant dislocation planar glide; planar slip bands refining with strain and evolving into microbands; Taylor lattice formed by intersection of two non-coplanar {111} slip traces. For HR45 the slip band spacing at εe = 0.1 was 296.40 ± 50.06 nm, refining to ~50 nm at higher strains.",
+      "phase_evolution": "κ-carbides with L′12-type structure were produced by spinodal decomposition and subsequent ordering reaction during fast cooling (water quenching) without a further aging process.",
+      "interface_notes": "The HR45 sample (coarser grains) showed microbands only at higher strains; microbands were observed at εe = 0.2 in HR68 and HR82, indicating faster substructure development with finer grain size."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_HR45_tensile_rt",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": "air",
+        "strain_rate": "1.0 × 10^-3 s^-1",
+        "specimen_geometry": "standard tensile sample cut along the rolling direction (RD), gauge length 25 mm, diameter 5 mm",
+        "test_standard": null,
+        "other_conditions": "Uniaxial tensile tests on an MTS tensile machine; extensometer applied"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "480.0 ± 0.0 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 0.0 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "861.0 ± 11.0 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 11.0 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "type": "total elongation",
+              "direction": "RD",
+              "value": "60.0 ± 1.0%",
+              "unit": "%",
+              "uncertainty": "± 1.0%"
+            },
+            {
+              "type": "uniform elongation",
+              "direction": "RD",
+              "value": "52.0 ± 1.0%",
+              "unit": "%",
+              "uncertainty": "± 1.0%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress (σe)-strain (εe) curve of HR45 (lowest of three curves), peaks between the 800 and 900 MPa gridlines near εe ≈ 0.50 and extends to about εe ≈ 0.63.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": "Three-staged strain-hardening behavior; strain-hardening rate maintained at a high level of ~2000 MPa over a wide plastic strain range; stage II shows a gradual increase to peak values."
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "133 ± 2.5",
+          "unit": "J/m²"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.82",
+          "unit": "g/cm^3"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    "source"
+  ],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

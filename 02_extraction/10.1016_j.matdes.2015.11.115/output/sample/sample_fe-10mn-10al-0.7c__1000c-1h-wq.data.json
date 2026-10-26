@@ -1,0 +1,360 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-10mn-10al-0.7c__1000c-1h-wq",
+      "paper_id": "10.1016_j.matdes.2015.11.115",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_id": "proc_1000c-1h-wq",
+      "sample_label": null,
+      "aliases": [
+        "specimen annealed at 1000 °C",
+        "1000 °C specimen"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "melting/casting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "A 20 kg ingot of a Fe–10Mn–10Al–0.7C steel was prepared by vacuum induction melting method."
+    },
+    {
+      "processing_step_id": "step_forging",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "forging",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "forging blank with cross section of about 40 mm × 60 mm",
+      "processing_steps_notes": "The ingot was heated to 1200 °C and then forged to forging blank with cross section of about 40 mm × 60 mm."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenized at 1200 °C for 1 h before hot rolling."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "880",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "hot-rolled to plate of 3 mm thickness",
+      "processing_steps_notes": "The forging blank was hot-rolled to a plate of 3 mm thickness, with the finishing rolling temperature around 880 °C (parent hot-rolled process proc_hr)."
+    },
+    {
+      "processing_step_id": "step_hot_roll_quench",
+      "sequence": "5",
+      "type": "cooling",
+      "method": "water quenching",
+      "temperature": "300",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water (then air cooled)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "After rolling the plate was water quenched to about 300 °C (Fig. 1: 'water cooled' to 300 °C then 'air cooled')."
+    },
+    {
+      "processing_step_id": "step_annealing",
+      "sequence": "6",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": "1000",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The hot-rolled plate was annealed at 1000 °C for 1 h (this is the defining step of the sample proc_1000c-1h-wq; annealing range 700–1200 °C for 1 h in Fig. 1)."
+    },
+    {
+      "processing_step_id": "step_water_quench",
+      "sequence": "7",
+      "type": "cooling",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The 1000 °C/1 h anneal was followed by water quenching."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_1000c",
+      "overall_structure": "Banded duplex α + γ microstructure with coarse grains and a residual banded ferrite structure; matrix κ-carbide has dissolved at 1000 °C but small boundary κ-carbide forms during quenching along some α/α boundaries of large α grains.",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1000c_rdtd",
+          "region": "RD–TD section (superficial/through-thickness SEM view)",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (α)",
+              "crystal_structure": "BCC (body-centered cubic)",
+              "volume_fraction": "≈0.4 (approximate, read from Fig. 14 for the 900–1200 °C range)",
+              "morphology": "coarse continuous banded-shape grains (α2) plus finer α grains distributed among γ grains (α1)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC (face-centered cubic)",
+              "volume_fraction": "~63%",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide (κ)",
+              "crystal_structure": "perovskite structure, space group Pm3m (FCC-based)",
+              "volume_fraction": "very small; not detectable by XRD at 900–1200 °C",
+              "morphology": "boundary films along α/α boundaries of some large α grains, formed during quenching",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_boundary_kappa_1000c",
+              "type": "boundary κ-carbide (formed during quenching)",
+              "size": "very small",
+              "distribution": "along some large α grains / α/α boundaries",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_1000c",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_alpha_gamma_1000c",
+          "microstructure_id": "micro_1000c_rdtd",
+          "phase_1_name": "ferrite (α)",
+          "phase_2_name": "austenite (γ)",
+          "coherence": null
+        },
+        {
+          "interface_id": "int_alpha_alpha_boundary_kappa_1000c",
+          "microstructure_id": "micro_1000c_rdtd",
+          "phase_1_name": "ferrite (α)",
+          "phase_2_name": "κ-carbide (κ)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "At 1000 °C the intragranular κ-carbide has dissolved into the α and γ matrices (κ dissolution temperature between 850 and 900 °C), so no matrix κ-carbide is resolvable (Fig. 6(f)); the boundary κ-carbide observed along some α/α boundaries is believed to form during quenching when the annealing temperature exceeds the κ dissolution temperature. γ fraction reaches a maximum (~63%) around 1000 °C, and α and γ grains coarsen strongly above 900 °C.",
+      "interface_notes": "The κ-carbide present along α/α boundaries in the 1000 °C specimen cannot be detected by XRD, probably because its fraction is too small (b0033). The dissolving sequence: κ at/near α/γ boundaries dissolves first, κ along α/α boundaries of large grains dissolves last (b0048)."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_tensile_1000c",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "3 × 10^-4 s^-1 (initial strain rate)",
+        "specimen_geometry": "gage length 50 mm, gage width 12.5 mm",
+        "test_standard": null,
+        "other_conditions": "tensile axis parallel to the rolling direction"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction (tensile axis parallel to RD)",
+              "value": "557",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_utensile_strength_placeholder": null,
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction (tensile axis parallel to RD)",
+              "value": "763",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction (tensile axis parallel to RD)",
+              "value": "16.2",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress–engineering strain (Fig. 15(a)) and true stress–true strain (Fig. 15(b)) curves are reported for the 1000 °C, 1 h specimen; the 1000 °C curve lies below the lower-temperature curves.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            "For the 1000 °C specimen (with no obvious κ-carbide in the α or γ matrix) the work hardening rate is lower than that of the 700/800/850 °C specimens when true strain is less than about 5%; the work hardening rate curve was calculated from the yielding period."
+          ],
+          "product_of_strength_and_ductility": {
+            "value": "12",
+            "unit": "GPa%"
+          }
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.80",
+          "unit": "g/cm3"
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_1000c",
+      "microstructure_id": "micro_1000c_rdtd",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Rigaku D/Max-RB, Cu target, operated at 40 kV and 150 mA",
+      "measurement_conditions": null,
+      "purpose": "Phase identification and determination of phase volume fractions by the direct comparison method",
+      "key_findings": "No κ-carbide peaks are present in the 1000 °C specimen (κ reflections only for 700, 800, 850 °C); lattice parameters α = 2.89–2.91 Å, γ = 3.65–3.67 Å, κ = 3.76–3.79 Å."
+    },
+    {
+      "characterization_id": "char_om_1000c",
+      "microstructure_id": "micro_1000c_rdtd",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": "Zeiss AxioCam MRc5; specimens mechanically polished and etched in 8% Nital",
+      "measurement_conditions": null,
+      "purpose": "Observation of the banded microstructure and phase distribution (RD–ND and RD–TD sections)",
+      "key_findings": "The banded structure persists at 1000 °C but becomes less contiguous and coarser; α and γ grains appear coarser and more equiaxed."
+    },
+    {
+      "characterization_id": "char_sem_1000c",
+      "microstructure_id": "micro_1000c_rdtd",
+      "technique": "Field-emission scanning electron microscopy (FE-SEM) with energy dispersive spectrometry (EDS)",
+      "instrument_or_setup": "FEI Quanta 450 operated at an acceleration voltage of 20 kV, equipped with EDS",
+      "measurement_conditions": null,
+      "purpose": "Examination of microstructure, boundary κ-carbide and phase chemical composition",
+      "key_findings": "The 1000 °C matrix is free of resolvable κ-carbide; bright boundary κ films exist along boundaries of large α grains (Fig. 10(b))."
+    },
+    {
+      "characterization_id": "char_tem_1000c",
+      "microstructure_id": null,
+      "technique": "Transmission electron microscopy (TEM)",
+      "instrument_or_setup": "JEOL 2100 operated at an acceleration voltage of 200 kV; thin foils prepared by twin-jet polishing in a mixture of 10% perchloric acid and 90% alcohol at -30 °C and 30 V",
+      "measurement_conditions": null,
+      "purpose": "Identification of phases and orientation relationships (performed for specimens annealed at 700, 800, 1100 and 1200 °C; not reported specifically for 1000 °C)",
+      "key_findings": "TEM analysis indicates no obvious superlattice spots in the SADPs of α or γ in all annealed specimens, so atomic ordering is not expected during 700–1200 °C annealing for 1 h."
+    },
+    {
+      "characterization_id": "char_grain_size_imagej",
+      "microstructure_id": "micro_1000c_rdtd",
+      "technique": "Grain size measurement from SEM micrographs",
+      "instrument_or_setup": "ImageJ software",
+      "measurement_conditions": null,
+      "purpose": "Measurement of average grain sizes of α1, α2 and γ as a function of annealing temperature",
+      "key_findings": "Grain sizes of the annealed specimens (900–1200 °C) increase with temperature; data plotted in Fig. 9."
+    },
+    {
+      "characterization_id": "char_tensile_1000c",
+      "microstructure_id": null,
+      "technique": "Room-temperature uniaxial tensile test",
+      "instrument_or_setup": "Universal testing machine CMT 4105",
+      "measurement_conditions": "room temperature, initial strain rate 3 × 10^-4 s^-1, gage length 50 mm, gage width 12.5 mm, tensile axis parallel to RD",
+      "purpose": "Measurement of ultimate strength, yield strength and ultimate elongation of the annealed specimens",
+      "key_findings": "1000 °C/1 h specimen: UTS 763 MPa, YS 557 MPa, ultimate elongation 16.2%, strength–ductility product 12 GPa%."
+    },
+    {
+      "characterization_id": "char_density_archimedes",
+      "microstructure_id": null,
+      "technique": "Densitometry based on Archimedes principle",
+      "instrument_or_setup": "Archimedes densitometry",
+      "measurement_conditions": null,
+      "purpose": "Measurement of the steel density",
+      "key_findings": "Density of the present steel ≈ 6.80 g/cm3, about 13% lower than pure Fe."
+    },
+    {
+      "characterization_id": "char_fractography_1000c",
+      "microstructure_id": null,
+      "technique": "SEM fractography",
+      "instrument_or_setup": "SEM (FEI Quanta 450)",
+      "measurement_conditions": null,
+      "purpose": "Investigation of the fracture mode of the tensile specimens",
+      "key_findings": "Fracture of the 1000 °C specimen is predominant by a mixture of ductile fracture of γ and quasi-cleavage fracture of α, with large banding-related secondary cracks; the ductile fracture area is smaller/less apparent than at 900 °C."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermocalc_equilibrium",
+      "simulation_method": "CALPHAD thermodynamic equilibrium calculation",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": "TCFE7 database",
+      "boundary_and_initial_conditions": "Equilibrium phase fractions of ferrite (α), austenite (γ) and κ-carbide (κ) calculated for the Fe–10Mn–10Al–0.7C composition at temperatures above 550 °C",
+      "validation_against_experiment": "The Thermo-Calc κ-carbide dissolution temperature (~823 °C) is lower than the experimentally measured 850–900 °C, attributed to the steel not being in equilibrium and to the difference between atomic-fraction (calculated) and volume-fraction (XRD-measured) fractions.",
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "Fracture of the 1000 °C/1 h specimen (Fig. 17(e),(f)) is predominately a mixture of ductile fracture of the γ phase and quasi-cleavage fracture of the α phase, with large banding-related secondary cracks; the ductile fracture area in the 1000 °C specimen is less obvious/less apparent than in the 900 °C specimen. The effect of boundary κ-carbide along large α grains could not be resolved from the fractographs.",
+    "No TRIP or TWIP phenomenon was found during the tensile test of the annealed specimens, according to post-deformation TEM examination (b0040).",
+    "TEM analysis indicates that no obvious superlattice spots are seen in the SADPs of α or γ in all the annealed specimens, so atomic ordering in α or γ is not expected during annealing at 700–1200 °C for 1 h; ordering may occur during quenching but the time is too short for it to develop (b0033).",
+    "Alloy-level comparative performance (Table 2, for the present Fe–10Mn–10Al–0.7C steel using its optimum 900 °C/1 h properties, NOT this 1000 °C sample): present steel 855 MPa UTS / 651 MPa YS / 36.6% elongation / 31 GPa% product (phase γ + α (40%) + boundary κ), versus Fe–28Mn–10Al–1.0C 873/572/γ/98.9/86; Fe–20Mn–9Al–0.6C 830/535/γ+α(34%)/45.6/38; Fe–18Mn–10Al–1.2C 875/702/γ+κ/77.4/68; Fe–18Mn–10Al–0.8C 966/801/γ+κ+α(24%)/44/43; Fe–12Mn–8.0Al–0.8C 920/670/γ+κ+α(21%)/46.4/43. The present steel has the lowest elongation and lowest strength–ductility product of the set.",
+    "For the 1000 °C specimen the γ fraction is the maximum for this steel (~63%) and α and γ grains grow rapidly above 900 °C; because phase fractions change only in the narrow 57–63% γ range between 900 and 1200 °C, the grain size (Hall–Petch) rather than phase fraction controls the tensile properties in that range (b0033, b0053, b0067, b0079)."
+  ]
+}

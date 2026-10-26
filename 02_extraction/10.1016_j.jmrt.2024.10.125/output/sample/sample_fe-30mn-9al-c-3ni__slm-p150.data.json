@@ -1,0 +1,348 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-c-3ni__slm-p150",
+      "paper_id": "10.1016_j.jmrt.2024.10.125",
+      "alloy_id": "alloy_fe-30mn-9al-c-3ni",
+      "process_id": "proc_slm-p150",
+      "sample_label": "P-150",
+      "aliases": [
+        "P-150",
+        "SLM-printed at 150 W"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_substrate_preheating",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "substrate preheating",
+      "temperature": "200",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The substrate was heated to 200 °C prior to printing."
+    },
+    {
+      "processing_step_id": "step_slm_printing_150W",
+      "sequence": "2",
+      "type": "additive manufacturing",
+      "method": "selective laser melting (SLM)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "argon (99.99% pure), oxygen content in forming chamber maintained below 300 ppm",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Printed on an SLM Solutions SLM280 printer (samples 75×12×12 mm and 10×10×10 mm). Laser power 150 W corresponding to laser energy density 125.00 J/mm³ (the parameter defining sample P-150); spot diameter 0.1 mm; layer thickness 0.02 mm; hatch space 0.08 mm; scanning speed 750 mm/s; overlapping-strip scanning strategy with a 67° rotation angle applied to each layer."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_p150",
+      "overall_structure": "SLM-printed Fe–30Mn–9Al–C–3Ni (P-150) consists mainly of austenite (γ-Fe(M), fcc) with no α-Fe(M) ferrite, plus a small amount of nano-sized κ carbide. The transverse cross-section reveals fine-to-coarse equiaxed grains with random orientations and no strong crystallographic texture (fine equiaxed grains attributed to the 67° interlayer rotation).",
+      "number_of_phases": 2,
+      "microstructure_counts": "1 reported section (transverse cross-section)",
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_p150_cross_section",
+          "region": "transverse cross-section (x-y)",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ-Fe(M) austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains",
+              "grain_size": "14.3 μm (average, cross-section)",
+              "texture": "random orientations, no dominant/strong crystallographic texture"
+            },
+            {
+              "phase_name": "κ carbide",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "nano-sized particles",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "porosity",
+              "porosity": "0.35%",
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "cracks",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "severe spheroidization/balling and internal defects",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "14.3",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "Right-skewed distribution; lowest modal bar of the cross-sectional series (just above the 8% fraction gridline); flatter and more extended than the lower-power samples, with a secondary cluster of grains near 16–24 μm and the fraction of large grains growing with laser power (Fig. 8(e)).",
+            "texture": "random orientations, no preferred texture (equiaxed grains)"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_kappa_p150",
+              "type": "κ carbide",
+              "size": {
+                "value": "nanoscale",
+                "unit": null
+              },
+              "distribution": "uniformly distributed in the austenite matrix (as established for SLM-printed samples)",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "property_p150_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1 mm/min (loading rate)",
+        "specimen_geometry": "dog-bone-shaped tensile sample with a gauge length of 25 mm and a diameter of 5 mm",
+        "test_standard": null,
+        "other_conditions": "Suns universal testing machine; Reliant electronic extensometer"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "771.5",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1032.0",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "28.28",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Fig. 12 (engineering stress–strain curve for P-150, purple); shows a steep elastic rise followed by a long nearly flat plastic plateau above 1000 MPa and an abrupt vertical fracture drop.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "property_p150_hardness",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "horizontal (cross) and vertical (longitudinal) cross-sections",
+        "test_standard": null,
+        "other_conditions": "Microhardness tester at a load of 0.5 kg for 10 s; each value is the arithmetic mean of five measurement points"
+      },
+      "mechanical": {
+        "tensile_properties": {},
+        "hardness": [
+          {
+            "region": "cross-section (cross)",
+            "value": "281",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": null
+          },
+          {
+            "region": "longitudinal section",
+            "value": "283",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_p150_vs_ascast",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-30mn-9al-c-3ni",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": "As-cast",
+        "comparison_metric": "Compared to the as-cast sample, the SLM-printed P-150 sample has higher tensile strength (1032.0 vs 879.0 MPa) and comparable yield strength (771.5 vs 772.3 MPa), which is attributed to grain-refining strengthening from rapid cooling during SLM.",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_p150_xrd",
+      "microstructure_id": "micro_p150_cross_section",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Bruker D8 Advance X-ray diffractometer, Cu target, continuous scanning, 30–100°, 2°/min",
+      "measurement_conditions": "room temperature",
+      "purpose": "Determine phase constitution of the SLM-printed P-150 alloy",
+      "key_findings": "P-150 pattern contains only γ-Fe(M) fcc reflections (111, 200, 220, 311, 222) with no α-Fe(M); the full width at half maximum (FWHM) of the (111) peak for P-150 is 0.237."
+    },
+    {
+      "characterization_id": "char_p150_ebsd",
+      "microstructure_id": "micro_p150_cross_section",
+      "technique": "Electron backscatter diffraction (EBSD) inverse pole figures",
+      "instrument_or_setup": "Oxford Symmetry S2 EBSD, step size 0.3–0.7 μm, accelerating voltage 15–20 kV; analyzed with TSL OIM software",
+      "measurement_conditions": "electrolytically polished in perchloric-acid/ethanol solution",
+      "purpose": "Characterize grain morphology and orientation in the P-150 cross-section",
+      "key_findings": "P-150 transverse cross-section shows coarse equiaxed grains with randomly mixed orientations and no dominant texture (Fig. 7(e))."
+    },
+    {
+      "characterization_id": "char_p150_om",
+      "microstructure_id": "micro_p150_cross_section",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": "Leica DMi8 M/C/A optical microscope",
+      "measurement_conditions": "transverse cross-sections, 500 μm scale bar",
+      "purpose": "Observe porosity and defects",
+      "key_findings": "P-150 shows Porosity=0.35% with numerous dark defects, several elongated/needle-like, one labelled 'Crack'."
+    },
+    {
+      "characterization_id": "char_p150_sem",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM)",
+      "instrument_or_setup": "ZEISS Sigma300 scanning electron microscope",
+      "measurement_conditions": "surface morphology and tensile fracture surfaces, 200 μm / 20 μm scale bars",
+      "purpose": "Study surface quality and tensile fracture morphology",
+      "key_findings": "P-150 (150 W) surface shows multiple spherical droplets and the label 'Balling' (localized heat accumulation); the P-150 fracture surface (Fig. 13(e)) shows cracks labelled 'Crack' together with dimple and cleavage features, evidencing internal defects and spheroidization."
+    },
+    {
+      "characterization_id": "char_p150_hardness_test",
+      "microstructure_id": null,
+      "technique": "Microhardness testing (Vickers)",
+      "instrument_or_setup": "microhardness tester",
+      "measurement_conditions": "load 0.5 kg for 10 s; arithmetic mean of five points; cross-section and longitudinal section",
+      "purpose": "Measure average hardness of cross and longitudinal sections",
+      "key_findings": "P-150 average hardness 281 HV (cross-section) and 283 HV (longitudinal section)."
+    },
+    {
+      "characterization_id": "char_p150_tensile_test",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "Suns universal testing machine with Reliant electronic extensometer",
+      "measurement_conditions": "room temperature; loading rate 1 mm/min; dog-bone specimen, gauge length 25 mm, diameter 5 mm",
+      "purpose": "Measure room-temperature tensile properties",
+      "key_findings": "P-150: yield strength 771.5 MPa, tensile strength 1032.0 MPa, elongation 28.28%."
+    },
+    {
+      "characterization_id": "char_p150_roughness",
+      "microstructure_id": null,
+      "technique": "Surface roughness / topography measurement",
+      "instrument_or_setup": "laser confocal microscope (Zeiss LSM 900)",
+      "measurement_conditions": "2D and 3D surface topography",
+      "purpose": "Measure surface roughness Sa of P-150",
+      "key_findings": "P-150 surface roughness Sa = 4.19 μm (Fig. 10(e)); surface becomes smoother with increasing laser power."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "P-150 relative density = 99.07% (b0039).",
+    "P-150 reduction of area (Z) = 32.22% (Table 2, b0070).",
+    "P-150 surface roughness Sa = 4.19 μm (b0044, figure_010(e)).",
+    "P-150 porosity = 0.35% (b0036, figure_006(e)).",
+    "The minimum density among all samples prepared with different parameters is 6.78 g/cm³, much lighter than 304 stainless steel (7.93 g/cm³); this value is reported for the sample set as a whole and is not attributed specifically to P-150 (b0023).",
+    "FWHM of the (111) γ-Fe(M) diffraction peak for P-150 = 0.237; FWHM decreases with increasing laser power, implying the average grain size of SLM-printed samples gradually increases with energy density (b0033).",
+    "The substrate for printing was heated to 200 °C and argon (99.99% pure) was used with oxygen maintained below 300 ppm (b0020)."
+  ]
+}

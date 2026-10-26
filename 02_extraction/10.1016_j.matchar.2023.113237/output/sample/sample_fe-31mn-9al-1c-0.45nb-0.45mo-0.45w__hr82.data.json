@@ -1,0 +1,642 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-31mn-9al-1c-0.45nb-0.45mo-0.45w__hr82",
+      "paper_id": "10.1016_j.matchar.2023.113237",
+      "alloy_id": "alloy_fe-31mn-9al-1c-0.45nb-0.45mo-0.45w",
+      "process_id": "proc_hr82",
+      "sample_label": "HR82",
+      "aliases": "HR82 sample"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "solidification / melting",
+      "method": "high-frequency vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The steel was fabricated using the high-frequency vacuum induction melting furnace (shared prior step for all hot-rolling reductions)."
+    },
+    {
+      "processing_step_id": "step_hot_forging",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot forging into billets",
+      "temperature": "1150",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-forged into billets with a thickness of 110 mm at 1150 °C then air cooling to room temperature; shared prior step for all samples."
+    },
+    {
+      "processing_step_id": "step_reheating",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "reheating of hot-forged billet",
+      "temperature": "1150",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The hot-forged billets were initially reheated at 1150 °C before hot rolling."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1150",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "82%",
+      "processing_steps_notes": "The HR82 sample was hot-rolled into plate with a thickness of 20 mm corresponding to an 82% hot-rolling reduction, using 9 passes."
+    },
+    {
+      "processing_step_id": "step_water_quenching",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "After hot rolling the plate was water quenched to room temperature; the fast cooling also produced κ-carbides via spinodal decomposition and ordering without further aging."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_hr82",
+      "overall_structure": "After hot rolling to an 82% reduction and water quenching, the HR82 microstructure consists of equiaxed FCC austenite grains containing a large fraction of first-order annealing twins, together with micron-sized polygonal (Nb,Mo,W)C particles, submicron spherical (Nb,Mo,W)C particles and homogeneously dispersed nano-sized κ-carbides.",
+      "number_of_phases": 3,
+      "microstructure_counts": "3 constituent populations reported for HR82 (austenite matrix; (Nb,Mo,W)C particles; κ-carbides)",
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_hr82_austenite",
+          "region": "bulk",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ, FCC)",
+              "crystal_structure": "face-centered cubic (FCC)",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains with a large fraction of first-order annealing twins (Σ3 (60°〈111〉) boundaries)",
+              "grain_size": "18.80 μm (mean grain size excluding twin boundaries); 7.02 μm effective mean grain size when annealing twin boundaries are included",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "geometrically necessary dislocations (GND)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "9.87 × 10^13 m^-2",
+              "lattice_distortion": "highest KAM (local strain concentration) of the three samples, with the most extensive high-orientation-gradient regions"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "18.80",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_hr82_micronMC",
+              "type": "(Nb,Mo,W)C micron-sized polygonal particles (MC-type complex carbide)",
+              "size": {
+                "value": "1 to 25",
+                "unit": "μm"
+              },
+              "distribution": "distributed along the rolling direction at grain boundaries and grain interior",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_hr82_submicronMC",
+              "type": "(Nb,Mo,W)C submicron-sized spherical particles (MC-type complex carbide)",
+              "size": {
+                "value": "259 ± 23",
+                "unit": "nm"
+              },
+              "distribution": "homogeneously distributed in the austenite matrix; volume fraction ~0.198%",
+              "coherency": "Orowan bypass (incoherent) — dislocations bypass these particles during plastic deformation"
+            },
+            {
+              "precipitate_id": "ppt_hr82_kappa",
+              "type": "(Fe,Mn)3AlCx κ-carbides, L'12-type ordered structure",
+              "size": {
+                "value": "0.83 ± 0.23",
+                "unit": "nm"
+              },
+              "distribution": "homogeneously precipitated inside the austenite grains during water quenching; volume fraction 3.9 ± 0.39%",
+              "coherency": "coherent (shearable by gliding dislocations)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_hr82",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_hr82_aust_MC",
+          "microstructure_id": "micro_hr82_austenite",
+          "phase_1_name": "austenite (FCC)",
+          "phase_2_name": "(Nb,Mo,W)C",
+          "coherence": "incoherent — the (Nb,Mo,W)C particles cannot be sheared and are bypassed by dislocations through the Orowan mechanism"
+        },
+        {
+          "interface_id": "int_hr82_aust_kappa",
+          "microstructure_id": "micro_hr82_austenite",
+          "phase_1_name": "austenite (FCC)",
+          "phase_2_name": "κ-carbide (Fe,Mn)3AlCx",
+          "coherence": "coherent and shearable — gliding dislocations shear the κ-carbides forming anti-phase boundaries"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "int_hr82_microvoid",
+          "microstructure_id": "micro_hr82_austenite",
+          "interaction_type": "intergranular (Nb,Mo,W)C particle–matrix strain/stress concentration, particle debonding and microvoid formation",
+          "qualitative_or_quantitative_description": "The intergranular hard (Nb,Mo,W)C particles cause strain/stress concentration at their interfaces due to deformation discrepancy with the austenite matrix and act as preferential nucleation sites for microcracks; this concentration is partially alleviated by debonding of intragranular (Nb,Mo,W)C particles and subsequent microvoid formation. Abundant ductile dimples on the HR82 fracture surface indicate the intergranular particles had virtually no detrimental effect on toughness."
+        }
+      ],
+      "slip_behavior": "Predominant dislocation planar glide despite the high SFE: at low strain, homogeneously distributed arrays of planar slip bands and Taylor lattices (crossing non-coplanar {111} slip traces) form. With increasing plastic strain the slip bands become more closely spaced; for HR82 the slip band spacing at εe = 0.1 was 68.05 ± 8.91 nm, much finer than HR45/HR68. Refinement saturates at ~50 nm, after which microbands with ill-defined and then distinct boundaries develop (faster and earlier for HR82 due to its finer grain size).",
+      "phase_evolution": "A single fully austenitic matrix; nano-sized κ-carbides form by spinodal decomposition and subsequent ordering during fast cooling (water quenching) without a further aging treatment. No strain-induced martensite or β-Mn reported for HR82.",
+      "interface_notes": "κ-carbide cutting by leading dislocations produces glide-plane softening and preferential glide paths, favoring planar slip bands and Taylor lattice formation; further deformation rotates the Taylor lattice and generates microbands delineated by dislocation walls of GNDs."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_hr82_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1.0 × 10^-3 s^-1 (initial strain rate)",
+        "specimen_geometry": "standard tensile samples cut from the hot-rolled plate along the rolling direction (RD) with a gauge length of 25 mm and a diameter of 5 mm",
+        "test_standard": null,
+        "other_conditions": "uniaxial tensile tests on an MTS tensile machine; extensometer applied"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "648.0",
+              "unit": "MPa",
+              "uncertainty": "± 13.0"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "976.0",
+              "unit": "MPa",
+              "uncertainty": "± 11.0"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "type": "uniform elongation",
+              "value": "39.0",
+              "unit": "%",
+              "uncertainty": "± 0.8"
+            },
+            {
+              "direction": "RD",
+              "type": "total elongation",
+              "value": "50.0",
+              "unit": "%",
+              "uncertainty": "± 1.0"
+            },
+            {
+              "direction": "RD",
+              "type": "reduction of area",
+              "value": "61.5",
+              "unit": "%",
+              "uncertainty": "± 0.3"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Room-temperature engineering stress–strain curve of HR82 (blue curve, Fig. 5a): highest of the three samples, peaking between the 900 and 1000 MPa gridlines at about ε ≈ 0.39 and fracturing just before ε = 0.50.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            "Three-staged strain-hardening behaviour maintained at a high level of ~2000 MPa over a wide plastic-strain range up to necking; stage II strain-hardening rate increased continuously with increasing hot-rolling reduction."
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "105 ± 1.2",
+          "unit": "J/m2"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.82",
+          "unit": "g/cm3"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_hr82_impact",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "standard Charpy V-notch specimen: 55 mm in length, 10 mm in width, 10 mm in thickness, V-notch depth of 2 mm; length parallel to the rolling direction, striking direction parallel to the transverse direction",
+        "test_standard": "Charpy V-notch impact test",
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "strain_st hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "105 ± 1.2",
+          "unit": "J/m2"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_hr82_comparative",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Compared with other austenitic steels at the solution-treated state, HR82 exhibited a similar level of ductility (~50%) and toughness (~100 J/m2) but markedly higher yield strength; its yield strength is comparable to aging-hardened austenitic low-density steel (~650 MPa) but with considerably better ductility (50% vs 21%) and toughness (105 J vs 35 J).",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_hr82_ebsd",
+      "microstructure_id": "micro_hr82_austenite",
+      "technique": "electron back-scattered diffraction (EBSD)",
+      "instrument_or_setup": "JSM-7200F scanning electron microscope with a backscattered electron detector at 20 kV; data analysed with HKL channel 5 software",
+      "measurement_conditions": "step size 1 μm; boundaries with misorientation 60 ± 0.5° identified as twin boundaries; mean grain sizes determined by the line intercept method for grains with minimum misorientation angle of 15° (excluding annealing twin boundaries)",
+      "purpose": "Characterize hot-rolled microstructure, grain size, twin boundaries and Kernel Average Misorientation (KAM) for the HR82 sample",
+      "key_findings": "HR82 shows the finest equiaxed FCC austenite microstructure and the most extensive high-orientation-gradient (KAM) regions of the three samples; mean grain size 18.80 μm, effective grain size 7.02 μm, Σ3 twin boundary fraction 52%."
+    },
+    {
+      "characterization_id": "char_hr82_sem_bse",
+      "microstructure_id": "micro_hr82_austenite",
+      "technique": "scanning electron microscopy (SEM) backscattered-electron (BSE) imaging",
+      "instrument_or_setup": "JSM-7200F scanning electron microscope with a backscattered electron detector at 20 kV",
+      "measurement_conditions": null,
+      "purpose": "Observe the distribution of micron-sized and submicron-sized second-phase particles in HR82",
+      "key_findings": "Two particle populations coexist in HR82: micron-sized polygonal particles aligned in rolling-direction bands (grain boundary and interior, 1–25 μm) and a dense, broadly homogeneous dispersion of submicron spherical particles in the austenite matrix (mean 259 ± 23 nm, volume fraction ~0.198%)."
+    },
+    {
+      "characterization_id": "char_hr82_tem",
+      "microstructure_id": "micro_hr82_austenite",
+      "technique": "transmission electron microscopy (TEM) bright-field/dark-field imaging, selected-area electron diffraction (SAED) and energy-dispersive X-ray spectroscopy (EDS)",
+      "instrument_or_setup": "TEM operated at 200 kV (FEI Tecnai G2 F20) with EDS attached",
+      "measurement_conditions": "TEM-BF images along 〈110〉 zone axis of the austenite matrix grains; SAED patterns along the [100] zone axis using the (100) superlattice reflection",
+      "purpose": "Identify precipitate morphology, crystal structure and composition, and characterize deformation substructures (slip bands, Taylor lattices, microbands) after interrupted tensile tests at εe = 0.1, 0.2 and 0.4",
+      "key_findings": "Submicron particles identified as FCC (Nb,Mo,W)C (lattice parameter 4.36 Å) with Nb enrichment and Fe/Mn/Al depletion; nano-sized κ-carbides with L'12 structure (0.83 ± 0.23 nm, 3.9 ± 0.39%); HR82 shows the densest, most uniform κ-carbide dark-field speckle and the fastest deformation-substructure evolution."
+    },
+    {
+      "characterization_id": "char_hr82_tensile",
+      "microstructure_id": null,
+      "technique": "uniaxial tensile testing with extensometer; interrupted tensile tests at εe = 0.1, 0.2 and 0.4",
+      "instrument_or_setup": "MTS tensile machine",
+      "measurement_conditions": "room temperature; initial strain rate 1.0 × 10^-3 s^-1; tensile specimens cut along the rolling direction, gauge length 25 mm, diameter 5 mm",
+      "purpose": "Measure engineering stress–strain response and strain-hardening behaviour of HR82",
+      "key_findings": "HR82 reaches UTS 976 ± 11 MPa, YS 648 ± 13 MPa, UE 39.0 ± 0.8%, TE 50.0 ± 1.0%; three-staged strain-hardening behaviour maintaining ~2000 MPa."
+    },
+    {
+      "characterization_id": "char_hr82_charpy",
+      "microstructure_id": null,
+      "technique": "Charpy V-notch (CVN) impact testing",
+      "instrument_or_setup": "standard Charpy V-notch impact test",
+      "measurement_conditions": "room temperature; standard specimen 55 mm × 10 mm × 10 mm with 2 mm V-notch; length parallel to RD and striking direction parallel to TD",
+      "purpose": "Determine the impact toughness of HR82 at its hot-rolling reduction",
+      "key_findings": "HR82 exhibited a CVN impact energy of 105 ± 1.2 J/m2, a minor loss relative to lower reductions while retaining good toughness (>100 J/m2)."
+    },
+    {
+      "characterization_id": "char_hr82_sem_fractography",
+      "microstructure_id": null,
+      "technique": "SEM fractography of tensile fracture surfaces",
+      "instrument_or_setup": "SEM (secondary-electron fracture surfaces, 20 μm scale bars)",
+      "measurement_conditions": "room temperature after tensile testing",
+      "purpose": "Examine the fracture morphology of HR82 after the tensile test",
+      "key_findings": "HR82 shows a fine, more fibrous and equiaxed dimple morphology with microvoids, i.e. a typical ductile transgranular fracture with dimples finer than the HR45 sample (consistent with its finer grain size)."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_hr82_strengthening",
+      "simulation_method": "analytical strengthening-mechanism calculation (grain boundary, dislocation, κ-carbide shearing and (Nb,Mo,W)C Orowan contributions summed to yield strength)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Inputs for HR82: effective grain size 7.02 μm; GND density 9.87 × 10^13 m^-2; κ-carbide mean size 0.83 ± 0.23 nm and volume fraction 3.9 ± 0.39%; (Nb,Mo,W)C submicron particle size 259 ± 23 nm and volume fraction ~0.198%.",
+      "validation_against_experiment": "Calculated yield strength σ_calc = 653.9 MPa for HR82 agrees closely with the experimentally measured σ_exp = 648.0 MPa, demonstrating the validity of the strengthening analysis.",
+      "analytical_models": [
+        {
+          "model_name": "Overall yield-strength superposition",
+          "equation_role": "σ_y = σ_0 + σ_p + σ_ds + σ_gb",
+          "parameters": [
+            {
+              "name": "σ_0 (friction stress including solid-solution strengthening)",
+              "value": "203.1",
+              "unit": "MPa"
+            },
+            {
+              "name": "σ_p-κ (κ-carbide shearing)",
+              "value": "60.2",
+              "unit": "MPa"
+            },
+            {
+              "name": "σ_p-(Nb,Mo,W)C (Orowan bypass)",
+              "value": "6.4",
+              "unit": "MPa"
+            },
+            {
+              "name": "σ_ds (dislocation strengthening)",
+              "value": "107.5",
+              "unit": "MPa"
+            },
+            {
+              "name": "σ_gb (grain boundary strengthening)",
+              "value": "276.8",
+              "unit": "MPa"
+            },
+            {
+              "name": "σ_calc (calculated YS)",
+              "value": "653.9",
+              "unit": "MPa"
+            },
+            {
+              "name": "σ_exp (experimental YS)",
+              "value": "648.0",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "For HR82 the grain boundary strengthening (from HAGBs plus annealing twin boundaries) was the predominant mechanism and dislocation strengthening was also prominent, together responsible for the yield-strength increment with increasing hot-rolling reduction."
+        },
+        {
+          "model_name": "κ-carbide shearing strengthening",
+          "equation_role": "σ_p-κ = M (γ_APB/2b) √f · (√(12 γ_APB r /(π G b^2)) − √f)",
+          "parameters": [
+            {
+              "name": "M (Taylor factor, FCC)",
+              "value": "3.06",
+              "unit": null
+            },
+            {
+              "name": "G (shear modulus)",
+              "value": "68",
+              "unit": "GPa"
+            },
+            {
+              "name": "b (Burgers vector magnitude)",
+              "value": "0.26",
+              "unit": "nm"
+            },
+            {
+              "name": "γ_APB (anti-phase boundary energy)",
+              "value": "~350",
+              "unit": "mJ/m2"
+            },
+            {
+              "name": "r (mean κ-carbide radius)",
+              "value": "from 0.83 ± 0.23 nm size for HR82",
+              "unit": "nm"
+            },
+            {
+              "name": "f (κ-carbide volume fraction)",
+              "value": "3.9 ± 0.39",
+              "unit": "%"
+            }
+          ],
+          "model_note": "Shearing of coherent κ-carbides generates APBs; for the extremely small (<1 nm) κ-carbides the dislocation-pair coupling is weak."
+        },
+        {
+          "model_name": "(Nb,Mo,W)C Orowan bypassing strengthening",
+          "equation_role": "σ_p-(Nb,Mo,W)C = M (0.4 G b /(π√(1−ν))) · ln(2r/b) / (2r(√(π/4f) − 1))",
+          "parameters": [
+            {
+              "name": "M (Taylor factor, FCC)",
+              "value": "3.06",
+              "unit": null
+            },
+            {
+              "name": "G (shear modulus)",
+              "value": "170",
+              "unit": "GPa"
+            },
+            {
+              "name": "b (Burgers vector magnitude)",
+              "value": "0.26",
+              "unit": "nm"
+            },
+            {
+              "name": "r (mean (Nb,Mo,W)C radius)",
+              "value": "from 259 ± 23 nm size for HR82",
+              "unit": "nm"
+            },
+            {
+              "name": "f ((Nb,Mo,W)C volume fraction)",
+              "value": "~0.198",
+              "unit": "%"
+            }
+          ],
+          "model_note": "Orowan contribution from the micron-sized (Nb,Mo,W)C particles was negligible; only the submicron-sized particles contribute (6.4 MPa for HR82). Precipitate strengthening did not contribute to the strength increment with larger hot-rolling reduction."
+        },
+        {
+          "model_name": "Dislocation (Taylor) hardening",
+          "equation_role": "σ_ds = M α G b ρ_ds^(1/2)",
+          "parameters": [
+            {
+              "name": "M (Taylor factor, FCC)",
+              "value": "3.06",
+              "unit": null
+            },
+            {
+              "name": "α (numerical constant)",
+              "value": "0.2",
+              "unit": null
+            },
+            {
+              "name": "G (shear modulus)",
+              "value": "68",
+              "unit": "GPa"
+            },
+            {
+              "name": "b (Burgers vector magnitude)",
+              "value": "0.26",
+              "unit": "nm"
+            },
+            {
+              "name": "ρ_ds (residual/GND dislocation density)",
+              "value": "9.87 × 10^13",
+              "unit": "m^-2"
+            }
+          ],
+          "model_note": "GND densities were obtained from KAM maps; strengthening from dislocations was 107.5 MPa for HR82."
+        },
+        {
+          "model_name": "Grain boundary strengthening (Hall-Petch)",
+          "equation_role": "σ_gb = k_HP d_e^(−1/2)",
+          "parameters": [
+            {
+              "name": "k_HP (Hall-Petch coefficient)",
+              "value": "733.43",
+              "unit": "MPa μm^1/2"
+            },
+            {
+              "name": "d_e (mean effective grain size including twins)",
+              "value": "7.02",
+              "unit": "μm"
+            },
+            {
+              "name": "σ_gb (HR82 grain boundary strengthening)",
+              "value": "276.8",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "Fitting σ_F0 = σ_y − σ_p − σ_ds vs d_e^(−1/2) gave intercept σ_0 = 203.10 MPa and slope k_HP = 733.43 MPa μm^1/2; effective grain size including annealing twin boundaries was used."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_hr82_sfe",
+      "simulation_method": "thermodynamic stacking fault energy (SFE) calculation",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Composition Fe-31Mn-9Al-1C-0.45Nb-0.45Mo-0.45W (common to all samples, therefore the SFE applies to HR82)",
+      "validation_against_experiment": "The calculated SFE (~73 mJ/m2) is high, yet planar glide deformation substructures were observed, explained by the glide plane softening effect from κ-carbide shearing.",
+      "analytical_models": [
+        {
+          "model_name": "Olson and Cohen thermodynamic SFE model",
+          "equation_role": "Γ = 2 (4/(√3 a^2 N_A)) ΔG^(γ→ε) + 2σ",
+          "parameters": [
+            {
+              "name": "a (lattice constant of austenite)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "N_A (Avogadro constant)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "ΔG^(γ→ε) (free energy difference γ–ε)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "σ (γ/ε interface energy)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "SFE (result)",
+              "value": "~73",
+              "unit": "mJ/m2"
+            }
+          ],
+          "model_note": "The high SFE (~73 mJ/m2) would normally favor cross-slip and dislocation cell formation, which was not observed; instead planar glide occurred due to κ-carbide-induced glide plane softening."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "HR82 retained a large fraction of first-order annealing twin (Σ3 (60°〈111〉)) boundaries: the twin boundary fraction was 52% (determined by length relative to total length of boundaries with misorientation >15°).",
+    "Crystal structure of the (Nb,Mo,W)C particles was identified as face-centered cubic (FCC) with a calculated lattice parameter of 4.36 Å (determined from the HR68 submicron particle by EDS/SAED, applies to the same MC-type particles present in HR82).",
+    "The stacking fault energy of the steel (all hot-rolling states including HR82) was calculated to be ~73 mJ/m2 using the Olson–Cohen thermodynamic model.",
+    "HR82 slip band spacing at εe = 0.1 was 68.05 ± 8.91 nm, the finest of the three reductions, indicating faster development of deformation substructures with increasing hot-rolling reduction.",
+    "Microbands were observed at εe = 0.2 in the HR82 sample, earlier than in HR45, attributed to its finer grain size."
+  ]
+}

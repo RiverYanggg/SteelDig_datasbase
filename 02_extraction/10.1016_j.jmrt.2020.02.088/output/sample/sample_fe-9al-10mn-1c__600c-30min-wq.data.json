@@ -1,0 +1,326 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-9al-10mn-1c__600c-30min-wq",
+      "paper_id": "10.1016_j.jmrt.2020.02.088",
+      "alloy_id": "alloy_fe-9al-10mn-1c",
+      "process_id": "proc_600c-30min-wq",
+      "sample_label": "9Al-10Mn-1C 600 °C — Tempered",
+      "aliases": [
+        "9Al-10Mn-1C tempered at 600 °C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "1",
+      "type": "melting/casting",
+      "method": "casting using a 100 kW vacuum induction furnace",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Resulted in 0.5 kg ingots (Table 1). Shared upstream step for the hot-rolled + quenched product that is subsequently tempered."
+    },
+    {
+      "processing_step_id": "step_hot_rolling_1150c",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot-rolling",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "to 5 mm flat-products",
+      "processing_steps_notes": "Parent process (proc_hot-rolled-1150c): ingots hot-rolled at 1150 °C obtaining 5 mm flat-products."
+    },
+    {
+      "processing_step_id": "step_wq_after_hot_rolling",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled product was water quenched before tempering."
+    },
+    {
+      "processing_step_id": "step_tempering_600c_30min",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "tempering (heat treatment)",
+      "temperature": "600 °C",
+      "temperature_unit": "°C",
+      "duration": "30 min",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Tempering at 600 °C for 30 min; triggers slight/incipient transformations — discontinuous precipitation and precipitation transformation."
+    },
+    {
+      "processing_step_id": "step_wq_after_tempering",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Tempering at 600 °C for 30 min followed by water quenching."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_9al10mn1c_600c",
+      "overall_structure": "Discontinuous (and precipitation) transformation of austenite: the microstructure is a banded, rolling-direction-aligned structure in which almost all of the austenite volume transformed into γ + κ-carbide fine lamellar colonies (discontinuous precipitation), with only a few band-shaped γ austenite regions surviving; some δ-phase may also be present. The non-discontinuous-precipitated austenite featured nano-sized κ-carbide precipitation. Dark transformed matrix is crossed by many bright white elongated bands/stringers.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_dp_lamellae_600c",
+          "region": "bulk / matrix (banded, rolling-direction aligned)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "face-centred cubic (FCC_A1)",
+              "volume_fraction": null,
+              "morphology": "band-shaped regions surviving the transformation; light grey matrix in Fig. 1(b)",
+              "grain_size": null,
+              "texture": "elongated bands aligned to rolling direction"
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "ordered E2₁ / L1₂ (KAPPA_E21)",
+              "volume_fraction": null,
+              "morphology": "fine lamellae (discontinuous precipitation product, γ + κ lamellae)",
+              "grain_size": null,
+              "texture": "lamellar colonies with fans of parallel lamellae"
+            },
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "body-centred cubic (BCC_A2)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": "strongly banded, rolling-direction-aligned microstructure"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_kappa_dp_lamellae",
+              "type": "κ-carbide lamellae (discontinuous precipitation)",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "lamellar colonies nucleating from grain boundaries; fill most of the field of view with fans of parallel lamellae impinging at colony boundaries",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "precip_nano_kappa",
+              "type": "nano-sized κ-carbide",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "within the non-discontinuous-precipitated austenite (γ nano-k constituent detected by EDS, Table 3)",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_9al10mn1c_600c",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_gamma_kappa_lamellar",
+          "microstructure_id": "micro_dp_lamellae_600c",
+          "phase_1_name": "γ austenite",
+          "phase_2_name": "κ-carbide",
+          "coherence": null
+        },
+        {
+          "interface_id": "if_delta_gamma",
+          "microstructure_id": "micro_dp_lamellae_600c",
+          "phase_1_name": "δ-ferrite",
+          "phase_2_name": "γ austenite",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "γ → γ + κ discontinuous precipitation at 600 °C: a lower driving force caused by the lower annealing temperature (600 °C) allowed grain-boundary migration of the forming lamellar phase rather than completing lamellae separation; intergranular κ-carbides form on γ/γ boundaries. The residual austenite is present as band-shaped regions among the γ + κ lamellae, indicating a non-complete reaction.",
+      "interface_notes": "Interfaces involved are the γ/κ lamellar interphase boundaries produced by discontinuous precipitation and the δ/γ boundaries (δ phase possibly present). EDS (Table 3) partitions Al (δ 7.8–8.7, γ 7.6–8.0, K 8.0–8.3, γ nano-k 7.8–8.1 wt%) and Mn (δ 9.7–10.0, γ 9.9–10.7, k 10.2–10.5, γ nano-k 13.2–13.6 wt%) across δ, γ, κ and nano-κ constituents in this 600 °C tempered alloy."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_9al10mn1c_600c",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "through-thickness mounted section",
+        "test_standard": "Vickers macro-hardness",
+        "other_conditions": "Vickers method; 5 kg load applied for all indentations; 5 indentations per sample for statistical analysis"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk (macro-hardness)",
+            "value": "439 HV",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_9al10mn1c_600c_vs_hotrolled",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "600",
+          "max": "600",
+          "unit": "°C"
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-9al-10mn-1c",
+        "benchmark_process_id": "proc_hot-rolled-1150c",
+        "benchmark_sample_id": null,
+        "comparison_metric": "Vickers hardness: 600 °C tempered 439 HV vs hot-rolled 273 HV",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om_600c",
+      "microstructure_id": "micro_dp_lamellae_600c",
+      "technique": "optical microscopy",
+      "instrument_or_setup": null,
+      "measurement_conditions": "through-thickness embedding, grinding and polishing performed separately for hot-rolled and heat-treated samples",
+      "purpose": "analyse the microstructure of alloys at different processing conditions (hot-rolling and tempering)",
+      "key_findings": "Banded, rolling-direction-aligned discontinuous-precipitation microstructure; optical micrographs with 400 μm scale bars show fine, closely spaced lamellae (narrow inter-lamellar spacing) for the 600 °C tempered 9Al-10Mn-1C."
+    },
+    {
+      "characterization_id": "char_sem_sei_600c",
+      "microstructure_id": "micro_dp_lamellae_600c",
+      "technique": "scanning electron microscopy (secondary electron imaging, SEI)",
+      "instrument_or_setup": "SEM, 20 kV; magnifications X10,000 (1 µm scale bar); X2,500 available",
+      "measurement_conditions": null,
+      "purpose": "analyse phase morphologies",
+      "key_findings": "At 9Al-10Mn-1C most of the austenite is transformed through the discontinuous precipitation reaction producing γ + κ-carbide fine lamellae; lamellar colonies fill most of the field with only a dark unreacted patch remaining."
+    },
+    {
+      "characterization_id": "char_eds_600c",
+      "microstructure_id": "micro_dp_lamellae_600c",
+      "technique": "SEM-EDS / EDX spectroscopy",
+      "instrument_or_setup": "EDS attached to SEM",
+      "measurement_conditions": "qualitative local phase composition",
+      "purpose": "provide qualitative information on the local phase composition and analyse phase chemistries",
+      "key_findings": "Table 3: EDS for Al and Mn in 9Al-10Mn-1C tempered at 600 °C — Al wt% (Min/Mean/Max): δ 7.8/8.2/8.7, γ 7.6/7.8/8.0, K 8.0/8.2/8.3, γ nano-k 7.8/8.0/8.1; Mn wt%: δ 9.7/9.9/10.0, γ 9.9/10.3/10.7, k 10.2/10.4/10.5, γ nano-k 13.2/13.4/13.6. The nano-κ constituent is the Mn-richest phase; consistent with nano-sized κ-carbide in the non-transformed austenite. Analysis did not give clear/defined results but a reasonable interpretation was given with microscopy."
+    },
+    {
+      "characterization_id": "char_vickers_600c",
+      "microstructure_id": null,
+      "technique": "Vickers macro-hardness testing",
+      "instrument_or_setup": "Vickers hardness tester",
+      "measurement_conditions": "5 kg load; 5 indentations per sample",
+      "purpose": "statistical analysis of hardening effects as a function of composition and process",
+      "key_findings": "9Al-10Mn-1C 600 °C tempered = 439 HV (vs 273 HV hot-rolled)."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_calphad_9al10mn1c",
+      "simulation_method": "CALPHAD thermodynamic calculation (equilibrium phase volume fraction / amount of all phases vs temperature)",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "9Al-10Mn-1C composition; temperature range 0–1300 °C; y-axis amount of all phases [mol] (0.00–1.10); phases FCC_A1, BCC_A2, KAPPA_E21.",
+      "validation_against_experiment": "Used qualitatively to explain the thermodynamic gradient in austenite stability between hot-rolling (1150 °C) and tempering (600 °C/800 °C); the γ fraction gradient was detected for 9Al-10Mn-1C at 600 °C and 800 °C, consistent with the observed austenite decompositions.",
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "Tempering at 600 °C triggered only slight/incipient transformations (discontinuous precipitation and precipitation transformation) in the 9Al-10Mn-1C alloy, in contrast to 800 °C which triggered complete and widespread transformations (cellular transformation coupled with spinodal decomposition). (b0117)",
+    "For 9Al-10Mn-1C at 600 °C the tempering established thermodynamic changes for austenite stability; the manganese (10%) and carbon (1%) concentrations were not high enough to stabilize the γ phase against its own transformation, with the thermal energy introduced at 600 °C and the limited driving force permitting grain-boundary migration of the forming lamellar phase rather than completing lamellae separation. (b0062, b0067, b0068, b0069, b0070, b0071)",
+    "Discontinuous precipitation produced γ + κ-carbide fine lamellae in 9Al-10Mn-1C at 600 °C; the best microstructure among the studied alloys is reported to be this 9Al-10Mn-1C at 600 °C, with narrow inter-lamellar spacing, giving the highest hardness value (439 HV) and, per the literature, the better tensile ductility. (b0114, b0118)",
+    "The 600 °C tempered 9Al-10Mn-1C gained outstanding hardness among the alloys featuring 9% aluminium, attributed to the fine γ + κ lamellae with short inter-lamellar spacing. (b0049, b0082, b0108)",
+    "EDS on the 600 °C tempered 9Al-10Mn-1C indicated that the non-discontinuous-precipitated austenite contained nano-sized κ-carbide precipitation; the analysis did not give clear and defined results but a reasonable interpretation was given in accordance with the related microscopy observations. (b0034)"
+  ]
+}

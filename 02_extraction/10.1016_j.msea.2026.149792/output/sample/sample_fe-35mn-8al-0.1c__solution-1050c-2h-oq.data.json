@@ -1,0 +1,796 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-35mn-8al-0.1c__solution-1050c-2h-oq",
+      "paper_id": "10.1016_j.msea.2026.149792",
+      "alloy_id": "alloy_fe-35mn-8al-0.1c",
+      "process_id": "proc_solution-1050c-2h-oq",
+      "sample_label": "8Al steel",
+      "aliases": [
+        "8Al",
+        "8 %Al steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "melting / casting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "high-purity Ar atmosphere",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Four ingots with nominal composition Fe-35Mn-xAl-1C-0.1Nb-0.1V-1Mo-1W (x = 4,6,8,10 wt%) prepared by vacuum induction melting under high-purity Ar."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1150",
+      "temperature_unit": "°C",
+      "duration": "4 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "As-cast ingots homogenized at 1150 °C for 4 h."
+    },
+    {
+      "processing_step_id": "step_hot_forging",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot forging",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Subsequently hot-forged into rods with a diameter of 16.5 mm."
+    },
+    {
+      "processing_step_id": "step_solution_treatment_oq",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "solution treatment followed by oil quenching",
+      "temperature": "1050",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "oil (quenching)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Bars solution-treated at 1050 °C for 2 h followed by oil quenching to achieve a microstructure with nearly equiaxed grains; this is the terminal state of the 8Al sample. Note b0022 refers to 'water-quenched steel rods' from which tensile specimens were machined."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_initial_8Al",
+      "overall_structure": "Solution-treated 8Al steel is a ferrite-based duplex lightweight steel with nearly equiaxed (quasi-equiaxed) grains: a ferrite (α, blue) matrix with numerous austenite (γ, red) grains; the austenite grains contain numerous annealing twin boundaries. B2 and DO3 ordered domains coexist in the ferrite, and L12-type short-range order is present in the austenite.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_ferrite_8Al",
+          "region": "matrix",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (α)",
+              "crystal_structure": "BCC",
+              "volume_fraction": "75.7 %",
+              "morphology": "matrix (blue-dominant in EBSD phase map)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "DO3 ordered domains",
+              "crystal_structure": "DO3 superlattice (ordered BCC)",
+              "volume_fraction": null,
+              "morphology": "ordered domains coexisting within both B2 ordered domains and the ferrite matrix",
+              "grain_size": "2.1 nm (maximum size, TEM)",
+              "texture": null
+            },
+            {
+              "phase_name": "B2 ordered domains",
+              "crystal_structure": "B2 (ordered BCC)",
+              "volume_fraction": null,
+              "morphology": "ordered domains coexisting with DO3 domains in the ferrite matrix",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations (initial state)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_DO3_domains_8Al",
+              "type": "DO3 ordered domains",
+              "size": {
+                "value": "2.1",
+                "unit": "nm"
+              },
+              "distribution": "coexisting within both the B2 ordered domains and the ferrite matrix",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_B2_domains_8Al",
+              "type": "B2 ordered domains",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "coexist with DO3 domains within the ferrite matrix",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_austenite_8Al",
+          "region": "grains within the ferrite matrix",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "24.3 %",
+              "morphology": "grains (red regions) within the ferrite matrix; contain numerous annealing twin boundaries",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "L12-type short-range ordered structure",
+              "crystal_structure": "L12-type SRO",
+              "volume_fraction": null,
+              "morphology": "weak {110} satellite/superlattice diffraction spots in the austenite",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "annealing twin boundaries",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_deformed_8Al",
+      "overall_structure": "After tensile deformation, the 8Al steel shows distinct deformation mechanisms in the two phases: austenite deforms by dislocation cell blocks/dislocation cells (plus a small number of deformation twins near maximum force), while ferrite deforms by pronounced planar slip forming slip bands that are continuously refined with strain (dynamic slip band refinement).",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_ferrite_deformed_8Al",
+          "region": "uniform deformation zone",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "ferrite (α)",
+              "crystal_structure": "BCC",
+              "volume_fraction": "75.7 %",
+              "morphology": "planar slip bands, refined with increasing strain",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "edge dislocations (a/2[111])",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "screw dislocations (a/2[111])",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "mixed dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "slip bands",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_sheared_DO3_8Al",
+              "type": "DO3 ordered domains (sheared by dislocations)",
+              "size": {
+                "value": "2.1",
+                "unit": "nm"
+              },
+              "distribution": "completely sheared along the dislocation line and slip plane directions",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_austenite_deformed_8Al",
+          "region": "uniform deformation zone",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "24.3 %",
+              "morphology": "dislocation cell blocks and dislocation cells",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation cell blocks",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "dislocation cells",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "deformation twins",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_8Al",
+      "phase_interfaces": [
+        {
+          "interface_id": "pi_ferrite_austenite_8Al",
+          "microstructure_id": "micro_ferrite_8Al",
+          "phase_1_name": "ferrite (α)",
+          "phase_2_name": "austenite (γ)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_edge_activation_at_boundary_8Al",
+          "microstructure_id": "micro_ferrite_deformed_8Al",
+          "interaction_type": "edge dislocation activation at ferrite-austenite interface / ferrite grain boundaries",
+          "qualitative_or_quantitative_description": "Edge dislocations are more readily activated at the grain boundaries, explained by the high stress present at these boundaries; back stresses are generated in the soft phase and forward stresses in the hard phase during deformation of heterogeneous structures, and high stresses at ferrite grain boundaries together with the stress-multiplication effect facilitate collective glide of dislocations on the same slip plane."
+        },
+        {
+          "interaction_id": "di_dislocation_DO3_shearing_8Al",
+          "microstructure_id": "micro_ferrite_deformed_8Al",
+          "interaction_type": "dislocation shearing of DO3 ordered domains causing planar slip and dislocation pairing",
+          "qualitative_or_quantitative_description": "DO3 ordered domains in 8Al ferrite can be completely sheared along the dislocation line and slip plane directions (Fig. 8(f)); the number of dislocation pairs in 8Al ferrite usually does not exceed 3 pairs (paired dislocation count 6), giving an estimated ordered-domain size of 1.5 nm, close to the TEM-observed 2.1 nm. When DO3 domains are destroyed by dislocations, anti-phase boundaries (APBs) are left behind and the APB attractive force leads to dislocation pairing. IFFT shows dislocations composed of many dislocation dipoles shearing the DO3 superlattice."
+        },
+        {
+          "interaction_id": "di_stress_partitioning_austenite_8Al",
+          "microstructure_id": "micro_ferrite_8Al",
+          "interaction_type": "stress alleviation by soft austenite phase",
+          "qualitative_or_quantitative_description": "Approximately 24.3 % austenite in 8Al steel, acting as a soft phase, can effectively alleviate stress localization within the ferrite and enhance the deformation of the ferrite to higher stresses."
+        }
+      ],
+      "slip_behavior": "Planar slip of dislocations dominates in the ferrite of 8Al steel: edge, mixed and screw dislocations all exhibit a typical planar slip characteristic, forming slip bands. The Burgers vector of ferrite dislocations is a/2[111]. The number of paired dislocations does not exceed 3 pairs. In austenite, deformation proceeds by planar dislocation slip with cross-slip at low strains (~3%), then cell blocks and dislocation cells at 20-28% strain, plus a small number of deformation twins.",
+      "phase_evolution": null,
+      "interface_notes": "Dislocations in ferrite of 8Al steel are distributed homogeneously (unlike the localized long straight screw dislocations of 10Al steel); this homogeneous distribution can effectively mitigate brittle fracture caused by stress concentration. DO3 ordered domains coexist within both the B2 ordered domains and the ferrite matrix."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_tensile_8Al",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "1.0 × 10^-3 s^-1",
+        "specimen_geometry": "standard specimens 5 mm in diameter, 25 mm in gauge length; tensile axis oriented parallel to the rod axis",
+        "test_standard": null,
+        "other_conditions": "Tensile testing on an MTS tensile machine; at least three tensile specimens tested to fracture for reproducibility; interrupted tensile tests conducted to engineering strains of 3 %, 10 %, 20 % and 28 %."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "455",
+              "unit": "MPa",
+              "uncertainty": "±10"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "740",
+              "unit": "MPa",
+              "uncertainty": "±14"
+            }
+          ],
+          "elongation": [
+            {
+              "type": "uniform elongation",
+              "direction": null,
+              "value": "31.0",
+              "unit": "%",
+              "uncertainty": "±1.3"
+            },
+            {
+              "type": "total elongation",
+              "direction": null,
+              "value": "39.8",
+              "unit": "%",
+              "uncertainty": "±1.8"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": {
+            "description": "Engineering stress-strain curve of 8Al (blue) reaches the highest curve among the four steels; its true stress-true strain curve attains the highest true stress, peaking between the 800 and 1000 MPa gridlines near true strain 0.3."
+          },
+          "stress_strain_distribution": [
+            {
+              "true_strain": "3.0 %",
+              "true_stress": "528 MPa"
+            },
+            {
+              "true_strain": "9.5 %",
+              "true_stress": "662 MPa"
+            },
+            {
+              "true_strain": "18.2 %",
+              "true_stress": "829 MPa"
+            },
+            {
+              "true_strain": "24.7 %",
+              "true_stress": "924 MPa"
+            }
+          ],
+          "strain_hardening_rate": [
+            {
+              "stage": "A",
+              "description": "Movement of dislocations leads to a sharp decrease in the strain hardening rate."
+            },
+            {
+              "stage": "B",
+              "description": "Reduction in strain hardening rate caused by the slip plane softening effect induced by dislocation shearing of the DO3 long-range ordered domains."
+            },
+            {
+              "stage": "C",
+              "description": "Passing stress generated by slip bands of stored dislocations is the primary contributor to strain hardening; with increasing strain the number of slip bands increases, spacing decreases and passing stress rises, increasing the strain hardening rate."
+            },
+            {
+              "stage": "D",
+              "description": "Slip bands become nearly saturated and cross-slip of dislocations is activated, decreasing the strain hardening rate."
+            },
+            {
+              "stage": "E",
+              "description": "Localization of stress results in a rapid decline in strain hardening rate and leads to plastic failure."
+            }
+          ]
+        },
+        "hardness": [
+          {
+            "region": "ferrite (α)",
+            "value": null,
+            "scale": "HV",
+            "unit": null,
+            "uncertainty": null
+          },
+          {
+            "region": "austenite (γ)",
+            "value": null,
+            "scale": "HV",
+            "unit": null,
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.99",
+          "unit": "g cm^-3"
+        },
+        "thermal_properties": {
+          "stacking_fault_energy": "68.47 mJ·m^-2 (at 23 °C)"
+        },
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_8Al_comparative",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": [
+        {
+          "benchmark_alloy_id": "alloy_fe-35mn-4al-0.1c",
+          "benchmark_process_id": "proc_solution-1050c-2h-oq",
+          "benchmark_sample_id": null,
+          "comparison_metric": "Increasing Al from 4 wt% to 8 wt% raises yield strength from 239 MPa to 455 MPa and tensile strength from 552 MPa to 740 MPa, while uniform elongation only decreases from 38.5 % to 31.0 %.",
+          "improvement_percentage": null
+        },
+        {
+          "benchmark_alloy_id": "alloy_fe-35mn-10al-0.1c",
+          "benchmark_process_id": "proc_solution-1050c-2h-oq",
+          "benchmark_sample_id": null,
+          "comparison_metric": "The 8Al steel shows a much better strength-ductility balance (total elongation 39.8 %) than the 10Al steel, whose tensile elongation collapses to about 4.6 % (brittle).",
+          "improvement_percentage": null
+        }
+      ]
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_ebsd_8Al",
+      "microstructure_id": "micro_ferrite_8Al",
+      "technique": "Electron back scatter diffraction (EBSD)",
+      "instrument_or_setup": "scanning electron microscope JSM-7800 F; scanning step size 1 μm; HKL channel 5 software",
+      "measurement_conditions": "solution-treated specimens",
+      "purpose": "Phase distribution maps to characterize initial microstructure of the 4Al, 6Al, 8Al and 10Al steels",
+      "key_findings": "8Al steel is a ferrite-based duplex lightweight steel with quasi-equiaxed grains (blue ferrite matrix with numerous red austenite grains); austenite grains contain numerous annealing twin boundaries."
+    },
+    {
+      "characterization_id": "char_tem_sad_8Al",
+      "microstructure_id": "micro_ferrite_8Al",
+      "technique": "Transmission electron microscopy (TEM) and selected area diffraction (SADP/SAED)",
+      "instrument_or_setup": "FEI-Tecnai G2 F20 and FEI talos F200X operated at 200 kV",
+      "measurement_conditions": "solution-treated and deformed specimens",
+      "purpose": "Reveal ordered structures (B2, DO3) in ferrite and L12-type SRO in austenite; characterize dislocation substructures",
+      "key_findings": "8Al ferrite SADP along [110]α//[110]DO3 shows DO3 superlattice spots (1̄11_DO3, 002_DO3, 001_B2); [100]γ SADP of 8Al austenite shows yellow-circled 011_SRO reflection indicating L12-type SRO."
+    },
+    {
+      "characterization_id": "char_darkfield_8Al",
+      "microstructure_id": "micro_ferrite_8Al",
+      "technique": "TEM dark-field imaging using DO3 superlattice reflections",
+      "instrument_or_setup": "TEM (FEI-Tecnai G2 F20 / FEI talos F200X)",
+      "measurement_conditions": "DO3 {111} and {002} reflections in the same field of view",
+      "purpose": "Determine coexistence of B2 and DO3 ordered domains in the ferrite matrix",
+      "key_findings": "For 8Al, the dark-field image from the {002}DO3 reflection shows lower or approximate intensity than that from {111}DO3 (green arrows), indicating coexistence of main DO3 domains in the ferritic matrix; DO3 domains coexist within both B2 ordered domains and the ferrite matrix."
+    },
+    {
+      "characterization_id": "char_xrd_8Al",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "2θ from 40 to 100°",
+      "purpose": "Examine phase composition and mass fractions",
+      "key_findings": "Mass fractions of ferrite are 75.7 % for 8Al steel (24.3 % austenite); peaks indexed (111)γ, (110)α, (200)γ, (220)γ, (211)α."
+    },
+    {
+      "characterization_id": "char_tensile_8Al",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "MTS tensile machine",
+      "measurement_conditions": "room temperature; strain rate 1.0 × 10^-3 s^-1; specimens 5 mm diameter, 25 mm gauge length",
+      "purpose": "Determine stress-strain responses and strain hardening rates of solution-treated specimens",
+      "key_findings": "8Al: YS 455 (±10) MPa, UTS 740 (±14) MPa, uniform elongation 31.0 (±1.3) %, total elongation 39.8 (±1.8) %; exhibits five distinct strain hardening stages A-E."
+    },
+    {
+      "characterization_id": "char_microhardness_8Al",
+      "microstructure_id": null,
+      "technique": "Microhardness testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "at different true strains (Fig. 3e) and different Al contents (Fig. 2b)",
+      "purpose": "Track hardness evolution of austenite and ferrite phases with strain and Al content",
+      "key_findings": "Microhardness of ferrite is significantly higher than that of austenite; in 8Al steel the ferrite microhardness initially decreases (softening in early deformation) and then increases with strain, while the austenite microhardness increases monotonically with strain."
+    },
+    {
+      "characterization_id": "char_epma_8Al",
+      "microstructure_id": null,
+      "technique": "Electron probe microanalysis (EPMA)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Investigate the compositions of austenite and ferrite phases",
+      "key_findings": "Composition of 8Alγ (Mn 36.06, Al 7.10, C 0.253 wt%) and 8Alα (Mn 33.84, Al 8.26 wt%, C below detection); Al partitions into ferrite."
+    },
+    {
+      "characterization_id": "char_wetchem_8Al",
+      "microstructure_id": null,
+      "technique": "Wet-chemical analysis",
+      "instrument_or_setup": null,
+      "measurement_conditions": "solution-treated samples",
+      "purpose": "Determine bulk chemical composition of the solution-treated samples",
+      "key_findings": "8Al bulk: Mn 34.56, Al 8.10, C 0.076, Nb 0.11, V 0.11, Mo 1.31, W 1.27 wt%, Fe balance."
+    },
+    {
+      "characterization_id": "char_twobeam_gb_8Al",
+      "microstructure_id": "micro_ferrite_deformed_8Al",
+      "technique": "Two-beam diffraction / g·b contrast analysis",
+      "instrument_or_setup": "TEM, near the [111] zone axis",
+      "measurement_conditions": "samples pre-deformed to 3 % engineering strain",
+      "purpose": "Identify the Burgers vector b of dislocations in the ferrite of 8Al steel",
+      "key_findings": "Some dislocations systematically lost contrast under the [0̄11] and [110] operating vectors; the Burgers vector b of ferrite dislocations in 8Al steel is determined to be a/2[111] by the g·b = 0 analysis."
+    },
+    {
+      "characterization_id": "char_hrtem_ifft_8Al",
+      "microstructure_id": "micro_ferrite_deformed_8Al",
+      "technique": "High-resolution TEM (HRTEM) and inverse fast Fourier transform (IFFT)",
+      "instrument_or_setup": "HRTEM along the [100] zone axis; IFFT along the (01̄1) and (0 1 1) planes",
+      "measurement_conditions": "positions 1 and 2 in Fig. 8(g)",
+      "purpose": "Illustrate the interaction between dislocations and the DO3 ordered structure",
+      "key_findings": "Dislocations are composed of a multitude of dislocation dipoles, and the DO3 superlattice is sheared along the dislocation line and slip plane by these dislocation dipoles, causing planar slip."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_sfe_8Al",
+      "simulation_method": "Thermodynamic calculation of stacking fault energy (SFE)",
+      "software_used": null,
+      "potential_model_or_database": "thermodynamic functions and parameters listed in literature [35]",
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "γ_SFE = 2ρΔG^(γ→ε) + 2σ",
+          "equation_role": "Calculation of the stacking fault energy of austenite, where ρ is the molar surface density along {111} planes, ΔG^(γ→ε) is the molar Gibbs energy of the γ→ε transformation and σ is the interfacial energy per unit area of the γ/ε phase boundary.",
+          "parameters": [
+            {
+              "name": "γ_SFE (8Al_γ, 23 °C)",
+              "value": "68.47",
+              "unit": "mJ·m^-2"
+            }
+          ],
+          "model_note": "Table 2 records γ_SFE (23 °C) for the four Al levels; the 8Al_γ value is 68.47 mJ·m^-2 (no value given for 10Al_γ)."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_flow_stress_8Al",
+      "simulation_method": "Flow-stress decomposition / strain-hardening model",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Uses the measured average slip-band spacing and dislocation cell/cell-block sizes of the 8Al steel (Fig. 6).",
+      "validation_against_experiment": "The calculated and measured (black line) flow stress σ_tot for the 8Al steel agree; the best fit between calculations and experiments is achieved when K = 0.75 and σ0 = 455 MPa. Table 4/Fig.9(b) compare calculated and measured stresses at true strains 3.0, 9.5, 18.2 and 24.7 %.",
+      "analytical_models": [
+        {
+          "model_name": "σ_tot = σ0 + σ(ε)",
+          "equation_role": "Total flow stress = deformation-independent strengthening (yield stress) plus strain-hardening term.",
+          "parameters": [
+            {
+              "name": "σ0",
+              "value": "455",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "σ0 is the yield stress (deformation-independent contribution)."
+        },
+        {
+          "model_name": "σ(ε) = 0.757 σ_α(ε) + 0.243 σ_γ(ε)",
+          "equation_role": "Strain-hardening term split into ferrite (α) and austenite (γ) contributions via their mass fractions.",
+          "parameters": [
+            {
+              "name": "ferrite mass fraction",
+              "value": "0.757",
+              "unit": null
+            },
+            {
+              "name": "austenite mass fraction",
+              "value": "0.243",
+              "unit": null
+            }
+          ],
+          "model_note": "75.7 % and 24.3 % are the mass fractions of ferrite and austenite respectively."
+        },
+        {
+          "model_name": "σ_(α)(ε) = K M G b / D",
+          "equation_role": "Ferrite strain-hardening contribution from slip band refinement determined through passing-stress analysis.",
+          "parameters": [
+            {
+              "name": "K",
+              "value": "0.75",
+              "unit": null
+            },
+            {
+              "name": "M (Taylor factor)",
+              "value": "2.8",
+              "unit": null
+            },
+            {
+              "name": "G (shear modulus)",
+              "value": "80.7",
+              "unit": "GPa"
+            },
+            {
+              "name": "b (Burgers vector magnitude)",
+              "value": "0.25",
+              "unit": "nm"
+            },
+            {
+              "name": "D (mean slip band spacing)",
+              "value": null,
+              "unit": "nm"
+            }
+          ],
+          "model_note": "K = 0.75 is very close to the similitude coefficient K = 0.7 for solid solution Fe30.4Mn8Al1.2C (wt%) austenite lightweight steel, indicating the ferrite slip bands undergo the DSBR effect."
+        },
+        {
+          "model_name": "σ_(γ)(ε) = K_SB M_SB G b / D + 0.8 K_DCB M_DCB G b / D + 0.2 K_DC M_DC G b / D",
+          "equation_role": "Austenite strain-hardening contribution from slip band, dislocation cell block and dislocation cell refinement (empirical relationship).",
+          "parameters": [
+            {
+              "name": "K_SB+DCB",
+              "value": "2.03",
+              "unit": null
+            },
+            {
+              "name": "K_DC",
+              "value": "2.02",
+              "unit": null
+            },
+            {
+              "name": "M_SB = M_DCB",
+              "value": "3.06",
+              "unit": null
+            },
+            {
+              "name": "M_DC",
+              "value": "2.44",
+              "unit": null
+            },
+            {
+              "name": "G (shear modulus)",
+              "value": "70",
+              "unit": "GPa"
+            },
+            {
+              "name": "b (Burgers vector magnitude)",
+              "value": "0.25",
+              "unit": "nm"
+            }
+          ],
+          "model_note": "The values 0.8 and 0.2 are the area fractions of dislocation cell blocks and dislocation cells respectively. The K values were obtained from the 4Al steel and, since the austenite in 4Al and 8Al steels have similar compositional systems and deformation structures, the similarity constant of austenite in 8Al steel is approximated by that in 4Al steel (K values 2.0-2.9 typical of austenitic stainless steel)."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_ordered_domain_size_8Al",
+      "simulation_method": "Estimation of superlattice ordered domain size from the number of paired dislocations",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Number of paired dislocations counted at slip band fronts.",
+      "validation_against_experiment": "For 8Al: 6 paired dislocations give D = 1.5 nm, very close to the TEM-observed value of 2.1 nm. For 10Al: 12 paired dislocations give 3.0 nm, much smaller than the TEM-observed 19 nm.",
+      "analytical_models": [
+        {
+          "model_name": "D = N b",
+          "equation_role": "Size of the superlattice ordered domains D equals the number of paired dislocations N times the Burgers vector magnitude b.",
+          "parameters": [
+            {
+              "name": "N (8Al steel)",
+              "value": "6",
+              "unit": null
+            },
+            {
+              "name": "b (Burgers vector magnitude)",
+              "value": "0.25",
+              "unit": "nm"
+            },
+            {
+              "name": "D (8Al steel, calculated)",
+              "value": "1.5",
+              "unit": "nm"
+            }
+          ],
+          "model_note": "b = 0.25 nm; the number of dislocation pairs in 8Al steel usually does not exceed 3 pairs (paired dislocation count 6)."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Measured bulk composition of the solution-treated 8Al steel (wet-chemical analysis, Table 1): Mn 34.56, Al 8.10, C 0.076, Nb 0.11, V 0.11, Mo 1.31, W 1.27 wt%, Fe balance.",
+    "Measured phase compositions of the 8Al steel (EPMA, Table 1): 8Al_γ austenite — Mn 36.06, Al 7.10, C 0.253, Nb 0.08, V 0.10, Mo 0.84, W 0.89 wt% (Fe balance); 8Al_α ferrite — Mn 33.84, Al 8.26, C below detection ('-'), Nb 0.08, V 0.11, Mo 1.25, W 1.25 wt% (Fe balance); Al partitions into the ferrite.",
+    "The density of the 8Al steel measured by the Archimedes principle is 6.99 g cm^-3.",
+    "The calculated room-temperature stacking fault energy of the 8Al austenite (γ_SFE at 23 °C) is 68.47 mJ·m^-2 (Table 2); γ_SFE increases monotonically with Al content over 4 → 6 → 8 wt% Al.",
+    "Microhardness of ferrite is significantly higher than that of austenite in the designed steels, indicating ferrite acts as a strengthening phase; in the 8Al steel the ferrite microhardness first decreases (early softening) and then increases with strain, while austenite microhardness increases monotonically with strain (Fig. 2b, Fig. 3e; no numeric values printed).",
+    "The maximum size of DO3 ordered domains in the 8Al ferrite is approximately 2.1 nm (TEM observed), smaller than the values for 6Al (2.0 nm) and 10Al (19 nm); the estimated shear-zone/ordered-domain size from paired dislocations is less than 1.5 nm.",
+    "The number of paired dislocations in the 8Al ferrite slip band fronts usually does not exceed 3 pairs (paired dislocation count 6), while 10Al shows up to 6 pairs with dislocation spacings as small as approximately 3 nm.",
+    "Burgers vector of the ferrite dislocations in the 8Al steel is determined as a/2[111] by g·b = 0 analysis; dislocations in ferrite of 8Al steel (edge, mixed and screw) all exhibit planar slip forming refined slip bands (dynamic slip band refinement).",
+    "The average slip band (SB) spacing, dislocation cell block (DCB) size and dislocation cell (DC) size in the 8Al steel all decrease monotonically with engineering strain up to 0.30: α_SB falls from ~800 nm to ~100 nm, γ_SB+DCB from just below 1000 nm to 200-400 nm, and γ_DC exists only at the two highest strains (Fig. 6; no numeric values printed).",
+    "The total uniform elongation of the 8Al steel is 39.8 (±1.8) % and its strain-hardening response displays five distinct stages (A, B, C, D, E), similar to high-carbon high-aluminum austenitic lightweight steels."
+  ]
+}

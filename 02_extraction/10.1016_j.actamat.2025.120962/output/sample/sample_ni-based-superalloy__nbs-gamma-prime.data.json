@@ -1,0 +1,84 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_ni-based-superalloy__nbs-gamma-prime",
+      "paper_id": "10.1016_j.actamat.2025.120962",
+      "alloy_id": "alloy_ni-based-superalloy",
+      "process_id": "proc_nbs-gamma-prime",
+      "sample_label": "NBS-3 (γ' phase)",
+      "aliases": []
+    }
+  ],
+  "processing_steps": [],
+  "structures": [
+    {
+      "structure_id": "struct_nbs3_gamma_prime",
+      "overall_structure": "γ' phase present as small light grey areas (key object of analysis); impurities deeply dark in color and distinctly larger in area also present",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_nbs3_gamma_prime",
+          "region": null,
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "γ' phase",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "small light grey areas (b0102); Fig.10 shows a fine globular/network phase in a lighter matrix",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "impurities (deeply dark in color, distinctly larger in area)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_matsam_segmentation_nbs3_gp",
+      "microstructure_id": "struct_nbs3_gamma_prime",
+      "technique": "Microstructure image segmentation using MatSAM (Materials Segment Anything Model, training-free visual large model)",
+      "instrument_or_setup": "MatSAM (based on Segment Anything Model, SAM)",
+      "measurement_conditions": "training-free (no manual annotations); these image samples are not provided with corresponding annotations",
+      "purpose": "Identify and extract the γ' phase microstructure in NBS-3 micrograph without manual annotation",
+      "key_findings": "MatSAM accurately recognizes all phases (γ', TCP and impurities); the γ' phase key-structure binary mask appears as dense white speckle"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_matsam_inference_nbs3_gamma_prime",
+      "simulation_method": "MatSAM (training-free microstructure segmentation based on the Segment Anything Model, SAM)",
+      "software_used": "MatSAM framework; validation experiments conducted using PyTorch 1.13.1 library",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "structure-aware prompt points (ROI points from rule-based pre-segmentation merged with grid points); hierarchical crops of 1/1, 1/4 and 1/16 image size with default overlap ratio 0.5",
+      "validation_against_experiment": "NBS-3 image has no annotations; validation is qualitative (visual comparison of Image, Overlay and Key structure columns in Fig.10)",
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "NBS-3 (γ' phase) is one of six additional micrographs used in the extended experiments of MatSAM; these image samples are not provided with corresponding annotations.",
+    "NBS-3 micrographs also contain TCP phase (fine needle-like), which is the key object of the sibling sample NBS-3 (TCP phase), shown as panel (b) of Fig.10.",
+    "The raw-image acquisition technique (e.g., OM/SEM/XCT) for NBS-3 is not reported in the paper; NBS-1/NBS-2 of the same alloy family were obtained by SEM.",
+    "No quantitative segmentation metrics (IoU/F1/Recall) are reported for NBS-3 because the extended-experiment images lack ground-truth annotations."
+  ]
+}

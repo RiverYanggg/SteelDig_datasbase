@@ -1,0 +1,514 @@
+{
+  "schema_version": "sample-discover-v1",
+  "paper_id": "10.1002_srin.202400475",
+  "domain": "materials",
+  "paper": {
+    "paper_id": "10.1002_srin.202400475",
+    "doi": "10.1002/srin.202400475",
+    "title": "Microstructural Evolution and Mechanical Properties of Nb-Containing Medium-Mn Low-Density Steels",
+    "authors": [
+      "Chen Ma",
+      "Jianlei Zhang",
+      "Fenghui An",
+      "Gang Chen",
+      "Junye Zhou",
+      "Changjiang Song",
+      "Qijie Zhai"
+    ],
+    "publication_year": "2024",
+    "journal": "Steel Research International",
+    "keywords": [
+      "low-density steel",
+      "mechanical properties",
+      "nano-precipitation behavior",
+      "Nb addition"
+    ],
+    "research_type": "mixed (experimental with DFT and thermodynamic calculations)",
+    "paper_scope": "Investigation of the effects of Nb content (0.02 vs 0.04 wt%) on microstructural evolution, nano-scale precipitation (NbC and κ-carbide), and mechanical properties of Fe-12Mn-9Al-3Cr-1.4C medium-Mn low-density steels in as-cast and aged (723–823 K) states."
+  },
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.02nb",
+      "alloy_name": "0.02Nb steel",
+      "aliases": [
+        "Fe-12Mn-9Al-3Cr-1.4C-0.02Nb",
+        "0.02Nb steels",
+        "steel containing 0.02 wt% Nb",
+        "0.02Nb steel"
+      ],
+      "description": "Medium-Mn low-density steel microalloyed with 0.02 wt% Nb, referred to as 0.02Nb steel.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "Cr",
+        "C",
+        "Nb"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "Bal.",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "12",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "9",
+          "atomic_percent": null
+        },
+        {
+          "element": "Cr",
+          "weight_percent": "3",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1.4",
+          "atomic_percent": null
+        },
+        {
+          "element": "Nb",
+          "weight_percent": "0.02",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Nominal composition Fe-12Mn-9Al-3Cr-1.4C-0.02Nb (wt%). Actual measured composition of the steel strip (wt%): Mn 12.80, Al 9.01, Cr 3.01, C 1.39, Nb 0.021, Fe balance (Table 1).",
+      "source": {
+        "reason": "One of the two designed Fe-12Mn-9Al-3Cr-1.4C low-density steels, differing in Nb content; the paper explicitly names it 0.02Nb steel and gives its measured composition.",
+        "block_id": [
+          "b0008",
+          "b0011",
+          "b0015"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.04nb",
+      "alloy_name": "0.04Nb steel",
+      "aliases": [
+        "Fe-12Mn-9Al-3Cr-1.4C-0.04Nb",
+        "0.04Nb steels",
+        "steel containing 0.04 wt% Nb",
+        "0.04Nb steel"
+      ],
+      "description": "Medium-Mn low-density steel microalloyed with 0.04 wt% Nb, referred to as 0.04Nb steel.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "Cr",
+        "C",
+        "Nb"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "Bal.",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "12",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "9",
+          "atomic_percent": null
+        },
+        {
+          "element": "Cr",
+          "weight_percent": "3",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1.4",
+          "atomic_percent": null
+        },
+        {
+          "element": "Nb",
+          "weight_percent": "0.04",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Nominal composition Fe-12Mn-9Al-3Cr-1.4C-0.04Nb (wt%). Actual measured composition of the steel strip (wt%): Mn 12.82, Al 9.12, Cr 2.99, C 1.40, Nb 0.039, Fe balance (Table 1).",
+      "source": {
+        "reason": "One of the two designed Fe-12Mn-9Al-3Cr-1.4C low-density steels, differing in Nb content; the paper explicitly names it 0.04Nb steel and gives its measured composition.",
+        "block_id": [
+          "b0008",
+          "b0011",
+          "b0015"
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_as-cast",
+      "alloy_id": null,
+      "process_name": "As-cast (near-rapid solidification)",
+      "state_label": "as-cast",
+      "aliases": [
+        "as-cast",
+        "near-rapid solidification",
+        "as-cast state"
+      ],
+      "parent_process_ids": [],
+      "description": "Steel strips produced by induction melting of the ingot in a water-cooled copper crucible, followed by re-melting and high-speed pouring into a rotating copper mold (centrifugal casting) to obtain near-rapid solidification; no subsequent aging treatment.",
+      "processes_notes": "This base state applies to both the 0.02Nb and 0.04Nb alloys; all subsequent aging treatments were performed on these as-cast strips.",
+      "source": {
+        "reason": "The near-rapid solidification (centrifugal casting) route produces the as-cast steel strips, which serve as the base state before aging and are labeled 'as-cast' throughout the paper.",
+        "block_id": [
+          "b0010",
+          "b0011",
+          "b0031"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_723k-3h",
+      "alloy_id": null,
+      "process_name": "Aged at 723 K for 3 h",
+      "state_label": "723 K/3 h",
+      "aliases": [
+        "723 K/3 h",
+        "723 K for 3 h",
+        "aged at 723 K for 3 h",
+        "723 K"
+      ],
+      "parent_process_ids": [
+        "proc_as-cast"
+      ],
+      "description": "Aging treatment of the as-cast (near-rapid solidified) steel strips in a tubular vacuum furnace at 723 K for 3 h.",
+      "processes_notes": "Applies to both the 0.02Nb and 0.04Nb alloys; 723 K was selected as the aging temperature giving better comprehensive mechanical properties for extended aging studies.",
+      "source": {
+        "reason": "One of the three 3-h aging temperatures (723, 773, 823 K) applied to the as-cast strips, and the temperature later used for longer aging periods.",
+        "block_id": [
+          "b0010",
+          "b0040"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_773k-3h",
+      "alloy_id": null,
+      "process_name": "Aged at 773 K for 3 h",
+      "state_label": "773 K/3 h",
+      "aliases": [
+        "773 K/3 h",
+        "773 K for 3 h",
+        "aged at 773 K for 3 h",
+        "773 K"
+      ],
+      "parent_process_ids": [
+        "proc_as-cast"
+      ],
+      "description": "Aging treatment of the as-cast (near-rapid solidified) steel strips in a tubular vacuum furnace at 773 K for 3 h.",
+      "processes_notes": "Applies to both the 0.02Nb and 0.04Nb alloys.",
+      "source": {
+        "reason": "One of the three 3-h aging temperatures (723, 773, 823 K) applied to the as-cast strips.",
+        "block_id": [
+          "b0010"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_823k-3h",
+      "alloy_id": null,
+      "process_name": "Aged at 823 K for 3 h",
+      "state_label": "823 K/3 h",
+      "aliases": [
+        "823 K/3 h",
+        "823 K for 3 h",
+        "aged at 823 K for 3 h",
+        "823 K"
+      ],
+      "parent_process_ids": [
+        "proc_as-cast"
+      ],
+      "description": "Aging treatment of the as-cast (near-rapid solidified) steel strips in a tubular vacuum furnace at 823 K for 3 h.",
+      "processes_notes": "Applies to both the 0.02Nb and 0.04Nb alloys.",
+      "source": {
+        "reason": "One of the three 3-h aging temperatures (723, 773, 823 K) applied to the as-cast strips; EBSD and mechanical data are reported for this state.",
+        "block_id": [
+          "b0010",
+          "b0030"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_723k-6h",
+      "alloy_id": null,
+      "process_name": "Aged at 723 K for 6 h",
+      "state_label": "723 K/6 h",
+      "aliases": [
+        "723 K/6 h",
+        "723 K for 6 h",
+        "aged at 723 K for 6 h"
+      ],
+      "parent_process_ids": [
+        "proc_as-cast"
+      ],
+      "description": "Extended aging treatment of the as-cast (near-rapid solidified) steel strips at 723 K for 6 h.",
+      "processes_notes": "Applies to both the 0.02Nb and 0.04Nb alloys; part of the study on the effect of aging period at 723 K.",
+      "source": {
+        "reason": "Extended aging period (6 h) at 723 K conducted on both alloys to study the effect of aging time on microstructure and mechanical properties.",
+        "block_id": [
+          "b0040",
+          "b0042"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_723k-9h",
+      "alloy_id": null,
+      "process_name": "Aged at 723 K for 9 h",
+      "state_label": "723 K/9 h",
+      "aliases": [
+        "723 K/9 h",
+        "723 K for 9 h",
+        "aged at 723 K for 9 h"
+      ],
+      "parent_process_ids": [
+        "proc_as-cast"
+      ],
+      "description": "Extended aging treatment of the as-cast (near-rapid solidified) steel strips at 723 K for 9 h.",
+      "processes_notes": "Applies to both the 0.02Nb and 0.04Nb alloys; part of the study on the effect of aging period at 723 K.",
+      "source": {
+        "reason": "Extended aging period (9 h) at 723 K conducted on both alloys to study the effect of aging time on microstructure and mechanical properties.",
+        "block_id": [
+          "b0040",
+          "b0042"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe-12mn-9al-3cr-1.4c-0.02nb__as-cast",
+      "alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.02nb",
+      "process_id": "proc_as-cast",
+      "sample_label": "as-cast 0.02Nb steel",
+      "aliases": [
+        "0.02Nb steel (as-cast)",
+        "as-cast 0.02Nb steels"
+      ],
+      "source": {
+        "reason": "The 0.02Nb steel in the as-cast (near-rapid solidified) state, characterized for phase constitution, grain size, precipitates, hardness, and tensile properties.",
+        "block_id": [
+          "b0019",
+          "b0031",
+          "b0034",
+          "b0049"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-12mn-9al-3cr-1.4c-0.02nb__723k-3h",
+      "alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.02nb",
+      "process_id": "proc_723k-3h",
+      "sample_label": "0.02Nb steel aged at 723 K for 3 h",
+      "aliases": [
+        "0.02Nb steel (723 K/3 h)",
+        "0.02Nb steel aged at 723 K/3 h"
+      ],
+      "source": {
+        "reason": "The 0.02Nb steel aged at 723 K for 3 h; hardness, tensile, and microstructure data are reported.",
+        "block_id": [
+          "b0034",
+          "b0049"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-12mn-9al-3cr-1.4c-0.02nb__773k-3h",
+      "alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.02nb",
+      "process_id": "proc_773k-3h",
+      "sample_label": "0.02Nb steel aged at 773 K for 3 h",
+      "aliases": [
+        "0.02Nb steel (773 K/3 h)",
+        "0.02Nb steel aged at 773 K/3 h"
+      ],
+      "source": {
+        "reason": "The 0.02Nb steel aged at 773 K for 3 h; hardness and tensile data are reported.",
+        "block_id": [
+          "b0034",
+          "b0049"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-12mn-9al-3cr-1.4c-0.02nb__823k-3h",
+      "alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.02nb",
+      "process_id": "proc_823k-3h",
+      "sample_label": "0.02Nb steel aged at 823 K for 3 h",
+      "aliases": [
+        "0.02Nb steel (823 K/3 h)",
+        "0.02Nb steel aged at 823 K/3 h"
+      ],
+      "source": {
+        "reason": "The 0.02Nb steel aged at 823 K for 3 h; EBSD, hardness, and tensile data are reported.",
+        "block_id": [
+          "b0030",
+          "b0031",
+          "b0034",
+          "b0049"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-12mn-9al-3cr-1.4c-0.02nb__723k-6h",
+      "alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.02nb",
+      "process_id": "proc_723k-6h",
+      "sample_label": "0.02Nb steel aged at 723 K for 6 h",
+      "aliases": [
+        "0.02Nb steel (723 K/6 h)",
+        "0.02Nb steel aged at 723 K/6 h"
+      ],
+      "source": {
+        "reason": "The 0.02Nb steel aged at 723 K for 6 h in the extended aging-period study; microstructure and tensile data are reported.",
+        "block_id": [
+          "b0042",
+          "b0060"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-12mn-9al-3cr-1.4c-0.02nb__723k-9h",
+      "alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.02nb",
+      "process_id": "proc_723k-9h",
+      "sample_label": "0.02Nb steel aged at 723 K for 9 h",
+      "aliases": [
+        "0.02Nb steel (723 K/9 h)",
+        "0.02Nb steel aged at 723 K/9 h"
+      ],
+      "source": {
+        "reason": "The 0.02Nb steel aged at 723 K for 9 h in the extended aging-period study; microstructure and tensile data are reported.",
+        "block_id": [
+          "b0042",
+          "b0060"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-12mn-9al-3cr-1.4c-0.04nb__as-cast",
+      "alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.04nb",
+      "process_id": "proc_as-cast",
+      "sample_label": "as-cast 0.04Nb steel",
+      "aliases": [
+        "0.04Nb steel (as-cast)",
+        "as-cast 0.04Nb steels"
+      ],
+      "source": {
+        "reason": "The 0.04Nb steel in the as-cast (near-rapid solidified) state, characterized for phase constitution, grain size, precipitates, hardness, and tensile properties.",
+        "block_id": [
+          "b0019",
+          "b0031",
+          "b0034",
+          "b0049"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-12mn-9al-3cr-1.4c-0.04nb__723k-3h",
+      "alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.04nb",
+      "process_id": "proc_723k-3h",
+      "sample_label": "0.04Nb steel aged at 723 K for 3 h",
+      "aliases": [
+        "0.04Nb steel (723 K/3 h)",
+        "0.04Nb steel aged at 723 K/3 h"
+      ],
+      "source": {
+        "reason": "The 0.04Nb steel aged at 723 K for 3 h; hardness, tensile, and microstructure data are reported.",
+        "block_id": [
+          "b0034",
+          "b0049"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-12mn-9al-3cr-1.4c-0.04nb__773k-3h",
+      "alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.04nb",
+      "process_id": "proc_773k-3h",
+      "sample_label": "0.04Nb steel aged at 773 K for 3 h",
+      "aliases": [
+        "0.04Nb steel (773 K/3 h)",
+        "0.04Nb steel aged at 773 K/3 h"
+      ],
+      "source": {
+        "reason": "The 0.04Nb steel aged at 773 K for 3 h; hardness and tensile data are reported.",
+        "block_id": [
+          "b0034",
+          "b0049"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-12mn-9al-3cr-1.4c-0.04nb__823k-3h",
+      "alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.04nb",
+      "process_id": "proc_823k-3h",
+      "sample_label": "0.04Nb steel aged at 823 K for 3 h",
+      "aliases": [
+        "0.04Nb steel (823 K/3 h)",
+        "0.04Nb steel aged at 823 K/3 h"
+      ],
+      "source": {
+        "reason": "The 0.04Nb steel aged at 823 K for 3 h; EBSD, hardness, and tensile data are reported.",
+        "block_id": [
+          "b0030",
+          "b0031",
+          "b0034",
+          "b0049"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-12mn-9al-3cr-1.4c-0.04nb__723k-6h",
+      "alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.04nb",
+      "process_id": "proc_723k-6h",
+      "sample_label": "0.04Nb steel aged at 723 K for 6 h",
+      "aliases": [
+        "0.04Nb steel (723 K/6 h)",
+        "0.04Nb steel aged at 723 K/6 h"
+      ],
+      "source": {
+        "reason": "The 0.04Nb steel aged at 723 K for 6 h in the extended aging-period study; TEM and tensile data are reported.",
+        "block_id": [
+          "b0042",
+          "b0044",
+          "b0060"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-12mn-9al-3cr-1.4c-0.04nb__723k-9h",
+      "alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.04nb",
+      "process_id": "proc_723k-9h",
+      "sample_label": "0.04Nb steel aged at 723 K for 9 h",
+      "aliases": [
+        "0.04Nb steel (723 K/9 h)",
+        "0.04Nb steel aged at 723 K/9 h"
+      ],
+      "source": {
+        "reason": "The 0.04Nb steel aged at 723 K for 9 h in the extended aging-period study; TEM and tensile data are reported.",
+        "block_id": [
+          "b0042",
+          "b0044",
+          "b0060"
+        ]
+      }
+    }
+  ],
+  "unmapped_findings": [
+    "Nb addition refines austenite grain size (as-cast: 18 μm in 0.02Nb steel vs 9 μm in 0.04Nb steel).",
+    "Nb doping raises κ-carbide formation energy (Fe24Al8C8: 0.891 eV; Fe23NbAl8C8: 2.826 eV; Fe24Al7NbC8: 1.453 eV), suppressing κ-carbide growth and coarsening.",
+    "The 0.04Nb steel shows ≈71 MPa higher yield strength than the 0.02Nb steel, mainly from additional fine grain strengthening and dislocation strengthening.",
+    "No coarsened intergranular κ-carbides were detected in either steel variant after aging at 723–823 K."
+  ]
+}

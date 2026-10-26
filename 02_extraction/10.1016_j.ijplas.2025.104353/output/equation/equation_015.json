@@ -1,0 +1,90 @@
+{
+  "identity": {
+    "paper_id": "10.1016_j.ijplas.2025.104353",
+    "equation_id": "equation_015",
+    "block_id": "b0065",
+    "equation_number": "15",
+    "is_image": false,
+    "latex_hint": "$$\n\\left\\{ \\begin{array}{c} \\frac {d \\sigma_ {\\nu}}{d \\varepsilon} = \\theta_ {0} \\frac {\\sigma_ {0}}{\\sigma_ {\\nu}} \\frac {\\sigma_ {s} ^ {2}}{\\sigma_ {s} ^ {2} - \\sigma_ {0} ^ {2}} - \\theta_ {0} \\sigma_ {0} \\frac {\\sigma_ {\\nu}}{\\sigma_ {s} ^ {2} - \\sigma_ {0} ^ {2}} + \\Delta \\sigma_ {0} \\\\ \\frac {d \\sigma}{d \\varepsilon} = \\frac {d \\sigma_ {\\nu}}{d \\varepsilon}, \\text {if} \\sigma_ {\\nu} <   \\sigma_ {c} \\\\ \\frac {d \\sigma}{d \\varepsilon} = \\frac {d \\sigma_ {\\nu}}{d \\varepsilon} - (\\sigma_ {s} - \\sigma_ {s s}) \\frac {d \\varphi_ {d}}{d \\varepsilon}, \\text {if} \\sigma_ {\\nu} \\geq \\sigma_ {c} \\end{array} \\right.\\tag{15}\n$$"
+  },
+  "latex": "\\left\\{ \\begin{array}{c} \\frac{d \\sigma_{\\nu}}{d \\varepsilon} = \\theta_{0} \\frac{\\sigma_{0}}{\\sigma_{\\nu}} \\frac{\\sigma_{s}^{2}}{\\sigma_{s}^{2} - \\sigma_{0}^{2}} - \\theta_{0} \\sigma_{0} \\frac{\\sigma_{\\nu}}{\\sigma_{s}^{2} - \\sigma_{0}^{2}} + \\Delta \\sigma_{0} \\\\ \\frac{d \\sigma}{d \\varepsilon} = \\frac{d \\sigma_{\\nu}}{d \\varepsilon}, \\text{if } \\sigma_{\\nu} < \\sigma_{c} \\\\ \\frac{d \\sigma}{d \\varepsilon} = \\frac{d \\sigma_{\\nu}}{d \\varepsilon} - (\\sigma_{s} - \\sigma_{ss}) \\frac{d \\varphi_{d}}{d \\varepsilon}, \\text{if } \\sigma_{\\nu} \\geq \\sigma_{c} \\end{array} \\right.",
+  "purpose": "优化后的本构模型，描述变变形条件下（瞬态温度/应变率变化）热变形过程中的流变应力演化 dσ/dε；第一行给出加工硬化与动态回复控制的应力演化，并通过分段条件加入动态再结晶软化项，同时以净屈服应力变化 Δσ0 反映瞬态条件变化对位错初始滑移阻力的影响。",
+  "applicability_conditions": "热变形过程；变（非恒定）变形条件，即温度或应变率发生瞬态变化的情形；材料发生动态再结晶，且第二阶段的饱和应力与稳态应力受第一阶段 DRX 状态影响。",
+  "symbols": [
+    {
+      "symbol": "\\sigma_{\\nu}",
+      "meaning": "由加工硬化和动态回复控制的应力演化量（DRX 软化前的应力）",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "\\varepsilon",
+      "meaning": "应变",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "\\theta_{0}",
+      "meaning": "硬化参数（初始加工硬化速率）",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "\\sigma_{0}",
+      "meaning": "屈服应力（初始应力）",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "\\sigma_{s}",
+      "meaning": "饱和应力",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "\\Delta \\sigma_{0}",
+      "meaning": "屈服应力的净变化，用于反映瞬态条件变化对位错初始滑移阻力的影响",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "\\sigma",
+      "meaning": "流变应力",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "\\sigma_{c}",
+      "meaning": "临界应力（动态再结晶开始的分段阈值）",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "\\sigma_{ss}",
+      "meaning": "稳态应力",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "\\varphi_{d}",
+      "meaning": "动态再结晶分数",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    }
+  ],
+  "unmapped": [
+    "Eq. (14) 通过在方程中加入净屈服应力变化项 Δσ0 修改得到 Eq. (15)，以反映瞬态条件变化对位错初始滑移阻力的影响（Liu et al., 2023b）。",
+    "Z_p（Eq. (6)）用于表征变形条件的瞬态变化（温度或应变率的瞬态变化）。",
+    "在变变形条件下，饱和应力和第二阶段的稳态应力受第一阶段动态再结晶（DRX）状态及先期变形历史的显著影响。"
+  ]
+}

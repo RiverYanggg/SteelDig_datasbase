@@ -1,0 +1,348 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-mn-al-c-austenite__annealed-aged",
+      "paper_id": "10.1016_j.jmrt.2023.06.037",
+      "alloy_id": "alloy_fe-mn-al-c-austenite",
+      "process_id": "proc_annealed-aged",
+      "sample_label": null,
+      "aliases": [
+        "aged single austenite-base Fe-Mn-Al-C steel",
+        "annealed-aged austenitic low-density steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100–1250 °C",
+      "temperature_unit": "°C",
+      "duration": "1–3 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Starting/general Fe–Mn–Al–C ingot preparation step preceding the Route-1 annealing-aging treatment."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1100–850 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "hot-rolled to 2–5 mm thickness",
+      "processing_steps_notes": "Route 1 is applied to hot-rolled austenite-base Fe–Mn–Al–C steel."
+    },
+    {
+      "processing_step_id": "step_rapid_cooling",
+      "sequence": "3",
+      "type": "cooling",
+      "method": "rapid cooling to room temperature",
+      "temperature": "room temperature",
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": "rapid",
+      "reduction_ratio": null,
+      "processing_steps_notes": "The cooling rate after hot rolling strongly influences intergranular κ-carbide formation."
+    },
+    {
+      "processing_step_id": "step_isothermal_annealing",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "isothermal annealing",
+      "temperature": "1100–1200 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Isothermal annealing is the first treatment of Route 1 for austenite-base steels; figure_003 also shows a lower annealing interval of 600–800 °C."
+    },
+    {
+      "processing_step_id": "step_aging",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "500–700 °C",
+      "temperature_unit": "°C",
+      "duration": "0.5–2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Aging after annealing (Route 1) is beneficial to nano-precipitate nucleation; aging temperature and time should be precisely regulated to avoid intergranular κ*-carbide and β-Mn. figure_003 shows the aging stage at 450–700 °C."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_single_austenite",
+      "overall_structure": "Room-temperature microstructure of the single austenite Fe–Mn–Al–C low-density steel: equiaxed austenite together with annealing twins, because the thermal-mechanical processing temperature lies within the single austenite phase region; after aging, fine dispersed κ-carbide (intragranular κ0 and intergranular κ*) and B2/DO3 form.",
+      "number_of_phases": "5",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_equiaxed_austenite",
+          "region": null,
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "equiaxed",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "annealing twins",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa0",
+              "type": "intragranular κ0-carbide",
+              "size": null,
+              "distribution": "within the austenite grains (intragranular)",
+              "coherency": "coherent with the austenite matrix"
+            },
+            {
+              "precipitate_id": "ppt_kappa_star",
+              "type": "intergranular κ*-carbide",
+              "size": null,
+              "distribution": "along the prior austenite grain boundary (intergranular)",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_B2_DO3",
+              "type": "B2/DO3 ordered phase",
+              "size": null,
+              "distribution": "formed in austenite depending on element contents and cooling rate",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_kappa_austenite",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_1",
+          "microstructure_id": "micro_equiaxed_austenite",
+          "phase_1_name": "κ-carbide (κ′)",
+          "phase_2_name": "γ austenite",
+          "coherence": "coherent"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_kappa_dislocation",
+          "microstructure_id": "micro_equiaxed_austenite",
+          "interaction_type": "κ-carbide/dislocation interaction",
+          "qualitative_or_quantitative_description": "The interaction between κ-carbides and dislocations does not change the plane-slip mode, but additional dislocation sources are activated and acted upon by cross slip; nano κ-carbides uniformly distribute in austenite and promote plane slip, and as strain increases the plane dislocation structure is further refined, contributing to continuous strain hardening."
+        }
+      ],
+      "slip_behavior": "Plane slip promoted by uniformly distributed nano κ-carbide; cross slip activates additional dislocation sources; the plane dislocation structure refines with increasing strain, giving continuous strain hardening.",
+      "phase_evolution": "On aging at 500–700 °C, spinodal decomposition occurs in austenite: γ → γ′ + γ″ → γ″ + L1₂ (short-range ordering phase) → γ′ + κ′.",
+      "interface_notes": "The κ-carbide/austenite interface is considered an effective hydrogen capture center; the presence of vacancies at this interface can improve hydrogen solubility. High aging temperature accelerates precipitation of coarse κ*-carbide along the grain boundary, and long aging time causes brittle β-Mn, both unfavorable to ductility/toughness."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_single_austenite_aged_classwise",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Class-level: fine and dispersed carbides generate in single austenite-base Fe–Mn–Al–C steel (Al>7 wt% and C>0.7 wt%) after aging treatment, enhancing precipitation strengthening; κ-carbide significantly enhances yield strength without significantly deteriorating ductility but raises the yield ratio of Fe–Mn–Al–C low-density steels."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_sem_kappa",
+      "microstructure_id": "micro_equiaxed_austenite",
+      "technique": "SEM",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Observe the distribution of κ-carbide along grain boundaries and within grains.",
+      "key_findings": "κ-carbide adopts intergranular (grain-boundary) and intragranular (within-grain) distributions in the austenite matrix, with bright grain-boundary networks decorated by κ particles."
+    },
+    {
+      "characterization_id": "char_tem_saed_kappa",
+      "microstructure_id": "micro_equiaxed_austenite",
+      "technique": "TEM with selected-area electron diffraction (SAED)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Identify κ-carbide along grain boundaries and within grains, its crystallographic relationship with the γ matrix, and γ_twin twins.",
+      "key_findings": "TEM/SAED confirms κ-carbide bands along boundaries (spots 100, 0ī1) and intragranular κ plates with γ_twin twins; κ adopts a hexagonal-ring spot pattern (spots 200, 101, 111, 110) around the transmitted spot."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_dft_kappa_hydrogen",
+      "simulation_method": "density-functional theory (DFT)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": []
+    },
+    {
+      "computation_id": "comp_empirical_models_austenite",
+      "simulation_method": "analytical/empirical models",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Density model (Eq. 1)",
+          "equation_role": "Predicts alloy density from Al, C and Mn mass fractions.",
+          "parameters": [
+            {
+              "name": "ω(Al)",
+              "value": "mass fraction of Al",
+              "unit": "wt%"
+            },
+            {
+              "name": "ω(C)",
+              "value": "mass fraction of C",
+              "unit": "wt%"
+            },
+            {
+              "name": "ω(Mn)",
+              "value": "mass fraction of Mn",
+              "unit": "wt%"
+            }
+          ],
+          "model_note": "ρ = 8.15 − 0.101ω(Al) − 0.41ω(C) − 0.0085ω(Mn)"
+        },
+        {
+          "model_name": "Austenite lattice constant model (Eq. 2)",
+          "equation_role": "Relates austenite lattice constant to Al, C and Mn mass fractions.",
+          "parameters": [
+            {
+              "name": "ω(Al)",
+              "value": "mass fraction of Al",
+              "unit": "wt%"
+            },
+            {
+              "name": "ω(C)",
+              "value": "mass fraction of C",
+              "unit": "wt%"
+            },
+            {
+              "name": "ω(Mn)",
+              "value": "mass fraction of Mn",
+              "unit": "wt%"
+            }
+          ],
+          "model_note": "α = 0.35721 + 0.0002771ω(Al) + 0.0044089ω(C) + 0.0001166ω(Mn)"
+        },
+        {
+          "model_name": "Yield strength increment models (Eqs. 3–5)",
+          "equation_role": "Gives yield-strength increment of Fe–Mn–Al–C steel as a function of Al, Mn or C content (effects of C and Al stronger than Mn).",
+          "parameters": [
+            {
+              "name": "ω(Al)",
+              "value": "mass fraction of Al",
+              "unit": "wt%"
+            },
+            {
+              "name": "ω(Mn)",
+              "value": "mass fraction of Mn",
+              "unit": "wt%"
+            },
+            {
+              "name": "ω(C)",
+              "value": "mass fraction of C",
+              "unit": "wt%"
+            }
+          ],
+          "model_note": "σ_yield = 10.5ω(Al) + 351.5 (Eq. 3); σ_yield = 0.58ω(Mn) + 328.0 (Eq. 4); σ_yield = 180.7ω(C) + 250.7 (Eq. 5)"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Constituent-phase windows defining the single austenite Fe–Mn–Al–C steel (Table 1): 15.0<X_Mn<30.0, 2.0<X_Al<12.0, 0.5<X_C<2.0 (wt.%), with constituent phases γ, α, δ, κ, β-Mn (b0041).",
+    "High C (>0.7 wt%) and Al (>7.0 wt%) contents are the primary conditions for κ-carbide formation in single austenite-base Fe–Mn–Al–C steels; κ-carbide formation is governed by the eutectoid reaction and its composition varies with aging conditions (b0071, b0070).",
+    "The deformation mechanism of single austenite-base Fe–Mn–Al–C steel is controlled by stacking-fault energy (SFE), shifting from TRIP to TWIP and then to MBIP/SIP with increasing Al content; figure_007 shows iso-SFE contours of 20 and 50 mJ/m² and a 'κ-carbide forming border' (b0082, b0088, figure_007).",
+    "Solid-solution strengthening of austenite: 1 wt% C contributes a yield-strength increment of 187–300 MPa, whereas 1 wt% Al contributes slightly below 10 MPa (b0061); this is class-level rather than a property of a single annealed-aged specimen.",
+    "Specific single-austenite example alloys cited in the review (each a distinct alloy, not the generic annealed-aged sample): Fe-30Mn-11Al-1.2C shows 1058 MPa yield strength, 1310 MPa tensile strength and 38% total elongation [137] (b0140); Park et al. [87] quenched Fe-28Mn-Al-(0.8–1.0)C (MBIP) reached 873 MPa tensile strength and 100% total elongation (b0091); Welsch et al. [88] Fe-30.4Mn-8Al-1.2C (SFE 85 mJ/m², DSBR) reached 900 MPa tensile strength and 68% total elongation (b0091).",
+    "Both fine intragranular and intergranular κ-carbide significantly enhance the yield strength without significantly deteriorating ductility but increase the yield ratio (>0.8) of Fe–Mn–Al–C low-density steels (b0140).",
+    "Long aging time leads to formation of brittle β-Mn phase, and intergranular κ*-carbide and β-Mn are unfavorable to the ductility and toughness of Fe–Mn–Al–C low-density steels (b0071).",
+    "Cryogenic/interfacial note: hydrogen embrittlement in κ-carbide-bearing austenitic steel depends on C and Mn contents of κ-carbide; increasing C and reducing Mn in κ-carbide is recommended to control hydrogen diffusion (b0130)."
+  ]
+}

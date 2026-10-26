@@ -1,0 +1,49 @@
+{
+  "identity": {
+    "paper_id": "10.1016_j.matchar.2023.113237",
+    "equation_id": "equation_003",
+    "block_id": "b0028",
+    "equation_number": "3",
+    "is_image": false,
+    "latex_hint": "$$\n\\rho^ {G N D} = 2 \\theta / u b\\tag{3}\n$$"
+  },
+  "latex": "\\rho^{GND} = \\frac{2\\theta}{u b}",
+  "purpose": "由错取向角θ计算几何必需位错（GND）密度，基于 Kubin 和 Mortensen 的处理方法（将 GND 阵列视为简单圆柱扭转，源自 Gao 等的应变梯度模型）。",
+  "applicability_conditions": "基于 EBSD 原始数据计算的 KAM 值来代表局部错取向（一阶近似）；将 GND 阵列视为圆柱扭转，圆柱内存在一系列扭转晶界，每个扭转晶界由两组相互垂直的螺型位错阵列组成（Kubin & Mortensen；Gao 等应变梯度模型）。",
+  "symbols": [
+    {
+      "symbol": "\\rho^{GND}",
+      "meaning": "几何必需位错（GND）密度",
+      "unit": "m^{-2}",
+      "value": "HR45: 2.71 × 10^13 m^-2; HR68: 7.49 × 10^13 m^-2; HR82: 9.87 × 10^13 m^-2",
+      "is_constant": false
+    },
+    {
+      "symbol": "\\theta",
+      "meaning": "错取向角（misorientation angle，由 KAM 值获得的局部错取向）",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "u",
+      "meaning": "单位长度（unit length）",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "b",
+      "meaning": "Burgers 矢量的模（magnitude of the Burgers vector）",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    }
+  ],
+  "unmapped": [
+    "公式中系数 2 未在正文中显式解释",
+    "KAM 角范围为 0° 至 5°",
+    "KAM 值由 EBSD 原始数据计算，被假定为局部错取向的表示（一阶近似）",
+    "GND 密度定量评估方法参考文献 [18] Kubin 和 Mortensen 以及 [19] Gao 等"
+  ]
+}

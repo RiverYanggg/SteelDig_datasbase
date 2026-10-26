@@ -1,0 +1,155 @@
+[
+  {
+    "path": "$.structures[0]",
+    "reason": "b0101 将 NBS-3 (γ' phase) 列为扩展实验显微图之一；b0102 描述 NBS-3 显微图中 γ (小浅灰区域) 为关键分析对象且存在杂质；b0110/图10 标注 (a) 为 NBS-3 (γ' phase)；figure_010 给出该面板的视觉描述。",
+    "block_id": [
+      "b0101",
+      "b0102",
+      "b0110",
+      "figure_010"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].overall_structure",
+    "reason": "b0102 明确说明 NBS-3 显微图中 γ (小浅灰区域) 是关键分析对象，并指出存在颜色深黑、面积明显更大的杂质。",
+    "block_id": [
+      "b0102"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0]",
+    "reason": "该条目描述 NBS-3 (γ' phase) 显微图中 γ' 相区域及其杂质特征，来自 b0102 的文字说明与 figure_010 的面板描述。",
+    "block_id": [
+      "b0102",
+      "figure_010"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].phases_present[0].phase_name",
+    "reason": "b0110 将面板 (a) 标注为 NBS-3 (γ' phase)；b0102 称 γ 为小浅灰区域。",
+    "block_id": [
+      "b0102",
+      "b0110"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].phases_present[0].morphology",
+    "reason": "b0102 描述 γ 为小浅灰区域；figure_010 将顶部面板描述为浅色基体中的细小深色球状/网状相。",
+    "block_id": [
+      "b0102",
+      "figure_010"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].defects[0].type",
+    "reason": "b0102 说明 NBS-3 显微图中还存在颜色深黑、面积明显更大的杂质。",
+    "block_id": [
+      "b0102"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0]",
+    "reason": "b0101 说明在 NBS-3 (γ' phase) 等扩展显微图上用 MatSAM 提取微观结构；b0102 说明 MatSAM 准确识别所有相；figure_010 展示 Overlay 与 Key structure 结果。",
+    "block_id": [
+      "b0101",
+      "b0102",
+      "figure_010"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0].technique",
+    "reason": "b0101 说明用 MatSAM 提取 NBS-3 (γ' phase) 等显微图的微观结构；MatSAM 为基于 SAM 的免训练视觉大模型方法。",
+    "block_id": [
+      "b0101"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0].instrument_or_setup",
+    "reason": "b0101 与 b0029 说明 MatSAM 基于 SAM 实现免训练分割。",
+    "block_id": [
+      "b0101",
+      "b0029"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0].measurement_conditions",
+    "reason": "b0101 明确说明这些扩展实验图像样本未提供对应标注，且 MatSAM 无需人工标注。",
+    "block_id": [
+      "b0101"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0].purpose",
+    "reason": "b0101/b0102 说明 γ' 相是 NBS-3 显微图的关键分析对象，通过 MatSAM 进行识别提取。",
+    "block_id": [
+      "b0101",
+      "b0102"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0].key_findings",
+    "reason": "b0102 说明 MatSAM 准确识别所有相；figure_010 描述顶部面板 Key structure 的 γ' 相二值掩膜呈密集白色斑点。",
+    "block_id": [
+      "b0102",
+      "figure_010"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0]",
+    "reason": "b0101 说明对 NBS-3 (γ' phase) 显微图应用 MatSAM 进行分割；b0029/b0030 描述 MatSAM 的方法细节；b0055 给出验证实验的计算环境。",
+    "block_id": [
+      "b0101",
+      "b0029",
+      "b0030",
+      "b0055"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].simulation_method",
+    "reason": "b0029 说明 MatSAM 基于 SAM 实现免训练的微观结构分割。",
+    "block_id": [
+      "b0029"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].software_used",
+    "reason": "b0055 说明所有验证实验均使用 PyTorch 1.13.1 库进行。",
+    "block_id": [
+      "b0055"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].boundary_and_initial_conditions",
+    "reason": "b0030 描述 MatSAM 使用三种裁剪尺寸与默认重叠比 0.5；b0031-b0043 描述结构感知提示点生成（ROI 点与网格点融合）。",
+    "block_id": [
+      "b0030",
+      "b0031",
+      "b0041"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].validation_against_experiment",
+    "reason": "b0101 说明 NBS-3 等图像样本未提供标注；b0102 通过 Overlay 列进行定性验证说明 MatSAM 准确识别所有相。",
+    "block_id": [
+      "b0101",
+      "b0102"
+    ],
+    "status": "ok"
+  }
+]

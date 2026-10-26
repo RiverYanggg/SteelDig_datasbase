@@ -1,0 +1,811 @@
+{
+  "schema_version": "sample-discover-v1",
+  "paper_id": "10.1016_j.actamat.2025.120962",
+  "domain": "materials",
+  "paper": {
+    "paper_id": "10.1016_j.actamat.2025.120962",
+    "doi": "10.1016/j.actamat.2025.120962",
+    "title": "A novel training-free approach to efficiently extracting material microstructures via visual large model",
+    "authors": [
+      "Changtai Li",
+      "Xu Han",
+      "Chao Yao",
+      "Yu Guo",
+      "Zixin Li",
+      "Lei Jiang",
+      "Wei Liu",
+      "Haiyou Huang",
+      "Huadong Fu",
+      "Xiaojuan Ban"
+    ],
+    "publication_year": "2025",
+    "journal": "Acta Materialia",
+    "keywords": [
+      "Material microstructure",
+      "Image recognition",
+      "Visual large model",
+      "Deep learning"
+    ],
+    "research_type": "computational",
+    "paper_scope": "提出基于视觉大模型 SAM 的训练免标注材料显微组织提取方法 MatSAM，在 11 个金属材料显微组织数据集（纯铁、不锈钢、高熵合金、低碳钢、DP590 双相钢、镍基高温合金、超高碳钢、Al-Zn 合金等）上评估其对晶界、相与缺陷等结构的识别性能，并与规则方法、专用深度学习模型及原始 SAM 对比。"
+  },
+  "alloys": [
+    {
+      "alloy_id": "alloy_pure-fe",
+      "alloy_name": "pure iron",
+      "aliases": [
+        "PI-1",
+        "PI-2",
+        "pure irons"
+      ],
+      "description": "纯铁，来自 PI-1/PI-2 两个光学显微数据集，用于多晶晶界分割评估。",
+      "base_element": "Fe",
+      "alloying_elements": [],
+      "nominal_composition": [],
+      "alloys_notes": "文中仅称纯铁，未给出具体成分数值；PI-1 与 PI-2 为同一材料的不同图像数据集。",
+      "source": {
+        "reason": "b0024 明确列出 pure irons (PI-1/2) 为 OM 图像；b0036 表1将 PI-1、PI-2 的材料标为 pure iron。",
+        "block_id": [
+          "b0024",
+          "b0036"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_stainless-steel",
+      "alloy_name": "stainless steel",
+      "aliases": [
+        "SS"
+      ],
+      "description": "不锈钢（SS），用于多晶晶界分割评估；成像质量不均（模糊、划痕、杂质）。",
+      "base_element": "Fe",
+      "alloying_elements": [],
+      "nominal_composition": [],
+      "alloys_notes": "具体钢种与化学成分未报告。",
+      "source": {
+        "reason": "b0024 明确列出 stainless steel (SS) 为 OM 图像；b0036 表1将 SS 材料标为 stainless steel。",
+        "block_id": [
+          "b0024",
+          "b0036"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_hea",
+      "alloy_name": "high-entropy alloy",
+      "aliases": [
+        "HEA"
+      ],
+      "description": "高熵合金（HEA），用于多晶晶界分割评估；图像存在拼接痕迹、晶界不闭合与裂纹。",
+      "base_element": null,
+      "alloying_elements": [],
+      "nominal_composition": [],
+      "alloys_notes": "具体成分体系未报告，仅以 high-entropy alloy 指代。",
+      "source": {
+        "reason": "b0024 明确列出 high-entropy alloy (HEA) 为 OM 图像；b0036 表1将 HEA 材料标为 high-entropy alloy。",
+        "block_id": [
+          "b0024",
+          "b0036"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_low-carbon-steel",
+      "alloy_name": "low carbon steel",
+      "aliases": [
+        "LCS"
+      ],
+      "description": "低碳钢（LCS），公开数据集，用于多晶晶界分割评估。",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C"
+      ],
+      "nominal_composition": [],
+      "alloys_notes": "碳含量未给出数值；该公开数据集原文标签未提供，部分原始图像由作者标注用于评估。",
+      "source": {
+        "reason": "b0024 明确列出 low carbon steel (LCS) 为 OM 图像；b0036 表1将 LCS 材料标为 low carbon steel。",
+        "block_id": [
+          "b0024",
+          "b0036"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_dp590",
+      "alloy_name": "dual-phase steel DP590",
+      "aliases": [
+        "DP590",
+        "DP590-1",
+        "DP590-2",
+        "dual-phase steels"
+      ],
+      "description": "DP590 双相钢，用于马氏体析出相分割评估，分热轧（DP590-1）与冷轧（DP590-2）两种状态。",
+      "base_element": "Fe",
+      "alloying_elements": [],
+      "nominal_composition": [],
+      "alloys_notes": "DP590 为双相钢牌号，具体化学成分未报告；马氏体析出相为识别目标。",
+      "source": {
+        "reason": "b0024 列出 dual-phase steels (DP590–1/2) 为 SEM 图像；b0072 说明两个 DP590 数据集的马氏体析出相在冷轧和热轧过程中形成。",
+        "block_id": [
+          "b0024",
+          "b0072"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_ni-based-superalloy",
+      "alloy_name": "nickel-based superalloy",
+      "aliases": [
+        "NBS-1",
+        "NBS-2",
+        "NBS-3",
+        "Ni-based superalloy",
+        "Super-2",
+        "Super-4"
+      ],
+      "description": "镍基高温合金（NBS-1/NBS-2/NBS-3），用于析出相、γ' 相与 TCP 相分割评估。",
+      "base_element": "Ni",
+      "alloying_elements": [],
+      "nominal_composition": [],
+      "alloys_notes": "NBS-1 与 NBS-2 分别对应原文 Super-2 与 Super-4，具体成分未报告；NBS-3 同为镍基高温合金，成分未报告。",
+      "source": {
+        "reason": "b0024 列出 nickel-based superalloys (NBS-1/2)；b0074 说明 NBS-1/NBS-2 对应 Super-2/Super-4；b0101/b0102 将 NBS-3 也列为镍基高温合金。",
+        "block_id": [
+          "b0024",
+          "b0074",
+          "b0101",
+          "b0102"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_uhcs",
+      "alloy_name": "ultrahigh carbon steel",
+      "aliases": [
+        "UHCS",
+        "ultrahigh carbon steel"
+      ],
+      "description": "超高碳钢（UHCS），用于球化组织（渗碳体颗粒）分割评估。",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C"
+      ],
+      "nominal_composition": [],
+      "alloys_notes": "碳含量未给出数值；识别目标为分布于粗糙合金裂纹表面的浅色渗碳体/球化颗粒。",
+      "source": {
+        "reason": "b0024 列出 ultrahigh carbon steel (UHCS) 为 SEM 图像；b0076 说明 UHCS 含大量浅色 spheroidite/cementite 颗粒。",
+        "block_id": [
+          "b0024",
+          "b0076"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_alzn",
+      "alloy_name": "AlZn alloy",
+      "aliases": [
+        "AZA",
+        "AlZn alloy"
+      ],
+      "description": "Al-Zn 合金（AZA），XCT 图像，用于枝晶分割评估。",
+      "base_element": "Al",
+      "alloying_elements": [
+        "Zn"
+      ],
+      "nominal_composition": [],
+      "alloys_notes": "具体 Al-Zn 成分比例未报告；暗色析出相为前景。",
+      "source": {
+        "reason": "b0024 列出 AlZn alloy (AZA) 为 XCT 图像；b0076 说明 AZA 为两张 AlZn 枝晶 XCT 图像。",
+        "block_id": [
+          "b0024",
+          "b0076"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_in939",
+      "alloy_name": "IN939 nickel-based superalloy",
+      "aliases": [
+        "IN939",
+        "IN939-1",
+        "IN939-2",
+        "superalloy IN939"
+      ],
+      "description": "IN939 镍基高温合金，用于熔池边界与裂纹提取的扩展实验。",
+      "base_element": "Ni",
+      "alloying_elements": [],
+      "nominal_composition": [],
+      "alloys_notes": "IN939 为镍基高温合金牌号，具体成分未报告；扩展实验图像无标注。",
+      "source": {
+        "reason": "b0101 列出 IN939–1 (melted pool boundary) 与 IN939–2 (cracks)；b0102 称其为 superalloy IN939–1/IN939–2。",
+        "block_id": [
+          "b0101",
+          "b0102"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_c22000-brass",
+      "alloy_name": "C22000 brass",
+      "aliases": [
+        "C22000",
+        "commercial bronze",
+        "C22000 brass"
+      ],
+      "description": "C22000 黄铜（commercial bronze），用于孪晶提取的扩展实验。",
+      "base_element": "Cu",
+      "alloying_elements": [
+        "Zn"
+      ],
+      "nominal_composition": [],
+      "alloys_notes": "文中未给出具体成分数值；C22000 为商业青铜牌号。",
+      "source": {
+        "reason": "b0101 列出 C22000 brass (twin grain)；b0102 将其称为 commercial bronze (C22000)。",
+        "block_id": [
+          "b0101",
+          "b0102"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_c21000-brass",
+      "alloy_name": "C21000 brass",
+      "aliases": [
+        "C21000",
+        "gilding metal",
+        "C21000 brass"
+      ],
+      "description": "C21000 黄铜（gilding metal），用于孪晶提取的扩展实验。",
+      "base_element": "Cu",
+      "alloying_elements": [
+        "Zn"
+      ],
+      "nominal_composition": [],
+      "alloys_notes": "文中未给出具体成分数值；C21000 为镀金金属牌号。",
+      "source": {
+        "reason": "b0101 列出 C21000 brass (twin grain)；b0102 将其称为 gilding metal (C21000)。",
+        "block_id": [
+          "b0101",
+          "b0102"
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_fe-grain-boundary",
+      "alloy_id": "alloy_pure-fe",
+      "process_name": "pure iron polycrystalline grain-boundary microstructure",
+      "state_label": null,
+      "aliases": [
+        "pure iron grain boundary"
+      ],
+      "parent_process_ids": [],
+      "description": "纯铁 OM 多晶显微组织，晶粒紧密排列，识别目标为晶界；具体热处理/腐蚀工艺未报告。",
+      "processes_notes": "本文未报告纯铁的具体制备/热处理工艺，仅以 OM 多晶晶界组织作为识别对象。",
+      "source": {
+        "reason": "b0024 说明纯铁图像用 OM 采集；b0027 说明多晶图像由晶界分隔晶粒；b0036 表1将 PI-1/PI-2 归为 grain boundary 类型。",
+        "block_id": [
+          "b0024",
+          "b0027",
+          "b0036"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ss-grain-boundary",
+      "alloy_id": "alloy_stainless-steel",
+      "process_name": "stainless steel polycrystalline grain-boundary microstructure",
+      "state_label": null,
+      "aliases": [
+        "SS grain boundary"
+      ],
+      "parent_process_ids": [],
+      "description": "不锈钢 OM 多晶晶界组织；成像条件较不理想，存在模糊区、划痕与杂质；工艺未报告。",
+      "processes_notes": "具体钢种与热处理工艺未报告。",
+      "source": {
+        "reason": "b0024/b0036 说明 SS 为 OM 晶界数据；b0040 与 b0065 说明 SS 成像质量不均、有模糊与杂质。",
+        "block_id": [
+          "b0024",
+          "b0036",
+          "b0040",
+          "b0065"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_hea-grain-boundary",
+      "alloy_id": "alloy_hea",
+      "process_name": "high-entropy alloy polycrystalline grain-boundary microstructure",
+      "state_label": null,
+      "aliases": [
+        "HEA grain boundary"
+      ],
+      "parent_process_ids": [],
+      "description": "高熵合金 OM 多晶晶界组织；图像由多幅小图拼接、存在亮度差异与拼接伪影，晶界多不闭合并含裂纹；工艺未报告。",
+      "processes_notes": "具体成分与制备工艺未报告。",
+      "source": {
+        "reason": "b0024/b0036 说明 HEA 为 OM 晶界数据；b0065 说明 HEA 图像拼接伪影、晶界不闭合与裂纹。",
+        "block_id": [
+          "b0024",
+          "b0036",
+          "b0065"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_lcs-grain-boundary",
+      "alloy_id": "alloy_low-carbon-steel",
+      "process_name": "low carbon steel polycrystalline grain-boundary microstructure",
+      "state_label": null,
+      "aliases": [
+        "LCS grain boundary"
+      ],
+      "parent_process_ids": [],
+      "description": "低碳钢 OM 多晶晶界组织；成像条件较好，分辨率差异较大；工艺未报告。",
+      "processes_notes": "为公开数据集，原文未提供标签；具体工艺未报告。",
+      "source": {
+        "reason": "b0024/b0036 说明 LCS 为 OM 晶界数据；b0066 说明 LCS 成像条件良好、图像分辨率差异大。",
+        "block_id": [
+          "b0024",
+          "b0036",
+          "b0066"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_dp590-hot-rolled",
+      "alloy_id": "alloy_dp590",
+      "process_name": "hot-rolled martensitic precipitates of DP590",
+      "state_label": "DP590-1",
+      "aliases": [
+        "DP590-1 hot-rolled"
+      ],
+      "parent_process_ids": [],
+      "description": "DP590-1 热轧态马氏体析出相，SEM 成像；析出相低灰度、带黑色边界、多数较模糊。",
+      "processes_notes": "热轧为论文报告的关键变形工艺；具体温度、变形量等未报告。",
+      "source": {
+        "reason": "b0072 说明 DP590-1 为 23 张热轧马氏体析出相图像、低灰度且较模糊。",
+        "block_id": [
+          "b0072"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_dp590-cold-rolled",
+      "alloy_id": "alloy_dp590",
+      "process_name": "cold-rolled martensitic precipitates of DP590",
+      "state_label": "DP590-2",
+      "aliases": [
+        "DP590-2 cold-rolled"
+      ],
+      "parent_process_ids": [],
+      "description": "DP590-2 冷轧态马氏体析出相，SEM 成像；析出相呈亮白色条纹。",
+      "processes_notes": "冷轧为论文报告的关键变形工艺；具体温度、变形量等未报告。",
+      "source": {
+        "reason": "b0072 说明 DP590-2 马氏体析出相在冷轧过程中形成、呈浅白色条纹。",
+        "block_id": [
+          "b0072"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_nbs-precipitates",
+      "alloy_id": "alloy_ni-based-superalloy",
+      "process_name": "nickel-based superalloy secondary and tertiary precipitates",
+      "state_label": null,
+      "aliases": [
+        "NBS-1 precipitates",
+        "NBS-2 precipitates"
+      ],
+      "parent_process_ids": [],
+      "description": "镍基高温合金 NBS-1/NBS-2 的二次与三次析出相，SEM 成像；三次析出相细小且模糊、低衬度。",
+      "processes_notes": "NBS-1/NBS-2 对应原文 Super-2/Super-4；具体热处理制度未报告。",
+      "source": {
+        "reason": "b0075 说明 NBS-1/NBS-2 含尺寸差异显著的多种析出相，三次析出相细小模糊。",
+        "block_id": [
+          "b0075"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_nbs-gamma-prime",
+      "alloy_id": "alloy_ni-based-superalloy",
+      "process_name": "nickel-based superalloy NBS-3 gamma-prime phase",
+      "state_label": "NBS-3 (γ' phase)",
+      "aliases": [
+        "NBS-3 γ' phase"
+      ],
+      "parent_process_ids": [],
+      "description": "镍基高温合金 NBS-3 的 γ' 相（小浅灰区域），扩展实验图像，无标注。",
+      "processes_notes": "扩展实验显微图；具体工艺未报告。",
+      "source": {
+        "reason": "b0101 列出 NBS-3 (γ' phase)；b0102 说明 γ（小浅灰区域）为 NBS-3 的关键分析对象。",
+        "block_id": [
+          "b0101",
+          "b0102"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_nbs-tcp",
+      "alloy_id": "alloy_ni-based-superalloy",
+      "process_name": "nickel-based superalloy NBS-3 TCP phase",
+      "state_label": "NBS-3 (TCP phase)",
+      "aliases": [
+        "NBS-3 TCP phase"
+      ],
+      "parent_process_ids": [],
+      "description": "镍基高温合金 NBS-3 的 TCP 相（细针状），扩展实验图像，无标注。",
+      "processes_notes": "扩展实验显微图；具体工艺未报告。",
+      "source": {
+        "reason": "b0101 列出 NBS-3 (TCP phase)；b0102 说明 TCP 相（细针状）为 NBS-3 的关键分析对象。",
+        "block_id": [
+          "b0101",
+          "b0102"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_uhcs-spheroidite",
+      "alloy_id": "alloy_uhcs",
+      "process_name": "ultrahigh carbon steel spheroidite (cementite) particles",
+      "state_label": null,
+      "aliases": [
+        "UHCS spheroidite",
+        "UHCS cementite particles"
+      ],
+      "parent_process_ids": [],
+      "description": "超高碳钢球化组织（渗碳体/球状珠光体颗粒），SEM 成像；浅色颗粒均匀分布于粗糙合金裂纹表面。",
+      "processes_notes": "具体热处理制度未报告。",
+      "source": {
+        "reason": "b0076 说明 UHCS 含大量浅色 spheroidite 颗粒（cementite particles），分布于粗糙合金裂纹表面。",
+        "block_id": [
+          "b0076"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_aza-dendrite",
+      "alloy_id": "alloy_alzn",
+      "process_name": "AlZn alloy dendrite",
+      "state_label": null,
+      "aliases": [
+        "AZA dendrite"
+      ],
+      "parent_process_ids": [],
+      "description": "Al-Zn 合金枝晶，XCT 成像；暗色析出相为前景，位于圆形区域中心。",
+      "processes_notes": "具体工艺未报告。",
+      "source": {
+        "reason": "b0076 说明 AZA 为两张 AlZn 枝晶 XCT 图像，暗色析出相为前景。",
+        "block_id": [
+          "b0076"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_in939-melted-pool-boundary",
+      "alloy_id": "alloy_in939",
+      "process_name": "IN939 melted pool boundary",
+      "state_label": "IN939-1",
+      "aliases": [
+        "IN939-1 melted pool boundary"
+      ],
+      "parent_process_ids": [],
+      "description": "IN939 高温合金熔池边界，扩展实验图像，无标注。",
+      "processes_notes": "扩展实验显微图；具体工艺未报告。",
+      "source": {
+        "reason": "b0101 列出 IN939–1 (melted pool boundary)；b0102 说明熔池边界为 IN939-1 的主要分析对象。",
+        "block_id": [
+          "b0101",
+          "b0102"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_in939-cracks",
+      "alloy_id": "alloy_in939",
+      "process_name": "IN939 cracks",
+      "state_label": "IN939-2",
+      "aliases": [
+        "IN939-2 cracks"
+      ],
+      "parent_process_ids": [],
+      "description": "IN939 高温合金裂纹，扩展实验图像，无标注。",
+      "processes_notes": "扩展实验显微图；具体工艺未报告。",
+      "source": {
+        "reason": "b0101 列出 IN939–2 (cracks)；b0102 说明裂纹为 IN939-2 的主要分析对象。",
+        "block_id": [
+          "b0101",
+          "b0102"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_c22000-twin-grain",
+      "alloy_id": "alloy_c22000-brass",
+      "process_name": "C22000 brass twin grain",
+      "state_label": null,
+      "aliases": [
+        "C22000 twin grain",
+        "commercial bronze twin grain"
+      ],
+      "parent_process_ids": [],
+      "description": "C22000 黄铜（commercial bronze）孪晶，具有平直边界与衬度区域；扩展实验图像，无标注。",
+      "processes_notes": "扩展实验显微图；具体工艺未报告。",
+      "source": {
+        "reason": "b0101 列出 C22000 brass (twin grain)；b0102 说明孪晶（平直边界、衬度区域）为其主要分析对象。",
+        "block_id": [
+          "b0101",
+          "b0102"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_c21000-twin-grain",
+      "alloy_id": "alloy_c21000-brass",
+      "process_name": "C21000 brass twin grain",
+      "state_label": null,
+      "aliases": [
+        "C21000 twin grain",
+        "gilding metal twin grain"
+      ],
+      "parent_process_ids": [],
+      "description": "C21000 黄铜（gilding metal）孪晶，具有平直边界与衬度区域；扩展实验图像，无标注。",
+      "processes_notes": "扩展实验显微图；具体工艺未报告。",
+      "source": {
+        "reason": "b0101 列出 C21000 brass (twin grain)；b0102 说明孪晶（平直边界、衬度区域）为其主要分析对象。",
+        "block_id": [
+          "b0101",
+          "b0102"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_pure-fe__fe-grain-boundary",
+      "alloy_id": "alloy_pure-fe",
+      "process_id": "proc_fe-grain-boundary",
+      "sample_label": "PI-1",
+      "aliases": [
+        "PI-2",
+        "pure iron (PI-1/2)"
+      ],
+      "source": {
+        "reason": "纯铁 + OM 多晶晶界组织这一组合；PI-1 与 PI-2 为同一材料/状态的纯铁数据集，故归为同一样本。",
+        "block_id": [
+          "b0024",
+          "b0036"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_stainless-steel__ss-grain-boundary",
+      "alloy_id": "alloy_stainless-steel",
+      "process_id": "proc_ss-grain-boundary",
+      "sample_label": "SS",
+      "aliases": [
+        "stainless steel (SS)"
+      ],
+      "source": {
+        "reason": "不锈钢 + OM 多晶晶界组织这一组合，对应 SS 数据集。",
+        "block_id": [
+          "b0024",
+          "b0036"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_hea__hea-grain-boundary",
+      "alloy_id": "alloy_hea",
+      "process_id": "proc_hea-grain-boundary",
+      "sample_label": "HEA",
+      "aliases": [
+        "high-entropy alloy (HEA)"
+      ],
+      "source": {
+        "reason": "高熵合金 + OM 多晶晶界组织这一组合，对应 HEA 数据集。",
+        "block_id": [
+          "b0024",
+          "b0036"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_low-carbon-steel__lcs-grain-boundary",
+      "alloy_id": "alloy_low-carbon-steel",
+      "process_id": "proc_lcs-grain-boundary",
+      "sample_label": "LCS",
+      "aliases": [
+        "low carbon steel (LCS)"
+      ],
+      "source": {
+        "reason": "低碳钢 + OM 多晶晶界组织这一组合，对应 LCS 公开数据集。",
+        "block_id": [
+          "b0024",
+          "b0036"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_dp590__dp590-hot-rolled",
+      "alloy_id": "alloy_dp590",
+      "process_id": "proc_dp590-hot-rolled",
+      "sample_label": "DP590-1",
+      "aliases": [
+        "hot-rolled dual-phase steel DP590-1"
+      ],
+      "source": {
+        "reason": "DP590 双相钢 + 热轧马氏体析出相这一组合，对应 DP590-1 数据集。",
+        "block_id": [
+          "b0024",
+          "b0072"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_dp590__dp590-cold-rolled",
+      "alloy_id": "alloy_dp590",
+      "process_id": "proc_dp590-cold-rolled",
+      "sample_label": "DP590-2",
+      "aliases": [
+        "cold-rolled dual-phase steel DP590-2"
+      ],
+      "source": {
+        "reason": "DP590 双相钢 + 冷轧马氏体析出相这一组合，对应 DP590-2 数据集。",
+        "block_id": [
+          "b0024",
+          "b0072"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_ni-based-superalloy__nbs-precipitates",
+      "alloy_id": "alloy_ni-based-superalloy",
+      "process_id": "proc_nbs-precipitates",
+      "sample_label": "NBS-1",
+      "aliases": [
+        "NBS-2",
+        "Super-2",
+        "Super-4"
+      ],
+      "source": {
+        "reason": "镍基高温合金 + 二次/三次析出相这一组合；NBS-1 与 NBS-2 为同一材料/状态的两个数据集，归为同一样本。",
+        "block_id": [
+          "b0024",
+          "b0074",
+          "b0075"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_ni-based-superalloy__nbs-gamma-prime",
+      "alloy_id": "alloy_ni-based-superalloy",
+      "process_id": "proc_nbs-gamma-prime",
+      "sample_label": "NBS-3 (γ' phase)",
+      "aliases": [],
+      "source": {
+        "reason": "镍基高温合金 NBS-3 + γ' 相这一组合，为扩展实验显微图。",
+        "block_id": [
+          "b0101",
+          "b0102"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_ni-based-superalloy__nbs-tcp",
+      "alloy_id": "alloy_ni-based-superalloy",
+      "process_id": "proc_nbs-tcp",
+      "sample_label": "NBS-3 (TCP phase)",
+      "aliases": [],
+      "source": {
+        "reason": "镍基高温合金 NBS-3 + TCP 相这一组合，为扩展实验显微图。",
+        "block_id": [
+          "b0101",
+          "b0102"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_uhcs__uhcs-spheroidite",
+      "alloy_id": "alloy_uhcs",
+      "process_id": "proc_uhcs-spheroidite",
+      "sample_label": "UHCS",
+      "aliases": [
+        "ultrahigh carbon steel (UHCS)"
+      ],
+      "source": {
+        "reason": "超高碳钢 + 球化渗碳体颗粒这一组合，对应 UHCS 数据集。",
+        "block_id": [
+          "b0024",
+          "b0076"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_alzn__aza-dendrite",
+      "alloy_id": "alloy_alzn",
+      "process_id": "proc_aza-dendrite",
+      "sample_label": "AZA",
+      "aliases": [
+        "AlZn alloy (AZA)"
+      ],
+      "source": {
+        "reason": "Al-Zn 合金 + 枝晶这一组合，对应 AZA 数据集。",
+        "block_id": [
+          "b0024",
+          "b0076"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_in939__in939-melted-pool-boundary",
+      "alloy_id": "alloy_in939",
+      "process_id": "proc_in939-melted-pool-boundary",
+      "sample_label": "IN939-1",
+      "aliases": [
+        "IN939-1 (melted pool boundary)"
+      ],
+      "source": {
+        "reason": "IN939 高温合金 + 熔池边界这一组合，为扩展实验显微图。",
+        "block_id": [
+          "b0101",
+          "b0102"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_in939__in939-cracks",
+      "alloy_id": "alloy_in939",
+      "process_id": "proc_in939-cracks",
+      "sample_label": "IN939-2",
+      "aliases": [
+        "IN939-2 (cracks)"
+      ],
+      "source": {
+        "reason": "IN939 高温合金 + 裂纹这一组合，为扩展实验显微图。",
+        "block_id": [
+          "b0101",
+          "b0102"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_c22000-brass__c22000-twin-grain",
+      "alloy_id": "alloy_c22000-brass",
+      "process_id": "proc_c22000-twin-grain",
+      "sample_label": "C22000",
+      "aliases": [
+        "commercial bronze (C22000)"
+      ],
+      "source": {
+        "reason": "C22000 黄铜 + 孪晶这一组合，为扩展实验显微图。",
+        "block_id": [
+          "b0101",
+          "b0102"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_c21000-brass__c21000-twin-grain",
+      "alloy_id": "alloy_c21000-brass",
+      "process_id": "proc_c21000-twin-grain",
+      "sample_label": "C21000",
+      "aliases": [
+        "gilding metal (C21000)"
+      ],
+      "source": {
+        "reason": "C21000 黄铜 + 孪晶这一组合，为扩展实验显微图。",
+        "block_id": [
+          "b0101",
+          "b0102"
+        ]
+      }
+    }
+  ],
+  "unmapped_findings": [
+    "本文的核心研究对象是训练免标注的显微组织提取方法 MatSAM（基于 SAM 视觉大模型），该方法本身不属于合金/工艺/样本维度，故未映射为 alloy/process/sample。",
+    "局限性示例中使用了金纳米颗粒 HRTEM 图像（MatSAM 无法充分提取多个颗粒），属于失败案例而非正式研究样本。"
+  ]
+}

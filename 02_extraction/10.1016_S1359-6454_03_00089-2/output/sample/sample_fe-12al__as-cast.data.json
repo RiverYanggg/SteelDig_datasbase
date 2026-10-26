@@ -1,0 +1,332 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-12al__as-cast",
+      "paper_id": "10.1016_S1359-6454_03_00089-2",
+      "alloy_id": "alloy_fe-12al",
+      "process_id": "proc_as-cast",
+      "sample_label": "Fe-12%Al as-cast",
+      "aliases": [
+        "Fe-12%Al as-cast alloy"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_as-cast",
+      "sequence": "1",
+      "type": "casting/solidification",
+      "method": "vacuum induction melting in Al2O3 crucibles with solidification in Cu moulds",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum (vacuum induction melting)",
+      "cooling_medium": "Cu mould",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Binary Fe-Al alloys prepared from Fe of 99.99% purity (purified by zone melting) and Al of 99.999% purity, solidified in Cu moulds to rods usually 18 mm diameter; the as-cast material was used without any subsequent heat treatment. This as-cast state is the baseline for the composition-dependent yield-stress and ductility study."
+    },
+    {
+      "processing_step_id": "step_1100C_water_quench",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "water quench from 1100 °C",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Applied to the Fe-12%Al alloy (60 ppm C) prior to deformation and TEM observation (Fig. 6(a))."
+    },
+    {
+      "processing_step_id": "step_1100C_furnace_cool",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "furnace cooling from 1100 °C",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "furnace (furnace cooling)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Applied to the Fe-12%Al alloy (60 ppm C) prior to deformation and TEM observation (Fig. 6(b))."
+    },
+    {
+      "processing_step_id": "step_compression_5.5pct",
+      "sequence": "4",
+      "type": "mechanical processing/deformation",
+      "method": "compression straining",
+      "temperature": "room temperature",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "5.5% compressive strain",
+      "processing_steps_notes": "Compressive straining at 10^-4 s^-1 rate at room temperature applied to Fe-12%Al specimens before TEM examination."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_as_cast_polycrystal",
+      "overall_structure": "Polycrystalline as-cast alloy with a coarse grain structure; grain sizes of the order of 1 mm; the as-cast state contained no second phases.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "ms_as_cast_bulk",
+          "region": "bulk (polycrystalline)",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "Fe-Al solid solution (single phase; no second phases in as-cast state)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": "of the order of 1 mm"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "of the order of 1 mm",
+              "unit": "mm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_deformed_quenched_12al",
+      "overall_structure": "Dislocation substructure of the quenched Fe-12%Al (60 ppm C) alloy after 5.5% compressive straining: inhomogeneous, with dense dark glide bands of tangled dislocations separating lighter regions that contain isolated long straight dislocations. Before deformation only few straight dislocations were observed in the quenched alloy.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "ms_quenched_deformed",
+          "region": null,
+          "related_sequence": "2",
+          "phases_present": [],
+          "defects": [
+            {
+              "type": "dislocations: glide bands with dislocation tangles between them; few straight dislocations before deformation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_deformed_furnacecooled_12al",
+      "overall_structure": "Dislocation substructure of the furnace-cooled Fe-12%Al (60 ppm C) alloy after 5.5% compressive straining: a well-developed dislocation cell structure with thick dark cell walls of high dislocation density enclosing lighter, nearly dislocation-free cell interiors (cell dimensions comparable to or smaller than the 0.4 µm scale bar). Before deformation nearly no dislocations were observed in the furnace-cooled alloy.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "ms_furnacecooled_deformed",
+          "region": null,
+          "related_sequence": "3",
+          "phases_present": [],
+          "defects": [
+            {
+              "type": "dislocations: well-developed dislocation cell structure (thick cell walls enclosing nearly dislocation-free interiors); nearly no dislocations before deformation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_grain_boundary_12al",
+      "phase_interfaces": [],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "In the as-cast state the alloy contained no second phases. Fine thin platelike or rod-like precipitates, believed to be carbides (due to the presence of carbon), form on grain boundaries after slow furnace cooling from 1100 °C or prolonged heat treatments (e.g. 14 days at 320 °C); the amount of these grain-boundary particles decreases with lower C content.",
+      "interface_notes": "The Fe-12%Al alloy contains 50–60 wt.ppm C and 60–90 wt.ppm Si; grain-boundary carbide precipitation is therefore expected upon slow cooling."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_compressive_yield_stress_rt",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": "compression test (0.2% proof stress, total straining at least 5%)",
+        "strain_rate": "10^-2 s^-1 and 10^-4 s^-1",
+        "specimen_geometry": "5 × 5 × 10 mm³",
+        "test_standard": null,
+        "other_conditions": "Polycrystalline as-cast Fe-Al alloys (Table 1); usually two specimens per alloy tested, yield stress data differ by 3% at most. Yield stress increases linearly with increasing Al content up to 18 at.% with a hardening coefficient of about 2.2 GPa (interpolating lines give 21 and 23 MPa per unit% Al for the higher rate and the lower rate, respectively). Individual value for Fe-12%Al is not reported numerically."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_tensile_rt_and_-100C",
+      "measurement_conditions": {
+        "temperature": "room temperature and -100 °C",
+        "temperature_unit": "°C",
+        "environment": "tension test",
+        "strain_rate": "10^-4 s^-1 (tension rate in Figs 4, 5); general range 10^-4 s^-1 to 10^-2 s^-1",
+        "specimen_geometry": "cylindrical specimens prepared by turning per DIN 50125",
+        "test_standard": "DIN 50125",
+        "other_conditions": "Polycrystalline as-cast Fe-Al alloys (Table 1); data averaged over 3–4 tests with yield stress and strength data differing by 3% at most. Yield stress in tension equals that in compression at same rate and temperature. At -100 °C the yield stress and ultimate tensile strength are higher than at room temperature by about 80 MPa. Ductility (strain before necking and fracture strain) decreases with increasing Al content; both show apparent relative maxima at about 8 and 12 at.% Al at room temperature. Individual values for Fe-12%Al are not reported numerically."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": null,
+      "technique": "Transmission electron microscopy (TEM), bright field",
+      "instrument_or_setup": "Philips CM20 instrument with 200 kV; thin foils prepared by electrolytic twin jet polishing at -30 °C and 12 V voltage using a 7:3 mixture of methanol and nitric acid, with ion milling applied if necessary",
+      "measurement_conditions": "Fe-12%Al (60 ppm C) specimens quenched or furnace-cooled from 1100 °C and deformed by 5.5% compressive straining at 10^-4 s^-1 at room temperature",
+      "purpose": "Study the dislocation distribution after deformation of quenched vs furnace-cooled Fe-12%Al (60 ppm C)",
+      "key_findings": "Quenched alloy: dense glide bands with dislocation tangles between them, with isolated long straight dislocations between bands; only few straight dislocations before deformation. Furnace-cooled alloy: deformation initiates a dislocation cell structure with thick cell walls and nearly dislocation-free interiors; nearly no dislocations before deformation. The cell formation (requiring sufficient dislocation mobility) occurs only in the furnace-cooled Fe-12%Al, indicating that quenching reduces dislocation mobility (attributed to excess vacancies) and that Fe-12%Al shows only a weak effect of quenching."
+    },
+    {
+      "characterization_id": "char_om",
+      "microstructure_id": "ms_as_cast_bulk",
+      "technique": "Optical microscopy",
+      "instrument_or_setup": "Specimens etched by an alcoholic 10% nitric acid solution",
+      "measurement_conditions": "As-cast polycrystalline alloys",
+      "purpose": "Reveal grain boundaries and precipitates",
+      "key_findings": "Coarse grain structure with grain sizes of the order of 1 mm; the as-cast alloys contained no second phases."
+    },
+    {
+      "characterization_id": "char_sem_edx",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM) with energy-dispersive X-ray analysis (EDX)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Study fracture surfaces and perform qualitative precipitate analysis",
+      "key_findings": "Used for fracture-surface examination and qualitative precipitate analysis of the Fe-Al alloys."
+    },
+    {
+      "characterization_id": "char_icp",
+      "microstructure_id": null,
+      "technique": "Inductively coupled plasma (ICP) analysis",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Determine the alloy compositions",
+      "key_findings": "Real Al content of the nominal Fe-12 alloy is 12.0 at.% (6.2 wt.-%)."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Composition of the Fe-12%Al alloy (Table 1, nominal 12): real Al 12.0 at.% (6.2 wt.-%); impurities C 50–60 wt.ppm, Si 60–90 wt.ppm, Cu <40 wt.ppm.",
+    "The Fe-12%Al alloy (with 60 ppm C) showed only a weak effect of quenching; distinct dislocation cell formation (requiring sufficient dislocation mobility) after deformation was observed only in the furnace-cooled Fe-12%Al alloy, whereas the quenched alloy deformed by planar glide with tangles only (Fig. 6).",
+    "For the polycrystalline as-cast Fe-Al alloys (including Fe-12%Al) the yield stress increases linearly with increasing Al content up to 18 at.% with a hardening coefficient of about 2.2 GPa (interpolating lines: 21 and 23 MPa per unit% Al for the 10^-2 s^-1 and 10^-4 s^-1 rates, respectively); this is not sensitive to deformation rate or temperature and is attributed to Suzuki's solid-solution hardening theory for bcc alloys.",
+    "At -100 °C the yield stress and ultimate tensile strength values of the as-cast polycrystalline Fe-Al alloys are higher than at room temperature by about 80 MPa.",
+    "Ductility, characterised by strain before necking and fracture strain, decreases with increasing Al content; both strains show apparent relative maxima at about 8 and 12 at.% Al at room temperature (less pronounced at -100 °C).",
+    "The Fe-12%Al alloy is a polycrystalline as-cast alloy with grain sizes of the order of 1 mm, used for the TEM dislocation-structure comparison of quenched vs furnace-cooled states."
+  ]
+}

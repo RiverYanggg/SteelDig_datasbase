@@ -1,0 +1,177 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-2.7si-0.9c__hot-rolled",
+      "paper_id": "10.1007_s11837-014-1068-y",
+      "alloy_id": "alloy_fe-30mn-9al-2.7si-0.9c",
+      "process_id": "proc_hot-rolled",
+      "sample_label": "2.7% Si as-hot-rolled",
+      "aliases": [
+        "as-hot-rolled Fe-30Mn-9Al-2.7Si-0.9C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "1",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "As-hot-rolled condition; specific hot-rolling temperature and reduction are not reported for this 2.7% Si plate (the 84% reduction at 900°C in the text applies to a 1% Si wrought plate)."
+    },
+    {
+      "processing_step_id": "step_slow_cooling",
+      "sequence": "2",
+      "type": "cooling",
+      "method": "slow cooling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Slow cooling after deformation is related to short-range ordering (SRO) and precipitation of κ-carbide in the as-hot-rolled material."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "Hot-rolled Fe-30Mn-9Al-2.7Si-0.9C steel with an average grain size of 50 µm; slow cooled after deformation with SRO and κ-carbide precipitation.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": null,
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "E21 cubic perovskite (carbon-deficient (Fe,Mn)3AlCx, x<1)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": "50 µm",
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_1",
+              "type": "κ-carbide",
+              "size": null,
+              "distribution": null,
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_austenite_kappa",
+          "microstructure_id": "micro_1",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "κ-carbide",
+          "coherence": "coherent; cube-on-cube orientation relationship (<100>κ // <100>γ; {001}κ // {001}γ)"
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": "Planar-slip-related brittle fracture: {111} slip traces on cleavage facets; slip traces at roughly 60° angles from one another indicate fracture by decohesion of active slip planes.",
+      "phase_evolution": "Short-range ordering (SRO) and κ-carbide precipitation occurred because the hot-rolled material was slow cooled after deformation.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_cvn",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "Charpy V-notch (CVN)",
+        "test_standard": null,
+        "other_conditions": "Breaking energy 23 J in the L–T orientation and 22 J in the T–L orientation."
+      },
+      "mechanical": {
+        "tensile_properties": null,
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_cvn_comparison",
+      "service_conditions": {
+        "operating_temperature": null,
+        "stress_state": "Charpy V-notch impact loading",
+        "environment": "room temperature"
+      },
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-30mn-9al-2.7si-0.9c",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "CVN breaking energy (L–T orientation): 23 J as-hot-rolled versus 160 J after solution treatment for 10 min at 1100°C and water quenching.",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_cvn",
+      "microstructure_id": null,
+      "technique": "Charpy V-notch (CVN) impact test",
+      "instrument_or_setup": null,
+      "measurement_conditions": "room temperature; L–T and T–L specimen orientations",
+      "purpose": "Measure room-temperature notch toughness (breaking energy) of the as-hot-rolled steel.",
+      "key_findings": "Breaking energy 23 J (L–T) and 22 J (T–L); fracture mainly transgranular cleavage-type with little evidence of ductility."
+    },
+    {
+      "characterization_id": "char_sem",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM) secondary-electron fractography",
+      "instrument_or_setup": null,
+      "measurement_conditions": "CVN fracture surfaces",
+      "purpose": "Characterize the fracture mode of the as-hot-rolled CVN specimens.",
+      "key_findings": "Transgranular cleavage-type fracture with {111} slip traces on cleavage facets; slip traces at roughly 60° angles; little evidence of ductility."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Nominal composition: Fe-30Mn-9Al-2.7Si-0.9C with 0.023% P (chemistry values in weight percent) [b0059].",
+    "Room-temperature Charpy V-notch (CVN) breaking energy in the as-hot-rolled condition: 23 J in the L–T orientation and 22 J in the T–L orientation [b0059]."
+  ]
+}

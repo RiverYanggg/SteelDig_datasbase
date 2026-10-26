@@ -1,0 +1,436 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-9al-10mn-1c__800c-30min-wq",
+      "paper_id": "10.1016_j.jmrt.2020.02.088",
+      "alloy_id": "alloy_fe-9al-10mn-1c",
+      "process_id": "proc_800c-30min-wq",
+      "sample_label": "9Al-10Mn-1C 800 °C — Tempered",
+      "aliases": [
+        "9Al-10Mn-1C tempered at 800 °C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "1",
+      "type": "melting and casting",
+      "method": "casting in a 100 kW vacuum induction furnace",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Produced 0.5 kg ingots of the alloyed steel."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot-rolling",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingots hot-rolled at 1150 °C to obtain 5 mm flat-products."
+    },
+    {
+      "processing_step_id": "step_wq_after_hot_rolling",
+      "sequence": "3",
+      "type": "cooling",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolling was followed by water quenching."
+    },
+    {
+      "processing_step_id": "step_temper_800c_30min",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "tempering/annealing heat treatment",
+      "temperature": "800 °C",
+      "temperature_unit": "°C",
+      "duration": "30 min",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Samples were heat treated at 800 °C for 30 min; tempering at 800 °C provided the maximum acceleration of reaction kinetics, allowing strong transformations even for short 30 min tempering."
+    },
+    {
+      "processing_step_id": "step_wq_after_tempering",
+      "sequence": "5",
+      "type": "cooling",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Heat treatment at 800 °C was followed by water quenching."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_9al10mn1c_800c",
+      "overall_structure": "Cellular transformation for most of the austenite fraction plus spinodal decomposition for the remainder; the resulting microstructure is characterised by wide-spread κ + α + γ lamellar structures derived from cellular transformation, thin band-shaped δ-ferrite grains and scattered regions of spinodal decomposed γ; cellular-transformed fractions were predominant over the spinodal decomposed ones.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_cellular_800c",
+          "region": null,
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "lamellar (κ-carbide lamellae)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "α-ferrite",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "lamellar",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "γ-austenite (residual)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "detected as the portions of κ-carbide lamellae, suggesting a non-complete reaction",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": "equiaxed grains crossed by faint horizontal banded/lamellar features (optical micrograph of 800 °C-tempered 9Al-10Mn-1C)"
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_spinodal_800c",
+          "region": "scattered regions of spinodal decomposed γ",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "nano-sized κ-carbide",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "thin acicular, agglomerated into a relatively medium-dense grid",
+              "grain_size": "nano-sized",
+              "texture": null
+            },
+            {
+              "phase_name": "γ-austenite (spinodal decomposed)",
+              "crystal_structure": "FCC_A1",
+              "volume_fraction": null,
+              "morphology": "fine, dense, mottled/modulated contrast",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_nano_kappa_spinodal",
+              "type": "nano-sized κ-carbide (from spinodal decomposition)",
+              "size": {
+                "value": "nano-sized",
+                "unit": null
+              },
+              "distribution": "relatively medium-dense grid (agglomerated)",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_9al10mn1c_800c",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_kappa_alpha",
+          "microstructure_id": "micro_cellular_800c",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "α-ferrite",
+          "coherence": null
+        },
+        {
+          "interface_id": "iface_kappa_gamma",
+          "microstructure_id": "micro_cellular_800c",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "γ-austenite (residual)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "γ → κ + α + residual-γ lamellar structure (cellular transformation) and γ → γ0 + nano-sized κ-carbides (spinodal decomposition); both reactions occurred at 800 °C with the cellular product predominant over the spinodal product.",
+      "interface_notes": "For 9Al-10Mn-1C at 800 °C, cellular transformation generated κ + α + residual-γ lamellar phases (Fig. 6, Table 6); the residual austenite was detected as portions of κ-carbide lamellae, suggesting a non-complete reaction."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_hardness_800c_tempered",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": "Vickers macro-hardness method; 5 kg load applied for all indentations; 5 indentations per sample",
+        "other_conditions": "800 °C — Tempered state"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "356",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_hardness_hot_rolled_reference",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": "Vickers macro-hardness method; 5 kg load; 5 indentations per sample",
+        "other_conditions": "Hot-rolled state (reference baseline for 9Al-10Mn-1C)"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "273",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_9al10mn1c_800c_comparison",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Vickers hardness (HV): 9Al-10Mn-1C 800 °C tempered 356 HV vs hot-rolled 273 HV; the 800 °C microstructure gained outstanding hardness values among the alloys featuring 9% aluminium (600 °C tempered 439 HV being the highest).",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om",
+      "microstructure_id": "struct_9al10mn1c_800c",
+      "technique": "optical microscopy",
+      "instrument_or_setup": null,
+      "measurement_conditions": "through-thickness embedding, grinding and polishing performed separately for hot-rolled and heat-treated samples",
+      "purpose": "analyse the microstructures of all alloys at the different processing conditions (hot-rolling and tempering)",
+      "key_findings": "Optical micrograph of 800 °C-tempered 9Al-10Mn-1C shows equiaxed grains crossed by faint horizontal banded/lamellar features."
+    },
+    {
+      "characterization_id": "char_sem_eds",
+      "microstructure_id": "struct_9al10mn1c_800c",
+      "technique": "Scanning Electron Microscopy (Secondary Electron Imaging, SEI) with Energy Dispersive X-ray spectroscopy (EDX/EDS)",
+      "instrument_or_setup": "20 kV accelerating voltage; magnifications up to X30,000 (e.g. X2,500, X5,000, X10,000, X30,000)",
+      "measurement_conditions": "Performed only on selected microstructures; through-thickness polished samples",
+      "purpose": "analyse the phase morphologies and chemical compositions; EDS for qualitative information on local phase composition",
+      "key_findings": "Table 6 (EDS for Al and Mn in 9Al-10Mn-1C tempered at 800 °C), wt% (Min/Mean/Max) — Al: δ 8.1/8.4/8.7, γ 6.8/7.4/8.7, k 8.6/9.4/10.0; Mn: δ 7.4/8.3/9.1, γ 11.1/11.4/12.3, k 10.1/12.3/13.8. Al is slightly enriched in the k phase and depleted in γ; Mn is strongly depleted in δ and enriched in γ and k. Nano-sized acicular κ-carbides observed in the spinodal-decomposed regions."
+    },
+    {
+      "characterization_id": "char_vickers_hardness",
+      "microstructure_id": "struct_9al10mn1c_800c",
+      "technique": "Vickers macro-hardness testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "5 kg load applied for all indentations; 5 indentations per sample",
+      "purpose": "measure macro-hardness to track hardening/softening effects of the transformations; Minitab18 software used to verify consistency and exclude outliers",
+      "key_findings": "9Al-10Mn-1C hardness: hot-rolled 273 HV, 800 °C tempered 356 HV (600 °C tempered 439 HV)."
+    },
+    {
+      "characterization_id": "char_calphad_phase_diagram",
+      "microstructure_id": null,
+      "technique": "CALPHAD equilibrium phase volume fraction diagrams (Amount of all phases [mol] vs Temperature [°C])",
+      "instrument_or_setup": "Thermo-Calc / CALPHAD",
+      "measurement_conditions": "0–1300 °C; phases FCC_A1, BCC_A2, KAPPA_E21",
+      "purpose": "evaluate thermodynamic gradients for austenite stability and explain tempering-induced austenite decomposition",
+      "key_findings": "For 9Al-10Mn-1C the phase fraction diagram (Fig. 9(b)) shows BCC_A2 ~0.80 mol to ~650 °C then collapse near 800 °C; FCC_A1 climbs to ~1.00 mol at ~1000 °C; KAPPA_E21 ~0.20 mol below 600 °C and zero by ~950 °C; the γ fraction gradient detected between 600 °C and 800 °C."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_calphad_9al10mn1c",
+      "simulation_method": "CALPHAD thermodynamic equilibrium calculation / phase volume fraction diagram",
+      "software_used": "Thermo-Calc (CALPHAD)",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "0–1300 °C; phases considered FCC_A1, BCC_A2, KAPPA_E21",
+      "validation_against_experiment": "The calculated γ fraction gradient was used as a qualitative indication of possible austenite transformation and compared with the observed microstructures at 600 °C and 800 °C.",
+      "analytical_models": [
+        {
+          "model_name": "Phase volume fraction diagram for 9Al-10Mn-1C",
+          "equation_role": "Equilibrium phase amounts vs temperature, used to evaluate the thermodynamic gradient for austenite stability",
+          "parameters": [
+            {
+              "name": "BCC_A2",
+              "value": "~0.80 mol up to ~650 °C, collapses near 800 °C, then rises to ~0.22 mol at 1300 °C",
+              "unit": "mol"
+            },
+            {
+              "name": "FCC_A1",
+              "value": "climbs to ~1.00 mol at ~1000 °C then decreases",
+              "unit": "mol"
+            },
+            {
+              "name": "KAPPA_E21",
+              "value": "~0.20 mol below 600 °C, zero at ~950 °C",
+              "unit": "mol"
+            }
+          ],
+          "model_note": "FIG. 9(b): phase volume fraction diagram for 9Al-10Mn-1C, illustrating the thermodynamic gradient in austenite stability that the text ties to tempering-induced decomposition at 600 °C and 800 °C."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "For 9Al-10Mn-1C annealed at 800 °C, the austenite decomposed such that cellular transformation governed most of the austenite fraction while spinodal decomposition governed the remainder; the residual austenite was detected as portions of κ-carbide lamellae, suggesting a non-complete reaction.",
+    "Tempering at 800 °C provided the maximum acceleration of the reaction kinetics, allowing strong transformations even for short 30 min tempering; this benefited from a medium-high Al–C driving force and medium-low austenite stability.",
+    "At 800 °C the 9Al-10Mn-1C alloy cell/colony structure resolved in SEM (Fig. 6) shows fields of fine parallel striations (cellular product) meeting smoother darker regions (spinodal product), with a lamellar spacing well below 1 µm (X10,000 panel, 1 µm scale bar).",
+    "Cellular-transformed fractions were predominant over spinodal-decomposed ones at 9Al-10Mn-1C (Fig. 13(a)) due to lower Mn% austenite stability; the 800 °C tempered 9Al-10Mn-1C microstructure is described as the best among alloys featuring 9% aluminium."
+  ]
+}

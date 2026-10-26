@@ -1,0 +1,222 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-6al-0.6c-0.15si__hold-neg196c-30min",
+      "paper_id": "10.1016_j.jmrt.2024.10.063",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_id": "proc_hold-neg196c-30min",
+      "sample_label": "held at -196°C for 30 min",
+      "aliases": [
+        "as-treated at -196°C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_melting_casting",
+      "sequence": "1",
+      "type": "melting and casting (solidification)",
+      "method": "vacuum induction melting and casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The experimental steel was melted and cast in a 50 kg vacuum induction furnace and then air cooled to RT."
+    },
+    {
+      "processing_step_id": "step_2_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1250",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The ingot was reheated to 1250 °C and held for 2 h for homogenization."
+    },
+    {
+      "processing_step_id": "step_3_forging",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "forging into round bars",
+      "temperature": "1100 (starting) to 950 (finishing)",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "furnace",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The ingot was forged into round bars with a diameter of 60 mm followed by cooling to RT in the furnace; starting and finishing forging temperatures were 1100 and 950 °C, respectively."
+    },
+    {
+      "processing_step_id": "step_4_hold_neg196c_30min",
+      "sequence": "4",
+      "type": "cryogenic holding (low-temperature treatment)",
+      "method": "holding in liquid nitrogen followed by XRD analysis",
+      "temperature": "-196",
+      "temperature_unit": "°C",
+      "duration": "30 min",
+      "atmosphere": null,
+      "cooling_medium": "liquid nitrogen",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Another sample was held at liquid nitrogen (-196 °C) for 30 min followed by XRD analysis to verify the absence of isothermal martensite."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_as-treated-neg196c",
+      "overall_structure": "Fully austenitic (single-phase fcc γ) equiaxed-grain microstructure; holding in liquid nitrogen at -196 °C for 30 min produced no isothermal martensite, indicating a very stable austenite.",
+      "number_of_phases": "1",
+      "microstructure_counts": "1",
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1_austenite",
+          "region": "bulk",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": "fully austenitic (~100%)",
+              "morphology": "equiaxed grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "grains spanning roughly 10-50 µm",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_set_density",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "7.114 (measured); 7.078 (estimated)",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "SmartLab SE X-ray diffractometer with Cu Kα radiation (λ = 0.154060 nm)",
+      "measurement_conditions": "2θ range 40-90°",
+      "purpose": "To verify the absence of isothermal martensite in the initial as-forged steel and after holding at -196 °C for 30 min",
+      "key_findings": "Both the initial and the -196 °C held samples show only γ(111), γ(200), γ(220) and γ(311) reflections with no extra peaks, confirming a fully austenitic microstructure and no isothermal martensite formation at -196 °C."
+    },
+    {
+      "characterization_id": "char_ebsd_initial",
+      "microstructure_id": "micro_1_austenite",
+      "technique": "Electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "Apreo S HiVac scanning electron microscope (SEM)",
+      "measurement_conditions": null,
+      "purpose": "To analyze the initial (as-forged) microstructure via IPF map and phase map",
+      "key_findings": "Fully indexed equiaxed grain structure; the phase map shows a single indexed phase (austenite) with no second-phase regions."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_sfe",
+      "simulation_method": "Thermodynamic calculation of stacking fault energy (SFE) using the regular-solution free-energy formulation",
+      "software_used": null,
+      "potential_model_or_database": "Thermodynamic parameter expressions of Table 1 [6]",
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "SFE = 2ρA·ΔG^(γ→ε) + 2σ^(γ/ε)",
+          "equation_role": "Estimates the stacking fault energy of the austenitic steel at different temperatures",
+          "parameters": [
+            {
+              "name": "σ^(γ/ε)",
+              "value": "15",
+              "unit": "mJ/m²"
+            },
+            {
+              "name": "α_γ (lattice parameter of austenite)",
+              "value": "0.36757",
+              "unit": "nm"
+            },
+            {
+              "name": "ΔG_Fe^(γ→ε) / ΔG_Mn / ΔG_Al / ΔG_C / ΔG_FeMn / ΔG_FeAl / ΔG_FeC / ΔG_FeMnAl/C",
+              "value": "See Table 1 expressions",
+              "unit": null
+            }
+          ],
+          "model_note": "Using equations (2)-(4) and Table 1 parameters, the SFE of the experimental steel at -196 °C, -77 °C and RT is estimated to be 32, 40 and 61 mJ/m², respectively."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The stacking fault energy (SFE) of the experimental steel is estimated to be 32 mJ/m² at -196 °C, compared with 40 mJ/m² at -77 °C and 61 mJ/m² at RT; a SFE of 32 mJ/m² at -196 °C still fully suppresses deformation-induced martensitic transformation (DIMT) but enables mechanical twinning.",
+    "Holding in liquid nitrogen at -196 °C for 30 min produces no isothermal martensite, indicating a very stable austenite; the initial as-forged microstructure consists of equiaxed grains with a fully austenitic constituent.",
+    "The alloy composition of this sample is Fe-20Mn-6Al-0.6C-0.15Si; its density estimated by the Kim et al. equation is 7.078 g/cm³ and the measured density is 7.114 g/cm³.",
+    "Note on scope: the tensile tests and Charpy impact tests at -196 °C were carried out on separate tensile-deformed and impact-tested samples, not on this sample that was only held in liquid nitrogen for 30 min and analysed by XRD; those mechanical/impact data therefore are not assigned to this sample."
+  ]
+}

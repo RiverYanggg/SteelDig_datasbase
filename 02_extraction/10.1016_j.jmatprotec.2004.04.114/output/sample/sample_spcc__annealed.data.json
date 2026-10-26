@@ -1,0 +1,229 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_spcc__annealed",
+      "paper_id": "10.1016_j.jmatprotec.2004.04.114",
+      "alloy_id": "alloy_spcc",
+      "process_id": "proc_annealed",
+      "sample_label": "E",
+      "aliases": [
+        "Annealed",
+        "Species E"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_annealing",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Specimen species E in Table 1 is listed as 'Annealed'. The paper does not report the annealing temperature, time or any other parameter for this condition; the alloy is a 1.2 mm thick SPCC sheet."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_annealed_spcc",
+      "overall_structure": "Polycrystalline mild-steel (SPCC) sheet in the annealed condition; dislocations in the Fe matrix are locked by carbon and other solutes (Cottrell effect) before plastic deformation, and the material consists of grains separated by grain boundaries.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_grain",
+          "region": null,
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "Fe matrix",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations locked by carbon/solutes (Cottrell atmosphere)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_grain_boundary",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_gb_pileup",
+          "microstructure_id": "micro_grain",
+          "interaction_type": "dislocation pile-up at the grain boundary",
+          "qualitative_or_quantitative_description": "Dislocations released from a common source move along the same slip surface and easily pile up, their front being stopped by obstacles such as grain boundaries and solutes; the pile-up dislocations can move backwards when the shear stress is released during unloading, which can lower the apparent elastic modulus. The pile-up model (Fig. 3) shows dislocations driven by shear stress tau piling up against a grain boundary."
+        }
+      ],
+      "slip_behavior": "Dislocations move along the same slip surface and pile up against obstacles (grain boundaries, solutes); pile-up dislocations can move backwards when shear stress is released.",
+      "phase_evolution": null,
+      "interface_notes": "This pile-up/grain-boundary description is the general micro-mechanism invoked by the paper to explain the strain-induced decrease of the apparent elastic modulus."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_E_emod_0to005",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "SPCC sheet, thickness 1.2 mm (specimen E, annealed)",
+        "test_standard": null,
+        "other_conditions": "Elastic modulus of the annealed specimen E calculated from the stress–strain curve over the strain region 0–0.05%. No unit for the elastic modulus is printed in Table 2. The stress–strain curve was measured with a load cell and a strain gauge up to 1% strain."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": "224",
+          "stress_strain_curves": "Fig. 4(a) shows the stress–strain curves of specimens A–E measured by strain gauge up to 0.3% strain; Fig. 4(b) shows the apparent elastic modulus versus strain with curve E staying near 200 GPa before dropping.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_E_emod_whole_elastic",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "SPCC sheet, thickness 1.2 mm (specimen E, annealed)",
+        "test_standard": null,
+        "other_conditions": "Elastic modulus of the annealed specimen E calculated from the whole elastic region of the stress–strain curve. No unit for the elastic modulus is printed in Table 2."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": "206",
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_tensile_straingauge",
+      "microstructure_id": null,
+      "technique": "tensile test with load cell and strain gauge",
+      "instrument_or_setup": "load cell and strain gauge",
+      "measurement_conditions": "stress–strain curve measured up to 1% strain; elastic modulus obtained from the stress–strain curve within the elastic deformation region",
+      "purpose": "measure the stress–strain curves and obtain the elastic modulus of specimens A–E, including the annealed specimen E, for comparison of the effect of movable dislocations",
+      "key_findings": "For the annealed specimen E the elastic modulus remained almost the same until yielding – the only species for which this holds; curve E stays near 200 GPa before dropping (Fig. 4). Elastic modulus values for E: 224 (0–0.05% strain) and 206 (whole elastic range), the highest among species A–E."
+    },
+    {
+      "characterization_id": "char_nanoindentation",
+      "microstructure_id": "micro_grain",
+      "technique": "nano-indentation with a spherical indenter tip",
+      "instrument_or_setup": "Triboscope nano-indentation instrument (Hysitron Inc.) mounted on an AFM stage (SPM-9500J2, Shimadzu Co.); 3D piezo actuator; force 1–10 mN, 100 nN sensitivity; displacement 5 μm, 0.2 nm sensitivity",
+      "measurement_conditions": "spherical tip (nominal R = 50 μm; also R = 200 μm) used to keep surface deformation elastic; CMP-treated surface; measurement points along lines across a grain boundary at ~1 μm interval",
+      "purpose": "measure the distribution of elastic modulus (and hardness) within a grain and near grain boundaries to link microscopic properties to the macroscopic modulus change",
+      "key_findings": "The elastic modulus near the grain boundary is smaller than in other regions; confirms that the modulus decrease is localized at grain boundaries. NOTE: the marker-location figure for this indentation is labelled 'SPCE', whereas specimen E belongs to the SPCC material, so these nano-indentation results may belong to a different (SPCE) specimen and are reported here only as the technique used in the study."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "For specimen E (annealed) the apparent elastic modulus remained almost constant until yielding – it is the only species among A–E for which this is the case; the as-received and pre-strained specimens showed a modulus that decreased from the very beginning of loading (b0032, b0026, b0030).",
+    "Among species A–E, the annealed specimen E had the highest elastic modulus: 224 (strain region 0–0.05%) and 206 (whole elastic range), against 182/173 for A, 188/162 for B, 186/162 for C and 189/189 for D; no units are printed in Table 2 (b0034).",
+    "The annealing temperature and time (and any other annealing parameter) for specimen E are not reported in the paper (b0027, b0028, b0029).",
+    "The paper's precision-extensometer large-deformation tensile test (Section 2) and the V-bending spring-back FEM simulation were performed on SPCE sheet metal, whereas specimen E belongs to the SPCC material of Table 1; those SPCE-specific results are therefore not attributed to this sample (b0013, b0015, b0017, figure_002)."
+  ]
+}

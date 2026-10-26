@@ -1,0 +1,228 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-8mn-3al-1si-0.2c__hq-1100c-2h",
+      "paper_id": "10.1016_j.matchemphys.2025.130877",
+      "alloy_id": "alloy_fe-8mn-3al-1si-0.2c",
+      "process_id": "proc_hq-1100c-2h",
+      "sample_label": "M2-HQ",
+      "aliases": [
+        "M2 homogenized"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "b0023 describes fabrication of the two steels (including M2, the 3Al-1Si alloy) by vacuum arc melting with 4× remelting.",
+        "block_id": [
+          "b0023"
+        ]
+      },
+      "processing_step_id": "step_fabrication",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "fabrication"
+      },
+      "method": {
+        "value": "vacuum arc melting"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "The two steel compositions (M1 = Fe-8Mn-3Al-0.2C and M2 = Fe-8Mn-3Al-1Si-0.2C) were fabricated using a vacuum arc melting furnace; the melted ingot was remelted 4 times by flipping the ingot before each remelt to ensure complete and uniform melting of raw materials throughout the ingot."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0023 and Table 1 (b0037) list 'Homogenized (1100 °C for 2 h followed by water quenching)' as the M2-HQ condition.",
+        "block_id": [
+          "b0023",
+          "b0037",
+          "table_001"
+        ]
+      },
+      "processing_step_id": "step_homogenization",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "homogenization followed by water quenching"
+      },
+      "temperature": {
+        "value": "1100 °C",
+        "source": {
+          "reason": "b0023 and Table 1 (b0037) give the homogenization temperature as 1100 °C for the M2-HQ condition.",
+          "block_id": [
+            "b0023",
+            "b0037",
+            "table_001"
+          ]
+        }
+      },
+      "temperature_unit": {
+        "value": "°C",
+        "source": {
+          "reason": "Temperature reported in °C.",
+          "block_id": [
+            "b0023",
+            "b0037"
+          ]
+        }
+      },
+      "duration": {
+        "value": "2 h",
+        "source": {
+          "reason": "b0023 and Table 1 (b0037) give a homogenization duration of 2 h.",
+          "block_id": [
+            "b0023",
+            "b0037",
+            "table_001"
+          ]
+        }
+      },
+      "atmosphere": null,
+      "cooling_medium": {
+        "value": "water quenching",
+        "source": {
+          "reason": "b0023/Table 1 state the homogenization is followed by water quenching, which defines M2-HQ.",
+          "block_id": [
+            "b0023",
+            "b0037",
+            "table_001"
+          ]
+        }
+      },
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Homogenization of as-cast samples was carried out at 1100 °C for 2 h, followed by water quenching. This homogenized + water-quenched condition is designated M2-HQ (Nomenclature for 3Al-1Si (M2))."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "Structural information for the M2-HQ condition is limited to the micrograph inset in the Fig. 3 processing schematic.",
+        "block_id": [
+          "figure_003"
+        ]
+      },
+      "structure_id": "struct_m2hq",
+      "overall_structure": {
+        "value": "Homogenized + water-quenched M2 microstructure: the optical micrograph (500 µm scale bar) shows a lighter matrix with scattered dark features.",
+        "source": {
+          "reason": "Fig. 3 shows the micrograph for the water-quenched M2 (M2-HQ) condition described as a lighter matrix with scattered dark features.",
+          "block_id": [
+            "figure_003"
+          ]
+        }
+      },
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "Micrograph of the water-quenched M2 (M2-HQ) sample is shown in the processing schematic of Fig. 3; no quantitative phase analysis is reported for the HQ condition.",
+            "block_id": [
+              "figure_003"
+            ]
+          },
+          "microstructure_id": "micro_m2hq",
+          "region": null,
+          "related_sequence": {
+            "value": "2",
+            "source": {
+              "reason": "Microstructure corresponds to the homogenization + water-quenching step (sequence 2).",
+              "block_id": [
+                "b0023",
+                "figure_003"
+              ]
+            }
+          },
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "Fig. 3 provides the M2-HQ micrograph; b0024 states that an optical microscope (OM) and SEM were used to obtain microstructural images of the different samples.",
+        "block_id": [
+          "figure_003",
+          "b0024"
+        ]
+      },
+      "characterization_id": "char_om_m2hq",
+      "microstructure_id": "micro_m2hq",
+      "technique": {
+        "value": "Optical microscopy (OM)"
+      },
+      "instrument_or_setup": {
+        "value": "Optical microscope"
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Microstructural imaging of the homogenized + water-quenched M2 (M2-HQ) sample"
+      },
+      "key_findings": {
+        "value": "M2-HQ optical micrograph (500 µm scale bar) shows a lighter matrix with scattered dark features."
+      }
+    }
+  ],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "b0021 and Figs. 1f/2 describe Thermo-Calc (TCFE9) equilibrium phase-fraction and austenite-composition predictions for the Fe-8Mn-3Al-1Si-0.2C (M2) alloy composition, to which M2-HQ belongs.",
+        "block_id": [
+          "b0021",
+          "figure_001",
+          "figure_002"
+        ]
+      },
+      "computation_id": "comp_calphad_m2",
+      "simulation_method": {
+        "value": "CALPHAD thermodynamic equilibrium phase-fraction calculation"
+      },
+      "software_used": {
+        "value": "Thermo-Calc"
+      },
+      "potential_model_or_database": {
+        "value": "TCFE9 steel database"
+      },
+      "boundary_and_initial_conditions": {
+        "value": "Fe-8Mn-3Al-1Si-0.2C (M2) composition; equilibrium phases predicted as a function of temperature; lower critical temperature taken as 600 °C; 1 % Si addition to the 3Al system introduces δ-ferrite in the intercritical temperature range (ICT band ~600-1000 °C)."
+      },
+      "validation_against_experiment": null,
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "δ-ferrite in M2 steel is stated to form while soaking at 1100 °C before hot rolling (physically the same temperature as the 1100 °C homogenization), and some fraction of α-ferrite forms from γ at finish-rolling temperatures (~900 °C); however, the paper does not explicitly assign δ-ferrite to the M2-HQ (homogenized + water-quenched) state.",
+    "No tensile, hardness, or quantitative phase-fraction (XRD/EBSD) measurement is reported specifically for the M2-HQ condition; the mechanical properties and quantitative phase analysis in this paper refer only to the M2-HR (hot-rolled) and M2-IA (intercritically annealed) conditions."
+  ]
+}

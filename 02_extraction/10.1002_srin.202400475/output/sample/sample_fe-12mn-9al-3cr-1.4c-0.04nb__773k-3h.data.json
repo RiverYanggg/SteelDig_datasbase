@@ -1,0 +1,440 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-12mn-9al-3cr-1.4c-0.04nb__773k-3h",
+      "paper_id": "10.1002_srin.202400475",
+      "alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.04nb",
+      "process_id": "proc_773k-3h",
+      "sample_label": "0.04Nb steel aged at 773 K for 3 h",
+      "aliases": [
+        "0.04Nb steel (773 K/3 h)",
+        "0.04Nb steel aged at 773 K/3 h"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_as_cast",
+      "sequence": "1",
+      "type": "casting",
+      "method": "centrifugal casting / near-rapid solidification",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingot prepared by induction melting in a water-cooled copper crucible, then re-melted and swiftly poured into a rotating copper mold to obtain steel strips (60 × 70 × 2.5 mm) through near-rapid solidification."
+    },
+    {
+      "processing_step_id": "step_aging_773k_3h",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "aging treatment",
+      "temperature": "773 K",
+      "temperature_unit": "K",
+      "duration": "3 h",
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Aging treatment performed on a portion of the as-cast steel strips in a tubular vacuum furnace at 773 K for 3 h."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_0.04Nb_773K_3h",
+      "overall_structure": "Duplex ferrite + austenite microstructure: irregular-shaped ferrite randomly dispersed within the austenite matrix, with submicron NbC particles and nano-scale intragranular κ-carbides in the austenite.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_0.04Nb_773K_3h",
+          "region": null,
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": ">80 vol%",
+              "morphology": "matrix",
+              "grain_size": "9 μm (as-cast 0.04Nb value; austenite grain size remains almost unchanged after aging)",
+              "texture": null
+            },
+            {
+              "phase_name": "ferrite (δ)",
+              "crystal_structure": "bcc",
+              "volume_fraction": "18.4 vol%",
+              "morphology": "irregular-shaped islands randomly dispersed in austenite matrix",
+              "grain_size": "3.1 μm (as-cast 0.04Nb value)",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation density (austenite)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "1.03 × 10^14 m^-2",
+              "lattice_distortion": null
+            },
+            {
+              "type": "microstrain (austenite)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": "0.07"
+            },
+            {
+              "type": "dislocation density (ferrite)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "1.10 × 10^15 m^-2",
+              "lattice_distortion": null
+            },
+            {
+              "type": "microstrain (ferrite)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": "0.257"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "9",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_NbC",
+              "type": "NbC",
+              "size": null,
+              "distribution": "Submicron white NbC particles dispersed within the austenite matrix; average size and volume fraction increase slightly with higher aging temperature and more Nb content.",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "prec_kappa",
+              "type": "κ-carbide (Fe3AlC, E21 ordered)",
+              "size": null,
+              "distribution": "Dense nano-scale intragranular κ-carbides dispersed in austenite; content and size increase with aging temperature, but 0.04Nb steel consistently has smaller content and size than 0.02Nb steel.",
+              "coherency": "coherent with austenite; orientation relationship [100]γ // [100]κ"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interfaces_0.04Nb_773K_3h",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_gamma_delta",
+          "microstructure_id": "micro_0.04Nb_773K_3h",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "ferrite (δ)",
+          "coherence": null
+        },
+        {
+          "interface_id": "if_gamma_kappa",
+          "microstructure_id": "micro_0.04Nb_773K_3h",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "κ-carbide",
+          "coherence": "coherent (cube-on-cube [100]γ // [100]κ)"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "interact_NbC_pinning",
+          "microstructure_id": "micro_0.04Nb_773K_3h",
+          "interaction_type": "NbC particle pinning of austenite grain boundaries",
+          "qualitative_or_quantitative_description": "Intergranular NbC particles hinder austenite grain-boundary motion and grain growth, refining the austenite grain size in the 0.04Nb steel."
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": "Aging at 773 K for 3 h does not measurably change the ferrite/austenite phase constitution, but promotes growth of NbC and κ-carbides.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_0.04Nb_773K_3h",
+      "measurement_conditions": {
+        "temperature": "ambient temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "2.5 × 10^-4 s^-1",
+        "specimen_geometry": "gauge width 4 mm, gauge length 12 mm",
+        "test_standard": null,
+        "other_conditions": "Tensile tests on MTS Criterion 44 universal testing machine; at least four repetitions per steel strip. Vickers microhardness (MH-5L) with indentation load 200 gf and holding time 20 s."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "1014 ± 16 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 16 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1122 ± 14 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 14 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "14 ± 2 %",
+              "unit": "%",
+              "uncertainty": "± 2 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "465 HV",
+            "scale": "Vickers (HV)",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_0.04Nb_773K_3h",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": [
+        {
+          "benchmark_alloy_id": null,
+          "benchmark_process_id": null,
+          "benchmark_sample_id": null,
+          "comparison_metric": "Yield strength of 0.04Nb steels exceeds that of 0.02Nb steels by ≈71 MPa; 0.04Nb steels generally exhibit slightly higher strength and poorer plasticity than 0.02Nb steels.",
+          "improvement_percentage": null
+        }
+      ]
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_XRD_0.04Nb_773K",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "D/max-2500 instrument at 40 kV, scanning 30°–100° at 4°/min",
+      "measurement_conditions": "40 kV; 2θ range 30°–100°; speed 4°/min",
+      "purpose": "Phase identification and XRD line-profile analysis",
+      "key_findings": "The 0.04Nb steel consists of ferrite and austenite; peak intensity shows almost no significant change after aging."
+    },
+    {
+      "characterization_id": "char_SEM_EBSD_0.04Nb_773K",
+      "microstructure_id": "micro_0.04Nb_773K_3h",
+      "technique": "SEM with EBSD",
+      "instrument_or_setup": "Apollo 300 thermal field emission SEM equipped with EBSD detector; EBSD step size 300 nm; samples electropolished with 10 vol% perchloric acid alcohol solution at 25 V for 10 s",
+      "measurement_conditions": "EBSD step size 300 nm",
+      "purpose": "Microstructure characterization and ferrite content measurement (ImageJ)",
+      "key_findings": "Irregular-shaped ferrite randomly dispersed in austenite matrix; ferrite content 18.4 vol% at 773 K/3 h; submicron white NbC particles present."
+    },
+    {
+      "characterization_id": "char_TEM_0.04Nb_773K",
+      "microstructure_id": "micro_0.04Nb_773K_3h",
+      "technique": "TEM (dark field, SAED, EDS)",
+      "instrument_or_setup": "JEOL JEM-2100 TEM operating at 200 kV; TEM specimens prepared by double-jet electropolishing with 10% perchloric acid + 90% alcohol at ≈30 °C and 35 V",
+      "measurement_conditions": "200 kV",
+      "purpose": "Nano-scale precipitate characterization (NbC and intragranular κ-carbides)",
+      "key_findings": "Submicron white particles identified as NbC; nano-scale intragranular κ-carbides dispersed in austenite and coherent with austenite ([100]γ // [100]κ)."
+    },
+    {
+      "characterization_id": "char_hardness_0.04Nb_773K",
+      "microstructure_id": null,
+      "technique": "Vickers microhardness",
+      "instrument_or_setup": "Vickers hardness tester (MH-5L), indentation load 200 gf, holding time 20 s",
+      "measurement_conditions": "indentation load 200 gf; holding time 20 s",
+      "purpose": "Microhardness measurement",
+      "key_findings": "Microhardness of 0.04Nb steel aged at 773 K/3 h is 465 HV."
+    },
+    {
+      "characterization_id": "char_tensile_0.04Nb_773K",
+      "microstructure_id": null,
+      "technique": "Tensile testing",
+      "instrument_or_setup": "MTS Criterion 44 universal testing machine",
+      "measurement_conditions": "ambient temperature; strain rate 2.5 × 10^-4 s^-1; gauge width 4 mm; gauge length 12 mm; minimum four repetitions",
+      "purpose": "Tensile mechanical properties",
+      "key_findings": "YS 1014 ± 16 MPa, UTS 1122 ± 14 MPa, total elongation 14 ± 2 % for 0.04Nb steel aged at 773 K/3 h."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "calc_ThermoCalc_phase_0.04Nb",
+      "simulation_method": "Thermodynamic equilibrium phase diagram calculation",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": "TCFE10",
+      "boundary_and_initial_conditions": "Fe-12Mn-9Al-1.4C-3Cr-xNb (wt%, x = 0–0.05) system",
+      "validation_against_experiment": "Nb content has limited impact on the liquid-to-solid transformation temperature, leading to similar constituent phase content in the 0.02Nb and 0.04Nb steels.",
+      "analytical_models": []
+    },
+    {
+      "computation_id": "calc_ThermoCalc_diffusion_0.04Nb",
+      "simulation_method": "Diffusion coefficient calculation (Al and C in austenite)",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": "TCFE10_MOBFE5",
+      "boundary_and_initial_conditions": "Temperature range 673–873 K",
+      "validation_against_experiment": "Nb presence slightly decreases C diffusion in austenite (strong Nb–C affinity) and slightly increases Al diffusion; slower C diffusion decelerates κ-carbide nucleation and growth.",
+      "analytical_models": []
+    },
+    {
+      "computation_id": "calc_DFT_kappa_0.04Nb",
+      "simulation_method": "Spin-polarized density functional theory (DFT), GGA-PBE",
+      "software_used": "VASP",
+      "potential_model_or_database": "PAW potentials; U = 2.59 eV for Fe; plane-wave cutoff 500 eV; Gaussian smearing 0.05 eV; convergence < 0.03 eV Å^-1; vacuum 15 Å; 6 × 6 × 6 Monkhorst–Pack k-points",
+      "boundary_and_initial_conditions": "2 × 2 × 2 supercell of κ-carbide (Fe3AlC, E21); Nb substitution at Fe face-centered site (Fe23NbAl8C8) and Al corner site (Fe24Al7NbC8)",
+      "validation_against_experiment": "Nb doping significantly increases κ-carbide formation energy, explaining the reduced κ-carbide content and size in 0.04Nb steel.",
+      "analytical_models": [
+        {
+          "model_name": "Formation energy equation E_F = E_DFT − Σ N_X μ_X",
+          "equation_role": "Calculate κ-carbide formation energy",
+          "parameters": [
+            {
+              "name": "E_F(Fe24Al8C8)",
+              "value": "0.891 eV",
+              "unit": "eV"
+            },
+            {
+              "name": "E_F(Fe23NbAl8C8)",
+              "value": "2.826 eV",
+              "unit": "eV"
+            },
+            {
+              "name": "E_F(Fe24Al7NbC8)",
+              "value": "1.453 eV",
+              "unit": "eV"
+            }
+          ],
+          "model_note": "Doping κ-carbide with Nb significantly increases its formation energy."
+        }
+      ]
+    },
+    {
+      "computation_id": "calc_strengthening_0.04Nb_773K",
+      "simulation_method": "Analytical strengthening-mechanism calculation for austenite and ferrite",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Parameters: austenite M = 3.06, α = 0.23, b = 0.26 nm, G = 70 GPa; Hall–Petch coefficient k_γ = 14.55 MPa·mm^-1/2; κ-carbide shearing N = 6, γ_APB = 350 mJ/m^-2; ferrite M_F = 2, α_F = 0.4, G_F = 76 GPa.",
+      "validation_against_experiment": "Calculated contributions explain the higher yield strength of the 0.04Nb steel.",
+      "analytical_models": [
+        {
+          "model_name": "Dislocation strengthening (Taylor): σ_d = M α G b √ρ",
+          "equation_role": "Dislocation strengthening in austenite",
+          "parameters": [
+            {
+              "name": "σ_d (austenite, 773 K/3 h)",
+              "value": "106.1 MPa",
+              "unit": "MPa"
+            },
+            {
+              "name": "ρ (austenite, 773 K/3 h)",
+              "value": "1.03 × 10^14 m^-2",
+              "unit": "m^-2"
+            }
+          ],
+          "model_note": "For 0.04Nb steel aged at 773 K for 3 h."
+        },
+        {
+          "model_name": "Grain boundary strengthening (Hall–Petch): σ_g = k_γ d^-1/2",
+          "equation_role": "Grain boundary strengthening in austenite",
+          "parameters": [
+            {
+              "name": "σ_g (austenite, 773 K/3 h)",
+              "value": "125.8 MPa",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "For 0.04Nb steel aged at 773 K for 3 h."
+        },
+        {
+          "model_name": "κ-carbide precipitation strengthening (shearing): σ_p = (M/N)(γ_APB/b)√V_f[√(12γ_APB r/(πGb^2)) − √V_f]",
+          "equation_role": "Precipitation strengthening by κ-carbides",
+          "parameters": [
+            {
+              "name": "σ_p (κ-carbide, 773 K/3 h)",
+              "value": "156.8 MPa",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "For 0.04Nb steel aged at 773 K for 3 h."
+        },
+        {
+          "model_name": "NbC Orowan (Ashby–Orowan): σ_oro = (0.538 G b f^1/2 / D) ln(D/2b)",
+          "equation_role": "Precipitation strengthening by NbC particles",
+          "parameters": [
+            {
+              "name": "σ_oro (NbC, 773 K/3 h)",
+              "value": "4.6 MPa",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "For 0.04Nb steel aged at 773 K for 3 h."
+        },
+        {
+          "model_name": "Ferrite dislocation strengthening",
+          "equation_role": "Dislocation strengthening in ferrite",
+          "parameters": [
+            {
+              "name": "σ_d (ferrite, 773 K/3 h)",
+              "value": "96.4 MPa",
+              "unit": "MPa"
+            },
+            {
+              "name": "ρ (ferrite, 773 K/3 h)",
+              "value": "1.10 × 10^15 m^-2",
+              "unit": "m^-2"
+            }
+          ],
+          "model_note": "For 0.04Nb steel aged at 773 K for 3 h."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "As-cast 0.04Nb steel austenite composition (EPMA/Table 4): Mn 13.03, Al 8.37, Cr 3.97, C 1.33, Nb 0.038, Fe 64.07 wt% (alloy-level, as-cast information relevant to the 0.04Nb alloy).",
+    "EPMA shows Nb uniformly dispersed within austenite grains of as-cast 0.04Nb steel, with only sporadic Nb enrichment at grain boundaries.",
+    "Nb addition raises the MC (NbC) precipitation temperature from ≈973 K (0 Nb) to 1573 K (0.05 wt% Nb), enabling NbC particles to pin austenite grain boundaries during the δ-ferrite → γ-austenite transformation.",
+    "The austenite grain size of 0.04Nb steels is approximately half that of 0.02Nb steels due to precipitation of NbC particles.",
+    "No coarsened intergranular κ-carbides were detected in 0.04Nb steel after aging treatment at 723–823 K (which includes the 773 K/3 h state).",
+    "The paper notes that for Nb-containing steels aged at temperatures exceeding 773 K, κ-carbide precipitation was the principal strengthening factor (statement may or may not include the 773 K/3 h state; text is ambiguous about the threshold)."
+  ]
+}

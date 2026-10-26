@@ -1,0 +1,365 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-11al-1.2c__solution-1100c-1h",
+      "paper_id": "10.1016_j.matchar.2021.111013",
+      "alloy_id": "alloy_fe-30mn-11al-1.2c",
+      "process_id": "proc_solution-1100c-1h",
+      "sample_label": "as-quenched state",
+      "aliases": [
+        "initial state",
+        "before cold rolling",
+        "0% rolling reduction"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_vim",
+      "sequence": "1",
+      "type": "casting / melting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "High Mn-Al-C austenitic low-density steel with nominal composition Fe-30Mn-11Al-1.2C (wt%) was fabricated by vacuum induction melting."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "soaking / homogenization",
+      "temperature": "1250",
+      "temperature_unit": "°C",
+      "duration": "12 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The cast was soaked at 1250 °C for 12 h to homogenize and refine the microstructure (upstream bar-fabrication step)."
+    },
+    {
+      "processing_step_id": "step_hot_forging",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot forging",
+      "temperature": "900",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "forged into bars 60 mm in diameter",
+      "processing_steps_notes": "Then hot-forged into bars 60 mm in diameter with the finish forging temperature of 900 °C (upstream bar-fabrication step)."
+    },
+    {
+      "processing_step_id": "step_sheet_cutting",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "wire electric discharge machining (wire EDM)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Sheets 40 mm in width, 70 mm in length and different thickness (1.3, 1.7, 2.4, 4 and 6 mm) were cut from the bars using wire electric discharge machine."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "solution treatment followed by quenching",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": "quenched",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The sheets were solution treated at 1100 °C for 1 h before any cold rolling; this gives the initial as-quenched austenitic state (0% rolling reduction). The as-quenched κ'-carbides form via spinodal decomposition during quenching."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "str_as_quenched",
+      "overall_structure": "As-quenched initial microstructure (before cold rolling) consisting of an austenitic matrix with nano-sized κ'-carbides uniformly distributed in it, containing a large amount of annealing twins; the phase constituent was estimated as austenite and κ'-carbides.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_as_quenched",
+          "region": null,
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix (equiaxed grains, colored blue in EBSD phase map)",
+              "grain_size": "~70 μm (including twins)",
+              "texture": "almost random distribution"
+            },
+            {
+              "phase_name": "κ'-carbides (kappa-carbides)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "nano-sized particles uniformly distributed in the austenitic matrix; formed via spinodal decomposition during quenching",
+              "grain_size": "nano-sized",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "annealing twins (twin boundaries present in large amount)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~70",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "almost random distribution (no preferred orientation) reflected by the inverse pole figure"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "kappa_prime",
+              "type": "κ'-carbides (kappa-carbides)",
+              "size": {
+                "value": "nano-sized",
+                "unit": null
+              },
+              "distribution": "uniformly distributed in the austenitic matrix",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_as_quenched_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": "dog-bone-shaped tensile specimen, gauge length 16 mm, width 4 mm, cut along the rolling direction",
+        "test_standard": null,
+        "other_conditions": "Uniaxial tensile test using a SHIMADZU AG-X50KN universal testing machine; three parallel tensile tests per condition."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction (RD)",
+              "value": "~570 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction (RD)",
+              "value": "~830 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction (RD)",
+              "value": ">75%",
+              "unit": "%",
+              "uncertainty": null,
+              "note": "uniform elongation (UE) exceeding 75%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om",
+      "microstructure_id": "micro_as_quenched",
+      "technique": "optical microscopy (OM)",
+      "instrument_or_setup": "optical microscope; specimen electrolytically polished and etched with a solution of 1 g ferric chloride, 10 ml hydrochloric acid and 10 ml deionized water",
+      "measurement_conditions": "longitudinal section (RD × ND)",
+      "purpose": "investigate the initial microstructure and cold-rolled microstructure evolution",
+      "key_findings": "Fig. 3 optical micrographs; the as-quenched state (before rolling) is not detailed in OM but the initial grain structure is equiaxed."
+    },
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_as_quenched",
+      "technique": "electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "TESCAN MIRA 3 scanning electron microscope; electrolyte for electrolytical polishing = deionized 10% water, 10% perchloric acid, 10% ethylene glycol butyl ether and 70% alcohol",
+      "measurement_conditions": "longitudinal section (RD × ND)",
+      "purpose": "characterize the initial microstructure, grain boundaries and texture",
+      "key_findings": "Fig. 2(a,b): inverse pole figure map and phase map of the initial state; austenite colored blue, black lines = high angle grain boundaries (≥15°) and red lines = twin boundaries; almost random texture."
+    },
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": "micro_as_quenched",
+      "technique": "transmission electron microscopy (TEM) dark-field imaging and selected-area diffraction",
+      "instrument_or_setup": "JEOL 2100 transmission electron microscope; twin jet electro-polishing with 30% nitric acid and 70% methyl alcohol",
+      "measurement_conditions": "foil normal to [001]",
+      "purpose": "observe nano-sized κ'-carbides in the austenitic matrix",
+      "key_findings": "Fig. 2(c): nano-sized κ'-carbides appear as bright particles uniformly distributed in the dark austenitic matrix."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_as_quenched",
+      "technique": "X-ray diffraction (XRD) texture measurement",
+      "instrument_or_setup": "Rigaku D/MAX 2500PC x-ray diffractometer",
+      "measurement_conditions": "incomplete pole figures {111}, {200} and {220} measured on the RD × TD plane; ODFs and F_max calculated by the Arbitrarily Defined Cells method",
+      "purpose": "characterize texture evolution",
+      "key_findings": "Initial texture before cold rolling was almost random distribution (reflected by the inverse pole figure)."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "uniaxial tensile testing",
+      "instrument_or_setup": "SHIMADZU AG-X50KN universal testing machine",
+      "measurement_conditions": "room temperature, initial strain rate 10^-3 s^-1, dog-bone specimen gauge length 16 mm, width 4 mm, cut along RD, three parallel tests",
+      "purpose": "evaluate the mechanical properties of the as-quenched and cold-rolled states",
+      "key_findings": "As-quenched state: YS ~570 MPa, UTS ~830 MPa, UE exceeding 75%, indicating excellent work hardening capability."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_critical_shear_stress",
+      "simulation_method": "analytical calculation",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "The calculated critical shear stress (~1.48 GPa) is much higher than the maximum resolved shear stress (~0.75 GPa), yet twinning was observed; attributed to SRO interaction lowering the actual critical shear stress and to local stress concentration from inhomogeneous strain.",
+      "analytical_models": [
+        {
+          "model_name": "critical shear stress for deformation twinning",
+          "equation_role": "τ_c = 2 γ_SF / b_p (Eq. 1), relating the critical shear stress to the stacking fault energy and the partial-dislocation Burgers vector",
+          "parameters": [
+            {
+              "name": "γ_SF (SFE)",
+              "value": "~108",
+              "unit": "mJ/m²"
+            },
+            {
+              "name": "b_p (Burgers vector of partial dislocation)",
+              "value": "0.146",
+              "unit": "nm"
+            },
+            {
+              "name": "τ_c (computed critical shear stress)",
+              "value": "~1.48",
+              "unit": "GPa"
+            },
+            {
+              "name": "maximum resolved shear stress",
+              "value": "~0.75",
+              "unit": "GPa"
+            }
+          ],
+          "model_note": "SFE and b_p of the current steel estimated as ~108 mJ/m² and 0.146 nm; critical stress computed as ~1.48 GPa."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_taylor_lattice_strengthening",
+      "simulation_method": "analytical calculation",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Taylor lattice strengthening",
+          "equation_role": "σ_TL = K · M · G · b / D (Eq. 2), expressing the strengthening by the long-range interaction between coplanar slip bands in the Taylor lattice",
+          "parameters": [
+            {
+              "name": "K (geometrical factor)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "M (Taylor factor)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "G (shear modulus)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "b (Burgers vector)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "D (average slip band distance)",
+              "value": null,
+              "unit": null
+            }
+          ],
+          "model_note": "Strengthening by Taylor lattice attributed to long-range interaction between coplanar slip bands; later microbands, twins, shear bands and dislocation tangles strengthen via Hall-Petch effects."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The stacking fault energy (SFE) of the present steel was estimated as ~108 mJ/m² and the Burgers vector of a partial dislocation as 0.146 nm (block b0007, b0045).",
+    "The maximum resolved shear stress reported for the steel was ~0.75 GPa (block b0045).",
+    "The as-quenched state shows a low yield strength and UTS of ~570 MPa and ~830 MPa, but a dramatic uniform elongation exceeding 75%, indicating excellent work hardening capability (block b0020).",
+    "With cold rolling the yield strength eventually reached ~2.0 GPa (approximately 3.5 times the as-quenched state); the as-quenched baseline (~570 MPa) is thus about 1/3.5 of the 90% rolled strength (block b0020).",
+    "The microstructure of the as-quenched material changes with cold rolling approximately in the sequence Taylor lattice, microbands, nano-twins, shear bands and dislocation cells (block b0007, b0047, b0066)."
+  ]
+}

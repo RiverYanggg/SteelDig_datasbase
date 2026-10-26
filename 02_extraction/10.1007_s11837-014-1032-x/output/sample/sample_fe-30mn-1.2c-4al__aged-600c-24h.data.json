@@ -1,0 +1,248 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-1.2c-4al__aged-600c-24h",
+      "paper_id": "10.1007_s11837-014-1032-x",
+      "alloy_id": "alloy_fe-30mn-1.2c-4al",
+      "process_id": "proc_aged-600c-24h",
+      "sample_label": null,
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_vim_casting",
+      "sequence": "1",
+      "type": "casting",
+      "method": "vacuum-induction melting (VIM) and casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "400 mbar Ar",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Five different alloys synthesized in one operation using five movable Cu molds filled successively from a 4-kg ingot; after each cast the remaining melt composition was adjusted by charging Al through an air lock."
+    },
+    {
+      "processing_step_id": "step_2_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "10×50×130 mm³ blocks hot rolled into 2±0.1 mm thick and ~500-mm-long sheets."
+    },
+    {
+      "processing_step_id": "step_3_reheat_water_quench",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "reheating and water quenching",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_4_homogenization",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": "Ar",
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Parent homogenization treatment (proc_homog-1100c-2h-wq) applied to all RAP samples before aging."
+    },
+    {
+      "processing_step_id": "step_5_aging_600c_24h",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "600",
+      "temperature_unit": "°C",
+      "duration": "24 h",
+      "atmosphere": "air",
+      "cooling_medium": "oil",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Defining heat treatment of this sample: after homogenization, aged in air at 600 °C for 24 h, then oil quenched."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "Austenitic microstructure; for Al content below 5 wt.% a single austenite phase prevails at room temperature. Base state after hot rolling and water quenching is fully recrystallized with a grain size of ~20 µm and some retained Mn microsegregations.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": null,
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "retained Mn microsegregation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~20",
+              "unit": "µm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_1",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "All plotted values represent averages of three measurements for every material state."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "~350–450",
+              "unit": "MPa",
+              "uncertainty": "approximate range read from Fig. 3a for the 4Al composition region"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "~460–600",
+              "unit": "MPa",
+              "uncertainty": "approximate range read from Fig. 4 for the 4Al point cluster"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "~8–55",
+              "unit": "%",
+              "uncertainty": "approximate range read from Fig. 4 for the 4Al point cluster"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "~200",
+            "scale": "HBW",
+            "unit": null,
+            "uncertainty": "approximate value read from Fig. 3d for the 0-6Al region"
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_1",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "Fe-30Mn-1.2C (0Al) and Fe-30Mn-1.2C-8Al",
+        "benchmark_process_id": "same aging treatments (450/500/550/600 °C, 0/1/24 h)",
+        "benchmark_sample_id": null,
+        "comparison_metric": "aging sensitivity of mechanical properties (YS, UTS, TE, hardness)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_1",
+      "microstructure_id": null,
+      "technique": "tensile testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "room temperature, initial strain rate 10^-3 s^-1",
+      "purpose": "mechanical screening (YS, UTS, TE)",
+      "key_findings": "For the 4Al sample: YS ~350-450 MPa, UTS ~460-600 MPa, TE ~8-55% (Fig. 3/Fig. 4)."
+    },
+    {
+      "characterization_id": "char_2",
+      "microstructure_id": null,
+      "technique": "hardness measurement",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "mechanical screening (hardness, HBW)",
+      "key_findings": "Hardness ~200 HBW for the 4Al composition (flat region 0-6Al in Fig. 3d)."
+    },
+    {
+      "characterization_id": "char_3",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "performed on the rolling plane of samples ground to a thickness of 1 mm",
+      "purpose": "phase characterization",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_4",
+      "microstructure_id": "micro_1",
+      "technique": "optical/standard metallography",
+      "instrument_or_setup": null,
+      "measurement_conditions": "cross-sectional areas prepared in the plane perpendicular to the rolling direction by grinding and polishing",
+      "purpose": "microstructure investigation",
+      "key_findings": "No cracks, pores, or macrosegregations in the final materials; as-cast coarse dendritic microstructure; hot-rolled + WQ state fully recrystallized with ~20 µm grain size and retained Mn microsegregations."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Fe-30Mn-1.2C-4Al is an intermediate Al variant: alloys with 4 wt.% and 6 wt.% Al are only very weakly affected by the applied aging treatments (450/500/550/600 °C, 0/1/24 h) in terms of mechanical data, compared with Fe-30Mn-1.2C (weakening/embrittlement) and Fe-30Mn-1.2C-8Al (strengthening).",
+    "For the intermediate Al variants with 2–6 wt.% Al (including 4Al), a much smaller influence of aging on tensile behavior is observed; pronounced strengthening during aging is attributed mainly to nm-sized κ-carbides in the ~8 wt.% Al variant.",
+    "For Al content below 5 wt.%, a single austenite phase prevails at room temperature; for 25–30 wt.% Mn with up to 4–5 wt.% Al (when naturally aged) the TWIP effect prevails as the deformation mechanism (SIMPLEX steels).",
+    "κ-carbides (L′1₂ structure, approximate stoichiometry (Fe,Mn)₃AlC) have a lattice mismatch below 3% with respect to an austenitic Fe-Mn-C matrix and can form cuboidal nanoprecipitates; they are thermally very stable at 600 °C and prevail after 100 h heat treatment with only modest coarsening (general κ-carbide statements, not specifically quantified for the 4Al sample)."
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-8al-0.85c-0.6v-0.1ti__ss-1000c-30min",
+      "paper_id": "10.1016_j.jmrt.2025.05.166",
+      "alloy_id": "alloy_fe-20mn-8al-0.85c-0.6v-0.1ti",
+      "process_id": "proc_ss-1000c-30min",
+      "sample_label": "M2-SS",
+      "aliases": [
+        "M2-SS",
+        "solution-treated M2",
+        "solution-treated Ti/V-modified steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "melting / casting",
+      "method": "high-vacuum electric-arc melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "high vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The material was melted in a high-vacuum electric-arc melting furnace."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1000",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "from 20 to 2 mm",
+      "processing_steps_notes": "Ingots were hot rolled from 20 to 2 mm at 1000 °C (hot-rolled state is the prehistory of the M2-SS sample)."
+    },
+    {
+      "processing_step_id": "step_water_quench_hot_rolled",
+      "sequence": "3",
+      "type": "heat treatment / cooling",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled ingots followed by water quenching."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1000",
+      "temperature_unit": "°C",
+      "duration": "30 min",
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Samples were solution-processed at 1000 °C for 30 min and water quenched; the two solution-treated steels were named M1-SS and M2-SS."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_m2_ss",
+      "overall_structure": "Equiaxed austenite grains (single-phase austenite matrix) containing intragranular (Ti,V)C carbides; no significant texture; bimodal grain size distribution",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_m2_ss_matrix",
+          "region": "matrix / grain interior (rolled surface plane)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC (face-centered cubic)",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains",
+              "grain_size": "32.3 ± 10.4 μm",
+              "texture": "no significant texture (random orientation)"
+            },
+            {
+              "phase_name": "(Ti,V)C carbide",
+              "crystal_structure": null,
+              "volume_fraction": "2.4 ± 1.4 %",
+              "morphology": "fine dark dot-like intragranular particles",
+              "grain_size": "35.8 ± 20.1 nm",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "32.3 ± 10.4",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "bimodal (small grains embedded around larger ones)",
+            "texture": "no significant texture"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_m2_ss_tivc",
+              "type": "(Ti,V)C carbide",
+              "size": {
+                "value": "35.8 ± 20.1",
+                "unit": "nm"
+              },
+              "distribution": "intragranular, dispersed within the grain interior; particle density higher than in M1",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_m2_ss",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": "tensile specimens 2 mm thick, 58 mm long, fabricated along the rolling direction; 12.5 mm extensometer",
+        "test_standard": null,
+        "other_conditions": "Yield strength determined at a 0.2 % offset"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "~200 MPa higher than M1-SS (M1-SS ≈ 430 MPa)",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress–engineering strain curve (Fig. 7a) and true stress–true strain / strain-hardening rate curves (Fig. 7b) for M2-SS (red dotted curve in the four-curve legend)",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": "M2-SS strain-hardening index curve almost coincides with M2-30 (Fig. 11b), indicating preserved work-hardening ability"
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_m2_ss",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy (M1, Ti/V-free Fe–Mn–Al–C low-density steel)",
+        "benchmark_process_id": "proc_ss-1000c-30min",
+        "benchmark_sample_id": "M1-SS",
+        "comparison_metric": "yield strength after solution treatment",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om_m2_ss",
+      "microstructure_id": "micro_m2_ss_matrix",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": "OM, NOVEL, MR5000",
+      "measurement_conditions": "200 × magnification; etched with 3 % FeCl3 + 10 % HCl (in ethanol) for 10–20 s; grain size per GB/T 6394-2002",
+      "purpose": "Characterize phase morphology and grain structure of M2-SS (Fig. 1c)",
+      "key_findings": "M2-SS shows finer equiaxed grains and a dense dispersion of fine dark particles compared with M1-SS"
+    },
+    {
+      "characterization_id": "char_ebsd_m2_ss",
+      "microstructure_id": "micro_m2_ss_matrix",
+      "technique": "Electron backscattered diffraction (EBSD)",
+      "instrument_or_setup": "EBSD, Zeiss Ultra 55",
+      "measurement_conditions": "Observation plane consistent with metallographic examination surface; electrochemical polishing for strain-free surfaces; 50 µm scale bar",
+      "purpose": "Determine texture and grain-size distribution of M2-SS (Fig. 2a)",
+      "key_findings": "Random colour distribution indicating absence of significant texture; bimodal grain-size distribution with small grains embedded around larger ones"
+    },
+    {
+      "characterization_id": "char_tem_m2_ss",
+      "microstructure_id": "micro_m2_ss_matrix",
+      "technique": "Transmission electron microscopy (TEM, bright-field imaging)",
+      "instrument_or_setup": "TEM, Thermo Fisher Scientific, Talos F200X G2; BF/DF imaging and SAED",
+      "measurement_conditions": "Samples ground to 50 μm, 3 mm discs, thinned with Gatan precision ion polishing system; 1 µm scale bar",
+      "purpose": "Characterize the intragranular precipitates in M2-SS (Fig. 3b)",
+      "key_findings": "Numerous fine dark dot-like intragranular precipitates identified as (Ti,V)C carbides; intragranular (Ti,V)C average size 35.8 ± 20.1 nm; M1-SS matrix shows no precipitates"
+    },
+    {
+      "characterization_id": "char_tensile_m2_ss",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile test",
+      "instrument_or_setup": "Electronic universal testing machine, SUNS, UTM5105X; 12.5 mm extensometer",
+      "measurement_conditions": "Room temperature; strain rate 10^-3 s^-1; yield strength at 0.2 % offset",
+      "purpose": "Measure mechanical properties (yield strength, tensile curves) of M2-SS",
+      "key_findings": "Solution-treated M2 steel exhibited ~200 MPa higher yield strength than M1-SS due to (Ti,V)C precipitation"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_sfe_m2",
+      "simulation_method": "Olson–Cohen thermodynamic model for stacking-fault energy (SFE)",
+      "software_used": null,
+      "potential_model_or_database": "Olson–Cohen thermodynamic model",
+      "boundary_and_initial_conditions": "At a certain temperature the SFE influencing factors relate only to the composition",
+      "validation_against_experiment": "Calculated SFE indicates dislocation slip deformation mode, consistent with TEM observation of planar/dislocation slip in M2",
+      "analytical_models": [
+        {
+          "model_name": "Olson–Cohen SFE model (Eq. 8)",
+          "equation_role": "Compute stacking-fault energy from composition and grain-size effect",
+          "parameters": [
+            {
+              "name": "SFE of M2",
+              "value": "78",
+              "unit": "mJ/m^2"
+            },
+            {
+              "name": "ρ (molar surface density on {111} planes) for M2",
+              "value": "2.9×10^-5",
+              "unit": "mol/m^2"
+            },
+            {
+              "name": "σ^{γ/ε} interfacial energy",
+              "value": "10",
+              "unit": "mJ/m^2"
+            }
+          ],
+          "model_note": "Ti and V elements have little influence on the SFE; excess part ΔG_ex ≈ 1–2 mJ/m^2 is approximately the same for M1 and M2"
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_thermo_phase_m2",
+      "simulation_method": "Thermodynamic calculation of phase composition",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Confirms the matrix remains single-phase austenite after aging treatment",
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "For M2-SS, no κ-carbides are quantified (Table 3 shows a dash for κ in M2-SS); only (Ti,V)C carbides are present (2.4 ± 1.4 %, mean radius 35.8 ± 20.1 nm).",
+    "The addition of Ti and V does not alter the austenitic phase composition of the low-density steel but refines the grain size; the M2-SS grain size is 32.3 ± 10.4 μm versus 42.4 ± 7.8 μm for the Ti/V-free M1-SS.",
+    "(Ti,V)C carbides are high-temperature precipitates (precipitation temperatures of Ti and V exceed 1000 °C) that form before aging and remain stable, so their size and volume fraction do not change under aging.",
+    "The calculated SFE of M2 (≈78 mJ/m²) indicates the deformation mode of the material is dislocation slip, consistent with TEM observations of planar slip.",
+    "Fig. 10 (strengthening mechanism bar chart) indicates M2-SS measured yield strength lies between 600 and 800 MPa, with calculated contributions σ0 + σG + σOr (no κ shear strengthening σS); however no numeric labels are printed on the chart.",
+    "The two solution-treated steels (M1-SS and M2-SS) were produced by the same process (proc_ss-1000c-30min) but differ in composition; M2-SS exhibits ~200 MPa higher yield strength than M1-SS due to (Ti,V)C precipitation."
+  ]
+}

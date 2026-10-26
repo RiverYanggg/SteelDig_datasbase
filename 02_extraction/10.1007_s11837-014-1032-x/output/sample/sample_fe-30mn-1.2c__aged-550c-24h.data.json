@@ -1,0 +1,293 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-1.2c__aged-550c-24h",
+      "paper_id": "10.1007_s11837-014-1032-x",
+      "alloy_id": "alloy_fe-30mn-1.2c",
+      "process_id": "proc_aged-550c-24h",
+      "sample_label": null,
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_vim_casting",
+      "sequence": "1",
+      "type": "synthesis",
+      "method": "vacuum-induction melting (VIM) and casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "400 mbar Ar",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Five Cu molds moved stepwise inside the furnace; a 4-kg ingot was successively filled with melt."
+    },
+    {
+      "processing_step_id": "step_2_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "10×50×130 mm³ blocks → 2±0.1 mm thick, ~500 mm long sheets",
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_3_reheat_wq",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "reheating + water quenching",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Sheets were reheated to 1100 °C, water quenched, then cut perpendicular to the rolling direction into segments (2×60×55 mm³)."
+    },
+    {
+      "processing_step_id": "step_4_homogenization",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": "Ar",
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_5_aging",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "550",
+      "temperature_unit": "°C",
+      "duration": "24 h",
+      "atmosphere": "air",
+      "cooling_medium": "oil",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Aging was conducted in air at 550 °C for 24 h, followed by oil quenching; this is the specific aging condition for this sample."
+    },
+    {
+      "processing_step_id": "step_6_sandblasting",
+      "sequence": "6",
+      "type": "surface treatment",
+      "method": "low-pressure, fine-grit sandblasting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Scales were removed from surfaces by low-pressure, fine-grit sandblasting after the heat treatments."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_1",
+      "overall_structure": "Single-phase austenitic (fcc) fully recrystallized microstructure",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": null,
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "retained Mn microsegregation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~20",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "props_mech_phys",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Tensile testing with initial strain rate 10^-3 s^-1; all plotted values are averages of three measurements for every material state; hardness reported in HBW."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "virtually unchanged from as-homogenized state (360 MPa); Fig. 3a shows ~350–450 MPa at 0Al",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "reduced relative to as-homogenized state (830 MPa)",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "reduced relative to as-homogenized state (77% TE)",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "slightly increased (vs as-homogenized); ~200 HBW (Fig. 3d)",
+            "scale": "HBW",
+            "unit": "HBW",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "7.874",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_1",
+      "service_conditions": {
+        "operating_temperature": null,
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-30mn-1.2c",
+        "benchmark_process_id": "as-homogenized",
+        "benchmark_sample_id": null,
+        "comparison_metric": "Aging (550 °C, 24 h) leaves YS virtually unchanged and slightly increases hardness, but reduces UTS and TE; embrittlement is most apparent for long aging times (24 h) and higher temperatures (>500 °C)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "performed on the rolling plane of samples ground to a thickness of 1 mm",
+      "purpose": "phase characterization/screening",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "tensile testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "room temperature, initial strain rate 10^-3 s^-1, averages of three measurements",
+      "purpose": "mechanical screening (YS, UTS, TE)",
+      "key_findings": "YS virtually unchanged by aging; UTS and TE reduced"
+    },
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": null,
+      "technique": "hardness measurement",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "mechanical screening (hardness)",
+      "key_findings": "hardness slightly increased by aging; ~200 HBW (Fig. 3d)"
+    },
+    {
+      "characterization_id": "char_metallography",
+      "microstructure_id": "micro_1",
+      "technique": "standard metallographic grinding and polishing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "cross-sectional areas prepared in the plane perpendicular to the rolling direction",
+      "purpose": "microstructure investigation",
+      "key_findings": "fully recrystallized microstructure with grain size ~20 μm and retained Mn microsegregations"
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "For the Al-free reference material (Fe-30Mn-1.2C), the best mechanical behavior is the as-homogenized state (360 MPa YS, 830 MPa UTS, 77% TE); aging leaves YS virtually unchanged and slightly increases hardness, but reduces UTS and TE, with embrittlement most apparent for long aging times (24 h) and higher temperatures (>500 °C). This 550 °C/24 h sample falls in the embrittled long-aging, high-temperature regime.",
+    "This sample is the Al-free (0 wt.% Al) reference of the Fe-30Mn-1.2C-xAl SIMPLEX TWIP set; no κ-carbide precipitation is reported for the Al-free alloy, so the observed aging-induced UTS/TE reduction is not attributed to κ-carbides in the text.",
+    "The paper presents a temperature-sensitive constitutive strain-hardening model for single-phase low-density TWIP (SIMPLEX) steels (three dislocation densities plus twin volume fraction), applicable in principle to this Fe-30Mn-1.2C sample; however, no simulation results are reported specifically for this sample (model validation in Fig. 7 uses a Fe-22wt.%Mn-0.6wt.%C model TWIP steel)."
+  ]
+}

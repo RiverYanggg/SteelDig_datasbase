@@ -1,0 +1,196 @@
+{
+  "paper_id": "10.1016_j.corsci.2025.113331",
+  "nodes": [
+    {
+      "id": "micro:fe-30-34mn-8-93al-0-9c-hot-rolled-wq:s1-p1-2",
+      "type": "microstructure",
+      "label": "κ-carbide",
+      "attributes": {
+        "phase_name": "κ-carbide",
+        "crystal_structure": null,
+        "volume_fraction": null,
+        "morphology": "Nanoscale precipitates with diameters ranging from 5 to 10 nm.",
+        "grain_size": null,
+        "texture": null
+      },
+      "sample_id": "sample_fe-30.34mn-8.93al-0.9c__hot-rolled-wq",
+      "source": {
+        "block_id": [
+          "b0033",
+          "b0034",
+          "b0035",
+          "b0036",
+          "b0038"
+        ],
+        "figure_id": [
+          "figure_001",
+          "figure_003",
+          "figure_004",
+          "figure_005"
+        ],
+        "equation_id": []
+      }
+    },
+    {
+      "id": "interface:fe-30-34mn-8-93al-0-9c-hot-rolled-wq:1",
+      "type": "interface",
+      "label": "interface_S0",
+      "attributes": {
+        "interface_set_id": "interface_S0",
+        "phase_interfaces": [
+          {
+            "interface_id": "gamma_kappa_interface_S0",
+            "microstructure_id": "micro_S0",
+            "phase_1_name": "γ austenite",
+            "phase_2_name": "κ-carbide",
+            "coherence": "γ/κ orientation relationship (ZA_γ=[110] and ZA_κ=[110]) observed by HRTEM FFT"
+          }
+        ],
+        "defect_interactions": [
+          {
+            "interaction_id": "gb_dislocation_S0",
+            "microstructure_id": "micro_S0",
+            "interaction_type": "grain boundaries and dislocations",
+            "qualitative_or_quantitative_description": "S0 contains a substantial population of low-angle grain boundaries (LAGBs, 2–10°); dislocation tangles are observed adjacent to ATBs. ATB density 0.044 μm/μm² and HAGB density 0.035 μm/μm²."
+          }
+        ],
+        "slip_behavior": null,
+        "phase_evolution": "S0 retains uneven/deformed grains and κ-carbide precipitates and serves as the baseline before solution treatment.",
+        "interface_notes": "Average KAM value 1.62 (most pronounced residual stress among samples)."
+      },
+      "sample_id": "sample_fe-30.34mn-8.93al-0.9c__hot-rolled-wq",
+      "source": {
+        "block_id": [
+          "b0034",
+          "b0036",
+          "b0038"
+        ],
+        "figure_id": [
+          "figure_004",
+          "figure_005"
+        ],
+        "equation_id": []
+      }
+    },
+    {
+      "id": "perf:fe-30-34mn-8-93al-0-9c-hot-rolled-wq:1",
+      "type": "performance",
+      "label": "perf_S0_baseline",
+      "attributes": {
+        "performance_id": "perf_S0_baseline",
+        "service_conditions": {
+          "operating_temperature": null,
+          "stress_state": null,
+          "environment": "3.5 wt% NaCl solution"
+        },
+        "lifetime_prediction": null,
+        "comparative_performance": {
+          "benchmark_alloy_id": "alloy_fe-30.34mn-8.93al-0.9c",
+          "benchmark_process_id": null,
+          "benchmark_sample_id": "S950",
+          "comparison_metric": "corrosion resistance (corrosion rate, breakdown current density, polarization resistance)",
+          "improvement_percentage": null
+        }
+      },
+      "sample_id": "sample_fe-30.34mn-8.93al-0.9c__hot-rolled-wq",
+      "source": {
+        "block_id": [
+          "b0023",
+          "b0025",
+          "b0040",
+          "b0047",
+          "b0049"
+        ],
+        "figure_id": [],
+        "equation_id": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "r5",
+      "from": "micro:fe-30-34mn-8-93al-0-9c-hot-rolled-wq:s1-p1-2",
+      "to": "interface:fe-30-34mn-8-93al-0-9c-hot-rolled-wq:1",
+      "relation": "suppresses",
+      "direction": "+",
+      "text": "κ-carbides consume Al, resulting in the lowest Al content (~18 at.%) on the oxide film surface, preventing formation of a continuous dense Al-rich protective film.",
+      "evidence": {
+        "block_id": [
+          "b0033",
+          "b0034",
+          "b0035",
+          "b0036",
+          "b0038"
+        ],
+        "figure_id": [
+          "figure_001",
+          "figure_003",
+          "figure_004",
+          "figure_005"
+        ],
+        "equation_id": []
+      },
+      "confidence": 0.9,
+      "deterministic": false
+    },
+    {
+      "id": "r9",
+      "from": "interface:fe-30-34mn-8-93al-0-9c-hot-rolled-wq:1",
+      "to": "perf:fe-30-34mn-8-93al-0-9c-hot-rolled-wq:1",
+      "relation": "causes",
+      "direction": "+",
+      "text": "The resulting oxide film is thinner (16.2 nm), has higher Fe/Mn content, and is less protective, leading to poorer corrosion performance.",
+      "evidence": {
+        "block_id": [
+          "b0023",
+          "b0025",
+          "b0034",
+          "b0036",
+          "b0038",
+          "b0040",
+          "b0047",
+          "b0049"
+        ],
+        "figure_id": [
+          "figure_004",
+          "figure_005"
+        ],
+        "equation_id": []
+      },
+      "confidence": 0.9,
+      "deterministic": false
+    }
+  ],
+  "paths": [
+    {
+      "id": "path-5",
+      "mechanism": "κ-carbides consume Al, resulting in the lowest Al content (~18 at.%) on the oxide film surface, preventing formation of a continuous dense Al-rich protective film. → The resulting oxide film is thinner (16.2 nm), has higher Fe/Mn content, and is less protective, leading to poorer corrosion performance.",
+      "edges": [
+        "r5",
+        "r9"
+      ],
+      "evidence": {
+        "block_id": [
+          "b0023",
+          "b0025",
+          "b0033",
+          "b0034",
+          "b0035",
+          "b0036",
+          "b0038",
+          "b0040",
+          "b0047",
+          "b0049"
+        ],
+        "figure_id": [
+          "figure_001",
+          "figure_003",
+          "figure_004",
+          "figure_005"
+        ],
+        "equation_id": []
+      },
+      "confidence": 0.9
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_002",
+  "family": "generalist",
+  "image_type": "chart_flow",
+  "description": "Fig. 2 is a horizontal three-stage flow chart, entirely schematic (no axes, spectra or micrographs), illustrating a GMM-based data-augmentation pipeline; the three stages are separated by thick grey arrows and labelled with blue title tabs \"Original dataset\", \"Training\" and \"Result\". Stage 1 (left, blue panel) contains a box headed \"Inputs\" listing the symbols σ_0, σ_g, σ_d and σ_Orowan plus an ellipsis, i.e. the strengthening-mechanism contributions, and a small glyph of stacked records annotated \"n=177\". Stage 2 (middle) is the \"Training\" stage, with a top box reading \"Optimize the number of Gaussian components\" and a lower box whose tab reads \"Number\" and whose text reads \"Selecting the best number of Gaussian distributions by BIC criterion\". Stage 3 (right, large rounded grey panel headed \"Result\") contains an \"EM algorithm\" block stating \"Estimation parameters: iterative optimization mean, covariance and weight of each Gaussian component\"; a downward arrow labelled \"Generate new sample\" and a curved return arrow labelled \"Denoising\" loop back into \"Data consolidation\", which shows a document icon and the text \"Combine generated data with raw data (n=776)\". The figure therefore demonstrates the complete argument: raw mechanism-derived features for 177 samples are modelled as a mixture of Gaussians whose component number is chosen by BIC and whose parameters are fitted by EM, and the generated samples are denoised and merged with the raw data to give 776 samples.",
+  "confidence": "high",
+  "subfigures": [
+    {
+      "panel": "left (Original dataset)",
+      "description": "Blue panel headed \"Original dataset\" containing an \"Inputs\" box listing the symbols σ_0, σ_g, σ_d, σ_Orowan and an ellipsis, followed by a small stacked-record icon annotated \"n=177\"; a grey arrow points right to the Training stage.",
+      "confidence": "high"
+    },
+    {
+      "panel": "middle (Training)",
+      "description": "Blue panel headed \"Training\" with two boxes: top box \"Optimize the number of Gaussian components\", and a bottom box tabbed \"Number\" reading \"Selecting the best number of Gaussian distributions by BIC criterion\".",
+      "confidence": "high"
+    },
+    {
+      "panel": "right (Result)",
+      "description": "Large grey rounded panel headed \"Result\" containing an \"EM algorithm\" block (\"Estimation parameters: iterative optimization mean, covariance and weight of each Gaussian component\"), a \"Generate new sample\" downward arrow, a curved \"Denoising\" feedback arrow, and a \"Data consolidation\" box with a document icon reading \"Combine generated data with raw data (n=776)\".",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "The figure is a three-stage schematic workflow running left to right: \"Original dataset\" → \"Training\" → \"Result\", with each stage marked by a blue title tab.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The Inputs box of the first stage lists the symbols σ_0, σ_g, σ_d and σ_Orowan plus an ellipsis, i.e. four strengthening-mechanism contribution terms are used as model inputs.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The original dataset is annotated n=177 next to a stacked-record icon.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The Training stage consists of two steps: \"Optimize the number of Gaussian components\" and \"Selecting the best number of Gaussian distributions by BIC criterion\".",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The Result stage uses an EM algorithm whose estimation parameters are the mean, covariance and weight of each Gaussian component, iteratively optimized.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "A downward arrow labelled \"Generate new sample\" and a curved return arrow labelled \"Denoising\" connect the EM algorithm block to the Data consolidation block.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Data consolidation is described as \"Combine generated data with raw data (n=776)\", implying the augmented dataset size is 776 samples.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption states the figure is the workflow of GMM-based data augmentation.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b0002"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states the initial dataset size is n = 177 for the small-sample problem addressed in the study.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b0002"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states GMM captures nonlinear feature associations and local density variations of the original dataset through parametric modeling of the joint distribution of multidimensional features.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b0002"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states traditional oversampling methods are prone to feature-space distortion, motivating the generative-model-based augmentation shown here.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b0002"
+        }
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "measured_quantities": [
+    "dataset size (number of samples): n = 177 original, n = 776 after augmentation"
+  ],
+  "sample_hints": [
+    "Original dataset (n=177)",
+    "Augmented dataset (n=776)",
+    "Inputs: σ_0",
+    "Inputs: σ_g",
+    "Inputs: σ_d",
+    "Inputs: σ_Orowan"
+  ],
+  "unreadable_items": [],
+  "image_paths": [
+    "images/5c45aaf9b527d04b649d9c70b895b11e752aa44b5d75a335334acc87612bf47f.jpg"
+  ]
+}

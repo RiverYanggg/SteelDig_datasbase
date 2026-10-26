@@ -1,0 +1,416 @@
+{
+  "schema_version": "sample-discover-v1",
+  "paper_id": "10.1016_j.jmrt.2024.10.063",
+  "domain": "materials",
+  "paper": {
+    "paper_id": "10.1016_j.jmrt.2024.10.063",
+    "doi": "10.1016/j.jmrt.2024.10.063",
+    "title": "Temperature dependence of the deformation behavior and mechanical properties of a Fe–Mn–Al–C low-density steel for cryogenic application",
+    "authors": [
+      "Qi Zhang",
+      "Guanghui Chen",
+      "Haijiang Hu",
+      "Wanjie Zheng",
+      "Xiangliang Wan",
+      "Zhengliang Xue",
+      "Guang Xu"
+    ],
+    "publication_year": "2024",
+    "journal": "Journal of Materials Research and Technology",
+    "keywords": [
+      "Austenitic low-density steel",
+      "Stacking fault energy",
+      "Tensile deformation",
+      "Impact toughness",
+      "Deformed microstructure"
+    ],
+    "research_type": "experimental",
+    "paper_scope": "Studies the temperature dependence of the deformation behavior and mechanical properties of a single Fe-20Mn-6Al-0.6C-0.15Si austenitic low-density steel by tensile and Charpy impact tests at -196°C, -77°C and room temperature, correlating reduced SFE and promoted planar glide with tensile properties and cryogenic impact toughness."
+  },
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "alloy_name": "Fe-20Mn-6Al-0.6C-0.15Si austenitic low-density steel",
+      "aliases": [
+        "Fe–20Mn–6Al-0.6C-0.15Si",
+        "Fe-Mn-Al-C low-density steel",
+        "austenitic low-density steel",
+        "experimental steel",
+        "forged steel"
+      ],
+      "description": "Single experimental alloy studied throughout the paper; a fully austenitic Fe-Mn-Al-C low-density steel melted and cast in a 50 kg vacuum induction furnace for cryogenic-application research.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Si"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "20",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "6",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.6",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "0.15",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Estimated density by Kim et al. equation is 7.078 g/cm3; measured density is 7.114 g/cm3. Initial microstructure is fully austenitic (equiaxed grains) with no isothermal martensite at -196°C.",
+      "source": {
+        "reason": "论文研究对象为一种奥氏体低密度钢，其化学成分在正文摘要、实验材料、结论等多处明确报告为 Fe-20Mn-6Al-0.6C-0.15Si，全文只此一种成分体系。",
+        "block_id": [
+          "b0008",
+          "b0013",
+          "b0015",
+          "b0077"
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_as-forged",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_name": "as-forged (homogenized 1250°C/2 h + forged + furnace cooled)",
+      "state_label": "as-forged",
+      "aliases": [
+        "initial steel",
+        "initial as-forged steel",
+        "forged steel"
+      ],
+      "parent_process_ids": [],
+      "description": "Melted and cast in a 50 kg vacuum induction furnace, air cooled to RT, reheated to 1250 °C and held 2 h for homogenization, forged into Ø60 mm round bars (start 1100 °C, finish 950 °C), then furnace cooled to RT.",
+      "processes_notes": "基态/初始状态，是后续拉伸、冲击与低温保持试样的共同前驱。",
+      "source": {
+        "reason": "论文描述了实验钢的熔炼、均匀化与锻造全过程，并以此为初始显微组织分析对象。",
+        "block_id": [
+          "b0015",
+          "b0026"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_tensile-neg196c",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_name": "tensile deformation at -196°C",
+      "state_label": "-196°C (tensile)",
+      "aliases": [
+        "tensile deformed at -196°C",
+        "tensile test at -196°C",
+        "-196°C (liquid nitrogen)"
+      ],
+      "parent_process_ids": [
+        "proc_as-forged"
+      ],
+      "description": "Tensile deformed to fracture at -196 °C with liquid nitrogen as cooling medium at a strain rate of 0.001 s-1.",
+      "processes_notes": "拉伸试样平行段长32 mm、宽5 mm、厚1.5 mm，每条件3个试样取平均；与冲击试样共用同一前驱态。",
+      "source": {
+        "reason": "论文报告在-196°C（液氮）对实验钢进行拉伸变形并表征其变形组织，构成一个独立的变形终态。",
+        "block_id": [
+          "b0017",
+          "b0021",
+          "b0028"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_tensile-neg77c",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_name": "tensile deformation at -77°C",
+      "state_label": "-77°C (tensile)",
+      "aliases": [
+        "tensile deformed at -77°C",
+        "tensile test at -77°C",
+        "-77°C (dry ice-alcohol)"
+      ],
+      "parent_process_ids": [
+        "proc_as-forged"
+      ],
+      "description": "Tensile deformed to fracture at -77 °C with a dry ice-alcohol mixture as cooling medium at a strain rate of 0.001 s-1.",
+      "processes_notes": "拉伸试样平行段长32 mm、宽5 mm、厚1.5 mm，每条件3个试样取平均。",
+      "source": {
+        "reason": "论文报告在-77°C（干冰-酒精）对实验钢进行拉伸变形并表征变形组织，构成一个独立的变形终态。",
+        "block_id": [
+          "b0017",
+          "b0021",
+          "b0028"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_tensile-rt",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_name": "tensile deformation at room temperature",
+      "state_label": "RT (tensile)",
+      "aliases": [
+        "tensile deformed at RT",
+        "tensile test at RT",
+        "room temperature (RT)"
+      ],
+      "parent_process_ids": [
+        "proc_as-forged"
+      ],
+      "description": "Tensile deformed to fracture at room temperature at a strain rate of 0.001 s-1.",
+      "processes_notes": "拉伸试样平行段长32 mm、宽5 mm、厚1.5 mm，每条件3个试样取平均。",
+      "source": {
+        "reason": "论文报告在室温对实验钢进行拉伸变形并表征变形组织，构成一个独立的变形终态。",
+        "block_id": [
+          "b0017",
+          "b0021",
+          "b0028"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_impact-neg196c",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_name": "Charpy impact at -196°C",
+      "state_label": "-196°C (impact)",
+      "aliases": [
+        "impact test at -196°C",
+        "Charpy impact test at -196°C"
+      ],
+      "parent_process_ids": [
+        "proc_as-forged"
+      ],
+      "description": "Charpy impact tested at -196 °C on 10 × 10 × 55 mm specimens with a 2 mm depth V-notch.",
+      "processes_notes": "使用PST752H-4 WANCE冲击试验机；与拉伸试样共用同一前驱锻态。",
+      "source": {
+        "reason": "论文报告在-196°C对实验钢进行仪器化Charpy冲击试验并分析断口与近断口组织，构成一个独立的冲击终态。",
+        "block_id": [
+          "b0022",
+          "b0037"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_impact-neg77c",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_name": "Charpy impact at -77°C",
+      "state_label": "-77°C (impact)",
+      "aliases": [
+        "impact test at -77°C",
+        "Charpy impact test at -77°C"
+      ],
+      "parent_process_ids": [
+        "proc_as-forged"
+      ],
+      "description": "Charpy impact tested at -77 °C on 10 × 10 × 55 mm specimens with a 2 mm depth V-notch.",
+      "processes_notes": "使用PST752H-4 WANCE冲击试验机。",
+      "source": {
+        "reason": "论文报告在-77°C对实验钢进行仪器化Charpy冲击试验并分析断口与近断口组织，构成一个独立的冲击终态。",
+        "block_id": [
+          "b0022",
+          "b0037"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_impact-rt",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_name": "Charpy impact at room temperature",
+      "state_label": "RT (impact)",
+      "aliases": [
+        "impact test at RT",
+        "Charpy impact test at RT"
+      ],
+      "parent_process_ids": [
+        "proc_as-forged"
+      ],
+      "description": "Charpy impact tested at room temperature on 10 × 10 × 55 mm specimens with a 2 mm depth V-notch.",
+      "processes_notes": "使用PST752H-4 WANCE冲击试验机；RT试样断口附近观察到二次裂纹。",
+      "source": {
+        "reason": "论文报告在室温对实验钢进行仪器化Charpy冲击试验并分析断口与近断口组织，构成一个独立的冲击终态。",
+        "block_id": [
+          "b0022",
+          "b0037"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_hold-neg196c-30min",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_name": "held in liquid nitrogen at -196°C for 30 min",
+      "state_label": "-196°C-30min",
+      "aliases": [
+        "as-treated at -196°C",
+        "held at -196°C for 30 min"
+      ],
+      "parent_process_ids": [
+        "proc_as-forged"
+      ],
+      "description": "Sample held in liquid nitrogen at -196 °C for 30 min, then analyzed by XRD to verify absence of isothermal martensite.",
+      "processes_notes": "用于验证奥氏体稳定性，属于锻态基础上的低温保持状态。",
+      "source": {
+        "reason": "论文报告将另一试样在液氮中保持30 min后进行XRD分析，指示一个与初始态不同的低温保持终态。",
+        "block_id": [
+          "b0016",
+          "b0026"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-6al-0.6c-0.15si__as-forged",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_id": "proc_as-forged",
+      "sample_label": "as-forged",
+      "aliases": [
+        "initial steel",
+        "initial as-forged steel",
+        "forged steel"
+      ],
+      "source": {
+        "reason": "该合金经熔炼-均匀化-锻造-炉冷的初始锻态，是全文明确定义的初始显微组织表征对象。",
+        "block_id": [
+          "b0015",
+          "b0026"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-20mn-6al-0.6c-0.15si__tensile-neg196c",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_id": "proc_tensile-neg196c",
+      "sample_label": "tensile deformed at -196°C",
+      "aliases": [
+        "-196°C tensile sample"
+      ],
+      "source": {
+        "reason": "该合金在-196°C拉伸变形的试样，是拉伸性能与变形组织分析的对象之一。",
+        "block_id": [
+          "b0017",
+          "b0028",
+          "b0033"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-20mn-6al-0.6c-0.15si__tensile-neg77c",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_id": "proc_tensile-neg77c",
+      "sample_label": "tensile deformed at -77°C",
+      "aliases": [
+        "-77°C tensile sample"
+      ],
+      "source": {
+        "reason": "该合金在-77°C拉伸变形的试样，是拉伸性能与变形组织分析的对象之一。",
+        "block_id": [
+          "b0017",
+          "b0028",
+          "b0035"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-20mn-6al-0.6c-0.15si__tensile-rt",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_id": "proc_tensile-rt",
+      "sample_label": "tensile deformed at RT",
+      "aliases": [
+        "RT tensile sample"
+      ],
+      "source": {
+        "reason": "该合金在室温拉伸变形的试样，是拉伸性能与变形组织分析的对象之一。",
+        "block_id": [
+          "b0017",
+          "b0028",
+          "b0031"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-20mn-6al-0.6c-0.15si__impact-neg196c",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_id": "proc_impact-neg196c",
+      "sample_label": "impact sample tested at -196°C",
+      "aliases": [
+        "-196°C impact sample"
+      ],
+      "source": {
+        "reason": "该合金在-196°C进行Charpy冲击的试样，是冲击韧性、断口与近断口组织分析的对象之一。",
+        "block_id": [
+          "b0022",
+          "b0037",
+          "b0038"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-20mn-6al-0.6c-0.15si__impact-neg77c",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_id": "proc_impact-neg77c",
+      "sample_label": "impact sample tested at -77°C",
+      "aliases": [
+        "-77°C impact sample"
+      ],
+      "source": {
+        "reason": "该合金在-77°C进行Charpy冲击的试样，是冲击韧性、断口与近断口组织分析的对象之一。",
+        "block_id": [
+          "b0022",
+          "b0037",
+          "b0038"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-20mn-6al-0.6c-0.15si__impact-rt",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_id": "proc_impact-rt",
+      "sample_label": "impact sample tested at RT",
+      "aliases": [
+        "RT impact sample"
+      ],
+      "source": {
+        "reason": "该合金在室温进行Charpy冲击的试样，是冲击韧性、断口与近断口组织分析的对象之一（含二次裂纹）。",
+        "block_id": [
+          "b0022",
+          "b0037",
+          "b0073"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-20mn-6al-0.6c-0.15si__hold-neg196c-30min",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_id": "proc_hold-neg196c-30min",
+      "sample_label": "held at -196°C for 30 min",
+      "aliases": [
+        "as-treated at -196°C"
+      ],
+      "source": {
+        "reason": "该合金在液氮中-196°C保持30 min后作XRD分析的试样，用于验证无等温马氏体形成。",
+        "block_id": [
+          "b0016",
+          "b0026"
+        ]
+      }
+    }
+  ],
+  "unmapped_findings": [
+    "Calculated SFE of the experimental steel is 32, 40 and 61 mJ/m2 at -196°C, -77°C and RT, respectively (block b0050).",
+    "Charpy impact absorbed energy Wall is about 327 J at RT, 277 J at -77°C and 188 J at -196°C (block b0037).",
+    "Crack initiation energy Winitiation is 112, 68 and 57 J at -196°C, -77°C and RT, respectively (block b0072).",
+    "Measured density of the steel is 7.114 g/cm3 versus estimated 7.078 g/cm3 (block b0026).",
+    "At -196°C a small amount of mechanical twins forms during tensile deformation; at -77°C no twins but microbands are observed; secondary cracks are present near the fracture after RT impact test (blocks b0033, b0035, b0073)."
+  ]
+}

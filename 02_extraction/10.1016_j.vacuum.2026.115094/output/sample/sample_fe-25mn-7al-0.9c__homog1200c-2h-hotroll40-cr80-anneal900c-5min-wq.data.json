@@ -1,0 +1,255 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-25mn-7al-0.9c__homog1200c-2h-hotroll40-cr80-anneal900c-5min-wq",
+      "paper_id": "10.1016_j.vacuum.2026.115094",
+      "alloy_id": "alloy_fe-25mn-7al-0.9c",
+      "process_id": "proc_homog1200c-2h-hotroll40-cr80-anneal900c-5min-wq",
+      "sample_label": "Zr0 steel",
+      "aliases": [
+        "Zr0",
+        "Fe-Mn-Al-C low density steel without Zr"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_vacuum_arc_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "vacuum arc-melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "high vacuum (pressure below 10^-6 bar) then high-purity argon (pressure below 1 bar); remelted at least five times",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Raw materials (>99.8 wt% pure) placed in a water-cooled copper crucible; evacuated to below 10^-6 bar then high-purity Ar introduced; repeated melting at least five times to homogenize composition and reduce gas contamination. (Applies to all three Fe-Mn-Al-C steels.)"
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "As-cast steels subjected to homogenization at 1200 °C for 2 h; Fig. S1 shows oxygen segregation to grain boundaries does not occur."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "40 %",
+      "processing_steps_notes": "Hot-rolling with a thickness reduction of 40 %, followed by water quenching."
+    },
+    {
+      "processing_step_id": "step_cold_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "80 %",
+      "processing_steps_notes": "Hot-rolled plates subjected to cold rolling with an 80 % reduction."
+    },
+    {
+      "processing_step_id": "step_annealing",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "annealing (short-time)",
+      "temperature": "900 °C",
+      "temperature_unit": "°C",
+      "duration": "5 min",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cold-rolled plates annealed at 900 °C for 5 min, followed by water-quenching; the Zr0 steel undergoes full recrystallization."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_zr0_annealed",
+      "overall_structure": "Single-phase, homogeneous coarse-grained recrystallized FCC structure; the Zr0 steel annealed at 900 °C is fully recrystallized, consisting mainly of coarse recrystallized FCC grains.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_zr0",
+          "region": "bulk (prior to deformation)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "FCC",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~100 % coarse grain (fine grain 0 %)",
+              "morphology": "equiaxed polygonal coarse recrystallized grains",
+              "grain_size": "12 μm",
+              "texture": "random grain orientations (low KAM)"
+            }
+          ],
+          "defects": [
+            {
+              "type": "low dislocation density (uniformly low KAM, almost uniformly dark blue)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "12",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "unimodal; tallest fraction bar just above 0.15 at about 11 μm, small bars extending to ~23 μm",
+            "texture": "random"
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_zr0_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": "flat dog-bone-shaped samples with a gauge length of 14 mm and width of 4 mm, prepared from the cold-rolling plate along rolling direction (RD)",
+        "test_standard": null,
+        "other_conditions": "uniaxial tensile testing using Instron 5892; data recorded via a contact extensometer"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "~435 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "820 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "52 %",
+              "unit": "%",
+              "uncertainty": null,
+              "type": "fracture ductility"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve of Zr0 shown in Fig. 4a",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_bse_zr0",
+      "microstructure_id": "micro_zr0",
+      "technique": "backscatter electron imaging (BSE)",
+      "instrument_or_setup": "SEM",
+      "measurement_conditions": "prior to tensile deformation; 25 µm scale bar",
+      "purpose": "Reveal the microstructure of the Zr0 steel prior to tensile deformation",
+      "key_findings": "Equiaxed polygonal coarse FCC grains with a few isolated dark particles; matrix is single-phase coarse-grained FCC."
+    },
+    {
+      "characterization_id": "char_ebsd_zr0",
+      "microstructure_id": "micro_zr0",
+      "technique": "electron backscatter diffraction (EBSD): IPF, IQ and KAM maps",
+      "instrument_or_setup": "SEM equipped with an EBSD detector (accelerating voltage: 30 kV, step size: 500 nm)",
+      "measurement_conditions": "prior to deformation; 40 µm scale bar",
+      "purpose": "Reveal the microstructure evolution of the Zr0 steel (grain orientation, quality and misorientation)",
+      "key_findings": "Equiaxed FCC grains with broad size distribution, random orientations and uniformly low KAM values."
+    },
+    {
+      "characterization_id": "char_tensile_zr0",
+      "microstructure_id": null,
+      "technique": "uniaxial tensile testing",
+      "instrument_or_setup": "Instron 5892 universal testing machine with contact extensometer",
+      "measurement_conditions": "room temperature, strain rate 10^-3 s^-1, dog-bone specimen gauge length 14 mm, width 4 mm, along RD",
+      "purpose": "Determine the room-temperature tensile properties of the Zr0 steel",
+      "key_findings": "Yield strength ~435 MPa, ultimate tensile strength 820 MPa, fracture ductility 52 %."
+    },
+    {
+      "characterization_id": "char_fracture_sem_zr0",
+      "microstructure_id": null,
+      "technique": "SEM fracture surface observation",
+      "instrument_or_setup": "SEM (Hitachi SU7000)",
+      "measurement_conditions": "post-fracture; 10 µm scale bar",
+      "purpose": "Reveal the microscopic fracture morphology of the fractured Zr0 steel",
+      "key_findings": "Fracture surface mainly composed of small dimples and cleavage faces."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Nominal composition of the Zr0 steel is Fe-25Mn-7Al-0.9C-0Zr (wt.%); it is the Zr-free reference alloy used as baseline in the paper.",
+    "Average O content 12–89 ppm, N ~18 ppm and H ~2 ppm in the steelmaking process for these Fe-Mn-Al-C low density steels.",
+    "The Zr0 steel exhibits a homogeneous grain structure after the TMT treatment (contrasting with the heterogeneous grain structure developed in the Zr0.50 steel); increasing Zr content increases the FG zone fraction (0 % for Zr0).",
+    "The Zr0 steel's fracture surface consists mainly of small dimples and cleavage faces, in contrast to the larger, deeper and denser dimples of the higher-Zr steels."
+  ]
+}

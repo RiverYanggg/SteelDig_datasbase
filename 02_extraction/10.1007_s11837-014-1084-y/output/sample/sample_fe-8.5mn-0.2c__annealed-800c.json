@@ -1,0 +1,236 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-8.5mn-0.2c__annealed-800c",
+      "paper_id": "10.1007_s11837-014-1084-y",
+      "alloy_id": "alloy_fe-8.5mn-0.2c",
+      "process_id": "proc_annealed-800c",
+      "sample_label": "annealed at 800 degrees C",
+      "aliases": {
+        "value": "samples treated at 800 degrees C"
+      }
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "The sample is defined as annealed at 800 °C; blocks b0055-b0057 describe annealing at 800 °C of two-phase austenite-ferrite 8.5Mn-0.2C alloys and the resulting microstructural state.",
+        "block_id": [
+          "b0055",
+          "b0056",
+          "b0057"
+        ]
+      },
+      "processing_step_id": "step_annealing_800c",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "annealing"
+      },
+      "temperature": {
+        "value": "800 °C",
+        "source": {
+          "reason": "b0056 refers to 'the samples treated at 800°C' and b0057 to 'the sample annealed at 800°C'.",
+          "block_id": [
+            "b0056",
+            "b0057"
+          ]
+        }
+      },
+      "temperature_unit": {
+        "value": "°C",
+        "source": {
+          "reason": "The annealing temperature is given in degrees Celsius.",
+          "block_id": [
+            "b0056",
+            "b0057"
+          ]
+        }
+      },
+      "duration": {
+        "value": "1 min, 136 s, 5 min",
+        "source": {
+          "reason": "Figure 10 legend lists annealing times of 1 min, 136 s and 5 min for the 8.5Mn-0.2C austenite-ferrite alloys; the process is described as annealing at 800 °C for various times.",
+          "block_id": [
+            "figure_010",
+            "b0064"
+          ]
+        }
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Annealing at 800 °C of two-phase austenite-ferrite 8.5Mn-0.2C alloys; recrystallization of ferrite is not complete at 800 °C.",
+        "source": {
+          "reason": "b0056 states that recrystallization of ferrite is not complete at 800 °C in comparison with 1000 °C.",
+          "block_id": [
+            "b0056"
+          ]
+        }
+      }
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_800c_annealed",
+      "overall_structure": {
+        "value": "two-phase austenite-ferrite microstructure",
+        "source": {
+          "reason": "The 8.5Mn-0.2C alloys are two-phase austenite-ferrite microstructures; b0055 refers to 'austenite plus ferrite microstructures' and figure 11 shows the 800 °C annealed state.",
+          "block_id": [
+            "b0055",
+            "b0064",
+            "figure_011"
+          ]
+        }
+      },
+      "number_of_phases": {
+        "value": 2,
+        "source": {
+          "reason": "The microstructure is described as two-phase austenite plus ferrite.",
+          "block_id": [
+            "b0055",
+            "b0064"
+          ]
+        }
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_800c",
+          "region": null,
+          "related_sequence": {
+            "value": "1"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "Austenite is one of the two phases in the 800 °C annealed sample, described in b0057 and figure 11.",
+                "block_id": [
+                  "b0057",
+                  "figure_011",
+                  "b0067"
+                ]
+              },
+              "phase_name": {
+                "value": "austenite"
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": {
+                "value": "elongated stringers; not easily indexed and heavily dislocated",
+                "source": {
+                  "reason": "b0057 states austenite in the 800 °C annealed sample is not easily indexed and TEM confirmed heavily dislocated austenite; figure 11 shows elongated austenite stringers.",
+                  "block_id": [
+                    "b0057",
+                    "figure_011",
+                    "b0067"
+                  ]
+                }
+              },
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "Ferrite is the matrix phase in the 800 °C annealed sample, described in b0056 and figure 11.",
+                "block_id": [
+                  "b0056",
+                  "figure_011",
+                  "b0067"
+                ]
+              },
+              "phase_name": {
+                "value": "ferrite"
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": {
+                "value": "pancake-shaped grains; incomplete recrystallization",
+                "source": {
+                  "reason": "b0056 states recrystallization of ferrite is not complete at 800 °C and ferrite grains are pancake-shaped; figure 11 IPF map shows pancaked, incompletely recrystallised ferrite.",
+                  "block_id": [
+                    "b0056",
+                    "figure_011",
+                    "b0067"
+                  ]
+                }
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "source": {
+                "reason": "b0057 states that the latter (heavily dislocated austenite) was confirmed by transmission electron microscopy studies.",
+                "block_id": [
+                  "b0057"
+                ]
+              },
+              "type": {
+                "value": "high dislocation density"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "source": {
+              "reason": "The 800 °C annealed microstructure is described in b0056, b0057 and figure 11 (EBSD phase maps of the 8.5Mn-6Al-XSi-0.2C alloy annealed 136 s at 800 °C).",
+              "block_id": [
+                "b0056",
+                "b0057",
+                "b0067",
+                "figure_011"
+              ]
+            },
+            "average_grain_size": null,
+            "grain_size_distribution": {
+              "value": "bimodal ferrite structure (few large interior grains plus dense bands of fine grains)",
+              "source": {
+                "reason": "figure 11 IPF map of ferrite at 800 °C shows a bimodal structure of a few large, comparatively uniformly coloured interior grains and dense bands of fine ferrite grains.",
+                "block_id": [
+                  "figure_011",
+                  "b0067"
+                ]
+              }
+            },
+            "texture": {
+              "value": "banded structure; elongated austenite stringers aligned along the rolling direction",
+              "source": {
+                "reason": "figure 11 shows a horizontally banded structure with strongly elongated austenite stringers within the ferrite matrix.",
+                "block_id": [
+                  "figure_011",
+                  "b0067"
+                ]
+              }
+            },
+            "precipitates": []
+          }
+        }
+      ],
+      "block_id": [
+        "b0055",
+        "b0056",
+        "b0057",
+        "b0067",
+        "figure_011"
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

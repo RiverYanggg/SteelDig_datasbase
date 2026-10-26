@@ -1,0 +1,361 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-0.45c-14cr-1.53mn__cladding",
+      "paper_id": "10.1016_j.matdes.2024.113473",
+      "alloy_id": "alloy_fe-0.45c-14cr-1.53mn",
+      "process_id": "proc_cladding",
+      "sample_label": "Sample 1",
+      "aliases": [
+        "sample 1",
+        "Sample 1 of the three Fe-C-Cr-Mn-Si alloys"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "The text states the Fe-C-Cr-Mn-Si coatings were prepared by arc cladding with the optimized-composition wire as feedstock and lists the substrate and equipment; Table 4 records the cladding parameters (current, voltage, cladding speed, interlayer temperature, wire feed speed). Sample 1 is one of the three alloys fabricated by this cladding process.",
+        "block_id": [
+          "b0050",
+          "b0032",
+          "figure_unlabelled_003"
+        ]
+      },
+      "processing_step_id": "step_arc_cladding",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "coating preparation"
+      },
+      "method": {
+        "value": "arc cladding"
+      },
+      "temperature": {
+        "value": "380 ~ 410"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "The wire with the optimized element content (Sample 1 composition) was used as the feeding material. ASTM A36 steel plates of 300 mm × 120 mm × 40 mm were used as substrates. Arc cladding equipment IDEALARC DC-1000 (Lincoln Electric, America) was used to prepare the Fe-C-Cr-Mn-Si coatings. Cladding parameters: current 440 ~ 600 A, voltage 30 ~ 32 V, cladding speed 24 m/h, interlayer temperature 380 ~ 410 °C, wire feed speed 76.8 m/h."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "The Results text describes that the main phase structure of sample 1 was the Fe-Cr phase with diffraction peaks of 100, 200 and 211, with Cr atoms randomly substituting Fe atoms in the FCC lattice, and that the diffraction peak shifted right relative to standard Fe due to atomic radius differences (lattice distortion). Fig. 8 shows the XRD patterns of the three samples.",
+        "block_id": [
+          "b0084",
+          "figure_008"
+        ]
+      },
+      "structure_id": "struct_sample1_fecr",
+      "overall_structure": {
+        "value": "Sample 1 (Fe-C-Cr-Mn-Si coating) is composed mainly of the Fe-Cr phase; the Cr atoms randomly substitute Fe atoms in the FCC lattice, forming a solid-solution main phase, with the diffraction peaks of 100, 200 and 211."
+      },
+      "number_of_phases": {
+        "value": 1
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_sample1_fecr",
+          "region": {
+            "value": "coating"
+          },
+          "related_sequence": {
+            "value": "1"
+          },
+          "phases_present": [
+            {
+              "phase_name": {
+                "value": "Fe-Cr phase"
+              },
+              "crystal_structure": {
+                "value": "FCC"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "solid solution; Cr atoms randomly substitute Fe atoms in the FCC lattice"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": {
+                "value": "lattice distortion"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": {
+                "value": "The diffraction peak of the alloy was shifted to the right (higher 2θ) relative to the standard Fe diffraction peak, due to the atomic radius differences between Cr, Ni and Fe, resulting in lattice distortion."
+              }
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "source": {
+        "reason": "Fig. 9 and the Results/Conclusions report the experimental microhardness of the three samples; for Sample 1 the experimental microhardness is 515 HV (predicted 521 HV, error 1.17%), and the Conclusions state the microhardness of the predicted samples reached 515 HV.",
+        "block_id": [
+          "b0085",
+          "figure_009",
+          "b0096"
+        ]
+      },
+      "property_set_id": "prop_microhardness_sample1",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": {
+          "value": "Vickers microhardness measured with a microhardness indenter (HVS-1000A, Laizhou Huayin Testing Instrument Co., Ltd., China); load 1 kg with holding time of 20 s."
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": {
+              "value": "coating"
+            },
+            "value": {
+              "value": "515 HV"
+            },
+            "scale": {
+              "value": "HV (Vickers)"
+            },
+            "unit": {
+              "value": "HV"
+            },
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "source": {
+        "reason": "The text states the minimum error between predicted and experimental microhardness was 1.17% (Sample 1), lower than 2.01% and 2.96% reported for high entropy alloys, benchmarking the model's accuracy for this sample.",
+        "block_id": [
+          "b0085"
+        ]
+      },
+      "performance_id": "perf_prediction_error_sample1",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": {
+          "value": "Error between predicted and experimental microhardness: Sample 1 = 1.17%, which is lower than the 2.01% and 2.96% errors previously reported for predicting the hardness of high entropy alloys (Ren et al. [14] and Huang et al. [47])."
+        },
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "The text describes using XRD (SmartLab SE, Rigaku, Japan, Cu Kα, 40 kV, 40 mA) to analyze the coating phases, and Fig. 8 shows the XRD patterns of the three samples including Sample 1's Fe-Cr phase and peak shift.",
+        "block_id": [
+          "b0055",
+          "b0084",
+          "figure_008"
+        ]
+      },
+      "characterization_id": "char_xrd_sample1",
+      "microstructure_id": "micro_sample1_fecr",
+      "technique": {
+        "value": "X-ray diffraction (XRD)"
+      },
+      "instrument_or_setup": {
+        "value": "SmartLab SE, Rigaku, Japan; Cu Kα radiation, working voltage 40 kV, current 40 mA"
+      },
+      "measurement_conditions": {
+        "value": "2θ range 20-100° (with enlarged region at 2θ of 40-50°)"
+      },
+      "purpose": {
+        "value": "Phase analysis of the coatings"
+      },
+      "key_findings": {
+        "value": "Sample 1 is labelled Fe-Cr; the main phase is the Fe-Cr phase with diffraction peaks indexed (1 1 0)/(100), (2 0 0)/(200) and (2 1 1)/(211); the (1 1 0) peak lies just below 45° and is shifted to higher 2θ relative to standard Fe, indicating lattice distortion from Cr/Ni substitution."
+      }
+    },
+    {
+      "source": {
+        "reason": "The text describes Vickers microhardness measurement with the HVS-1000A indenter (load 1 kg, holding time 20 s), and Fig. 9 reports the experimental microhardness of the three samples including Sample 1 at 515 HV.",
+        "block_id": [
+          "b0055",
+          "b0085",
+          "figure_009"
+        ]
+      },
+      "characterization_id": "char_microhardness_sample1",
+      "microstructure_id": "micro_sample1_fecr",
+      "technique": {
+        "value": "Vickers microhardness testing"
+      },
+      "instrument_or_setup": {
+        "value": "Microhardness indenter HVS-1000A, Laizhou Huayin Testing Instrument Co., Ltd., China"
+      },
+      "measurement_conditions": {
+        "value": "Load 1 kg, holding time 20 s"
+      },
+      "purpose": {
+        "value": "Measure the Vickers microhardness of the coatings"
+      },
+      "key_findings": {
+        "value": "Experimental microhardness of Sample 1 = 515 HV (predicted 521 HV, error 1.17%); attributed to the solid solution phases."
+      }
+    }
+  ],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "The text describes the ML framework (SVR selected model with Bayesian optimization and ten-fold cross-validation), the modified solid solution strengthening equation with its fitted parameters, and the validation against the experimental microhardness of the designed samples including Sample 1.",
+        "block_id": [
+          "b0073",
+          "b0078",
+          "b0079",
+          "b0069",
+          "table_005",
+          "b0085"
+        ]
+      },
+      "computation_id": "comp_svr_microhardness_sample1",
+      "simulation_method": {
+        "value": "Machine learning support vector regression (SVR) model combined with modified solid solution strengthening theory; hyperparameters optimized with Bayesian optimization and ten-fold cross-validation; the inverse design used firefly optimization algorithm (FA) to determine element content"
+      },
+      "software_used": null,
+      "potential_model_or_database": {
+        "value": "Training data obtained from MatWeb (173 Fe-C-Cr-Mn-Si steel data points, augmented from 98 to 192 by conditional generative adversarial networks, CGANs); 117 MatWeb data points used as independent validation set"
+      },
+      "boundary_and_initial_conditions": {
+        "value": "Key input features {G, δEc, DEc}; output = microhardness (HV). SVR hyperparameters: C = 4.98, cache_size = 118.85, coef0 = 0.63, degree = 4, epsilon = 1.87 × 10⁻⁴, gamma = 3.57 × 10⁻², kernel = poly, tol = 1.22 × 10⁻³."
+      },
+      "validation_against_experiment": {
+        "value": "For Sample 1 the model predicted a microhardness of 521 HV versus the experimental 515 HV (error 1.17%). With the modified solid solution strengthening theory the SVR model achieved R² = 0.89 and RMSE = 0.31 (R² increased by 4.71% and RMSE decreased by 8.34% relative to the model without the modified theory)."
+      },
+      "analytical_models": [
+        {
+          "model_name": {
+            "value": "Modified solid solution strengthening equation"
+          },
+          "equation_role": {
+            "value": "ΔσSSS = Z · M · G · δEc · DEc (predicts solid solution strengthening strength)"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "Z (fitting parameter)"
+              },
+              "value": {
+                "value": "0.0056"
+              },
+              "unit": null
+            },
+            {
+              "name": {
+                "value": "M (Taylor factor, both FCC and BCC)"
+              },
+              "value": {
+                "value": "3.06"
+              },
+              "unit": null
+            }
+          ],
+          "model_note": {
+            "value": "Z is a fitting parameter with a value of 0.0056; M is the Taylor factor with a value of 3.06 for both FCC and BCC structures. G is the shear modulus; δEc is the difference in cohesive energy and DEc is the local cohesive energy mismatch."
+          }
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Sample 1 composition (mass %) from Table 6: C 0.45, Si 0.19, Mn 1.53, Cr 14, S 0.01, Ni 0, P 0.014, Fe 83.806, Mo 0, V 0, W 0. Derived parameters: δr = 0.0542 and ΔHmix = −0.914 kJ/mol.",
+    "Sample 1 is described as one of the three Fe-C-Cr-Mn-Si alloys designed by the ML model and fabricated by arc cladding for experimental validation.",
+    "The ML model predicted a microhardness of 521 HV for Sample 1 versus a measured 515 HV, giving the minimum error of 1.17% among the three samples.",
+    "Solid-solution formation criterion for the designed samples: solid solution phases form when δr < 0.066 and −11.6 < ΔHmix < 3.2 kJ/mol; the samples' δ values range 0.0335 to 0.0595 and ΔHmix ranges −1.213 to −0.451 kJ/mol, satisfying the criterion.",
+    "There is a labeling discrepancy for Sample 1's phase: the Results text calls the main phase the Fe-Cr phase with an FCC lattice and peaks 100/200/211, whereas Fig. 8 labels it Fe-Cr with reflections indexed (1 1 0)/(2 0 0)/(2 1 1) and describes a bcc-type solid-solution phase."
+  ]
+}

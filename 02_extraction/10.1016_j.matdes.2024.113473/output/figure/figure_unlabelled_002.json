@@ -1,0 +1,106 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_unlabelled_002",
+  "family": "generalist",
+  "image_type": "chart_table",
+  "description": "A single-panel figure that is entirely a rendered table specifying the layer-by-layer architecture of a conditional GAN (CGAN) used for machine-learning design of Fe-C-Cr-Mn-Si steel. The table is divided into two halves — \"Generator network\" (left) and \"Discriminator network\" (right) — each with the columns \"Layer name\", \"Architecture\" and \"Detail\". Generator: input layer = Random noise, 100; Hidden layer 1 = Dense layer 64; Hidden layer 2 = Dense layer 128; Output layer = \"Feature + property\", 12(11 + 1); Activation Relu (hidden) and Tanh (output); Batch normalization Yes in both hidden layers; Regularizer L2 = 0.01 in every layer. Discriminator: input layer = \"Feature + property\", 12(11 + 1); Hidden layer 1 = Dense layer 128; Hidden layer 2 = Dense layer 64; Output layer = Dense layer 1; Activation Relu (hidden) and Sigmoid (output); Batch normalization Yes; Regularizer L2 = 0.01 throughout. The mirror-symmetric hidden-layer widths (64→128 in the generator vs 128→64 in the discriminator) show the two networks are inverted twins. The table therefore defines the generative model that maps a 100-dimensional noise vector onto a 12-dimensional vector of 11 features plus 1 property, and the discriminator that scores such 11-feature + 1-property inputs, but it reports no performance values.",
+  "confidence": "high",
+  "subfigures": [
+    {
+      "panel": "table (single panel)",
+      "description": "One table, split into a left 'Generator network' half and a right 'Discriminator network' half, listing layer name, architecture and detail for input layer, hidden layer 1, hidden layer 2 and output layer of each network. Generator: Random noise 100 -> Dense 64 -> Dense 128 -> Feature + property 12(11 + 1), Relu/Tanh, batch normalization Yes, L2 = 0.01. Discriminator: Feature + property 12(11 + 1) -> Dense 128 -> Dense 64 -> Dense 1, Relu/Sigmoid, batch normalization Yes, L2 = 0.01. All cell text is fully legible; no image, curve or micrograph is present.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "The figure is a text table only, with no plots, micrographs or images; it tabulates deep-network architectures.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The generator input layer takes 'Random noise' with dimension 100.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The generator contains Dense layer 64 (hidden layer 1) followed by Dense layer 128 (hidden layer 2).",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The generator output layer is labelled 'Feature + property' with detail '12(11 + 1)', i.e. 11 features plus 1 property.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The discriminator input layer is labelled 'Feature + property' with detail '12(11 + 1)'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The discriminator contains Dense layer 128 (hidden layer 1) followed by Dense layer 64 (hidden layer 2), i.e. the reverse of the generator.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The discriminator output layer is Dense layer 1 with Sigmoid activation.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "All hidden-layer activations in both networks are Relu; the generator output activation is Tanh.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Batch normalization is set to 'Yes' in hidden layers 1 and 2 of both the generator and the discriminator.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Every regularizer entry in both networks is 'L2 = 0.01'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "No training hyperparameters such as learning rate, epoch count, optimizer or batch size appear in the table.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption reproduces the same table content, describing a 'Generator network' and 'Discriminator network' with layer name, architecture and detail columns.",
+      "source": "caption",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The paper title associates this architecture with extreme high accuracy prediction and design of Fe-C-Cr-Mn-Si steel, but the table itself names no alloy or composition.",
+      "source": "citation",
+      "evidence": [],
+      "confidence": "medium"
+    }
+  ],
+  "measured_quantities": [
+    "layer size / number of neurons (count)",
+    "L2 regularization coefficient (dimensionless, L2 = 0.01)",
+    "input noise dimension (100)",
+    "output vector dimension (12 = 11 features + 1 property)"
+  ],
+  "sample_hints": [],
+  "unreadable_items": [],
+  "image_paths": [
+    "images/9015dc2b1bb47f27ad33bc8238ccbb6573b5ef9f85c093fdb06a543789659403.jpg"
+  ]
+}

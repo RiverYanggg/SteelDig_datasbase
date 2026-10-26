@@ -1,0 +1,235 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-9al-20mn-1c__800c-30min-wq",
+      "paper_id": "10.1016_j.jmrt.2020.02.088",
+      "alloy_id": "alloy_fe-9al-20mn-1c",
+      "process_id": "proc_800c-30min-wq",
+      "sample_label": "9Al-20Mn-1C 800 °C — Tempered",
+      "aliases": [
+        "9Al-20Mn-1C tempered at 800 °C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "1",
+      "type": "casting",
+      "method": "vacuum induction melting / casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum (100 kW vacuum induction furnace)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Alloyed steel produced by casting in a 100 kW vacuum induction furnace, resulting in 0.5 kg ingots."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingots hot-rolled at 1150 °C to obtain 5 mm flat-products, followed by water quenching (parent process of this sample)."
+    },
+    {
+      "processing_step_id": "step_tempering_800c",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "tempering (heat treatment)",
+      "temperature": "800 °C",
+      "temperature_unit": "°C",
+      "duration": "30 min",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Samples heat treated at 800 °C for 30 min, followed by water quenching — the defining treatment of this sample."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_9al-20mn-1c_800c",
+      "overall_structure": "Predominantly retained austenite / no transformation: for the 9Al-20Mn-1C composition the austenite fraction (and therefore stability) is higher at 800 °C than at 1150 °C, so no cellular transformation or spinodal decomposition was detected after 800 °C tempering (contrast with the 12Al grades).",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_9al-20mn-1c_800c_retained_austenite",
+          "region": null,
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "f.c.c. (FCC_A1)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "props_9al-20mn-1c_800c",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "through-thickness embedded, ground and polished samples",
+        "test_standard": null,
+        "other_conditions": "Vickers macro-hardness; 5 kg load applied for all indentations; 5 indentations per sample."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "249",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_9al-20mn-1c_800c",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Vickers hardness of 9Al-20Mn-1C: 233 HV hot-rolled, 359 HV after 600 °C tempering and 249 HV after 800 °C tempering (Table 8), i.e. the 800 °C state is harder than hot-rolled but markedly softer than the 600 °C tempered state; the same table ranks 9Al-10Mn-1C highest.",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_vickers_macrohardness",
+      "microstructure_id": null,
+      "technique": "Vickers macro-hardness testing",
+      "instrument_or_setup": "Vickers indenter with 5 kg load",
+      "measurement_conditions": "5 kg load for all indentations; 5 indentations per sample; data consistency checked with Minitab18® (outliers excluded)",
+      "purpose": "Compare the hardness of the hot-rolled and heat-treated (600 °C and 800 °C tempered) conditions of the tested Fe–Mn–Al–C grades.",
+      "key_findings": "9Al-20Mn-1C after 800 °C tempering measured 249 HV (Table 8), softer than its 600 °C tempered value (359 HV) and only slightly harder than its hot-rolled value (233 HV)."
+    },
+    {
+      "characterization_id": "char_optical_microscopy",
+      "microstructure_id": null,
+      "technique": "optical microscopy",
+      "instrument_or_setup": null,
+      "measurement_conditions": "through-thickness embedding, grinding and polishing performed separately for hot-rolled and heat-treated samples",
+      "purpose": "Microstructural analysis of all alloys at the different processing conditions (hot-rolling and tempering).",
+      "key_findings": null
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_calphad_9al-20mn-1c",
+      "simulation_method": "CALPHAD equilibrium phase-fraction (amount of all phases vs temperature) calculation",
+      "software_used": "Thermo-Calc (Thermo-Calc/CALPHAD)",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "9Al-20Mn-1C composition (9 wt% Al, 20 wt% Mn, 1 wt% C, balance Fe); temperature range 0–1300 °C; y-axis 'Amount of all phases [mol]'.",
+      "validation_against_experiment": "Used qualitatively: the calculated austenite (FCC_A1) fraction reaches a ~1.00 mol plateau over roughly 800–1050 °C and BCC_A2/KAPPA_E21 fall to zero near 750 °C and ~800 °C, i.e. austenite is more stable at 800 °C than at 1150 °C — consistent with the absence of austenite transformation observed for this composition at 800 °C.",
+      "analytical_models": [
+        {
+          "model_name": "CALPHAD equilibrium phase-fraction diagram (Fig. 12(a))",
+          "equation_role": "thermodynamic calculation of equilibrium phase amounts to assess the gradient in austenite stability between hot-rolling (1150 °C) and tempering (800 °C)",
+          "parameters": [
+            {
+              "name": "temperature range",
+              "value": "0–1300",
+              "unit": "°C"
+            }
+          ],
+          "model_note": "Panel (a) of Fig. 12, legend FCC_A1, BCC_A2, KAPPA_E21; FCC_A1 rises to a flat 1.00 mol plateau (roughly 800–1050 °C) then falls to about 0.75 mol at 1300 °C; BCC_A2 vanishes near 750 °C; KAPPA_E21 near 0.20 mol falls to zero by about 800 °C."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The 9Al-20Mn-1C alloy tempered at 800 °C is not covered by any dedicated micrograph in the paper; for this composition/condition only the hardness value (249 HV, Table 8) and the thermodynamic austenite-stability argument (Fig. 12(a)) are reported.",
+    "Per the conclusions, tempering at 800 °C in general triggered complete and widespread transformations such as cellular transformation coupled with spinodal decomposition, but for the 9Al-20Mn-1C composition the austenite is more stable at 800 °C than at 1150 °C, so no such transformation was detected — reactions involving the austenite volume at 800 °C were reported only for the 12Al-10Mn-1C, 12Al-20Mn-1C and 12Al-30Mn-1C grades.",
+    "The grain-striation and κ + α (and/or M3C) grain-boundary precipitate observations attributed to 9Al-20Mn-1C (Figs. 10(a) and 11; hardening at 600 °C without detectable austenite transformation, Table 8) pertain to the 600 °C tempered state, NOT to this 800 °C sample, and are therefore not assigned to this sample's structure/property fields.",
+    "At 800 °C the CALPHAD equilibrium for 9Al-20Mn-1C gives BCC_A2 = 0 mol (vanishes near 750 °C) and KAPPA_E21 = 0 mol (vanishes by ~800 °C) while FCC_A1 ≈ 1.00 mol, supporting an essentially fully austenitic equilibrium state.",
+    "The paper states that raw/processed data cannot be shared at this time (data are confidential and part of an ongoing study), so no additional quantitative data are available for this sample."
+  ]
+}

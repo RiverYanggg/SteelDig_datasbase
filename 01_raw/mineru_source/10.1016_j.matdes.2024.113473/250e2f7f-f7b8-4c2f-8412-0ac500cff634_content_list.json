@@ -1,0 +1,2311 @@
+[
+    {
+        "type": "text",
+        "text": "Extreme high accuracy prediction and design of Fe-C-Cr-Mn-Si steel using machine learning",
+        "text_level": 1,
+        "bbox": [
+            58,
+            205,
+            810,
+            249
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/229a1aa000ac33d8af1a130b4b8706640bd8b716b5349fac13f183b9a8bdcced.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            838,
+            185,
+            887,
+            221
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Hao Wu , Jianyuan Zhang , Jintao Zhang , Chengjie Ge , Lu Ren , Xinkun Suo",
+        "bbox": [
+            58,
+            262,
+            678,
+            279
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Multidimensional Additive Manufacturing Institute, Faculty of Mechanical Engineering and Mechanics, Ningbo University, 315211 Ningbo, PR China",
+        "bbox": [
+            58,
+            287,
+            737,
+            300
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A R T I C L E I N F O",
+        "text_level": 2,
+        "bbox": [
+            58,
+            327,
+            194,
+            340
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Keywords: Fe-C-Cr-Mn-Si steel Machine learning Conditional generative adversarial networks Solid solution strengthening Firefly optimization algorithm",
+        "bbox": [
+            58,
+            353,
+            278,
+            419
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A B S T R A C T",
+        "text_level": 2,
+        "bbox": [
+            334,
+            327,
+            436,
+            340
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Solid solution strengthening theory is essential for designing steel with high microhardness. Experimental determination is quite time consuming and costly. It is necessary to develop an alternate approach to rapidly and accurately predict new solid solution strengthening theory for steel. In this study, a data-driven model combining machine learning (ML), firefly optimization algorithm (FA) and conditional generative adversarial network (CGANs) were proposed to predict solid solution strengthening theory of Fe-C-Cr-Mn-Si steel. Three alloys were fabricated using cladding to validate the predict accuracy of the models. The results show that the trained support vector regression (SVR) model demonstrated the highest prediction precision for microhardness. The coefficient of determination $( R ^ { 2 } )$ value increased from 0.85 to 0.89 and root mean square error (RMSE) decreased from 0.39 to 0.31 after introducing the modified solid solution strengthening theory. The experimental validation revealed a minimum error of 1.17% between the predicted value and the experimental value. The investigation provides a valuable method to expedite design of Fe-C-Cr-Mn-Si steel with extreme high accuracy.",
+        "bbox": [
+            332,
+            351,
+            939,
+            486
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. Introduction",
+        "text_level": 2,
+        "bbox": [
+            58,
+            523,
+            164,
+            535
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Fe-C-Cr-Mn-Si alloy steel is susceptible to wear and cracking due to low surface hardness. Various efforts have been made to improve the surface hardness and service life of the steel [1]. Machine learning (ML) is an effective method to develop new theory and new materials with low time and cost [2–5]. Huang et al. developed a ML model for the prediction of time–temperature-transformation diagrams of high-alloy steel [6] and stainless steel [7].Geng et al. [8] proposed a ML approach to predict the continuous cooling transformation diagrams in synthetic weld heat-affected zones for Ni-Cr-Mo steel. Wei et al. [9] constructed a ML model for predicting the creep life of the austenitic steel. The gaussian regression model exhibited high predictive accuracy, with a determination coefficient $( R ^ { 2 } )$ of 0.97. Wang et al. [10] employed ML and stochastic optimization to accelerate the design of the Fe-based soft magnetic materials. The $R ^ { 2 }$ value with random forest (RF) model was 0.86 and 0.82 for predicting magnetic saturation and magneto striction, respectively. Ruiz et al. [11] constructed a regression model based on the gradient boosting algorithm with the $R ^ { 2 ^ { \\prime } }$ value of 0.87, revealing the correlation between the tempering temperature and fa tigue life. Yang et al. [12] predicted the hardness and yield strength of the oxide dispersion strengthened steel using six ML models. The results showed that the extreme gradient boosting model (XGBoost) had the lowest RMSE value of 63.78 and the highest $R ^ { 2 }$ value of 0.91 for hard ness prediction. In terms of yield strength prediction, the XGBoost model had the lowest RMSE value of 54.06 and the highest $R ^ { 2 }$ value of 0.90.",
+        "bbox": [
+            55,
+            549,
+            487,
+            814
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            509,
+            522,
+            939,
+            575
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Prediction accuracy of ML is affected by many factors, for example material science theory and quantity of data [13]. Solid solution strengthening is a basic mechanism in metallurgy, playing a crucial role in improving microhardness of alloys. Ren et al. [14] proposed a datadriven ML model combined with the modified solid solution strength ening theory $( \\Delta \\sigma _ { S S S } = Z \\xi G ^ { * } M . E )$ for the hardness prediction of the high entropy alloys. The $R ^ { 2 }$ and RMSE value was 0.97 and 39.25 respectively. The prediction error of the model was 2.01 %. Gao et al. [15] con structed the generic model combining solid solution strengthening for hardness prediction of the high entropy alloys. The $R ^ { 2 }$ value reached 0.91 in an independent test set. However, the investigation on the solid solution strengthening theory for Fe-based alloy steel has not been found.",
+        "bbox": [
+            507,
+            575,
+            939,
+            746
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In this study, a ML-based prediction model combining firefly opti mization algorithm (FA) was proposed to predict the microhardness of the Fe-C-Cr-Mn-Si steel. Conditional generative adversarial networks (CGANs) were employed to generate synthetic data to overcome the limitation of the data set. Modified solid solution strengthening theory was introduced to improve the physical interpretability and predictive accuracy of the model. The Fe-C-Cr-Mn-Si steel with the predicted composition was produced by cladding to validate the prediction ac curacy of the ML model.",
+        "bbox": [
+            507,
+            746,
+            939,
+            814
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_footnote",
+        "text": "0264-1275/© 2024 The Author(s). Published by Elsevier Ltd. This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by nc-nd/4.0/).",
+        "bbox": [
+            55,
+            911,
+            937,
+            935
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Materials & Design 248 (2024) 113473",
+        "bbox": [
+            389,
+            42,
+            605,
+            56
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "",
+        "bbox": [
+            58,
+            75,
+            161,
+            143
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Contents lists available at ScienceDirect",
+        "bbox": [
+            379,
+            75,
+            621,
+            89
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "ELSEVIER",
+        "bbox": [
+            60,
+            146,
+            161,
+            162
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Materials & Design",
+        "bbox": [
+            396,
+            105,
+            603,
+            126
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "journal homepage: www.elsevier.com/locate/matdes",
+        "bbox": [
+            329,
+            145,
+            670,
+            160
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "materials DESIGN",
+        "bbox": [
+            838,
+            68,
+            937,
+            158
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_footnote",
+        "text": "\\* Corresponding author.",
+        "bbox": [
+            67,
+            844,
+            206,
+            856
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_footnote",
+        "text": "E-mail address: suoxinkun@nbu.edu.cn (X. Suo).",
+        "bbox": [
+            75,
+            856,
+            342,
+            868
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_footnote",
+        "text": "https://doi.org/10.1016/i.matdes.2024.113473",
+        "bbox": [
+            58,
+            877,
+            321,
+            887
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/5b0208720f00929c21590270dc6155db5213fb5a189254aa80d904d9e7c39f9b.jpg",
+        "image_caption": [
+            "Fig. 1. Flow chart of microhardness prediction and design of Fe-C-Cr-Mn-Si steel."
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            159,
+            64,
+            836,
+            413
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/9015dc2b1bb47f27ad33bc8238ccbb6573b5ef9f85c093fdb06a543789659403.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"3\">Generator network</td><td colspan=\"3\">Discriminator network</td></tr><tr><td>Layer name</td><td>Architecture</td><td>Detail</td><td>Layer</td><td>Architecture</td><td>Detail</td></tr><tr><td>Input layer</td><td>Random noise</td><td>100</td><td>Input layer</td><td>Feature + property</td><td>12(11 + 1)</td></tr><tr><td rowspan=\"4\">Hidden layer 1</td><td>Dense layer</td><td>64</td><td>Hidden layer 1</td><td>Dense layer</td><td>128</td></tr><tr><td>Activation</td><td>Relu</td><td></td><td>Activation</td><td>Relu</td></tr><tr><td>Batch normalization</td><td>Yes</td><td></td><td>Batch normalization</td><td>Yes</td></tr><tr><td>Regularizer</td><td>L2 = 0.01</td><td></td><td>Regularizer</td><td>L2 = 0.01</td></tr><tr><td rowspan=\"4\">Hidden layer 2</td><td>Dense layer</td><td>128</td><td>Hidden layer 2</td><td>Dense layer</td><td>64</td></tr><tr><td>Activation</td><td>Relu</td><td></td><td>Activation</td><td>Relu</td></tr><tr><td>Batch normalization</td><td>Yes</td><td></td><td>Batch normalization</td><td>Yes</td></tr><tr><td>Regularizer</td><td>L2 = 0.01</td><td></td><td>Regularizer</td><td>L2 = 0.01</td></tr><tr><td rowspan=\"3\">Output layer</td><td>Feature + property</td><td>12(11 + 1)</td><td>Output layer</td><td>Dense layer</td><td>1</td></tr><tr><td>Activation</td><td>Tanh</td><td></td><td>Activation</td><td>Sigmoid</td></tr><tr><td>Regularizer</td><td>L2 = 0.01</td><td></td><td>Regularizer</td><td>L2 = 0.01</td></tr></table>",
+        "bbox": [
+            58,
+            484,
+            484,
+            757
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            57,
+            776,
+            487,
+            831
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2. Materials and methodology",
+        "text_level": 2,
+        "bbox": [
+            58,
+            844,
+            260,
+            858
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.1. Construction of the ML model",
+        "text_level": 2,
+        "bbox": [
+            58,
+            871,
+            265,
+            883
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The design strategy of the ML model is summarized in Fig. $^ { 1 , }$ con sisting of data collection and pre-processing, feature engineering, model construction, and inverse design.",
+        "bbox": [
+            57,
+            897,
+            487,
+            936
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.1.1. Data collection and pre-processing",
+        "text_level": 2,
+        "bbox": [
+            510,
+            453,
+            752,
+            465
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "173 Fe-C-Cr-Mn-Si steel data points were obtained from the widely recognized material information repository MatWeb [16]. In the data set, 11 elements were collected, including C, Si, Mn, Cr, S, Ni, P, Fe, Mo, V and $\\mathsf { W } ,$ as well as microhardness of steel.",
+        "bbox": [
+            507,
+            465,
+            939,
+            518
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The Z-score method was applied to screen each feature in the dataset, and the data points with |z| > 1.50 were defined as the outliers. Sub sequently, the isolation forest model was used to further refine the outlier detection process based on the pre-screened dataset. The data points lower than 0 or higher than 0.15 were classified as the outliers, and then they were removed from the data set.",
+        "bbox": [
+            507,
+            518,
+            939,
+            597
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "CGANs were used to augment the rest of the data set. The double hidden layers were employed to strengthen the learning ability of the generator and the accuracy of the discriminator. The detailed parame ters of the CGANs are shown in Table 1. As a result, the data set was expanded from 98 data points to 192 data points.",
+        "bbox": [
+            507,
+            598,
+            939,
+            663
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The correlation scatter matrix graph was employed to reveal the relationship between the composition and microhardness of the steel, in which the elements and microhardness of the data set was employed to create a variable list, and the Seaborn library was used to plot the graph [17].",
+        "bbox": [
+            507,
+            663,
+            939,
+            728
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.1.2. Feature engineering",
+        "text_level": 2,
+        "bbox": [
+            509,
+            742,
+            668,
+            755
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "41 features were collected and standardized to ensure equal contri bution of each feature and eliminated the bias from the scale differences. The feature calculation formulas are shown in Table 2.",
+        "bbox": [
+            507,
+            755,
+            937,
+            794
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Here, $c _ { i }$ and $c _ { j }$ are the mole fractions of the $i ^ { t h }$ and $j ^ { t h }$ elements, respectively. k is the corresponding element parameter.",
+        "bbox": [
+            509,
+            794,
+            937,
+            820
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The process of feature engineering was as follows [18,19]:",
+        "bbox": [
+            529,
+            822,
+            884,
+            834
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "(1) Feature importance voting: The Recursive Feature Elimination (RFE) models wrapped the random forest (RF), light gradient boosting machine (LightGBM) or extreme gradient boosting (XGBoost) algorithm separately were used to rank the features. Only the first features ranked by all the three models were selected as the candidate features.",
+        "bbox": [
+            526,
+            847,
+            939,
+            926
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "H. Wu et al.",
+        "bbox": [
+            58,
+            42,
+            121,
+            54
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "Materials & Design 248 (2024) 113473",
+        "bbox": [
+            752,
+            42,
+            939,
+            54
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "2",
+        "bbox": [
+            492,
+            950,
+            505,
+            960
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/7aa8807d77f5669b02b443be6a53b3e7eb18c4e61e9f409637f2ad05ab9f3c2b.jpg",
+        "table_caption": [
+            "Table 2",
+            "List of input material features."
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Feature name</td><td>Abbreviation</td><td>Calculation formula</td></tr><tr><td>Weighting parameters</td><td></td><td></td></tr><tr><td>Valence electron concentration</td><td>VEC</td><td> $k = \\sum_{i=1}^{n} c_i * k_i$ </td></tr><tr><td>Melting point</td><td>Tm</td><td></td></tr><tr><td>Number of itinerant electrons</td><td>e/a</td><td></td></tr><tr><td>Shear modulus</td><td>G</td><td></td></tr><tr><td>Young&#x27;s modulus</td><td>E</td><td></td></tr><tr><td>Cohesive energy</td><td>Ec</td><td></td></tr><tr><td>Work function</td><td>w</td><td></td></tr><tr><td>Atomic radii</td><td>r</td><td></td></tr><tr><td>Pauling electronegativity</td><td> $\\chi$ </td><td></td></tr><tr><td>Bulk modulus</td><td>B</td><td></td></tr><tr><td>Poisson&#x27;s ratio</td><td> $\\nu$ </td><td></td></tr><tr><td>First ionization energy</td><td> $E_{l-1st}$ </td><td></td></tr><tr><td>Second ionization energy</td><td> $E_{l-2nd}$ </td><td></td></tr><tr><td>Thermodynamic parameters</td><td></td><td></td></tr><tr><td>Mixing entropy</td><td> $\\Delta Smix$ </td><td> $\\Delta Smix = -8.314 \\sum_{i=1}^{n} c_i * \\ln(c_i)$ </td></tr><tr><td>Mixing enthalpy</td><td> $\\Delta Hmix$ </td><td> $\\Delta Hmix = 4 \\sum_{i=1,j>i}^{n} c_i c_j H_{i-j}^{mix}$ </td></tr><tr><td>Gibbs free energy</td><td>Gmix</td><td> $Gmix = Hmix - Tm * Smix$ </td></tr><tr><td>Mismatch parameters</td><td></td><td></td></tr><tr><td>Shear module mismatch in strengthening model</td><td> $\\eta_G$ </td><td rowspan=\"2\"> $\\eta_k = \\frac{2(k_i - \\sum_{j=1}^{n} c_j k_j)}{c_i + \\sum_{j=1}^{n} c_j k_j} \\sum_{i=1}^{n} \\frac{2(k_i - \\sum_{j=1}^{n} c_j k_j)}{k_i + \\sum_{j=1}^{n} c_j k_j}$ </td></tr><tr><td>Bulk module mismatch in strengthening model</td><td> $\\eta_B$ </td></tr><tr><td>Difference in shear modulus</td><td> $\\delta G$ </td><td rowspan=\"10\"> $\\delta k = \\sqrt{\\sum_{i=1}^{n} c_i * \\left(1 - \\frac{k_i}{k}\\right)^2}$ </td></tr><tr><td>Difference in bulk modulus</td><td> $\\delta B$ </td></tr><tr><td>Difference in poisson&#x27;s ratio</td><td> $\\delta_\\nu$ </td></tr><tr><td>Difference of radius</td><td> $\\delta_r$ </td></tr><tr><td>Difference in melting temperature</td><td> $\\delta_{Tm}$ </td></tr><tr><td>Difference in valence electron concentration</td><td> $\\delta_{VEC}$ </td></tr><tr><td>Difference in free electron concentration</td><td> $\\delta_{e/a}$ </td></tr><tr><td>Difference in cohesive energy</td><td> $\\delta_{Ec}$ </td></tr><tr><td>Difference in first ionization energy</td><td> $\\delta_{EI-1st}$ </td></tr><tr><td>Difference in second ionization energy</td><td> $\\delta_{EI-2nd}$ </td></tr><tr><td> $\\gamma$  parameter</td><td> $\\gamma$ </td><td> $\\gamma = \\frac{1 - \\sqrt{\\frac{(r + r_{min})^2 - r^2}{(r + r_{min})^2}}}{1 - \\sqrt{\\frac{(r + r_{max})^2 - r^2}{(r + r_{max})^2}}}$ </td></tr><tr><td>Difference in electronegativity</td><td> $\\Delta \\chi$ </td><td> $\\Delta \\chi = \\sqrt{\\sum_{i=1}^{n} c_i * (\\chi - \\chi_i)^2}$ </td></tr><tr><td>Local shear modulus mismatch</td><td> $D_G$ </td><td> $D_k = \\sum_{i=1}^{n} \\sum_{j=1,i\\neq 1}^{n} c_j c_j |k_i - k_j|$ </td></tr><tr><td>Local bulk modulus mismatch</td><td> $D_B$ </td><td></td></tr><tr><td>Local radius mismatch</td><td> $D_r$ </td><td></td></tr><tr><td>Local poisson&#x27;s ratio mismatch</td><td> $D_\\nu$ </td><td></td></tr><tr><td>Local electronegativity mismatch</td><td> $D_\\chi$ </td><td></td></tr><tr><td>Local melting temperature mismatch</td><td> $D_{Tm}$ </td><td></td></tr><tr><td>Local valence electron concentration mismatch</td><td> $D_{VEC}$ </td><td></td></tr><tr><td>Local free electron concentration mismatch</td><td> $D_{e/a}$ </td><td></td></tr><tr><td>Local cohesive energy mismatch</td><td> $D_{Ec}$ </td><td></td></tr><tr><td>Local first ionization energy mismatch</td><td> $D_{EI-1st}$ </td><td></td></tr><tr><td>Local second ionization energy mismatch</td><td> $D_{EI-2nd}$ </td><td></td></tr></table>",
+        "bbox": [
+            58,
+            92,
+            482,
+            866
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/3086bbd1c2419d154b373367e9156587d5aebc4bb8bab09c94efc15074209964.jpg",
+        "table_caption": [
+            "Table 3",
+            "Parameter configurations of the optimization algorithms."
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Algorithm</td><td>Parameter configurations</td></tr><tr><td>FA</td><td>max_iter = 500, firefly_num = 100, alpha = 0.01, betamin = 0.2, gamma = 1,</td></tr><tr><td>SA</td><td>max_iter = 500, initial_temperature = 100, cooling_rate = 0.95,</td></tr><tr><td>PSO</td><td>max_iter = 500, particle_num = 100, c1 = 0.8, c2 = 0.5, w = 0.5</td></tr><tr><td>GWO</td><td>max_iter = 500, num_wolves = 100, alpha = 2, beta = 1.5, delta = 0.5, a = 2,</td></tr></table>",
+        "bbox": [
+            510,
+            90,
+            937,
+            181
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/2588320891ba045afcb498bfe19b006bc93e2518586939cbc7b018352e55879d.jpg",
+        "table_caption": [
+            "Parameters of cladding."
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Current (A)</td><td>Voltage (V)</td><td>Cladding speed (m/h)</td><td>Interlayer temperature (°C)</td><td>Wire feed speed (m/h)</td></tr><tr><td>440 ~ 600</td><td>30 ~ 32</td><td>24</td><td>380 ~ 410</td><td>76.8</td></tr></table>",
+        "bbox": [
+            510,
+            233,
+            937,
+            288
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "(2) Feature correlation analysis: The Pearson Correlation Coefficient (PCC) of the candidate features was calculated, which can be calculated by the formula as follows:",
+        "bbox": [
+            526,
+            308,
+            939,
+            349
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP C C = \\sum_ {i = 1} ^ {n} (y _ {i} - \\frac {\\overline {{y _ {i}}}) (\\widehat {y _ {i}} - \\widehat {\\overline {{y _ {i}}}})}{\\sqrt {\\sum_ {i = 1} ^ {n} (y _ {i} - \\overline {{y _ {i}}}) ^ {2} \\sum_ {i = 1} ^ {n} (\\widehat {y _ {i}} - \\widehat {\\overline {{y _ {i}}}}) ^ {2}}}\\tag{1}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            512,
+            356,
+            803,
+            393
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where $y _ { i }$ and $\\widehat { y _ { i } }$ represent two different features of the $i ^ { t h }$ sample in the N-samples dataset; y and $\\widehat { \\overline { { y _ { i } } } }$ are their average values. The two fea tures were judged as high correlation features if the absolute value of their PCC was greater than or equal to 0.95.",
+        "bbox": [
+            509,
+            398,
+            939,
+            456
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "(3) Redundant feature elimination: One of the high correlation fea tures was remained through the average importance scores of the candidate features using the extra tree (ET), decision tree (DT), RF and XGBoost algorithm, and the features with higher scores were remained. The calculation of the average importance scores was described in detail by Chen [20].",
+        "bbox": [
+            526,
+            467,
+            939,
+            548
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Exhaustive screening was employed to optimize the feature combi nation. The details of the exhaustive screening were described by Fang [21]. The feature combination with the lowest score was selected as the final feature combination.",
+        "bbox": [
+            509,
+            559,
+            939,
+            614
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.1.3. Algorithm selection and optimization",
+        "text_level": 2,
+        "bbox": [
+            509,
+            626,
+            766,
+            639
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Ten different ML models were trained to optimize the composition and predict the microhardness of Fe-C-Cr-Mn-Si steel, including support vector machine (SVR), ET, XGBoost, ridge regression (Ridge), LightGBM, multilayer perceptron (MLP), RF, linear regression (LR), DT, and k-nearest neighbor (KNN) [22–26]. The coefficient of determination $( R ^ { 2 } )$ and root mean square error (RMSE) were employed to ensure the reliability of the prediction model. The $R ^ { 2 }$ and RMSE defined by the formula [16]:",
+        "bbox": [
+            507,
+            639,
+            939,
+            745
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nR ^ {2} = 1 - \\frac {\\sum_ {i = 1} ^ {n} \\left(\\widehat {y _ {P _ {i}}} - y _ {P _ {i}}\\right) ^ {2}}{\\sum_ {i = 1} ^ {n} \\left(\\overline {{y _ {P _ {i}}}} - y _ {P _ {i}}\\right) ^ {2}} \\#\\tag{2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            510,
+            752,
+            685,
+            796
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nR M S E = \\sqrt {\\frac {1}{n} \\sum_ {i = 1} ^ {n} \\left(\\widehat {y _ {P _ {i}}} - y _ {P _ {i}}\\right) ^ {2}} \\#\\tag{3}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            512,
+            810,
+            707,
+            837
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "$R ^ { 2 }$ is a value between 0 and 1 that represents the proportion of variability in the dependent variable. RMSE represents the average of the model prediction error. $\\widehat { y _ { P _ { i } } } , \\overline { { y _ { P _ { i } } } } , y _ { P _ { i } }$ represent the predicted, mean and experimental value of each attribute, respectively. Subsequently, Bayesian optimization algorithm was employed with the optimization criterion of minimizing the RMSE to optimize the hyperparameters of ML model. Finally, the optimal model was selected by comparing the $R ^ { 2 }$",
+        "bbox": [
+            507,
+            842,
+            939,
+            938
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "H. Wu et al.",
+        "bbox": [
+            58,
+            42,
+            119,
+            54
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "Materials & Design 248 (2024) 113473",
+        "bbox": [
+            752,
+            42,
+            939,
+            54
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "3",
+        "bbox": [
+            494,
+            950,
+            505,
+            960
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "chart",
+        "img_path": "images/70a3705c39fa20c78e9d17f173da058f8f9790ef2ec7bb5ba0ea97dcf0d04ea0.jpg",
+        "content": "",
+        "chart_caption": [
+            "Fig. 2. Correlation scatter matrix graph."
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            67,
+            66,
+            924,
+            707
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "and RMSE of the model.",
+        "bbox": [
+            58,
+            744,
+            208,
+            756
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The original solid solution strengthening theory was modified by the selected features to further improve the prediction accuracy of the model [14]. The original solid solution theory could be found in the reference [27].",
+        "bbox": [
+            55,
+            757,
+            487,
+            809
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Finally, 117 data points from the material information repository MatWeb were served as a validation data set to verify the prediction performance of the model through the ten-fold cross-validation and Bayesian optimization method, respectively.",
+        "bbox": [
+            55,
+            810,
+            487,
+            863
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.2. Inverse design",
+        "text_level": 2,
+        "bbox": [
+            58,
+            883,
+            174,
+            897
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C, Si, Mn, Cr, S, Ni, P, Mo, V and W elements were optimized, and the composition ranges were [0.02 wt%, 2 wt%], [0.1 wt%, 1 wt%], [0.15 wt%, 2 wt%], [0.5 wt%, 25 wt%], [0, 0.035 wt%], [0, 2 wt%], [0, 0.045 wt%], [0, 3 wt%], [0, 0.5 wt%], [0, 2 wt%], respectively, according to the relative references [28–31]. The element content was determined using firefly optimization algorithm (FA), simulated annealing algo rithm (SA), particle swarm optimization (PSO) and grey wolf optimi zation algorithm (GWO) [32]. Table 3 shows the parameter configurations of the algorithms. The microhardness was optimized by the selected ML model.",
+        "bbox": [
+            57,
+            910,
+            487,
+            936
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            507,
+            744,
+            939,
+            849
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.3. Coating preparation and characterization",
+        "text_level": 2,
+        "bbox": [
+            509,
+            871,
+            779,
+            883
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The wire with the optimized element content was used as the feeding material. The ASTM A36 steel plates with the size of 300 mm × 120 mm × 40 mm were used as the substrates in the experiment. The arc cladding equipment (IDEALARC DC-1000, Lincoln Electric, America) was used to prepare the Fe-C-Cr-Mn-Si coatings. The cladding parameters were shown in Table 4.",
+        "bbox": [
+            507,
+            897,
+            939,
+            936
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "H. Wu et al.",
+        "bbox": [
+            58,
+            42,
+            121,
+            52
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "Materials & Design 248 (2024) 113473",
+        "bbox": [
+            752,
+            42,
+            939,
+            54
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "4",
+        "bbox": [
+            494,
+            952,
+            505,
+            960
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "chart",
+        "img_path": "images/e7dd17f283cdddff3d347af6a22fb89575f76675e8f081a1eef10db24032284f.jpg",
+        "content": "",
+        "chart_caption": [
+            "(a)",
+            "Feature selection for hardness prediction",
+            "(c)"
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            127,
+            83,
+            868,
+            176
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "chart",
+        "img_path": "images/916d446697241eb66b85a89d0d7b6a45ef65239fbe415e7ed9637c435c5ecc49.jpg",
+        "content": "",
+        "chart_caption": [
+            "(b)"
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            144,
+            190,
+            477,
+            423
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "chart",
+        "img_path": "images/7717ec066bc3a5221af02b0932c8f304e0283b1e87793bb94ae10e8990be9a6a.jpg",
+        "content": "",
+        "chart_caption": [
+            "Fig. 3. Feature selection: (a) Feature selection by RFE voting. (b) Heatmap showing the PCC between the 9 features (c) The importance ranking of the 9 features."
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            492,
+            190,
+            868,
+            428
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "chart",
+        "img_path": "images/769c7ddbd526d191aaa9f3dbc5325b0b282b77438227f058958fc2d31f128ffa.jpg",
+        "content": "",
+        "chart_caption": [
+            "Fig. 4. Exhaustive screening results with different numbers of features."
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            65,
+            476,
+            480,
+            733
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            57,
+            770,
+            485,
+            809
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The phases of the coatings were analyzed by X-ray diffraction (SmartLab SE, Rigaku, Japan) with Cu Kα radiation, operated at a working voltage of 40 kV and current of 40 mA. The Vicker’s micro hardness of the coatings was measured using a microhardness indenter (HVS-1000A, Laizhou Huayin Testing Instrument Co., Ltd., China). The load was 1 kg with the holding time of 20 s.",
+        "bbox": [
+            57,
+            809,
+            487,
+            889
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3. Results and discussion",
+        "text_level": 2,
+        "bbox": [
+            510,
+            464,
+            682,
+            477
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.1. ML algorithm modeling",
+        "text_level": 2,
+        "bbox": [
+            510,
+            490,
+            680,
+            504
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.1.1. Screening results of elements",
+        "text_level": 2,
+        "bbox": [
+            510,
+            515,
+            719,
+            529
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Fig. 2 presents the correlation scatter matrix graph, revealing the correlation between the chemical composition and microhardness of the alloy. The diagonal probability density histograms indicated that the Cr element exhibited a positive correlation with the microhardness. fol. lowed by Ni, Mo. Whereas, Mn, V and W showed weaker correlations. Cr, Ni and Mo can form solid solution alloys and carbides as the strengthening phases [33], and Ni can reduce the grain size of the alloys [34].",
+        "bbox": [
+            507,
+            530,
+            939,
+            635
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.1.2. Screening results of features",
+        "text_level": 2,
+        "bbox": [
+            509,
+            648,
+            717,
+            660
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The recursive feature elimination (RFE) method wrapped the RF, LightGBM and XGBoost algorithm was used to rank the importance of the original features, and the results are shown in Fig. 3a. The dark blue cells in Fig. 3a indicated the significant features (marked by 1). The result shows that $E _ { I - 2 n d } ,$ η , w, δE , D , δ , r, G and e/a presented the highest importance ranking in the RF, LightGBM and XGBoost algo rithm. Fig. 3b shows the heat map of the selected features used to predict microhardness. It is found that the PCC absolute value of the E and $w ,$ $\\eta _ { B }$ and w, $E _ { I - 2 n d }$ and $\\eta _ { B } ,$ r and $D _ { E C } , E _ { I - 2 n d }$ and $\\delta E _ { I - 2 n d } , \\delta E _ { I - 2 n d }$ and $\\eta _ { B }$ pair were equal to or greater than 0.95, showing the high correlation. The importance scores of the nine features were employed to remove one of the features with the high correlation in the six pairs, shown in Fig. 3c. It is found that $\\eta _ { B } , w , \\delta E _ { I - 2 n d }$ and r were removed in the pairs due to the low importance scores. Finally, e/a, G, E , δ and $D _ { E C }$ were found to be the key features for the microhardness. The $e / a$ ratio affected the phase stability of alloys during the formation of FCC and BCC phases: i $\\dot { \\mathbf { \\eta } } e / a <$ 1.65, the alloy tended to form the FCC phase; if $e / a > 2 . 0 5 $ , the alloy tended to form the BCC phase [35]. The shear modulus G was crucial in increasing the plastic deformation resistance by increasing the solute atom-dislocation interaction energy, thereby increasing the hardness [36]. The second ionization energy $E _ { I - 2 n d }$ was also an important factor influencing solid solution strengthening involving in the electron cloud interaction and charge redistribution between adjacent atoms [37].The cohesive energy mismatch parameters, $\\delta _ { E C }$ and $D _ { E c } ,$ were utilized to describe the bonding states and bonding strength [38].",
+        "bbox": [
+            507,
+            660,
+            939,
+            926
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "H. Wu et al.",
+        "bbox": [
+            58,
+            42,
+            119,
+            54
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "Materials & Design 248 (2024) 113473",
+        "bbox": [
+            752,
+            42,
+            939,
+            54
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "5",
+        "bbox": [
+            494,
+            952,
+            504,
+            960
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "chart",
+        "img_path": "images/0f5599aad328cc6fac36be98bc31c2de3a805c3752f95e68d26f3eccb0b7a38a.jpg",
+        "content": "",
+        "chart_caption": [
+            "(a)",
+            "",
+            "(d)"
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            82,
+            68,
+            363,
+            228
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "chart",
+        "img_path": "images/9816eeb25450d72890c462737dfcaf5628072c76e9b806a6e64222c3100d2706.jpg",
+        "content": "",
+        "chart_caption": [
+            "",
+            "(c)"
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            361,
+            66,
+            643,
+            228
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "chart",
+        "img_path": "images/d4fcfe37080c245a88d9902071b7f717afe5cb194b9814fe3a3ea24a9682215c.jpg",
+        "content": "",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "bbox": [
+            84,
+            230,
+            361,
+            385
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "chart",
+        "img_path": "images/f60b897e247c2c65b07a3e195cc26efc3b89b41564fd2aff8007e96de7c251f3.jpg",
+        "content": "",
+        "chart_caption": [
+            "(f)"
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            643,
+            69,
+            922,
+            229
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "chart",
+        "img_path": "images/7b858bcb6a6bc51e11bd8c56d9634cf85b3ebd30c25c1a0363aa664381b373c9.jpg",
+        "content": "",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "bbox": [
+            364,
+            230,
+            645,
+            385
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "chart",
+        "img_path": "images/63cd3257df88951f70752c67c7efc7649ea8ec6c4c2ff8780688d849250c7ed4.jpg",
+        "content": "",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "bbox": [
+            645,
+            230,
+            922,
+            387
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "chart",
+        "img_path": "images/c41d5ed61142b4d45fcd04582b10616c0aa7895d1896c9bd9770a5d365b48f6d.jpg",
+        "content": "",
+        "chart_caption": [
+            "(g)"
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            84,
+            388,
+            363,
+            546
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "chart",
+        "img_path": "images/ec8ffcf50cffcb59ae51d45d69180c6f0f29d8774e02f9d0ae6aa1fc20b2e94c.jpg",
+        "content": "",
+        "chart_caption": [
+            "(h)"
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            364,
+            388,
+            647,
+            546
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "chart",
+        "img_path": "images/4945ce3c5aa355e9c44b94c2e1fffecf9b6405a747a068e9490464a9fc1f653f.jpg",
+        "content": "",
+        "chart_caption": [
+            "(i)",
+            "Fig. 5. The predictive microhardness based on the SVR model (a), ET model (b), MLP model (c), Ridge model (d), LightGBM model (e), XGBoost model (f), RF model (g), LR model (h), and DT model (i)."
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            648,
+            389,
+            922,
+            546
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/b38d19a54d056c60b2901af90ecdf5a8f24d96757aa0ae889a6c7dc5b91e6f71.jpg",
+        "table_caption": [
+            "Table 5",
+            "Hyperparameter configurations of the SVR model."
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Model</td><td colspan=\"8\">Hyperparameter configuration</td></tr><tr><td>SVR</td><td>C</td><td>cache_size</td><td>coef0</td><td>degree</td><td>epsilon</td><td>gamma</td><td>kernel</td><td>tol</td></tr><tr><td>____</td><td>4.98</td><td>118.85</td><td>0.63</td><td>4</td><td> $1.87 \\times 10^{-4}$ </td><td> $3.57 \\times 10^{-2}$ </td><td>ploy</td><td> $1.22 \\times 10^{-3}$ </td></tr></table>",
+        "bbox": [
+            58,
+            629,
+            936,
+            673
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            57,
+            692,
+            487,
+            757
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Fig. 4 illustrates the result of the exhaustive search analysis, revealing the cross-validation scores as a function of the number of the features. It is found that the minimum RMSE was 0.341, 0.267, 0.257, 0.271, 0.281 for the cross-validation scores with the 1, 2, 3, 4, 5 features, respectively, indicating that 3 features presented the optimal prediction accuracy. Besides, the feature combination $\\{ \\delta _ { E c } , D _ { E c } , G \\}$ presented the smallest RMSE value (0.257), and was identified as the key factors. The local cohesive energy mismatch $\\delta _ { E C }$ and the difference in cohesive en ergy $D _ { E C }$ were the parameters related to cohesive energy $E c ,$ which changed linearly with the chemical composition in complete solid so lution systems [39]. The shear modulus change was suggested as one of the most predominant effects in solid solution. which was related to the interaction force between the solid solution obstacles and dislocation",
+        "bbox": [
+            55,
+            757,
+            487,
+            930
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "[40].",
+        "bbox": [
+            510,
+            692,
+            546,
+            704
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.1.3. Screening results of models",
+        "text_level": 2,
+        "bbox": [
+            509,
+            718,
+            710,
+            731
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The SVR, ET, MLP, Ridge, LightGBM, XGBoost, RF, LR and DT model were trained to select the optimal model. The hyperparameters of each model were optimized using Bayesian optimization and ten-fold crossvalidation. The three key features $\\{ G , \\delta _ { E c } , D _ { E c } \\}$ were used as the input parameters and the microhardness was used as an output parameter. Fig. 5 shows the $R ^ { 2 }$ and RMSE values of the different ML models. It is found that the $R ^ { 2 }$ values obtained by SVR, ET, MLP, Ridge, LightGBM, XGBoost. RF. LR and DT were 0.85, 0.80. 0.81, 0.82, 0.63. 0.79. 0.74 0.76 and 0.72 respectively, and the RMSE values were 0.39, 0.45, 0.44, 0.43, 0.62, 0.46, 0.52, 0.48 and 0.54 respectively. The $R ^ { 2 }$ values ob tained by SVR, ET, MLP and Ridge were higher than 0.80, and the RMSE values were lower than 0.45, indicating great linear correlation. Although the $R ^ { 2 }$ values of ET, XGBoost and DT reached 0.80, 0.79 and 0.72, there was a potential risk of overfitting between these three models based on testing data. The SVR model presented the highest $R ^ { 2 }$ value (0.85) and the lowest RMSE value (0.39), suggesting the SVR model had the best prediction capability. The key hyperparameter configurations of the SVR model are listed in Table 5.",
+        "bbox": [
+            507,
+            731,
+            939,
+            931
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "H. Wu et al.",
+        "bbox": [
+            58,
+            42,
+            119,
+            52
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "Materials & Design 248 (2024) 113473",
+        "bbox": [
+            752,
+            42,
+            939,
+            54
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "page_number",
+        "text": "6",
+        "bbox": [
+            494,
+            952,
+            504,
+            960
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "chart",
+        "img_path": "images/1f5057c18f66d15ee2b97a366c39517840946dfb8411935252d8efd27e3a9ae0.jpg",
+        "content": "",
+        "chart_caption": [
+            "Fig. 6. The prediction results of solid solution strengthening under ten-fold cross validation with $\\{ \\delta _ { E c } , D _ { E c } , G \\}$ as the input features."
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            63,
+            66,
+            480,
+            288
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "chart",
+        "img_path": "images/8444de191a4b2e3f9225e1b5bc224f7f79b52a469f93d697a22805b3a4528823.jpg",
+        "content": "",
+        "chart_caption": [
+            "Fig. 7. The microhardness of the inverse designed material through different algorithms."
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            63,
+            350,
+            478,
+            606
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            57,
+            654,
+            487,
+            694
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.1.4. Model optimization by solid solution strengthening theory",
+        "text_level": 2,
+        "bbox": [
+            58,
+            707,
+            430,
+            720
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The solid solution strengthening equation was introduced to modify the SVR model, and the equation was as follow:",
+        "bbox": [
+            57,
+            721,
+            485,
+            747
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\Delta \\sigma_ {s s s} = Z \\cdot M \\cdot G \\cdot \\delta_ {E c} \\cdot D _ {E c}\\tag{4}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            60,
+            754,
+            189,
+            767
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Z is a fitting parameter with a value of 0.0056; M is the Taylor factor and its value was 3.06 for both FCC and BCC structures.",
+        "bbox": [
+            58,
+            774,
+            485,
+            799
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Fig. 6 shows the validation result of the SVR model equipped with the modified solid solution strengthening theory. 117 experiment results from the materials information repository MatWeb were served as the validation dataset. It is found that the $R ^ { 2 }$ and RMSE value was 0.89 and 0.31, respectively. The $R ^ { 2 }$ increased by 4.71 %, and the RMSE decreased by 8.34 %, compared to the values without the modified solid solution strengthening theory (Fig. 5a).",
+        "bbox": [
+            75,
+            800,
+            485,
+            814
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            507,
+            65,
+            939,
+            146
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.1.5. Screening results of inverse design",
+        "text_level": 2,
+        "bbox": [
+            509,
+            158,
+            749,
+            171
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Four intelligent optimization techniques, including simulated annealing (SA) [41], firefly optimization algorithm (FA) [42], particle swarm optimization (PSO) [43], and grey wolf optimization algorithm (GWO) [44] were employed to predict the alloy microhardness with the designed composition, and the results are shown in Fig. 7. The maximum microhardness calculated through the FA, PSO, SA, and GWO algorithm was 733.59 HV, 730.04 HV, 700.37 HV, and 708.60 HV, respectively. The alloy microhardness designed using the FA algorithm presented the highest value, followed by PSO, GWO and SA. FA was a generalized form of SA, PSO and differential evolution (DE), exhibiting superior local attraction capacity [42].",
+        "bbox": [
+            507,
+            171,
+            939,
+            317
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.2. Experimental verification",
+        "text_level": 2,
+        "bbox": [
+            510,
+            335,
+            687,
+            349
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The developed microhardness prediction model was validated by experiments. The mass percentages of the three Fe-C-Cr-Mn-Si alloy samples were listed in Table 6. Fig. 8 shows the XRD patterns of the three samples. The main phase structure of the sample 1 was Fe-Cr phase with the diffraction peaks of 100, 200 and 211. The Cr atoms randomly substituted Fe atoms in FCC lattice. With the Ni content increased, the main phase structure of the sample transferred to the Fe-Cr-Ni phase with the diffraction peaks of 100, 200 and 211. Fig. 8b reveals the enlarged XRD peaks at 2θ of 40-50<sup>◦</sup>. Compared with the standard diffraction peak of Fe, it is found that the diffraction peak of the alloy was shifted to the right at the corresponding diffraction peak, which was due to the atomic radius differences between Cr, Ni and Fe, resulting in lattice distortion [45,46].",
+        "bbox": [
+            507,
+            361,
+            939,
+            533
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Fig. 9 shows the microhardness values of the alloys with the pre dicted composition. It is noteworthy that the minimum error between the predicted value and experimental value was 1.17 %, lower than 2.01 % and 2.96 % for predicting the hardness of high entropy alloys reported by Ren et al. [14] and Huang et al. [47]. The microhardness of the samples can reach 515 HV, which can also be attributed to the solid solution phases. It was reported that the solid solution phases were formed when $\\delta _ { r } < 0 . 0 6 6$ and − $. 1 1 . 6 < \\Delta H _ { m i x } < 3 . 2 \\mathrm { k J / m o l }$ [48]. We can find that the δ values of the samples were in a range of 0.0335 to 0.0595, lower than 0.066, and the $\\Delta H _ { m i x }$ values were in a range of − 1.213 to − 0.451 kJ/mol, belonging to the range of − 11.6 to 3.2 kJ/mol.",
+        "bbox": [
+            507,
+            533,
+            939,
+            679
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4. Conclusions",
+        "text_level": 2,
+        "bbox": [
+            510,
+            692,
+            613,
+            706
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A machine learning model combined the modified solid solution strengthening theory was built to predict the microhardness of the Fe-C Cr-Mn-Si steel. There steels with the predicted composition were pre pared using cladding to verify the prediction accuracy of the model. The main conclusions can be drawn:",
+        "bbox": [
+            507,
+            718,
+            939,
+            786
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "(1) Cr had the greatest positive impact on the microhardness of the Fe-C-Cr-Mn-Si steel, followed by Ni and Mo.",
+        "bbox": [
+            524,
+            796,
+            939,
+            825
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/d47531d86a73110a37a79db5196e1b6d459eddacd33c29d4340392db6ef065ae.jpg",
+        "table_caption": [
+            "Mass percentages of the three Fe-C-Cr-Mn-Si alloys used for model validation."
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"12\">CSiMnCrSNiPFeMoVW mass percentage</td><td rowspan=\"2\"> $\\delta_r$ </td><td rowspan=\"2\"> $\\Delta H_{mix}$ (kJ/mol)</td></tr><tr><td></td><td>C</td><td>Si</td><td>Mn</td><td>Cr</td><td>S</td><td>Ni</td><td>P</td><td>Fe</td><td>Mo</td><td>V</td><td>W</td></tr><tr><td>Sample 1</td><td>0.45</td><td>0.19</td><td>1.53</td><td>14</td><td>0.01</td><td>0</td><td>0.014</td><td>83.806</td><td>0</td><td>0</td><td>0</td><td>0.0542</td><td>-0.914</td></tr><tr><td>Sample 2</td><td>0.53</td><td>0.4</td><td>1.9</td><td>5.3</td><td>0.01</td><td>1.13</td><td>0.013</td><td>89.277</td><td>0</td><td>0.25</td><td>1.19</td><td>0.0595</td><td>-1.213</td></tr><tr><td>Sample 3</td><td>0.15</td><td>0.5</td><td>1.5</td><td>5.2</td><td>0</td><td>1.2</td><td>0</td><td>89.7</td><td>1.5</td><td>0.25</td><td>0</td><td>0.0335</td><td>-0.451</td></tr></table>",
+        "bbox": [
+            60,
+            866,
+            936,
+            931
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "H. Wu et al.",
+        "bbox": [
+            58,
+            42,
+            119,
+            54
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "Materials & Design 248 (2024) 113473",
+        "bbox": [
+            752,
+            42,
+            939,
+            54
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "page_number",
+        "text": "7",
+        "bbox": [
+            492,
+            950,
+            505,
+            960
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "chart",
+        "img_path": "images/4e3a8bc9e39c5ff4a9e3016e1f1065a683117bb5cbfb3bf7d2dcd19ae1c001c0.jpg",
+        "content": "",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "bbox": [
+            154,
+            66,
+            500,
+            293
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "chart",
+        "img_path": "images/32dd7779935960ed26144c5b49eb6273e6f5730670d767e511180cae84d6fdef.jpg",
+        "content": "",
+        "chart_caption": [
+            "(b)",
+            "Fig. 8. XRD patterns of three samples (a), and the enlarged peaks at 40-50<sup>◦</sup>(b)."
+        ],
+        "chart_footnote": [
+            "the work reported in this paper."
+        ],
+        "bbox": [
+            497,
+            70,
+            842,
+            292
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "chart",
+        "img_path": "images/ec5048c99b42b6f830b43ce7da8475e7539b818f8b4a0b198b6127ff874279f8.jpg",
+        "content": "",
+        "chart_caption": [
+            "Fig. 9. Predicted versus actual microhardness of three samples of Fe-C-Cr-Mn-Si alloys."
+        ],
+        "chart_footnote": [],
+        "bbox": [
+            63,
+            343,
+            478,
+            585
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "(2) The difference in cohesive energy, local cohesive energy mismatch and shear modulus exhibited more pronounced im pacts on the microhardness of the steel.",
+        "bbox": [
+            73,
+            634,
+            485,
+            673
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "(3) The solid solution strengthening theory was modified using the difference in cohesive energy, local cohesive energy mismatch and shear modulus, and the predicted $R ^ { 2 }$ and RMSE value ach. jeved 0.89 and 0.31.",
+        "bbox": [
+            75,
+            674,
+            485,
+            726
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "(4) The microhardness of the predicted samples reached 515 HV, with the error between the predicted value and experimental value of 1.17 %.",
+        "bbox": [
+            75,
+            726,
+            485,
+            766
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "CRediT authorship contribution statement",
+        "text_level": 2,
+        "bbox": [
+            58,
+            781,
+            337,
+            794
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Hao Wu: Writing – original draft, Software, Resources. Jianyuan Zhang: Validation. Jintao Zhang: Visualization. Chengjie Ge: Valida tion. Lu Ren: Software, Resources. Xinkun Suo: Writing – review & editing, Supervision.",
+        "bbox": [
+            57,
+            808,
+            487,
+            861
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Declaration of competing interest",
+        "text_level": 2,
+        "bbox": [
+            58,
+            883,
+            280,
+            897
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence",
+        "bbox": [
+            57,
+            910,
+            487,
+            936
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Acknowledgements",
+        "text_level": 2,
+        "bbox": [
+            510,
+            358,
+            640,
+            370
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "This work was supported by National Natural Science Foundation of China (No. 52171072).",
+        "bbox": [
+            509,
+            384,
+            939,
+            411
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Data availability",
+        "text_level": 2,
+        "bbox": [
+            510,
+            424,
+            623,
+            437
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Data will be made available on request.",
+        "bbox": [
+            529,
+            450,
+            771,
+            462
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "References",
+        "text_level": 2,
+        "bbox": [
+            510,
+            477,
+            586,
+            491
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "ref_text",
+        "text": "[1] K.M. Hong, Y.C. Shin, Prospects of laser welding technology in the automotive industry: A review, J. Mater. Process. Technol. 245 (2017) 46–69, https://doi.org/ 10.1016/i.imatprotec.2017.02.008",
+        "bbox": [
+            517,
+            503,
+            932,
+            533
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "ref_text",
+        "text": "[2] G.S. Chander, G.M. Reddy, A.V. Rao, Influence of rotational speed on microstructure and mechanical properties of dissimilar metal AISI 304-AISI 4140 continuous drive friction welds. J. Iron Steel Res. Int. 19 (2012) 64–73. https://doi org/10.1016/S1006-706X(12)60154-X.",
+        "bbox": [
+            517,
+            534,
+            932,
+            573
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "ref_text",
+        "text": "[3] R. Younes, J. Tomkow, ´ A. Idir, Mechanical and structural behavior of high-strength low-alloy steel pad welded by underwater wet welding conditions. Int J Ady Manuf Technol, 129 (2023) 5615–5624, https://doi,org/10.1007/s00170-023-12681-7.",
+        "bbox": [
+            517,
+            573,
+            934,
+            602
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "ref_text",
+        "text": "[4] J. Xiong, T. Zhang, S. Shi, Machine learning of mechanical properties of steels, Sci China Technol. Sci. 63 (2020) 1247–1255, https://doi,org/10.1007/s11431-020- 1599-5.",
+        "bbox": [
+            517,
+            604,
+            932,
+            633
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "ref_text",
+        "text": "[5] X.X. Geng, X.P. Mao, H.H. Wu, S.Z. Wang, W.H. Xue, G.Z. Zhang, A. Ullah, H. Wang, A hybrid machine learning model for predicting continuous cooling transformation diagrams in welding heat-affected zone of low alloy steels, J. Mater. Sci. Technol. 107 (2022) 207–215, https://doi.org/10.1016/i.imst.2021.07.038.",
+        "bbox": [
+            517,
+            634,
+            932,
+            674
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "ref_text",
+        "text": "[6] X.Y. Huang, H. Wang, W.H. Xue, A. Ullah, S. Xiang, H.L. Huang, L. Meng, G. Ma, G. Z. Zhang, A combined machine learning model for the prediction of timetemperature transformation diagrams of high-alloy steels, J. Alloys Compd. 823 (2020) 153694, https://doi.org/10.1016/j.jallcom.2020.153694.",
+        "bbox": [
+            517,
+            674,
+            932,
+            713
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "ref_text",
+        "text": "[7] X.Y. Huang, H. Wang, W.H. Xue, S. Xiang, H.L. Huang, L. Meng, G. Ma, A. Ullah, G. Z. Zhang, Study on time-temperature-transformation diagrams of stainless steel using machine-learning approach, Comput. Mater. Sci. 171 (2020) 109282, https://doi.org/10.1016/j.commatsci.2019.109282",
+        "bbox": [
+            517,
+            715,
+            932,
+            754
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "ref_text",
+        "text": "[8] X.X. Geng, H. Wang, A. Ullah, W.H. Xue, S. Xiang, L. Meng, G. Ma, Prediction of continuous cooling transformation diagrams for Ni-Cr-Mo welding steels via machine learning approaches, JOM 72 (2020) 3926–3934, https://doi.org/ 10.1007/s11837-020-04057-z.",
+        "bbox": [
+            517,
+            754,
+            932,
+            794
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "ref_text",
+        "text": "[9] L. Wei, S. Wang, W.X. Hao, J.T. Huang, N. Qu, Y. Liu, J.C. Zhu, Prediction of hightemperature creep life of austenitic heat-resistant steels based on data fusion, Metals. 13 (9) (2023) 1630, https://doi.org/10.3390/met13091630.",
+        "bbox": [
+            517,
+            794,
+            932,
+            824
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "ref_text",
+        "text": "[10] Y. Wang, Y. Tian, T. Kirk, O. Laris, J.H. Ross, R.D. Noebe, R. Arroyave, ´ Accelerated design of Fe-based soft magnetic materials using machine learning and stochastic optimization, Acta Mater. 194 (2020) 144–155, https://doi.org/10.1016/j. actamat.2020.05.006.",
+        "bbox": [
+            512,
+            825,
+            934,
+            863
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "ref_text",
+        "text": "[11] E. Ruiz. D. Ferreño. M. Cuartas. B. Arrovo. L.A. Carrascal. L. Rivas. E. Gutiérrez Solana. Application of machine learning algorithms for the optimization of the fabrication process of steel springs to improve their fatigue performance, Int. J. Fatigue. 159 (2022) 106785. https://doi,org/10.1016/i,jifatigue,2022.106785.",
+        "bbox": [
+            512,
+            865,
+            926,
+            905
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "ref_text",
+        "text": "[12] T.X. Yang, P. Dou, Prediction of hardness or yield strength for ODS steels based on machine learning, Mater. Charact. 211 (2024) 1044–5803, https://doi.org 10.1016/i.matchar.2024.113886.",
+        "bbox": [
+            512,
+            906,
+            934,
+            935
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "H. Wu et al.",
+        "bbox": [
+            58,
+            42,
+            121,
+            52
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "Materials & Design 248 (2024) 113473",
+        "bbox": [
+            752,
+            42,
+            939,
+            54
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "page_number",
+        "text": "8",
+        "bbox": [
+            494,
+            952,
+            504,
+            960
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "ref_text",
+        "text": "[13] G. Huang, Y. Guo, Y. Chen, Z. Nie, Application of machine learning in material synthesis and property prediction, Materials. 16 (2023) 5977, https://doi.org/ 10.3390/ma16175977.",
+        "bbox": [
+            60,
+            66,
+            472,
+            95
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[14] W. Ren, Y.F. Zhang, W.L. Wang, S.J. Ding, N. Li, Prediction and design of high hardness high entropy alloy through machine learning, Mater. Des. 235 (2023) 112454, https://doi.org/10.1016/j.matdes.2023.112454.",
+        "bbox": [
+            60,
+            97,
+            472,
+            126
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[15] Z.Y. Gao, F. Zhao, S.D. Gao, T. Xia, Machine learning prediction of hardness in solid solution high entropy alloys, Mater. Today Commun. 37 (2023) 107102, https:// doi.org/10.1016/j.mtcomm.2023.107102.",
+        "bbox": [
+            60,
+            127,
+            482,
+            156
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[16] J.F. Fatriansyah, M.R.R. Satrio, A. Federico, I. Suhariadi, D. Dhaneswara, N. Gascoin, Machine learning-based forward and inverse designs for prediction and optimization of fracture toughness of aluminum alloy, RINENG. 23 (2024) 102717, https://doi.org/10.1016/j.rineng.2024.102717.",
+        "bbox": [
+            60,
+            157,
+            482,
+            197
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[17] Z.P. He, H. Zhang, H. Cheng, M.L. Ge, T.Y. Si, L. Che, K.Y. Zheng, L.R. Zeng, Q. Y. Wang, Machine learning guided BCC or FCC phase prediction in high entropy alloys, J. Mater. Res. 29 (2024) 3477–3486, https://doi.org/10.1016/j. imrt.2024.01.257.",
+        "bbox": [
+            60,
+            197,
+            478,
+            235
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[18] X. Li, G. Shan, J. Zhang, C.H. Shek, Accelerated design for magnetic high entropy alloys using data-driven multi-objective optimization, J. Mater. Chem. C. 10 (2022) 17291–17302, https://doi.org/10.1039/d2tc03922b.",
+        "bbox": [
+            60,
+            237,
+            482,
+            267
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[19] X.J. Liu, P.C. Xu, J.J. Zhao, W.C. Lu, M.J. Li, G. Wang, Material machine learning for alloys: Applications, challenges and perspectives, J. Alloys Compd. 921 (2022) 165984, https://doi.org/10.1016/j.jallcom.2022.165984.",
+        "bbox": [
+            60,
+            267,
+            482,
+            297
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[20] Q. Chen, H. Wang, H.D. Ji, X.B. Ma, Y.K. Cai, Data-driven atmospheric corrosion prediction model for alloys based on a two-stage machine learning approach, PROCESS SAF ENVIRON. 188 (2024) 1093–1105, https://doi.org/10.1016/j. psep.2024.06.028.",
+        "bbox": [
+            60,
+            297,
+            480,
+            336
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[21] J.H. Fang, S.R. Yang, M. Xie, J.Q. Hu, H.S. Sun, G.H. Liu, S.Q. Zhao, Y.T. Chen, Y. C. Yang, D.K. Ning, X.Q. He, Q.L. Jin, Solid-liquid phase transition temperature prediction of alloys based on machine learning key feature screening, Appl. Mater. Today. 36 (2024) 2352–9407, https://doi.org/10.1016/j.apmt.2023.102007.",
+        "bbox": [
+            60,
+            337,
+            482,
+            377
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[22] J. Hao, T.K. Ho, Machine learning made easy: A review of scikit-learn package in python programming language, J Educ Beha Stat. 44 (3) (2019) 348–361, https:// doi.org/10.3102/1076998619832248",
+        "bbox": [
+            60,
+            378,
+            482,
+            408
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[23] S.K. Dewangan, S. Samal, V. Kumar, Development of an ANN-based generalized model for hardness prediction of SPSed AlCoCrCuFeMnNiW containing high entropy alloys, Mater. Today Commun. 27 (2021) 102356, https://doi.org/ 10.1016/i.mtcomm.2021.102356.",
+        "bbox": [
+            60,
+            408,
+            475,
+            447
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[24] S.K. Dewangan, A. Sharma, H. Lee, V. Kumar, B. Ahn, Prediction of nanoindentation creep behavior of tungsten-containing high entropy alloys using artificial neural network trained with Levenberg-Marquardt algorithm, J. Alloys Compd. 958 (2023) 170359. https://doi.org/10.1016/i,jallcom,2023.170359.",
+        "bbox": [
+            60,
+            448,
+            480,
+            488
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[25] S.K. Dewangan. V. Kumar. Application of artificial neural network for prediction of high temperature oxidation behavior of AlCrFeMnNiWx (x = 0. 0.05, 0.1. 0.5) high entropy alloys, INT J REFRACT MET H. 103 (2022) 105777. https://doi.org/ 10.1016/j.ijrmhm.2022.105777.",
+        "bbox": [
+            60,
+            488,
+            482,
+            528
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[26] Y.H. Wang, S. Li, S. Li, M.H. Chen, Prediction, interpretation and extrapolation for shear modulus and bulk modulus of solid-state electrolytes based on machine learning, Mater. Today Commun. 38 (2024) 108294, https://doi.org/10.1016/j. mtcomm.2024.108294.",
+        "bbox": [
+            60,
+            529,
+            480,
+            568
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[27] N. Ali, L.Q. Zhang, D.M. Liu, H.W. Zhou, K. Sanaullah, C.J. Zhang, J.H. Chu, Y. Nian, J.J. Cheng, Strengthening mechanisms in high entropy alloys: A review, Mater. Today Commun. 33 (2022) 104686, https://doi.org/10.1016/j. mtcomm.2022.104686.",
+        "bbox": [
+            60,
+            569,
+            480,
+            607
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[28] W. Zheng, X. Wei, Z. Song, Effects of carbon content on mechanical properties of Inconel 718 alloy, J Iron Steel Res Int. 22 (1) (2015) 78–83, https://doi.org/ 10.1016/S1006-706X(15)60013-9.",
+        "bbox": [
+            60,
+            609,
+            480,
+            638
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[29] J. Chen, W.N. Zhang, Manganese dependence of microstructure and mechanical properties in Fe-Mn alloy, Mater Sci Tech. 34 (1) (2017) 63–68, https://doi.org 10.1080/02670836.2017.1354801",
+        "bbox": [
+            60,
+            639,
+            478,
+            668
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[30] L. Xing, X. Fan, M. Wang, L.H. Zhao, Y.P. Bao, The formation mechanism of proeutectoid ferrite on medium-carbon sulfur-containing bloom, Metall Mater",
+        "bbox": [
+            60,
+            669,
+            465,
+            689
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "Trans B. 52 (5) (2021) 3208–3219, https://doi.org/10.1007/s11663-021-02248- w.",
+        "bbox": [
+            537,
+            66,
+            929,
+            85
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[31] H.Y. Yi, T. Liang, M. Wang, X.D. Zha, Y.C. Ma, K. Liu, Effects of silicon on the microstructure and mechanical properties of 15e15Ti stainless steel, Acta Metal Sin-Engl. 33 (11) (2020) 1583–1590, https://doi.org/10.1007/s40195-020-01068 2.",
+        "bbox": [
+            512,
+            87,
+            931,
+            126
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[32] A. Yaqoob, R.M. Aziz, N.K. Verma, P. Lalwani, A. Makrariya, P. Kumar, A review on nature-inspired algorithms for cancer disease prediction and classification, Mathematics. 11 (2023) 1081, https://doi.org/10.3390/math11051081.",
+        "bbox": [
+            512,
+            127,
+            934,
+            156
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[33] J. Zhou, J. Odqvist, J. Ågren, A. Ruban, M. Thuvander, W. Xiong, G.B. Olson, P. Hedstrom, ¨ Direct atom probe tomography observations of concentration fluctuations in Fe-Cr solid solution, Scr. Mater. 98 (2015) 13–15, https://doi.org 10.1016/i.scriptamat.2014.10.035.",
+        "bbox": [
+            512,
+            157,
+            934,
+            196
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[34] S.G. Park, M.C. Kim, B.S. Lee, D.M. Wee, Correlation of the thermodynamic calculation and the experimental observation of Ni-Mo-Cr low alloy steel changing Ni, Mo, and Cr contents, J. Nucl. Mater. 407 (2) (2010) 126–135, https://doi.org 10.1016/i.inucmat.2010.09.004",
+        "bbox": [
+            512,
+            197,
+            934,
+            235
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[35] M. Calvo-Dahlborg, S.G.R. Brown, Hume-Rothery for HEA classification and self organizing map for phases and properties prediction, J. Alloys Compd. 724 (2017) 353–364, https://doi.org/10.1016/j.jallcom.2017.07.074.",
+        "bbox": [
+            512,
+            237,
+            934,
+            267
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[36] C. Wen, C.X. Wang, Y. Zhang, S. Antonov, D.Z. Xue, T. Lookman, Y.J. Su, Modeling solid solution strengthening in high entropy alloys using machine learning, Acta Mater. 212 (2021) 116917, https://doi.org/10.1016/j.matdes.2021.110177.",
+        "bbox": [
+            512,
+            267,
+            932,
+            297
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[37] H.S. Oh, S.J. Kim, K. Odbadrakh, W.H. Ryu, K.N. Yoon, S. Mu, F. Kormann, ¨ Y. J. Ikeda, C.C. Tasan, D. Raabe, T. Egami, E.S. Park, Engineering atomic-level complexity in high-entropy and complex concentrated alloys, Nat Commun. 10 (2019) 2090, https://doi.org/10.1038/s41467-019-10012-7.",
+        "bbox": [
+            512,
+            297,
+            922,
+            337
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[38] H.T. Zhang, H.D. Fu, X.Q. He, C.S. Wang, L. Jiang, L.Q. Chen, J.X. Xie, Dramatically enhanced combination of ultimate tensile strength and electri conductivity of alloys via machine learning screening, Acta Mater. 200 (2020) 803–810. https://doi.org/10.1016/i.actamat.2020.09.068",
+        "bbox": [
+            512,
+            337,
+            919,
+            377
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[39] S. Yamamoto, Cohesive energy and energy fluctuation as a measure of stability of alloy phases, Acta Mater. 45 (9) (1997) 3825–3833, https://doi.org/10.1016/ S1359-6454(97)00045-1",
+        "bbox": [
+            512,
+            378,
+            934,
+            407
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[40] R. Labusch, A statistical theory of solid solution hardening, Phys. Status Solidi 41 (2) (1970) 659–669, https://doi.org/10.1002/pssb.19700410221.",
+        "bbox": [
+            512,
+            408,
+            934,
+            428
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[41] L.M. Sun, L. Lin, Z.Y. Ma, M.K. Lei, Ultrasonic characterization of elastic constants of plasma sprayed Al O coatings based on simulated annealing algorithm, NDT and E Int. 128 (2022) 102632, https://doi.org/10.1016/j.ndteint.2022.102632.",
+        "bbox": [
+            512,
+            428,
+            934,
+            457
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[42] V. Kumar, D. Kumar, A systematic review on firefly algorithm: Past, present, and future, Arch. Comput. Methods Eng. 28 (2021) 3269–3291, https://doi.org/ 10.1007/s11831-020-09498-v.",
+        "bbox": [
+            512,
+            457,
+            932,
+            488
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[43] V.M. Rahul, V. Balaji, S. Narendranath, Optimization of wire-EDM process parameters for Ni-Ti-Hf shape memory alloy through particle swarm optimization and CNN-based SEM-image classification. RINENG. 18 (2023) 101141. https://doi org/10.1016/i.rineng.2023.101141.",
+        "bbox": [
+            512,
+            488,
+            934,
+            528
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[44] O. Kulkarni, S. Kulkarni, Process parameter optimization in WEDM by grey wolf optimizer, Mater. Today: Proc. 5 (2) (2018) 4402–4412, https://doi.org/10.1016 j.matpr.2017.12.008",
+        "bbox": [
+            512,
+            529,
+            934,
+            558
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[45] Y.P. Miao, C.L. Gan, M. Wang, L.K. Igor, The phase structure, hardness, and wear properties of the Cu-Cr-Zr-Nb alloy under different aging states, J MATER RES TECHNOL. 33 (2024) 515–525, https://doi.org/10.1016/j.jmrt.2024.09.073.",
+        "bbox": [
+            512,
+            559,
+            934,
+            588
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[46] J. Varillas, J. Oˇcen´aˇsek, J. Torner, J. Alcala, Understanding imprint formation, plastic instabilities and hardness evolutions in FCC. BCC and HCP metal surfaces Acta Mater. 217 (2021) 117122, https://doi.org/10.1016/i.actamat.2021.117122",
+        "bbox": [
+            512,
+            588,
+            934,
+            619
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[47] X.Y. Huang, C. Jin, C. Zhang, H. Zhang, H.W. Fu, Machine learning assisted modelling and design of solid solution hardened high entropy alloys, Mater. Des. 211 (2021) 110177, https://doi.org/10.1016/j.matdes.2021.110177.",
+        "bbox": [
+            512,
+            619,
+            932,
+            648
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "ref_text",
+        "text": "[48] S. Guo, C.T. Liu, Phase stability in high entropy alloys: Formation of solid-solution phase or amorphous phase, Prog. Nat. Sci. 21 (6) (2011) 433–446, https://doi.org 10.1016/S1002-0071(12)60080-X",
+        "bbox": [
+            512,
+            649,
+            934,
+            678
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "H. Wu et al.",
+        "bbox": [
+            58,
+            42,
+            119,
+            52
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "Materials & Design 248 (2024) 113473",
+        "bbox": [
+            752,
+            42,
+            939,
+            52
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "9",
+        "bbox": [
+            494,
+            952,
+            505,
+            960
+        ],
+        "page_idx": 8
+    }
+]

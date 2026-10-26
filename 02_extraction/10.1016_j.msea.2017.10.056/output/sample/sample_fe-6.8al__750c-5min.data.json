@@ -1,0 +1,476 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-6.8al__750c-5min",
+      "paper_id": "10.1016_j.msea.2017.10.056",
+      "alloy_id": "alloy_fe-6.8al",
+      "process_id": "proc_750c-5min",
+      "sample_label": "750 °C, 5 min",
+      "aliases": [
+        "750 °C, 5 min",
+        "Fe-6.8Al annealed at 750 °C for 5 min"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_vacuum_arc_melting",
+      "sequence": "1",
+      "type": "melting / alloy preparation",
+      "method": "vacuum arc melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Charges of interstitial free (IF) steel and pure aluminium melted in a vacuum arc furnace to prepare the low-density steel with 6.8 wt% Al; circular buttons (diameter 10 cm, height 5 cm) re-melted 7–8 times to remove segregation."
+    },
+    {
+      "processing_step_id": "step_cold_rolling_98",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "cold rolling (CR)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "98% reduction in thickness",
+      "processing_steps_notes": "The Fe-6.8Al alloy was cold rolled to 98% reduction in thickness. Cold rolled sample shows heavily elongated + pancaked grains along RD with shear bands (~40° to RD); average deformed lamellae width 2.6 ± 1.2 µm."
+    },
+    {
+      "processing_step_id": "step_annealing_750c_5min",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "isothermal annealing",
+      "temperature": "750 °C",
+      "temperature_unit": "°C",
+      "duration": "5 min",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Annealed at 750 °C for 5 min, producing equiaxed and fully recrystallised ferrite grains; recrystallization is already completed upon annealing for 5 min."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_fe-6.8al_750c_5min",
+      "overall_structure": "Equiaxed and fully recrystallised ferrite grains after 98% cold rolling + annealing at 750 °C for 5 min; single ferrite (BCC) phase stabilised by Al addition, containing a nano-sized Fe3Al ordered phase.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_750c_5min_bulk",
+          "region": "bulk",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (α-Fe, BCC)",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "equiaxed, fully recrystallised grains",
+              "grain_size": "25.2 ± 5.0 µm",
+              "texture": null
+            },
+            {
+              "phase_name": "Fe3Al ordered phase",
+              "crystal_structure": "DO3",
+              "volume_fraction": null,
+              "morphology": "nano-sized ordered phase (bright particles in dark-field TEM, associated with dark background)",
+              "grain_size": "2.1 ± 0.2 nm (TEM)",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "~6 × 10^12 m^-2",
+              "lattice_distortion": "micro-strain 9.46 × 10^-4"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "25.2 ± 5.0",
+              "unit": "µm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_fe3al_ordered",
+              "type": "Fe3Al ordered phase (DO3 structure)",
+              "size": {
+                "value": "2.1 ± 0.2",
+                "unit": "nm"
+              },
+              "distribution": "very fine ordered phase (bright) dispersed in the Fe-Al matrix, seen associated with dark background in dark-field TEM; SAXS shows nano-sized ordered phase peak between q = 0.3–3 nm^-1",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_fe3al_ferrite_750c_5min",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_1",
+          "microstructure_id": "micro_750c_5min_bulk",
+          "phase_1_name": "ferrite (α-Fe, BCC)",
+          "phase_2_name": "Fe3Al ordered phase (DO3)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_1",
+          "microstructure_id": "micro_750c_5min_bulk",
+          "interaction_type": "dislocation–ordered phase interaction (antiphase boundary / super-partial dislocation shearing)",
+          "qualitative_or_quantitative_description": "Strengthening from ordered phase formation is attributed to the difference in separation of partial dislocations in ordered vs disordered phase, creating an antiphase boundary bounded by leading (destroys order) and trailing (restores order) dislocations; this constrains dislocations to travel in pairs, restricting mobility and increasing flow stress."
+        }
+      ],
+      "slip_behavior": "Dislocations constrained to travel in pairs within the ordered phase (splitting into super-partial dislocations); high-angle grain boundaries arrest dislocation motion.",
+      "phase_evolution": "Recrystallization completed upon annealing at 750 °C for 5 min; ordering (formation of nano-sized Fe3Al) occurs, with higher extent of ordering after longer annealing.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_750c_5min_tensile",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": "sub-size tensile specimen, gauge length 6 mm and width 2 mm; gauge section machined parallel to rolling direction (RD)",
+        "test_standard": null,
+        "other_conditions": "Uniaxial tensile tests in an Instron 5967 screw driven machine; three tensile tests conducted for each sample condition"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction (RD)",
+              "value": "700",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction (RD)",
+              "value": "870",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction (RD)",
+              "value": "20.0",
+              "unit": "% uniform elongation",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve for the 5 min sample (red curve, Fig. 8a): yields near 700 MPa, plateaus to a broad maximum near 860–870 MPa between ~15 and 20% strain, then softens, terminating close to the 30% strain gridline.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": "Rate of strain hardening vs true strain (Fig. 8b, red 5 min curve): steep initial spike followed by a small local maximum near true strain ~0.02 then monotonic decay; the 60 min curve lies above the 5 min curve at all strains."
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_vs_rana_900c_1min",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "Fe-6.8Al (Rana et al. [3])",
+        "benchmark_process_id": "annealing at 900 °C for 1 min",
+        "benchmark_sample_id": null,
+        "comparison_metric": "yield strength",
+        "improvement_percentage": null
+      }
+    },
+    {
+      "performance_id": "perf_vs_dual_phase",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "dual-phase low-density steel (Ref. [8])",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "yield strength and elongation (YS = 700 MPa, elongation = 20% rival those of dual-phase low-density steels)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_sem_grain_size",
+      "microstructure_id": "micro_750c_5min_bulk",
+      "technique": "Scanning electron microscopy (SEM)",
+      "instrument_or_setup": "FEI-ESEM Quanta 200 SEM",
+      "measurement_conditions": "accelerating voltage 25 kV",
+      "purpose": "determine ferrite grain size of the annealed Fe-6.8Al samples",
+      "key_findings": "Sample annealed 5 min shows equiaxed and fully recrystallised grains; grain size 25.2 ± 5.0 µm (SEM, Table 2)."
+    },
+    {
+      "characterization_id": "char_xrd_line_profile",
+      "microstructure_id": "micro_750c_5min_bulk",
+      "technique": "X-ray diffraction (XRD) line-profile analysis / variance method",
+      "instrument_or_setup": "X-Pert PRO diffractometer with Cu-Kα radiation",
+      "measurement_conditions": "scanned 40°–120°, step size 0.03°; only the (110) XRD peak profile used",
+      "purpose": "determine dislocation density (Variance method of Wilson and Groma), crystallite size and lattice micro-strain",
+      "key_findings": "Micro-strain 9.46 × 10^-4 for 750 °C, 5 min; dislocation density ~6 × 10^12 m^-2 (decreases from ~2×10^15 m^-2 for 98% CR upon annealing); crystallite size not reported for the 5 min condition."
+    },
+    {
+      "characterization_id": "char_tem_ordered_phase",
+      "microstructure_id": "micro_750c_5min_bulk",
+      "technique": "Transmission electron microscopy (dark-field TEM) with selected-area diffraction",
+      "instrument_or_setup": null,
+      "measurement_conditions": "dark-field imaging from weak superlattice diffraction spots; [011] zone axis",
+      "purpose": "detect and measure distribution and size of the ordered phase in Fe-6.8Al",
+      "key_findings": "Dark-field image shows very fine ordered phase (bright) associated with dark background; ordered phase size determined as 2.1 ± 0.2 nm; diffraction pattern (inset) shows strong matrix spots and weak superlattice spots confirming ordered phase."
+    },
+    {
+      "characterization_id": "char_mossbauer",
+      "microstructure_id": null,
+      "technique": "Mössbauer spectroscopy",
+      "instrument_or_setup": "conventional constant acceleration Doppler velocity drive with 57Co (Rh-matrix) source, transmission geometry",
+      "measurement_conditions": "room temperature; velocity calibrated with pure α-Fe foil; fitted by NORMOS program",
+      "purpose": "examine local atomic configurations / ordered phase (DO3, B2) formation in Fe-Al alloys",
+      "key_findings": "Fe-6.8Al spectrum deconvoluted into five components (B_hf = 32.68, 30.34, 27.69, 25.05, 23.26 T) with assignments; peak ~23 T interpreted as possible low-volume-fraction Fe3Al phase. NOTE: measured on powder samples annealed at 600 °C for 60 min."
+    },
+    {
+      "characterization_id": "char_saxs",
+      "microstructure_id": null,
+      "technique": "Small angle X-ray scattering (SAXS)",
+      "instrument_or_setup": "laboratory-based dual energy Mo-Cr-SAXS system (Xeuss, Xenocs, France)",
+      "measurement_conditions": "camera lengths 550 and 2400 mm, q-range 0.0254–10 nm^-1, transmission geometry, 4–6 h measurement; local mono-disperse model fitting with Eq. (2)",
+      "purpose": "quantify size, volume fraction and number density of the ordered DO3 phase",
+      "key_findings": "Weak nano-sized ordered phase peak between q = 0.3–3 nm^-1; Fe3Al ordered phase diameter increased from 2.5 ± 0.15 nm to 3.75 ± 0.2 nm with increasing Al content (Fe-6.8Al between these values). NOTE: measured on powder samples annealed at 600 °C for 60 min."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_strengthening_models_750c_5min",
+      "simulation_method": "Analytical strengthening-mechanism modelling (decomposition of yield strength into five mechanisms: dislocations, grain size, ordered phase, solid solution, lattice frictional stress)",
+      "software_used": "MAUD (Rietveld refinement); ANIZC (dislocation contrast factor)",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Summed model contributions compared with the measured tensile yield strength (700 MPa for 750 °C, 5 min) as shown in Fig. 9.",
+      "analytical_models": [
+        {
+          "model_name": "Solid solution strengthening (τss)",
+          "equation_role": "calculates solid solution strengthening contribution (Eq. 9)",
+          "parameters": [
+            {
+              "name": "G (shear modulus)",
+              "value": "82",
+              "unit": "GPa"
+            },
+            {
+              "name": "c (solute concentration)",
+              "value": "6.8",
+              "unit": "wt%"
+            },
+            {
+              "name": "εs",
+              "value": "0.45",
+              "unit": null
+            },
+            {
+              "name": "τss",
+              "value": "95.6",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "Solid solution strengthening for Fe-6.8Al calculated as 95.6 MPa; increases from 67.8 to 127.2 MPa for 5 to 9 wt% Al."
+        },
+        {
+          "model_name": "Lattice frictional stress (τPN, Peierls–Nabarro)",
+          "equation_role": "calculates lattice frictional stress for dislocation glide on slip plane (Eq. 10)",
+          "parameters": [
+            {
+              "name": "G (shear modulus)",
+              "value": "82",
+              "unit": "GPa"
+            },
+            {
+              "name": "ν (Poisson's ratio)",
+              "value": "0.33",
+              "unit": null
+            },
+            {
+              "name": "a (interplanar spacing)",
+              "value": "2.02",
+              "unit": "Å"
+            },
+            {
+              "name": "b (interatomic distance in slip direction)",
+              "value": "2.48",
+              "unit": "Å"
+            },
+            {
+              "name": "τPN at 0 K",
+              "value": "154.34",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "Eq. (10) gives lattice frictional stress at 0 K; a room-temperature value of 41 MPa (from Speich and Swann, 0.4 wt% C-steel) was used due to lack of Fe-Al data."
+        },
+        {
+          "model_name": "Order strengthening (τorder)",
+          "equation_role": "calculates strengthening from ordered phase formation (Eq. 11)",
+          "parameters": [
+            {
+              "name": "G (shear modulus)",
+              "value": "82",
+              "unit": "GPa"
+            },
+            {
+              "name": "γ (antiphase boundary energy)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "f (ordered phase fraction)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "r (ordered phase radius)",
+              "value": null,
+              "unit": null
+            }
+          ],
+          "model_note": "Uses ordered phase size and volume fraction determined by TEM and SAXS."
+        },
+        {
+          "model_name": "Hall-Petch grain boundary strengthening (ΔσGB)",
+          "equation_role": "calculates grain size / grain boundary strengthening (Eq. 12)",
+          "parameters": [
+            {
+              "name": "kHP (Hall-Petch constant)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "D (grain diameter)",
+              "value": "25.2 ± 5.0",
+              "unit": "µm"
+            }
+          ],
+          "model_note": "kHP for 99.95% pure iron was used; grain size determined by SEM for the annealed samples."
+        },
+        {
+          "model_name": "Taylor dislocation strengthening (Δσρ)",
+          "equation_role": "calculates dislocation strengthening contribution (Eq. 13)",
+          "parameters": [
+            {
+              "name": "M (Taylor factor)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "α",
+              "value": "0.33",
+              "unit": null
+            },
+            {
+              "name": "G (shear modulus)",
+              "value": "82",
+              "unit": "GPa"
+            },
+            {
+              "name": "b (Burgers vector)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "ρ (dislocation density)",
+              "value": "~6 × 10^12",
+              "unit": "m^-2"
+            }
+          ],
+          "model_note": "Dislocation density from the variance method applied to the (110) XRD peak profile."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Yield ratio (YS/UTS) of the Fe-6.8Al sample annealed at 750 °C for 5 min = 0.85 (Table 4).",
+    "Strengthening contributions to the yield strength (Fig. 9) for 750 °C, 5 min (total YS = 700 MPa): grain boundary strengthening (dominant, up to ~500 MPa), followed by nearly equal contributions from dislocations (~650 MPa cumulative) and ordered Fe3Al phase; solid solution up to ~120 MPa; lattice frictional stress constant.",
+    "For the fully recrystallised 750 °C, 5 min sample the contributions order is: grain size strengthening (dominant), then nearly equal contributions from dislocations and ordered Fe3Al phase.",
+    "Dislocation density drops rapidly (about three orders of magnitude) from ~2.2 × 10^15 m^-2 (98% CR) to ~6 × 10^12 m^-2 (750 °C, 5 min) and ~1 × 10^12 m^-2 (60 min) upon annealing at 750 °C.",
+    "The Fe-6.8Al single ferrite phase was confirmed by XRD; Rietveld refinement (MAUD) was performed; the lattice micro-strain decreases sharply from 98% CR (1.46 × 10^-3) to 750 °C, 5 min (9.46 × 10^-4) and 750 °C, 60 min (1.46 × 10^-4) due to recrystallization.",
+    "Crystallite size (102.3 ± 9.8 nm) is reported only for the 98% CR condition (XRD); it is not reported for the 750 °C, 5 min condition (marked '-' in Table 3).",
+    "The ordered phase was characterized as nano-sized Fe3Al with DO3 structure; ordered phase sizes range between 2.5 and 3.75 nm (SAXS) and 2.1 ± 0.2 nm (TEM) increasing with Al content."
+  ]
+}

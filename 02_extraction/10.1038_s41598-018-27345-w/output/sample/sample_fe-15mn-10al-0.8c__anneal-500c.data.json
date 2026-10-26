@@ -1,0 +1,358 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-15mn-10al-0.8c__anneal-500c",
+      "paper_id": "10.1038_s41598-018-27345-w",
+      "alloy_id": "alloy_fe-15mn-10al-0.8c",
+      "process_id": "proc_anneal-500c",
+      "sample_label": "Fe-15Mn-10Al-0.8C, 500 °C",
+      "aliases": [
+        "Ni-free sample annealed at 500 °C",
+        "Ni-free, 500 °C",
+        "Fe-15Mn-10Al-0.5C, 500 °C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "induction furnace melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The experimental alloys were melted in an induction furnace."
+    },
+    {
+      "processing_step_id": "step_2_solution_treatment",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "solution heat treatment",
+      "temperature": "1250",
+      "temperature_unit": "°C",
+      "duration": "35 min",
+      "atmosphere": "protective argon atmosphere",
+      "cooling_medium": "water quenched",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution heat-treated for 35 min at 1250 °C in a protective argon atmosphere and then water quenched."
+    },
+    {
+      "processing_step_id": "step_3_cutting",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "cutting into nanoindentation specimens",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The materials were cut into 3-mm (length), 3-mm (width) and 1-mm (thickness) samples."
+    },
+    {
+      "processing_step_id": "step_4_annealing_500c",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "isothermal annealing",
+      "temperature": "500",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Annealing treatments were conducted at 500, 700, 900 and 1050 °C; the holding time is not explicitly reported in the text."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_500c_nifree",
+      "overall_structure": "Duplex γ + α matrix. γ matrix contains nano-sized cuboid κ-carbide blocks (< 100 nm) and coarse FeAl-type B2 particles (2–4 μm); α (ferrite) contains needle-like κ-carbide (width 200 ± 33 nm). At 500 °C the Ni-free sample shows α + needle-like κ-carbides instead of the B2 stringer bands seen in the Ni-containing sample.",
+      "number_of_phases": "4 (γ, α, κ-carbide, B2)",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_gamma",
+          "region": "austenite (γ) matrix",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "γ (austenite)",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_kappa_cuboid_gamma",
+              "type": "κ-carbide (cuboid, L1'2/Fe3AlC-type ordered fcc)",
+              "size": {
+                "value": "< 100 nm",
+                "unit": null
+              },
+              "distribution": "nano-sized blocks formed in the austenite (γ) phase",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "precip_b2_coarse_gamma",
+              "type": "B2 intermetallic (FeAl-type for Ni-free alloy)",
+              "size": {
+                "value": "2–4 μm",
+                "unit": null
+              },
+              "distribution": "coarse B2 particles in the γ matrix (and grain boundaries)",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_alpha",
+          "region": "ferrite (α) regions",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "α (ferrite)",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_kappa_needle_alpha",
+              "type": "κ-carbide (needle-like, L1'2/Fe3AlC-type)",
+              "size": {
+                "value": "width 200 ± 33 nm",
+                "unit": null
+              },
+              "distribution": "micron-sized needle-like particles within the ferrite (α) phase; average size ≈1.5 μm",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "props_500c_nifree",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "3 mm (length) × 3 mm (width) × 1 mm (thickness)",
+        "test_standard": null,
+        "other_conditions": "Nano-indentation at a constant loading/unloading rate of 500 μN s^-1 up to a maximum load of 10000 μN with a hold time of 20 s; each phase measured at least 25 times in arrays of 50–70 indentations."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "γ + κ (composite of austenite with cuboid κ-carbide), 500 °C",
+            "value": "6.8",
+            "scale": "nanoindentation",
+            "unit": "GPa",
+            "uncertainty": null
+          },
+          {
+            "region": "α + κ (composite of ferrite with needle-like κ-carbide), 500 °C",
+            "value": "5.3",
+            "scale": "nanoindentation",
+            "unit": "GPa",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_compare_500c",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-15mn-10al-0.8c-5ni",
+        "benchmark_process_id": "proc_anneal-500c",
+        "benchmark_sample_id": null,
+        "comparison_metric": "nanoindentation hardness of B2-bearing / κ-bearing structures",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": "micro_gamma",
+      "technique": "Transmission electron microscopy (TEM), selected-area diffraction patterns (SADPs) and bright-field (BF) imaging",
+      "instrument_or_setup": "JEOL 2000FX TEM; thin foils prepared by twin-jet electro-polishing in a mixture of 10% perchloric acid and 90% ethanol at 25 V",
+      "measurement_conditions": null,
+      "purpose": "Characterization of the ordered phases (κ-carbide and B2) in the microstructure",
+      "key_findings": "Nano-sized cuboid κ particles observed in the γ matrix (bright-field image) and disc-like B2 in α at higher temperatures."
+    },
+    {
+      "characterization_id": "char_sem",
+      "microstructure_id": null,
+      "technique": "Field-emission scanning electron microscopy (FE-SEM) with X-ray energy dispersive spectroscopy (EDS)",
+      "instrument_or_setup": "Carl Zeiss Sigma FE-SEM operated at 20 kV, fitted with high-speed X-ray EDS",
+      "measurement_conditions": "Specimens polished and etched in a 5% nital solution",
+      "purpose": "Observation of the microstructures and phase morphology",
+      "key_findings": "Used to image B2 stringer bands, grain-boundary B2 and γ + κ matrix features at the four annealing temperatures."
+    },
+    {
+      "characterization_id": "char_nanoindentation",
+      "microstructure_id": null,
+      "technique": "Nano-indentation",
+      "instrument_or_setup": "Nano-indentation with a constant loading/unloading rate of 500 μN s^-1",
+      "measurement_conditions": "Maximum load 10000 μN, hold time 20 s; each phase measured at least 25 times; arrays of 50–70 indentations",
+      "purpose": "Measurement of nano-hardness of individual phases (γ, α, B2 stringer bands, micrometer- and nano-disk B2) and of phase combinations (γ+κ, α+κ, γ+B2, α+B2, γ+κ+B2)",
+      "key_findings": "Precipitate-bearing composites are markedly harder (~5–10 GPa) than the parent γ and α phases (~3–4 GPa); α + κ (500 °C) = 5.3 GPa and γ + κ (500 °C) = 6.8 GPa in the Ni-free alloy."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_dft_kappa",
+      "simulation_method": "Density Functional Theory (ab-initio/first-principles calculations)",
+      "software_used": "Quantum-ESPRESSO package",
+      "potential_model_or_database": "GGA of Perdew-Burke-Ernzerhof (PBE) in spin-polarized manner; ultrasoft pseudo-potentials created with a modified Rappe-Rabe-Kaxiras-Joannopoulos (RRKJ) scheme",
+      "boundary_and_initial_conditions": "Structure optimization with Brillouin-zone integration on an 18 × 18 × 18 Monkhorst-Pack grid; real-space grid with 50 Ryd energy cut-off for charge density; augmentation charges expanded to 600 Ryd; 30 × 30 × 30 grid with 60 Ryd cut-off for electronic DOS and formation-energy calculations; density of states via tetrahedron method on a 30 × 30 × 30 mesh",
+      "validation_against_experiment": "Calculated lattice parameter of ordered FeAl-B2 with/without spin effects was slightly less than the experimental value but in good agreement with reported experimental values; lattice constant of Fe3AlC calculated larger than Fe3Al-L12, agreeing with experiments.",
+      "analytical_models": [
+        {
+          "model_name": "Sound-velocity method for elastic constants",
+          "equation_role": "C11 from longitudinal velocity v_l[100]=sqrt(C11/ρ) and C44 from transverse velocity v_t[100]=sqrt(C44/ρ); C12 from v_l[111]=sqrt((C11+2C12+4C44)/(3ρ))",
+          "parameters": [
+            {
+              "name": "density of FeAl",
+              "value": "5839",
+              "unit": "kg/m^3"
+            },
+            {
+              "name": "density of Fe3Al",
+              "value": "6612",
+              "unit": "kg/m^3"
+            },
+            {
+              "name": "density of Fe3AlC",
+              "value": "6527",
+              "unit": "kg/m^3"
+            }
+          ],
+          "model_note": "Acoustic-branch slopes along [100] and [111] used to extract cubic elastic constants."
+        },
+        {
+          "model_name": "Lattice-distortion method for elastic constants",
+          "equation_role": "Volume-conserving orthorhombic distortion E(δ)=E(0)+(C11−C12)Vδ²+O(δ⁴) to obtain C11 and C12; monoclinic distortion E(δ)=E(0)+½C44Vδ²+O(δ⁴) to obtain C44",
+          "parameters": [],
+          "model_note": "Second independent method used to derive Cij for the compounds."
+        },
+        {
+          "model_name": "Practical elastic parameters from Cij",
+          "equation_role": "B0=(C11+2C12)/3; Cα=(C11−C12)/(2C44); G=(C11−C12)/2; E100 and E111 from eqs. (11) and (12)",
+          "parameters": [],
+          "model_note": "Used to compute bulk modulus, anisotropy factor, shear modulus and directional Young's moduli listed in Table 4."
+        },
+        {
+          "model_name": "Orowan mechanism (shear-stress / precipitate-size relation)",
+          "equation_role": "Δτ ∝ R^−1.25 (increase in shear stress inversely proportional to precipitate diameter)",
+          "parameters": [],
+          "model_note": "Used to rationalize higher hardness from nano-sized disk-like B2 particles in the α matrix."
+        },
+        {
+          "model_name": "Murnaghan equation of state",
+          "equation_role": "Fitting of unit-cell volume vs energy to calculate the bulk modulus",
+          "parameters": [],
+          "model_note": "Various unit cell volumes simulated and fitted with the Murnaghan equation of state."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Solution-treated reference hardness for the Ni-free Fe-15Mn-10Al-0.8C alloy (parent state of this 500 °C sample): γ = 4 GPa and α = 3 GPa (Table 2; b0034).",
+    "Mn content of κ-carbide in the Ni-free alloy annealed at 500 °C: ≈18.4 wt.% Mn in the α + κ composite and 20.4 wt.% Mn in the γ + κ composite (Fig. 4f, Fig. 4h; b0029).",
+    "At low annealing temperatures (500–700 °C) this Ni-free alloy exhibited low ductility, with elongation ≈10% (b0014).",
+    "Annealing holding time for the 500 °C treatment is not explicitly reported in the text (b0017).",
+    "The Ni-free alloy is denoted Fe-15Mn-10Al-0.8C throughout the abstract/introduction/methods/conclusions but is labelled Fe-15Mn-10Al-0.5C in Tables 1 and 2, an apparent typographical inconsistency (0.5 vs 0.8 C)."
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__anneal-600c-1h-wq",
+      "paper_id": "10.1016_j.msea.2023.144776",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_anneal-600c-1h-wq",
+      "sample_label": "600 °C annealed",
+      "aliases": [
+        "600 °C",
+        "600 °C annealed powder"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_ma_35h",
+      "sequence": "1",
+      "type": "mechanical processing (mechanical alloying)",
+      "method": "high-energy planetary ball milling (mechanical alloying)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": "35 h",
+      "atmosphere": "toluene used as process control reagent to avoid oxidation",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Parent process (proc_ma-35h). Starting elemental powders (99.2% pure) taken in proportion Fe40Mn19Ni15Al15Si10C1 (at.%) and milled in a planetary ball mill (Retsch PM 400/2) at 200 rpm; ball-to-powder ratio 10:1; WC vials and WC balls; milling stopped intermittently for 20 min after every 1 h to avoid overheating."
+    },
+    {
+      "processing_step_id": "step_2_anneal_600c_wq",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "annealing followed by water quenching",
+      "temperature": "600 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": "argon (powder encapsulated in a quartz tube and back filled with argon)",
+      "cooling_medium": "water (water quenching)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Part of a series of anneals at 400 °C, 500 °C, 600 °C and 800 °C for 1 h followed by water quenching, performed on the 35 h milled powder to study thermal stability."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_600c_annealed",
+      "overall_structure": "Multiphase microstructure of the 600 °C annealed 35 h milled Fe40Mn19Ni15Al15Si10C1 powder: BCC (ferrite) as the major phase plus partially ordered B2, a small amount of γ-brass type and the newly evolved Fe5Si3-type silicide (hP16) intermetallic; a nanocrystalline structure is retained after annealing.",
+      "number_of_phases": 4,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_600c_annealed",
+          "region": null,
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "BCC (ferrite)",
+              "crystal_structure": "cI2 (BCC); a = 0.286 nm",
+              "volume_fraction": "43%",
+              "morphology": null,
+              "grain_size": {
+                "value": "26",
+                "unit": "nm"
+              },
+              "texture": null
+            },
+            {
+              "phase_name": "γ-brass type",
+              "crystal_structure": "cI52 (γ-brass type); a = 0.872 nm",
+              "volume_fraction": "3.00%",
+              "morphology": null,
+              "grain_size": {
+                "value": "19",
+                "unit": "nm"
+              },
+              "texture": null
+            },
+            {
+              "phase_name": "B2 (partially ordered)",
+              "crystal_structure": "cP2 (B2, partially ordered); a = 0.289 nm",
+              "volume_fraction": "38.50%",
+              "morphology": null,
+              "grain_size": {
+                "value": "21",
+                "unit": "nm"
+              },
+              "texture": null
+            },
+            {
+              "phase_name": "Fe5Si3-type silicide",
+              "crystal_structure": "hP16; a = b = 0.667 nm, c = 0.466 nm",
+              "volume_fraction": "15.50%",
+              "morphology": null,
+              "grain_size": {
+                "value": "15",
+                "unit": "nm"
+              },
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_fe5si3_600c",
+              "type": "Fe5Si3-type silicide (hP16) intermetallic",
+              "size": {
+                "value": "15 nm",
+                "unit": "nm"
+              },
+              "distribution": "Evolved as a distinct intermetallic phase at 600 °C annealing, associated with the undissolved Si remaining after milling.",
+              "coherency": null
+            }
+          ]
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_set_id": "intf_600c_annealed",
+          "phase_interfaces": [],
+          "defect_interactions": [],
+          "slip_behavior": null,
+          "phase_evolution": "The 35 h milled powder (R.T. phases: BCC + γ-brass type + B2 + undissolved Si) is thermally stable up to ~500 °C. At 600 °C the Fe5Si3-type silicide (hP16) intermetallic evolves (correlated with the DTA exothermic event at ~520 °C), the γ-brass type fraction decreases to 3.00% and the partially ordered B2 fraction increases to 38.50%, with BCC becoming the major phase at 43%.",
+          "interface_notes": "The retention of BCC and B2 after annealing is attributed to strong Fe–Al and Ni–Al bonding and the sluggish diffusion effect; no specific phase-interface crystallographic relations were reported for the annealed powder."
+        }
+      ],
+      "properties": [],
+      "performance": [],
+      "characterization_methods": [
+        {
+          "characterization_id": "char_xrd_annealed",
+          "microstructure_id": "micro_600c_annealed",
+          "technique": "Ex-situ X-ray diffraction (XRD)",
+          "instrument_or_setup": "Rigaku X-ray diffractometer, Cu-Kα source, operating at 40 kV and 15 mA, scan rate 5° min⁻¹",
+          "measurement_conditions": "Room temperature; 2θ ≈ 20–100° (Fig. 5a), with enlarged views over 2θ = 42–46° and deconvolution over 2θ ≈ 43–47°",
+          "purpose": "To determine the phase transformation of the 35 h milled powder upon annealing at 400, 500, 600 and 800 °C.",
+          "key_findings": "At 600 °C the diffraction peaks of the Fe5Si3-type intermetallic phase (hP16) are evolved (the powder is only thermally stable up to 500 °C); the 600 °C pattern shows BCC + γ-brass type + B2 + Fe5Si3 type, with the Fe5Si3-type formation correlated to the ~520 °C exothermic event."
+        }
+      ],
+      "computational_details": [
+        {
+          "computation_id": "comp_rietveld_600c",
+          "simulation_method": "Rietveld refinement of XRD data",
+          "software_used": "GSAS-II (general structural analysis system)",
+          "potential_model_or_database": null,
+          "boundary_and_initial_conditions": "Chebyschev-I background function with 10 coefficients; pseudo-Voigt peak profile (Lorentzian + Gaussian components); phase fraction from histogram scale factor; uniaxial model for average crystallite size and isotropic microstrain.",
+          "validation_against_experiment": "Goodness of fit for the 600 °C condition: wR = 0.252, GoF = 1.18, χ² = 1.40 (Table 4).",
+          "analytical_models": []
+        },
+        {
+          "computation_id": "comp_calphad",
+          "simulation_method": "CALPHAD thermodynamic modelling (property diagram and single-point equilibrium calculations)",
+          "software_used": "Thermo-Calc",
+          "potential_model_or_database": "TCFE8 database; Pressure = 100000.0 Pa, system size = 1.0 mol, mole fractions Mn = 0.19, Ni = 0.15, Al = 0.15, Si = 0.1, C = 0.01 (Fe balance)",
+          "boundary_and_initial_conditions": "Single-point equilibrium calculations for the alloy at 1200 °C (1473 K), 1100 °C (1373 K), 800 °C (1073 K), 500 °C (773 K) and 300 °C (573 K).",
+          "validation_against_experiment": "Some differences exist between the experimental and CALPHAD-predicted phases, attributed to the use of the TCFE8 database instead of TCHEA3.",
+          "analytical_models": []
+        }
+      ],
+      "unmapped_findings": [
+        "The 35 h milled parent powder is thermally stable up to ~500 °C; the Fe5Si3-type silicide phase forms at ~520 °C (evident as an exothermic event) and its diffraction peaks are evolved at 600 °C and grow further up to 800 °C.",
+        "DTA of the 35 h milled powder shows exothermic events at ~420 °C (attributed to ordering and/or texturing of the γ-brass type phase) and ~520 °C (attributed to formation of the Fe5Si3-type/Fe3Si-type intermetallic).",
+        "Rietveld-refined lattice parameters and volumes of the phases in the 600 °C annealed sample (Table 4): BCC a = 0.286 nm (V = 23.39 Å³); γ-brass type a = 0.872 nm (V = 663.05 Å³); B2 a = 0.289 nm (V = 24.13 Å³); Fe5Si3 type a = b = 0.667 nm, c = 0.466 nm (V = 179.54 Å³).",
+        "The Fe5Si3-type silicide forms due to undissolved Si remaining after milling and the tendency of Fe and Mn to react with Si, the binary mixing enthalpy between Fe–Si and Mn–Si being highly negative.",
+        "The theoretical melting point of the HES composition (applicable to this sample) was calculated as 1638 K by a machine-learning approach and 1620 K by the rule of mixture."
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

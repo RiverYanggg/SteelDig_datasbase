@@ -1,0 +1,443 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-6al-1c__st-1050c-2h-wq",
+      "paper_id": "10.1016_j.msea.2023.145675",
+      "alloy_id": "alloy_fe-30mn-6al-1c",
+      "process_id": "proc_st-1050c-2h-wq",
+      "sample_label": "Al-6",
+      "aliases": [
+        "Fe30Mn6Al1C after 1050 °C/2 h solution treatment"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting_casting",
+      "sequence": "1",
+      "type": "melting/casting",
+      "method": "high-frequency vacuum induction melting and casting into ingot",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Melted in a high-frequency vacuum induction furnace with a 50 kg capacity, then cast into an ingot with a diameter of 150 mm."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": "5 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenized ingots subsequently hot rolled."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot rolled into rods with a diameter of 16 mm, then air-cooled to room temperature (parent process proc_hot-rolled)."
+    },
+    {
+      "processing_step_id": "step_solution_treatment_1050c",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled rods were solution-treated at 1050 °C for 2 h followed by water quenching; this defines the sample state (state_label 1050 °C–2 h–WQ)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_al6_solution_treated",
+      "overall_structure": "Single-phase FCC austenite with annealing twin boundaries after solution treatment at 1050 °C/2 h/WQ; no ferrite and no κ-carbides (the Fe1C30Mn6Al alloy does not contain κ-carbides, D_κ-carbides = 0).",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_al6_fcc_austenite",
+          "region": "bulk",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ, FCC)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "single-phase austenite (no ferrite reported; f_Bcc = '-' in Table 3)",
+              "morphology": "equiaxed grains",
+              "grain_size": "34.2 ± 1.1 μm",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "annealing twin boundaries (Σ3)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "34.2 ± 1.1",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_al6_tensile",
+      "measurement_conditions": {
+        "temperature": "ambient temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1.1×10^-3 s^-1",
+        "specimen_geometry": "Round tensile specimen, gauge length 25 mm, diameter 5 mm, tensile axis parallel to rod axis",
+        "test_standard": null,
+        "other_conditions": "Solution-treated specimen (1050 °C/2 h/WQ); engineering stress-strain response and strain hardening rate obtained by tensile test on an MTS machine; two solution-treated specimens tested and data reported as average of two specimens."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "parallel to rod axis",
+              "value": "433",
+              "unit": "MPa",
+              "uncertainty": "± 5"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "parallel to rod axis",
+              "value": "852",
+              "unit": "MPa",
+              "uncertainty": "± 1"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "uniform elongation (UE)",
+              "value": "72",
+              "unit": "%",
+              "uncertainty": "± 0"
+            },
+            {
+              "direction": "total elongation to failure (A)",
+              "value": "73.5",
+              "unit": "%",
+              "uncertainty": "± 1"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve of Fe30Mn(x)Al1C with 6% Al after 1050 °C/2 h solution treatment (Fig. 2(c)); true stress-strain and work hardening rate curves (Fig. 8(c))",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "direction": "maximum work hardening rate of 6% Al steel",
+              "value": "~2100",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_al6_impact",
+      "measurement_conditions": {
+        "temperature": "-40",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "Charpy impact specimen 55 mm long, 10×10 mm cross-section with a 2 mm deep V-notch; V-notch perpendicular to the rod axis",
+        "test_standard": "Charpy impact test",
+        "other_conditions": "Measured using an MTS impact tester (500 J capacity); two solution-treated specimens tested, data average of two specimens."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "354 ± 16",
+          "unit": "J"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_al6_density",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": "Archimedes drainage method",
+        "other_conditions": "Experimental density measurement of the as-fabricated steel."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "7.12",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_al6_toughness_ranking",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "highest Charpy impact toughness at -40 °C among all designed low-density steels (354 J)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_al6_ebsd",
+      "microstructure_id": "micro_al6_fcc_austenite",
+      "technique": "Electron back-scattered diffraction (EBSD)",
+      "instrument_or_setup": "Field emission gun SEM (FEI Quanta 650, Thermo Fisher Scientific) with EBSD system; Channel 5 post-processing software",
+      "measurement_conditions": "Operating voltage 20 kV, step size 0.5 μm; specimens mechanically ground and electro-polished in 7% Nital at room temperature; 15° misorientation boundary definition; grain size by linear intercept method",
+      "purpose": "Determine phase distribution and grain size as a function of alloying content",
+      "key_findings": "Al-6 steel shows only austenite (no BCC ferrite), average austenite grain size 34.2 ± 1.1 μm, twin boundary fraction f_Tw = 45.3 %."
+    },
+    {
+      "characterization_id": "char_al6_tem",
+      "microstructure_id": "micro_al6_fcc_austenite",
+      "technique": "Transmission electron microscopy (TEM) - dark field imaging with SAED",
+      "instrument_or_setup": "TEM Tecnai G2 F20 S-TWIN, Thermo Fisher Scientific, 200 kV",
+      "measurement_conditions": "Thin foils prepared by twin-jet electro-polishing in 10% perchloric acid + 90% ethanol at 20 V and -20 °C; dark-field images/SAED taken along [001]γ",
+      "purpose": "Characterize κ-carbide precipitation in the austenite matrix",
+      "key_findings": "No κ-carbides present in the Fe30Mn6Al1C (Al-6) steel; D_κ-carbides = 0."
+    },
+    {
+      "characterization_id": "char_al6_tensile",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "MTS tensile machine",
+      "measurement_conditions": "Initial strain rate 1.1×10^-3 s^-1 at ambient temperature; round specimen gauge length 25 mm, diameter 5 mm",
+      "purpose": "Obtain engineering stress-strain response and strain hardening rates",
+      "key_findings": "Al-6: YS 433 ± 5 MPa, UTS 852 ± 1 MPa, UE 72 ± 0 %, A 73.5 ± 1 %."
+    },
+    {
+      "characterization_id": "char_al6_charpy",
+      "microstructure_id": null,
+      "technique": "Charpy impact testing",
+      "instrument_or_setup": "MTS impact tester (500 J capacity)",
+      "measurement_conditions": "Test temperature -40 °C; V-notch perpendicular to rod axis",
+      "purpose": "Measure impact toughness",
+      "key_findings": "Al-6: Akv(-40 °C) = 354 ± 16 J, the highest of all designed compositions."
+    },
+    {
+      "characterization_id": "char_al6_density",
+      "microstructure_id": null,
+      "technique": "Density measurement (Archimedes drainage method)",
+      "instrument_or_setup": "Archimedes drainage method",
+      "measurement_conditions": null,
+      "purpose": "Measure the mass density of the fabricated steel",
+      "key_findings": "Al-6 density = 7.12 g/cm³."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_al6_density_model",
+      "simulation_method": "Linear least-squares regression of measured density vs alloying content",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Eqn. (3) gives 6.6 g/cm³ for Fe30Mn11Al1.0C, matching the experimental Table 1 value.",
+      "analytical_models": [
+        {
+          "model_name": "Density as a function of C, Mn, Al content",
+          "equation_role": "Predict alloy density from alloying content (mass%)",
+          "parameters": [
+            {
+              "name": "ρ (intercept)",
+              "value": "8.10",
+              "unit": "g/cm³"
+            },
+            {
+              "name": "C coefficient",
+              "value": "-0.102",
+              "unit": "g/cm³ per mass% C"
+            },
+            {
+              "name": "Al coefficient",
+              "value": "-0.10",
+              "unit": "g/cm³ per mass% Al"
+            },
+            {
+              "name": "Mn coefficient",
+              "value": "-0.01",
+              "unit": "g/cm³ per mass% Mn"
+            }
+          ],
+          "model_note": "ρ = 8.10 − 0.102C − 0.10Al − 0.01Mn (mass%), Eqn. (3). General to the alloy series including Al-6."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_al6_true_strength",
+      "simulation_method": "Analytical true-stress conversion from engineering stress-strain data",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Ultimate true strength / fracture true strength",
+          "equation_role": "Compute maximum true stress (σ_TS) and fracture strength (σ_FS) from tensile data",
+          "parameters": [
+            {
+              "name": "σ_TS / σ_FS",
+              "value": "1410 / 2113",
+              "unit": "MPa (values for Al-6)"
+            }
+          ],
+          "model_note": "σ_TS = σ_UTS(1+UE); σ_FS = σ_EF/(1−A), Eqns. (1) and (2). Computed values for Al-6: σ_TS = 1410 MPa, σ_FS = 2113 MPa."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Measured chemical composition of the Al-6 (Fe30Mn6Al1C) steel: C 0.99, Mn 29.48, Al 5.98, Fe Bal. (mass%), and measured density 7.12 g/cm³ (Table 1), the highest density/lowest Al member of the Fe30Mn(x)Al1C series.",
+    "For Al-6, the maximum true stress just before necking (σ_TS) is 1410 MPa and the fracture strength (σ_FS) is 2113 MPa (Table 2).",
+    "In addition to the Table 3 value of 34.2 ± 1.1 μm, the text separately reports an austenite grain size of 33.4 μm for the 6% Al steel (not shown in Fig. 5).",
+    "The Fe1C30Mn6Al (Al-6) alloy does not contain κ-carbides, and its yield strength (433 MPa) and impact toughness (354 J) are the lowest-strength/highest-toughness endpoints of the Al-alloyed series.",
+    "Work hardening rate of the 6% Al steel shows a maximum of around 2100 MPa; the work hardening rate increases with decreasing Al content (Fig. 8(c))."
+  ]
+}

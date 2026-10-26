@@ -1,0 +1,240 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-6al-0.6c-0.15si__as-forged",
+      "paper_id": "10.1016_j.jmrt.2024.10.063",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_id": "proc_as-forged",
+      "sample_label": "as-forged",
+      "aliases": [
+        "initial steel",
+        "initial as-forged steel",
+        "forged steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_melting_casting",
+      "sequence": "1",
+      "type": "melting and casting",
+      "method": "vacuum induction melting and casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The experimental steel was melted and cast in a 50 kg vacuum induction furnace and then air cooled to RT."
+    },
+    {
+      "processing_step_id": "step_2_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1250",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The ingot was reheated to 1250 °C and held for 2 h for homogenization."
+    },
+    {
+      "processing_step_id": "step_3_forging",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "forging",
+      "temperature": "starting 1100, finishing 950",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The ingot was forged into round bars with a diameter of 60 mm; the starting and finishing forging temperatures were 1100 and 950 °C, respectively."
+    },
+    {
+      "processing_step_id": "step_4_furnace_cooling",
+      "sequence": "4",
+      "type": "cooling",
+      "method": "furnace cooling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "furnace",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Followed by cooling to RT in the furnace (furnace cooled)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_initial_asforged",
+      "overall_structure": "Initial as-forged microstructure consists of equiaxed grains with a fully austenitic (single-phase fcc) constituent; EBSD phase map shows a single indexed phase and XRD shows only γ reflections.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_initial_asforged",
+          "region": "bulk of the as-forged bar",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": "100% (fully austenitic constituent)",
+              "morphology": "equiaxed grains",
+              "grain_size": "roughly 10-50 µm",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~10-50 µm",
+              "unit": "µm"
+            },
+            "grain_size_distribution": "equiaxed, roughly 10-50 µm",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_physical_asforged",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Density estimated by Kim et al. equation (1) and measured experimentally."
+      },
+      "mechanical": null,
+      "physical": {
+        "density": {
+          "value": "7.114 g/cm3 (measured); 7.078 g/cm3 (estimated)",
+          "unit": "g/cm3"
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_ebsd_initial",
+      "microstructure_id": "micro_initial_asforged",
+      "technique": "Electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "Apreo S HiVac scanning electron microscope (SEM)",
+      "measurement_conditions": "EBSD step size 0.5 µm (for deformed-microstructure analyses); initial IPF and phase maps with 50 µm scale bars",
+      "purpose": "Analyze the initial microstructure (IPF map) and phase constitution (phase map) of the as-forged steel",
+      "key_findings": "Fully indexed, equiaxed austenite grain structure (≈10-50 µm); phase map shows a single indexed phase (fully austenitic), no second phase"
+    },
+    {
+      "characterization_id": "char_xrd_initial",
+      "microstructure_id": "micro_initial_asforged",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "SmartLab SE X-ray diffractometer with Cu Kα radiation (λ = 0.154060 nm)",
+      "measurement_conditions": "2θ range 40-90°",
+      "purpose": "Confirm the phase constitution of the initial steel and check for isothermal martensite after holding at -196 °C",
+      "key_findings": "Only four γ reflections present: γ(111) (~43°), γ(200) (~50°), γ(220) (~74°), γ(311) (~90°); no extra peaks, confirming fully austenitic structure with no isothermal martensite formed at -196 °C"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_sfe_calc",
+      "simulation_method": "Thermodynamic (subregular-solution) calculation of stacking fault energy (SFE)",
+      "software_used": null,
+      "potential_model_or_database": "Thermodynamic parameter expressions/values of Ref. [6] (Table 1): ΔG_i^(γ→ε) terms in T, X_Mn, X_C",
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "SFE values (32, 40, 61 mJ/m2 for -196 °C, -77 °C and RT) are used to rationalize the observed deformation mechanisms (mechanical twinning at -196 °C, planar glide/microbands elsewhere)",
+      "analytical_models": [
+        {
+          "model_name": "SFE = 2ρ_A ΔG^(γ→ε) + 2σ^(γ/ε)",
+          "equation_role": "Stacking fault energy estimation (equation 2)",
+          "parameters": [
+            {
+              "name": "σ^(γ/ε) (surface energy of γ/ε interface)",
+              "value": "15",
+              "unit": "mJ/m2"
+            },
+            {
+              "name": "a_γ (lattice parameter of austenite)",
+              "value": "0.36757",
+              "unit": "nm"
+            },
+            {
+              "name": "ρ_A (molar atomic density on {111})",
+              "value": "(4/√3)·(1/(N·a_γ^2))",
+              "unit": null
+            },
+            {
+              "name": "estimated SFE at -196 °C",
+              "value": "32",
+              "unit": "mJ/m2"
+            },
+            {
+              "name": "estimated SFE at -77 °C",
+              "value": "40",
+              "unit": "mJ/m2"
+            },
+            {
+              "name": "estimated SFE at RT",
+              "value": "61",
+              "unit": "mJ/m2"
+            }
+          ],
+          "model_note": "ΔG^(γ→ε) computed via equation (4) summing elemental and interaction free-energy terms and the FeMnAl/C term; a_γ = 0.36757 nm from XRD."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_density_kim",
+      "simulation_method": "Empirical density estimation from chemical composition",
+      "software_used": null,
+      "potential_model_or_database": "Kim et al. density equation (Ref. [19])",
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Estimated density 7.078 g/cm3 vs measured 7.114 g/cm3",
+      "analytical_models": [
+        {
+          "model_name": "ρ_γ = 8.10 - 0.101(Al%) - 0.41(C%) - 0.0085(Mn%)",
+          "equation_role": "Estimate austenite density",
+          "parameters": [
+            {
+              "name": "estimated density",
+              "value": "7.078",
+              "unit": "g/cm3"
+            },
+            {
+              "name": "measured density",
+              "value": "7.114",
+              "unit": "g/cm3"
+            }
+          ],
+          "model_note": "Composition terms are in wt.%."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The initial as-forged steel is fully austenitic (single phase); no isothermal martensite forms after holding at -196 °C for 30 min, indicating a very stable austenite (XRD only shows γ reflections).",
+    "The austenite lattice parameter a_γ was calculated to be 0.36757 nm based on XRD analysis.",
+    "The density of the experimental as-forged steel estimated by the Kim et al. equation is 7.078 g/cm3 while the measured density is 7.114 g/cm3.",
+    "A representative sample of the as-forged steel was held in liquid nitrogen for 30 min and then analyzed by XRD (low-temperature holding specimen derived from this as-forged steel).",
+    "The as-forged state is the common precursor (基态/初始状态) for the subsequent tensile specimens (tested at -196 °C, -77 °C and RT), Charpy impact specimens (tested at -196 °C, -77 °C and RT) and the low-temperature-holding specimen; those deformed/tested states are treated as separate specimens and their data are not attributed to this as-forged sample."
+  ]
+}

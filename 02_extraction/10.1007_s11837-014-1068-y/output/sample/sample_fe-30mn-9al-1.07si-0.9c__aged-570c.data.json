@@ -1,0 +1,364 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-1.07si-0.9c__aged-570c",
+      "paper_id": "10.1007_s11837-014-1068-y",
+      "alloy_id": "alloy_fe-30mn-9al-1.07si-0.9c",
+      "process_id": "proc_aged-570c",
+      "sample_label": "1.01% Si aged at 570°C",
+      "aliases": [
+        "1.01% Si, 0.006% P aged 4 h/10 h at 570°C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_calcium_treatment",
+      "sequence": "1",
+      "type": "melt treatment",
+      "method": "calcium treatment",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "This sample belongs to the 'Calcium treated only' melt-practice group in Table II (calcium treatment without Ar stirring)."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050°C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Parent process proc_st-1050c-2h; solution treatment produces a fully austenitic matrix."
+    },
+    {
+      "processing_step_id": "step_aging_570c_4h",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "570°C",
+      "temperature_unit": "°C",
+      "duration": "4 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Age hardening at 570°C for κ-carbide precipitation."
+    },
+    {
+      "processing_step_id": "step_aging_570c_10h",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "570°C",
+      "temperature_unit": "°C",
+      "duration": "10 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Alternative aging duration (10 h vs 4 h) at 570°C for κ-carbide precipitation."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "Fully austenitic matrix with coherent nanosized κ-carbide precipitates (age-hardened condition)",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": "bulk (whole sample)",
+          "related_sequence": "3,4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide (j-carbide), (Fe,Mn)3AlCx",
+              "crystal_structure": "E2₁ cubic perovskite",
+              "volume_fraction": null,
+              "morphology": "nanosized coherent precipitates",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "on the order of millimeters (as-cast)",
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_kappa_1",
+              "type": "κ-carbide",
+              "size": {
+                "value": "nanosized",
+                "unit": null
+              },
+              "distribution": "homogeneous in austenitic matrix",
+              "coherency": "coherent"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "interface_1",
+          "microstructure_id": "micro_1",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "κ-carbide",
+          "coherence": "coherent"
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": "Planar slip associated with shearing of κ-carbides, lowering work-hardening rates",
+      "phase_evolution": "Coherent nanosized κ-carbide precipitates homogeneously in austenite during aging; cube-on-cube orientation relationship: ⟨100⟩κ // ⟨100⟩γ and {001}κ // {001}γ.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_aged_570c_4h",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "25.4-mm (1-in.) gage length",
+        "test_standard": null,
+        "other_conditions": "Uncertainty represents one standard deviation for test sample n>2; hardness Brinell (3000 kg) converted from Rockwell B and C scale measurements."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "666 ± 37 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 37 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "757 ± 27 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 27 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "30.4 ± 16 %",
+              "unit": "%",
+              "uncertainty": "± 16 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "311 ± 7",
+            "scale": "Brinell (BHN)",
+            "unit": "BHN",
+            "uncertainty": "± 7"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_aged_570c_10h",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "25.4-mm (1-in.) gage length",
+        "test_standard": null,
+        "other_conditions": "Uncertainty represents one standard deviation for test sample n>2; hardness Brinell (3000 kg) converted from Rockwell B and C scale measurements."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "804 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "877 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "15.7 %",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "340 ± 2",
+            "scale": "Brinell (BHN)",
+            "unit": "BHN",
+            "uncertainty": "± 2"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_1",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "SAE 4130 cast steel",
+        "benchmark_process_id": "quenched and tempered",
+        "benchmark_sample_id": null,
+        "comparison_metric": "tensile properties",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Tensile testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "25.4-mm (1-in.) gage length for elongation; 0.2% offset yield strength",
+      "purpose": "Measure 0.2% offset yield strength, ultimate tensile strength, and percent elongation of the aged sample",
+      "key_findings": "Aged 4 h at 570°C: 666 ± 37 MPa YS, 757 ± 27 MPa UTS, 30.4 ± 16% elongation; aged 10 h: 804 MPa YS, 877 MPa UTS, 15.7% elongation"
+    },
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": null,
+      "technique": "Brinell hardness",
+      "instrument_or_setup": "3000 kg load",
+      "measurement_conditions": "Brinell hardness (3000 kg), converted from Rockwell B and C scale measurements",
+      "purpose": "Measure hardness of the aged sample",
+      "key_findings": "311 ± 7 BHN after 4 h at 570°C; 340 ± 2 BHN after 10 h at 570°C"
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Measured chemistry of this sample (Table I, wt.%, row for Si 1.01/P 0.006): Si 1.01, C 0.89, Mn 30.20, P 0.006, S 0.001, Mo 0.31, Al 8.85, Cu – (b0012, b0013).",
+    "Melt practice: this sample belongs to the 'Calcium treated only' group in Table II (calcium treatment without Ar stirring), distinct from the 'Calcium treated with Ar stirring' and 'No calcium treatment' groups (b0038).",
+    "Product form: cast steel (Table II is titled 'Tensile properties cast Fe-30Mn-9Al-XSi-0.9C steels with different melt practices') (b0036)."
+  ]
+}

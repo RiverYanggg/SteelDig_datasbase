@@ -1,0 +1,239 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-9al-0.9c__hr-cr-1173k",
+      "paper_id": "10.1016_j.msea.2022.144324",
+      "alloy_id": "alloy_fe-28mn-9al-0.9c",
+      "process_id": "proc_hr-cr-1173k",
+      "sample_label": null,
+      "aliases": [
+        "28Mn0Ni",
+        "HR+CR+1173 K",
+        "28Mn0Ni heat treated at 1173 K"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1423",
+      "temperature_unit": "K",
+      "duration": "2.5 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Sound portion of the 30 kg vacuum-induction-melted ingot was homogenized at 1423 K for 2.5 h."
+    },
+    {
+      "processing_step_id": "step_2_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1323",
+      "temperature_unit": "K",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot rolled at 1323 K; final thickness of hot rolled plate about 13 mm. This condition is referred to as HR. Details reported elsewhere [21]."
+    },
+    {
+      "processing_step_id": "step_3_cold_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": "room temperature",
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "~50%",
+      "processing_steps_notes": "Cold rolled to ~50% reduction in thickness (~6 mm thick sheets) by several passes; the 28Mn0Ni alloy rolled successfully without cracking at room temperature till 50% reduction."
+    },
+    {
+      "processing_step_id": "step_4_heat_treatment_1173k",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "heat treatment (annealing) followed by water quenching",
+      "temperature": "1173",
+      "temperature_unit": "K",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cold rolled sheets were heat treated in the temperature range 873 K–1273 K for 1 h followed by water quenching; for this sample the temperature was 1173 K."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_28mn0ni_hrcr_1173k",
+      "overall_structure": "Fully recrystallized austenite with significant grain growth; single-phase γ (FCC), B2-free; no secondary phase precipitates resolvable after heat treatment at 1173 K.",
+      "number_of_phases": "1",
+      "microstructure_counts": "Recrystallized austenite fraction = 1.0; twin fraction just under 0.6; B2 volume fraction = 0.0 at 1173 K.",
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_28mn0ni_1173k_recrystallized_austenite",
+          "region": "bulk",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "γ (austenite)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~1.0 (fully recrystallized)",
+              "morphology": "equiaxed, coarse grained; very large single-colour domains indicating pronounced grain growth",
+              "grain_size": "~40 μm"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~40",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "error bar spanning roughly 30–50 μm",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_28mn0ni_1173k",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "interaction_id": "int_dislocation_twin_28mn0ni_1173k",
+          "microstructure_id": "micro_28mn0ni_1173k_recrystallized_austenite",
+          "interaction_type": "dislocation–annealing twin interaction",
+          "qualitative_or_quantitative_description": "In fully recrystallized and precipitate-free austenite grains of 28Mn0Ni (HR+CR+1173 K), progressive substructure evolution occurred with applied strain: dislocation multiplication → planar slip → dynamic slip band refinement; dislocation-twin interaction (with prior annealing twins) was observed as a dominant strain-hardening mechanism."
+        }
+      ],
+      "slip_behavior": "Planar slip activity followed by dynamic slip band refinement in the fully recrystallized austenite; in 28Mn0Ni (1173 K), homogeneous slip band spacing. Slip band evolution from sparse planar slip (ε~0.02) through slip-band refinement (ε~0.08, 0.30) to dislocation interaction with prior annealing twins.",
+      "phase_evolution": "After heating to 1173 K the 28Mn0Ni alloy reverts to single-phase γ only: κ-carbide/B2 that appeared at 973 K are dissolved; no secondary-phase peaks remain in XRD at 1173 K and no precipitates seen by TEM.",
+      "interface_notes": "No γ/B2 interphase boundaries survive at 1173 K in 28Mn0Ni since the alloy is B2-free in this condition."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_tensile_28mn0ni_hrcr_1173k",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "~3×10^-4 s^-1",
+        "specimen_geometry": "Flat tensile specimens with a gauge length of 30 mm, width 6 mm and thickness 4–5 mm",
+        "test_standard": "ASTM E8M",
+        "other_conditions": "Tensile tests were triplicated for each condition and the average of three readings was reported."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "value": "504 ± 5 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 5 MPa",
+              "direction": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "value": "905 ± 8 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 8 MPa",
+              "direction": null
+            }
+          ],
+          "elongation": [
+            {
+              "value": "86 ± 2 %",
+              "unit": "%",
+              "uncertainty": "± 2 %",
+              "direction": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve of 28Mn0Ni-1173 K (solid black) reaches the largest strain (~0.85) at the lowest stress level (~900 MPa); true stress-true strain for 28Mn0Ni-1173 K is the lowest and rises most gradually to ~1500 MPa near 0.55 true strain.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            "0.50"
+          ]
+        }
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_oim_ebsd_28mn0ni_1173k",
+      "microstructure_id": "micro_28mn0ni_1173k_recrystallized_austenite",
+      "technique": "Orientation imaging microscopy (OIM) / EBSD",
+      "instrument_or_setup": "Zeiss Supra 55 FEG-SEM equipped with EDS and Nordley EBSD detectors (Oxford)",
+      "measurement_conditions": "Step size of 120 nm (fine-grained) / 250 nm (coarse-grained) on ~100×100 μm² and ~200×200 μm² areas; three scans per sample; data analyzed with TSL-OIM software",
+      "purpose": "Determine grain orientations, grain size, twin fraction (Σ3 CSL boundaries), recrystallization fraction (KAM/GOS <2° criteria), and phase distribution in the HR+CR+1173 K condition",
+      "key_findings": "28Mn0Ni IPF map at 1173 K shows very large single-colour domains indicating pronounced grain growth; the alloy is single-phase (B2-free). Recrystallization fraction reaches 1.0, recrystallized grain size ~40 μm, twin fraction just under 0.6 and B2 fraction 0.0 at 1173 K."
+    },
+    {
+      "characterization_id": "char_xrd_28mn0ni_1173k",
+      "microstructure_id": "micro_28mn0ni_1173k_recrystallized_austenite",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Rigaku XRD instrument with Co-Kα radiation at 45 kV and 135 mA, beam size ~2 mm",
+      "measurement_conditions": "Selected heat-treated samples (HR+CR+1173 K)",
+      "purpose": "Identify phases present in cold rolled and heat-treated conditions",
+      "key_findings": "The XRD pattern of 28Mn0Ni alloy heat treated at 1173 K showed peaks corresponding to γ-phase only (κ-carbide and B2 peaks present at 973 K disappeared)."
+    },
+    {
+      "characterization_id": "char_tem_28mn0ni_1173k",
+      "microstructure_id": "micro_28mn0ni_1173k_recrystallized_austenite",
+      "technique": "Transmission electron microscopy (TEM) / SAED",
+      "instrument_or_setup": "FEI TECNAI 20T G2 TEM operating at 200 kV equipped with EDAX EDS; specimens twin-jet electropolished in mixed acid at 243 K (−30 °C)",
+      "measurement_conditions": "Selected heat-treated samples (HR+CR+1173 K)",
+      "purpose": "Identify phases, precipitates and deformation substructure not resolved at SEM-EBSD scale",
+      "key_findings": "No secondary phase precipitates were seen in 28Mn0Ni alloy at 1173 K (Fig. 7a and b); large austenite grain with straight angular planar bands and no resolvable second-phase particles."
+    },
+    {
+      "characterization_id": "char_tensile_28mn0ni_1173k",
+      "microstructure_id": "micro_28mn0ni_1173k_recrystallized_austenite",
+      "technique": "Uniaxial tensile testing (and interrupted tensile testing)",
+      "instrument_or_setup": "Walter+Bai AG testing machine",
+      "measurement_conditions": "Room temperature, constant cross-head speed 0.5 mm/min (initial strain rate ~3×10^-4 s^-1); gauge length 30 mm, width 6 mm, thickness 4–5 mm; ASTM E8M",
+      "purpose": "Evaluate strength and ductility of the chosen alloys in different processing conditions",
+      "key_findings": "28Mn0Ni in HR+CR+1173 K: YS 504 ± 5 MPa, UTS 905 ± 8 MPa, TE 86 ± 2 %, n = 0.50 — highest ductility and strain hardening among the tested conditions."
+    },
+    {
+      "characterization_id": "char_hardness_28mn0ni_1173k",
+      "microstructure_id": null,
+      "technique": "Vickers bulk hardness testing",
+      "instrument_or_setup": "AFFRI Vickers hardness tester, peak load 30 kg (~300 N), dwell time 15 s",
+      "measurement_conditions": "Bulk hardness as per ASTM E-140-02; averaged over ten measurements",
+      "purpose": "Evaluate hardness variation with degree of cold work and heat treatment temperature",
+      "key_findings": "28Mn0Ni hardness decreases monotonically with heat treatment temperature and is lower than the Ni-containing alloys at every temperature; the drop in hardness with temperature was most prominent in the Ni-free alloy, falling to below 200 VHN at 1273 K."
+    },
+    {
+      "characterization_id": "char_sem_fractography_28mn0ni_1173k",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy fractography (and post-tensile deformed microstructure)",
+      "instrument_or_setup": "Zeiss EVO 18 SEM",
+      "measurement_conditions": "Post-tensile fractured specimens",
+      "purpose": "Understand fracture mode of failed tensile specimens",
+      "key_findings": "Fractography of 28Mn0Ni tensile specimens (HR+CR+1023 K example reported) exhibited dimple morphology, indicating ductile failure; consistent with the observed high ductility."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "For 28Mn0Ni (Fe–28Mn–9Al-0.9C) in HR+CR+1173 K, the alloy is fully recrystallized with significant grain growth (recrystallized austenite grain size ~40 μm, error bar ~30–50 μm), recrystallization fraction = 1.0, twin fraction just under 0.6, and secondary B2 phase volume fraction = 0.0 (Fig. 5).",
+    "Vickers hardness of 28Mn0Ni after 1173 K heat treatment is lower than the Ni-containing alloys at the same temperature and shows the most prominent drop with temperature among the three alloys (exact value at 1173 K not reported numerically in the text/figure description).",
+    "The 28Mn0Ni alloy in HR+CR+1173 K reached the best strength-ductility combination (YS ~500 MPa, UTS ~1000 MPa, TE ~86%) consistent with prior annealing studies in the single-phase region; the processing temperature window for 28Mn0Ni was inferred to be around 973 K, not 1173 K.",
+    "High strain hardening ability of the fully recrystallized 28Mn0Ni (HR+CR+1173 K) is associated with planar slip activity followed by dynamic slip band refinement (and dislocation-twin interaction with prior annealing twins) with a homogeneous slip band spacing.",
+    "In HR+CR condition, 28Mn0Ni exhibited YS 1350 ± 10 MPa, UTS 1500 ± 10 MPa, TE 10 ± 0.4 % (no n value), showing cold rolling gives high strength/low ductility before the 1173 K heat treatment.",
+    "28Mn0Ni in HR condition had an initial hardness of ~256 ± 5 VHN; hardness saturated to around 450 VHN at 50% cold reduction in all three alloys."
+  ]
+}

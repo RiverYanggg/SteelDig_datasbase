@@ -1,0 +1,21 @@
+# SteelDig 材料知识库 —— Conda 环境（与 06_db/.venv 等价）
+#
+#   conda env create -f environment.yml
+#   conda activate steeldig
+#   python -m steeldig_db migrate
+#   python -m steeldig_db ingest --all
+#
+# 说明：PostgreSQL 与 pgvector 由 docker-compose 提供（镜像 pgvector/pgvector:pg16），
+# 这里的 Python 环境只承担 ETL / API / 测试。
+name: steeldig
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - -e ./etl
+      - -e ./api
+      - fastembed>=0.3
+      - pytest>=8
+      - httpx>=0.27

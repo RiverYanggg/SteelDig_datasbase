@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}检索{% endblock %}
+
+{% block content %}
+<div class="page-head">
+  <div><h1>检索</h1>
+    <p>全文 + 模糊 + 语义三路召回，RRF 融合{% if q %} · 查询「{{ q }}」{% endif %}</p></div>
+  <div class="spacer"></div>
+  {% if q %}<span class="badge {{ 'green' if vec_used else 'ghost' }}">{{ '语义已启用' if vec_used else '仅全文+模糊' }}</span>{% endif %}
+</div>
+
+<form method="get" action="/search" style="display:flex;gap:8px;margin-bottom:16px">
+  <input name="q" value="{{ q or '' }}" placeholder="例如：κ-碳化物 析出 强化 / low density steel yield strength"
+         style="flex:1;height:40px;border:1px solid var(--border-strong);border-radius:10px;padding:0 14px;font-size:14px">
+  <button class="chip on" style="height:40px;padding:0 20px;font-size:13.5px">检索</button>
+</form>
+
+<div class="chips" style="margin-bottom:16px">
+  <a class="chip {{ 'on' if not dtype }}" href="/search?q={{ q }}">全部<span class="n">{{ counts | sum(attribute='n') }}</span></a>
+  {% for c in counts %}
+  <a class="chip {{ 'on' if dtype == c.doc_type }}" href="/search?q={{ q }}&type={{ c.doc_type }}">
+    {{ {'paper':'文献','wiki':'样品词条','figure':'图','table':'表','equation':'公式','finding':'未归类发现'}.get(c.doc_type, c.doc_type) }}
+    <span class="n">{{ c.n }}</span></a>
+  {% endfor %}
+</div>
+
+<div class="card" style="padding:6px 20px">
+  {% if not q %}
+    <div class="empty"><b>输入关键词开始检索</b>中文会先经 jieba 分词，再走 PG 全文索引</div>
+  {% elif items %}
+    {% for it in items %}
+    <div class="result">
+      <div class="meta" style="margin-bottom:4px">
+        <span class="badge blue">{{ {'paper':'文献','wiki':'样品词条','figure':'图','table':'表','equation':'公式','finding':'未归类发现'}.get(it.doc_type, it.doc_type) }}</span>
+        {% if it.paper_id %}<a href="/papers/{{ it.paper_id }}" class="mono" style="font-size:11.5px">{{ it.paper_id }}</a>{% endif %}
+        <span class="score">score {{ '%.4f' % it.score }}</span>
+      </div>
+      <h4>
+        {% if it.doc_type == 'wiki' and it.sample_id %}
+          <a href="/samples/{{ it.paper_id }}/{{ it.sample_id }}">{{ it.title or it.sample_id }}</a>
+        {% elif it.doc_type in ('figure','table','equation') %}
+          <a href="/papers/{{ it.paper_id }}">{{ it.title or it.ref_id }}</a>
+        {% else %}
+          <a href="/papers/{{ it.paper_id }}">{{ it.title or it.paper_id }}</a>
+        {% endif %}
+      </h4>
+      <div class="snip">{{ it.snippet }}</div>
+      {% if it.signals %}
+      <div class="chips" style="margin-top:6px">
+        {% for k, v in it.signals.items() %}
+          <span class="badge ghost">{{ {'text':'全文','fuzzy':'模糊','vector':'语义'}.get(k, k) }} #{{ v | round(0) | int }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  {% else %}
+    <div class="empty"><b>没有命中</b>换个说法，或降低关键词数量</div>
+  {% endif %}
+</div>
+{% endblock %}

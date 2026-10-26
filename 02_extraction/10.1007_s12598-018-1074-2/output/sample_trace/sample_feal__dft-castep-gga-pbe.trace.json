@@ -1,0 +1,908 @@
+[
+  {
+    "path": "$.processing_steps[0]",
+    "reason": "The only process/state identity is the DFT first-principles calculation protocol applied uniformly to all Fe1-xMnxAl structures.",
+    "block_id": [
+      "b0010",
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.processing_steps[0].sequence",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.processing_steps[0].type",
+    "reason": "The sample is defined only by the DFT calculation protocol (no experimental processing).",
+    "block_id": [
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.processing_steps[0].method",
+    "reason": "Calculation methods section: first-principles calculations implemented in CASTEP with GGA-PBE.",
+    "block_id": [
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.processing_steps[0].processing_steps_notes",
+    "reason": "Describes the DFT optimization/calculation protocol applied to FeAl.",
+    "block_id": [
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0]",
+    "reason": "FeAl crystal structure from the DFT model (cubic Pm-3m B2, 16-atom cell).",
+    "block_id": [
+      "b0011",
+      "figure_001"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].overall_structure",
+    "reason": "The Fe1-xMnxAl system exhibits a cubic supercell structure with space group Pm-3m, with Mn replacing Fe on the FeAl parent; the FeAl model contains 8 Fe and 8 Al spheres.",
+    "block_id": [
+      "b0011",
+      "figure_001"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].number_of_phases",
+    "reason": "FeAl is the single B2 parent phase (no second phase reported for the x=0 end member).",
+    "block_id": [
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0]",
+    "reason": "Single-phase B2 FeAl crystal structure; no defects, precipitates or grain structure reported (single-crystal DFT model).",
+    "block_id": [
+      "b0011",
+      "figure_001"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].related_sequence",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].phases_present[0]",
+    "reason": "FeAl phase identified as B2 cubic Pm-3m with a=0.570 nm (Table 1).",
+    "block_id": [
+      "b0011",
+      "b0021"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].phases_present[0].phase_name",
+    "reason": "FeAl is the B2 cubic parent compound of the Fe1-xMnxAl series.",
+    "block_id": [
+      "b0011",
+      "b0009"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].phases_present[0].crystal_structure",
+    "reason": "Table 1 lists FeAl with cubic lattice parameter a=b=c=0.570 nm.",
+    "block_id": [
+      "b0021",
+      "b0019"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[0]",
+    "reason": "Elastic properties and hardness for FeAl extracted from Table 2 and Section 3.3.",
+    "block_id": [
+      "b0044",
+      "b0049",
+      "b0047"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[0].measurement_conditions",
+    "reason": "Measurement conditions are computational (DFT/VRH) rather than experimental.",
+    "block_id": [
+      "b0034",
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[0].measurement_conditions.other_conditions",
+    "reason": "Elastic moduli were determined by VRH approximation from calculated elastic constants (Eqs. 4-9).",
+    "block_id": [
+      "b0034",
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[0].mechanical",
+    "reason": "Mechanical properties (Young's modulus and hardness) of FeAl from Table 2.",
+    "block_id": [
+      "b0044",
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[0].mechanical.tensile_properties",
+    "reason": "Young's modulus of FeAl from Table 2; tensile yield/UTS/elongation not reported for this DFT study.",
+    "block_id": [
+      "b0044",
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[0].mechanical.tensile_properties.youngs_modulus",
+    "reason": "FeAl has the largest Young's modulus of 296.2 GPa in the Fe1-xMnxAl system (Table 2).",
+    "block_id": [
+      "b0044",
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[0].mechanical.hardness[0]",
+    "reason": "FeAl hardness H_V = 16.5 GPa from Table 2.",
+    "block_id": [
+      "b0047",
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[0].mechanical.hardness[0].value",
+    "reason": "FeAl has the highest Vickers hardness of 16.5 GPa (Table 2).",
+    "block_id": [
+      "b0047",
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[0].mechanical.hardness[0].scale",
+    "reason": "H_V determined by the empirical model (Eq. 10).",
+    "block_id": [
+      "b0046",
+      "b0047"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[0].mechanical.hardness[0].unit",
+    "reason": "Hardness values in Table 2 are in GPa.",
+    "block_id": [
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1]",
+    "reason": "Density, sound velocities and Debye temperature of FeAl from Table 4.",
+    "block_id": [
+      "b0069",
+      "b0075"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1].measurement_conditions",
+    "reason": "Theoretical (DFT) values from Table 4.",
+    "block_id": [
+      "b0068",
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1].measurement_conditions.other_conditions",
+    "reason": "Table 4 lists theoretical density, sound velocities and Debye temperature.",
+    "block_id": [
+      "b0068",
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1].physical",
+    "reason": "Density and thermal (Debye/sound velocity) properties of FeAl from Table 4.",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1].physical.density.value",
+    "reason": "Table 4 lists FeAl density 5935.5 kg·m^-3.",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1].physical.density.unit",
+    "reason": "Density unit in Table 4.",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1].physical.thermal_properties",
+    "reason": "Debye temperature and sound velocities of FeAl from Table 4.",
+    "block_id": [
+      "b0069",
+      "b0075"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1].physical.thermal_properties.Debye_temperature",
+    "reason": "FeAl has the largest Debye temperature of 652.5 K (Table 4).",
+    "block_id": [
+      "b0069",
+      "b0075"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1].physical.thermal_properties.longitudinal_sound_velocity",
+    "reason": "Table 4 FeAl longitudinal sound velocity v_l = 7644.2 m·s^-1.",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1].physical.thermal_properties.transverse_sound_velocity",
+    "reason": "Table 4 FeAl transverse sound velocity v_s = 4492.6 m·s^-1.",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1].physical.thermal_properties.average_sound_velocity",
+    "reason": "Table 4 FeAl average sound velocity v_m = 4979.7 m·s^-1.",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[2]",
+    "reason": "Electronic structure and bonding characteristics of FeAl from DFT DOS/PDOS analysis.",
+    "block_id": [
+      "b0025",
+      "b0028",
+      "b0029"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[2].measurement_conditions",
+    "reason": "Electronic structure analysis performed via spin-polarized DFT DOS/PDOS and electron density maps.",
+    "block_id": [
+      "b0024",
+      "b0025"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[2].measurement_conditions.other_conditions",
+    "reason": "TDOS, PDOS and electron density distribution maps were calculated for electronic structure analysis.",
+    "block_id": [
+      "b0024",
+      "b0025"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[2].physical",
+    "reason": "Electronic and magnetic character of FeAl from DFT DOS/PDOS analysis.",
+    "block_id": [
+      "b0025",
+      "b0028"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[2].physical.electrical_properties.electronic_conductivity",
+    "reason": "All Fe-Mn-Al alloys, including FeAl, have metallic features with nonzero DOS at the Fermi level, giving good electronic conductivity.",
+    "block_id": [
+      "b0025",
+      "b0029"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[2].physical.electrical_properties.band_structure_notes",
+    "reason": "Text explicitly describes FeAl band contributions and hybridization near the Fermi level.",
+    "block_id": [
+      "b0028"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[2].physical.magnetic_properties.magnetic_character",
+    "reason": "Comparison of down and up DOS states shows these alloys have magnetic characteristics due to dissymmetric states.",
+    "block_id": [
+      "b0025"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[0]",
+    "reason": "Comparative conclusions for FeAl relative to the Fe1-xMnxAl series.",
+    "block_id": [
+      "b0022",
+      "b0044",
+      "b0078"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[0].comparative_performance.comparison_metric",
+    "reason": "Abstract, Section 3.1/3.3 and conclusion state FeAl is the most stable and has the highest moduli and hardness.",
+    "block_id": [
+      "b0006",
+      "b0022",
+      "b0044",
+      "b0078"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0]",
+    "reason": "DFT calculation protocol (CASTEP, GGA-PBE) and analytical models applied to FeAl.",
+    "block_id": [
+      "b0010",
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].simulation_method",
+    "reason": "All investigations performed by first-principles calculations based on DFT.",
+    "block_id": [
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].software_used",
+    "reason": "DFT implemented using CASTEP code.",
+    "block_id": [
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].potential_model_or_database",
+    "reason": "Exchange-correlation treated with GGA-PBE; valence-electron/ionic-core interactions described with ultrasoft pseudopotentials.",
+    "block_id": [
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].boundary_and_initial_conditions",
+    "reason": "k-mesh, cutoff and convergence criteria specified in Calculation methods.",
+    "block_id": [
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].validation_against_experiment",
+    "reason": "Text states calculated lattice parameters/energies agree with experimental and calculated values.",
+    "block_id": [
+      "b0019"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[0]",
+    "reason": "Formation enthalpy and cohesive energy computed via Eqs. (1)-(2).",
+    "block_id": [
+      "b0012",
+      "b0014",
+      "b0015"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[0].model_name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[0].equation_role",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[0].parameters[0].name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[0].parameters[0].value",
+    "reason": "Table 1 FeAl cohesive energy.",
+    "block_id": [
+      "b0021"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[0].parameters[0].unit",
+    "reason": "Table 1 unit.",
+    "block_id": [
+      "b0021"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[0].parameters[1].name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[0].parameters[1].value",
+    "reason": "Table 1 FeAl formation enthalpy.",
+    "block_id": [
+      "b0021"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[0].parameters[1].unit",
+    "reason": "Table 1 unit.",
+    "block_id": [
+      "b0021"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[0].model_note",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1]",
+    "reason": "B, G, E and σ computed by VRH approximation (Eqs. 4-9).",
+    "block_id": [
+      "b0034",
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1].model_name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1].equation_role",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1].parameters[0].name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1].parameters[0].value",
+    "reason": "Table 2 FeAl bulk modulus.",
+    "block_id": [
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1].parameters[0].unit",
+    "reason": "Table 2 unit.",
+    "block_id": [
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1].parameters[1].name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1].parameters[1].value",
+    "reason": "Table 2 FeAl shear modulus.",
+    "block_id": [
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1].parameters[1].unit",
+    "reason": "Table 2 unit.",
+    "block_id": [
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1].parameters[2].name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1].parameters[2].value",
+    "reason": "Table 2 FeAl Young's modulus.",
+    "block_id": [
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1].parameters[2].unit",
+    "reason": "Table 2 unit.",
+    "block_id": [
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1].parameters[3].name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1].parameters[3].value",
+    "reason": "Table 2 FeAl Poisson's ratio.",
+    "block_id": [
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1].parameters[3].unit",
+    "reason": "Poisson's ratio is dimensionless.",
+    "block_id": [
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[2]",
+    "reason": "Hardness determined by empirical model Eq. (10).",
+    "block_id": [
+      "b0046",
+      "b0047"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[2].model_name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[2].equation_role",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[2].parameters[0].name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[2].parameters[0].value",
+    "reason": "Table 2 FeAl hardness.",
+    "block_id": [
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[2].parameters[0].unit",
+    "reason": "Table 2 unit.",
+    "block_id": [
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[2].model_note",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3]",
+    "reason": "Anisotropy indices calculated via Eqs. (11)-(14) and listed in Table 3.",
+    "block_id": [
+      "b0054",
+      "b0059",
+      "b0063"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3].model_name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3].equation_role",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3].parameters[0].name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3].parameters[0].value",
+    "reason": "Table 3 FeAl universal anisotropic index.",
+    "block_id": [
+      "b0051"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3].parameters[0].unit",
+    "reason": "Table 3 values dimensionless.",
+    "block_id": [
+      "b0051"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3].parameters[1].name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3].parameters[1].value",
+    "reason": "Table 3 FeAl A_B.",
+    "block_id": [
+      "b0051"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3].parameters[1].unit",
+    "reason": "Table 3 values dimensionless.",
+    "block_id": [
+      "b0051"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3].parameters[2].name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3].parameters[2].value",
+    "reason": "Table 3 FeAl A_G.",
+    "block_id": [
+      "b0051"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3].parameters[2].unit",
+    "reason": "Table 3 values dimensionless.",
+    "block_id": [
+      "b0051"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3].parameters[3].name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3].parameters[3].value",
+    "reason": "Table 3 FeAl shear anisotropic factors.",
+    "block_id": [
+      "b0051"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3].parameters[3].unit",
+    "reason": "Table 3 values dimensionless.",
+    "block_id": [
+      "b0051"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3].model_note",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4]",
+    "reason": "Debye temperature and sound velocities computed via Eqs. (15)-(18).",
+    "block_id": [
+      "b0066",
+      "b0069",
+      "b0075"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].model_name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].equation_role",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].parameters[0].name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].parameters[0].value",
+    "reason": "Table 4 FeAl Debye temperature.",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].parameters[0].unit",
+    "reason": "Table 4 unit.",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].parameters[1].name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].parameters[1].value",
+    "reason": "Table 4 FeAl longitudinal sound velocity.",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].parameters[1].unit",
+    "reason": "Table 4 unit.",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].parameters[2].name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].parameters[2].value",
+    "reason": "Table 4 FeAl transverse sound velocity.",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].parameters[2].unit",
+    "reason": "Table 4 unit.",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].parameters[3].name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].parameters[3].value",
+    "reason": "Table 4 FeAl average sound velocity.",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].parameters[3].unit",
+    "reason": "Table 4 unit.",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].parameters[4].name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].parameters[4].value",
+    "reason": "Table 4 FeAl density.",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].parameters[4].unit",
+    "reason": "Table 4 unit.",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].model_note",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  }
+]

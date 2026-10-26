@@ -1,0 +1,492 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-8mn-3al-1si-0.2c__ia-700c-1h",
+      "paper_id": "10.1016_j.matchemphys.2025.130877",
+      "alloy_id": "alloy_fe-8mn-3al-1si-0.2c",
+      "process_id": "proc_ia-700c-1h",
+      "sample_label": "M2-IA",
+      "aliases": [
+        "M2 intercritically annealed"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_vacuum_arc_melting",
+      "sequence": "1",
+      "type": "melting/casting",
+      "method": "vacuum arc melting followed by 4× remelting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The two steel compositions (M1 and M2) were fabricated using a vacuum arc melting furnace. The melted ingot was remelted 4 times by flipping the ingot before each remelt to ensure complete and uniform melting of the raw materials."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenization of as-cast samples was carried out at 1100 °C for 2 h, followed by water quenching (M2-HQ)."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1100 °C (1100-900 °C)",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air cooling",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "~50 % thickness reduction",
+      "processing_steps_notes": "Samples were hot-rolled at 1100 °C to reduce the thickness by 50 %, followed by air cooling (M2-HR). Table 1 lists ~50 % thickness reduction at 1100-900 °C."
+    },
+    {
+      "processing_step_id": "step_intercritical_annealing",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "intercritical annealing (IA)",
+      "temperature": "700 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Intercritical annealing (IA) was carried out at the selected temperature of 700 °C for 1 h, followed by water quenching. IAT of 700 °C corresponds to ~11 % Mn in austenite for both steels (M2-IA)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_m2-ia",
+      "overall_structure": "Intercritically annealed M2 (Fe-8Mn-3Al-1Si-0.2C) comprises multiple phases similar to the hot-rolled microstructure: α-ferrite and austenite with a negligible amount of martensite; in addition a coarse band-type morphology of δ-ferrite is present due to Si addition.",
+      "number_of_phases": "3 major (α-ferrite, austenite, δ-ferrite) + negligible martensite",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_m2-ia",
+          "region": null,
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "α-ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "blocky/plate-like and fine lath/lamellar regions (SEM, Fig. 6)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": "19 % (XRD quantitative phase analysis; 19.6 % from Fig. 7)",
+              "morphology": "elongated, banded and blocky regions threading between large ferrite grains (EBSD phase map, Fig. 6b)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "coarse band-type morphology",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "martensite (α′)",
+              "crystal_structure": null,
+              "volume_fraction": "negligible",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "M2-IA: ~92 % of grains in the 0.25-0.5 μm bin, ~7 % in the 0.5-1.0 μm bin, and a small ~3 % population near 1.5 μm (Fig. 8b)",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_m2-ia-mn-partitioning",
+      "overall_structure": "Local microstructural heterogeneity in M2-IA arises from elemental partitioning during IA: Mn and C partition from α/δ-ferrite into austenite while Si partitions from austenite into both δ-ferrite and α-ferrite, raising austenite stability above the equilibrium-composition expectation.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_m2-ia",
+          "region": "α/γ and δ/γ interfaces",
+          "related_sequence": "4",
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "intf_m2-ia",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_alpha_gamma",
+          "microstructure_id": "micro_m2-ia",
+          "phase_1_name": "α-ferrite",
+          "phase_2_name": "austenite (γ)",
+          "coherence": null
+        },
+        {
+          "interface_id": "intf_delta_gamma",
+          "microstructure_id": "micro_m2-ia",
+          "phase_1_name": "δ-ferrite",
+          "phase_2_name": "austenite (γ)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "def_int_strain_part",
+          "microstructure_id": "micro_m2-ia",
+          "interaction_type": "strain partitioning (KAM contrast)",
+          "qualitative_or_quantitative_description": "After tensile testing, M2-IA exhibits strain partitioning into two distinct regions: a low-KAM region indicating lower strain, most likely in δ-ferrite regions, and a high-KAM region indicating transformed martensite (Fig. 11f/h)."
+        }
+      ],
+      "slip_behavior": "Finer austenite grains (γf) with higher Mn and C undergo dislocation glide followed by TRIP at higher strain; coarser grains (γc) transform to martensite earlier (Fig. 12).",
+      "phase_evolution": "On heating M2-HR (α-ferrite + martensitic-austenitic α′+γ + δ-ferrite) to the IAT, unstable martensite first transforms to austenite, then the two types of ferrite may also transform to approach the equilibrium ~30 % austenite; the observed austenite fraction (~19 %) is lower than the equilibrium prediction.",
+      "interface_notes": "Mn concentration profile across the moving α/γ interface during IA at 700 °C: at t=0 flat profiles C_Mn^γ and C_Mn^α/δ; at t=t1 gradients develop between interface and far-field; at t=∞ flat equilibrium steps C_Mn^γ(eq) and C_Mn^α/δ(eq). Mn (and C) partition from ferrite into austenite, Si partitions from austenite to δ-ferrite and α-ferrite (Fig. 9, Fig. 8c)."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_m2-ia-tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": "dog bone-shaped specimen, gauge length 2 mm, thickness 1 mm, width 1 mm (wire-EDM machined)",
+        "test_standard": null,
+        "other_conditions": "Uniaxial tensile test on Tinus-Olsen ST25 universal testing machine with 25 kN load cell"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": null,
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "698 ± 20 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 20 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "59.4 ± 0.6 %",
+              "unit": "%",
+              "uncertainty": "± 0.6 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve for M2-IA (red curve) shown in Fig. 10d, plateaus near 700 MPa ending at ~60 % strain.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "value": "989 MPa",
+              "unit": "MPa",
+              "note": "Value at point B, end of stage-II gradual decline for M2 (IA sample), attributed to deformation-induced martensite transformation (TRIP)."
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        },
+        "physical": {
+          "density": {
+            "value": null,
+            "unit": null
+          },
+          "thermal_properties": {},
+          "electrical_properties": {},
+          "magnetic_properties": {}
+        },
+        "chemical": {
+          "corrosion_resistance": {},
+          "oxidation_resistance": {}
+        },
+        "radiation_properties": {
+          "void_swelling": null,
+          "irradiation_hardening": null,
+          "helium_embrittlement": null
+        }
+      }
+    },
+    {
+      "property_set_id": "props_m2-ia-austenite",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "XRD quantitative phase analysis; EBSD phase maps before and after tensile test"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": null,
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        },
+        "physical": {
+          "density": {
+            "value": null,
+            "unit": null
+          },
+          "thermal_properties": {},
+          "electrical_properties": {},
+          "magnetic_properties": {}
+        },
+        "chemical": {
+          "corrosion_resistance": {},
+          "oxidation_resistance": {}
+        },
+        "radiation_properties": {
+          "void_swelling": null,
+          "irradiation_hardening": null,
+          "helium_embrittlement": null
+        }
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_m2-ia-vs-m1",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-8mn-3al-0.2c (M1, Si-free)",
+        "benchmark_process_id": "proc_ia-700c-1h",
+        "benchmark_sample_id": null,
+        "comparison_metric": "PSE (product of strength and elongation) and retained austenite fraction: M2-IA PSE = 41 GPa% and 19 % retained austenite vs M1-IA PSE = 61 GPa% and 45 % retained austenite",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_sem",
+      "microstructure_id": "micro_m2-ia",
+      "technique": "Scanning electron microscopy (SEM) in secondary electron (SE) mode",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Observe the multiphase microstructure of M2-IA (α-ferrite, austenite, δ-ferrite bands, negligible martensite)",
+      "key_findings": "M2-IA shows a multi-phase α+α′+γ+δ microstructure with retained austenite elongated in bands; negligible martensite; δ-ferrite bands present (Fig. 6a1-a4)."
+    },
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_m2-ia",
+      "technique": "Electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "post-processing with TSL OIM v8.5; National Facility of Texture and OIM at IIT Bombay",
+      "measurement_conditions": null,
+      "purpose": "Measure crystal orientation and obtain phase maps and Kernel Average Misorientation (KAM) maps",
+      "key_findings": "M2-IA phase map shows α-ferrite, austenite and coarse band-type δ-ferrite (Fig. 6b). After tensile testing, austenite fraction drops to 3.2 % (from 19 %); KAM increases markedly, with strain partitioning into low-KAM (δ-ferrite) and high-KAM (transformed martensite) regions."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_m2-ia",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "PANalytical Empyrean instrument with Cu-Kα radiation (λ = 1.542 Å)",
+      "measurement_conditions": "2θ range 40-115°, step size 0.03°",
+      "purpose": "Phase identification and quantitative austenite fraction determination",
+      "key_findings": "M2-IA contains fcc (γ) and bcc (α) reflections; austenite fraction fγ = 19.6 % (Fig. 7)."
+    },
+    {
+      "characterization_id": "char_om",
+      "microstructure_id": "micro_m2-ia",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Samples etched with 2 % Nital (2 ml nitric acid + 98 ml ethanol) for 10-15 s",
+      "purpose": "Obtain microstructural images of samples",
+      "key_findings": "Optical micrograph of M2-IA shows alternated light/dark bands (Fig. 3)."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "Tinus-Olsen ST25 universal testing machine (UTM) with 25 kN load cell",
+      "measurement_conditions": "Room temperature, strain rate 10^-3 s^-1; dog-bone specimen gauge length 2 mm, thickness 1 mm, width 1 mm",
+      "purpose": "Measure mechanical properties (strength, elongation) of M2-IA",
+      "key_findings": "M2-IA: UTS 698 ± 20 MPa, TE 59.4 ± 0.6 %, PSE 41 GPa%; ductile dimple-rupture fracture."
+    },
+    {
+      "characterization_id": "char_fractography",
+      "microstructure_id": null,
+      "technique": "SEM fractography",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Study fracture behavior of tensile-fractured samples",
+      "key_findings": "M2-IA shows dense fine dimples labelled 'Dimple Rupture' (ductile), confirming ductile nature (Fig. 10f)."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermocalc",
+      "simulation_method": "CALPHAD thermodynamic equilibrium calculations",
+      "software_used": "ThermoCalc",
+      "potential_model_or_database": "TCFE9 steel database",
+      "boundary_and_initial_conditions": "Fe-8Mn-3Al-1Si-0.2C system; lower critical temperature taken as 600 °C; equilibrium phase fractions and austenite composition as a function of temperature (600-1000 °C).",
+      "validation_against_experiment": "Predicted δ-ferrite presence in the ICT range for 3Al-1Si was confirmed by SEM/EBSD observation of δ-ferrite in M2 samples.",
+      "analytical_models": [
+        {
+          "model_name": "Equilibrium austenite fraction (γeq) prediction",
+          "equation_role": "Select IAT and predict austenite fraction for M2",
+          "parameters": [
+            {
+              "name": "IAT",
+              "value": "700",
+              "unit": "°C"
+            },
+            {
+              "name": "predicted equilibrium austenite fraction at IAT for M2",
+              "value": "~30",
+              "unit": "%"
+            }
+          ],
+          "model_note": "M2 ICT range 600-1000 °C; predicted austenite fraction at 700 °C ~30 % (just above the 30 % gridline, Fig. 2a)."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_ms_km",
+      "simulation_method": "Semi-empirical Ms temperature calculation and Koistinen-Marburger model for retained austenite",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Austenite composition (wt.%) at IAT for M2; RT reference.",
+      "validation_against_experiment": "Calculated retained austenite fraction at RT for M2-IA (~11 %) is lower than the observed (~19 %), indicating additional local-heterogeneity factors.",
+      "analytical_models": [
+        {
+          "model_name": "Ms temperature equation",
+          "equation_role": "Predict martensite start temperature",
+          "parameters": [
+            {
+              "name": "Ms(°C) = 539 - 423C - 30.4Mn - 7.5Si + 30Al",
+              "value": null,
+              "unit": null
+            }
+          ],
+          "model_note": "Elemental concentrations taken for the austenite phase at hot-rolling/IAT temperatures in wt.%. M2-HR Ms = 296 °C."
+        },
+        {
+          "model_name": "Koistinen-Marburger model",
+          "equation_role": "Calculate fraction of austenite retained at room temperature",
+          "parameters": [
+            {
+              "name": "(1 - f) = exp{-0.011[Ms - T]}",
+              "value": null,
+              "unit": null
+            }
+          ],
+          "model_note": "Applied for M2 steel; above the critical IAT the predicted equilibrium austenite fraction is not fully retained at RT."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_trip_kinetics",
+      "simulation_method": "Exponential transformation-kinetics fitting of retained austenite vs true strain",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Austenite volume fraction before tensile test (A) and after fracture; true strain ε.",
+      "validation_against_experiment": "Fitting parameter B = 3.8 for M2-IA; measured austenite fractions before (19 %) and after (3.2 %) tensile testing used to fit the model.",
+      "analytical_models": [
+        {
+          "model_name": "Transformation kinetics equation",
+          "equation_role": "Model retained austenite fraction as a function of true strain (TRIP kinetics)",
+          "parameters": [
+            {
+              "name": "A (austenite fraction before tensile test, M2-IA)",
+              "value": "19.6",
+              "unit": "%"
+            },
+            {
+              "name": "B (fitting parameter / mechanical stability, M2)",
+              "value": "3.8",
+              "unit": null
+            }
+          ],
+          "model_note": "f_gamma = A × e^(-Bε); f_gamma = 19.6·e^(-3.8·ε) for M2-IA. Lower B indicates higher mechanical stability and slower TRIP."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "PSE (product of strength and elongation) for M2-IA is 41 GPa%, compared to 61 GPa% for the Si-free M1-IA; the higher PSE of M1 is attributed to its higher retained austenite fraction and finer grains resulting in slower TRIP (b0006, b0061, b0076, b0083).",
+    "The stacking fault energy (SFE) of both steels is below 18 mJ/m^2, a critical value below which the alloys are expected to show a TRIP effect; transformation of austenite to martensite is expected during deformation (b0061).",
+    "The retained austenite fraction in M2-IA decreases from 19 % before the tensile test to 3.2 % after fracture, demonstrating the occurrence of the TRIP effect during deformation (b0067, figure_011).",
+    "Despite a lower retained austenite fraction, the presence of δ-ferrite in M2 enhances partitioning of Mn and C into austenite at IAT, making austenite more stable; as a result both steels possess a favourable combination of strength and ductility (b0073).",
+    "The calculated retained austenite fraction at RT for M2-IA (~11 %, from Ms + Koistinen-Marburger model) is lower than the observed fraction (~19 %); this discrepancy is attributed to local microstructural heterogeneities: preferential segregation of elements (Mn from α-ferrite and δ-ferrite to austenite, Si from austenite to δ-ferrite) and a high fraction of finer grains raising austenite stability above the equilibrium-composition expectation (b0055).",
+    "The fraction of finer grains is relatively lower for M2-IA than M1-IA, so the extent of austenite stability would be lower in M2-IA; this explains the relatively smaller difference between observed and calculated austenite fractions for M2-IA compared to M1-IA (b0055).",
+    "M2-IA exhibits a ductile dimple-rupture fracture; austenite present absorbs strain energy during deformation by transforming into martensite, forming fine dimples (b0066, figure_010)."
+  ]
+}

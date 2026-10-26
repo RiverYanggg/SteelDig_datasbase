@@ -1,0 +1,332 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30.5mn-8al-1c__aged-650c-6h",
+      "paper_id": "10.1016_j.ijfatigue.2025.109477",
+      "alloy_id": "alloy_fe-30.5mn-8al-1c",
+      "process_id": "proc_aged-650c-6h",
+      "sample_label": "650-6",
+      "aliases": [
+        "650-6 sample"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_solution_treatment",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching to room temperature",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Parent ST condition (proc_st-1050c-1h-wq) from which the 650-6 sample was subsequently aged."
+    },
+    {
+      "processing_step_id": "step_2_aging_650c_6h",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "650",
+      "temperature_unit": "°C",
+      "duration": "6 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Aging of solution-treated samples at 650 °C for 6 h (designated 650-6). Intragranular κ-carbides coarsen to ≈24 nm, accompanied by more pronounced intergranular κ-carbide precipitation."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_650-6",
+      "overall_structure": "Fully austenitic matrix with nanoscale intragranular κ-carbides (≈24 nm) and more pronounced intergranular κ-carbide precipitation at grain boundaries.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_650-6",
+          "region": "austenite grain interiors and grain boundaries",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "austenite matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "intragranular κ-carbide",
+              "crystal_structure": "ordered L1₂ (text shows 'L1-structured')",
+              "volume_fraction": null,
+              "morphology": "nanoscale precipitates, ≈24 nm (equivalent-circle diameter)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "intergranular κ-carbide",
+              "crystal_structure": "ordered L1₂ (text shows 'L1-structured')",
+              "volume_fraction": null,
+              "morphology": "coarse precipitates decorating grain boundaries; more pronounced than in 550-6/600-6",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_intragranular_kappa_650-6",
+              "type": "κ-carbide ((Fe,Mn)3AlC)",
+              "size": {
+                "value": "≈24",
+                "unit": "nm"
+              },
+              "distribution": "uniformly precipitated within austenite grains",
+              "coherency": "coherent"
+            },
+            {
+              "precipitate_id": "ppt_intergranular_kappa_650-6",
+              "type": "κ-carbide ((Fe,Mn)3AlC)",
+              "size": {
+                "value": "coarse (no numeric size reported)",
+                "unit": null
+              },
+              "distribution": "at grain boundaries; more pronounced precipitation",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_650-6",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_gamma_intragranular_kappa",
+          "microstructure_id": "micro_650-6",
+          "phase_1_name": "γ austenite",
+          "phase_2_name": "intragranular κ-carbide",
+          "coherence": "coherent"
+        },
+        {
+          "interface_id": "if_gamma_intergranular_kappa",
+          "microstructure_id": "micro_650-6",
+          "phase_1_name": "γ austenite",
+          "phase_2_name": "intergranular κ-carbide",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_kappa_shearing",
+          "microstructure_id": "micro_650-6",
+          "interaction_type": "dislocation shearing of intragranular κ-carbides",
+          "qualitative_or_quantitative_description": "Repeated dislocation shearing disrupts the ordered κ structure and forms anti-phase boundaries/shear steps, consistent with mechanical dissolution of κ-carbides during cyclic loading."
+        },
+        {
+          "interaction_id": "di_gb_pileup",
+          "microstructure_id": "micro_650-6",
+          "interaction_type": "slip impediment by intergranular κ-carbides",
+          "qualitative_or_quantitative_description": "Coarse intergranular κ precipitates act as strong slip barriers, intensify dislocation pile-ups and local stress concentration, leading to earlier crack nucleation and shortened fatigue life."
+        }
+      ],
+      "slip_behavior": "Planar dislocation slip through glide-plane softening; intragranular κ enhances slip reversibility, but intergranular κ impedes slip transmission across grain boundaries.",
+      "phase_evolution": "Intragranular κ-carbides undergo mechanical dissolution via repeated dislocation shearing during cyclic loading.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_tensile_650-6",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": "flat dog-bone, gauge 5 mm wide × 2.5 mm thick, 15 mm gauge section; tensile axis parallel to rolling direction",
+        "test_standard": null,
+        "other_conditions": "Shimadzu AG-Xplus 250 kN universal testing machine; surfaces mechanically polished and electropolished."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "579 ± 14",
+              "unit": "MPa",
+              "uncertainty": "± 14"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "978 ± 4",
+              "unit": "MPa",
+              "uncertainty": "± 4"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "46.4 ± 1.2 (uniform elongation)",
+              "unit": "%",
+              "uncertainty": "± 1.2"
+            },
+            {
+              "direction": null,
+              "value": "52.7 ± 1.6 (total elongation)",
+              "unit": "%",
+              "uncertainty": "± 1.6"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "650-6 (blue) yields between 600 and 700 MPa, peaks between 900 and 1000 MPa, then drops abruptly, terminating near 52–53% strain.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_fatigue_650-6",
+      "measurement_conditions": {
+        "temperature": "ambient air (room temperature)",
+        "temperature_unit": null,
+        "environment": "ambient air",
+        "strain_rate": null,
+        "specimen_geometry": "flat dog-bone (same dimensions as tensile samples); loading axis parallel to rolling direction",
+        "test_standard": null,
+        "other_conditions": "Stress-controlled tension–tension fatigue; sinusoidal waveform; frequency 20 Hz; stress ratio R = 0.1; Shimadzu EHF-EV050K2A-020-1 servo-hydraulic machine. Basquin fit parameters for 650-6: σ'_f = 1153, b = -0.12, RMSE(log10 Nf) = 0.1139."
+      },
+      "mechanical": {
+        "tensile_properties": null,
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": {
+          "fatigue_limit": "171 MPa",
+          "cycles_to_failure": "10^7 cycles (run-out definition)"
+        },
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_650-6",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "tension–tension cyclic loading (R = 0.1)",
+        "environment": "ambient air"
+      },
+      "lifetime_prediction": {
+        "model_used": "Basquin equation: Δσ/2 = σ'_f (2Nf)^b",
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": "600-6",
+        "comparison_metric": "Fatigue strength (max stress amplitude for 10^7 cycles): 650-6 = 171 MPa vs 600-6 = 175.5 MPa (650-6 second-best among aged samples at low stress amplitudes); at high stress amplitudes 650-6 shows the poorest fatigue life among aged samples.",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_tem_kappa_precip_650-6",
+      "microstructure_id": "micro_650-6",
+      "technique": "TEM (bright-field)",
+      "instrument_or_setup": "JEOL JEM-2100F, 200 kV",
+      "measurement_conditions": "TEM foils ~50 μm thick, twin-jet electropolishing in 8 vol.% perchloric acid in ethanol at 30 V, electrolyte ~ -20 °C",
+      "purpose": "Characterize κ-carbide precipitation in aged samples (550-6, 600-6, 650-6)",
+      "key_findings": "Intragranular κ-carbides ≈24 nm and more pronounced intergranular κ precipitation at grain boundaries in the 650-6 sample."
+    },
+    {
+      "characterization_id": "char_sem_fracture_650-6",
+      "microstructure_id": null,
+      "technique": "SEM",
+      "instrument_or_setup": "JEOL JSM-7800F SEM",
+      "measurement_conditions": "post-fractured fracture surfaces and lateral surfaces; stress amplitudes 180 MPa and 315 MPa",
+      "purpose": "Fracture surface morphology and crack-propagation zone characterization",
+      "key_findings": "fΔ (crack initiation+propagation zone area fraction) = 0.63 at 180 MPa and 0.32 at 315 MPa; fatigue striations present but coarser/less regular than in 550-6/600-6; rapid fracture zone shows mixed dimple + cleavage-facet morphology, indicating reduced ductility."
+    },
+    {
+      "characterization_id": "char_ebsd_crack_path_650-6",
+      "microstructure_id": null,
+      "technique": "EBSD (BC+IPF, KAM, Schmid factor maps)",
+      "instrument_or_setup": "EBSD on SEM, step size 0.8 μm; AZtecCrystal post-processing software",
+      "measurement_conditions": "adjacent to main fatigue cracks; stress amplitude 225 MPa",
+      "purpose": "Analyze crack propagation path and local strain fields",
+      "key_findings": "Crack propagates transgranularly along slip bands with greater tortuosity and microbranching vs ST; localized KAM hot spots at grain boundaries decorated with intergranular κ-carbides indicate intense local strain concentration, consistent with reduced fatigue life."
+    },
+    {
+      "characterization_id": "char_tem_deformation_650-6",
+      "microstructure_id": "micro_650-6",
+      "technique": "TEM (bright-field, HRTEM, IFFT)",
+      "instrument_or_setup": "JEOL JEM-2100F, 200 kV",
+      "measurement_conditions": "post-fractured samples; foils extracted from gauge sections; Δσ/2 = 180 MPa and 315 MPa",
+      "purpose": "Characterize deformation microstructures and dislocation–carbide interactions",
+      "key_findings": "Planar slip bands with lower overall dislocation density than ST; intragranular κ (~24 nm) remains in shearing regime; HRTEM/IFFT shows shear steps and localized contrast (APBs) consistent with mechanical dissolution of κ under cyclic loading; near grain boundaries, coarse intergranular κ blocks slip and produces dislocation pile-ups."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_kappa_strengthening_650-6",
+      "simulation_method": null,
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Precipitation strengthening increment model (shearing regime)",
+          "equation_role": "Interpret κ-carbide strengthening contributions: coherency strain strengthening Δσ_cs, modulus mismatch strengthening Δσ_ms, and order strengthening Δσ_os.",
+          "parameters": [
+            {
+              "name": "K",
+              "value": "2.6",
+              "unit": null
+            },
+            {
+              "name": "m",
+              "value": "0.85",
+              "unit": null
+            }
+          ],
+          "model_note": "For 650-6, intragranular κ-carbides (~24 nm) remain in the shearing regime; Δσ_cs and Δσ_ms increase with precipitate size at fixed f, but severe intergranular precipitation offsets the intragranular benefit."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The reduced tensile strength of the 650-6 sample (YS 579 ± 14 MPa; UTS 978 ± 4 MPa) is attributed to grain boundary weakening caused by serious intergranular κ-carbide precipitation (b0026).",
+    "At high stress amplitudes, the 650-6 sample shows the poorest fatigue life among the aged samples (ranking: 550-6 best, 600-6 intermediate, 650-6 poorest), tracking the increasing severity of intergranular precipitation (b0080)."
+  ]
+}

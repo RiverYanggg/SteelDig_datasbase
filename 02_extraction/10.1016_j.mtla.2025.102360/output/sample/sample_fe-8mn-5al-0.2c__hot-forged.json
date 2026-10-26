@@ -1,0 +1,830 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-8mn-5al-0.2c__hot-forged",
+      "paper_id": "10.1016_j.mtla.2025.102360",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_id": "proc_hot-forged",
+      "sample_label": "hot forged specimen",
+      "aliases": [
+        "hot forged",
+        "forged specimen"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "Cast ingot homogenized at 1100 °C for 2 hr before hot forging.",
+        "block_id": [
+          "b0014"
+        ]
+      },
+      "processing_step_id": "step_homogenization",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "homogenization"
+      },
+      "temperature": {
+        "value": "1100",
+        "source": {
+          "reason": "The cast ingot 'has been homogenized at 1100 °C for 2hr' prior to hot forging.",
+          "block_id": [
+            "b0014"
+          ]
+        }
+      },
+      "temperature_unit": {
+        "value": "°C",
+        "source": {
+          "reason": "Temperature given in °C in the processing description.",
+          "block_id": [
+            "b0014"
+          ]
+        }
+      },
+      "duration": {
+        "value": "2 hr",
+        "source": {
+          "reason": "Homogenization duration is 2hr.",
+          "block_id": [
+            "b0014"
+          ]
+        }
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Homogenization of the cast ingot before hot forging.",
+        "source": {
+          "reason": "Described in the thermomechanical processing route.",
+          "block_id": [
+            "b0014"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "Hot forging step of the developed steel after homogenization.",
+        "block_id": [
+          "b0014"
+        ]
+      },
+      "processing_step_id": "step_hot_forging",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "mechanical processing"
+      },
+      "method": {
+        "value": "hot forging"
+      },
+      "temperature": {
+        "value": "1050-800",
+        "source": {
+          "reason": "'hot forged to 50% thickness reduction in the temperature range of 1050-800 °C'.",
+          "block_id": [
+            "b0014"
+          ]
+        }
+      },
+      "temperature_unit": {
+        "value": "°C",
+        "source": {
+          "reason": "Temperature range given in °C.",
+          "block_id": [
+            "b0014"
+          ]
+        }
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": {
+        "value": "50% thickness reduction",
+        "source": {
+          "reason": "'hot forged to 50% thickness reduction'.",
+          "block_id": [
+            "b0014"
+          ]
+        }
+      },
+      "processing_steps_notes": {
+        "value": "Hot forging performed in the temperature range 1050-800 °C.",
+        "source": {
+          "reason": "Processing route description.",
+          "block_id": [
+            "b0014"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "Air cooling to room temperature following hot forging.",
+        "block_id": [
+          "b0014"
+        ]
+      },
+      "processing_step_id": "step_air_cooling",
+      "sequence": {
+        "value": "3"
+      },
+      "type": {
+        "value": "cooling"
+      },
+      "method": {
+        "value": "air cooling"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": {
+        "value": "air"
+      },
+      "cooling_medium": {
+        "value": "air",
+        "source": {
+          "reason": "'following air cooling to room temperature' after hot forging.",
+          "block_id": [
+            "b0014"
+          ]
+        }
+      },
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Air cooling to room temperature after hot forging.",
+        "source": {
+          "reason": "Post-forging cooling step.",
+          "block_id": [
+            "b0014"
+          ]
+        }
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "Hot forged specimen is described as having a dual-phase δ-ferrite + austenite microstructure confirmed by XRD, optical, SEM and EBSD.",
+        "block_id": [
+          "b0036",
+          "b0037",
+          "figure_002"
+        ]
+      },
+      "structure_id": "struct_hot_forged_dual_phase",
+      "overall_structure": {
+        "value": "Dual-phase microstructure of delta ferrite and austenite: austenite (mostly elongated) in a δ-ferrite matrix. XRD shows ferrite and austenite in the hot forged specimen; some remnant dendritic (cast) structure is still visible.",
+        "source": {
+          "reason": "XRD and optical/SEM/EBSD confirm 'dual phase microstructure in cast as well as hot forged specimen' with elongated austenite in δ-ferrite matrix, plus a remnant dendritic structure arrowed in the forged specimen.",
+          "block_id": [
+            "b0036",
+            "figure_002"
+          ]
+        }
+      },
+      "number_of_phases": {
+        "value": "2",
+        "source": {
+          "reason": "Phases present in hot forged specimen are δ-ferrite and austenite (dual-phase). Martensite is only reported in the rolled/quenched specimen, not the forged one.",
+          "block_id": [
+            "b0036"
+          ]
+        }
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "Microstructure of the hot forged specimen: dual-phase δ-ferrite + austenite with elongated austenite and remnant dendritic structure.",
+            "block_id": [
+              "b0036",
+              "b0037",
+              "figure_002"
+            ]
+          },
+          "microstructure_id": "micro_hot_forged",
+          "region": {
+            "value": "bulk"
+          },
+          "related_sequence": {
+            "value": "2"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "Ferrite (δ) is a constituent phase; identified by XRD and presumed δ-ferrite based on Thermo-Calc, and it remains in the forged specimen.",
+                "block_id": [
+                  "b0036",
+                  "b0037"
+                ]
+              },
+              "phase_name": {
+                "value": "delta ferrite (δ)"
+              },
+              "crystal_structure": {
+                "value": "BCC"
+              },
+              "volume_fraction": {
+                "value": "~70 (volume%)",
+                "source": {
+                  "reason": "'higher fraction of δ-ferrite ~70 (volume%)' in the developed steel; XRD phase is described as δ-ferrite (BCC).",
+                  "block_id": [
+                    "b0037"
+                  ]
+                }
+              },
+              "morphology": {
+                "value": "matrix",
+                "source": {
+                  "reason": "SEM/EBSD show elongated austenite in the δ-ferrite matrix of the forged sample.",
+                  "block_id": [
+                    "b0036",
+                    "figure_002"
+                  ]
+                }
+              },
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "Austenite identified by XRD in the hot forged specimen; EBSD FCC phase map shows elongated austenite islands.",
+                "block_id": [
+                  "b0036",
+                  "figure_002"
+                ]
+              },
+              "phase_name": {
+                "value": "austenite (γ)"
+              },
+              "crystal_structure": {
+                "value": "FCC"
+              },
+              "volume_fraction": {
+                "value": "~29 (volume%)",
+                "source": {
+                  "reason": "'~26% and ~29% (volume %) of austenite in cast and forged sample, respectively', measured by Rietveld refinement of XRD.",
+                  "block_id": [
+                    "b0036"
+                  ]
+                }
+              },
+              "morphology": {
+                "value": "mostly elongated",
+                "source": {
+                  "reason": "'individual phases of austenite (mostly elongated) in the ferrite (δ) matrix'.",
+                  "block_id": [
+                    "b0036",
+                    "figure_002"
+                  ]
+                }
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "source": {
+        "reason": "Interfacial/phase-evolution information for the hot forged specimen (δ-ferrite/austenite dual phase, no martensite formed on forging).",
+        "block_id": [
+          "b0033",
+          "b0036",
+          "b0037"
+        ]
+      },
+      "interface_set_id": "interface_set_hot_forged",
+      "phase_interfaces": [
+        {
+          "source": {
+            "reason": "Dual-phase δ-ferrite + austenite microstructure of the hot forged specimen implies a δ-ferrite/austenite interface; no coherency data given.",
+            "block_id": [
+              "b0036"
+            ]
+          },
+          "interface_id": "if_delta_ferrite_austenite",
+          "microstructure_id": "micro_hot_forged",
+          "phase_1_name": {
+            "value": "delta ferrite (δ)"
+          },
+          "phase_2_name": {
+            "value": "austenite (γ)"
+          },
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": {
+        "value": "Austenite has not decomposed into a low-temperature transformation product (e.g. martensite) after hot forging; the ferrite present was formed during solidification as δ-ferrite and has not been consumed by austenite due to the high Al content. Austenite fraction is slightly (~3%) higher than in the cast specimen, attributed to elemental partitioning during soaking at high temperature.",
+        "source": {
+          "reason": "'austenite has not decomposed in α-ferrite phase or martensite at room temperature (RT) after hot forging'; 'hot forged sample contain slightly (~3%) higher volume fraction of austenite compare to cast sample'; ferrite formed during solidification is δ-ferrite.",
+          "block_id": [
+            "b0033",
+            "b0036",
+            "b0037"
+          ]
+        }
+      },
+      "interface_notes": {
+        "value": "Remnant dendritic structure is still visible in the hot forged specimen (blue arrow, Fig. 2e), possibly due to insufficient soaking and dissolution before hot forging.",
+        "source": {
+          "reason": "'some of the dendritic structure is still visible in hot forged specimen ... may be due to insufficient soaking and dissolution before hot forging'.",
+          "block_id": [
+            "b0036"
+          ]
+        }
+      }
+    }
+  ],
+  "properties": [
+    {
+      "source": {
+        "reason": "Only physical (density) property reported that can be associated with the developed steel in this state; no tensile, hardness, fracture or other mechanical testing was performed on the hot forged specimen (mechanical tests were on HRQ and annealed specimens).",
+        "block_id": [
+          "b0034"
+        ]
+      },
+      "property_set_id": "prop_hot_forged_physical",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": {
+          "value": "Measured by Archimedes' principle",
+          "source": {
+            "reason": "'Based on Archimedes’ principle, the developed steel has a density of 6.91455 g/cc'.",
+            "block_id": [
+              "b0034"
+            ]
+          }
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "source": {
+            "reason": "Density of the developed steel measured by Archimedes' principle; the developed steel corresponds to this alloy/sample. Reduction in density (~11.35%) compared to conventional steel (~7.8 g/cc) achieved by ~5 wt.% Al and ~1 wt.% Si addition.",
+            "block_id": [
+              "b0034"
+            ]
+          },
+          "value": {
+            "value": "6.91455 g/cc"
+          },
+          "unit": {
+            "value": "g/cc"
+          },
+          "uncertainty": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "Method description and application to cast and hot forged specimens; phase identification.",
+        "block_id": [
+          "b0017",
+          "b0036"
+        ]
+      },
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_hot_forged",
+      "technique": {
+        "value": "X-ray diffraction (XRD)"
+      },
+      "instrument_or_setup": {
+        "value": "Bruker D8 advanced X-ray diffraction instrument equipped with Co-Kα (1.79 Å) target"
+      },
+      "measurement_conditions": {
+        "value": "step size 0.02°, 2θ range 20°-120°"
+      },
+      "purpose": {
+        "value": "Identify the major phases present in the developed steel after casting and hot forging"
+      },
+      "key_findings": {
+        "value": "XRD shows presence of ferrite and austenite in both cast and hot forged specimens; the ferrite is presumed δ-ferrite based on the Thermo-Calc equilibrium phase fraction plot."
+      }
+    },
+    {
+      "source": {
+        "reason": "'The volume fraction of phases has been calculated by rietveld refinement using XRD data' giving ~26% and ~29% austenite in cast and forged samples.",
+        "block_id": [
+          "b0036"
+        ]
+      },
+      "characterization_id": "char_rietveld",
+      "microstructure_id": "micro_hot_forged",
+      "technique": {
+        "value": "Rietveld refinement of XRD data"
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Calculate volume fraction of phases"
+      },
+      "key_findings": {
+        "value": "~29% (volume %) austenite in the forged sample (vs ~26% in cast)."
+      }
+    },
+    {
+      "source": {
+        "reason": "Optical images (Fig. 2b-e) confirm dual-phase microstructure in cast and hot forged specimens.",
+        "block_id": [
+          "b0017",
+          "b0036",
+          "figure_002"
+        ]
+      },
+      "characterization_id": "char_optical",
+      "microstructure_id": "micro_hot_forged",
+      "technique": {
+        "value": "Optical microscopy"
+      },
+      "instrument_or_setup": {
+        "value": "Leica optical microscope; specimens etched with Villella's Reagent (5 ml HCl + 1 g picric acid + 100 ml ethanol) for 10-15 sec after colloidal polishing (0.25 µm)"
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Confirm the dual-phase microstructure in cast and hot forged specimens"
+      },
+      "key_findings": {
+        "value": "Confirms dual-phase microstructure in the hot forged specimen with elongated, aligned second phase; a remnant dendritic structure is arrowed (Fig. 2e)."
+      }
+    },
+    {
+      "source": {
+        "reason": "SEM of the forged sample confirms elongated γ within δ matrix.",
+        "block_id": [
+          "b0017",
+          "b0036",
+          "figure_002"
+        ]
+      },
+      "characterization_id": "char_sem",
+      "microstructure_id": "micro_hot_forged",
+      "technique": {
+        "value": "Field Emission Gun Scanning Electron Microscopy (FEG-SEM)"
+      },
+      "instrument_or_setup": {
+        "value": "ZEISS VP 300"
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Microstructural analysis of the hot forged specimen"
+      },
+      "key_findings": {
+        "value": "SEM image (Fig. 2f) confirms individual phases of austenite (mostly elongated) in the δ-ferrite matrix."
+      }
+    },
+    {
+      "source": {
+        "reason": "EBSD phase map of forged sample confirms austenite in ferrite matrix.",
+        "block_id": [
+          "b0017",
+          "b0036",
+          "figure_002"
+        ]
+      },
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_hot_forged",
+      "technique": {
+        "value": "Electron Backscattered Diffraction (EBSD)"
+      },
+      "instrument_or_setup": {
+        "value": "FEG-SEM (ZEISS VP 300) equipped with EBSD camera, operating at 20 kV, step size 0.5 µm; post-processing in TSL-OIM software"
+      },
+      "measurement_conditions": {
+        "value": "20 kV, step size 0.5 µm"
+      },
+      "purpose": {
+        "value": "Confirm the individual phases in the hot forged specimen"
+      },
+      "key_findings": {
+        "value": "EBSD phase map superimposed on IQ map (Fig. 2g) shows elongated austenite islands (FCC, green) in the δ-ferrite (BCC, red) matrix in the forged sample."
+      }
+    },
+    {
+      "source": {
+        "reason": "Elemental analysis of individual phases by SEM-EDS; at least 5-7 areas and 15-20 spots per phase.",
+        "block_id": [
+          "b0017"
+        ]
+      },
+      "characterization_id": "char_eds",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Energy Dispersive X-ray analysis (EDS/EDAX)"
+      },
+      "instrument_or_setup": {
+        "value": "ZEISS VP 300 SEM equipped with Energy Dispersive X-ray analysis (EDAX)"
+      },
+      "measurement_conditions": {
+        "value": "At least 5-7 areas and 15-20 spots per phase; average reported with standard deviation"
+      },
+      "purpose": {
+        "value": "Elemental analysis of individual phases"
+      },
+      "key_findings": {
+        "value": "General method for elemental mapping/analysis of phases in the developed steel."
+      }
+    },
+    {
+      "source": {
+        "reason": "Final chemical composition of the developed steel measured using XRF and OES (Table 1).",
+        "block_id": [
+          "b0014",
+          "b0015",
+          "b0016"
+        ]
+      },
+      "characterization_id": "char_composition_xrf_oes",
+      "microstructure_id": null,
+      "technique": {
+        "value": "X-ray fluorescence (XRF) and Optical Emission Spectroscopy (OES)"
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Measure the final chemical composition of the developed steel"
+      },
+      "key_findings": {
+        "value": "Measured composition (wt.%): Fe bal., Mn 7.79, Al 4.88, Si 0.84, C 0.2, P 0.03, S 0.03 (Table 1)."
+      }
+    },
+    {
+      "source": {
+        "reason": "Dilatometry test performed on the hot-forged specimen to know critical transformation temperatures; curve shows negligible transformation-related contraction.",
+        "block_id": [
+          "b0018",
+          "b0033",
+          "figure_001"
+        ]
+      },
+      "characterization_id": "char_dilatometry",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Dilatometry"
+      },
+      "instrument_or_setup": {
+        "value": "BAHR DIL 850 dilatometer; cylindrical sample 4 mm diameter × 10 mm length prepared by wire EDM"
+      },
+      "measurement_conditions": {
+        "value": "Heating rate 10 °C/s, holding temperature 1000 °C, holding time 5/15 minutes, cooling rate 1 °C/s"
+      },
+      "purpose": {
+        "value": "Determine critical transformation temperatures of the hot forged specimen and correlate theoretical critical temperatures with actual ones"
+      },
+      "key_findings": {
+        "value": "No significant deviation/hump in change in length during heating and cooling; only a slight deviation at ~600 °C (marked by black ellipse in Fig. 1c), indicating insignificant dissolution/transformation of ferritic phase. The two curves are labelled '5 min holding time' and '15 min holding time'."
+      }
+    },
+    {
+      "source": {
+        "reason": "Density of the developed steel measured based on Archimedes' principle.",
+        "block_id": [
+          "b0034"
+        ]
+      },
+      "characterization_id": "char_density",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Density measurement by Archimedes' principle"
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Determine the density of the developed steel"
+      },
+      "key_findings": {
+        "value": "Density of 6.91455 g/cc; ~11.35% lower than conventional steel (~7.8 g/cc)."
+      }
+    }
+  ],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "Thermo-Calc (database TCFE9) equilibrium phase fraction plot generated to predict critical temperatures and phase fractions and to justify the 750 °C intercritical annealing temperature.",
+        "block_id": [
+          "b0014",
+          "b0033",
+          "figure_001"
+        ]
+      },
+      "computation_id": "comp_thermocalc",
+      "simulation_method": {
+        "value": "CALPHAD thermodynamic equilibrium calculation (phase fraction vs temperature)"
+      },
+      "software_used": {
+        "value": "Thermo-Calc"
+      },
+      "potential_model_or_database": {
+        "value": "TCFE9 database"
+      },
+      "boundary_and_initial_conditions": {
+        "value": "Equilibrium calculation for the developed Fe-8Mn-5Al-0.2C (wt.%) steel from liquid to room temperature"
+      },
+      "validation_against_experiment": {
+        "value": "Theoretical critical temperatures were correlated with the actual dilatometry curve measured on the forged sample; the duplex δ-ferrite + austenite region was predicted as ~650 °C to ~1350 °C and used to select the intercritical annealing temperature of 750 °C."
+      },
+      "analytical_models": []
+    },
+    {
+      "source": {
+        "reason": "Alloy designed based on SFE in the 20-40 mJ/m² range using the Olson and Cohen thermodynamic model; theoretical SFE of the designed steel calculated as ~35 mJ/m².",
+        "block_id": [
+          "b0021",
+          "b0023",
+          "b0024",
+          "b0025",
+          "b0026",
+          "b0027",
+          "b0028",
+          "b0029",
+          "b0030",
+          "b0031",
+          "b0032",
+          "b0073"
+        ]
+      },
+      "computation_id": "comp_sfe_olson_cohen",
+      "simulation_method": {
+        "value": "Thermodynamic stacking fault energy (SFE) calculation using the Olson and Cohen model"
+      },
+      "software_used": null,
+      "potential_model_or_database": {
+        "value": "Olson and Cohen thermodynamic model; values from literature [27-33]"
+      },
+      "boundary_and_initial_conditions": {
+        "value": "Assuming an initially finer austenite grain size of 40 µm; equilibrium austenite composition at 750 °C for Al, C, Mn and Si of 4.39%, 0.47%, 11.16% and 1.09% respectively"
+      },
+      "validation_against_experiment": {
+        "value": "Theoretical SFE of the designed steel ~35 mJ/m² falls in the 20-40 mJ/m² range. For the IA750_60 Min specimen, using EDS-measured reverted austenite Mn and Al (7.58±0.14 and 3.96±0.15), the SFE was calculated as ~27 mJ/m²; with C reduced to ~0.05 wt% the SFE falls to ~2 mJ/m²."
+      },
+      "analytical_models": [
+        {
+          "model_name": {
+            "value": "Olson and Cohen SFE model (γ_SFE = 2ρΔG^(γ→ε) + 2σ^(γ/ε))"
+          },
+          "equation_role": {
+            "value": "Computes stacking fault energy of austenite from Gibbs free energy change, molar surface density and interfacial surface energy"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "ΔG_chem^(γ→ε)"
+              },
+              "value": {
+                "value": "245.267"
+              },
+              "unit": {
+                "value": "J/mole"
+              }
+            },
+            {
+              "name": {
+                "value": "ΔG_mag^(γ→ε)"
+              },
+              "value": {
+                "value": "0.0029319"
+              },
+              "unit": {
+                "value": "J/mole"
+              }
+            },
+            {
+              "name": {
+                "value": "ΔG_ex^(γ→ε)"
+              },
+              "value": {
+                "value": "19.6842"
+              },
+              "unit": {
+                "value": "J/mole"
+              }
+            },
+            {
+              "name": {
+                "value": "molar surface density ρ"
+              },
+              "value": {
+                "value": "2.9328×10^-5"
+              },
+              "unit": {
+                "value": "mol/m²"
+              }
+            },
+            {
+              "name": {
+                "value": "interfacial surface energy σ^(γ/ε)"
+              },
+              "value": {
+                "value": "10"
+              },
+              "unit": {
+                "value": "mJ/m²"
+              }
+            },
+            {
+              "name": {
+                "value": "assumed austenite grain size"
+              },
+              "value": {
+                "value": "40"
+              },
+              "unit": {
+                "value": "µm"
+              }
+            },
+            {
+              "name": {
+                "value": "theoretical SFE of designed steel"
+              },
+              "value": {
+                "value": "~35"
+              },
+              "unit": {
+                "value": "mJ/m²"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "SFE calculated from molar Gibbs free energy changes (chemical, magnetic, excess), molar surface density (ρ = (4/√3)(1/a0²N)) and lattice parameter equation a0 = 3.5945 + 0.00125(%Mn-20) + 0.00594(%Al) + 0.0272(%C)."
+          }
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Hot forged specimen: the cast ingot was homogenized at 1100 °C for 2 hr and then hot forged to 50% thickness reduction in the temperature range 1050-800 °C, followed by air cooling to room temperature.",
+    "The hot forged specimen contains ~29 vol% austenite vs ~26 vol% in the cast specimen (Rietveld refinement of XRD) — a ~3% higher austenite fraction, attributed to some elemental partitioning during soaking at higher temperature that may increase the stability of the austenite phase.",
+    "A remnant dendritic structure is still visible in the hot forged specimen (blue arrow, Fig. 2e), possibly due to insufficient soaking and dissolution before hot forging.",
+    "Dilatometry performed on the hot-forged specimen (BAHR DIL 850; 4 mm dia × 10 mm cylinder; heating 10 °C/s; hold at 1000 °C for 5/15 min; cooling 1 °C/s) showed no significant deviation in the change in length apart from a slight deviation at ~600 °C; the two near-coincident traces were labelled '5 min holding time' and '15 min holding time'.",
+    "The δ-ferrite retained in the developed steel (including the hot forged state) is highly stable — its structure/morphology remains essentially unchanged after subsequent intercritical annealing; ~70 vol% δ-ferrite is present.",
+    "Nominal (designed) steel composition is Fe-8Mn-5Al-0.2C (wt.%); measured composition is Fe balance with Mn 7.79, Al 4.88, Si 0.84, C 0.2, P 0.03, S 0.03 wt.% (Table 1)."
+  ]
+}

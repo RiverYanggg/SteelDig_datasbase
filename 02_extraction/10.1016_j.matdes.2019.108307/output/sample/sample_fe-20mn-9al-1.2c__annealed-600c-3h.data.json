@@ -1,0 +1,321 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-9al-1.2c__annealed-600c-3h",
+      "paper_id": "10.1016_j.matdes.2019.108307",
+      "alloy_id": "alloy_fe-20mn-9al-1.2c",
+      "process_id": "proc_annealed-600c-3h",
+      "sample_label": "annealed 0Cr",
+      "aliases": [
+        "0Cr annealed",
+        "annealed Cr-free steel strip"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_near_rapid_solidification",
+      "sequence": "1",
+      "type": "solidification / casting",
+      "method": "centrifugal casting under near-rapid solidification",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "argon atmosphere",
+      "cooling_medium": "copper mold rotating at 600 rpm",
+      "heating_or_cooling_rate": "1–1 × 10^4 K/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Fe-20Mn-9Al-1.2C-xCr (x=0) steel strips were prepared by centrifugal casting under near-rapid solidification in an argon atmosphere; the molten metal was poured into a copper mold rotating at 600 rpm to give as-cast strips of 80 mm × 60 mm × 2.5 mm. This is the parent (as-cast) state of the annealed 0Cr sample. Near-rapid solidification gives a cooling rate of 1–1 × 10^4 K/s."
+    },
+    {
+      "processing_step_id": "step_annealing_600c_3h",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": "600 °C",
+      "temperature_unit": "°C",
+      "duration": "3 h",
+      "atmosphere": "vacuum (tubular vacuum furnace)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Some as-cast steel strips (including the 0Cr strip) were annealed at 600 °C for 3 h in a tubular vacuum furnace, referred to as 'annealed steel strips'. This treatment promotes precipitation of κ-carbides without coarsening, giving better comprehensive mechanical properties."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_annealed_0Cr",
+      "overall_structure": "γ-austenite matrix with irregularly shaped δ-ferrite distributed in it; nano-scale κ-carbides precipitated in the γ-austenite and ordered DO3 phase in the δ-ferrite. Annealing at 600 °C for 3 h increases δ-ferrite volume fraction (to 6%) and promotes the precipitation and growth of κ-carbides; the double peak (110)δ/(220)DO3 between 43.5° and 45.0° collapses to a single peak indicating almost all ferrite transforms into ordered DO3 phase.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_austenite_0Cr",
+          "region": "γ-austenite matrix",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ-austenite",
+              "crystal_structure": "austenite (face-centered cubic)",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "perovskite (ideal stoichiometry (Fe,Mn)3AlC)",
+              "volume_fraction": "7%",
+              "morphology": "nano-scale particles precipitated in γ-austenite",
+              "grain_size": "8 nm",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_annealed_0Cr",
+              "type": "κ-carbide",
+              "size": "8 nm",
+              "distribution": "distributed in γ-austenite; a large number of nano-scale κ-carbides in the annealed 0Cr steel strip",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_ferrite_0Cr",
+          "region": "irregular δ-ferrite distributed in γ-austenite matrix",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "body-centered cubic (ferrite)",
+              "volume_fraction": "6%",
+              "morphology": "irregularly shaped, short rod-like and branched ferrite",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_DO3_annealed_0Cr",
+              "type": "ordered DO3 phase",
+              "size": null,
+              "distribution": "in the δ-ferrite (ordered phase occupying the ferrite; upon annealing almost all ferrite transforms into the ordered DO3 phase)",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_annealed_0Cr",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_aus_fer_0Cr",
+          "microstructure_id": "micro_ferrite_0Cr",
+          "phase_1_name": "γ-austenite",
+          "phase_2_name": "δ-ferrite",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_phaseboundary_0Cr",
+          "microstructure_id": null,
+          "interaction_type": "dislocation entanglement at the γ-austenite/δ-ferrite phase boundary",
+          "qualitative_or_quantitative_description": "Dislocation entanglements occur at the phase boundary between ferrite and austenite, attributed to the inconsistent deformation of ferrite and austenite during deformation (observed in the annealed 0Cr/6Cr strips after tensile deformation)."
+        }
+      ],
+      "slip_behavior": "In the annealed 0Cr strip at a true strain of 0.075, {111} planar slip bands and dislocation arrays are present in the austenite, indicating a typical planar slip characteristic; a typical dislocation network structure is also present. At the final strain stage a large number of slip bands and many microbands appear; slip bands can extend through a grain boundary producing small steps (a low-angle grain boundary with misorientation 2.56°). A double (slip-band and microband) hardening mechanism acts at early and final strain stages respectively.",
+      "phase_evolution": "Annealing at 600 °C for 3 h makes the double peak (110)δ/(220)DO3 between 43.5° and 45.0° change into a single peak, indicating almost all the ferrite transforms into the ordered DO3 phase; the δ-ferrite volume fraction of the 0Cr strip increases from 3% (as-cast) to 6% on annealing.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_annealed_0Cr_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "2.5 × 10^-4 s^-1",
+        "specimen_geometry": "gage width 4 mm and gage length 12 mm",
+        "test_standard": "GB/T-228.1-2010",
+        "other_conditions": "tensile tests performed at least 3 times"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "967 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 28 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1016 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 22 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "30 %",
+              "unit": "%",
+              "uncertainty": "± 1 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve of the annealed 0Cr strip is given in Fig. 3(b); the 0Cr curve reaches the highest plateau stress at the lowest strain and fractures earliest (~28% strain).",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            "annealed 0Cr strip shows a clear double-hump strain hardening rate feature (Fig. 3(d)); its strain hardening rate is lower than that of the corresponding as-cast strip; the first hump is related to slip-band refinement and the second to microband formation"
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": {
+          "value": "6.71 g/cm3",
+          "unit": "g/cm3"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_annealed_0Cr_vs_as-cast",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-20mn-9al-1.2c",
+        "benchmark_process_id": "proc_as-cast",
+        "benchmark_sample_id": null,
+        "comparison_metric": "yield strength: annealing at 600 °C for 3 h increased the yield strength of the 0Cr steel strip by 131 MPa (as-cast 836 MPa → annealed 967 MPa)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_0Cr",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Rigaku D/Max-2200, Cu target operated at 40 kV and 40 mA, graphite monochromator, λ = 0.154056 nm",
+      "measurement_conditions": "scanning angle 30°–100°, continuous scanning at a speed of 4°/min",
+      "purpose": "Phase characterization of the as-cast and annealed low-density steel strips",
+      "key_findings": "The annealed 0Cr strip consists mainly of austenite and ferrite; the double peak between 43.5° and 45.0° in the as-cast strip changes into a single peak upon annealing, indicating that almost all the ferrite transforms into the ordered DO3 phase."
+    },
+    {
+      "characterization_id": "char_sem_0Cr",
+      "microstructure_id": "micro_ferrite_0Cr",
+      "technique": "Scanning Electron Microscopy (SEM)",
+      "instrument_or_setup": "Phenom Pro SEM",
+      "measurement_conditions": "after mechanical polishing and etching; etching solution 3.3 vol% nitric acid, 3.3 vol% acetic acid and 0.1 vol% hydrofluoric acid, etching time 3 s; photographs taken at a position 0.5 mm from the strip surface along the thickness direction",
+      "purpose": "Microstructure and phase fraction determination of the δ-ferrite",
+      "key_findings": "Irregularly shaped δ-ferrite distributes in the γ-austenite matrix; the volume fraction of δ-ferrite in the annealed 0Cr steel strip is 6% (increased from 3% as-cast)."
+    },
+    {
+      "characterization_id": "char_tem_0Cr",
+      "microstructure_id": "micro_austenite_0Cr",
+      "technique": "Transmission Electron Microscopy (TEM)",
+      "instrument_or_setup": "JEOL-2010F operated at 200 kV; specimens prepared by twin-jet electrolytic polishing at −30 °C and 30 V with a mixed solution of 10% perchloric acid and 90% alcohol",
+      "measurement_conditions": "BF/DF imaging and SADP along [110] zone axis",
+      "purpose": "Elucidate nano-scale precipitated phases (κ-carbides, DO3) in γ-austenite and δ-ferrite",
+      "key_findings": "DF (001) images show a large number of nano-scale κ-carbides in the annealed 0Cr strip; the measured volume fraction and average size of the κ-carbides are 7% and 8 nm, respectively."
+    },
+    {
+      "characterization_id": "char_density_0Cr",
+      "microstructure_id": null,
+      "technique": "Gas displacement density measurement",
+      "instrument_or_setup": "AccuPyc II 1340 Gas Displacement Density Analyzer",
+      "measurement_conditions": null,
+      "purpose": "Measure the average density of the steel strips",
+      "key_findings": "The measured average density of the 0Cr steel strip is 6.71 g/cm³."
+    },
+    {
+      "characterization_id": "char_composition_0Cr",
+      "microstructure_id": null,
+      "technique": "Chemical composition analysis",
+      "instrument_or_setup": "Inductively Coupled Plasma Mass Spectrometry (ICP) and CS2800 carbon-sulfur analyzer",
+      "measurement_conditions": null,
+      "purpose": "Measure the compositions of the steel strips",
+      "key_findings": "Measured composition of the 0Cr steel (wt.%): Mn 20.43, Al 9.16, C 1.17, Cr 0, S 0.0006, Fe Bal. (Table 1)."
+    },
+    {
+      "characterization_id": "char_tensile_0Cr",
+      "microstructure_id": null,
+      "technique": "Tensile testing",
+      "instrument_or_setup": "MTS Criterion 44 Mechanical Property Tester",
+      "measurement_conditions": "room temperature, constant strain rate 2.5 × 10^-4 s^-1, per GB/T-228.1-2010, gage width 4 mm and gage length 12 mm, at least 3 tests",
+      "purpose": "Measure mechanical properties of the steel strips",
+      "key_findings": "Annealed 0Cr strip: YS 967 ± 28 MPa, UTS 1016 ± 22 MPa, TE 30 ± 1 % (Table 2)."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Annealing the 0Cr strip at 600 °C for 3 h increased the δ-ferrite volume fraction from 3% (as-cast) to 6% (annealed).",
+    "The annealing treatment (600 °C, 3 h) increased the yield strength of the 0Cr steel strip by 131 MPa (from as-cast 836 ± 7 MPa to annealed 967 ± 28 MPa).",
+    "The UTS × TE product of the annealed 0Cr steel strip is 30.5 GPa% (UTS 1016 MPa × TE 30%).",
+    "Measured composition of the 0Cr steel strip (wt.%, Table 1): Mn 20.43, Al 9.16, C 1.17, Cr 0, S 0.0006, Fe Bal.",
+    "Measured density of the 0Cr steel strip is 6.71 g/cm³ (vs 6.69 g/cm³ for 3Cr and 6.66 g/cm³ for 6Cr).",
+    "The annealed 0Cr strip exhibits a clear double-hump-like feature in its strain hardening rate curve (Fig. 3(d)); the first hump is related to slip-band refinement and the second to the formation of microbands, with the number of nano-scale κ-carbides playing a crucial role at the early strain stage.",
+    "For the annealed 0Cr strip at a true strain of 0.075 during tensile deformation, {111} planar slip bands and dislocation arrays are present in the austenite (typical planar slip), and a typical dislocation network structure is also present in the austenite.",
+    "After tensile fracture the true strains of the annealed 0Cr and 6Cr steel strips are 0.255 and 0.298, respectively; many microbands (marked with white arrows) appear in the austenite matrix in addition to slip bands, and the microstructures of the two strips are similar after fracture.",
+    "In the annealed 0Cr (and 6Cr) strip the slip bands can extend through a grain boundary producing many small steps; the SADPs on both sides indicate a low-angle grain boundary with a misorientation of 2.56° (observed only at high strain).",
+    "A double (slip-band and microband) hardening mechanism is proposed for the strain hardening of the low-density steel strips: slip-band hardening acts at the early strain stage and microband hardening at the final strain stage.",
+    "Shared annealing treatment: the same 600 °C/3 h annealing in a tubular vacuum furnace was applied to all three alloy compositions (0Cr, 3Cr, 6Cr).",
+    "Data reported for the as-cast 0Cr sibling (not the annealed sample): κ-carbide measured volume fraction and average size 3% and 6 nm; measured lattice parameter of κ-carbide 0.387 nm and γ-austenite 0.375 nm; DO3 phase in δ-ferrite with size 26 ± 3 nm."
+  ]
+}

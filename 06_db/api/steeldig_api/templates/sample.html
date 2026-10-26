@@ -1,0 +1,226 @@
+{% extends "base.html" %}
+{% from "_macros.html" import family_badge, value_cell, prov %}
+{% block title %}{{ doc.sample.label or doc.sample.sample_id }}{% endblock %}
+
+{% block content %}
+{% set s = doc.sample %}
+{% set comp = doc.composition %}
+
+<div class="hero" style="margin-bottom:18px">
+  <div class="hero-meta" style="margin-top:0">
+    <div style="flex:1;min-width:280px">
+      <h1>{{ s.label or s.sample_id | replace('sample_','') }}</h1>
+      <div class="sid">{{ s.sample_id }}</div>
+      <div class="row">
+        {{ family_badge(comp.family) }}
+        <span class="badge blue mono">{{ comp.formula or '—' }}</span>
+        {% if comp.chemsys %}<span class="badge teal mono">{{ comp.chemsys }}</span>{% endif %}
+        <a class="badge" href="/papers/{{ paper_id }}">{{ doc.paper.year or '' }} · {{ doc.paper.journal or '文献' }}</a>
+      </div>
+    </div>
+    <div class="m"><div class="k">可数值化属性</div><div class="v">{{ doc.properties | selectattr('value') | list | length if doc.properties else 0 }}</div></div>
+    <div class="m"><div class="k">相</div><div class="v">{{ doc.phases | length if doc.phases else 0 }}</div></div>
+    <div class="m"><div class="k">工艺步骤</div><div class="v">{{ doc.processing | length if doc.processing else 0 }}</div></div>
+    <div class="m"><div class="k">有据可查</div><div class="v">{{ doc.evidence_blocks }}</div></div>
+  </div>
+</div>
+
+<div class="trace-strip" aria-label="数据溯源链">
+  <div class="trace-intro"><span class="trace-kicker">TRACEABILITY</span><b>从材料事实到原文证据</b><small>点击有据属性旁的链接，核对原文</small></div>
+  <div class="trace-flow">
+    <span><b>原始资产</b><small>PDF / 表格</small></span><i>→</i>
+    <span><b>结构化事实</b><small>单位已归一</small></span><i>→</i>
+    <span><b>证据块</b><small>block_id 对齐</small></span><i>→</i>
+    <span class="trace-final"><b>校订层</b><small>可审计重放</small></span>
+  </div>
+</div>
+
+<div class="grid sample-grid">
+
+  {# ---------------- 左栏 ---------------- #}
+  <div class="grid" style="gap:16px">
+    <div class="card">
+      <div class="section-title"><span class="dot"></span>名义成分</div>
+      {% set maxw = (comp.elements_wt_pct.values() | max) if comp.elements_wt_pct else 1 %}
+      {% if comp.elements_wt_pct %}
+        {% for el, w in comp.elements_wt_pct.items() | sort(attribute='1', reverse=true) %}
+        <div class="comp-row">
+          <div class="comp-el">{{ el }}</div>
+          <div class="comp-bar"><i style="width: {{ (w / maxw * 100) | round(1) }}%"></i></div>
+          <div class="comp-val">{{ w }} wt%</div>
+        </div>
+        {% endfor %}
+      {% else %}
+        <div class="empty">未提供结构化成分</div>
+      {% endif %}
+    </div>
+
+    <div class="card">
+      <div class="section-title"><span class="dot"></span>工艺链</div>
+      {% if steps %}
+      <div class="timeline">
+        {% for st in steps %}
+        <div class="tl-item">
+          <div class="tl-seq">#{{ st.seq }}</div>
+          <div class="tl-title">{{ st.step_type or '步骤' }}{% if st.method %} · {{ st.method }}{% endif %}</div>
+          <div class="tl-meta">
+            {% if st.temperature_raw %}{{ st.temperature_raw }}{% elif st.temperature_k %}{{ st.temperature_k | round(0) | int }} K{% endif %}
+            {% if st.duration_raw %} · {{ st.duration_raw }}{% endif %}
+            {% if st.cooling_medium %} · 冷却 {{ st.cooling_medium }}{% endif %}
+            {% if st.atmosphere %} · {{ st.atmosphere }}{% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% else %}
+        <div class="empty">未提供工艺步骤</div>
+      {% endif %}
+    </div>
+
+    <div class="card">
+      <div class="section-title"><span class="dot"></span>组织与相</div>
+      {% if phases %}
+      <div class="table-wrap">
+        <table class="data">
+          <thead><tr><th>相</th><th class="num">体积分数</th><th class="num">晶粒尺寸</th><th>形貌</th></tr></thead>
+          <tbody>
+          {% for ph in phases %}
+            <tr>
+              <td><b>{{ ph.phase_name }}</b>{% if ph.phase_key %}<span class="badge ghost" style="margin-left:6px">{{ ph.phase_key }}</span>{% endif %}</td>
+              <td class="num">{{ ph.volume_fraction_pct | round(2) if ph.volume_fraction_pct is not none else '—' }}{% if ph.volume_fraction_pct %}%{% endif %}</td>
+              <td class="num">{{ ph.grain_size_um | round(2) if ph.grain_size_um is not none else '—' }}{% if ph.grain_size_um %} μm{% endif %}</td>
+              <td class="muted" style="font-size:12px">{{ (ph.morphology or '') | truncate(64, true) }}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% else %}<div class="empty">未提供相信息</div>{% endif %}
+    </div>
+  </div>
+
+  {# ---------------- 右栏 ---------------- #}
+  <div class="grid" style="gap:16px">
+    <div class="card">
+      <div class="card-head">
+        <div><h3>性能</h3><div class="sub">悬停查看原始值 · 点击证据核对来源</div></div>
+        <div class="spacer"></div>
+        <span class="badge ghost">◈ = 有证据块</span>
+      </div>
+      {% if props %}
+        {% for section, items in props.items() %}
+        <div class="prop-group">
+          <div class="prop-name">{{ section }}</div>
+          {% for p in items %}
+          <div class="prop-row" title="{{ p.value_raw or '' }}">
+            <div>
+              <span style="color:var(--ink-2)">{{ p.metric | replace('_',' ') }}</span>
+              {% if p.block_status == 'ok' %}{{ prov(p.source_block_ids, paper_id) }}{% else %}<span class="prop-src">◇ 弱溯源</span>{% endif %}
+            </div>
+            <div class="prop-val">{{ value_cell(p) }}<span class="u">{{ p.unit_canonical or '' }}</span></div>
+          </div>
+          {% endfor %}
+        </div>
+        {% endfor %}
+      {% else %}
+        <div class="empty"><b>该样品没有结构化性能数据</b>此类样品多为纯组织表征，或提取阶段未抽到性能</div>
+      {% endif %}
+    </div>
+
+    {% if wiki.summary or mechanisms %}
+    <div class="card">
+      <div class="section-title"><span class="dot"></span>研究对象词条</div>
+      <p style="margin:0 0 12px;color:var(--ink-2)">{{ wiki.summary or '' }}</p>
+      {% if mechanisms %}
+      <div class="prop-name" style="margin-top:14px">机制推断</div>
+      <ol style="margin:6px 0 0;padding-left:20px;color:var(--ink-2);font-size:13px">
+        {% for m in mechanisms[:6] %}<li style="margin-bottom:8px">{{ m }}</li>{% endfor %}
+      </ol>
+      {% endif %}
+      {% if wiki.conclusions %}
+      <div class="prop-name" style="margin-top:14px">结论</div>
+      <p style="margin:4px 0 0;color:var(--ink-2);font-size:13px">{{ wiki.conclusions }}</p>
+      {% endif %}
+    </div>
+    {% endif %}
+
+
+    <div class="card">
+      <div class="card-head">
+        <div><h3>人工校订</h3><div class="sub">写入 curate.change；重跑入库后自动重放，不会被覆盖</div></div>
+        <div class="spacer"></div>
+        <span class="badge {{ 'amber' if changes else 'ghost' }}">{{ changes | length }} 条</span>
+      </div>
+
+      {% if changes %}
+      <table class="data" style="margin-bottom:10px">
+        <thead><tr><th>#</th><th>操作</th><th>新值</th><th>说明</th><th>状态</th><th></th></tr></thead>
+        <tbody>
+        {% for c in changes %}
+          <tr>
+            <td class="mono">{{ c.change_id }}</td>
+            <td>{{ {'update':'修正','delete':'删除','create':'新增'}.get(c.op, c.op) }}</td>
+            <td class="mono" style="font-size:12px">{{ (c.new_value if c.new_value is string else c.new_value | tojson) | truncate(28, true) }}</td>
+            <td class="muted" style="font-size:12px">{{ c.note or '' }}</td>
+            <td><span class="badge {{ 'green' if c.status=='applied' else 'ghost' }}">{{ c.status }}</span></td>
+            <td>
+              {% if c.status == 'applied' %}
+              <form method="post" action="/curate/revert/{{ c.change_id }}" style="display:inline">
+                <input type="hidden" name="back" value="/samples/{{ paper_id }}/{{ sample_id }}">
+                <button class="chip" style="padding:2px 8px;font-size:11.5px">撤销</button>
+              </form>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      {% endif %}
+
+      {% if props %}
+      <details>
+        <summary class="chip" style="display:inline-flex">修正一条性能值</summary>
+        <form method="post" action="/curate/property" style="margin-top:10px;display:grid;gap:8px">
+          <input type="hidden" name="paper_id" value="{{ paper_id }}">
+          <input type="hidden" name="sample_id" value="{{ sample_id }}">
+          <select name="path" required
+                  style="height:34px;border:1px solid var(--border-strong);border-radius:8px;padding:0 8px;background:#fff">
+            {% for section, items in props.items() %}
+              {% for p in items %}
+              <option value="{{ p.path }}">{{ section }} · {{ p.metric }}（当前 {{ p.value_raw or '—' }} {{ p.unit_canonical or '' }}）</option>
+              {% endfor %}
+            {% endfor %}
+          </select>
+          <input name="new_value" required placeholder="新的数值，例如 690"
+                 style="height:34px;border:1px solid var(--border-strong);border-radius:8px;padding:0 10px">
+          <input name="note" placeholder="依据：原文 Table 2 / 图 3 等"
+                 style="height:34px;border:1px solid var(--border-strong);border-radius:8px;padding:0 10px">
+          <input name="author" placeholder="校订人" value="ui"
+                 style="height:34px;border:1px solid var(--border-strong);border-radius:8px;padding:0 10px">
+          <button class="chip on" style="height:34px;justify-content:center">提交校订</button>
+        </form>
+      </details>
+      {% else %}
+      <div class="empty" style="padding:16px">该样品没有可校订的性能行</div>
+      {% endif %}
+    </div>
+    <div class="card">
+      <div class="card-head"><div><h3>同篇图表</h3><div class="sub">{{ paper_id }}</div></div>
+        <div class="spacer"></div><a href="/papers/{{ paper_id }}" style="font-size:12.5px">文献详情 →</a></div>
+      <div class="fig-grid">
+        {% for f in figures %}
+        <div class="fig-card">
+          <div class="thumb" style="background-image:url('/media/figure/{{ paper_id }}/{{ f.figure_id }}'); background-size:contain; background-repeat:no-repeat; background-color:#fff">{{ '' }}</div>
+          <div class="body">
+            <div class="lbl">{{ f.label or f.figure_id }}</div>
+            <div class="meta">{{ f.n_observations }} 条观察 · {{ f.block_ids | length }} 证据块</div>
+          </div>
+        </div>
+        {% else %}
+        <div class="empty">无图表</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

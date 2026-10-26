@@ -1,0 +1,252 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-26al__as-cast",
+      "paper_id": "10.1016_j.intermet.2004.05.010",
+      "alloy_id": "alloy_fe-26al",
+      "process_id": "proc_as-cast",
+      "sample_label": "Fe-26Al",
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1",
+      "sequence": "1",
+      "type": "melting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Alloys processed by vacuum induction melting; as-cast terminal state (no further heat treatment reported)."
+    },
+    {
+      "processing_step_id": "step_2",
+      "sequence": "2",
+      "type": "casting",
+      "method": "casting into cylindrical copper moulds",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "copper mould",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Mould dimensions: 32 mm diameter × 186 mm length."
+    },
+    {
+      "processing_step_id": "step_3",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "spark erosion cutting (specimen preparation)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Mechanical test specimens cut from cast ingots by spark erosion, along the longitudinal axis (casting direction); specimen surfaces ground."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_fe-26al_as-cast",
+      "overall_structure": "Single-phase Fe3Al matrix with polygonal grains (700 μm); no dendrites and no precipitates reported for the binary Fe-26Al reference alloy.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_fe-26al_1",
+          "region": null,
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "Fe3Al (D0₃-ordered matrix)",
+              "crystal_structure": "D0₃ (ordered bcc)",
+              "volume_fraction": null,
+              "morphology": "polygonal",
+              "grain_size": "700 μm",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "700",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interfaces_fe-26al_1",
+      "phase_interfaces": [],
+      "defect_interactions": [],
+      "slip_behavior": "Tension–compression asymmetry attributed to glide of screw dislocations with nonplanar (delocalised) core structure in bcc metals; Bauschinger effect from different elastic properties of matrix and secondary phases also mentioned as contributing factor.",
+      "phase_evolution": "Fe-26Al undergoes D0₃/B2 order–disorder transition at around 550 °C and B2/A2 at around 800 °C before melting.",
+      "interface_notes": "Binary single-phase Fe3Al matrix; no second-phase interfaces or precipitates reported for Fe-26Al."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_room_temperature",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-4 s^-1",
+        "specimen_geometry": "compression: (6 × 6 × 10) mm^3; tension: flat (3.5 × 5) mm^2 cross-section, 15 mm gauge length",
+        "test_standard": null,
+        "other_conditions": "Specimens cut along longitudinal axis (casting direction); surfaces ground; ZWICK 1474 universal testing machine; Brinell hardness: load 62.5 g, indentation ball 2.5 mm diameter."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "longitudinal (casting direction); compression",
+              "value": "644",
+              "unit": "MPa",
+              "uncertainty": null
+            },
+            {
+              "direction": "longitudinal (casting direction); tension",
+              "value": "475",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [],
+          "elongation": [
+            {
+              "direction": "longitudinal (casting direction); tension",
+              "value": "0.4",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Compression: linear elastic part followed by parabolic hardening stage (Fig. 2b); tension: linear elastic loading followed by abrupt brittle fracture (Fig. 3b).",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "matrix",
+            "value": "260",
+            "scale": "HB",
+            "unit": "HB",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "props_elevated_compression",
+      "measurement_conditions": {
+        "temperature": "up to 800 °C",
+        "temperature_unit": "°C",
+        "environment": "protective argon atmosphere",
+        "strain_rate": "10^-4 s^-1",
+        "specimen_geometry": "compression: (6 × 6 × 10) mm^3",
+        "test_standard": null,
+        "other_conditions": "Samples held 30 min at testing temperature before loading; temperature checked by NiCr–Ni thermocouple on specimen surface; radiation furnace."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "compression; room temperature",
+              "value": "644",
+              "unit": "MPa",
+              "uncertainty": null
+            },
+            {
+              "direction": "compression; yield stress anomaly peak (≈550 °C)",
+              "value": "≈400",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": "micro_fe-26al_1",
+      "technique": "Brinell hardness",
+      "instrument_or_setup": "Brinell hardness tester (load 62.5 g, indentation ball 2.5 mm diameter)",
+      "measurement_conditions": "Room temperature; matrix hardness",
+      "purpose": "Preliminary assessment of matrix hardness",
+      "key_findings": "260 HB for the Fe-26Al matrix."
+    },
+    {
+      "characterization_id": "char_compression",
+      "microstructure_id": "micro_fe-26al_1",
+      "technique": "Uniaxial compression testing",
+      "instrument_or_setup": "ZWICK 1474 universal testing machine",
+      "measurement_conditions": "Room temperature and elevated temperatures up to 800 °C; deformation rate 10^-4 s^-1; specimens (6 × 6 × 10) mm^3; elevated-temperature tests in protective argon, 30 min hold, NiCr–Ni thermocouple.",
+      "purpose": "Determine yield stress in compression and its temperature dependence (yield stress anomaly).",
+      "key_findings": "Room-temperature yield stress 644 MPa; yield stress anomaly peak at ≈550 °C with ≈400 MPa; binary Fe-26Al weakest above ~600 °C."
+    },
+    {
+      "characterization_id": "char_tension",
+      "microstructure_id": "micro_fe-26al_1",
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "ZWICK 1474 universal testing machine",
+      "measurement_conditions": "Room temperature and 650 °C / 800 °C; deformation rate 10^-4 s^-1; flat specimens (3.5 × 5) mm^2 cross-section, 15 mm gauge length.",
+      "purpose": "Determine room-temperature ductility and high-temperature tensile strength.",
+      "key_findings": "Room-temperature yield stress 475 MPa; total elongation 0.4%; very brittle behaviour."
+    },
+    {
+      "characterization_id": "char_sem_fracture",
+      "microstructure_id": "micro_fe-26al_1",
+      "technique": "Scanning electron microscopy (SEM) of fracture surfaces",
+      "instrument_or_setup": "SEM-Hitachi S-530, 20 kV, working distance 15 mm, secondary electrons (SE)",
+      "measurement_conditions": "Fracture surfaces of tensile specimens after room-temperature testing.",
+      "purpose": "Characterise fracture mode.",
+      "key_findings": "Fe-26Al: very coarse transgranular fracture with a large smooth facet crossing the field (Fig. 4f); mode of fracture TGC."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Binary Fe-26Al is the reference alloy of the Fe-26Al-based series; Table 1 lists no precipitates for Fe-26Al (polygonal grains, 700 μm).",
+    "At room temperature in compression, the binary Fe-26Al stress–strain curve consists of a linear elastic part followed by a parabolic hardening stage (Fig. 2b); in tension it fails in a brittle manner (Fig. 3b).",
+    "Fe-26Al exhibits tension–compression asymmetry: yield stress in compression (644 MPa) is higher than in tension (475 MPa); the text states that the tension–compression asymmetry of Fe-26Al-based alloys is higher than that of Fe-15Al-based alloys.",
+    "At 650 °C the binary Fe-26Al yield-stress bars stay close to the 100 MPa tick and are the shortest among Fe-26Al-based alloys (Fig. 7); at 800 °C Fe-26Al shows the smallest yield stress (Fig. 8); no numeric value labels are printed on the bars.",
+    "In the elevated-temperature compression curves, binary Fe-26Al is strongest at room temperature (above the 600 MPa gridline) but weakest above ~600 °C, dropping to the 0–50 MPa range at 800 °C (Fig. 6).",
+    "Fracture surface of Fe-26Al after room-temperature tensile testing: very coarse transgranular fracture with a large smooth facet crossing the field (Fig. 4f); fracture mode TGC."
+  ]
+}

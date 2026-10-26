@@ -1,0 +1,376 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-tib2__hot-rolled-ferritic",
+      "paper_id": "10.1016_j.jmst.2025.09.036",
+      "alloy_id": "alloy_fe-tib2",
+      "process_id": "proc_hot-rolled-ferritic",
+      "sample_label": "conventional Fe-TiB2 steel",
+      "aliases": [
+        "existing Fe-TiB2 steel",
+        "conventional Fe-TiB steel",
+        "hot-rolled monolithic ferritic steel with TiB2"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "1",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The reference steel is described only as a 'hot-rolled monolithic ferritic steel with TiB2'; detailed thermomechanical processing parameters (temperature, passes, reduction) are not reported in the main text."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_fe_tib2_reference_homogeneous",
+      "overall_structure": "Homogeneous/monolithic single-phase α-ferrite matrix reinforced with micron-sized TiB2 particles (particulate metal-matrix composite); described as a 'hot-rolled monolithic ferritic steel with TiB2' with a single-phase matrix, in stark contrast to the banded dual-phase matrix of the present steel.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_reference_alpha_ferrite_matrix",
+          "region": "matrix (whole material)",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "α-ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "homogeneous single-phase matrix (monolithic ferritic)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "TiB2",
+              "crystal_structure": "hexagonal",
+              "volume_fraction": "~12.5 vol.% (described as a similar volume fraction of ceramic reinforcement to the present steel)",
+              "morphology": "micron-sized particles resembling those in the present steel (large primary + smaller eutectic TiB2)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ],
+      "structure_notes": "The reference steel's micrograph is shown only in Supplementary Fig. S1 (not reproduced in the main text); the main text does not report its measured grain size, texture, or defect statistics."
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_reference_alpha_ferrite_tib2",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_af_tib2",
+          "microstructure_id": "micro_reference_alpha_ferrite_matrix",
+          "phase_1_name": "α-ferrite",
+          "phase_2_name": "TiB2",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_shear_bands_reference",
+          "microstructure_id": "micro_reference_alpha_ferrite_matrix",
+          "interaction_type": "shear-band-mediated plastic flow and particle stress shielding",
+          "qualitative_or_quantitative_description": "In the FE simulation of the conventional Fe-TiB2 steel (homogeneous α-ferrite matrix), dislocation-mediated plasticity occurs predominantly through narrow shear bands oriented at ~45° to the loading axis; these patterns persist with increasing strain, leaving isolated nearly-undeformed zones (highlighted by red circles at ε = 11.0 %) caused by significant stress shielding from surrounding rigid particles, which compromises strength and ductility."
+        }
+      ],
+      "slip_behavior": "Dislocation slip localises into narrow shear bands at ~45° to the loading axis within the homogeneous α-ferrite matrix (FE simulation, Fig. 12(a)); isolated stress-shielded zones remain nearly undeformed.",
+      "phase_evolution": null,
+      "interface_notes": "TiB2 particles in the reference steel are located at grain/phase boundaries and are micron-sized; the α-ferrite/TiB2 interfaces were represented in the FE model by zero-thickness COH3D8 cohesive elements with a bilinear traction-separation law (interface stiffness K = 10^6 MPa mm^-1; interface strength Tc = 700 MPa)."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_mechanical_reference",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Room-temperature engineering stress-strain behaviour shown as the orange 'Fe-TiB2 steel' curve in Fig. 3(a) for comparison with the present low-density steel; detailed test conditions for the reference steel are not reported in the main text."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "257 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            },
+            {
+              "direction": null,
+              "value": "389 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "549 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "20 %",
+              "unit": "%",
+              "uncertainty": null
+            },
+            {
+              "direction": null,
+              "value": "11 %",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": {
+            "value": "only stated as slightly higher than the present steel's 225 GPa (exact value not reported)",
+            "unit": "GPa"
+          },
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "higher than 6.88 g cm^-3 (stated qualitatively as 'much higher' than the present steel; exact value not reported)",
+          "unit": "g cm^-3"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_reference_benchmark_comparison",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-tib2",
+        "benchmark_process_id": "proc_hot-rolled-ferritic",
+        "benchmark_sample_id": "sample_fe-tib2__hot-rolled-ferritic",
+        "comparison_metric": "This conventional Fe-TiB2 steel is the benchmark against which the newly designed low-density steel is compared: the present steel's σy (503 MPa) and σu (672 MPa) are stated to be 22 % and 30 % higher than this steel's σy (389 MPa) and σu (549 MPa), and its uniform elongation (13 %) is higher than this steel's (11 %).",
+        "improvement_percentage": "Present steel is 22 % (σy) and 30 % (σu) higher than this benchmark; this reference steel is correspondingly lower by the same margins. (Improvement stated on the present-steel side, as this sample is the benchmark.)"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_tensile_reference",
+      "microstructure_id": null,
+      "technique": "quasi-static uniaxial tensile testing (engineering stress-strain)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Room-temperature engineering stress-strain curve (orange 'Fe-TiB2 steel' curve) shown in Fig. 3(a) for comparison",
+      "purpose": "To compare the tensile properties of the conventional Fe-TiB2 steel with the present low-density steel and interstitial-free steel",
+      "key_findings": "σy = 389 MPa and σu = 549 MPa with uniform elongation of 11 %; strength increase from ceramic addition alone causes a drastic loss in ductility relative to interstitial-free steel."
+    },
+    {
+      "characterization_id": "char_microstructure_reference",
+      "microstructure_id": "micro_reference_alpha_ferrite_matrix",
+      "technique": "microstructural observation (technique not specified in the main text)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Reference microstructure of the conventional Fe-TiB2 steel, presented in Supplementary Fig. S1",
+      "key_findings": "The microstructure of the reference Fe-TiB2 steel is given in Fig. S1 (Supplementary materials); it is a hot-rolled monolithic ferritic steel with TiB2."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_fe_tib2_reference_rve",
+      "simulation_method": "Finite element method (FEM) using a 2D plane-strain representative volume element (RVE) constructed from an EBSD phase map (mapping algorithm for automatic meshing and phase assignment); element/mesh type CPE4 with a mesh size of 0.4 μm (500×500 elements). A second RVE with identical TiB2 distributions and boundary conditions but a single-phase α-ferrite matrix is used to simulate the conventional Fe-TiB steel.",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Periodic boundary conditions applied to the RVE edge node sets (edges a, b, c, d) per Eq. (1); reference point RP-2 fixed and RP-1 uniformly stretched along the x-axis direction (Fig. 2).",
+      "validation_against_experiment": "The predicted tensile response for the conventional Fe-TiB2 steel (orange curve in Fig. 11(a)) is consistent with experimental results, demonstrating the reliability of the modelling approach.",
+      "analytical_models": [
+        {
+          "model_name": "Phase constitutive parameters (base)",
+          "equation_role": "Elastic and base plastic parameters for the α-ferrite matrix of the reference steel",
+          "parameters": [
+            {
+              "name": "E (α-Fe)",
+              "value": "210",
+              "unit": "GPa"
+            },
+            {
+              "name": "v (α-Fe)",
+              "value": "0.3",
+              "unit": null
+            },
+            {
+              "name": "σ0 (lattice friction stress, α-Fe)",
+              "value": "150",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "Values taken from the α-Fe column of Table 1; E (210 GPa) and v (0.3) carry literature reference [73]."
+        },
+        {
+          "model_name": "Hall-Petch relation",
+          "equation_role": "Grain-boundary strengthening: σgb = kHP / √d",
+          "parameters": [
+            {
+              "name": "kHP (α-Fe)",
+              "value": "130",
+              "unit": "MPa μm^-1/2"
+            },
+            {
+              "name": "d (α-Fe)",
+              "value": "8",
+              "unit": "μm"
+            }
+          ],
+          "model_note": "kHP from literature [77]; d = 8 μm for α-ferrite."
+        },
+        {
+          "model_name": "Taylor equation",
+          "equation_role": "Dislocation strengthening: σdis = α M μ b √ρ",
+          "parameters": [
+            {
+              "name": "α (α-Fe)",
+              "value": "0.2",
+              "unit": null
+            },
+            {
+              "name": "M (Taylor factor, α-Fe)",
+              "value": "3.16",
+              "unit": null
+            },
+            {
+              "name": "μ (shear modulus, α-Fe)",
+              "value": "80.7",
+              "unit": "GPa"
+            },
+            {
+              "name": "b (Burgers vector, α-Fe)",
+              "value": "0.248",
+              "unit": "nm"
+            }
+          ],
+          "model_note": "α from [76]; b from [75]."
+        },
+        {
+          "model_name": "Kocks-Mecking model",
+          "equation_role": "Dislocation density evolution: dρ/dε = M(k1√ρ − k2ρ)",
+          "parameters": [
+            {
+              "name": "k1 (athermal storage factor, α-Fe)",
+              "value": "180,000",
+              "unit": null
+            },
+            {
+              "name": "k2 (dynamic recovery factor, α-Fe)",
+              "value": "6.",
+              "unit": null
+            },
+            {
+              "name": "ρ0 (initial dislocation density, α-Fe)",
+              "value": "7 x 10^13",
+              "unit": "m^-2"
+            }
+          ],
+          "model_note": "The lower k1 (180,000 vs 230,000 for δ-Fe) reflects the reduced athermal storage and inferior dislocation accumulation of the homogeneous α-ferrite matrix."
+        },
+        {
+          "model_name": "Weibull-type particle damage criterion",
+          "equation_role": "Current volume fraction of damaged TiB2 particles fd* (Eq. 8)",
+          "parameters": [
+            {
+              "name": "f0 (total proportion of potentially damageable particles)",
+              "value": "0.1480",
+              "unit": null
+            },
+            {
+              "name": "fd0 (proportion of initially damaged particles)",
+              "value": "0.1245",
+              "unit": null
+            },
+            {
+              "name": "σc (particle critical fracture stress)",
+              "value": "320",
+              "unit": "MPa"
+            },
+            {
+              "name": "n (particle shape factor)",
+              "value": "1.5",
+              "unit": null
+            },
+            {
+              "name": "k (particle damage scale parameter)",
+              "value": "0.09",
+              "unit": null
+            }
+          ],
+          "model_note": "TiB2 damage parameters (shared with the present steel model); interface strength Tc = 700 MPa and interface stiffness K = 10^6 MPa mm^-1 for the α-ferrite/TiB2 interface."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The conventional Fe-TiB2 (reference) steel's chemical composition is not given in the main text; it is provided only in Supplementary Table S1 (as is that of the interstitial-free steel).",
+    "The specific modulus of the conventional Fe-TiB2 steel is shown in the property map (Fig. 3(c)) at approximately ~35 GPa g^-1 cm^3 (furthest right of the plotted steels), i.e. higher than the present steel's 32.7 GPa g^-1 cm^3.",
+    "The Young's modulus of the conventional Fe-TiB2 steel is stated to be slightly higher than the present steel's 225 GPa, but no numeric value is reported for the reference steel.",
+    "The conventional Fe-TiB2 steel has a higher density than the present steel's 6.88 g cm^-3 (stated only qualitatively as 'much higher'), with no numeric value reported.",
+    "In the paper's data comparison, the reference steel is labelled 'Fe-TiB2 steel' (orange) and its microstructure is shown in Supplementary Fig. S1, which is not reproduced in the main text.",
+    "The reference steel's TiB2 particles closely resemble those of the present steel, and the alloy design of the present steel does not significantly affect the solidification kinetics of TiB2."
+  ]
+}

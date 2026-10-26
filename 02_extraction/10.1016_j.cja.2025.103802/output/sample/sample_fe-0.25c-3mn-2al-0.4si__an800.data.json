@@ -1,0 +1,231 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-0.25c-3mn-2al-0.4si__an800",
+      "paper_id": "10.1016_j.cja.2025.103802",
+      "alloy_id": "alloy_fe-0.25c-3mn-2al-0.4si",
+      "process_id": "proc_an800",
+      "sample_label": "AN800",
+      "aliases": [
+        "AN800"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "primary processing",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "39 kg ingot with composition Fe-0.25C-3Mn-2Al-0.4Si-0.009S-0.009P."
+    },
+    {
+      "processing_step_id": "step_hot_forging",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot forging",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Forged and cut into billets measuring 90 mm (length) × 70 mm (width) × 40 mm (thickness)."
+    },
+    {
+      "processing_step_id": "step_reheating",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "heating",
+      "temperature": "1 200 °C",
+      "temperature_unit": "°C",
+      "duration": "60 min",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "hot rolling (high-rigidity two-roll mill)",
+      "temperature": "beginning at 1 100 °C; finish rolling 880 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "90% cumulative (six passes)",
+      "processing_steps_notes": "Yielded plates with a final thickness of 4 mm."
+    },
+    {
+      "processing_step_id": "step_cold_rolling",
+      "sequence": "5",
+      "type": "mechanical processing",
+      "method": "cold rolling (four-roll reversible mill)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "60%",
+      "processing_steps_notes": "Resulting plate thickness 1.6 mm."
+    },
+    {
+      "processing_step_id": "step_intercritical_annealing_800",
+      "sequence": "6",
+      "type": "heat treatment",
+      "method": "intercritical annealing",
+      "temperature": "800 °C",
+      "temperature_unit": "°C",
+      "duration": "30 min",
+      "atmosphere": null,
+      "cooling_medium": "air (air-cooled to room temperature)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Annealing within the critical region (steel Ac1 = 705 °C, Ac3 = 950 °C); defines sample AN800."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_an800",
+      "overall_structure": "Multiphase heterogeneous microstructure of blocky/equiaxed ferrite (F) grains outlined by bainite (B), with thin film-like retained austenite (RA) and blocky fresh martensite (FM).",
+      "number_of_phases": 4,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_an800",
+          "region": null,
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "Ferrite (F)",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "blocky/equiaxed grains",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "Bainite (B)",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "distributes along ferrite grain boundaries, forming regions about 3 µm in size",
+              "grain_size": "about 3 µm",
+              "texture": null
+            },
+            {
+              "phase_name": "Fresh Martensite (FM)",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "blocky, attached to bainite (or islands comprising FM and RA)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "Retained Austenite (RA)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "1.1 vol% (FCC fraction 0.011)",
+              "morphology": "thin film-like",
+              "grain_size": "0.72 µm (D_AVE)",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "RA size histogram (Fraction vs Diameter) peaks near 1.2 µm with D_AVE = 0.72 µm.",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interfaces_an800",
+      "phase_interfaces": [
+        {
+          "interface_id": "pi_1",
+          "microstructure_id": "micro_an800",
+          "phase_1_name": "Ferrite (F)",
+          "phase_2_name": "Bainite (B)",
+          "coherence": null
+        },
+        {
+          "interface_id": "pi_2",
+          "microstructure_id": "micro_an800",
+          "phase_1_name": "Ferrite (F)",
+          "phase_2_name": "Retained Austenite (RA)",
+          "coherence": null
+        },
+        {
+          "interface_id": "pi_3",
+          "microstructure_id": "micro_an800",
+          "phase_1_name": "Ferrite (F)",
+          "phase_2_name": "Fresh Martensite (FM)",
+          "coherence": null
+        },
+        {
+          "interface_id": "pi_4",
+          "microstructure_id": "micro_an800",
+          "phase_1_name": "Bainite (B)",
+          "phase_2_name": "Fresh Martensite (FM)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "During intercritical annealing, portions of bainite and martensite re-austenitize due to the high solubility of carbon in austenite, leading to carbon enrichment and enhanced stability; carbon-depleted regions form ferrite, some carbon-enriched austenite is retained on cooling as RA, unstabilized austenite transforms diffusionlessly to fresh martensite, and bainite forms in regions not fully austenitized.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_sem_an800",
+      "microstructure_id": "micro_an800",
+      "technique": "Scanning Electron Microscopy (SEM)",
+      "instrument_or_setup": "field emission SEM (FEI Quanta-650 FEG); etched with 4% nitric acid ethanol solution",
+      "measurement_conditions": null,
+      "purpose": "phase composition and microstructure characterization",
+      "key_findings": "AN800 shows blocky ferrite outlined by bainite, with thin film-like retained austenite and blocky fresh martensite (Fig. 2(d))."
+    },
+    {
+      "characterization_id": "char_ebsd_an800",
+      "microstructure_id": "micro_an800",
+      "technique": "Electron Backscatter Diffraction (EBSD)",
+      "instrument_or_setup": "EBSD-FEI Quanta-650 FEG; 20 kV operating voltage; scanning step size 0.2 µm; TSL OIM 7.0; BCC and FCC indexing; minimum pixel size 9",
+      "measurement_conditions": "electropolishing at 28 V and 0.1 A for 15–30 s; electrolyte 80% ethanol, 15% perchloric acid, 5% glycerol",
+      "purpose": "phase distribution and retained austenite quantification",
+      "key_findings": "AN800 phase table FCC 0.011 / BCC 0.989; RA content 1.1 vol%; RA D_AVE = 0.72 µm (Fig. 3(c) and 3(e))."
+    },
+    {
+      "characterization_id": "char_xrd_an800",
+      "microstructure_id": "micro_an800",
+      "technique": "X-Ray Diffraction (XRD)",
+      "instrument_or_setup": "accelerating voltage 40 kV, tube current 40 mA, scanning angle range 30°–110° on the rolling plane",
+      "measurement_conditions": null,
+      "purpose": "identify phases in the microstructure",
+      "key_findings": "XRD γ reflections for AN800 confirm retained austenite; XRD confirms RA content decreasing with increasing annealing temperature (Fig. 3(f))."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "AN800 is the intercritically annealed condition (800 °C / 30 min, air-cooled) and is distinct from AN800-T, which received an additional low-bainite aging at 400 °C for 30 min. The tensile properties reported in the paper (yield strength 985 MPa, tensile strength 1 295 MPa, elongation 18.7%) belong to AN800-T, not to this AN800 sample.",
+    "Steel critical transformation temperatures determined by dilatometry: Ac1 = 705 °C, Ac3 = 950 °C, Bf = 380 °C, Ms = 346 °C; the 800 °C annealing of AN800 lies within the Ac1–Ac3 critical region (b0149)."
+  ]
+}

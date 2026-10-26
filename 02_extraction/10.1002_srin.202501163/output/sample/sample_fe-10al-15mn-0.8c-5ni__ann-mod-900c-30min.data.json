@@ -1,0 +1,315 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-10al-15mn-0.8c-5ni__ann-mod-900c-30min",
+      "paper_id": "10.1002_srin.202501163",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_id": "proc_ann-mod-900c-30min",
+      "sample_label": "A30 (modified)",
+      "aliases": [
+        "modified A30",
+        "longer annealed A30 (modified)"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_melting",
+      "sequence": "1",
+      "type": "synthesis",
+      "method": "vacuum arc melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "10^-5 mbar, backfilled with argon",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingot remelted 5–6 times in AM500-Edmund Buhler GmbH arc melter without breaking vacuum for better elemental intermixing."
+    },
+    {
+      "processing_step_id": "step_2_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": "muffle furnace",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_3_modified_hr",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling (modified high-speed, 10 rpm)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "14 to 2 mm (slightly more)",
+      "processing_steps_notes": "Modified route applies high-speed HR at 10 rpm vs 1 rpm in the previous case. Original HR description (b0010/b0018) ran at 1050 °C start to 900 °C finish in nine passes; modified-route temperature is not explicitly restated."
+    },
+    {
+      "processing_step_id": "step_4_cr_modified",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": "room temperature",
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "1 mm thickness reduction",
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_5_annealing_900c_30min",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": "900 °C",
+      "temperature_unit": "°C",
+      "duration": "30 min",
+      "atmosphere": null,
+      "cooling_medium": "water quench",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "A30 corresponds to the 30 min annealing condition in the modified route (b0032: annealing treatment similar to previous experiments for 5–30 min)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_A30_modified",
+      "overall_structure": "Banded two-phase microstructure of softer γ austenite matrix (≈64%) with B2 second phase in three morphologies — refined B2 stringer bands (≈11%), intergranular GB-B2 (≈16%), and intragranular IG-B2 (≈3.7%).",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_A30_modified_bulk",
+          "region": "bulk (annealed sheet)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite (matrix)",
+              "crystal_structure": "face-centered cubic (FCC)",
+              "volume_fraction": "64%",
+              "morphology": "matrix (softer phase)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "B2 (Fe(Ni,Mn)Al ordered intermetallic)",
+              "crystal_structure": "ordered B2 body-centered cubic (BCC)",
+              "volume_fraction": null,
+              "morphology": "refined B2 stringer bands (≈11%) + coarse intergranular GB-B2 (≈16%) + intragranular needle IG-B2 (≈3.7%)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "B2_stringer_bands_A30mod",
+              "type": "B2 stringer band",
+              "size": null,
+              "distribution": "refined lamellar bands along prior rolling direction; fraction ≈11% (reduced from 16%)",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "GB-B2_A30mod",
+              "type": "intergranular B2 (GB-B2)",
+              "size": null,
+              "distribution": "coarse particles at γ grain boundaries; ≈16%",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "IG-B2_A30mod",
+              "type": "intragranular B2 (IG-B2)",
+              "size": null,
+              "distribution": "intragranular particles; ≈3.7%; nonshearable",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interfaces_A30_modified",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_gamma_b2_A30mod",
+          "microstructure_id": "micro_A30_modified_bulk",
+          "phase_1_name": "γ austenite (FCC)",
+          "phase_2_name": "B2 (B2 ordered BCC)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "gnd_localization_gamma_b2_A30mod",
+          "microstructure_id": "micro_A30_modified_bulk",
+          "interaction_type": "geometrically necessary dislocation (GND) localization at γ/B2 phase interfaces",
+          "qualitative_or_quantitative_description": "dislocations released from softer γ localize around GB-B2 at phase interfaces near γ grain boundaries; strain concentrates in γ, depleting GND in the 64% γ bulk"
+        }
+      ],
+      "slip_behavior": "Two-stage strain hardening: low initial n (yield point elongation) followed by steady rise through combined plastic deformation of γ and B2; B2 is nonshearable and blocks dislocation mean-free paths",
+      "phase_evolution": "Modified high-speed HR + CR refines B2 stringer bands (16%→11%), allowing softer γ to dominate and absorb plastic strain preferentially; annealing produces IG-B2 and GB-B2 precipitation",
+      "interface_notes": "Intergranular cracking was elusive in the modified material despite heterogeneous strain distribution."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "properties_A30_modified",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1 mm/min crosshead velocity",
+        "specimen_geometry": "ASTM E8, rolling direction (RD), gauge length 12.5 mm, gauge width 3 mm, thickness 2 mm",
+        "test_standard": "ASTM E8",
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "1 GPa",
+              "unit": "GPa",
+              "uncertainty": "nearly (per abstract)"
+            }
+          ],
+          "ultimate_tensile_strength": [],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "30%",
+              "unit": "%",
+              "uncertainty": null
+            },
+            {
+              "direction": "RD",
+              "value": "28%",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress–strain curves of modified samples (A5, A15, A30) shown in Figure 6a; panel (a) not supplied in image description",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            "n = 0.054 (initial stage, dimensionless)",
+            "n = 0.27 (second stage, dimensionless)"
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "1.72 kJ mol^-1 (or 238 J cm^-3)",
+          "unit": "kJ mol^-1 (J cm^-3)"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "performance_A30_modified",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "uniaxial tensile (rolling direction)",
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": [
+        {
+          "benchmark_alloy_id": null,
+          "benchmark_process_id": null,
+          "benchmark_sample_id": "TRIP-aided steel",
+          "comparison_metric": "tensile toughness (energy absorbed before fracture)",
+          "improvement_percentage": null
+        }
+      ]
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_tensile_A30mod",
+      "microstructure_id": null,
+      "technique": "uniaxial tensile testing",
+      "instrument_or_setup": "100 kN Instron 5982 with 10 mm gauge extensometer",
+      "measurement_conditions": "room temperature; 1 mm/min crosshead velocity; ASTM E8; RD; gauge length 12.5 mm, width 3 mm, thickness 2 mm",
+      "purpose": "measure engineering stress–strain response, yield strength, elongation and toughness",
+      "key_findings": "modified A30: YS ≈1 GPa, ~30% elongation, toughness 1.72 kJ mol^-1 (238 J cm^-3); best ductility among modified annealed samples"
+    },
+    {
+      "characterization_id": "char_holloman_A30mod",
+      "microstructure_id": "micro_A30_modified_bulk",
+      "technique": "Holloman's plot (ln σ vs ln ε) strain-hardening analysis",
+      "instrument_or_setup": null,
+      "measurement_conditions": "true stress–true strain curves; equation σ = k ε^n in logarithmic form",
+      "purpose": "determine two-stage strain-hardening exponent n",
+      "key_findings": "A30: n = 0.054 (initial stage) then n = 0.27 (second stage)"
+    },
+    {
+      "characterization_id": "char_om_defgauge_A30mod",
+      "microstructure_id": "micro_A30_modified_bulk",
+      "technique": "optical microscopy of deformed tensile gauge",
+      "instrument_or_setup": null,
+      "measurement_conditions": "deformed tensile gauge near specimen edge",
+      "purpose": "assess crack susceptibility and B2 stringer band behavior after tensile deformation",
+      "key_findings": "modified A30 shows B2 stringer bands and a micro-crack at specimen edge; reduced crack susceptibility"
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Abstract (b0003) reports the process-controlled outcome as 'nearly 1 GPa yield strength, 28% total elongation, and over 1.7 kJ mol^-1 (238.4 J cm^-3) toughness'; conclusion (b0044) reports '1 GPa with 30% elongation'. Both appear to describe modified A30 (best ductility/toughness), with a 28% vs 30% elongation discrepancy.",
+    "IG-B2 size/fraction values (needle-shaped 0.2 μm / 2.6% in URE-γ; spherical coarse 0.29 μm / 1.1% in RE-γ; total 66 MPa precipitation strengthening) are reported in b0026/b0040 in relation to Figure 3 (regular annealing route); attribution to modified A30 is ambiguous, although 2.6% + 1.1% = 3.7% matches the IG-B2 fraction stated for the modified microstructure in b0033.",
+    "Phase fractions 64% γ (b0033/b0046), 16% GB-B2 and 3.7% IG-B2 (b0033), and 11% refined B2 stringer bands (b0032) are reported at the modified-route level rather than isolated specifically to A30-modified alone.",
+    "Figure 6a (engineering stress–strain curves of modified A5/A15/A30) is not supplied in the image description; only textual values (YS ≈1 GPa, ~30% elongation, toughness 1.72 kJ/mol for A30) are extractable.",
+    "The toughness value (1.72 kJ mol^-1 / 238 J cm^-3) refers to energy absorbed before fracture calculated from the area under the stress–strain curves (inset Figure 6a), not a fracture-toughness K measurement."
+  ]
+}

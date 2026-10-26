@@ -1,0 +1,286 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-26mn-11al-1.2c__h-charged",
+      "paper_id": "10.1007_s11837-014-1032-x",
+      "alloy_id": "alloy_fe-26mn-11al-1.2c",
+      "process_id": "proc_h-charged",
+      "sample_label": "(无)",
+      "aliases": [
+        "specimens with hydrogen charging"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_h_precharge",
+      "sequence": "1",
+      "type": "hydrogen charging",
+      "method": "hydrogen precharging",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": "40 min",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hydrogen introduced into the samples via precharging for 40 min before tensile testing."
+    },
+    {
+      "processing_step_id": "step_in_situ_h_charging",
+      "sequence": "2",
+      "type": "hydrogen charging",
+      "method": "permanent in situ hydrogen charging",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Permanent in situ hydrogen charging imposed during the ongoing tensile tests (direct/permanent hydrogen charging)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_1",
+      "overall_structure": "κ-carbide hardened austenitic low-density steel",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": null,
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide (L′1₂ ordered carbide)",
+              "crystal_structure": "L′1₂ (ordered fcc)",
+              "volume_fraction": null,
+              "morphology": "nanosized precipitates formed during quenching",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_1",
+              "type": "κ-carbide (L′1₂)",
+              "size": null,
+              "distribution": null,
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_set_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_kappa_austenite",
+          "microstructure_id": "micro_1",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "κ-carbide (L′1₂)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "int_h_slip_localization",
+          "microstructure_id": "micro_1",
+          "interaction_type": "hydrogen-assisted planar slip localization",
+          "qualitative_or_quantitative_description": "Pronounced planar slip localization under hydrogen charging promotes gradual formation of chains of microvoids on grain boundaries."
+        },
+        {
+          "interaction_id": "int_h_kappa_trapping",
+          "microstructure_id": "micro_1",
+          "interaction_type": "hydrogen trapping at κ-carbides",
+          "qualitative_or_quantitative_description": "κ-carbides act as hydrogen trap sites with an estimated activation energy of 76–80 kJ/mol (from a Redlich–Kister analysis)."
+        }
+      ],
+      "slip_behavior": "pronounced planar slip localization",
+      "phase_evolution": null,
+      "interface_notes": "Two hydrogen embrittlement mechanisms: (1) cracking at grain boundary triple junctions; (2) gradual formation of chains of microvoids on grain boundaries under planar slip localization, leading to void coalescence and intergranular cracking."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_tensile_h",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": "permanent in situ hydrogen charging during tensile testing",
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "specimens precharged with hydrogen for 40 min"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Red curve ('With hydrogen charging') lies marginally below the black uncharged curves that plateau just above 1000 MPa and fracture between ~40% and ~45% engineering plastic strain; the hydrogen-charged curve fractures near 40% engineering plastic strain.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_tda",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "heating rate 26 K/min"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": {
+          "hydrogen_desorption_peaks": "weak low-temperature shoulder near 200–300 °C; two dominant overlapping peaks near 500 °C and 650 °C",
+          "hydrogen_trap_activation_energy": "76–80 kJ/mol"
+        },
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_h_vs_uncharged",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "uniaxial tension",
+        "environment": "hydrogen (permanent in situ charging)"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-26mn-11al-1.2c",
+        "benchmark_process_id": "proc_uncharged",
+        "benchmark_sample_id": null,
+        "comparison_metric": "tensile strength and ductility (hydrogen-charged vs uncharged)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_1",
+      "technique": "EBSD (RD-IPF texture mapping and KAM)",
+      "instrument_or_setup": "KAM values calculated using the first neighboring EBSD point shell at a spacing of 300 nm",
+      "measurement_conditions": null,
+      "purpose": "Study hydrogen-induced micromechanisms of crack formation and crack propagation.",
+      "key_findings": "Cracking at grain boundary triple junctions; elevated KAM bands flanking the unindexed crack path while grain interiors stay near zero."
+    },
+    {
+      "characterization_id": "char_ecci",
+      "microstructure_id": "micro_1",
+      "technique": "ECCI (Electron Channeling Contrast Imaging)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Observe planar slip localization and microvoid chains on grain boundaries.",
+      "key_findings": "Region A shows fine planar slip bands; two 'Slip localization' arrows and three 'Voids' on a grain boundary above a large crack opening."
+    },
+    {
+      "characterization_id": "char_tda",
+      "microstructure_id": null,
+      "technique": "thermal desorption analysis (TDA)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "heating rate 26 K/min",
+      "purpose": "Identify hydrogen trapping states and estimate trap activation energy.",
+      "key_findings": "Two dominant overlapping desorption peaks near 500 °C and 650 °C plus a weak low-temperature shoulder near 200–300 °C; κ-carbides act as hydrogen trap sites with estimated activation energy of 76–80 kJ/mol (Redlich–Kister analysis)."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Hydrogen embrittlement in Fe-26Mn-11Al-1.2C was mainly due to two distinct phenomena: (1) cracking at grain boundary triple junctions; (2) gradual formation of chains of microvoids on grain boundaries under pronounced planar slip localization, leading to void coalescence and intergranular cracking along the affected grain boundaries [b0105].",
+    "The intense slip localization mechanism was suggested to be linked to the presence of κ-carbides in this steel [b0105].",
+    "κ-carbides can act as beneficial hydrogen trapping sites (estimated activation energy 76–80 kJ/mol) that might render hydrogen immobile, while the associated hydrogen-assisted planar slip acts in the opposite direction by promoting grain-boundary void formation [b0106][b0107].",
+    "Hydrogen charging produced only a small loss of strength but a clearer loss of ductility in the Fe-26Mn-11Al-1.2C steel [figure_009]."
+  ]
+}

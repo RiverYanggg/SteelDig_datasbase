@@ -1,0 +1,242 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_spcc__15pct-prestrain-ht373k90h",
+      "paper_id": "10.1016_j.jmatprotec.2004.04.114",
+      "alloy_id": "alloy_spcc",
+      "process_id": "proc_15pct-prestrain-ht373k90h",
+      "sample_label": "C",
+      "aliases": [
+        "Heat-treated after 15% pre-strain",
+        "Species C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_prestrain_15pct",
+      "sequence": "1",
+      "type": "mechanical processing",
+      "method": "pre-strain (tensile pre-straining)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "15%",
+      "processing_steps_notes": "SPCC sheet pre-strained to 15% as the first stage of specimen condition C ('Heat-treated after 15% pre-strain'). Specimens with several conditions as shown in Table 1 were employed for comparison; specimen C = 'Heat-treated after 15% pre-strain'."
+    },
+    {
+      "processing_step_id": "step_heat_treatment_373K_90h",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "heat treatment for recovering only the Cottrell atmosphere",
+      "temperature": "373 K",
+      "temperature_unit": "K",
+      "duration": "90 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The workpieces were treated after the tensile test with 373 K for 90 h for recovering only the Cottrell atmosphere due to the diffusion of C whilst keeping the dislocation stationary. The conditions were calculated based on the average diffusion distance x of solute C in an Fe matrix in time t by x = (2Dt)^(1/2)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_C",
+      "overall_structure": "Mild steel SPCC (Fe matrix). Before deformation, dislocations are locked by carbon and other solutes due to the Cottrell effect. During 15% plastic deformation the dislocations are released from the Cottrell effect and move with lower internal stress, changing the dislocation structure; because the diffusion rate of C in an Fe matrix is very low at room temperature the Cottrell atmosphere is not recovered by plastic deformation alone. The subsequent heat treatment (373 K, 90 h) recovers only the Cottrell atmosphere by C diffusion while keeping dislocations stationary, restraining the movable dislocations.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_C_prestrained_heattreated",
+          "region": "grain interior and near grain boundary",
+          "related_sequence": "2",
+          "phases_present": [],
+          "defects": [
+            {
+              "type": "movable dislocations / dislocation pile-up",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": "Grains at different orientations (the measured elastic modulus differs between grains)."
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_C",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "interaction_id": "dislocation_pileup_at_grain_boundary",
+          "microstructure_id": "micro_C_prestrained_heattreated",
+          "interaction_type": "dislocation pile-up at grain boundary",
+          "qualitative_or_quantitative_description": "Dislocations released from a common source move along the same slip surface and easily pile up, the front of the dislocations being stopped by obstacles such as grain boundaries and solutes. The pile-up dislocations can move backwards when the shearing stress is released during unloading, causing the apparent elastic modulus to decrease. The nano-indentation results show the elastic modulus near the boundary has a smaller value than in other regions, i.e. a decrease near the boundary area (X ≈ 5–10 μm of the scanning line)."
+        }
+      ],
+      "slip_behavior": "Dislocations released from a common source move along the same slip surface and pile up; pile-up dislocations can move backwards when the shearing stress is released during unloading.",
+      "phase_evolution": null,
+      "interface_notes": "Pile-up of dislocations is considered to occur near the boundary of grains, so movable dislocations have a greater possibility of existence there than in other partitions; the apparent elastic modulus can differ from the boundary to the centre of a grain."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_C_elastic_modulus",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "SPCC sheet, 1.2 mm thickness (specimen condition C)",
+        "test_standard": null,
+        "other_conditions": "Elastic modulus calculated from the stress–strain curve measured with a load cell and a strain gauge up to a strain of 1%; two ranges used: 0–0.05% strain and whole elastic range. The gradient of the stress–strain curve decreases from the beginning and then increases to almost the same level as the annealed workpiece."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": {
+            "value": "186 (at 0–0.05% strain); 162 (whole elastic range)",
+            "unit": "not printed in Table 2"
+          },
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_straingauge_tensile",
+      "microstructure_id": null,
+      "technique": "Tensile test with load cell and strain gauge (macroscopic stress–strain measurement)",
+      "instrument_or_setup": "Load cell and strain gauge",
+      "measurement_conditions": "Up to a strain of 1%; elastic modulus obtained from the stress–strain curves within the elastic deformation region",
+      "purpose": "Measure the stress–strain curves and their gradient (apparent Young's modulus) in the elastic region for specimens A–E, including the pre-strained + heat-treated specimen C",
+      "key_findings": "The gradient of the stress–strain curve decreases from the beginning for the pre-strained + heat-treated workpiece (C), but then increases to almost the same level as the annealed workpiece, giving a larger average elastic modulus than the other pre-strained workpiece (Table 2: 186 / 162)."
+    },
+    {
+      "characterization_id": "char_precision_extensometer_tensile",
+      "microstructure_id": null,
+      "technique": "Precision tensile test using a precision extensometer and strain gages",
+      "instrument_or_setup": "Precision extensometer developed by the authors and strain gages",
+      "measurement_conditions": "Loaded to a given plastic strain of maximum 25% and then unloaded; elastic modulus measured from initial elastic deformation and unloading curve",
+      "purpose": "Measure the elastic modulus of the sheet metal before and after large deformation to evaluate its change",
+      "key_findings": "Young's modulus decreases with plastic strain, the decrease being more than 20% after a deformation of 25% plastic strain (measured on SPCE sheet metal)."
+    },
+    {
+      "characterization_id": "char_nanoindentation_spherical",
+      "microstructure_id": "micro_C_prestrained_heattreated",
+      "technique": "Nano-indentation with a spherical indenter tip",
+      "instrument_or_setup": "Triboscope (Hysitron Inc.) set onto an AFM stage (SPM-9500J2, Shimadzu Co.); spherical tip with nominal radius R = 50 μm",
+      "measurement_conditions": "Indentation depth as small as several nanometers; specimen surface prepared by CMP before indentation; measurement interval of 1 μm with 20 and 3 points in X and Y directions",
+      "purpose": "Measure the mechanical properties (elastic modulus) near a grain boundary of the specimens to establish the microscopic distribution of the modulus",
+      "key_findings": "The elastic modulus near the boundary has a smaller value than in other regions, which have a similar distribution but at a different level due to grains being at different orientations; Young's modulus decreases near X ≈ 5–10 (the boundary area)."
+    },
+    {
+      "characterization_id": "char_afm",
+      "microstructure_id": "micro_C_prestrained_heattreated",
+      "technique": "Atomic force microscopy (AFM) surface profiling",
+      "instrument_or_setup": "AFM stage (SPM-9500J2, Shimadzu Co.) integrated with the nano-indenter",
+      "measurement_conditions": "Surface scanned before and after indentation",
+      "purpose": "Scan the sample-surface profile to choose the indentation point and measure the profile before and after indentation in situ",
+      "key_findings": "AFM image of the surface near the grain boundary shows the location of the grain boundary and the indentation measurement points (three lines across the boundary)."
+    },
+    {
+      "characterization_id": "char_vickers_marking",
+      "microstructure_id": "micro_C_prestrained_heattreated",
+      "technique": "Vickers hardness test (indentation marking)",
+      "instrument_or_setup": "Vickers hardness test machine",
+      "measurement_conditions": "Two indentation marks made near the targeted grain boundary before CMP treatment",
+      "purpose": "Mark the position of the targeted grain boundary so the exact measurement point can be relocated after CMP",
+      "key_findings": "Larger outer markers find the region for indentation and smaller inner ones decide the exact position of the measurement point."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_diffusion_distance_heat_treatment",
+      "simulation_method": "Analytical calculation of the average diffusion distance of solute C in an Fe matrix",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Average diffusion distance of solute C in Fe matrix",
+          "equation_role": "Used to calculate the heat-treatment conditions (373 K for 90 h) so only the Cottrell atmosphere is recovered by C diffusion while the dislocations stay stationary",
+          "parameters": [
+            {
+              "name": "x",
+              "value": "(2Dt)^(1/2)",
+              "unit": null
+            },
+            {
+              "name": "D",
+              "value": "diffusion coefficient",
+              "unit": null
+            },
+            {
+              "name": "t",
+              "value": "time",
+              "unit": null
+            }
+          ],
+          "model_note": "X = (2Dt)^(1/2)"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Specimen C shows the largest discrepancy between the two modulus ranges (along with B): 186 (0–0.05% strain) vs 162 (whole elastic range), which the paper attributes to the recovery of the Cottrell effect restraining the movable dislocations.",
+    "The gradient of the stress–strain curve for the pre-strained + heat-treated workpiece (C) shows a unique manner: it decreases from the beginning (like the pre-strained workpiece), then increases to almost the same level as the annealed workpiece, giving a larger average elastic modulus than the other pre-strained workpiece.",
+    "The heat treatment (373 K for 90 h) was designed so that only the Cottrell atmosphere is recovered by C diffusion while dislocations remain stationary, allowing confirmation of the effect of movable dislocations on the apparent elastic modulus."
+  ]
+}

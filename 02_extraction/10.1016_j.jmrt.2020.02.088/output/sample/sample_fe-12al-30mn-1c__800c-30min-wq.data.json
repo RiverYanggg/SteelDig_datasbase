@@ -1,0 +1,307 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-12al-30mn-1c__800c-30min-wq",
+      "paper_id": "10.1016_j.jmrt.2020.02.088",
+      "alloy_id": "alloy_fe-12al-30mn-1c",
+      "process_id": "proc_800c-30min-wq",
+      "sample_label": "12Al-30Mn-1C 800 °C — Tempered",
+      "aliases": [
+        "12Al-30Mn-1C tempered at 800 °C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "1",
+      "type": "melting and casting",
+      "method": "casting in a vacuum induction furnace",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The alloyed steel was produced by casting using a 100 kW vacuum induction furnace, resulting in 0.5 kg ingots (Table 1)."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing (thermomechanical)",
+      "method": "hot-rolling",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water (water quenching)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "to 5 mm flat products",
+      "processing_steps_notes": "The ingots were hot-rolled at 1150 °C, obtaining 5 mm flat products, followed by water quenching; this is the parent process of the 800 °C tempering."
+    },
+    {
+      "processing_step_id": "step_tempering_800c",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "tempering (heat treatment at 800 °C)",
+      "temperature": "800 °C",
+      "temperature_unit": "°C",
+      "duration": "30 min",
+      "atmosphere": null,
+      "cooling_medium": "water (water quenching)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Samples were heat treated at 800 °C for 30 min, followed by water quenching. Tempering at 800 °C triggered complete and widespread transformations such as cellular transformation coupled with spinodal decomposition; for 12Al-30Mn-1C the austenite grains were fully spinodally decomposed."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "At 800 °C the austenite (γ) grains of 12Al-30Mn-1C were fully spinodally decomposed. Optical microscopy shows strongly contrasted light and dark grains, several showing internal transformation/banding; SEM shows rounded, droplet-like light regions in a darker matrix, consistent with spinodal decomposition. Nano-sized κ-carbides form as agglomerated acicular-like precipitates, the finest and least dense configuration among the three spinodally decomposed alloys examined.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1_spinodal_decomposed_gamma",
+          "region": "austenite grains (bulk)",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "γ (austenite, spinodally decomposed)",
+              "crystal_structure": "FCC (austenite); spinodal pathway γ → γ0 + γ' → γ0 + L12 → γ0 + L12/E21",
+              "volume_fraction": null,
+              "morphology": "roughened spinodally decomposed matrix with rounded droplet-like light regions in a darker matrix; optical contrast shows strongly contrasted light and dark grains with internal transformation",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide (nano-sized)",
+              "crystal_structure": "ordered (L12 initially, further ordering of C to E21 / L12)",
+              "volume_fraction": null,
+              "morphology": "agglomerated into acicular-like (needle-like) precipitates; finest and least dense network among the three spinodally decomposed alloys",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_1_acicular_kappa",
+              "type": "nano-sized κ-carbide (from spinodal decomposition)",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "agglomerated acicular-like precipitates forming a fine, less dense network; in the ×10,000 view they surround large bright blocky islands",
+              "coherency": "coherent with γ (coherency strain energy between κ-carbides and γ is essential for γ decomposition by spinodal decomposition)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_kappa_gamma",
+          "microstructure_id": "micro_1_spinodal_decomposed_gamma",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "γ (austenite)",
+          "coherence": "coherent; the coherency strain energy between κ-carbides and γ is reported as essential for γ decomposition, and spinodal decomposition generates intragranular nano-sized cube-shaped κ-carbides within the γ phase"
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "γ → γ0 + γ' → γ0 + L12 → γ0 + L12/E21 spinodal decomposition pathway. At 800 °C for 12Al-30Mn-1C the spinodal decomposition involved the entire austenitic volume (Fig. 13(c)); high Mn raises austenite stability so spinodal decomposition becomes more significant and occurs at the expense of cellular transformation.",
+      "interface_notes": "No specific δ-ferrite/γ interfaces or grain-boundary carbide films are reported for this particular composition; δ/γ carbide precipitation features reported elsewhere belong to other alloys (e.g. 12Al-10Mn-1C, 9Al-20/30Mn-1C)."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "property_set_1",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Vickers macro-hardness; 5 kg load applied for all indentations; 5 indentations per sample; measured on the 800 °C — tempered state of 12Al-30Mn-1C"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk (macro-hardness)",
+            "value": "352 HV",
+            "scale": "Vickers (HV)",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_1",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-12al-30mn-1c",
+        "benchmark_process_id": "proc_hot-rolled-1150c",
+        "benchmark_sample_id": null,
+        "comparison_metric": "Vickers hardness: hot-rolled 324 HV vs 800 °C tempered 352 HV for 12Al-30Mn1C (Table 5); the 800 °C tempering gave a modest increase in hardness, unlike the strong hardening seen for other compositions",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_optical",
+      "microstructure_id": "micro_1_spinodal_decomposed_gamma",
+      "technique": "Optical microscopy",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Through-thickness embedding, grinding and polishing performed separately for hot-rolled and heat-treated samples",
+      "purpose": "Analyse the microstructure of the 800 °C tempered alloys",
+      "key_findings": "The 800 °C tempered 12Al-30Mn-1C optical micrograph shows strongly contrasted light and dark grains, several with internal transformation/banding."
+    },
+    {
+      "characterization_id": "char_sem_sei",
+      "microstructure_id": "micro_1_spinodal_decomposed_gamma",
+      "technique": "Scanning Electron Microscopy (Secondary Electron Imaging, SEI)",
+      "instrument_or_setup": "SEM (20 kV)",
+      "measurement_conditions": "Secondary electron images acquired to analyse phase morphologies; performed only on selected microstructures",
+      "purpose": "Resolve the microstructure/phase morphology of the 800 °C tempered 12Al-30Mn-1C",
+      "key_findings": "SEM shows rounded droplet-like light regions in a darker matrix consistent with spinodal decomposition (Fig. 5(d)); at higher magnification the spinodal nano-sized κ-carbides appear as agglomerated acicular-like precipitates, the finest and least dense configuration (Fig. 8(e,f))."
+    },
+    {
+      "characterization_id": "char_eds",
+      "microstructure_id": null,
+      "technique": "SEM-EDS (Energy Dispersive X-ray Spectroscopy)",
+      "instrument_or_setup": "SEM with EDS detector",
+      "measurement_conditions": "EDX-spectroscopy to provide qualitative information on local phase composition",
+      "purpose": "Analyse local phase chemical composition (Al, Mn partitioning)",
+      "key_findings": "EDS was performed on selected microstructures; no dedicated EDS table is reported for the 800 °C tempered 12Al-30Mn-1C composition (EDS tables given for 9Al-10Mn-1C and 12Al-20Mn-1C)."
+    },
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": null,
+      "technique": "Vickers macro-hardness testing",
+      "instrument_or_setup": "Vickers macro-hardness tester",
+      "measurement_conditions": "5 kg load; 5 indentations per sample",
+      "purpose": "Quantify hardening effects of the transformations",
+      "key_findings": "12Al-30Mn-1C: 324 HV hot-rolled, 352 HV after 800 °C tempering (Table 5)."
+    },
+    {
+      "characterization_id": "char_calphad",
+      "microstructure_id": null,
+      "technique": "CALPHAD thermodynamic phase-fraction (phase volume fraction) diagrams",
+      "instrument_or_setup": "Thermo-Calc / CALPHAD",
+      "measurement_conditions": "Equilibrium phase amounts (mol) vs temperature (0–1300 °C)",
+      "purpose": "Assess thermodynamic gradients for austenite stability vs tempering temperature",
+      "key_findings": "For 12Al-30Mn-1C (Fig. 12(d)) a BCC_2SL curve plateaus near 0.80 mol between ~400 and 600 °C then declines; KAPPA_E21 sits near 0.20 mol up to ~300 °C; FCC_A1 near 0.72 mol at ~1000 °C. The higher Al moves the f.c.c. field to higher temperatures, affecting austenite stability and justifying the γ propensity to transform."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_calphad_12al30mn1c",
+      "simulation_method": "CALPHAD equilibrium thermodynamic calculation (phase amounts vs temperature)",
+      "software_used": "Thermo-Calc / CALPHAD",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Equilibrium phase fractions (Amount of all phases, mol, 0.00–1.10) calculated over 0–1300 °C for composition 12Al-30Mn-1C. Legend phases: BCC_2SL, FCC_A1, LIQUID, KAPPA_E21, BCC_A2. BCC_2SL rises to a ~0.80 mol plateau between roughly 400 and 600 °C then declines; KAPPA_E21 sits near 0.20 mol up to ~300 °C then decreases; FCC_A1 near 0.72 mol at ~1000 °C.",
+      "validation_against_experiment": "Used to explain the reversal in austenite stability (higher Al moves the f.c.c. field toward higher temperatures, away from the tempering temperature) that justifies the propensity of the γ phase to transform by spinodal decomposition at 800 °C.",
+      "analytical_models": [
+        {
+          "model_name": "Phase volume fraction (CALPHAD) diagram for 12Al-30Mn-1C",
+          "equation_role": "Equilibrium phase amounts vs temperature used to infer thermodynamic gradients for austenite stability",
+          "parameters": [
+            {
+              "name": "BCC_2SL amount plateau",
+              "value": "~0.80 mol (roughly 400–600 °C)",
+              "unit": "mol"
+            },
+            {
+              "name": "KAPPA_E21 amount",
+              "value": "~0.20 mol up to ~300 °C",
+              "unit": "mol"
+            },
+            {
+              "name": "FCC_A1 amount",
+              "value": "~0.72 mol at ~1000 °C",
+              "unit": "mol"
+            }
+          ],
+          "model_note": "No numeric data labels are printed on the curves; values are read from the figure description."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "For 12Al-30Mn-1C tempered at 800 °C, only spinodal decomposition involved the entire austenitic volume (Fig. 13(c)); high manganese raised austenite stability so spinodal decomposition became more significant and occurred at the expense of cellular transformation (block b0110, b0113).",
+    "Hardness comparison for 12Al-30Mn1C (Table 5): hot-rolled 324 HV → 800 °C tempered 352 HV; in the discussion the paper notes that thickening of precipitates/low inter-lamellar spacing behaviour means some 800 °C tempered structures kept hardness close to their hot-rolled value rather than being strongly strengthened (blocks b0043, b0048, b0051, b0108).",
+    "The conclusions text (block b0122) attributes to 'the chemical composition featuring 12% Al + 30% Mn' the 'most dense and thickest nano-sized cuboidal κ-carbides' combined with 'spinodal decomposition + cellular transformation', which contradicts both Fig. 8(e,f)/the results text (12Al-30Mn-1C = finest, least dense acicular-like κ-carbides, and full spinodal decomposition without cellular transformation) and block b0121 (which attributes the medium-dense thin needle-like κ-carbides to 12% Al + 20% Mn). This internal inconsistency is noted here; the results-section description was used for the structure fields.",
+    "Fig. 8(e,f) for 12Al-30Mn-1C at 800 °C (×10,000 and ×30,000) shows agglomerated acicular precipitates surrounding large bright blocky islands, appearing as the finest and least dense acicular carbide network of the three alloys (blocks b0058, b0066)."
+  ]
+}

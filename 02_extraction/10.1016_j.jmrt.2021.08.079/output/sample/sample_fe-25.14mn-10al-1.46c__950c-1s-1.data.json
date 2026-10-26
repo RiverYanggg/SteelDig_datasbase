@@ -1,0 +1,271 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-25.14mn-10al-1.46c__950c-1s-1",
+      "paper_id": "10.1016_j.jmrt.2021.08.079",
+      "alloy_id": "alloy_fe-25.14mn-10al-1.46c",
+      "process_id": "proc_950c-1s-1",
+      "sample_label": "950 °C/1 s^-1",
+      "aliases": [
+        "T=950 °C, ε̇=1 s^-1",
+        "(d) T=950 °C, ε̇=1 s^-1"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_heating",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "heating",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": "10 °C/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Heating from room temperature to 1200 °C at 10 °C/s."
+    },
+    {
+      "processing_step_id": "step_2_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization (isothermal holding)",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": "120 s",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenization hold at 1200 °C for 120 s."
+    },
+    {
+      "processing_step_id": "step_3_cooling",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "controlled cooling",
+      "temperature": "950",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": "5 °C/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cooled from 1200 °C to the set deformation temperature 950 °C at 5 °C/s."
+    },
+    {
+      "processing_step_id": "step_4_holding",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "isothermal holding (equilibration)",
+      "temperature": "950",
+      "temperature_unit": "°C",
+      "duration": "15 s",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Equilibrated 15 s at 950 °C so the temperature difference between the inside and outside of the sample was the same."
+    },
+    {
+      "processing_step_id": "step_5_hot_compression",
+      "sequence": "5",
+      "type": "mechanical processing",
+      "method": "isothermal constant-strain-rate hot compression (Gleeble-3500)",
+      "temperature": "950",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "60%",
+      "processing_steps_notes": "Strain rate 1 s^-1; true strain 0.92. Mica foils with high-temperature lubricants were affixed to both end faces to reduce friction and deformation non-uniformity."
+    },
+    {
+      "processing_step_id": "step_6_quenching",
+      "sequence": "6",
+      "type": "heat treatment",
+      "method": "water-spray cooling (quenching)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water (spray)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Immediately after compression the sample was water-spray quenched."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_initial",
+      "overall_structure": "Initial (as-forged) microstructure of the Fe-Mn-Al-C steel: large polygonal grains delimited by bright, continuous, slightly etched boundaries; grain interiors carry abundant fine, closely spaced, parallel light striations/lamellae giving a strongly banded, dendritic/interdendritic segregation contrast rather than a uniform solid solution.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_initial",
+          "region": "initial / as-forged bulk (pre-deformation reference state)",
+          "related_sequence": null,
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "Large polygonal grains; individual grains span roughly one to a few times the 100 µm scale bar (no numeric grain size printed).",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_deformed_950c_1s",
+      "overall_structure": "After 60% (true strain 0.92) isothermal compression at 950 °C and 1 s^-1, the DRX is partial and non-uniform. Zone 1 (difficult deformation) retains large grains, while zones 2 and 3 show banded, elongated structures of flattened original grains with numerous large elongated remnant original grains and only locally fine recrystallized grains. At low T (900-950 °C) and high strain rate (1-10 s^-1) the DRX grains are small but the DRX is not sufficient, leaving coarse original grains and poor microstructure homogeneity.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_950c_1s_zone1",
+          "region": "difficult deformation zone (zone 1)",
+          "related_sequence": "5",
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "Large grains (difficult deformation zone, least recrystallized).",
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_950c_1s_zone2",
+          "region": "small deformation zone (zone 2)",
+          "related_sequence": "5",
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "Banded, elongated structure with numerous large elongated remnant original grains and only locally fine recrystallized grains.",
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_950c_1s_zone3",
+          "region": "large deformation zone (zone 3) / core (used for grain-size measurement)",
+          "related_sequence": "5",
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "Banded, elongated structure with numerous large elongated remnant original grains and only locally fine recrystallized grains; low DRX volume fraction (partial and non-uniform).",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "cm_gleeble_compression",
+      "microstructure_id": null,
+      "technique": "Isothermal constant-strain-rate hot compression testing",
+      "instrument_or_setup": "Gleeble-3500 thermo-mechanical simulator",
+      "measurement_conditions": "Cylindrical specimen F 8 mm × 12 mm; T = 950 °C (this sample); ε̇ = 1 s^-1; 60% compression (true strain 0.92); mica foils with high-temperature lubricant at both ends.",
+      "purpose": "To obtain the flow (rheological) stress curves and characterize hot deformation / dynamic recrystallization behavior.",
+      "key_findings": "The steel is a negative temperature-sensitive and positive strain-rate-sensitive material; peak stress decreases with increasing T or decreasing ε̇."
+    },
+    {
+      "characterization_id": "cm_laser_confocal_microscopy",
+      "microstructure_id": "micro_950c_1s_zone1/zone2/zone3",
+      "technique": "Optical (laser confocal) metallography",
+      "instrument_or_setup": "LEXT OLS4000 laser confocal microscope",
+      "measurement_conditions": "Compressed sample split in half along the axial axis, prepared, ground, polished and etched (30% nitric acid alcohol solution, volume fraction); 100 µm scale bars; three deformation zones imaged.",
+      "purpose": "To observe microstructure evolution in the three deformation zones and measure the DRX average grain size.",
+      "key_findings": "For this sample (950 °C, 1 s^-1), zone 1 retains large grains while zones 2 and 3 are banded/elongated with large remnant original grains and only locally fine recrystallized grains."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_zener_hollomon",
+      "simulation_method": "Zener-Hollomon parameter calculation (Z = ε̇·exp(Qp/RT)), Eq. (3), using the average DRX activation energy obtained from the Arrhenius hyperbolic sine constitutive equation (Eq. (1)).",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Zener-Hollomon parameter (Eq. 3)",
+          "equation_role": "Characterizes the combined effect of temperature and strain rate on flow stress and normalizes the characteristic stress-strain values.",
+          "parameters": [
+            {
+              "name": "lnZ at 950 °C, 1 s^-1 (this sample)",
+              "value": "65.88",
+              "unit": "dimensionless (lnZ)"
+            },
+            {
+              "name": "Qp (activation energy for dynamic recrystallization)",
+              "value": "669.844",
+              "unit": "kJ mol^-1"
+            },
+            {
+              "name": "R (gas constant)",
+              "value": "8.314",
+              "unit": "J (mol K)^-1"
+            }
+          ],
+          "model_note": "lnZ increases with increasing ε̇ or decreasing T; the value 65.88 corresponds to this sample's condition (950 °C, 1 s^-1) and lies between the extreme table entries (70.99 at 10 s^-1/900 °C and 52.01 at 0.01 s^-1/1150 °C)."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_drx_grain_size_model",
+      "simulation_method": "Mathematical regression (Levenberg-Marquardt optimization) of the experimental data to build the DRX average grain size prediction model; implemented as a finite element model.",
+      "software_used": "DEFORM-3D finite element software",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Semi-symmetric specimen; billet set as rigid-plastic body and die indenter as rigid body; shear-type contact friction = 0.3; billet-air convection coefficient = 0.02 N/(s·mm·°C); simulation matched the isothermal compression conditions.",
+      "validation_against_experiment": "Predicted vs experimental DRX grain size: R = 0.996, MRE = 4.53%; absolute error mostly within 3 µm.",
+      "analytical_models": [
+        {
+          "model_name": "DRX average grain size prediction model (Eq. 11 generalized and Eq. 12 fitted)",
+          "equation_role": "Predicts the DRX average grain size as a function of strain rate and temperature; for this sample it gives the DRX grain size at 950 °C and 1 s^-1.",
+          "parameters": [
+            {
+              "name": "pre-exponential constant (a·d0^h·ε^p)",
+              "value": "807743.63",
+              "unit": null
+            },
+            {
+              "name": "strain-rate exponent q",
+              "value": "-0.1903",
+              "unit": null
+            },
+            {
+              "name": "temperature exponential factor Q (in exp(-Q/RT))",
+              "value": "120648.47",
+              "unit": null
+            },
+            {
+              "name": "offset constant b",
+              "value": "4.338",
+              "unit": null
+            }
+          ],
+          "model_note": "The initial grain size and strain were treated as constants, so a·d0^h·ε^p is incorporated into the fitted constant; the model was built to predict DRX average grain size for numerical simulation of hot forging of this steel."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "For the 950 °C/1 s^-1 sample, no individual numeric value is reported for peak stress, characteristic stresses/strains (σc/σp/σs, εc/εp/εs) or DRX average grain size; these are only presented within the global figures/models (Fig. 3, Fig. 6, Eq. 10, Fig. 10, Eq. 12) across all conditions.",
+    "Textual description for this condition (low T 900-950 °C together with high strain rate 1-10 s^-1): fine DRX grains tend to form but the DRX is not sufficient, and large-size original grains remain, giving poor microstructure homogeneity (Fig. 9(d)).",
+    "The DRX average grain size of this sample is only shown graphically in Fig. 10 (curve for ε̇ = 1 s^-1 at 950 °C); no numeric readout is printed, and it lies above the 900 °C values (which are between ~0 and 20 µm) and below the 1150 °C/0.01 s^-1 value that exceeds 70 µm.",
+    "The etching solution used to reveal the microstructure before laser-confocal imaging was a 30% nitric acid alcohol solution (volume fraction)."
+  ]
+}

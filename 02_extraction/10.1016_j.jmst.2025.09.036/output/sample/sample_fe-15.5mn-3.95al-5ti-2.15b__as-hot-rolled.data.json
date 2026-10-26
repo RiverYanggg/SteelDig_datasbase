@@ -1,0 +1,708 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-15.5mn-3.95al-5ti-2.15b__as-hot-rolled",
+      "paper_id": "10.1016_j.jmst.2025.09.036",
+      "alloy_id": "alloy_fe-15.5mn-3.95al-5ti-2.15b",
+      "process_id": "proc_as-hot-rolled",
+      "sample_label": "present low-density steel",
+      "aliases": [
+        "present steel",
+        "present low-density steel",
+        "LDS",
+        "as-hot-rolled present steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "A 50 kg cast ingot with the nominal composition Fe-15.5Mn-3.95Al-5Ti-2.15B (wt.%) was prepared using vacuum induction melting; the composition was chosen to allow ~14 vol.% TiB2 embedded in a δ-ferrite + austenite matrix (phase diagram calculations)."
+    },
+    {
+      "processing_step_id": "step_2_casting",
+      "sequence": "2",
+      "type": "casting",
+      "method": "casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cast into a rectangular ingot (per the Fig. 1(b) process schematic: Induction melting → Casting → Forging and homogenization → Hot rolling)."
+    },
+    {
+      "processing_step_id": "step_3_forging",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "forging",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Forging stage preceding homogenization, as indicated in the Fig. 1(b) process schematic ('Forging and homogenization')."
+    },
+    {
+      "processing_step_id": "step_4_homogenization",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1373 K",
+      "temperature_unit": "K",
+      "duration": "two hours",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The ingot was homogenized at 1373 K for two hours prior to hot rolling."
+    },
+    {
+      "processing_step_id": "step_5_hot_rolling",
+      "sequence": "5",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "finishing temperature 1173 K",
+      "temperature_unit": "K",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "reduced to a 3 mm thick sheet (five rolling steps, in the two-phase region)",
+      "processing_steps_notes": "Hot rolled in the two-phase region in five rolling steps with a finishing temperature of 1173 K to produce a 3 mm thick sheet."
+    },
+    {
+      "processing_step_id": "step_6_air_cooling",
+      "sequence": "6",
+      "type": "cooling",
+      "method": "air cooling",
+      "temperature": "cooled to room temperature",
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "air",
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Followed by air cooling to room temperature, giving the as-hot-rolled heterogeneous δ-ferrite + austenite + TiB2 microstructure."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_initial_hot_rolled",
+      "overall_structure": "Heterogeneous triplex (composite) microstructure: a fully equiaxed-austenitic matrix embedded with elongated δ-ferrite bands/lamellae and micron-sized TiB2 particles. The matrix exhibits a typical banded or layered microstructure consisting of alternating lamellae of δ-ferrite and austenite aligned along the rolling direction; TiB2 particles (dark contrast) are randomly distributed in the metallic matrix.",
+      "number_of_phases": 3,
+      "microstructure_counts": "Austenite ~59 % (EBSD area fraction), δ-ferrite ~28 % (EBSD), TiB2 ~13 % (EBSD); XRD volume fractions 62 % austenite, 26 % ferrite, 12.5 % TiB2. TiB2 area fraction estimated 9.6 % from RD surface and 13.4 % from ND surface.",
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_banded_matrix",
+          "region": "hot-rolled sheet bulk (RD and ND surfaces)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC (a_γ ≈ 0.368 nm)",
+              "volume_fraction": "62 vol.% (XRD); ~59 % area fraction (EBSD)",
+              "morphology": "equiaxed grains; Mn-rich; forms alternating bands/layers with δ-ferrite",
+              "grain_size": "average ~3.9 μm",
+              "texture": "recrystallized grains, equiaxed morphologies"
+            },
+            {
+              "phase_name": "δ-ferrite (δ-F/δ-Fe)",
+              "crystal_structure": "BCC (a_δ ≈ 0.295 nm)",
+              "volume_fraction": "26 vol.% (XRD); ~28 % area fraction (EBSD)",
+              "morphology": "elongated bands/lamellae parallel to the rolling direction; Al-rich ferrite; individual grains remain elongated along RD",
+              "grain_size": "average 4.4 μm",
+              "texture": "elongated along the rolling direction, sluggish recrystallization"
+            },
+            {
+              "phase_name": "TiB2",
+              "crystal_structure": "hexagonal (a_TiB2 ≈ 0.309 nm, c_TiB2 ≈ 0.328 nm)",
+              "volume_fraction": "12.5 vol.% (XRD); ~13 % area fraction (EBSD)",
+              "morphology": "coarse hexagonal prisms (primary, c-axes parallel to RD), plate-like/needle-like debris (eutectic), square/triangular/hexagonal shapes; located at grain/phase boundaries with none inside matrix grains",
+              "grain_size": "particles fall within 2.4–35 μm, average 15 μm; small particles 0.8–5.0 μm, coarse particles 10.0–42.7 μm",
+              "texture": "c-axes of hexagonal prisms tend parallel to RD due to rigid rotation during hot rolling"
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "δ-ferrite: (1.1 ± 0.2) × 10^15 m^-2; austenite: (3 ± 0.7) × 10^14 m^-2",
+              "lattice_distortion": "Higher KAM values in ferrite lamellae than in austenite (non-uniform strain distribution); GOS < 2° for 90.8 % of austenite (fully recrystallized) and only 52.2 % of δ-ferrite"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "austenite ~3.9 μm; δ-ferrite 4.4 μm",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "Austenite and δ-ferrite grain-size distribution histograms (Fig. 5(b3)); δ-ferrite distribution peaked near 2 μm",
+            "texture": "Banded γ + δ-ferrite matrix aligned along RD; austenite equiaxed (recrystallized), δ-ferrite elongated (deformed, higher GOS)"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_primary_TiB2",
+              "type": "primary TiB2",
+              "size": {
+                "value": "coarse, tens of micrometers (mostly hexagonal prisms, up to 42.7 μm domain)",
+                "unit": "μm"
+              },
+              "distribution": "formed early in solidification; located at grain/phase boundaries; coarse particles (>10 μm) account for >80 % of total area/volume fraction of particles",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_eutectic_TiB2",
+              "type": "eutectic TiB2",
+              "size": {
+                "value": "average only a few micrometers (0.8–5.0 μm domain, ≥0.9 μm)",
+                "unit": "μm"
+              },
+              "distribution": "finer lamellar/plate-like/needle-like debris of broken as-cast dendrites/lamellae; small particles prevail in number but account for only ~1.01 % of volume fraction; located at grain boundaries",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "structure_deformed_tensile",
+      "overall_structure": "Post-tensile-deformation microstructure of the same as-hot-rolled steel: phase map comparison shows the volume fractions of austenite and δ-ferrite remain nearly constant during deformation (no strain-induced austenite-to-martensite transformation); defects now accumulate in both δ-ferrite and austenite, in contrast to the initial state where defects existed predominantly in δ-ferrite.",
+      "number_of_phases": 3,
+      "microstructure_counts": "Austenite and δ-ferrite volume fractions remain nearly constant with tensile deformation (no phase transformation)",
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_deformed_banded_matrix",
+          "region": "uniformly strained gauge area after tensile fracture",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "deformed grains; dense dislocation tangles after straining",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "δ-ferrite (δ-F)",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "deformed banded grains; dislocation multiplication",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "TiB2",
+              "crystal_structure": "hexagonal",
+              "volume_fraction": null,
+              "morphology": "progressively fractured particles and particle/matrix decohesion with increasing strain",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "δ-ferrite: (1.7 ± 0.7) × 10^15 m^-2; austenite: (2 ± 0.3) × 10^15 m^-2 (after straining to fracture)",
+              "lattice_distortion": "KAM shows defects accumulate in both δ-ferrite and austenite after deformation"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": "GNDs generated due to soft/hard phase contrast between δ-ferrite and austenite"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_fractured_TiB2",
+              "type": "TiB2 (primary and eutectic)",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "particle fracture (dominant, especially large/agglomerated particles) and particle/matrix decohesion during tensile straining",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_delta_ferrite_TiB2",
+          "microstructure_id": "micro_banded_matrix",
+          "phase_1_name": "δ-ferrite",
+          "phase_2_name": "TiB2",
+          "coherence": "coherent or semi-coherent interface; crystallographic orientation relationship {110}_δ-ferrite || {1-101}_TiB2 and <111>_δ-ferrite || <11-20>_TiB2 (from SADP along <11-20> zone axis of smaller TiB particle)"
+        },
+        {
+          "interface_id": "if_austenite_TiB2",
+          "microstructure_id": "micro_banded_matrix",
+          "phase_1_name": "austenite",
+          "phase_2_name": "TiB2",
+          "coherence": "no clear crystallographic orientation relationship reported; weak-beam bright-field images show substantially lower dislocation densities at austenite/TiB2 interfaces than at δ-ferrite/TiB2 interfaces"
+        },
+        {
+          "interface_id": "if_delta_ferrite_austenite",
+          "microstructure_id": "micro_banded_matrix",
+          "phase_1_name": "δ-ferrite",
+          "phase_2_name": "austenite",
+          "coherence": "banded/layered phase boundaries; strain incompatibility between soft austenite and hard δ-ferrite promotes geometrically necessary dislocations (GNDs)"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_dislocation_tangles_interfaces",
+          "microstructure_id": "micro_banded_matrix",
+          "interaction_type": "dislocation tangles/pile-ups at TiB2/matrix interfaces",
+          "qualitative_or_quantitative_description": "Dislocation tangles occur at all TiB2/matrix interfaces regardless of particle size, consistent with the exclusive grain-boundary distribution of TiB2 particles; weak-beam BFTEM reveals detailed dislocation tangles at the δ-ferrite/TiB2 interface; the δ-ferrite/TiB2 interface shows denser dislocations than the austenite/TiB2 interface."
+        }
+      ],
+      "slip_behavior": "Local strain partitions among austenite (soft), δ-ferrite (hard) and TiB2; strain localizations distribute in multiregional bands (~45° to loading axis) rather than a single concentration. High local strain (~10 %) at small TiB2/δ-ferrite interface, elevated strain (~16 %) at austenite/TiB2 phase boundaries, and strain concentrations (~20 %) near sharp TiB2/austenite and TiB2/ferrite boundaries. The softer austenite accumulates higher local strain than δ-ferrite, while hard δ-ferrite deforms less.",
+      "phase_evolution": "No phase transformation from austenite to martensite occurred during the entire deformation process (volume fractions of austenite and δ-ferrite remain nearly constant).",
+      "interface_notes": "δ-ferrite, initially formed during solidification, persisted throughout hot rolling and air cooling; the δ-ferrite/TiB2 interface is coherent/semi-coherent whereas the austenite/TiB2 and δ-ferrite/large-TiB2 interfaces show no clear orientation relationship."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_present_steel",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": "air (ambient)",
+        "strain_rate": "1 × 10^-3 s^-1 (nominal, quasi-static uniaxial tensile)",
+        "specimen_geometry": "dog-bone tensile specimens, gauge length 25 mm, gauge width 6 mm, cut by electrical discharge machining with tensile axes parallel to the rolling direction; Young's modulus specimen 100 mm × 25 mm × 4 mm",
+        "test_standard": null,
+        "other_conditions": "Density measured by hydrostatic weighing (Archimedes' principle) using an electronic densimeter; Young's modulus measured by impulse excitation technique with a solid material dynamic performance analyzer (resonant frequency analysis)"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "parallel to rolling direction",
+              "value": "503 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "parallel to rolling direction",
+              "value": "672 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "parallel to rolling direction",
+              "value": "13% (uniform elongation, UE)",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": {
+            "value": "225 GPa",
+            "unit": "GPa"
+          },
+          "stress_strain_curves": "Engineering stress-strain curve (red 'Our LDS') shown in Fig. 3(a): rises steeply, peaks just below 700 MPa at ~13-15 % strain and ends abruptly; simulated true stress-strain curve ends near 750 MPa at ~0.12-0.13 true strain (Fig. 11(a))",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.88 g cm^-3",
+          "unit": "g cm^-3"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_comparison_fe_tib2",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "uniaxial tensile",
+        "environment": "room temperature, ambient air"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "conventional Fe-TiB2 steel",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "σy increase of 22 % (503 MPa vs 389 MPa) and σu increase of 30 % (672 MPa vs ~549 MPa); uniform elongation of 13 % is higher than 11 % of the existing Fe-TiB2 steel; E (225 GPa) is 18 %–40 % higher than typical E (160–190 GPa) of Fe-Mn-Al-C type low-density steels; specific modulus 32.7 GPa g^-1 cm^3",
+        "improvement_percentage": "σy: 22%; σu: 30%; E: 18%–40% higher than Fe-Mn-Al-C LDSs"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_sem",
+      "microstructure_id": "micro_banded_matrix",
+      "technique": "Scanning electron microscopy (SEM)",
+      "instrument_or_setup": "Zeiss Gemini 300, acceleration voltage 5 kV, aperture size 30 μm",
+      "measurement_conditions": "Metallographic specimens mechanically ground, polished with 1 μm diamond suspension and vibratory polished with 50 nm colloidal suspension",
+      "purpose": "Characterize the initial microstructure and particle morphology; pseudo-in-situ SEM during tensile testing for damage evolution",
+      "key_findings": "Pseudo-3D SEM shows dark TiB2 particles in a light matrix with primary and eutectic TiB2; angular to plate-like dark particles; TiB2 area fraction 9.6 % (RD) and 13.4 % (ND)."
+    },
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_banded_matrix",
+      "technique": "Electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "Zeiss Gemini 300 equipped with an Oxford-EBSD system, acceleration voltage 20 kV, aperture size 120 μm; analyzed with TSL OIM Analysis 7 software",
+      "measurement_conditions": "Kernel Average Misorientation (KAM) computed up to the third neighbor shell with a maximum misorientation angle of 5°",
+      "purpose": "Characterize phase distribution, grain size, KAM (strain distribution) and Grain Orientation Spread (GOS, recrystallization)",
+      "key_findings": "Area fractions of austenite, ferrite and TiB2 ~59 %, 28 % and 13 %; banded δ-ferrite (red) + austenite (blue) lamellae with elongated TiB2; austenite avg 3.9 μm, δ-ferrite avg 4.4 μm; fully recrystallized (GOS<2°) austenite 90.8 %, δ-ferrite 52.2 %; higher KAM in ferrite lamellae."
+    },
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": "micro_banded_matrix",
+      "technique": "Transmission electron microscopy (TEM) - bright field, weak beam bright field, selected-area diffraction (SADP)",
+      "instrument_or_setup": "FEI G2 F20 operated at 200 kV; disks 3 mm diameter punched from 100 μm foils, double-jet electro-polished in 12.5 vol.% perchloric acid + 87.5 vol.% ethanol at -25 °C and 30 V",
+      "measurement_conditions": "Before and after tensile deformation",
+      "purpose": "Characterize dislocation structures and crystallographic orientation relationships at interfaces",
+      "key_findings": "δ-ferrite grains show dense dislocation tangles, austenite grains sparse dislocations (initial); dense dislocation tangles at TiB2/matrix interfaces; coherent/semi-coherent δ-ferrite/TiB2 interface with {110}_δ || {1-101}_TiB2 and <111>_δ || <11-20>_TiB2; after deformation both phases show dense tangles."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_banded_matrix",
+      "technique": "X-ray diffraction (XRD, for phase identification and volume fraction)",
+      "instrument_or_setup": "Laboratory XRD pattern over 2θ = 30-100° with peaks indexed for δ-ferrite, austenite and TiB2",
+      "measurement_conditions": null,
+      "purpose": "Identify phases and quantify volume fractions",
+      "key_findings": "Confirms ferrite-austenite dual-phase matrix and TiB2; TiB2 volume fraction 12.5 %, austenite 62 %, ferrite 26 %; TiB2 peaks 1010, 10-11, 21-10, 202-0, 202-1; δ-ferrite 110, 200, 211; austenite 111, 200, 220, 311, 222."
+    },
+    {
+      "characterization_id": "char_microCT",
+      "microstructure_id": "micro_banded_matrix",
+      "technique": "Three-dimensional micro-computerized tomography (micro-CT) scanning",
+      "instrument_or_setup": "nanoVoxel-3000; testing current 30 μA, testing voltage 60 kV, exposure time 5.5 s",
+      "measurement_conditions": null,
+      "purpose": "Resolve the spatial distribution and size distribution of TiB2 particles",
+      "key_findings": "Small particles (0.8-5.0 μm) prevail in number, but coarse particles (10.0-42.7 μm) account for >80 % of the total area fraction of particles; particle-size bins (0.8,5], (5,10], (10,20], (20,42.7] μm."
+    },
+    {
+      "characterization_id": "char_synchrotron_xrd",
+      "microstructure_id": "micro_deformed_tensile",
+      "technique": "Synchrotron X-ray diffraction (s-XRD) with Modified Williamson-Hall (MWH) analysis",
+      "instrument_or_setup": "Beamline BL02U2, Shanghai Synchrotron Radiation Facility (SSRF), reflection mode; energy 21.7 keV (wavelength 0.5714 Å); beam size 0.5 mm × 1 mm; area detector; instrumental profile from LaB6",
+      "measurement_conditions": "Surfaces mechanically ground and vibrationally polished to remove residual stress layers, before and after tensile straining",
+      "purpose": "Measure dislocation density evolution in δ-ferrite and austenite phases",
+      "key_findings": "Initial dislocation density: ferrite (1.1±0.2)×10^15 m^-2 > austenite (3±0.7)×10^14 m^-2; after straining: ferrite (1.7±0.7)×10^15 m^-2, austenite rises by an order of magnitude to (2±0.3)×10^15 m^-2."
+    },
+    {
+      "characterization_id": "char_muDIC",
+      "microstructure_id": "micro_banded_matrix",
+      "technique": "High-resolution microscopic digital image correlation (μ-DIC)",
+      "instrument_or_setup": "Correlative μ-DIC during pseudo in-situ tensile testing",
+      "measurement_conditions": "Room temperature, incremental macroscopic strains up to 15 % engineering strain; von Mises equivalent strain maps",
+      "purpose": "Characterize localized strain distributions and strain partitioning among phases",
+      "key_findings": "Strain localizations maintain a multiregional distribution (~45° to loading axis); high strain (~10 %) at small TiB2/δ-ferrite interface, ~16 % at austenite/TiB2 boundaries, ~20 % near sharp TiB2/austenite and TiB2/ferrite boundaries."
+    },
+    {
+      "characterization_id": "char_tensile_testing",
+      "microstructure_id": null,
+      "technique": "Quasi-static uniaxial tensile testing",
+      "instrument_or_setup": "SANS CMT-3000 testing machine",
+      "measurement_conditions": "Nominal strain rate 1 × 10^-3 s^-1, room temperature; dog-bone specimens, gauge length 25 mm, gauge width 6 mm, tensile axis parallel to RD",
+      "purpose": "Measure tensile mechanical properties",
+      "key_findings": "σy = 503 MPa, σu = 672 MPa, uniform elongation 13 %."
+    },
+    {
+      "characterization_id": "char_density_elastic",
+      "microstructure_id": null,
+      "technique": "Hydrostatic weighing (Archimedes' principle) for density; impulse excitation technique for Young's modulus",
+      "instrument_or_setup": "Electronic densimeter; solid material dynamic performance analyzer (resonant frequency analysis); specimen dimensions 100 mm × 25 mm × 4 mm",
+      "measurement_conditions": "Room temperature; instrument excites specimen with a light mechanical impact",
+      "purpose": "Measure density and Young's modulus",
+      "key_findings": "Density 6.88 g cm^-3; Young's modulus 225 GPa (more accurate than quasistatic tensile-determined value)."
+    },
+    {
+      "characterization_id": "char_eds",
+      "microstructure_id": "micro_banded_matrix",
+      "technique": "Energy-dispersive X-ray spectroscopy (EDX/EDS)",
+      "instrument_or_setup": "Via SEM at 20 kV",
+      "measurement_conditions": null,
+      "purpose": "Chemical characterization / elemental mapping of matrix and particles",
+      "key_findings": "Mn and Al partitioned into different grains (Mn-rich austenite, Al-rich ferrite); Ti and B co-located on blocky particles; Fe dominates the matrix."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermocalc",
+      "simulation_method": "Equilibrium phase diagram (CALPHAD) calculation of phase fractions versus temperature",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": "TCFE9 database",
+      "boundary_and_initial_conditions": "Volume fraction of all phases (0.0-1.0) versus temperature (600-1500 °C) for the nominal alloy, used to design ~14 vol.% TiB2 embedded in a δ-ferrite + austenite matrix",
+      "validation_against_experiment": "Designed TiB2 fraction ~14 vol.% (12.5 % measured by XRD; ~13 % by EBSD); ferrite-austenite dual-phase confirmed experimentally",
+      "analytical_models": []
+    },
+    {
+      "computation_id": "comp_fem_rve",
+      "simulation_method": "Finite element method (FEM) using a two-dimensional plane-strain representative volume element (RVE)",
+      "software_used": null,
+      "potential_model_or_database": "Constitutive: Von Mises yield criterion with flow-stress decomposition (lattice friction + Hall-Petch grain-boundary strengthening + Taylor dislocation strengthening); Kocks-Mecking dislocation density evolution; Weibull-type particle fracture criterion; cohesive zone (bilinear traction-separation) for interfaces via COH3D8 zero-thickness elements",
+      "boundary_and_initial_conditions": "2D plane-strain RVE (CPE4 elements) mapped from a 200 μm × 200 μm EBSD image; mesh size 0.4 μm corresponding to 500 × 500 elements; periodic boundary conditions on boundary nodes (edges a, b, c, d), reference point RP-2 fixed and RP-1 stretched along the x-axis; TiB2 treated as linearly elastic (Orowan bypass not applicable to micron-sized boundary-localized particles)",
+      "validation_against_experiment": "Simulated true stress-strain curves and dislocation density evolution closely match experimentally measured curves (Fig. 11); parameter calibration used EBSD grain sizes, s-XRD dislocation densities, tensile curves and μ-DIC debonding results",
+      "analytical_models": [
+        {
+          "model_name": "Flow stress decomposition",
+          "equation_role": "σ = σ0 + σgb + σdis (lattice friction + grain-boundary + dislocation strengthening)",
+          "parameters": [],
+          "model_note": null
+        },
+        {
+          "model_name": "Hall-Petch relation",
+          "equation_role": "σgb = kHP / √d (grain-boundary strengthening)",
+          "parameters": [
+            {
+              "name": "kHP (δ-ferrite)",
+              "value": "130",
+              "unit": "MPa μm^-1/2"
+            },
+            {
+              "name": "kHP (austenite)",
+              "value": "460",
+              "unit": "MPa μm^-1/2"
+            },
+            {
+              "name": "d (δ-ferrite)",
+              "value": "4.4",
+              "unit": "μm"
+            },
+            {
+              "name": "d (austenite)",
+              "value": "3.9",
+              "unit": "μm"
+            }
+          ],
+          "model_note": "Valid for both ferrite and austenite given their micrometer-scale grain sizes"
+        },
+        {
+          "model_name": "Taylor equation (dislocation strengthening)",
+          "equation_role": "σdis = α M μ b √ρ",
+          "parameters": [
+            {
+              "name": "α (all three phases)",
+              "value": "0.2",
+              "unit": null
+            },
+            {
+              "name": "M (δ-ferrite)",
+              "value": "3.16",
+              "unit": null
+            },
+            {
+              "name": "M (austenite)",
+              "value": "3.06",
+              "unit": null
+            },
+            {
+              "name": "b (δ-ferrite/α-Fe)",
+              "value": "0.248",
+              "unit": "nm"
+            },
+            {
+              "name": "b (austenite)",
+              "value": "0.258",
+              "unit": "nm"
+            }
+          ],
+          "model_note": null
+        },
+        {
+          "model_name": "Kocks-Mecking model",
+          "equation_role": "dρ/dε = M(k1√ρ - k2 ρ) - dislocation density evolution",
+          "parameters": [
+            {
+              "name": "k1 (δ-ferrite)",
+              "value": "230,000",
+              "unit": null
+            },
+            {
+              "name": "k1 (austenite)",
+              "value": "200,000",
+              "unit": null
+            },
+            {
+              "name": "k1 (α-ferrite)",
+              "value": "180,000",
+              "unit": null
+            },
+            {
+              "name": "k2 (δ-ferrite)",
+              "value": "6.",
+              "unit": null
+            },
+            {
+              "name": "k2 (austenite)",
+              "value": "4.5",
+              "unit": null
+            }
+          ],
+          "model_note": "k1 = athermal storage factor; k2 = dynamic recovery factor (constant at room temperature/constant strain rate)"
+        },
+        {
+          "model_name": "Weibull-type particle fracture / debonding law",
+          "equation_role": "fd* = f0(1 - exp^-k((σeq-σc)/σc)^n) + fd0 - current volume fraction of damaged particles",
+          "parameters": [
+            {
+              "name": "f0 (total proportion of potentially damageable particles)",
+              "value": "0.1480",
+              "unit": null
+            },
+            {
+              "name": "fd0 (proportion of initially damaged particles)",
+              "value": "0.1245",
+              "unit": null
+            },
+            {
+              "name": "σc (particle critical fracture stress)",
+              "value": "320",
+              "unit": "MPa"
+            },
+            {
+              "name": "n (particle shape factor)",
+              "value": "1.5",
+              "unit": null
+            },
+            {
+              "name": "k (particle damage scale parameter)",
+              "value": "0.09",
+              "unit": null
+            },
+            {
+              "name": "TiB2 interface stiffness K",
+              "value": "10^6",
+              "unit": "MPa mm^-1"
+            },
+            {
+              "name": "TiB2 interface strength Tc (α-Fe/δ-Fe)",
+              "value": "700",
+              "unit": "MPa"
+            },
+            {
+              "name": "TiB2 interface strength Tc (γ)",
+              "value": "640",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "Micro-mechanical interfaces modelled with zero-thickness COH3D8 cohesive elements governed by a bilinear traction-separation law calibrated against μ-DIC results"
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_mwh_dislocation",
+      "simulation_method": "Modified Williamson-Hall (MWH) line-profile analysis of synchrotron XRD data to calculate dislocation density",
+      "software_used": null,
+      "potential_model_or_database": "MWH method; dislocation contrast factor model (Ungár et al.); elastic constants for ferrite (C11=273 GPa, C12=110 GPa, C44=82 GPa) and austenite (C11=169 GPa, C12=82 GPa, C44=96 GPa); A set to 1",
+      "boundary_and_initial_conditions": "Diffraction peaks fit with pseudo-Voigt function; nine peaks for austenite and six for ferrite; peak broadening correlated with average coherent domain size L and dislocation density ρ",
+      "validation_against_experiment": "MWH plots (Fig. 10(c,d)) show high-quality linear fits; results used as initial dislocation density input (ρ0) for FEM",
+      "analytical_models": [
+        {
+          "model_name": "Modified Williamson-Hall equation",
+          "equation_role": "ΔK = 0.9/L + (πA^2b^2/2)^1/2 ρ^1/2 (K C̄^1/2) + O(K^2C̄) - relates peak broadening to crystallite size and dislocation density",
+          "parameters": [
+            {
+              "name": "A (outer cut-off radius constant)",
+              "value": "1",
+              "unit": null
+            },
+            {
+              "name": "C̄h00 (austenite)",
+              "value": "0.248",
+              "unit": null
+            },
+            {
+              "name": "q (austenite)",
+              "value": "1.660",
+              "unit": null
+            },
+            {
+              "name": "C̄h00 (ferrite)",
+              "value": "0.160",
+              "unit": null
+            },
+            {
+              "name": "q (ferrite)",
+              "value": "0.605",
+              "unit": null
+            }
+          ],
+          "model_note": "Dislocation contrast factor C̄ = C̄h00(1 - q(h²k²+k²l²+h²l²)/(h²+k²+l²))"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The present as-hot-rolled low-density steel has a specific yield strength (SYS) of 73.1 MPa g^-1 cm^3 and specific ultimate tensile strength (SUTS) of 97.7 MPa g^-1 cm^3, owing to its low density.",
+    "Specific modulus (E/ρ) of the present steel is calculated to be 32.7 GPa g^-1 cm^3, remarkably higher than the typical ~25 GPa g^-1 cm^3 for light metals such as aluminum, magnesium, and titanium.",
+    "The present steel achieves a strength-ductility balance (SYS × UE value around 9-10 MPa g^-1 cm^3) positioned among existing ceramic-reinforcement steels while maintaining a high specific modulus (~32.7 GPa g^-1 cm^3, highest among the compared steels).",
+    "δ-ferrite contributes ~170 MPa (over 30 % of the overall yield strength) as a stable strengthening baseline, nearly constant throughout deformation, while the strengthening contribution from austenite increases with strain (Fig. 12(c)); the phase stress of δ-ferrite surpasses that of austenite by nearly 50 % in the elastic stage.",
+    "FEM-simulated phase stresses at ~830 MPa global true stress: TiB2 reaches ~1180 MPa (highest), δ-ferrite ~710 MPa, austenite ~670 MPa (lowest, softest phase).",
+    "Onset of yielding of the present steel (global true stress ~490 MPa, close to the measured σy) is attributed to plastic flow of austenite (micro-yielding), not δ-ferrite; above ~600 MPa both matrix phases flow plastically and TiB2 continues to bear increasing load via strain hardening of the matrix.",
+    "Damage evolution: first defect-containing particle fracture occurred at true plastic strain εp = 0.0069 and applied true stress σa = 556 MPa (exceeding σ0.2 = 503 MPa); cracks oriented nearly perpendicular to the tensile axis. Statistical analysis of 336 TiB particles (189 predominantly austenite-contacting, 147 ferrite-contacting) showed austenite-surrounded particles exhibited significantly higher fracture frequencies; particle fracture accelerates final failure more than particle decohesion.",
+    "Large particles (>10 μm) constitute >80 % of the volume fraction of TiB2 and dictate bulk mechanical behavior; small particles (0.8-5.0 μm) account for only 1.01 % of the volume fraction.",
+    "Fracture surface shows a mixed fracture mode comprising ductile dimples, quasi-cleavage fracture of TiB2 particles, and particle/matrix decohesion.",
+    "Austenite grains with GOS < 2° (fully recrystallized) account for 90.8 % (area fraction) of the austenite phase, while recrystallized δ-ferrite accounts for only 52.2 % of the ferrite phase, showing sluggish δ-ferrite recrystallization during hot rolling.",
+    "Average thickness of ferrite bands is 4.3 μm, smaller than that of austenite layers (12.1 μm)."
+  ]
+}

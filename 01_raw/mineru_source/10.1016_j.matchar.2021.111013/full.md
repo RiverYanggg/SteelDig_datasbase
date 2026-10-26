@@ -1,0 +1,282 @@
+# Evolution of microstructure, texture and mechanical properties of Fe–30Mn–11Al–1.2C low-density steel during cold rolling
+
+![](images/b3560eab1f81b551be89d7ae3fc019204a3c45c4615e5951494010fcdae44db5.jpg)
+
+P. Ren <sup>a</sup>, X.P. Chen <sup>a,\*</sup>, C.Y. Wang <sup>b</sup>, Y.X. Zhou <sup>a</sup>, W.Q. Cao <sup>b,\*</sup>, Q. Liu <sup>a</sup>
+
+<sup>a</sup> International Joint Laboratory for Light Alloys (Ministry of Education), College of Materials Science and Engineering, Chongqing University, Chongqing 400044, China <sup>b</sup> Central Iron & Steel Research Institute, Beijing 100081, China
+
+## A R T I C L E I N F O
+
+Keywords: Fe-Mn-Al-C alloy Deformation twin Texture Cold rolling Mechanical properties
+
+## A B S T R A C T
+
+In the past decades, the microstructure and properties of tensile deformed high Mn–Al–C lightweight steels were extensively studied due to their excellent combination of strength. ductility and low-density. However. the effects of cold rolling were barely reported. This study systematically investigated the evolution of microstructure and texture as well as mechanical properties during cold rolling of Fe–30Mn–11Al–1.2C (wt%) steel. The stacking fault energy (SFE) of the steel was estimated as \~108 mJ/m<sup>2</sup>. With cold rolling, the yield strength of the steel was significantly enhanced and exceeding 2.0 GPa after 90% rolling reduction, which is attributed to the gradual refinement of the microstructure. Different deformation substructures were formed approximately in the sequence of Taylor lattice, microbands, nano-twins, shear bands and dislocation cells. This means the dislocation glide mode changes from planar to wavy glide with increasing rolling reduction. Among these structures, twining is widely believed to be impossible by tensile deformation due to the high SFE. But it happened during cold rolling with relatively low resolved shear stress, which may be attributed to the occurrence of short range order (SRO) in austenitic matrix and local stress concentration. The rolling texture of the steel was weak and char acterized by the transition from “copper-type” to “brass-type” after 50% rolling reduction. The dislocation planar glide and deformation twining play an important role in texture evolution.
+
+## 1. Introduction
+
+In the past two decades, Fe–Mn–Al–C steels as promising candidate materials for automobile structural application have received increas ingly attention due to their excellent combination of strength, ductility and low-density [1–5]. Among them, high Mn–Al–C austenitic steels have special scientific and commercial interest because of the emerged aging strengthening capability [1,6–10], the peculiar deformation mechanism [6,11–14] and more superior in weight saving [4].
+
+Mainly thanks to the high content of Al and C alloy elements, the stacking fault energy (SFE) of the high Mn–Al–C steel is significantly increased [15,16]. Consequently, the transformation induced plasticity (TRIP) and twin induced plasticity (TWIP) effects are largely inhibited [16] whereas the steel is still characterized by the ultra-high work hardening capability [11,12,14,17]. The reason is closely related to the unexpected planar glide mode of dislocations which decreases the dy namic recovery during deformation, shifts the transition from defor mation stage II to stage III to higher strains and thus enhances the dislocation storage capability [14]. Due to the motion of dislocations is confined on a single glide plane, the substructure of slip band, Taylor lattice, Taylor lattice domain, domain boundaries, microbands, micro band intersections and shear bands may be generated during straining. According to the different microstructure evolution, new deformation mechanisms corresponding to TRIP and TWIP, such as shear band induced plasticity (SIP) [11], microband induced plasticity (MBIP) [12,18] and dynamic slip band refinement induced plasticity (DSBR) [9,14], are put forward to rationalize the dramatic work hardening capability.
+
+In previous work, major efforts were devoted to investigate the correlation between microstructure and properties in the tensile deformed steels, while there is barely systematic investigation of the microstructure and crystallographic texture evolution as well as me chanical property of cold rolled high Mn–Al–C steels with various re ductions. It is well known that there are two types of rolling texture termed as the “copper-type texture” and the “brass-type texture” in FCC metals [19–21]. Generally, the former is favoured by high SFE (such as Cu and Al) and the latter is favoured by low SFE (such as Cu–30Zn al loys). For Cu–Zn alloys system, the transition from brass- to copper-type texture occurred when the SFE increased with the decrease of Zn content [21]. Similarly, the SFE of Fe–Mn–Al–C steel is increased from low (< $2 0 \mathrm { m J } / \mathrm { m } ^ { 2 } )$ to medium $\mathrm { ( > 5 0 ~ m J / m ^ { 2 } ) }$ with the increase of alloy content $[ 1 5 , 2 2 ]$ . The evolution of deformation substructure changed signifi cantly. When the SFE values is in the range between $2 0 \ \mathrm { m J / m ^ { 2 } }$ and 50 $\mathrm { { m J / m ^ { 2 } } }$ , twinning dominate the deformation (TWIP steel), which leads to the brass-type texture [23–25]. When the SFE values is higher than 50 $\mathrm { { m J / m ^ { 2 } } }$ , the copper-type texture was developed at rolling reduction below 50%, while it transforms to brass-type texture at a higher rolling reduction in Fe–29.8Mn–7.65Al–1.11C (wt%) steel (85 $\mathrm { m J / m } ^ { 2 } )$ [8]. Therefore, new deformation mechanism may be activated at a higher rolling reduction. However, there is lack of corresponding microstruc ture results. In addition, the microstructure and texture evolution of Fe–30.5Mn–8.0Al–1.2C (wt%) was analyzed upon cold rolling and the copper-type texture was formed [26–28]. But the microstructure was only characterized by electron back scattered diffraction (EBSD) and channeling contrast imaging (ECCI) without transmission electron mi croscopy (TEM) analysis and the thickness reduction was limited to 50%.
+
+Therefore, the objective of the current work is to systematically investigate the microstructure and texture evolution as well as the me chanical property of a Fe–30Mn–11Al–1.2C (wt%) steel with the thick ness reduction up to 90%.
+
+## 2. Material and experimental procedure
+
+A high Mn–Al–C austenitic low-density steel with the nominal component of $\mathrm { F e { - } 3 0 M n { - } 1 1 A l { - } 1 . 2 C }$ (wt%) was fabricated by vacuum induction melting method. To homogenize and refine microstructure, the cast was soaked at 1250 <sup>◦</sup>C for 12 h and then hot-forged into bars 60 mm in diameter with the finish forging temperature of $9 0 0 ~ ^ { \circ } \mathrm { C } ,$ . The sheets with 40 mm in width, 70 mm in length and different thickness (1.3, 1.7, 2.4, 4 and 6 mm) were cut from the bars using wire electric discharge machine. The sheets with different thickness were respec tively cold rolled to reduction of 10% to 90% $( \mathfrak { E } = 0 . 1 \ – 2 . 3 )$ after solution treated at $1 1 0 0 ^ { \circ } \mathrm { C }$ for 1 h.
+
+The mechanical property is evaluated by uniaxial tensile test at room temperature using the SHIMADZUAG-X50KN universal testing machine with an initial strain rate of $1 0 ^ { - 3 } \ s ^ { - 1 }$ . The dog-bone-shaped tensile specimen is cut along the rolling direction with the gauge length of 16 mm and the width of 4 mm. Three parallel tensile tests were conducted for each condition to verify the statistically reliability.
+
+Microstructure evolution is investigated by optical microscopy (OM), electron backscatter diffraction (EBSD) and transmission electron mi croscopy (TEM) techniques on longitudinal section $\mathbf { \left( R D \times N D \right) }$ . The specimen for OM is electrolytically polished and then etched using an etching solution consisting of 1 g ferric chloride, 10 ml hydrochloric acid and 10 ml deionized water. EBSD and TEM analysis was operated using a TESCAN MIRA 3 scanning electron microscope and a JEOM 2100 transmission electron microscopy, respectively. The specimens were prepared by electrolytical polishing and twin jet electro-polishing, respectively. The electrolyte for electrolytical polishing is the mixture of deionized 10% water, 10% perchloric acid, 10% ethylene glycol butyl ether and 70% alcohol and it for twin jet electro-polishing consists of 30% nitric acid and 70% methyl alcohol.
+
+The texture evolution was characterized by x-ray diffraction (XRD) using a Rigaku D/MAX 2500PC x-ray diffractometer. The incomplete pole figure {111}, {200} and {220} were measured on the RD × TD plane. The orientation distribution functions (ODFs) and $\operatorname { F } _ { \mathrm { m a x } }$ were calculated by the Arbitrarily Defined Cells method.
+
+## 3. Results
+
+## 3.1. Mechanical properties
+
+The mechanical properties of the present steel in the as-quenched state as well as different cold rolling conditions are illustrated in Fig. 1. The dark dash lines in Fig. 1(a) and (b) connect the necking point of different samples. In the as-quenched state, the steel was character ized by a low yield strength (YS) and ultimate tensile strength (UTS) of \~570 MPa and \~ 830 MPa, respectively. But it exhibited a dramatic uniform elongation (UE) of exceeding $7 5 \% ,$ which meant the excellent work hardening capability. With the increase of cold rolling reduction, the YS of material gradually increased and eventually reached $\mathrm { t o } \sim 2 . 0$ GPa that is approximate 3.5 times of the as-quenched state. Simulta neously, the materials lost its work hardening capability, resulting to the decrease of the UE. Interestingly, the true stress of necking point was similar at low to medium rolling reduction (<50%), while it was sharply enhanced in the further rolling process.
+
+## 3.2. Microstructure evolution
+
+Fig. 2 shows the initial microstructure of the as-quenched materials before cold rolling. The phase constituent was estimated as austenite and κ’-carbides, and the nano-sized κ’-carbides were uniformly distrib uted in the austenitic matrix. These κ’-carbides are formed via spinodal decomposition during quenching, which is attributed to the high pre cipitate kinetics caused by the high Al and C content $[ 6 , 7 , 1 4 ]$ . The microstructure contained a large amount of annealing twins, and the grain size (including twins) is \~70 μm. In addition, the texture was almost random distribution.
+
+The optical micrographs of cold rolled microstructure are shown in Fig. 3. According to the morphology features, the microstructure evo lution could be subdivided into two stages: (I) In the first stage (10% to 50% rolling reduction), the microstructure was the typical low energy dislocation structure (LEDS) of Taylor-lattice-type which was the result of the planar dislocation glide (Fig. 3(a-c)). The different distance be tween slip bands in different grains indicated that the deformation was inhomogeneous and more pronounced in favorable orientation (Fig. 3 (a)). The characteristic of this stage is the gradual refinement of slip bands space. (II) In the second stage (70% to 90% rolling reduction), compared with stage I, a plenty of shear bands were observed, and the grains were visibly elongated along the rolling direction (RD) (Fig. 3(ce)). The shear bands increased with cold rolling reduction and increas ingly eroded the matrix to almost all of it. Therefore, the feature of this stage is the gradual development of the shear bands.
+
+Except the optical microscopy (OM), transmission electron micro scopy (TEM) was also utilized to investigate the microstructure evolu tion in detail (Fig. 4-6). It is clear that the Taylor-lattice consists of the multiple slip bands (Fig. 4). The dislocations in the slip bands were approximately parallel, and the dislocation pile-ups were found at the intersections of the slip bands, as indicated by the green arrows in Fig. 4 (a). But the interaction of the non-coplanar slip bands was not strong to completely impede the dislocation glide. Consequently, the dislocation could across the intersection, making the slip bands across throughout the whole grain. It is no doubt that the Taylor-lattice structure is attributed to the planar dislocation glide [29], however, Sung-Dae Kim etc. [30] found that the dislocation cross slip might occur at the inter section, which could explain the weak interaction of the intersecting slip bands. Up to 30% rolled reduction, there was no obvious variation on structure except the gradual increase of the slip bands in Fig. 4(b). The average slip band spacing of sample of 30% and 50% reduction are measured as 231 nm and 64 nm, respectively.
+
+However, the microstructure changed significantly when the reduction reached 50% as shown in Fig. 5. The single slip band was hardly distinguishable. In addition, microbands were formed (indicated by the pairs of green dashes line in Fig. 5(a)) with the average width of 166 nm. The different contrast between microbands and matrix reflects that there is a misorientation among either side. Moreover, in some grains, the intermittent linear structures in parallel arrangement were detected, as shown in Fig. 5(b). According to the corresponding selected area diffraction pattern (SADP) (Fig. 5(c)) and the dark-field TEM micrograph (Fig. 5(d)), they turned out to be deformation twins. These twins were very fine with an average thickness of \~5.1 nm. Further more, it should be noted that different diffraction contrast was found in the single twin, which means the high dislocation density in twin [31]. When the reduction reached 70%, the size of twins increased to 19.2 nm (Fig. 6(a)) and many shear bands appeared in the microstructure (Fig. 6 (b)). The shear bands comprised of the ultrafine grains, confirming by the inserted diffraction ring pattern. Besides the increase of shear bands and twins, the dislocation tangles structure with the average size of 0.49 μm was developed as shown in Fig. 6(c).
+
+![](images/b5286750aa5fe540e437d79badea5031a8dfe982bb5e6a7a1268e133ef4ff851.jpg)
+
+(b)  
+![](images/869819fc83b568812c85f4dd55aaaae7047922dcdbcde500a1274d3eab5d8643.jpg)  
+Fig. 1. (a) Room-temperature tensile engineering, (b) true stress-strain curves of different cold rolling reduction. The hollow circle indicated the necking point
+
+![](images/4845a668201ed64d1b04786c78145f7922f1b48566cb446ff6972d5ecfeda960.jpg)
+
+![](images/3dc2c84a0b6cf20bb6918bb898b0ccbfd0263e7795ffa3945aef09907ac3ba67.jpg)
+
+![](images/a9c570e441614a60ebddb377a566ede213d67791b265333b6ccf271c6f420eff.jpg)  
+Fig. 2. The initial microstructure before cold rolling: (a) EBSD inverse pole figure map, (b) phase map. Austenite is colored by blue. Black line and red line represent high angle grain boundaries (≥15<sup>o</sup>) and twin boundaries, respectively. (c) TEM dark field image and selected-area diffraction pattern of κ’-carbides. The foil norma to [001] . (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+
+## 3.3. Texture evolution
+
+Fig. 7 and Table 1 illustrate the ideal orientations of the texture component observed in the present work. The initial texture before cold rolling was almost random distribution, reflected by the inverse pole figure in Fig. 2(a). The selected orientation distribution functions (ODF) sections of $\displaystyle \boldsymbol { \varphi } 2 = 0 ^ { \circ } , 4 5 ^ { \circ } , 6 5 ^ { \circ }$ are shown in Fig. 8. The α-fiber texture monotonously increased up to 90% rolling reduction. Another distinct phenomenon was that the texture components of {112}〈111〉 copper (Cu) and $\{ 1 2 3 \} { < } 1 1 1 > s$ (belonged to β-fiber) increased at lower to medium rolling reductions, and then decreased at higher strains. Furthermore, there were weak orientations near γ-fiber at 90% rolling reduction.
+
+In order to illuminate comprehensively the texture evolution, the intensity variations along α-, τ-, γ- and β-fiber are given in Fig. 9. In α-fiber (Fig. 9(a)), the {110}〈112〉 Brass orientation increased with cold rolling reduction and scattered to the {110}〈100〉 Goss position, which led to the gradually development of the whole fiber. Additionally, the maximum intensity position of the fiber shifted from $\boldsymbol { \Psi } ^ { 1 } = 4 5 ^ { \circ } \mathrm { t o } 2 0 ^ { \circ }$ at the higher rolling reductions (>50%), as indicated by the red arrow in Fig. 9(a). As shown in Fig. 9(b), the main orientation of τ-fiber was located in Cu and Goss positions. The intensity of the Cu orientation rapidly increased to maximum at 50% rolling reduction and then decreased. Meanwhile, with the decrease of Cu orientation, the Ф shifted to the higher values (as shown by the red arrow in Fig. 9(b)), and the Goss orientation also increased rapidly. Moreover, weak {552}<115 > CuT component was detected at 70% rolling reduction, and its Ф spread to lower values after 90% rolling reduction, representing by the blue arrow in Fig. 9(b). The γ-fiber with different rolling reductions remained weak (Fig. 9(c)). It was slightly strengthened at 90% reduction, which was relatively significant at {111}〈110〉 E position. The β-fiber started from B through S to Cu components is plotted in Fig. 9(d). It reveals that the Cu orientation increased first and then decreased, while the Goss orientation monotonously increased. The variation of S orientation was similar with Cu orientation. But the increase was significantly slower except the drastic increase at the 50% to 70% rolling states and the decrease delayed to 70% rolling reduction. The Ф and φ of maximum intensity position along β-fiber are displayed in Fig. 9(e) and Fig. 9(f), respectively. According to the maximum position of $\Phi _ { 2 } = 9 0 ^ { \circ } ,$ , it could be noticed that there was a continuously shifted from B towards Goss with the increase of cold rolling reduction.
+
+![](images/00ebad62b2c24eb80f3bbd4384816953dadc3ffb116e9a161974655860b17e37.jpg)
+
+![](images/147f6be66ff551abfeb9a23bd642a7d1ebfb5765b37a10531e51cfab4f93488a.jpg)
+
+![](images/56fee428604c92dc6190a487eaf78baf58cb6c1200f97e9da8b1142dd2394d7a.jpg)
+
+![](images/97cc668b15e98ac5edb37365dc3342a33575b05fc4be5f2a5f2cdca12dd9b5c6.jpg)
+
+![](images/fb678eb6c1132f500ccf4e2489b7f96d529a97d5609e8e470446af5d3bc0ce79.jpg)
+
+![](images/d904c2ed727dcfa44ae83f5532f3f84671dc9ef719bfe08b81b82939a4f8bf12.jpg)
+
+![](images/8e6314b65c2c8b836e9312e2a4600a3c1d6cf6931003b709e98d9af8807b27d4.jpg)
+
+Fig, 3. Optical micrographs of the different cold rolling reduction: (a) 10%, (b) 30%, (c) 50%. (d) 70% and (e) 90%  
+![](images/6f85cbadefe61d7941d260bcc4b816a52393bcda23575a7f22a00d0a440f136d.jpg)
+
+![](images/78ad9ce08354d7fa82cc6cbabcc5486a607fc569f199872ea3fdd8b7ab9eaa15.jpg)  
+Fig. 4. TEM bright-field image of (a) 10% and (b) 30% cold rolling reduction.
+
+## 4. Discussion
+
+## 4.1. Relation between microstructure and properties
+
+As shown in the engineering stress-strain curve (Fig. 1(a)), the phe nomenon of increasing strength and decreasing ductility is known as strength-ductility trade-off dilemma [32], which is common for material strengthened by grain refinement, precipitate hardening as well as work hardening. According to the microscopic characterization results, there are different variations of deformation substructures at different cold rolling stages. On the one hand, these deformation substructures play an important role in the enhancement of the YS of the materials. On the other hand, the stress level also controls the activation of different deformation mechanisms in turn.
+
+![](images/de3f872390f92e11c4c288975da5ca3da1e541aef99cb841045ddc6e94d85e8f.jpg)
+
+![](images/72051608386cb00a76c1588daa03f4ae55ca1279ce604e6d295e76ff5c3f5a1a.jpg)
+
+![](images/c340391b8d0a45cfe4fb12999f6c9255f0cb5a9e86ef0d572a76726e9f7c0c86.jpg)
+
+![](images/6637ffb678f3a3ba0b738058d610607d26243ce68c42a5f6cc7e093bf10d89d4.jpg)  
+Fig. 5. TEM micrographs of 50% cold rolling reduction: (a) and (b) Bright-field image, (c) Selected-area diffraction pattern of the intermittent linear structure in (b). The foil normal to [0 1 1]m. (d) Dark-field image from the reflection of nano-twins ((–111)π in (c)).
+
+![](images/da831c866c4291ac3a30f7016d8de64eaaed9e8ed715606895c90518888bc422.jpg)
+
+![](images/df9098b9bb024342e41f89b920511957fcc8f391b4883354126efe0995d70300.jpg)
+
+![](images/9f3a4c4b6c126f287377498bc472715244ec96f1e38796b2e7ed325d02f01ce4.jpg)  
+Fig. 6. TEM micrographs: (a) Dark-field image of nano-twins and (b) Bright-field image of shear band of 70% cold rolling reduction, respectively. (c) Bright-field image of dislocation tangles of 90% cold rolling reduction.
+
+![](images/b502753c53737828fcb3451d66f96697943a0ecbe14a344dab3ac3e2e2d58cdf.jpg)  
+Fig. 7. Schematic illustration of the main texture components in the present investigation.
+
+Definition of texture component illustrated in Fig. 7.
+
+<table><tr><td>Component</td><td>Symbol</td><td>Miller indices</td><td>Euler angles ( $\varphi_1, \Phi, \varphi_2$ )</td><td>Fiber</td></tr><tr><td>Brass (B)</td><td></td><td>{110}⟨112⟩</td><td>[55, 90, 45]</td><td> $\alpha$  and  $\beta$ </td></tr><tr><td>Goss (G)</td><td></td><td>{110}⟨001⟩</td><td>[90, 90, 45]</td><td> $\alpha$  and  $\tau$ </td></tr><tr><td>Rotated Goss (RtG)</td><td></td><td>{110}&lt;110&gt;</td><td>[0, 90, 45]</td><td> $\alpha$ </td></tr><tr><td>Cube (C)</td><td></td><td>{001}⟨100⟩</td><td>[45, 0, 45]</td><td>-</td></tr><tr><td>E</td><td></td><td>{111}&lt;110&gt;</td><td>[0, 55, 45] [60, 55, 45]</td><td> $\gamma$ </td></tr><tr><td>F</td><td></td><td>{111}&lt;112&gt;</td><td>[30, 55, 45] [90, 55, 45]</td><td> $\gamma$ </td></tr><tr><td>Copper (Cu)</td><td></td><td>{112}⟨111⟩</td><td>[90, 35, 45]</td><td> $\beta$  and  $\tau$ </td></tr><tr><td>CopperTwin (CuT)</td><td></td><td>{552}&lt;115&gt;</td><td>[90, 74, 45]</td><td> $\tau$ </td></tr><tr><td>S</td><td></td><td>{123}&lt;634&gt;</td><td>[59, 37, 63]</td><td> $\beta$ </td></tr></table>
+
+α-fiber: <110> parallel to ND.  
+< > <sup>o</sup>  
+γ-fiber: <111> parallel to ND.  
+τ-fiber: <110> parallel to TD.
+
+When the true stress lower than \~1.2 GPa, the microstructure evo lution is characterized by the refinement of the slip band spacing in the Taylor lattice (Fig. 4), which is similar to the tensile deformation microstructure evolution of Fe–30.4Mn–8Al–1.2C (wt%) [9,14]. The Taylor lattice structure is associated with the dislocation planar glide, which is widely considered as the results of “glide plane softening” ef fects [12,29].
+
+When the stress reaches \~1.5 GPa, microstructure of microbands and its intersections are well established except the further refinement of the slip bands (Fig. 5(a)), which greatly resembles the tensile deformation structure of Fe–28Mn–9Al–0.8C (wt%) after failure [12]. The bound aries of the microbands are geometrically necessary dislocations (GNDs) that are formed to accommodate the misorientation between adjacent boundaries [12]. Additionally, the novel nano-sized deformation twins are detected, as shown in Fig. 5 (b-d), which is barely reported in the tensile deformed high Mn–Al–C low-density steel. Because the stacking fault energy (SFE) of Fe–Mn–Al–C austenitic steel increases significantly with the increase of Al and C content [15,16], while the critical shear stress (τ ) for the deformation twining is proportional to the SFE which is evaluated by the following equations [12,33,34],
+
+$$
+\tau_ {\mathrm{c}} = \frac {2 \gamma_ {\mathrm{SF}}}{\mathrm{b} _ {\mathrm{p}}}\tag{1}
+$$
+
+where γ is SFE, ${ \sf b } _ { \mathrm { p } }$ is the Burgers vector for a partial dislocation. The SFE, ${ \tt b } _ { \mathrm { p } }$ of current steel are estimated as \~108 mJ/m<sup>2</sup> and 0.146 nm, respectively [35]. Therefore, the critical stress is calculated as \~1.48 GPa. It is much higher than the maximum resolved shear stress \~0.75 GPa. However, the twining indeed occurs. There are two causes to ex plains this phenomenon. (I) The actual critical shear stress $( \tau _ { \mathrm { c } } )$ was re ported to be lower than that calculated in eq. (1) when the interaction between dislocation and short range order (SRO) is taken into account. (II) The inhomogeneous distribution of strain leads to the local stress concentration, which may also promote the twining process.
+
+When the stress increases to \~1.8 GPa, much microshear bands are generated due to the larger localized strain concentration (Fig. 6(b)). The shear bands can further refine the crystal structure because they consist of ultra-fine grains. Furthermore, at stress of \~2.1 GPa, dislo cation cell structure is clearly observed (Fig. 6(c)), indicating that dislocation cross slip is operated.
+
+Overall, the deformation substructure evolution approximately fol lows the sequence of Taylor lattice, microbands, twins, shear bands and dislocation tangles, which is different from the tensile deformation. Among them, it was reported that the strengthening mechanism of Taylor lattice is attributed to the long range interaction between the coplanar slip bands rather than the dynamic Hall-Petch effects [14]. The strengthening effect $( \sigma _ { \mathrm { T L } } )$ is expressed by the following Eq. [14],
+
+$$
+\sigma_ {\mathrm{TL}} = \mathrm{K} \cdot \mathrm{M} \cdot \mathrm{G} \cdot \mathrm{b} / \mathrm{D}\tag{2}
+$$
+
+where K is a geometrical factor, M is the Taylor-factor, G is the shear modulus, b is the Burgers vector and D is the average slip band distance. The latter microbands, twins, shear bands and dislocation tangles enhance the strength by the Hall-Petch effects. Eventually, the ultrahigh yield strength of \~2.0 GPa is realized.
+
+## 4.2. Relation between microstructure and texture evolution
+
+The evolution of the texture during cold rolling exhibits two obvious features (Fig. 8). (I) The intensity of the whole texture component is weaker than copper alloys and nickel [36]. (II) There is a transition from “copper-type texture” to “brass-type texture” at 50% cold rolling reduction, which is characterized by the gradual decrease of Cu and S
+
+![](images/a8616162ab4dfe13ca0517e540f186e2c801f21ed15ae1619434ef6acf946ef2.jpg)  
+Fig. 8. The selected ODF sections of $\varphi _ { 2 } = 0 ^ { \circ } , 4 5 ^ { \circ }$ , 65<sup>o</sup> for various cold rolling reduction.
+
+(a)  
+![](images/3c9e7bb66d5dcc2c67ea29effee281b0c069a64c4a947e7ca7e49ee2bb1a08b8.jpg)
+
+(b)  
+![](images/5ca7cf3a2a98ea5f4ce54ab50f5ea45d637dc8f7067c3f82ff9d85810468d1ee.jpg)
+
+(c)  
+![](images/d165320f32aef0f66313fa6539141e7cfe89183dfb4c0d4b23eafc3b3efb30ec.jpg)
+
+(d)  
+(e)  
+![](images/f541145af746fa5b60393db87ccc682807eac13ccd5ecf97189127d9995a9a0e.jpg)
+
+(f)  
+![](images/7bb27315d927f29b6476a4abaa354df420702729cfbb4b9bc4365c8bf248c964.jpg)
+
+![](images/12536f193fd188bf439ead0a337cc4577225523227f7dea336fe93d449d43400.jpg)  
+Fig. 9. The evolution of (a) α-fiber, (b) τ-fiber, (c) γ-fiber and (d) β-fiber of different cold rolling reduction. (e) Ф and (f) φ<sub>1</sub> position of the maximum intensity along β-fiber, respectively.
+
+texture components.
+
+The evolution of the texture must be associated with the evolution of the microstructure. Although the cross slip is found to occur at the in tersections of slip bands in previous report [30] and is activated at higher rolling degrees in present work (Fig. 6(c)), the dislocation mul tiple planar glide dominates the rolling deformation, which is one of the striking feature of the present steel. This behavior is also observed in other alloys system, such as Cu–Ni [37], Ni–Cr [33], Cu–Mn [38] and LI ordered intermetallic alloys [39] etc. In Ni-based $\mathrm { L } 1 _ { 2 }$ ordered interme tallic alloys, the relation between the overall texture intensity and the difficulty of cross slip was investigated by a new concept of the width of the stacking-fault-like defect (SFLD) [39]. It is concluded that the more difficult the cross slip is, the weaker the texture is. The speculation that the planar slip may cause unusual crystal lattice rotation and thus weaken the intensity of texture is pay for this. Therefore, in present work, the weak texture is related to the dislocation planar glide. Addi tionally, substructure of inhomogeneous deformation, such as micro bands, shear bands and twins, may also scatter the texture.
+
+Generally, there are two kinds of typical texture in FCC metal ma terials, “copper-type texture” and “brass-type texture”. The former is well understood which is favoured by the homogeneous deformation, while the latter mechanism is not fully clear. In Cu–Mn alloys, the texture transition from “Copper-type” to “Brass-type” was also observed, and the transition took place earlier with the increase of Mn content [40]. The authors attributed the transition to dislocation planar glide because they did not observe deformation twins and sufficient shear bands. Additionally, when deformation twining is activated (such as in Cu–Zn alloy and TWIP steel etc.), the transition is interpreted by the following orientation paths [20,21]. Twining occurs firstly in the grains with Cu orientation, making orientation change to CuT. If the morphology of twins is isolated, the twins will rotate to G orientation around 〈110〉 axis by dislocation glide on the two coplanar systems, (− 1− 11)[011] and (− 1− 10)[101], with the highest resolved shear stress. Moreover, if the twins are located in the twin-matrix (T-M) lamella, the situation will become more complex. Due to the spacing of T-M lamella is very small, the dislocation is constrained to the common {111} plane of twining plane, which leads to the abnormal rotation of the twins and matrix, resulting in the higher Ф values. Eventually, the twining plane (also the dislocation glide plane) is nearly parallel to the rolling plane. The result of this phenomenon is that the resolved shear stress decreases or even zero, and the deformation is unable to accom modate by dislocation glide. Consequently, the micro shear bands are generated by local strain concentration. These shear hands are reported to consist of tiny grains, and the orientation of the grains is biased to wards G and B. The G finally transformed to B through further dislo cation slip.
+
+In present work, the dislocation planar slip (as in Cu–Mn alloy) dominates the deformation. In addition, deformation twins (as in Cu–Zn alloy and TWIP steel etc.) are also detected (Fig. 3-6). And the twining can also be indirectly reflected by the development of CuT after 50% rolling reduction (Fig. 9(b)) and the slight strengthening of γ-fiber texture (Fig. 9(c)). Specifically, the size of twins is nano-scale, forming the fine T-M lamella structure (Fig. 5(d) and Fig. 6(a)). The shifts of Cu and CuT (after symmetrical treatment) indicated by the red and blue arrows in Fig. 9(b) are consistent with the latent hardening process. Furthermore, the microshear bands generated by the local strain con centration are extensively observed, with accompanying by the rapid increase of the G component (Fig. 3(c-e) and Fig. 6(b)). In conclusion, above two mechanisms may be both contributed to the transition from “Copper-type texture” to “Brass-type texture”.
+
+## 5. Conclusions
+
+The effect of cold rolling on the microstructure, texture and me chanical properties of Fe–30Mn–11Al–1.2C austenitic low-density steel is investigated. Major conclusions are summarized as follows:
+
+1. With the increasing of cold rolling reduction, the yield strength is significantly enhanced up to \~2.0 GPa and the elongation decreases. The strengthening mechanism of the present steel with low rolling reduction of 10–30% is the refinement of the slip bands spacing. At higher reductions of 50–90%, the Hall-Petch effect induced by microbands, twins, dislocation tangles and grain refinement plays an important role in enhancing strength.
+
+2. The deformation substructure evolution during cold rolling approx imately follows the sequence of Taylor lattice, microbands, twins, shear bands and dislocation tangles. Among them, the deformation twins are activated with the stress much lower than the critical stress, which may due to the short range order phase and the local stress concentration.
+
+3. The intensity of the whole texture is relative weak, which may due to the planar dislocation glide. A “copper-type texture” is formed at 50% rolling reduction while it gradually transformed to “brass-type texture” with further rolling. The transition is attributed both to the dislocation planar glide and deformation twins.
+
+## Data availability
+
+The raw/processed data required to reproduce these findings cannot be shared at this time as the data also forms part of an ongoing study.
+
+## Declaration of Competing Interest
+
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+## Acknowledgements
+
+The authors acknowledge the financial support by the National Natural Science Foundation of China (Grant nos. 51871062 and 51421001).
+
+## References
+
+[1] R.A. Howell, D.C.V. Aken, A literature review of age hardening Fe-Mn-Al-C alloys, Iron Steel Technol. 6 (2009) 193–212.
+
+[2] O.A. Zambrano, A general perspective of Fe–Mn–Al–C steels, J. Mater. Sci. 53 (2018) 14003–14062.
+
+[3] J. Xing, Y. Wei, L. Hou, An overview of the effects of alloying elements on the (2018) 929–937.
+
+[4] S. Chen, R. Rana, A. Haldar, R.K. Ray, Current state of Fe-Mn-Al-C low density
+
+[5] H. Kim, D.-W. Suh, N.J. Kim, Fe–Al–Mn–C lightweight structural alloys: a review on the microstructures and mechanical properties. Sci. Technol. Ady. Mater. 14 (2013), 014205.
+
+[6] C.-L. Lin, C.-G. Chao, J.-Y. Juang, J.-M. Yang, T.-F. Liu, Deformation mechanisms in ultrahigh-strength and high-ductility nanostructured FeMnAlC alloy, J. Alloy Compd. 586 (2014) 616–620
+
+[7] K. Lee, S.-J. Park, J. Lee, J. Moon, J.-Y. Kang, D.-I. Kim, J.-Y. Suh, H.N. Han, Effect of aging treatment on microstructure and intrinsic mechanical behavior of Fe–31.4Mn–11.4Al–0.89C lightweight steel. J. Alloys Compd, 656 (2016) 805–811
+
+[8] C. Haase, C. Zehnder, T. Ingendahl. A. Bikar, F. Tang, B. Hallstedt, W. Hu, W. Bleck. D A Molodov. On the deformation behavior of κ-carbide-free and κ-carbide: containing high-Mn light-weight steel, Acta Mater. 122 (2017) 332–343
+
+[9] M.J. Yao, E. Welsch, D. Ponge, S.M.H. Haghighat, S. Sandlobes, ¨ P. Choi, M. Herbig, I. Bleskoy, T. Hickel, M. Lipinska-Chwalek. P. Shanthrai, C. Scheu, S. Zaefferer. B. Gault, D. Raabe, Strengthening and strain hardening mechanisms in a precipitation-hardened high-Mn lightweight steel, Acta Mater. 140 (2017) 258-273.
+
+[10] D.S. Raabe, H. Springer, I. Gutierrez-Urrutia, F. Roters, M. Bausch, J.B. Seol M. Koyama, P.P. Choi, K. Tsuzaki, Alloy Design, Combinatorial Synthesis, and Microstructure–Property Relations for Low-Density Fe-Mn-Al-C Austenitic Steels, Jom 66 (2014) 1845–1856.
+
+[11] G.F.a.U. BrOx, Microstructures and mechanical properties of high-strength Fe-Mn Al-C light-weight TRIPLEX steels, in: Steels for Automotive Application, 2006,
+
+[12] J.D. Yoo, K.-T. Park, Microband-induced plasticity in a high Mn–Al–C light steel, Mater Sci Eng A 496 (2008) 417–424
+
+[13] K.-T. Park, Tensile deformation of low-density Fe–Mn–Al–C austenitic steels at ambient temperature, Scr. Mater. 68 (2013) 375–379.
+
+[14] E. Welsch, D. Ponge, S.M. Hafez Haghighat, S. Sandlobes, ¨ P. Choi, M. Herbig, S. Zaefferer, D. Raabe, Strain hardening by dynamic slip band refinement in a high Mn lightweight steel, Acta Mater. 116 (2016) 188–199.
+
+[15] J.E. Jin, Y.K. Lee, Effects of Al on microstructure and tensile properties of C-bearing high Mn TWIP steel, Acta Mater. 60 (2012) 1680–1688.
+
+[16] W. Song. T. Ingendahl. W. Bleck. Control of strain hardening behavior in high-Mr
+
+[17] J.D. Yoo. S.W. Hwang. K.-T. Park. Factors influencing the tensile behavior of a Fe-28Mn–9Al–0.8C steel, Mater, Sci, Eng, A 508 (2009) 234–240.
+
+[18]J.D. Yoo. S.W. Hwang. K.T. Park. Origin of extended tensile ductility of a Fe-28Mn:
+
+[19] T. Leffers, The brass-type texture – How close are we to understand it? Mater, Sci Forum 702–703 (2011) 216–223
+
+[20] T. Leffers, R.K. Ray, The brass-type texture and its deviation from the copper-type texture, Prog. Mater. Sci. 54 (2009) 351–396.
+
+[21] J. Hirsch, K. Lücke, M. Hatherly, Overview No. 76 mechanism of deformation and development of rolling textures in polycrystalline f.c.c. Metals—III. The influence of slip inhomogeneities and twinning, Acta Metall. 36 (1988) 2905–2927.
+
+[22] S. Allain, J.P. Chateau, O. Bouaziz, S. Migot, N. Guelton, Correlations between the calculated stacking fault energy and the plasticity mechanisms in Fe–Mn–C alloys, Mater. Sci. Eng. A 387-389 (2004) 158–162.
+
+[23] A.A. Saleh, E.V. Pereloma, A.A. Gazder, Texture evolution of cold rolled and annealed Fe–24Mn–3Al–2Si–1Ni–0.06C TWIP steel. Mater. Sci. Eng, A 528 (2011) 4537-4549.
+
+[24] S. Vercammen, B. Blanpain, B.C. De Cooman, P. Wollants, Cold rolling behaviour of an austenitic Fe-30Mn-3Al–3Si TWIP-steel: the importance of deformation twinning, Acta Mater. 52 (2004) 2005–2012
+
+[25] C. Haase, S.G. Chowdhury, L.A. Barrales-Mora, D.A. Molodov, G. Gottstein, On the relation of microstructure and texture evolution in an austenitic Fe-28Mn-0.28C TWIP steel during cold rolling, Metall. Mater. Trans. A 44 (2012) 911–922
+
+[26] F.M. Souza, A.F. Padilha, I. Gutierrez-Urrutia, D. Raabe, Microstructural analysis in the Fe-30.5Mn-8.0Al-1.2C and Fe-30.5Mn-2.1Al-1.2C steels upon cold rolling, Rem: Revista Escola de Minas 69 (2016) 167–173.
+
+[27] F.M. Souza, A.F. Padilha, I. Gutierrez-Urruti, D. Raabe, Texture evolution in the Fe-30.5Mn-8.0Al-1.2C and Fe-30.5Mn-2.1Al-1.2C steels upon cold rolling, Rem: Revista Escola de Minas 69 (2016) 59–65.
+
+[28] F.M. Souza, Comparative assessment of microstructure and texture in the Fe-30.5Mn-8.0Al-1.2C and Fe-30.5Mn-2.1Al-1.2C steels under cold rolling, REM – Int. Eng. J. 70 (2017) 299–306.
+
+[29] V. Gerold, H.P. Karnthaler, On the origin of planar slip in f.c.c. alloys, Acta Metall. 37 (1989) 2177–2183.
+
+[30] S.D. Kim, J.Y. Park, S.J. Park, J.H. Jang, J. Moon, H.Y. Ha, C.H. Lee, J.Y. Kang, J. H. Shin, T.H. Lee, Direct observation of dislocation plasticity in high-Mn lightweight steel by in-situ TEM, Sci. Rep. 9 (2019) 15171.
+
+[31] B.B. Zhang, F.K. Yan, M.J. Zhao, N.R. Tao, K. Lu, Combined strengthening from nanotwins and nanoprecipitates in an iron-based superalloy, Acta Mater. 151 (2018) 310–320.
+
+[32] R.O. Ritchie, The conflicts between strength and toughness, Nat. Mater. 10 (2011) 817.
+
+[33] Y.J. Zhang, D. Han, X.W. Li, A unique two-stage strength-ductility match in low solid-solution hardening Ni-Cr alloys: decisive role of short range ordering, Scr. Mater. 178 (2020) 269–273.
+
+[34] K.-T. Park, K.G. Jin, S.H. Han, S.W. Hwang, K. Choi, C.S. Lee, Stacking fault energy and plastic deformation of fully austenitic high manganese steels: effect of A addition. Mater, Sci, Eng, A 527 (2010) 3651–3661.
+
+[35] A. Saeed-Akbari, J. Imlau, U. Prahl, W. Bleck, Derivation and variation in composition-dependent stacking fault energy maps based on subregular solution model in high-manganese steels, Metall. Mater. Trans. A 40 (2009) 3076–3090.
+
+[36] H. Yan, X. Zhao, N. Jia, Y. Zheng, T. He, Influence of shear banding on the formation of Brass-type textures in polycrystalline fcc metals with low stacking fault energy, J. Mater. Sci. Technol. 30 (2014) 408–416.
+
+[37] D. Han, J.-X. He, X.-J. Guan, Y.-J. Zhang, X.-W. Li, Impact of short-range clustering on the multistage work-hardening behavior in cu–Ni alloys, Metals 9 (2019) 151.
+
+[38] D. Han, Z.Y. Wang, Y. Yan, F. Shi, X.W. Li, A good strength-ductility match in cu-Mn alloys with high stacking fault energies: determinant effect of short range ordering, Scr. Mater. 133 (2017) 59–64
+
+[39] Y. Kaneno, A. Takahashi, T. Takasugi, Cold rolling texture of Ni-based L1 ordered intermetallic alloys, Mater. Trans. 47 (2006) 1485–1491.
+
+[40] O. Engler, C. Pithan, K. Lücke, Rolling texture development in cu-Mn-alloys, Mater. Sci. Forum 157-162 (1994) 679–684.

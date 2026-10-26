@@ -1,0 +1,238 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-0.125mn-0.875al__dft-castep-gga-pbe",
+      "paper_id": "10.1007_s12598-018-1074-2",
+      "alloy_id": "alloy_fe-0.125mn-0.875al",
+      "process_id": "proc_dft-castep-gga-pbe",
+      "sample_label": "Fe0.125Mn0.875Al",
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_dft_geometry_optimization",
+      "sequence": "1",
+      "type": "computational (first-principles)",
+      "method": "DFT first-principles calculation (CASTEP, GGA-PBE)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Geometry-optimized crystal structure via first-principles DFT using CASTEP; GGA-PBE exchange-correlation, ultrasoft pseudopotentials, 8x8x8 Monkhorst-Pack k-point mesh, 450 eV plane-wave cutoff, total energy converged to 2x10^-6 eV and forces below 0.5 eV/nm."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_fe0.125mn0.875al",
+      "overall_structure": "Cubic supercell (space group Pm-3m) with Mn substituting Fe on the Fe sublattice of B2-type FeAl; 16-atom cell with 7 Mn and 1 Fe on the Fe/Mn sublattice and 8 Al on the other sublattice.",
+      "number_of_phases": 1,
+      "microstructure_counts": 1,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_fe0.125mn0.875al",
+          "region": "bulk crystal (whole simulation cell)",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "Fe0.125Mn0.875Al",
+              "crystal_structure": "cubic, space group Pm-3m",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_thermo_physical",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": "first-principles DFT (ground-state) calculation",
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": null
+      },
+      "mechanical": null,
+      "physical": {
+        "density": "5483.8 kg·m⁻³",
+        "thermal_properties": {
+          "formation_enthalpy": "-0.269 eV·atom⁻¹",
+          "cohesive_energy": "-6.744 eV·atom⁻¹",
+          "debye_temperature": "564.0 K",
+          "longitudinal_sound_velocity": "7217.1 m·s⁻¹",
+          "transverse_sound_velocity": "3950.9 m·s⁻¹",
+          "average_sound_velocity": "4405.3 m·s⁻¹"
+        },
+        "electrical_properties": {
+          "conductivity": "metallic (nonzero density of states at the Fermi level)"
+        },
+        "magnetic_properties": {
+          "magnetic_character": "magnetic (dissymmetric up/down DOS states)"
+        }
+      },
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_mechanical",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": "first-principles DFT (ground-state) calculation; elastic moduli from Voigt-Reuss-Hill approximation",
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": "220.2 GPa",
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk (VRH polycrystalline estimate)",
+            "value": "9.0",
+            "scale": "Vickers",
+            "unit": "GPa",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_youngs_modulus_direction",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "At the [100], [010], [001] and [110] directions, Fe0.125Mn0.875Al shows the maximum Young's modulus among the Fe1-xMnxAl series, while MnAl shows the minimum.",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_dft_castep",
+      "microstructure_id": "micro_fe0.125mn0.875al",
+      "technique": "First-principles DFT calculation (CASTEP)",
+      "instrument_or_setup": "CASTEP code; GGA-PBE; ultrasoft pseudopotentials; 8x8x8 Monkhorst-Pack k-point mesh; 450 eV plane-wave cutoff",
+      "measurement_conditions": "total energy converged to 2x10^-6 eV; forces < 0.5 eV/nm",
+      "purpose": "geometry optimization and total-energy calculations",
+      "key_findings": "optimized lattice parameter a = b = c = 0.582 nm for Fe0.125Mn0.875Al"
+    },
+    {
+      "characterization_id": "char_dos",
+      "microstructure_id": "micro_fe0.125mn0.875al",
+      "technique": "Spin-polarized total and partial density of states (TDOS/PDOS)",
+      "instrument_or_setup": "DFT (CASTEP) electronic structure calculation",
+      "measurement_conditions": "energy range -10 to 20 eV; Fermi level at 0 eV",
+      "purpose": "electronic structure and chemical bonding analysis",
+      "key_findings": "metallic (nonzero DOS at Fermi level); magnetic (dissymmetric up/down states); sharp Fermi-level peak from hybridized Fe-d/Mn-d and low Al-p states (panel i)"
+    },
+    {
+      "characterization_id": "char_electron_density",
+      "microstructure_id": "micro_fe0.125mn0.875al",
+      "technique": "Electron density distribution maps (total and difference)",
+      "instrument_or_setup": "DFT (CASTEP) electron density calculation",
+      "measurement_conditions": "contour maps on (011) and (110) crystallographic planes",
+      "purpose": "chemical bonding analysis",
+      "key_findings": "combined covalent and metallic bonding; weaker covalent bond effect"
+    },
+    {
+      "characterization_id": "char_elastic",
+      "microstructure_id": "micro_fe0.125mn0.875al",
+      "technique": "Elastic constants and VRH polycrystalline moduli",
+      "instrument_or_setup": "DFT (CASTEP) elastic constants; Voigt-Reuss-Hill approximation",
+      "measurement_conditions": "cubic mechanical stability criteria; GPa units",
+      "purpose": "mechanical property evaluation",
+      "key_findings": "C11=255.2, C12=138.8, C44=154.2 GPa; B=171.5, G=85.6, E=220.2 GPa; H_V=9.0 GPa; B/G=2.00 (ductile)"
+    },
+    {
+      "characterization_id": "char_debye",
+      "microstructure_id": "micro_fe0.125mn0.875al",
+      "technique": "Sound velocity and Debye temperature calculation",
+      "instrument_or_setup": "DFT elastic moduli + density; Eqs. (15)-(18)",
+      "measurement_conditions": null,
+      "purpose": "thermal and chemical bond behavior",
+      "key_findings": "ρ=5483.8 kg·m⁻³; v1=7217.1, vs=3950.9, vm=4405.3 m·s⁻¹; ΘD=564.0 K"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_dft_castep_pbe",
+      "simulation_method": "DFT first-principles (GGA-PBE)",
+      "software_used": "CASTEP",
+      "potential_model_or_database": "GGA-PBE exchange-correlation; ultrasoft pseudopotentials; valence states Fe 3d^6 4s^2, Mn 3d^5 4s^2, Al 3s^2 3p^1",
+      "boundary_and_initial_conditions": "cubic Pm-3m supercell (16 atoms); 8x8x8 Monkhorst-Pack k-point mesh; 450 eV plane-wave cutoff; energy converged to 2x10^-6 eV; forces < 0.5 eV/nm",
+      "validation_against_experiment": "calculated results show good agreement with other experimental and calculated values",
+      "analytical_models": [
+        {
+          "model_name": "Voigt-Reuss-Hill (VRH) approximation",
+          "equation_role": "polycrystalline bulk modulus B, shear modulus G, Young's modulus E and Poisson's ratio σ from single-crystal elastic constants",
+          "parameters": [],
+          "model_note": "Eqs. (4)-(9)"
+        },
+        {
+          "model_name": "Pugh's modulus ratio (B/G)",
+          "equation_role": "brittleness/ductility criterion (B/G > 1.75 = ductile)",
+          "parameters": [],
+          "model_note": null
+        },
+        {
+          "model_name": "Empirical Vickers hardness model",
+          "equation_role": "H_V = 2(k^2 G)^0.585 - 3 with k = G/B",
+          "parameters": [],
+          "model_note": "Eq. (10)"
+        },
+        {
+          "model_name": "Debye temperature and sound velocity model",
+          "equation_role": "ΘD, vm, vl, vs from bulk modulus, shear modulus and density",
+          "parameters": [],
+          "model_note": "Eqs. (15)-(18)"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Lattice parameter (DFT-optimized): a = b = c = 0.582 nm for Fe0.125Mn0.875Al (Table 1, [b0021]).",
+    "Elastic constants: C11 = 255.2 GPa, C12 = 138.8 GPa, C44 = 154.2 GPa (Table 2, [b0049]).",
+    "Bulk modulus B = 171.5 GPa; shear modulus G = 85.6 GPa; Poisson's ratio σ = 0.286; B/G = 2.00 (Table 2, [b0049]).",
+    "Pugh ductility: B/G = 2.00 > 1.75, so Fe0.125Mn0.875Al is classified as ductile ([b0045]).",
+    "Anisotropy indices: A^U = 1.84, A_B = 0, A_G = 0.115, A_1 = A_2 = A_3 = 2.65 (Table 3, [b0051]).",
+    "Anisotropy ordering (descending): MnAl > Fe0.5Mn0.5Al > Fe0.625Mn0.375Al > Fe0.125Mn0.875Al > Fe0.375Mn0.625Al > Fe0.75Mn0.25Al > Fe0.25Mn0.75Al > Fe0.875Mn0.125Al > FeAl ([b0059])."
+  ]
+}

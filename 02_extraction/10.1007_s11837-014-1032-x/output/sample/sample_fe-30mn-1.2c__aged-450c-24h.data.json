@@ -1,0 +1,271 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-1.2c__aged-450c-24h",
+      "paper_id": "10.1007_s11837-014-1032-x",
+      "alloy_id": "alloy_fe-30mn-1.2c",
+      "process_id": "proc_aged-450c-24h",
+      "sample_label": null,
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_vim_casting",
+      "sequence": "1",
+      "type": "casting",
+      "method": "vacuum-induction melting (VIM) and casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "400 mbar Ar",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Five Cu molds movable stepwise inside furnace; 4-kg ingot; five alloys synthesized per operation; remaining melt adjusted by charging Al through an air lock."
+    },
+    {
+      "processing_step_id": "step_2_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "10×50×130 mm³-sized blocks were hot rolled into 2±0.1 mm thick and ~500 mm long sheets."
+    },
+    {
+      "processing_step_id": "step_3_reheat_water_quench",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "reheating and water quenching",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "After quenching, sheets were cut perpendicular to the rolling direction into sets of nine segments (2×60×55 mm³) per alloy composition."
+    },
+    {
+      "processing_step_id": "step_4_homogenization",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": "Ar",
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_5_aging",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "450",
+      "temperature_unit": "°C",
+      "duration": "24 h",
+      "atmosphere": "air",
+      "cooling_medium": "oil",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_6_sandblasting",
+      "sequence": "6",
+      "type": "surface treatment",
+      "method": "low-pressure fine-grit sandblasting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Scales removed from surfaces after the heat treatments."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_1",
+      "overall_structure": "fully recrystallized microstructure with some retained microsegregations of Mn",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": "bulk",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "retained microsegregations of Mn",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~20 µm",
+              "unit": "µm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_mechanical_450c_24h",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Samples for mechanical testing prepared from segments by package spark erosion; all plotted values represent averages of three measurements for every material state."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "virtually unchanged",
+              "unit": null,
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "reduced",
+              "unit": null,
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "reduced",
+              "unit": null,
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "~200 HBW",
+            "scale": "HBW",
+            "unit": null,
+            "uncertainty": null
+          },
+          {
+            "region": null,
+            "value": "slightly increased",
+            "scale": "HBW",
+            "unit": null,
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_1",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-30mn-1.2c",
+        "benchmark_process_id": "proc_homog-1100c-2h-wq",
+        "benchmark_sample_id": null,
+        "comparison_metric": "YS, UTS, TE, hardness",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "tensile testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "room temperature; initial strain rate 10^-3 s^-1",
+      "purpose": "mechanical screening (YS, UTS, TE)",
+      "key_findings": "values plotted represent averages of three measurements for every material state"
+    },
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": null,
+      "technique": "hardness measurement",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "hardness screening",
+      "key_findings": "~200 HBW for the 0 Al alloy (flat over 0–6 wt.% Al) in Fig. 3d"
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "performed on the rolling plane of samples ground to a thickness of 1 mm",
+      "purpose": "phase characterization",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_metallography",
+      "microstructure_id": "micro_1",
+      "technique": "metallographic preparation (grinding and polishing)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "cross-sectional areas prepared in the plane perpendicular to the rolling direction",
+      "purpose": "microstructure investigation",
+      "key_findings": "no cracks, pores, or macrosegregations in the final materials; grain size ~20 µm"
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "For the Al-free reference material (ternary Fe-30Mn-1.2C alloy), the best mechanical behavior was reported for the as-homogenized state (a sibling state, not this 450 °C/24 h sample): 360 MPa YS, 830 MPa UTS, and 77% TE [b0023].",
+    "Aging of the Fe-30Mn-1.2C alloy leaves the YS virtually unchanged and slightly increases hardness, but reduces UTS and TE; embrittlement is most apparent for long aging times (24 h) and higher temperatures (>500 °C). This 450 °C/24 h sample is a long-aging-time condition at the lower aging temperature [b0023, b0024].",
+    "No explicit numeric YS/UTS/TE value is printed for the exact 450 °C/24 h condition of the Al-free alloy; Fig. 3's colour key includes 450 °C/1 h but not 450 °C/24 h, so this sample is represented mainly through the qualitative aging trends in the text [figure_003, b0023, b0024].",
+    "In the Fig. 4 strength–ductility map, the Al-free Fe-30Mn-1.2C series ('T + t' = 24 h aging trend) ranges from about 490 MPa at ~8% elongation to about 800 MPa at ~70% elongation (a broad trend line, not a specific 450 °C/24 h datum) [figure_004].",
+    "The as-cast samples had a coarse dendritic microstructure; hot rolling and water quenching produced the fully recrystallized state with ~20 µm grain size (parent processing states of this sample) [b0021].",
+    "A single austenite phase prevails at room temperature when the Al content is below 5 wt.%, which includes this Al-free (0 wt.% Al) Fe-30Mn-1.2C alloy [b0015]."
+  ]
+}

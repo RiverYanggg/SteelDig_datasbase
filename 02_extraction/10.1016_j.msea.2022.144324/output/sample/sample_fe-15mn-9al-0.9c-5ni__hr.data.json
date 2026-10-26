@@ -1,0 +1,308 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-15mn-9al-0.9c-5ni__hr",
+      "paper_id": "10.1016_j.msea.2022.144324",
+      "alloy_id": "alloy_fe-15mn-9al-0.9c-5ni",
+      "process_id": "proc_hr",
+      "sample_label": null,
+      "aliases": [
+        "15Mn5Ni",
+        "HR",
+        "15Mn5Ni in HR condition"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The Fe–15Mn–9Al-0.9C–5Ni (15Mn5Ni) low-density steel grade was prepared by vacuum induction melting; the sound portion of the 30 kg ingot was used."
+    },
+    {
+      "processing_step_id": "step_2_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1423",
+      "temperature_unit": "K",
+      "duration": "2.5 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenized at 1423 K for 2.5 h before hot rolling."
+    },
+    {
+      "processing_step_id": "step_3_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1323",
+      "temperature_unit": "K",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot rolled at 1323 K to a final plate thickness of ~13 mm; this processing condition is referred to as HR. Details of the hot rolling process were reported elsewhere [21]."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_hr",
+      "overall_structure": "Hot-rolled (HR) condition: equiaxed, near-randomly textured γ (austenite) matrix (d ~5–7 μm) containing B2 phase in the form of elongated bamboo-like stringers and polygonal particles, together with κ-carbides; a two/three-phase γ + B2 (+ κ-carbide) microstructure. 15Mn5Ni contained a higher B2 fraction (~12%) and higher κ-carbide volume fraction than the 28Mn5Ni and 28Mn0Ni alloys, and a lower twin fraction than the higher-Mn alloys.",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_hr_gamma",
+          "region": "matrix (equiaxed γ grains)",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "γ (austenite)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains",
+              "grain_size": "~5–7 μm",
+              "texture": "nearly random"
+            }
+          ],
+          "defects": [
+            {
+              "type": "annealing/deformation twins",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~5–7",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "nearly random"
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_hr_B2",
+          "region": "within γ matrix (stringers and polygonal particles)",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "B2 (ordered FeAl-based)",
+              "crystal_structure": "B2 (ordered BCC)",
+              "volume_fraction": "~12%",
+              "morphology": "elongated stringers (bamboo-like morphology) and polygonal particles",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_hr_B2_stringers",
+              "type": "B2 phase (elongated bamboo-like stringers and polygonal particles)",
+              "size": null,
+              "distribution": "in γ matrix",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_hr_kappa",
+          "region": null,
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_hr",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_gamma_B2",
+          "microstructure_id": "micro_hr_B2",
+          "phase_1_name": "γ (austenite)",
+          "phase_2_name": "B2 (ordered FeAl-based)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": null,
+      "interface_notes": "In the HR condition B2 exists as elongated bamboo-like stringers and polygonal particles within the γ matrix. b0073 notes that recrystallized grains nucleate mostly along γ/γ boundaries and the γ/B2 interface (during subsequent heat treatment of the cold-rolled material). No interface coherency/character data are reported specifically for the HR condition."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_hr_hardness",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": "ASTM E−140-02",
+        "other_conditions": "peak load 30 kg (~300 N), dwell time 15 s; hardness averaged over ten measurements on each sample"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk",
+            "value": "~375 ± 6",
+            "scale": "Vickers",
+            "unit": "VHN",
+            "uncertainty": "± 6"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": null,
+      "technique": "Vickers bulk hardness testing",
+      "instrument_or_setup": "AFFRI Vickers hardness tester, peak load 30 kg (~300 N), dwell time 15 s",
+      "measurement_conditions": "Per ASTM E−140-02; hardness averaged over ten measurements on each sample",
+      "purpose": "To evaluate hardness change with cold work and heat treatment of the alloys",
+      "key_findings": "Initial HR-condition hardness of the 15Mn5Ni alloy was ~375 ± 6 VHN."
+    },
+    {
+      "characterization_id": "char_eBSD_OIM",
+      "microstructure_id": "micro_hr_gamma",
+      "technique": "Orientation imaging microscopy (OIM)/EBSD",
+      "instrument_or_setup": "Zeiss Supra 55 FEG-SEM equipped with EDS and Nordley EBSD detectors (Oxford); TSL-OIM software; step sizes 120 nm and 250 nm over ~100×100 μm² / ~200×200 μm² areas",
+      "measurement_conditions": "Samples polished to colloidal silica ~100 nm finish; three scans per sample; KAM and GOS (2°) criteria used; Σ3 CSL boundaries used to compute twin fraction",
+      "purpose": "To characterize grain orientations, grain size, twin fractions, phase contrast and recrystallization of austenite",
+      "key_findings": "HR microstructures of all three alloys were reported in a previous study [21] and used as the starting condition."
+    },
+    {
+      "characterization_id": "char_XRD",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Rigaku XRD instrument, Co-Kα radiation at 45 kV and 135 mA, beam size ~2 mm",
+      "measurement_conditions": "Performed on selected samples",
+      "purpose": "Phase identification (γ, B2, κ-carbide) in cold-rolled and heat-treated conditions",
+      "key_findings": "Used to track B2 and κ-carbide formation/dissolution with heat treatment; HR was the starting condition prior to cold rolling."
+    },
+    {
+      "characterization_id": "char_TEM",
+      "microstructure_id": null,
+      "technique": "Transmission electron microscopy (TEM) with SAED and EDS",
+      "instrument_or_setup": "FEI TECNAI 20T G2 TEM operating at 200 kV equipped with EDAX EDS; twin-jet electropolishing at 243 K (-30 °C)",
+      "measurement_conditions": "Bright-field and dark-field imaging; dark-field captured from (010) κ satellite spot",
+      "purpose": "To identify phases (κ-carbides and B2 particles) and finer microstructural features not resolvable by SEM-EBSD",
+      "key_findings": "B2 identified as FeAl-based phase containing Mn and Ni; intragranular and intergranular B2 and κ-carbides characterized in heat-treated samples."
+    },
+    {
+      "characterization_id": "char_SEM_fractography",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM) fractography",
+      "instrument_or_setup": "Zeiss EVO 18 SEM",
+      "measurement_conditions": "Post-tensile fracture surface examination of failed specimens",
+      "purpose": "To examine fracture mode of tensile specimens",
+      "key_findings": "15Mn5Ni tensile specimens heat treated at low temperature failed by quasi-cleavage/intergranular cracking along γ/B2 interphase boundaries."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "Walter+Bai AG testing machine; flat specimens gauge length 30 mm, width 6 mm, thickness 4–5 mm",
+      "measurement_conditions": "Room temperature, constant cross-head speed 0.5 mm/min (initial strain rate ~3×10⁻⁴ s⁻¹), per ASTM E8M; triplicated for each condition",
+      "purpose": "To evaluate strength and ductility of the alloys in different processing conditions",
+      "key_findings": "Used to obtain YS, UTS and total elongation; HR-condition ductility of the alloys ranged ~20–70% with 15Mn5Ni lowest."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Measured chemical composition of the 15Mn5Ni alloy (Table 1, wt.%, balance Fe): Mn 14.7 ± 0.3, Al 9.8 ± 0.05, C 0.9 ± 0.01, Ni 4.1 ± 0.05.",
+    "The 15Mn5Ni alloy in the HR condition contained a higher B2 fraction (~12%) than 28Mn5Ni (~4%), and the alloy composition series was designed to give a B2 fraction varying from 0 to ~12% in the hot-rolled condition.",
+    "In the HR condition the three LDS alloys exhibited about 20–70% total tensile elongation to failure at room temperature (from prior study [21]), with the 15Mn5Ni alloy displaying the lowest ductility; this suggested an increased tendency for cracking when cold rolling exceeds 50% reduction.",
+    "The 15Mn5Ni alloy experienced cracking beyond 50% cold reduction; hence cold rolling was restricted to ~50% reduction for all alloys for comparison.",
+    "The hot-rolled microstructures of all three alloys (including 15Mn5Ni) were reported in a previous study [21] and serve as the starting condition for the cold rolling study; the present paper's detailed EBSD/XRD/TEM characterization focuses on the HR+CR and heat-treated conditions."
+  ]
+}

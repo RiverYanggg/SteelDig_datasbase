@@ -1,0 +1,487 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-12mn-9al-3cr-1.4c-0.04nb__as-cast",
+      "paper_id": "10.1002_srin.202400475",
+      "alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.04nb",
+      "process_id": "proc_as-cast",
+      "sample_label": "as-cast 0.04Nb steel",
+      "aliases": [
+        "0.04Nb steel (as-cast)",
+        "as-cast 0.04Nb steels"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_induction_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "induction melting in a water-cooled copper crucible",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water-cooled copper crucible",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Initial ingot preparation step, preceding re-melting and centrifugal casting."
+    },
+    {
+      "processing_step_id": "step_2_centrifugal_casting",
+      "sequence": "2",
+      "type": "casting",
+      "method": "centrifugal casting (re-melting and high-speed pouring into a rotating copper mold)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "rotating copper mold",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Steel strips with dimensions of 60 × 70 × 2.5 mm were obtained through near-rapid solidification; no subsequent aging treatment for this as-cast sample."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_as-cast_0.04Nb",
+      "overall_structure": "Two-phase microstructure of austenite (γ) matrix with irregularly shaped δ-ferrite dispersed; submicron NbC particles and intragranular nano-scale κ-carbides present in austenite.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_as-cast_0.04Nb",
+          "region": "bulk (as-cast strip)",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": "over 80 vol%",
+              "morphology": "matrix",
+              "grain_size": "9 μm",
+              "texture": null
+            },
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": "16.3 vol%",
+              "morphology": "irregularly shaped ferrite randomly dispersed within the austenite matrix",
+              "grain_size": "3.1 μm",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation density (austenite)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "2.51 × 10^14 m^-2",
+              "lattice_distortion": "microstrain ε = 0.17"
+            },
+            {
+              "type": "dislocation density (ferrite)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "1.07 × 10^15 m^-2",
+              "lattice_distortion": "microstrain ε = 0.249"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "9 μm (austenite)",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_NbC_as-cast_0.04Nb",
+              "type": "NbC",
+              "size": {
+                "value": "submicron (just above 0.5 μm)",
+                "unit": "μm"
+              },
+              "distribution": "submicron white particles within the austenite matrix",
+              "coherency": "[100]γ // [100]NbC orientation relationship (SAED)"
+            },
+            {
+              "precipitate_id": "precip_kappa_as-cast_0.04Nb",
+              "type": "κ-carbide",
+              "size": {
+                "value": "1.9 nm",
+                "unit": "nm"
+              },
+              "distribution": "intragranular nano-scale κ-carbides dispersed in austenite; volume fraction 1.6 vol%",
+              "coherency": "coherent with austenite, [100]γ // [100]κ"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interfaces_as-cast_0.04Nb",
+      "phase_interfaces": [
+        {
+          "interface_id": "interface_gamma_delta",
+          "microstructure_id": "micro_as-cast_0.04Nb",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "δ-ferrite",
+          "coherence": null
+        },
+        {
+          "interface_id": "interface_gamma_NbC",
+          "microstructure_id": "micro_as-cast_0.04Nb",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "NbC",
+          "coherence": "[100]γ // [100]NbC (cube-on-cube orientation relationship)"
+        },
+        {
+          "interface_id": "interface_gamma_kappa",
+          "microstructure_id": "micro_as-cast_0.04Nb",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "κ-carbide",
+          "coherence": "coherent, [100]γ // [100]κ"
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": null,
+      "interface_notes": "Irregular-shaped ferrite is randomly dispersed within the austenite matrix; NbC and κ-carbide both exhibit cube-on-cube orientation relationships with austenite."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_as-cast_0.04Nb",
+      "measurement_conditions": {
+        "temperature": "ambient temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "2.5 × 10^-4 s^-1",
+        "specimen_geometry": "gauge width 4 mm, gauge length 12 mm",
+        "test_standard": null,
+        "other_conditions": "minimum of four repetitions per steel strip"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "896 ± 23",
+              "unit": "MPa",
+              "uncertainty": "± 23"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1078 ± 18",
+              "unit": "MPa",
+              "uncertainty": "± 18"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "37 ± 2",
+              "unit": "%",
+              "uncertainty": "± 2"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress–strain curve for as-cast 0.04Nb steel shows the lowest plateau level but longest elongation, approaching 40% strain (Table 2 panel b).",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk strip",
+            "value": "408",
+            "scale": "Vickers",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_as-cast_0.04Nb",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": [
+        {
+          "benchmark_alloy_id": null,
+          "benchmark_process_id": null,
+          "benchmark_sample_id": null,
+          "comparison_metric": "yield strength of 0.04Nb steels exceeds that of 0.02Nb steels by ≈71 MPa, mainly due to additional fine grain strengthening and dislocation strengthening",
+          "improvement_percentage": null
+        }
+      ]
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "xrd_0.04Nb_as-cast",
+      "microstructure_id": "micro_as-cast_0.04Nb",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "D/max-2500 instrument at 40 kV, scanning 30°–100° with speed 4°/min",
+      "measurement_conditions": null,
+      "purpose": "Phase identification of the as-cast 0.04Nb steel strip",
+      "key_findings": "The as-cast 0.04Nb steel consists of ferrite and austenite; γ and δ reflections present."
+    },
+    {
+      "characterization_id": "sem_ebsd_0.04Nb_as-cast",
+      "microstructure_id": "micro_as-cast_0.04Nb",
+      "technique": "SEM with EBSD",
+      "instrument_or_setup": "Apollo 300 thermal field emission SEM equipped with EBSD detector; EBSD scanning step size 300 nm",
+      "measurement_conditions": "Samples electropolished with 10 vol% perchloric acid alcohol solution at 25 V for 10 s before observation",
+      "purpose": "Microstructure characterization and ferrite content measurement",
+      "key_findings": "Irregular-shaped ferrite randomly dispersed in austenite matrix; ferrite content 16.3 vol%; submicron white NbC particles present."
+    },
+    {
+      "characterization_id": "ebsd_grain_size_0.04Nb_as-cast",
+      "microstructure_id": "micro_as-cast_0.04Nb",
+      "technique": "EBSD orientation mapping with Channel 5 software",
+      "instrument_or_setup": "EBSD detector; grain boundaries identified by minimum misorientation angle of 15°",
+      "measurement_conditions": null,
+      "purpose": "Austenite and ferrite grain size measurement",
+      "key_findings": "Average austenite grain size 9 μm; average ferrite grain size 3.1 μm in as-cast 0.04Nb steel."
+    },
+    {
+      "characterization_id": "tem_nbc_0.04Nb_as-cast",
+      "microstructure_id": "micro_as-cast_0.04Nb",
+      "technique": "TEM bright-field + SAED + EDS",
+      "instrument_or_setup": "JEOL JEM-2100 TEM operating at 200 kV; TEM specimen prepared by double-jet electropolishing with 10% perchloric acid + 90% alcohol at ≈30 °C and 35 V",
+      "measurement_conditions": null,
+      "purpose": "Identification of submicron white particles",
+      "key_findings": "Submicron white particle (Spot 2) identified as NbC with SAED [100]γ // [100]NbC; EDS dominated by Nb peak."
+    },
+    {
+      "characterization_id": "tem_kappa_0.04Nb_as-cast",
+      "microstructure_id": "micro_as-cast_0.04Nb",
+      "technique": "TEM dark-field imaging + SAED",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Characterization of intragranular κ-carbides",
+      "key_findings": "Nano-scale κ-carbides dispersed in austenite, coherent [100]γ // [100]κ; as-cast size 1.9 nm, volume fraction 1.6 vol%."
+    },
+    {
+      "characterization_id": "epma_0.04Nb_as-cast",
+      "microstructure_id": "micro_as-cast_0.04Nb",
+      "technique": "Electron probe microanalysis (EPMA)",
+      "instrument_or_setup": "JXA-8050G instrument at electron beam voltage 15 kV",
+      "measurement_conditions": null,
+      "purpose": "Elemental distribution analysis of austenite",
+      "key_findings": "Nb uniformly dispersed within austenite grain with only sporadic Nb enrichment; austenite composition (wt%) Mn 13.03, Al 8.37, Cr 3.97, C 1.33, Nb 0.038, Fe 64.07."
+    },
+    {
+      "characterization_id": "vickers_hardness_0.04Nb_as-cast",
+      "microstructure_id": null,
+      "technique": "Vickers microhardness",
+      "instrument_or_setup": "Vickers hardness tester (MH-5L) with indentation load 200 gf and holding time 20 s",
+      "measurement_conditions": null,
+      "purpose": "Microhardness measurement",
+      "key_findings": "Average microhardness 408 HV for as-cast 0.04Nb steel."
+    },
+    {
+      "characterization_id": "tensile_0.04Nb_as-cast",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile test",
+      "instrument_or_setup": "MTS Criterion 44 universal testing machine at ambient temperature",
+      "measurement_conditions": "strain rate 2.5 × 10^-4 s^-1; gauge width 4 mm; gauge length 12 mm",
+      "purpose": "Tensile mechanical property measurement",
+      "key_findings": "Yield strength 896 ± 23 MPa, tensile strength 1078 ± 18 MPa, total elongation 37 ± 2 %."
+    },
+    {
+      "characterization_id": "imagej_quant_0.04Nb_as-cast",
+      "microstructure_id": "micro_as-cast_0.04Nb",
+      "technique": "ImageJ image analysis",
+      "instrument_or_setup": null,
+      "measurement_conditions": "more than five SEM images per sample for ferrite content; at least five SEM images for NbC; multiple TEM DF regions for κ-carbide size",
+      "purpose": "Quantification of ferrite content, NbC size/volume fraction and κ-carbide size/volume fraction",
+      "key_findings": "Ferrite content 16.3 vol%; NbC submicron particles; κ-carbide volume fraction 1.6 vol%, average size 1.9 nm."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "dft_kappa_Nb",
+      "simulation_method": "Spin-polarized density functional theory (DFT) within GGA using PBE",
+      "software_used": "Vienna Ab Initio Simulation Package (VASP)",
+      "potential_model_or_database": "PAW potentials; U = 2.59 eV applied for Fe; kinetic energy cutoff 500 eV; Gaussian smearing width 0.05 eV; energy convergence <0.03 eV Å^-1; vacuum spacing 15 Å; 6×6×6 Monkhorst-Pack k-point sampling",
+      "boundary_and_initial_conditions": "2×2×2 atomic supercell of κ-carbide (Fe3AlC, E21); Nb placed at face-centered (Fe) position or corner (Al) position",
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "κ-carbide formation energy (Eq. 1)",
+          "equation_role": "Compare stability of undoped and Nb-doped κ-carbides",
+          "parameters": [
+            {
+              "name": "E_F (Fe24Al8C8)",
+              "value": "0.891",
+              "unit": "eV"
+            },
+            {
+              "name": "E_F (Fe23NbAl8C8)",
+              "value": "2.826",
+              "unit": "eV"
+            },
+            {
+              "name": "E_F (Fe24Al7NbC8)",
+              "value": "1.453",
+              "unit": "eV"
+            }
+          ],
+          "model_note": "Nb doping significantly increases the formation energy of κ-carbide, impeding its growth and coarsening."
+        }
+      ]
+    },
+    {
+      "computation_id": "thermocalc_phase_diagram",
+      "simulation_method": "Thermodynamic equilibrium phase diagram calculation (CALPHAD)",
+      "software_used": "Thermo-Calc software with TCFE10 database",
+      "potential_model_or_database": "TCFE10",
+      "boundary_and_initial_conditions": "Fe-12Mn-9Al-1.4C-3Cr-xNb (x = 0–0.05 wt%), temperature 673–1673 K",
+      "validation_against_experiment": "Consistent with observed ferrite + austenite phase constitution in as-cast steels",
+      "analytical_models": [
+        {
+          "model_name": "NbC (MC) precipitation temperature trend",
+          "equation_role": "Effect of Nb content on NbC formation temperature",
+          "parameters": [
+            {
+              "name": "NbC precipitation temperature at 0 wt% Nb",
+              "value": "≈973",
+              "unit": "K"
+            },
+            {
+              "name": "NbC precipitation temperature at 0.05 wt% Nb",
+              "value": "1573",
+              "unit": "K"
+            }
+          ],
+          "model_note": "As Nb content increases from 0 to 0.05 wt%, NbC precipitation temperature increases from ≈973 to 1573 K, enabling NbC to pin austenite grain boundaries."
+        }
+      ]
+    },
+    {
+      "computation_id": "diffusion_coeff",
+      "simulation_method": "Diffusion coefficient calculation (Thermo-Calc with mobility database)",
+      "software_used": "Thermo-Calc software with TCFE10_MOBFE5 database",
+      "potential_model_or_database": "TCFE10_MOBFE5",
+      "boundary_and_initial_conditions": "Temperature range 673–873 K; Al and C diffusion in austenite",
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Al and C diffusion in austenite",
+          "equation_role": "Assess effect of Nb on κ-carbide growth kinetics",
+          "parameters": [],
+          "model_note": "Nb slightly decreases the diffusion coefficient of C in austenite (strong Nb–C affinity) and slightly increases Al diffusion; slower C diffusion decelerates κ-carbide nucleation and growth."
+        }
+      ]
+    },
+    {
+      "computation_id": "strengthening_calc_as-cast_0.04Nb",
+      "simulation_method": "Analytical strengthening mechanism decomposition",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "As-cast 0.04Nb steel; austenite and ferrite contributions",
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Dislocation strengthening (Eq. 3)",
+          "equation_role": "σd = MαGb√ρ",
+          "parameters": [
+            {
+              "name": "σd (austenite)",
+              "value": "169.8",
+              "unit": "MPa"
+            },
+            {
+              "name": "σd (ferrite)",
+              "value": "84.3",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "Austenite: M=3.06, α=0.23, b=0.26 nm, G=70 GPa; ferrite: M=2, α=0.4, G=76 GPa."
+        },
+        {
+          "model_name": "Grain boundary strengthening (Hall–Petch, Eq. 7)",
+          "equation_role": "σg = kγ d^(-1/2)",
+          "parameters": [
+            {
+              "name": "σg (austenite)",
+              "value": "128.4",
+              "unit": "MPa"
+            },
+            {
+              "name": "kγ",
+              "value": "14.55",
+              "unit": "MPa·mm^(-1/2)"
+            }
+          ],
+          "model_note": "Based on average austenite grain size of 9 μm."
+        },
+        {
+          "model_name": "κ-carbide precipitation strengthening (Eq. 8)",
+          "equation_role": "Shearing mechanism for nano-scale κ-carbides",
+          "parameters": [
+            {
+              "name": "σp (κ-carbide)",
+              "value": "53.1",
+              "unit": "MPa"
+            },
+            {
+              "name": "N",
+              "value": "6",
+              "unit": null
+            },
+            {
+              "name": "γ_APB",
+              "value": "350",
+              "unit": "mJ m^-2"
+            }
+          ],
+          "model_note": "As-cast 0.04Nb κ-carbide precipitation strengthening is 53.1 MPa."
+        },
+        {
+          "model_name": "NbC Orowan strengthening (Ashby–Orowan, Eq. 9)",
+          "equation_role": "Orowan looping for large impermeable NbC particles",
+          "parameters": [
+            {
+              "name": "σoro (NbC)",
+              "value": "6.2",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "As-cast 0.04Nb NbC precipitation strengthening is 6.2 MPa."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Actual measured chemical composition of the 0.04Nb steel strip (wt%): Mn 12.82, Al 9.12, Cr 2.99, C 1.40, Nb 0.039, Fe balance (Table 1).",
+    "Quantitative chemical composition of austenite in the as-cast 0.04Nb steel (wt%): Mn 13.03, Al 8.37, Cr 3.97, C 1.33, Nb 0.038, Fe 64.07 (Table 4).",
+    "The austenite grain size of as-cast 0.04Nb steel (9 μm) is approximately half that of as-cast 0.02Nb steel (18 μm), attributed to NbC precipitation.",
+    "The yield strength of 0.04Nb steels exceeds that of 0.02Nb steels by ≈71 MPa, mainly due to additional fine grain strengthening and dislocation strengthening.",
+    "Nb doping significantly increases the formation energy of κ-carbide (0.891 eV for Fe24Al8C8 vs 2.826 eV for Fe23NbAl8C8 and 1.453 eV for Fe24Al7NbC8).",
+    "NbC precipitation temperature increases from ≈973 K to 1573 K as Nb content increases from 0 to 0.05 wt% (Thermo-Calc equilibrium phase diagram)."
+  ]
+}

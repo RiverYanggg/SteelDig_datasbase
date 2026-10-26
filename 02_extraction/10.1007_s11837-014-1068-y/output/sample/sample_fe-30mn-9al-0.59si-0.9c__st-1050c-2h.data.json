@@ -1,0 +1,245 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-0.59si-0.9c__st-1050c-2h",
+      "paper_id": "10.1007_s11837-014-1068-y",
+      "alloy_id": "alloy_fe-30mn-9al-0.59si-0.9c",
+      "process_id": "proc_st-1050c-2h",
+      "sample_label": "0.59% Si solution treated",
+      "aliases": [
+        "0.59% Si",
+        "0.002% P solution treated"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_st_1050c_2h",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "water quench",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution treatment at 1050°C for 2 h followed by water quench to produce a fully austenitic matrix."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_st_0.59Si",
+      "overall_structure": "Fully austenitic matrix; XRD and TEM confirmed no spinodal decomposition or short-range ordering within the austenite in the solution-treated condition.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_austenite_st",
+          "region": null,
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "porosity",
+              "porosity": "Porosity (micro-defects) in the 0.59% Si steel was more than twice that of the 1.07% Si steel and almost double that of the 1.56% Si steel.",
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_st_0.59Si",
+      "phase_interfaces": [],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "No spinodal decomposition or short-range ordering within the austenite in the solution-treated condition.",
+      "interface_notes": "Single-phase fully austenitic matrix; no secondary-phase interfaces present in the solution-treated condition."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_hardness_st_0.59Si",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": "Brinell hardness (3000 kg) converted from Rockwell B and C scale measurements",
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "200",
+            "scale": "Brinell (BHN)",
+            "unit": "BHN",
+            "uncertainty": "± 10"
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_dft_st_0.59Si",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "high strain rate (impact loading)",
+        "specimen_geometry": "fatigue precracked Charpy specimens",
+        "test_standard": "Schindler single-specimen method; ASTM E 1820; ASTM E 813",
+        "other_conditions": "Dynamic fracture toughness defined as critical value of the J integral near onset of stable crack growth"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "715",
+          "unit": "kJ/m²"
+        },
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_dft_vs_4130",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "Cast 4130 (SAE 4130)",
+        "benchmark_process_id": "quenched and tempered",
+        "benchmark_sample_id": null,
+        "comparison_metric": "dynamic fracture toughness (DFT, kJ/m²)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_tem_st",
+      "microstructure_id": "micro_austenite_st",
+      "technique": "X-ray diffraction (XRD); transmission electron microscopy (TEM)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "solution-treated specimens",
+      "purpose": "Determine whether spinodal decomposition or short-range ordering occurred in the solution-treated austenite",
+      "key_findings": "Regardless of Si content, no spinodal decomposition or short-range ordering within the austenite had taken place."
+    },
+    {
+      "characterization_id": "char_hardness_bhn",
+      "microstructure_id": null,
+      "technique": "Brinell hardness (3000 kg)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Converted from Rockwell B and C scale measurements",
+      "purpose": "Measure solution-treated hardness",
+      "key_findings": "200 ± 10 BHN for the solution-treated 0.59% Si, 0.002% P steel."
+    },
+    {
+      "characterization_id": "char_dft_schindler",
+      "microstructure_id": null,
+      "technique": "Instrumented Charpy impact test (Schindler single-specimen method)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Fatigue precracked Charpy specimens; high loading rate",
+      "purpose": "Measure dynamic fracture toughness (critical J integral near onset of stable crack growth)",
+      "key_findings": "Solution-treated 0.59% Si, 0.002% P steel DFT = 715 kJ/m²."
+    },
+    {
+      "characterization_id": "char_inclusion_analysis",
+      "microstructure_id": "micro_austenite_st",
+      "technique": "Automated feature analysis (SEM-based inclusion analysis)",
+      "instrument_or_setup": "ASPEX scanning electron microscope (FEI Company, Hillsboro, OR) with PICA 1020 software",
+      "measurement_conditions": null,
+      "purpose": "Determine inclusion type/distribution and their effect on CVN impact energy",
+      "key_findings": "0.59% Si steel had much larger porosity (micro-defects) than the 1.07% and 1.56% Si steels; total inclusion density 62–78 inclusions/mm² among the three low-P Si steels."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_abinitio_sic",
+      "simulation_method": "first-principles / ab initio calculations",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Combined with TEM, 3-D APT, and XRD experiments; ab initio results showed Si increases carbon activity in austenite and stabilizes κ-carbide at higher temperatures.",
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "Measured chemistry (Table I, wt%): Si 0.59, C 0.95, Mn 30.35, P 0.002, S 0.006, Mo 0.54, Al 8.74, Cu 0.01 (balance Fe) [b0013].",
+    "Abstract: solution-treated cast steels in the 0.59–1.56% Si range show high work-hardening rates, elongations up to 64%, room-temperature CVN up to 200 J, and dynamic fracture toughness over 700 kJ/m²; Si additions in this range have no significant effect on solution-treated mechanical properties [b0004]."
+  ]
+}

@@ -1,0 +1,572 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-11.15mn-5.6al-0.07c__annealed-950c-1h",
+      "paper_id": "10.1016_j.msea.2021.141596",
+      "alloy_id": "alloy_fe-11.15mn-5.6al-0.07c",
+      "process_id": "proc_annealed-950c-1h",
+      "sample_label": "triplex (ferrite-austenite-martensite) starting microstructure",
+      "aliases": [
+        "initial microstructure",
+        "annealed at 950 °C/1 h",
+        "initial fresh microstructure"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_esr",
+      "sequence": "1",
+      "type": "melting / refining",
+      "method": "electroslag remelting (ESR)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Material received in an electroslag remelted (ESR) condition."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenized at 1200 °C for 1 h to eliminate any probable segregation in the microstructure."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling (5 passes)",
+      "temperature": "1100–1200",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "5 passes",
+      "processing_steps_notes": "Hot-rolled through 5 passes in the temperature range 1100–1200 °C."
+    },
+    {
+      "processing_step_id": "step_air_quench",
+      "sequence": "4",
+      "type": "cooling",
+      "method": "air quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Air quench applied after hot rolling."
+    },
+    {
+      "processing_step_id": "step_annealing",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": "950",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Annealed at 950 °C for 1 h for attaining a triplex (ferrite + austenite + martensite) microstructure; this is the defining step of the sample state (Fig. 1, Table 1, Thermo-Calc 'experimented temperature' at ~950 °C)."
+    },
+    {
+      "processing_step_id": "step_warm_compression",
+      "sequence": "6",
+      "type": "mechanical processing",
+      "method": "high temperature (warm) compression",
+      "temperature": "100–700",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water (immediately water-quenched after testing)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "true strain 0.6",
+      "processing_steps_notes": "High temperature compression tests carried out by Gotech AI-7000 universal testing machine with programmable furnace in the range 100–700 °C; strain rate 0.001 s⁻¹ up to true strain 0.6; specimens soaked at deformation temperature for 5 min before testing; immediately water quenched to preserve the high-temperature deformed microstructure. All warm compression tests were conducted on this annealed triplex microstructure."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_initial_triplex",
+      "overall_structure": "Triplex (ferrite + austenite + thermally induced martensite) banded microstructure. EBSD phase map shows a dominant ferrite matrix (green) carrying elongated, broadly aligned martensite (yellow) and austenite (red) bands plus isolated blocky austenite grains. Ferrite and martensite both hold BCC crystal structure and are distinguished by band slope phase contrast. The initial fresh microstructure is characterized by extremely low dislocation density of the ferrite and austenite phases.",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "ms_initial_triplex_bulk",
+          "region": "bulk starting microstructure",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "ferrite",
+              "crystal_structure": "BCC (BCC_A2)",
+              "volume_fraction": "dominant / matrix",
+              "morphology": "matrix (dominant green phase in EBSD phase map)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC (FCC_A1)",
+              "volume_fraction": null,
+              "morphology": "elongated, broadly aligned bands plus isolated blocky grains (red in EBSD PM)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "martensite",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "elongated bands (thermally induced during previous annealing; yellow in EBSD PM)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation density",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "extremely low (in both ferrite and austenite)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "ms_initial_fig1b",
+          "region": "TEM-observed region (Fig. 1b)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "large γ region (labelled 1) containing an internal dark banded ά phase",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "ferrite (α)",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "α matrix surrounding the γ region; boundaries identified as initial ferrite–ferrite boundaries (white arrows)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "structure_interrupted_500C_strain0.3",
+      "overall_structure": "After interrupted compression at 500 °C to true strain 0.3, many dislocations tangle to form cell structures within the ferrite and a planar slip-like character starts to form; fresh ferrite grains form within prior austenite islands (strain-induced austenite to ferrite transformation).",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "ms_interrupted_0.3_500C",
+          "region": "deformed ferrite and prior austenite islands (strain 0.3, 500 °C)",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (α)",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "cell structures with multiple slip traces ({110}<111> and {112}<111>) and high dislocation density walls",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "fresh ferrite grains within prior austenite",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "fresh ferrite grains formed inside parent austenite islands (white arrows)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "cell structures / high dislocation density walls (HDDWs)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "tangled dislocations forming cell structures and HDDWs",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "structure_deformed_500C_strain0.6",
+      "overall_structure": "After compression to true strain 0.6 at 500 °C the microstructure exhibits frequently distributed deformation bands; the parent austenite is effectively sheared through propagation of the deformation bands, and simultaneous deformation-induced ferrite→austenite and austenite→ferrite transformations occur along the bands (shear-strain-localization release mechanism). The triplex (ferrite + austenite + martensite) constitution is retained.",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "ms_deformed_500C_0.6",
+          "region": "deformed bulk compressed along compression axis (CA), 500 °C, strain 0.6",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "matrix with deformation bands; new ferrite formed via austenite→ferrite transformation along bands",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "elongated bands, effectively sheared by propagation of deformation bands; new austenite formed via ferrite→austenite transformation along bands",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "martensite",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "banded (resolved in three-phase maps of Fig. 2c)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "deformation bands / shear bands",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "structure_deformed_600C_strain0.6",
+      "overall_structure": "After compression to true strain 0.6 at 600 °C the banded structure is less frequent and the strain distribution is more homogeneous; no deformation-induced ferrite/austenite transformations are observed at this temperature.",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "ms_deformed_600C_0.6",
+          "region": "deformed bulk compressed along compression axis (CA), 600 °C, strain 0.6",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "dominant matrix; more homogeneous strain distribution",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "interconnected banded regions within ferrite matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "martensite",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "banded (resolved in three-phase maps)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_initial",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_ff_initial",
+          "microstructure_id": "ms_initial_fig1b",
+          "phase_1_name": "ferrite",
+          "phase_2_name": "ferrite",
+          "coherence": null
+        },
+        {
+          "interface_id": "if_alpha_gamma_initial",
+          "microstructure_id": "ms_initial_fig1b",
+          "phase_1_name": "ferrite",
+          "phase_2_name": "austenite",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "Thermally induced martensite formed in the course of the previous annealing (950 °C/1 h) and coexists with ferrite and austenite in the triplex starting microstructure.",
+      "interface_notes": "TEM bright-field (Fig. 1b) shows initial ferrite–ferrite boundaries (white arrows); ferrite and martensite are both BCC and were distinguished by band slope phase contrast in the EBSD phase map."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_compression_flow",
+      "measurement_conditions": {
+        "temperature": "500–600",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "0.001 s⁻¹",
+        "specimen_geometry": "compression specimen",
+        "test_standard": null,
+        "other_conditions": "Compression to true strain 0.6; specimens soaked 5 min at deformation temperature before testing; immediately water quenched; tested on the annealed triplex starting microstructure"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "compression axis (CA)",
+              "value": "≈550–560 (peak/maximum flow stress at 500 °C)",
+              "unit": "MPa",
+              "uncertainty": null
+            },
+            {
+              "direction": "compression axis (CA)",
+              "value": "≈400 (plateau at 600 °C)",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Fig. 1c: compression true stress–strain curves (0–600 MPa vs true strain 0–0.6). 500 °C curve peaks near 550–560 MPa then softens; 600 °C curve rises to ~400 MPa and stays nearly flat. Appreciable flow softening after true strain 0.3 at 500–600 °C. Fig. 1d: maximum flow stress and 0.2% yield stress vs temperature decrease with temperature and drop steeply between 500 and 600 °C; mechanical stability over 200–500 °C.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_temperature_dependent_stress_levels",
+      "measurement_conditions": {
+        "temperature": "100–700",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "0.001 s⁻¹",
+        "specimen_geometry": "compression specimen",
+        "test_standard": null,
+        "other_conditions": "Extracted stress levels (maximum flow stress and 0.2% yield stress) vs deformation temperature; tested on annealed triplex starting microstructure"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "compression axis (CA)",
+              "value": "0.2% yield stress decreases with temperature, steep drop between 500 and 600 °C (values read graphically)",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "compression axis (CA)",
+              "value": "maximum flow stress decreases with temperature, steep drop between 500 and 600 °C (values read graphically)",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [
+            {
+              "temperature": "200–500 °C",
+              "description": "mechanical stability (near-constant stress levels) over the temperature range 200–500 °C; significant drop in stress level from 500 to 600 °C"
+            }
+          ],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_eBSD",
+      "microstructure_id": "ms_initial_triplex_bulk",
+      "technique": "Electron Backscattered Diffraction (EBSD) phase mapping",
+      "instrument_or_setup": "Field-emission scanning electron microscope (FE-SEM CZ/MIRA I LMH, TESCAN, Czech) equipped with an EBSD detector (Hikari, AMETEK EDAX, U.S.A)",
+      "measurement_conditions": "step size 200 nm",
+      "purpose": "phase identification and phase mapping of the triplex starting microstructure (Fig. 1a, Fig. 2)",
+      "key_findings": "Revealed a dominant ferrite (green) matrix with elongated, broadly aligned martensite (yellow) and austenite (red) bands plus isolated blocky austenite grains; ferrite and martensite (both BCC) differentiated by band slope phase contrast."
+    },
+    {
+      "characterization_id": "char_tem_saed",
+      "microstructure_id": "ms_initial_fig1b",
+      "technique": "Transmission Electron Microscopy (TEM) bright-field imaging with Selected Area Electron Diffraction (SAED)",
+      "instrument_or_setup": "JEM-2100-F, acceleration voltage 200 kV, field-emission gun (JEOL Ltd, Japan)",
+      "measurement_conditions": "Thin foils prepared by twin-jet polishing using a solution of HClO4 (10%) and methyl alcohol (90%) at −30 °C and an applied potential of 16 V",
+      "purpose": "Characterize the initial microstructure, verify phase identity by diffraction, and study dislocation configuration",
+      "key_findings": "SAED patterns verify the existence of martensite formed during previous annealing; white arrows mark the initial ferrite–ferrite boundaries; TEM bright-field of the triplex states."
+    },
+    {
+      "characterization_id": "char_sem_eds",
+      "microstructure_id": "ms_deformed_500C_0.6",
+      "technique": "SEM composition analysis (energy dispersive spectroscopy, EDS)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Performed on the microstructure deformed at 500 °C, 0.001 s⁻¹, up to true strain 0.6",
+      "purpose": "Determine the elemental partitioning of Mn and Al between ferrite and austenite after deformation",
+      "key_findings": "Mn and Al partitioned in opposite directions between ferrite and austenite, confirmed nearly matching the Thermo-Calc predictions (Table 1 vs Fig. 4a–b)."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermocalc_gfe",
+      "simulation_method": "CALPHAD thermodynamic modelling / Gibbs free energy model",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": "TCFE9 database",
+      "boundary_and_initial_conditions": "Equilibrium calculation of the constituent ferrite and austenite phase compositions (Mn and Al) and Gibbs free energy for the Fe-11.15Mn-5.6Al-0.07C (wt.%) system; isothermal sections at 500 and 550 °C; equilibrium mass% of Mn and Al vs temperature (0–1600 °C) with the experimented annealing temperature marked at ~950 °C.",
+      "validation_against_experiment": "Predicted elemental partitioning of Mn (more in austenite) and Al (more in ferrite) compared with SEM/EDS analysis (Table 1); Thermo-Calc further predicts BCC_A2 (ferrite), FCC_A1 (austenite) and Mn-rich BCC_A1#2 phases.",
+      "analytical_models": [
+        {
+          "model_name": "modified Gibbs energy model",
+          "equation_role": "Thermodynamic interpretation of the kinetics of phase transformation in multicomponent alloying systems; point A gives the composition where BCC (ferrite) and FCC (austenite) have equal Gibbs free energy, enabling bidirectional ferrite↔austenite transformation",
+          "parameters": [],
+          "model_note": "At 500 °C the BCC and FCC curves intersect near ~14.5 %Mn (point A ~ −40900 J/mol); applying the nominal composition and elemental partitioning yields nearly identical Gibbs energies for ferrite and austenite (Mn partitioning mainly dictates Gibbs energy and phase stability)."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The high stacking fault energy of the low density steel (80–110 mJ/m²) makes the austenite-to-martensite (TRIP) transformation theoretically impossible, motivating the study of deformation-induced ferrite↔austenite transformations. [b0013]",
+    "Thermo-Calc predicts three phases for the Fe-11.15Mn-5.6Al-0.07C system: (1) BCC_A2 (ferrite), (2) FCC_A1 (austenite) and (3) BCC_A1#2, a BCC-structured phase with an extremely high Mn content; Mn partitions preferentially to austenite and Al to ferrite. [b0027]",
+    "After deformation at 500 °C at 0.001 s⁻¹ to true strain 0.6, SEM composition analysis (Table 1) showed Mn enriched in austenite (12.8 ± 0.1 wt% vs 10.3 ± 0.1 wt% in ferrite) and Al enriched in ferrite (6.0 ± 0.1 wt% vs 4.7 ± 0.1 wt% in austenite). [b0035, figure_unlabelled_002]",
+    "Simultaneous deformation-induced ferrite transformation (DIFT) and deformation-induced austenite transformation (DIAT) occurred along the deformation bands at 500 °C, releasing shear-strain localization; these transformations were not observed in the microstructure deformed at the higher temperature of 600 °C. [b0023]",
+    "Slip in the ferrite is accommodated by activation of multiple slip systems {110}<111> and {112}<111>, producing intersecting slip bands and wavy dislocation movement that promotes dislocation-cell formation and high dislocation density walls (HDDWs). [b0022]",
+    "The parent austenite was effectively sheared through propagation of the deformation bands, and the bidirectional ferrite↔austenite transformation was justified thermodynamically by the exactly equal Gibbs energy of ferrite and austenite resulting from Al/Mn elemental partitioning (Mn partitioning mainly dictates phase stability). [b0028, b0036]"
+  ]
+}

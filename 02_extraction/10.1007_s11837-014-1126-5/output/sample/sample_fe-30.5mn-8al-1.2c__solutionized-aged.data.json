@@ -1,0 +1,199 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30.5mn-8al-1.2c__solutionized-aged",
+      "paper_id": "10.1007_s11837-014-1126-5",
+      "alloy_id": "alloy_fe-30.5mn-8al-1.2c",
+      "process_id": "proc_solutionized-aged",
+      "sample_label": "Austenitic",
+      "aliases": [
+        "Austenitic steel",
+        "Fe-30.5Mn-8Al-1.2C solutionized and aged"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_solution_treatment",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment (solutionizing)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution-treatment step of the 'Solutionized and aged' processing condition for the austenitic steel in Table I; no specific temperature is reported for this step."
+    },
+    {
+      "processing_step_id": "step_2_aging",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "500–750 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Aging step of the 'Solutionized and aged' condition; aging precipitates κ-carbides on the existing short-range order in the austenite."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "Concentrated solid solution of austenite (austenitic low-density steel); short-range ordering usually takes place in the austenite; κ-carbides precipitate on the existing short-range order during aging",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": null,
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "concentrated solid solution with short-range ordering usually present",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_1",
+              "type": "κ-carbide (Fe,Mn)3AlC_x",
+              "size": null,
+              "distribution": "can precipitate both intergranularly and intragranularly in austenite; intragranular precipitates are believed to be effective in increasing the yield strength significantly",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "interface_1",
+          "microstructure_id": "micro_1",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "κ-carbide",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "κ-carbides precipitate in austenitic steels on the existing short-range order during aging",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "property_set_1",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Literature tensile properties (Table I); TE and n marked 'b' were determined by the current authors from data in the corresponding reference."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "540 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "895 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "65 %",
+              "unit": "%",
+              "uncertainty": null
+            },
+            {
+              "direction": null,
+              "value": "73.6 %",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "performance_1",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": null,
+      "comparative_performance": [
+        {
+          "benchmark_alloy_id": null,
+          "benchmark_process_id": null,
+          "benchmark_sample_id": null,
+          "comparison_metric": "Far more ductile and stretchable than conventional automotive sheet steel grades DP800 and TRIP780 (which have even slightly lower strength); austenitic low-density steels are highly ductile because of ductility-enhancing mechanisms.",
+          "improvement_percentage": null
+        }
+      ]
+    }
+  ],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Strain hardening exponent n = 0.29 (marked 'b' in Table I, i.e., determined by the current authors from the data in the corresponding reference) is reported for the Austenitic Fe-30.5Mn-8Al-1.2C steel, solutionized and aged.",
+    "The normal anisotropy factor (r̄) is not reported (shown as '-') for this sample in Table I.",
+    "The tensile-property data row for this sample in Table I is attributed to reference 58.",
+    "Austenitic low-density steels, to which this sample belongs, are very high (>25 wt.%) Mn-containing Fe-Mn-Al-C alloys; the present alloy Fe-30.5Mn-8Al-1.2C contains 30.5 wt.% Mn."
+  ]
+}

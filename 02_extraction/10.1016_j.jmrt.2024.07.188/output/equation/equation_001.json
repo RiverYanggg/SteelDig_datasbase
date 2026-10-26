@@ -1,0 +1,56 @@
+{
+  "identity": {
+    "paper_id": "10.1016_j.jmrt.2024.07.188",
+    "equation_id": "equation_001",
+    "block_id": "b0063",
+    "equation_number": "1",
+    "is_image": false,
+    "latex_hint": "$$\n\\sigma_ {\\mathrm{ys}} = \\sigma_ {0} + \\sigma_ {\\mathrm{ss}} + \\sigma_ {\\mathrm{gb}} + \\sigma_ {\\mathrm{prep}}\\tag{1}\n$$"
+  },
+  "latex": "\\sigma_{\\mathrm{ys}} = \\sigma_{0} + \\sigma_{\\mathrm{ss}} + \\sigma_{\\mathrm{gb}} + \\sigma_{\\mathrm{prep}}",
+  "purpose": "将钢的屈服强度表示为各强化机制贡献的线性叠加（摩擦应力、固溶强化、晶界强化、析出强化），用于预测本研究钢的屈服强度。",
+  "applicability_conditions": "适用于本研究中完全再结晶的 Fe–Mn–Al–C 钢；位错强化贡献很小而被忽略；析出强化以位错切过（shearing）机制为主。",
+  "symbols": [
+    {
+      "symbol": "\\sigma_{\\mathrm{ys}}",
+      "meaning": "钢的屈服强度（yield strength），为各强化机制贡献的线性组合",
+      "unit": "MPa",
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "\\sigma_{0}",
+      "meaning": "摩擦应力分量之和（sum of the frictional stress components），可由位错运动剪切应力计算，σ_0 = 3τ_0，其中 τ_0 = 2×10^-4 G",
+      "unit": "MPa",
+      "value": "42 MPa",
+      "is_constant": false
+    },
+    {
+      "symbol": "\\sigma_{\\mathrm{ss}}",
+      "meaning": "固溶强化分量（solute strengthening component），由经验公式给出：σ_ss = 279[C]·1.5[Mn]+20.5[Al]+2.9[Ni]+3.9[Cr]（[C]、[Mn]、[Al]、[Ni]、[Cr]为基体中溶解元素的重量百分比）",
+      "unit": "MPa",
+      "value": "3Cr: 515.4; 2Ni: 509.5; 2Ni3Cr: 557.2; 2Ni5Cr: 554.1 MPa",
+      "is_constant": false
+    },
+    {
+      "symbol": "\\sigma_{\\mathrm{gb}}",
+      "meaning": "晶界强化分量（grain boundary strengthening component），由 Hall–Petch 关系 σ_gb = K_HP d_eff^-0.5 表示",
+      "unit": "MPa",
+      "value": "3Cr: 238.5; 2Ni: 231.3; 2Ni3Cr: 231.7; 2Ni5Cr: 301.2 MPa",
+      "is_constant": false
+    },
+    {
+      "symbol": "\\sigma_{\\mathrm{prep}}",
+      "meaning": "析出强化分量（precipitation strengthening component），本研究中以位错切过机制为主，包含有序强化、共格强化和模量错配强化",
+      "unit": "MPa",
+      "value": null,
+      "is_constant": false
+    }
+  ],
+  "unmapped": [
+    "σ_0 中 τ_0 = 2×10^-4 G，G 为剪切模量，Fe–Mn–Al–C 钢的 G 取值为 70 GPa",
+    "Hall–Petch 系数 K = 446.8 MPa μm^0.5",
+    "d_eff 为含孪晶的晶粒尺寸，由 EBSD 分析得到 3Cr、2Ni、2Ni3Cr、2Ni5Cr 分别为 3.51、3.73、3.72、2.2 μm",
+    "引用来源：式(1)参考文献[14]"
+  ]
+}

@@ -1,0 +1,631 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-10al-1.5c-0.5be__hot-rolled-1050c",
+      "paper_id": "10.1016_j.matchar.2022.112643",
+      "alloy_id": "alloy_fe-30mn-10al-1.5c-0.5be",
+      "process_id": "proc_hot-rolled-1050c",
+      "sample_label": "0.5Be (rolled)",
+      "aliases": [
+        "rolled 0.5Be",
+        "0.5Be rolled at 1050°C",
+        "Fe–30Mn–10Al–1.5C–0.5Be rolled"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "1",
+      "type": "melting / casting",
+      "method": "vacuum induction melting into alloy ingots",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "high-purity argon",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Alloys made of high-purity elements Fe/Mn/Al/C/Be (99.99%); ingot 60 mm diameter and 30 mm thickness. This as-cast ingot is the precursor state (proc_as-cast) shared by all alloys."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing / hot deformation",
+      "method": "17-pass hot rolling with two high mill rolls",
+      "temperature": "1050 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "83% total deformation (5 mm plate; 1.5 mm per pass)",
+      "processing_steps_notes": "Rolled to a 5 mm thick plate (from 30 mm ingot) in 17 passes at a strain rate of 0.6 s^-1."
+    },
+    {
+      "processing_step_id": "step_reheating",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "held in a muffle furnace for 3 min after each rolling pass to maintain rolling temperature",
+      "temperature": "1050 °C",
+      "temperature_unit": "°C",
+      "duration": "3 min",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Inter-pass reheating step repeated after every one of the 17 passes."
+    },
+    {
+      "processing_step_id": "step_water_cooling",
+      "sequence": "4",
+      "type": "cooling",
+      "method": "water cooling after the final rolling pass until cooled to room temperature",
+      "temperature": "room temperature",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Performed after the last pass of rolling."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_rolled_0.5be",
+      "overall_structure": "Hot-rolled (1050 °C) Fe–30Mn–10Al–1.5C–0.5Be steel: essentially single-phase austenitic (γ) matrix with dispersed Be–Fe phase (Be11Fe) and Be2C precipitates, dark needle-like/punctate compounds and annealing twins; grains coarsened relative to the Be-free steel.",
+      "number_of_phases": "1 major phase (austenite γ) plus Be–Fe phase/Be11Fe and Be2C precipitates",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_rolled_0.5be",
+          "region": "overall / matrix (RD-ND plane)",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC (γ-Fe)",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains containing annealing twins; γ-Fe matrix",
+              "grain_size": ">20 μm for >75% of area",
+              "texture": null
+            },
+            {
+              "phase_name": "Be11Fe",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "precipitate (dark needle-like/punctate compounds in OM)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "Be2C",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "coarse carbide precipitates along grain boundaries and matrix",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "sparsest dislocation structure among rolled 0.5–1.5Be steels (large grain interior nearly free of dislocation contrast)",
+              "lattice_distortion": "lattice shrinkage/distortion around Be substitutional atoms (Be radius 111 pm < Fe 124 pm)"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": ">20 μm (>75% of grains)",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "grain size >20 μm accounts for >75% (relatively large/coarsened grains), some bars near 25–45 μm in EBSD area-fraction histogram",
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_be11fe_rolled0.5be",
+              "type": "Be11Fe",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "Be11Fe peak near 86° in XRD of rolled 0.5Be (no clear Be2Fe)",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_be2c_rolled0.5be",
+              "type": "Be2C",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "observed by TEM selected-area diffraction in rolled 0.5Be; precipitates at grain boundaries and within matrix",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_befe_phase_rolled0.5be",
+              "type": "Be–Fe phase (beryllium compound)",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "small dark particles dispersed along the matrix (blue-arrowed 'Be-Fe phase' in OM); distribution changed from aggregate (as-cast) to dispersed after hot deformation",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "intf_rolled_0.5be",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_micro_befe_rolled0.5be",
+          "microstructure_id": "micro_rolled_0.5be",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "Be–Fe phase / Be11Fe precipitate",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "dint_stress_conc_rolled0.5be",
+          "microstructure_id": "micro_rolled_0.5be",
+          "interaction_type": "stress concentration at precipitates (KAM)",
+          "qualitative_or_quantitative_description": "KAM maps show the stress concentration effect is evident at the precipitation location of the carbide and the Be–Fe phase, and the distribution of these precipitates is primarily concentrated at the grain boundary and phase interface."
+        }
+      ],
+      "slip_behavior": "Dislocation density increases with increasing Be content; the rolled 0.5Be steel shows the sparsest dislocation structure (large nearly dislocation-free grain interiors) among 0.5Be/1.0Be/1.5Be.",
+      "phase_evolution": "After hot deformation the as-cast needle-like/Chinese-character-shaped Be–Fe compounds decreased and transformed into spherical and punctate shapes; compound distribution changed from aggregate distribution to dispersion distribution, with compounds distributed along the rolling direction mainly on the austenite matrix.",
+      "interface_notes": "Rolled 0.5Be remains single-phase austenitic (EBSD phase map essentially all austenite), so no austenite/ferrite interphase boundary is present in this sample."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_rolled_0.5be_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "5 × 10^-4 m•s^-1 (initial strain rate)",
+        "specimen_geometry": "flat tensile specimen cut from the rolled sheet (inset dimensions 50, 20, 10, 6, 3, R5)",
+        "test_standard": "ASTM E8/E8M-16A",
+        "other_conditions": "each data point supported by more than three tensile specimens"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction (RD)",
+              "value": "1011.54",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction (RD)",
+              "value": "1130.18",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction (RD)",
+              "value": "40.47",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve (Fig. 10a): 0.5Be plateaus near 1100 MPa and extends furthest along the strain axis (highest elongation of the four alloys).",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            "Steady-state strain-hardening rate plateau between ~1.3 and ~2.2 GPa; the 0.5Be curve lies lowest and extends the longest (to ~33% true strain) (Fig. 10b)."
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_rolled_0.5be_hardness",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "as-rolled strip; 15×5 matrix of indents, average of 25 points",
+        "test_standard": null,
+        "other_conditions": "FM-ARS9000 Vickers hardness, tap load 500 gf"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "austenite matrix",
+            "value": "470.97",
+            "scale": "Vickers (HV)",
+            "unit": "HV",
+            "uncertainty": "±20.241 HV"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_rolled_0.5be_physical",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "density by Archimedes drainage (high-precision balance, up to 0.01 g; average of three independent measurements)"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.47 ±0.02 g/cm³",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {
+          "transformation_temperature": {
+            "value": "1165.9 °C",
+            "unit": "°C",
+            "note": "DSC heating peak after homogenisation (Fig. 6) for the 0.5Be alloy"
+          }
+        },
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_rolled_0.5be_comparative",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "density and product of strength and ductility",
+        "improvement_percentage": "Be steel density ~21.38% lower than pure iron; the 0.5Be rolled steel (dark square) occupies the highest point of the plotted property space (product of strength and ductility above 45 GPa%) at the lowest density (~6.2–6.45 g/cm³)"
+      }
+    },
+    {
+      "performance_id": "perf_rolled_0.5be_strength_ductility",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-30mn-10al-1.5c-0.5be",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "total elongation and strength–ductility combination within the Be series",
+        "improvement_percentage": "0.5Be rolled steel has the highest elongation (40.47%) and the best strength–ductility combination of the series; its YS (1011.54 MPa) is higher than 0Be (989.51 MPa) due to Be solid-solution strengthening"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_rolled_0.5be",
+      "microstructure_id": "micro_rolled_0.5be",
+      "technique": "X-ray diffraction (XRD) with Cu Kα",
+      "instrument_or_setup": "D/MAX-2500/PC (ASTM D5380-93[2014]); 2θ range 20°–100°, continuous scanning at 2°/min",
+      "measurement_conditions": "specimen polished with #150–#800 waterproof sandpaper and ultrasonically cleaned with alcohol",
+      "purpose": "phase composition of the rolled (1050 °C) steel",
+      "key_findings": "Rolled 0.5Be steel shows austenite (γ) reflections with an additional Be11Fe peak near 86° (no clear Be2Fe); precipitate peaks grow with Be content."
+    },
+    {
+      "characterization_id": "char_om_rolled_0.5be",
+      "microstructure_id": "micro_rolled_0.5be",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": "Axiovert 200 MAT; etched with 8% nitrate alcohol solution; spark-cut specimens prepared by standard metallographic methods",
+      "measurement_conditions": "RD-ND section, 50 µm scale bar, RD arrow",
+      "purpose": "observe rolled microstructure morphology",
+      "key_findings": "Rolled 0.5Be: γ-Fe matrix with clearly delineated dark grain-boundary network and dark needle-like precipitates inside grains/along boundaries; small dark 'Be-Fe phase' particles; annealing twins marked."
+    },
+    {
+      "characterization_id": "char_ebsd_rolled_0.5be",
+      "microstructure_id": "micro_rolled_0.5be",
+      "technique": "Electron backscatter diffraction (EBSD) coupled with SEM",
+      "instrument_or_setup": "Hitachi S3400 SEM; TSL OIM analysis v8 software",
+      "measurement_conditions": "RD-ND plane, electropolished at -20 °C for 50–65 s at 20 V in electrolyte of perchloric acid (HClO4) and alcohol (1:9); 100 µm scale bar",
+      "purpose": "characterize grain structure, KAM and phase distribution of the rolled steel",
+      "key_findings": "0.5Be phase map is essentially all austenite (green) with negligible ferrite; KAM map is blue matrix with slightly more green/yellow speckle than 0Be; IQ map shows coarser grains than 0Be."
+    },
+    {
+      "characterization_id": "char_grainsize_rolled_0.5be",
+      "microstructure_id": "micro_rolled_0.5be",
+      "technique": "EBSD grain-size statistics (histogram)",
+      "instrument_or_setup": "EBSD; area-fraction vs diameter",
+      "measurement_conditions": "rolled Fe–30Mn–10Al–1.5C–0.5Be",
+      "purpose": "quantify grain size distribution",
+      "key_findings": "0.5Be has relatively large grains: grain size >20 μm accounts for >75% (distribution shifted to coarse sizes with the tallest bar near 45 μm)."
+    },
+    {
+      "characterization_id": "char_tem_rolled_0.5be",
+      "microstructure_id": "micro_rolled_0.5be",
+      "technique": "Transmission electron microscopy (TEM) with selected-area diffraction",
+      "instrument_or_setup": "JE-2100F, operating voltage 200 kV; specimens thinned to 40 μm then electrochemically polished (10% perchloric acid + 90% ethanol, 26.5 V, -20 °C)",
+      "measurement_conditions": "rolled 0.5Be: SADP aperture marked, 2 µm/1 µm scale bars",
+      "purpose": "identify matrix phase, precipitates and dislocation structure",
+      "key_findings": "Matrix is primarily austenite (γ-Fe); precipitates in 0.5Be are Be2C (SADP zone axis [1-12]); 0.5Be grain interior nearly dislocation-free (sparsest dislocation structure of the series)."
+    },
+    {
+      "characterization_id": "char_hv_rolled_0.5be",
+      "microstructure_id": "micro_rolled_0.5be",
+      "technique": "Vickers microhardness",
+      "instrument_or_setup": "FM-ARS9000 Vickers hardness tester",
+      "measurement_conditions": "tap load 500 gf; 15×5 matrix, average of 25 points; room temperature",
+      "purpose": "measure microhardness of the rolled structure",
+      "key_findings": "Rolled 0.5Be austenite matrix hardness 470.97 ±20.241 HV (highest of the series); no ferrite hardness measured (single-phase austenitic)."
+    },
+    {
+      "characterization_id": "char_tensile_rolled_0.5be",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "Instron 5982 universal tester with dynamic extensometer (Instron 2620-601)",
+      "measurement_conditions": "room temperature; initial strain rate 5 × 10^-4 m•s^-1; ASTM E8/E8M-16A; specimens cut from rolled sheet",
+      "purpose": "measure tensile properties of the rolled steel",
+      "key_findings": "Rolled 0.5Be: YS 1011.54 MPa, UST 1130.18 MPa, TE 40.47%."
+    },
+    {
+      "characterization_id": "char_sem_fracture_rolled_0.5be",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM) fractography",
+      "instrument_or_setup": "SEM, Hitachi S-3400",
+      "measurement_conditions": "tensile fracture surfaces of rolled specimens; 50 µm scale bar",
+      "purpose": "characterize fracture mode of the rolled steel",
+      "key_findings": "Rolled 0.5Be fracture surface is an uneven dimpled, largely ductile surface with fine tear ridges."
+    },
+    {
+      "characterization_id": "char_dsc_0.5be",
+      "microstructure_id": null,
+      "technique": "Differential scanning calorimetry (DSC)",
+      "instrument_or_setup": "DSC; heating rate 10 °C/min",
+      "measurement_conditions": "heating curves after homogenisation; temperature range 1050–1350 °C",
+      "purpose": "determine the phase transformation temperature",
+      "key_findings": "0.5Be alloy DSC peak at 1165.9 °C; Be addition lowered the transformation temperature by ~120 °C relative to the Be-free steel."
+    },
+    {
+      "characterization_id": "char_density_0.5be",
+      "microstructure_id": null,
+      "technique": "Archimedes drainage density measurement",
+      "instrument_or_setup": "high-precision balance (up to 0.01 g); deionised water (ρ_water = 1×10^3 g/cm³)",
+      "measurement_conditions": "average of three independently measured density values per sample",
+      "purpose": "measure density of the experimental steel",
+      "key_findings": "Rolled 0.5Be density 6.47 ±0.02 g/cm³."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_archimedes_density",
+      "simulation_method": "analytical (Archimedes principle)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Archimedes volume/density",
+          "equation_role": "compute the volume of displaced water and thence the density of the steel",
+          "parameters": [
+            {
+              "name": "V0",
+              "value": "(m1 - m2)/ρ_water",
+              "unit": "cm³"
+            },
+            {
+              "name": "ρ_water",
+              "value": "1 × 10^3",
+              "unit": "g/cm³"
+            },
+            {
+              "name": "ρ0",
+              "value": "m0/V0",
+              "unit": "g/cm³"
+            }
+          ],
+          "model_note": "V0 = (m1-m2)/ρ_water (Eq. 1); ρ0 = m0/V0 (Eq. 2); average of three independent density measurements per sample."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_febe_phase_diagram",
+      "simulation_method": "thermodynamic equilibrium / CALPHAD calculation",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "T 0–1800 °C, Fe/(Be+Fe) 0–1 mol/mol",
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Fe–Be binary phase diagram",
+          "equation_role": "predict Be–Fe phases and solubility in austenite/ferrite",
+          "parameters": [],
+          "model_note": "Calculated diagram shows line compounds FeBe12, FeBe5, FeBe2; austenite can dissolve <1% Be, ferrite dissolves Be in larger quantities; Be-rich side BCC-A2/HCP-A3 and Fe-rich BCC-A2 with narrow FCC-A1 austenite wedge."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_atomic_size_factor",
+      "simulation_method": "analytical (atomic size factor)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Atomic size factor Δr",
+          "equation_role": "determine the solid-solution type of solute atoms in Fe",
+          "parameters": [
+            {
+              "name": "rA (Fe solvent)",
+              "value": "124",
+              "unit": "pm"
+            },
+            {
+              "name": "rB (Be solute)",
+              "value": "111",
+              "unit": "pm"
+            },
+            {
+              "name": "rB (Mn)",
+              "value": "124",
+              "unit": "pm"
+            },
+            {
+              "name": "rB (Al)",
+              "value": "143",
+              "unit": "pm"
+            },
+            {
+              "name": "rB (C)",
+              "value": "77",
+              "unit": "pm"
+            }
+          ],
+          "model_note": "Δr = |(rA - rB)/rA| (Eq. 3). When radius difference <8% and crystal structures match, an infinite solid solution can form; Be is not an infinite solid solution in Fe. Be substitutional (lattice shrinkage), Al substitutional (lattice expansion), C interstitial."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The rolled 0.5Be steel contains only a small amount of Be–Fe phase, which is conducive to the plasticity of the alloy; its elongation (40.47%) is the highest of the four alloys and among all four it best preserves the strength–ductility balance.",
+    "For rolled 0.5Be steel, hardness increase relative to 0Be is attributed to solid-solution strengthening by Be and to precipitation of the dispersed Be–Fe phase.",
+    "XRD of rolled 0.5Be shows an additional Be11Fe reflection near 2θ ≈ 86° but no clear Be2Fe peak, indicating that Be2Fe compound only appears at 1.0Be and 1.5Be.",
+    "The DSC printed peak for the Be-free alloy (1320 °C) in Fig. 6 does not match the value quoted in the citing text (1278.8 °C); for 0.5Be the printed peak is 1165.9 °C.",
+    "Conclusion (2): in 0Be and 0.5Be steel the addition of a small amount of Be inhibited the precipitation of some carbides and it was replaced by the appearance of the Be–Fe phase, which improved the tensile strength and plasticity of the materials."
+  ]
+}

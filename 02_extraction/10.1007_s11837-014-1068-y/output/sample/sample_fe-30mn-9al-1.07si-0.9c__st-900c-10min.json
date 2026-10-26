@@ -1,0 +1,318 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-1.07si-0.9c__st-900c-10min",
+      "paper_id": "10.1007_s11837-014-1068-y",
+      "alloy_id": "alloy_fe-30mn-9al-1.07si-0.9c",
+      "process_id": "proc_st-900c-10min",
+      "sample_label": "Wrought 1.01% Si solution treated (900°C)",
+      "aliases": {
+        "value": "hot-rolled and solution treated 10 min at 900°C"
+      }
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "b0040 states the wrought plates were hot rolled at 900 °C to an 84% reduction in thickness.",
+        "block_id": [
+          "b0040"
+        ]
+      },
+      "processing_step_id": "step_hot_rolling",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "mechanical processing"
+      },
+      "method": {
+        "value": "hot rolling"
+      },
+      "temperature": {
+        "value": "900 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": {
+        "value": "84%"
+      },
+      "processing_steps_notes": {
+        "value": "Cast plates hot rolled at 900 °C to an 84% reduction in thickness."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0040 specifies solution treatment for 10 min at 900 °C followed by water quenching.",
+        "block_id": [
+          "b0040"
+        ]
+      },
+      "processing_step_id": "step_solution_treatment",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "solution treatment"
+      },
+      "temperature": {
+        "value": "900 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": {
+        "value": "10 min"
+      },
+      "atmosphere": null,
+      "cooling_medium": {
+        "value": "water"
+      },
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Solution treated for 10 min at 900 °C and then water quenched to produce an equiaxed austenite grain structure 10–20 µm in average diameter."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "b0040 describes the solution-treated wrought microstructure (equiaxed austenite grains, 10–20 µm).",
+        "block_id": [
+          "b0040"
+        ]
+      },
+      "structure_id": "structure_1",
+      "overall_structure": {
+        "value": "Equiaxed austenite grain structure with average grain diameter 10–20 µm"
+      },
+      "number_of_phases": {
+        "value": 1
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "b0040 describes the solution-treated wrought microstructure (equiaxed austenite grains, 10–20 µm).",
+            "block_id": [
+              "b0040"
+            ]
+          },
+          "microstructure_id": "micro_1",
+          "region": null,
+          "related_sequence": {
+            "value": "2"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "The solution-treated wrought steel is fully austenitic with equiaxed grains; b0040 describes the equiaxed grain structure and b0006 states the steel is fully austenitic.",
+                "block_id": [
+                  "b0006",
+                  "b0040"
+                ]
+              },
+              "phase_name": {
+                "value": "austenite"
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": {
+                "value": "equiaxed grains"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "source": {
+                "reason": "b0040 states solution treatment produced an equiaxed grain structure 10 µm to 20 µm in average diameter.",
+                "block_id": [
+                  "b0040"
+                ]
+              },
+              "value": {
+                "value": "10 µm to 20 µm"
+              },
+              "unit": {
+                "value": "µm"
+              }
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "source": {
+        "reason": "Tensile properties for the wrought solution-treated sample from Fig. 7 and b0040.",
+        "block_id": [
+          "b0040",
+          "figure_007",
+          "b0046"
+        ]
+      },
+      "property_set_id": "prop_tensile_solution_treated",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": {
+          "value": "Wrought (hot-rolled) Fe-30Mn-9Al-1.01Si-0.9C-0.5Mo, solution treated 900 °C 10 min, water quenched"
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "source": {
+                "reason": "Fig. 7a shows the solution-treated (0.1 h) wrought UTS between the 900 and 1000 MPa gridlines; b0046 states the 0.1 h point is the solution-treated material.",
+                "block_id": [
+                  "figure_007",
+                  "b0046"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "900–1000 MPa"
+              },
+              "unit": {
+                "value": "MPa"
+              },
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "source": {
+                "reason": "b0040 states peak aging lowered elongation from 54% (solution-treated) to 14%.",
+                "block_id": [
+                  "b0040"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "54%"
+              },
+              "unit": {
+                "value": "%"
+              },
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "source": {
+        "reason": "b0040 states that at equivalent ultimate strengths, grain refinement from hot rolling produced better ductility than the cast material (Fig. 7).",
+        "block_id": [
+          "b0040"
+        ]
+      },
+      "performance_id": "perf_wrought_vs_cast",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": {
+          "value": "alloy_fe-30mn-9al-1.07si-0.9c"
+        },
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": {
+          "value": "ductility at equivalent ultimate tensile strength"
+        },
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "Fig. 6 caption/description gives DIC optical microscopy with nital etch; b0040 cites Fig. 6 for the equiaxed 10–20 µm grain structure.",
+        "block_id": [
+          "b0040",
+          "b0041",
+          "figure_006"
+        ]
+      },
+      "characterization_id": "char_optical_microscopy",
+      "microstructure_id": "micro_1",
+      "technique": {
+        "value": "Optical microscopy, differential interference contrast (DIC)"
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": {
+        "value": "etched with nital"
+      },
+      "purpose": {
+        "value": "Microstructure characterization of the wrought sample"
+      },
+      "key_findings": {
+        "value": "Equiaxed austenite grain structure, 10–20 µm average grain diameter; Fig. 6 also shows preferential grain-boundary etching from κ-carbide precipitation and banding from alloy segregation in the peak-aged condition."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0040 and Fig. 7 report the wrought tensile behavior and comparison with cast material.",
+        "block_id": [
+          "b0040",
+          "b0046",
+          "figure_007"
+        ]
+      },
+      "characterization_id": "char_tensile_testing",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Tensile testing"
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Tensile properties (UTS, elongation) as a function of aging time; wrought vs cast comparison"
+      },
+      "key_findings": {
+        "value": "Solution-treated (0.1 h) wrought UTS between 900 and 1000 MPa; elongation 54% in solution-treated condition; tensile strength increased by 200 MPa with aging; peak aging lowered elongation to 14%."
+      }
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The wrought sample is a calcium-treated, low-phosphorus (0.006% P) Fe-30Mn-9Al-1.01Si-0.9C-0.5Mo steel (b0039–b0040).",
+    "Tensile strength in the wrought alloy increased by 200 MPa with aging (b0040).",
+    "Note: b0040 states the 10–20 µm equiaxed grain structure is shown in Fig. 6, but the Fig. 6 caption describes the peak-aged condition (60 h at 530 °C) with grain-boundary κ-carbide precipitation; the 10–20 µm grain-size value is taken from the text."
+  ]
+}

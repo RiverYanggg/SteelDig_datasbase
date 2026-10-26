@@ -1,0 +1,223 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-ni-cr-base__anneal-1040c-1h",
+      "paper_id": "10.1016_j.scriptamat.2014.07.019",
+      "alloy_id": "alloy_fe-ni-cr-base",
+      "process_id": "proc_anneal-1040c-1h",
+      "sample_label": "Base",
+      "aliases": [
+        "base alloy",
+        "base steel",
+        "Base alloy"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_vacuum_cast",
+      "sequence": "1",
+      "type": "casting / solidification",
+      "method": "vacuum casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The three austenitic steels of the study (Base, 2.5 Si, 2.5 Al) were vacuum cast."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "20 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenized for 20 h at 1200 °C (shared by all three steels)."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot rolled after homogenization (shared by all three steels)."
+    },
+    {
+      "processing_step_id": "step_solution_annealing_1040c",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "solution annealing",
+      "temperature": "1040 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Annealed for 1 h at temperatures listed in Table 1 to achieve coarse grain sizes of approximately 140 μm; Table 1 lists 1040 °C for the Base alloy. This is the step that defines process_id proc_anneal-1040c-1h."
+    },
+    {
+      "processing_step_id": "step_compression_5pct_true_strain",
+      "sequence": "5",
+      "type": "mechanical processing",
+      "method": "uniaxial compression (specimen preparation for TEM)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "5% true strain",
+      "processing_steps_notes": "12.7 mm diameter cylinders with axes parallel to the rolling direction were compressed to 5% true strain to introduce dislocations into the specimens; thin slices were then sectioned at 45° from the compression axis for TEM."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_base_as_annealed",
+      "overall_structure": "Fully austenitic, single-phase, coarse-grained microstructure; austenite is retained to room temperature by Ni and Cr alloying (not by carbon partitioning). Fully austenitic at room temperature.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_base_austenite",
+          "region": "bulk / specimen cross-section",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC (face-centred cubic)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": "approximately 140 μm",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations (dissociated into partial dislocations bounding stacking faults)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "approximately 140",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_base_dislocation_dissociation",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_base_partial_dislocations",
+          "microstructure_id": "micro_base_austenite",
+          "interaction_type": "dissociation of perfect dislocations into Shockley partial dislocations separated by a stacking fault",
+          "qualitative_or_quantitative_description": "Multiple paired measurements of partial dislocation separation d and perfect dislocation character angle α were recorded along several dislocations in the base alloy; the paired (d, α) data were input into Eq. (1) to calculate SFE. Partial dislocation separation increases with dislocation angle. Figure 1 shows an example WBDF image with d and α marked and g//b condition (scale bar 50 nm)."
+        }
+      ],
+      "slip_behavior": "Dissociated dislocations in {111} planes; grains near a {111} orientation, which had favourable slip conditions during compression, were selected. WBDF imaging used g3g conditions with (220)-type reflections (s_g ≈ 0.22 nm^-1). Dissociated dislocations were confirmed to lie in the {111} plane approximately normal to the electron beam via g·b_p analysis.",
+      "phase_evolution": null,
+      "interface_notes": "The steel is single-phase austenite, so there are no interphase interfaces; the relevant planar 'interfaces' are stacking faults between the partial dislocations whose separation determines the SFE. Measured partial separations were not corrected for 2-D image projection because dissociated dislocations in this configuration are minimally inclined to the electron beam."
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_base_austenite",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Phillips X'Pert diffractometer with Cu Kα radiation (λ = 0.154060 nm); HighScore Plus 3.0.5 software for analysis",
+      "measurement_conditions": "Seven coupons per alloy taken from various locations; ground to a 600 grit finish then chemically polished for 20 min in a solution of 10 parts water, 10 parts hydrogen peroxide and 1 part hydrofluoric acid. Lattice parameters from the first four austenite peaks ((111), (200), (220), (311)) plotted against cos²θ/sinθ and a0 determined by linear-regression extrapolation to θ = 90°; regression weighted to favour higher-angle peaks (quadruplicate (311), triplicate (220), duplicate (200), single (111)). Material lattice parameter from discarding the lowest and highest a0 and averaging the remaining five specimens.",
+      "purpose": "Determine the austenite lattice parameter a0 of the base alloy.",
+      "key_findings": "For the base alloy no explicit numeric a0 is printed in the text; in the Figure 2 scatter plot the base point (relative alloying = 0) lies just above the 0.358 nm gridline and clearly below 0.359 nm. 2.5 wt.% Al increases a0 by 1.41×10^-3 nm relative to base, whereas 2.5 wt.% Si has little effect - implying little change of the base lattice parameter with Si."
+    },
+    {
+      "characterization_id": "char_tem_wbdf",
+      "microstructure_id": "micro_base_austenite",
+      "technique": "Transmission electron microscopy (TEM) - weak-beam dark-field (WBDF) imaging of dissociated dislocations",
+      "instrument_or_setup": "Phillips CM12 TEM operating at 120 kV",
+      "measurement_conditions": "Grains with {111} planes nearly aligned with the plane of the foil; WBDF imaging using g3g conditions with (220)-type reflections (s_g ≈ 0.22 nm^-1). Thin slices sectioned at 45° from the compression axis, prepared by grinding and electropolishing with 95% acetic acid + 5% perchloric acid.",
+      "purpose": "Measure partial dislocation separations d and character angles α to calculate the stacking fault energy (SFE) of the base alloy.",
+      "key_findings": "Base alloy SFE = 26.3 ± 3.0 mJ m^-2 (Figure 3 legend); b0029 states the base alloy SFE is 26.3 mJ m^-2, consistent with 30 mJ m^-2 reported for a similar 15 Ni-11 Cr alloy from TEM analysis of extended dislocation nodes."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_sfe_from_dissociation_base",
+      "simulation_method": "Analytical calculation of stacking fault energy from measured partial dislocation separation using Eq. (1)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Isotropic elasticity assumed identical for all materials: shear modulus G = 74 GPa and Poisson ratio ν = 0.3. Experimental XRD lattice parameters (a0) were used in Eq. (1). An alternative effect of elastic anisotropy was tested using effective G = 66 GPa and ν = 0.43 determined for a 12 Ni-12 Cr steel.",
+      "validation_against_experiment": "The calculated base alloy SFE (26.3 mJ m^-2) is consistent with the value of 30 mJ m^-2 reported for a similar 15 Ni-11 Cr alloy obtained by TEM analysis of extended dislocation nodes. Applying effective anisotropic elastic constants (G = 66 GPa, ν = 0.43) increased the calculated SFE of the 2.5 Al alloy by ~10% but had little effect on the base and 2.5 Si alloys.",
+      "analytical_models": [
+        {
+          "model_name": "SFE from dissociation width (Eq. 1)",
+          "equation_role": "SFE = G|a0|²(2-ν) / [48π(1-ν)] · (1/d) · [1 - (2ν cos2α)/(2-ν)], where d is partial dislocation separation and α is the perfect dislocation character angle",
+          "parameters": [
+            {
+              "name": "G (isotropic shear modulus)",
+              "value": "74",
+              "unit": "GPa"
+            },
+            {
+              "name": "ν (Poisson ratio)",
+              "value": "0.3",
+              "unit": "dimensionless"
+            },
+            {
+              "name": "G effective (12 Ni-12 Cr steel, anisotropy estimate)",
+              "value": "66",
+              "unit": "GPa"
+            },
+            {
+              "name": "ν effective (12 Ni-12 Cr steel, anisotropy estimate)",
+              "value": "0.43",
+              "unit": "dimensionless"
+            },
+            {
+              "name": "a0 (lattice parameter input)",
+              "value": "experimental XRD value for the base alloy",
+              "unit": "nm"
+            }
+          ],
+          "model_note": "Isotropic elastic properties were used in the final SFE calculations because elastic anisotropy was not evaluated in this study and other literature reports an effective ν closer to 0.3 than 0.43. The Williams and Carter correction for partial dislocation strain fields was not applied because not all TEM data were available to assign all necessary parameters."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Base alloy composition from Table 1 (wt.%): C 0.028, N 0.0034, Ni 15.05, Cr 11.06, Mn 1.09, Si 0.002, Al 0.05; solution annealing temperature 1040 °C (Fe balance not explicitly stated in the table). Source: b0015 / table_001.",
+    "Stacking fault energy of the base alloy determined by WBDF TEM analysis of dissociated dislocations is 26.3 ± 3.0 mJ m^-2 (Figure 3 legend), and b0029 states the base alloy SFE is 26.3 mJ m^-2, consistent with 30 mJ m^-2 reported for a similar 15 Ni-11 Cr alloy. Source: b0029, b0031, figure_003.",
+    "Austenite lattice parameter of the base alloy: the base datum is plotted in Figure 2 at relative alloying = 0 sitting just above the 0.358 nm gridline and clearly below 0.359 nm (small vertical error bar), but no explicit numeric a0 value for the base alloy is printed in the text or figure. Source: figure_002, b0023.",
+    "Study-level empirical linear elemental coefficients derived from the three-alloy comparison (Table 2): A^LP(Si) = -0.018×10^-3 nm wt.%-1 [-0.009×10^-3 nm at.%-1], A^LP(Al) = 0.582×10^-3 nm wt.%-1 [0.289]; A^SFE(Si) = -2.6 mJ m^-2 wt.%-1 [-1.3], A^SFE(Al) = 4.9 mJ m^-2 wt.%-1 [2.5]. The Dyson and Holmes reference values are Si ≈0 [≈0] and Al 0.56 [0.28] for A^LP. Source: b0025 / table_002, b0022, b0032.",
+    "Estimating A^SFE from the strain-field-corrected data (base and 2.5 Al alloys) gives A^SFE(Al) ≈ 6.9 mJ m^-2 wt.%-1 for this study; literature comparisons: A^SFE(Si) values 1-3.5 mJ m^-2 wt.%-1 (high-Mn literature), thermochemical model A^SFE(Al) ≈ 5.2 mJ m^-2 wt.%-1, Jeong et al. A^SFE(Al) ≈ 6.4 mJ m^-2 wt.%-1, Kim et al. A^SFE(Al) = 11.3 mJ m^-2 wt.%-1. Source: b0033.",
+    "The Williams and Carter correction for partial dislocation strain fields (not applied to the reported values) would have little effect (approximately 1 mJ m^-2 or less) on the base and 2.5 Si alloys, but would raise the 2.5 Al alloy SFE to an estimated 44.0 ± 9.8 mJ m^-2. Source: b0029.",
+    "Context/limitations stated for extending the study: the base alloy retains austenite at room temperature by Ni and Cr alloying (not by carbon partitioning as in AHSS), and the effects of Si and Al on austenite characteristics are assumed independent of Ni and Cr alloying. Source: b0012."
+  ]
+}

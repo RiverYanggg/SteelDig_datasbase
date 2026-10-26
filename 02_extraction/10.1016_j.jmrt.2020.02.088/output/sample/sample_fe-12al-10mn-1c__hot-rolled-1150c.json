@@ -1,0 +1,394 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-12al-10mn-1c__hot-rolled-1150c",
+      "paper_id": "10.1016_j.jmrt.2020.02.088",
+      "alloy_id": "alloy_fe-12al-10mn-1c",
+      "process_id": "proc_hot-rolled-1150c",
+      "sample_label": "12Al-10Mn-1C Hot-rolled",
+      "aliases": [
+        "12Al-10Mn-1C hot-rolled"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "b0026 describes the production route of the ingots before hot-rolling.",
+        "block_id": [
+          "b0026"
+        ]
+      },
+      "processing_step_id": "step_casting",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "casting"
+      },
+      "method": {
+        "value": "vacuum induction furnace casting"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Steels produced by casting using a 100 kW vacuum induction furnace, resulting in 0.5 kg ingots.",
+        "source": {
+          "reason": "Experimental procedure states the alloyed steels were cast in a 100 kW vacuum induction furnace into 0.5 kg ingots.",
+          "block_id": [
+            "b0026"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "Defines the hot-rolling step that gives the as-received (hot-rolled) condition of this sample.",
+        "block_id": [
+          "b0026"
+        ]
+      },
+      "processing_step_id": "step_hot_rolling",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "mechanical processing"
+      },
+      "method": {
+        "value": "hot-rolling"
+      },
+      "temperature": {
+        "value": "1150 °C",
+        "source": {
+          "reason": "Experimental procedure: the ingots were hot-rolled at 1150 °C.",
+          "block_id": [
+            "b0026"
+          ]
+        }
+      },
+      "temperature_unit": {
+        "value": "°C",
+        "source": {
+          "reason": "Temperature given in °C.",
+          "block_id": [
+            "b0026"
+          ]
+        }
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Hot-rolled at 1150 °C obtaining 5 mm flat-products.",
+        "source": {
+          "reason": "b0026 states the ingots were hot-rolled at 1150 °C obtaining 5 mm flat products.",
+          "block_id": [
+            "b0026"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "b0026 describes the post-hot-rolling water quench that defines this sample's condition.",
+        "block_id": [
+          "b0026"
+        ]
+      },
+      "processing_step_id": "step_water_quenching",
+      "sequence": {
+        "value": "3"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "water quenching"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": {
+        "value": "water",
+        "source": {
+          "reason": "b0026 states the hot-rolling was followed by water quenching.",
+          "block_id": [
+            "b0026"
+          ]
+        }
+      },
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Hot-rolled products followed by water quenching (as-received condition).",
+        "source": {
+          "reason": "b0026 states hot-rolling was followed by water quenching, giving the as-received reference condition.",
+          "block_id": [
+            "b0026"
+          ]
+        }
+      }
+    }
+  ],
+  "structures": [],
+  "interfaces": [],
+  "properties": [
+    {
+      "source": {
+        "reason": "The only quantitative property reported for the hot-rolled (as-received) 12Al-10Mn-1C sample is its Vickers macro-hardness of 401 HV, found in Tables 4, 5 and 9.",
+        "block_id": [
+          "b0037",
+          "b0039",
+          "b0041",
+          "b0043",
+          "b0051",
+          "b0095",
+          "b0096",
+          "table_004",
+          "table_005",
+          "table_009"
+        ]
+      },
+      "property_set_id": "prop_12al10mn1c_hotrolled_hardness",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": {
+          "value": "Vickers macro-hardness, 5 kg load, 5 indentations per sample, hot-rolled (as-received) condition",
+          "source": {
+            "reason": "b0028 describes the Vickers macro-hardness procedure with 5 kg load and 5 indentations per sample; hot-rolled is the as-received state.",
+            "block_id": [
+              "b0028",
+              "b0026"
+            ]
+          }
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": {
+              "value": "hot-rolled (as-received)",
+              "source": {
+                "reason": "The hot-rolled column of Tables 4/5/9 refers to the as-received condition.",
+                "block_id": [
+                  "table_004",
+                  "table_005",
+                  "table_009"
+                ]
+              }
+            },
+            "value": {
+              "value": "401 HV",
+              "source": {
+                "reason": "Table 4 lists 12Al-10Mn-1C hot-rolled hardness 401 HV; Table 5 also gives 401 HV hot-rolled; Table 9 lists 12Al-10Mn-1C hot-rolled 401 HV.",
+                "block_id": [
+                  "table_004",
+                  "table_005",
+                  "table_009",
+                  "b0037",
+                  "b0041"
+                ]
+              }
+            },
+            "scale": {
+              "value": "Vickers (HV)",
+              "source": {
+                "reason": "Hardness reported as HV by Vickers macro-hardness method.",
+                "block_id": [
+                  "b0028",
+                  "table_004"
+                ]
+              }
+            },
+            "unit": {
+              "value": "HV",
+              "source": {
+                "reason": "Tables headed 'Hardness [HV]'.",
+                "block_id": [
+                  "table_004",
+                  "table_005",
+                  "table_009"
+                ]
+              }
+            },
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "b0027 states all alloys at different processing conditions including hot-rolling were analysed using optical microscopy.",
+        "block_id": [
+          "b0027"
+        ]
+      },
+      "characterization_id": "char_om",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Optical microscopy"
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": {
+        "value": "Through-thickness embedding, grinding and polishing performed separately for hot-rolled and heat-treated samples",
+        "source": {
+          "reason": "b0027 describes sample preparation and states all alloys at the different processing conditions (hot-rolling and tempering) were analysed using optical microscopy.",
+          "block_id": [
+            "b0027"
+          ]
+        }
+      },
+      "purpose": {
+        "value": "microstructural observation of the alloys in hot-rolled and tempered conditions"
+      },
+      "key_findings": null
+    },
+    {
+      "source": {
+        "reason": "b0027 describes SEI and EDX/EDS acquisition for the study.",
+        "block_id": [
+          "b0027"
+        ]
+      },
+      "characterization_id": "char_sem_eds",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Scanning electron microscopy (secondary electron imaging, SEI) with energy dispersive X-ray spectroscopy (EDX/EDS)"
+      },
+      "instrument_or_setup": {
+        "value": "20 kV"
+      },
+      "measurement_conditions": {
+        "value": "Performed only on selected microstructures",
+        "source": {
+          "reason": "b0027 states SEM analysis was performed only on selected microstructures.",
+          "block_id": [
+            "b0027"
+          ]
+        }
+      },
+      "purpose": {
+        "value": "analyse phase morphologies and chemical compositions; EDS provides qualitative local phase composition"
+      },
+      "key_findings": null
+    },
+    {
+      "source": {
+        "reason": "b0028 describes the Vickers macro-hardness procedure applied to the samples; the 401 HV hot-rolled value for this alloy comes from Tables 4/5/9.",
+        "block_id": [
+          "b0028",
+          "table_004",
+          "table_005",
+          "table_009"
+        ]
+      },
+      "characterization_id": "char_vickers_macrohardness",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Vickers macro-hardness testing"
+      },
+      "instrument_or_setup": {
+        "value": "5 kg load"
+      },
+      "measurement_conditions": {
+        "value": "5 indentations per sample",
+        "source": {
+          "reason": "b0028 states a 5 kg load was applied for all indentations and 5 indentations per sample were made.",
+          "block_id": [
+            "b0028"
+          ]
+        }
+      },
+      "purpose": {
+        "value": "macro-hardness measurement of the alloys in the different processing conditions"
+      },
+      "key_findings": {
+        "value": "Hot-rolled 12Al-10Mn-1C hardness = 401 HV"
+      }
+    },
+    {
+      "source": {
+        "reason": "b0029 states Minitab18® software was used to verify the consistency of the data acquired and outliers were excluded.",
+        "block_id": [
+          "b0029"
+        ]
+      },
+      "characterization_id": "char_data_analysis_minitab",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Statistical data-consistency analysis"
+      },
+      "instrument_or_setup": {
+        "value": "Minitab18® software"
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "verify consistency of acquired data and exclude outliers"
+      },
+      "key_findings": null
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The 12Al-10Mn-1C alloy recorded the highest hot-rolled (as-received) hardness among the tested Fe–Mn–Al–C grades at 401 HV (Table 5, also Table 4 and Table 9).",
+    "Hot-rolled 12Al-10Mn-1C serves as the as-received reference condition for the study; no austenite transformation is described for the hot-rolled state itself, only for the 600 °C and 800 °C tempered conditions.",
+    "Comparative (involves other samples): 800 °C tempering left the hardness of 12Al-10Mn-1C essentially unchanged (hot-rolled 401 HV vs 800 °C tempered 399 HV), attributed to its wide inter-lamellar spacing (Table 5, Table 9).",
+    "No phase-volume-fraction (CALPHAD) diagram is provided for the 12Al-10Mn-1C composition; the diagrams in the paper cover 9Al-10Mn-0.4C, 9Al-10Mn-1C, 9Al-20Mn-1C, 9Al-30Mn-1C, 12Al-20Mn-1C and 12Al-30Mn-1C."
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_007",
+  "family": "generalist",
+  "image_type": "microscopy_optical",
+  "description": "Composite figure (4x2 grid of image pairs) comparing raw micrographs with MatSAM segmentation masks for eight microstructures. Column headers read \"Raw image\" and \"MatSAM\"; the left block is polycrystalline, the right block multiphase. (a) PI-1: equiaxed grains with thin dark etched boundaries and scattered small black particles; MatSAM output is a black field with white cell-like boundary lines. (b) HEA: coarse grains with faint, locally invisible boundaries; (c) SS: equiaxed grains; (d) PI-2: the only colour micrograph, with blue/yellow tinted grains (polarised-light look); in all four MatSAM draws continuous white boundaries. (e) DP590-2: bright irregular elongated islands in a darker matrix; (f) DP590-1: blurred grey islands in dark matrix; (g) NBS-1: one large bright region plus fine dots; (h) UHCS: dark matrix densely filled with small bright spheroidal particles; MatSAM outputs are white filled blobs matching these constituents. Paired coloured arrows (orange, yellow, cyan/blue) point to the same locations in raw and mask; in (a) a cyan arrow marks a small dark particle and orange arrows mark boundary junctions. No scale bars, axes or printed numbers appear. The figure argues MatSAM recovers missing/non-closing grain boundaries and separates multiphase constituents without training.",
+  "confidence": "high",
+  "subfigures": [
+    {
+      "panel": "(a)",
+      "description": "Raw image labelled a: PI-1 polycrystalline optical micrograph with equiaxed grains, thin dark etched boundaries and small black particles. MatSAM panel shows the same field as a binary mask: black background with white grain-boundary network. Three coloured arrows (orange, yellow, cyan) mark a boundary junction, a boundary segment and a small dark particle in both raw and mask.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(b)",
+      "description": "Raw image labelled b: HEA, coarse-grained structure with few, faint and locally discontinuous boundaries. MatSAM mask reproduces the grain network with white continuous boundaries; orange arrow at left and yellow arrow at lower right.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(c)",
+      "description": "Raw image labelled c: SS, equiaxed grained grayscale micrograph with moderately fine, wavy boundaries. MatSAM mask gives the corresponding white boundary network; orange arrow upper-left, yellow arrow lower-left.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(d)",
+      "description": "Raw image labelled d: PI-2, the only colour micrograph (blue- and yellow-tinted grains, polarised-light appearance) with irregular grain boundaries. MatSAM mask shows continuous white boundaries; orange, cyan and yellow arrows in raw and mask.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(e)",
+      "description": "Raw image labelled e: DP590-2, bright irregular, elongated/blocky islands in a darker matrix (scratch-like surface features visible). MatSAM mask renders those islands as white filled blobs on black; orange arrow marks one island.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(f)",
+      "description": "Raw image labelled f: DP590-1, blurred grayscale image with grey blocky/elongated islands in a darker matrix. MatSAM mask extracts them as white blobs on black. No arrows visible.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(g)",
+      "description": "Raw image labelled g: NBS-1, grayscale field with one large bright rounded region and numerous fine bright dots in the matrix. MatSAM mask gives a large white blob plus small white dots; orange, cyan and yellow arrows mark selected features.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(h)",
+      "description": "Raw image labelled h: UHCS, dark matrix with thin dark grain boundaries and dense small bright spheroidal particles. MatSAM mask shows the particles as small white dots on black. No arrows visible.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "The figure is a 4x2 arrangement of image pairs, each pair being a raw micrograph (left) and its MatSAM segmentation (right), with column headers 'Raw image' and 'MatSAM'.",
+      "source": "visual",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_007"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "Small white-on-black letter labels a, b, c, d (left block) and e, f, g, h (right block) are printed in the top-left corner of each raw image.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption states the left block shows polycrystalline images and the right block shows multiphase images.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_007"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption names the samples: (a) PI-1, (b) HEA, (c) SS, (d) PI-2, (e) DP590-2, (f) DP590-1, (g) NBS-1, and (h) UHCS.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_007"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption states that arrows point to noteworthy areas and that a pair of arrows shares the same colour, i.e. arrows link the same location in a raw image and its MatSAM output.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_007"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "MatSAM outputs in panels (a)-(d) are binary images consisting of a black background with white lines tracing grain boundaries; outputs in (e)-(h) are black backgrounds with white filled blobs representing the second phase/particles.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panel (a) raw image contains small black dots (particles/inclusions) inside the light grains, and a cyan-coloured arrow points to one such dot in both the raw image and the MatSAM mask.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panel (h) UHCS raw image shows a dark matrix with thin dark grain boundaries and a dense population of small bright spheroidal particles, which the MatSAM mask renders as discrete small white dots.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "Panel (e) DP590-2 raw image shows bright irregular elongated islands in a darker matrix, extracted as white blobs by MatSAM.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panel (d) is the only coloured raw micrograph in the group, with grains tinted blue and yellow, whereas all other raw panels are grayscale.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "No scale bars, magnification values, axes, legends or printed numeric values are visible in any panel.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states that incompleteness or non-closing of grain boundaries, often from uneven or incomplete etching, is the common issue in these images and causes under-segmentation in untailored approaches.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_007"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states that in (b) the grain boundaries in the region indicated by the arrow are nearly invisible, yet MatSAM can still infer the missing parts.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_007"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states that in (d) some boundaries are hard to tell at the grain interfaces, but MatSAM captures and reasonably recognizes the subtle changes near the boundaries.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_007"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states that MatSAM consistently provided reasonable outputs even for complex, variable and difficult-to-interpret micrographs, illustrated through these polycrystalline and multiphase examples.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_007"
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "measured_quantities": [],
+  "sample_hints": [
+    "PI-1",
+    "HEA",
+    "SS",
+    "PI-2",
+    "DP590-2",
+    "DP590-1",
+    "NBS-1",
+    "UHCS"
+  ],
+  "unreadable_items": [
+    "No scale bars or magnification values are printed in any panel, so the physical field of view of every micrograph is unknown.",
+    "Panel (h): the small bright carbide/particle features are near the resolution limit, so their individual sizes cannot be measured.",
+    "Panel (f): the raw image is visibly blurred and partially out of focus, so the exact phase shapes cannot be traced by eye.",
+    "The modality per panel (optical vs SEM/BSE) is not stated anywhere in the figure; only (a) and (d) show colour that indicates optical metallography, while (e)-(h) are grayscale and could be either."
+  ],
+  "image_paths": [
+    "images/1814534a1f0bcde22cb64ad3299fa33e2e86467ecfbe72ea8ba2538263278c57.jpg"
+  ]
+}

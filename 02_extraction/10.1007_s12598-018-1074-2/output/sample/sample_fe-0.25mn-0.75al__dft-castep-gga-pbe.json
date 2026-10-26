@@ -1,0 +1,662 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-0.25mn-0.75al__dft-castep-gga-pbe",
+      "paper_id": "10.1007_s12598-018-1074-2",
+      "alloy_id": "alloy_fe-0.25mn-0.75al",
+      "process_id": "proc_dft-castep-gga-pbe",
+      "sample_label": "Fe0.25Mn0.75Al",
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "The only process/state identity for this sample is the DFT first-principles calculation protocol (CASTEP, GGA-PBE) applied uniformly to all Fe1-xMnxAl crystal structures.",
+        "block_id": [
+          "b0010",
+          "b0011"
+        ]
+      },
+      "processing_step_id": "step_dft_castep_pbe",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "computational first-principles calculation",
+        "source": {
+          "reason": "The Calculation methods section describes the first-principles DFT protocol applied to all Fe1-xMnxAl crystal structures.",
+          "block_id": [
+            "b0010",
+            "b0011"
+          ]
+        }
+      },
+      "method": {
+        "value": "First-principles DFT geometry optimization and property calculation (CASTEP, GGA-PBE)",
+        "source": {
+          "reason": "CASTEP code with GGA-PBE exchange-correlation is stated as the DFT implementation used for all Fe1-xMnxAl alloys.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Geometry-optimized crystal structure via first-principles DFT using CASTEP; GGA-PBE exchange-correlation; ultrasoft pseudopotentials; 8x8x8 Monkhorst-Pack k-point mesh; 450 eV plane-wave cutoff; total energy converged to 2x10^-6 eV; forces < 0.5 eV·nm⁻¹. Valence states: Fe 3d⁶4s², Mn 3d⁵4s², Al 3s²3p¹.",
+        "source": {
+          "reason": "The DFT optimization/calculation parameters are given in the Calculation methods section.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "Crystal structure of Fe0.25Mn0.75Al defined by the Fe1-xMnxAl Pm-3m supercell models in Figure 1 and the lattice parameter in Table 1.",
+        "block_id": [
+          "b0011",
+          "b0013",
+          "figure_001",
+          "b0021"
+        ]
+      },
+      "structure_id": "struct_fe0.25mn0.75al_b2",
+      "overall_structure": {
+        "value": "Cubic supercell structure with space group Pm-3m, based on B2-type FeAl; Mn substitutes for Fe on the Fe sublattice. Fe0.25Mn0.75Al contains 2 Fe, 6 Mn and 8 Al per 16-atom cell (DFT-optimized lattice parameter a = b = c = 0.581 nm).",
+        "source": {
+          "reason": "Figure 1 defines the Fe1-xMnxAl series as cubic Pm-3m supercells built by Mn substituting Fe on the Fe sublattice of B2 FeAl; for Fe0.25Mn0.75Al the figure shows six Mn on the Fe/Mn sublattice, and Table 1 gives a=b=c=0.581 nm.",
+          "block_id": [
+            "b0011",
+            "b0013",
+            "figure_001",
+            "b0021"
+          ]
+        }
+      },
+      "number_of_phases": {
+        "value": 1,
+        "source": {
+          "reason": "The sample is a single-phase ordered B2-type intermetallic (one crystal structure).",
+          "block_id": [
+            "b0011",
+            "figure_001"
+          ]
+        }
+      },
+      "microstructure_counts": {
+        "value": 1,
+        "source": {
+          "reason": "A single crystal-structure model is used for Fe0.25Mn0.75Al.",
+          "block_id": [
+            "figure_001"
+          ]
+        }
+      },
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "Single crystal-structure model of Fe0.25Mn0.75Al (B2-type, Pm-3m).",
+            "block_id": [
+              "b0011",
+              "b0013",
+              "figure_001"
+            ]
+          },
+          "microstructure_id": "micro_fe0.25mn0.75al",
+          "region": null,
+          "related_sequence": {
+            "value": "1"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "The phase is the Fe0.25Mn0.75Al cubic B2-type structure used in the DFT calculations.",
+                "block_id": [
+                  "b0011",
+                  "b0013",
+                  "figure_001"
+                ]
+              },
+              "phase_name": {
+                "value": "Fe0.25Mn0.75Al",
+                "source": {
+                  "reason": "This is the composition label for the phase in the Fe1-xMnxAl series.",
+                  "block_id": [
+                    "b0021",
+                    "b0049"
+                  ]
+                }
+              },
+              "crystal_structure": {
+                "value": "cubic (Pm-3m), B2-type FeAl superstructure with Mn on the Fe sublattice",
+                "source": {
+                  "reason": "The crystal structure is described as cubic Pm-3m with Mn replacing Fe in the B2 FeAl parent.",
+                  "block_id": [
+                    "b0011",
+                    "b0013",
+                    "figure_001"
+                  ]
+                }
+              },
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "source": {
+        "reason": "Mechanical properties of Fe0.25Mn0.75Al (Young's modulus and Vickers hardness) from Table 2.",
+        "block_id": [
+          "b0048",
+          "b0049"
+        ]
+      },
+      "property_set_id": "prop_mechanical_elastic",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": {
+          "value": "First-principles DFT (CASTEP, GGA-PBE); polycrystalline elastic moduli evaluated via Voigt-Reuss-Hill approximation",
+          "source": {
+            "reason": "Bulk/shear/Young's moduli and Poisson's ratio are determined by the VRH approximation from DFT elastic constants.",
+            "block_id": [
+              "b0034"
+            ]
+          }
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": {
+            "value": "228.8 GPa",
+            "source": {
+              "reason": "Table 2 lists Young's modulus E = 228.8 GPa for Fe0.25Mn0.75Al.",
+              "block_id": [
+                "b0049",
+                "b0048"
+              ]
+            }
+          },
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "source": {
+              "reason": "Table 2 lists Vickers hardness H_V = 9.8 GPa for Fe0.25Mn0.75Al.",
+              "block_id": [
+                "b0049",
+                "b0048"
+              ]
+            },
+            "region": null,
+            "value": {
+              "value": "9.8"
+            },
+            "scale": {
+              "value": "Vickers (H_V)"
+            },
+            "unit": {
+              "value": "GPa"
+            },
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "source": {
+        "reason": "Physical/thermal/electronic properties of Fe0.25Mn0.75Al from Table 4 and electronic-structure discussion.",
+        "block_id": [
+          "b0068",
+          "b0069",
+          "b0025",
+          "b0029"
+        ]
+      },
+      "property_set_id": "prop_physical_thermal",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": {
+          "value": "Theoretical (DFT) values; Debye temperature and sound velocities calculated from elastic moduli and density via Eqs. (15)-(18)",
+          "source": {
+            "reason": "Table 4 caption states the density, sound velocities and Debye temperature are theoretical (DFT) values.",
+            "block_id": [
+              "b0068",
+              "b0066"
+            ]
+          }
+        }
+      },
+      "mechanical": null,
+      "physical": {
+        "source": {
+          "reason": "Physical properties (density, Debye temperature, sound velocities, electronic and magnetic character) for Fe0.25Mn0.75Al.",
+          "block_id": [
+            "b0069",
+            "b0025",
+            "b0029"
+          ]
+        },
+        "density": {
+          "source": {
+            "reason": "Table 4 lists theoretical density ρ = 5565.7 kg·m⁻³ for Fe0.25Mn0.75Al.",
+            "block_id": [
+              "b0069",
+              "b0068"
+            ]
+          },
+          "value": {
+            "value": "5565.7"
+          },
+          "unit": {
+            "value": "kg·m⁻³"
+          }
+        },
+        "thermal_properties": {
+          "source": {
+            "reason": "Debye temperature and sound velocities for Fe0.25Mn0.75Al from Table 4.",
+            "block_id": [
+              "b0068",
+              "b0069"
+            ]
+          },
+          "debye_temperature": {
+            "source": {
+              "reason": "Table 4 lists Debye temperature Θ_D = 574.2 K for Fe0.25Mn0.75Al.",
+              "block_id": [
+                "b0069",
+                "b0068"
+              ]
+            },
+            "value": {
+              "value": "574.2"
+            },
+            "unit": {
+              "value": "K"
+            }
+          },
+          "longitudinal_sound_velocity": {
+            "source": {
+              "reason": "Table 4 lists longitudinal sound velocity v_l = 7249.4 m·s⁻¹ for Fe0.25Mn0.75Al.",
+              "block_id": [
+                "b0069",
+                "b0068"
+              ]
+            },
+            "value": {
+              "value": "7249.4"
+            },
+            "unit": {
+              "value": "m·s⁻¹"
+            }
+          },
+          "transverse_sound_velocity": {
+            "source": {
+              "reason": "Table 4 lists transverse sound velocity v_s = 4007.8 m·s⁻¹ for Fe0.25Mn0.75Al.",
+              "block_id": [
+                "b0069",
+                "b0068"
+              ]
+            },
+            "value": {
+              "value": "4007.8"
+            },
+            "unit": {
+              "value": "m·s⁻¹"
+            }
+          },
+          "average_sound_velocity": {
+            "source": {
+              "reason": "Table 4 lists average sound velocity v_m = 4465.4 m·s⁻¹ for Fe0.25Mn0.75Al.",
+              "block_id": [
+                "b0069",
+                "b0068"
+              ]
+            },
+            "value": {
+              "value": "4465.4"
+            },
+            "unit": {
+              "value": "m·s⁻¹"
+            }
+          }
+        },
+        "electrical_properties": {
+          "source": {
+            "reason": "Electronic conductivity conclusion for Fe-Mn-Al alloys, applicable to Fe0.25Mn0.75Al.",
+            "block_id": [
+              "b0025",
+              "b0029"
+            ]
+          },
+          "electronic_conductivity": {
+            "value": "good electronic conductivity (metallic character: nonzero DOS at Fermi level)",
+            "source": {
+              "reason": "The text states Fe-Mn-Al alloys have metallic features with nonzero DOS at the Fermi level and good electronic conductivity.",
+              "block_id": [
+                "b0025",
+                "b0029"
+              ]
+            }
+          }
+        },
+        "magnetic_properties": {
+          "source": {
+            "reason": "Magnetic character of Fe-Mn-Al alloys from spin-polarized TDOS.",
+            "block_id": [
+              "b0025"
+            ]
+          },
+          "magnetic_character": {
+            "value": "magnetic characteristics due to dissymmetric spin-up/spin-down DOS",
+            "source": {
+              "reason": "The text states a comparison of down and up states shows these alloys have magnetic characteristics due to dissymmetric down/up states.",
+              "block_id": [
+                "b0025"
+              ]
+            }
+          }
+        }
+      },
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "TDOS/PDOS analysis for Fe0.25Mn0.75Al (panel h of Figure 3) and accompanying discussion.",
+        "block_id": [
+          "b0025",
+          "b0027",
+          "b0028",
+          "figure_003"
+        ]
+      },
+      "characterization_id": "char_dos",
+      "microstructure_id": "micro_fe0.25mn0.75al",
+      "technique": {
+        "value": "Spin-polarized total and partial density of states (TDOS/PDOS) calculation"
+      },
+      "instrument_or_setup": {
+        "value": "CASTEP first-principles DFT (GGA-PBE)"
+      },
+      "measurement_conditions": {
+        "value": "energy range -10 to 20 eV; Fermi level at 0 eV (dashed line)"
+      },
+      "purpose": {
+        "value": "Analyze chemical bonding characteristics and electronic structure"
+      },
+      "key_findings": {
+        "value": "Metallic (nonzero DOS at Fermi level); sharp DOS peak at the Fermi level formed mainly by Fe-d and Mn-d states (Mn-d relatively more prominent for Fe0.25Mn0.75Al); band from -5 to 1 eV mainly from Al-p, Fe-d and Mn-d states; magnetic character from asymmetric up/down DOS.",
+        "source": {
+          "reason": "Figure 3 panel h is the Fe0.25Mn0.75Al TDOS/PDOS panel; text in b0025 and b0028 interprets these DOS features.",
+          "block_id": [
+            "b0025",
+            "b0027",
+            "b0028",
+            "figure_003"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "Electron density distribution analysis of bonding in Fe-Mn-Al alloys from Figure 4.",
+        "block_id": [
+          "b0030",
+          "figure_004"
+        ]
+      },
+      "characterization_id": "char_electron_density",
+      "microstructure_id": "micro_fe0.25mn0.75al",
+      "technique": {
+        "value": "Electron density distribution (total and difference) contour maps"
+      },
+      "instrument_or_setup": {
+        "value": "CASTEP first-principles DFT (GGA-PBE)"
+      },
+      "measurement_conditions": {
+        "value": "crystallographic slices on (011)/(110) planes"
+      },
+      "purpose": {
+        "value": "Analyze chemical bonding characteristics"
+      },
+      "key_findings": {
+        "value": "Combination of covalent and metallic bonding; covalent interactions along Al-Fe, Al-Mn and Fe-Mn bond axes.",
+        "source": {
+          "reason": "Figure 4 and text describe electron density maps showing combined covalent/metallic bonding in Fe-Mn-Al alloys (series-level, applicable to Fe0.25Mn0.75Al).",
+          "block_id": [
+            "b0030",
+            "figure_004"
+          ]
+        }
+      }
+    }
+  ],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "Computational setup (CASTEP, GGA-PBE) and analysis formulas used for all Fe1-xMnxAl alloys, including Fe0.25Mn0.75Al.",
+        "block_id": [
+          "b0011",
+          "b0014",
+          "b0015",
+          "b0034",
+          "b0045",
+          "b0054",
+          "b0066"
+        ]
+      },
+      "computation_id": "comp_dft_castep_pbe",
+      "simulation_method": {
+        "value": "First-principles DFT (plane-wave pseudopotential)"
+      },
+      "software_used": {
+        "value": "CASTEP"
+      },
+      "potential_model_or_database": {
+        "value": "GGA-PBE exchange-correlation; ultrasoft pseudopotentials"
+      },
+      "boundary_and_initial_conditions": {
+        "value": "8x8x8 Monkhorst-Pack k-point mesh; 450 eV plane-wave cutoff; total energy converged to 2x10^-6 eV; forces < 0.5 eV·nm⁻¹"
+      },
+      "validation_against_experiment": {
+        "value": "Calculated lattice parameters show good agreement with other experimental and calculated values (slight deviation attributed to differences in calculation methods and experimental conditions)."
+      },
+      "analytical_models": [
+        {
+          "source": {
+            "reason": "Cohesive energy formula defined in the stability section.",
+            "block_id": [
+              "b0014",
+              "b0016"
+            ]
+          },
+          "model_name": {
+            "value": "Cohesive energy formula"
+          },
+          "equation_role": {
+            "value": "Eq. (1)"
+          },
+          "parameters": [],
+          "model_note": {
+            "value": "E_coh(Fe_xMn_yAl_z) = [E_tot - xE_iso(Fe) - yE_iso(Mn) - zE_iso(Al)]/(x+y+z)."
+          }
+        },
+        {
+          "source": {
+            "reason": "Formation enthalpy formula defined in the stability section.",
+            "block_id": [
+              "b0015",
+              "b0016"
+            ]
+          },
+          "model_name": {
+            "value": "Formation enthalpy formula"
+          },
+          "equation_role": {
+            "value": "Eq. (2)"
+          },
+          "parameters": [],
+          "model_note": {
+            "value": "ΔH_r(Fe_xMn_yAl_z) = [E_tot - xE_bin(Fe) - yE_bin(Mn) - zE_bin(Al)]/(x+y+z)."
+          }
+        },
+        {
+          "source": {
+            "reason": "VRH approximation used to evaluate polycrystalline elastic moduli.",
+            "block_id": [
+              "b0034",
+              "b0035",
+              "b0036",
+              "b0037",
+              "b0038",
+              "b0039",
+              "b0040"
+            ]
+          },
+          "model_name": {
+            "value": "Voigt-Reuss-Hill (VRH) approximation"
+          },
+          "equation_role": {
+            "value": "Eqs. (4)-(9)"
+          },
+          "parameters": [],
+          "model_note": {
+            "value": "Bulk modulus B=(C11+2C12)/3; shear modulus G and Young's modulus E and Poisson's ratio σ computed from VRH averaging of Voigt and Reuss bounds."
+          }
+        },
+        {
+          "source": {
+            "reason": "Empirical model used to compute Vickers hardness H_V.",
+            "block_id": [
+              "b0045",
+              "b0046",
+              "b0047"
+            ]
+          },
+          "model_name": {
+            "value": "Vickers hardness empirical model"
+          },
+          "equation_role": {
+            "value": "Eq. (10)"
+          },
+          "parameters": [],
+          "model_note": {
+            "value": "H_V = 2(k²G)^0.585 - 3, with k = G/B (Pugh's modulus ratio)."
+          }
+        },
+        {
+          "source": {
+            "reason": "Anisotropy index formulas used to assess mechanical anisotropy.",
+            "block_id": [
+              "b0055",
+              "b0056",
+              "b0057",
+              "b0058"
+            ]
+          },
+          "model_name": {
+            "value": "Anisotropy indices"
+          },
+          "equation_role": {
+            "value": "Eqs. (11)-(14)"
+          },
+          "parameters": [],
+          "model_note": {
+            "value": "Universal anisotropic index A^U, bulk anisotropy A_B, shear anisotropy A_G, and shear anisotropic factors A1=A2=A3=4C44/(2C11-2C12)."
+          }
+        },
+        {
+          "source": {
+            "reason": "Equations used to compute Debye temperature and sound velocities.",
+            "block_id": [
+              "b0070",
+              "b0071",
+              "b0072",
+              "b0073"
+            ]
+          },
+          "model_name": {
+            "value": "Debye temperature and sound velocity equations"
+          },
+          "equation_role": {
+            "value": "Eqs. (15)-(18)"
+          },
+          "parameters": [],
+          "model_note": {
+            "value": "Θ_D = (h/k_B)[3n/(4π)(N_A ρ/M)]^(1/3) v_m; v_m, v_l and v_s computed from B, G and ρ."
+          }
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Lattice parameter (DFT-optimized cubic cell): a = b = c = 0.581 nm (space group Pm-3m).",
+    "Cohesive energy E_coh = -6.794 eV·atom⁻¹ (negative, thermodynamically stable).",
+    "Formation enthalpy ΔH_r = -0.309 eV·atom⁻¹ (negative, thermodynamically stable).",
+    "Elastic constants: C11 = 237.9 GPa, C12 = 141.0 GPa, C44 = 134.6 GPa.",
+    "Bulk modulus B = 173.3 GPa; shear modulus G = 89.4 GPa; Poisson's ratio σ = 0.280; B/G = 1.94.",
+    "B/G = 1.94 > 1.75, indicating ductile behavior (unlike FeAl and Fe0.875Mn0.125Al, which are brittle).",
+    "Anisotropy indices: universal anisotropic index A^U = 1.36; bulk anisotropy A_B = 0; shear anisotropy A_G = 0.120; shear anisotropic factors A1 = A2 = A3 = 2.78.",
+    "Strong Young's-modulus anisotropy on the (001) and (110) planes (non-spherical planar contours).",
+    "Electronic structure: -5 to 1 eV band mainly from Al-p, Fe-d and Mn-d states; Fermi surface dominated by Fe-d and Mn-d with low Al-p states.",
+    "Bonding: combination of covalent and metallic bonds, leading to good electronic conductivity, high melting points and high hardness.",
+    "Mechanically stable: satisfies cubic mechanical stability criteria (C11-C12>0, C11>0, C44>0, C11+2C12>0)."
+  ]
+}

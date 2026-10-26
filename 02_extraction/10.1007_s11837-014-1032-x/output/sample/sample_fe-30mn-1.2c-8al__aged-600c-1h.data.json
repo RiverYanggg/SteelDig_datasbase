@@ -1,0 +1,211 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-1.2c-8al__aged-600c-1h",
+      "paper_id": "10.1007_s11837-014-1032-x",
+      "alloy_id": "alloy_fe-30mn-1.2c-8al",
+      "process_id": "proc_aged-600c-1h",
+      "sample_label": null,
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_vim_melting",
+      "sequence": "1",
+      "type": "synthesis/casting",
+      "method": "vacuum-induction melting (VIM) and casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "400 mbar Ar",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Five Cu molds moved stepwise inside the furnace; successively filled from a 4-kg ingot; after each cast the remaining melt composition was adjusted by charging Al through an air lock."
+    },
+    {
+      "processing_step_id": "step_2_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "10×50×130 mm³ blocks were hot rolled into 2 ± 0.1 mm thick and ~500 mm long sheets; sheets were reheated to 1100 °C and water quenched."
+    },
+    {
+      "processing_step_id": "step_3_homogenization",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": "Ar",
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_4_aging_600c_1h",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "600",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": "air",
+      "cooling_medium": "oil quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Aging conducted in air at 600 °C for 1 h, then oil quenched."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "Fully recrystallized austenitic microstructure (grain size ~20 µm) with nm-sized κ-carbide precipitates formed during aging, plus some retained Mn microsegregations.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "austenite_matrix",
+          "region": "bulk",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "γ-austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": "~20 µm",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "retained Mn microsegregations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~20 µm",
+              "unit": "µm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "kappa_carbide",
+              "type": "κ-carbide (L'1₂ ordered fcc; approximate stoichiometry (Fe,Mn)₃AlC; non-oxide perovskite)",
+              "size": {
+                "value": "nm-sized",
+                "unit": null
+              },
+              "distribution": null,
+              "coherency": "coherent; lattice mismatch below 3% with respect to the austenitic Fe-Mn-C matrix; cuboidal nanoprecipitates"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "gamma_kappa_interface",
+          "microstructure_id": "austenite_matrix",
+          "phase_1_name": "γ-austenite",
+          "phase_2_name": "κ-carbide (L'1₂)",
+          "coherence": "coherent; lattice mismatch below 3% with respect to austenitic Fe-Mn-C matrix"
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "nm-sized κ-carbides form during aging; pronounced strengthening with high Al (~8 wt.%).",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "mech_props_1",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "averages of three measurements for every material state"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_1_tensile",
+      "microstructure_id": null,
+      "technique": "tensile testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "room temperature; initial strain rate 10^-3 s^-1",
+      "purpose": "mechanical screening (yield strength, ultimate tensile strength, total elongation)",
+      "key_findings": "All values plotted represent averages of three measurements for every material state."
+    },
+    {
+      "characterization_id": "char_2_hardness",
+      "microstructure_id": null,
+      "technique": "hardness measurement (HBW)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "hardness screening as a function of alloy composition and aging treatment",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_3_xrd",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "performed on the rolling plane of samples ground to a thickness of 1 mm",
+      "purpose": "phase characterization",
+      "key_findings": null
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "For the alloy Fe-30Mn-1.2C-8Al, aging for 1 h leads to an increase in YS, UTS, and hardness (increasing with temperature) and only to a minor reduction in TE [b0024].",
+    "High Al content (~8 wt.%) results in pronounced strengthening during aging, attributed to the formation of nm-sized κ-carbides during aging; κ-carbides are thermally very stable at 600 °C and prevail after 100 h heat treatment with only modest coarsening [b0025].",
+    "For Fe-30Mn-1.2C-8Al without aging, the mechanical response is similar to that of the Al-free alloy; only a minor change in YS (increase), UTS, and TE (decrease) is found (as-homogenized baseline context) [b0024].",
+    "In austenitic steels strengthened by regularly arranged nanosized κ-carbides (illustrated in Fig. 5 for the 24 h/600 °C condition), the prevalent deformation mechanism is Orowan bypassing of longitudinal κ-carbide rods with expansion of dislocation loops assisted by dislocation cross-slip and, to a minor extent, shearing of κ-carbides [b0032]."
+  ]
+}

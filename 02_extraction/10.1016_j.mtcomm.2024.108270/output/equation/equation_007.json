@@ -1,0 +1,57 @@
+{
+  "identity": {
+    "paper_id": "10.1016_j.mtcomm.2024.108270",
+    "equation_id": "equation_007",
+    "block_id": "b0061",
+    "equation_number": "7",
+    "is_image": false,
+    "latex_hint": "$$\n\\rho_ {f} = \\rho_ {0} + k _ {1} (1 - \\exp (- k _ {2} \\varepsilon))\\tag{7}\n$$"
+  },
+  "latex": "\\rho_{f} = \\rho_{0} + k_{1}(1 - \\exp(-k_{2} \\varepsilon))",
+  "purpose": "An empirical relation (proposed by Singh et al.) to calculate the increase in dislocation density of the material with the imposed equivalent plastic strain during constrained grooves pressing/warm working conditions, used here to estimate the dislocation density after multiaxial forging (MAF).",
+  "applicability_conditions": "Empirical relation originally proposed by Singh et al. [41] for constrained grooves pressing at warm conditions, with constants obtained from cold rolling data [42,43]; in this study it is applied to low-density Fe-30Mn-9Al-0.8 C steel (predominantly austenite phase) that has undergone MAF passes, where ρ0 is the dislocation density of MAF-0 and the material strengthening prediction is valid up to a small/medium number of MAF passes (low-strain cold working).",
+  "symbols": [
+    {
+      "symbol": "\\rho_{f}",
+      "meaning": "Dislocation density after deformation (final dislocation density)",
+      "unit": "m^{-2}",
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "\\rho_{0}",
+      "meaning": "Dislocation density of the initial material (dislocation density of MAF-0 in the present investigation)",
+      "unit": "m^{-2}",
+      "value": "0.79 × 10^{15} m^{-2} for MAF-0",
+      "is_constant": false
+    },
+    {
+      "symbol": "k_{1}",
+      "meaning": "Constant obtained from non-linear curve fit of experimental dislocation density vs imposed strain (accounts for the maximum attainable dislocation density increment)",
+      "unit": "m^{-2}",
+      "value": "7.9 × 10^{15} m^{-2}",
+      "is_constant": true
+    },
+    {
+      "symbol": "k_{2}",
+      "meaning": "Constant obtained from the non-linear curve fit of experimental dislocation density and imposed strain (rate/saturation parameter describing how rapidly the increment develops with strain)",
+      "unit": null,
+      "value": "1.813",
+      "is_constant": true
+    },
+    {
+      "symbol": "\\varepsilon",
+      "meaning": "Imposed equivalent plastic strain",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    }
+  ],
+  "unmapped": [
+    "The relation was originally proposed by Singh et al. [41]; constants k1 and k2 were derived from non-linear curve fitting for cold rolling in [42,43].",
+    "In the present investigation, k1 and k2 are obtained by curve fitting of dislocation density vs imposed equivalent strain using data from Table 1 and Fig. 6.",
+    "The equation is implemented in a VUMAT subroutine along with Eq. (8) for FE simulation of dislocation generation and grain size evolution during MAF.",
+    "Dislocation density is estimated from XRD analysis through lattice microstrain via the Williamson-Hall plot, with Burgers vector b = 0.259 nm.",
+    "With increasing plastic strain, dislocation density first increases to a maximum and then the increment decreases; dislocations rearrange at a critical strain of 2.3 (five MAF passes)."
+  ]
+}

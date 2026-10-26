@@ -1,0 +1,757 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-0.5mn-0.5al__dft-castep-gga-pbe",
+      "paper_id": "10.1007_s12598-018-1074-2",
+      "alloy_id": "alloy_fe-0.5mn-0.5al",
+      "process_id": "proc_dft-castep-gga-pbe",
+      "sample_label": "Fe0.5Mn0.5Al",
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "The only process/state identity for this sample is the DFT first-principles calculation protocol (CASTEP, GGA-PBE) described in the Calculation methods section, used to geometry-optimize the Fe0.5Mn0.5Al crystal structure.",
+        "block_id": [
+          "b0010",
+          "b0011",
+          "b0019"
+        ]
+      },
+      "processing_step_id": "step_dft_geometry_optimization",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "first-principles calculation"
+      },
+      "method": {
+        "value": "DFT geometry optimization (CASTEP, GGA-PBE)"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Computational geometry optimization of the Fe0.5Mn0.5Al cubic supercell via first-principles DFT; no experimental thermal or mechanical processing was applied."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "Fe0.5Mn0.5Al is one of the Fe1-xMnxAl cubic supercells (space group Pm-3m) shown in Fig. 1, with four Mn substituting for Fe on the Fe sublattice; its optimized lattice parameter 0.578 nm is listed in Table 1.",
+        "block_id": [
+          "b0011",
+          "b0013",
+          "figure_001",
+          "b0021"
+        ]
+      },
+      "structure_id": "struct_fe0.5mn0.5al",
+      "overall_structure": {
+        "value": "B2-type cubic supercell (space group Pm-3m) derived from FeAl by substituting Mn for Fe on the Fe sublattice; 16-atom cell with 8 Al sites and 8 Fe/Mn sites (4 Fe + 4 Mn for Fe0.5Mn0.5Al). Optimized lattice parameter a = b = c = 0.578 nm."
+      },
+      "number_of_phases": {
+        "value": 1
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "Fe0.5Mn0.5Al is a single-phase cubic supercell with 8 Al and 8 Fe/Mn sites (4 Fe + 4 Mn), as shown in Fig. 1.",
+            "block_id": [
+              "figure_001",
+              "b0011"
+            ]
+          },
+          "microstructure_id": "micro_fe0.5mn0.5al",
+          "region": {
+            "value": "bulk crystal"
+          },
+          "related_sequence": {
+            "value": "1"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "Fe0.5Mn0.5Al is the B2-type cubic phase (space group Pm-3m) with a = b = c = 0.578 nm, listed in Table 1 and shown in Fig. 1.",
+                "block_id": [
+                  "b0011",
+                  "b0021",
+                  "figure_001"
+                ]
+              },
+              "phase_name": {
+                "value": "Fe0.5Mn0.5Al"
+              },
+              "crystal_structure": {
+                "value": "cubic (B2-type, space group Pm-3m), a = b = c = 0.578 nm"
+              },
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "source": {
+        "reason": "This property set collects the DFT-calculated physical and mechanical values for Fe0.5Mn0.5Al reported in Tables 2 and 4 and the electronic-structure discussion.",
+        "block_id": [
+          "b0049",
+          "b0069",
+          "b0025"
+        ]
+      },
+      "property_set_id": "prop_fe0.5mn0.5al_dft",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": {
+          "value": "DFT-calculated (CASTEP, GGA-PBE) values at equilibrium geometry; no experimental test conditions."
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": {
+            "value": "202.1 GPa",
+            "source": {
+              "reason": "Table 2 lists Young's modulus E = 202.1 GPa for Fe0.5Mn0.5Al, calculated from elastic constants via the VRH approximation.",
+              "block_id": [
+                "b0049",
+                "b0048",
+                "b0044"
+              ]
+            }
+          },
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "source": {
+              "reason": "Table 2 lists Vickers hardness H_V = 6.7 GPa for Fe0.5Mn0.5Al, calculated from the empirical model H_V = 2(k^2 G)^0.585 - 3.",
+              "block_id": [
+                "b0049",
+                "b0048",
+                "b0047"
+              ]
+            },
+            "region": {
+              "value": "bulk"
+            },
+            "value": {
+              "value": "6.7"
+            },
+            "scale": {
+              "value": "Vickers"
+            },
+            "unit": {
+              "value": "GPa"
+            },
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "5678.2 kg·m⁻³",
+          "source": {
+            "reason": "Table 4 lists theoretical density ρ = 5678.2 kg·m⁻³ for Fe0.5Mn0.5Al.",
+            "block_id": [
+              "b0069",
+              "b0068"
+            ]
+          }
+        },
+        "thermal_properties": {
+          "debye_temperature": {
+            "value": "533.3 K",
+            "source": {
+              "reason": "Table 4 lists Debye temperature ΘD = 533.3 K for Fe0.5Mn0.5Al; text b0075 also states Fe0.5Mn0.5Al has the lowest Debye temperature (533.3 K) among the Fe-containing compounds.",
+              "block_id": [
+                "b0069",
+                "b0068",
+                "b0075"
+              ]
+            }
+          },
+          "longitudinal_sound_velocity": {
+            "value": "7012.6 m·s⁻¹",
+            "source": {
+              "reason": "Table 4 lists longitudinal sound velocity v1 = 7012.6 m·s⁻¹ for Fe0.5Mn0.5Al.",
+              "block_id": [
+                "b0069",
+                "b0068"
+              ]
+            }
+          },
+          "transverse_sound_velocity": {
+            "value": "3687.3 m·s⁻¹",
+            "source": {
+              "reason": "Table 4 lists transverse sound velocity vs = 3687.3 m·s⁻¹ for Fe0.5Mn0.5Al.",
+              "block_id": [
+                "b0069",
+                "b0068"
+              ]
+            }
+          },
+          "average_sound_velocity": {
+            "value": "4123.3 m·s⁻¹",
+            "source": {
+              "reason": "Table 4 lists average sound velocity vm = 4123.3 m·s⁻¹ for Fe0.5Mn0.5Al.",
+              "block_id": [
+                "b0069",
+                "b0068"
+              ]
+            }
+          }
+        },
+        "electrical_properties": {
+          "electronic_conductivity": {
+            "value": "metallic (nonzero DOS at Fermi level)",
+            "source": {
+              "reason": "Text states all Fe-Mn-Al alloys have metallic features because they exhibit nonzero density of states (DOS) at the Fermi level.",
+              "block_id": [
+                "b0025",
+                "b0029"
+              ]
+            }
+          }
+        },
+        "magnetic_properties": {
+          "magnetic_character": {
+            "value": "magnetic (asymmetric spin-up and spin-down DOS)",
+            "source": {
+              "reason": "Text states the Fe-Mn-Al alloys have magnetic characteristics due to dissymmetric down and up spin states in the spin-polarized TDOS.",
+              "block_id": [
+                "b0025",
+                "b0030"
+              ]
+            }
+          }
+        }
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "Fig. 3 panel (e) is labelled Fe0.5Mn0.5Al and the text discusses TDOS/PDOS features of the Fe-Mn-Al alloys, including metallic and magnetic character.",
+        "block_id": [
+          "figure_003",
+          "b0025",
+          "b0028"
+        ]
+      },
+      "characterization_id": "char_tdos_pdos",
+      "microstructure_id": "micro_fe0.5mn0.5al",
+      "technique": {
+        "value": "Spin-polarized total and partial density of states (TDOS/PDOS)"
+      },
+      "instrument_or_setup": {
+        "value": "DFT calculation (CASTEP, GGA-PBE)"
+      },
+      "measurement_conditions": {
+        "value": "Energy range -10 to 20 eV; Fermi level at 0 eV"
+      },
+      "purpose": {
+        "value": "Analyze electronic structure and magnetic character of Fe0.5Mn0.5Al"
+      },
+      "key_findings": {
+        "value": "Fe0.5Mn0.5Al (panel e of Fig. 3) shows a sharp DOS peak at the Fermi level formed by hybridized Fe-d and Mn-d states with weak Al-p; nonzero DOS at Fermi level (metallic); asymmetric up/down spin states (magnetic)."
+      }
+    },
+    {
+      "source": {
+        "reason": "Fig. 4 and the accompanying text discuss electron density distribution maps for the Fe1-xMnxAl system, concluding combined covalent and metallic bonding for Fe-Mn-Al alloys including Fe0.5Mn0.5Al.",
+        "block_id": [
+          "figure_004",
+          "b0030"
+        ]
+      },
+      "characterization_id": "char_electron_density",
+      "microstructure_id": "micro_fe0.5mn0.5al",
+      "technique": {
+        "value": "Total electron density distribution and electron density difference maps"
+      },
+      "instrument_or_setup": {
+        "value": "DFT calculation (CASTEP, GGA-PBE)"
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Analyze chemical bonding characteristics"
+      },
+      "key_findings": {
+        "value": "Covalent and metallic bonding coexist; electrons localized around Fe, Mn and Al atoms indicate covalent bonds, while delocalized electrons indicate metallic bonding."
+      }
+    },
+    {
+      "source": {
+        "reason": "Elastic constants and derived moduli for Fe0.5Mn0.5Al are reported in Table 2 and Table 3, with the VRH approximation described in the text.",
+        "block_id": [
+          "b0049",
+          "b0051",
+          "b0034"
+        ]
+      },
+      "characterization_id": "char_elastic_constants",
+      "microstructure_id": "micro_fe0.5mn0.5al",
+      "technique": {
+        "value": "Elastic constants calculation with Voigt-Reuss-Hill (VRH) averaging"
+      },
+      "instrument_or_setup": {
+        "value": "DFT calculation (CASTEP, GGA-PBE)"
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Evaluate mechanical stability, elastic moduli, hardness, and anisotropy"
+      },
+      "key_findings": {
+        "value": "Fe0.5Mn0.5Al is mechanically stable; E = 202.1 GPa, B = 176.3 GPa, G = 77.2 GPa, σ = 0.309, H_V = 6.7 GPa, A^U = 2.06."
+      }
+    }
+  ],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "The DFT calculation protocol (CASTEP, GGA-PBE, ultrasoft pseudopotentials, 8x8x8 k-points, 450 eV cutoff, convergence criteria) is described in the Calculation methods section and applied to Fe0.5Mn0.5Al; the analytical models correspond to the equations used to derive the reported properties.",
+        "block_id": [
+          "b0010",
+          "b0011",
+          "b0012",
+          "b0032",
+          "b0045",
+          "b0054",
+          "b0066"
+        ]
+      },
+      "computation_id": "comp_dft_castep_gga_pbe",
+      "simulation_method": {
+        "value": "Density functional theory (DFT) first-principles calculation, plane-wave pseudopotential method"
+      },
+      "software_used": {
+        "value": "Cambridge Sequential Total Energy Package (CASTEP)"
+      },
+      "potential_model_or_database": {
+        "value": "GGA-PBE exchange-correlation; ultrasoft pseudopotentials; valence electron states Fe 3d6 4s2, Mn 3d5 4s2, Al 3s2 3p1"
+      },
+      "boundary_and_initial_conditions": {
+        "value": "8x8x8 Monkhorst-Pack k-point mesh; 450 eV plane-wave cutoff energy; total energy converged to 2x10^-6 eV; forces reduced below 0.5 eV·nm⁻¹; cubic supercell (space group Pm-3m) with Mn substituting Fe on the Fe sublattice."
+      },
+      "validation_against_experiment": {
+        "value": "Calculated lattice parameters and results show good agreement with other experimental and calculated values; slight deviations attributed to differences in calculation methods and experimental conditions."
+      },
+      "analytical_models": [
+        {
+          "source": {
+            "reason": "Formation enthalpy formula (Eq. 2) and the Fe0.5Mn0.5Al value are given in Table 1 and the Stability section.",
+            "block_id": [
+              "b0015",
+              "b0016",
+              "b0021"
+            ]
+          },
+          "model_name": {
+            "value": "Formation enthalpy (Eq. 2)"
+          },
+          "equation_role": {
+            "value": "Evaluate thermodynamic stability of Fe0.5Mn0.5Al"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "x, y, z (Fe, Mn, Al)"
+              },
+              "value": {
+                "value": "0.5, 0.5, 1"
+              },
+              "unit": null
+            },
+            {
+              "name": {
+                "value": "ΔH_r"
+              },
+              "value": {
+                "value": "-0.334"
+              },
+              "unit": {
+                "value": "eV·atom⁻¹"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "Formation enthalpy for Fe0.5Mn0.5Al is -0.334 eV·atom⁻¹ (Table 1)."
+          }
+        },
+        {
+          "source": {
+            "reason": "Cohesive energy formula (Eq. 1) and the Fe0.5Mn0.5Al value are given in Table 1.",
+            "block_id": [
+              "b0014",
+              "b0016",
+              "b0021"
+            ]
+          },
+          "model_name": {
+            "value": "Cohesive energy (Eq. 1)"
+          },
+          "equation_role": {
+            "value": "Evaluate thermodynamic stability of Fe0.5Mn0.5Al"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "E_coh"
+              },
+              "value": {
+                "value": "-6.843"
+              },
+              "unit": {
+                "value": "eV·atom⁻¹"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "Cohesive energy for Fe0.5Mn0.5Al is -6.843 eV·atom⁻¹ (Table 1)."
+          }
+        },
+        {
+          "source": {
+            "reason": "The VRH equations (Eqs. 4-9) are used to derive B, G, E and σ from C11, C12, C44; the Fe0.5Mn0.5Al values are listed in Table 2.",
+            "block_id": [
+              "b0034",
+              "b0035",
+              "b0036",
+              "b0037",
+              "b0038",
+              "b0039",
+              "b0040",
+              "b0049"
+            ]
+          },
+          "model_name": {
+            "value": "Voigt-Reuss-Hill (VRH) approximation (Eqs. 4-9)"
+          },
+          "equation_role": {
+            "value": "Calculate polycrystalline bulk modulus B, shear modulus G, Young's modulus E and Poisson's ratio σ from single-crystal elastic constants"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "C11"
+              },
+              "value": {
+                "value": "225.0"
+              },
+              "unit": {
+                "value": "GPa"
+              }
+            },
+            {
+              "name": {
+                "value": "C12"
+              },
+              "value": {
+                "value": "152.0"
+              },
+              "unit": {
+                "value": "GPa"
+              }
+            },
+            {
+              "name": {
+                "value": "C44"
+              },
+              "value": {
+                "value": "126.2"
+              },
+              "unit": {
+                "value": "GPa"
+              }
+            },
+            {
+              "name": {
+                "value": "B"
+              },
+              "value": {
+                "value": "176.3"
+              },
+              "unit": {
+                "value": "GPa"
+              }
+            },
+            {
+              "name": {
+                "value": "G"
+              },
+              "value": {
+                "value": "77.2"
+              },
+              "unit": {
+                "value": "GPa"
+              }
+            },
+            {
+              "name": {
+                "value": "E"
+              },
+              "value": {
+                "value": "202.1"
+              },
+              "unit": {
+                "value": "GPa"
+              }
+            },
+            {
+              "name": {
+                "value": "σ"
+              },
+              "value": {
+                "value": "0.309"
+              },
+              "unit": null
+            }
+          ],
+          "model_note": {
+            "value": "Elastic constants and moduli for Fe0.5Mn0.5Al from Table 2."
+          }
+        },
+        {
+          "source": {
+            "reason": "The Vickers hardness model (Eq. 10) and the Fe0.5Mn0.5Al value are given in Table 2 and the Mechanical properties section.",
+            "block_id": [
+              "b0045",
+              "b0046",
+              "b0047",
+              "b0049"
+            ]
+          },
+          "model_name": {
+            "value": "Vickers hardness empirical model (Eq. 10)"
+          },
+          "equation_role": {
+            "value": "Estimate Vickers hardness from shear modulus and Pugh ratio"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "H_V"
+              },
+              "value": {
+                "value": "6.7"
+              },
+              "unit": {
+                "value": "GPa"
+              }
+            },
+            {
+              "name": {
+                "value": "k = G/B"
+              },
+              "value": {
+                "value": "0.438 (derived from G/B)"
+              },
+              "unit": null
+            }
+          ],
+          "model_note": {
+            "value": "H_V = 2(k^2 G)^0.585 - 3; Fe0.5Mn0.5Al H_V = 6.7 GPa (Table 2)."
+          }
+        },
+        {
+          "source": {
+            "reason": "The anisotropy equations (Eqs. 11-14) and the Fe0.5Mn0.5Al values are given in Table 3 and the Mechanical anisotropy section.",
+            "block_id": [
+              "b0054",
+              "b0055",
+              "b0056",
+              "b0057",
+              "b0058",
+              "b0051"
+            ]
+          },
+          "model_name": {
+            "value": "Anisotropy indices (Eqs. 11-14)"
+          },
+          "equation_role": {
+            "value": "Quantify elastic anisotropy"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "A^U"
+              },
+              "value": {
+                "value": "2.06"
+              },
+              "unit": null
+            },
+            {
+              "name": {
+                "value": "A_B"
+              },
+              "value": {
+                "value": "0"
+              },
+              "unit": null
+            },
+            {
+              "name": {
+                "value": "A_G"
+              },
+              "value": {
+                "value": "0.171"
+              },
+              "unit": null
+            },
+            {
+              "name": {
+                "value": "A1 = A2 = A3"
+              },
+              "value": {
+                "value": "3.46"
+              },
+              "unit": null
+            }
+          ],
+          "model_note": {
+            "value": "Anisotropy indices for Fe0.5Mn0.5Al from Table 3."
+          }
+        },
+        {
+          "source": {
+            "reason": "The Debye temperature and sound velocity equations (Eqs. 15-18) and the Fe0.5Mn0.5Al values are given in Table 4.",
+            "block_id": [
+              "b0066",
+              "b0070",
+              "b0071",
+              "b0072",
+              "b0073",
+              "b0069"
+            ]
+          },
+          "model_name": {
+            "value": "Debye temperature and sound velocities (Eqs. 15-18)"
+          },
+          "equation_role": {
+            "value": "Calculate Debye temperature and sound velocities from elastic moduli and density"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "ρ"
+              },
+              "value": {
+                "value": "5678.2"
+              },
+              "unit": {
+                "value": "kg·m⁻³"
+              }
+            },
+            {
+              "name": {
+                "value": "v_l"
+              },
+              "value": {
+                "value": "7012.6"
+              },
+              "unit": {
+                "value": "m·s⁻¹"
+              }
+            },
+            {
+              "name": {
+                "value": "v_s"
+              },
+              "value": {
+                "value": "3687.3"
+              },
+              "unit": {
+                "value": "m·s⁻¹"
+              }
+            },
+            {
+              "name": {
+                "value": "v_m"
+              },
+              "value": {
+                "value": "4123.3"
+              },
+              "unit": {
+                "value": "m·s⁻¹"
+              }
+            },
+            {
+              "name": {
+                "value": "ΘD"
+              },
+              "value": {
+                "value": "533.3"
+              },
+              "unit": {
+                "value": "K"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "Sound velocities and Debye temperature for Fe0.5Mn0.5Al from Table 4."
+          }
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Optimized cubic lattice parameter for Fe0.5Mn0.5Al: a = b = c = 0.578 nm (Table 1).",
+    "Thermodynamic stability: cohesive energy E_coh = -6.843 eV·atom⁻¹ and formation enthalpy ΔH_r = -0.334 eV·atom⁻¹ (Table 1); both negative, indicating thermal stability.",
+    "Elastic constants (Table 2): C11 = 225.0 GPa, C12 = 152.0 GPa, C44 = 126.2 GPa. Fe0.5Mn0.5Al has the lowest C11 and C44 and the highest C12 among the Fe-containing Fe1-xMnxAl compounds.",
+    "Elastic moduli (Table 2): bulk modulus B = 176.3 GPa, shear modulus G = 77.2 GPa, Poisson's ratio σ = 0.309, B/G = 2.28 (dimensionless). B/G > 1.75 indicates ductile behavior.",
+    "Anisotropy (Table 3): universal anisotropic index A^U = 2.06, A_B = 0, A_G = 0.171, shear anisotropic factors A1 = A2 = A3 = 3.46. Fe0.5Mn0.5Al has the largest A^U among the Fe-containing compounds (strongest elastic anisotropy among them).",
+    "Bonding/metallic character: Fe0.5Mn0.5Al has the highest B/G ratio (2.28) and lowest Debye temperature (533.3 K) among the Fe-containing Fe1-xMnxAl compounds, indicating the strongest metallic character and weakest covalent bonds among them (Table 4 and text b0075).",
+    "Text statement (b0047): Fe0.5Mn0.5Al has the lowest C11 (225.0 GPa), maximum C12, minimum C44, minimum E (202.1 GPa) and maximum Poisson's ratio, which the text describes as the highest hardness and best ductility among the Fe1-xMnxAl compounds (note: Table 2 lists its H_V = 6.7 GPa, the lowest hardness value among the Fe-containing alloys)."
+  ]
+}

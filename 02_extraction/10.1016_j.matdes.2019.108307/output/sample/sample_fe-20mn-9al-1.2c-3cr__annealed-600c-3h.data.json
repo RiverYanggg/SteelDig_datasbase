@@ -1,0 +1,332 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-9al-1.2c-3cr__annealed-600c-3h",
+      "paper_id": "10.1016_j.matdes.2019.108307",
+      "alloy_id": "alloy_fe-20mn-9al-1.2c-3cr",
+      "process_id": "proc_annealed-600c-3h",
+      "sample_label": "annealed 3Cr",
+      "aliases": [
+        "3Cr annealed"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "cold-crucible levitation melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "A 100 g alloy ingot was prepared by melting 99.99% pure iron, 99.9% pure manganese, 99.9% pure aluminum, 99.9% pure chromium and 99.8% high-purity graphite. This alloy is the 3Cr composition (Fe-20Mn-9Al-1.2C-3Cr)."
+    },
+    {
+      "processing_step_id": "step_centrifugal_casting",
+      "sequence": "2",
+      "type": "casting / solidification",
+      "method": "centrifugal casting under near-rapid solidification",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "argon atmosphere",
+      "cooling_medium": "copper mold rotating at 600 rpm",
+      "heating_or_cooling_rate": "1–1×10^4 K/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "The metal ingot was remelted by induction melting and poured into a copper mold rotating at 600 rpm; as-cast steel strips with size 80 mm × 60 mm × 2.5 mm were obtained.",
+        "block_id": [
+          "b0023"
+        ]
+      }
+    },
+    {
+      "processing_step_id": "step_annealing_600c_3h",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": "600",
+      "temperature_unit": "°C",
+      "duration": "3 h",
+      "atmosphere": "vacuum (tubular vacuum furnace)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Annealing at 600 °C for 3 h was chosen because it promotes precipitation of κ-carbides without coarsening, giving better comprehensive mechanical properties. These strips are referred as 'annealed steel strips'."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_annealed-3cr",
+      "overall_structure": "Austenite-based duplex structure: γ-austenite matrix with irregularly shaped δ-ferrite distributed within it. Nano-scale κ-carbides are precipitated in the γ-austenite and an ordered DO3 phase forms in the δ-ferrite. Annealing at 600 °C for 3 h collapses the 43.5–45.0° double peak into a single peak, i.e. almost all the ferrite transforms into the ordered DO3 phase.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_annealed-3cr_gamma_austenite",
+          "region": "γ-austenite matrix",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "γ-austenite",
+              "crystal_structure": "FCC (austenite)",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "perovskite-type, ideal stoichiometry (Fe,Mn)3AlC",
+              "volume_fraction": "4%",
+              "morphology": "nano-scale particles",
+              "grain_size": "4 nm",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "kappa_carbide_annealed_3cr",
+              "type": "κ-carbide",
+              "size": {
+                "value": "4",
+                "unit": "nm"
+              },
+              "distribution": "Precipitated in γ-austenite; dark-field (001) images show a clearly lower particle density than in the annealed 0Cr strip (7%/8 nm). Annealing at 600 °C promotes precipitation and growth of κ-carbides.",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_annealed-3cr_delta_ferrite",
+          "region": "irregularly shaped δ-ferrite distributed in the γ-austenite matrix",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "BCC (δ-ferrite)",
+              "volume_fraction": "14%",
+              "morphology": "blocky / irregular",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "DO3 ordered phase",
+              "crystal_structure": "body centered cubic, space group Fm3m, a = 0.565 nm",
+              "volume_fraction": null,
+              "morphology": "ordered phase within δ-ferrite (XRD: 43.5–45.0° double peak collapses to a single peak on annealing; single-peak intensity increases with Cr content)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_annealed-3cr",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_gamma_kappa",
+          "microstructure_id": "micro_annealed-3cr_gamma_austenite",
+          "phase_1_name": "γ-austenite",
+          "phase_2_name": "κ-carbide",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "int_dislocation_kappa_annealed3cr",
+          "microstructure_id": "micro_annealed-3cr_gamma_austenite",
+          "interaction_type": "dislocation–κ-carbide interaction (planar slip)",
+          "qualitative_or_quantitative_description": "Nano-scale κ-carbides act as reinforcing phases hindering dislocation glide by providing an energy barrier; the decrease of κ-carbides caused by Cr addition contributes to the formation of dislocations and increases the density of the slip bands. Glide-plane softening occurs when dislocations shear the short-range-ordered κ-carbides."
+        }
+      ],
+      "slip_behavior": "For the annealed strips the strain hardening rate is lower than that of the corresponding as-cast strips. A nearly stable platform is observed in the strain hardening rate curve of the annealed 3Cr steel strip, in contrast to the clear double-hump feature of the annealed 0Cr strip, attributed to the lower number of nano-scale κ-carbides at the early strain stage. Slip bands form at the early strain stage and microbands at the final strain stage (double hardening).",
+      "phase_evolution": "Annealing at 600 °C for 3 h changes the 43.5–45.0° double peak into a single peak, indicating almost all the ferrite transforms into the ordered DO3 phase; the single-peak intensity increases with Cr content in the annealed strips, indicating the DO3 content does increase.",
+      "interface_notes": "Annealing at 600 °C for 3 h promotes precipitation and growth of κ-carbides (annealed 0Cr: 7% and 8 nm; annealed 3Cr: 4% and 4 nm), increasing yield strength. Cr addition expands the solid solubility of Al and C, reducing the driving force for κ-carbide formation, so higher Cr gives less κ-carbide precipitation."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_annealed-3cr",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "2.5 × 10^-4 s^-1",
+        "specimen_geometry": "gage width 4 mm, gage length 12 mm",
+        "test_standard": "GB/T-228.1-2010",
+        "other_conditions": "Tensile tests performed at least 3 times by an MTS Criterion 44 Mechanical Property Tester"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "919 ± 5 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 5 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1033 ± 10 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 10 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "33 ± 4 %",
+              "unit": "%",
+              "uncertainty": "± 4 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve of the annealed 3Cr strip (Fig. 3b) rises gradually past 1000 MPa to ~33–36% strain; the annealed strips show lower strain hardening rate than the as-cast strips (Fig. 3d).",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            "A nearly stable platform is observed in the strain hardening rate curve of the annealed 3Cr steel strip (no distinct hump), unlike the annealed 0Cr strip which shows a clear double hump."
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.69",
+          "unit": "g/cm3"
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_annealed-3cr",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": [
+        {
+          "benchmark_alloy_id": "alloy_fe-20mn-9al-1.2c-3cr",
+          "benchmark_process_id": "proc_as-cast",
+          "benchmark_sample_id": null,
+          "comparison_metric": "yield strength (effect of 600 °C/3 h annealing)",
+          "improvement_percentage": "Annealing increased the yield strength of the 3Cr steel strip by 277 MPa (as-cast 642 MPa → annealed 919 MPa)"
+        }
+      ]
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_annealed3cr",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Rigaku, D/Max-2200, Cu target operated at 40 kV and 40 mA, graphite monochromator, λ = 0.154056 nm",
+      "measurement_conditions": "scanning angle 2θ = 30°–100°, continuous scanning at 4°/min",
+      "purpose": "Phase identification of the as-cast and annealed steel strips",
+      "key_findings": "Annealed strips show the 43.5–45.0° double peak collapsed into a single peak; the single-peak intensity increases from 0Cr to 6Cr, indicating the ordered DO3 content increases with Cr content."
+    },
+    {
+      "characterization_id": "char_sem_annealed3cr",
+      "microstructure_id": "micro_annealed-3cr_delta_ferrite",
+      "technique": "Scanning electron microscopy (SEM)",
+      "instrument_or_setup": "Phenom Pro",
+      "measurement_conditions": "after mechanical polishing and etching (3.3 vol.% nitric acid, 3.3 vol.% acetic acid, 0.1 vol.% hydrofluoric acid; etching time 3 s); photographs taken 0.5 mm from the strip surface along the thickness direction; phase fraction from ten positions using Image-Pro Plus",
+      "purpose": "Characterise microstructure and measure δ-ferrite volume fraction",
+      "key_findings": "Irregularly shaped δ-ferrite distributed in the γ-austenite matrix; annealed 3Cr shows multiple blocky δ-ferrite particles. δ-ferrite volume fraction of the annealed 3Cr strip is 14%."
+    },
+    {
+      "characterization_id": "char_tem_annealed3cr",
+      "microstructure_id": "micro_annealed-3cr_gamma_austenite",
+      "technique": "Transmission electron microscopy (TEM)",
+      "instrument_or_setup": "JEOL-2010F operated at 200 kV",
+      "measurement_conditions": "Specimens prepared by twin-jet electrolytic polishing at −30 °C and 30 V, with a mixed solution of 10% perchloric acid and 90% alcohol; BF images and SADP (dark-field from (001) superlattice reflection)",
+      "purpose": "Elucidate the nano-scale precipitated κ-carbide phase in the annealed steel strips",
+      "key_findings": "Superlattice reflection spots appear in the SADP along [110] from γ-austenite; DF images using (001) show a large number of nano-scale κ-carbides in the annealed strips. The annealed 3Cr strip has a κ-carbide volume fraction of 4% and average size 4 nm (lower density than annealed 0Cr)."
+    },
+    {
+      "characterization_id": "char_tensile_annealed3cr",
+      "microstructure_id": null,
+      "technique": "Tensile testing",
+      "instrument_or_setup": "MTS Criterion 44 Mechanical Property Tester",
+      "measurement_conditions": "Room temperature; constant strain rate 2.5 × 10^-4 s^-1; per GB/T-228.1-2010; gage width 4 mm, gage length 12 mm; at least 3 tests",
+      "purpose": "Measure the mechanical properties of the strips",
+      "key_findings": "Annealed 3Cr: YS 919 ± 5 MPa, UTS 1033 ± 10 MPa, TE 33 ± 4 % (Table 2); annealing raises YS by 277 MPa."
+    },
+    {
+      "characterization_id": "char_density_annealed3cr",
+      "microstructure_id": null,
+      "technique": "Gas displacement density measurement",
+      "instrument_or_setup": "AccuPyc II 1340 Gas Displacement Density Analyzer",
+      "measurement_conditions": null,
+      "purpose": "Measure the average density of the steel strips",
+      "key_findings": "Measured average density of the 3Cr steel strip is 6.69 g/cm3."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The product of ultimate tensile strength and total elongation (UTS × TE) for the annealed 3Cr steel strip is 34.1 GPa % (Table 2).",
+    "Annealing at 600 °C for 3 h increases the δ-ferrite volume fraction of the 3Cr strip from 12% (as-cast) to 14% (annealed).",
+    "The strain hardening rate curve of the annealed 3Cr steel strip shows a nearly stable platform, which is attributed to the small number of nano-scale κ-carbides (from the Cr addition) giving a higher early-stage strain hardening rate than the microband-hardening level.",
+    "Annealing at 600 °C for 3 h promotes the precipitation and growth of κ-carbides in the strips, which increases the yield strength; the higher the Cr content, the less the κ-carbide precipitation because Cr expands the solid solubility of Al and C.",
+    "For the annealed Cr-containing strips the strain hardening rate is lower than that of the corresponding as-cast strips (Fig. 3).",
+    "A double (slip-band and microband) hardening mechanism is proposed for the strain hardening of these low-density steel strips: slip bands act at the early strain stage and microbands at the final strain stage."
+  ]
+}

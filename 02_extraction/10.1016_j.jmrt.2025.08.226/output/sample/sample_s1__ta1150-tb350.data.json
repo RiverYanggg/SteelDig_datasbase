@@ -1,0 +1,397 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_s1__ta1150-tb350",
+      "paper_id": "10.1016_j.jmrt.2025.08.226",
+      "alloy_id": "alloy_s1",
+      "process_id": "proc_ta1150-tb350",
+      "sample_label": "S1, TA: 1150 °C, TB: 350 °C",
+      "aliases": [
+        "S1 TA1150/TB350",
+        "S1 austempered at 350 °C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "1",
+      "type": "casting",
+      "method": "vacuum arc furnace casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Steel blocks were cast via vacuum arc furnace."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "24 h",
+      "atmosphere": "inert argon protection",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Applied to all steels (shared schedule) to promote uniform composition and microstructure."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "step-by-step hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "slow cooling in the oven",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenized steel hot rolled step-by-step reducing thickness to ~11 mm, followed by slow cooling in the oven."
+    },
+    {
+      "processing_step_id": "step_waterjet_cutting",
+      "sequence": "4",
+      "type": "sample fabrication",
+      "method": "water jet cutting (OMAX 2626, Kent, Washington, USA)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Samples fabricated to accurate geometries with minimized thermal distortion."
+    },
+    {
+      "processing_step_id": "step_austenitization",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "austenitization (isothermal austenitizing hold)",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": "15 min",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": "10 K s⁻¹ (heating)",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Fixed austenitization temperature of 1150 °C applied to S1, S2, S4 and S5 in the dilatometer (Thermal cycle in Fig. 1a: S1, S2, S5: 1150 °C (15 min.)). Heated at 10 K s⁻¹."
+    },
+    {
+      "processing_step_id": "step_cooling_to_TB",
+      "sequence": "6",
+      "type": "cooling",
+      "method": "continuous cooling from austenitization to austempering temperature",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "controlled (dilatometer)",
+      "heating_or_cooling_rate": "100 K s⁻¹",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cooling rate 100 K s⁻¹ is sufficiently fast to suppress intermediate phase transformations and ensure fine bainitic transformation."
+    },
+    {
+      "processing_step_id": "step_austempering",
+      "sequence": "7",
+      "type": "heat treatment",
+      "method": "austempering (isothermal bainitic hold)",
+      "temperature": "350 °C",
+      "temperature_unit": "°C",
+      "duration": "1600 s (transformation finish time Bt)",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Austempering at TB = 350 °C; bainitic transformation completed in ~1600 s for S1 (incubation time 100 s), held just above measured Ms = 277 °C to obtain a nano-bainitic microstructure."
+    },
+    {
+      "processing_step_id": "step_final_cooling",
+      "sequence": "8",
+      "type": "cooling",
+      "method": "final cooling after isothermal bainitic hold",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Heat-treatment cycle ends with final cooling after the isothermal bainitic hold (Fig. 1a)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_s1_ta1150_tb350",
+      "overall_structure": "Nano-bainitic (nB) microstructure of S1 after austenitizing at 1150 °C; LOM at 1150 °C confirms an αp-free (ferrite-free) matrix. After austempering at 350 °C the structure consists of nano-scale bainitic ferrite laths (nB Type 1 and Type 2) with inter-/intra-sheaf blocky retained austenite and cementite-like (Fe,M)xCy precipitates near γr–bainitic ferrite boundaries.",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_s1_ta1150_tb350",
+          "region": "bulk (optical/SEM field of view)",
+          "related_sequence": "7",
+          "phases_present": [
+            {
+              "phase_name": "bainitic ferrite (αb)",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "nano-scale laths/needles (nB Type 1 and Type 2)",
+              "grain_size": "55 nm (mean true lamellar thickness Lt(t))",
+              "texture": null
+            },
+            {
+              "phase_name": "retained austenite (γr)",
+              "crystal_structure": "fcc",
+              "volume_fraction": "34 %",
+              "morphology": "blocky γr regions between bainitic sheaves (alongside nB types at 350 °C)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "(Fe,M)xCy carbide (cementite-like; M = Si, Mo)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "rounded/equiaxed particles",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "microstrain (XRD Rietveld micro-strain)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": "εα = 0.45 % (bainitic ferrite), εγ = 0.35 % (retained austenite); for S1 at 350 °C εα was notably higher (0.30–0.45 %), indicating clearer heterogeneous dislocation distribution"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "55 nm",
+              "unit": "nm"
+            },
+            "grain_size_distribution": "standard deviation of Lt(t) = 23 nm (broader thickness range at 350 °C)",
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_femxcy_s1",
+              "type": "(Fe,M)xCy carbide (cementite-like, modified by Si and Mo)",
+              "size": null,
+              "distribution": "located near the γr–bainitic ferrite phase boundaries; formed primarily during cooling/prior processing (above the bainitic hold temperature); no micro-void formation observed",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_s1_ta1150_tb350",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_s1_ab_gr",
+          "microstructure_id": "micro_s1_ta1150_tb350",
+          "phase_1_name": "bainitic ferrite",
+          "phase_2_name": "retained austenite (γr)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "Austenitizing at 1150 °C dissolves carbides and suppresses polygonal ferrite (αp-free per LOM at 1150 °C); on cooling at 100 K s⁻¹ (Fe,M)xCy nucleates above the bainitic hold temperature; during austempering at 350 °C bainitic ferrite laths (nB Type 1/Type 2) grow with blocky retained austenite forming between sheaves, giving an incomplete-reaction structure with high Vγ (34 %).",
+      "interface_notes": "(Fe,M)xCy precipitates are located near the γr–bainitic ferrite phase boundaries and are presumed to have negligible influence on tensile properties (no micro-void formation). No explicit interfacial coherency data reported for S1."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_s1_ta1150_tb350",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "ASTM E8 sub-size round specimens (12.5 mm gauge length, 2.5 mm diameter, 7 mm shoulder length)",
+        "test_standard": "ASTM E8",
+        "other_conditions": "Tensile specimens heat-treated in the DIL 805A dilatometer applying the thermal cycle of Fig. 1(a); universal testing machine Zwick/Roell (250 kN load cell). Room temperature not explicitly stated."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "~1380 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "8.7 %",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk",
+            "value": "464",
+            "scale": "HV30",
+            "unit": "HV30",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_s1_ta1150_tb350",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_s4",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Product of strength and elongation (PSE): S1 ~12,000 MPa·% vs S4 ~13,600 MPa·% at TA 1150 °C (S4 at TB 320 °C)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_dilatometry_s1",
+      "microstructure_id": null,
+      "technique": "dilatometry (RLC vs time and RLC vs temperature) and Ms tangent-intersection analysis",
+      "instrument_or_setup": "DIL 805A dilatometer (TA Instruments, New Castle, DE, USA); cylindrical specimens (∅5 x 10 mm³)",
+      "measurement_conditions": "heating 10 K s⁻¹, austenitizing 1150 °C/15 min, cooling 100 K s⁻¹",
+      "purpose": "Determine TA, Ms and the bainitic transformation finish time (Bt) from the onset of the RLC plateau",
+      "key_findings": "For S1 Ms = 277 °C; at TB 350 °C bainitic transformation completed in ~1600 s with an incubation time of 100 s."
+    },
+    {
+      "characterization_id": "char_lom_s1",
+      "microstructure_id": "micro_s1_ta1150_tb350",
+      "technique": "light optical microscopy (LOM)",
+      "instrument_or_setup": "Carl Zeiss AG (Jena, Germany); 6 % Nital etching",
+      "measurement_conditions": "LOM at 1050 °C benchmark and at selected TA 1150 °C for S1",
+      "purpose": "Verify elimination of polygonal ferrite (αp) after austenitization",
+      "key_findings": "S1 shows αp at 1050 °C but is αp-free at 1150 °C (Fig. 3a)."
+    },
+    {
+      "characterization_id": "char_xrd_s1",
+      "microstructure_id": "micro_s1_ta1150_tb350",
+      "technique": "X-ray diffraction (XRD) with Rietveld refinement",
+      "instrument_or_setup": "Malvern Panalytical Empyrean diffractometer, Cu Kα (40 kV/40 mA), PIXcel 1D detector",
+      "measurement_conditions": "2θ = 30–100°; peaks (111)γ, (110)α, (200)γ, (200)α, (220)γ, (211)α, (311)γ, (220)α; ASTM E975-13",
+      "purpose": "Determine retained-austenite volume fraction (Vγ) and phase micro-strains (εγ, εα)",
+      "key_findings": "For S1 (Fig. 2a example) Vγ = 34 % with εγ = 0.35 % and εα = 0.45 % at TB 350 °C."
+    },
+    {
+      "characterization_id": "char_sem_edx_s1",
+      "microstructure_id": "micro_s1_ta1150_tb350",
+      "technique": "scanning electron microscopy (SEM) and energy-dispersive X-ray spectroscopy (EDX)",
+      "instrument_or_setup": "Carl Zeiss AG SEM and Oxford Instruments EDX; gold sputter-coated etched samples",
+      "measurement_conditions": "SEM of S1 at TB 300 °C and 350 °C; bainite thickness measured by ImageJ (100 measurements from 10 images)",
+      "purpose": "Analyze bainitic lamellar thickness and precipitate (Fe,M)xCy morphology/composition",
+      "key_findings": "S1 at 350 °C shows nB Type 1/Type 2 with blocky γr and rounded (Fe,M)xCy particles near γr–bainitic ferrite boundaries; no κ-carbide plates observed; EDX indicates Si and Mo within the carbides."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_matcalc_s1",
+      "simulation_method": "MatCalc thermodynamic equilibrium and precipitation-kinetics (TTP) calculations",
+      "software_used": "MatCalc (Version 6.01 (rel 1.003), Institute of Materials Science and Technology, TU Wien, Wien, Austria)",
+      "potential_model_or_database": "Phases considered: fcc, bcc, liquid, κ-carbide, hcp carbide, AlN, TiCN–TiMoC system; Ti-Mo-C and (Fe,M)xCy carbide systems kinetically simulated via a precipitation-kinetics model based on heterogeneous nucleation theory (dislocation and grain-boundary nucleation sites, ortho-equilibrium transformation) with volumetric misfit considered; κ-carbides treated as fixed phase fractions.",
+      "boundary_and_initial_conditions": "Applied austenitization TA 1150 °C; cooling rate 100 K s⁻¹; austempering at TB 350 °C (and 300 °C) for the bainitic transformation.",
+      "validation_against_experiment": "MatCalc ferrite-free TA (991 °C) and carbide-dissolution Tcd (1103 °C) for S1 were compared against dilatometric/measured TA (1062 °C) and LOM; (1−Vc)=0.78 used with XRD. Simulated precipitation of (Fe,M)xCy above the bainitic hold temperature agreed with SEM observations.",
+      "analytical_models": [
+        {
+          "model_name": "Retained-austenite volume fraction (Eq. 1)",
+          "equation_role": "Compute Vγ from integrated α/γ XRD peak intensities and carbide fraction (1−Vc)",
+          "parameters": [
+            {
+              "name": "Vγ",
+              "value": "34",
+              "unit": "%"
+            },
+            {
+              "name": "(1−Vc)",
+              "value": "0.78",
+              "unit": null
+            }
+          ],
+          "model_note": "Vγ = (1−Vc)(Iγ/Rγ)/[(Iα/Rα)+(Iγ/Rγ)], where Iγ, Iα are integrated intensities and Rγ, Rα the theoretical relative intensities."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "S1 (TA 1150 °C) measured martensite-start temperature Ms = 277 °C (Table 2 / Fig. 4 / Fig. 5a).",
+    "MatCalc-predicted ferrite-free austenitizing temperature for S1 = 991 °C; measured TA = 1062 °C; applied TA = 1150 °C; carbide-dissolution temperature Tcd = 1103 °C (Table 2, Fig. 4a).",
+    "S1 at 1150 °C was αp-free (polygonal ferrite eliminated) as confirmed by LOM (Fig. 3a).",
+    "Bainitic transformation finish time Bt for S1 at TB 350 °C ≈ 1600 s with an incubation time of 100 s (Section 3.2; Fig. 1b, Fig. 6c).",
+    "Product of strength and elongation (PSE) for S1 at TB 350 °C ≈ 12,000 MPa·% (Section 3.3).",
+    "S1 at TB 300 °C reached the maximum Rp0.2 of 1225 MPa among all samples; this value corresponds to the S1 TA1150/TB300 condition (sibling), not to the TB 350 °C sample.",
+    "Fig. 7 hardness series (left to right: 464, 497, 465, 500, 443, 457, 464, 479, 467, 459, 493 HV30) is assigned first to S1 TA1150/TB350; this ordering is inferred from the categorical axis and the statement that HV30 is higher at lower TB (except S4).",
+    "For S1, Vγ rose to 34 % at the higher TB (350 °C) versus 27 % at the lower TB (300 °C), showing a more pronounced incomplete-reaction character at 350 °C.",
+    "S1 and S2 exhibit only minor differences (~0.1 wt.% C variation) with negligible effect on the overall mechanical response.",
+    "MatCalc TTP (Fig. 8a) indicates (Fe,M)xCy precipitates unavoidably during cooling between approximately 700 °C and 1150 °C for S1; these precipitates formed above the bainitic hold temperature and had negligible influence on tensile properties."
+  ]
+}

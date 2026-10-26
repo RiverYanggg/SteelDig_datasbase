@@ -1,0 +1,115 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_dp590__dp590-hot-rolled",
+      "paper_id": "10.1016_j.actamat.2025.120962",
+      "alloy_id": "alloy_dp590",
+      "process_id": "proc_dp590-hot-rolled",
+      "sample_label": "DP590-1",
+      "aliases": "hot-rolled dual-phase steel DP590-1"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_hot_rolling",
+      "sequence": "1",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "热轧为论文报告的关键变形工艺；具体温度、变形量、冷却介质等参数未报告。"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_dp590_1",
+      "overall_structure": "polycrystalline & multiphase dual-phase steel (hot-rolled); martensite precipitates appear as dark low-gray islands outlined by black boundaries, most appearing blurred",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_dp590_1_martensite",
+          "region": null,
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "martensite precipitates",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "dark low-gray precipitates outlined by black boundaries; most appear blurred",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_martensite_dp590_1",
+              "type": "martensite precipitates",
+              "size": null,
+              "distribution": "irregularly distributed low-gray blocky/elongated islands in a darker matrix",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_dp590_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_dp590_1_martensite_matrix",
+          "microstructure_id": "micro_dp590_1_martensite",
+          "phase_1_name": "martensite precipitates",
+          "phase_2_name": "surrounding matrix (name unreported)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": null,
+      "interface_notes": "target phase boundaries intermingled with surrounding areas, making segmentation difficult"
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_sem_dp590_1",
+      "microstructure_id": "micro_dp590_1_martensite",
+      "technique": "SEM (scanning electron microscopy)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "real size 36.56 × 36.56 µm; resolution 512 × 512 pixels; 23 images",
+      "purpose": "imaging hot-rolled martensite precipitates for phase segmentation",
+      "key_findings": "precipitates exhibit low gray values and are contoured by black boundaries; most appear blurred"
+    },
+    {
+      "characterization_id": "char_matsam_segmentation_dp590_1",
+      "microstructure_id": "micro_dp590_1_martensite",
+      "technique": "MatSAM training-free image segmentation (phase segmentation)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "training-free; compared with SAM, OTSU and Adaptive thresholding",
+      "purpose": "evaluate phase segmentation performance of martensite precipitates",
+      "key_findings": "MatSAM IoU 0.77 (±8.2%), F1 0.79 (±8.3%), Recall 0.81 (±14.7%); SAM IoU 0.75, F1 0.85, Recall 0.66; OTSU IoU 0.64, F1 0.68, Recall 0.91; Adaptive IoU 0.48, F1 0.49, Recall 0.65"
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "DP590-1 is an in-house (dashed-border) SEM dataset of hot-rolled dual-phase steel, classified as polycrystalline & multiphase for phase segmentation; it contains 23 images at 512 × 512 pixels with a real field of view of 36.56 × 36.56 µm (b0024; figure_001; b0036).",
+    "Segmentation comparison on DP590-1 (Table 3): MatSAM IoU 0.77 (±8.2%), F1 0.79 (±8.3%), Recall 0.81 (±14.7%); SAM IoU 0.75 (±13.4%), F1 0.85 (±9.2%), Recall 0.66 (±26.0%); OTSU IoU 0.64 (±9.7%), F1 0.68 (±11.3%), Recall 0.91 (±8.6%); Adaptive threshold IoU 0.48 (±5.3%), F1 0.49 (±8.9%), Recall 0.65 (±10.0%); no specialist method reported for DP590-1 (b0079).",
+    "MatSAM's IoU of 0.77 on DP590-1 is 13.0% higher than OTSU (0.64) and outperforms SAM (0.75) by 2.0% (b0072).",
+    "In Fig. 7(f), DP590-1 is a blurred grayscale image with grey blocky/elongated islands in a darker matrix; MatSAM extracts the islands as white blobs on black (figure_007)."
+  ]
+}

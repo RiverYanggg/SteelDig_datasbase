@@ -1,0 +1,141 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__ma-25h",
+      "paper_id": "10.1016_j.msea.2023.144776",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_ma-25h",
+      "sample_label": "25 h milled",
+      "aliases": [
+        "25 h",
+        "milled 25 h"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_ma_25h",
+      "sequence": "1",
+      "type": "mechanical processing",
+      "method": "mechanical alloying (high-energy planetary ball milling)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": "25 h",
+      "atmosphere": "toluene as process control reagent (to avoid oxidation)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Milled in planetary ball mill (Model no. PM 400/2, Retsch) at 200 rpm; ball to powder ratio 10:1; tungsten carbide (WC) vials and WC balls; milling stopped intermittently for 20 min after every 1 h to avoid overheating."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_25h_ma",
+      "overall_structure": "Multiphase solid solution formed after 25 h of milling: BCC (ferrite, major phase) + γ-brass type + trace amount of undissolved Si; nanocrystalline.",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_25h_powder",
+          "region": null,
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "BCC (ferrite)",
+              "crystal_structure": "cI2 (BCC); a = 0.286 nm (JCPDS# 00-006-0696)",
+              "volume_fraction": "74.4 (weight fraction, %)",
+              "morphology": null,
+              "grain_size": "17 nm (Rietveld crystallite size)",
+              "texture": null
+            },
+            {
+              "phase_name": "γ-brass type",
+              "crystal_structure": "cI52; a = 0.872 nm (JCPDS# 01-078-2831)",
+              "volume_fraction": "21.0 (weight fraction, %)",
+              "morphology": null,
+              "grain_size": "13 nm (Rietveld crystallite size)",
+              "texture": null
+            },
+            {
+              "phase_name": "Si (trace, undissolved)",
+              "crystal_structure": "cF8 (diamond); a = 0.543 nm",
+              "volume_fraction": "4.60 (weight fraction, %)",
+              "morphology": null,
+              "grain_size": "20 nm (Rietveld crystallite size)",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "1.94 × 10¹⁸ m⁻² (BCC phase)",
+              "lattice_distortion": null
+            },
+            {
+              "type": "lattice distortion (microstrain)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": "10,849 × 10⁻⁴ (BCC); 13,731 × 10⁻⁴ (γ-brass type); 10,106 × 10⁻⁴ (Si)"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "17 (BCC); 13 (γ-brass type); 20 (Si)",
+              "unit": "nm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_rietveld_25h",
+      "microstructure_id": "micro_25h_powder",
+      "technique": "High resolution X-ray diffraction (XRD) with Rietveld refinement",
+      "instrument_or_setup": "EMPYREAN, PANALYTICAL; Co-Kα source; operating voltage 40 kV; current 40 mA; scan rate 5° min⁻¹",
+      "measurement_conditions": "2θ range 20°-100°",
+      "purpose": "To study the alloying behavior/phase evolution during milling and to determine the lattice parameter, phase fraction, crystallite size, microstrain and dislocation density of the 25 h milled powder.",
+      "key_findings": "Solid solution formed after 25 h of milling: BCC (a = 0.286 nm) + γ-brass type (a = 0.872 nm) + trace Si; refined with GoF = 1.08 and χ² = 1.18."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_rietveld_25h",
+      "simulation_method": "Rietveld refinement",
+      "software_used": "GSAS-II (general structural analysis system)",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Background fitted with Chebyschev-I background function with 10 coefficients; peak profiles fitted from broadening of Lorentzian and Gaussian component of pseudo-Voigt profile function; average crystallite size and isotropic microstrain based on uniaxial model; least-square minimization to achieve acceptable goodness of fit.",
+      "validation_against_experiment": "Goodness of fit for the 25 h refinement: GoF = 1.08, χ² = 1.18",
+      "analytical_models": [
+        {
+          "model_name": "Dislocation density from microstrain",
+          "equation_role": "ρ_dd = (3√(2π) <ε²>^½) / (t·b), where b = (√3/2)a for BCC, t = crystallite size in nm, a = lattice parameter in nm, ε = microstrain",
+          "parameters": [],
+          "model_note": "Used to calculate the BCC dislocation density (1.94 × 10¹⁸ m⁻²) of the 25 h milled powder."
+        },
+        {
+          "model_name": "Microstrain from peak broadening",
+          "equation_role": "β = 4ε tanθ, where β is FWHM and θ is the Bragg angle",
+          "parameters": [],
+          "model_note": "Used to obtain the microstrain of each phase of the 25 h milled powder (Table 2)."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The solid solution has been formed after 25 h of milling; the phases formed are BCC (a = 0.286 nm; JCPDS# 00-006-0696) and γ-brass type (a = 0.872 nm; JCPDS# 01-078-2831). Milling was extended to 35 h for further nanostructuring (b0038).",
+    "Alloying with milling time is related to diffusion of low-melting-point elements into the matrix of higher-melting-point elements; Al has the highest alloying rate (its XRD intensity diminishes after 15 h), and after 20 h the intense Ni and Mn peaks are no longer evident (b0038).",
+    "The crystallite size of Si decreased from 20 nm (25 h) to 14 nm (35 h) as milling extended (b0040).",
+    "The lattice parameter of the major BCC phase formed during milling is close to ferritic iron (α-Fe) acting as the host lattice (b0058)."
+  ]
+}

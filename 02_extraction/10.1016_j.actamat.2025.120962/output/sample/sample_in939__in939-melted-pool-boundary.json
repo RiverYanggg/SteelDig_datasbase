@@ -1,0 +1,221 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_in939__in939-melted-pool-boundary",
+      "paper_id": "10.1016_j.actamat.2025.120962",
+      "alloy_id": "alloy_in939",
+      "process_id": "proc_in939-melted-pool-boundary",
+      "sample_label": "IN939-1",
+      "aliases": {
+        "value": "IN939-1 (melted pool boundary)"
+      }
+    }
+  ],
+  "processing_steps": [],
+  "structures": [
+    {
+      "source": {
+        "reason": "Structure information for IN939-1 is taken from the extended-experiment description (b0101, b0102) and the Fig. 10 image description (figure_010).",
+        "block_id": [
+          "b0101",
+          "b0102",
+          "figure_010"
+        ]
+      },
+      "structure_id": "structure_in939_1_melted_pool_boundary",
+      "overall_structure": {
+        "value": "Grayscale micrograph of IN939 nickel-based superalloy whose main focus is the melted pool boundary; the field is dominated by large elongated lenticular/plate-shaped features separated by thin boundaries, and the extracted key-structure binary shows a thin white boundary skeleton with black interiors.",
+        "source": {
+          "reason": "b0101 identifies IN939-1 as the melted pool boundary sample; b0102 states the melted pool boundary is the main focus and is reasonably recognized and clearly separated; figure_010 (third row, panel c) describes the IN939-1 micrograph as dominated by large elongated lenticular/plate-shaped features whose binary reduces to a thin white boundary skeleton.",
+          "block_id": [
+            "b0101",
+            "b0102",
+            "figure_010"
+          ]
+        }
+      },
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "The microstructure record describes the IN939-1 melted pool boundary micrograph shown in Fig. 10(c), per b0101, b0102 and figure_010.",
+            "block_id": [
+              "b0101",
+              "b0102",
+              "b0109",
+              "figure_010"
+            ]
+          },
+          "microstructure_id": "microstructure_in939_1_melted_pool_boundary",
+          "region": {
+            "value": "melted pool boundary",
+            "source": {
+              "reason": "b0101/b0102/b0109 identify the IN939-1 image as the melted pool boundary sample and state the melted pool boundary is the main focus.",
+              "block_id": [
+                "b0101",
+                "b0102",
+                "b0109"
+              ]
+            }
+          },
+          "related_sequence": null,
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "source": {
+        "reason": "Interface-level information corresponds to the melted pool boundary feature of IN939-1 described in b0102.",
+        "block_id": [
+          "b0102"
+        ]
+      },
+      "interface_set_id": "interface_in939_1_melted_pool_boundary",
+      "phase_interfaces": [],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": null,
+      "interface_notes": {
+        "value": "The melted pool boundary is the main focus of the IN939-1 micrograph; MatSAM reasonably recognizes and clearly separates the melted pool boundaries.",
+        "source": {
+          "reason": "b0102 states that for superalloy IN939-1 the melted pool boundary is the main focus and that the boundaries of melted pools are reasonably recognized and clearly separated.",
+          "block_id": [
+            "b0102"
+          ]
+        }
+      }
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "Characterization/analysis of IN939-1 consists of MatSAM segmentation described in the extended-experiment section (b0101, b0102) and Fig. 10 (figure_010).",
+        "block_id": [
+          "b0101",
+          "b0102",
+          "figure_010"
+        ]
+      },
+      "characterization_id": "char_matsam_in939_1",
+      "microstructure_id": "microstructure_in939_1_melted_pool_boundary",
+      "technique": {
+        "value": "Microstructure image segmentation using MatSAM (training-free visual large model)",
+        "source": {
+          "reason": "b0101/b0102 describe the extended experiments applying MatSAM to the IN939-1 micrograph to extract the melted pool boundary.",
+          "block_id": [
+            "b0101",
+            "b0102"
+          ]
+        }
+      },
+      "instrument_or_setup": {
+        "value": "MatSAM, built on the Segment Anything Model (SAM)",
+        "source": {
+          "reason": "b0020 and b0100-b0103 describe MatSAM as the training-free SAM-based approach used to extract microstructures, applied to IN939-1 in Fig. 10(c).",
+          "block_id": [
+            "b0100",
+            "b0101",
+            "b0102"
+          ]
+        }
+      },
+      "measurement_conditions": {
+        "value": "Grayscale micrograph; no corresponding annotations provided",
+        "source": {
+          "reason": "b0101 states the extended-experiment images (including IN939-1) were not provided with annotations; figure_010 shows the IN939-1 panel as a grayscale micrograph.",
+          "block_id": [
+            "b0101",
+            "figure_010"
+          ]
+        }
+      },
+      "purpose": {
+        "value": "Identify and extract the melted pool boundary in the IN939-1 nickel-based superalloy micrograph",
+        "source": {
+          "reason": "b0102 states the melted pool boundary is the main focus for the IN939-1 micrograph.",
+          "block_id": [
+            "b0102"
+          ]
+        }
+      },
+      "key_findings": {
+        "value": "The melted pool boundaries are reasonably recognized and clearly separated; the extracted key-structure binary shows a thin white boundary skeleton with black interiors.",
+        "source": {
+          "reason": "b0102 reports reasonable recognition and clear separation of melted pool boundaries; figure_010 describes the resulting binary as a thin white boundary skeleton with black interiors.",
+          "block_id": [
+            "b0102",
+            "figure_010"
+          ]
+        }
+      }
+    }
+  ],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "Computational processing of IN939-1 is the MatSAM segmentation run described in the extensibility section (b0101-b0103) and Fig. 10.",
+        "block_id": [
+          "b0101",
+          "b0102",
+          "b0103",
+          "figure_010"
+        ]
+      },
+      "computation_id": "comp_matsam_in939_1",
+      "simulation_method": {
+        "value": "Training-free microstructure segmentation by MatSAM (SAM-based visual large model)",
+        "source": {
+          "reason": "MatSAM is the training-free SAM-based segmentation approach applied to the IN939-1 micrograph in the extended experiments (b0101, b0102).",
+          "block_id": [
+            "b0101",
+            "b0102"
+          ]
+        }
+      },
+      "software_used": {
+        "value": "MatSAM",
+        "source": {
+          "reason": "The extended experiments apply MatSAM to IN939-1 to extract the melted pool boundary (b0101, b0102).",
+          "block_id": [
+            "b0101",
+            "b0102"
+          ]
+        }
+      },
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": {
+        "value": "Structure-aware prompt points (ROI points merged with grid points) generated automatically guide the segmentation",
+        "source": {
+          "reason": "b0103 states MatSAM is prompted by structure-aware points and segments nearly all mentioned phases/regions, followed by mask filtering.",
+          "block_id": [
+            "b0103"
+          ]
+        }
+      },
+      "validation_against_experiment": {
+        "value": "No annotations available for IN939-1; segmentation quality assessed qualitatively via visual inspection of the overlay and key-structure binary.",
+        "source": {
+          "reason": "b0101 notes the extended-experiment images were not provided with annotations; b0102 and figure_010 report the visual result for IN939-1.",
+          "block_id": [
+            "b0101",
+            "b0102",
+            "figure_010"
+          ]
+        }
+      },
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "IN939-1 is one of six additional micrographs used in the extended experiments demonstrating MatSAM's extensibility/generalizability; these image samples were not provided with corresponding annotations.",
+    "The IN939-1 micrograph is grayscale and shows the melted pool boundary as large elongated lenticular/plate-shaped features separated by thin boundaries; the binary output reduces the melted pool boundary to a thin white boundary skeleton."
+  ]
+}

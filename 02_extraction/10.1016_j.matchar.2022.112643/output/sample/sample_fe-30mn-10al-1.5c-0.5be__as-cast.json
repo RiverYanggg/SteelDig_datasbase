@@ -1,0 +1,399 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-10al-1.5c-0.5be__as-cast",
+      "paper_id": "10.1016_j.matchar.2022.112643",
+      "alloy_id": "alloy_fe-30mn-10al-1.5c-0.5be",
+      "process_id": "proc_as-cast",
+      "sample_label": "0.5Be (as-cast)",
+      "aliases": [
+        "as-cast 0.5Be",
+        "0.5Be as-cast steel",
+        "as-cast Fe–30Mn–10Al–1.5C–0.5Be"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "Only processing step applicable to the as-cast terminal state of the 0.5Be alloy: vacuum induction melting/casting of the ingot.",
+        "block_id": [
+          "b0015",
+          "b0031"
+        ]
+      },
+      "processing_step_id": "step_vacuum_induction_melting",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "melting and casting"
+      },
+      "method": {
+        "value": "vacuum induction melting (ingot casting)"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": {
+        "value": "high-purity argon"
+      },
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Alloys were made of high-purity elements (Fe, Mn, Al, C and Be, 99.99%) and melted into alloy ingots in a vacuum induction melting furnace under a high-purity argon atmosphere. The obtained ingot has a diameter of 60 mm and a thickness of 30 mm. This is the terminal as-cast state: the as-cast Fe–Mn–Al–C steel was not given any heat treatment or thermal deformation, so no uniform microstructure is obtained.",
+        "source": {
+          "reason": "b0015 describes the vacuum induction melting of the ingots under high-purity argon with 60 mm diameter / 30 mm thickness, which is the only processing applied to the as-cast state; b0031 states that as-cast Fe–Mn–Al–C steel without heat treatment and thermal deformation cannot obtain a uniform microstructure. The later hot rolling at 1050 °C (17 passes, water cooling) belongs to the rolled samples, not to this as-cast sample.",
+          "block_id": [
+            "b0015",
+            "b0031"
+          ]
+        }
+      }
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_as-cast_0.5Be",
+      "overall_structure": {
+        "value": "As-cast 0.5Be steel is composed of a single austenite (γ) matrix plus a small amount of Be–Fe compound precipitates (Be11Fe and Be12Fe); no ferrite was detected by XRD. The matrix shows a cellular/dendritic solidification structure whose cell boundaries are decorated with dark, point-like beryllium compound particles. Be addition produces rod-like, needle-like and Chinese-character shaped compounds in the as-cast microstructure.",
+        "source": {
+          "reason": "b0028 states the phase composition of as-cast 0Be and 0.5Be steel is austenite (γ) + partial precipitates and that Be11Fe/Be12Fe peaks were observed in 0.5Be; b0030 notes rod-like, needle-like and text-shaped compounds appear in the as-cast microstructure because of Be addition; b0031 and figure_002 describe the black point compounds attached to the austenite matrix in the 0.5Be as-cast steel; b0093 notes no ferrite was observed by XRD when 0.5Be was added.",
+          "block_id": [
+            "b0028",
+            "b0030",
+            "b0031",
+            "b0093",
+            "figure_001",
+            "figure_002"
+          ]
+        }
+      },
+      "number_of_phases": {
+        "value": 3,
+        "source": {
+          "reason": "XRD of the as-cast 0.5Be steel shows austenite (γ) reflections plus Be11Fe and Be12Fe compound peaks (legend/patterns of figure_001 and b0028), i.e. three phases detected; no ferrite phase is present.",
+          "block_id": [
+            "b0028",
+            "figure_001"
+          ]
+        }
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "All statements describing the as-cast microstructure of the 0.5Be steel (XRD phase composition, OM of the cellular/dendritic matrix with point-like beryllium compounds, TEM identification of Be12Fe).",
+            "block_id": [
+              "b0028",
+              "b0030",
+              "b0031",
+              "b0032",
+              "b0074",
+              "figure_001",
+              "figure_002",
+              "figure_003"
+            ]
+          },
+          "microstructure_id": "micro_as-cast_0.5Be_matrix",
+          "region": {
+            "value": "as-cast bulk (cellular/dendritic solidification structure)"
+          },
+          "related_sequence": {
+            "value": "1"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "figure_002(b) shows the as-cast 0.5Be OM with the cellular/dendritic matrix marked γ; b0031 states that after adding 0.5Be black point compounds begin to appear and attach to the austenite matrix; the γ phase of these steels is austenite (FCC).",
+                "block_id": [
+                  "b0031",
+                  "figure_002",
+                  "b0028"
+                ]
+              },
+              "phase_name": {
+                "value": "austenite (γ)"
+              },
+              "crystal_structure": {
+                "value": "FCC (austenite)"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "uniform cellular/dendritic austenite matrix with wavy light/dark etching contrast"
+              },
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "b0028 states that in the XRD of 0.5Be steel the peaks of the Be11Fe and Be12Fe compound were observed; b0030/figure_002 describe rod-like, needle-like and text-shaped compounds produced by Be addition.",
+                "block_id": [
+                  "b0028",
+                  "b0030",
+                  "figure_002"
+                ]
+              },
+              "phase_name": {
+                "value": "Be11Fe"
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": {
+                "value": "Be–Fe compound (rod-like / needle-like / Chinese-character shaped precipitates)"
+              },
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "b0032 reports the TEM morphology of as-cast 0.5Be steel (Fig. 3) with precipitate size 5–10 μm, and Figs 3(d,e) give the Be12Fe diffraction spots along [−113] and [001]; b0074 confirms the Be12Fe diffraction pattern in the SADP of the as-cast 0.5Be precipitate.",
+                "block_id": [
+                  "b0032",
+                  "b0039",
+                  "b0074",
+                  "figure_003"
+                ]
+              },
+              "phase_name": {
+                "value": "Be12Fe"
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": {
+                "value": "coarse needle-like / large bright angular precipitates, size 5–10 μm"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "source": {
+                "reason": "figure_002(b) shows dark point-like precipitates along the cell boundaries of the as-cast 0.5Be austenite; b0031 states the black point compounds attach to the austenite matrix after adding 0.5Be.",
+                "block_id": [
+                  "b0031",
+                  "figure_002"
+                ]
+              },
+              "type": {
+                "value": "Be–Fe phase (beryllium compound) precipitates attached to / decorating the austenite cell boundaries"
+              },
+              "porosity": null,
+              "inclusions": [
+                "Be11Fe",
+                "Be12Fe"
+              ],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "source": {
+                "reason": "b0032 states that Fig. 3(a) shows the morphology of Be–Fe in as-cast 0.5Be steel with a precipitate size of 5–10 μm and that Figs 3(d,e) give the Be12Fe diffraction spots; b0028 states the Be–Fe phase in the as-cast microstructure is randomly distributed.",
+                "block_id": [
+                  "b0032",
+                  "b0028",
+                  "figure_003"
+                ]
+              },
+              "precipitate_id": "ppt_Be12Fe",
+              "type": {
+                "value": "Be12Fe (Be–Fe compound)"
+              },
+              "size": {
+                "value": {
+                  "value": "5–10"
+                },
+                "unit": {
+                  "value": "μm"
+                }
+              },
+              "distribution": {
+                "value": "large needle-shaped precipitates, randomly distributed in the as-cast microstructure"
+              },
+              "coherency": null
+            },
+            {
+              "source": {
+                "reason": "b0028 reports Be11Fe XRD peaks for the 0.5Be steel; b0031/figure_002 describe the black point compounds attached to the austenite matrix in the as-cast 0.5Be structure.",
+                "block_id": [
+                  "b0028",
+                  "b0031",
+                  "figure_002"
+                ]
+              },
+              "precipitate_id": "ppt_Be11Fe",
+              "type": {
+                "value": "Be11Fe (Be–Fe compound)"
+              },
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": {
+                "value": "black point-like compounds attached to the austenite matrix / decorating cell boundaries"
+              },
+              "coherency": null
+            }
+          ]
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_set_id": "int_as-cast_0.5Be",
+          "phase_interfaces": [
+            {
+              "source": {
+                "reason": "In the as-cast 0.5Be steel the Be–Fe compound particles decorate the austenite cell/dendritic boundaries (figure_002b) and Be11Fe/Be12Fe peaks appear in the XRD of this steel (b0028); no coherency information is reported.",
+                "block_id": [
+                  "b0028",
+                  "b0031",
+                  "figure_002"
+                ]
+              },
+              "interface_id": "int_gamma_BeFe_0.5Be",
+              "microstructure_id": "micro_as-cast_0.5Be_matrix",
+              "phase_1_name": {
+                "value": "austenite (γ) matrix"
+              },
+              "phase_2_name": {
+                "value": "Be–Fe compound (Be11Fe / Be12Fe precipitates)"
+              },
+              "coherence": null
+            }
+          ],
+          "defect_interactions": [],
+          "slip_behavior": null,
+          "phase_evolution": {
+            "value": "With increasing Be content the as-cast structure changes from a single austenite (0Be, 0.5Be) to a γ + δ dual-phase structure (1.0Be, 1.5Be): the addition of Be promotes the formation of the ferrite phase. For the 0.5Be alloy, beryllium first forms Be–Fe compounds (Be11Fe and Be12Fe) rather than ferrite — no ferrite was observed by XRD when 0.5Be was added to the Fe–30Mn–10Al–1.5C matrix, whereas at 1.0 wt% Be ferrite appears. For Be, compounds are likely formed first, before ferrite structures.",
+            "source": {
+              "reason": "b0028 describes the phase composition change with Be content and the promotion of ferrite by Be; b0093 explains that no ferrite was observed by XRD for 0.5Be and that Be compounds form preferentially over ferrite.",
+              "block_id": [
+                "b0028",
+                "b0093"
+              ]
+            }
+          },
+          "interface_notes": {
+            "value": "In the as-cast 0.5Be steel the atomic concentration ratio of Fe to Be atoms is 18.7:1; the Be–Fe phase (beryllium compound) is randomly distributed and attached to the austenite matrix. The formation of the Be–Fe phase is reported to be observed when the mass percentage of Be to Fe reaches 1:4 in a certain region, and the Be–Fe phase precipitates at the boundary between austenite and ferrite in the as-cast structure of the higher-Be steels. The Be–Fe phase in the as-cast 0.5Be steel cannot be tested by microhardness (instrument limitation).",
+            "source": {
+              "reason": "b0028 gives the Fe:Be atomic concentration ratio 18.7:1 and the random distribution of the Be–Fe phase in the as-cast microstructure; b0074 describes precipitation of beryllium compounds at the austenite/ferrite boundary and the 1:4 Be:Fe condition; b0033 reports that the Be–Fe phase hardness cannot be tested in as-cast 0.5Be steel.",
+              "block_id": [
+                "b0028",
+                "b0074",
+                "b0033"
+              ]
+            }
+          }
+        }
+      ],
+      "measurement_conditions": {
+        "source": {
+          "reason": "The only quantitative property reported for the as-cast 0.5Be steel is its Vickers microhardness (Table 2 / Fig. 5); tensile properties (Table 3) and the other microhardness/density values reported in the paper refer to the rolled state.",
+          "block_id": [
+            "b0033",
+            "b0043",
+            "b0044",
+            "b0045",
+            "figure_005"
+          ]
+        },
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": {
+          "value": "Vickers microhardness (FM-ARS9000) measured with a 500 gf indenter load; each sample tested using a 15 × 5 matrix and the average of 25 points taken as the microhardness value. For the as-cast 0.5Be steel the matrix is austenite and no ferrite hardness value exists; the hardness of the Be–Fe phase cannot be tested because of the objective problem of the hardness tester.",
+          "source": {
+            "reason": "b0016 describes the FM-ARS9000 Vickers indenter, 500 gf load and 15×5 (25-point average) procedure; b0033 states that for as-cast 0Be and 0.5Be steels only austenite hardness exists and that the Be–Fe phase hardness cannot be tested in the 0.5Be steel.",
+            "block_id": [
+              "b0016",
+              "b0033"
+            ]
+          }
+        },
+        "mechanical": {
+          "tensile_properties": {
+            "yield_strength": [],
+            "ultimate_tensile_strength": [],
+            "elongation": [],
+            "youngs_modulus": null,
+            "stress_strain_curves": null,
+            "stress_strain_distribution": [],
+            "strain_hardening_rate": []
+          },
+          "hardness": [
+            {
+              "source": {
+                "reason": "Table 2 / Fig. 5 of the as-cast microhardness reports 462.88 ±13.84 HV for the matrix (austenite) of the as-cast 0.5Be steel; the ferrite and Be–Fe phase columns are '-' for 0.5Be.",
+                "block_id": [
+                  "b0033",
+                  "b0044",
+                  "figure_005"
+                ]
+              },
+              "region": {
+                "value": "matrix (austenite)"
+              },
+              "value": {
+                "value": "462.88"
+              },
+              "scale": {
+                "value": "Vickers microhardness (HV)"
+              },
+              "unit": {
+                "value": "HV"
+              },
+              "uncertainty": {
+                "value": "±13.84 HV"
+              }
+            }
+          ],
+          "fracture_toughness": {
+            "value": null,
+            "unit": null
+          },
+          "fatigue_properties": {
+            "fatigue_limit": null,
+            "cycles_to_failure": null
+          },
+          "creep_properties": {
+            "steady_state_creep_rate": null,
+            "rupture_life": null
+          }
+        },
+        "physical": {
+          "density": null,
+          "thermal_properties": null,
+          "electrical_properties": null,
+          "magnetic_properties": null
+        },
+        "chemical": {
+          "corrosion_resistance": null,
+          "oxidation_resistance": null
+        },
+        "radiation_properties": {
+          "void_swelling": null,
+          "irradiation_hardening": null,
+          "helium_embrittlement": null
+        }
+      }
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

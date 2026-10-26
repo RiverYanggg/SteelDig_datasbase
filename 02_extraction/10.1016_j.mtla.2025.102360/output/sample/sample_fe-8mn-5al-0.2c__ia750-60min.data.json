@@ -1,0 +1,636 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-8mn-5al-0.2c__ia750-60min",
+      "paper_id": "10.1016_j.mtla.2025.102360",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_id": "proc_ia750-60min",
+      "sample_label": "IA750_60 Min",
+      "aliases": [
+        "IA750_60Min",
+        "IA750_60 Min specimen"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": "2hr",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cast ingot homogenized at 1100 °C for 2 hr prior to hot forging."
+    },
+    {
+      "processing_step_id": "step_hot_forging",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot forging",
+      "temperature": "1050-800",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "50% thickness reduction",
+      "processing_steps_notes": "Hot forged to 50% thickness reduction in the temperature range of 1050-800 °C followed by air cooling to room temperature."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1050-800",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "50% thickness reduction in each pass (two passes)",
+      "processing_steps_notes": "Hot forged samples hot rolled (soaking, 1100 °C, 2hr) in the range 1050-800 °C in two passes (reheating at 1100 °C for 5 min in between passes) with 50% thickness reduction per pass, followed by water quenching to room temperature from finish rolling temperature (~800 °C). Produces the hot rolled & quenched (HRQ) precursor state."
+    },
+    {
+      "processing_step_id": "step_surface_machining",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "surface machining",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "1 mm depth on both sides",
+      "processing_steps_notes": "Surface machining up to 1 mm depth on both sides of the hot rolled sheet to remove the oxide layer; final sheet thickness 3 mm."
+    },
+    {
+      "processing_step_id": "step_intercritical_annealing_60min",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "intercritical annealing (IA750)",
+      "temperature": "750",
+      "temperature_unit": "°C",
+      "duration": "60 min",
+      "atmosphere": null,
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Intercritical annealing of the 3 mm hot rolled sheet at 750 °C (IA750) for 60 minutes, followed by air cooling to room temperature. This is the defining step of the IA750_60 Min specimen."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_IA750_60min",
+      "overall_structure": "Dual/multi-phase microstructure of highly stable δ-ferrite, intercritical ferrite (α), untransformed austenite (γ°) and reverted austenite (needle and globular morphologies) formed in the IA750_60 Min specimen after intercritical annealing at 750 °C for 60 min. The δ-ferrite morphology remains unchanged after annealing; prior martensite progressively dissolves/transforms into needle+globular reverted austenite and intercritical ferrite.",
+      "number_of_phases": "4",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_60_delta_ferrite",
+          "region": "bulk",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "rounded islands, elongated along rolling direction; unchanged after intercritical annealing (highly stable, formed during solidification)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_60_untransformed_austenite",
+          "region": "bulk (blocky regions, originally prior austenite)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "untransformed austenite (γ°)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "blocky",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_60_reverted_austenite_needle",
+          "region": "within former martensite/prior-austenite regions",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "reverted austenite (γ_rev), needle shape",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "needle-shaped; aspect ratio (width to length) increases with annealing time; Mn-lean",
+              "grain_size": {
+                "value": "1.42±0.16 µm (length/major axis); 0.345±0.40 µm (width/minor axis)",
+                "unit": "µm"
+              },
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "1.42±0.16",
+              "unit": "µm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_60_reverted_austenite_globular",
+          "region": "within former martensite regions",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "reverted austenite (γ_rev), globular shape",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "very fine globular shape; Mn and C lean; marked by red circle in Fig. 4C2",
+              "grain_size": {
+                "value": "0.0185±0.010 µm (average diameter)",
+                "unit": "µm"
+              },
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "0.0185±0.010",
+              "unit": "µm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_60_intercritical_ferrite",
+          "region": "within former martensite regions",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "intercritical ferrite (α)",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "matrix phase formed by dissolution of prior martensite/reverted austenite",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_60_retained_austenite_overall",
+          "region": "bulk",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "retained austenite (untransformed + reverted)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~35% before tensile test; ~28% after tensile test (Rietveld XRD)",
+              "morphology": "needle and globular reverted austenite plus untransformed austenite",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_IA750_60min",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_intercritical_ferrite_reverted_austenite",
+          "microstructure_id": "micro_60_reverted_austenite_needle",
+          "phase_1_name": "intercritical ferrite (α)",
+          "phase_2_name": "reverted austenite (γ_rev)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "interaction_60_mn_c_partitioning",
+          "microstructure_id": "micro_60_reverted_austenite_needle",
+          "interaction_type": "elemental partitioning / solute diffusion",
+          "qualitative_or_quantitative_description": "Mn and C are enriched and Fe and Al depleted at the intercritical ferrite / reverted austenite interface; interface atomic concentration ~65%Fe, ~18%Mn, ~11%Al, ~1.7%Si and 2.40%C, confirming continuous partitioning of C and Mn into adjacent untransformed austenite as reverted austenite dissolves into intercritical ferrite during annealing."
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": "Continuous transformation of needle-shaped reverted austenite to intercritical ferrite (α) with increasing annealing time due to elemental partitioning; at 60 min the reverted austenite reaches optimum mechanical stability. EDS maps (Fig. 9) show Mn enrichment and Al depletion in reverted austenite relative to intercritical ferrite, with no precipitate or elemental clustering.",
+      "interface_notes": "HRTEM/HAADF/EDS (Fig. 9) and APT (Fig. 10) of the region marked by red circle in Fig. 4C2 (IA750_60 Min) characterize the reverted austenite / intercritical ferrite interface at nanoscale."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_tensile_IA750_60min",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "2.67×10^-4 s^-1",
+        "specimen_geometry": "subsize tensile specimens machined by wire EDM along the rolling direction (ASTM E8/E8M)",
+        "test_standard": "ASTM E8/E8M",
+        "other_conditions": "At least three samples tested; average values reported."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "465±10 MPa",
+              "unit": "MPa",
+              "uncertainty": "±10 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "658.45±6 MPa",
+              "unit": "MPa",
+              "uncertainty": "±6 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction",
+              "value": "12±0.95 %",
+              "unit": "%",
+              "uncertainty": "±0.95 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain and true stress-strain curves of IA750_60 Min shown in Fig. 6(A1) and 6(A2); IA750_60 Min extends furthest to about 12.5 % strain.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "stage": "S2",
+              "mean_work_hardening_rate": "2000-1000 MPa",
+              "note": "Highest mean WHR among annealed specimens; S1/S2 dividers near 0.015 and 0.11 true strain (Fig. 6B3)."
+            }
+          ]
+        },
+        "hardness": [
+          {
+            "region": "δ-ferrite",
+            "value": "4150±200 MPa",
+            "scale": "nano hardness",
+            "unit": "MPa",
+            "uncertainty": "±200 MPa"
+          },
+          {
+            "region": "untransformed austenite",
+            "value": "4196±324 MPa",
+            "scale": "nano hardness",
+            "unit": "MPa",
+            "uncertainty": "±324 MPa"
+          },
+          {
+            "region": "reverted austenite/martensite",
+            "value": "3478±334 MPa",
+            "scale": "nano hardness",
+            "unit": "MPa",
+            "uncertainty": "±334 MPa"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_apt_composition_IA750_60min",
+      "measurement_conditions": {
+        "temperature": "60 K (specimen temperature for APT)",
+        "temperature_unit": "K",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "conical tip of 180 nm height and 60 nm base diameter prepared by FIB",
+        "test_standard": null,
+        "other_conditions": "APT performed on CAMECA LEAP 5000XR with pulse energy 40 pJ, pulse rate 200 kHz, detection rate 0.50%."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      },
+      "composition_measurements": {
+        "reverted_austenite_atomic_percent": {
+          "Fe": "72.92±0.33%",
+          "Mn": "12.41±0.24%",
+          "Al": "11.74±0.32%",
+          "Si": "1.34±0.08%",
+          "C": "1.59±0.09%"
+        },
+        "intercritical_ferrite_atomic_percent": {
+          "Fe": "77.94±0.35%",
+          "Mn": "5.65±0.36%",
+          "Al": "14.41±0.14%",
+          "Si": "1.76±0.12%",
+          "C": "0.24±0.12%"
+        },
+        "interface_atomic_percent": {
+          "Fe": "~65%",
+          "Mn": "~18%",
+          "Al": "~11%",
+          "Si": "~1.7%",
+          "C": "2.40%"
+        },
+        "sem_eds_wt_percent": {
+          "delta_ferrite": {
+            "Al": "5.25±0.13",
+            "Mn": "7.44±0.40"
+          },
+          "intercritical_ferrite": {
+            "Al": "5.08±0.22",
+            "Mn": "6.50±0.17"
+          },
+          "untransformed_austenite": {
+            "Al": "4.04±0.13",
+            "Mn": "9.83±0.37"
+          },
+          "reverted_austenite": {
+            "Al": "3.96±0.15",
+            "Mn": "7.58±0.14"
+          }
+        }
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_IA750_60min",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "uniaxial tensile loading along rolling direction at room temperature",
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-8mn-5al-0.2c",
+        "benchmark_process_id": "proc_hrq",
+        "benchmark_sample_id": "sample_fe-8mn-5al-0.2c__hrq",
+        "comparison_metric": "PSE (product of ultimate tensile strength and total elongation) and total elongation; IA750_60 Min gives the maximum PSE (7.9 GPa%) and maximum TE (12±0.95%) among all conditions, attributed to enhanced TRIP effect from optimum mechanical stability of reverted austenite.",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_60",
+      "microstructure_id": "micro_60_retained_austenite_overall",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Bruker D8 advanced X-ray diffractometer, Co-Kα (1.79 Å) target",
+      "measurement_conditions": "Step size 0.02°, 2θ range 20°-120°",
+      "purpose": "Phase identification and Rietveld refinement to quantify austenite volume fraction (before and after tensile test).",
+      "key_findings": "IA750_60 Min austenite fraction ~35% before and ~28% after tensile test; no peak-by-peak difference resolvable between before/after patterns."
+    },
+    {
+      "characterization_id": "char_sem_eds_60",
+      "microstructure_id": "micro_60_reverted_austenite_needle",
+      "technique": "Scanning electron microscopy (SEM) with energy dispersive X-ray analysis (EDS/EDAX)",
+      "instrument_or_setup": "ZEISS VP 300 FEG-SEM equipped with EDAX",
+      "measurement_conditions": "At least 5-7 areas and 15-20 spots per phase; average with standard deviation reported",
+      "purpose": "Microstructural imaging and elemental analysis of individual phases in the IA750_60 Min specimen.",
+      "key_findings": "Fig. 4C1-C3: δ-ferrite islands rounded; needle and globular reverted austenite resolved; δ-ferrite Al 5.25±0.13/Mn 7.44±0.40, intercritical ferrite Al 5.08±0.22/Mn 6.50±0.17, untransformed austenite Al 4.04±0.13/Mn 9.83±0.37, reverted austenite Al 3.96±0.15/Mn 7.58±0.14 wt.%."
+    },
+    {
+      "characterization_id": "char_nanoindent_60",
+      "microstructure_id": "micro_60_delta_ferrite",
+      "technique": "Nanoindentation (nano hardness)",
+      "instrument_or_setup": "Anton Paar (NHT1000038550) with diamond Berkovich tip (B-T 50), tip radius 100 nm, tip angle 142.3°",
+      "measurement_conditions": "Loading/unloading rate 60 mN/min, dwell 10 s, indentation load 30 mN; room temperature",
+      "purpose": "Measure phase-specific nano hardness of δ-ferrite, untransformed austenite and reverted austenite/martensite in the IA750_60 Min specimen.",
+      "key_findings": "IA750_60 Min: δ-ferrite 4150±200 MPa, untransformed austenite 4196±324 MPa, reverted austenite/martensite 3478±334 MPa; δ-ferrite hardness does not vary significantly with annealing; reverted austenite hardness slightly reduced compared to IA750_5 Min."
+    },
+    {
+      "characterization_id": "char_tensile_60",
+      "microstructure_id": null,
+      "technique": "Tensile testing",
+      "instrument_or_setup": "INSTRON (UTM-100 kN)",
+      "measurement_conditions": "Room temperature; strain rate 2.67×10^-4 s^-1; subsize specimens per ASTM E8/E8M machined along rolling direction",
+      "purpose": "Evaluate mechanical properties of the IA750_60 Min specimen and correlate with microstructure.",
+      "key_findings": "YS 465±10 MPa, UTS 658.45±6 MPa, TE 12±0.95%, PSE 7.9 GPa% (maximum among conditions); attributed to enhanced TRIP effect."
+    },
+    {
+      "characterization_id": "char_hrtem_60",
+      "microstructure_id": "micro_60_reverted_austenite_needle",
+      "technique": "High-resolution transmission electron microscopy (HRTEM) with HAADF and EDS elemental mapping",
+      "instrument_or_setup": "Talos F200X G2 HRTEM",
+      "measurement_conditions": "Sample thinned to 70-80 µm, 3 mm disc punched, dimpled and ion milled; 500 nm scale bars",
+      "purpose": "Nanoscale analysis of the region marked by red circle in Fig. 4C2 of IA750_60 Min for possible precipitates or segregation.",
+      "key_findings": "EDS maps show Mn enrichment and Al depletion in reverted austenite relative to intercritical ferrite confirming dissolution of martensite into reverted austenite and intercritical ferrite; no evidence of precipitates or elemental clustering; Fe, Si and C maps essentially uniform."
+    },
+    {
+      "characterization_id": "char_apt_60",
+      "microstructure_id": "micro_60_reverted_austenite_needle",
+      "technique": "Atom probe tomography (APT / 3DAP)",
+      "instrument_or_setup": "CAMECA LEAP 5000XR 3D Atom Probe",
+      "measurement_conditions": "Pulse energy 40 pJ, pulse rate 200 kHz, detection rate 0.50%, specimen temperature 60 K; conical tip 180 nm height, 60 nm base diameter prepared by FIB; 15 nm diameter virtual cylinder",
+      "purpose": "Quantitative nanoscale analysis of segregation/precipitates and interface composition between intercritical ferrite and reverted austenite in the IA750_60 Min specimen.",
+      "key_findings": "Reverted austenite: Fe 72.92±0.33%, Mn 12.41±0.24%, Al 11.74±0.32%, Si 1.34±0.08%, C 1.59±0.09% (at.%); intercritical ferrite: Fe 77.94±0.35%, Mn 5.65±0.36%, Al 14.41±0.14%, Si 1.76±0.12%, C 0.24±0.12%; interface ~65%Fe, ~18%Mn, ~11%Al, ~1.7%Si, 2.40%C, indicating Mn and C enrichment and Fe/Al depletion at the boundary; no precipitates/clustering."
+    },
+    {
+      "characterization_id": "char_ebsd_60",
+      "microstructure_id": null,
+      "technique": "Electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "FEG-SEM (ZEISS VP 300) with EBSD camera, TSL-OIM software",
+      "measurement_conditions": "Operating at 20 kV, step size 0.5 µm",
+      "purpose": "Phase mapping (BCC/FCC) of specimens.",
+      "key_findings": "EBSD phase maps superimposed on IQ maps identify δ-ferrite (BCC) and austenite (FCC) phases; used to verify martensite formation in HRQ and phase distribution."
+    },
+    {
+      "characterization_id": "char_fractography_60",
+      "microstructure_id": null,
+      "technique": "SEM fractography of tensile-tested specimens",
+      "instrument_or_setup": "Scanning electron microscope",
+      "measurement_conditions": "Fracture surfaces of tensile-tested specimens",
+      "purpose": "Characterize fracture mode of the IA750_60 Min specimen.",
+      "key_findings": "IA750_60 Min fracture surface (Fig. 11e,f) shows quasi-cleavage with dimpled ductile tearing regions; intercritical ferrite contributes cleavage mode whereas reverted austenite contributes dimples; major portion shows cleavage due to high δ-ferrite fraction."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermocalc_IA750_60min",
+      "simulation_method": "CALPHAD thermodynamic equilibrium calculation",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": "TCFE9 database",
+      "boundary_and_initial_conditions": "Equilibrium phase fraction vs temperature (200-1600 °C) for the developed steel; used to select the intercritical annealing temperature (750 °C) within the δ-ferrite + austenite duplex region (~650 °C to ~1350 °C) and to obtain equilibrium austenite composition at 750 °C (Al 4.39%, C 0.47%, Mn 11.16%, Si 1.09%).",
+      "validation_against_experiment": "Dilatometry on forged sample showed negligible deviation/hump (only a slight ~600 °C anomaly), consistent with predicted critical temperatures.",
+      "analytical_models": []
+    },
+    {
+      "computation_id": "comp_sfe_olson_cohen_IA750_60min",
+      "simulation_method": "Thermodynamic SFE calculation (Olson-Cohen model, eqs. 1-4)",
+      "software_used": null,
+      "potential_model_or_database": "Thermodynamic model proposed by Olson and Cohen",
+      "boundary_and_initial_conditions": "SFE of austenite calculated for the reverted austenite composition measured by SEM-EDS in IA750_60 Min (Mn 7.58±0.14, Al 3.96±0.15 wt.%).",
+      "validation_against_experiment": "Calculated reverted austenite SFE (~27 mJ/m²) is lower than the equilibrium-composition SFE (~35 mJ/m²); used to explain TRIP as the deformation mechanism.",
+      "analytical_models": [
+        {
+          "model_name": "Olson-Cohen SFE model",
+          "equation_role": "Calculates stacking fault energy γ_SFE as function of Gibbs free energy change (chem, magnetic, excess due to grain size), interfacial surface energy, and molar surface density",
+          "parameters": [
+            {
+              "name": "ΔG_chem^γ→ε",
+              "value": "245.267",
+              "unit": "J/mole"
+            },
+            {
+              "name": "ΔG_mag^γ→ε",
+              "value": "0.0029319",
+              "unit": "J/mole"
+            },
+            {
+              "name": "ΔG_ex^γ→ε",
+              "value": "19.6842",
+              "unit": "J/mole"
+            },
+            {
+              "name": "molar surface density ρ",
+              "value": "2.9328×10^-5",
+              "unit": "mol/m²"
+            },
+            {
+              "name": "interfacial surface energy σ^γ/ε",
+              "value": "10",
+              "unit": "mJ/m²"
+            },
+            {
+              "name": "assumed austenite grain size",
+              "value": "40",
+              "unit": "µm"
+            }
+          ],
+          "model_note": "Theoretical SFE of designed steel ~35 mJ/m²; for IA750_60 Min reverted austenite (Mn 7.58, Al 3.96 wt.%, C ~0.05 wt.%) SFE calculated to be ~27 mJ/m²."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "IA750_60 Min specimen exhibits the highest product of ultimate tensile strength and total elongation (PSE = 7.9 GPa%) among HRQ and all annealing conditions, attributed to enhanced TRIP effect from optimum mechanical stability of the reverted austenite [b0046, b0066, table_003].",
+    "Mechanical stability parameter K of the IA750_60 Min specimen is ~1.92, supporting optimum (intermediate) mechanical stability of its needle+globular reverted austenite [b0061, figure_007].",
+    "The IA750_60 Min specimen shows the highest transformation ratio of austenite (~20%) during tensile loading, consistent with the highest PSE via enhanced TRIP effect [b0061, figure_007].",
+    "Theoretical SFE of the reverted austenite in IA750_60 Min (Mn 7.58±0.14, Al 3.96±0.15 wt.%, C ~0.05 wt.%) is calculated as ~27 mJ/m², lower than the equilibrium-composition SFE of ~35 mJ/m², explaining TRIP as the dominant deformation mechanism [b0073].",
+    "The work hardening rate (mean WHR) of IA750_60 Min in stage S2 is the highest among annealed specimens, between 2000-1000 MPa, leading to the maximum UTS and TE [b0051, figure_006].",
+    "No TWIP effect was observed in these high SFE alloys, and the plastic region of the stress-strain curve showed no serrations [b0073].",
+    "Fracture surface of the IA750_60 Min tensile specimen shows quasi-cleavage with dimpled ductile-tearing regions; the intercritical ferrite contributes cleavage whereas reverted austenite contributes dimples [b0072, figure_011].",
+    "No carbide (such as κ-carbide) or elemental clustering was detected in the IA750_60 Min specimen by SEM, HRTEM/EDS or APT analyses [b0066, b0067, b0071].",
+    "The globular-shaped reverted austenite in IA750_60 Min has an average diameter of 0.0185±0.010 µm and is lean in Mn and C due to elemental partitioning to adjacent untransformed austenite [b0064].",
+    "δ-ferrite in the IA750_60 Min specimen remains highly stable (composition nearly constant across annealing times), attributed to the high Al and Si content [b0039, b0042, figure_004]."
+  ]
+}

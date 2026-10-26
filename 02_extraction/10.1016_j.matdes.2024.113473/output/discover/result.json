@@ -1,0 +1,372 @@
+{
+  "schema_version": "sample-discover-v1",
+  "paper_id": "10.1016_j.matdes.2024.113473",
+  "domain": "materials",
+  "paper": {
+    "paper_id": "10.1016_j.matdes.2024.113473",
+    "doi": "10.1016/j.matdes.2024.113473",
+    "title": "Extreme high accuracy prediction and design of Fe-C-Cr-Mn-Si steel using machine learning",
+    "authors": [
+      "Hao Wu",
+      "Jianyuan Zhang",
+      "Jintao Zhang",
+      "Chengjie Ge",
+      "Lu Ren",
+      "Xinkun Suo"
+    ],
+    "publication_year": "2024",
+    "journal": "Materials & Design",
+    "keywords": [
+      "Fe-C-Cr-Mn-Si steel",
+      "Machine learning",
+      "Conditional generative adversarial networks",
+      "Solid solution strengthening",
+      "Firefly optimization algorithm"
+    ],
+    "research_type": "mixed (machine learning/computational modeling combined with experimental validation)",
+    "paper_scope": "Develops a data-driven model (SVR combined with firefly optimization and CGAN data augmentation, plus a modified solid solution strengthening theory) to predict and inversely design the microhardness of Fe-C-Cr-Mn-Si steel; three designed alloys were then fabricated by arc cladding to validate the prediction accuracy."
+  },
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe-0.45c-14cr-1.53mn",
+      "alloy_name": "Fe-C-Cr-Mn-Si alloy (Sample 1)",
+      "aliases": [
+        "Sample 1",
+        "sample 1",
+        "the three Fe-C-Cr-Mn-Si alloys (sample 1)"
+      ],
+      "description": "One of three Fe-C-Cr-Mn-Si alloys designed by the ML model and fabricated by arc cladding for experimental validation; a high-Cr (14 wt%) variant whose main phase is the Fe-Cr phase (FCC lattice, Cr randomly substituting Fe).",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C",
+        "Si",
+        "Mn",
+        "Cr",
+        "S",
+        "P"
+      ],
+      "nominal_composition": [
+        {
+          "element": "C",
+          "weight_percent": "0.45",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "0.19",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "1.53",
+          "atomic_percent": null
+        },
+        {
+          "element": "Cr",
+          "weight_percent": "14",
+          "atomic_percent": null
+        },
+        {
+          "element": "S",
+          "weight_percent": "0.01",
+          "atomic_percent": null
+        },
+        {
+          "element": "Ni",
+          "weight_percent": "0",
+          "atomic_percent": null
+        },
+        {
+          "element": "P",
+          "weight_percent": "0.014",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "83.806",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mo",
+          "weight_percent": "0",
+          "atomic_percent": null
+        },
+        {
+          "element": "V",
+          "weight_percent": "0",
+          "atomic_percent": null
+        },
+        {
+          "element": "W",
+          "weight_percent": "0",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Mass percentages given in Table 6. δr = 0.0542 and ΔHmix = -0.914 kJ/mol. Ni, Mo, V and W are reported as 0 wt%.",
+      "source": {
+        "reason": "Table 6 lists the mass percentages of the three Fe-C-Cr-Mn-Si alloys used for model validation; Sample 1 is a distinct composition (0.45C-0.19Si-1.53Mn-14Cr) and is described as one of the three fabricated samples in the text.",
+        "block_id": [
+          "b0090",
+          "b0084"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_fe-0.53c-5.3cr-1.9mn-1.13ni",
+      "alloy_name": "Fe-C-Cr-Mn-Si alloy (Sample 2)",
+      "aliases": [
+        "Sample 2",
+        "sample 2"
+      ],
+      "description": "One of three Fe-C-Cr-Mn-Si alloys designed by the ML model and fabricated by arc cladding for experimental validation; a Ni-containing variant whose main phase is the Fe-Cr-Ni phase.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C",
+        "Si",
+        "Mn",
+        "Cr",
+        "S",
+        "Ni",
+        "P",
+        "V",
+        "W"
+      ],
+      "nominal_composition": [
+        {
+          "element": "C",
+          "weight_percent": "0.53",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "0.4",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "1.9",
+          "atomic_percent": null
+        },
+        {
+          "element": "Cr",
+          "weight_percent": "5.3",
+          "atomic_percent": null
+        },
+        {
+          "element": "S",
+          "weight_percent": "0.01",
+          "atomic_percent": null
+        },
+        {
+          "element": "Ni",
+          "weight_percent": "1.13",
+          "atomic_percent": null
+        },
+        {
+          "element": "P",
+          "weight_percent": "0.013",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "89.277",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mo",
+          "weight_percent": "0",
+          "atomic_percent": null
+        },
+        {
+          "element": "V",
+          "weight_percent": "0.25",
+          "atomic_percent": null
+        },
+        {
+          "element": "W",
+          "weight_percent": "1.19",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Mass percentages given in Table 6. δr = 0.0595 and ΔHmix = -1.213 kJ/mol. Mo is reported as 0 wt%.",
+      "source": {
+        "reason": "Table 6 lists Sample 2 as a distinct Fe-C-Cr-Mn-Si composition (0.53C-0.4Si-1.9Mn-5.3Cr-1.13Ni-0.25V-1.19W), differing from Samples 1 and 3, so it constitutes a separate alloy.",
+        "block_id": [
+          "b0090",
+          "b0084"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_fe-0.15c-5.2cr-1.5mn-1.2ni-1.5mo",
+      "alloy_name": "Fe-C-Cr-Mn-Si alloy (Sample 3)",
+      "aliases": [
+        "Sample 3",
+        "sample 3"
+      ],
+      "description": "One of three Fe-C-Cr-Mn-Si alloys designed by the ML model and fabricated by arc cladding for experimental validation; a Mo-containing variant whose main phase is the Fe-Cr-Ni phase.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C",
+        "Si",
+        "Mn",
+        "Cr",
+        "Ni",
+        "Mo",
+        "V"
+      ],
+      "nominal_composition": [
+        {
+          "element": "C",
+          "weight_percent": "0.15",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "0.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "1.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "Cr",
+          "weight_percent": "5.2",
+          "atomic_percent": null
+        },
+        {
+          "element": "S",
+          "weight_percent": "0",
+          "atomic_percent": null
+        },
+        {
+          "element": "Ni",
+          "weight_percent": "1.2",
+          "atomic_percent": null
+        },
+        {
+          "element": "P",
+          "weight_percent": "0",
+          "atomic_percent": null
+        },
+        {
+          "element": "Fe",
+          "weight_percent": "89.7",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mo",
+          "weight_percent": "1.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "V",
+          "weight_percent": "0.25",
+          "atomic_percent": null
+        },
+        {
+          "element": "W",
+          "weight_percent": "0",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Mass percentages given in Table 6. δr = 0.0335 and ΔHmix = -0.451 kJ/mol. S, P and W are reported as 0 wt%.",
+      "source": {
+        "reason": "Table 6 lists Sample 3 as a distinct Fe-C-Cr-Mn-Si composition (0.15C-0.5Si-1.5Mn-5.2Cr-1.2Ni-1.5Mo-0.25V), differing from Samples 1 and 2, so it constitutes a separate alloy.",
+        "block_id": [
+          "b0090",
+          "b0084"
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_cladding",
+      "alloy_id": null,
+      "process_name": "Arc cladding",
+      "state_label": null,
+      "aliases": [
+        "cladding",
+        "arc cladding",
+        "coating preparation",
+        "cladding process"
+      ],
+      "parent_process_ids": [],
+      "description": "Fe-C-Cr-Mn-Si coatings produced by arc cladding (IDEALARC DC-1000, Lincoln Electric, America) on ASTM A36 steel substrates (300 mm × 120 mm × 40 mm), using wire of the optimized element content as feedstock, with current 440–600 A, voltage 30–32 V, cladding speed 24 m/h, interlayer temperature 380–410 °C and wire feed speed 76.8 m/h.",
+      "processes_notes": "A single arc-cladding process was used to fabricate all three Fe-C-Cr-Mn-Si alloys (Samples 1–3), so this process is shared across them and alloy_id is set to null. The substrate was ASTM A36 steel, not part of the studied alloy.",
+      "source": {
+        "reason": "The text states the Fe-C-Cr-Mn-Si coatings were prepared by arc cladding with specified parameters, and Table 4 lists the cladding parameters; the experimental verification fabricated the three alloys via this cladding process.",
+        "block_id": [
+          "b0050",
+          "b0032",
+          "b0084"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe-0.45c-14cr-1.53mn__cladding",
+      "alloy_id": "alloy_fe-0.45c-14cr-1.53mn",
+      "process_id": "proc_cladding",
+      "sample_label": "Sample 1",
+      "aliases": [
+        "sample 1",
+        "Sample 1 of the three Fe-C-Cr-Mn-Si alloys"
+      ],
+      "source": {
+        "reason": "Sample 1 is the pairing of the 0.45C-14Cr-1.53Mn Fe-C-Cr-Mn-Si composition with the arc-cladding fabrication process, used for experimental validation.",
+        "block_id": [
+          "b0090",
+          "b0084",
+          "b0093"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-0.53c-5.3cr-1.9mn-1.13ni__cladding",
+      "alloy_id": "alloy_fe-0.53c-5.3cr-1.9mn-1.13ni",
+      "process_id": "proc_cladding",
+      "sample_label": "Sample 2",
+      "aliases": [
+        "sample 2",
+        "Sample 2 of the three Fe-C-Cr-Mn-Si alloys"
+      ],
+      "source": {
+        "reason": "Sample 2 is the pairing of the 0.53C-5.3Cr-1.9Mn-1.13Ni Fe-C-Cr-Mn-Si composition with the arc-cladding fabrication process, used for experimental validation.",
+        "block_id": [
+          "b0090",
+          "b0084",
+          "b0093"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-0.15c-5.2cr-1.5mn-1.2ni-1.5mo__cladding",
+      "alloy_id": "alloy_fe-0.15c-5.2cr-1.5mn-1.2ni-1.5mo",
+      "process_id": "proc_cladding",
+      "sample_label": "Sample 3",
+      "aliases": [
+        "sample 3",
+        "Sample 3 of the three Fe-C-Cr-Mn-Si alloys"
+      ],
+      "source": {
+        "reason": "Sample 3 is the pairing of the 0.15C-5.2Cr-1.5Mn-1.2Ni-1.5Mo Fe-C-Cr-Mn-Si composition with the arc-cladding fabrication process, used for experimental validation.",
+        "block_id": [
+          "b0090",
+          "b0084",
+          "b0093"
+        ]
+      }
+    }
+  ],
+  "unmapped_findings": [
+    "The ML model was trained on 173 Fe-C-Cr-Mn-Si steel data points collected from the MatWeb repository, covering 11 elements (C, Si, Mn, Cr, S, Ni, P, Fe, Mo, V, W) plus microhardness; after Z-score and isolation-forest outlier removal and CGAN augmentation the dataset was expanded from 98 to 192 data points, and 117 additional MatWeb data points served as a validation set.",
+    "The ASTM A36 steel plates (300 mm × 120 mm × 40 mm) were used only as cladding substrates, not as the studied alloy.",
+    "Inverse design optimized C, Si, Mn, Cr, S, Ni, P, Mo, V and W within given composition ranges using firefly optimization (FA), simulated annealing (SA), particle swarm optimization (PSO) and grey wolf optimization (GWO); FA yielded the highest predicted microhardness (733.59 HV), followed by PSO (730.04 HV), GWO (708.60 HV) and SA (700.37 HV).",
+    "The modified solid solution strengthening equation Δσsss = Z·M·G·δEc·DEc (Z = 0.0056, M = 3.06) was incorporated into the SVR model, raising R² from 0.85 to 0.89 and reducing RMSE from 0.39 to 0.31."
+  ]
+}

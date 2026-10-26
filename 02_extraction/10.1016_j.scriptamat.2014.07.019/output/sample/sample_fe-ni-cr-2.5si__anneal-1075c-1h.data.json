@@ -1,0 +1,288 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-ni-cr-2.5si__anneal-1075c-1h",
+      "paper_id": "10.1016_j.scriptamat.2014.07.019",
+      "alloy_id": "alloy_fe-ni-cr-2.5si",
+      "process_id": "proc_anneal-1075c-1h",
+      "sample_label": "2.5 Si",
+      "aliases": [
+        "2.5 Si alloy",
+        "Si-alloyed steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_vacuum_cast",
+      "sequence": "1",
+      "type": "casting",
+      "method": "vacuum casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The three experimental steels (including the 2.5 Si alloy) were vacuum cast."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "20 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenized for 20 h at 1200 °C."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot rolled after homogenization."
+    },
+    {
+      "processing_step_id": "step_solution_annealing",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "solution annealing",
+      "temperature": "1075 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution annealed for 1 h at 1075 °C (the temperature listed for the 2.5 Si alloy in Table 1) to achieve a coarse grain size of approximately 140 μm."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_2.5Si_austenite",
+      "overall_structure": "Fully austenitic, coarse-grained single-phase microstructure (grain size approximately 140 μm). Dislocations were introduced by compressing 12.7 mm cylinders to 5% true strain for the SFE determination.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_bulk_austenite_2.5Si",
+          "region": "bulk (cylindrical specimens machined parallel to the rolling direction)",
+          "related_sequence": [
+            "4"
+          ],
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "face-centered cubic (fcc)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": "approximately 140 μm"
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations (introduced by compressing cylinders to 5% true strain)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_dissociated_dislocations_2.5Si",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "interaction_id": "interaction_partial_dislocations_2.5Si",
+          "microstructure_id": "micro_bulk_austenite_2.5Si",
+          "interaction_type": "dissociation of perfect dislocations into partial dislocations bounding a stacking fault",
+          "qualitative_or_quantitative_description": "Multiple paired (partial dislocation separation d, perfect dislocation character angle α) data were measured along several dissociated dislocations by WBDF TEM. For the 2.5 Si alloy the partial dislocation separation increased with dislocation angle and was the largest among the three alloys at any given angle (Figure 3a)."
+        }
+      ],
+      "slip_behavior": "Dissociated dislocations on {111} planes; grains with {111} planes nearly aligned with the foil plane were selected for WBDF imaging as they had favorable slip conditions during compression and contained minimally inclined dissociated dislocations.",
+      "phase_evolution": null,
+      "interface_notes": "No phase interfaces are reported for this single-phase austenitic steel; the relevant internal boundaries are the stacking faults between partial dislocations."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_set_2.5Si",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "12.7 mm diameter cylinders with axes parallel to the rolling direction, compressed to 5% true strain; thin slices sectioned at 45° from the compression axis and electropolished (95% acetic acid + 5% perchloric acid) for TEM",
+        "test_standard": null,
+        "other_conditions": "SFE determined from TEM WBDF measurement of partial dislocation separations via Eq. (1); lattice parameter determined from XRD analysis"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "stacking_fault_energy": {
+          "value": "19.9 ± 2.0 mJ m^-2",
+          "unit": "mJ m^-2"
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_2.5Si_vs_base",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "Base alloy (Fe–15 Ni–11 Cr, 0.002 Si)",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Stacking fault energy relative to base alloy (ΔSFE); 2.5 wt.% Si alloying decreases the SFE by 6.4 mJ m^-2 (2.5 Si = 19.9 mJ m^-2 vs base = 26.3 mJ m^-2), reported as 6–7 mJ m^-2 in the abstract/conclusion",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_XRD",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD) with Cu Kα radiation",
+      "instrument_or_setup": "Phillips X'Pert diffractometer with Cu Kα radiation (λ = 0.154060 nm); HighScore Plus 3.0.5 software",
+      "measurement_conditions": "Seven coupons per alloy taken from various locations, ground to a 600 grit finish and chemically polished for 20 min in a solution of 10 parts water, 10 parts hydrogen peroxide and 1 part hydrofluoric acid; lattice parameters from the (111), (200), (220) and (311) austenite peaks plotted against cos²θ/sinθ, with a0 from linear-regression extrapolation to θ = 90°; regression weighted with quadruplicate (311), triplicate (220), duplicate (200) and single (111) data points; lowest and highest a0 discarded, remaining five averaged",
+      "purpose": "Determine the austenite lattice parameter (a0) of the 2.5 Si alloy",
+      "key_findings": "2.5 wt.% Si alloying has a minimal effect on the austenite lattice parameter (relative to the base alloy)."
+    },
+    {
+      "characterization_id": "char_TEM_WBDF",
+      "microstructure_id": "micro_bulk_austenite_2.5Si",
+      "technique": "Transmission electron microscopy (TEM) weak-beam dark-field (WBDF) imaging of dissociated dislocations",
+      "instrument_or_setup": "Phillips CM12 TEM operating at 120 kV",
+      "measurement_conditions": "g3g conditions using (220)-type reflections (sg ≈ 0.22 nm^-1); grains with {111} planes nearly aligned with the foil plane; g·bp analysis of the partial dislocations; measured separations not corrected for 2-D projection",
+      "purpose": "Measure paired partial dislocation separation d and perfect dislocation character angle α to compute the SFE via Eq. (1)",
+      "key_findings": "The 2.5 Si alloy has an average SFE of 19.9 ± 2.0 mJ m^-2, the lowest of the three alloys; Si alloying decreases the SFE relative to the base alloy."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_SFE_Eq1",
+      "simulation_method": "Analytical calculation of SFE from measured partial dislocation separation (Eq. 1)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Experimental lattice parameters from the XRD analysis were used in Eq. (1); the base alloy SFE (26.3 mJ m^-2) is consistent with the 30 mJ m^-2 reported for a similar 15 Ni–11 Cr alloy.",
+      "analytical_models": [
+        {
+          "model_name": "SFE = [G|a0|²(2−ν)/(48π(1−ν))]·(1/d)·(1 − 2ν cos2α/(2−ν))",
+          "equation_role": "Convert the measured partial dislocation separation d and perfect dislocation character angle α into the stacking fault energy",
+          "parameters": [
+            {
+              "name": "G (isotropic shear modulus)",
+              "value": "74",
+              "unit": "GPa"
+            },
+            {
+              "name": "ν (Poisson ratio)",
+              "value": "0.3",
+              "unit": null
+            },
+            {
+              "name": "a0 (austenite lattice parameter)",
+              "value": "experimental value from XRD",
+              "unit": "nm"
+            }
+          ],
+          "model_note": "Isotropic elastic properties were assumed for all materials (G = 74 GPa, ν = 0.3). Effective G = 66 GPa and ν = 0.43 (for a 12 Ni–12 Cr steel) increased the calculated SFE of the 2.5 Al alloy by about 10% but had little effect on the other two alloys, so isotropic values were retained. The Williams–Carter partial-dislocation strain-field correction was not applied; for the 2.5 Si alloy it would change the SFE by approximately 1 mJ m^-2 or less."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_empirical_coefficients",
+      "simulation_method": "Empirical linear regression models for austenite lattice parameter and SFE",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "The Si lattice-parameter coefficient A_Si^LP (−0.018 ×10^-3 nm wt.%-1) agrees with the Dyson and Holmes [16] value (≈0). The Si SFE coefficient A_Si^SFE (−2.6 mJ m^-2 wt.%-1) agrees with high-Mn literature values (−1 to −3.5 mJ m^-2 wt.%-1).",
+      "analytical_models": [
+        {
+          "model_name": "a0 = Σ Ai^LP xi",
+          "equation_role": "Linear empirical relation between austenite lattice parameter and wt.% of alloying element i",
+          "parameters": [
+            {
+              "name": "A_Si^LP",
+              "value": "-0.018",
+              "unit": "10^-3 nm wt.%-1"
+            },
+            {
+              "name": "A_Si^LP (at.%)",
+              "value": "-0.009",
+              "unit": "10^-3 nm at.%-1"
+            }
+          ],
+          "model_note": "Si lattice-parameter coefficient determined in this study; indicates Si has almost no effect on the austenite lattice parameter."
+        },
+        {
+          "model_name": "SFE = Σ Ai^SFE xi",
+          "equation_role": "Linear empirical relation between austenite SFE and wt.% of alloying element i",
+          "parameters": [
+            {
+              "name": "A_Si^SFE",
+              "value": "-2.6",
+              "unit": "mJ m^-2 wt.%-1"
+            },
+            {
+              "name": "A_Si^SFE (at.%)",
+              "value": "-1.3",
+              "unit": "mJ m^-2 at.%-1"
+            }
+          ],
+          "model_note": "Si SFE coefficient determined in this study; Si lowers the austenite SFE."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "2.5 Si alloy composition (wt.%, Table 1): C 0.028, N 0.0036, Ni 14.99, Cr 10.98, Mn 1.10, Si 2.50, Al 0.06; solution-annealed at 1075 °C. The three Table 1 steels are compositionally nearly identical except for a deliberate ~2.5 wt.% addition of either Si or Al.",
+    "2.5 wt.% Si alloying has a minimal effect on the austenite lattice parameter, in contrast to 2.5 wt.% Al which increases it by 1.41 × 10^-3 nm relative to the base alloy.",
+    "The coarse grain size produced by the solution annealing treatment is approximately 140 μm.",
+    "The 2.5 Si alloy is fully austenitic at room temperature; austenite is retained by Ni and Cr alloying rather than by carbon partitioning (as in AHSS).",
+    "For the 2.5 Si alloy the partial dislocation separation increased with perfect dislocation character angle and was the largest among the three alloys (base, 2.5 Si, 2.5 Al) at any given dislocation angle in Figure 3(a).",
+    "Relative to the base alloy (26.3 mJ m^-2), 2.5 wt.% Si alloying decreases the SFE by 6.4 mJ m^-2 (reported as 6–7 mJ m^-2 in the abstract and conclusion).",
+    "The SFE measured for the 2.5 Si alloy (lowest of the three alloys) would change by approximately 1 mJ m^-2 or less if the Williams and Carter partial-dislocation strain-field correction were applied; this correction was not applied.",
+    "Elastic anisotropy considerations (effective G = 66 GPa, ν = 0.43 for a 12 Ni–12 Cr steel) had little effect on the calculated SFE of the base and 2.5 Si alloys (only the 2.5 Al alloy changed by ~10%)."
+  ]
+}

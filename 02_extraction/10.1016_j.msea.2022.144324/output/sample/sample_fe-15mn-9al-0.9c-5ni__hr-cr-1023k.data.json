@@ -1,0 +1,342 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-15mn-9al-0.9c-5ni__hr-cr-1023k",
+      "paper_id": "10.1016_j.msea.2022.144324",
+      "alloy_id": "alloy_fe-15mn-9al-0.9c-5ni",
+      "process_id": "proc_hr-cr-1023k",
+      "sample_label": null,
+      "aliases": [
+        "15Mn5Ni",
+        "HR+CR+1023 K",
+        "15Mn5Ni heat treated at 1023 K"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1423 K",
+      "temperature_unit": "K",
+      "duration": "2.5 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Sound portion of the 30 kg vacuum-induction-melted ingot homogenized at 1423 K for 2.5 h prior to hot rolling."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1323 K",
+      "temperature_unit": "K",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot rolled at 1323 K; final thickness of the hot rolled plate ~13 mm. This condition is referred to as HR."
+    },
+    {
+      "processing_step_id": "step_cold_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": "room temperature",
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "~50% reduction in thickness",
+      "processing_steps_notes": "Cold rolled to ~50% reduction in thickness (~6 mm thick sheets) by several passes; 15Mn5Ni alloy experienced cracking beyond 50% cold reduction so reduction was restricted to 50%. Denoted HR+CR."
+    },
+    {
+      "processing_step_id": "step_heat_treatment_1023k",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "heat treatment (annealing)",
+      "temperature": "1023 K",
+      "temperature_unit": "K",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cold rolled sheet heat treated at 1023 K for 1 h followed by water quenching (part of the 873–1273 K / 1 h / water-quench series)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_15mn5ni_hrcr_1023k",
+      "overall_structure": "Banded microstructure of partially recrystallized/deformed austenite (γ) with dark unindexed bands, together with abundant coarse B2 stringers aligned along the rolling direction (RD); this alloy shows the highest B2 fraction among the three alloys at 1023 K, and the KAM map indicates the highest retained stored strain of the three alloys. Secondary-phase precipitates (B2 and κ-carbide) co-precipitated along grain boundaries forming precipitate-rich zones.",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_gamma",
+          "region": "bulk matrix",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "banded/elongated grains; mixed recrystallized and deformed regions, banded structure with dark unindexed bands",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "retained stored strain (elevated KAM, highest of the three alloys at 1023 K)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "at or below the few-μm level",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_b2",
+          "region": "stringer bands along RD and grain boundaries",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "B2 (ordered FeAl-based)",
+              "crystal_structure": "B2 (ordered BCC)",
+              "volume_fraction": "~0.3 (at 1023 K, from Fig. 5d)",
+              "morphology": "elongated stringers/bands aligned along RD; red FCC matrix traversed by numerous elongated blue B2 stringers/bands — highest B2 fraction of the three alloys",
+              "grain_size": null,
+              "texture": "elongated along RD"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_b2_stringer",
+              "type": "prior B2 stringer",
+              "size": null,
+              "distribution": "elongated stringers/bands along RD",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_b2_intergranular",
+              "type": "intergranular B2 (secondary precipitate)",
+              "size": null,
+              "distribution": "along grain boundaries forming precipitate-rich zones",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_kappa",
+          "region": "grain boundaries and intragranular",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "coarser κ-carbides co-precipitated with B2 along grain boundaries",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa",
+              "type": "κ-carbide",
+              "size": null,
+              "distribution": "co-precipitated with B2 along grain boundaries in precipitate-rich zones",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_15mn5ni_hrcr_1023k",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_gamma_b2",
+          "microstructure_id": "micro_b2",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "B2",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_crack_gamma_b2",
+          "microstructure_id": "micro_b2",
+          "interaction_type": "intergranular cracking / crack propagation along γ/B2 interphase boundaries",
+          "qualitative_or_quantitative_description": "Cross-section of the failed tensile specimen of 15Mn5Ni heat treated at 1023 K revealed intergranular cracks; OIM-IPF and phase maps clearly indicated propagation of cracks along γ/B2 interphase boundaries."
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": "Nucleation of recrystallized grains occurs mostly along γ/γ boundaries and the γ/B2 interface; dissolution rate of fine intragranular and intergranular B2 is higher than that of B2 stringers.",
+      "interface_notes": "At 1023 K the 15Mn5Ni alloy showed much lesser recrystallization of the austenite matrix and a large volume fraction of secondary-phase precipitation along grain boundaries forming precipitate-rich zones; fracture was crack-initiation controlled."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_15mn5ni_hrcr_1023k_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "~3 × 10^-4 s^-1",
+        "specimen_geometry": "flat tensile specimens, gauge length 30 mm, width 6 mm, thickness 4–5 mm",
+        "test_standard": "ASTM E8M",
+        "other_conditions": "Tensile tests conducted at a constant cross-head speed of 0.5 mm min^-1; tests triplicated per condition"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "<1%",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "not recorded (alloy behaved as brittle material, stress–strain curves could not be recorded)",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_15mn5ni_hrcr_1023k",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "uniaxial tension (room temperature tensile test)",
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "ductility / fracture mode at HR+CR+1023 K",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_eBSD_1023k",
+      "microstructure_id": "micro_b2",
+      "technique": "Orientation imaging microscopy (OIM-EBSD)",
+      "instrument_or_setup": "Zeiss Supra 55 FEG-SEM equipped with EDS and Nordley EBSD detectors (Oxford); TSL-OIM software",
+      "measurement_conditions": "step size 120 nm (fine-grained) / 250 nm (coarse-grained); area ~100×100 μm² / ~200×200 μm²; three scans per sample; GOS 2° criterion and KAM for recrystallization",
+      "purpose": "grain orientations, grain size, twin fractions, phase contrast maps, KAM and GOS to delineate recrystallized microstructure",
+      "key_findings": "In HR+CR+1023 K, 15Mn5Ni shows a banded structure with dark unindexed bands; the phase map shows a red FCC matrix traversed by numerous elongated blue B2 stringers aligned along RD (highest B2 fraction of the three alloys); the KAM map is predominantly green–yellow with dark bands (highest retained stored strain of the three alloys)."
+    },
+    {
+      "characterization_id": "char_fractography_1023k",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (fractography)",
+      "instrument_or_setup": "Zeiss EVO 18 SEM",
+      "measurement_conditions": "post-tensile fractured specimen heat treated at 1023 K",
+      "purpose": "to examine the fracture surface and crack path",
+      "key_findings": "The 15Mn5Ni specimen (HR+CR+1023 K) exhibited quasi-cleavage fracture with large numbers of microcracks; the cross-section revealed intergranular cracks propagating along γ/B2 interphase boundaries."
+    },
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": null,
+      "technique": "Vickers bulk hardness",
+      "instrument_or_setup": "AFFRI Vickers hardness tester, 30 kg (~300 N) peak load, 15 s dwell",
+      "measurement_conditions": "ASTM E-140-02; values averaged over ten measurements on each sample",
+      "purpose": "to evaluate hardness variation with degree of cold work and heat treatment temperature",
+      "key_findings": "Hardness of heat-treated samples was measured as a function of heat treatment temperature for all three alloys (Fig. 8b); Ni-containing alloys showed higher hardness than 28Mn0Ni and hardness decreased with increasing heat treatment temperature. A specific numerical hardness value for 15Mn5Ni at HR+CR+1023 K is not reported in the text."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "Walter+Bai AG testing machine",
+      "measurement_conditions": "room temperature; constant cross-head speed 0.5 mm min^-1 (initial strain rate ~3×10^-4 s^-1); ASTM E8M flat specimens",
+      "purpose": "to evaluate strength and ductility in different processing conditions",
+      "key_findings": "For 15Mn5Ni in HR+CR+973 K and HR+CR+1023 K the alloy behaved as a brittle material (elongation <1%) so no stress–strain curves could be recorded."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "15Mn5Ni alloy in the HR+CR+1023 K condition failed in tension in a brittle, crack-initiation-controlled manner with a quasi-cleavage fracture surface bearing many microcracks, distinct from the dimple (ductile) fracture of 28Mn0Ni and 28Mn5Ni at the same condition.",
+    "The processing temperature window for 15Mn5Ni alloy to attain an optimum strength-ductility combination was concluded to be around 1173 K, not 1023 K; at 973 K and 1023 K the alloy was brittle.",
+    "Note on internal inconsistency: block b0062 refers to 15Mn5Ni specimens heat treated at '973 K and 1073 K' displaying negligible ductility (<1%), whereas the same condition is given as 1023 K elsewhere (b0031, b0034, b0060); the 1073 K appears to be a typographical inconsistency."
+  ]
+}

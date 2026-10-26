@@ -1,0 +1,247 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-26al-2nb-1c__as-cast",
+      "paper_id": "10.1016_j.intermet.2004.05.010",
+      "alloy_id": "alloy_fe-26al-2nb-1c",
+      "process_id": "proc_as-cast",
+      "sample_label": "Fe-26Al-2Nb-1C",
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1",
+      "sequence": "1",
+      "type": "casting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "cylindrical copper mould (32 mm diameter × 186 mm length)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "As-cast terminal state; no further heat treatment reported."
+    },
+    {
+      "processing_step_id": "step_2",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "spark erosion cutting and surface grinding",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Specimens cut from cast ingots by spark erosion along the longitudinal axis (casting direction); specimen surfaces ground."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_1",
+      "overall_structure": "Two-phase: Fe3Al matrix with MC (NbC) carbides",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": null,
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "Fe3Al matrix",
+              "crystal_structure": "D0₃ (ordered, below ~550 °C)",
+              "volume_fraction": null,
+              "morphology": "zig-zag grains",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "NbC",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "cube-like, script-like (in eutectic)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "200",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_1",
+              "type": "NbC",
+              "size": {
+                "value": "2.5",
+                "unit": "μm"
+              },
+              "distribution": "cube-like",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_2",
+              "type": "NbC (eutectic)",
+              "size": {
+                "value": "1×5",
+                "unit": "μm"
+              },
+              "distribution": "script-like (in eutectic)",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_1_1",
+          "microstructure_id": "micro_1",
+          "phase_1_name": "Fe3Al matrix",
+          "phase_2_name": "NbC",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "Fe-26Al-based matrix undergoes D0₃→B2 order-disorder transition at ~550 °C and B2→A2 at ~800 °C before melting.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_rt",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-4 s^-1",
+        "specimen_geometry": "compression: (6×6×10) mm³; tension: flat (3.5×5) mm² cross-section with 15 mm gauge length",
+        "test_standard": null,
+        "other_conditions": "specimens cut along longitudinal axis (casting direction); surfaces ground"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "compression",
+              "value": "601",
+              "unit": "MPa",
+              "uncertainty": null
+            },
+            {
+              "direction": "tension",
+              "value": "427",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [],
+          "elongation": [
+            {
+              "direction": "tension",
+              "value": "1.4",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Fig. 2 (room-temperature compression) and Fig. 3 (room-temperature tension) engineering stress–strain curves",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "matrix",
+            "value": "275",
+            "scale": "HB",
+            "unit": null,
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_1",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Room-temperature total elongation: Fe-26Al-2Nb-1C = 1.4% (highest of all Fe-26Al-based alloys), compared with binary Fe-26Al = 0.4%",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_mechanical_test",
+      "microstructure_id": null,
+      "technique": "Uniaxial compression and tension testing",
+      "instrument_or_setup": "ZWICK 1474 universal testing machine",
+      "measurement_conditions": "deformation rate 10^-4 s^-1; compression samples (6×6×10) mm³; tension flat samples (3.5×5) mm², 15 mm gauge length; elevated-temperature tests in protective argon, held 30 min at test temperature, NiCr–Ni thermocouple on specimen surface",
+      "purpose": "Determine yield stress in compression/tension, total elongation and work-hardening behaviour",
+      "key_findings": "Room temperature: yield stress 601 MPa (compression) and 427 MPa (tension), total elongation 1.4%."
+    },
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": null,
+      "technique": "Brinell hardness",
+      "instrument_or_setup": "load 62.5 g, indentation ball 2.5 mm diameter",
+      "measurement_conditions": null,
+      "purpose": "Measure matrix hardness",
+      "key_findings": "Matrix hardness 275 HB."
+    },
+    {
+      "characterization_id": "char_sem_fracture",
+      "microstructure_id": "micro_1",
+      "technique": "Scanning electron microscopy (SEM), secondary electrons (SE)",
+      "instrument_or_setup": "SEM-Hitachi S-530, 20 kV, working distance 15 mm",
+      "measurement_conditions": null,
+      "purpose": "Investigate fracture surfaces of ruptured tensile specimens",
+      "key_findings": "Very fine facetted transgranular cleavage (TGC); Fe-26Al-2Nb-1C has the highest ductility (1.4%) of all Fe-26Al-based alloys."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Fe-26Al-2Nb-1C exhibits lower yield stress in compression (601 MPa) than binary Fe-26Al (644 MPa) but shows much stronger work hardening during plastic deformation (b0024, b0027).",
+    "Fe-26Al-2Nb-1C shows tension–compression asymmetry: yield stress in compression is higher than in tension at room temperature, 650 °C and 800 °C (b0029, b0040).",
+    "At elevated temperatures, the yield stress anomaly peak of Nb-containing Fe-26Al-2Nb-1C is shifted towards lower temperatures and higher stresses relative to binary Fe-26Al (b0038).",
+    "Room-temperature fracture mode: transgranular cleavage (TGC) with very fine facetted cleavage; Fe-26Al-2Nb-1C has the highest ductility (1.4%) of all Fe-26Al-based alloys (b0033, b0035).",
+    "Fe-26Al-2Nb-1C (Nb addition) shows higher matrix hardness than binary Fe-26Al (275 HB vs 260 HB) (b0021, b0033)."
+  ]
+}

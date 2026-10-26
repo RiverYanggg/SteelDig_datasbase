@@ -1,0 +1,382 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-25mn-11al-1c__st-1050c-2h-wq",
+      "paper_id": "10.1016_j.msea.2023.145675",
+      "alloy_id": "alloy_fe-25mn-11al-1c",
+      "process_id": "proc_st-1050c-2h-wq",
+      "sample_label": "Mn-25",
+      "aliases": "Fe25Mn11Al1C after 1050 °C/2 h solution treatment"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_cast",
+      "sequence": "1",
+      "type": "melting and casting",
+      "method": "high-frequency vacuum induction melting and casting into ingot",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Melted in a high-frequency vacuum induction furnace with a 50 kg capacity and cast into an ingot with a diameter of 150 mm."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": "5 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingots homogenized at 1200 °C for 5 h before hot rolling."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air-cooled to room temperature",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "ingot Ø150 mm hot rolled into rods of Ø16 mm",
+      "processing_steps_notes": "Hot rolled into rods with a diameter of 16 mm, then air-cooled to room temperature."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled rods solution-treated at 1050 °C for 2 h followed by water quenching; this is the final state used for tensile tests, Charpy impact toughness and EBSD/TEM characterization."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_Mn-25_ST",
+      "overall_structure": "After solution treatment at 1050 °C for 2 h followed by water quenching, the Mn-25 (Fe25Mn11Al1C) steel is nearly single-phase FCC austenite with a small fraction of BCC ferrite (f_Bcc = 0.65%) and uniformly distributed κ-carbides; the austenite grains have coarsened to about 18.8 μm and twin boundaries are abundant.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_Mn-25_ST",
+          "region": null,
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ, FCC)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains with abundant Σ3 twin boundaries (twin boundary fraction 52.6%)",
+              "grain_size": "18.8 ± 1.3 μm",
+              "texture": null
+            },
+            {
+              "phase_name": "ferrite (α, BCC)",
+              "crystal_structure": "BCC",
+              "volume_fraction": "0.65%",
+              "morphology": "small amount of ferrite phase",
+              "grain_size": "4.5 ± 0.7 μm",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "18.8 ± 1.3",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_carbide",
+              "type": "κ-carbide",
+              "size": {
+                "value": "5.0 ± 2.1",
+                "unit": "nm"
+              },
+              "distribution": "uniformly distributed in the austenite matrix",
+              "coherency": "coherent with the austenite matrix"
+            }
+          ]
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_set_id": "interface_set_Mn-25_ST",
+          "phase_interfaces": [
+            {
+              "interface_id": "if_kappa_austenite_Mn-25",
+              "microstructure_id": "micro_Mn-25_ST",
+              "phase_1_name": "κ-carbide",
+              "phase_2_name": "austenite (γ)",
+              "coherence": "coherent"
+            }
+          ],
+          "defect_interactions": [],
+          "slip_behavior": "κ-carbides are sheared by dislocations (particle shear strengthening) rather than bypassed by an Orowan mechanism; shear deformation facilitates glide of dislocations across κ-carbide shear planes and lowers the work hardening rate.",
+          "phase_evolution": null,
+          "interface_notes": "Orientation relationship between κ-carbides and austenite (γ): (001)κ || (001)γ."
+        }
+      ],
+      "properties": [
+        {
+          "property_set_id": "property_set_tensile_Mn-25_ST",
+          "measurement_conditions": {
+            "temperature": "ambient (room) temperature",
+            "temperature_unit": null,
+            "environment": null,
+            "strain_rate": "1.1 × 10^-3 s^-1",
+            "specimen_geometry": "round tensile specimen, gauge length 25 mm, diameter 5 mm, tensile axis parallel to the rod axis",
+            "test_standard": null,
+            "other_conditions": "MTS tensile machine; two solution-treated specimens tested and the reported data is the average value of two specimens"
+          },
+          "mechanical": {
+            "tensile_properties": {
+              "yield_strength": [
+                {
+                  "direction": "parallel to rod axis",
+                  "value": "817",
+                  "unit": "MPa",
+                  "uncertainty": "± 8"
+                }
+              ],
+              "ultimate_tensile_strength": [
+                {
+                  "direction": "parallel to rod axis",
+                  "value": "935",
+                  "unit": "MPa",
+                  "uncertainty": "± 6"
+                }
+              ],
+              "elongation": [
+                {
+                  "type": "uniform elongation (UE)",
+                  "direction": "parallel to rod axis",
+                  "value": "50",
+                  "unit": "%",
+                  "uncertainty": "± 2.1"
+                },
+                {
+                  "type": "total elongation (A)",
+                  "direction": "parallel to rod axis",
+                  "value": "69.0",
+                  "unit": "%",
+                  "uncertainty": "± 1"
+                }
+              ],
+              "youngs_modulus": null,
+              "stress_strain_curves": "Engineering stress-strain behaviour of the Fe(x)Mn11Al1C steels after 1050 °C/2 h solution treatment is shown in Fig. 2(b); corresponding true stress-strain and work-hardening-rate curves in Fig. 8(b).",
+              "stress_strain_distribution": [],
+              "strain_hardening_rate": [],
+              "true_ultimate_tensile_strength": {
+                "value": "1321",
+                "unit": "MPa"
+              },
+              "fracture_strength": {
+                "value": "2083",
+                "unit": "MPa"
+              }
+            },
+            "hardness": [],
+            "fracture_toughness": null,
+            "fatigue_properties": null,
+            "creep_properties": null
+          },
+          "physical": null,
+          "chemical": null,
+          "radiation_properties": null
+        },
+        {
+          "property_set_id": "property_set_impact_Mn-25_ST",
+          "measurement_conditions": {
+            "temperature": "-40",
+            "temperature_unit": "°C",
+            "environment": null,
+            "strain_rate": null,
+            "specimen_geometry": "Charpy impact specimen 55 mm long, 10 × 10 mm cross-section, V-notch 2 mm deep; V-notch perpendicular to the rod axis",
+            "test_standard": null,
+            "other_conditions": "MTS impact tester (500 J capacity); two solution-treated specimens tested and the reported data is the average value of two specimens"
+          },
+          "mechanical": {
+            "tensile_properties": null,
+            "hardness": [],
+            "fracture_toughness": {
+              "value": "9.6",
+              "unit": "J",
+              "uncertainty": "± 3.1",
+              "note": "Charpy V-notch impact energy (Akv-40) measured at −40 °C"
+            },
+            "fatigue_properties": null,
+            "creep_properties": null
+          },
+          "physical": null,
+          "chemical": null,
+          "radiation_properties": null
+        },
+        {
+          "property_set_id": "property_set_density_Mn-25_ST",
+          "measurement_conditions": {
+            "temperature": null,
+            "temperature_unit": null,
+            "environment": null,
+            "strain_rate": null,
+            "specimen_geometry": null,
+            "test_standard": "Archimedes drainage method",
+            "other_conditions": null
+          },
+          "mechanical": null,
+          "physical": {
+            "density": {
+              "value": "6.63",
+              "unit": "g/cm³"
+            },
+            "thermal_properties": null,
+            "electrical_properties": null,
+            "magnetic_properties": null
+          },
+          "chemical": null,
+          "radiation_properties": null
+        }
+      ],
+      "performance": [],
+      "characterization_methods": [
+        {
+          "characterization_id": "char_EBSD_Mn-25",
+          "microstructure_id": "micro_Mn-25_ST",
+          "technique": "Electron back-scattered diffraction (EBSD)",
+          "instrument_or_setup": "EBSD system attached to a FEI Quanta 650 field emission gun SEM; operating voltage 20 kV, step size 0.5 μm; specimens mechanically ground and electro-polished in 7% Nital at room temperature; grain size by linear intercept with 15° misorientation criterion using Channel 5 software",
+          "measurement_conditions": "room temperature",
+          "purpose": "determine phase distribution, grain size and twin boundary fraction of the solution-treated steels",
+          "key_findings": "For the Mn-25 steel: austenite grain size 18.8 ± 1.3 μm, ferrite volume fraction 0.65% with ferrite grain size 4.5 ± 0.7 μm, twin boundary fraction 52.6%; grains coarsen with increasing Mn content and ferrite is nearly absent."
+        },
+        {
+          "characterization_id": "char_TEM_Mn-25",
+          "microstructure_id": "micro_Mn-25_ST",
+          "technique": "Transmission electron microscopy (TEM) dark-field imaging with SAED",
+          "instrument_or_setup": "Tecnai G2 F20 S-TWIN TEM operated at 200 kV; thin foils prepared by twin-jet electro-polishing in a mixture of 10% perchloric acid and 90% ethanol at 20 V and −20 °C",
+          "measurement_conditions": "dark-field images taken along [001]γ zone axis using a κ-carbide diffraction spot",
+          "purpose": "characterize the size, distribution and crystallography of κ-carbides",
+          "key_findings": "For the Mn-25 steel the average κ-carbide size is about 5 nm (5.0 ± 2.1 nm), uniformly distributed in the austenite matrix; the κ/austenite orientation relationship is (001)κ || (001)γ and the interface is coherent."
+        }
+      ],
+      "computational_details": [
+        {
+          "computation_id": "comp_sigma_relations_Mn-25",
+          "simulation_method": "analytical (closed-form) relations",
+          "software_used": null,
+          "potential_model_or_database": null,
+          "boundary_and_initial_conditions": null,
+          "validation_against_experiment": "σTS ≈ 1350 MPa and σFS ≈ 2150 MPa, evaluated from Eqns. (1) and (2), were found to be nearly constant for all investigated compositions and did not vary significantly with alloying content.",
+          "analytical_models": [
+            {
+              "model_name": "True ultimate tensile stress (σTS)",
+              "equation_role": "σTS = σUTS(1 + UE); maximum true stress just before necking (point of crack nucleation)",
+              "parameters": [
+                {
+                  "name": "σUTS",
+                  "value": "935",
+                  "unit": "MPa"
+                },
+                {
+                  "name": "UE",
+                  "value": "50",
+                  "unit": "%"
+                },
+                {
+                  "name": "σTS",
+                  "value": "1321",
+                  "unit": "MPa"
+                }
+              ],
+              "model_note": "Applied to the Mn-25 steel."
+            },
+            {
+              "model_name": "Fracture strength (σFS)",
+              "equation_role": "σFS = σEF/(1 − A); engineering fracture stress divided by (1 − area reduction)",
+              "parameters": [
+                {
+                  "name": "σEF",
+                  "value": null,
+                  "unit": "MPa"
+                },
+                {
+                  "name": "A",
+                  "value": "69.0",
+                  "unit": "%"
+                },
+                {
+                  "name": "σFS",
+                  "value": "2083",
+                  "unit": "MPa"
+                }
+              ],
+              "model_note": "Applied to the Mn-25 steel."
+            },
+            {
+              "model_name": "Particle shear strengthening model",
+              "equation_role": "σ_shear = α f^(1/2) d_Car^(1/2); strengthening contribution of κ-carbides to the austenite phase via particle shearing (rather than Orowan bypass)",
+              "parameters": [
+                {
+                  "name": "α",
+                  "value": null,
+                  "unit": null
+                },
+                {
+                  "name": "f (κ-carbide volume fraction)",
+                  "value": null,
+                  "unit": null
+                },
+                {
+                  "name": "d_Car (Mn-25)",
+                  "value": "5.0",
+                  "unit": "nm"
+                },
+                {
+                  "name": "slope of YS vs d_Car^0.5",
+                  "value": "97.1",
+                  "unit": "MPa/nm^1/2"
+                }
+              ],
+              "model_note": "A constant slope of 97.1 MPa/nm^1/2 was obtained from the linear fit of yield strength vs d_Car^0.5 for all compositions; particle shear strengthening remains active up to κ-carbide sizes of 50 nm."
+            }
+          ]
+        }
+      ],
+      "unmapped_findings": [
+        "Twin boundary fraction f_Tw of the Mn-25 (Fe25Mn11Al1C) steel after 1050 °C/2 h solution treatment is 52.6% (Table 3).",
+        "For the Fe(x)Mn11Al1C series the yield strength decreased from 896 MPa (Mn-20) to 401 MPa (Mn-35) and total elongation increased from 28.5% to 60% as Mn increased from 20% to 35% (Fig. 2b).",
+        "κ-carbide size in the Fe(x)Mn11Al1C series decreased from about 18 nm (20%Mn) to 5 nm (25%Mn), 3 nm (30%Mn) and 2 nm (35%Mn) (Fig. 4(e–h)).",
+        "The work hardening rate increases with Mn content, reaching a maximum of around 2300 MPa in the 35%Mn steel; the 25%Mn sample is intermediate between the 20%Mn and 35%Mn extremes (Fig. 8b).",
+        "Paper-wide density formula (mass%): ρ = 8.10 − 0.102C − 0.10Al − 0.01Mn (g/cm³).",
+        "Paper-wide linear fits (Fig. 7) against the square root of κ-carbide size d_Car^0.5 (d_Car in nm, stresses in MPa): R_p0.2 = 478 + 97.1 d_Car^0.5; R_m = 786 + 54.6 d_Car^0.5; A_5 = 64.5 − 6.445 d_Car^0.5; Z = 78 − 3.85 d_Car^0.5.",
+        "For all investigated low-density steel compositions σTS ≈ 1350 MPa and σFS ≈ 2150 MPa were nearly independent of alloying content and microstructure (Table 2).",
+        "The present sample (Mn-25) is one of the intermediate-Mn members of the Fe(x)Mn11Al1C series; the paper states that higher Mn content improves impact toughness while lowering yield strength."
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

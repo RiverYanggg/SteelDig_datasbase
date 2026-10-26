@@ -1,0 +1,160 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_004",
+  "family": "generalist",
+  "image_type": "chart_plot",
+  "description": "Fig. 4 is a three-panel composite of machine-learning results for the \"high κ-phase fraction\" in low-density FeMnAlC steels. (a) A 3D bar chart: y-axis \"Cross validation RMSE(%)\" scaled 0.0-2.5, x-axis \"Algorithms\" with five bars labelled KNN, ANN, SVM, RF, CART, connected by a line and titled \"The high κ-phase fraction\". SVM is lowest (bar top just above the 1.0 gridline), ANN and KNN slightly higher, RF near 1.7 and CART highest at about 2.4; small grey markers sit on the bar tops; no numeric data labels are printed. (b) A similar 3D bar chart: y-axis \"Cross validation RMSE(%)\" 0.0-1.4 (ticks to 1.2), x-axis \"Removed descriptor\" with eight bars labelled Mn, Al, C, Fe, VEC, Tm, ΔSmix, ΔHmix, all lying between roughly 1.05 and 1.25 %, Al tallest and VEC second. (c) A scatter plot, x-axis \"True value(%)\" and y-axis \"Predicted value(%)\", both spanning about −5 to 40, red data points lying on a blue y = x line, annotated \"R=0.99\". The panels jointly argue that SVM regression generalises best, giving the lowest cross-validation RMSE and near-unity predicted-versus-true correlation.",
+  "confidence": "medium",
+  "subfigures": [
+    {
+      "panel": "(a)",
+      "description": "3D bar chart titled 'The high κ-phase fraction'; y-axis 'Cross validation RMSE(%)' (0.0-2.5), x-axis 'Algorithms' with bars KNN, ANN, SVM, RF, CART joined by a line. SVM is lowest (~1.1 %), CART highest (~2.4 %); small grey markers (error bars) on bar tops, no printed data labels.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(b)",
+      "description": "3D bar chart titled 'The high κ-phase fraction'; y-axis 'Cross validation RMSE(%)' (0.0 to ~1.4), x-axis 'Removed descriptor' with eight bars labelled Mn, Al, C, Fe, VEC, Tm, ΔSmix, ΔHmix, all around 1.05-1.25 %, Al highest and VEC second. The caption instead describes (b) as 'the relative importance of 8 descriptors', so the axis wording and caption describe the same permutation-style importance quantity differently.",
+      "confidence": "medium"
+    },
+    {
+      "panel": "(c)",
+      "description": "Scatter plot of 'Predicted value(%)' (y) versus 'True value(%)' (x), both axes about −5 to 40, with red data points closely following a blue diagonal line and the annotation 'R=0.99'.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "Panel (a) is a bar chart with y-axis label 'Cross validation RMSE(%)' scaled from 0.0 to 2.5 and x-axis label 'Algorithms', with the five bars labelled KNN, ANN, SVM, RF and CART under the title 'The high κ-phase fraction'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "In panel (a) SVM has the shortest bar (top just above the 1.0 gridline) and CART the tallest (top near 2.4), with the connecting line rising from SVM through ANN, KNN, RF and CART; no numeric values are printed on the bars.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panel (b) is a bar chart with y-axis 'Cross validation RMSE(%)' scaled 0.0 to about 1.4 and x-axis 'Removed descriptor', containing eight bars labelled Mn, Al, C, Fe, VEC, Tm, ΔSmix and ΔHmix.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "In panel (b) the Al bar is the tallest (a little above the 1.2 gridline, near 1.25 %) and the VEC bar is the second tallest (near 1.15-1.2 %), while the remaining bars (Mn, C, Fe, Tm, ΔSmix, ΔHmix) cluster close to the 1.05-1.1 % level.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "Panel (c) plots 'Predicted value(%)' against 'True value(%)', both axes spanning about −5 to 40, with red scatter points lying on a blue diagonal line and the printed annotation 'R=0.99'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption states (a) is the comparison between different machine learning methods in the high κ-phase fraction and (b) is the relative importance of 8 descriptors for the high κ-phase fraction.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b0001"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption states (c) shows the predicted κ-phase fraction by the ML model for 10-fold cross-validation.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b0001"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states the dataset is trained with five regression algorithms (KAA, ANN, SVM, RF, and GART) and undergoes 10-fold cross-validation.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b0002"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states SVM displayed robust performance in the regression task with low cross-validation RMSE values of less than 1 %; the SVM bar in panel (a) is drawn at or slightly above the 1.0 gridline, so the image does not independently confirm the sub-1 % figure.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b0002"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "observation": "The citing text states the final sequencing of descriptors for inputting into the regression model was ΔSmix, Fe, ΔHmix, C, Mn, T, VEC, and Al; panel (b) instead lists the descriptor labels in the order Mn, Al, C, Fe, VEC, Tm, ΔSmix, ΔHmix (Tm presumably corresponding to T).",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b0002"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "observation": "The citing text states the x- and y-axes of Fig. 4c represent the true and predicted regression problem values (Y4) respectively, and that the data align with the blue line when predicted equals true κ fraction.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b0002"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states correlation coefficients were used to evaluate the regression models and that the SVM algorithm had satisfactory performance across all the data.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b0002"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panels (a) and (b) share the same quantitative axis quantity (cross-validation RMSE in %), so the two rankings they show — algorithm performance in (a) and descriptor-removal effect in (b) — are directly comparable in the same units.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    }
+  ],
+  "measured_quantities": [
+    "cross validation RMSE (%)",
+    "true κ-phase fraction (%)",
+    "predicted κ-phase fraction (%)",
+    "correlation coefficient R"
+  ],
+  "sample_hints": [
+    "The high κ-phase fraction",
+    "low-density FeMnAlC steel"
+  ],
+  "unreadable_items": [
+    "panel (a): numeric values of the small grey markers (error bars) on the bar tops are not printed/legible",
+    "panel (b): upper end of the y-axis is cropped, so the exact top tick value (above 1.2) is uncertain",
+    "panel (c): individual data-point coordinates and the number of points cannot be read exactly; only the printed R=0.99 annotation is legible"
+  ],
+  "image_paths": [
+    "images/a718aefe703e37a548460a83d9cae20e1caa6a13ec269b150f5d995c4349547d.jpg",
+    "images/7bd5d5aa3853a5fceed0010ac465e62d664fe402f76be3db443b03e2ca2dead4.jpg",
+    "images/02023719785c7702fe050cc27467d625daae42a50df22810c87d2a1b053c590d.jpg"
+  ]
+}

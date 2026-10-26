@@ -1,0 +1,280 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-11al-1.2c__cr-50",
+      "paper_id": "10.1016_j.matchar.2021.111013",
+      "alloy_id": "alloy_fe-30mn-11al-1.2c",
+      "process_id": "proc_cr-50",
+      "sample_label": "50% rolling reduction",
+      "aliases": [
+        "50% cold rolled",
+        "Fig. 3(c)",
+        "Fig. 5"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_vacuum_induction_melting",
+      "sequence": "1",
+      "type": "solidification/casting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "High Mn–Al–C austenitic low-density steel with the nominal component Fe–30Mn–11Al–1.2C (wt%) was fabricated by vacuum induction melting method."
+    },
+    {
+      "processing_step_id": "step_homogenization_soaking",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "soaking/homogenization",
+      "temperature": "1250",
+      "temperature_unit": "°C",
+      "duration": "12 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "To homogenize and refine microstructure the cast was soaked at 1250 °C for 12 h."
+    },
+    {
+      "processing_step_id": "step_hot_forging",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot forging",
+      "temperature": "900",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-forged into bars 60 mm in diameter with the finish forging temperature of 900 °C."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Sheets of various thicknesses were solution treated at 1100 °C for 1 h before cold rolling."
+    },
+    {
+      "processing_step_id": "step_cold_rolling_50",
+      "sequence": "5",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "50%",
+      "processing_steps_notes": "Cold rolled to 50% thickness reduction after solution treatment at 1100 °C for 1 h; boundary condition between stage I (10%–50%) and stage II (70%–90%) reduction regimes."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_cr50",
+      "overall_structure": "After 50% cold rolling the single slip bands are hardly distinguishable; it is still a low-energy dislocation structure of Taylor-lattice type with refined slip band spacing (average 64 nm), while microbands (average width 166 nm) and nano-sized deformation twins (average thickness ~5.1 nm) form in some grains. Banded features lie oblique to the rolling direction (Fig. 3(c)).",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_taylor_lattice_cr50",
+          "region": "longitudinal section (RD × ND)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "multiple slip bands / Taylor lattice (low-energy dislocation structure)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "slip bands / Taylor lattice; average slip band spacing 64 nm",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": "Weak rolling texture; {112}<111> Cu and {123}<111> S components increase up to 50% reduction then decrease; the copper-type to brass-type texture transition occurs at 50% rolling reduction; a weak CuT ({552}<115>) component appears after 50%."
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_microbands_cr50",
+          "region": "longitudinal section (RD × ND)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "microbands cutting the matrix (Fig. 5(a))",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "microbands; average width 166 nm; boundaries are geometrically necessary dislocations (GNDs)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_nanotwins_cr50",
+          "region": "longitudinal section (RD × ND)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "deformation twins in austenite matrix",
+              "crystal_structure": "FCC (twin reflections indexed, foil normal [0 1 1]m)",
+              "volume_fraction": null,
+              "morphology": "very fine parallel lamellae (intermittent linear structures)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "nano-scale deformation twins; average thickness ~5.1 nm; high dislocation density in twin",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_cr50",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_twin_matrix_cr50",
+          "microstructure_id": "micro_nanotwins_cr50",
+          "phase_1_name": "deformation twin",
+          "phase_2_name": "austenite matrix",
+          "coherence": "twin–matrix (T-M) lamellar interface (coherent twin boundary; parallel {111} twin plane)"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_microband_gnd_cr50",
+          "microstructure_id": "micro_microbands_cr50",
+          "interaction_type": "microband boundaries formed by geometrically necessary dislocations (GNDs)",
+          "qualitative_or_quantitative_description": "The different contrast between microbands and matrix reflects a misorientation between either side; the boundaries are geometrically necessary dislocations (GNDs) formed to accommodate the misorientation between adjacent boundaries."
+        },
+        {
+          "interaction_id": "di_pileup_slipband_cr50",
+          "microstructure_id": "micro_taylor_lattice_cr50",
+          "interaction_type": "dislocation pile-ups at intersections of non-coplanar slip bands",
+          "qualitative_or_quantitative_description": "Dislocations in the slip bands were approximately parallel and dislocation pile-ups were found at the intersections of the slip bands; the interaction was not strong enough to completely impede dislocation glide."
+        }
+      ],
+      "slip_behavior": "Planar dislocation glide dominates; slip bands approximately parallel with weak interaction at intersections. Cross slip is activated only at higher rolling degrees (90%).",
+      "phase_evolution": "With increasing cold rolling reduction the deformation substructure evolves approximately in the sequence: Taylor lattice → microbands → twins → shear bands → dislocation tangles. At 50% reduction microbands and nano-twins coexist with the refined Taylor lattice.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_cr50_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": "dog-bone-shaped specimen cut along the rolling direction; gauge length 16 mm, width 4 mm",
+        "test_standard": null,
+        "other_conditions": "Uniaxial tensile test using SHIMADZU AG-X 50KN universal testing machine; three parallel tests per condition"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering (Fig. 1(a)) and true (Fig. 1(b)) stress–strain curves for the 50% reduction condition are plotted; no numeric values are labelled on the curve.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    "source"
+  ],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

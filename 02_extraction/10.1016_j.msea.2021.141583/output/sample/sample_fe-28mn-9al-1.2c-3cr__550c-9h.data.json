@@ -1,0 +1,219 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-9al-1.2c-3cr__550c-9h",
+      "paper_id": "10.1016_j.msea.2021.141583",
+      "alloy_id": "alloy_fe-28mn-9al-1.2c-3cr",
+      "process_id": "proc_550c-9h",
+      "sample_label": "3Cr strip annealed 9 h",
+      "aliases": [
+        "3Cr annealed 9 h",
+        "9 h specimens (3Cr)"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_near_rapid_solidification",
+      "sequence": "1",
+      "type": "casting / solidification",
+      "method": "near-rapid solidification via centrifugal casting into a copper mold",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "Ar",
+      "cooling_medium": "copper mold",
+      "heating_or_cooling_rate": "~5 × 10^3 K/s (calculated maximum cooling rate)",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Alloy ingot (high purity Fe, Mn, Al, C, Cr) remelted by an induction coil; liquid metal poured into a copper mold at a rotating speed of 600 r/min in Ar atmosphere; obtained as-cast strip size (60–80) mm × 60 mm × 2.5 mm."
+    },
+    {
+      "processing_step_id": "step_annealing_550c_9h",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": "550 °C",
+      "temperature_unit": "°C",
+      "duration": "9 h",
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Annealing at 550 °C for 9 h, applied only to the 3Cr strip as the annealing-time series (Fig. 11). Heat-treatment furnace used for the strips is a vacuum electric resistance furnace. Longer annealing time reduces austenite dislocation density; κ-carbides are mainly precipitated in the first hour of annealing."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_3cr_annealed_9h",
+      "overall_structure": "Austenite (γ) matrix with dispersed δ-ferrite second-phase particles (constituent phases remain austenite and ferrite after 550 °C annealing). Annealing at 550 °C progressively reduces the dislocation density in the austenite with increasing annealing time, while the κ-carbide superlattice in the austenite remains very weak in the Cr-containing strip.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_3cr_9h_austenite",
+          "region": "austenite matrix",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": "continuous matrix",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "gradually decreases with increasing annealing time (9 h lowest of the annealed 3Cr series); superlattice of dislocations/κ-carbides weak"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_3cr_9h",
+              "type": "κ-carbide",
+              "size": null,
+              "distribution": "in austenite matrix (superlattice very weak)",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_3cr_9h_ferrite",
+          "region": "dispersed second-phase particles",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "block-like/angular particles dispersed in the austenite matrix",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_3cr_550c_9h_tensile",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1 × 10^-3 s^-1",
+        "specimen_geometry": "gauge size 20 mm × 4 mm × 1 mm",
+        "test_standard": null,
+        "other_conditions": "3Cr strip from the 550 °C annealing-time series; 9 h annealing; each test data supported by more than three tensile specimens."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "no significant change with annealing time after 1 h annealing (not numerically quantified)",
+              "unit": null,
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "plateau slightly above 800",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "~50",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Fig. 11(a): engineering stress–strain curves for 3Cr annealed at 550 °C for different times; the 550°C9h curve reaches the largest strain (~50%).",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.45",
+          "unit": "g/cm3"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_tem_austenite_9h_3cr",
+      "microstructure_id": "micro_3cr_9h_austenite",
+      "technique": "transmission electron microscopy (TEM), bright-field imaging with selected-area diffraction pattern (SADP)",
+      "instrument_or_setup": "JEM-2100F TEM operated at 200 kV",
+      "measurement_conditions": "BF image of the 9 h specimen, 100 nm scale bar (Fig. 11(d))",
+      "purpose": "Examine the austenite microstructure and dislocation density of the 3Cr strip after 9 h annealing at 550 °C",
+      "key_findings": "Dislocation density gradually decreases with increasing annealing time; the 9 h specimen shows a large rounded particle with faint internal parallel striations; κ-carbide superlattice in austenite remains very weak in the Cr-containing strip."
+    },
+    {
+      "characterization_id": "char_tensile_9h_3cr",
+      "microstructure_id": null,
+      "technique": "uniaxial tensile testing",
+      "instrument_or_setup": "MTS Criterion Model 44 mechanical property tester, 10 kN capacity",
+      "measurement_conditions": "strain rate 1 × 10^-3 s^-1; specimen gauge 20 mm × 4 mm × 1 mm",
+      "purpose": "Measure the mechanical properties of the 3Cr strip after 9 h annealing at 550 °C as part of the annealing-time series",
+      "key_findings": "Plasticity of the 3Cr strip increases gradually with annealing time; the 9 h curve reaches the largest strain (~50%) among the 3Cr series, while the yield strength does not change significantly after 1 h annealing."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "For the 3Cr strip annealed at 550 °C, κ-carbides are mainly precipitated in the first hour of annealing while recovery (removal of dislocations) requires longer time; longer annealing time may coarsen κ-carbides, so the annealing time should be optimized to balance κ-carbide coarsening and dislocation-density reduction (block b0050).",
+    "The plasticity of the 3Cr strip increases gradually with increasing annealing time at 550 °C, but the yield strength does not change significantly after 1 h annealing; the 9 h annealing is the longest time in this series (block b0050).",
+    "The 550 °C heat treatments were carried out in a vacuum electric resistance furnace and only the 3Cr alloy was used for the different-annealing-time series (Fig. 11); the 5 h/550 °C data and the tensile table values (YS/UTS/TE) reported elsewhere in the paper belong to the 5 h process, not to this 9 h sample (blocks b0018, b0049)."
+  ]
+}

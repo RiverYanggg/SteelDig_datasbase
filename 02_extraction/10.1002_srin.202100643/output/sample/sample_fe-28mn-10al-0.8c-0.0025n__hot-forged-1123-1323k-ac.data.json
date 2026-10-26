@@ -1,0 +1,383 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-10al-0.8c-0.0025n__hot-forged-1123-1323k-ac",
+      "paper_id": "10.1002_srin.202100643",
+      "alloy_id": "alloy_fe-28mn-10al-0.8c-0.0025n",
+      "process_id": "proc_hot-forged-1123-1323k-ac",
+      "sample_label": "LN",
+      "aliases": [
+        "LN steel",
+        "low-nitrogen steel",
+        "LN steel sample",
+        "low-nitrogen (LN) steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization holding",
+      "temperature": "1423 K",
+      "temperature_unit": "K",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingots (50 kg) held at 1423 K for 2 h."
+    },
+    {
+      "processing_step_id": "step_hot_forging",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "multi-directional hot forging",
+      "temperature": "1123–1323 K",
+      "temperature_unit": "K",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Multidirectionally hot forged in the temperature range 1123–1323 K."
+    },
+    {
+      "processing_step_id": "step_air_cooling",
+      "sequence": "3",
+      "type": "cooling",
+      "method": "air cooling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Followed by air cooling (as-forged/air-cooled final state)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "Austenite matrix with coarse, dark, elongated ferrite stripes/plates at austenite grain boundaries; long straight parallel plates (annealing twins) cross several austenite grains.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "microstructure_1",
+          "region": "bulk",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "Austenite",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix cut by long, straight parallel plates (annealing twins) crossing several austenite grains",
+              "grain_size": "20.5 μm",
+              "texture": null
+            },
+            {
+              "phase_name": "Ferrite",
+              "crystal_structure": null,
+              "volume_fraction": "5.08%",
+              "morphology": "coarse, dark, elongated stripes/plates decorating austenite grain boundaries; coarser and larger than ferrite in HN steel",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "non-metallic inclusions",
+              "porosity": null,
+              "inclusions": [
+                "AlN (polyhedral structure)",
+                "Mn(Mg)S (elliptical with smooth edge)",
+                "AlN–Mn(Mg)S complex inclusions"
+              ],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "20.5",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "long straight parallel plates (annealing twins) crossing austenite grains"
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "interface_austenite_ferrite",
+          "microstructure_id": "microstructure_1",
+          "phase_1_name": "Austenite",
+          "phase_2_name": "Ferrite",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "interaction_inclusion_matrix",
+          "microstructure_id": "microstructure_1",
+          "interaction_type": "inclusion–matrix interface decohesion / crack initiation",
+          "qualitative_or_quantitative_description": "Sulfide inclusions could easily break away from cracks at the inclusion–matrix interface due to weak binding force to the steel matrix; inclusions detected in dimples became the initial point of fracture."
+        },
+        {
+          "interaction_id": "interaction_ferrite_grainboundary",
+          "microstructure_id": "microstructure_1",
+          "interaction_type": "ferrite at austenite grain boundary / crack initiation",
+          "qualitative_or_quantitative_description": "Ferrite precipitated at the grain boundary of the austenite matrix contributes to crack initiation and brittle crack propagation."
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": "Ferrite with long parallel stripes forms at the boundaries of the austenite matrix due to the low precipitation temperature of ferrite; in LN steel the ferrite is coarser and larger than in HN steel.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "property_set_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1 × 10^-3 s^-1",
+        "specimen_geometry": "round tensile specimen: Ø16 mm grip ends of 20 mm length, Ø10 mm gauge section, 50 mm gauge length, R10 fillet, 114 mm overall length",
+        "test_standard": null,
+        "other_conditions": "tensile speed 3 mm min^-1; universal material testing machine WDW-200"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "685",
+              "unit": "MPa",
+              "uncertainty": "±1.5"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "832.5",
+              "unit": "MPa",
+              "uncertainty": "±1.5"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "62.5",
+              "unit": "%",
+              "uncertainty": "±5"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curves for LN1, LN2, LN3 (dashed); curves overlap in the elastic/plateau region peaking between 800 and 900 MPa; LN1 and LN2 drop sharply around 50–55% strain, LN3 near 62% strain.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_LN_vs_HN",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": "HN (high-nitrogen steel)",
+        "comparison_metric": "Effect of nitrogen addition on mechanical properties (LN vs HN)",
+        "improvement_percentage": "HN vs LN: UTS +9 MPa (832.5→841.5 MPa); RA +13 percentage points (57→70%); A +12 percentage points (62.5→74.5%); CVN +49.5 J (81→130.5 J); YS −38 MPa (685→647 MPa)."
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_microstructure",
+      "microstructure_id": "microstructure_1",
+      "technique": "optical/metallographic microstructure observation (etched)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "mechanical grinding, corroded with 96 vol% alcohol + 4 vol% nitric acid",
+      "purpose": "observe microstructure, grain size, and ferrite area fraction",
+      "key_findings": "LN steel: mean grain size 20.5 μm; ferrite area percentage 5.08%; austenite matrix with coarse, elongated ferrite at grain boundaries."
+    },
+    {
+      "characterization_id": "char_sem_eds_inclusions",
+      "microstructure_id": "microstructure_1",
+      "technique": "SEM with EDS",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "observe morphologies and compositions of inclusions",
+      "key_findings": "LN dominant inclusions: AlN (polyhedral), Mn(Mg)S (elliptical with smooth edge), and AlN–Mn(Mg)S complex inclusions; sulfide occasionally precipitated on AlN surfaces."
+    },
+    {
+      "characterization_id": "char_inclusion_statistics",
+      "microstructure_id": "microstructure_1",
+      "technique": "SEM image analysis with ImageJ",
+      "instrument_or_setup": "SEM at 500 magnification, 50 random view fields",
+      "measurement_conditions": null,
+      "purpose": "quantify number and size of inclusions",
+      "key_findings": "LN steel: number density 73 mm⁻²; average size 3.435 μm; area ratio 0.212%; NP of inclusions <4 μm = 78%; size distribution 39% (<2 μm), 39% (2–4 μm), 12% (4–6 μm), 10% (>6 μm)."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "tensile test",
+      "instrument_or_setup": "universal material testing machine WDW-200",
+      "measurement_conditions": "room temperature; strain rate 1 × 10^-3 s^-1; tensile speed 3 mm min^-1",
+      "purpose": "determine YS, UTS, RA, elongation and stress-strain curves",
+      "key_findings": "LN steel: YS 685(±1.5) MPa, UTS 832.5(±1.5) MPa, RA 57(±6) %, A 62.5(±5) %."
+    },
+    {
+      "characterization_id": "char_impact",
+      "microstructure_id": null,
+      "technique": "Charpy impact test",
+      "instrument_or_setup": "impact testing machine JB-300B",
+      "measurement_conditions": null,
+      "purpose": "obtain impact energy (CVN)",
+      "key_findings": "LN steel: CVN 81(±3) J."
+    },
+    {
+      "characterization_id": "char_fracture",
+      "microstructure_id": null,
+      "technique": "SEM and super-depth-of-field microscope fracture surface observation",
+      "instrument_or_setup": "SEM; super-depth of field microscope VHX-500",
+      "measurement_conditions": null,
+      "purpose": "observe tensile and impact fracture morphologies",
+      "key_findings": "LN tensile fracture: fracture section at 45° to load direction; small, shallow equiaxed dimples, smaller in size and greater in number (more severe local stress concentration). LN impact fracture: standard ductile impact fracture with fibrous, radiation and shear lip zones; shear lip area ratio lower than HN; dimples small and elongated in crack propagation direction."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_aln_stability",
+      "simulation_method": "AlN stability/solubility diagram calculation (thermodynamic equilibrium)",
+      "software_used": "calculation method from previous work; liquidus and solidus calculated using FactSage 8.0",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Fe–28Mn–10Al–0.8C steel; [Al] (wt%) vs [N] (wt%); smelting temperature 1873 K, liquidus 1587 K, solidus 1493 K",
+      "validation_against_experiment": "LN composition (Al 9.90 wt%, N 0.0025 wt%) plots below the equilibrium line of the smelting temperature, indicating AlN was not stable and could not be generated during smelting.",
+      "analytical_models": []
+    },
+    {
+      "computation_id": "comp_pseudobinary_phase_diagram",
+      "simulation_method": "pseudobinary phase diagram calculation",
+      "software_used": "Thermo-Calc software",
+      "potential_model_or_database": "TCFE8 database",
+      "boundary_and_initial_conditions": "Fe–28Mn–10Al–0.8C–N system; temperature 700–1800 K vs mass fraction of nitrogen 0.0–2.0 wt%",
+      "validation_against_experiment": null,
+      "analytical_models": []
+    },
+    {
+      "computation_id": "comp_analytical_models",
+      "simulation_method": null,
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Griffith's equation",
+          "equation_role": "describes the effect of grain refinement on toughness; relates fracture stress to effective grain size",
+          "parameters": [
+            {
+              "name": "σf",
+              "value": "fracture stress",
+              "unit": null
+            },
+            {
+              "name": "E",
+              "value": "Young's modulus",
+              "unit": null
+            },
+            {
+              "name": "γ",
+              "value": "plastic deformation energy during crack propagation",
+              "unit": null
+            },
+            {
+              "name": "ν",
+              "value": "Poisson's ratio",
+              "unit": null
+            },
+            {
+              "name": "c0",
+              "value": "effective grain size",
+              "unit": null
+            }
+          ],
+          "model_note": "σf = [4Eγ/(π(1-ν²)c0)]^(1/2)"
+        },
+        {
+          "model_name": "Hall–Petch (Hall–Page) equation",
+          "equation_role": "relationship between yield strength and grain size",
+          "parameters": [
+            {
+              "name": "σy",
+              "value": "YS of polycrystalline materials",
+              "unit": null
+            },
+            {
+              "name": "σ0",
+              "value": "lattice friction resistance when a single dislocation is moved",
+              "unit": null
+            },
+            {
+              "name": "Ky",
+              "value": "influence degree of grain boundaries on strength",
+              "unit": null
+            },
+            {
+              "name": "d",
+              "value": "average grain diameter",
+              "unit": null
+            }
+          ],
+          "model_note": "σy = σ0 + Ky·d^(-1/2)"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "LN steel chemical composition (Table 1, wt%): Mn 28.21, Al 9.90, C 0.82, N 0.0025, S 0.0085, Fe Bal. [b0015, table_001]",
+    "LN steel reduction of area (RA) = 57(±6) % from the room-temperature tensile test (Table 2). [b0029, table_002]",
+    "LN steel Charpy impact energy (CVN) = 81(±3) J from the JB-300B impact test (Table 2). [b0029, table_002]",
+    "LN steel inclusion statistics: number density 73 mm⁻², average size 3.435 μm, area ratio 0.212%; NP of inclusions <4 μm = 78%; size distribution 39% (<2 μm), 39% (2–4 μm), 12% (4–6 μm), 10% (>6 μm). [b0033, table_003, figure_006]",
+    "LN steel tensile fracture: fracture section was 45° to the load direction; the LN sample fractured by shear stress at 45° before the loading-direction stress reached its tensile strength; dimples smaller in size and greater in number. [b0051, b0055, figure_010]",
+    "LN steel impact fracture: standard ductile impact fracture including fibrous, radiation and shear lip zones; shear lip zone area ratio lower than in HN steel; dimples small and elongated in the crack propagation direction, greatly affected by shear force, accelerating crack propagation. [b0059, figure_011]",
+    "AlN stability for LN steel: the Al (9.90 wt%) and N (0.0025 wt%) composition fell below the equilibrium line of the smelting temperature (1873 K), indicating AlN was not a stable phase and could not be generated during smelting. [b0044, figure_008]",
+    "Ingots (50 kg) were manufactured using a vacuum medium-frequency induction furnace from pure iron, ferromanganese, carbon particles, aluminum particles, and manganese nitrogen alloy. [b0013]",
+    "The LN steel generally broke earlier than the HN steel during local necking in the tensile test; energy consumption of LN fracture is lower than HN fracture. [b0051]",
+    "The tensile specimen geometry (figure_001) is Ø16 mm grip ends of 20 mm length, Ø10 mm gauge section, 50 mm gauge length, R10 fillet, 114 mm overall length; the impact specimen is a 50 mm × 10 mm × 10 mm Charpy-type bar with a 45° V-notch, 2 mm notch depth and 8 mm remaining ligament. [figure_001]"
+  ]
+}

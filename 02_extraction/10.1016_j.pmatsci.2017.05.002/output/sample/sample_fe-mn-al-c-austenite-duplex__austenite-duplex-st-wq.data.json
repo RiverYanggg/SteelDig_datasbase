@@ -1,0 +1,110 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-mn-al-c-austenite-duplex__austenite-duplex-st-wq",
+      "paper_id": "10.1016_j.pmatsci.2017.05.002",
+      "alloy_id": "alloy_fe-mn-al-c-austenite-duplex",
+      "process_id": "proc_austenite-duplex-st-wq",
+      "sample_label": "solution treated and water quenched",
+      "aliases": [
+        "triplex steel (ST+WQ)",
+        "γ+δ (triplex) in solution treated and water quenched condition"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment (solutionizing) in the single-austenite / two-phase region",
+      "temperature": "900–1100 °C",
+      "temperature_unit": "°C",
+      "duration": "25 min (Fe-27Mn-12Al-0.9C, SIP alloy, Table 4); 1050 °C for Fe-27Mn-11.5Al-0.95C (time not specified)",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Austenite based duplex steels are solution treated in the temperature range ~900-1100 °C. Specific example: Fe-27Mn-11.5Al-0.95C solution treated at 1050 °C; Fe-27Mn-12Al-0.9C (SIP) solution treated at 1050 °C/25 min."
+    },
+    {
+      "processing_step_id": "step_water_quenching",
+      "sequence": "2",
+      "type": "heat treatment / cooling",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": "fast cooling (water quench)",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Fast cooling/water quenching avoids formation of coarse intergranular κ-carbides; the austenite matrix in the solution-treated and water-quenched condition contains SROs (<2 nm) and possibly nano-sized κ'-carbides (20-30 nm)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_austenite_duplex_st_wq",
+      "overall_structure": "γ + δ-ferrite duplex (triplex) microstructure with the austenitic (γ) phase forming the continuous matrix; at the final stage small amounts of δ-ferrite and intragranular nano-sized κ-carbides are present in the austenite matrix.",
+      "number_of_phases": "3 (γ austenite matrix, δ-ferrite, κ-carbide) for triplex; γ + δ for duplex",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_st_wq_matrix",
+          "region": "bulk matrix",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": "continuous matrix (majority phase)",
+              "morphology": "continuous austenitic matrix; in hot-rolled condition banded with δ stringers",
+              "grain_size": "~30–50 μm",
+              "texture": null
+            },
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "BCC (may transform to ordered B2/DO3)",
+              "volume_fraction": "6–8% (triplex steels); ~8% (Fe-28Mn-12Al-1C); ~6% (Fe-27Mn-11.5Al-0.95C); up to ~21% (Fe-18Mn-9.6Al-0.65C)",
+              "morphology": "elongated band-like δ-ferrite / δ stringers parallel to the rolling direction; thin strip-like",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~30–50",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "kappa_prime",
+              "type": "κ'-carbide, (Fe,Mn)3AlCx (metastable, x<1), ordered L'12 / perovskite-type E2_1 (Fe,Mn)3AlC",
+              "size": "20–30 nm",
+              "distribution": "intragranular, homogeneous within the austenite matrix",
+              "coherency": "coherent with the austenite matrix (lattice misfit < 3%)"
+            }
+          ],
+          "block_id": [
+            "b0048",
+            "b0194",
+            "b0195",
+            "b0196",
+            "b0206",
+            "b0163"
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

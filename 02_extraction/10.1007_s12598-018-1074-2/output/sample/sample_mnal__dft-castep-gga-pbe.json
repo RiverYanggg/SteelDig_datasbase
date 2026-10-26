@@ -1,0 +1,803 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_mnal__dft-castep-gga-pbe",
+      "paper_id": "10.1007_s12598-018-1074-2",
+      "alloy_id": "alloy_mnal",
+      "process_id": "proc_dft-castep-gga-pbe",
+      "sample_label": "MnAl",
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "The sample's process identity is the DFT first-principles calculation protocol applied to the MnAl crystal structure.",
+        "block_id": [
+          "b0011"
+        ]
+      },
+      "processing_step_id": "step_dft_castep_gga_pbe",
+      "sequence": {
+        "value": "1",
+        "source": {
+          "reason": "The only process for this sample is the DFT calculation step; no experimental processing sequence is reported.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "type": {
+        "value": "computational processing",
+        "source": {
+          "reason": "The sample is a geometry-optimized DFT crystal structure rather than an experimentally processed alloy.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "method": {
+        "value": "first-principles DFT geometry optimization (CASTEP, GGA-PBE)",
+        "source": {
+          "reason": "The Calculation methods section describes geometry-optimized crystal structures via DFT using CASTEP with GGA-PBE.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Computational study with no experimental thermal/mechanical processing. Geometry-optimized crystal structure via first-principles DFT using CASTEP; GGA-PBE exchange-correlation, ultrasoft pseudopotentials, 8×8×8 Monkhorst-Pack k-point mesh, 450 eV plane-wave cutoff, energy converged to 2×10⁻⁶ eV and forces below 0.5 eV/nm.",
+        "source": {
+          "reason": "The DFT protocol details are given in the Calculation methods section.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "MnAl crystal structure described as cubic Pm-3m B2 compound with 8 Mn + 8 Al in the DFT cell.",
+        "block_id": [
+          "b0011",
+          "figure_001",
+          "b0021"
+        ]
+      },
+      "structure_id": "structure_mnal",
+      "overall_structure": {
+        "value": "B2-type cubic Mn-Al compound (space group Pm-3m); cubic supercell (16-atom cell) with 8 Mn atoms on one simple-cubic sublattice and 8 Al atoms on the other (Fe-free end member, x = 1).",
+        "source": {
+          "reason": "Text states the Fe1-xMnxAl system exhibits a cubic supercell structure with space group Pm-3m; Figure 1 panel MnAl shows eight green Mn spheres and no Fe spheres with the Al sublattice unchanged.",
+          "block_id": [
+            "b0011",
+            "figure_001"
+          ]
+        }
+      },
+      "number_of_phases": {
+        "value": 1,
+        "source": {
+          "reason": "MnAl is a single B2-type Mn-Al compound; no secondary phases are reported for this composition.",
+          "block_id": [
+            "b0011",
+            "figure_001"
+          ]
+        }
+      },
+      "microstructure_counts": {
+        "value": 1,
+        "source": {
+          "reason": "One bulk crystal-structure model is used for MnAl in the DFT calculations.",
+          "block_id": [
+            "figure_001"
+          ]
+        }
+      },
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "Bulk single-crystal MnAl structure from Figure 1 used in DFT calculations.",
+            "block_id": [
+              "figure_001",
+              "b0011"
+            ]
+          },
+          "microstructure_id": "micro_mnal_bulk",
+          "region": null,
+          "related_sequence": {
+            "value": "1",
+            "source": {
+              "reason": "This bulk MnAl structure corresponds to the DFT calculation step (sequence 1).",
+              "block_id": [
+                "b0011"
+              ]
+            }
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "MnAl phase identified as the B2 cubic Mn-Al compound in the Fe1-xMnxAl series.",
+                "block_id": [
+                  "b0021",
+                  "figure_001"
+                ]
+              },
+              "phase_name": {
+                "value": "MnAl (B2-type Mn-Al)",
+                "source": {
+                  "reason": "The MnAl row in Table 1 and the Figure 1 MnAl model identify this B2 cubic Mn-Al compound.",
+                  "block_id": [
+                    "b0021",
+                    "figure_001"
+                  ]
+                }
+              },
+              "crystal_structure": {
+                "value": "cubic, space group Pm-3m (B2); a = b = c = 0.584 nm",
+                "source": {
+                  "reason": "Text states cubic supercell structure with space group Pm-3m; Table 1 gives MnAl lattice parameter a=b=c=0.584 nm.",
+                  "block_id": [
+                    "b0011",
+                    "b0021"
+                  ]
+                }
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "cubic supercell; 16-atom cell (8 Mn + 8 Al)",
+                "source": {
+                  "reason": "Figure 1 describes every model as a 16-atom cell with eight Al spheres and eight Fe/Mn sites; MnAl has eight Mn and no Fe.",
+                  "block_id": [
+                    "figure_001"
+                  ]
+                }
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "source": {
+        "reason": "Mechanical properties of MnAl reported in Table 2 and text discussion.",
+        "block_id": [
+          "b0049",
+          "b0044",
+          "b0047"
+        ]
+      },
+      "property_set_id": "prop_mechanical_mnal",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": {
+          "value": "DFT (CASTEP, GGA-PBE) single-crystal elastic constants; polycrystalline B, G, E, σ derived by Voigt-Reuss-Hill (VRH) approximation.",
+          "source": {
+            "reason": "Elastic constants were calculated by DFT and polycrystalline moduli by VRH approximation (Eqs. 4-9), listed in Table 2.",
+            "block_id": [
+              "b0032",
+              "b0034",
+              "b0048"
+            ]
+          }
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": {
+            "value": "178.8 GPa",
+            "source": {
+              "reason": "Table 2 row MnAl lists Young's modulus E = 178.8 GPa.",
+              "block_id": [
+                "b0049",
+                "b0048"
+              ]
+            }
+          },
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "source": {
+              "reason": "MnAl hardness value from Table 2.",
+              "block_id": [
+                "b0049",
+                "b0047"
+              ]
+            },
+            "region": null,
+            "value": {
+              "value": "5.0",
+              "source": {
+                "reason": "Table 2 row MnAl lists Vickers hardness H_V = 5.0 GPa.",
+                "block_id": [
+                  "b0049",
+                  "b0047"
+                ]
+              }
+            },
+            "scale": {
+              "value": "Vickers (H_V)",
+              "source": {
+                "reason": "Table 2 column H_V is Vickers hardness; text states MnAl has the lowest hardness of 5.0 GPa.",
+                "block_id": [
+                  "b0049",
+                  "b0047"
+                ]
+              }
+            },
+            "unit": {
+              "value": "GPa",
+              "source": {
+                "reason": "Table 2 title gives hardness values in GPa.",
+                "block_id": [
+                  "b0048"
+                ]
+              }
+            },
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "source": {
+        "reason": "Physical/thermal properties of MnAl from Table 4 and electronic-structure discussion.",
+        "block_id": [
+          "b0069",
+          "b0025"
+        ]
+      },
+      "property_set_id": "prop_physical_thermal_mnal",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": {
+          "value": "Theoretical DFT-derived values (Table 4).",
+          "source": {
+            "reason": "Table 4 caption states these are theoretical (DFT) values for density, sound velocities and Debye temperature.",
+            "block_id": [
+              "b0068"
+            ]
+          }
+        }
+      },
+      "mechanical": null,
+      "physical": {
+        "density": {
+          "value": "5448.8 kg·m⁻³",
+          "source": {
+            "reason": "Table 4 row MnAl lists theoretical density ρ = 5448.8 kg·m⁻³.",
+            "block_id": [
+              "b0069",
+              "b0068"
+            ]
+          }
+        },
+        "thermal_properties": {
+          "source": {
+            "reason": "Sound velocities and Debye temperature of MnAl listed in Table 4.",
+            "block_id": [
+              "b0069",
+              "b0068"
+            ]
+          },
+          "debye_temperature": {
+            "value": "504.1 K",
+            "source": {
+              "reason": "Table 4 row MnAl lists Debye temperature ΘD = 504.1 K.",
+              "block_id": [
+                "b0069",
+                "b0068"
+              ]
+            }
+          },
+          "longitudinal_sound_velocity": {
+            "value": "6905.1 m·s⁻¹",
+            "source": {
+              "reason": "Table 4 row MnAl lists longitudinal sound velocity v1 = 6905.1 m·s⁻¹.",
+              "block_id": [
+                "b0069",
+                "b0068"
+              ]
+            }
+          },
+          "transverse_sound_velocity": {
+            "value": "3519.6 m·s⁻¹",
+            "source": {
+              "reason": "Table 4 row MnAl lists transverse sound velocity vs = 3519.6 m·s⁻¹.",
+              "block_id": [
+                "b0069",
+                "b0068"
+              ]
+            }
+          },
+          "average_sound_velocity": {
+            "value": "3943.8 m·s⁻¹",
+            "source": {
+              "reason": "Table 4 row MnAl lists average sound velocity vm = 3943.8 m·s⁻¹.",
+              "block_id": [
+                "b0069",
+                "b0068"
+              ]
+            }
+          }
+        },
+        "electrical_properties": {
+          "conductivity": {
+            "value": "metallic (nonzero DOS at the Fermi level); good electronic conductivity",
+            "source": {
+              "reason": "Text states all Fe-Mn-Al alloys have metallic features due to nonzero DOS at the Fermi level, and combinations of covalent and metallic bonds give good electronic conductivity.",
+              "block_id": [
+                "b0025",
+                "b0029"
+              ]
+            }
+          }
+        },
+        "magnetic_properties": {
+          "magnetic_character": {
+            "value": "magnetic characteristics due to dissymmetric spin up/down DOS channels",
+            "source": {
+              "reason": "Text states a comparison of down and up states shows these alloys have magnetic characteristics due to dissymmetric down and up states.",
+              "block_id": [
+                "b0025"
+              ]
+            }
+          }
+        }
+      },
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "Electronic-structure characterization of MnAl from TDOS/PDOS.",
+        "block_id": [
+          "b0024",
+          "b0028",
+          "figure_003"
+        ]
+      },
+      "characterization_id": "char_dos_mnal",
+      "microstructure_id": "micro_mnal_bulk",
+      "technique": {
+        "value": "DFT total/partial density of states (TDOS/PDOS)",
+        "source": {
+          "reason": "TDOS and PDOS were calculated to analyze electronic structure; Figure 3 panel j is the MnAl DOS.",
+          "block_id": [
+            "b0024",
+            "b0028",
+            "figure_003"
+          ]
+        }
+      },
+      "instrument_or_setup": {
+        "value": "CASTEP first-principles DFT calculation",
+        "source": {
+          "reason": "All calculations were performed with the CASTEP code.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Analyze chemical bonding and electronic structure of MnAl",
+        "source": {
+          "reason": "TDOS/PDOS were calculated in order to analyze chemical bonding characteristics and electronic structures.",
+          "block_id": [
+            "b0024"
+          ]
+        }
+      },
+      "key_findings": {
+        "value": "Metallic character (nonzero DOS at the Fermi level); magnetic character from asymmetric spin up/down channels; for MnAl the -5 to 1 eV band range is determined mainly by Al-p and Mn-d bands; TDOS near the Fermi level is mainly low Al-p states hybridized with Mn-d states; Fermi surface mainly from Mn-d states with low Al-p contribution; no Fe-d contribution (Figure 3 panel j).",
+        "source": {
+          "reason": "MnAl-specific DOS discussion in the electronic-structures section and Figure 3 panel j.",
+          "block_id": [
+            "b0025",
+            "b0028",
+            "figure_003"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "Bonding characterization of MnAl from electron density maps.",
+        "block_id": [
+          "b0030",
+          "figure_004"
+        ]
+      },
+      "characterization_id": "char_edensity_mnal",
+      "microstructure_id": "micro_mnal_bulk",
+      "technique": {
+        "value": "DFT electron density distribution maps (total and difference)",
+        "source": {
+          "reason": "Total electron density distribution and electron density difference distribution maps were calculated; Figure 4 panels i and j are the Mn–Al-(110) maps.",
+          "block_id": [
+            "b0030",
+            "figure_004"
+          ]
+        }
+      },
+      "instrument_or_setup": {
+        "value": "CASTEP first-principles DFT calculation",
+        "source": {
+          "reason": "All calculations were performed with the CASTEP code.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Analyze chemical bonding (covalent vs metallic) in MnAl",
+        "source": {
+          "reason": "Electron density maps were used to analyze chemical bonding characteristics.",
+          "block_id": [
+            "b0030"
+          ]
+        }
+      },
+      "key_findings": {
+        "value": "Mn–Al-(110) total electron density contour map (Slice 1 scale 0.10–0.50) and electron density difference map (Slice 1 scale −0.05 to 0.05) indicate covalent and metallic bonding between Mn and Al.",
+        "source": {
+          "reason": "Figure 4 panels i and j are the Mn–Al-(110) maps with the stated contour scales; text concludes covalent and metallic bonding.",
+          "block_id": [
+            "b0030",
+            "figure_004"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "Elastic and anisotropic characterization of MnAl.",
+        "block_id": [
+          "b0049",
+          "b0051",
+          "b0044",
+          "b0059"
+        ]
+      },
+      "characterization_id": "char_elastic_mnal",
+      "microstructure_id": "micro_mnal_bulk",
+      "technique": {
+        "value": "DFT elastic constants + Voigt-Reuss-Hill (VRH) approximation; elastic anisotropy indices",
+        "source": {
+          "reason": "Elastic constants were calculated and polycrystalline moduli obtained by VRH approximation; anisotropy indices were also calculated.",
+          "block_id": [
+            "b0032",
+            "b0034",
+            "b0054"
+          ]
+        }
+      },
+      "instrument_or_setup": {
+        "value": "CASTEP first-principles DFT calculation",
+        "source": {
+          "reason": "All calculations were performed with the CASTEP code.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Assess mechanical stability, elastic moduli and mechanical anisotropy of MnAl",
+        "source": {
+          "reason": "Mechanical stability, elastic properties and anisotropy were investigated for the Fe-Mn-Al alloys.",
+          "block_id": [
+            "b0031",
+            "b0053"
+          ]
+        }
+      },
+      "key_findings": {
+        "value": "Mechanically stable (satisfies cubic stability criteria); C11=203.8, C12=152.9, C44=126.6 GPa; B=169.8, G=67.5, E=178.8 GPa; σ=0.324; H_V=5.0 GPa; B/G=2.52 (ductile); A^U=3.80, A_B=0, A_G=0.276, A1=A2=A3=4.97 (largest anisotropy among Fe-Mn-Al alloys).",
+        "source": {
+          "reason": "MnAl row values in Tables 2 and 3 and text discussion of mechanical stability and anisotropy.",
+          "block_id": [
+            "b0049",
+            "b0051",
+            "b0044",
+            "b0059"
+          ]
+        }
+      }
+    }
+  ],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "DFT calculation protocol for the MnAl crystal structure.",
+        "block_id": [
+          "b0011"
+        ]
+      },
+      "computation_id": "comp_dft_castep_mnal",
+      "simulation_method": {
+        "value": "First-principles density functional theory (DFT), GGA-PBE",
+        "source": {
+          "reason": "DFT with GGA-PBE exchange-correlation was used for all calculations.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "software_used": {
+        "value": "CASTEP (Cambridge Sequential Total Energy Package)",
+        "source": {
+          "reason": "Calculations were implemented using the CASTEP code.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "potential_model_or_database": {
+        "value": "Ultrasoft pseudopotentials; GGA-PBE exchange-correlation; valence electron states Fe 3d⁶4s², Mn 3d⁵4s², Al 3s²3p¹",
+        "source": {
+          "reason": "Interactions between valence electrons and ionic core described with ultrasoft pseudopotentials; GGA-PBE used; valence states listed.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "boundary_and_initial_conditions": {
+        "value": "8×8×8 Monkhorst-Pack k-point mesh; maximum plane-wave cutoff energy 450 eV; total energy converged to 2×10⁻⁶ eV; force on each atom reduced to 0.5 eV/nm",
+        "source": {
+          "reason": "The k-point mesh, cutoff energy and convergence criteria are stated in the Calculation methods section.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "validation_against_experiment": {
+        "value": "Calculated lattice parameters show good agreement with other experimental and calculated values (slight deviation attributed to differences in calculation methods and experimental conditions).",
+        "source": {
+          "reason": "Text states the calculated results show good agreement with other experimental and calculated values.",
+          "block_id": [
+            "b0019"
+          ]
+        }
+      },
+      "analytical_models": [
+        {
+          "source": {
+            "reason": "VRH approximation used for MnAl elastic moduli.",
+            "block_id": [
+              "b0034"
+            ]
+          },
+          "model_name": {
+            "value": "Voigt-Reuss-Hill (VRH) approximation",
+            "source": {
+              "reason": "VRH approximation used to determine bulk, shear and Young's moduli and Poisson's ratio.",
+              "block_id": [
+                "b0034"
+              ]
+            }
+          },
+          "equation_role": {
+            "value": "Derive polycrystalline bulk modulus B, shear modulus G, Young's modulus E and Poisson's ratio σ from single-crystal elastic constants",
+            "source": {
+              "reason": "Equations (4)-(9) define B, G, E and σ via VRH.",
+              "block_id": [
+                "b0034",
+                "b0035",
+                "b0036",
+                "b0037",
+                "b0038",
+                "b0039",
+                "b0040"
+              ]
+            }
+          },
+          "parameters": [],
+          "model_note": {
+            "value": "Eqs. (4)–(9).",
+            "source": {
+              "reason": "VRH formulas are Eqs. (4)-(9).",
+              "block_id": [
+                "b0034"
+              ]
+            }
+          }
+        },
+        {
+          "source": {
+            "reason": "Hardness model applied to MnAl.",
+            "block_id": [
+              "b0045",
+              "b0046",
+              "b0047"
+            ]
+          },
+          "model_name": {
+            "value": "Vickers hardness empirical model",
+            "source": {
+              "reason": "An empirical model was used to determine Vickers hardness H_V.",
+              "block_id": [
+                "b0045",
+                "b0046",
+                "b0047"
+              ]
+            }
+          },
+          "equation_role": {
+            "value": "Estimate Vickers hardness H_V from shear modulus G and bulk modulus B",
+            "source": {
+              "reason": "H_V = 2(k²G)^0.585 - 3 with k = G/B.",
+              "block_id": [
+                "b0046",
+                "b0047"
+              ]
+            }
+          },
+          "parameters": [],
+          "model_note": {
+            "value": "H_V = 2(k²G)^0.585 − 3, k = G/B (Eq. 10); for MnAl H_V = 5.0 GPa.",
+            "source": {
+              "reason": "Equation (10) and MnAl hardness value in Table 2.",
+              "block_id": [
+                "b0046",
+                "b0047",
+                "b0049"
+              ]
+            }
+          }
+        },
+        {
+          "source": {
+            "reason": "Debye temperature model applied to MnAl.",
+            "block_id": [
+              "b0066",
+              "b0070"
+            ]
+          },
+          "model_name": {
+            "value": "Debye temperature and sound velocity model",
+            "source": {
+              "reason": "Debye temperature and sound velocities were calculated using Eqs. (15)-(18).",
+              "block_id": [
+                "b0066",
+                "b0070",
+                "b0071",
+                "b0072",
+                "b0073"
+              ]
+            }
+          },
+          "equation_role": {
+            "value": "Calculate Debye temperature ΘD and longitudinal/transverse/average sound velocities (v_l, v_s, v_m) from B, G and ρ",
+            "source": {
+              "reason": "Equations (15)-(18) define ΘD and sound velocities.",
+              "block_id": [
+                "b0070",
+                "b0071",
+                "b0072",
+                "b0073"
+              ]
+            }
+          },
+          "parameters": [],
+          "model_note": {
+            "value": "Eqs. (15)–(18).",
+            "source": {
+              "reason": "Debye temperature and sound velocity formulas.",
+              "block_id": [
+                "b0070"
+              ]
+            }
+          }
+        },
+        {
+          "source": {
+            "reason": "Anisotropy models applied to MnAl.",
+            "block_id": [
+              "b0054",
+              "b0055"
+            ]
+          },
+          "model_name": {
+            "value": "Elastic anisotropy indices",
+            "source": {
+              "reason": "Several anisotropy indexes were calculated using Eqs. (11)-(14).",
+              "block_id": [
+                "b0054",
+                "b0055",
+                "b0056",
+                "b0057",
+                "b0058"
+              ]
+            }
+          },
+          "equation_role": {
+            "value": "Calculate universal anisotropic index A^U, anisotropy A_B and A_G, and shear anisotropic factors A_1 = A_2 = A_3",
+            "source": {
+              "reason": "Equations (11)-(14) define the anisotropy indices.",
+              "block_id": [
+                "b0055",
+                "b0056",
+                "b0057",
+                "b0058"
+              ]
+            }
+          },
+          "parameters": [],
+          "model_note": {
+            "value": "Eqs. (11)–(14).",
+            "source": {
+              "reason": "Anisotropy index formulas.",
+              "block_id": [
+                "b0055"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Lattice parameter of MnAl: a = b = c = 0.584 nm (Table 1). (source: b0021, b0019)",
+    "Cohesive energy E_coh = -6.568 eV·atom⁻¹ and formation enthalpy ΔH_f = -0.215 eV·atom⁻¹ (Table 1); both negative, indicating thermodynamic stability. (source: b0021, b0019, b0022)",
+    "Elastic constants (GPa): C11 = 203.8, C12 = 152.9, C44 = 126.6; MnAl has the smallest C44 (126.6 GPa) among the Fe1-xMnxAl alloys. (source: b0049, b0044)",
+    "Elastic moduli (VRH): bulk modulus B = 169.8 GPa, shear modulus G = 67.5 GPa, Young's modulus E = 178.8 GPa, Poisson's ratio σ = 0.324, B/G = 2.52; B/G > 1.75 indicates ductility. (source: b0049, b0044, b0045)",
+    "Anisotropy indices (dimensionless): A^U = 3.80, A_B = 0, A_G = 0.276, A_1 = A_2 = A_3 = 4.97; MnAl has the largest elastic anisotropy and the strongest shear-modulus anisotropy in (100), (010) and (001) planes among Fe-Mn-Al alloys. (source: b0051, b0059, b0063)",
+    "MnAl has the highest B/G ratio (2.52) and the lowest Debye temperature (504.1 K) in the series, indicating the strongest metallic character; it also has the lowest Vickers hardness (5.0 GPa). (source: b0075, b0047)",
+    "At the [100], [010], [001] and [110] directions, MnAl shows the minimum Young's modulus among the Fe1-xMnxAl alloys, reflecting strong directional dependence of Young's modulus. (source: b0064)"
+  ]
+}

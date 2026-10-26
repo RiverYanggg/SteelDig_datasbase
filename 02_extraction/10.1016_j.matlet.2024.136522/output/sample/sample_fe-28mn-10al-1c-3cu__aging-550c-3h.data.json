@@ -1,0 +1,330 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-10al-1c-3cu__aging-550c-3h",
+      "paper_id": "10.1016_j.matlet.2024.136522",
+      "alloy_id": "alloy_fe-28mn-10al-1c-3cu",
+      "process_id": "proc_aging-550c-3h",
+      "sample_label": "aged 3Cu steel",
+      "aliases": [
+        "aged-3Cu steel",
+        "3Cu steel (aged)"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1000",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution treatment applied to the Fe-28Mn-10Al-1C-3Cu steel prior to aging; parent process (proc_solution-1000c-1h)."
+    },
+    {
+      "processing_step_id": "step_aging",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "aging treatment",
+      "temperature": "550",
+      "temperature_unit": "°C",
+      "duration": "3 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Aging treatment applied after solution treatment; produces the aged 3Cu steel in which κ-carbide and Cu-rich phase co-precipitate."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_aged3cu_matrix",
+      "overall_structure": "Austenitic low-density steel matrix containing nanoscale co-precipitates of κ-carbide and Cu-rich phase; TEM bright-field shows numerous dark nanoscale precipitates (equiaxed dots to short bars and irregular ovals) dispersed in a lighter austenitic matrix.",
+      "number_of_phases": "3",
+      "microstructure_counts": "numerous dark nanoscale precipitates dispersed in the austenitic matrix",
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_aged3cu",
+          "region": null,
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenitic matrix (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "intragranular dots or bars",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "Cu-rich phase",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "irregular oval and a small amount of bar shapes",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations and stacking faults",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_carbide",
+              "type": "κ-carbide",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "intragranular",
+              "coherency": "coherent with the austenitic matrix"
+            },
+            {
+              "precipitate_id": "ppt_cu_rich",
+              "type": "Cu-rich phase",
+              "size": {
+                "value": "irregular oval diameter ~ 10 nm; bar-shaped length ~ 30 nm",
+                "unit": null
+              },
+              "distribution": "intragranular, in the austenitic matrix and around/near κ-carbide",
+              "coherency": "coherent with the austenitic matrix (no obvious interface)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_aged3cu",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_kappa_gamma",
+          "microstructure_id": "micro_aged3cu",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "austenitic matrix (γ)",
+          "coherence": "coherent (lattice misfit 2.3 %, < 5 %)"
+        },
+        {
+          "interface_id": "iface_cu_gamma",
+          "microstructure_id": "micro_aged3cu",
+          "phase_1_name": "Cu-rich phase",
+          "phase_2_name": "austenitic matrix (γ)",
+          "coherence": "coherent (lattice misfit 1.0 %, < 5 %); no obvious interface observed"
+        },
+        {
+          "interface_id": "iface_kappa_cu",
+          "microstructure_id": "micro_aged3cu",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "Cu-rich phase",
+          "coherence": "coherent (lattice misfit 3.4 %, < 5 %)"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "inter_kappa_promotes_cu",
+          "microstructure_id": "micro_aged3cu",
+          "interaction_type": "precipitation coupling / solute partitioning",
+          "qualitative_or_quantitative_description": "The precipitation of κ-carbide promotes the precipitation of the Cu-rich phase: as κ-carbide precipitates from the austenitic matrix, Cu atoms migrate to the austenitic matrix without κ-carbide, increasing the Cu concentration near κ-carbide; when the Cu concentration reaches a certain degree, Cu atoms gather into Cu-rich clusters which precipitate as Cu-rich phase."
+        }
+      ],
+      "slip_behavior": "Almost no dislocations and stacking faults are present in the Cu-rich phase (from IFFT analysis).",
+      "phase_evolution": "In the early stage of aging treatment, κ-carbide preferentially precipitates, followed by the Cu-rich phase; the Cu-rich phase precipitates directly in FCC structure.",
+      "interface_notes": "All three phases (austenite, κ-carbide and Cu-rich phase) share a cube-on-cube orientation relationship: [110]γ//[110]κ//[110]Cu and (111)γ//(111)κ//(111)Cu. The interfacial energy of κ-carbide with the austenitic matrix is 0.025 J/m² and of Cu-rich phase with the austenitic matrix is 0.086 J/m², both <0.1 J/m²; the lower κ-carbide/matrix interfacial energy means κ-carbide precipitates earlier than the Cu-rich phase during aging."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_aged3cu",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "TEM foils 3 mm diameter, mechanically polished to ~100 μm then twin-jet electro-polished in 10 % perchloric acid alcohol",
+        "test_standard": null,
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_hrtem",
+      "microstructure_id": "micro_aged3cu",
+      "technique": "high-resolution transmission electron microscopy (HR-TEM)",
+      "instrument_or_setup": "JEOL JEM-2100F HR-TEM with energy dispersive spectrometer (EDS) detector",
+      "measurement_conditions": "TEM samples of 3 mm diameter mechanically polished to ~100 μm then twin-jet electro-polished in 10 % perchloric acid alcohol",
+      "purpose": "Examine the microstructure and Cu-rich phase/κ-carbide precipitates in the aged 3Cu steel",
+      "key_findings": "Observed nanoscale Cu-rich phase and κ-carbide; Cu-rich phase is irregular oval (~10 nm diameter) with a small amount of bar shapes (~30 nm length), shows no obvious interface with the austenitic matrix; IFFT shows almost no dislocations and stacking faults in the Cu-rich phase; (002) plane spacing of Cu-rich phase measured as 0.182 nm."
+    },
+    {
+      "characterization_id": "char_saed",
+      "microstructure_id": "micro_aged3cu",
+      "technique": "selected area electron diffraction (SAED)",
+      "instrument_or_setup": "JEOL JEM-2100F HR-TEM (SAED)",
+      "measurement_conditions": "Zone axis Z=[01̄1]; 2 1/nm scale bar patterns",
+      "purpose": "Determine crystal structure and orientation relationships of Cu-rich phase and κ-carbide",
+      "key_findings": "SAED patterns of Cu-rich phase and κ-carbide in aged 3Cu steel; the text reports the Cu-rich phase has BCC structure (Fig. 1 inset) and that no additional diffraction spots other than those of Cu-rich phase and κ-carbide are observed, indicating coherence with the austenitic matrix; cube-on-cube relationship (111)γ//(111)κ//(111)Cu with zone axis Z=[01̄1]."
+    },
+    {
+      "characterization_id": "char_eds",
+      "microstructure_id": "micro_aged3cu",
+      "technique": "TEM energy dispersive spectrometer (EDS) elemental mapping",
+      "instrument_or_setup": "EDS detector on JEOL JEM-2100F HR-TEM",
+      "measurement_conditions": "Elemental maps of Fe, Mn, Al and Cu over the imaged region",
+      "purpose": "Map elemental distribution between matrix, κ-carbide and Cu-rich phase",
+      "key_findings": "Fe, Mn and Al exhibit brighter contrast within the white dashed box zone (inferred κ-carbide) while Cu is darker (excluded); Cu exhibits brighter contrast within the magenta line area (Cu-rich phase) while Fe, Mn and Al are darker, showing partitioning that drives Cu-rich phase formation near κ-carbide."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_aged3cu",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Under solid solution treatment",
+      "purpose": "Determine the lattice parameter of the austenitic matrix",
+      "key_findings": "The lattice parameter of the 3Cu steel austenitic matrix under solid solution treatment is a = 0.3689 nm, which is higher than the critical lattice parameter (~0.3670 nm), enabling κ-carbide precipitation."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_lattice_misfit",
+      "simulation_method": "analytical lattice misfit calculation",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Lattice parameters used for the calculation (a = 0.3652 nm for FCC Cu-rich phase, a = 0.3775 nm for κ-carbide, a = 0.3689 nm for the austenitic matrix) were obtained from HRTEM/SAED and XRD.",
+      "analytical_models": [
+        {
+          "model_name": "Lattice misfit formula",
+          "equation_role": "Compute the lattice misfit δ between two phases",
+          "parameters": [
+            {
+              "name": "δ",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "a0",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "a1",
+              "value": null,
+              "unit": null
+            }
+          ],
+          "model_note": "δ = |a0 - a1|/a0, where a0 and a1 are the lattice parameters of phase a0 and a1 respectively."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_critical_lattice_parameter",
+      "simulation_method": "empirical critical lattice parameter / composition boundary criterion",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Comparison with XRD-measured lattice parameters (0Cu a = 0.3687 nm, 3Cu a = 0.3689 nm) against the critical lattice parameter a = 0.3670 nm.",
+      "analytical_models": [
+        {
+          "model_name": "Composition boundary formula for intragranular κ-carbide precipitation in Fe-Mn-Al-C steel",
+          "equation_role": "Empirical index predicting whether intragranular κ-carbide can precipitate based on composition",
+          "parameters": [
+            {
+              "name": "wt.% C",
+              "value": null,
+              "unit": "wt%"
+            },
+            {
+              "name": "wt.% Al",
+              "value": null,
+              "unit": "wt%"
+            },
+            {
+              "name": "wt.% Mn",
+              "value": null,
+              "unit": "wt%"
+            }
+          ],
+          "model_note": "0.208(wt.%C) + 0.098(wt.%Al) = 1 - 0.0054(wt.%Mn); used to infer that the Mn and C content in 3Cu steel exceeded the critical Mn and C content required for intragranular κ-carbide precipitation."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Lattice parameters of the phases in the aged 3Cu steel: FCC Cu-rich phase a = 0.3652 nm and κ-carbide a = 0.3775 nm; the austenitic matrix under solution treatment has a = 0.3689 nm by XRD.",
+    "Cu-rich phase (002) crystal plane spacing is 0.182 nm, consistent with Cu in FCC structure.",
+    "The aged 3Cu steel shows a cube-on-cube orientation relationship among the three phases: [110]γ//[110]κ//[110]Cu and (111)γ//(111)κ//(111)Cu.",
+    "Interfacial energies in the aged 3Cu steel: κ-carbide with austenitic matrix = 0.025 J/m²; Cu-rich phase with austenitic matrix = 0.086 J/m²; both lower than 0.1 J/m², lower than the incoherent interface value (>0.5 J/m²).",
+    "There is a discrepancy in the paper: the Cu-rich phase is described in one place as having BCC structure (Fig. 1 inset) but elsewhere as precipitating directly in the FCC structure and consistent with FCC Cu; the aged 3Cu steel Cu-rich phase is FCC.",
+    "The critical lattice parameter of the austenitic matrix is about a = 0.3670 nm; below it intragranular κ-carbide cannot precipitate. Adding Cu to the 0Cu steel increases the austenitic matrix lattice parameter, which is beneficial for κ-carbide precipitation."
+  ]
+}

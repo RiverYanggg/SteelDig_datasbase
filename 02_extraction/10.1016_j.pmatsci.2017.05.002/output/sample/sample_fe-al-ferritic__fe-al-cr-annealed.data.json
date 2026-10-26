@@ -1,0 +1,188 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-al-ferritic__fe-al-cr-annealed",
+      "paper_id": "10.1016_j.pmatsci.2017.05.002",
+      "alloy_id": "alloy_fe-al-ferritic",
+      "process_id": "proc_fe-al-cr-annealed",
+      "sample_label": null,
+      "aliases": [
+        "ferritic Fe-Al steel (cold rolled + annealed)"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_cold_rolling",
+      "sequence": "1",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "50%",
+      "processing_steps_notes": "Cold rolling is a necessary step to change the grain structure, grain size and texture in ferritic low density steels; a fully recrystallized microstructure can be obtained after final recrystallization annealing following a 50% cold rolling reduction in a Fe-7%Al steel [41]."
+    },
+    {
+      "processing_step_id": "step_recrystallization_annealing",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "recrystallization annealing",
+      "temperature": "700–1000",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The ferritic Fe-Al steels are generally cold rolled and heated to 700–1000 °C for recrystallization annealing to control the grain size and texture of the ferrite matrix as well as the precipitation of κ-carbides, applying the continuous annealing line used for conventional HSLA steel strips (b0105). A fully recrystallized microstructure is obtained after final recrystallization annealing within 700–950 °C following a 50% cold rolling reduction in a Fe-7%Al steel (b0114)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_ferritic_fe-al_cr_annealed",
+      "overall_structure": "Single-phase δ-ferrite matrix, fully recrystallized after cold rolling plus recrystallization annealing; δ-ferrite grains become more or less equiaxed with a random texture (relatively higher intensity of the Cube fibre). As Al not only extends the ferrite region to high temperatures but also raises the recrystallization temperature of ferrite, the δ-ferrite grain size cannot be sufficiently refined during hot rolling, so cold rolling and annealing are required; the δ-ferrite is the phase directly produced from the liquid.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_ferrite_recrystallized",
+          "region": null,
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "δ-ferrite (ferrite, α)",
+              "crystal_structure": "BCC (ordered/disordered: A2-disordered FeAl, B2-ordered FeAl or DO3-ordered Fe3Al depending on Al content)",
+              "volume_fraction": null,
+              "morphology": "more or less equiaxed after recrystallization annealing",
+              "grain_size": "40–90 μm",
+              "texture": "random, with relatively higher intensity of the Cube fibre {001}<110>"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "40–90",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "random with relatively higher intensity of the Cube fibre {001}<110>"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "kappa_carbide_ferritic",
+              "type": "κ-carbide (perovskite type (Fe,Mn)3AlC / (FeAl)C)",
+              "size": "coarse (thick and elongated rod-like)",
+              "distribution": "coarse κ-carbides can be formed along the original δ-ferrite grain boundaries if the cooling rate is slow; precipitation of κ-carbides may also occur during recrystallization annealing",
+              "coherency": "semicoherent"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_ferrite_kappa",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_alpha_kappa",
+          "microstructure_id": "micro_ferrite_recrystallized",
+          "phase_1_name": "α/δ-ferrite (BCC)",
+          "phase_2_name": "κ-carbide",
+          "coherence": "semicoherent (lattice mismatch 6%)"
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "In the ferritic Fe-Al matrix the δ-ferrite is directly produced from liquid; there is no γ↔α transformation over the process temperature range, so the ferrite matrix is retained through cold rolling and annealing while κ-carbides may precipitate.",
+      "interface_notes": "In the α (BCC) phase the lattice parameter of the κ phase is 0.387–0.389 nm and α/κ interfaces are semicoherent (lattice mismatch 6% [59]); in the ferritic matrix κ-carbides are present as semicoherent precipitates with thick, elongated rod-like shape, in contrast to the nanoscale cuboidal coherent κ-carbides found in austenitic Fe-Mn-Al-C steels."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_tensile_ferritic_fe-al_cr_annealed",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Fe-6.8Al and Fe-8.1Al ferritic Fe-Al steels after recrystallization annealing at 850 °C for 5 min (Fig. 26); tensile properties of Fe-Al ferritic alloys reported to be comparable with HSLA steels."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "450–500",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "15–30",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": {
+            "value": "2–2.5% reduction in Young's modulus per 1 wt% Al addition (polycrystalline Fe-Al alloys, annealed state, room temperature); α-Fe 207 GPa",
+            "unit": "GPa"
+          },
+          "stress_strain_curves": "Engineering stress–strain curves of cold rolled and annealed Fe-6.8Al and Fe-8.1Al steels (Fig. 26)",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "value": "strain hardening exponent n = 0.19–0.21 (for Al in the range 6–9%)",
+              "unit": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "ρ_ferritic (g/cm3) = 7.874 − 0.098(wt% Al)",
+          "unit": "g/cm3"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    "source"
+  ],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

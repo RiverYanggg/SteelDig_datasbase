@@ -1,0 +1,149 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_004",
+  "family": "generalist",
+  "image_type": "calculation_fe",
+  "description": "Two-panel composite of 3-D finite element meshes (ABAQUS/Explicit forging model), both drawn as half-sectional views. The only annotation is an X-Y-Z coordinate triad at bottom centre (X red pointing right, Y green pointing up, Z blue pointing out of plane); no scale bar, dimensions or contour legend are printed on either panel. (a) Left: the un-deformed workpiece, a tall rectangular block filled with a fine, uniform blue hexahedral mesh, sits inside a closed die whose grey coarse-meshed walls form an open-topped channel; a dark, finely meshed block at the top represents the punch in section. (b) Right: the same assembly after compression — the punch has descended so the blue workpiece is markedly shorter and its mesh is now barrel-shaped, bulging laterally in the flow (X) direction while remaining flat against the constrained die wall; the grey die mesh is unchanged. The caption states the two images are the \"before and after compression\" states. Taken together the panels demonstrate the geometric boundary conditions of the closed-die forging simulation: constrained compression in Y with free material flow in X. The model parameters are not printed but are given in the citing text.",
+  "confidence": "high",
+  "subfigures": [
+    {
+      "panel": "(a)",
+      "description": "Left: half-sectional 3-D FE view of the undeformed workpiece — a tall rectangular block with a fine uniform blue hexahedral mesh — inside a closed die with a coarse grey hexahedral mesh forming an open-topped channel; a dark finely meshed block at the top represents the punch.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(b)",
+      "description": "Right: the same assembly after compression; the workpiece is much shorter and its blue mesh is barrel-shaped, bulging in the X (flow) direction while staying flat against the constraining die wall. The die mesh is unchanged and the punch block is at the lower position.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "The figure consists of two half-sectioned 3-D finite element views of the same die/punch/workpiece assembly, one before and one after compression.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "In the left panel the workpiece is a tall rectangular block filled with a fine, uniform blue hexahedral mesh, enclosed by grey die walls with a much coarser hexahedral mesh.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "In the right panel the workpiece is substantially shorter and its blue mesh is barrel-shaped, bulging laterally in one horizontal direction, i.e. the height is reduced and the width increases.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "A dark, finely meshed block sits on top of the workpiece in both panels and is unlabelled; it is consistent with the punch shown in half-section, but the figure itself gives no label confirming this.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "The only printed annotation on the whole figure is the coordinate triad below the panels: X (red, right), Y (green, up), Z (blue, out of plane); no dimensions, scale bar or field-contour legend appear.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption describes the figure as a 'Half-sectional view of 3-D finite element model of sample in a closed die before and after compression'.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_004"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states the 3-D finite element model has dimensions of 30 mm x 20 mm x 20 mm.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_004"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states a mesh sensitivity analysis gave an optimal mesh size of 0.6 mm and that the finished workpiece model has 41382 hex elements of type C3D8R with reduced integration and hourglass control.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_004"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states the punch undergoes a controlled displacement of 10 mm in the Y (height) direction while the die is tightly fixed.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_004"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text reports an overall friction coefficient of 0.15 between the workpiece and the rigid bodies.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_004"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states that the blank is compressed in the height direction and expands in the flow direction but does not deform in the constraint direction because of the die constraint — matching the geometry seen in the right panel.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_004"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states ABAQUS/Explicit was used, with the die and punch treated as discrete rigid bodies and the workpiece as a deformable body.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_004"
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "measured_quantities": [
+    "workpiece model dimensions (mm) — stated in citing text, not printed in the figure",
+    "punch displacement in Y (mm) — stated in citing text, not printed in the figure",
+    "mesh element size (mm) — stated in citing text, not printed in the figure",
+    "number of hex elements (C3D8R) — stated in citing text, not printed in the figure",
+    "friction coefficient — stated in citing text, not printed in the figure"
+  ],
+  "sample_hints": [
+    "Fe-30Mn-9Al-0.8 C low-density steel",
+    "workpiece (deformable body)",
+    "die (discrete rigid body)",
+    "punch (discrete rigid body)"
+  ],
+  "unreadable_items": [
+    "No dimensions, scale bar, legend or contour scale are printed anywhere in the figure; all quantitative model parameters come from the caption/citing text, not from the pixels.",
+    "The identity of the dark finely meshed block at the top of the workpiece (punch) is not labelled in the image and is inferred."
+  ],
+  "image_paths": [
+    "images/e6dd7a99d56c37947145940d3a74696cbcfb4c823d340a18e6c2efd1ef16ea03.jpg"
+  ]
+}

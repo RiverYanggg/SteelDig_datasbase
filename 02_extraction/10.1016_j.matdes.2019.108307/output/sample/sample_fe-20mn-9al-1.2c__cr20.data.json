@@ -1,0 +1,355 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-9al-1.2c__cr20",
+      "paper_id": "10.1016_j.matdes.2019.108307",
+      "alloy_id": "alloy_fe-20mn-9al-1.2c",
+      "process_id": "proc_cr20",
+      "sample_label": "CR20% 0Cr",
+      "aliases": [
+        "0Cr CR20%",
+        "cold-rolled Cr-free steel strip"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_casting",
+      "sequence": "1",
+      "type": "solidification / casting",
+      "method": "centrifugal casting under near-rapid solidification",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "argon",
+      "cooling_medium": "copper mold rotating at 600 rpm",
+      "heating_or_cooling_rate": "1–1×10^4 K/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "100 g alloy ingot melted from 99.99% pure iron, 99.9% pure manganese, 99.9% pure aluminum, 99.9% pure chromium and 99.8% high-purity graphite by cold-crucible levitation melting; remelted by induction melting and poured into the rotating copper mold. As-cast steel strips of 80 mm × 60 mm × 2.5 mm were obtained."
+    },
+    {
+      "processing_step_id": "step_2_stress_relief_annealing",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "stress relief annealing",
+      "temperature": "400 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Stress relief annealing applied to the as-cast steel strips prior to 20% cold rolling."
+    },
+    {
+      "processing_step_id": "step_3_cold_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "cold rolling (multipass rolling)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "20%",
+      "processing_steps_notes": "Cold rolling was achieved by multipass rolling on a twin roll mill (Φ160); denoted 'CR20%'. The 20% reduction can eliminate some micropores caused by solidification shrinkage and avoid a great influence on the structure of the steel strips."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_1_cr20_0cr",
+      "overall_structure": "γ-austenite matrix with irregularly shaped δ-ferrite distributed in the matrix; the constituent phases after cold rolling with 20% reduction are still γ-austenite and δ-ferrite with ordered DO3 phase, completely consistent with the as-cast steel strips. {111} planar slip bands are present in the austenite of the CR20% strip.",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1_cr20_0cr",
+          "region": "0.5 mm from the strip surface along the thickness direction",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "γ-austenite",
+              "crystal_structure": "FCC (austenite)",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "BCC (ferrite)",
+              "volume_fraction": "5%",
+              "morphology": "irregularly shaped; small, isolated, elongated particles (CR20% 0Cr)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "DO3 ordered phase (ordered ferrite)",
+              "crystal_structure": "BCC ordered, space group Fm3m, lattice parameter a = 0.565 nm (in the ferrite)",
+              "volume_fraction": null,
+              "morphology": "ordered phase within the δ-ferrite",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "planar {111} slip bands",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_carbide",
+              "type": "κ-carbide ((Fe,Mn)3AlC, perovskite)",
+              "size": null,
+              "distribution": "nano-scale particles within the γ-austenite",
+              "coherency": null
+            }
+          ]
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_set_id": "int_1_cr20_0cr",
+          "phase_interfaces": [
+            {
+              "interface_id": "int_1a_ga_delta",
+              "microstructure_id": "micro_1_cr20_0cr",
+              "phase_1_name": "γ-austenite",
+              "phase_2_name": "δ-ferrite",
+              "coherence": null
+            }
+          ],
+          "defect_interactions": [
+            {
+              "interaction_id": "di_1",
+              "microstructure_id": "micro_1_cr20_0cr",
+              "interaction_type": "dislocation entanglements at the ferrite/austenite phase boundary",
+              "qualitative_or_quantitative_description": "Inconsistent deformation of ferrite and austenite during deformation leads to dislocation entanglements at the γ/δ phase boundary."
+            }
+          ],
+          "slip_behavior": "{111} planar slip bands are present in the austenite of the CR20% steel strips; the measured average spacing of the slip bands in the CR20% 0Cr steel strip is 371 ± 47 nm (measured at least in three different regions). The smaller the slip band spacing, the stronger the reinforcement effect after cold rolling.",
+          "phase_evolution": "After cold rolling with 20% reduction the constituent phases remain γ-austenite and δ-ferrite with ordered DO3 phase, completely consistent with the as-cast steel strips.",
+          "interface_notes": null
+        }
+      ],
+      "properties": [
+        {
+          "property_set_id": "prop_1_cr20_0cr_tensile",
+          "measurement_conditions": {
+            "temperature": "room temperature",
+            "temperature_unit": null,
+            "environment": null,
+            "strain_rate": "2.5×10^-4 s^-1",
+            "specimen_geometry": "gage width 4 mm and gage length 12 mm",
+            "test_standard": "GB/T-228.1-2010",
+            "other_conditions": "Tensile tests performed at least 3 times (MTS Criterion 44 Mechanical Property Tester)"
+          },
+          "mechanical": {
+            "tensile_properties": {
+              "yield_strength": [],
+              "ultimate_tensile_strength": [
+                {
+                  "direction": null,
+                  "value": "1154 MPa",
+                  "unit": "MPa",
+                  "uncertainty": null
+                }
+              ],
+              "elongation": [
+                {
+                  "direction": null,
+                  "value": "~22%",
+                  "unit": "%",
+                  "uncertainty": null
+                }
+              ],
+              "youngs_modulus": null,
+              "stress_strain_curves": "Fig. 9(a): engineering stress-strain curve of the CR20% 0Cr strip (black curve) — lowest of the three cold-rolled curves with a plateau between the 1000 and 1200 MPa gridlines, terminating near 22% strain; Fig. 9(c): true stress-strain curve and strain hardening rate curve (dσ/dε) of CR20% 0Cr.",
+              "stress_strain_distribution": [],
+              "strain_hardening_rate": [
+                {
+                  "value": "not quantified; strain hardening rate decreases gradually with increasing strain (lowest of the three CR20% strips)",
+                  "unit": null,
+                  "direction": null,
+                  "uncertainty": null
+                }
+              ]
+            },
+            "hardness": [],
+            "fracture_toughness": {
+              "value": null,
+              "unit": null
+            },
+            "fatigue_properties": {
+              "fatigue_limit": null,
+              "cycles_to_failure": null
+            },
+            "creep_properties": {
+              "steady_state_creep_rate": null,
+              "rupture_life": null
+            }
+          },
+          "physical": {
+            "density": {
+              "value": "6.71 g/cm3",
+              "unit": "g/cm3"
+            },
+            "thermal_properties": {},
+            "electrical_properties": {},
+            "magnetic_properties": {}
+          },
+          "chemical": {
+            "corrosion_resistance": {},
+            "oxidation_resistance": {}
+          },
+          "radiation_properties": {
+            "void_swelling": null,
+            "irradiation_hardening": null,
+            "helium_embrittlement": null
+          }
+        }
+      ],
+      "performance": [
+        {
+          "performance_id": "perf_1_cr20_0cr_strength_comparison",
+          "service_conditions": {
+            "operating_temperature": {
+              "min": null,
+              "max": null,
+              "unit": null
+            },
+            "stress_state": null,
+            "environment": null
+          },
+          "lifetime_prediction": {
+            "model_used": null,
+            "predicted_lifetime": null,
+            "confidence_interval": null
+          },
+          "comparative_performance": {
+            "benchmark_alloy_id": null,
+            "benchmark_process_id": null,
+            "benchmark_sample_id": null,
+            "comparison_metric": "ultimate tensile strength in the CR20% (20% cold-rolled) condition: CR20% 0Cr = 1154 MPa vs CR20% 3Cr = 1270 MPa and CR20% 6Cr = 1264 MPa (Cr addition increases the strength of cold-rolled strips)",
+            "improvement_percentage": null
+          }
+        }
+      ],
+      "characterization_methods": [
+        {
+          "characterization_id": "char_xrd",
+          "microstructure_id": "micro_1_cr20_0cr",
+          "technique": "X-ray diffraction (XRD)",
+          "instrument_or_setup": "Rigaku, D/Max-2200, Cu target operated at 40 kV and 40 mA, with a graphite monochromator; λ = 0.154056 nm; scanning angle 30°–100°; continuous scanning at 4°/min",
+          "measurement_conditions": null,
+          "purpose": {
+            "value": "Phase characterization of the steel strips (as-cast, annealed and CR20% conditions).",
+            "block_id": [
+              "b0025",
+              "b0061"
+            ]
+          },
+          "key_findings": "For CR20% strips the constituent phases are still γ-austenite and δ-ferrite with ordered DO3 phase, completely consistent with the as-cast strips."
+        },
+        {
+          "characterization_id": "char_sem",
+          "microstructure_id": "micro_1_cr20_0cr",
+          "technique": "Scanning Electron Microscopy (SEM)",
+          "instrument_or_setup": "Phenom Pro; after mechanical polishing and etching (3.3 vol% nitric acid, 3.3 vol% acetic acid, 0.1 vol% hydrofluoric acid, 3 s); photographs taken at 0.5 mm from strip surface; phase fraction measured with Image-Pro Plus (IPP) at ten different positions",
+          "measurement_conditions": null,
+          "purpose": {
+            "value": "Microstructure/phase-fraction characterisation of the steel strips.",
+            "block_id": [
+              "b0033"
+            ]
+          },
+          "key_findings": "The volume fraction of δ-ferrite in the cold-rolled steel strips is 5% (0Cr); cold rolling produces no significant change in δ-ferrite morphology and volume fraction; the 0Cr CR20% strip shows small isolated elongated δ-ferrite particles in the γ matrix."
+        },
+        {
+          "characterization_id": "char_tem",
+          "microstructure_id": "micro_1_cr20_0cr",
+          "technique": "Transmission Electron Microscopy (TEM)",
+          "instrument_or_setup": "JEOL-2010F operated at 200 kV; specimens prepared by twin-jet electrolytic polishing at −30 °C and 30 V with a mixed solution of 10% perchloric acid and 90% alcohol",
+          "measurement_conditions": null,
+          "purpose": {
+            "value": "Examine the microstructures (γ-austenite and δ-ferrite, κ-carbides, DO3 phase, slip bands) of the cold-rolled steel strips.",
+            "block_id": [
+              "b0033",
+              "b0066"
+            ]
+          },
+          "key_findings": "{111} planar slip bands are present in the austenite of the CR20% steel strips; the average slip band spacing in the CR20% 0Cr strip is 371 ± 47 nm."
+        },
+        {
+          "characterization_id": "char_tensile",
+          "microstructure_id": null,
+          "technique": "Uniaxial tensile testing",
+          "instrument_or_setup": "MTS Criterion 44 Mechanical Property Tester",
+          "measurement_conditions": "room temperature; constant strain rate 2.5×10^-4 s^-1; gage width 4 mm, gage length 12 mm; per GB/T-228.1-2010; at least 3 tests",
+          "purpose": {
+            "value": "Determine mechanical properties of the CR20% steel strips.",
+            "block_id": [
+              "b0064"
+            ]
+          },
+          "key_findings": "UTS = 1154 MPa for CR20% 0Cr; strength of Cr-containing CR20% strips exceeds that of the Cr-free strip."
+        },
+        {
+          "characterization_id": "char_density",
+          "microstructure_id": null,
+          "technique": "Gas displacement density measurement",
+          "instrument_or_setup": "AccuPyc II 1340 Gas Displacement Density Analyzer",
+          "measurement_conditions": null,
+          "purpose": {
+            "value": "Measure the average density of the steel strips.",
+            "block_id": [
+              "b0024"
+            ]
+          },
+          "key_findings": "The measured average density of the 0Cr steel strips was 6.71 g/cm3."
+        },
+        {
+          "characterization_id": "char_composition",
+          "microstructure_id": null,
+          "technique": "Chemical composition analysis",
+          "instrument_or_setup": "Inductively Coupled Plasma Mass Spectrometry (ICP) and CS2800 carbon-sulfur analyzer",
+          "measurement_conditions": null,
+          "purpose": {
+            "value": "Determine the measured compositions of the steel strips (Table 1).",
+            "block_id": [
+              "b0024"
+            ]
+          },
+          "key_findings": "0Cr steel (wt.%): Mn 20.43, Al 9.16, C 1.17, Cr 0, S 0.0006, Fe Bal."
+        }
+      ],
+      "computational_details": [],
+      "unmapped_findings": [
+        "Measured chemical composition of the 0Cr (Cr-free) steel strip (Table 1, wt.%): Mn 20.43, Al 9.16, C 1.17, Cr 0, S 0.0006, Fe Bal. [b0017, b0018]",
+        "Measured average density of the 0Cr steel strip is 6.71 g/cm3, measured by an AccuPyc II 1340 Gas Displacement Density Analyzer. [b0024]",
+        "The average spacing of the {111} planar slip bands in the CR20% 0Cr steel strip is 371 ± 47 nm (measured in at least three different regions); the smaller the slip band spacing, the stronger the reinforcement effect after cold rolling. [b0066]",
+        "The strain hardening rates of the CR20% steel strips decrease gradually with increasing strain; Cr addition increases the strain hardening rate of the CR20% steel strips, so the CR20% 0Cr strip has the lowest strain hardening rate. [b0065]",
+        "A double (slip-band and microband) hardening mechanism is proposed for the low-density steel strips: slip-band hardening acts at the early strain stage and microband hardening at the final strain stage. [b0091, b0099]",
+        "For the cold-rolled strips a higher density of slip bands (smaller spacing) blocks dislocation movement and increases strength, which is responsible for the higher strength of the Cr-containing cold-rolled strips relative to the CR20% 0Cr strip. [b0073]",
+        "The cold rolling with 20% reduction was achieved by multipass rolling on a twin roll mill (Φ160) and was intended to eliminate some micropores caused by solidification shrinkage. [b0023]"
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

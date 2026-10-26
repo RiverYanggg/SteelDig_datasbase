@@ -1,0 +1,160 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-mn-c-al-duplex__cold-rolling-45pct",
+      "paper_id": "10.1002_srin.202200191",
+      "alloy_id": "alloy_fe-mn-c-al-duplex",
+      "process_id": "proc_cold-rolling-45pct",
+      "sample_label": "(无)",
+      "aliases": [
+        "45% cold rolled TRIP low-density steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_cold_rolling",
+      "sequence": "1",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "45%",
+      "processing_steps_notes": "45%压下量的剧烈冷轧促进奥氏体分解（γ→ε→α′）和α′马氏体形成，提高加工硬化率"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "奥氏体基双相（铁素体+奥氏体）组织，经45%冷轧后奥氏体分解（γ→ε→α′）并形成α′马氏体，呈现TRIP效应",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": null,
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (α)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "elongated ferrite grains along the rolling direction",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "austenite (γ, retained austenite)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "austenite matrix (γ)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "α′ martensite",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_1",
+      "phase_interfaces": [],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "奥氏体分解遵循 γ→ε→α′ 序列",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_tensile_1",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "950 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": "6.2–7.0 g cm^-3",
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": [
+    "TRIP效应一般出现在奥氏体基双相Fe–Mn–C–Al钢中，其中C浓度低于0.5 wt%、Al浓度在3–6 wt%之间（b0058）。",
+    "塑性变形过程中马氏体体积分数从0.01（应变为0.1）增加到0.09（应变为0.3），表明相变过程是与TWIP效应类似的动态过程（b0058）。",
+    "Dan等基于ABAQUS/UMAT框架得到的相级颈缩应变为：马氏体0.5、贝氏体0.127、铁素体0.163、残余奥氏体0.348（b0058）。",
+    "残余奥氏体晶粒尺寸低于1.6 μm时奥氏体稳定性高、TRIP效应被抑制；晶粒尺寸进一步增大后奥氏体在塑性应变下出现不稳定性（b0059）。",
+    "Sohn等指出奥氏体基双相低密度钢中TWIP与TRIP机制在高塑性应变下同时起作用，共同贡献加工硬化率（b0060）。",
+    "奥氏体基双相低密度钢的成分范围为Al 5–10 wt%、Mn 5–30 wt%、C 0.4–0.7 wt%（b0033）。",
+    "退火态奥氏体基双相钢中沿轧制方向存在伸长的铁素体晶粒（b0034/figure_001）。"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "identity": {
+    "paper_id": "10.1016_j.actamat.2025.120962",
+    "doi": "10.1016/j.actamat.2025.120962",
+    "sample_id": "sample_stainless-steel__ss-grain-boundary",
+    "alloy_id": "alloy_stainless-steel",
+    "process_id": "proc_ss-grain-boundary",
+    "sample_label": "SS",
+    "aliases": [
+      "stainless steel (SS)"
+    ]
+  },
+  "summary": "SS（stainless steel）是本论文所用的一个 in-house 光学显微数据集，材料为多晶单相奥氏体不锈钢（AlFe stainless steel），被用作“boundary-type”晶界分割基准，以检验训练自由的 MatSAM 在非理想成像条件下（照明不均、模糊、划痕与杂质）提取晶界的能力。",
+  "composition": "论文将 SS 标识为 AlFe 不锈钢（奥氏体），组织为单相奥氏体；除此之外，论文未报告该钢的名义化学成分（wt%/at%）、基体元素及合金化元素的设计意图。",
+  "processing": null,
+  "microstructure": "SS 为多晶单相奥氏体不锈钢组织（相数为 1），由等轴晶粒组成，晶界呈中等细小的波状形貌；多晶图像中晶粒与其边界紧密相邻、无背景或空隙。晶界掩模由分割后的晶粒区域通过轮廓提取（contour-finding）方法获得，用于分割评估。",
+  "properties": "SS 通过光学显微镜（OM）成像，视场为 247×247 µm、分辨率为 1024×1024 像素，共 44 张测试图像（Table 1 中该数据集的主要指标为 F1↑）。图像采集于非理想条件：存在不均匀照明梯度、较多模糊区域、划痕与杂质；相邻晶粒之间灰度差很小，但不同区域之间灰度差异较大。在晶界分割评估中，MatSAM 获得 ARI 0.56（±6.6%）、F1 0.65（±5.0%）、Recall 0.59（±6.0%），为所有比较方法中最佳 ARI；SAM 为 ARI 0.54（±1.1%）、F1 0.66（±1.7%）、Recall 0.60（±5.5%）；Canny 为 ARI 0.34（±7.2%）、F1 0.51（±7.9%）、Recall 0.41（±8.2%）；OTSU 为 ARI 0.23（±5.8%）、F1 0.46（±5.7%）、Recall 0.48（±7.9%）；Watershed 为 ARI 0.24（±4.3%）、F1 0.41（±5.6%）、Recall 0.33（±6.6%）。评估在 Nvidia RTX3090 24 GB GPU 上使用 PyTorch 1.13.1 完成。",
+  "mechanisms": [
+    "SS 光学显微图像中相邻晶粒之间灰度差很小、而不同区域之间灰度差异很大（不均匀照明梯度），使基于全局阈值的 OTSU 法把照明梯度（一个大圆区域）误识别为前景，而不是晶粒边界。",
+    "SS 图像含较多模糊区域、划痕和杂质，且部分晶界模糊或不完整；Canny 边缘检测对这些模糊/不完整晶界敏感，因而产生过分割、输出杂乱破碎的边界碎片。",
+    "在 SS 图像上，Watershed 输出大片空白未分割区域，视觉上无法完整覆盖晶界网络，直接导致其 ARI（0.24）、F1（0.41）与 Recall（0.33）在比较方法中处于低位。",
+    "MatSAM 通过结构感知提示点策略（用规则方法预分割提取 ROI 质心点、以网格点补偿遗漏区域、并在边缘区域加密点）向 SAM 视觉大模型注入目标区域先验知识，使其在不均匀照明与模糊晶界条件下仍能重建专家标注的晶界网络，从而取得最佳 ARI。"
+  ],
+  "conclusions": "在 44 张 SS 测试图像上，训练自由的 MatSAM 取得 ARI 0.56，优于 SAM（0.54）与 Canny（0.34），为所有比较方法中的最佳 ARI；尽管在指定的主要指标 F1 上 SAM 略高（0.66 对 0.65），MatSAM 的 ARI 聚类一致性仍最优。视觉上，OTSU 追踪照明梯度而非晶粒、Canny 过分割为杂乱碎片、Watershed 留下大片空白，而 MatSAM 复现了专家晶界。SS 作为非理想成像条件下采集的边界型基准，验证了结构感知提示策略在低对比度、照明不均场景下的鲁棒性，也表明 MatSAM 可降低晶界定量表征的人工标注成本。",
+  "unmapped": [
+    "SS 是本论文 11 个显微数据集中的 in-house（自制）boundary-type 数据集，在 Fig. 1 中归入蓝色“Polycrystalline & Single phase”分组（OM 模态）。",
+    "论文未报告 SS 的熔炼/铸造/热加工/热处理工艺信息，也未给出定量化学成分；结构化数据中处理步骤为空，成分仅有“AlFe stainless steel (austenite)”的定性标识。"
+  ]
+}

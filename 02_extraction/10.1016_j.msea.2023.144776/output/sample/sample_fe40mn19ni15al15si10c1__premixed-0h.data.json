@@ -1,0 +1,203 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__premixed-0h",
+      "paper_id": "10.1016_j.msea.2023.144776",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_premixed-0h",
+      "sample_label": "pre-mixed powder (0 h)",
+      "aliases": [
+        "0 h",
+        "pre-mixed powder"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_powder_blend_0h",
+      "sequence": "1",
+      "type": "powder preparation",
+      "method": "pre-mixing/blending of elemental powders (before milling, 0 h)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": "0 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Starting elemental powders of Fe, Ni, Mn, Al, Si and C (99.2% pure) were taken in the appropriate proportion of Fe40Mn19Ni15Al15Si10C1 (at.%) (Fe-46.00%, Mn-21.50%, Ni-18.13%, Al-8.34%, Si-5.78%, C-0.25%; wt.%). This is the initial powder blend at 0 h, i.e., before any mechanical milling."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_premixed_0h",
+      "overall_structure": "Physical mixture (blend) of the individual constituent elemental powders before any milling (0 h). The XRD pattern of the pre-mixed powder at 0 h reveals the diffraction peaks related to the individual elements Fe, Mn, Ni, Al, Si and C; many diffraction peaks of the alloying elements co-exist at almost the same d-spacing.",
+      "number_of_phases": "6",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_premixed_0h",
+          "region": null,
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "Fe",
+              "crystal_structure": "cI2 (BCC); JCPDS# 00-006-0696",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "Mn",
+              "crystal_structure": "cI58; JCPDS# 00-032-0637",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "Ni",
+              "crystal_structure": "cF4 (FCC); JCPDS# 00-004-0850",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "Al",
+              "crystal_structure": "cF4 (FCC); JCPDS# 00-004-0787",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "Si",
+              "crystal_structure": "cF8; JCPDS# 00-005-0565",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "C",
+              "crystal_structure": "hP4; JCPDS# 00-056-0159",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_premixed_0h",
+      "microstructure_id": "micro_premixed_0h",
+      "technique": "High-resolution X-ray diffraction (XRD)",
+      "instrument_or_setup": "EMPYREAN, PANALYTICAL; Co-Kα source; operating voltage 40 kV; operating current 40 mA",
+      "measurement_conditions": "Pre-mixed elemental powder at 0 h; scan rate 5°/min; 2θ range approximately 20°-100°",
+      "purpose": "To study the alloying behavior as a function of milling time and to characterize the starting pre-mixed powder (0 h)",
+      "key_findings": "The 0 h pre-mixed powder shows the diffraction peaks of the individual elements Fe, Mn, Ni, Al, Si and C, which diminish with increasing milling time; many elemental diffraction peaks co-exist at almost the same d-spacing (Supplementary Fig. S1)."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_melting_point",
+      "simulation_method": "Machine learning (ML) approach formula and rule of mixture for melting point prediction",
+      "software_used": null,
+      "potential_model_or_database": "Binary liquidus temperatures of the constituent binary alloys (Table 1)",
+      "boundary_and_initial_conditions": "Composition Fe40Mn19Ni15Al15Si10C1 (at.%)",
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Melting point by machine learning (ML) approach",
+          "equation_role": "Equation (4): Tm = (Σ_{i≠j} T_{i-j}·C_i·C_j)/(Σ_{i≠j} C_i·C_j)",
+          "parameters": [
+            {
+              "name": "T_m (ML)",
+              "value": "1638",
+              "unit": "K"
+            },
+            {
+              "name": "Binary liquidus temperatures (Table 1)",
+              "value": "Fe-Mn 1420, Fe-Ni 1440, Fe-Al 1500, Fe-Si 1330, Fe-C 1480, Mn-Ni 1050, Mn-Al 1190, Mn-Si 1283, Mn-C 1231, Ni-Al 1638, Ni-Si 1250, Ni-C 1325, Al-Si 950, Al-C 2100, Si-C 2100",
+              "unit": "°C"
+            }
+          ],
+          "model_note": "Reported as more precise and accurate than the rule of mixture."
+        },
+        {
+          "model_name": "Rule of mixture melting point",
+          "equation_role": "Melting point estimated by the rule of mixture",
+          "parameters": [
+            {
+              "name": "T_m (rule of mixture)",
+              "value": "1620",
+              "unit": "K"
+            }
+          ],
+          "model_note": null
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_thermo_params",
+      "simulation_method": "Thermodynamic parameter calculation based on the Boltzmann hypothesis, Miedema model and Zhang's approach",
+      "software_used": null,
+      "potential_model_or_database": "Binary mixing enthalpies (semi-empirical Miedema approach, Table 1)",
+      "boundary_and_initial_conditions": "Composition Fe40Mn19Ni15Al15Si10C1",
+      "validation_against_experiment": "The calculated parameters lie within the random solid solution formation criteria; VEC = 6.9 is within the dual-phase (BCC + FCC) range and the alloy forms BCC/B2 structures in the milled and SPSed samples.",
+      "analytical_models": [
+        {
+          "model_name": "Thermodynamic parameters for solid-solution formation (ΔH_mix, ΔS_conf, δ, Ω, VEC)",
+          "equation_role": "Criteria for regular solid solution formation in HEAs",
+          "parameters": [
+            {
+              "name": "ΔH_mix",
+              "value": "-8.4",
+              "unit": "kJ/mol"
+            },
+            {
+              "name": "ΔS_conf",
+              "value": "12.4",
+              "unit": "J/K-mol"
+            },
+            {
+              "name": "δ",
+              "value": "7.6",
+              "unit": "%"
+            },
+            {
+              "name": "Ω",
+              "value": "2.4",
+              "unit": "Dimensionless"
+            },
+            {
+              "name": "VEC",
+              "value": "6.9",
+              "unit": "Dimensionless"
+            }
+          ],
+          "model_note": "Reference criteria: -22 ≤ ΔH_mix ≤ 7; 11 ≤ ΔS_conf ≤ 19.5; δ ≤ 6.6; Ω ≥ 1.1; VEC < 6.87 BCC, 6.87 < VEC < 8.0 BCC + FCC, VEC ≥ 8.0 FCC. The alloy satisfies ΔH_mix, ΔS_conf and Ω criteria, VEC = 6.9 lies in the BCC + FCC band, but δ = 7.6 % exceeds the δ ≤ 6.6 % limit."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Nominal composition of the pre-mixed powder (0 h): Fe40Mn19Ni15Al15Si10C1 (at.%) corresponding to Fe-46.00%, Mn-21.50%, Ni-18.13%, Al-8.34%, Si-5.78%, C-0.25% (wt.%). [b0020]",
+    "The starting elemental Fe, Ni, Mn, Al, Si and C powders were 99.2% pure. [b0020]",
+    "The XRD pattern of the pre-milled (pre-mixed) powder and standard peaks of the elements Fe, Mn, Ni, Al and Si are shown in Supplementary Fig. S1 (a & b); many diffraction peaks of the alloying elements co-exist at almost the same d-spacing. [b0039]",
+    "In the pre-mixed powder at 0 h, the diffraction peak intensity of all the elements is highest and these elemental peaks decrease/vanished with milling time; low-intensity peaks of all elements vanished after 5 h of milling and the intensity of Al diminished after 15 h, indicating the highest alloying rate for Al. [b0034, b0038]",
+    "Particle size and morphology of the elemental powder blend (0 h) are not explicitly quantified in the text; the first SEM micrograph reported (Fig. 2(a)) corresponds to 10 h milled powder, not to the 0 h pre-mixed state."
+  ]
+}

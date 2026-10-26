@@ -1,0 +1,141 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_003",
+  "family": "generalist",
+  "image_type": "chart_flow",
+  "description": "Fig. 3 is a composite flow diagram (schematic plus two real micrograph panels) that explains the training-free MatSAM pipeline for microstructure recognition. The upper row reads left to right under three printed headings: 'Input', 'MatSAM' and 'Output'. The 'Input' panel is a grey-scale micrograph of equiaxed grains with a dashed box marking a cropped region. The 'MatSAM' block contains two sub-blocks: 'Point prompt', holding the labelled boxes 'ROI points' (red), 'merge' and 'Grid points' (blue), and 'Segment anything model', holding 'Points encoder', 'Image encoder' and 'Mask decoder'; grey arrows carry the prompt embedding and image feature vectors into the decoder. The 'Output' panel is the same field of view rendered as a grain-boundary segmentation in which each grain is filled with a distinct pastel colour and marked with a red seed point, again with a dashed inset. The lower row repeats the dashed region five times: 'Region' (raw grain structure), 'ROI points' (sparse red dots), 'Grid points' (dense blue dots), 'Merged' (red plus blue dots) and 'Boundaries' (black lines on white with red dots), linked by '+' and '≫' symbols. No axes, numeric values or scale bars are printed.",
+  "confidence": "high",
+  "subfigures": [
+    {
+      "panel": "top-left",
+      "description": "'Input': grey-scale micrograph of equiaxed grains with a dashed rectangular region marked for cropping; a red and a blue arrow leave the image toward the prompt module.",
+      "confidence": "high"
+    },
+    {
+      "panel": "top-middle",
+      "description": "'MatSAM': two coupled blocks. 'Point prompt' contains 'ROI points' (red text), 'merge' and 'Grid points' (blue text); 'Segment anything model' contains 'Points encoder', 'Image encoder' and 'Mask decoder'. Arrows show a prompt token sequence and an image feature vector feeding the Mask decoder, and a curved red arrow returning to the Output panel.",
+      "confidence": "high"
+    },
+    {
+      "panel": "top-right",
+      "description": "'Output': segmented version of the input field of view; every grain is filled with a different pastel colour and carries a red dot, overlaid with the corresponding dashed inset.",
+      "confidence": "high"
+    },
+    {
+      "panel": "bottom-1",
+      "description": "'Region': the dashed crop shown at higher magnification as a raw grey-scale grain structure with visible boundaries.",
+      "confidence": "high"
+    },
+    {
+      "panel": "bottom-2",
+      "description": "'ROI points': same crop with sparse red dots placed on selected grain interiors/boundaries.",
+      "confidence": "high"
+    },
+    {
+      "panel": "bottom-3",
+      "description": "'Grid points': same crop with a dense uniform array of blue dots.",
+      "confidence": "high"
+    },
+    {
+      "panel": "bottom-4",
+      "description": "'Merged': same crop with the red ROI dots and the blue grid dots combined, preceded by a '+' symbol.",
+      "confidence": "high"
+    },
+    {
+      "panel": "bottom-5",
+      "description": "'Boundaries': final binary-style result of the same crop — black grain-boundary lines on a white background with red dots retained, introduced by a '≫' symbol.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "Fig. 3 is a three-stage pipeline labelled 'Input', 'MatSAM' and 'Output', read left to right.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The point-prompt module contains three stacked boxes labelled 'ROI points' (red), 'merge' and 'Grid points' (blue), which feed a merged prompt into the model.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The 'Segment anything model' block is drawn with three components labelled 'Points encoder', 'Image encoder' and 'Mask decoder', with a token sequence from the points encoder and a feature vector from the image encoder both entering the decoder.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The 'Output' panel shows the input field of view as coloured grains (each grain a different pastel fill) with red seed points, i.e. an instance-style grain segmentation rather than a binary boundary image.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The lower row shows five states of the same dashed crop: 'Region', 'ROI points' (red dots), 'Grid points' (blue dots), 'Merged' (both dot sets) and 'Boundaries' (black boundary lines on white), joined by '+' and '≫' symbols.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "No axes, tick labels, numeric values, legends or scale bars are printed anywhere in the figure.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption states that Fig. 3 is a schematic of MatSAM for training-free microstructure recognition.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b_caption_fig3"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states that MatSAM is implemented on SAM, which was pre-trained on the largest segmentation dataset to date and uses an image encoder, a prompt encoder and a segmentation mask decoder.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b_citation_fig3"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states that MatSAM requires no extra training or human labelling: a raw image is processed by the encoder, a prompt is tokenized, and the learned image feature is combined with the prompt embedding to output masks.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b_citation_fig3"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text lists the microstructures extracted as grains, phases, precipitates and cracks; the figure itself only illustrates grain segmentation.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b_citation_fig3"
+        }
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "measured_quantities": [],
+  "sample_hints": [],
+  "unreadable_items": [
+    "The modality of the input micrograph (optical vs. electron) is not stated on the figure and cannot be determined from the low-contrast grey-scale rendering",
+    "No scale bar is present, so the field-of-view size of the input/output micrographs is unknown"
+  ],
+  "image_paths": [
+    "images/c06eee81e24a62b6c1c6985bf83838eea8e6fd510fedfb617e9d93397159579e.jpg"
+  ]
+}

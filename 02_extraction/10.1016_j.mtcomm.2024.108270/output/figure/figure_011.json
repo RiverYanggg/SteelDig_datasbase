@@ -1,0 +1,117 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_011",
+  "family": "generalist",
+  "image_type": "chart_flow",
+  "description": "A single-panel vertical flow chart (pure schematic: no axes, no units, no scale bar, no data curves) documenting the control logic of the VUMAT user-material subroutine written for Fe-30Mn-9Al-0.8 C low-density steel. Execution starts in the top box \"Start VUMAT subroutine\", passes through \"Compute Material Constants\" and \"Begin step\", and reaches the decision \"If step time = 0\". The labelled \"Yes\" branch (left) goes to \"Calculate trial stress assuming pure elastic material\" and then runs straight down to \"End of Programme\". The labelled \"No\" branch (right) goes to \"Calculate deviatoric trial stress difference (sigdif)\", followed by a second decision \"sigdif > 0\": its \"Yes\" limb leads to \"Update the stress via constitutive relation\", its \"No\" limb to \"Set equivalent plastic strain equal to zero\". Both limbs rejoin at \"Update the stress and SDVs\", then flow into \"Update internal and dissipated inelastic energy\", whose arrow turns left back into \"End of Programme\". The chart therefore encodes the elastic-plastic return-mapping sequence of the modified Johnson-Cook model; it contains no printed numeric values. The citing text states the subroutine embeds Eq. (6), the modified J-C constitutive equation, and uses six state-dependent variables (SDVs) tabulated in Table 3.",
+  "confidence": "high",
+  "subfigures": [
+    {
+      "panel": "(single panel)",
+      "description": "Vertical flow chart of the VUMAT subroutine: Start VUMAT subroutine → Compute Material Constants → Begin step → decision 'If step time = 0' (Yes: Calculate trial stress assuming pure elastic material → End of Programme; No: Calculate deviatoric trial stress difference (sigdif) → decision 'sigdif > 0' (Yes: Update the stress via constitutive relation; No: Set equivalent plastic strain equal to zero) → Update the stress and SDVs → Update internal and dissipated inelastic energy → End of Programme). All boxes are text-only; no numbers, axes or scale bars.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "The flow chart opens with the box 'Start VUMAT subroutine', followed in sequence by 'Compute Material Constants' and 'Begin step'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The first decision box reads 'If step time = 0' and is labelled with 'Yes' on the left branch and 'No' on the right branch.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The 'Yes' branch of 'If step time = 0' leads to the box 'Calculate trial stress assuming pure elastic material', which then leads directly down to 'End of Programme'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The 'No' branch of 'If step time = 0' leads to the box 'Calculate deviatoric trial stress difference (sigdif)'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "A second decision box reads 'sigdif > 0', with 'Yes' leading to 'Update the stress via constitutive relation' and 'No' leading to 'Set equivalent plastic strain equal to zero'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Both limbs of the 'sigdif > 0' decision merge into 'Update the stress and SDVs', then into 'Update internal and dissipated inelastic energy', which returns via a left-pointing arrow to 'End of Programme'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The figure contains no axes, no numeric values, no units and no scale bar; every element is a text box connected by directional arrows.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption identifies Fig. 11 as the flow chart of the developed VUMAT subroutine.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_011"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states the VUMAT subroutine was constructed in ABAQUS to incorporate the modified J-C constitutive equation, Eq. (6), for Fe-30Mn-9Al-0.8 C steel.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_011"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states the implemented user subroutine uses six state-dependent variables (SDVs), as shown in Table 3 (variable names are not visible in this figure).",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_011"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "observation": "The citing text states the flow chart belongs to a 3-D finite element model of a rectangular sample built with the J-C constitutive model, and that experimental results for MAF-1, MAF-3 and MAF-5 were used for comparison of simulated stresses and grain size distribution.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_011"
+        }
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "measured_quantities": [],
+  "sample_hints": [
+    "Fe-30Mn-9Al-0.8 C",
+    "MAF-1",
+    "MAF-3",
+    "MAF-5"
+  ],
+  "unreadable_items": [
+    "None: all flow-chart box labels are legible at the supplied resolution",
+    "Figure reports no quantitative data (no axes, values or units present), so no measured quantities could be extracted"
+  ],
+  "image_paths": [
+    "images/fa856e26e4407c766bdff2e953eef4f8e791976b9110ad6b8b565658ace3caeb.jpg"
+  ]
+}

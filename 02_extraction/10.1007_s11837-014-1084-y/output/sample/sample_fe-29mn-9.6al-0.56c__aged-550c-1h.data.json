@@ -1,0 +1,120 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-29mn-9.6al-0.56c__aged-550c-1h",
+      "paper_id": "10.1007_s11837-014-1084-y",
+      "alloy_id": "alloy_fe-29mn-9.6al-0.56c",
+      "process_id": "proc_aged-550c-1h",
+      "sample_label": "aged 550 degrees C 1 h",
+      "aliases": "Fig. 9b"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_solution_treatment_850c_10min_wq",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "850 °C",
+      "temperature_unit": "°C",
+      "duration": "10 min",
+      "atmosphere": null,
+      "cooling_medium": "water quenched",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Parent solution treatment (proc_st-850c-10min-wq) preceding the 550 °C/1 h aging step."
+    },
+    {
+      "processing_step_id": "step_aging_550c_1h",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "550 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Aging at 550 °C for 1 h; ferrite becomes a fully ordered DO3 structure."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_ferrite_ordered_aged",
+      "overall_structure": "Ferrite phase becomes a fully ordered DO3 structure after 1 h aging at 550 °C; dark-field TEM using the {200} reflection shows bright equiaxed ordered domains a few tens of nanometres across, separated by dark boundaries.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_ferrite_ordered",
+          "region": "ferrite phase (α) - dark-field TEM image using the {200} reflection",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (α)",
+              "crystal_structure": "DO3 (fully ordered)",
+              "volume_fraction": null,
+              "morphology": "bright equiaxed ordered domains a few tens of nanometres across, separated by dark boundaries",
+              "grain_size": "tens of nanometres",
+              "texture": null
+            },
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "tens of nanometres",
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_ferrite_ordering",
+      "phase_interfaces": [
+        {
+          "interface_id": "ifc_austenite_ferrite",
+          "microstructure_id": "micro_ferrite_ordered",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "ferrite (α)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "Ferrite evolves to a fully ordered DO3 structure after 1 h aging at 550 °C; no intensity difference between {111} and {200} reflections remains.",
+      "interface_notes": "The ordered structures are not only due to the high level of aluminum of the steel but also due to partitioning between austenite and ferrite that leads to a level of Al in ferrite higher than the nominal composition."
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_tem_ferrite",
+      "microstructure_id": "micro_ferrite_ordered",
+      "technique": "TEM (transmission electron microscopy); selected-area electron diffraction (SAED) + dark-field imaging",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Diffraction pattern of ferrite in the [011]α zone axis (text also describes [110] zone axis); dark-field image using the {200} reflection; 100 nm scale bar",
+      "purpose": "Observe ferrite structure modifications (ordering) during aging at 550 °C",
+      "key_findings": "After 1 h at 550 °C, there is no intensity difference between {111} and {200} reflections; ferrite is fully ordered DO3; dark-field image shows bright equiaxed ordered domains a few tens of nanometres across separated by dark boundaries; indexed reflections 000, 0-22, 1̄11, 2̄00, 400."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The as-quenched (pre-aging) ferrite of the same 29Mn-9.6Al-0.56C (wt.%) alloy (Fig. 9a) already exhibits a mix of B2- and DO3-ordered structures, as indicated by the intensity difference between {111} and {200} superlattice reflections; this is the starting state before the 550 °C/1 h aging that produces the fully ordered DO3 structure (context for the aged sample, Fig. 9b)."
+  ]
+}

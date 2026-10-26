@@ -1,0 +1,133 @@
+{
+  "identity": {
+    "paper_id": "10.1016_j.ijplas.2025.104353",
+    "equation_id": "equation_012",
+    "block_id": "b0057",
+    "equation_number": "12",
+    "is_image": false,
+    "latex_hint": "$$\n\\left\\{ \\begin{array}{c} \\frac {d \\varphi_ {d}}{d \\varepsilon} = \\frac {\\ln k _ {d}}{\\dot {\\varepsilon} t _ {0 . 5} ^ {n _ {A v}}} n _ {A v} (1 - \\varphi_ {d}) \\left[ \\frac {t _ {0 . 5} ^ {n _ {A v}} \\ln \\left(\\frac {1}{1 - \\varphi_ {d}}\\right)}{\\ln k _ {d}} \\right] ^ {1 - \\frac {1}{n _ {A v}}} \\\\ t _ {0. 5} = \\psi Z ^ {- q} e x p \\left(\\frac {Q _ {d r x}}{R T}\\right) \\\\ k _ {d} = k _ {d 0} e x p \\left(- \\frac {Q _ {k d}}{R T}\\right) \\\\ n _ {A v} = n _ {A v 0} e x p \\left(- \\frac {Q _ {A v}}{R T}\\right) \\end{array} \\right.\\tag{12}\n$$"
+  },
+  "latex": "\\left\\{ \\begin{array}{c} \\frac{d \\varphi_d}{d \\varepsilon} = \\frac{\\ln k_d}{\\dot{\\varepsilon} t_{0.5}^{n_{Av}}} n_{Av} (1 - \\varphi_d) \\left[ \\frac{t_{0.5}^{n_{Av}} \\ln \\left(\\frac{1}{1 - \\varphi_d}\\right)}{\\ln k_d} \\right]^{1 - \\frac{1}{n_{Av}}} \\\\ t_{0.5} = \\psi Z^{-q} \\exp \\left(\\frac{Q_{drx}}{R T}\\right) \\\\ k_d = k_{d0} \\exp \\left(-\\frac{Q_{kd}}{R T}\\right) \\\\ n_{Av} = n_{Av0} \\exp \\left(-\\frac{Q_{Av}}{R T}\\right) \\end{array} \\right.\\tag{12}",
+  "purpose": "给出动态再结晶(DRX)分数 φ_d 随应变演化的微分形式 Avrami 方程，并给出其温度/应变率相关参数 t_0.5（50% DRX 所需时间）、k_d 与 Avrami 指数 n_Av 的表达式。",
+  "applicability_conditions": "用于恒定变形条件下 DRX 过程的动力学计算；其中 t_0.5 用式(11)的 Zener–Hollomon 参数 Z=A[sinh(ασ)]^n 代替 Z_p 计算，并随应力演化而变化。",
+  "symbols": [
+    {
+      "symbol": "φ_d",
+      "meaning": "动态再结晶(DRX)分数",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "ε",
+      "meaning": "应变",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "k_d",
+      "meaning": "Avrami 方程中与 DRX 动力学相关的温度相关系数",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "ε̇",
+      "meaning": "应变速率",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "t_0.5",
+      "meaning": "达到 50% DRX 分数所需的时间",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "n_Av",
+      "meaning": "Avrami 指数",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "ψ",
+      "meaning": null,
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "Z",
+      "meaning": "Zener–Hollomon 参数",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "q",
+      "meaning": null,
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "Q_drx",
+      "meaning": "动态再结晶激活能",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "R",
+      "meaning": "通用气体常数",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "T",
+      "meaning": "绝对温度",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "k_d0",
+      "meaning": "材料常数(k_d 的指前因子)",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "Q_kd",
+      "meaning": "与 k_d 相关的材料常数(激活能)",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "n_Av0",
+      "meaning": "材料常数(n_Av 的指前因子)",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "Q_Av",
+      "meaning": "与 n_Av 相关的材料常数(激活能)",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    }
+  ],
+  "unmapped": [
+    "原文明确说明：k_d0、n_Av0、Q_kd 和 Q_Av 代表材料常数。",
+    "t_0.5 采用式(11) Z=A[sinh(ασ)]^n 代替式(6)中的 Z_p 计算，代表在瞬态变形激活能控制下达到 50% DRX 分数所需的时间，并随应力演化而变化。",
+    "式(12)的可靠性通过恒定变形条件下 DRX 动力学计算与实验结果的对比得到验证(Fig. 6)。",
+    "ψ 与 q 在提供文本中未给出明确定义；从形式上看分别为 t_0.5 表达式中的前置因子和指数。"
+  ]
+}

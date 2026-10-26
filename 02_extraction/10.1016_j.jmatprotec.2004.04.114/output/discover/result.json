@@ -1,0 +1,357 @@
+{
+  "schema_version": "sample-discover-v1",
+  "paper_id": "10.1016_j.jmatprotec.2004.04.114",
+  "domain": "materials",
+  "paper": {
+    "paper_id": "10.1016_j.jmatprotec.2004.04.114",
+    "doi": "10.1016/j.jmatprotec.2004.04.114",
+    "title": "Evaluation of change in material properties due to plastic deformation",
+    "authors": [
+      "M. Yang",
+      "Y. Akiyama",
+      "T. Sasaki"
+    ],
+    "publication_year": "2004",
+    "journal": "Journal of Materials Processing Technology",
+    "keywords": [
+      "Change in elastic modulus",
+      "Spring-back",
+      "Nano-indentation test"
+    ],
+    "research_type": "experimental (macroscopic precision tensile tests and nano-indentation), with supporting FEM simulation of spring-back",
+    "paper_scope": "The study evaluates how plastic deformation changes the elastic modulus of cold-rolled steel sheets (SPCE and SPCC), comparing macroscopic precision-tensile measurements before/after large deformation and after various pre-strain/heat-treatment/annealing conditions with microscopic nano-indentation measurements, in order to clarify the influence of the modulus change on spring-back."
+  },
+  "alloys": [
+    {
+      "alloy_id": "alloy_spce",
+      "alloy_name": "SPCE sheet metal",
+      "aliases": [
+        "SPCE",
+        "SPCE steel sheet"
+      ],
+      "description": "Cold-rolled steel sheet (grade SPCE) used as the workpiece for the precision-extensometer tensile test measuring the elastic modulus before and after large plastic deformation.",
+      "base_element": "Fe",
+      "alloying_elements": [],
+      "nominal_composition": [],
+      "alloys_notes": "Composition and thickness not reported for SPCE; identified only by the JIS grade designation SPCE.",
+      "source": {
+        "reason": "The large-deformation elastic-modulus measurement is explicitly performed on SPCE sheet metal: 'a tensile test ... was carried out for measuring the elastic modulus of SPCE sheet metal before and after large deformation'.",
+        "block_id": [
+          "b0013",
+          "b0015"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_spcc",
+      "alloy_name": "SPCC",
+      "aliases": [
+        "SPCC steel",
+        "SPCC sheet metal"
+      ],
+      "description": "Cold-rolled commercial quality steel sheet (grade SPCC) of 1.2 mm thickness, used for the tensile-test specimens (conditions A–E) that confirm the effect of movable dislocations.",
+      "base_element": "Fe",
+      "alloying_elements": [],
+      "nominal_composition": [],
+      "alloys_notes": "Composition not reported; thickness 1.2 mm given in Table 1. Discussed as 'mild steel' in which dislocations are locked by carbon (Cottrell effect) in an Fe matrix.",
+      "source": {
+        "reason": "Table 1 of the specimen conditions is headed 'Material: SPCC; thickness: 1.2 mm', identifying a distinct, separately designated sheet grade from the SPCE used in the large-deformation test.",
+        "block_id": [
+          "b0028",
+          "b0029",
+          "b0022"
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_before-deformation",
+      "alloy_id": "alloy_spce",
+      "process_name": "Before large plastic deformation (initial state)",
+      "state_label": "before deformation",
+      "aliases": [
+        "initial elastic deformation",
+        "before plastic deformation",
+        "as-received (SPCE)"
+      ],
+      "parent_process_ids": [],
+      "description": "SPCE sheet in its initial state prior to large deformation; elastic modulus determined from the initial elastic region of the stress–strain curve.",
+      "processes_notes": null,
+      "source": {
+        "reason": "The paper measures the elastic modulus of SPCE 'before and after large deformation' and reads it 'at initial elastic deformation', defining the before-deformation terminal state.",
+        "block_id": [
+          "b0013",
+          "b0014",
+          "b0015"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_after-25pct-deformation",
+      "alloy_id": "alloy_spce",
+      "process_name": "After tensile deformation to 25% plastic strain",
+      "state_label": "after large deformation",
+      "aliases": [
+        "after 25% plastic strain",
+        "unloaded after maximum 25% plastic strain"
+      ],
+      "parent_process_ids": [
+        "proc_before-deformation"
+      ],
+      "description": "SPCE sheet loaded in tension to a given plastic strain of maximum 25% and then unloaded; elastic modulus measured from the unloading curve after the deformation.",
+      "processes_notes": null,
+      "source": {
+        "reason": "The workpiece 'was loaded to a given plastic strain of maximum 25% and then unloaded', with the modulus measured from the unloading curve after the given plastic deformation.",
+        "block_id": [
+          "b0013",
+          "b0015"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_as-received",
+      "alloy_id": "alloy_spcc",
+      "process_name": "As received",
+      "state_label": "As received",
+      "aliases": [
+        "A",
+        "Species A",
+        "as-received (SPCC)"
+      ],
+      "parent_process_ids": [],
+      "description": "SPCC sheet in the as-received condition, without pre-strain and without any heat treatment.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Specimen condition 'A' in Table 1 is listed as 'As received', defining the reference terminal state of the SPCC steel.",
+        "block_id": [
+          "b0029",
+          "b0034"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_15pct-prestrain",
+      "alloy_id": "alloy_spcc",
+      "process_name": "With 15% pre-strain",
+      "state_label": "With 15% pre-strain",
+      "aliases": [
+        "B",
+        "Species B",
+        "15% pre-strained"
+      ],
+      "parent_process_ids": [
+        "proc_as-received"
+      ],
+      "description": "SPCC sheet pre-strained to 15% by tensile deformation.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Specimen condition 'B' in Table 1 is listed as 'With 15% pre-strain', a distinct terminal state produced from the as-received material.",
+        "block_id": [
+          "b0029",
+          "b0034"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_15pct-prestrain-ht373k90h",
+      "alloy_id": "alloy_spcc",
+      "process_name": "Heat-treated after 15% pre-strain (373 K, 90 h)",
+      "state_label": "Heat-treated after 15% pre-strain",
+      "aliases": [
+        "C",
+        "Species C"
+      ],
+      "parent_process_ids": [
+        "proc_15pct-prestrain"
+      ],
+      "description": "SPCC sheet first pre-strained to 15% and then heat-treated at 373 K for 90 h to recover only the Cottrell atmosphere (by C diffusion) while keeping dislocations stationary.",
+      "processes_notes": "The heat-treatment condition (373 K for 90 h) is given in Section 2 for recovering the Cottrell atmosphere.",
+      "source": {
+        "reason": "Specimen condition 'C' is 'Heat-treated after 15% pre-strain', and the paper specifies the treatment as '373 K for 90 h for recovering only the Cottrell atmosphere'.",
+        "block_id": [
+          "b0022",
+          "b0029",
+          "b0034"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ht373k90h",
+      "alloy_id": "alloy_spcc",
+      "process_name": "Heat-treated after as-received (373 K, 90 h)",
+      "state_label": "Heat-treated after received",
+      "aliases": [
+        "D",
+        "Species D"
+      ],
+      "parent_process_ids": [
+        "proc_as-received"
+      ],
+      "description": "SPCC sheet heat-treated at 373 K for 90 h without any prior pre-strain.",
+      "processes_notes": "Same heat-treatment condition (373 K, 90 h) as the pre-strained variant, but applied to the as-received material.",
+      "source": {
+        "reason": "Specimen condition 'D' is 'Heat-treated after received', a distinct terminal state combining the as-received material with the 373 K/90 h heat treatment.",
+        "block_id": [
+          "b0022",
+          "b0029",
+          "b0034"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_annealed",
+      "alloy_id": "alloy_spcc",
+      "process_name": "Annealed",
+      "state_label": "Annealed",
+      "aliases": [
+        "E",
+        "Species E"
+      ],
+      "parent_process_ids": [],
+      "description": "SPCC sheet in the annealed condition; the only condition whose elastic modulus remained almost constant until yielding.",
+      "processes_notes": "Annealing temperature and time are not reported in the paper.",
+      "source": {
+        "reason": "Specimen condition 'E' in Table 1 is listed as 'Annealed', a terminal state distinct from the as-received and heat-treated specimens.",
+        "block_id": [
+          "b0029",
+          "b0032",
+          "b0034"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_spce__before-deformation",
+      "alloy_id": "alloy_spce",
+      "process_id": "proc_before-deformation",
+      "sample_label": null,
+      "aliases": [
+        "SPCE before deformation",
+        "SPCE initial elastic state"
+      ],
+      "source": {
+        "reason": "Combines the SPCE sheet alloy with its initial (before large deformation) state, for which the elastic modulus was measured from initial elastic deformation.",
+        "block_id": [
+          "b0013",
+          "b0015"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_spce__after-25pct-deformation",
+      "alloy_id": "alloy_spce",
+      "process_id": "proc_after-25pct-deformation",
+      "sample_label": null,
+      "aliases": [
+        "SPCE after 25% plastic strain",
+        "SPCE after large deformation"
+      ],
+      "source": {
+        "reason": "Combines the SPCE sheet alloy with the after-large-deformation state (maximum 25% plastic strain, then unloaded).",
+        "block_id": [
+          "b0013",
+          "b0015"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_spcc__as-received",
+      "alloy_id": "alloy_spcc",
+      "process_id": "proc_as-received",
+      "sample_label": "A",
+      "aliases": [
+        "As received",
+        "Species A",
+        "SPCC as-received"
+      ],
+      "source": {
+        "reason": "Combines the SPCC sheet alloy with the as-received condition (Table 1, Species A); Table 2 gives its elastic moduli (182 and 173 GPa).",
+        "block_id": [
+          "b0029",
+          "b0034"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_spcc__15pct-prestrain",
+      "alloy_id": "alloy_spcc",
+      "process_id": "proc_15pct-prestrain",
+      "sample_label": "B",
+      "aliases": [
+        "With 15% pre-strain",
+        "Species B",
+        "SPCC with 15% pre-strain"
+      ],
+      "source": {
+        "reason": "Combines the SPCC sheet alloy with the 15% pre-strained condition (Table 1, Species B).",
+        "block_id": [
+          "b0029",
+          "b0034"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_spcc__15pct-prestrain-ht373k90h",
+      "alloy_id": "alloy_spcc",
+      "process_id": "proc_15pct-prestrain-ht373k90h",
+      "sample_label": "C",
+      "aliases": [
+        "Heat-treated after 15% pre-strain",
+        "Species C"
+      ],
+      "source": {
+        "reason": "Combines the SPCC sheet alloy with the 15% pre-strain + 373 K/90 h heat treatment condition (Table 1, Species C).",
+        "block_id": [
+          "b0022",
+          "b0029",
+          "b0034"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_spcc__ht373k90h",
+      "alloy_id": "alloy_spcc",
+      "process_id": "proc_ht373k90h",
+      "sample_label": "D",
+      "aliases": [
+        "Heat-treated after received",
+        "Species D"
+      ],
+      "source": {
+        "reason": "Combines the SPCC sheet alloy with the heat-treated-after-received condition (Table 1, Species D; 373 K/90 h).",
+        "block_id": [
+          "b0022",
+          "b0029",
+          "b0034"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_spcc__annealed",
+      "alloy_id": "alloy_spcc",
+      "process_id": "proc_annealed",
+      "sample_label": "E",
+      "aliases": [
+        "Annealed",
+        "Species E"
+      ],
+      "source": {
+        "reason": "Combines the SPCC sheet alloy with the annealed condition (Table 1, Species E).",
+        "block_id": [
+          "b0029",
+          "b0034"
+        ]
+      }
+    }
+  ],
+  "unmapped_findings": [
+    "The heat treatment used to recover the Cottrell atmosphere was 373 K for 90 h, chosen based on the average diffusion distance of solute C in an Fe matrix (D from X = (2Dt)^(1/2)).",
+    "The change in elastic modulus was used as input to an FEM simulation of spring-back after V-bending; using the varied (strain-dependent) modulus predicted spring-back more accurately than a constant initial elastic modulus.",
+    "Nano-indentation was performed with a spherical indenter tip (nominal radius R = 50 µm) instead of a Berkovich tip so that the indentation deforms the surface only elastically, following Hertz contact theory.",
+    "The elastic modulus near the grain boundary was found to be smaller than in the grain interior by nano-indentation, with values varying between grains of different orientation.",
+    "CMP treatment (after etching and Vickers-indentation marker placement) was applied to specimen surfaces before nano-indentation to remove the grain-boundary ditch formed by etching and reduce surface-roughness effects.",
+    "The nano-indentation apparatus (Triboscope, Hysitron Inc. mounted on a Shimadzu SPM-9500J2 AFM stage) and its force/displacement ranges and sensitivities are specified in Table 3."
+  ]
+}

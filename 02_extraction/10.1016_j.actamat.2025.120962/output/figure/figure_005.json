@@ -1,0 +1,133 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_005",
+  "family": "generalist",
+  "image_type": "microscopy_sem",
+  "description": "Fig. 5 is a 4-row x 6-column comparison grid of greyscale micrographs and their binary segmentation masks, contrasting MatSAM with rule-based methods. The six columns are headed Raw image, Expert label, MatSAM (enclosed in a red rectangle), OTSU, Canny and Watershed. The four rows are materials/conditions labelled in the lower-left of each raw panel: NBS-2 (cellular/dendritic grey contrast with fine round precipitates), DP590-2 (acicular, needle-like structure), UHCS (dark matrix with bright globular particles plus a few large faceted particles) and AZA (a single circular cross-section containing several dark angular internal phases). Expert-label panels are black backgrounds with white phase regions. The MatSAM masks reproduce the Expert label almost exactly in all four rows, including the small scattered precipitates of NBS-2, DP590-2 and UHCS. OTSU output is fragmented: speckled noise in NBS-2, mostly thin outlines instead of filled acicular regions in DP590-2, and loss of many small particles in UHCS and AZA, i.e. under-segmentation. Canny and Watershed return only thin edge/boundary maps rather than filled phase areas. No scale bars, axes or numeric values are printed anywhere. The figure argues that MatSAM segmentation is the most consistent with expert annotation of multiphase microstructures.",
+  "confidence": "medium",
+  "subfigures": [
+    {
+      "panel": "row 1 / NBS-2",
+      "description": "Four-of-six panels show a greyscale micrograph of NBS-2 with cellular/dendritic contrast and numerous small round precipitates, its expert binary label (large white blobs plus scattered white dots), the near-identical MatSAM mask (red box), a fragmented, speckled OTSU mask, and Canny/Watershed panels consisting only of white boundary lines on black.",
+      "confidence": "high"
+    },
+    {
+      "panel": "row 2 / DP590-2",
+      "description": "Greyscale micrograph labelled DP590-2 showing an acicular/needle-like structure; the expert label and MatSAM (red box) both show filled white acicular regions, whereas OTSU yields mostly thin outlines and Canny/Watershed give edge maps only.",
+      "confidence": "high"
+    },
+    {
+      "panel": "row 3 / UHCS",
+      "description": "Greyscale micrograph labelled UHCS with a dark matrix, dense bright globular particles and a few large faceted particles; expert label and MatSAM (red box) capture the particle population, while OTSU retains substantially fewer particles.",
+      "confidence": "high"
+    },
+    {
+      "panel": "row 4 / AZA",
+      "description": "Greyscale image labelled AZA showing a circular particle cross-section with several dark angular internal phases; expert label and MatSAM (red box) show matching white internal shapes, while OTSU shows ring/edge artefacts and Canny/Watershed show outlines only.",
+      "confidence": "high"
+    },
+    {
+      "panel": "column headers",
+      "description": "Six column headers read Raw image, Expert label, MatSAM, OTSU, Canny, Watershed; the MatSAM column is outlined by a red rectangle in every row.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "The figure is a 4-row x 6-column grid whose column headers are 'Raw image', 'Expert label', 'MatSAM', 'OTSU', 'Canny' and 'Watershed'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The four rows are labelled 'NBS-2', 'DP590-2', 'UHCS' and 'AZA' in the lower-left corner of each raw-image panel.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The MatSAM column is set off by a red rectangle in all four rows.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The MatSAM segmentation masks visually match the corresponding Expert label panels in all four rows, including small isolated precipitate dots in NBS-2, DP590-2 and UHCS.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The OTSU panel in the NBS-2 row is fragmented and speckled with many small white granules, unlike the clean large blobs of the expert label.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "In the DP590-2 row the OTSU panel shows predominantly thin outlines rather than filled acicular phase regions.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "In the UHCS and AZA rows the OTSU panel retains markedly fewer small particles than the expert label and MatSAM panels.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The Canny and Watershed columns contain only thin white boundary lines on a black background rather than filled phase regions.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "No scale bars, axis labels or printed numeric values appear on any panel of the figure.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption states the figure presents 'Visual results of MatSAM and rule-based methods on multiphase microscopy'.",
+      "source": "caption",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states the threshold-based Adaptive method performed poorly and was excluded from the figure.",
+      "source": "citation",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "The citing text asserts MatSAM recognition results are the most consistent with the expert labels and significantly outperform other rule-based methods.",
+      "source": "citation",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "The citing text states that for NBS-2, DP590-2 and UHCS MatSAM most comprehensively identifies small regions (various precipitate phases), while OTSU under-segments because of the minimal grayscale difference between phase regions and background.",
+      "source": "citation",
+      "evidence": [],
+      "confidence": "medium"
+    }
+  ],
+  "measured_quantities": [
+    "binary phase segmentation maps (qualitative comparison only; no numeric values or units printed anywhere in the figure)"
+  ],
+  "sample_hints": [
+    "NBS-2",
+    "DP590-2",
+    "UHCS",
+    "AZA"
+  ],
+  "unreadable_items": [
+    "Acquisition modality of the raw micrographs (optical vs SEM/BSE) is not labelled on the panels and cannot be determined from the pixels alone",
+    "No scale bars or magnification values are visible in any raw-image panel, so physical dimensions cannot be read",
+    "Field of view / pixel size unknown",
+    "The caption/citing text blocks were supplied without text_block ids, so caption- and citation-sourced observations carry empty evidence arrays"
+  ],
+  "image_paths": [
+    "images/090165c68032a7e0f79db7af96005fc839e7cc3b985e2dc1bea0aace5820a0ca.jpg"
+  ]
+}

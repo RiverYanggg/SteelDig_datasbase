@@ -1,0 +1,250 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-12mn-9al-3cr-1.4c-0.04nb__723k-6h",
+      "paper_id": "10.1002_srin.202400475",
+      "alloy_id": "alloy_fe-12mn-9al-3cr-1.4c-0.04nb",
+      "process_id": "proc_723k-6h",
+      "sample_label": "0.04Nb steel aged at 723 K for 6 h",
+      "aliases": [
+        "0.04Nb steel (723 K/6 h)",
+        "0.04Nb steel aged at 723 K/6 h"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_as_cast",
+      "sequence": "1",
+      "type": "mechanical processing",
+      "method": "centrifugal casting under near-rapid solidification",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingot prepared by induction melting in a water-cooled copper crucible; re-melted and poured into a rotating copper mold at high speed to obtain steel strips of 60 × 70 × 2.5 mm under near-rapid solidification."
+    },
+    {
+      "processing_step_id": "step_2_aging_723K_6h",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "723",
+      "temperature_unit": "K",
+      "duration": "6 h",
+      "atmosphere": "vacuum (tubular vacuum furnace)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Extended aging treatment at 723 K for 6 h conducted on both the 0.02Nb and 0.04Nb steels to investigate the effect of aging period on microstructure and mechanical properties."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_0.04Nb_723K_6h",
+      "overall_structure": "Two-phase microstructure consisting of austenite (γ) matrix with irregular δ-ferrite; intragranular nano-scale κ-carbides and submicron NbC particles are present. After aging at 723 K for 6 h, the primary phases remain ferrite and austenite with no observable new diffraction peak.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_0.04Nb_723K_6h_bulk",
+          "region": "bulk",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "ferrite (δ)",
+              "crystal_structure": "BCC",
+              "volume_fraction": "17.5 vol%",
+              "morphology": "irregular-shaped ferrite randomly dispersed in the austenite matrix; phase boundaries irregular with numerous irregular bulges",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_0.04Nb_723K_6h",
+              "type": "κ-carbide",
+              "size": {
+                "value": "7",
+                "unit": "nm"
+              },
+              "distribution": "intragranular, dense and uniformly dispersed; volume fraction 18.7 vol%",
+              "coherency": "coherent with austenite, [100]γ // [100]κ"
+            },
+            {
+              "precipitate_id": "ppt_NbC_0.04Nb_723K_6h",
+              "type": "NbC",
+              "size": null,
+              "distribution": "submicron white particles within the austenite matrix; size significantly increases with prolongation of aging period",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interfaces_0.04Nb_723K_6h",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_gamma_delta",
+          "microstructure_id": "micro_0.04Nb_723K_6h_bulk",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "ferrite (δ)",
+          "coherence": null
+        },
+        {
+          "interface_id": "intf_kappa_gamma",
+          "microstructure_id": "micro_0.04Nb_723K_6h_bulk",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "austenite (γ)",
+          "coherence": "coherent"
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "Prolonged 723 K aging promotes κ-carbide growth and coarsening; ferrite/austenite phase boundaries become irregular.",
+      "interface_notes": "No coarsened intergranular κ-carbides reported; only intragranular κ-carbides were characterized."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_tensile_0.04Nb_723K_6h",
+      "measurement_conditions": {
+        "temperature": "ambient temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "2.5 × 10^-4 s^-1",
+        "specimen_geometry": "gauge width 4 mm, gauge length 12 mm",
+        "test_standard": null,
+        "other_conditions": "minimum of four repetitions per steel strip"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "1010",
+              "unit": "MPa",
+              "uncertainty": "± 4"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1104",
+              "unit": "MPa",
+              "uncertainty": "± 5"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "17",
+              "unit": "%",
+              "uncertainty": "± 1"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "723 K/6 h (red) curve of the 0.04Nb steel reaches the highest plateau (approaching 1200 MPa) but stops near 17% strain.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_0.04Nb_723K_6h",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": [
+        {
+          "benchmark_alloy_id": "0.02Nb steel",
+          "benchmark_process_id": "proc_723k-6h",
+          "benchmark_sample_id": null,
+          "comparison_metric": "yield strength and total elongation after 723 K/6 h",
+          "improvement_percentage": null
+        }
+      ]
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_0.04Nb_723K_6h",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "D/max-2500",
+      "measurement_conditions": "40 kV; scanning range 30°–100°; speed 4°/min",
+      "purpose": "Phase identification of 0.04Nb steel aged at 723 K for 3/6/9 h",
+      "key_findings": "Primary phases remain ferrite and austenite; no observable new diffraction peak in the 723 K/6 h aged 0.04Nb steel."
+    },
+    {
+      "characterization_id": "char_sem_0.04Nb_723K_6h",
+      "microstructure_id": "micro_0.04Nb_723K_6h_bulk",
+      "technique": "SEM",
+      "instrument_or_setup": "Apollo 300 thermal field emission SEM",
+      "measurement_conditions": null,
+      "purpose": "Microstructure observation and ferrite content measurement",
+      "key_findings": "Irregular ferrite dispersed in austenite matrix; ferrite content 17.5 vol%; phase boundaries irregular with bulges; NbC particles coarsen with prolonged aging."
+    },
+    {
+      "characterization_id": "char_tem_0.04Nb_723K_6h",
+      "microstructure_id": "micro_0.04Nb_723K_6h_bulk",
+      "technique": "TEM dark-field (DF) + SAED",
+      "instrument_or_setup": "JEOL JEM-2100 TEM at 200 kV",
+      "measurement_conditions": null,
+      "purpose": "Characterization of intragranular κ-carbides",
+      "key_findings": "κ-carbide volume fraction 18.7 vol%, average size 7 nm; coherent with austenite ([100]γ // [100]κ)."
+    },
+    {
+      "characterization_id": "char_tensile_0.04Nb_723K_6h",
+      "microstructure_id": null,
+      "technique": "uniaxial tensile test",
+      "instrument_or_setup": "MTS Criterion 44 universal testing machine",
+      "measurement_conditions": "ambient temperature; strain rate 2.5 × 10^-4 s^-1; gauge width 4 mm, gauge length 12 mm",
+      "purpose": "Tensile mechanical properties",
+      "key_findings": "Yield strength 1010 ± 4 MPa, tensile strength 1104 ± 5 MPa, total elongation 17 ± 1 %."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Measured chemical composition of the 0.04Nb steel strip (Table 1): Mn 12.82, Al 9.12, Cr 2.99, C 1.40, Nb 0.039, Fe Bal. (wt%).",
+    "For both the 0.02Nb and 0.04Nb steels, the aging treatment at 723 K for 6 h could result in good comprehensive mechanical properties.",
+    "Extended aging at 723 K does not markedly alter the yield strength of Nb-containing steels: κ-carbide precipitation strengthening intensifies while dislocation strengthening diminishes (grain boundary strengthening remains relatively unchanged).",
+    "Compared to 0.02Nb steels, the size of NbC particles in 0.04Nb steels significantly increases with the prolongation of aging period."
+  ]
+}

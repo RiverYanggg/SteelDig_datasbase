@@ -1,0 +1,353 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_0al__temper-180c-2h",
+      "paper_id": "10.1016_j.matchar.2025.115480",
+      "alloy_id": "alloy_0al",
+      "process_id": "proc_temper-180c-2h",
+      "sample_label": "0Al,2 h",
+      "aliases": [
+        "0Al,2 h",
+        "0Al,2h"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting_forging",
+      "sequence": "1",
+      "type": "thermo-mechanical processing",
+      "method": "vacuum induction melting followed by vacuum arc remelting (VIM + VAR), then forging",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "VIM + VAR into 500 kg ingots, subsequently forged into Φ170 mm billets; specimens for microstructural and mechanical characterization were extracted from the quarter-radius position."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "970 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution treatment at 970 °C for 1 h to dissolve carbides, with water quenching after the step."
+    },
+    {
+      "processing_step_id": "step_tempering_180c_2h",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "tempering (low-temperature tempering)",
+      "temperature": "180 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Low-temperature tempering at 180 °C for 2 h with water quenching, producing the sample denoted 0Al,2 h."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_0al_2h_tempered_martensite",
+      "overall_structure": "Tempered martensitic structure: lath-shaped tempered martensite with sharp lath boundaries and high dislocation density; thin films of retained austenite at lath boundaries; needle-like ε-carbides uniformly precipitated within the laths. A small amount of retained austenite (1.0 %) remains after tempering.",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_0al_2h_matrix",
+          "region": "matrix (bulk, specimens taken from quarter-radius position)",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "tempered martensite (α-Fe matrix)",
+              "crystal_structure": "BCC (body-centered cubic)",
+              "volume_fraction": null,
+              "morphology": "lath-shaped tempered martensite with sharp lath boundaries and high dislocation density",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "retained austenite (γ)",
+              "crystal_structure": "FCC (face-centered cubic, austenite)",
+              "volume_fraction": "1.0 %",
+              "morphology": "thin films at lath boundaries",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "ε-carbide",
+              "crystal_structure": "hcp (hexagonal close-packed)",
+              "volume_fraction": null,
+              "morphology": "needle-like, aligned along a common crystallographic direction",
+              "grain_size": "100–500 nm (length); 3–10 nm (width)",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "~2.01 × 10^15 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "26.1 ± 9.4",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "prior austenite grain d_a = 26.1 ± 9.4 μm; martensitic packet d_p = 3.4 ± 0.8 μm; martensitic block d_b = 0.9 ± 0.2 μm; martensitic lath d_l = 0.24 ± 0.07 μm",
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_eps_carbide",
+              "type": "ε-carbide",
+              "size": {
+                "value": "100–500 nm (length) × 3–10 nm (width)",
+                "unit": "nm"
+              },
+              "distribution": "uniformly precipitated within the martensitic laths, aligned along a common crystallographic direction",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_0al_2h",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_retained_austenite_martensite",
+          "microstructure_id": "micro_0al_2h_matrix",
+          "phase_1_name": "retained austenite (γ)",
+          "phase_2_name": "martensite (α-Fe)",
+          "coherence": "Kurdjumov-Sachs (K–S) orientation relationship: {111}γ // {110}M, <110>γ // <111>M"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_crack_block_boundaries",
+          "microstructure_id": "micro_0al_2h_matrix",
+          "interaction_type": "transgranular crack propagation with deflection at block boundaries",
+          "qualitative_or_quantitative_description": "In the 0Al steel cracks crossed packets and deviated along or through blocks; the main crack in fracture-toughness specimens propagated almost straight with minimal deviations, suggesting faster crack growth, and was rapidly blunted upon penetrating the matrix."
+        }
+      ],
+      "slip_behavior": "ε-carbides promote dislocation cell formation through bypassing; dense packet boundaries and low-angle boundaries act as barriers to dislocation motion; dislocations distributed relatively non-homogeneously compared with the 1.3Al steel.",
+      "phase_evolution": "During low-temperature tempering at 180 °C, ε-carbides precipitate within the martensitic laths while a small amount of retained austenite remains (1.0 % for the 0Al steel).",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_0al_2h",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "0.001 s^-1",
+        "specimen_geometry": "tensile: diameter 5 mm, gauge length 25 mm; Charpy U-notch: 10 × 10 × 55 mm^3; fracture toughness: thickness 25 mm, width 50 mm with 3 mm fatigue pre-crack",
+        "test_standard": "ASTM E399 (fracture toughness, conditional KQ)",
+        "other_conditions": "Three tests per sample condition were performed; both specimen surfaces and notches were mechanically polished."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "1400 ± 12 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 12 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1925 ± 5 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 5 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "13.5 ± 1.8 %",
+              "unit": "%",
+              "uncertainty": "± 1.8 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve for 0Al,2 h (dashed blue curve) peaks near 1900–1950 MPa around strain 8–9 and extends to strain ~14 ending near 1250–1300 MPa",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "97.6 MPa·m^1/2",
+          "unit": "MPa·m^1/2"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_sem_0al",
+      "microstructure_id": "micro_0al_2h_matrix",
+      "technique": "Scanning electron microscopy (SEM)",
+      "instrument_or_setup": "Zeiss Sigma 300",
+      "measurement_conditions": "specimens cut from impact specimens, ground, polished and etched with 4 vol% nitric acid-ethanol solution",
+      "purpose": "Characterize the tempered martensitic microstructure and martensitic units/packet sizes",
+      "key_findings": "Both the 0Al and 1.3Al steels exhibit tempered martensitic structures with differently oriented packets."
+    },
+    {
+      "characterization_id": "char_tem_0al",
+      "microstructure_id": "micro_0al_2h_matrix",
+      "technique": "Transmission electron microscopy (TEM) with selected area electron diffraction (SAED)",
+      "instrument_or_setup": "JEM-F200; imaging at 200 KV accelerating voltage; thin foils electropolished by double-jet thinning at 30 V and −25 °C using a 10 vol% perchloric acid alcohol solution",
+      "measurement_conditions": "thin foils extracted from the matrix, ground to 50 μm, punched into Φ3 mm discs",
+      "purpose": "Characterize tempered martensite laths, retained austenite and ε-carbides",
+      "key_findings": "Tempered martensitic laths with high dislocation densities and sharp lath boundaries; thin films of retained austenite at lath boundaries (indexed (110)γ adjacent to (111)M, K–S relationship); needle-like ε-carbides 100–500 nm long and 3–10 nm wide within the laths."
+    },
+    {
+      "characterization_id": "char_ebsd_0al",
+      "microstructure_id": "micro_0al_2h_matrix",
+      "technique": "Electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "Bruker e-Flash FS detector on the SEM; 20 KV accelerating voltage, 0.1 μm step size; Aztec Crystal v2.1 software",
+      "measurement_conditions": "specimens 10 × 10 × 5 mm^3, mechanically polished with 0.02 μm colloidal silica suspension",
+      "purpose": "Measure prior austenite grain and martensitic unit sizes; kernel average misorientation (KAM) near main cracks",
+      "key_findings": "Average prior austenite grain size 26.1 ± 9.4 μm for 0Al; average KAM value of 1.16° with inhomogeneous strain distribution near the main crack (red/yellow high-KAM regions adjacent to the crack, large blue undeformed areas nearby)."
+    },
+    {
+      "characterization_id": "char_xrd_0al",
+      "microstructure_id": "micro_0al_2h_matrix",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Rigaku D/Max-2550 with Co radiation source operated at 40 KV and 150 mA",
+      "measurement_conditions": "scans from 20° to 110° at a scanning rate of 2°/min",
+      "purpose": "Determine retained austenite content (direct comparison method) and dislocation density (Williamson-Hall method)",
+      "key_findings": "Small amount of retained austenite (1.0 % for 0Al); dislocation density ~2.01 × 10^15 m^-2 for the 0Al steel; peaks (110)α, (111)γ, (200)α, (200)γ, (211)α, (220)α."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_williamson_hall",
+      "simulation_method": "Williamson-Hall analysis of XRD peak broadening",
+      "software_used": "Jade 6.0",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Williamson-Hall method",
+          "equation_role": "Estimate lattice strain ε and apparent crystallite size D from XRD peak broadening, then dislocation density ρ",
+          "parameters": [
+            {
+              "name": "λ (X-ray wavelength)",
+              "value": "0.154",
+              "unit": "nm"
+            },
+            {
+              "name": "b (Burgers vector magnitude)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "calculated dislocation density (ρ, 0Al)",
+              "value": "~2.01 × 10^15",
+              "unit": "m^-2"
+            }
+          ],
+          "model_note": "Equation (2): Δ2θcosθ/λ = 0.9/D + 2εsinθ/λ; ρ = 2√3ε/(D·b). Fitted using the (110)M, (200)M and (211) peaks for the 0Al steel."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_kic_astm_e399",
+      "simulation_method": "ASTM E399 conditional fracture toughness (KQ) calculation with three-point bending",
+      "software_used": null,
+      "potential_model_or_database": "ASTM E399",
+      "boundary_and_initial_conditions": "three-point bending; loading rate 38 KN/min; specimen thickness 25 mm, width 50 mm, 3 mm fatigue pre-crack at notch tip",
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "KQ equation (ASTM E399)",
+          "equation_role": "Compute conditional plane-strain fracture toughness KQ",
+          "parameters": [
+            {
+              "name": "FQ (conditional load)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "S (loading span)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "a (crack length)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "B (thickness)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "W (width)",
+              "value": null,
+              "unit": null
+            }
+          ],
+          "model_note": "KQ = (FQ·S / (B·W^(3/2))) × f(a/W), where f depends on the a/W ratio."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Charpy U-notch impact absorption energy KU2 = 65 ± 3 J for 0Al,2 h (Table 2 / Fig. 1b).",
+    "Instrumented Charpy load-deflection for the 0Al steel (Fig. 7b): peak load P_m = 39.7 KN at a deflection of 2.06 mm, crack initiation energy E_i = 45.0 J, crack propagation energy E_p = 17.4 J, and integrated KU2 = 62.4 J; the 0Al steel showed 17.4 J crack propagation energy, 4.6 J less than the 1.3Al steel.",
+    "Shear fracture area of 36.8 % measured for the 0Al steel impact specimen (the 1.3Al steel gave 42.9 %).",
+    "Average kernel average misorientation (KAM) of 1.16° near the impact fracture surface in the 0Al steel, with an inhomogeneous strain distribution (red/yellow high-KAM regions adjacent to the main crack and large blue undeformed areas in the adjacent matrix); KAM colour-bar class fractions: 0.0–0.7° 23.8 %, 0.7–1.4° 47.5 %, 1.4–2.1° 19.8 %, 2.1–2.8° 6.5 %, 2.8–3.5° 2.4 %.",
+    "The 0Al steel lacks NiAl clusters; the NiAl cluster (B2, ~4.88 × 10^24 m^-3, equivalent radius 0.57 nm) and Si/Cr/Mo co-segregation observations (Figs. 5–6) pertain only to the 1.3Al steel and are therefore not attributed to this sample."
+  ]
+}

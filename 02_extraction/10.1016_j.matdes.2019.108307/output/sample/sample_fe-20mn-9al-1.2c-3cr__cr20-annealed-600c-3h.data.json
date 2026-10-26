@@ -1,0 +1,344 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-9al-1.2c-3cr__cr20-annealed-600c-3h",
+      "paper_id": "10.1016_j.matdes.2019.108307",
+      "alloy_id": "alloy_fe-20mn-9al-1.2c-3cr",
+      "process_id": "proc_cr20-annealed-600c-3h",
+      "sample_label": "CR20% + annealed 3Cr",
+      "aliases": "3Cr CR20% + annealed"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_near_rapid_solidification",
+      "sequence": "1",
+      "type": "solidification",
+      "method": "near-rapid solidification centrifugal casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "argon",
+      "cooling_medium": "copper mold rotating at 600 rpm",
+      "heating_or_cooling_rate": "1-1 × 10^4 K/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "100 g alloy ingot (99.99% Fe, 99.9% Mn, 99.9% Al, 99.9% Cr, 99.8% graphite) prepared by cold-crucible levitation melting; remelted by induction melting and poured into a copper mold rotating at 600 rpm, giving as-cast strips of 80 mm × 60 mm × 2.5 mm. Near-rapid solidification cooling rate 1-1 × 10^4 K/s."
+    },
+    {
+      "processing_step_id": "step_2_stress_relief_annealing",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "stress relief annealing",
+      "temperature": "400 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Stress relief annealing applied to as-cast strips before cold rolling (\"cold rolled (CR) with 20% reduction after stress relief annealing at 400 °C for 1 h\")."
+    },
+    {
+      "processing_step_id": "step_3_cold_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "20%",
+      "processing_steps_notes": "Cold rolling with 20% reduction (denoted \"CR20%\"), achieved by multipass rolling on a twin roll mill (Φ160); intended to eliminate solidification micropores and avoid great structural change."
+    },
+    {
+      "processing_step_id": "step_4_annealing_600c_3h",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": "600 °C",
+      "temperature_unit": "°C",
+      "duration": "3 h",
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Final step: the CR20% strips further annealed at 600 °C for 3 h in a tubular vacuum furnace; this condition is denoted \"CR20% + annealed\"."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "micro_cr20_annealed_3cr",
+      "overall_structure": "Constituent phases are γ-austenite matrix plus irregularly shaped δ-ferrite containing an ordered DO3 phase (same assemblage as the as-cast strip); the cold-rolled (20%) strip retains this assemblage, and 600 °C/3 h annealing changes the 43.5°-45.0° double peak to a single peak, indicating almost all ferrite transforms to the ordered DO3 phase. High-density {111} planar slip bands introduced by cold rolling persist after annealing.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": null,
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "γ-austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "matrix; smooth grey phase in SEM",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": "12%",
+              "morphology": "irregularly shaped, blocky/vermicular, evenly distributed in the γ-austenite matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "DO3",
+              "crystal_structure": "ordered BCC (space group Fm3m, lattice parameter a = 0.565 nm)",
+              "volume_fraction": null,
+              "morphology": "ordered phase formed within the δ-ferrite; single XRD peak after annealing",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "perovskite-type (ideal stoichiometry (Fe,Mn)3AlC)",
+              "volume_fraction": null,
+              "morphology": "nano-scale precipitates, mainly precipitated at dislocation entanglement in the CR20% + annealed 3Cr strip",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation entanglement / tangles",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "planar {111} slip bands (high density, retained from cold rolling)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_1",
+              "type": "κ-carbide",
+              "size": null,
+              "distribution": "mainly precipitated at the dislocation entanglement (in the γ-austenite)",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_cr20_annealed_3cr",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_gamma_delta",
+          "microstructure_id": "micro_1",
+          "phase_1_name": "γ-austenite",
+          "phase_2_name": "δ-ferrite",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_1",
+          "microstructure_id": "micro_1",
+          "interaction_type": "dislocation entanglement at the ferrite/austenite phase boundary",
+          "qualitative_or_quantitative_description": "Dislocation entanglements occur at the phase boundary between ferrite and austenite, attributed to inconsistent deformation of ferrite and austenite during deformation."
+        }
+      ],
+      "slip_behavior": "High-density {111} planar slip bands introduced by 20% cold rolling persist after 600 °C/3 h annealing; slip bands are the main strengthening factor of the cold-rolled strips.",
+      "phase_evolution": "After cold rolling the constituent phases remain γ-austenite and δ-ferrite with ordered DO3 (consistent with as-cast); on subsequent 600 °C/3 h annealing the 43.5°-45.0° double peak becomes a single peak, indicating almost all ferrite transforms into the ordered DO3 phase, and κ-carbides precipitate in the austenite.",
+      "interface_notes": "No separate interface characterisation (coherency, misorientation) is reported specifically for the CR20% + annealed 3Cr strip."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_cr20_annealed_3cr",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "2.5 × 10^-4 s^-1",
+        "specimen_geometry": "gage width 4 mm and gage length 12 mm, machined from the steel strips",
+        "test_standard": "GB/T-228.1-2010",
+        "other_conditions": "Tensile tests performed at least 3 times by a MTS Criterion 44 Mechanical Property Tester."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": null,
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1270 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "about 21%",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curves of the CR20% + annealed steel strips are given in Fig. 9(b): 0Cr lowest, 3Cr slightly above, all curves terminate at lower strain (~19-20%) than the CR20% strips.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "direction": null,
+              "value": "The strain hardening rate of the CR20% steel strips decreases gradually with increasing strain; annealing makes the strain hardening rates of the CR20% + annealed 0Cr and 3Cr steel strips clearly decrease at the early stage.",
+              "unit": null,
+              "uncertainty": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.69 g/cm^3",
+          "unit": "g/cm^3",
+          "uncertainty": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_cr20_annealed_3cr",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "After cold rolling with 20% reduction the strength of the Cr-containing strips exceeds that of the Cr-free strip (in contrast to the as-cast state): CR20% 3Cr UTS = 1270 MPa vs CR20% 0Cr UTS = 1154 MPa; the CR20% + annealed 3Cr YS and UTS do not change significantly from the CR20% strip.",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_1",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Rigaku D/Max-2200, Cu target operated at 40 kV and 40 mA, graphite monochromator, λ = 0.154056 nm",
+      "measurement_conditions": "Scanning angle 30°-100°, continuous scanning at 4°/min",
+      "purpose": "Phase identification of the as-cast, cold-rolled and CR20% + annealed strips",
+      "key_findings": "Constituent phases after cold rolling are still γ-austenite and δ-ferrite with ordered DO3 (consistent with as-cast); after further annealing the 43.5°-45.0° double peak becomes a single peak in the CR20% + annealed strips."
+    },
+    {
+      "characterization_id": "char_sem",
+      "microstructure_id": "micro_1",
+      "technique": "Scanning Electron Microscopy (SEM)",
+      "instrument_or_setup": "Phenom Pro",
+      "measurement_conditions": "After mechanical polishing and etching (3.3 vol% nitric acid, 3.3 vol% acetic acid, 0.1 vol% hydrofluoric acid, 3 s); photographs taken at 0.5 mm from the strip surface along thickness; phase fraction measured with Image-Pro Plus over ten different positions",
+      "purpose": "Characterize δ-ferrite morphology and volume fraction",
+      "key_findings": "δ-ferrite volume fraction in the cold-rolled 3Cr strips is 12%, unchanged by further annealing; Cr addition increases the δ-ferrite fraction."
+    },
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": "micro_1",
+      "technique": "Transmission Electron Microscopy (TEM) with selected-area diffraction (SADP) and dark-field (DF) imaging",
+      "instrument_or_setup": "JEOL-2010F operated at 200 kV; specimens prepared by twin-jet electrolytic polishing at -30 °C and 30 V in 10% perchloric acid + 90% alcohol",
+      "measurement_conditions": "BF/DF imaging and SADP along [110] zone axis; DF images formed from the (001) κ-carbide superlattice reflection",
+      "purpose": "Elucidate nano-scale precipitates and deformation substructure in the γ-austenite",
+      "key_findings": "In the CR20% + annealed 3Cr strip κ-carbides mainly precipitate at dislocation entanglement (Fig. 12 c,d); high-density slip bands persist."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "MTS Criterion 44 Mechanical Property Tester",
+      "measurement_conditions": "Room temperature, constant strain rate 2.5 × 10^-4 s^-1, gage width 4 mm, gage length 12 mm, GB/T-228.1-2010, at least 3 tests",
+      "purpose": "Measure yield strength, ultimate tensile strength and total elongation",
+      "key_findings": "UTS of the CR20% + annealed 3Cr strip not significantly changed vs CR20% (1270 MPa)."
+    },
+    {
+      "characterization_id": "char_density",
+      "microstructure_id": null,
+      "technique": "Gas displacement density measurement",
+      "instrument_or_setup": "AccuPyc II 1340 Gas Displacement Density Analyzer",
+      "measurement_conditions": null,
+      "purpose": "Measure average density of the steel strips",
+      "key_findings": "Measured average density of the 3Cr steel strip = 6.69 g/cm^3."
+    },
+    {
+      "characterization_id": "char_composition",
+      "microstructure_id": null,
+      "technique": "Inductively Coupled Plasma Mass Spectrometry (ICP) and carbon-sulfur analysis",
+      "instrument_or_setup": "ICP and CS2800 carbon-sulfur analyzer",
+      "measurement_conditions": null,
+      "purpose": "Measure chemical composition of the steel strips",
+      "key_findings": "3Cr steel measured composition (wt.%): Mn 20.04, Al 9.09, C 1.23, Cr 3.09, S 0.0009, Fe Bal."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The paper states that the yield strength and ultimate tensile strength of the CR20% + annealed steel strips do not change significantly compared with the CR20% steel strips (b0064); no separate numerical YS/UTS/elongation table is given for the CR20% + annealed strips.",
+    "No κ-carbide volume fraction or average size is reported specifically for the CR20% + annealed 3Cr strip; the reported 4% / 4 nm values (b0071) belong to the as-cast+annealed 3Cr strip (a different sample), and the 7% / 8 nm values belong to the as-cast+annealed 0Cr strip.",
+    "The slip band spacing of 100 ± 15 nm (b0066) was measured on the CR20% (cold-rolled) 3Cr strip; annealing after cold rolling does not eliminate these slip bands (b0074, b0084), so the slip bands persist in the CR20% + annealed strip.",
+    "The abstract states the ultimate tensile strength and total elongation of the cold-rolled 3Cr steel strip were 1270 MPa and 21%, respectively (b0013); the highest UTS × TE product, 38.0 GPa %, was achieved in the as-cast 6Cr strip (b0040), not in this sample.",
+    "The X-ray diffraction figure for the CR20% and CR20% + annealed strips (Fig. 7) is captioned for those states but the curves are labelled 6Cr/3Cr/0Cr; this caption/label disagreement is noted in the figure description (figure_007).",
+    "A double (Slip-band and Microband) hardening mechanism is proposed for the strain hardening behavior of the low-density steel strips, with slip-band hardening active at the early strain stage and microband hardening at the final strain stage (b0091, b0099).",
+    "The decrease of κ-carbides caused by Cr addition promotes the formation of slip bands at the early strain stage, resulting in high-density slip bands during deformation and thereby a higher strain hardening rate of the Cr-containing steel strips (b0098)."
+  ]
+}

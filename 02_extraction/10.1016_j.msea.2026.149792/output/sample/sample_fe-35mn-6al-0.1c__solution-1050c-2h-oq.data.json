@@ -1,0 +1,521 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-35mn-6al-0.1c__solution-1050c-2h-oq",
+      "paper_id": "10.1016_j.msea.2026.149792",
+      "alloy_id": "alloy_fe-35mn-6al-0.1c",
+      "process_id": "proc_solution-1050c-2h-oq",
+      "sample_label": "6Al steel",
+      "aliases": [
+        "6Al",
+        "6 %Al steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "melting / ingot preparation",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "high-purity Ar",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "As-cast ingots with nominal composition Fe-35Mn-6Al-1C-0.1Nb-0.1V-1Mo-1W (wt%) prepared via vacuum induction melting under a high-purity Ar atmosphere."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": "4 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "As-cast ingots homogenized at 1150 °C for 4 h."
+    },
+    {
+      "processing_step_id": "step_hot_forging",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot forging",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "hot-forged into rods with a diameter of 16.5 mm",
+      "processing_steps_notes": "Homogenized ingots subsequently hot-forged into rods with a diameter of 16.5 mm."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "oil quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Bars solution-treated at 1050 °C for 2 h followed by oil quenching to achieve a microstructure with nearly equiaxed grains; this terminal treatment defines the 6Al sample and is shared by all four designed steels."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_6al_initial_solution_treated",
+      "overall_structure": "Solution-treated 6Al steel is an austenite-based duplex lightweight steel with quasi-equiaxed grains; the austenite matrix (γ) contains numerous annealing twin boundaries and L1_2-type short-range ordered domains, while sparse minority ferrite (α) grains reside mostly at grain boundaries and contain coexisting B2 and DO3 ordered domains.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_6al_austenite",
+          "region": "matrix (austenite grains)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "face-centered cubic (FCC)",
+              "volume_fraction": "97.0 % (mass fraction by XRD, 6Al = 3.0 %α / 97.0 %γ)",
+              "morphology": "quasi-equiaxed grains containing numerous annealing twin boundaries",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_6al_sro",
+              "type": "L1_2-type short-range ordered (SRO) domains (satellite 011_SRO reflections)",
+              "size": null,
+              "distribution": "within the austenite grains",
+              "coherency": "coherent (ordered domains)"
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_6al_ferrite",
+          "region": "grain boundaries (minority ferrite grains)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (α)",
+              "crystal_structure": "body-centered cubic (BCC)",
+              "volume_fraction": "3.0 % (mass fraction by XRD, 6Al = 3.0 %α / 97.0 %γ)",
+              "morphology": "sparse ferrite grains located mostly at austenite grain boundaries",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_6al_b2",
+              "type": "B2 ordered domains",
+              "size": null,
+              "distribution": "within the ferrite matrix",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_6al_do3",
+              "type": "DO3 ordered domains",
+              "size": "up to ~2.0 nm (maximum DO3 ordered domain size estimated from TEM dark-field)",
+              "distribution": "coexisting within both the B2 ordered domains and the ferrite matrix",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_6al_austenite_sadp",
+          "region": "austenite grains ([100] zone axis)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "diffraction evidence: satellite spots near γ reflections and weak {110} ordered spots",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_6al_austenite_sro_sadp",
+              "type": "L1_2-type short-range ordered structure (011_SRO reflection)",
+              "size": null,
+              "distribution": "in austenite; satellite spots indicate spinodal decomposition of Al and C during quenching",
+              "coherency": "coherent"
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_6al_ferrite_sadp",
+          "region": "ferrite grains ([110]α // [110]_DO3 zone axis)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (α)",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "diffraction evidence: γ-matrix α reflections with distinct B2/DO3 superlattice spots",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_6al_b2_do3_sadp",
+              "type": "B2 and DO3 ordered superlattice structures (001_B2, 002_DO3, 1-11_DO3 reflections)",
+              "size": null,
+              "distribution": "within ferrite grains",
+              "coherency": "coherent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_6al_deformed",
+      "overall_structure": "After tensile deformation the 6Al steel shows distinctly different deformation mechanisms in austenite and ferrite: the austenite deforms by dislocation cell blocks/dense dislocation bands, while the ferrite exhibits pronounced planar slip forming straight slip bands.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_6al_austenite_deformed",
+          "region": "uniform deformation zone (after tensile testing)",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "elongated aligned dark banded contrast (dense dislocation bands); dislocation cell blocks (same as other Al contents)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation cell blocks / dense dislocation bands",
+              "porosity": null,
+              "inclusions": null,
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_6al_ferrite_deformed",
+          "region": "uniform deformation zone (after tensile testing)",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "ferrite (α)",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "straight parallel planar slip bands (less pronounced planar slip than 8Al ferrite)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "planar slip / slip bands (straight parallel)",
+              "porosity": null,
+              "inclusions": null,
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_6al_ferrite_austenite",
+      "phase_interfaces": [
+        {
+          "interface_id": "pi_6al_gamma_alpha",
+          "microstructure_id": "micro_6al_ferrite",
+          "phase_1_name": "austenite (γ, FCC)",
+          "phase_2_name": "ferrite (α, BCC)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "With increasing Al content the phase constitution of the Fe-35Mn-xAl-0.1C steels evolves from single-phase austenite (4Al) to austenite-matrix duplex (6Al) and then to ferrite-matrix duplex (8Al, 10Al); the 6Al steel is the austenite-matrix duplex member of this sequence.",
+      "interface_notes": "In the 6Al steel the minority ferrite (α) grains reside mostly at the austenite grain boundaries, forming a γ/α duplex structure. The general duplex steel stress-partitioning/interface behavior reported in the paper (high stress at α/γ interfaces activating edge dislocations) is demonstrated specifically on the 8Al steel, not the 6Al steel."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_6al",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1.0 × 10^-3 s^-1",
+        "specimen_geometry": "standard cylindrical tensile specimens 5 mm in diameter, 25 mm in gauge length, machined from quenched rods with tensile axis parallel to the rod axis",
+        "test_standard": null,
+        "other_conditions": "at least three tensile specimens tested to fracture for reproducibility; interrupted tensile tests to engineering strains of 3 %, 10 %, 20 % and 28 %"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "parallel to rod axis",
+              "value": "251",
+              "unit": "MPa",
+              "uncertainty": "±3 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "parallel to rod axis",
+              "value": "589",
+              "unit": "MPa",
+              "uncertainty": "±18 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "uniform elongation",
+              "value": "37.6",
+              "unit": "%",
+              "uncertainty": "±0.9 %"
+            },
+            {
+              "direction": "total elongation",
+              "value": "51.6",
+              "unit": "%",
+              "uncertainty": "±1.5 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "engineering stress-strain and true stress-strain curves for 6Al shown in Fig. 3(a, c); 6Al exhibits typical three-stage strain-hardening behaviour (stages A, D and E)",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": "6Al shows typical three-stage strain hardening labeled A, D and E (Fig. 3d)"
+        },
+        "hardness": [
+          {
+            "region": "α-ferrite",
+            "value": "between 240 and 270 (read from Fig. 2b gridlines)",
+            "scale": "HV (microhardness)",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": {
+          "value": "7.18",
+          "unit": "g cm^-3"
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_sem_ebsd",
+      "microstructure_id": "micro_6al_austenite",
+      "technique": "SEM / electron backscatter diffraction (EBSD) phase mapping",
+      "instrument_or_setup": "JSM-7800 F SEM; scanning step size 1 μm; data analysed with HKL Channel 5 software",
+      "measurement_conditions": "solution-treated samples",
+      "purpose": "determine phase constitution and grain structure of the 6Al steel",
+      "key_findings": "6Al is an austenite-based duplex lightweight steel (red-dominant austenite with sparse blue ferrite grains mostly at grain boundaries); quasi-equiaxed grains; numerous annealing twin boundaries in austenite."
+    },
+    {
+      "characterization_id": "char_tem_microstructure",
+      "microstructure_id": "micro_6al_ferrite_deformed",
+      "technique": "transmission electron microscopy (TEM) - bright-field/dark-field imaging",
+      "instrument_or_setup": "FEI-Tecnai G2 F20 and FEI Talos F200X TEMs operated at 200 kV",
+      "measurement_conditions": "solution-treated and tensile-deformed specimens",
+      "purpose": "reveal dislocation patterns and ordered domains in austenite and ferrite",
+      "key_findings": "6Al austenite shows elongated dense dislocation bands (cell blocks); 6Al ferrite shows straight parallel planar slip bands (less pronounced than 8Al)."
+    },
+    {
+      "characterization_id": "char_sadp",
+      "microstructure_id": "micro_6al_ferrite_sadp",
+      "technique": "selected area electron diffraction (SAED/SADP)",
+      "instrument_or_setup": "TEM operated at 200 kV, [100]γ and [110]α zone axes",
+      "measurement_conditions": "solution-treated samples",
+      "purpose": "identify ordering (SRO in austenite, B2/DO3 in ferrite)",
+      "key_findings": "6Al austenite [100]γ pattern shows a 011_SRO reflection (L1_2-type SRO, spinodal decomposition); 6Al ferrite [110]α // [110]_DO3 pattern shows distinct B2 and DO3 superlattice reflections."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "examine phase composition and phase mass fractions",
+      "key_findings": "6Al phase mass fractions: 3.0 %α / 97.0 %γ."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "uniaxial tensile testing",
+      "instrument_or_setup": "MTS tensile machine",
+      "measurement_conditions": "room temperature, strain rate 1.0 × 10^-3 s^-1; cylindrical specimens 5 mm diameter, 25 mm gauge length",
+      "purpose": "determine stress-strain response and strain-hardening behaviour",
+      "key_findings": "6Al: YS 251 (±3) MPa, UTS 589 (±18) MPa, uniform elongation 37.6 (±0.9) %, total elongation 51.6 (±1.5) %; three-stage strain hardening (A, D, E)."
+    },
+    {
+      "characterization_id": "char_microhardness",
+      "microstructure_id": null,
+      "technique": "microhardness testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "room temperature; as-solution-treated and interrupted-tensile specimens",
+      "purpose": "compare hardness of austenite and ferrite",
+      "key_findings": "Ferrite is significantly harder than austenite in the designed steels, indicating ferrite acts as the strengthening phase; 6Al ferrite microhardness lies between 240 and 270 HV."
+    },
+    {
+      "characterization_id": "char_epma",
+      "microstructure_id": null,
+      "technique": "electron probe microanalysis (EPMA)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "determine compositions of the austenite and ferrite phases",
+      "key_findings": "Used (with the lever rule) to obtain the phase compositions of the 6Al steel (6Al_γ, 6Al_α in Table 1)."
+    },
+    {
+      "characterization_id": "char_wet_chemical",
+      "microstructure_id": null,
+      "technique": "wet-chemical analysis",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "analyse bulk compositions of the solution-treated samples",
+      "key_findings": "6Al measured composition (Table 1): Mn 35.14, Al 5.97, C 0.095, Nb 0.11, V 0.10, Mo 1.24, W 0.95 wt% (Fe balance)."
+    },
+    {
+      "characterization_id": "char_density_archimedes",
+      "microstructure_id": null,
+      "technique": "Archimedes density measurement",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "measure steel density",
+      "key_findings": "6Al steel density = 7.18 g cm^-3."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_6al_sfe",
+      "simulation_method": "thermodynamic calculation of austenite stacking fault energy (γ_SFE)",
+      "software_used": null,
+      "potential_model_or_database": "thermodynamic approach with functions and parameters listed in literature [35]",
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Stacking fault energy (γ_SFE) thermodynamic model",
+          "equation_role": "γ_SFE = 2ρΔG^(γ→ε) + 2σ (Eq. 3), where ρ is the molar surface density along {111} planes, ΔG^(γ→ε) is the molar Gibbs energy of the γ→ε transformation and σ is the γ/ε interfacial energy per unit area",
+          "parameters": [
+            {
+              "name": "ρ (molar surface density along {111})",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "ΔG^(γ→ε) (molar Gibbs energy of γ→ε)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "σ (γ/ε interfacial energy per unit area)",
+              "value": null,
+              "unit": null
+            }
+          ],
+          "model_note": "Calculated room-temperature γ_SFE of the 6Al austenite (6Al_γ) = 62.64 mJ·m^-2 (Table 2)."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Measured composition of the 6Al steel (Table 1): Mn 35.14, Al 5.97, C 0.095, Nb 0.11, V 0.10, Mo 1.24, W 0.95 wt% (Fe balance).",
+    "Phase compositions of the 6Al steel (Table 1): austenite 6Al_γ — Mn 35.92, Al 5.88, C 0.098, Nb 0.09, V 0.09, Mo 1.12, W 0.86 wt% (Fe balance); ferrite 6Al_α — Mn 32.44, Al 6.83, C not detected ('-'), Nb 0.09, V 0.18, Mo 1.54, W 1.63 wt% (Fe balance); Al partitions into ferrite.",
+    "The room-temperature stacking-fault energy (γ_SFE) of the 6Al austenite (6Al_γ) is 62.64 mJ·m^-2, calculated by the thermodynamic approach (Eq. 3) using parameters from literature [35] (Table 2).",
+    "Density of the 6Al steel measured by the Archimedes principle is 7.18 g cm^-3.",
+    "The austenite of the 6Al steel contains L1_2-type short-range ordered (SRO) domains, evidenced by satellite spots (011_SRO reflection) near the γ reflections in the [100]γ SADP; these are attributed to concentration fluctuations of Al and C atoms, indicating spinodal decomposition occurred during quenching.",
+    "In the 6Al steel, DO3 ordered domains coexist within both the B2 ordered domains and the ferrite matrix; the maximum DO3 ordered domain size in 6Al ferrite is estimated to be approximately 2.0 nm (smaller than 8Al ~2.1 nm and 10Al ~19 nm).",
+    "Unlike the 8Al steel, which exhibits five distinct strain-hardening stages (A, B, C, D and E), the 6Al steel exhibits typical three-stage strain-hardening characteristics labeled A, D and E.",
+    "The microhardness of ferrite is significantly higher than that of austenite in the designed steels, indicating ferrite acts as a strengthening phase; the 6Al ferrite microhardness (first point of the α series at 6 wt% Al) lies between the 240 and 270 HV gridlines of Fig. 2(b), while the austenite microhardness rises only modestly from ~150 HV (4Al) to just under 210 HV (10Al).",
+    "The paper reports that the excellent strength-ductility balance (attributed to edge-dislocation activity plus dynamic slip band refinement, DSBR) is a feature of the 8Al ferrite-based duplex steel; the 6Al steel is the austenite-matrix duplex member of the designed Fe-35Mn-xAl-0.1C series and shows less pronounced ferrite planar slip than the 8Al steel."
+  ]
+}

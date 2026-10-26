@@ -1,0 +1,291 @@
+{
+  "schema_version": "sample-discover-v1",
+  "paper_id": "10.1002_srin.202400447",
+  "domain": "materials",
+  "paper": {
+    "paper_id": "10.1002_srin.202400447",
+    "doi": "10.1002/srin.202400447",
+    "title": "Effects of Cryogenic Rolling on the Microstructure Evolution and Mechanical Properties of Low-Density Fe-28Mn-8Al-1C Steel",
+    "authors": [
+      "Yi Xiong",
+      "Ze-wei Luan",
+      "Xiao-qin Zha",
+      "Yong Li",
+      "Xiu-ju Du",
+      "Feng-zhang Ren",
+      "Shu-bo Wang",
+      "Xiao-jun Liu"
+    ],
+    "publication_year": "2024",
+    "journal": "Steel Research International",
+    "keywords": [
+      "cryogenic rolling",
+      "low-density steels",
+      "mechanical properties",
+      "microstructure evolution"
+    ],
+    "research_type": "experimental",
+    "paper_scope": "Systematic experimental investigation of the influence of cryogenic rolling (CR) deformation (30%, 50%, 70%, 90% thickness reduction) on the microstructure evolution and mechanical properties of low-density Fe-28Mn-8Al-1C austenitic steel."
+  },
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe-28mn-8al-1c",
+      "alloy_name": "Fe-28Mn-8Al-1C steel",
+      "aliases": [
+        "test steel",
+        "low-density Fe-28Mn-8Al-1C steel",
+        "low-density Fe-Mn-Al-C steel",
+        "austenitic low-density steel",
+        "high-Mn-Al-C austenitic low-density steel"
+      ],
+      "description": "Low-density experimental Fe-28Mn-8Al-1C (wt%) austenitic steel ('test steel'), produced by vacuum melting and casting; the ingot was heated to 1200°C for 2 h and hot forged into billets. Density 6.82 g cm^-3.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "Bal.",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "28",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "8",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Nominal composition Fe-28Mn-8Al-1C (wt%). Measured composition (Table 1, wt%): C 0.97, Mn 27.91, Al 8.04, S 0.004, P 0.006, Fe Bal. Single-phase austenitic (FCC) structure; no deformation-induced martensitic transformation reported during CR.",
+      "source": {
+        "reason": "The paper studies a single low-density steel with nominal composition Fe-28Mn-8Al-1C (in wt%), explicitly referred to as 'test steel'; the detailed chemical composition is given in Table 1.",
+        "block_id": [
+          "b0011",
+          "b0013",
+          "b0014"
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_st-1000c-1h-wq",
+      "alloy_id": "alloy_fe-28mn-8al-1c",
+      "process_name": "Solution treatment at 1000°C for 1 h + water quench",
+      "state_label": "undeformed",
+      "aliases": [
+        "undeformed state",
+        "initial state",
+        "pristine state",
+        "original state",
+        "as-solution-treated"
+      ],
+      "parent_process_ids": [],
+      "description": "Plate specimens solution treated at 1000°C for 1 h and water-quenched to room temperature; no cryogenic rolling applied (reference/undeformed state).",
+      "processes_notes": "Reference state before any CR deformation; exhibits equiaxed austenite grains (~40.3 μm).",
+      "source": {
+        "reason": "Before CR, all specimens underwent solution treatment at 1000°C for 1 h and were water-quenched to room temperature; this undeformed state is used as the reference for microstructure and mechanical property comparisons.",
+        "block_id": [
+          "b0012",
+          "b0019"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_cr-30pct",
+      "alloy_id": "alloy_fe-28mn-8al-1c",
+      "process_name": "Cryogenic rolling to 30% thickness reduction",
+      "state_label": "CR 30%",
+      "aliases": [
+        "CR30%",
+        "30% CR reduction",
+        "30% rolling deformation",
+        "CR 30"
+      ],
+      "parent_process_ids": [
+        "proc_st-1000c-1h-wq"
+      ],
+      "description": "After solution treatment (1000°C/1 h + WQ), specimens immersed in liquid nitrogen for 3-5 min and rolled about 2% per pass, repeated to a cumulative thickness reduction of 30%.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Test steels were cryogenic rolled (liquid nitrogen immersion 3-5 min, ~2% per pass) to cumulative thickness reductions including 30%; this state is reported for microstructure evolution.",
+        "block_id": [
+          "b0012",
+          "b0020"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_cr-50pct",
+      "alloy_id": "alloy_fe-28mn-8al-1c",
+      "process_name": "Cryogenic rolling to 50% thickness reduction",
+      "state_label": "CR 50%",
+      "aliases": [
+        "CR50%",
+        "50% CR reduction",
+        "50% rolling deformation"
+      ],
+      "parent_process_ids": [
+        "proc_st-1000c-1h-wq"
+      ],
+      "description": "After solution treatment (1000°C/1 h + WQ), specimens immersed in liquid nitrogen for 3-5 min and rolled about 2% per pass, repeated to a cumulative thickness reduction of 50%.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Test steels were cryogenic rolled to cumulative thickness reductions including 50%; this state is characterized by dislocation entanglement, walls and deformation twins.",
+        "block_id": [
+          "b0012",
+          "b0023"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_cr-70pct",
+      "alloy_id": "alloy_fe-28mn-8al-1c",
+      "process_name": "Cryogenic rolling to 70% thickness reduction",
+      "state_label": "CR 70%",
+      "aliases": [
+        "CR70%",
+        "70% CR reduction",
+        "70% rolling deformation"
+      ],
+      "parent_process_ids": [
+        "proc_st-1000c-1h-wq"
+      ],
+      "description": "After solution treatment (1000°C/1 h + WQ), specimens immersed in liquid nitrogen for 3-5 min and rolled about 2% per pass, repeated to a cumulative thickness reduction of 70%.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Test steels were cryogenic rolled to cumulative thickness reductions including 70%; this state shows larger dislocation cells and decreasing twin density.",
+        "block_id": [
+          "b0012",
+          "b0023"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_cr-90pct",
+      "alloy_id": "alloy_fe-28mn-8al-1c",
+      "process_name": "Cryogenic rolling to 90% thickness reduction",
+      "state_label": "CR 90%",
+      "aliases": [
+        "CR90%",
+        "90% CR reduction",
+        "90% rolling deformation",
+        "90% CR"
+      ],
+      "parent_process_ids": [
+        "proc_st-1000c-1h-wq"
+      ],
+      "description": "After solution treatment (1000°C/1 h + WQ), specimens immersed in liquid nitrogen for 3-5 min and rolled about 2% per pass, repeated to a cumulative thickness reduction of 90%.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Test steels were cryogenic rolled to cumulative thickness reductions including 90%; this state yields fibrous nanoscale grains (avg 58.8 nm) and the highest strength.",
+        "block_id": [
+          "b0012",
+          "b0024"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-8al-1c__st-1000c-1h-wq",
+      "alloy_id": "alloy_fe-28mn-8al-1c",
+      "process_id": "proc_st-1000c-1h-wq",
+      "sample_label": "undeformed",
+      "aliases": [
+        "undeformed test steel",
+        "initial state",
+        "pristine state",
+        "original state"
+      ],
+      "source": {
+        "reason": "Undeformed test steel (solution-treated at 1000°C/1 h and water-quenched) is characterized as the reference state, with equiaxed grains of ~40.3 μm.",
+        "block_id": [
+          "b0019",
+          "b0022"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-28mn-8al-1c__cr-30pct",
+      "alloy_id": "alloy_fe-28mn-8al-1c",
+      "process_id": "proc_cr-30pct",
+      "sample_label": "CR 30%",
+      "aliases": [
+        "CR30%",
+        "30% CR reduction sample",
+        "CR 30"
+      ],
+      "source": {
+        "reason": "Test steel after 30% CR reduction; equiaxed grains elongate along RD with slip bands and Taylor lattice structure.",
+        "block_id": [
+          "b0020",
+          "b0022"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-28mn-8al-1c__cr-50pct",
+      "alloy_id": "alloy_fe-28mn-8al-1c",
+      "process_id": "proc_cr-50pct",
+      "sample_label": "CR 50%",
+      "aliases": [
+        "CR50%",
+        "50% CR reduction sample"
+      ],
+      "source": {
+        "reason": "Test steel after 50% CR reduction; shows flattened/banded grains, dislocation entanglement and walls, and deformation twins.",
+        "block_id": [
+          "b0022",
+          "b0023"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-28mn-8al-1c__cr-70pct",
+      "alloy_id": "alloy_fe-28mn-8al-1c",
+      "process_id": "proc_cr-70pct",
+      "sample_label": "CR 70%",
+      "aliases": [
+        "CR70%",
+        "70% CR reduction sample"
+      ],
+      "source": {
+        "reason": "Test steel after 70% CR reduction; larger dislocation cells form with increasing dislocation density while twin density decreases.",
+        "block_id": [
+          "b0023"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-28mn-8al-1c__cr-90pct",
+      "alloy_id": "alloy_fe-28mn-8al-1c",
+      "process_id": "proc_cr-90pct",
+      "sample_label": "CR 90%",
+      "aliases": [
+        "CR90%",
+        "90% CR reduction sample",
+        "90% CR"
+      ],
+      "source": {
+        "reason": "Test steel after 90% CR reduction; fibrous nanoscale grains (avg 58.8 nm) with the highest UTS/YS/microhardness and lowest elongation.",
+        "block_id": [
+          "b0022",
+          "b0024"
+        ]
+      }
+    }
+  ],
+  "unmapped_findings": []
+}

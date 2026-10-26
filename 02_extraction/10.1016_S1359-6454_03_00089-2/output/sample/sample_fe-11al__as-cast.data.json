@@ -1,0 +1,320 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-11al__as-cast",
+      "paper_id": "10.1016_S1359-6454_03_00089-2",
+      "alloy_id": "alloy_fe-11al",
+      "process_id": "proc_as-cast",
+      "sample_label": "Fe-11%Al as-cast",
+      "aliases": [
+        "Fe-11%Al as-cast alloy"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_casting",
+      "sequence": "1",
+      "type": "solidification / casting",
+      "method": "vacuum induction melting with solidification in Cu moulds",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum (vacuum induction melting)",
+      "cooling_medium": "Cu mould",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Binary Fe-Al alloy melted in an Al2O3 crucible from Fe (99.99% purity, zone-melting purified) and Al (99.999% purity), solidified in Cu moulds to rods usually with 18 mm diameter."
+    },
+    {
+      "processing_step_id": "step_2_no_heat_treatment",
+      "sequence": "2",
+      "type": "heat treatment (omitted)",
+      "method": "none — used in the as-received as-cast condition",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The as-cast polycrystalline alloys were tested without any subsequent heat treatment; the as-cast condition is the baseline state."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_as-cast_polycrystal",
+      "overall_structure": "Coarse-grained polycrystalline microstructure; the as-cast alloy contained no second phases.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_as-cast_grains",
+          "region": "bulk (whole as-cast rod)",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "Fe–Al solid solution (disordered bcc / K-state short-range-order region)",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": "of the order of 1 mm"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "of the order of 1 mm",
+              "unit": "mm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_as-cast",
+      "phase_interfaces": [],
+      "defect_interactions": [],
+      "slip_behavior": "Multiple slip (polycrystalline, as-cast material).",
+      "phase_evolution": "As-cast material: no second phases. Fine thin platelike or rod-like precipitates (believed to be carbides, consistent with up to 80 ppm C) appear on grain boundaries only after slow furnace cooling from 1100 °C or prolonged heat treatments (e.g. 14 days at 320 °C); they are not present in the as-cast state.",
+      "interface_notes": "Grain boundaries of the coarse-grained polycrystal are the only internal interfaces; no second phase at grain boundaries in the as-cast condition. Carbide precipitation on grain boundaries occurs only after heat treatments and its amount decreases with lower C content."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_tensile_RT",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-4 s^-1",
+        "specimen_geometry": "cylindrical specimens prepared by turning (turning per DIN 50125)",
+        "test_standard": "German standard DIN 50125",
+        "other_conditions": "Tensile testing; tension rate between 10^-4 s^-1 and 10^-2 s^-1."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "≈320 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "≈20% strain at peak stress (Fig. 4a)",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Tensile stress-strain curve of Fe-11at%Al at room temperature (Fig. 4a)",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_tensile_-100C",
+      "measurement_conditions": {
+        "temperature": "-100",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "10^-4 s^-1",
+        "specimen_geometry": "cylindrical specimens prepared by turning (turning per DIN 50125)",
+        "test_standard": "German standard DIN 50125",
+        "other_conditions": "Tensile testing at low temperature; ductile-to-brittle behaviour studied at -100 °C."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "≈? (higher than room temperature by about 80 MPa)",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "load drop near ~20% strain (Fig. 4b)",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Tensile stress-strain curve of Fe-11at%Al at -100 °C (Fig. 4b)",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_compressive_yield_stress",
+      "measurement_conditions": {
+        "temperature": "room temperature and -100 °C",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "10^-4 s^-1 and 10^-2 s^-1",
+        "specimen_geometry": "5 × 5 × 10 mm3 compression specimens (surfaces cleansed by grinding)",
+        "test_standard": null,
+        "other_conditions": "Yield stress determined as 0.2% proof stress in compression with total straining of at least 5%. Fig. 3 gives yield stress versus Al content for as-cast polycrystals; the linear fit corresponds to a solid-solution hardening coefficient of about 2.2 GPa over 0–18 at.% Al (specific numeric value at 11 at.% Al not tabulated)."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_icp",
+      "microstructure_id": null,
+      "technique": "inductively coupled plasma (ICP) analysis",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Determination of alloy compositions",
+      "key_findings": "Real Al content of the nominal 11 at.% polycrystal is 10.9 at.% (5.6 wt.-%), with 60 wt.ppm C and 80 wt.ppm Si."
+    },
+    {
+      "characterization_id": "char_optical_microscopy",
+      "microstructure_id": "micro_as-cast_grains",
+      "technique": "optical microscopy",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Specimens etched by an alcoholic 10% nitric acid solution",
+      "purpose": "Revealing grain boundaries and precipitates",
+      "key_findings": "Polycrystalline alloys show a coarse grain structure with grain sizes of the order of 1 mm; the as-cast alloys contained no second phases."
+    },
+    {
+      "characterization_id": "char_sem_edx",
+      "microstructure_id": null,
+      "technique": "scanning electron microscopy (SEM) with energy-dispersive X-ray diffraction (EDX)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Studying fracture surfaces and qualitative precipitate analysis",
+      "key_findings": "SEM used for fracture-surface study of the tested polycrystalline alloys; EDX used for qualitative precipitate analysis."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The yield stress of the polycrystalline as-cast Fe-Al alloys (0–18 at.% Al, so including Fe-11%Al) increases linearly with Al content; the interpolating straight lines give a yield-stress increase of 21 MPa per at.% at 10^-2 s^-1 and 23 MPa per at.% at 10^-4 s^-1, corresponding to a solid-solution hardening coefficient of about 2.2 GPa, which is not sensitive to deformation rate or temperature. [b0032, b0058]",
+    "At -100 °C the yield stress and ultimate tensile strength of the polycrystalline as-cast Fe-Al alloys are higher than at room temperature by about 80 MPa. [b0038]",
+    "Deformation twinning at -100 °C was observed occasionally for Al contents of 11–14% (thus including Fe-11%Al), and in all specimens above 14% Al; at room temperature twinning was found only for the Fe-18%Al alloy. [b0038, b0064]",
+    "The Fe-11%Al as-cast alloy did not show low-temperature yield stress drops (yield stress drops were produced only by Fe-4%Al and Fe-6%Al at -100 °C). [b0062]",
+    "Impurity content of the nominal-11 at.% polycrystal: C 60 wt.ppm, Si 80 wt.ppm, residual 'other' elements not reported (below the detection limits of Table 1 footnote a). [b0025]",
+    "Short-range ordering (controlled by heat treatments below 600 °C) has no major impact on the deformation behaviour; only heat treatments above 600 °C significantly affect the mechanical behaviour of Fe-Al alloys. [b0050, b0051, b0067]",
+    "The Fe-11%Al alloy was tested in tension at rates between 10^-4 s^-1 and 10^-2 s^-1 using cylindrical specimens per DIN 50125, and in compression (5 × 5 × 10 mm3) as a 0.2% proof stress. [b0019]"
+  ]
+}

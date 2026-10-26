@@ -1,0 +1,403 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-9al-0.9c-5ni__hr-cr-1173k",
+      "paper_id": "10.1016_j.msea.2022.144324",
+      "alloy_id": "alloy_fe-28mn-9al-0.9c-5ni",
+      "process_id": "proc_hr-cr-1173k",
+      "sample_label": null,
+      "aliases": [
+        "28Mn5Ni",
+        "HR+CR+1173 K",
+        "28Mn5Ni heat treated at 1173 K"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1423 K",
+      "temperature_unit": "K",
+      "duration": "2.5 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The sound portion of the 30 kg vacuum-induction-melted 28Mn5Ni ingot was homogenized at 1423 K for 2.5 h prior to hot rolling."
+    },
+    {
+      "processing_step_id": "step_2_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1323 K",
+      "temperature_unit": "K",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot rolled at 1323 K; the hot rolled (HR) plate final thickness was about 13 mm."
+    },
+    {
+      "processing_step_id": "step_3_cold_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": "room temperature",
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "~50% reduction in thickness",
+      "processing_steps_notes": "Samples cut from hot-rolled plates were cold rolled to ~50% reduction in thickness (~6 mm thick sheets) by several passes. Cold rolling was restricted to 50% for comparison; a further note says cracking was observed beyond 50%."
+    },
+    {
+      "processing_step_id": "step_4_heat_treatment_1173K",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "heat treatment (annealing) of cold rolled sheet at 1173 K",
+      "temperature": "1173 K",
+      "temperature_unit": "K",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The 50% cold rolled 28Mn5Ni sheet was heat treated at 1173 K for 1 h followed by water quenching; this condition is denoted HR+CR+1173 K."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_28mn5ni_hr-cr-1173k",
+      "overall_structure": "Partially recrystallized austenitic (γ) matrix in the 28Mn5Ni alloy after 50% cold rolling + 1173 K/1 h + water quench. The microstructure consists of relatively fine, equiaxed recrystallized austenite grains coexisting with retained deformed/strained austenite regions, prior B2 stringers (recovered to bamboo-type morphology) and newly precipitated fine intragranular plus intergranular B2 particles, together with fine intragranular κ-carbides.",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_recrystallized_austenite",
+          "region": "recrystallized regions",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~0.4–0.5 recrystallized fraction (28Mn5Ni at 1173 K, Fig. 5a)",
+              "morphology": "relatively fine, equiaxed multi-coloured grains with twin boundaries",
+              "grain_size": "few μm",
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "perovskite-type (identified via (010)κ satellite spots in SADP)",
+              "volume_fraction": null,
+              "morphology": "fine, uniformly distributed intragranular precipitates within recrystallized austenite",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "few μm",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_kappa_recrystallized",
+              "type": "κ-carbide",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "fine, uniformly distributed within recrystallized austenite grains",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "prec_B2_intragranular_new",
+              "type": "B2 (fine intragranular precipitate)",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "intragranular; its fraction decreased with increasing recrystallized austenite fraction at 1173 K; new B2 precipitates show single-crystal-type orientations with an orientation relationship to adjacent γ grains",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_deformed_matrix_and_B2",
+          "region": "deformed/strained regions and prior B2 stringer bands",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "complement of the recrystallized fraction (predominantly deformed at 1173 K)",
+              "morphology": "deformed/strained, banded regions",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "B2 (prior stringers, recovered)",
+              "crystal_structure": "ordered BCC (B2)",
+              "volume_fraction": "~0.1 (near the 0.1 gridline at 1173 K, Fig. 5d); prior B2 in HR condition was ~4% for 28Mn5Ni",
+              "morphology": "prior B2 stringers heavily deformed during cold rolling, fully recovered and developed bamboo-type grain morphology on annealing",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "B2 (intergranular precipitate)",
+              "crystal_structure": "ordered BCC (B2)",
+              "volume_fraction": null,
+              "morphology": "coarser intergranular B2 particles decorating grain boundaries",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_B2_intergranular",
+              "type": "B2 (intergranular precipitate)",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "along grain boundaries",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "prec_B2_stringer",
+              "type": "prior B2 stringer",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "bamboo-type elongated bands (recovered)",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_28mn5ni_1173k",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_gamma_gamma",
+          "microstructure_id": "micro_recrystallized_austenite",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "austenite (γ)",
+          "coherence": null
+        },
+        {
+          "interface_id": "if_gamma_B2",
+          "microstructure_id": "micro_deformed_matrix_and_B2",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "B2",
+          "coherence": "New B2 precipitates displayed single-crystal type orientations and showed an orientation relationship with the adjacent γ-grains (not reported as fully coherent)."
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "int_dislocation_B2",
+          "microstructure_id": "micro_deformed_matrix_and_B2",
+          "interaction_type": "dislocation–particle (B2) interaction",
+          "qualitative_or_quantitative_description": "Non-shearable B2 particles act as obstacles to dislocation motion, promoting early initiation of slip band refinement."
+        }
+      ],
+      "slip_behavior": "Planar slip activity in austenite; dynamic slip band refinement operates in recrystallized/precipitate-poor austenite. Under the HR+CR+1173 K condition, Ni-containing LDS alloys developed inhomogeneous slip band spacing, whereas the Ni-free 28Mn0Ni alloy exhibited homogeneous slip band spacing. Non-shearable B2 particles obstruct dislocation motion.",
+      "phase_evolution": "At 1173 K the prior B2 stringers, heavily deformed during cold rolling, fully recovered and developed bamboo-type grain morphology; new B2 precipitates formed with single-crystal-type orientations showing an orientation relationship with adjacent γ grains. The fraction of intragranular B2 precipitation decreased with increasing recrystallized austenite fraction, indicating that highly strained regions are preferential nucleation sites for these precipitates.",
+      "interface_notes": "Nucleation of recrystallized grains occurred mostly along γ/γ boundaries and γ/B2 interfaces."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_tensile_28mn5ni_hr-cr-1173k",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "~3 × 10^-4 s^-1",
+        "specimen_geometry": "flat tensile specimen, gauge length 30 mm, width 6 mm, thickness 4–5 mm",
+        "test_standard": "ASTM E8M",
+        "other_conditions": "Tensile tests conducted at a constant cross-head speed of 0.5 mm min^-1; tests triplicated and average reported."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "900 ± 4 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 4 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1236 ± 5 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 5 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "39 ± 1 %",
+              "unit": "%",
+              "uncertainty": "± 1 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering and true stress–strain curves reported (Fig. 9b,c); 28Mn5Ni-1173 K curve overlaps the 15Mn5Ni-1173 K curve, reaching ~1700–1800 MPa.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "value": "0.30",
+              "unit": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_28mn5ni_1173k",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-28mn-9al-0.9c",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Tensile behaviour at HR+CR+1173 K: 28Mn5Ni (YS 900 MPa, UTS 1236 MPa, TE 39%) versus 28Mn0Ni (YS 504 MPa, UTS 905 MPa, TE 86%); 28Mn5Ni retains higher strength and lower ductility, and its strain-hardening exponent (n = 0.30) is lower than that of 28Mn0Ni (n = 0.50).",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_oim_ebsd",
+      "microstructure_id": "micro_recrystallized_austenite",
+      "technique": "Orientation imaging microscopy (OIM) / EBSD",
+      "instrument_or_setup": "Zeiss Supra 55 FEG-SEM equipped with EDS and Nordley EBSD detectors (Oxford); step size 120 nm (fine-grained) and 250 nm (coarse-grained) over ~100×100 μm² and ~200×200 μm²; analysed with TSL-OIM software",
+      "measurement_conditions": "Samples polished to colloidal silica ~100 nm surface finish; three scans per sample; Σ3 CSL boundaries used for twin fraction; KAM and GOS (2°) for recrystallization",
+      "purpose": "Grain orientations, grain size of recrystallized austenite, twin fraction, phase maps, KAM and GOS to delineate recrystallized microstructure",
+      "key_findings": "At HR+CR+1173 K the 28Mn5Ni alloy shows relatively fine, equiaxed recrystallized austenite grains with prominent black B2 stringer bands; recrystallization fraction ~0.4–0.5, grain size of recrystallized austenite of a few μm, twin fraction in the upper 0.2–0.4 interval, and B2 phase volume fraction near 0.1."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Rigaku XRD instrument with Co-Kα radiation at 45 kV and 135 mA, beam size ~2 mm",
+      "measurement_conditions": "2θ = 40–120°",
+      "purpose": "Phase identification (γ, B2, κ-carbide) in cold rolled and heat-treated conditions",
+      "key_findings": "For the Ni-containing alloy, κ-carbide and B2 form at 973 K and residual B2 persists to 1173 K (no κ-carbide peaks at 1173 K); the B2 fraction is higher at lower annealing temperature."
+    },
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": "micro_deformed_matrix_and_B2",
+      "technique": "Transmission electron microscopy (TEM) with SAED and EDS",
+      "instrument_or_setup": "FEI TECNAI 20T G2 operating at 200 kV equipped with EDAX energy dispersive X-ray spectroscopy",
+      "measurement_conditions": "Twin-jet electropolished specimens using mixed acid solution at 243 K (−30 °C)",
+      "purpose": "Identify fine phases (κ-carbides, intragranular/intergranular B2), characterize precipitate size/distribution and B2 composition (TEM-EDS)",
+      "key_findings": "In 28Mn5Ni at 1173 K the fraction of intragranular B2 precipitation decreased with increasing recrystallized austenite fraction; coarse and fine B2 particle classes observed; B2 (FeAl-based) is enriched in Mn and Ni."
+    },
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": null,
+      "technique": "Vickers bulk hardness testing",
+      "instrument_or_setup": "AFFRI Vickers hardness tester, peak load 30 kg (~300 N), dwell time 15 s",
+      "measurement_conditions": "Per ASTM E-140-02; values averaged over ten measurements per sample",
+      "purpose": "Assess hardness change with cold work and heat treatment temperature",
+      "key_findings": "Ni-containing alloys (including 28Mn5Ni) were highest in hardness at every heat-treatment temperature and their hardness decreased monotonically with increasing temperature; after heat treatment at 873 K the Ni-containing alloys were ~500 VHN."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Room-temperature uniaxial tensile testing",
+      "instrument_or_setup": "Walter+Bai AG testing machine",
+      "measurement_conditions": "Constant cross-head speed 0.5 mm min^-1 (initial strain rate ~3×10^-4 s^-1); flat specimens gauge 30 mm × 6 mm × 4–5 mm; ASTM E8M; triplicated",
+      "purpose": "Evaluate strength and ductility in cold rolled and heat-treated conditions; interrupted tests for substructure evolution",
+      "key_findings": "28Mn5Ni in HR+CR+1173 K gives YS 900 ± 4 MPa, UTS 1236 ± 5 MPa, TE 39 ± 1%, n = 0.30."
+    },
+    {
+      "characterization_id": "char_sem_fractography",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM) fractography",
+      "instrument_or_setup": "Zeiss EVO 18 SEM",
+      "measurement_conditions": null,
+      "purpose": "Post-tensile fracture surface analysis of failed specimens",
+      "key_findings": "28Mn5Ni tensile specimens heat treated at 1023 K exhibited dimple morphology, indicating ductile failure."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "TEM-EDS composition of B2 particles in the 28Mn5Ni alloy at 1173 K (Table 2, Fe balance): Particle-1 – Mn 16.5 wt% (14.9 at%), Al 14.2 wt% (25.7 at%), Ni 26.1 wt% (21.8 at%); Particle-2 – Mn 15.4 wt% (13.7 at%), Al 14.8 wt% (26.7 at%), Ni 27.5 wt% (22.8 at%). B2 is FeAl-based, contains significant Mn and Ni, and becomes enriched in Ni with increasing heat-treatment temperature (block b0042/b0054).",
+    "At HR+CR+1173 K, the Ni-containing alloys exhibited nearly identical but relatively lower strain-hardening exponent n (~0.30) compared to 28Mn0Ni (n = 0.50) at the same temperature, indicating lower strain-hardening ability of the Ni-containing LDS (block b0057).",
+    "For 28Mn5Ni, the recrystallization fraction at 1173 K (~0.4–0.5) was lower than that of the Ni-free alloy, and no noticeable growth of recrystallized grains occurred in Ni-containing LDS alloys up to 1173 K (Fig. 5a–b; block b0075).",
+    "Dual precipitation of intragranular B2, intergranular B2 and κ-carbides together with a partially recrystallized structure gave 28Mn5Ni a better strength (1.3–1.6 GPa) and ductility (17%) combination at 1023 K; at 1173 K there was a substantial drop in strength (block b0081)."
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_010",
+  "family": "generalist",
+  "image_type": "microscopy_sem",
+  "description": "A composite, six-row figure in which every row applies the same three-step segmentation pipeline to a different microstructure; the columns are headed \"Image\", \"Overlay\" and \"Key structure\". (a) is a grey micrograph with a fine dark globular/network phase; its Overlay adds a red segmentation mask and its Key structure panel is a white-on-black binary of that same network. (b) shows a coarser cellular network plus a few needle/rod-shaped precipitates, and its binary retains only the elongated needles, not the cell walls. (c) shows large elongated lenticular plates overlaid with a colour-per-region mask, whose binary reduces to a thin white boundary skeleton. (d) shows large grey grains cut by thick irregular dark bands (cracks), reproduced as white foreground in the binary. (e) and (f) — the only panels carrying printed labels, \"C22000 (brass) twin grain\" and \"C21000 (brass) twin grain\" — are pink/orange optical micrographs whose overlays colour whole grains and whose binaries mask straight, parallel-sided twin lamellae (one marked by a diagonal arrow). No axes, scale bars or numeric values are printed anywhere; panels (a)–(d) bear no visible letter labels in the supplied crops. Together the rows argue that one training-free model segments chemically, morphologically and defect-wise dissimilar microstructures across scales without annotations.",
+  "confidence": "medium",
+  "subfigures": [
+    {
+      "panel": "(a)",
+      "description": "Top row (no printed letter label in the crop; header reads 'Image  Overlay  Key structure'). Grayscale micrograph of a fine dark globular/network phase in a lighter matrix; the middle panel shows the raw image with a red segmentation overlay; the right panel is a black binary in which the segmented network appears as dense white speckle.",
+      "confidence": "medium"
+    },
+    {
+      "panel": "(b)",
+      "description": "Second row. Grayscale micrograph of a coarser, cell/dendrite-like dark network with a few thin needle- or rod-shaped features; the overlay panel repeats the image with red masks, and the binary panel contains only the thin elongated needles as white lines on black (the cell walls are not foreground).",
+      "confidence": "medium"
+    },
+    {
+      "panel": "(c)",
+      "description": "Third row. Grayscale micrograph dominated by large elongated lenticular/plate-shaped features separated by thin boundaries; the overlay panel tint-colours individual regions, and the binary panel shows a thin white boundary skeleton with black interiors.",
+      "confidence": "medium"
+    },
+    {
+      "panel": "(d)",
+      "description": "Fourth row. Grayscale micrograph of large grains traversed by thick, irregular dark bands; the overlay panel colours grains, and the binary panel renders exactly those dark bands (cracks) as white foreground on black.",
+      "confidence": "medium"
+    },
+    {
+      "panel": "(e)",
+      "description": "Fifth row, labelled '(e)  C22000 (brass)  twin grain'. Pink-toned optical micrograph with large equiaxed grains and straight parallel-sided twin lamellae; the overlay panel assigns a different colour to each grain and the binary panel masks the straight twin bands as white shapes with a diagonal arrow annotation.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(f)",
+      "description": "Sixth row, labelled '(f)  C21000 (brass)  twin grain'. Orange/pink optical micrograph of a few large grains containing long, straight parallel-sided twin lamellae; the overlay colours the grains and the binary panel extracts the twin lamellae as elongated white strips.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "Every row of the figure is a three-column comparison: the raw micrograph ('Image'), the same micrograph with a segmentation overlay ('Overlay'), and a black-background binary image showing the extracted object in white ('Key structure').",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panel (a) shows a fine, dense dark globular/network phase in a lighter matrix; its binary key-structure image reproduces that network as dense white speckle.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panel (b) contains a coarser cell-like network plus a few thin needle/rod-shaped features, and only the elongated needles are retained as white foreground in its binary image.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "Panel (c) is dominated by large elongated lenticular plates, and its binary output is a thin intergranular/boundary skeleton rather than filled grains.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "Panel (d) shows large grains cut by thick irregular dark bands, and exactly those bands appear as white foreground in the binary image, i.e. they are the segmented target.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "Panels (e) and (f) are optical micrographs of brass with straight parallel-sided twin lamellae inside large grains, and their binary panels extract those lamellae as elongated white strips.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "No axes, coordinate labels, scale bars, magnification values or numeric annotations are printed in any panel of the supplied crops.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Only panels (e) and (f) carry printed labels ('(e) C22000 (brass) twin grain', '(f) C21000 (brass) twin grain'); the other rows have no visible panel letters in the supplied crops.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "The caption identifies the six extracts as NBS-3 (γ' phase), NBS-3 (TCP phase), IN939-1 (melted pool boundary), IN939-2 (cracks), C22000 brass (twin grain) and C21000 brass (twin grain).",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_010"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption states that in each row the first column is the raw image, the second column is a segmentation mask overlaid on the raw image, and the third column is a binary image highlighting different phases as foreground.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_010"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states that these are six additional micrographs (from ref. [50]) that are not provided with corresponding annotations, used to show the model's extensibility/generalizability in recognising microstructures of different scales and morphologies within a single micrograph.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_010"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The figure's overall claim is that one training-free segmentation approach transfers across chemically, morphologically and defect-wise different microstructures (γ' network, TCP needles, melt-pool boundaries, cracks, twin lamellae) without per-image annotation.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_010"
+        }
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "measured_quantities": [],
+  "sample_hints": [
+    "NBS-3 (γ' phase)",
+    "NBS-3 (TCP phase)",
+    "IN939–1",
+    "IN939–2",
+    "C22000 (brass) twin grain",
+    "C21000 (brass) twin grain"
+  ],
+  "unreadable_items": [
+    "Panel letters (a)-(d) are not visible in the supplied crops; their identity is inferred from the caption order only",
+    "No scale bars or magnification values are printed, so the physical field of view of any panel cannot be determined",
+    "Imaging modality per panel cannot be confirmed from the pixels (grey-scale appearance only; EDS/BSE/optical discrimination not derivable)",
+    "Colour/phase assignments encoded in the Overlay masks of panels (a)-(d) are not explained by any visible legend"
+  ],
+  "image_paths": [
+    "images/eab18d9ebec685ed24f8a5a6c40f2119e8674342aeb815a06a959455ad28af17.jpg",
+    "images/d51748b75bb974f1fba2be4b6d896fd7d8bceaf58bba578d6598b273ee69be51.jpg",
+    "images/a0c23766a57a964a8bf92c3ce0d4bed28952e75e00bedfed8ffbdb32ddba3749.jpg",
+    "images/78e3a8dc32252b9b6a0a46bf01193d16b7bf020494449683144377daa39e2bd0.jpg",
+    "images/63c15bf57686ec3603c46ac4e61cb757c7a4bdfb5bb9ae878d99339a22ff4565.jpg",
+    "images/47ee72d1703d3eff0042c40d53154baf531d7aec3812c456c74ebccf45074c78.jpg"
+  ]
+}

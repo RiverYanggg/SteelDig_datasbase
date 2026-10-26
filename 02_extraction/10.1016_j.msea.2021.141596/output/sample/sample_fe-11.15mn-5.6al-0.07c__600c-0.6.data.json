@@ -1,0 +1,274 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-11.15mn-5.6al-0.07c__600c-0.6",
+      "paper_id": "10.1016_j.msea.2021.141596",
+      "alloy_id": "alloy_fe-11.15mn-5.6al-0.07c",
+      "process_id": "proc_600c-0.6",
+      "sample_label": "600 °C, ε=0.6",
+      "aliases": [
+        "compressed at 600 °C to 0.6",
+        "deformed at 600 °C down to true strain 0.6"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "ESR-received material was homogenized at 1200 °C for 1 h to eliminate any probable segregation."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling (5 passes)",
+      "temperature": "1100–1200 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot rolled through 5 passes in the temperature range 1100–1200 °C, followed by air quenching."
+    },
+    {
+      "processing_step_id": "step_air_quench",
+      "sequence": "3",
+      "type": "cooling",
+      "method": "air quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Followed the 5-pass hot rolling."
+    },
+    {
+      "processing_step_id": "step_annealing",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": "950 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Annealed at 950 °C for 1 h to attain a triplex (ferrite + austenite + martensite) microstructure; this is the parent state (proc_annealed-950c-1h) of the sample."
+    },
+    {
+      "processing_step_id": "step_soaking_600c",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "soaking at deformation temperature",
+      "temperature": "600 °C",
+      "temperature_unit": "°C",
+      "duration": "5 min",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Compression specimens were soaked at the deformation temperature for 5 min before testing to reach thermal equilibrium."
+    },
+    {
+      "processing_step_id": "step_compression_600c",
+      "sequence": "6",
+      "type": "mechanical processing",
+      "method": "warm uniaxial compression",
+      "temperature": "600 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "true strain 0.6",
+      "processing_steps_notes": "High temperature compression test carried out on a Gotech AI-7000 universal testing machine under a strain rate of 0.001 s^-1 up to a true strain of 0.6."
+    },
+    {
+      "processing_step_id": "step_water_quench",
+      "sequence": "7",
+      "type": "cooling",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Specimens were immediately water quenched after compression to preserve the deformed microstructure at high temperature."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_600c_0.6",
+      "overall_structure": "Triplex ferrite + austenite + thermally induced martensite microstructure; after warm compression at 600 °C to a true strain of 0.6 the EBSD phase maps still resolve the three constituent phases, but strain distribution is more homogeneous, deformation bands are less frequently distributed than at 500 °C, and no deformation-induced bidirectional ferrite↔austenite transformation was characterized.",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_600c_0.6",
+          "region": "bulk deformed (compressed) specimen",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "Ferrite",
+              "crystal_structure": "BCC (BCC_A2)",
+              "volume_fraction": null,
+              "morphology": "dominant matrix (green in phase maps)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "Austenite",
+              "crystal_structure": "FCC (FCC_A1)",
+              "volume_fraction": null,
+              "morphology": "red islands/bands within the ferrite matrix (FCC regions lying within the dominant BCC matrix)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "Martensite",
+              "crystal_structure": "BCC (thermally induced; both martensite and ferrite hold BCC structure)",
+              "volume_fraction": null,
+              "morphology": "large interconnected yellow/orange banded regions within the green ferrite matrix",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "deformation bands",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null,
+              "note": "No deformation bands were observed at 600 °C (the frequently distributed deformation bands were only seen at 500 °C), attributed to the higher capability for strain distribution at higher temperature; banding is less frequent and more uniformly distributed than at 500 °C."
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "props_600c_0.6_compression",
+      "measurement_conditions": {
+        "temperature": "600 °C",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "0.001 s^-1",
+        "specimen_geometry": "compression specimen soaked 5 min at temperature, immediately water quenched after testing",
+        "test_standard": null,
+        "other_conditions": "true strain 0.6"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Compressive true stress–strain curve at 600 °C rises to ~400 MPa and stays nearly flat (plateau); appreciable flow softening reported after a true strain of 0.3 in the 500–600 °C flow curves.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_600c_vs_500c",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-11.15mn-5.6al-0.07c",
+        "benchmark_process_id": "proc_500c-0.6",
+        "benchmark_sample_id": null,
+        "comparison_metric": "Occurrence of deformation bands and deformation-induced bidirectional ferrite↔austenite transformation, and homogeneity of strain distribution",
+        "improvement_percentage": null,
+        "note": "At 600 °C the frequently distributed deformation bands and the simultaneous deformation-induced ferrite to austenite / austenite to ferrite transformations observed at 500 °C could NOT be characterized; strain distribution is more homogeneous at 600 °C due to the higher capability for strain distribution at higher temperature."
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_ebsd_600c",
+      "microstructure_id": "micro_600c_0.6",
+      "technique": "Electron backscattered diffraction (EBSD) phase mapping",
+      "instrument_or_setup": "Field-emission scanning electron microscope (FE-SEM CZ/MIRA I LMH, TESCAN, Czech) equipped with an EBSD detector (Hikari, AMETEK EDAX, U.S.A) using a step size of 200 nm",
+      "measurement_conditions": "Phase map (PM) overlaid on image quality (IQ) map, 20 µm scale bar; compression axis (CA) indicated",
+      "purpose": "To identify the phase constitution and strain distribution of the microstructure after compression at 600 °C to true strain 0.6",
+      "key_findings": "Triplex ferrite + martensite + austenite; large interconnected yellow/orange (martensite) banded regions with red austenite in a dominant green ferrite matrix; banding is less frequent and more homogeneously distributed than at 500 °C, and no deformation bands were observed at 600 °C."
+    },
+    {
+      "characterization_id": "char_compression_test_600c",
+      "microstructure_id": null,
+      "technique": "High-temperature uniaxial compression testing",
+      "instrument_or_setup": "Gotech AI-7000 universal testing machine equipped with a programmable furnace",
+      "measurement_conditions": "600 °C, strain rate 0.001 s^-1, up to true strain 0.6; soaked 5 min before testing; immediately water quenched",
+      "purpose": "To obtain the compressive flow curve and extracted stress levels vs temperature for the material",
+      "key_findings": "600 °C flow curve plateaus around 400 MPa; significant drop in stress level when temperature increases from 500 to 600 °C; appreciable flow softening after true strain 0.3 at 500–600 °C."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermocalc_gibbs",
+      "simulation_method": "CALPHAD thermodynamic calculation using the Gibbs free energy model (equilibrium phase and energy calculations)",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": "TCFE9 database",
+      "boundary_and_initial_conditions": "Equilibrium calculations for the Fe-11.15Mn-5.6Al-0.07C (wt.%) system: mass percent of Mn and Al in each constituent phase vs temperature (0–1600 °C), and Gibbs free energy of BCC and FCC vs %Mn and %Al at isothermal sections of 500 and 550 °C; nominal composition line marked at ~11 %Mn.",
+      "validation_against_experiment": "Predicted elemental partitioning (Mn into austenite, Al into ferrite) and the resulting equal Gibbs energies of ferrite and austenite were consistent with the SEM-measured partitioning of the deformed steel (Table 1, 500 °C condition).",
+      "analytical_models": [
+        {
+          "model_name": "Gibbs free energy / modified Gibbs energy model",
+          "equation_role": "Interpretation of phase stability and the driving force for bidirectional ferrite↔austenite transformation",
+          "parameters": [
+            {
+              "name": "Point A (BCC/FCC equal Gibbs energy composition)",
+              "value": "~14.5 %Mn / ~0.8 %Al (500 °C)",
+              "unit": "%"
+            },
+            {
+              "name": "Equilibrium Gibbs energy at point A (Mn, 500 °C)",
+              "value": "~-40900",
+              "unit": "J/mol"
+            }
+          ],
+          "model_note": "Point A marks the composition at which BCC (ferrite) and FCC (austenite) possess the same Gibbs free energy, making co-occurrence / simultaneous bidirectional transformation probable; Mn partitioning mainly dictates the Gibbs free energy and phase stability, whereas Al variation has little remarkable influence. Applied to the alloy system; isothermal sections shown at 500 and 550 °C."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "At the higher temperature of 600 °C, neither the frequently distributed deformation bands nor the simultaneous deformation-induced ferrite to austenite (DIAT) / austenite to ferrite (DIFT) transformations could be characterized in the deformed microstructure, in contrast to deformation at 500 °C (see Fig. 3e).",
+    "The 600 °C condition is the higher-temperature counterpart of the 500 °C/0.6 condition; strain distribution is more homogeneous at 600 °C owing to the higher capability for strain distribution at higher temperature.",
+    "The chemical composition (elemental partitioning) SEM analysis reported in Table 1 (Mn 10.3±0.1 / Al 6.0±0.1 wt.% in ferrite and Mn 12.8±0.1 / Al 4.7±0.1 wt.% in austenite) is explicitly stated to be for the specimen deformed at 500 °C, and therefore does not pertain to this 600 °C sample."
+  ]
+}

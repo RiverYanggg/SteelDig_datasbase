@@ -1,0 +1,618 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-c-3ni__slm-p90",
+      "paper_id": "10.1016_j.jmrt.2024.10.125",
+      "alloy_id": "alloy_fe-30mn-9al-c-3ni",
+      "process_id": "proc_slm-p90",
+      "sample_label": "P-90",
+      "aliases": [
+        "P-90",
+        "SLM-printed at 90 W"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "b0020 lists the full SLM printing parameters and states laser powers of 70, 90, 110, 130, 150 W with 90 W corresponding to 75.00 J/mm³ and sample name P-90; b0023 adds the 67° per-layer rotation angle.",
+        "block_id": [
+          "b0020",
+          "b0023"
+        ]
+      },
+      "processing_step_id": "step_slm_p90",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "additive manufacturing"
+      },
+      "method": {
+        "value": "selective laser melting (SLM)"
+      },
+      "temperature": {
+        "value": "200 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": null,
+      "atmosphere": {
+        "value": "argon (99.99% pure); oxygen content in the forming chamber maintained below 300 ppm"
+      },
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "SLM Solutions SLM280 printer. Laser power 90 W, corresponding to laser energy density 75.00 J/mm³. Scanning speed 750 mm/s; spot diameter 0.1 mm; layer thickness 0.02 mm; hatch space 0.08 mm; substrate preheated to 200 °C before printing; 67° rotation angle applied to each layer. Sample printed at 90 W is denoted P-90."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "b0033 states the SLM-printed alloy at each laser power mainly comprises austenite without α-Fe(M) and gives the (111) FWHM for P-90; b0040/figure_007 describes fine equiaxed grains with random orientations in the transverse sections; b0042/figure_008 give the P-90 average cross-sectional grain size of 10.6 μm; b0036 gives P-90 porosity 0.25%; b0059 states each SLM-printed sample contains austenite with a small amount of nano-sized κ carbide.",
+        "block_id": [
+          "b0033",
+          "b0036",
+          "b0040",
+          "b0042",
+          "b0059",
+          "figure_007",
+          "figure_008"
+        ]
+      },
+      "structure_id": "struct_p90",
+      "overall_structure": {
+        "value": "The Fe–30Mn–9Al–C–3Ni alloy SLM-printed at 90 W mainly comprises the austenite (γ-Fe(M)) phase without any α-Fe(M) phase (fully austenitic by XRD); the transverse cross-section consists of fine equiaxed grains with random orientations."
+      },
+      "number_of_phases": {
+        "value": "1 predominant phase (austenite) plus a small amount of nano-sized κ carbide"
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_p90_xy",
+          "region": {
+            "value": "transverse cross-section (x-y)"
+          },
+          "related_sequence": {
+            "value": "1"
+          },
+          "phases_present": [
+            {
+              "phase_name": {
+                "value": "austenite (γ-Fe(M))"
+              },
+              "crystal_structure": {
+                "value": "fcc"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "fine equiaxed grains with random orientations"
+              },
+              "grain_size": {
+                "value": "10.6 μm (average, cross-section)"
+              },
+              "texture": {
+                "value": "random orientations, no preferred texture"
+              }
+            },
+            {
+              "phase_name": {
+                "value": "κ carbide"
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": {
+                "value": "nano-sized particles (small amount)"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": {
+                "value": "porosity"
+              },
+              "porosity": {
+                "value": "0.25%"
+              },
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": {
+                "value": "10.6 μm"
+              },
+              "unit": {
+                "value": "μm"
+              }
+            },
+            "grain_size_distribution": {
+              "value": "right-skewed distribution with a weak secondary cluster of bars around 16–22 μm (Fig. 8(b))"
+            },
+            "texture": {
+              "value": "random orientations, no preferred texture"
+            }
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_k_carbide_p90",
+              "type": {
+                "value": "κ carbide"
+              },
+              "size": {
+                "value": null,
+                "unit": {
+                  "value": "nm"
+                }
+              },
+              "distribution": {
+                "value": "small amount of nano-sized κ carbide present in the SLM-printed sample"
+              },
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "source": {
+        "reason": "Table 2 (b0070) lists YS/TS/Z/EL for each sample; for P-90: YS 802.4 MPa, TS 1067.8 MPa, EL 39.68%. b0027 gives the room-temperature tensile testing conditions (dog-bone, gauge length 25 mm, diameter 5 mm, 1 mm/min, Suns machine, Reliant extensometer). b0050/figure_012 show the stress–strain curve.",
+        "block_id": [
+          "b0027",
+          "b0050",
+          "b0070",
+          "figure_012",
+          "figure_014"
+        ]
+      },
+      "property_set_id": "prop_p90_tensile",
+      "measurement_conditions": {
+        "temperature": {
+          "value": "room temperature"
+        },
+        "temperature_unit": {
+          "value": "°C"
+        },
+        "environment": null,
+        "strain_rate": {
+          "value": "1 mm/min loading rate"
+        },
+        "specimen_geometry": {
+          "value": "dog-bone-shaped tensile sample with a gauge length of 25 mm and a diameter of 5 mm"
+        },
+        "test_standard": null,
+        "other_conditions": {
+          "value": "Suns universal testing machine fitted with a Reliant electronic extensometer"
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": {
+                "value": "802.4 MPa"
+              },
+              "unit": {
+                "value": "MPa"
+              },
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": {
+                "value": "1067.8 MPa"
+              },
+              "unit": {
+                "value": "MPa"
+              },
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": {
+                "value": "39.68%"
+              },
+              "unit": {
+                "value": "%"
+              },
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": {
+            "value": "Fig. 12 engineering stress–strain curve; P-90 curve (red) plateaus above 1000 MPa"
+          },
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "source": {
+        "reason": "figure_014/b0055 report the grouped hardness bar chart with printed values per sample; for P-90 the values are 289 HV (longitudinal) and 285 HV (cross-section). b0027 describes the microhardness measurement conditions.",
+        "block_id": [
+          "b0027",
+          "b0055",
+          "figure_014"
+        ]
+      },
+      "property_set_id": "prop_p90_hardness",
+      "measurement_conditions": {
+        "temperature": {
+          "value": "room temperature"
+        },
+        "temperature_unit": {
+          "value": "°C"
+        },
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": {
+          "value": "horizontal and vertical cross-sections"
+        },
+        "test_standard": null,
+        "other_conditions": {
+          "value": "microhardness tester, load 0.5 kg for 10 s; each value is the arithmetic mean of five measurement points"
+        }
+      },
+      "mechanical": {
+        "tensile_properties": null,
+        "hardness": [
+          {
+            "region": {
+              "value": "longitudinal section"
+            },
+            "value": {
+              "value": "289 HV"
+            },
+            "scale": {
+              "value": "HV"
+            },
+            "unit": {
+              "value": "HV"
+            },
+            "uncertainty": null
+          },
+          {
+            "region": {
+              "value": "cross-section"
+            },
+            "value": {
+              "value": "285 HV"
+            },
+            "scale": {
+              "value": "HV"
+            },
+            "unit": {
+              "value": "HV"
+            },
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "source": {
+        "reason": "b0039 states P-90 relative density is 99.16%; b0036 states P-90 is 0.25% porous. b0025 states relative density was calculated using the Archimedes principle.",
+        "block_id": [
+          "b0025",
+          "b0036",
+          "b0039"
+        ]
+      },
+      "property_set_id": "prop_p90_density_porosity",
+      "measurement_conditions": {
+        "temperature": {
+          "value": "room temperature"
+        },
+        "temperature_unit": {
+          "value": "°C"
+        },
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": {
+          "value": "Relative density calculated using the Archimedes principle; porosity measured from transverse cross-sectional optical micrographs (Fig. 6)"
+        }
+      },
+      "mechanical": null,
+      "physical": {
+        "density": {
+          "value": {
+            "value": "99.16% (relative density)"
+          },
+          "unit": {
+            "value": "%"
+          }
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "b0025 describes the XRD setup; b0033/figure_005 report that SLM-printed samples are austenitic and give the P-90 (111) FWHM of 0.274.",
+        "block_id": [
+          "b0025",
+          "b0033",
+          "figure_005"
+        ]
+      },
+      "characterization_id": "char_xrd_p90",
+      "microstructure_id": "micro_p90_xy",
+      "technique": {
+        "value": "X-ray diffraction (XRD)"
+      },
+      "instrument_or_setup": {
+        "value": "Bruker D8 Advance X-ray diffractometer, Cu target, continuous scanning, 2θ 30–100°, 2°/min"
+      },
+      "measurement_conditions": {
+        "value": "continuous scanning, scanning angle range 30–100°, Cu target, 2°/min"
+      },
+      "purpose": {
+        "value": "Phase identification and (111) peak FWHM of the P-90 sample"
+      },
+      "key_findings": {
+        "value": "P-90 mainly comprises the austenite (γ-Fe(M)) phase with no α-Fe(M) phase; FWHM of the (111) diffraction peak = 0.274, smaller than P-70 (0.289), indicating larger average grain size"
+      }
+    },
+    {
+      "source": {
+        "reason": "b0025 describes the EBSD setup; b0040/figure_007 give the equiaxed random-orientation grains for P-90; b0042/figure_008 give the 10.6 μm average grain size.",
+        "block_id": [
+          "b0025",
+          "b0040",
+          "b0042",
+          "figure_007",
+          "figure_008"
+        ]
+      },
+      "characterization_id": "char_ebsd_p90",
+      "microstructure_id": "micro_p90_xy",
+      "technique": {
+        "value": "electron backscatter diffraction (EBSD)"
+      },
+      "instrument_or_setup": {
+        "value": "Oxford Symmetry S2 EBSD instrument; data analyzed using TSL OIM software"
+      },
+      "measurement_conditions": {
+        "value": "step size 0.3–0.7 μm, accelerator voltage 15–20 kV"
+      },
+      "purpose": {
+        "value": "Grain morphology, orientation and grain-size analysis of P-90 cross-section"
+      },
+      "key_findings": {
+        "value": "Transverse cross-section of P-90 (Fig. 7(b)) shows fine equiaxed grains with random orientations (no preferred texture), attributed to the 67° per-layer rotation; average grain size 10.6 μm"
+      }
+    },
+    {
+      "source": {
+        "reason": "b0025 describes the OM setup; b0036/figure_006 give P-90 porosity 0.25%.",
+        "block_id": [
+          "b0025",
+          "b0036",
+          "figure_006"
+        ]
+      },
+      "characterization_id": "char_om_p90",
+      "microstructure_id": "micro_p90_xy",
+      "technique": {
+        "value": "optical microscopy (OM)"
+      },
+      "instrument_or_setup": {
+        "value": "Leica DMi8 M/C/A optical microscope"
+      },
+      "measurement_conditions": {
+        "value": "electrolytically polished in perchloric-acid/ethanol solution; transverse cross-section"
+      },
+      "purpose": {
+        "value": "Porosity of P-90 transverse cross-section"
+      },
+      "key_findings": {
+        "value": "P-90 cross-section porosity = 0.25% (Fig. 6(b)); only sparse small dark pores"
+      }
+    },
+    {
+      "source": {
+        "reason": "b0025 states relative density was calculated using the Archimedes principle; b0039 gives P-90 relative density 99.16%.",
+        "block_id": [
+          "b0025",
+          "b0039"
+        ]
+      },
+      "characterization_id": "char_density_p90",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Archimedes density measurement"
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": {
+        "value": "Archimedes principle"
+      },
+      "purpose": {
+        "value": "Relative density of P-90"
+      },
+      "key_findings": {
+        "value": "P-90 relative density = 99.16%"
+      }
+    },
+    {
+      "source": {
+        "reason": "b0025 states surface roughness was measured using a Zeiss LSM 900 laser confocal microscope; b0044 and b0061 give P-90 Sa = 9.19 μm.",
+        "block_id": [
+          "b0025",
+          "b0044",
+          "b0061",
+          "figure_010"
+        ]
+      },
+      "characterization_id": "char_surface_roughness_p90",
+      "microstructure_id": null,
+      "technique": {
+        "value": "laser confocal microscopy (surface roughness)"
+      },
+      "instrument_or_setup": {
+        "value": "Zeiss LSM 900 laser confocal microscope"
+      },
+      "measurement_conditions": {
+        "value": "2D/3D surface topography"
+      },
+      "purpose": {
+        "value": "Surface roughness measurement of P-90"
+      },
+      "key_findings": {
+        "value": "P-90 surface roughness Sa = 9.19 μm (Fig. 10(b)), lower than P-70 (20.71 μm)"
+      }
+    },
+    {
+      "source": {
+        "reason": "b0025 describes the SEM instrument; b0048/figure_011 describe the P-90 surface morphology at 90 W.",
+        "block_id": [
+          "b0025",
+          "b0048",
+          "figure_011"
+        ]
+      },
+      "characterization_id": "char_sem_surface_p90",
+      "microstructure_id": null,
+      "technique": {
+        "value": "scanning electron microscopy (SEM) surface morphology"
+      },
+      "instrument_or_setup": {
+        "value": "ZEISS Sigma300 scanning electron microscope"
+      },
+      "measurement_conditions": {
+        "value": "secondary-electron surface imaging (Fig. 11)"
+      },
+      "purpose": {
+        "value": "Surface morphology of P-90"
+      },
+      "key_findings": {
+        "value": "P-90 surface (Fig. 11(b)) is smoother than P-70, with faint parallel melt-track striations and scattered spherical particles still flagged as lack of fusion"
+      }
+    },
+    {
+      "source": {
+        "reason": "b0053/figure_013 describe the P-90 fracture surface showing ductile dimples and a lack-of-fusion particle.",
+        "block_id": [
+          "b0053",
+          "figure_013"
+        ]
+      },
+      "characterization_id": "char_sem_fracture_p90",
+      "microstructure_id": null,
+      "technique": {
+        "value": "scanning electron microscopy (SEM) of tensile fracture surfaces"
+      },
+      "instrument_or_setup": {
+        "value": "ZEISS Sigma300 scanning electron microscope"
+      },
+      "measurement_conditions": {
+        "value": "secondary-electron fracture surface imaging (Fig. 13)"
+      },
+      "purpose": {
+        "value": "Fracture mode of P-90"
+      },
+      "key_findings": {
+        "value": "P-90 exhibited more-dominant ductile dimple fractures (Fig. 13(b)), indicative of superior yield strength, tensile strength and ductility; a spherical unfused powder particle (lack of fusion) was present"
+      }
+    },
+    {
+      "source": {
+        "reason": "b0027 describes the tensile testing setup; b0050 and Table 2 (b0070) give the P-90 tensile values.",
+        "block_id": [
+          "b0027",
+          "b0050",
+          "b0070"
+        ]
+      },
+      "characterization_id": "char_tensile_p90",
+      "microstructure_id": null,
+      "technique": {
+        "value": "room-temperature uniaxial tensile testing"
+      },
+      "instrument_or_setup": {
+        "value": "Suns universal testing machine with Reliant electronic extensometer"
+      },
+      "measurement_conditions": {
+        "value": "dog-bone specimen, gauge length 25 mm, diameter 5 mm, loading rate 1 mm/min, room temperature"
+      },
+      "purpose": {
+        "value": "Tensile properties of P-90"
+      },
+      "key_findings": {
+        "value": "P-90: YS 802.4 MPa, TS 1067.8 MPa, EL 39.68%"
+      }
+    },
+    {
+      "source": {
+        "reason": "b0027 describes the microhardness measurement; figure_014/b0055 give the P-90 hardness values 289/285 HV.",
+        "block_id": [
+          "b0027",
+          "b0055",
+          "figure_014"
+        ]
+      },
+      "characterization_id": "char_microhardness_p90",
+      "microstructure_id": null,
+      "technique": {
+        "value": "microhardness testing (Vickers)"
+      },
+      "instrument_or_setup": {
+        "value": "microhardness tester"
+      },
+      "measurement_conditions": {
+        "value": "load 0.5 kg for 10 s; arithmetic mean of five measurement points; horizontal and vertical cross-sections"
+      },
+      "purpose": {
+        "value": "Hardness of P-90 cross-section and longitudinal section"
+      },
+      "key_findings": {
+        "value": "P-90 hardness: 289 HV (longitudinal) and 285 HV (cross-section)"
+      }
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "P-90 reduction of area Z = 35.48% (Table 2).",
+    "The P-90 sample exhibited more-dominant ductile dimple fractures (Fig. 13(b)), indicative of superior yield strength, tensile strength, and ductility; a spherical unfused powder particle (lack of fusion) is visible on its fracture surface.",
+    "FWHM of the (111) diffraction peak for P-90 = 0.274 (vs 0.289 for P-70 and 0.263 for P-110), implying the average grain size of SLM-printed samples gradually increases with increasing energy density.",
+    "The P-90 (90 W) surface SEM morphology is smoother than P-70, with faint parallel melt-track striations and scattered spherical particles still flagged as lack of fusion (Fig. 11(b)).",
+    "P-90 laser energy density = 75.00 J/mm³, with P-70 and P-90 sharing all SLM parameters and differing only in laser power."
+  ]
+}

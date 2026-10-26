@@ -1,0 +1,478 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-10al-1c__st-1050c-2h-wq",
+      "paper_id": "10.1016_j.msea.2023.145675",
+      "alloy_id": "alloy_fe-30mn-10al-1c",
+      "process_id": "proc_st-1050c-2h-wq",
+      "sample_label": "Al-10",
+      "aliases": "Fe30Mn10Al1C after 1050 °C/2 h solution treatment"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "melting/casting",
+      "method": "high-frequency vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Each steel composition (including Al-10 / Fe30Mn10Al1C) first melted in a high-frequency vacuum induction furnace with a 50 kg capacity."
+    },
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "2",
+      "type": "casting",
+      "method": "cast into ingot",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cast into an ingot with a diameter of 150 mm."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": "5 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingots homogenized at 1200 °C for 5 h before hot rolling."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "150 mm ingot → 16 mm rod",
+      "processing_steps_notes": "Hot rolled into rods with a diameter of 16 mm."
+    },
+    {
+      "processing_step_id": "step_air_cooling",
+      "sequence": "5",
+      "type": "cooling",
+      "method": "air cooling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "air",
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled rods air-cooled to room temperature."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "6",
+      "type": "heat treatment",
+      "method": "solution treatment followed by water quenching",
+      "temperature": "1050",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled rods solution-treated at 1050 °C for 2 h followed by water quenching; this is the final state (proc_st-1050c-2h-wq) for the Al-10 sample used for tensile, Charpy impact and EBSD/TEM characterization."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_al10_1050c_wq",
+      "overall_structure": "After solution treatment at 1050 °C for 2 h + water quenching the Fe30Mn10Al1C (Al-10) low-density steel consists of a single austenite (FCC) phase with a high fraction of annealing twin boundaries and uniformly distributed nano-scale κ-carbides (~1 nm); no ferrite (BCC) phase is present (f_Bcc = '-').",
+      "number_of_phases": "1 austenite (FCC) phase (no ferrite) + κ-carbide precipitates",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_al10_austenite",
+          "region": "bulk rod grain structure",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains with numerous annealing twin boundaries",
+              "grain_size": "29.7 ± 1.1 μm",
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "ordered L'12 perovskite-type",
+              "volume_fraction": null,
+              "morphology": "fine nano-scale particles",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "annealing twin boundaries (Σ3)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "29.7 ± 1.1",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "twin boundary fraction f_Tw = 53.2%"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "kappa_al10",
+              "type": "κ-carbide",
+              "size": {
+                "value": "1.0 ± 0.4",
+                "unit": "nm"
+              },
+              "distribution": "uniformly distributed in the austenite matrix (intragranular)",
+              "coherency": "coherent with the austenite matrix"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_al10",
+      "phase_interfaces": [
+        {
+          "interface_id": "kappa_gamma_al10",
+          "microstructure_id": "micro_al10_austenite",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "austenite (γ)",
+          "coherence": "coherent"
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": "κ-carbides are sheared by gliding dislocations (particle shear strengthening model) rather than being bypassed by an Orowan mechanism; shear deformation facilitates dislocation glide across κ-carbide shear planes, weakening the work-hardening rate. The shear strengthening contribution is described by σ_shear = α f^(1/2) d_Car^(1/2).",
+      "phase_evolution": "κ-carbides precipitate from spinodal decomposition and ordering of C and Al in the austenite; their size grows strongly with increasing C and Al content and decreases with increasing Mn content.",
+      "interface_notes": "Orientation relationship between κ-carbides and austenite: (001)κ || (001)γ; in coarse carbides growth was confined by the {011} growth plane, giving a rectangular shape."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_al10_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature (ambient)",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1.1 × 10^-3 s^-1",
+        "specimen_geometry": "round tensile specimen, gauge length 25 mm, diameter 5 mm; tensile axis parallel to rod axis",
+        "test_standard": null,
+        "other_conditions": "tensile tests at an initial strain rate of 1.1×10^-3 s^-1 using an MTS tensile machine; two solution-treated specimens tested and data are the average of two specimens"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "parallel to rod axis",
+              "value": "642 ± 2",
+              "unit": "MPa",
+              "uncertainty": "± 2 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "parallel to rod axis",
+              "value": "830 ± 0",
+              "unit": "MPa",
+              "uncertainty": "± 0 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "type": "uniform elongation UE",
+              "value": "72 ± 2.8",
+              "unit": "%",
+              "uncertainty": "± 2.8 %"
+            },
+            {
+              "type": "A (as listed in Table 2)",
+              "value": "73.5 ± 1",
+              "unit": "%",
+              "uncertainty": "± 1 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "strain_hardening_rate": null,
+          "max_true_stress_sigma_TS": {
+            "value": "1370",
+            "unit": "MPa"
+          },
+          "fracture_strength_sigma_FS": {
+            "value": "2189",
+            "unit": "MPa"
+          }
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "impact_toughness": [
+          {
+            "test": "Charpy V-notch, -40 °C",
+            "value": "237 ± 5",
+            "unit": "J",
+            "uncertainty": "± 5 J"
+          }
+        ],
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.69",
+          "unit": "g/cm3"
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_al10_impact",
+      "measurement_conditions": {
+        "temperature": "-40",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "Charpy V-notch specimen 55 mm × 10 × 10 mm with 2 mm deep V-notch; notch perpendicular to the rod axis",
+        "test_standard": null,
+        "other_conditions": "MTS impact tester (500 J capacity)"
+      },
+      "mechanical": {
+        "tensile_properties": null,
+        "hardness": [],
+        "fracture_toughness": null,
+        "impact_toughness": [
+          {
+            "test": "Charpy V-notch, -40 °C",
+            "value": "237 ± 5",
+            "unit": "J",
+            "uncertainty": "± 5 J"
+          }
+        ],
+        "fatigue_properties": null,
+        "creep_properties": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_EBSD",
+      "microstructure_id": "micro_al10_austenite",
+      "technique": "electron back-scattered diffraction (EBSD)",
+      "instrument_or_setup": "EBSD system on FEI Quanta 650 field emission gun SEM (Thermo Fisher Scientific); operating voltage 20 kV; step size 0.5 μm; Channel 5 post-processing software",
+      "measurement_conditions": "specimens mechanically ground flat and electro-polished in 7% Nital at room temperature; grain size by linear intercept with 15° boundary definition",
+      "purpose": "determine phase distribution and average grain size as a function of alloying content",
+      "key_findings": "For the 10% Al steel a single austenite phase is present with no ferrite; average austenite grain size 29.7 ± 1.1 μm and twin boundary fraction f_Tw = 53.2%."
+    },
+    {
+      "characterization_id": "char_TEM",
+      "microstructure_id": "micro_al10_austenite",
+      "technique": "transmission electron microscopy (dark-field imaging + SAED)",
+      "instrument_or_setup": "TEM Tecnai G2 F20 S-TWIN (Thermo Fisher Scientific) operated at 200 kV",
+      "measurement_conditions": "thin foils prepared by twin-jet electro-polishing in 10% perchloric acid + 90% ethanol, at 20 V and -20 °C; dark-field images taken along [001]γ zone axis using a κ-carbide reflection",
+      "purpose": "characterize κ-carbide precipitation",
+      "key_findings": "Extensive κ-carbide formation observed for Al contents of 10% and larger, with average κ-carbide diameter about 1 nm (Table 3: 1.0 ± 0.4 nm), uniformly distributed and coherent with the austenite matrix (orientation relationship (001)κ || (001)γ)."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "technique": "uniaxial tensile test",
+      "instrument_or_setup": "MTS tensile machine",
+      "measurement_conditions": "room temperature; initial strain rate 1.1×10^-3 s^-1; round specimen gauge length 25 mm, diameter 5 mm",
+      "purpose": "obtain stress-strain responses and strain hardening rates",
+      "key_findings": "Al-10: YS 642 ± 2 MPa, UTS 830 ± 0 MPa, UE 72 ± 2.8%, A 73.5 ± 1%, σ_TS 1370 MPa, σ_FS 2189 MPa."
+    },
+    {
+      "characterization_id": "char_charpy",
+      "technique": "Charpy impact test",
+      "instrument_or_setup": "MTS impact tester (500 J capacity)",
+      "measurement_conditions": "-40 °C; V-notch perpendicular to the rod axis; specimen 55 mm × 10 × 10 mm with 2 mm V-notch",
+      "purpose": "measure impact toughness",
+      "key_findings": "Al-10 Akv-40 = 237 ± 5 J."
+    },
+    {
+      "characterization_id": "char_density",
+      "microstructure_id": null,
+      "technique": "Archimedes drainage method",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "measure alloy density",
+      "key_findings": "Al-10 measured density 6.69 g/cm3."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_analytical_models",
+      "simulation_method": "analytical models (least-squares linear fitting and mechanistic equations)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Linear fits of yield strength, tensile strength, elongation and area reduction against the square root of κ-carbide size gave good linear relationships (Fig. 7); density equation (Eq. 3) reproduced measured densities including that of Fe30Mn10Al1C.",
+      "analytical_models": [
+        {
+          "model_name": "True tensile strength",
+          "equation_role": "σ_TS = σ_UTS (1 + UE)",
+          "parameters": [
+            {
+              "name": "σ_UTS",
+              "value": null,
+              "unit": "MPa"
+            },
+            {
+              "name": "UE",
+              "value": null,
+              "unit": "fraction"
+            }
+          ],
+          "model_note": "σ_TS corresponds to the maximum true stress just before necking (crack nucleation)."
+        },
+        {
+          "model_name": "Fracture strength",
+          "equation_role": "σ_FS = σ_EF / (1 - A)",
+          "parameters": [
+            {
+              "name": "σ_EF",
+              "value": null,
+              "unit": "MPa"
+            },
+            {
+              "name": "A",
+              "value": null,
+              "unit": "fraction"
+            }
+          ],
+          "model_note": "σ_EF is the engineering fracture stress at sample breakage; A denotes maximum area reduction."
+        },
+        {
+          "model_name": "Density vs alloying content",
+          "equation_role": "ρ = 8.10 − 0.102C − 0.10Al − 0.01Mn",
+          "parameters": [
+            {
+              "name": "C",
+              "value": null,
+              "unit": "mass%"
+            },
+            {
+              "name": "Al",
+              "value": null,
+              "unit": "mass%"
+            },
+            {
+              "name": "Mn",
+              "value": null,
+              "unit": "mass%"
+            }
+          ],
+          "model_note": "Linear least-squares fit of measured densities; for the Al-10 composition (C 1.01, Al 10.13, Mn 30.22 mass%) this yields ~6.6 g/cm3, matching the measured 6.69 g/cm3."
+        },
+        {
+          "model_name": "Particle shear strengthening",
+          "equation_role": "σ_shear = α f^(1/2) d_Car^(1/2)",
+          "parameters": [
+            {
+              "name": "α",
+              "value": null,
+              "unit": "constant"
+            },
+            {
+              "name": "f",
+              "value": null,
+              "unit": "volume fraction"
+            },
+            {
+              "name": "d_Car",
+              "value": null,
+              "unit": "nm"
+            }
+          ],
+          "model_note": "Shear model rather than Orowan; used because κ-carbides are coherent with the austenite matrix."
+        },
+        {
+          "model_name": "Yield strength vs κ-carbide size",
+          "equation_role": "R_p0.2 = 478 + 97.1 d_Car^0.5",
+          "parameters": [
+            {
+              "name": "slope",
+              "value": "97.1",
+              "unit": "MPa/nm^1/2"
+            },
+            {
+              "name": "intercept",
+              "value": "478",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "Linear fit of yield strength against the square root of the average κ-carbide size (Fig. 7a)."
+        },
+        {
+          "model_name": "Tensile strength vs κ-carbide size",
+          "equation_role": "R_m = 786 + 54.6 d_Car^0.5",
+          "parameters": [
+            {
+              "name": "slope",
+              "value": "54.6",
+              "unit": "MPa/nm^1/2"
+            },
+            {
+              "name": "intercept",
+              "value": "786",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "Linear fit of tensile strength against the square root of the average κ-carbide size (Fig. 7a)."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Measured chemical composition of the Al-10 (Fe30Mn10Al1C) steel: C 1.01, Mn 30.22, Al 10.13, Fe Bal. (mass%), with measured density 6.69 g/cm3 (Table 1).",
+    "Inconsistency: the conclusions state the Fe30Mn10Al1C steel gives an excellent combination of yield strength 642 MPa, ductility 72% and impact toughness at -40 °C of 247 J at density 6.69 g/cm3, whereas Table 2 lists Akv-40 = 237 ± 5 J for the Al-10 steel (and the discussion text also lists Fe30Mn10Al1.0C as 237 J).",
+    "Only three of the designed low-density steels possessed high impact toughness, specifically Fe30Mn6Al1.0C (354 J), Fe30Mn8Al1.0C (294 J) and Fe30Mn10Al1.0C (237 J, Table 2).",
+    "No ferrite (BCC) phase is detected in the Al-10 steel (f_Bcc = '-'); a small ferrite volume fraction (3.08–3.1%) is observed only in the 12% Al steel. Ferrite refinement of austenite grain size is not strongly dependent on the ferrite volume fraction.",
+    "Effect of Al on work hardening (Fig. 8c): the work-hardening rate increases with decreasing Al content (maximum ~2100 MPa for the 6% Al steel), so the Al-10 steel has a lower work-hardening capacity than lower-Al steels; for all compositions σ_TS (~1350 MPa) and σ_FS (~2150 MPa) are nearly constant.",
+    "For Al contents of 8–11% only a single austenite phase is present after 1050 °C/2 h solution treatment + water quenching; extensive κ-carbide formation is observed for Al contents of 10% and larger, with average κ-carbide diameters of ~1 nm (10%Al), ~1.5 nm (11%Al) and ~15 nm (12%Al)."
+  ]
+}

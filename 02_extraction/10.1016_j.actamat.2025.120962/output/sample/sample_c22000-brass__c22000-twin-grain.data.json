@@ -1,0 +1,92 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_c22000-brass__c22000-twin-grain",
+      "paper_id": "10.1016_j.actamat.2025.120962",
+      "alloy_id": "alloy_c22000-brass",
+      "process_id": "proc_c22000-twin-grain",
+      "sample_label": "C22000",
+      "aliases": "commercial bronze (C22000)"
+    }
+  ],
+  "processing_steps": [],
+  "structures": [
+    {
+      "structure_id": "structure_c22000_twin_grain",
+      "overall_structure": "Pink-toned optical micrograph showing large equiaxed grains with straight parallel-sided twin lamellae; twin grains (straight or planar boundaries and contrasting regions) are the primary components of interest",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_c22000_twin_grain",
+          "region": null,
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "twin grains",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "straight or planar boundaries and contrasting regions",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_c22000_twin",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_c22000_twin_boundary",
+          "microstructure_id": "micro_c22000_twin_grain",
+          "phase_1_name": "grain",
+          "phase_2_name": "twin grain",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": null,
+      "interface_notes": "Twin boundaries are straight or planar and separate twin grains from surrounding grains with contrasting regions."
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_c22000_om",
+      "microstructure_id": "micro_c22000_twin_grain",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Acquire C22000 brass twin grain micrograph for training-free microstructure extraction by MatSAM",
+      "key_findings": "Pink-toned optical micrograph shows large equiaxed grains with straight parallel-sided twin lamellae; MatSAM overlay colours each grain and the binary mask extracts straight twin bands."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_matsam_c22000_twin",
+      "simulation_method": "MatSAM training-free microstructure segmentation (built on Segment Anything Model, SAM) with automated structure-aware prompt generation",
+      "software_used": "MatSAM (SAM-based); OpenCV connected-domain extraction; morphological feature filtering (area, color distribution, orientation, shape characteristics)",
+      "potential_model_or_database": "SAM pre-trained parameters",
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "C22000 twin grain micrograph has no corresponding annotations; evaluated qualitatively via overlay and binary key-structure masks.",
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "C22000 brass (commercial bronze) twin grain is one of six additional micrographs in the extended experiments; these image samples are not provided with corresponding annotations.",
+    "MatSAM, prompted by structure-aware points, segments nearly all the mentioned phases in the C22000 twin grain image; the binary mask result of the twin-grain ROIs is precisely separated in the Key structure column of Fig. 10.",
+    "A brass micrograph in Fig. 11(b) (not explicitly labelled C22000) illustrates post-processing for twin-grain filtering: parameters such as circularity, contour geometry, area, and grayscale range are calculated for each mask, and tailored filtering conditions distinguish elongated twin grains."
+  ]
+}

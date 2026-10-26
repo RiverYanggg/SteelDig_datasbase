@@ -1,0 +1,963 @@
+{
+  "schema_version": "sample-discover-v1",
+  "paper_id": "10.1002_srin.202200191",
+  "domain": "materials",
+  "paper": {
+    "paper_id": "10.1002_srin.202200191",
+    "doi": "10.1002/srin.202200191",
+    "title": "Fe–Mn–C–Al Low-Density Steel for Structural Materials: A Review of Alloying, Heat Treatment, Microstructure, and Mechanical Properties",
+    "authors": [
+      "Shufen Hu",
+      "Zhibin Zheng",
+      "Weiping Yang",
+      "Haokun Yang"
+    ],
+    "publication_year": "2022",
+    "journal": null,
+    "keywords": [
+      "alloying design",
+      "low-density steel",
+      "mechanical properties",
+      "phase diagrams",
+      "work hardening"
+    ],
+    "research_type": "review",
+    "paper_scope": "本文综述Fe–Mn–C–Al低密度钢的合金化设计、热处理（退火与时效）对显微组织（全奥氏体/奥氏体基双相、短程有序、κ-碳化物析出）和力学性能（加工硬化、屈服强度、摩擦磨损、低温性能、氢脆）的影响。"
+  },
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe-mn-c-al",
+      "alloy_name": "Fe–Mn–C–Al low-density steel",
+      "aliases": [
+        "Fe–Mn–C–Al steel",
+        "Fe–Mn–C–(Al) low-density steel",
+        "Al-containing low-density steel",
+        "low-density steel"
+      ],
+      "description": "以Fe为基、含Mn、C、Al的低密度钢，具有轻量化和优异力学性能，用作车辆、飞机和采矿工业的结构材料与部件；本文综述的核心对象。",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "C",
+        "Al"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "12–30",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.6–2.0",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "≤12 (2–12)",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "典型密度6.2–7.0 g/cm³（Al 2–12 wt%）；低Al(<7 wt%)钢常见Fe(Mn)C碳化物，高Al(≥7 wt%)钢形成κ相；相图研究采用Fe–(10,20,30)Mn–xC–yAl等温截面。",
+      "source": {
+        "reason": "全文综述对象为Fe–Mn–C–Al低密度钢；b0003定义该材料体系，b0009–b0010说明其提出背景与低密度特征。",
+        "block_id": [
+          "b0003",
+          "b0009",
+          "b0010"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_fe-mn-c-al-fully-austenite",
+      "alloy_name": "fully austenite Fe–Mn–C–Al low-density steel",
+      "aliases": [
+        "fully austenite low-density steel",
+        "fully austenite",
+        "single phase austenite structure steel"
+      ],
+      "description": "室温下具有完全奥氏体组织的Fe–Mn–C–Al低密度钢，需较高Mn、Al、C含量以稳定奥氏体。",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "C",
+        "Al"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "12–30",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.6–1.2",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "5–12",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null,
+      "source": {
+        "reason": "b0033明确给出全奥氏体低密度钢的化学成分范围（Mn 12–30、Al 5–12、C 0.6–1.2 wt%），b0034给出其退火态显微组织。",
+        "block_id": [
+          "b0033",
+          "b0034"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_fe-mn-c-al-duplex",
+      "alloy_name": "austenite-based duplex Fe–Mn–C–Al low-density steel",
+      "aliases": [
+        "austenite-based duplex low-density steel",
+        "duplex low-density steel",
+        "austenite-based duplex steel",
+        "mixture of ferrite and austenite"
+      ],
+      "description": "奥氏体+铁素体双相组织的Fe–Mn–C–Al低密度钢，因奥氏体在低温下稳定性较低而呈双相；TRIP效应一般出现在此类钢中。",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "C",
+        "Al"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "5–30",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.4–0.7",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "5–10",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "TRIP效应多出现在C<0.5 wt%、Al 3–6 wt%的奥氏体基双相钢中。",
+      "source": {
+        "reason": "b0033明确给出奥氏体基双相低密度钢的化学成分范围（Al 5–10、Mn 5–30、C 0.4–0.7 wt%），b0034给出其退火态显微组织。",
+        "block_id": [
+          "b0033",
+          "b0034"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_fe-12.4mn-2.4al-0.1c",
+      "alloy_name": "Fe–12.4Mn–2.4Al–0.1C (wt%) low-density steel",
+      "aliases": [
+        "Fe–12.4Mn–2.4Al–0.1C steel"
+      ],
+      "description": "Zhang等系统研究热轧与回火处理对显微组织影响的低密度钢。",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "12.4",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "2.4",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.1",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null,
+      "source": {
+        "reason": "b0037明确给出Fe–12.4Mn–2.4Al–0.1C (wt%)成分，并研究其热轧和回火处理对显微组织的影响。",
+        "block_id": [
+          "b0037"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_fe-28mn-8.5al-1c-1.2si",
+      "alloy_name": "Fe–28Mn–8.5Al–1C–1.2Si (wt%) low-density steel",
+      "aliases": [
+        "Fe–28Mn–8.5Al–1C–1.2Si steel",
+        "Fe–28Mn–8.5Al–1C–1.2S steel"
+      ],
+      "description": "用于研究γ相分解与κ相析出的低密度钢，含1.2 wt% Si。",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Si"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "28",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "8.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "1.2",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "b0048图3标题中写作Fe–28Mn–8.5Al–1C–1.2S，为原文笔误。",
+      "source": {
+        "reason": "b0045明确给出Fe–28Mn–8.5Al–1C–1.2Si成分，并研究其奥氏体分解与κ相析出。",
+        "block_id": [
+          "b0045",
+          "b0048"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_fe-22mn-0.6c-xal",
+      "alloy_name": "Fe–22Mn–0.6C–xAl (wt%) low-density steel",
+      "aliases": [
+        "Fe–22Mn–0.6C–6Al (wt%) steel",
+        "Fe–22Mn–(0, 3, 6) Al (wt%) low-density steel"
+      ],
+      "description": "Al含量在0–6 wt%间变化的Fe–22Mn–0.6C系列低密度钢，用于研究Al含量对TWIP效应与位错滑移模式的影响。",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "C",
+        "Al"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "22",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.6",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "0–6",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null,
+      "source": {
+        "reason": "b0054给出Fe–22Mn–0.6C–6Al成分，b0068给出Fe–22Mn–(0,3,6)Al系列，二者同属该系列。",
+        "block_id": [
+          "b0054",
+          "b0068"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_fe-22.33mn-1.35c-9.87al",
+      "alloy_name": "Fe–22.33Mn–1.35C–9.87Al (wt%) steel",
+      "aliases": [
+        "Fe–22.33Mn–1.35C–9.87Al steel"
+      ],
+      "description": "Sohrabizadeh等建立时效时间与磨损率函数的低密度钢。",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "C",
+        "Al"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "22.33",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1.35",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "9.87",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null,
+      "source": {
+        "reason": "b0080明确给出Fe–22.33Mn–1.35C–9.87Al (wt%)成分，并研究其时效时间与磨损率关系。",
+        "block_id": [
+          "b0080"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_fe-28mn-1c-8.5al",
+      "alloy_name": "Fe–28Mn–1C–8.5Al (wt%) low-density steel",
+      "aliases": [
+        "Fe–28Mn–1C–8.5Al steel"
+      ],
+      "description": "Peng等研究过时效处理对磨损率影响的低密度钢。",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "C",
+        "Al"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "28",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "8.5",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null,
+      "source": {
+        "reason": "b0080、b0081明确给出Fe–28Mn–1C–8.5Al (wt%)成分，并研究其1050°C淬火+550°C时效处理后的磨损行为。",
+        "block_id": [
+          "b0080",
+          "b0081"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_fe-22mn-0.4c-1.5al-1.5si",
+      "alloy_name": "Fe–22Mn–0.4C–1.5Al–1.5Si (wt%) steel",
+      "aliases": [
+        "Fe–22Mn–0.4C–1.5Al–1.5Si steel"
+      ],
+      "description": "Garcia-Aguirre等以钢粉与HDPE、石蜡混合、经金属注射成形(MIM)工艺制备的钢成分。",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "C",
+        "Al",
+        "Si"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "22",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.4",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "1.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "1.5",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null,
+      "source": {
+        "reason": "b0082、b0093明确给出Fe–22Mn–0.4C–1.5Al–1.5Si (wt%)成分，并用于MIM制备研究。",
+        "block_id": [
+          "b0082",
+          "b0093"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_fe-xmn-0.45c-2al",
+      "alloy_name": "Fe–xMn–0.45C–2Al (wt%) low-density steel",
+      "aliases": [
+        "Fe–xMn–0.45C–2Al steel",
+        "17/19/22 wt% Mn low-density steel"
+      ],
+      "description": "Mn含量17、19、22 wt%的系列低密度钢，用于研究Mn含量对室温与低温拉伸及冲击性能的影响。",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "C",
+        "Al"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "17–22 (17/19/22)",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.45",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "2",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null,
+      "source": {
+        "reason": "b0086、b0087明确给出Fe–xMn–0.45C–2Al (wt%)成分并研究Mn含量17、19、22 wt%的影响。",
+        "block_id": [
+          "b0086",
+          "b0087"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_fe-18mn-0.6c-xal",
+      "alloy_name": "Fe–18Mn–0.6C–xAl (wt%) low-density steel",
+      "aliases": [
+        "Fe–18Mn–0.6C–xAl steel",
+        "3/5/8 wt% Al-containing low-density steel"
+      ],
+      "description": "Al含量3、5、8 wt%的系列低密度钢，用于研究Al含量对低温冲击能的影响。",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "C",
+        "Al"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "18",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.6",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "3–8 (3/5/8)",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null,
+      "source": {
+        "reason": "b0086、b0087明确给出Fe–18Mn–0.6C–xAl (wt%)成分并研究Al含量3、5、8 wt%的影响。",
+        "block_id": [
+          "b0086",
+          "b0087"
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_annealing",
+      "alloy_id": "alloy_fe-mn-c-al",
+      "process_name": "annealing",
+      "state_label": "annealed",
+      "aliases": [
+        "annealing treatment"
+      ],
+      "parent_process_ids": [],
+      "description": "退火处理，用于控制Fe–Mn–C–Al低密度钢的显微组织（可得到全奥氏体或奥氏体基双相组织）。",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0014指出退火与时效决定显微组织演变，b0034给出退火态全奥氏体与双相钢的显微组织。",
+        "block_id": [
+          "b0014",
+          "b0034"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_aging-400-650c",
+      "alloy_id": "alloy_fe-mn-c-al",
+      "process_name": "aging at 400–650 °C",
+      "state_label": "aging treated",
+      "aliases": [
+        "aging treatment",
+        "aging treated",
+        "aging"
+      ],
+      "parent_process_ids": [],
+      "description": "400–650 °C、0.5–100 h时效处理，导致奥氏体内C、Al调制并逐步分解，形成κ相。",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0039明确给出时效处理温度400–650 °C、时间0.5–100 h，并给出奥氏体分解序列。",
+        "block_id": [
+          "b0039",
+          "b0041"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_hot-rolling-650-800c",
+      "alloy_id": "alloy_fe-12.4mn-2.4al-0.1c",
+      "process_name": "hot rolling at 650–800 °C",
+      "state_label": "hot rolled",
+      "aliases": [
+        "hot rolling",
+        "hot rolling temperature from 650 °C to 800 °C"
+      ],
+      "parent_process_ids": [],
+      "description": "热轧温度650–800 °C，残余奥氏体体积分数随热轧温度升高从79.1%降至33.4%。",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0037研究热轧温度650–800 °C对Fe–12.4Mn–2.4Al–0.1C钢显微组织的影响。",
+        "block_id": [
+          "b0037"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_tempering-200c",
+      "alloy_id": "alloy_fe-12.4mn-2.4al-0.1c",
+      "process_name": "tempering at 200 °C",
+      "state_label": "tempered",
+      "aliases": [
+        "tempering treatment",
+        "tempering at 200 °C"
+      ],
+      "parent_process_ids": [
+        "proc_hot-rolling-650-800c"
+      ],
+      "description": "200 °C回火处理，与热轧联合研究显微组织演变。",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0037研究热轧及200 °C回火处理对Fe–12.4Mn–2.4Al–0.1C钢显微组织的影响。",
+        "block_id": [
+          "b0037"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_slow-cooling-air-furnace",
+      "alloy_id": "alloy_fe-28mn-8.5al-1c-1.2si",
+      "process_name": "slow cooling (air/furnace cooling)",
+      "state_label": "slow cooling",
+      "aliases": [
+        "air cooling",
+        "furnace cooling",
+        "air/furnace cooling for slow cooling"
+      ],
+      "parent_process_ids": [],
+      "description": "空冷/炉冷的慢冷处理，冷却速率低于约4.4 °C/h时促使奥氏体分解并析出κ相。",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0045说明通过控制冷却速率（空气辅助喷射快冷或空冷/炉冷慢冷）可预测奥氏体分解和κ析出。",
+        "block_id": [
+          "b0045"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_fast-cooling-air-spray",
+      "alloy_id": "alloy_fe-28mn-8.5al-1c-1.2si",
+      "process_name": "fast cooling (air assisted spraying cooling)",
+      "state_label": "fast cooling",
+      "aliases": [
+        "air assisted spraying cooling",
+        "air assisted spraying cooling for fast cooling"
+      ],
+      "parent_process_ids": [],
+      "description": "空气辅助喷射冷却的快速冷却，用于控制奥氏体分解与κ析出。",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0045说明通过控制冷却速率（空气辅助喷射快冷或空冷/炉冷慢冷）可预测奥氏体分解和κ析出。",
+        "block_id": [
+          "b0045"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_overaging-625c-192h",
+      "alloy_id": "alloy_fe-mn-c-al",
+      "process_name": "overaging at 625 °C for 192 h",
+      "state_label": "overaged",
+      "aliases": [
+        "overaging treatment (625 °C) for 192 h",
+        "long time aging"
+      ],
+      "parent_process_ids": [],
+      "description": "625 °C、192 h过时效处理，析出κ-碳化物并被平面位错带剪切，降低加工硬化能力。",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0071明确指出625 °C过时效192 h后κ-碳化物颗粒被平面位错带剪切。",
+        "block_id": [
+          "b0071"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_aging-600c-3h",
+      "alloy_id": "alloy_fe-22.33mn-1.35c-9.87al",
+      "process_name": "aging at 600 °C for 3 h",
+      "state_label": "600 °C aged",
+      "aliases": [
+        "600 °C aged steel",
+        "aged at 600 °C for 3 h"
+      ],
+      "parent_process_ids": [],
+      "description": "600 °C时效3 h，奥氏体基体中形成非共格κ颗粒，抑制磨损裂纹形核，耐磨性好。",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0080、b0081给出Fe–22.33Mn–1.35C–9.87Al钢600 °C时效3 h及磨损表面观察。",
+        "block_id": [
+          "b0080",
+          "b0081"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_quench-1050c-age-550c-4h",
+      "alloy_id": "alloy_fe-28mn-1c-8.5al",
+      "process_name": "1050 °C quenching + 550 °C aging for 4 h",
+      "state_label": "1050 °C quenched + 550 °C aged",
+      "aliases": [
+        "550 °C annealed for 4 h",
+        "550 °C for 4 h aged steel"
+      ],
+      "parent_process_ids": [],
+      "description": "1050 °C淬火随后550 °C时效/退火4 h，晶界附近κ颗粒粗化导致耐磨性下降。",
+      "processes_notes": "b0080称'550 °C annealed for 4 h sample'，b0081称'1050 °C quenching and subsequent 550 °C for 4 h aged steel'，指同一终态。",
+      "source": {
+        "reason": "b0080、b0081给出Fe–28Mn–1C–8.5Al钢1050 °C淬火+550 °C/4 h时效处理。",
+        "block_id": [
+          "b0080",
+          "b0081"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_cold-rolling-45pct",
+      "alloy_id": "alloy_fe-mn-c-al-duplex",
+      "process_name": "cold rolling with 45% reduction",
+      "state_label": "45% cold rolled",
+      "aliases": [
+        "severe cold rolling process of 45% reduction"
+      ],
+      "parent_process_ids": [],
+      "description": "45%压下量的剧烈冷轧，促进奥氏体分解和α′马氏体形成，提高加工硬化率。",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0059在TRIP（奥氏体基双相）钢讨论中指出45%压下量的剧烈冷轧促进奥氏体分解。",
+        "block_id": [
+          "b0059"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_mim-sintering-1200-1360c",
+      "alloy_id": "alloy_fe-22mn-0.4c-1.5al-1.5si",
+      "process_name": "metal injection molding (MIM) + sintering at 1200–1360 °C",
+      "state_label": "MIM sintered",
+      "aliases": [
+        "MIM fabrication process",
+        "sintering at 1200–1360 °C",
+        "sintered at 1360 °C for 1 h/3 h"
+      ],
+      "parent_process_ids": [],
+      "description": "金属注射成形(MIM)工艺：钢粉与HDPE、石蜡混合后浸溶剂，1200–1360 °C烧结获得全奥氏体组织；图9为1360 °C烧结1 h和3 h。",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0082给出MIM工艺及1200–1360 °C烧结，b0093给出1360 °C烧结1 h和3 h。",
+        "block_id": [
+          "b0082",
+          "b0093"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe-mn-c-al__annealing",
+      "alloy_id": "alloy_fe-mn-c-al",
+      "process_id": "proc_annealing",
+      "sample_label": null,
+      "aliases": [
+        "annealed Fe–Mn–C–Al low-density steel"
+      ],
+      "source": {
+        "reason": "退火是全文综述的核心热处理之一，作用于Fe–Mn–C–Al低密度钢（b0014、b0034）。",
+        "block_id": [
+          "b0014",
+          "b0034"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-mn-c-al-fully-austenite__annealing",
+      "alloy_id": "alloy_fe-mn-c-al-fully-austenite",
+      "process_id": "proc_annealing",
+      "sample_label": "annealed fully austenite low-density steel",
+      "aliases": [
+        "fully austenite low-density steel"
+      ],
+      "source": {
+        "reason": "b0034给出退火态全奥氏体低密度钢的显微组织（图1a,c）。",
+        "block_id": [
+          "b0034"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-mn-c-al-duplex__annealing",
+      "alloy_id": "alloy_fe-mn-c-al-duplex",
+      "process_id": "proc_annealing",
+      "sample_label": "annealed austenite-based duplex low-density steel",
+      "aliases": [
+        "austenite-based duplex steel"
+      ],
+      "source": {
+        "reason": "b0034给出退火态奥氏体基双相低密度钢的显微组织（图1b,d）。",
+        "block_id": [
+          "b0034"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-mn-c-al__aging-400-650c",
+      "alloy_id": "alloy_fe-mn-c-al",
+      "process_id": "proc_aging-400-650c",
+      "sample_label": null,
+      "aliases": [
+        "aging treated Fe–Mn–C–Al steel"
+      ],
+      "source": {
+        "reason": "b0039给出全奥氏体和奥氏体基双相Fe–Mn–C–Al钢在400–650 °C时效的析出行为。",
+        "block_id": [
+          "b0039"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-12.4mn-2.4al-0.1c__hot-rolling-650-800c",
+      "alloy_id": "alloy_fe-12.4mn-2.4al-0.1c",
+      "process_id": "proc_hot-rolling-650-800c",
+      "sample_label": null,
+      "aliases": [
+        "hot rolled Fe–12.4Mn–2.4Al–0.1C steel"
+      ],
+      "source": {
+        "reason": "b0037研究Fe–12.4Mn–2.4Al–0.1C钢在650–800 °C热轧后的显微组织。",
+        "block_id": [
+          "b0037"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-12.4mn-2.4al-0.1c__tempering-200c",
+      "alloy_id": "alloy_fe-12.4mn-2.4al-0.1c",
+      "process_id": "proc_tempering-200c",
+      "sample_label": null,
+      "aliases": [
+        "tempered Fe–12.4Mn–2.4Al–0.1C steel"
+      ],
+      "source": {
+        "reason": "b0037研究Fe–12.4Mn–2.4Al–0.1C钢热轧后的200 °C回火处理。",
+        "block_id": [
+          "b0037"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-28mn-8.5al-1c-1.2si__slow-cooling-air-furnace",
+      "alloy_id": "alloy_fe-28mn-8.5al-1c-1.2si",
+      "process_id": "proc_slow-cooling-air-furnace",
+      "sample_label": null,
+      "aliases": [
+        "slow cooled Fe–28Mn–8.5Al–1C–1.2Si steel"
+      ],
+      "source": {
+        "reason": "b0045说明Fe–28Mn–8.5Al–1C–1.2Si钢在慢冷（空冷/炉冷）下奥氏体分解析出κ相。",
+        "block_id": [
+          "b0045"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-28mn-8.5al-1c-1.2si__fast-cooling-air-spray",
+      "alloy_id": "alloy_fe-28mn-8.5al-1c-1.2si",
+      "process_id": "proc_fast-cooling-air-spray",
+      "sample_label": null,
+      "aliases": [
+        "fast cooled Fe–28Mn–8.5Al–1C–1.2Si steel"
+      ],
+      "source": {
+        "reason": "b0045说明Fe–28Mn–8.5Al–1C–1.2Si钢通过空气辅助喷射快冷控制κ析出。",
+        "block_id": [
+          "b0045"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-mn-c-al__overaging-625c-192h",
+      "alloy_id": "alloy_fe-mn-c-al",
+      "process_id": "proc_overaging-625c-192h",
+      "sample_label": "overaged",
+      "aliases": [
+        "long time aged sample"
+      ],
+      "source": {
+        "reason": "b0071指出625 °C、192 h过时效处理样品中κ-碳化物被剪切，加工硬化能力下降。",
+        "block_id": [
+          "b0071"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-22.33mn-1.35c-9.87al__aging-600c-3h",
+      "alloy_id": "alloy_fe-22.33mn-1.35c-9.87al",
+      "process_id": "proc_aging-600c-3h",
+      "sample_label": "600 °C aged steel",
+      "aliases": [
+        "600 °C for 3 h aged steel"
+      ],
+      "source": {
+        "reason": "b0080、b0081给出Fe–22.33Mn–1.35C–9.87Al钢600 °C时效3 h样品及磨损表面。",
+        "block_id": [
+          "b0080",
+          "b0081"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-28mn-1c-8.5al__quench-1050c-age-550c-4h",
+      "alloy_id": "alloy_fe-28mn-1c-8.5al",
+      "process_id": "proc_quench-1050c-age-550c-4h",
+      "sample_label": "1050 °C quenched + 550 °C aged steel",
+      "aliases": [
+        "550 °C annealed for 4 h sample"
+      ],
+      "source": {
+        "reason": "b0080、b0081给出Fe–28Mn–1C–8.5Al钢1050 °C淬火+550 °C/4 h时效样品及磨损行为。",
+        "block_id": [
+          "b0080",
+          "b0081"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-mn-c-al-duplex__cold-rolling-45pct",
+      "alloy_id": "alloy_fe-mn-c-al-duplex",
+      "process_id": "proc_cold-rolling-45pct",
+      "sample_label": null,
+      "aliases": [
+        "45% cold rolled TRIP low-density steel"
+      ],
+      "source": {
+        "reason": "b0059在TRIP（奥氏体基双相）低密度钢讨论中提及45%压下量冷轧。",
+        "block_id": [
+          "b0059"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-22mn-0.4c-1.5al-1.5si__mim-sintering-1200-1360c",
+      "alloy_id": "alloy_fe-22mn-0.4c-1.5al-1.5si",
+      "process_id": "proc_mim-sintering-1200-1360c",
+      "sample_label": null,
+      "aliases": [
+        "MIM processed Fe–22Mn–0.4C–1.5Al–1.5Si steel"
+      ],
+      "source": {
+        "reason": "b0082、b0093给出Fe–22Mn–0.4C–1.5Al–1.5Si钢经MIM烧结（1360 °C/1 h、3 h）的显微组织。",
+        "block_id": [
+          "b0082",
+          "b0093"
+        ]
+      }
+    }
+  ],
+  "unmapped_findings": [
+    "密度经验公式：ρ(Fe-Mn-C-Al) = 8.15 − 0.101(wt%Al) − 0.41(wt%C) − 0.0085(wt%Mn) g/cm³（b0018）。",
+    "奥氏体分解序列：γ → γ′ + γ″ → γ′ + L1₂(SRO) → γ + κ（b0040）。",
+    "低Al(<7 wt%)钢中分解停留在L1₂(SRO)并常见Fe(Mn)C碳化物，高Al(≥7 wt%)钢中继续反应形成κ相（b0045）。",
+    "主要加工硬化机制包括TWIP、TRIP、SRO和κ-碳化物析出强化（b0047）。",
+    "规模化生产挑战：高Mn钢锭散热差（MnO界面反应）、Al氧化物污染导致喷嘴堵塞和表面缺陷（b0095、b0097–b0099）。"
+  ]
+}

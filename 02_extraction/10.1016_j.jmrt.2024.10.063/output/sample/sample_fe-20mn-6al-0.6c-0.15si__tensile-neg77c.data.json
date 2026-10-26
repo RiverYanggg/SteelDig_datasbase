@@ -1,0 +1,333 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-6al-0.6c-0.15si__tensile-neg77c",
+      "paper_id": "10.1016_j.jmrt.2024.10.063",
+      "alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+      "process_id": "proc_tensile-neg77c",
+      "sample_label": "tensile deformed at -77°C",
+      "aliases": [
+        "-77°C tensile sample"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting_casting",
+      "sequence": "1",
+      "type": "melting/casting",
+      "method": "vacuum induction melting and casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum (vacuum induction furnace)",
+      "cooling_medium": "air cooled to RT",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The experimental steel was melted and cast in a 50 kg vacuum induction furnace and then air cooled to RT."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization (reheating)",
+      "temperature": "1250",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The ingot was reheated to 1250 °C and held for 2 h for homogenization."
+    },
+    {
+      "processing_step_id": "step_forging",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "forging",
+      "temperature": "1100 (starting) to 950 (finishing)",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "furnace cooling to RT",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingot forged into round bars with a diameter of 60 mm followed by cooling to RT in the furnace; starting and finishing forging temperatures were 1100 and 950 °C."
+    },
+    {
+      "processing_step_id": "step_tensile_neg77c",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "uniaxial tensile test (tensile deformation to fracture)",
+      "temperature": "-77",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "dry ice-alcohol mixture",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Tensile deformed to fracture at -77 °C on a YYF-50 tensile tester; dry ice-alcohol mixture used as cooling medium; strain rate 0.001 s^-1 (slow enough to avoid frictional heat); extensometer used; three tensile samples with parallel length 32 mm, width 5 mm and thickness 1.5 mm tested per condition and averaged."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_neg77_tensile",
+      "overall_structure": "Tensile-deformed (uniform deformation section) austenite deformed by planar glide; uniform and dense microbands along {111} planes, no mechanical twins (unlike the -196 °C sample). Crystal orientation of deformed austenite grains concentrates in {111} and {001}.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_neg77_tensile",
+          "region": "uniform deformation section, ~10 mm from the fracture (region not affected by necking)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": "equiaxed deformed grains",
+              "grain_size": null,
+              "texture": "{111} and {001}"
+            }
+          ],
+          "defects": [
+            {
+              "type": "microbands / slip bands (planar glide)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "geometrically necessary dislocations (GNDs) accumulating at LAGBs",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": "GND/kernel average misorientation maps 0-3°; high misorientation concentrated along intra-granular bands and slip/microband traces"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": "crystal orientation concentrated in {111} and {001}; LAGBs (2–15°) 63.0%, HAGBs (>15°) 37.0%"
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_neg77_tensile",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "interaction_id": "int_gnd_lagb",
+          "microstructure_id": "micro_neg77_tensile",
+          "interaction_type": "GND accumulation at LAGBs",
+          "qualitative_or_quantitative_description": "GNDs accumulate at LAGBs, indicating a more severe local deformation of these regions in the -77 °C tensile sample."
+        }
+      ],
+      "slip_behavior": "Planar glide of dislocations; deformation proceeds by planar glide producing uniform and dense microbands oriented along {111} planes; no mechanical twinning (unlike -196 °C).",
+      "phase_evolution": "No deformation-induced martensitic transformation and no mechanical twinning; deformation accommodated solely by planar glide/microband formation.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_neg77_tensile",
+      "measurement_conditions": {
+        "temperature": "-77",
+        "temperature_unit": "°C",
+        "environment": "dry ice-alcohol mixture (cooling medium)",
+        "strain_rate": "0.001 s^-1 (10^-3 s^-1)",
+        "specimen_geometry": "parallel length 32 mm, width 5 mm, thickness 1.5 mm",
+        "test_standard": null,
+        "other_conditions": "YYF-50 tensile tester, deformation to fracture, carried out in the cooling medium; extensometer used; 3 samples per condition averaged"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "tensile direction",
+              "value": "~990",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "tensile direction",
+              "value": "~59",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve (Fig. 2a) and true stress-strain plus work hardening rate curves (Fig. 2b) at -77 °C; near-linear work hardening rate with strain (contrasting with RT where it continuously decreases).",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "7.114",
+          "unit": "g/cm^3"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_neg77_comparison",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": "°C"
+        },
+        "stress_state": "uniaxial tensile",
+        "environment": "cryogenic (dry ice-alcohol mixture, -77 °C)"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-20mn-6al-0.6c-0.15si",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Both tensile strength and elongation increase as the deformation temperature decreases (negative temperature dependence of strength); lower SFE at lower temperature promotes dislocation planar glide, raising the work hardening rate, LAGB fraction and uniform deformation.",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_ebsd_neg77",
+      "microstructure_id": "micro_neg77_tensile",
+      "technique": "Electron backscatter diffraction (EBSD) - IPF, grain boundary (GB) and GND (kernel average misorientation) maps",
+      "instrument_or_setup": "Apreo S HiVac scanning electron microscope (SEM)",
+      "measurement_conditions": "step size 0.5 μm; performed on the polished uniformly deformed section ~10 mm from the fracture",
+      "purpose": "Analyze the tensile deformed microstructure (crystal orientation, LAGB/HAGB fractions, GND distribution)",
+      "key_findings": "-77 °C tensile sample: no mechanical twins; LAGB (2–15°) 63.0% and HAGB (>15°) 37.0%; crystal orientation concentrated in {111} and {001}; GNDs accumulate at LAGBs."
+    },
+    {
+      "characterization_id": "char_tem_neg77",
+      "microstructure_id": "micro_neg77_tensile",
+      "technique": "Transmission electron microscopy (TEM, bright-field) with selected area electron diffraction (SAED)",
+      "instrument_or_setup": "Tecnai F30 field emission TEM; specimens double-jet thinned with a Struers TenuPol-5 Twin-Jet Electropolisher (6% perchloric acid + 94% glacial acetic acid)",
+      "measurement_conditions": null,
+      "purpose": "Observe deformation features (microbands, dislocations) of the tensile-deformed samples",
+      "key_findings": "For the -77 °C sample: microbands with traces of {111} slip planes and a dislocation-dense matrix; no mechanical twins (mechanical twins observed only at -196 °C)."
+    },
+    {
+      "characterization_id": "char_tensile_neg77",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "YYF-50 tensile tester with extensometer",
+      "measurement_conditions": "Test temperature -77 °C (dry ice-alcohol), strain rate 0.001 s^-1, 3 samples per condition",
+      "purpose": "Measure tensile stress-strain response and mechanical properties (YS, UTS, elongation) and fracture behavior",
+      "key_findings": "At -77 °C both strength and elongation are higher than at RT; work hardening rate increases as deformation temperature decreases (negative temperature dependence of strength)."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_sfe_neg77",
+      "simulation_method": "Analytical thermodynamic estimation of stacking fault energy (SFE)",
+      "software_used": null,
+      "potential_model_or_database": "Thermodynamic parameter expressions from Ref. [6] (Table 1); SFE equation after Ref. [31]",
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Stacking fault energy equation",
+          "equation_role": "SFE = 2ρ_A ΔG^{γ→ε} + 2σ^{γ/ε} (equation 2); ρ_A from equation (3), ΔG^{γ→ε} from equation (4)",
+          "parameters": [
+            {
+              "name": "σ^{γ/ε} (interface surface energy)",
+              "value": "15",
+              "unit": "mJ/m^2"
+            },
+            {
+              "name": "a_γ (austenite lattice parameter, from XRD)",
+              "value": "0.36757",
+              "unit": "nm"
+            },
+            {
+              "name": "SFE at -77 °C",
+              "value": "40",
+              "unit": "mJ/m^2"
+            }
+          ],
+          "model_note": "SFE of the experimental Fe-20Mn-6Al-0.6C-0.15Si steel estimated to be 32, 40 and 61 mJ/m^2 at -196 °C, -77 °C and RT respectively; the -77 °C value is 40 mJ/m^2. This SFE is high enough to suppress DIMT but allows planar glide."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_hollomon_neg77",
+      "simulation_method": "Work-hardening analysis using the Hollomon equation (two-stage fit)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Hollomon formula",
+          "equation_role": "σ = K ε^n ; lnσ = lnK + n lnε (equations 5-6); slope n of lnσ-lnε gives work hardening exponent",
+          "parameters": [
+            {
+              "name": "n1 (low-strain region, -77 °C)",
+              "value": "0.181",
+              "unit": null
+            },
+            {
+              "name": "n2 (high-strain region, -77 °C)",
+              "value": "0.439",
+              "unit": null
+            }
+          ],
+          "model_note": "Two-stage work hardening behavior; n1 is the slope in the low-strain (early uniform plastic deformation) region and n2 the slope in the high-strain region. Both stage slopes increase as the tensile temperature decreases."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The -77 °C tensile-deformed sample shows no mechanical twins; deformation proceeds by planar glide producing uniform and dense microbands, and SAED indicates these bands are oriented along {111} planes.",
+    "Grain boundary fractions of the -77 °C tensile-deformed sample: LAGB (2–15°) = 63.0%, HAGB (>15°) = 37.0% (Fig. 3e); the LAGB fraction increases as the deformation temperature decreases (70.2% at -196 °C, 63.0% at -77 °C, 56.0% at RT).",
+    "The stacking fault energy (SFE) of the experimental steel at -77 °C is estimated to be 40 mJ/m^2 (32 mJ/m^2 at -196 °C and 61 mJ/m^2 at RT).",
+    "Crystal orientation of the deformed austenite grains concentrates in {111} and {001} as a result of coordinated plastic deformation.",
+    "The work hardening rate of the -77 °C sample shows a near-linear variation with strain, whereas at RT a continuous decrease is observed; the work hardening rate increases as deformation temperature decreases.",
+    "Estimated density by the Kim et al. equation is 7.078 g/cm^3, while the measured density is 7.114 g/cm^3 (alloy-level property of the same experimental steel)."
+  ]
+}

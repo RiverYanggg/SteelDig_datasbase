@@ -1,0 +1,443 @@
+{
+  "schema_version": "sample-discover-v1",
+  "paper_id": "10.1038_s41598-018-27345-w",
+  "domain": "materials",
+  "paper": {
+    "paper_id": "10.1038_s41598-018-27345-w",
+    "doi": "10.1038/s41598-018-27345-w",
+    "title": "Nano-mechanical properties of Fe-Mn-Al-C lightweight steels",
+    "authors": [
+      "Alireza Rahnama",
+      "Hiren Kotadia",
+      "Samuel Clark",
+      "Vit Janik",
+      "Seetharaman Sridhar"
+    ],
+    "publication_year": "2018",
+    "journal": "Scientific Reports",
+    "keywords": [],
+    "research_type": "mixed (experimental nano-indentation + computational ab-initio DFT)",
+    "paper_scope": "Two duplex low-density steels, Fe-15Mn-10Al-0.8C-5Ni and Fe-15Mn-10Al-0.8C (wt.%), were investigated by nano-indentation and DFT calculations to establish the hardness of κ-carbide and B2 intermetallic phases as a function of annealing temperature (500–1050 °C) and Ni addition."
+  },
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe-15mn-10al-0.8c-5ni",
+      "alloy_name": "Fe-15Mn-10Al-0.8C-5Ni (wt.%)",
+      "aliases": [
+        "Fe-15Mn-10Al-0.8C-5Ni",
+        "Ni-containing sample",
+        "Ni-containing steel",
+        "Ni-containing alloy",
+        "5 wt.% Ni sample",
+        "5% Ni sample",
+        "Fe-15Mn-10Al-0.5C-5Ni"
+      ],
+      "description": "Duplex low-density Fe-Mn-Al-C steel containing 5 wt.% Ni, one of the two grades selected to compare the nanomechanical properties of ordered NiAl-type B2 compounds and the κ-phase (L1'2). Melted in an induction furnace and processed as experimental alloys.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Ni"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "15",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "10",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.8",
+          "atomic_percent": null
+        },
+        {
+          "element": "Ni",
+          "weight_percent": "5",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Given as Fe-15Mn-10Al-0.8C-5Ni throughout the abstract, introduction, methods, and results. Tables 1 and 2 label the same alloy as Fe-15Mn-10Al-0.5C-5Ni (0.5C), which appears to be a typographical inconsistency in the carbon content (0.5 vs 0.8).",
+      "source": {
+        "reason": "The abstract (b0008) and Materials section (b0017) explicitly report the two studied alloys as Fe-15Mn-10Al-0.8C-5Ni and Fe-15Mn-10Al-0.8C (wt.%), with the Ni-containing grade distinguished by 5 wt.% Ni. Table 2 (b0032) reports the corresponding hardness values per alloy/temperature, using the 0.5C label.",
+        "block_id": [
+          "b0008",
+          "b0017",
+          "b0032"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_fe-15mn-10al-0.8c",
+      "alloy_name": "Fe-15Mn-10Al-0.8C (wt.%)",
+      "aliases": [
+        "Fe-15Mn-10Al-0.8C",
+        "Fe-15Mn-10Al-0.8 C",
+        "Ni-free sample",
+        "Ni-free steel",
+        "Ni-free alloy",
+        "Fe-15Mn-10Al-0.5C"
+      ],
+      "description": "Duplex low-density Ni-free Fe-Mn-Al-C steel, the second grade studied and used as the Ni-free counterpart to compare the behaviour of FeAl-type B2 and needle-like κ-carbides.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "15",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "10",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.8",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Given as Fe-15Mn-10Al-0.8C throughout the abstract, introduction, methods, and conclusions. Tables 1 and 2 label the same alloy as Fe-15Mn-10Al-0.5C (0.5C), which appears to be a typographical inconsistency (0.5 vs 0.8 C).",
+      "source": {
+        "reason": "b0008 and b0017 explicitly report Fe-15Mn-10Al-0.8C as the Ni-free grade studied, and b0018/b0022 contrast it with the Ni-containing sample. Table 2 (b0032) reports its hardness values per annealing temperature.",
+        "block_id": [
+          "b0008",
+          "b0017",
+          "b0032"
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_solution-treated-1250c-35min-wq",
+      "alloy_id": null,
+      "process_name": "Solution treatment at 1250 °C for 35 min followed by water quenching",
+      "state_label": "Solution Treated",
+      "aliases": [
+        "solution-treated",
+        "solution heat-treated",
+        "solution heat-treated for 35 min at 1250 °C then water quenched",
+        "ST"
+      ],
+      "parent_process_ids": [],
+      "description": "Both alloys were solution heat-treated for 35 min at 1250 °C in a protective argon atmosphere and then water quenched; this is the starting (as-quenched) state before annealing, measured as γ and α single phases (~4.2/4.0 GPa for γ and ~3.1/3.0 GPa for α).",
+      "processes_notes": "Applied to both alloys (Ni-containing and Ni-free); therefore not tied to a single alloy. Annealing treatments at 500–1050 °C were conducted after this solution treatment.",
+      "source": {
+        "reason": "b0017 states the alloys were 'solution heat-treated for 35 min at 1250 °C in a protective argon atmosphere and then water quenched'. b0032 lists a 'Solution Treated' row with measured hardness for both alloys.",
+        "block_id": [
+          "b0017",
+          "b0032"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_anneal-500c",
+      "alloy_id": null,
+      "process_name": "Annealing at 500 °C",
+      "state_label": "500",
+      "aliases": [
+        "500 °C",
+        "500°C",
+        "annealed at 500 °C",
+        "500"
+      ],
+      "parent_process_ids": [
+        "proc_solution-treated-1250c-35min-wq"
+      ],
+      "description": "Isothermal annealing at 500 °C applied to the solution-treated material; annealing holding time not explicitly reported. In Ni-containing alloy, microstructure is γ + cuboid κ (<100 nm) + coarse B2 (2–7 μm) + B2 stringer bands; in Ni-free alloy, γ + needle-like κ (width 200±33 nm) in α.",
+      "processes_notes": "Same annealing treatment applied to both alloys, so not tied to a single alloy; annealing time not reported in the text.",
+      "source": {
+        "reason": "b0017 states 'The annealing treatments were conducted at 500 °C, 700 °C, 900 °C, and 1050 °C.'; b0022 (Table 1) and b0032 (Table 2) report the phases and hardness corresponding to the 500 °C state for both alloys.",
+        "block_id": [
+          "b0017",
+          "b0022",
+          "b0032"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_anneal-700c",
+      "alloy_id": null,
+      "process_name": "Annealing at 700 °C",
+      "state_label": "700",
+      "aliases": [
+        "700 °C",
+        "700°C",
+        "annealed at 700 °C",
+        "700"
+      ],
+      "parent_process_ids": [
+        "proc_solution-treated-1250c-35min-wq"
+      ],
+      "description": "Isothermal annealing at 700 °C applied to the solution-treated material; holding time not explicitly reported. Ni-containing alloy: γ + cuboid κ (<100 nm) + coarse B2 + B2 stringer bands; Ni-free alloy: γ + needle-like κ (width 500±33 nm) in α. At 700 °C and below the α phase in the Ni-containing alloy was replaced by B2 stringer bands.",
+      "processes_notes": "Same annealing treatment applied to both alloys; annealing time not reported.",
+      "source": {
+        "reason": "b0017 lists 700 °C among the annealing treatments; b0022 and b0032 report the phase content and hardness for the 700 °C state of both alloys.",
+        "block_id": [
+          "b0017",
+          "b0022",
+          "b0032"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_anneal-900c",
+      "alloy_id": null,
+      "process_name": "Annealing at 900 °C",
+      "state_label": "900",
+      "aliases": [
+        "900 °C",
+        "900°C",
+        "annealed at 900 °C",
+        "900"
+      ],
+      "parent_process_ids": [
+        "proc_solution-treated-1250c-35min-wq"
+      ],
+      "description": "Isothermal annealing at 900 °C applied to the solution-treated material; holding time not explicitly reported. At 900 °C and above, ferrite (α) contains nano-sized disc-like B2 (~200 nm) and coarse B2 particles (2–7 μm) form in γ; no κ-carbides at this temperature.",
+      "processes_notes": "Same annealing treatment applied to both alloys; annealing time not reported.",
+      "source": {
+        "reason": "b0017 lists 900 °C among the annealing treatments; b0022 and b0032 report the phases and hardness for the 900 °C state of both alloys.",
+        "block_id": [
+          "b0017",
+          "b0022",
+          "b0032"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_anneal-1050c",
+      "alloy_id": null,
+      "process_name": "Annealing at 1050 °C",
+      "state_label": "1050",
+      "aliases": [
+        "1050 °C",
+        "1050°C",
+        "annealed at 1050 °C",
+        "1050"
+      ],
+      "parent_process_ids": [
+        "proc_solution-treated-1250c-35min-wq"
+      ],
+      "description": "Isothermal annealing at 1050 °C (highest annealing temperature, selected to study the change arising from increased Ni and Al content of nano-sized disc-like B2) applied to the solution-treated material; holding time not explicitly reported. Microstructure consists of α + disc-like B2 (~200 nm) and coarse B2 particles in γ.",
+      "processes_notes": "Same annealing treatment applied to both alloys; annealing time not reported.",
+      "source": {
+        "reason": "b0017 states the highest annealing temperature of 1050 °C was selected and lists it among the annealing treatments; b0022 and b0032 report the phases and hardness for the 1050 °C state of both alloys.",
+        "block_id": [
+          "b0017",
+          "b0022",
+          "b0032"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe-15mn-10al-0.8c-5ni__solution-treated-1250c-35min-wq",
+      "alloy_id": "alloy_fe-15mn-10al-0.8c-5ni",
+      "process_id": "proc_solution-treated-1250c-35min-wq",
+      "sample_label": "Fe-15Mn-10Al-0.8C-5Ni, Solution Treated",
+      "aliases": [
+        "solution-treated Ni-containing sample",
+        "solution-treated 5 wt.% Ni sample",
+        "ST (Ni-containing)"
+      ],
+      "source": {
+        "reason": "b0032 (Table 2) lists a 'Solution Treated' row for the Fe-15Mn-10Al-0.5C-5Ni alloy with measured hardness of γ (4.2 GPa) and α (3.1 GPa); the state is produced by the solution treatment of b0017. Combination = this alloy + solution-treated state.",
+        "block_id": [
+          "b0017",
+          "b0032"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-15mn-10al-0.8c-5ni__anneal-500c",
+      "alloy_id": "alloy_fe-15mn-10al-0.8c-5ni",
+      "process_id": "proc_anneal-500c",
+      "sample_label": "Fe-15Mn-10Al-0.8C-5Ni, 500 °C",
+      "aliases": [
+        "Ni-containing sample annealed at 500 °C",
+        "5 wt.% Ni, 500 °C",
+        "Fe-15Mn-10Al-0.5C-5Ni, 500 °C"
+      ],
+      "source": {
+        "reason": "b0032 (Table 2) reports the 500 °C hardness values (γ+κ 6.7 GPa, B2 stringer 10.1 GPa, γ+κ+B2 8.8 GPa) for the Ni-containing alloy; b0022 (Table 1) lists its phases at 500 °C. Combination = Ni-containing alloy + 500 °C anneal.",
+        "block_id": [
+          "b0022",
+          "b0032"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-15mn-10al-0.8c-5ni__anneal-700c",
+      "alloy_id": "alloy_fe-15mn-10al-0.8c-5ni",
+      "process_id": "proc_anneal-700c",
+      "sample_label": "Fe-15Mn-10Al-0.8C-5Ni, 700 °C",
+      "aliases": [
+        "Ni-containing sample annealed at 700 °C",
+        "5 wt.% Ni, 700 °C",
+        "Fe-15Mn-10Al-0.5C-5Ni, 700 °C"
+      ],
+      "source": {
+        "reason": "b0032 (Table 2) reports the 700 °C hardness values (γ+κ 7.5 GPa, B2 stringer 10.6 GPa, γ+κ+B2 9.0 GPa) for the Ni-containing alloy; b0022 lists its phases at 700 °C. Combination = Ni-containing alloy + 700 °C anneal.",
+        "block_id": [
+          "b0022",
+          "b0032"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-15mn-10al-0.8c-5ni__anneal-900c",
+      "alloy_id": "alloy_fe-15mn-10al-0.8c-5ni",
+      "process_id": "proc_anneal-900c",
+      "sample_label": "Fe-15Mn-10Al-0.8C-5Ni, 900 °C",
+      "aliases": [
+        "Ni-containing sample annealed at 900 °C",
+        "5 wt.% Ni, 900 °C",
+        "Fe-15Mn-10Al-0.5C-5Ni, 900 °C"
+      ],
+      "source": {
+        "reason": "b0032 (Table 2) reports the 900 °C hardness values (γ 4.1, α 2.9, γ+B2 7.9, α+B2 11.7 GPa) for the Ni-containing alloy; b0022 lists its phases at 900 °C. Combination = Ni-containing alloy + 900 °C anneal.",
+        "block_id": [
+          "b0022",
+          "b0032"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-15mn-10al-0.8c-5ni__anneal-1050c",
+      "alloy_id": "alloy_fe-15mn-10al-0.8c-5ni",
+      "process_id": "proc_anneal-1050c",
+      "sample_label": "Fe-15Mn-10Al-0.8C-5Ni, 1050 °C",
+      "aliases": [
+        "Ni-containing sample annealed at 1050 °C",
+        "5 wt.% Ni, 1050 °C",
+        "Fe-15Mn-10Al-0.5C-5Ni, 1050 °C"
+      ],
+      "source": {
+        "reason": "b0032 (Table 2) reports the 1050 °C hardness values (γ 4.0, α 3.0, γ+B2 8.2, α+B2 13.5 GPa) for the Ni-containing alloy; b0022 lists its phases at 1050 °C. Combination = Ni-containing alloy + 1050 °C anneal.",
+        "block_id": [
+          "b0022",
+          "b0032"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-15mn-10al-0.8c__solution-treated-1250c-35min-wq",
+      "alloy_id": "alloy_fe-15mn-10al-0.8c",
+      "process_id": "proc_solution-treated-1250c-35min-wq",
+      "sample_label": "Fe-15Mn-10Al-0.8C, Solution Treated",
+      "aliases": [
+        "solution-treated Ni-free sample",
+        "solution-treated Ni-free steel",
+        "ST (Ni-free)"
+      ],
+      "source": {
+        "reason": "b0032 (Table 2) lists a 'Solution Treated' row for the Ni-free Fe-15Mn-10Al-0.5C alloy with γ (4.0 GPa) and α (3.0 GPa); produced by the solution treatment of b0017. Combination = Ni-free alloy + solution-treated state.",
+        "block_id": [
+          "b0017",
+          "b0032"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-15mn-10al-0.8c__anneal-500c",
+      "alloy_id": "alloy_fe-15mn-10al-0.8c",
+      "process_id": "proc_anneal-500c",
+      "sample_label": "Fe-15Mn-10Al-0.8C, 500 °C",
+      "aliases": [
+        "Ni-free sample annealed at 500 °C",
+        "Ni-free, 500 °C",
+        "Fe-15Mn-10Al-0.5C, 500 °C"
+      ],
+      "source": {
+        "reason": "b0032 (Table 2) reports the 500 °C hardness values (γ+κ 6.8 GPa, α+κ 5.3 GPa) for the Ni-free alloy; b0022 lists its phases at 500 °C (γ+needle-like κ and α+needle-like κ). Combination = Ni-free alloy + 500 °C anneal.",
+        "block_id": [
+          "b0022",
+          "b0032"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-15mn-10al-0.8c__anneal-700c",
+      "alloy_id": "alloy_fe-15mn-10al-0.8c",
+      "process_id": "proc_anneal-700c",
+      "sample_label": "Fe-15Mn-10Al-0.8C, 700 °C",
+      "aliases": [
+        "Ni-free sample annealed at 700 °C",
+        "Ni-free, 700 °C",
+        "Fe-15Mn-10Al-0.5C, 700 °C"
+      ],
+      "source": {
+        "reason": "b0032 (Table 2) reports the 700 °C hardness values (γ+κ 7.0 GPa, α+κ 6.7 GPa) for the Ni-free alloy; b0022 lists its phases at 700 °C. Combination = Ni-free alloy + 700 °C anneal.",
+        "block_id": [
+          "b0022",
+          "b0032"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-15mn-10al-0.8c__anneal-900c",
+      "alloy_id": "alloy_fe-15mn-10al-0.8c",
+      "process_id": "proc_anneal-900c",
+      "sample_label": "Fe-15Mn-10Al-0.8C, 900 °C",
+      "aliases": [
+        "Ni-free sample annealed at 900 °C",
+        "Ni-free, 900 °C",
+        "Fe-15Mn-10Al-0.5C, 900 °C"
+      ],
+      "source": {
+        "reason": "b0032 (Table 2) reports the 900 °C hardness values (γ 3.8, α 2.9, γ+B2 7.2, α+B2 8.9 GPa) for the Ni-free alloy; b0022 lists its phases at 900 °C. Combination = Ni-free alloy + 900 °C anneal.",
+        "block_id": [
+          "b0022",
+          "b0032"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-15mn-10al-0.8c__anneal-1050c",
+      "alloy_id": "alloy_fe-15mn-10al-0.8c",
+      "process_id": "proc_anneal-1050c",
+      "sample_label": "Fe-15Mn-10Al-0.8C, 1050 °C",
+      "aliases": [
+        "Ni-free sample annealed at 1050 °C",
+        "Ni-free, 1050 °C",
+        "Fe-15Mn-10Al-0.5C, 1050 °C"
+      ],
+      "source": {
+        "reason": "b0032 (Table 2) reports the 1050 °C hardness values (γ 4.0, α 3.0, γ+B2 7.0, α+B2 8.3 GPa) for the Ni-free alloy; b0022 lists its phases at 1050 °C. Combination = Ni-free alloy + 1050 °C anneal.",
+        "block_id": [
+          "b0022",
+          "b0032"
+        ]
+      }
+    }
+  ],
+  "unmapped_findings": [
+    "Composition labeling inconsistency: Tables 1 and 2 (b0022, b0032) name the alloys Fe-15Mn-10Al-0.5C-5Ni and Fe-15Mn-10Al-0.5C (0.5C), whereas the abstract, introduction, methods and conclusions (b0008, b0017, b0058) consistently report the C content as 0.8C; the 0.5C table labels appear to be a typographical error.",
+    "Annealing holding time for the 500–1050 °C treatments is not explicitly reported in the cleaned text; only the annealing temperatures are given.",
+    "Measured precipitate compositions used to rationalize hardness: κ-carbides contained ~18.4 wt.% Mn at 500 °C and ~24.8 wt.% Mn at 700 °C; B2 Al content ranged 22.8–24.6 wt.%; B2 Ni content rose from 8.2 wt.% (500 °C) to 10.1 wt.% (1050 °C).",
+    "DFT-calculated elastic properties were obtained for a series of ordered compounds (FeAl, Fe3Al, Fe3AlC, Fe2MnAlC, FeMn2AlC, Mn3AlC, Fe3Al-L12) that are model phases rather than the two experimental steels; these computational compounds are not the alloy research objects of the study."
+  ]
+}

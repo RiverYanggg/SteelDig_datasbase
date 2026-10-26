@@ -1,0 +1,245 @@
+[
+  {
+    "path": "$.structures[0]",
+    "reason": "AZA 样本的组织信息来自 b0076（暗色析出相枝晶、圆形区域中心）及 figure_001（Polycrystalline & Multiphase 分类）。",
+    "block_id": [
+      "b0076",
+      "figure_001"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].overall_structure",
+    "reason": "b0076 说明 AZA 为两张 AlZn 枝晶 XCT 图像，暗色析出相为前景、位于圆形区域中心；figure_001 将其归为 Polycrystalline & Multiphase；figure_005/figure_006 描述为圆形截面内的暗色枝晶相。",
+    "block_id": [
+      "b0076",
+      "figure_001",
+      "figure_005",
+      "figure_006"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0]",
+    "reason": "从 b0076 与 figure_001/figure_005/figure_006 提取 AZA 枝晶微结构特征。",
+    "block_id": [
+      "b0076",
+      "figure_001",
+      "figure_005",
+      "figure_006"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].region",
+    "reason": "b0076: dark precipitate phase in the foreground, located in the center of the circular region to be segmented.",
+    "block_id": [
+      "b0076"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].phases_present[0]",
+    "reason": "从 b0076、figure_001、figure_005 提取 AZA 的暗色析出相/枝晶相信息。",
+    "block_id": [
+      "b0076",
+      "figure_001",
+      "figure_005"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].phases_present[0].phase_name",
+    "reason": "b0076 称暗色析出相为前景枝晶；figure_001 称 dendritic particles；figure_005 称 dark angular internal phases。",
+    "block_id": [
+      "b0076",
+      "figure_001",
+      "figure_005"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].phases_present[0].morphology",
+    "reason": "figure_001 描述为 'dendritic particles of varying size on a rounded cross-section'；figure_005 描述为 'several dark angular internal phases'。",
+    "block_id": [
+      "figure_001",
+      "figure_005"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].precipitates[0]",
+    "reason": "b0076 报告暗色析出相（枝晶）位于圆形区域中心。",
+    "block_id": [
+      "b0076"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].precipitates[0].type",
+    "reason": "b0076 称暗色析出相为前景枝晶。",
+    "block_id": [
+      "b0076"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].precipitates[0].distribution",
+    "reason": "b0076: located in the center of the circular region to be segmented.",
+    "block_id": [
+      "b0076"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[0]",
+    "reason": "AZA 数据集的分割对比结论来自 Table 3（b0079）与 b0074/b0076。",
+    "block_id": [
+      "b0079",
+      "b0074",
+      "b0076"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[0].comparative_performance.comparison_metric",
+    "reason": "Table 3 以 IoU 作为 multiphase 数据集（含 AZA）的主指标。",
+    "block_id": [
+      "b0078",
+      "b0079"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[0].comparative_performance.improvement_percentage",
+    "reason": "b0079 Table 3 的 AZA[25] 行给出各方法的 IoU 值；b0076 说明 MatSAM 0.96 接近 specialist 0.97；b0074 说明 MatSAM 在 AZA 上排名第二、略低于 specialist。",
+    "block_id": [
+      "b0079",
+      "b0076",
+      "b0074",
+      "figure_unlabelled_004"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[1]",
+    "reason": "AZA 图像的噪声鲁棒性对比来自 figure_008 与 b0088。",
+    "block_id": [
+      "figure_008",
+      "b0088"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[1].comparative_performance.comparison_metric",
+    "reason": "figure_008 与 b0087 在 AZA (XCT) 图像上施加不同方差水平的 S&P 噪声（Var.=0.01,0.05,0.1,0.2）。",
+    "block_id": [
+      "b0087",
+      "figure_008"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[1].comparative_performance.improvement_percentage",
+    "reason": "figure_008 给出 AZA 图像 MatSAM 与 SAM 的 IoU 序列；b0088 总结 MatSAM 的 IoU 从 0.946 降至 0.815、SAM 从 0.903 降至 0.776。",
+    "block_id": [
+      "figure_008",
+      "b0088"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0]",
+    "reason": "AZA 样本的 XCT 表征信息来自 b0024、Table 1 与 figure_001。",
+    "block_id": [
+      "b0024",
+      "b0036",
+      "figure_001"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0].technique",
+    "reason": "b0024: images of AlZn alloy (AZA) [25] were generated using XCT；figure_001 标注 AZA (XCT)。",
+    "block_id": [
+      "b0024",
+      "figure_001"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0].measurement_conditions",
+    "reason": "figure_001 给出 real size 1380*1380 µm 与 852*852 pix；Table 1 (b0036) 给出 852 × 852 像素、#=2；b0024 说明 AZA 为 public 数据集 [25]。",
+    "block_id": [
+      "figure_001",
+      "b0036",
+      "figure_unlabelled_002",
+      "b0024"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0].purpose",
+    "reason": "b0024 说明 AZA 图像用于微结构识别评估；b0045 说明 multiphase 图像（含 AZA）直接分割相 mask 进行比较。",
+    "block_id": [
+      "b0024",
+      "b0045"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0].key_findings",
+    "reason": "figure_001 与 figure_005/figure_006 描述 AZA 的 XCT 切片形貌。",
+    "block_id": [
+      "figure_001",
+      "figure_005",
+      "figure_006"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[1]",
+    "reason": "AZA 数据集的分割评估方法及结果来自 b0045/b0048/b0055 与 Table 3（b0079）。",
+    "block_id": [
+      "b0045",
+      "b0048",
+      "b0055",
+      "b0079"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[1].technique",
+    "reason": "b0045 说明 multiphase 图像直接分割相 mask 进行比较；b0079 Table 3 给出 AZA 各方法的分割结果。",
+    "block_id": [
+      "b0045",
+      "b0079"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[1].instrument_or_setup",
+    "reason": "b0055 说明所有验证实验在单块 Nvidia RTX3090 24 GB GPU 上使用 PyTorch 1.13.1 库进行。",
+    "block_id": [
+      "b0055"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[1].purpose",
+    "reason": "b0048 说明选择 IoU/F1/Recall 等指标评估识别性能，结果以 mean±SD 给出。",
+    "block_id": [
+      "b0048"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[1].key_findings",
+    "reason": "Table 3 (b0079) 给出 AZA[25] 行各方法的 IoU/F1/Recall 数值。",
+    "block_id": [
+      "b0079",
+      "figure_unlabelled_004"
+    ],
+    "status": "ok"
+  }
+]

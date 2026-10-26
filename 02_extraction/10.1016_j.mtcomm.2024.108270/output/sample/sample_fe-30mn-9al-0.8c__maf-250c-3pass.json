@@ -1,0 +1,965 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-0.8c__maf-250c-3pass",
+      "paper_id": "10.1016_j.mtcomm.2024.108270",
+      "alloy_id": "alloy_fe-30mn-9al-0.8c",
+      "process_id": "proc_maf-250c-3pass",
+      "sample_label": "MAF-3",
+      "aliases": [
+        "3 pass"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "Material preparation of the ingot prior to all downstream processing; described in the Material section.",
+        "block_id": [
+          "b0022"
+        ]
+      },
+      "processing_step_id": "step_homogenization",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "homogenization"
+      },
+      "temperature": {
+        "value": "1200"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": {
+        "value": "2 h"
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Cast ingot of Fe-30Mn-9Al-0.8 C low-density steel homogenized at 1200 °C for 2 h (material preparation common to all MAF states)."
+      }
+    },
+    {
+      "source": {
+        "reason": "Ingot hot-forging step reported in the Material section as part of the processing history.",
+        "block_id": [
+          "b0022"
+        ]
+      },
+      "processing_step_id": "step_hot_forging",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "mechanical processing"
+      },
+      "method": {
+        "value": "hot forging"
+      },
+      "temperature": {
+        "value": "1200-900"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": {
+        "value": "water quenching"
+      },
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": {
+        "value": ">60% deformation"
+      },
+      "processing_steps_notes": {
+        "value": "Hot forged between 1200 °C and 900 °C ensuring more than 60% deformation with intermediate heating, then water quenched."
+      }
+    },
+    {
+      "source": {
+        "reason": "Solutionization produces the initial MAF-0 state that is subsequently warm multiaxially forged for this sample.",
+        "block_id": [
+          "b0022"
+        ]
+      },
+      "processing_step_id": "step_solution_treatment",
+      "sequence": {
+        "value": "3"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "solution treatment (solutionizing)"
+      },
+      "temperature": {
+        "value": "1050"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": {
+        "value": "1 h"
+      },
+      "atmosphere": null,
+      "cooling_medium": {
+        "value": "water quenching"
+      },
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Forged material solutionized at 1050 °C for 1 h and water quenched to retain maximum austenite phase; this is the MAF-0 (0 pass) baseline state from which every MAF pass starts."
+      }
+    },
+    {
+      "source": {
+        "reason": "Warm-forging preheat specified for the MAF experiments at 250 °C.",
+        "block_id": [
+          "b0027"
+        ]
+      },
+      "processing_step_id": "step_heating_soaking",
+      "sequence": {
+        "value": "4"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "heating and soaking"
+      },
+      "temperature": {
+        "value": "250"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": {
+        "value": "2 h"
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Sample and die heated to 250 °C and soaked for two hours prior to MAF (warm deformation condition, chosen below the recrystallization temperature)."
+      }
+    },
+    {
+      "source": {
+        "reason": "The three-pass warm MAF defines this sample (MAF-3); process parameters from the MAF methods section and strain levels.",
+        "block_id": [
+          "b0024",
+          "b0027",
+          "b0030",
+          "b0032"
+        ]
+      },
+      "processing_step_id": "step_maf_3pass",
+      "sequence": {
+        "value": "5"
+      },
+      "type": {
+        "value": "mechanical processing"
+      },
+      "method": {
+        "value": "multiaxial forging (MAF)"
+      },
+      "temperature": {
+        "value": "250"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": {
+        "value": "33% normal strain per pass; cumulative equivalent strain 1.4 after 3 passes"
+      },
+      "processing_steps_notes": {
+        "value": "MAF carried out along three orthogonal directions on a 100-ton hydraulic press; ram moved at a steady speed of 1 mm/s; billet (30 × 20 × 20 mm) lubricated with MoS2 before pressing; 3 passes performed, defining the MAF-3 state."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_maf-3",
+      "overall_structure": {
+        "value": "Austenite-based (FCC) Fe-30Mn-9Al-0.8 C low-density steel; XRD shows a dominantly single austenite (γ) phase with retained κ-carbide reflections. After 3 MAF passes the grains are refined and heavily subdivided by a dense low-angle boundary network (low-angle boundary fraction at its maximum) with a progressively randomized texture."
+      },
+      "number_of_phases": {
+        "value": 1
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_maf3_ebsd",
+          "region": {
+            "value": "Analysed central plate along the pressing direction (location shown in Fig. 3(a))"
+          },
+          "related_sequence": {
+            "value": "5"
+          },
+          "phases_present": [
+            {
+              "phase_name": {
+                "value": "Austenite (γ)"
+              },
+              "crystal_structure": {
+                "value": "face-centred cubic (FCC)"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "equiaxed/banded-fragmented grains"
+              },
+              "grain_size": {
+                "value": "20 μm"
+              },
+              "texture": {
+                "value": "progressively randomized with increasing passes (weak texture)"
+              }
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": {
+                "value": "20"
+              },
+              "unit": {
+                "value": "μm"
+              }
+            },
+            "grain_size_distribution": {
+              "value": "Distribution becomes narrower/more uniform with increasing passes; fragmented, multi-colour banded structure at MAF-3 (Fig. 7(g))."
+            },
+            "texture": {
+              "value": "Texture randomized relative to the strongly textured MAF-0; IPF shows many different directions parallel to the pressing direction."
+            }
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_carbide",
+              "type": {
+                "value": "κ-carbide"
+              },
+              "size": null,
+              "distribution": null,
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_maf3_xrd",
+          "region": {
+            "value": "Analysed area for XRD (central plate, pressing direction)"
+          },
+          "related_sequence": {
+            "value": "5"
+          },
+          "phases_present": [
+            {
+              "phase_name": {
+                "value": "Austenite (γ)"
+              },
+              "crystal_structure": {
+                "value": "face-centred cubic (FCC)"
+              },
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": {
+                "value": "change of strongest reflection from γ(111) in the solutionized state to γ(220) from MAF-1 onward, indicating texturing"
+              }
+            }
+          ],
+          "defects": [
+            {
+              "type": {
+                "value": "dislocations"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": {
+                "value": "7.5 × 10^15 m^-2"
+              },
+              "lattice_distortion": {
+                "value": "average microstrain (e2)^1/2 = 6.13 × 10^-3"
+              }
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": {
+                "value": "10.87"
+              },
+              "unit": {
+                "value": "nm (avg. crystallite size from XRD)"
+              }
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "source": {
+        "reason": "Grain-boundary fraction evolution and phase stability of the MAF-3 state described in the microstructure and strengthening discussion.",
+        "block_id": [
+          "b0065",
+          "b0066",
+          "b0076",
+          "b0043"
+        ]
+      },
+      "interface_set_id": "int_maf-3",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_lagb_maf3",
+          "microstructure_id": "micro_maf3_ebsd",
+          "interaction_type": {
+            "value": "Low-angle grain boundary (subgrain) formation and subdivision"
+          },
+          "qualitative_or_quantitative_description": {
+            "value": "After 3 MAF passes the low-angle boundary (1°-15°) fraction reaches its maximum value of ~0.75 (0.759 per EBSD legend) while the high-angle boundary (15°-180°) fraction drops to 0.24, reflecting extensive grain subdivision by low-angle boundaries."
+          }
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": {
+        "value": "No deformation twinning occurs in this alloy during MAF; the austenite is stable (no martensite formed). Annealing twin boundary fraction is very small. Texture is progressively randomized as the number of passes increases."
+      },
+      "interface_notes": {
+        "value": "The paper reports grain-boundary misorientation statistics rather than discrete phase interfaces; the κ-carbide reflections remain unchanged before and after MAF (Fig. 5)."
+      }
+    }
+  ],
+  "properties": [
+    {
+      "source": {
+        "reason": "Tensile properties and measurement conditions for the MAF-3 state reported in the Mechanical testing, Mechanical properties and Table 2 sections.",
+        "block_id": [
+          "b0036",
+          "b0074",
+          "b0075",
+          "b0077",
+          "b0083"
+        ]
+      },
+      "property_set_id": "prop_maf-3",
+      "measurement_conditions": {
+        "temperature": {
+          "value": "room temperature"
+        },
+        "temperature_unit": {
+          "value": "°C"
+        },
+        "environment": {
+          "value": "air"
+        },
+        "strain_rate": {
+          "value": "1 × 10^-3 s^-1"
+        },
+        "specimen_geometry": {
+          "value": "Miniature round tensile specimen: gauge length 16 mm, overall length 26.5 mm, fillet radius R1, gauge diameter Ø4 mm, shoulder Ø7.2 mm (Fig. 3(b))"
+        },
+        "test_standard": null,
+        "other_conditions": {
+          "value": "Tested on an INSTRON hydraulic universal testing machine; two round tensile samples per pass to confirm reliability; elastic length subtracted from elongation to give plastic strain."
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "source": {
+                "reason": "Text states yield increases to 1279 MPa for MAF-3.",
+                "block_id": [
+                  "b0075"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "1279 MPa"
+              },
+              "unit": {
+                "value": "MPa"
+              },
+              "uncertainty": null
+            },
+            {
+              "source": {
+                "reason": "Table 2 (Increase in YS with MAF passes) lists measured YS = 1289 MPa for 3 Pass.",
+                "block_id": [
+                  "b0083"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "1289 MPa"
+              },
+              "unit": {
+                "value": "MPa"
+              },
+              "uncertainty": null
+            }
+          ],
+          "ultimate_utensile_strength": null,
+          "ultimate_tensile_strength": [
+            {
+              "source": {
+                "reason": "Text: 'On further MAF for 3 passes, the UTS increases to 1415 MPa'.",
+                "block_id": [
+                  "b0075"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "1415 MPa"
+              },
+              "unit": {
+                "value": "MPa"
+              },
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "source": {
+                "reason": "Text: total elongation becomes 13.7% after imposed strain of 1.4 (MAF-3).",
+                "block_id": [
+                  "b0077"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "13.7% (total elongation)"
+              },
+              "unit": {
+                "value": "%"
+              },
+              "uncertainty": null
+            },
+            {
+              "source": {
+                "reason": "Text: uniform elongation of 3% at imposed strain 1.4.",
+                "block_id": [
+                  "b0077"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "3% (uniform elongation)"
+              },
+              "unit": {
+                "value": "%"
+              },
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": {
+            "source": {
+              "reason": "Table 4 material properties lists Young's modulus = 160,000 MPa used for MAF-3 simulation.",
+              "block_id": [
+                "b0090"
+              ]
+            },
+            "value": {
+              "value": "160,000 MPa"
+            },
+            "unit": {
+              "value": "MPa"
+            }
+          },
+          "stress_strain_curves": {
+            "value": "Engineering stress-strain curves in Fig. 10; MAF-3 (blue) curve peaks near 1400 MPa at small strain and drops to about 1240 MPa at strain ≈0.13, failing early (strength-ductility trade-off)."
+          },
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "source": {
+                "reason": "Text: at 3 passes the amount of work hardening decreases to 126 MPa.",
+                "block_id": [
+                  "b0075"
+                ]
+              },
+              "value": {
+                "value": "126 MPa (amount of work hardening)"
+              },
+              "unit": {
+                "value": "MPa"
+              }
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "source": {
+            "reason": "Alloy density (Archimedes' principle) applies to this sample; listed as 6.8 gm/cm3 in Table 4 and the Material section.",
+            "block_id": [
+              "b0090",
+              "b0022"
+            ]
+          },
+          "value": {
+            "value": "6.8"
+          },
+          "unit": {
+            "value": "g/cm³"
+          }
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "source": {
+        "reason": "Comparative strengthening decomposition of MAF-3 with respect to the solution-annealed MAF-0 baseline (Table 2).",
+        "block_id": [
+          "b0083",
+          "b0075",
+          "b0076"
+        ]
+      },
+      "performance_id": "perf_maf-3",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": {
+          "value": "alloy_fe-30mn-9al-0.8c"
+        },
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": {
+          "value": "Relative to solution-annealed MAF-0, the MAF-3 yield-strength increase decomposes into 669 MPa from the dislocation-density difference and 240 MPa from grain refinement (Table 2)."
+        },
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "XRD method and MAF-3 results described in the microstructural characterization and XRD analysis sections.",
+        "block_id": [
+          "b0032",
+          "b0055",
+          "b0059"
+        ]
+      },
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_maf3_xrd",
+      "technique": {
+        "value": "X-ray diffraction (XRD)"
+      },
+      "instrument_or_setup": {
+        "value": "X-ray diffractometer with Co-Kα radiation"
+      },
+      "measurement_conditions": {
+        "value": "Scan speed 2° per minute, step size 0.02°, 2θ range 40°-120°; electropolished samples; instrumental broadening from standard silicon subtracted"
+      },
+      "purpose": {
+        "value": "Determine dislocation density, average crystallite size, lattice microstrain and texture (via Williamson-Hall analysis)"
+      },
+      "key_findings": {
+        "value": "Peak broadening and a change of strongest reflection from (111) in the solutionized state to (220) from MAF-1; for MAF-3: avg. crystallite size 10.87 nm, avg. microstrain 6.13 × 10^-3, dislocation density 7.5 × 10^15 m^-2."
+      }
+    },
+    {
+      "source": {
+        "reason": "EBSD method and MAF-3 microstructure/grain-boundary results.",
+        "block_id": [
+          "b0032",
+          "b0034",
+          "b0065",
+          "b0066",
+          "b0067"
+        ]
+      },
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_maf3_ebsd",
+      "technique": {
+        "value": "Electron backscattered diffraction (EBSD)"
+      },
+      "instrument_or_setup": {
+        "value": "EBSD with equivalent grain size method; grain boundaries defined by misorientation >15°"
+      },
+      "measurement_conditions": {
+        "value": "Electropolished samples; image quality maps with high-angle (15°-180°) and low-angle (1°-15°) boundaries; 60 μm scale bars"
+      },
+      "purpose": {
+        "value": "Determine average grain size, grain boundary fractions and texture (inverse pole figure maps of the normal/pressing direction)"
+      },
+      "key_findings": {
+        "value": "MAF-3: high-angle boundary fraction 0.24, low-angle boundary fraction 0.759 (~0.75, maximum of the series); grain size reduced to 20 μm; texture progressively randomized."
+      }
+    },
+    {
+      "source": {
+        "reason": "KAM maps and the MAF-3 average KAM value.",
+        "block_id": [
+          "b0071"
+        ]
+      },
+      "characterization_id": "char_kam",
+      "microstructure_id": "micro_maf3_ebsd",
+      "technique": {
+        "value": "Kernel average misorientation (KAM) mapping (EBSD)"
+      },
+      "instrument_or_setup": {
+        "value": "EBSD KAM maps (unique color map, 60 μm scale bar)"
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Quantify local misorientation / stored deformation strain"
+      },
+      "key_findings": {
+        "value": "MAF-3 shows an average KAM value of 0.87°, indicating a higher level of plastic deformation (uniformity attributed to tri-axial deformation)."
+      }
+    },
+    {
+      "source": {
+        "reason": "Mechanical testing method and MAF-3 tensile results.",
+        "block_id": [
+          "b0036",
+          "b0075",
+          "b0077"
+        ]
+      },
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Uniaxial tensile testing"
+      },
+      "instrument_or_setup": {
+        "value": "INSTRON hydraulic universal testing machine"
+      },
+      "measurement_conditions": {
+        "value": "Room temperature, strain rate 1 × 10^-3 s^-1; miniature round specimens (gauge length 16 mm, Ø4 mm gauge) cut from the located area of the MAF sample"
+      },
+      "purpose": {
+        "value": "Determine the effect of multiaxial forging on tensile strength after each MAF pass"
+      },
+      "key_findings": {
+        "value": "MAF-3: yield strength 1279 MPa (text)/1289 MPa (Table 2), UTS 1415 MPa, total elongation 13.7%, uniform elongation 3%, work hardening 126 MPa."
+      }
+    }
+  ],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "Computational framework (ABAQUS/Explicit VUMAT with modified J-C model, boundary conditions, mesh, and constitutive/evolution equations) applied to the MAF-3 state.",
+        "block_id": [
+          "b0052",
+          "b0050",
+          "b0061",
+          "b0069",
+          "b0044",
+          "b0047",
+          "b0088",
+          "b0090",
+          "b0092"
+        ]
+      },
+      "computation_id": "comp_maf-3",
+      "simulation_method": {
+        "value": "3-D finite element simulation of the MAF process using a modified Johnson-Cook constitutive model (elastic-plastic return-mapping in a user material subroutine)"
+      },
+      "software_used": {
+        "value": "ABAQUS/Explicit with a VUMAT user subroutine"
+      },
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": {
+        "value": "Workpiece modelled as deformable body with dimensions 30 mm × 20 mm × 20 mm; mesh sensitivity analysis gave a mesh size of 0.6 mm with 41382 hexahedral (C3D8R, reduced integration with hourglass control) elements; die and punch treated as discrete rigid bodies; punch given a controlled displacement of 10 mm in the Y (height) direction while the die is fixed; material flow permitted only in X (flow direction), constrained in Z (constrained direction); workpiece-rigid body contact friction coefficient 0.15; steady-state MAF simulated by mapping deformation fields from previous passes to the current one."
+      },
+      "validation_against_experiment": {
+        "value": "Predicted dislocation density and grain size at the location in Fig. 3(a) compared with measured results (XRD for dislocation density, EBSD for grain size); the modified J-C model with FEA shows good agreement for MAF-1, MAF-3 and MAF-5. Yield strength prediction (Fig. 13) tracks the experimental strengthening closely around 3 passes but deviates (underestimates) at 1 and 5 passes."
+      },
+      "analytical_models": [
+        {
+          "model_name": {
+            "value": "Modified Johnson-Cook constitutive model (Eq. 6)"
+          },
+          "equation_role": {
+            "value": "Predict flow stress incorporating dislocation-density and grain-size strengthening into the classical J-C framework"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "sigma_0 (initial yield strength)"
+              },
+              "value": {
+                "value": "380"
+              },
+              "unit": {
+                "value": "MPa"
+              }
+            },
+            {
+              "name": {
+                "value": "B (strength coefficient)"
+              },
+              "value": {
+                "value": "1860"
+              },
+              "unit": {
+                "value": "MPa"
+              }
+            },
+            {
+              "name": {
+                "value": "n (strain hardening exponent)"
+              },
+              "value": {
+                "value": "1.02"
+              },
+              "unit": null
+            },
+            {
+              "name": {
+                "value": "m (thermal softening exponent)"
+              },
+              "value": {
+                "value": "0.87"
+              },
+              "unit": null
+            },
+            {
+              "name": {
+                "value": "C (strain rate sensitivity)"
+              },
+              "value": {
+                "value": "0.0067"
+              },
+              "unit": null
+            },
+            {
+              "name": {
+                "value": "alpha (Taylor constant)"
+              },
+              "value": {
+                "value": "0.24"
+              },
+              "unit": null
+            },
+            {
+              "name": {
+                "value": "M (Taylor factor)"
+              },
+              "value": {
+                "value": "3.0"
+              },
+              "unit": null
+            },
+            {
+              "name": {
+                "value": "G (shear modulus)"
+              },
+              "value": {
+                "value": "61"
+              },
+              "unit": {
+                "value": "GPa"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "Encoded in the VUMAT subroutine using six state-dependent variables: SDV1 equivalent plastic strain, SDV2 equivalent plastic strain rate, SDV3 dislocation density ρ_f, SDV4 flow stress, SDV5 yield strength, SDV6 grain size d_f (Table 3)."
+          }
+        },
+        {
+          "model_name": {
+            "value": "Dislocation density evolution (Eq. 7)"
+          },
+          "equation_role": {
+            "value": "ρ_f = ρ_0 + k1(1 − exp(−k2 ε))"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "ρ_0 (MAF-0 dislocation density)"
+              },
+              "value": {
+                "value": "0.79 × 10^15"
+              },
+              "unit": {
+                "value": "m^-2"
+              }
+            },
+            {
+              "name": {
+                "value": "k1"
+              },
+              "value": {
+                "value": "7.9 × 10^15"
+              },
+              "unit": {
+                "value": "m^-2"
+              }
+            },
+            {
+              "name": {
+                "value": "k2"
+              },
+              "value": {
+                "value": "1.813"
+              },
+              "unit": null
+            }
+          ],
+          "model_note": {
+            "value": "Non-linear fit of experimental dislocation density vs imposed strain; R-Square (COD) = 0.98554."
+          }
+        },
+        {
+          "model_name": {
+            "value": "Grain size evolution (Eq. 8)"
+          },
+          "equation_role": {
+            "value": "d_f = d_0 exp(−k3 ε)"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "d_0 (initial grain size)"
+              },
+              "value": {
+                "value": "50"
+              },
+              "unit": {
+                "value": "μm"
+              }
+            },
+            {
+              "name": {
+                "value": "k3 (strengthening constant)"
+              },
+              "value": {
+                "value": "0.639"
+              },
+              "unit": null
+            }
+          ],
+          "model_note": {
+            "value": "Exponential fit of grain size vs equivalent strain; R-Square (COD) = 0.99052."
+          }
+        },
+        {
+          "model_name": {
+            "value": "Hall-Petch grain-boundary strengthening (Eq. 4)"
+          },
+          "equation_role": {
+            "value": "Δσ_g = k(d_f^-1/2 − d_0^-1/2)"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "k (grain-size strengthening constant)"
+              },
+              "value": {
+                "value": "2374"
+              },
+              "unit": {
+                "value": "MPa·μm^0.5"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "Eq. 4 relates yield-strength gain from grain refinement over the grain-size range 50–13 μm."
+          }
+        },
+        {
+          "model_name": {
+            "value": "Taylor dislocation strengthening (Eq. 5)"
+          },
+          "equation_role": {
+            "value": "Δσ_ρ = αMGb(ρ_f^1/2 − ρ_0^1/2)"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "b (Burgers vector)"
+              },
+              "value": {
+                "value": "0.259"
+              },
+              "unit": {
+                "value": "nm"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "α = 0.24, M = 3.0, G = 61 GPa; for FCC austenite b = a/√2."
+          }
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "MAF-3 equivalent plastic strain imparted = 1.4 (third MAF pass).",
+    "Dislocation density for MAF-3 is reported inconsistently: Table 1 gives 7.5 × 10^15 m^-2, whereas the Mechanical properties text states 7.8 × 10^15 m^-2 (about ten times that of the solutionized material).",
+    "Yield strength for MAF-3 is reported inconsistently: the Mechanical properties text gives 1279 MPa, while Table 2 lists measured YS = 1289 MPa for 3 Pass.",
+    "MAF-3 average crystallite size (XRD) = 10.87 nm.",
+    "MAF-3 average microstrain (e2)^1/2 = 6.13 × 10^-3.",
+    "MAF-3 average grain size by EBSD = 20 μm (reduced from 50 μm at MAF-0 and 35 μm at MAF-1).",
+    "MAF-3 high-angle grain boundary fraction = 0.24; low-angle grain boundary fraction = ~0.75 (0.759), the maximum of the MAF series.",
+    "MAF-3 average KAM value = 0.87°.",
+    "MAF-3 amount of work hardening = 126 MPa; UTS (1415 MPa) and YS diverge less than in earlier passes.",
+    "In this alloy there is no deformation twinning during MAF; the annealing twin boundary fraction is negligible (0.007 in MAF-1 and 0.003 in MAF-5).",
+    "FE simulation: after 3 passes the predicted yield strength agrees closely with the measured value (curves nearly converge between 1 and 3 passes); simulation underestimates YS most strongly at 5 passes.",
+    "FE simulation of specimen shape does not accurately replicate the experimental distortion, attributed to the absence of crystallographic texture effects in the simulation; the simulated strength is lower than the experimental value.",
+    "Simulated yield strength depends on depth from the surface of the forged sample: maximum at the centre and decreasing towards the surface (Fig. 14, SDV5 range ≈ +6.994e+02 to +1.358e+03)."
+  ]
+}

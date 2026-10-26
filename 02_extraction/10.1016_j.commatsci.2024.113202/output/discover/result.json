@@ -1,0 +1,177 @@
+{
+  "schema_version": "sample-discover-v1",
+  "paper_id": "10.1016_j.commatsci.2024.113202",
+  "domain": "materials",
+  "paper": {
+    "paper_id": "10.1016_j.commatsci.2024.113202",
+    "doi": "10.1016/j.commatsci.2024.113202",
+    "title": "Deciphering the composition-microstructure correlation in low-density FeMnAlC steels with machine learning",
+    "authors": [
+      "Peng Tiexu",
+      "Yu Haoyang",
+      "Huang Jiaxin",
+      "Fang wei",
+      "Li Cong",
+      "Yao Zitong",
+      "Zhang Xin",
+      "Feng Jianhang",
+      "Ji Puguang",
+      "Xia Chaoqun",
+      "Yu Hui",
+      "Yin Fuxing"
+    ],
+    "publication_year": "2024",
+    "journal": "Computational Materials Science",
+    "keywords": [
+      "Fe-Mn-Al-C alloy",
+      "Compositional design",
+      "κ-carbide",
+      "Machine-learning"
+    ],
+    "research_type": "mixed (machine learning + experimental validation)",
+    "paper_scope": "Establishing the correlation between the composition and microstructure of low-density Fe-Mn-Al-C austenitic steels using machine learning (classification and regression), predicting κ-phase existence, the (γ+κ) dual-phase region at 500-600°C, the single γ region, and κ-phase volume fraction, with experimental validation on Fe-30Mn-8Al-1C steel."
+  },
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe-mn-al-c",
+      "alloy_name": "Fe-Mn-Al-C low-density austenitic steel",
+      "aliases": [
+        "FeMnAlC steel",
+        "FeMnAlC low-density steel",
+        "FeMnAlC austenitic low-density steel",
+        "low-density Fe-Mn-Al-C austenitic steel",
+        "FeMnAlC austenitic low-density steels"
+      ],
+      "description": "Low-density austenitic steel system chosen as the machine-learning design space; composition space defined as (100-x-y-z)Fe-xMn-yAl-zC with 10≤x≤30, 2≤y≤12, 0.2≤z≤2 (wt%).",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "10-30",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "2-12",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.2-2",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Literature-reported typical composition range is 18-30 wt% Mn, 8-12 wt% Al, 0.6-1.8 wt% C (b0013); the ML study used the wider search space defined in b0025.",
+      "source": {
+        "reason": "The (100-x-y-z)Fe-xMn-yAl-zC composition family is chosen as the system of interest for machine-learning design, with explicit composition ranges.",
+        "block_id": [
+          "b0025",
+          "b0013"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_fe-30mn-8al-1c",
+      "alloy_name": "Fe-30Mn-8Al-1C",
+      "aliases": [
+        "Fe-30Mn-8Al-1C steel",
+        "Fe-30Mn-8Al-1C austenitic low-density steel",
+        "Fe-30Mn-8Al-1C single-phase austenitic low-density steel"
+      ],
+      "description": "Specific composition selected for experimental validation of the machine-learning-predicted composition-microstructure correlation.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "30",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "8",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Measured chemical composition (wt.%): Mn 30.4, Al 7.9, C 1.1, Fe balance (b0069).",
+      "source": {
+        "reason": "Fe-30Mn-8Al-1C is the nominal composition chosen for experimental corroboration (b0034, b0065); measured composition is reported in b0069.",
+        "block_id": [
+          "b0034",
+          "b0065",
+          "b0069"
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_anneal-1000c-15min-wq-age-550c-2h",
+      "alloy_id": "alloy_fe-30mn-8al-1c",
+      "process_name": "Homogenization, hot/cold rolling, 1000°C annealing + water quenching, 550°C aging",
+      "state_label": null,
+      "aliases": [
+        "aged at 550°C for 2 h",
+        "annealed at 1000°C for 15 min, water-quenched, and aged at 550°C for 2 h"
+      ],
+      "parent_process_ids": [],
+      "description": "Induction melted under Ar atmosphere; 25 kg as-cast ingot homogenized at 1200°C for 2 h, forged to 60×60 mm billet; homogenized at 1050°C for 100 min; hot-rolled to 12 mm plate and air-cooled; cold-rolled with 75% thickness reduction at room temperature; annealed at 1000°C for 15 min; water-quenched to room temperature; aged at 550°C for 2 h.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Full thermo-mechanical processing route used to prepare the experimental Fe-30Mn-8Al-1C steel, ending in the aged terminal state at 550°C/2h.",
+        "block_id": [
+          "b0034"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-8al-1c__anneal-1000c-15min-wq-age-550c-2h",
+      "alloy_id": "alloy_fe-30mn-8al-1c",
+      "process_id": "proc_anneal-1000c-15min-wq-age-550c-2h",
+      "sample_label": "Fe-30Mn-8Al-1C",
+      "aliases": [
+        "Fe-30Mn-8Al-1C single-phase austenitic low-density steel",
+        "Fe-30Mn-8Al-1C austenitic low-density steel"
+      ],
+      "source": {
+        "reason": "The experimental validation sample combines the Fe-30Mn-8Al-1C alloy with the full processing route ending in 550°C/2h aging; characterized as a single-phase austenitic low-density steel with κ-carbide precipitates.",
+        "block_id": [
+          "b0034",
+          "b0067",
+          "b0069"
+        ]
+      }
+    }
+  ],
+  "unmapped_findings": [
+    "The machine-learning classification/regression predicts four features: existence of the κ phase (Y1), the (γ+κ) dual-phase region at 500-600°C (Y2), a single γ region (Y3), and κ-phase volume fraction (Y4).",
+    "Al and C (especially Al) govern the phase structure: for 30 wt% Mn, the κ phase requires an Al content of at least about 4 wt%; the (γ+κ) region at 500-600°C corresponds to Al 4.5-9.3 wt% and C 0.4-1.1 wt%.",
+    "Dataset: 448 samples with 10 features (Fe, Mn, Al, C plus 6 descriptors) collected from literature and JMatPro v9.0 phase-balance data; 298 samples for the κ volume fraction regression after elimination of missing data."
+  ]
+}

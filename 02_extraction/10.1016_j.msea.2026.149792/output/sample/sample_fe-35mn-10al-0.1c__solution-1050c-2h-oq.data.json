@@ -1,0 +1,620 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-35mn-10al-0.1c__solution-1050c-2h-oq",
+      "paper_id": "10.1016_j.msea.2026.149792",
+      "alloy_id": "alloy_fe-35mn-10al-0.1c",
+      "process_id": "proc_solution-1050c-2h-oq",
+      "sample_label": "10Al steel",
+      "aliases": [
+        "10Al",
+        "10 %Al steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_vacuum_induction_melting",
+      "sequence": "1",
+      "type": "casting / melting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "high-purity Ar atmosphere",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingots with nominal compositions Fe-35Mn-xAl-1C-0.1Nb-0.1V-1Mo-1W (x = 4, 6, 8, 10 wt%) prepared via vacuum induction melting under a high-purity Ar atmosphere."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": "4 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "As-cast ingots homogenized at 1150 °C for 4 h."
+    },
+    {
+      "processing_step_id": "step_hot_forging",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot forging",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Subsequently hot-forged into rods with a diameter of 16.5 mm (tensile specimens were machined from the rods with the tensile axis parallel to the rod axis)."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "oil quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Bars solution-treated at 1050 °C for 2 h followed by oil quenching to achieve a microstructure with nearly equiaxed grains; the four solution-treated steels are hereafter referred to as 4Al, 6Al, 8Al and 10Al steels."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_10Al_solution_treated",
+      "overall_structure": "After solution treatment (1050 °C/2 h + oil quenching) the 10Al steel is nearly a fully ferrite phase steel (98.1 % ferrite by mass, 1.9 % austenite) with quasi-equiaxed grains; the ferrite contains B2 and DO3 ordered domains and acicular 18R martensite precipitates. EBSD phase map shows the field almost entirely blue ferrite with only a few isolated small red austenite regions.",
+      "number_of_phases": 2,
+      "microstructure_counts": "2 main phases (nearly fully ferritic matrix + few isolated austenite regions); the ferrite additionally contains B2 and DO3 ordered domains and acicular 18R martensite precipitates.",
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_10Al_ferrite",
+          "region": "ferrite matrix (majority phase, 98.1 % mass fraction)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (α)",
+              "crystal_structure": "BCC",
+              "volume_fraction": "98.1 % (mass fraction from XRD)",
+              "morphology": "quasi-equiaxed grains",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "B2",
+              "crystal_structure": "ordered BCC (B2)",
+              "volume_fraction": null,
+              "morphology": "ordered domains coexisting with DO3 domains within the ferrite matrix (001_B2 superlattice reflections)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "DO3",
+              "crystal_structure": "ordered (DO3)",
+              "volume_fraction": null,
+              "morphology": "ordered domains coexisting within both the B2 ordered domains and the ferrite matrix; maximum size in 10Al estimated to be approximately 19 nm (TEM), superlattice spots the most intense of the three ferrite patterns",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "18R martensite precipitates and DO3/B2 ordered domains (as-solution-treated state)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_18R_martensite_10Al",
+              "type": "18R martensite (acicular/needle-shaped)",
+              "size": null,
+              "distribution": "acicular precipitates within the ferrite grains of the 10Al steel; significantly enriched in Mn and C while Al is depleted (TEM EDS mapping)",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_10Al_austenite",
+          "region": "few isolated small austenite regions within the ferrite matrix",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "1.9 % (mass fraction from XRD)",
+              "morphology": "a few isolated small regions/grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "L12-type short-range ordered (SRO) domains / spinodal decomposition (Al and C concentration fluctuations)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_10Al_deformed_3pct",
+      "overall_structure": "After small (~3 % engineering strain) tensile deformation the 10Al ferrite contains predominantly long, straight, non-uniformly distributed screw dislocations (only a small number of long straight dislocations activated), all exhibiting planar slip; the 10Al austenite shows complex planar slip characteristics during the early deformation stage.",
+      "number_of_phases": null,
+      "microstructure_counts": "ferrite with localized long straight screw dislocations; austenite with planar slip dislocation lines",
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_10Al_ferrite_deformed",
+          "region": "ferrite (uniform deformation zone, ~3 % engineering strain)",
+          "related_sequence": "4",
+          "phases_present": [],
+          "defects": [
+            {
+              "type": "long straight screw dislocations (predominant), non-uniform/localized distribution; a small number of mixed dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_10Al_austenite_deformed",
+          "region": "austenite (uniform deformation zone, ~3 % engineering strain)",
+          "related_sequence": "4",
+          "phases_present": [],
+          "defects": [
+            {
+              "type": "complex planar slip characteristics",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_10Al",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_10Al_ferrite_austenite",
+          "microstructure_id": "micro_10Al_ferrite",
+          "phase_1_name": "ferrite (α)",
+          "phase_2_name": "austenite (γ)",
+          "coherence": null
+        },
+        {
+          "interface_id": "int_10Al_DO3_B2",
+          "microstructure_id": "micro_10Al_ferrite",
+          "phase_1_name": "B2",
+          "phase_2_name": "DO3",
+          "coherence": "DO3 ordered domains coexist within both the B2 ordered domains and the ferrite matrix (ordered domains within the ferritic matrix)"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "def_int_10Al_dislocation_DO3_pairing",
+          "microstructure_id": "micro_10Al_ferrite_deformed",
+          "interaction_type": "dislocation pairing / shearing of DO3 ordered domains (anti-phase boundary, APB, based)",
+          "qualitative_or_quantitative_description": "In the 10Al steel, dislocation pairing is extremely pronounced, with up to six dislocation pairs observed and dislocation spacings as small as approximately 3 nm, demonstrating pronounced paired super-dislocation characteristics. The large-sized DO3 ordered domains in the 10Al steel cannot be completely sheared (Fig. 8(c)), whereas those in the 8Al steel can. The APB-induced attractive force in the ferrite of the 10Al steel is substantially stronger than that in the 8Al steel."
+        },
+        {
+          "interaction_id": "def_int_10Al_dislocation_ordered_domains_planar_slip",
+          "microstructure_id": "micro_10Al_ferrite_deformed",
+          "interaction_type": "dislocation–ordered structure interaction causing planar slip",
+          "qualitative_or_quantitative_description": "Both edge and screw dislocations in the 10Al ferrite show distinct planar slip; the interaction between dislocations and the DO3 ordered superlattice in the ferrite controls the planar dislocation pattern, with dislocations composed of a multitude of dislocation dipoles that shear the DO3 superlattice along the dislocation line and slip plane (HRTEM/IFFT of Fig. 8(g-i))."
+        }
+      ],
+      "slip_behavior": "The ferrite dislocation structure in the 10Al steel is predominantly characterized by localized, long, straight screw dislocations with non-uniform distribution, which leads to plastic instability/brittle fracture; all dislocation types show distinct planar slip. The Burgers vector of the ferrite dislocations was determined to be a/2[111] by g·b = 0 analysis near the [111] zone axis.",
+      "phase_evolution": "With increasing Al content the phase constitution transitions from single-phase austenite (4Al) to austenite-matrix duplex (6Al) and then ferrite-matrix duplex structures (8Al and 10Al); at 10 %Al the steel is nearly fully ferritic. DO3 ordered domains coexist within both the B2 ordered domains and the ferrite, exhibiting progressive size enlargement with higher Al concentrations (maximum ~19 nm in 10Al).",
+      "interface_notes": "The TEM observation of the ferrite–austenite phase interface, where edge dislocations are readily activated at grain boundaries owing to high local stresses, and the statement that ~24.3 % austenite in 8Al steel acts as a soft phase, are reported for the 8Al steel (Fig. 7(j–l)) and are not established for the 10Al steel (which contains only 1.9 % austenite). They are noted here only as a caution and are not attributed to this sample."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_tensile_10Al",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": "air (laboratory)",
+        "strain_rate": "1.0 × 10^-3 s^-1",
+        "specimen_geometry": "standard tensile specimens 5 mm in diameter, 25 mm in gauge length, machined from the quenched rods with the tensile axis parallel to the rod axis",
+        "test_standard": null,
+        "other_conditions": "At least three tensile specimens tested to fracture to ensure reproducibility; tests performed on an MTS tensile machine"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "parallel to rod axis",
+              "value": "585 ± 29 MPa",
+              "unit": "MPa",
+              "uncertainty": "±29 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "parallel to rod axis",
+              "value": "613 ± 41 MPa",
+              "unit": "MPa",
+              "uncertainty": "±41 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "parallel to rod axis",
+              "value": "2.1 ± 1.1 % (uniform elongation)",
+              "unit": "%",
+              "uncertainty": "±1.1 %"
+            },
+            {
+              "direction": "parallel to rod axis",
+              "value": "4.6 ± 1.6 % (total elongation)",
+              "unit": "%",
+              "uncertainty": "±1.6 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress–strain curve (Fig. 3(a)): the 10Al (green) curve rises steeply to a high stress yet terminates at very small strain (before 0.05). True stress–true strain curve (Fig. 3(c)): the 10Al steel reaches only a short low-strain segment. Strain hardening rate (Fig. 3(d)): the 10Al green curve falls to zero within a very small strain.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "value": "strain hardening rate falls to zero within a very small strain (Fig. 3(d))",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {},
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_microhardness_10Al",
+      "measurement_conditions": {
+        "temperature": "room temperature (23 °C)",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Phase-specific microhardness of the as-solution-treated steels as a function of Al content"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "ferrite (α)",
+            "value": "just below 330 HV (at 10 wt% Al)",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": null
+          },
+          {
+            "region": "austenite (γ)",
+            "value": "just under 210 HV (at 10 wt% Al)",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {},
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_physical_10Al",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Density measured using the principle of Archimedes"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.84 g cm^-3",
+          "unit": "g cm^-3"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {},
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_10Al_brittleness",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "uniaxial tension (room-temperature tensile testing)",
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-35mn-8al-0.1c",
+        "benchmark_process_id": "proc_solution-1050c-2h-oq",
+        "benchmark_sample_id": "sample_fe-35mn-8al-0.1c__solution-1050c-2h-oq",
+        "comparison_metric": "tensile ductility (total elongation) and strength–ductility balance",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_10Al_EBSD",
+      "microstructure_id": "micro_10Al_ferrite",
+      "technique": "Electron backscatter diffraction (EBSD) phase mapping in SEM",
+      "instrument_or_setup": "JSM-7800 F SEM, scanning step size 1 μm, data analysed with HKL Channel 5 software",
+      "measurement_conditions": "as-solution-treated samples",
+      "purpose": "Determine the phase distribution and grain morphology of the 10Al steel",
+      "key_findings": "The 10Al steel field is almost entirely ferrite (blue, α) with only a few isolated small austenite regions (red, γ); microstructure with quasi-equiaxed grains obtained under the solution treatment conditions."
+    },
+    {
+      "characterization_id": "char_10Al_TEM_SAED_DF",
+      "microstructure_id": "micro_10Al_ferrite",
+      "technique": "Transmission electron microscopy: bright-field/dark-field imaging and selected-area electron diffraction (SAED)",
+      "instrument_or_setup": "TEMs operated at 200 kV (FEI-Tecnai G2 F20 and FEI Talos F200X)",
+      "measurement_conditions": "as-solution-treated samples; two-beam diffraction near the [111] zone axis for dislocation analysis",
+      "purpose": "Identify ordered structures, DO3/B2 superlattice reflections and dislocation types in the 10Al steel",
+      "key_findings": "[110]α // [110]DO3 SADPs show distinct 1-11_DO3, 002_DO3 and 001_B2 superlattice spots; DO3 dark-field images acquired from the {111} and {002}DO3 reflections indicate DO3 domains coexist within both B2 domains and the ferrite matrix; maximum DO3 ordered domain size approximately 19 nm in 10Al; acicular 18R martensite observed within the ferrite grains."
+    },
+    {
+      "characterization_id": "char_10Al_XRD",
+      "microstructure_id": "micro_10Al_ferrite",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "solution-treated samples",
+      "purpose": "Examine the phase composition and mass fractions",
+      "key_findings": "The mass fraction of ferrite is 98.1 % for the 10Al steel (1.9 % austenite); the (110)α peak dominates."
+    },
+    {
+      "characterization_id": "char_10Al_EPMA_composition",
+      "microstructure_id": null,
+      "technique": "Electron probe microanalysis (EPMA) and wet-chemical analysis",
+      "instrument_or_setup": null,
+      "measurement_conditions": "solution-treated samples",
+      "purpose": "Determine the chemical compositions of the bulk alloys and of the austenite and ferrite phases",
+      "key_findings": "Measured Al matches the nominal 10 wt% level and Al partitions into the ferrite (10Al_α = 10.18 wt% Al vs 10Al_γ = 8.51 wt% Al); carbon could not be determined in the ferrite of the 10Al steel."
+    },
+    {
+      "characterization_id": "char_10Al_EDS_mapping",
+      "microstructure_id": "micro_10Al_ferrite",
+      "technique": "TEM energy-dispersive X-ray spectroscopy (EDS) mapping",
+      "instrument_or_setup": "TEM EDS (Mn, C, Fe, Al maps), 200 nm scale",
+      "measurement_conditions": "acicular precipitates in the ferrite of the 10Al steel",
+      "purpose": "Determine the elemental distribution in the acicular precipitates",
+      "key_findings": "Mn and C are significantly enriched in the acicular precipitates while Al is depleted, identifying the precipitates as 18R martensite formed within the ferrite during quenching."
+    },
+    {
+      "characterization_id": "char_10Al_gb_analysis",
+      "microstructure_id": "micro_10Al_ferrite_deformed",
+      "technique": "Two-beam diffraction g·b contrast analysis (TEM)",
+      "instrument_or_setup": "TEM bright-field, two-beam diffraction near the [111] zone axis; samples pre-deformed to 3 % engineering strain",
+      "measurement_conditions": "3 % engineering strain, near [111] zone axis",
+      "purpose": "Identify the Burgers vector and dislocation types in the ferrite of the 10Al steel",
+      "key_findings": "Long straight dislocations systematically lose contrast under g = [10-1] and g = [1-10] but are visible under g = [0-11], giving b = a/2[111] by g·b = 0 analysis; the ferrite of 10Al is predominantly composed of long straight screw dislocations."
+    },
+    {
+      "characterization_id": "char_10Al_HRTEM_IFFT",
+      "microstructure_id": "micro_10Al_ferrite_deformed",
+      "technique": "High-resolution TEM (HRTEM) and inverse fast Fourier transform (IFFT)",
+      "instrument_or_setup": "HRTEM along the [100] zone axis; IFFT along (01-1) and (0-11) planes",
+      "measurement_conditions": "planar slip bands in ferrite",
+      "purpose": "Reveal the interaction between dislocations and the DO3 ordered structure",
+      "key_findings": "Dislocations are composed of a multitude of dislocation dipoles, and the DO3 superlattice is sheared along the dislocation line and slip plane by these dipoles."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_10Al_DO3_domain_size",
+      "simulation_method": "Analytical estimate of superlattice ordered domain size from the number of paired dislocations",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "The calculated DO3 ordered domain size in the ferrite of the 10Al steel (3.0 nm) is significantly smaller than the TEM-observed value of 19 nm, whereas the calculated size for the 8Al steel (1.5 nm) is very close to its TEM-observed value of 2.1 nm.",
+      "analytical_models": [
+        {
+          "model_name": "D = N b",
+          "equation_role": "Estimate the size D of the superlattice ordered domains from the number N of paired dislocations and the magnitude b of the Burgers vector",
+          "parameters": [
+            {
+              "name": "N (number of paired dislocations)",
+              "value": "12",
+              "unit": "pairs"
+            },
+            {
+              "name": "b (Burgers vector magnitude)",
+              "value": "0.25",
+              "unit": "nm"
+            }
+          ],
+          "model_note": "Eq. (4); applied to the 10Al steel the number of dislocation pairs usually does not exceed 6 pairs; with a paired dislocation count of 12 the ordered domain size is estimated as 3.0 nm."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_10Al_SFE",
+      "simulation_method": "Thermodynamic calculation of the stacking fault energy of austenite",
+      "software_used": null,
+      "potential_model_or_database": "Thermodynamic functions and parameters listed in literature [35]",
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "No γ_SFE value is reported for the 10Al_γ austenite (Table 2 gives a dash); the calculation is only documented for 4Al_γ (51.25), 6Al_γ (62.64) and 8Al_γ (68.47) mJ·m⁻².",
+      "analytical_models": [
+        {
+          "model_name": "γ_SFE = 2ρΔG^{γ→ε} + 2σ",
+          "equation_role": "Calculate the stacking fault energy γ_SFE of the austenite, where ρ is the molar surface density along {111} planes, ΔG^{γ→ε} is the molar Gibbs energy of the γ→ε transformation and σ is the γ/ε interfacial energy per unit area",
+          "parameters": [
+            {
+              "name": "ρ",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "ΔG^{γ→ε}",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "σ",
+              "value": null,
+              "unit": null
+            }
+          ],
+          "model_note": "Eq. (3); the calculation is described for the investigated steels but no value is tabulated for the 10Al_γ austenite."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The room-temperature stacking fault energy γ_SFE of the 10Al_γ austenite is not reported (Table 2 lists an en-dash '–' for 10Al_γ); values are only given for 4Al_γ (51.25), 6Al_γ (62.64) and 8Al_γ (68.47) mJ·m⁻².",
+    "Measured chemical composition of the 10Al steel (wt.%): bulk 10Al — Mn 34.66, Al 10.17, C 0.097, Nb 0.11, V 0.11, Mo 1.30, W 1.38, Fe Bal.; austenite 10Al_γ — Mn 37.39, Al 8.51, C not determined (-), Nb 0.08, V 0.09, Mo 0.80, W 0.81, Fe Bal.; ferrite 10Al_α — Mn 34.13, Al 10.18, C not determined (-), Nb 0.08, V 0.11, Mo 1.24, W 1.26, Fe Bal. The table documents that Al partitions into the ferrite.",
+    "The 10Al steel after solution treatment is nearly a fully ferrite phase steel (98.1 % ferrite / 1.9 % austenite mass fractions from XRD) that exhibits brittle behaviour with only ~4.6 % total elongation.",
+    "The degradation in plasticity of the 10Al steel is attributed to the coarsening of DO3 ordered domains and the formation of 18R martensite.",
+    "The measured densities of the four investigated steels by the Archimedes principle are 7.42, 7.18, 6.99 and 6.84 g cm⁻³ for the 4Al, 6Al, 8Al and 10Al steels, respectively (10Al: 6.84 g cm⁻³).",
+    "The solution-treated alloy is designated '10Al steel' as part of the naming scheme applied to all four solution-treated steels (4Al, 6Al, 8Al and 10Al).",
+    "Table 3 column 1 is headed 'Test temperature' although its entries are the alloy labels 4Al, 6Al, 8Al and 10Al; the 10Al tensile row is 585 (±29) MPa YS, 613 (±41) MPa UTS, 2.1 (±1.1) % uniform elongation and 4.6 (±1.6) % total elongation, all measured at room temperature.",
+    "The DO3/18R-related flow-stress decomposition (Eqs. 5–8, Table 4, Fig. 9) with K = 0.75 and σ0 = 455 MPa is performed specifically for the 8Al steel and is not reported for the 10Al steel."
+  ]
+}

@@ -1,0 +1,404 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-25.14mn-10al-1.46c__1000c-0.1s-1",
+      "paper_id": "10.1016_j.jmrt.2021.08.079",
+      "alloy_id": "alloy_fe-25.14mn-10al-1.46c",
+      "process_id": "proc_1000c-0.1s-1",
+      "sample_label": "1000 °C/0.1 s^-1",
+      "aliases": [
+        "T=1000 °C",
+        "ε̇=0.1 s^-1"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "b0018 states the sample was heated to 1200 °C at a rate of 10 °C/s; figure_002 annotates the 'Heating rate 10 °C/s' ramp.",
+        "block_id": [
+          "b0018",
+          "figure_002"
+        ]
+      },
+      "processing_step_id": "step_1_heating",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "heating"
+      },
+      "temperature": {
+        "value": "1200 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": {
+        "value": "10 °C/s"
+      },
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Sample heated to 1200 °C at a rate of 10 °C/s (common preheat for the compression schedule)."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0018 states the sample was homogenized by holding for 120 s; figure_002 annotates the plateau '1200 °C, 120 s'.",
+        "block_id": [
+          "b0018",
+          "figure_002"
+        ]
+      },
+      "processing_step_id": "step_2_homogenization",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "homogenization (holding)"
+      },
+      "temperature": {
+        "value": "1200 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": {
+        "value": "120 s"
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Homogenized by holding for 120 s at 1200 °C."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0018 states the sample was cooled to the set T at a rate of 5 °C/s; figure_002 annotates the 'Cooling rate 5 °C/s' segment.",
+        "block_id": [
+          "b0018",
+          "figure_002"
+        ]
+      },
+      "processing_step_id": "step_3_cooling_to_T",
+      "sequence": {
+        "value": "3"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "cooling"
+      },
+      "temperature": {
+        "value": "1000 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": {
+        "value": "5 °C/s"
+      },
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Cooled from 1200 °C to the set deformation temperature (1000 °C for this sample) at 5 °C/s."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0018 states the sample was held for 15 s at the set T before compression; figure_002 annotates a 'Holding time 15 s' plateau.",
+        "block_id": [
+          "b0018",
+          "figure_002"
+        ]
+      },
+      "processing_step_id": "step_4_holding",
+      "sequence": {
+        "value": "4"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "holding/equilibration"
+      },
+      "temperature": {
+        "value": "1000 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": {
+        "value": "15 s"
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Held 15 s at the set temperature (1000 °C) before compression so that the temperature difference between the inside and outside of the sample is the same."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0018 defines the compression conditions: cylindrical sample, constant strain rate compression at the set temperature; the sample's process (1000 °C, 0.1 s⁻¹) is given by the process definition. Maximum compression 60% (true strain 0.92) is stated in b0018.",
+        "block_id": [
+          "b0018"
+        ]
+      },
+      "processing_step_id": "step_5_hot_compression",
+      "sequence": {
+        "value": "5"
+      },
+      "type": {
+        "value": "mechanical processing"
+      },
+      "method": {
+        "value": "isothermal constant-strain-rate hot compression"
+      },
+      "temperature": {
+        "value": "1000 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": {
+        "value": "60% (true strain 0.92)"
+      },
+      "processing_steps_notes": {
+        "value": "Compressed at 1000 °C at a constant strain rate of 0.1 s⁻¹ to a maximum compression of 60% (true strain 0.92). Mica foils with high-temperature lubricants were affixed to the two end faces to reduce friction and deformation non-uniformity. Cylindrical sample Ø8 mm × 12 mm."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0018 states that after compression the sample was sprayed with water to cool it down; figure_002 annotates the final steep 'Quenching' arrow.",
+        "block_id": [
+          "b0018",
+          "figure_002"
+        ]
+      },
+      "processing_step_id": "step_6_quenching",
+      "sequence": {
+        "value": "6"
+      },
+      "type": {
+        "value": "cooling"
+      },
+      "method": {
+        "value": "water-spray cooling (quenching)"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": {
+        "value": "water spray"
+      },
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "After compression the sample was sprayed with water to cool it down; figure_002 annotates 'Quenching'."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "figure_001 shows and describes the initial microstructure of the Fe-Mn-Al-C steel before hot deformation, which constitutes the starting state of the compressed sample.",
+        "block_id": [
+          "figure_001",
+          "b0018"
+        ]
+      },
+      "structure_id": "struct_initial",
+      "overall_structure": {
+        "value": "Initial (pre-deformation) microstructure of the forging billet: large polygonal grains delimited by bright, continuous, slightly etched boundaries enclosing dark grey grain interiors. Within essentially every grain the interior carries many fine, closely spaced, parallel light-grey striations/lamellae whose direction changes from grain to grain, giving a strongly banded, dendritic/interdendritic segregation contrast rather than a uniform solid solution; a few grains appear almost featureless while others are densely striped, indicating chemical heterogeneity in the as-forged condition."
+      },
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "figure_001 (Fig. 1 e Initial microstructure) describes the initial pre-deformation microstructure of the Fe-Mn-Al-C steel used for this study; b0018 refers to the initial microstructure in Fig. 1.",
+            "block_id": [
+              "figure_001",
+              "b0018"
+            ]
+          },
+          "microstructure_id": "micro_initial",
+          "region": {
+            "value": "initial pre-deformation reference state (forging billet)"
+          },
+          "related_sequence": null,
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": {
+              "value": "Large polygonal grains; individual grains span roughly one to a few times the 100 µm scale bar length"
+            },
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "b0018 describes the etching solution, sample preparation and the LEXT OLS4000 laser confocal microscope used to collect microstructure images; figure_001 shows the resulting initial microstructure.",
+        "block_id": [
+          "b0018",
+          "figure_001"
+        ]
+      },
+      "characterization_id": "char_optical_microscopy",
+      "microstructure_id": "micro_initial",
+      "technique": {
+        "value": "optical / laser-scanning confocal metallography"
+      },
+      "instrument_or_setup": {
+        "value": "LEXT OLS4000 laser confocal microscope"
+      },
+      "measurement_conditions": {
+        "value": "Sample split in half along the axial axis; after preparation, grinding, polishing and etching with 30% nitric acid alcohol solution (volume fraction); 100 µm scale bar."
+      },
+      "purpose": {
+        "value": "Observe the initial microstructure and the hot-deformed (DRX) microstructure in the three deformation zones of the compressed sample."
+      },
+      "key_findings": {
+        "value": "Initial microstructure consists of large polygonal grains with bright etched boundaries and abundant fine parallel light striations (segregation banding); as-forged condition is chemically heterogeneous."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0018 states the isothermal constant strain rate compression experiments were carried out with the Gleeble-3500 thermo-mechanical simulator and lists the experimental temperatures and strain rates.",
+        "block_id": [
+          "b0018"
+        ]
+      },
+      "characterization_id": "char_gleeble_compression",
+      "microstructure_id": null,
+      "technique": {
+        "value": "isothermal constant-strain-rate hot compression test"
+      },
+      "instrument_or_setup": {
+        "value": "Gleeble-3500 thermo-mechanical simulator"
+      },
+      "measurement_conditions": {
+        "value": "Temperatures 900-1150 °C, strain rates 0.01-10 s⁻¹, maximum compression 60% (true strain 0.92); this sample at 1000 °C and 0.1 s⁻¹."
+      },
+      "purpose": {
+        "value": "Measure rheological (flow) stress curves and study dynamic recrystallization behavior of the Fe-Mn-Al-C steel."
+      },
+      "key_findings": {
+        "value": "The steel is a negative temperature-sensitive and positive strain-rate-sensitive material; flow stress decreases with decreasing strain rate or increasing temperature."
+      }
+    }
+  ],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "b0037 states that the Z parameters under different T and ε̇ were obtained (Table 1); table_001 gives lnZ = 60.99 for the 1000 °C / 0.1 s⁻¹ cell. Qp = 669.844 kJ/mol from b0032/b0085.",
+        "block_id": [
+          "b0037",
+          "table_001",
+          "b0032"
+        ]
+      },
+      "computation_id": "comp_zener_hollomon",
+      "simulation_method": {
+        "value": "Constitutive analysis: Zener-Hollomon parameter calculation (temperature-compensated strain rate)"
+      },
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": {
+            "value": "Zener-Hollomon parameter Z = ε̇·exp(Qp/RT)"
+          },
+          "equation_role": {
+            "value": "Characterize the combined influence of temperature and strain rate on the rheological stress"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "lnZ"
+              },
+              "value": {
+                "value": "60.99"
+              },
+              "unit": null
+            },
+            {
+              "name": {
+                "value": "Qp (DRX activation energy)"
+              },
+              "value": {
+                "value": "669.844"
+              },
+              "unit": {
+                "value": "kJ mol⁻¹"
+              }
+            },
+            {
+              "name": {
+                "value": "T (deformation temperature)"
+              },
+              "value": {
+                "value": "1000"
+              },
+              "unit": {
+                "value": "°C"
+              }
+            },
+            {
+              "name": {
+                "value": "strain rate ε̇"
+              },
+              "value": {
+                "value": "0.1"
+              },
+              "unit": {
+                "value": "s⁻¹"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "lnZ value for this sample (T = 1000 °C, ε̇ = 0.1 s⁻¹) taken from Table 1; Qp is the activation energy for dynamic recrystallization of the steel."
+          }
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "For this sample (T = 1000 °C, ε̇ = 0.1 s⁻¹) the Zener-Hollomon parameter is lnZ = 60.99 (Table 1).",
+    "This sample's deformation condition (1000 °C, 0.1 s⁻¹) lies within the processing window 950-1000 °C / 0.01-0.1 s⁻¹ that the paper identifies as producing a relatively fine and uniform dynamically recrystallized grain structure.",
+    "The paper states that with increasing Z parameter (i.e. increasing strain rate or decreasing temperature) the initiation and completion of dynamic recrystallization become more difficult; lnZ decreases with increasing temperature within a strain-rate row and increases with increasing strain rate within a temperature column.",
+    "No explicit peak stress, characteristic strain/stress values or measured DRX average grain size specific to the 1000 °C / 0.1 s⁻¹ condition are individually reported in the text; such values are given only through general models/figures (Eq. 10, Fig. 6, Fig. 10) applicable across all conditions."
+  ]
+}

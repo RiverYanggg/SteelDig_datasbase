@@ -1,0 +1,602 @@
+[
+  {
+    "path": "$.processing_steps[0]",
+    "reason": "该样本的工艺为第一性原理 DFT 计算协议，均匀应用于所有 Fe1-xMnxAl 结构。",
+    "block_id": [
+      "b0010",
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.processing_steps[0].sequence",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.processing_steps[0].type",
+    "reason": "该样本唯一的工艺身份是 CASTEP/GGA-PBE 第一性原理结构优化计算，无实验热/机械加工。",
+    "block_id": [
+      "b0010",
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.processing_steps[0].method",
+    "reason": "Calculation methods 一节明确使用 CASTEP 程序与 GGA-PBE 交换关联泛函。",
+    "block_id": [
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.processing_steps[0].processing_steps_notes",
+    "reason": "工艺参数取自 Calculation methods 一节，且为纯计算研究、无实验热/机械加工。",
+    "block_id": [
+      "b0010",
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0]",
+    "reason": "Fe0.625Mn0.375Al 是 Fe1-xMnxAl 系列中 x=0.375 的 B2 型立方 Pm-3m 超胞结构。",
+    "block_id": [
+      "b0011",
+      "figure_001"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].overall_structure",
+    "reason": "Fig.1 与 Calculation methods 说明 Fe1-xMnxAl 为立方 Pm-3m 超胞，由 Mn 取代 FeAl 中 Fe 亚点阵上的 Fe；x=0.375 时 8 个 Fe 位点中 3 个被 Mn 取代（Fig.1 中该模型含三个绿色 Mn 球）。",
+    "block_id": [
+      "b0011",
+      "figure_001"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].number_of_phases",
+    "reason": "该 DFT 样品为单相 B2 型金属间化合物晶体，未报告第二相。",
+    "block_id": [
+      "b0011",
+      "figure_001"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0]",
+    "reason": "Fe0.625Mn0.375Al 的 DFT 优化晶体结构来自 Fig.1（含 3 个 Mn 的中间行模型）与 Table 1 的晶格参数。",
+    "block_id": [
+      "b0011",
+      "b0021",
+      "figure_001"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].related_sequence",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].phases_present[0].phase_name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].phases_present[0].crystal_structure",
+    "reason": "Table 1 给出 Fe0.625Mn0.375Al 的 a=b=c=0.576 nm；晶体结构为立方 Pm-3m（B2 型，Fig.1/Calculation methods）。",
+    "block_id": [
+      "b0011",
+      "b0021"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[0]",
+    "reason": "Fe0.625Mn0.375Al 的弹性常数与模量列于 Table 2。",
+    "block_id": [
+      "b0048",
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[0].measurement_conditions.test_standard",
+    "reason": "弹性模量由 VRH 近似（Eqs. 4-9）从 DFT 弹性常数计算；硬度由 Eq.10 经验模型计算。",
+    "block_id": [
+      "b0034",
+      "b0045"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[0].mechanical.tensile_properties.youngs_modulus",
+    "reason": "Table 2 中 Fe0.625Mn0.375Al 行的 Young's modulus E = 227.3 GPa。",
+    "block_id": [
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[0].mechanical.hardness[0]",
+    "reason": "Table 2 中 Fe0.625Mn0.375Al 行的 Vickers 硬度 H_V = 9.0 GPa（经验模型 Eq.10）。",
+    "block_id": [
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[0].mechanical.hardness[0].value",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.properties[0].mechanical.hardness[0].scale",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.properties[0].mechanical.hardness[0].unit",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.properties[1]",
+    "reason": "Fe0.625Mn0.375Al 的理论密度、声速与 Debye 温度列于 Table 4；电子/磁性特征来自 DOS 分析。",
+    "block_id": [
+      "b0069",
+      "b0025"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1].measurement_conditions.test_standard",
+    "reason": "Table 4 标题注明这些为理论（DFT）密度、声速与 Debye 温度值。",
+    "block_id": [
+      "b0068",
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1].physical.density",
+    "reason": "Table 4 给出 Fe0.625Mn0.375Al 的理论密度 ρ = 5745.3 kg·m⁻³。",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1].physical.thermal_properties.debye_temperature",
+    "reason": "Table 4 给出 Fe0.625Mn0.375Al 的 Debye 温度 Θ_D = 567.3 K。",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1].physical.thermal_properties.longitudinal_sound_velocity",
+    "reason": "Table 4 给出 Fe0.625Mn0.375Al 的纵波声速 v_l = 7187.5 m·s⁻¹。",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1].physical.thermal_properties.transverse_sound_velocity",
+    "reason": "Table 4 给出 Fe0.625Mn0.375Al 的横波声速 v_s = 3918.1 m·s⁻¹。",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1].physical.thermal_properties.average_sound_velocity",
+    "reason": "Table 4 给出 Fe0.625Mn0.375Al 的平均声速 v_m = 4370.2 m·s⁻¹。",
+    "block_id": [
+      "b0069"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1].physical.electrical_properties.conductivity",
+    "reason": "Fig.3 显示费米能级处 DOS 非零，呈金属性；正文结合共价+金属键合得出良好电子导电性。",
+    "block_id": [
+      "b0025",
+      "b0029"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.properties[1].physical.magnetic_properties.magnetic_character",
+    "reason": "自旋极化 TDOS 中上下自旋态不对称，表明具有磁性特征。",
+    "block_id": [
+      "b0025"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[0]",
+    "reason": "Fe0.625Mn0.375Al 因 B/G 比大于 1.75 被归类为韧性合金。",
+    "block_id": [
+      "b0045",
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[0].comparative_performance.comparison_metric",
+    "reason": "Table 2 给出 Fe0.625Mn0.375Al 的 B/G = 2.03；正文指出 B/G > 1.75 为韧性，且仅 FeAl 与 Fe0.875Mn0.125Al 为脆性。",
+    "block_id": [
+      "b0045",
+      "b0049"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[1]",
+    "reason": "Fe0.625Mn0.375Al 的弹性各向异性指数 A^U = 1.89，在系列中排第三。",
+    "block_id": [
+      "b0051",
+      "b0059"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[1].comparative_performance.comparison_metric",
+    "reason": "Table 3 给出 A^U = 1.89；正文 b0059 给出各向异性降序排序，Fe0.625Mn0.375Al 列第三。",
+    "block_id": [
+      "b0051",
+      "b0059"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0]",
+    "reason": "Fig.3 面板 d 为 Fe0.625Mn0.375Al 的 TDOS/PDOS；正文讨论费米能级附近 Fe-d/Mn-d 与低 Al-p 杂化。",
+    "block_id": [
+      "figure_003",
+      "b0025",
+      "b0028"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0].technique",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.characterization_methods[0].instrument_or_setup",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.characterization_methods[0].measurement_conditions",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.characterization_methods[0].purpose",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.characterization_methods[0].key_findings",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.characterization_methods[1]",
+    "reason": "Fig.4 的电子密度分布与电子密度差图及正文 b0030 讨论 Fe–Mn–Al 合金的共价/金属键合。",
+    "block_id": [
+      "figure_004",
+      "b0030"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[1].technique",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.characterization_methods[1].instrument_or_setup",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.characterization_methods[1].measurement_conditions",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.characterization_methods[1].purpose",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.characterization_methods[1].key_findings",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.characterization_methods[2]",
+    "reason": "Fig.9 显示 (001) 与 (110) 面 Young's 模量的方向依赖性强，非球形轮廓表明强各向异性。",
+    "block_id": [
+      "figure_009",
+      "b0064"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[2].technique",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.characterization_methods[2].instrument_or_setup",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.characterization_methods[2].measurement_conditions",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.characterization_methods[2].purpose",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.characterization_methods[2].key_findings",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0]",
+    "reason": "DFT 计算协议与所用解析模型均出自 Calculation methods 与 Results 各节。",
+    "block_id": [
+      "b0010",
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].simulation_method",
+    "reason": "Calculation methods 一节使用 CASTEP 程序进行基于 DFT 的第一性原理计算。",
+    "block_id": [
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].software_used",
+    "reason": "论文明确说明采用 Cambridge Sequential Total Energy Package (CASTEP) code。",
+    "block_id": [
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].potential_model_or_database",
+    "reason": "交换关联能用 GGA-PBE，价电子-离子实相互作用用超软赝势描述。",
+    "block_id": [
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].boundary_and_initial_conditions",
+    "reason": "这些计算参数均取自 Calculation methods 一节。",
+    "block_id": [
+      "b0011"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].validation_against_experiment",
+    "reason": "正文 b0019 说明计算结果与其他实验和计算值吻合良好。",
+    "block_id": [
+      "b0019"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[0]",
+    "reason": "Eqs. 1-2 与相关定义见 b0014-b0016。",
+    "block_id": [
+      "b0014",
+      "b0015",
+      "b0016"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[0].model_name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[0].equation_role",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[0].model_note",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1]",
+    "reason": "Eq. 3 与稳定性判据见 b0033-b0034。",
+    "block_id": [
+      "b0033",
+      "b0034"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1].model_name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1].equation_role",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[1].model_note",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[2]",
+    "reason": "Eqs. 4-9 见 b0035-b0040。",
+    "block_id": [
+      "b0035",
+      "b0036",
+      "b0037",
+      "b0038",
+      "b0039",
+      "b0040"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[2].model_name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[2].equation_role",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[2].model_note",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3]",
+    "reason": "Eq. 10 与参数定义见 b0046-b0047。",
+    "block_id": [
+      "b0046",
+      "b0047"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3].model_name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3].equation_role",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[3].model_note",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4]",
+    "reason": "Eqs. 11-14 见 b0055-b0058。",
+    "block_id": [
+      "b0055",
+      "b0056",
+      "b0057",
+      "b0058"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].model_name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].equation_role",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[4].model_note",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[5]",
+    "reason": "Eqs. 15-18 见 b0070-b0073。",
+    "block_id": [
+      "b0070",
+      "b0071",
+      "b0072",
+      "b0073"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[5].model_name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[5].equation_role",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.computational_details[0].analytical_models[5].model_note",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  }
+]

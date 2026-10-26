@@ -1,0 +1,412 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-0.398c-0.87mn__const-950c-0.01s",
+      "paper_id": "10.1016_j.ijplas.2025.104353",
+      "alloy_id": "alloy_fe-0.398c-0.87mn",
+      "process_id": "proc_const-950c-0.01s",
+      "sample_label": "950 °C, 0.01 s-1",
+      "aliases": [
+        "950 °C, 0.01 s^-1"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_heating",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "heating to austenitization/homogenization temperature",
+      "temperature": "1250 °C",
+      "temperature_unit": "°C",
+      "duration": "180 s",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": "10 °C/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Heated at 10 °C/s and held for 180 s to homogenize the austenite phase."
+    },
+    {
+      "processing_step_id": "step_2_cooling_hold",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "cooling to deformation temperature and holding",
+      "temperature": "950 °C",
+      "temperature_unit": "°C",
+      "duration": "60 s",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": "10 °C/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cooled to 950 °C at 10 °C/s and kept for 60 s to reduce temperature fluctuations before compression."
+    },
+    {
+      "processing_step_id": "step_3_hot_compression",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot compression (Gleeble 1500 thermomechanical simulator)",
+      "temperature": "950 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Constant-condition hot compression at 950 °C and effective strain rate 0.01 s⁻¹ to a final true strain (ε_total) of 0.9. Specimen: cylindrical ϕ6 mm × 9 mm cut along rolling direction; 0.1 mm tantalum foil placed between specimen ends and indenter to prevent interfacial melting and minimize friction."
+    },
+    {
+      "processing_step_id": "step_4_water_quench",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Immediately water-quenched after deformation to freeze the high-temperature microstructure morphology."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_initial_mixed_grain",
+      "overall_structure": "Initial mixed-grain austenite microstructure (as-homogenized prior austenite grains) before hot compression",
+      "number_of_phases": 1,
+      "microstructure_counts": 1,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_initial_austenite",
+          "region": "orthogonal sections (top/right/left faces, representative areas 550 µm × 550 µm)",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "austenite (prior austenite grains)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "mixed-grain (coarse and fine grains)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "141.66",
+              "unit": "µm"
+            },
+            "grain_size_distribution": "Experimental metallographic (2D): AGS 141.66 µm, SD 54.54 µm, Min 10.22 µm, Max 265.20 µm; face d_ave = 166.00 µm (top), 131.59 µm (right), 127.63 µm (left).",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "structure_deformed_950c_0.01s",
+      "overall_structure": "As-quenched martensitic microstructure after constant hot compression at 950 °C, 0.01 s⁻¹ to true strain 0.9; prior austenite grains reconstructed from EBSD show nearly complete recrystallization at 0.9 strain",
+      "number_of_phases": 2,
+      "microstructure_counts": 2,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_950c_0.01s_0.5strain",
+          "region": "center of side section (reconstructed prior austenite grains from EBSD)",
+          "related_sequence": "3",
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "56.97 ± 5.24",
+              "unit": "µm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_950c_0.01s_0.9strain",
+          "region": "center of side section (reconstructed prior austenite grains from EBSD)",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "recrystallized prior austenite grains (DRX grains)",
+              "crystal_structure": null,
+              "volume_fraction": "97.2%",
+              "morphology": "equiaxed recrystallized grains",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "deformed (unrecrystallized) matrix",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "remaining unrecrystallized matrix",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "52.01 ± 3.48",
+              "unit": "µm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_flow_stress_950c_0.01s",
+      "measurement_conditions": {
+        "temperature": "950 °C",
+        "temperature_unit": "°C",
+        "environment": "Gleeble 1500 thermomechanical simulator, uniaxial hot compression; 0.1 mm tantalum foil placed between specimen ends and indenter to minimize friction",
+        "strain_rate": "0.01 s^-1",
+        "specimen_geometry": "cylindrical specimen ϕ6 mm × 9 mm, cut along rolling direction",
+        "test_standard": null,
+        "other_conditions": "Deformed to true strain 0.9; water-quenched after deformation"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": [
+            "True stress–true strain hot-compression curve at 950 °C and 0.01 s⁻¹: stress rises to a peak just below 90 MPa (≈85 MPa) near true strain ≈0.2–0.3, then softens mildly to a minimum near 70 MPa."
+          ],
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om",
+      "microstructure_id": "micro_950c_0.01s_0.9strain",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": "Olympus GX71 optical microscope",
+      "measurement_conditions": "Specimens split along axial direction; sections ground with SiC papers, polished with 1 µm and 0.25 µm diamond pastes, chemically etched with saturated picric acid solution; Image Pro Plus software used for equivalent PAG diameter.",
+      "purpose": "Observe prior austenite grain (PAG) structure at the center of the side section and calculate the equivalent diameter of each PAG.",
+      "key_findings": "Provides the initial mixed-grain PAG microstructure (Fig 4a) and PAG size data used for DRX/AGS determination."
+    },
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_950c_0.01s_0.9strain",
+      "technique": "SEM-EBSD",
+      "instrument_or_setup": "SU5000 scanning electron microscope equipped with an EBSD detector",
+      "measurement_conditions": "EBSD samples electrolytically polished with 10% perchlorate alcohol solution at 30 V and 0.25 A for 30 s after grinding and mechanical polishing; EBSD step size 0.65–1.3 µm.",
+      "purpose": "Characterize the as-quenched martensitic microstructure and reconstruct prior austenite grains.",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_pag_reconstruction",
+      "microstructure_id": "micro_950c_0.01s_0.9strain",
+      "technique": "EBSD data post-processing (PAG reconstruction and GOS analysis)",
+      "instrument_or_setup": "ARPGE software (Greninger-Troiano orientation relationship); AZtecCrystal software (GOS threshold 3°)",
+      "measurement_conditions": "GOS threshold defined at 3°; equivalent PAG diameter calculated from reconstructed EBSD IPF maps considering boundaries with misorientation angles higher than 10°.",
+      "purpose": "Reconstruct prior austenite grains from as-quenched martensite EBSD maps and distinguish recrystallized grains from deformed ones.",
+      "key_findings": "For the constant 950 °C, 0.01 s⁻¹ condition at 0.9 strain: AGS 52.01±3.48 µm, DRX fraction 97.2%."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_ca_const_950c_0.01s",
+      "simulation_method": "3D cellular automaton (CA) with inhomogeneous dislocation density and grain boundary sliding (GBS) for discontinuous dynamic recrystallization (DDRX)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "RVE 550 µm × 550 µm × 550 µm; cell size L0 = 2.5 µm; initial uniform dislocation density 1×10^11 m^-2; constant deformation 950 °C, 0.01 s⁻¹ to true strain 0.9; characteristic stresses and DRX activation energy calibrated from the modified constitutive model (Section 3.1).",
+      "validation_against_experiment": "At 0.9 strain: simulated AGS 52.52 µm vs experimental reconstructed AGS 52.01±3.48 µm; simulated DRX fraction 99.5% vs experimental 97.2%. At 0.5 strain: simulated AGS 60.70 µm (DRX 94.1%) vs experimental 56.97±5.24 µm. At 0.4 strain: simulated AGS 68.69 µm (DRX 76.9%).",
+      "analytical_models": [
+        {
+          "model_name": "Modified phenomenological constitutive model (STG-based characteristic stresses and DRX kinetics)",
+          "equation_role": "Calibrates characteristic stresses (σ0, σss, σs, σc) and DRX kinetics (t0.5, DRX fraction) used to drive CA dislocation accumulation/annihilation and nucleation",
+          "parameters": [
+            {
+              "name": "μ0",
+              "value": "7.89 × 10^10",
+              "unit": "MPa"
+            },
+            {
+              "name": "Tm",
+              "value": "1800",
+              "unit": "K"
+            },
+            {
+              "name": "KT0",
+              "value": "680.912",
+              "unit": null
+            },
+            {
+              "name": "QKT",
+              "value": "23,134.8",
+              "unit": null
+            },
+            {
+              "name": "ψ",
+              "value": "9.92 × 10^-3",
+              "unit": null
+            },
+            {
+              "name": "q",
+              "value": "0.867",
+              "unit": null
+            },
+            {
+              "name": "Qdrx",
+              "value": "326,922",
+              "unit": "J/mol"
+            },
+            {
+              "name": "Qp",
+              "value": "314,300",
+              "unit": "J/mol"
+            },
+            {
+              "name": "A",
+              "value": "7.3214 × 10^11",
+              "unit": null
+            },
+            {
+              "name": "α",
+              "value": "0.0089",
+              "unit": null
+            },
+            {
+              "name": "n",
+              "value": "6.3742",
+              "unit": null
+            },
+            {
+              "name": "kd0",
+              "value": "4.442",
+              "unit": null
+            },
+            {
+              "name": "Qkd",
+              "value": "728.468",
+              "unit": null
+            },
+            {
+              "name": "nAv0",
+              "value": "18.097",
+              "unit": null
+            },
+            {
+              "name": "QAv",
+              "value": "21,895.1",
+              "unit": null
+            },
+            {
+              "name": "nc",
+              "value": "55.563",
+              "unit": null
+            }
+          ],
+          "model_note": "Material parameters from Table 1, obtained by genetic algorithm optimization (Appendix A2)."
+        },
+        {
+          "model_name": "3D CA model material parameters",
+          "equation_role": "GBS strain rate, DRX nucleation, grain boundary energy/mobility, and dislocation-density–stress coupling parameters",
+          "parameters": [
+            {
+              "name": "K",
+              "value": "1.38 × 10^-23",
+              "unit": "J/K"
+            },
+            {
+              "name": "Cdrx",
+              "value": "1.99 × 10^10",
+              "unit": null
+            },
+            {
+              "name": "b",
+              "value": "2.45 × 10^-10",
+              "unit": "m"
+            },
+            {
+              "name": "ν",
+              "value": "0.33",
+              "unit": null
+            },
+            {
+              "name": "E",
+              "value": "305,200",
+              "unit": "J/mol"
+            },
+            {
+              "name": "δDob",
+              "value": "5 × 10^-10",
+              "unit": "m3/s"
+            },
+            {
+              "name": "AGB",
+              "value": "37.5",
+              "unit": null
+            },
+            {
+              "name": "H0",
+              "value": "2.63 × 10^-7",
+              "unit": null
+            },
+            {
+              "name": "PGB",
+              "value": "2",
+              "unit": null
+            },
+            {
+              "name": "nGB",
+              "value": "2",
+              "unit": null
+            },
+            {
+              "name": "Vm",
+              "value": "7.18 × 10^-6",
+              "unit": null
+            },
+            {
+              "name": "αdis",
+              "value": "0.5",
+              "unit": null
+            }
+          ],
+          "model_note": "Material parameters from Table 4; K, b, ν, δDob, nGB, Vm and αdis from literature; Cdrx, E, AGB, H0 and PGB solved by GA optimization (Appendix B1)."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "DRX fraction vs time for the constant 950 °C, 0.01 s⁻¹ condition (Fig 6b): the 0.01 s⁻¹ curve completes the 0→1 transition, reaching DRX fraction 1.0 near 60–70 s.",
+    "This sample is the constant-condition reference (950 °C, 0.01 s⁻¹) against which transiently varying strain-rate and temperature tests are compared in Figs 7–10, 13, 16 and 19–21.",
+    "The modified constitutive model's accuracy over constant deformation conditions (of which this sample is one) is reported in Table 2: flow stress RMSE 4.8944 MPa, R² 0.9909, AARE 3.91%; load RMSE 274.6820 N, R² 0.9918, AARE 6.65%."
+  ]
+}

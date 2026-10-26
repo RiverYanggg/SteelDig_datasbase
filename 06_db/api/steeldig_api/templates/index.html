@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+{% from "_macros.html" import family_badge %}
+{% block title %}总览{% endblock %}
+
+{% block content %}
+<section class="home-intro">
+  <div class="home-intro-main">
+    <div class="eyebrow"><span></span> STEELDIG · EVIDENCE-FIRST MATERIALS INTELLIGENCE</div>
+    <h1>材料知识库总览</h1>
+    <p>把文献里的成分、工艺、性能和图表，变成可检索、可验证、可重建的材料事实。</p>
+    <div class="home-actions">
+      <a class="button button-primary" href="/browse">浏览样品 <span>→</span></a>
+      <a class="button button-quiet" href="/quality">查看质量门禁 <span>↗</span></a>
+    </div>
+  </div>
+  <div class="story-rail" aria-label="SteelDig 工作流">
+    <div class="story-label">从问题出发，回到证据</div>
+    <a class="story-step" href="/composition"><span class="story-no">01</span><span><b>筛选材料</b><small>选择元素，设定成分区间</small></span><span class="story-arrow">↗</span></a>
+    <a class="story-step" href="/browse"><span class="story-no">02</span><span><b>比较性能</b><small>结合成分、工艺与强塑性</small></span><span class="story-arrow">↗</span></a>
+    <a class="story-step" href="/search?q=κ-碳化物"><span class="story-no">03</span><span><b>追溯证据</b><small>检索原文，核对事实来源</small></span><span class="story-arrow">↗</span></a>
+    <a class="story-step" href="/quality"><span class="story-no">04</span><span><b>检查质量</b><small>查看规则、告警与校订记录</small></span><span class="story-arrow">↗</span></a>
+  </div>
+</section>
+
+<div class="grid g4" style="margin-bottom:16px">
+  <div class="card kpi">
+    <span class="label">文献</span>
+    <span class="value">{{ stats.papers }}</span>
+    <span class="foot">{{ stats.alloys }} 个合金 · {{ stats.samples }} 个样品</span>
+  </div>
+  <div class="card kpi">
+    <span class="label">可数值化性能</span>
+    <span class="value">{{ '{:,}'.format(stats.numeric_properties) }}</span>
+    <span class="foot">共 {{ '{:,}'.format(stats.properties) }} 条属性量 · 单位已归一</span>
+  </div>
+  <div class="card kpi">
+    <span class="label">图表 / 公式</span>
+    <span class="value">{{ stats.figures }}<small>/ {{ stats.equations }}</small></span>
+    <span class="foot">{{ '{:,}'.format(stats.evidence_blocks) }} 个证据块支撑</span>
+  </div>
+  <div class="card kpi">
+    <span class="label">检索文档</span>
+    <span class="value">{{ '{:,}'.format(stats.search_documents) }}</span>
+    <span class="foot">{{ '{:,}'.format(stats.embedded_documents) }} 条已向量化 · 中英文</span>
+  </div>
+</div>
+
+<div class="grid g-main" style="margin-bottom:16px">
+  <div class="card">
+    <div class="card-head">
+      <div>
+        <h3>强度–塑性分布</h3>
+        <div class="sub">每个点是一个样品；悬停可查看成分与工艺</div>
+      </div>
+      <div class="spacer"></div>
+      <span class="badge ghost">YS / MPa × EL / %</span>
+    </div>
+    <div id="scatter" class="chart tall"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div><h3>合金族构成</h3><div class="sub">按样品数</div></div></div>
+    <div id="families" class="chart" style="height:230px"></div>
+  </div>
+</div>
+
+<div class="grid g-main" style="margin-bottom:16px">
+  <div class="card">
+    <div class="card-head">
+      <div><h3>强塑积排行</h3><div class="sub">UTS × EL，衡量强塑性协同</div></div>
+    </div>
+    <div class="table-wrap">
+      <table class="data">
+        <thead><tr><th>样品</th><th>成分</th><th class="num">YS</th><th class="num">UTS</th><th class="num">EL</th><th class="num">UTS×EL</th></tr></thead>
+        <tbody>
+        {% for t in top %}
+          <tr>
+            <td><a href="/samples/{{ t.paper_id }}/{{ t.sample_id }}">{{ t.sample_id | replace('sample_','') | truncate(34, true) }}</a>
+              <div class="muted" style="font-size:11px">{{ t.paper_id }}</div></td>
+            <td class="mono" style="font-size:12px">{{ t.formula or '—' }}</td>
+            <td class="num">{{ t.yield_strength_mpa | round(0) | int if t.yield_strength_mpa else '—' }}</td>
+            <td class="num">{{ t.tensile_strength_mpa | round(0) | int if t.tensile_strength_mpa else '—' }}</td>
+            <td class="num">{{ t.elongation_pct | round(1) }}</td>
+            <td class="num"><b>{{ (t.tensile_strength_mpa * t.elongation_pct / 100) | round(0) | int }}</b></td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div><h3>元素体系</h3><div class="sub">按合金数（仿 MP 的 chemsys）</div></div></div>
+    <div class="table-wrap">
+      <table class="data">
+        <tbody>
+        {% for c in chemsys %}
+          <tr>
+            <td class="mono" style="font-size:12.5px">{{ c.chemsys }}</td>
+            <td style="width:45%"><div class="bar"><i style="width: {{ (c.n / chemsys[0].n * 100) | round(0) }}%"></i></div></td>
+            <td class="num">{{ c.n }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <div><h3>最新文献</h3><div class="sub">按年份倒序</div></div>
+    <div class="spacer"></div>
+    <a href="/papers" style="font-size:12.5px">全部 {{ stats.papers }} 篇 →</a>
+  </div>
+  <div class="table-wrap">
+    <table class="data">
+      <thead><tr><th>标题</th><th>年份</th><th>期刊</th><th class="num">样品</th><th class="num">图</th><th class="num">公式</th></tr></thead>
+      <tbody>
+      {% for p in recent %}
+        <tr>
+          <td style="max-width:560px"><a href="/papers/{{ p.paper_id }}">{{ p.title | truncate(96, true) }}</a></td>
+          <td>{{ p.year or '—' }}</td>
+          <td class="muted" style="font-size:12px">{{ (p.journal or '—') | truncate(28, true) }}</td>
+          <td class="num">{{ p.n_samples }}</td>
+          <td class="num">{{ p.n_figures }}</td>
+          <td class="num">{{ p.n_equations }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const scatter = {{ scatter | safe }};
+const famName = {{ fam_label | tojson }};
+const byFam = {};
+scatter.forEach(d => {
+  const k = d.family_key || '未分类';
+  (byFam[k] = byFam[k] || []).push([d.yield_strength_mpa, d.elongation_pct, d.sample_id, d.paper_id]);
+});
+const fams = Object.keys(byFam);
+const colors = ['#2563eb','#7c3aed','#0e9384','#d97706','#db2777','#0891b2','#65a30d'];
+
+sdChart('scatter', {
+  legend: { top: 0, right: 0, itemWidth: 8, itemHeight: 8, textStyle: { fontSize: 11, color: '#667085' } },
+  xAxis: sdAxis({ name: '屈服强度 / MPa', nameLocation: 'middle', nameGap: 26,
+                  nameTextStyle: { color: '#98a2b3', fontSize: 11 } }),
+  yAxis: sdAxis({ name: '延伸率 / %', nameTextStyle: { color: '#98a2b3', fontSize: 11 } }),
+  series: fams.map((f, i) => ({
+    name: famName[f] || f, type: 'scatter', symbolSize: 7, data: byFam[f],
+    itemStyle: { color: colors[i % colors.length], opacity: .72 },
+    emphasis: { itemStyle: { opacity: 1, borderColor: '#111', borderWidth: 1 } },
+    tooltip: { formatter: p => `<b>${p.value[2]}</b><br/>${famName[f] || f}<br/>YS ${p.value[0]} MPa · EL ${p.value[1]}%` }
+  })),
+  grid: { left: 10, right: 20, top: 34, bottom: 30, containLabel: true }
+});
+
+sdChart('families', {
+  tooltip: { trigger: 'item' },
+  legend: { show: false },
+  series: [{
+    type: 'pie', radius: ['52%', '78%'], center: ['50%', '48%'],
+    itemStyle: { borderColor: '#fff', borderWidth: 2 },
+    label: { show: true, position: 'outside', fontSize: 11, color: '#667085',
+             formatter: p => `${p.name} ${p.percent}%` },
+    labelLine: { length: 8, length2: 8, lineStyle: { color: '#d3d7de' } },
+    data: {{ families | tojson }}.map(f => ({ name: f.family_name, value: f.n }))
+  }]
+});
+</script>
+{% endblock %}

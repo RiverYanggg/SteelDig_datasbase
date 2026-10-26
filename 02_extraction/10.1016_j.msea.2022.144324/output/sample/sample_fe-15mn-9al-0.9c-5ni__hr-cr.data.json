@@ -1,0 +1,357 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-15mn-9al-0.9c-5ni__hr-cr",
+      "paper_id": "10.1016_j.msea.2022.144324",
+      "alloy_id": "alloy_fe-15mn-9al-0.9c-5ni",
+      "process_id": "proc_hr-cr",
+      "sample_label": null,
+      "aliases": [
+        "15Mn5Ni",
+        "HR+CR",
+        "15Mn5Ni in HR + CR condition"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1423 K",
+      "temperature_unit": "K",
+      "duration": "2.5 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The sound portion of the 30 kg ingot was homogenized at 1423 K for 2.5 h prior to hot rolling (applies to all three alloys)."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1323 K",
+      "temperature_unit": "K",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot rolled at 1323 K; this processing condition is referred to as HR, with final hot rolled plate thickness about 13 mm."
+    },
+    {
+      "processing_step_id": "step_cold_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": "room temperature",
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "~50% reduction in thickness",
+      "processing_steps_notes": "Hot-rolled samples were cold rolled at room temperature in several passes to ~50% reduction in thickness (~6 mm thick sheets); denoted HR+CR. The 15Mn5Ni alloy experienced cracking beyond 50% cold reduction, so reduction was limited to 50%."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_hr-cr_15mn5ni",
+      "overall_structure": "Two-phase (γ + B2) microstructure in the HR+CR (50% cold rolled) condition. Austenite grains deformed predominantly by planar slip (parallel slip bands); no traces of deformation twinning or martensite transformation. Prior B2 stringers underwent concurrent deformation with the austenite, with significant reduction in stringer thickness and eventual shearing/fragmentation.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_hr-cr_austenite",
+          "region": "overall matrix",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "deformed austenite grains, parallel planar slip bands",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "planar slip bands",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_hr-cr_b2_stringer",
+          "region": "elongated stringers/bands aligned roughly parallel to ND",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "B2 (FeAl-based ordered phase containing Mn and Ni)",
+              "crystal_structure": "ordered BCC (B2)",
+              "volume_fraction": null,
+              "morphology": "elongated stringers (bamboo-like) that underwent concurrent deformation, shearing and fragmentation at higher strain",
+              "grain_size": null,
+              "texture": "one typical stringer had a near <100> orientation"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_hr-cr_b2_stringer",
+              "type": "prior B2 stringer phase",
+              "size": {
+                "value": "average thickness reduced from ~8 μm to ~2 μm",
+                "unit": "μm"
+              },
+              "distribution": "elongated stringers spanning through the austenite matrix",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_hr-cr_15mn5ni",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_gamma_b2",
+          "microstructure_id": "micro_hr-cr_b2_stringer",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "B2",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "intf_b2_deformation",
+          "microstructure_id": "micro_hr-cr_b2_stringer",
+          "interaction_type": "concurrent deformation of B2 stringers with austenite matrix",
+          "qualitative_or_quantitative_description": "The B2 stringer underwent concurrent deformation with austenite grains, resulting in significant reduction in average thickness of the B2 stringer from ~8 μm to ~2 μm and eventual shearing and fragmentation at higher strain; one typical stringer with near <100> orientation was sheared and fragmented (~35–45° to rolling direction) at two locations. This indicates B2, though an ordered intermetallic phase, shares considerable load during deformation."
+        }
+      ],
+      "slip_behavior": "Austenite deformed mostly by planar slip as reflected by parallel slip bands; no deformation twinning or martensite transformation observed.",
+      "phase_evolution": "Prior B2 stringers undergo progressive microstructural changes ranging from dislocation accumulation, substructure development to fragmentation of stringers during loading in the cold rolled state.",
+      "interface_notes": "15Mn5Ni in HR+CR retains a higher fraction of B2 than 28Mn5Ni, with B2 present mainly as elongated stringers sheared along with the matrix."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_hr-cr_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "~3 × 10^-4 s^-1",
+        "specimen_geometry": "Flat tensile specimens with a gauge length of 30 mm, width 6 mm and thickness 4–5 mm",
+        "test_standard": "ASTM E8M",
+        "other_conditions": "Constant cross-head speed of 0.5 mm min^-1; Walter+Bai AG testing machine; tensile tests triplicated and average of three readings reported"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "1665 ± 12 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 12 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1800 ± 15 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 15 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "7 ± 0.5 %",
+              "unit": "%",
+              "uncertainty": "± 0.5 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Fig. 9a (engineering stress-engineering strain curves in HR + CR condition)",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_hr-cr_hardness",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": "ASTM E-140-02",
+        "other_conditions": "AFFRI Vickers hardness tester, peak load 30 kg (~300 N), dwell time 15 s; values averaged over ten measurements"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk",
+            "value": "~450 VHN (saturated at 50% cold reduction); 15Mn5Ni ~20 VHN higher than 28Mn0Ni at 50% reduction",
+            "scale": "Vickers (VHN)",
+            "unit": "VHN",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_hr-cr_comparison",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-28mn-9al-0.9c",
+        "benchmark_process_id": "proc_hr-cr",
+        "benchmark_sample_id": null,
+        "comparison_metric": "At 50% cold reduction (HR+CR), the hardness of 15Mn5Ni was ~20 VHN higher than that of 28Mn0Ni; all three alloys attained similar strength levels after 50% cold reduction. In HR+CR, 15Mn5Ni displayed relatively higher strengths and lower ductility (YS 1665 MPa, UTS 1800 MPa, TE 7%) among the three alloys.",
+        "improvement_percentage": "+~20 VHN hardness (15Mn5Ni vs 28Mn0Ni)"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_ebsd_hr-cr",
+      "microstructure_id": "micro_hr-cr_austenite",
+      "technique": "Orientation imaging microscopy (OIM-EBSD)",
+      "instrument_or_setup": "Zeiss Supra 55 FEG-Scanning electron microscope (SEM) equipped with EDS and Nordley EBSD detectors from Oxford; samples polished to colloidal silica ~100 nm finish; step size 120 nm and 250 nm over ~100×100 μm² and ~200×200 μm²; three scans per sample; TSL-OIM software",
+      "measurement_conditions": "HR+CR (cold rolled) condition",
+      "purpose": "Characterize the cold rolled microstructure, phase distribution, grain orientations, twin fractions and strain localization (KAM/GOS)",
+      "key_findings": "15Mn5Ni in HR+CR shows two-phase (γ+B2) microstructure with higher fraction of B2 (elongated stringers); austenite deforms mostly by planar slip (parallel slip bands); no deformation twinning or martensite."
+    },
+    {
+      "characterization_id": "char_xrd_hr-cr",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Rigaku XRD instrument with Co-Kα radiation at 45 kV and 135 mA, beam size ~2 mm",
+      "measurement_conditions": "HR+CR (cold rolled) condition, 2θ = 40–120°",
+      "purpose": "Identify phases present in the cold rolled and heat-treated 15Mn5Ni alloy",
+      "key_findings": "The 15Mn5Ni alloy in the cold rolled (HR+CR) condition showed peaks at Bragg angles corresponding to γ + B2 phases."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The 15Mn5Ni alloy experienced cracking beyond 50% cold reduction in thickness, which is why the cold rolling reduction was restricted to 50% for all three alloys (blocks b0015, b0070).",
+    "In the hot rolled (HR) parent condition, the 15Mn5Ni alloy contained a higher B2 phase fraction (~12%) than 28Mn5Ni (~4%), and also possessed a higher volume fraction of κ-carbides; HR austenite grain sizes were ~5–7 μm (block b0026, b0084). This prior B2 stringer content carries over into the HR+CR condition.",
+    "The initial bulk hardness of 15Mn5Ni in the HR condition was ~375 ± 6 VHN, which increased to ~450 VHN saturated at 50% cold reduction (block b0045).",
+    "The strain hardening exponent n is not reported for any alloy in the HR+CR condition (n column blank in Table 3); n values are only given for heat-treated conditions (block b0060).",
+    "Block b0012 lists the third alloy composition as 'Fe–15Mn–9Al-0.9C–15Mn', which appears to be a typographical error for Fe–15Mn–9Al-0.9C–5Ni, as consistently given elsewhere (block b0008, b0084)."
+  ]
+}

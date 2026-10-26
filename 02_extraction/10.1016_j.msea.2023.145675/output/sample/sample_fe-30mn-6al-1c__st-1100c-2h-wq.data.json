@@ -1,0 +1,216 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-6al-1c__st-1100c-2h-wq",
+      "paper_id": "10.1016_j.msea.2023.145675",
+      "alloy_id": "alloy_fe-30mn-6al-1c",
+      "process_id": "proc_st-1100c-2h-wq",
+      "sample_label": "Al-6 (1100 °C)",
+      "aliases": [
+        "Fe30Mn6Al1C after 1100 °C/2 h solution treatment"
+      ],
+      "nominal_composition": "C 0.99, Mn 29.48, Al 5.98, Fe Bal. (mass%)"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "high-frequency vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Melted in a high-frequency vacuum induction furnace with a 50 kg capacity."
+    },
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "2",
+      "type": "casting",
+      "method": "cast into ingot",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cast into an ingot with a diameter of 150 mm."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "5 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingots were homogenized at 1200 °C for 5 h prior to hot rolling."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air (air-cooled to room temperature)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot rolled into rods with a diameter of 16 mm, then air-cooled to room temperature. This is the parent process (proc_hot-rolled)."
+    },
+    {
+      "processing_step_id": "step_solution_treatment_1100c",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The hot-rolled rods were additionally solution treated at 1100 °C for 2 h followed by water quenching (state 1100 °C–2 h–WQ). Applied to the Al-series to compare the effect of solution temperature (Fig. 2d, Fig. 8d)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "str_al6_1100c_2h_wq",
+      "overall_structure": "Fe30Mn6Al1C low-density steel after 1100 °C/2 h solution treatment + water quenching; the higher solution temperature coarsens the grains relative to the 1050 °C condition.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_al6_1100c",
+          "region": null,
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": "increased relative to the 1050 °C condition",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "ps_al6_1100c_2h_wq",
+      "measurement_conditions": {
+        "temperature": "room temperature (ambient)",
+        "temperature_unit": null,
+        "environment": "ambient air",
+        "strain_rate": "1.1 × 10^-3 s^-1",
+        "specimen_geometry": "round tensile specimen, gauge length 25 mm, diameter 5 mm (tensile axis parallel to rod axis); Charpy V-notch specimen 55 mm long, 10 × 10 mm cross-section, 2 mm deep V-notch",
+        "test_standard": null,
+        "other_conditions": "Tensile stress-strain responses and work-hardening rates obtained on solution-treated specimens; data are the average of two specimens; Charpy impact energy measured at -40 °C."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Fig. 2(d): engineering stress-strain curves of Al-alloyed low-density steels (including Fe30Mn6Al1C) after solution treatment at 1100 °C for 2 h.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": "7.12 g/cm3",
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_al6_solution_temperature_effect",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-30mn-6al-1c",
+        "benchmark_process_id": "proc_st-1050c-2h-wq (1050 °C/2 h solution treatment)",
+        "benchmark_sample_id": null,
+        "comparison_metric": "yield strength (solution-temperature effect)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "cm_tensile_al6_1100c",
+      "microstructure_id": null,
+      "technique": "uniaxial tensile testing (engineering and true stress-strain curves with work-hardening-rate analysis)",
+      "instrument_or_setup": "MTS tensile machine",
+      "measurement_conditions": "initial strain rate 1.1 × 10^-3 s^-1 at ambient temperature; round specimens with gauge length 25 mm and diameter 5 mm",
+      "purpose": "measure yield strength, tensile strength, elongation and work-hardening behaviour of the 1100 °C/2 h solution-treated Al-6 (Fe30Mn6Al1C) steel",
+      "key_findings": "Yield strength slightly lower than after the 1050 °C solution treatment (attributed to grain coarsening); the work-hardening-rate ordering with Al content is retained (6Al highest, 12Al lowest) and the true stress-strain curves extend to noticeably larger true strain than after 1050 °C (Fig. 2d, Fig. 8d)."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "No numeric mechanical property values are reported specifically for Fe30Mn6Al1C (Al-6) after the 1100 °C/2 h solution treatment; only the qualitative engineering stress-strain (Fig. 2d) and work-hardening-rate (Fig. 8d) curves are available for this condition.",
+    "The tabulated tensile/impact properties (Table 2) and microstructural parameters (Table 3, e.g. Al-6: D_FCC-G/T = 34.2 ± 1.1 μm, f_Tw = 45.3%, no ferrite, κ-carbide size 0 nm, impact toughness 354 ± 16 J) are reported for the 1050 °C/2 h solution-treated condition, NOT for this 1100 °C/2 h sample, and are therefore not assigned to this sample.",
+    "After 1100 °C/2 h solution treatment the yield strength of the Al-containing steels shows a slight decrease relative to the 1050 °C/2 h condition, which is attributed to an increase in grain size with increasing solution-treatment temperature (b0027).",
+    "For the Al-series at 1100 °C the work-hardening-rate ordering is retained (6% Al highest, 12% Al lowest) and the true stress-strain curves extend to noticeably larger true strain (some beyond 0.5) than after 1050 °C (Fig. 8d).",
+    "The ultimate true stress (σ_TS ≈ 1350 MPa) and fracture strength (σ_FS ≈ 2150 MPa) remain nearly unchanged for the 1100 °C solution-treated samples as well (b0075).",
+    "Consistent with Fig. 5, no κ-carbides were observed in the Fe30Mn(x)Al1C low-density steel at low Al content (8% Al shown as representative); Al-6 (6% Al) is the lowest-Al member with the highest reported impact toughness in the alloy series."
+  ]
+}

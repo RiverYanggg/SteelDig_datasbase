@@ -1,0 +1,320 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-0.4c-xal__homog-1100c-2h-wq",
+      "paper_id": "10.1007_s11837-014-1032-x",
+      "alloy_id": "alloy_fe-20mn-0.4c-xal",
+      "process_id": "proc_homog-1100c-2h-wq",
+      "sample_label": null,
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_vim_cast",
+      "sequence": "1",
+      "type": "melting and casting",
+      "method": "vacuum-induction melting (VIM) and casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "400 mbar Ar",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Five alloys per alloy system synthesized in one operation using five stepwise-moved Cu molds successively filled from a 4-kg ingot; Al charged through an air lock after each cast."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "10 × 50 × 130 mm³ blocks hot rolled into 2 ± 0.1 mm thick and ~500 mm long sheets",
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_reheat_wq",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "reheating and water quenching",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "After reheating and water quenching, sheets were cut perpendicular to the rolling direction into 2 × 60 × 55 mm³ segments."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": "Ar",
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Terminal homogenization step defining the as-homogenized reference state; no subsequent aging."
+    },
+    {
+      "processing_step_id": "step_aging_0h",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "aging (omitted / 0 h)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": "0 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "No subsequent aging; this is the as-homogenized (without aging) reference state."
+    },
+    {
+      "processing_step_id": "step_sandblasting",
+      "sequence": "6",
+      "type": "surface treatment",
+      "method": "low-pressure fine-grit sandblasting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Scales were removed from the surfaces by low-pressure, fine-grit sandblasting after the heat treatments."
+    },
+    {
+      "processing_step_id": "step_spark_erosion",
+      "sequence": "7",
+      "type": "specimen preparation",
+      "method": "package spark erosion",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Samples for mechanical testing and microstructure investigation were prepared from the segments by package spark erosion."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_as_homog",
+      "overall_structure": "Hot-rolled, water-quenched and homogenized (as-homogenized) material: fully recrystallized austenite-based microstructure with grain size ~20 µm, some retained Mn microsegregations, and Al-dependent ferrite content.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": "bulk as-homogenized material",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": "predominant; ~100 vol.% at 2 wt.% Al, decreasing as Al increases",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "α ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": "increases with Al content (2–11 wt.% Al)",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "ε martensite",
+              "crystal_structure": "hcp",
+              "volume_fraction": "minor/possible; less relevant than ferrite to the Al-driven trend",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide (L'12)",
+              "crystal_structure": "ordered fcc (L'12, non-oxide perovskite)",
+              "volume_fraction": "may form during quenching for Al contents > 10 wt.%",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "microsegregation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~20 µm",
+              "unit": "µm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa",
+              "type": "κ-carbide (L'12, approximate stoichiometry (Fe,Mn)3AlC)",
+              "size": null,
+              "distribution": "May form during quenching when Al content exceeds 10 wt.%.",
+              "coherency": "ordered fcc structure with lattice mismatch below 3% with respect to austenitic matrix"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "intf_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_kappa_gamma",
+          "microstructure_id": "micro_1",
+          "phase_1_name": "κ-carbide (L'12)",
+          "phase_2_name": "γ austenite",
+          "coherence": "ordered fcc structure with lattice mismatch below 3% with respect to austenitic Fe-Mn-C matrix"
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": "For low-Al members (SIMPLEX TWIP): dislocation-based strain hardening followed by mechanical twinning. For κ-carbide-containing members: Orowan bypassing of longitudinal κ-carbide rods, expansion of dislocation loops assisted by cross-slip, and minor shearing of κ-carbides.",
+      "phase_evolution": "Increasing Al content raises ferrite content; κ-carbides can form during quenching when Al exceeds 10 wt.%.",
+      "interface_notes": "When κ-carbides are embedded in a ferritic matrix, the lattice mismatch can be as large as -6%, leading to semicoherent interfaces and different precipitate morphologies."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_mech_as_homog",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "All plotted values represent averages of three measurements for every material state."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "increases with Al content in the range 2–11 wt.% Al",
+              "unit": null,
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "increases with Al content in the range 2–11 wt.% Al",
+              "unit": null,
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "drops as a function of Al content in the range 2–11 wt.% Al",
+              "unit": null,
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "increases with Al content (minimum ~120–140 HBW near 2 wt.% Al, reaching ~290 HBW at ~10.5 wt.% Al; values shown across aging conditions in Fig. 6a4, not resolved separately for the as-quenched/as-homogenized condition)",
+            "scale": "HBW",
+            "unit": null,
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_1",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "performed on the rolling plane of samples ground to a thickness of 1 mm",
+      "purpose": "phase characterization/screening (γ austenite, ε martensite, α ferrite, κ carbide)",
+      "key_findings": "increasing ferrite content with Al; ferrite content is more relevant than κ-carbides or ε-martensite for the Al-driven strengthening/embrittlement trend."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "tensile testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "room temperature; initial strain rate 10^-3 s^-1; averages of three measurements",
+      "purpose": "mechanical screening (yield strength, ultimate tensile strength, total elongation)",
+      "key_findings": "YS and UTS increase while elongation drops with Al (2–11 wt.% Al)."
+    },
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": null,
+      "technique": "hardness testing (HBW)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "hardness screening",
+      "key_findings": "hardness increases with Al content (Fig. 6a4)."
+    },
+    {
+      "characterization_id": "char_metallography",
+      "microstructure_id": "micro_1",
+      "technique": "optical metallography / metallographic analysis",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "defect and microstructure inspection",
+      "key_findings": "no cracks, pores, or macrosegregations in final materials; as-cast samples had coarse dendritic microstructure; hot rolling + water quenching gave fully recrystallized microstructure with ~20 µm grain size and some retained Mn microsegregations."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The Fe-20Mn-0.4C-xAl (wt.%) second alloy class comprises five alloys with Al content varied between 2 and 11 wt.%; individual Al levels within this range are not enumerated in the paper [b0019, b0026, b0109].",
+    "For Al contents exceeding 10 wt.%, κ-carbides can form during quenching; this applies to the highest-Al member(s) of the Fe-20Mn-0.4C-xAl family [b0032, b0109].",
+    "As-cast samples had a coarse dendritic microstructure before hot rolling [b0021].",
+    "Across Fe-Mn-Al-C low-density steels, mass density falls from roughly 7.15 to 6.4 g/cm³ over about 6–13 wt.% Al, with density reduction up to ~18% (Fig. 1); this is family-level context and is not resolved for this specific sample [figure_001, b0007, b0109]."
+  ]
+}

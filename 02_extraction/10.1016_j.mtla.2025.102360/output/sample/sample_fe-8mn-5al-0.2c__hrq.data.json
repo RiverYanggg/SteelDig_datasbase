@@ -1,0 +1,521 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-8mn-5al-0.2c__hrq",
+      "paper_id": "10.1016_j.mtla.2025.102360",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_id": "proc_hrq",
+      "sample_label": "HRQ",
+      "aliases": [
+        "hot rolled & quenched",
+        "hot rolled",
+        "HRO",
+        "HRQ specimen"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": "2 hr",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Casting ingot homogenized at 1100 °C for 2hr before hot forging."
+    },
+    {
+      "processing_step_id": "step_hot_forging",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot forging",
+      "temperature": "1050-800",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "50% thickness reduction",
+      "processing_steps_notes": "Hot forged to 50% thickness reduction in the temperature range 1050-800 °C followed by air cooling to room temperature."
+    },
+    {
+      "processing_step_id": "step_hot_rolling_soak",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "soaking (before hot rolling)",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": "2 hr",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot forged samples soaked at 1100 °C for 2hr prior to hot rolling."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "hot rolling (two passes)",
+      "temperature": "1050-800",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "50% thickness reduction in each pass",
+      "processing_steps_notes": "Hot rolled in the temperature range 1050-800 °C in two passes with reheating at 1100 °C for 5 min between passes; 50% thickness reduction in each pass."
+    },
+    {
+      "processing_step_id": "step_water_quenching",
+      "sequence": "5",
+      "type": "heat treatment (cooling)",
+      "method": "water quenching",
+      "temperature": "from finish rolling temperature (~800) to room temperature",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": "higher cooling rate",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Water quenching of the hot-rolled sample from the finish rolling temperature (~800 °C) converts part of the austenite into lenticular martensite; remaining austenite is untransformed austenite."
+    },
+    {
+      "processing_step_id": "step_surface_machining",
+      "sequence": "6",
+      "type": "mechanical processing",
+      "method": "surface machining",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Surface machining up to 1 mm depth on both sides of the hot rolled sheet to remove the oxide layer; resulting sheet thickness 3 mm."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_hrq",
+      "overall_structure": "Dual-phase δ-ferrite + austenite matrix with lenticular martensite formed by water quenching; dendritic structures completely eliminated by further soaking at higher temperature; grains of both phases elongated along the rolling direction. Remaining austenite after water quenching is termed untransformed austenite.",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_hrq",
+          "region": "bulk (rolled sheet)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "elongated islands along the rolling direction in a darker α/γ matrix",
+              "grain_size": null,
+              "texture": "elongated in rolling direction"
+            },
+            {
+              "phase_name": "austenite (untransformed austenite)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~19%",
+              "morphology": "elongated lens/ellipse shaped islands distributed in the matrix",
+              "grain_size": null,
+              "texture": "elongated in rolling direction"
+            },
+            {
+              "phase_name": "martensite (lenticular)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "lenticular shape; fine lenticular/needle relief with internal parallel striations typical of martensite laths",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": "Both phases elongated in the rolling direction due to rolling effect"
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_hrq_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "2.67×10⁻⁴ s⁻¹",
+        "specimen_geometry": "subsize specimen, machined by wire EDM along the rolling direction",
+        "test_standard": "ASTM E8/E8M",
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "486±6",
+              "unit": "MPa",
+              "uncertainty": "±6"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "674±20",
+              "unit": "MPa",
+              "uncertainty": "±20"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction",
+              "value": "1.5±0.5",
+              "unit": "%",
+              "uncertainty": "±0.5"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_hrq_nanohardness",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "diamond Berkovich tip (B-T 50), tip radius 100 nm, tip angle 142.3°",
+        "test_standard": null,
+        "other_conditions": "indentation load 30 mN; loading/unloading rate 60 mN/min; dwell time 10 s"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "δ-ferrite",
+            "value": "4439±206",
+            "scale": "nano hardness",
+            "unit": "MPa",
+            "uncertainty": "±206"
+          },
+          {
+            "region": "untransformed austenite",
+            "value": "4080±360",
+            "scale": "nano hardness",
+            "unit": "MPa",
+            "uncertainty": "±360"
+          },
+          {
+            "region": "martensite (reverted austenite/martensite)",
+            "value": "8897±550",
+            "scale": "nano hardness",
+            "unit": "MPa",
+            "uncertainty": "±550"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_hrq_density",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": "Archimedes' principle",
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.91455",
+          "unit": "g/cc"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_hrq_vs_ia750_60",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": "proc_hrq",
+        "benchmark_sample_id": "sample_fe-8mn-5al-0.2c__hrq",
+        "comparison_metric": "Product of strength and elongation (PSE): HRQ (hot rolled & quenched) = 1.01 GPa% versus best annealed condition IA750_60 Min = 7.9 GPa%; HRQ also has highest YS/UTS but lowest TE (1.5±0.5 %).",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_hrq",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Bruker D8 advanced X-ray diffractometer, Co-Kα (1.79Å) target, step size 0.02°, 2θ range 20°-120°",
+      "measurement_conditions": "Co-Kα radiation; Rietveld refinement for phase fractions",
+      "purpose": "Phase identification and determination of austenite volume fraction before and after tensile testing",
+      "key_findings": "Ferrite and austenite reflections in HRQ; HRQ austenite volume fraction ~19% before and ~18% after tensile test."
+    },
+    {
+      "characterization_id": "char_om",
+      "microstructure_id": "micro_hrq",
+      "technique": "Optical microscopy (with differential interference contrast (DIC) insert)",
+      "instrument_or_setup": "Leica optical microscope; Villella's Reagent etching (5 ml HCl + 1 gm picric acid + 100 ml ethanol) for 10-15 s; colloidal polishing 0.25 µm",
+      "measurement_conditions": null,
+      "purpose": "Microstructural examination of the HRQ specimen",
+      "key_findings": "Shows elongated δ-ferrite islands along the rolling direction; DIC inset labels δ and α/γ; dendritic structures eliminated in HRQ."
+    },
+    {
+      "characterization_id": "char_sem",
+      "microstructure_id": "micro_hrq",
+      "technique": "Field Emission Gun Scanning Electron Microscopy (FEG-SEM)",
+      "instrument_or_setup": "ZEISS VP 300 FEG-SEM",
+      "measurement_conditions": null,
+      "purpose": "Microstructural imaging of phases in the HRQ specimen",
+      "key_findings": "δ in large featureless grey areas; α/γ grains show fine lenticular/needle relief and internal parallel striations typical of martensite laths."
+    },
+    {
+      "characterization_id": "char_eds",
+      "microstructure_id": "micro_hrq",
+      "technique": "Energy Dispersive X-ray Spectroscopy (EDS/EDAX)",
+      "instrument_or_setup": "ZEISS VP 300 SEM equipped with EDAX",
+      "measurement_conditions": "At least 5-7 areas and 15-20 spots averaged with standard deviation",
+      "purpose": "Elemental analysis of individual phases in the HRQ specimen",
+      "key_findings": "δ-ferrite Mn 7.02±0.25 wt.%, Al 5.61±0.11 wt.%; austenite/martensite Mn 8.36±0.16 wt.%, Al 4.75±0.11 wt.%; Mn enriched in austenite/martensite and Al in δ-ferrite."
+    },
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_hrq",
+      "technique": "Electron Backscatter Diffraction (EBSD)",
+      "instrument_or_setup": "FEG-SEM (ZEISS VP 300) with EBSD camera, 20 kV, step size 0.5 µm; post-processing in TSL-OIM",
+      "measurement_conditions": "20 kV, step size 0.5 µm",
+      "purpose": "Phase mapping of the HRQ specimen (BCC vs FCC)",
+      "key_findings": "EBSD phase map superimposed on IQ map confirms green FCC (austenite) elongated islands in red BCC matrix, verifying retained/untransformed austenite and martensite formation."
+    },
+    {
+      "characterization_id": "char_nanoindentation",
+      "microstructure_id": "micro_hrq",
+      "technique": "Nanoindentation",
+      "instrument_or_setup": "Anton Paar (NHT1000038550), diamond Berkovich tip (B-T 50), tip radius 100 nm, tip angle 142.3°",
+      "measurement_conditions": "loading/unloading rate 60 mN/min, dwell time 10 s, indentation load 30 mN",
+      "purpose": "Measure nano hardness of individual phases (δ-ferrite, untransformed austenite, martensite) in the HRQ specimen",
+      "key_findings": "δ-ferrite 4439±206 MPa, untransformed austenite 4080±360 MPa, martensite 8897±550 MPa; load-displacement max penetration ~550 nm (untransformed austenite) and ~384 nm (martensite) at 30 mN."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "INSTRON UTM-100 kN",
+      "measurement_conditions": "room temperature, strain rate 2.67×10⁻⁴ s⁻¹, subsize specimens (ASTM E8/E8M) machined along rolling direction; at least three samples averaged",
+      "purpose": "Evaluate mechanical properties of the HRQ specimen",
+      "key_findings": "HRQ: YS 486±6 MPa, UTS 674±20 MPa, TE 1.5±0.5 %, PSE 1.01 GPa%."
+    },
+    {
+      "characterization_id": "char_fractography",
+      "microstructure_id": "micro_hrq",
+      "technique": "SEM fractography of tensile-tested specimens",
+      "instrument_or_setup": "SEM (ZEISS VP 300)",
+      "measurement_conditions": null,
+      "purpose": "Examine fracture surface of the tensile-tested HRQ specimen",
+      "key_findings": "HRQ fracture surface exhibits mainly cleavage and/or flat facets, representing brittle mode of failure."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermocalc",
+      "simulation_method": "CALPHAD thermodynamic equilibrium calculation",
+      "software_used": "Thermo-Calc (database TCFE9)",
+      "potential_model_or_database": "TCFE9 database",
+      "boundary_and_initial_conditions": "Equilibrium phase fraction vs temperature (200-1600 °C); identified duplex δ-ferrite + austenite region ~650-1350 °C",
+      "validation_against_experiment": "Dilatometry test on hot forged sample showed no significant deviation, consistent with negligible transformation; 750 °C intercritical annealing temperature selected based on the duplex region.",
+      "analytical_models": []
+    },
+    {
+      "computation_id": "comp_sfe",
+      "simulation_method": "Thermodynamic SFE model proposed by Olson and Cohen",
+      "software_used": null,
+      "potential_model_or_database": "Olson and Cohen thermodynamic model",
+      "boundary_and_initial_conditions": "Inputs include grain size (initially assumed 40 µm austenite), temperature and alloy composition; ΔG_chem=245.267 J/mole, ΔG_mag=0.0029319 J/mole, ΔG_ex=19.6842 J/mole, molar surface density ρ=2.9328×10⁻⁵ mol/m², interfacial surface energy 10 mJ/m²",
+      "validation_against_experiment": "Theoretical SFE ~35 mJ/m² matches the 20-40 mJ/m² design window; for reverted austenite of IA750_60 Min (Mn 7.58 wt.%, Al 3.96 wt.%) recalculated SFE ~27 mJ/m².",
+      "analytical_models": [
+        {
+          "model_name": "Olson-Cohen SFE model",
+          "equation_role": "Compute stacking fault energy of austenite (γ_SFE = 2ρΔG^{γ→ε} + 2σ^{γ/ε})",
+          "parameters": [
+            {
+              "name": "ΔG_chem^{γ→ε}",
+              "value": "245.267",
+              "unit": "J/mole"
+            },
+            {
+              "name": "ΔG_mag^{γ→ε}",
+              "value": "0.0029319",
+              "unit": "J/mole"
+            },
+            {
+              "name": "ΔG_ex^{γ→ε}",
+              "value": "19.6842",
+              "unit": "J/mole"
+            },
+            {
+              "name": "molar surface density ρ",
+              "value": "2.9328×10⁻⁵",
+              "unit": "mol/m²"
+            },
+            {
+              "name": "interfacial surface energy σ^{γ/ε}",
+              "value": "10",
+              "unit": "mJ/m²"
+            },
+            {
+              "name": "theoretical SFE of designed steel",
+              "value": "~35",
+              "unit": "mJ/m²"
+            }
+          ],
+          "model_note": "Used to design the steel into the 20-40 mJ/m² SFE window (TWIP as major mechanism). For IA750_60 Min reverted austenite SFE recalculated to ~27 mJ/m²; a C change to ~0.05 wt.% changes SFE to ~2 mJ/m²."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Martensite start (Ms) temperature of the HRQ condition calculated according to an empirical equation is ~350 °C, supporting the transformation of austenite to martensite due to water quenching (block b0038).",
+    "EDS of the HRQ specimen: Mn and Al concentration in δ-ferrite are 7.02±0.25 wt.% and 5.61±0.11 wt.%; in austenite/martensite they are 8.36±0.16 wt.% and 4.75±0.11 wt.%, showing Mn enrichment in austenite/martensite and Al enrichment in δ-ferrite (block b0038, figure_003).",
+    "HRQ austenite volume fraction: ~19% before tensile test and ~18% after tensile test; transformation ratio ~5.5%; mechanical stability parameter K ≈ 3.26 (3.216 in Fig. 7c), indicating very stable austenite due to C and Mn diffusion accelerated by δ-ferrite (blocks b0054, b0061, figure_007).",
+    "HRQ product of strength and elongation (PSE) = 1.01 GPa% (Hot Rolled row of Table 3), the lowest among all studied conditions (block b0057, table_003).",
+    "HRQ fracture surface exhibits mainly cleavage and/or flat facet type structure representing a brittle mode of failure due to the high fraction of δ-ferrite (block b0072, figure_011).",
+    "The stress-strain plastic region showed no serrations (no TWIP effect), consistent with the high SFE of these alloys (block b0073).",
+    "Nanoindentation load-displacement curves indicate a maximum penetration depth of ~550 nm for untransformed austenite versus ~384 nm for martensite under the same 30 mN load, confirming martensite is the harder phase (block b0044, table_002).",
+    "The HRQ specimen's higher YS (486±6 MPa) and UTS (674±20 MPa) with lowest TE (1.5±0.5 %) are attributed to the presence of hard martensite along with retained austenite and δ-ferrite in the microstructure (block b0046)."
+  ]
+}

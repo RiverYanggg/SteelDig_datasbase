@@ -1,0 +1,487 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-1c-8.5al__quench-1050c-age-550c-4h",
+      "paper_id": "10.1002_srin.202200191",
+      "alloy_id": "alloy_fe-28mn-1c-8.5al",
+      "process_id": "proc_quench-1050c-age-550c-4h",
+      "sample_label": "1050 °C quenched + 550 °C aged steel",
+      "aliases": {
+        "value": "550 °C annealed for 4 h sample"
+      }
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "The sample is the 1050 °C quenched Fe–28Mn–1C–8.5Al steel before the subsequent 550 °C/4 h aging step.",
+        "block_id": [
+          "b0081",
+          "figure_008"
+        ]
+      },
+      "processing_step_id": "step_1_quench_1050c",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "quenching"
+      },
+      "temperature": {
+        "value": "1050 °C",
+        "source": {
+          "reason": "b0081 states the steel was processed by '1050 °C quenching'; figure_008 panel e is annotated '1050°C+550°C(4h)'.",
+          "block_id": [
+            "b0081",
+            "figure_008"
+          ]
+        }
+      },
+      "temperature_unit": {
+        "value": "°C",
+        "source": {
+          "reason": "The quenching temperature is reported in degrees Celsius.",
+          "block_id": [
+            "b0081",
+            "figure_008"
+          ]
+        }
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "source": {
+        "reason": "b0080 and b0081 describe the 550 °C for 4 h aging/annealing treatment of the 1050 °C quenched Fe–28Mn–1C–8.5Al steel.",
+        "block_id": [
+          "b0080",
+          "b0081"
+        ]
+      },
+      "processing_step_id": "step_2_age_550c_4h",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "aging"
+      },
+      "temperature": {
+        "value": "550 °C",
+        "source": {
+          "reason": "b0080 reports overaging at a temperature of 550 °C; b0081 gives 'subsequent 550 °C for 4 h aged steel'.",
+          "block_id": [
+            "b0080",
+            "b0081"
+          ]
+        }
+      },
+      "temperature_unit": {
+        "value": "°C",
+        "source": {
+          "reason": "The aging temperature is reported in degrees Celsius.",
+          "block_id": [
+            "b0080",
+            "b0081"
+          ]
+        }
+      },
+      "duration": {
+        "value": "4 h",
+        "source": {
+          "reason": "b0080 calls it the '550 °C annealed for 4 h sample' and b0081 gives '550 °C for 4 h aged steel'.",
+          "block_id": [
+            "b0080",
+            "b0081"
+          ]
+        }
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "This 4 h treatment is an overaging condition (longer than 2 h at 550 °C) that coarsens κ particles around the grain boundaries.",
+        "source": {
+          "reason": "b0080 states the wear rate deteriorated after overaging treatment longer than 2 h at 550 °C due to coarsened κ particles around the grain boundaries.",
+          "block_id": [
+            "b0080"
+          ]
+        }
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "b0080 and figure_008 describe the microstructure of the 1050 °C quenched + 550 °C/4 h aged Fe–28Mn–1C–8.5Al steel, emphasizing coarse grain-boundary κ-carbide particles.",
+        "block_id": [
+          "b0080",
+          "figure_008"
+        ]
+      },
+      "structure_id": "structure_aged_550c_4h",
+      "overall_structure": {
+        "value": "Austenite matrix with coarse κ-carbide ((Fe,Mn)₃AlC) particles around the grain boundaries after 1050 °C quenching + 550 °C / 4 h overaging; in the worn-surface lamination region, broken coarse κ particles are associated with microcracking.",
+        "source": {
+          "reason": "b0080 states κ particles coarsened around grain boundaries after overaging (>2 h at 550 °C), and figure_008 panel e labels (Fe,Mn)₃AlC, broken coarse κ and microcracking in the 1050°C+550°C(4h) worn surface.",
+          "block_id": [
+            "b0080",
+            "figure_008"
+          ]
+        }
+      },
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "The grain-boundary region of the 1050 °C quenched + 550 °C/4 h aged Fe–28Mn–1C–8.5Al steel contains coarse κ-carbide particles and microcracking along broken κ particles.",
+            "block_id": [
+              "b0080",
+              "figure_008"
+            ]
+          },
+          "microstructure_id": "microstructure_grain_boundary",
+          "region": {
+            "value": "grain boundary (and worn-surface lamination region)",
+            "source": {
+              "reason": "b0080 locates the coarsened κ particles around the grain boundaries, and figure_008 panel e shows the worn-surface lamination region with broken coarse κ particles.",
+              "block_id": [
+                "b0080",
+                "figure_008"
+              ]
+            }
+          },
+          "related_sequence": {
+            "value": "2"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "The austenite matrix is the phase surrounding the grain-boundary κ particles in the overaged Fe–28Mn–1C–8.5Al steel.",
+                "block_id": [
+                  "b0080",
+                  "b0040"
+                ]
+              },
+              "phase_name": {
+                "value": "austenite (γ) matrix",
+                "source": {
+                  "reason": "The κ particles are described as being around grain boundaries within the matrix of the Fe–28Mn–1C–8.5Al steel; the review treats this high-Al low-density steel as having an austenite matrix (γ→γ+κ decomposition, b0040).",
+                  "block_id": [
+                    "b0080",
+                    "b0040"
+                  ]
+                }
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "The κ-carbide phase is identified as coarse (Fe,Mn)₃AlC particles around grain boundaries in the overaged sample.",
+                "block_id": [
+                  "b0080",
+                  "figure_008"
+                ]
+              },
+              "phase_name": {
+                "value": "κ-carbide ((Fe,Mn)₃AlC)",
+                "source": {
+                  "reason": "figure_008 panel e labels '(Fe,Mn)₃AlC' (κ-carbide particle) in the 1050°C+550°C(4h) worn surface; b0080 calls them κ particles.",
+                  "block_id": [
+                    "b0080",
+                    "figure_008"
+                  ]
+                }
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": {
+                "value": "coarse particles around the grain boundaries",
+                "source": {
+                  "reason": "b0080 states κ particles coarsened around the grain boundaries after overaging; figure_008 labels 'broken coarse κ'.",
+                  "block_id": [
+                    "b0080",
+                    "figure_008"
+                  ]
+                }
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "source": {
+                "reason": "Microcracks are observed to propagate along the broken coarse κ particles in the 550 °C/4 h aged sample.",
+                "block_id": [
+                  "b0080",
+                  "figure_008"
+                ]
+              },
+              "type": {
+                "value": "microcracking along broken coarse κ-carbide particles",
+                "source": {
+                  "reason": "figure_008 panel e labels 'microcracking' propagating along the broken coarse κ particle; b0080 states microcrack propagation is detected along broken coarse κ particles.",
+                  "block_id": [
+                    "b0080",
+                    "figure_008"
+                  ]
+                }
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "source": {
+                "reason": "Coarse κ-carbide ((Fe,Mn)₃AlC) precipitates form around grain boundaries in the overaged 550 °C/4 h sample.",
+                "block_id": [
+                  "b0080",
+                  "figure_008"
+                ]
+              },
+              "precipitate_id": "ppt_kappa",
+              "type": {
+                "value": "κ-carbide ((Fe,Mn)₃AlC)",
+                "source": {
+                  "reason": "figure_008 panel e labels '(Fe,Mn)₃AlC' as the κ-carbide particle in the 1050°C+550°C(4h) sample.",
+                  "block_id": [
+                    "figure_008"
+                  ]
+                }
+              },
+              "size": {
+                "source": {
+                  "reason": "The κ particles are described as coarse ('coarsen κ particles' in b0080; 'broken coarse κ' in figure_008).",
+                  "block_id": [
+                    "b0080",
+                    "figure_008"
+                  ]
+                },
+                "value": {
+                  "value": "coarse"
+                },
+                "unit": null
+              },
+              "distribution": {
+                "value": "around the grain boundaries",
+                "source": {
+                  "reason": "b0080 states the κ particles coarsen around the grain boundaries after overaging.",
+                  "block_id": [
+                    "b0080"
+                  ]
+                }
+              },
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "source": {
+        "reason": "The interface set captures the austenite/κ-carbide grain-boundary interfaces and the crack/κ-particle defect interactions in the overaged 550 °C/4 h sample.",
+        "block_id": [
+          "b0080",
+          "figure_008"
+        ]
+      },
+      "interface_set_id": "interface_set_1",
+      "phase_interfaces": [
+        {
+          "source": {
+            "reason": "Coarse κ-carbide particles are present around grain boundaries within the austenite matrix, defining an austenite/κ-carbide interface.",
+            "block_id": [
+              "b0080",
+              "figure_008"
+            ]
+          },
+          "interface_id": "interface_kappa_austenite",
+          "microstructure_id": "microstructure_grain_boundary",
+          "phase_1_name": {
+            "value": "austenite (γ)",
+            "source": {
+              "reason": "The κ particles are located around grain boundaries within the austenite matrix of the aged steel.",
+              "block_id": [
+                "b0080",
+                "b0040"
+              ]
+            }
+          },
+          "phase_2_name": {
+            "value": "κ-carbide ((Fe,Mn)₃AlC)",
+            "source": {
+              "reason": "figure_008 identifies the grain-boundary particles as (Fe,Mn)₃AlC κ-carbide; b0080 calls them κ particles.",
+              "block_id": [
+                "b0080",
+                "figure_008"
+              ]
+            }
+          },
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "source": {
+            "reason": "b0080 and figure_008 link broken coarse κ particles to microcracking in the 1050°C+550°C(4h) sample.",
+            "block_id": [
+              "b0080",
+              "figure_008"
+            ]
+          },
+          "interaction_id": "interaction_microcrack_kappa",
+          "microstructure_id": "microstructure_grain_boundary",
+          "interaction_type": {
+            "value": "crack initiation and microcrack propagation along broken coarse κ particles",
+            "source": {
+              "reason": "b0080 states the overaged κ particles are the initiation of cracks and that microcrack propagation is detected along broken coarse κ particles.",
+              "block_id": [
+                "b0080"
+              ]
+            }
+          },
+          "qualitative_or_quantitative_description": {
+            "value": "In the lamination region of the 550 °C annealed for 4 h sample, the propagation of microcracks is detected along the broken coarse κ particles, indicating that the overaged κ particles are the initiation of cracks, delamination, and other irreparable damages.",
+            "source": {
+              "reason": "Directly from b0080's description of the 550 °C annealed for 4 h sample.",
+              "block_id": [
+                "b0080"
+              ]
+            }
+          }
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": {
+        "value": "κ particles coarsen around grain boundaries after overaging (longer than 2 h at 550 °C).",
+        "source": {
+          "reason": "b0080 states the wear rate deteriorated after overaging longer than 2 h at 550 °C due to coarsened κ particles around the grain boundaries.",
+          "block_id": [
+            "b0080"
+          ]
+        }
+      },
+      "interface_notes": null
+    }
+  ],
+  "properties": [],
+  "performance": [
+    {
+      "source": {
+        "reason": "b0080 reports the wear resistance of the 1050 °C quenched + 550 °C/4 h aged Fe–28Mn–1C–8.5Al sample deteriorated after overaging.",
+        "block_id": [
+          "b0080"
+        ]
+      },
+      "performance_id": "performance_wear_overaging",
+      "service_conditions": {
+        "operating_temperature": null,
+        "stress_state": null,
+        "environment": {
+          "value": "wear test (tribological); worn surface and lamination region examined by SEM",
+          "source": {
+            "reason": "b0080 discusses wear rate and the worn-surface lamination region of the 550 °C/4 h aged Fe–28Mn–1C–8.5Al sample.",
+            "block_id": [
+              "b0080"
+            ]
+          }
+        }
+      },
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": {
+          "value": "wear rate",
+          "source": {
+            "reason": "b0080 states the wear rate of Fe–28Mn–1C–8.5Al deteriorated after overaging treatment longer than 2 h at 550 °C.",
+            "block_id": [
+              "b0080"
+            ]
+          }
+        },
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "SEM characterization of the worn surface of the 1050 °C quenched + 550 °C/4 h aged Fe–28Mn–1C–8.5Al sample.",
+        "block_id": [
+          "b0080",
+          "figure_008"
+        ]
+      },
+      "characterization_id": "char_sem_worn_surface",
+      "microstructure_id": "microstructure_grain_boundary",
+      "technique": {
+        "value": "Scanning electron microscopy (SEM)",
+        "source": {
+          "reason": "figure_008 panel e is an SEM worn-surface micrograph of the '1050°C+550°C(4h)' sample; b0080 refers to detailed SEM observation of the worn surface/lamination region.",
+          "block_id": [
+            "b0080",
+            "figure_008"
+          ]
+        }
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": {
+        "value": "Higher-magnification SEM worn surface annotated '1050°C+550°C(4h)'; 2.5 µm scale bar",
+        "source": {
+          "reason": "figure_008 panel e states the annotation '1050°C+550°C(4h)' and a 2.5 µm scale bar.",
+          "block_id": [
+            "figure_008"
+          ]
+        }
+      },
+      "purpose": {
+        "value": "Detailed observation of the lamination region / worn surface to detect broken coarse κ particles and microcracking.",
+        "source": {
+          "reason": "b0080 states detailed observation of the lamination region in the 550 °C annealed for 4 h sample detected microcrack propagation along broken coarse κ particles.",
+          "block_id": [
+            "b0080"
+          ]
+        }
+      },
+      "key_findings": {
+        "value": "The worn surface shows (Fe,Mn)₃AlC (κ-carbide particle), broken coarse κ, and microcracking propagating along the broken coarse κ particle.",
+        "source": {
+          "reason": "figure_008 panel e labels '(Fe,Mn)₃AlC', 'broken coarse κ' and 'microcracking' for the 1050°C+550°C(4h) sample.",
+          "block_id": [
+            "figure_008"
+          ]
+        }
+      }
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "[b0080] The wear rate of Fe–28Mn–1C–8.5Al (wt%) low-density steel deteriorated after overaging treatment with longer than 2 h at 550 °C due to the coarsened κ particles around the grain boundaries.",
+    "[b0080] In the 550 °C annealed for 4 h sample, the propagation of microcracks is detected along the broken coarse κ particles in the lamination region, indicating that the overaged κ particles are the initiation of cracks, delamination, and other irreparable damages.",
+    "[figure_008] In the SEM worn surface annotated '1050°C+550°C(4h)' (2.5 µm scale bar), labels mark (Fe,Mn)₃AlC (κ-carbide particle), broken coarse κ, and microcracking propagating along the broken coarse κ particle."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "identity": {
+    "paper_id": "10.1016_j.ijplas.2025.104353",
+    "equation_id": "equation_042",
+    "block_id": "b0148",
+    "equation_number": "42",
+    "is_image": false,
+    "latex_hint": "$$\n\\Delta t = \\frac {L _ {0}}{\\rho_ {s a t} \\tau M}\\tag{42}\n$$"
+  },
+  "latex": "\\Delta t = \\frac{L_{0}}{\\rho_{sat} \\tau M}",
+  "purpose": "计算基于平均位错密度的元胞自动机DRX模拟时间步长，表示DRX晶界迁移距离等于一个元胞尺寸所需的最小时间。",
+  "applicability_conditions": "适用于基于平均位错密度的动态再结晶(DRX)元胞自动机模拟中的时间步长计算；由于位错密度不均匀，局部位错密度可能高于平均位错密度的饱和值，该式之后被修正。",
+  "symbols": [
+    {
+      "symbol": "Δt",
+      "meaning": "基于平均位错密度、与真实时间相关联的时间步长；表示DRX晶界迁移距离等于一个元胞尺寸所需的最小时间",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "L_0",
+      "meaning": "元胞尺寸（cell size）",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "ρ_sat",
+      "meaning": "平均位错密度的饱和值",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "τ",
+      "meaning": null,
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "M",
+      "meaning": null,
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    }
+  ],
+  "unmapped": [
+    "该式由 OuYang et al. (2015) 提出。",
+    "由于位错密度不均匀，局部位错密度可能高于平均位错密度的饱和值 ρ_sat，因此该时间步长随后被修正。",
+    "符号 τ 和 M 在所提供上下文中未给出定义。"
+  ]
+}

@@ -1,0 +1,513 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-2.7si-0.9c__hot-rolled",
+      "paper_id": "10.1007_s11837-014-1068-y",
+      "alloy_id": "alloy_fe-30mn-9al-2.7si-0.9c",
+      "process_id": "proc_hot-rolled",
+      "sample_label": "2.7% Si as-hot-rolled",
+      "aliases": [
+        "as-hot-rolled Fe-30Mn-9Al-2.7Si-0.9C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "Hot-rolling step producing the as-hot-rolled condition of this sample.",
+        "block_id": [
+          "b0059"
+        ]
+      },
+      "processing_step_id": "step_hot_rolling",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "mechanical processing",
+        "source": {
+          "reason": "The sample is the as-hot-rolled (hot rolled) Fe-30Mn-9Al-2.7Si-0.9C steel.",
+          "block_id": [
+            "b0059"
+          ]
+        }
+      },
+      "method": {
+        "value": "hot rolling",
+        "source": {
+          "reason": "The steel is described as hot-rolled / in the as-hot-rolled condition.",
+          "block_id": [
+            "b0059"
+          ]
+        }
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "As-hot-rolled condition; specific hot-rolling temperature and reduction are not reported for this 2.7% Si plate (the 84% reduction at 900°C in the text applies to a 1% Si wrought plate).",
+        "source": {
+          "reason": "The 2.7% Si plate is only identified as as-hot-rolled; the 900°C/84% hot-rolling parameters are given for a 1% Si plate, not this sample.",
+          "block_id": [
+            "b0040",
+            "b0059"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "Slow cooling step after hot rolling, part of the as-hot-rolled condition.",
+        "block_id": [
+          "b0060"
+        ]
+      },
+      "processing_step_id": "step_slow_cooling",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "cooling",
+        "source": {
+          "reason": "The hot-rolled material was slow cooled after deformation.",
+          "block_id": [
+            "b0060"
+          ]
+        }
+      },
+      "method": {
+        "value": "slow cooling",
+        "source": {
+          "reason": "The hot-rolled material was slow cooled after deformation.",
+          "block_id": [
+            "b0060"
+          ]
+        }
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Slow cooling after deformation is related to short-range ordering (SRO) and precipitation of κ-carbide in the as-hot-rolled material.",
+        "source": {
+          "reason": "The large toughness difference between hot-rolled and hot-rolled+solution-treated conditions is attributed to SRO and κ-carbide precipitation because the hot-rolled material was slow cooled after deformation.",
+          "block_id": [
+            "b0060"
+          ]
+        }
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "Microstructure of the as-hot-rolled Fe-30Mn-9Al-2.7Si-0.9C steel: hot-rolled plate with average grain size 50 µm, slow cooled with SRO and κ-carbide precipitation.",
+        "block_id": [
+          "b0059",
+          "b0060"
+        ]
+      },
+      "structure_id": "structure_1",
+      "overall_structure": {
+        "value": "Hot-rolled Fe-30Mn-9Al-2.7Si-0.9C steel with an average grain size of 50 µm; slow cooled after deformation with SRO and κ-carbide precipitation.",
+        "source": {
+          "reason": "Combines the stated average grain size (50 µm) and the slow-cooling-related SRO/κ-carbide precipitation of the hot-rolled condition.",
+          "block_id": [
+            "b0059",
+            "b0060"
+          ]
+        }
+      },
+      "number_of_phases": {
+        "value": 2,
+        "source": {
+          "reason": "Austenitic matrix plus κ-carbide precipitates formed during slow cooling after hot rolling.",
+          "block_id": [
+            "b0060"
+          ]
+        }
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "Bulk hot-rolled microstructure of the as-hot-rolled 2.7% Si steel.",
+            "block_id": [
+              "b0059",
+              "b0060"
+            ]
+          },
+          "microstructure_id": "micro_1",
+          "region": null,
+          "related_sequence": {
+            "value": "1"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "Matrix phase of the high-Mn high-Al Fe-30Mn-9Al-0.9C class of lightweight steels, which are fully austenitic.",
+                "block_id": [
+                  "b0006"
+                ]
+              },
+              "phase_name": {
+                "value": "austenite (γ)"
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "κ-carbide precipitation occurred in the slow-cooled hot-rolled material.",
+                "block_id": [
+                  "b0060"
+                ]
+              },
+              "phase_name": {
+                "value": "κ-carbide"
+              },
+              "crystal_structure": {
+                "value": "E21 cubic perovskite (carbon-deficient (Fe,Mn)3AlCx, x<1)",
+                "source": {
+                  "reason": "κ-carbide in these Fe-Mn-Al-C steels has the E21 cubic perovskite crystal structure.",
+                  "block_id": [
+                    "b0018"
+                  ]
+                }
+              },
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "50 µm",
+              "source": {
+                "reason": "The hot-rolled Fe-30Mn-9Al-2.7Si-0.9C steel has an average grain size of 50 µm.",
+                "block_id": [
+                  "b0059"
+                ]
+              }
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "source": {
+                "reason": "κ-carbide precipitation attributed to slow cooling after hot rolling in the as-hot-rolled material.",
+                "block_id": [
+                  "b0060"
+                ]
+              },
+              "precipitate_id": "ppt_1",
+              "type": {
+                "value": "κ-carbide"
+              },
+              "size": null,
+              "distribution": null,
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "source": {
+        "reason": "Phase interface and slip/fracture behavior of the as-hot-rolled 2.7% Si steel.",
+        "block_id": [
+          "b0060",
+          "b0070"
+        ]
+      },
+      "interface_set_id": "interface_set_1",
+      "phase_interfaces": [
+        {
+          "source": {
+            "reason": "Austenite/κ-carbide interface relevant to the slow-cooled hot-rolled material containing κ-carbide precipitates.",
+            "block_id": [
+              "b0060",
+              "b0018"
+            ]
+          },
+          "interface_id": "int_austenite_kappa",
+          "microstructure_id": "micro_1",
+          "phase_1_name": {
+            "value": "austenite (γ)"
+          },
+          "phase_2_name": {
+            "value": "κ-carbide"
+          },
+          "coherence": {
+            "value": "coherent; cube-on-cube orientation relationship (<100>κ // <100>γ; {001}κ // {001}γ)",
+            "source": {
+              "reason": "κ-carbide in these Fe-Mn-Al-C steels has a cube-on-cube orientation relationship with the austenite matrix.",
+              "block_id": [
+                "b0018"
+              ]
+            }
+          }
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": {
+        "value": "Planar-slip-related brittle fracture: {111} slip traces on cleavage facets; slip traces at roughly 60° angles from one another indicate fracture by decohesion of active slip planes.",
+        "source": {
+          "reason": "As-hot-rolled CVN fracture surface showed transgranular cleavage with {111} slip traces; slip traces at roughly 60° angles indicate glide-plane decohesion.",
+          "block_id": [
+            "b0060",
+            "b0070"
+          ]
+        }
+      },
+      "phase_evolution": {
+        "value": "Short-range ordering (SRO) and κ-carbide precipitation occurred because the hot-rolled material was slow cooled after deformation.",
+        "source": {
+          "reason": "The low toughness of the as-hot-rolled condition relative to solution-treated is related to SRO and κ-carbide precipitation from slow cooling.",
+          "block_id": [
+            "b0060"
+          ]
+        }
+      },
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "source": {
+        "reason": "Room-temperature Charpy V-notch notch toughness (breaking energy) reported for the as-hot-rolled 2.7% Si steel.",
+        "block_id": [
+          "b0059"
+        ]
+      },
+      "property_set_id": "prop_cvn",
+      "measurement_conditions": {
+        "temperature": {
+          "value": "room temperature",
+          "source": {
+            "reason": "Room-temperature notch toughness of the hot-rolled steel was evaluated.",
+            "block_id": [
+              "b0059"
+            ]
+          }
+        },
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": {
+          "value": "Charpy V-notch (CVN)",
+          "source": {
+            "reason": "Notch toughness was measured as Charpy V-notch breaking energy.",
+            "block_id": [
+              "b0059"
+            ]
+          }
+        },
+        "test_standard": null,
+        "other_conditions": {
+          "value": "Breaking energy 23 J in the L–T orientation and 22 J in the T–L orientation.",
+          "source": {
+            "reason": "As-hot-rolled breaking energy values reported for the two orientations.",
+            "block_id": [
+              "b0059"
+            ]
+          }
+        }
+      },
+      "mechanical": {
+        "tensile_properties": null,
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "source": {
+        "reason": "Comparison of the as-hot-rolled CVN toughness with the solution-treated condition of the same Fe-30Mn-9Al-2.7Si-0.9C steel.",
+        "block_id": [
+          "b0059",
+          "b0060"
+        ]
+      },
+      "performance_id": "perf_cvn_comparison",
+      "service_conditions": {
+        "operating_temperature": null,
+        "stress_state": {
+          "value": "Charpy V-notch impact loading",
+          "source": {
+            "reason": "Charpy V-notch impact toughness was evaluated.",
+            "block_id": [
+              "b0059"
+            ]
+          }
+        },
+        "environment": {
+          "value": "room temperature",
+          "source": {
+            "reason": "Room-temperature notch toughness was compared.",
+            "block_id": [
+              "b0059"
+            ]
+          }
+        }
+      },
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "source": {
+          "reason": "Solution-treated and water-quenched condition of the same alloy used as benchmark for toughness comparison.",
+          "block_id": [
+            "b0060"
+          ]
+        },
+        "benchmark_alloy_id": {
+          "value": "alloy_fe-30mn-9al-2.7si-0.9c"
+        },
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": {
+          "value": "CVN breaking energy (L–T orientation): 23 J as-hot-rolled versus 160 J after solution treatment for 10 min at 1100°C and water quenching.",
+          "source": {
+            "reason": "Solution treating improved toughness from 23 J (as-hot-rolled) to an average of 160 J (L–T).",
+            "block_id": [
+              "b0059",
+              "b0060"
+            ]
+          }
+        },
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "CVN impact test used to characterize the as-hot-rolled notch toughness.",
+        "block_id": [
+          "b0059"
+        ]
+      },
+      "characterization_id": "char_cvn",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Charpy V-notch (CVN) impact test",
+        "source": {
+          "reason": "Room-temperature CVN breaking energy was measured for the as-hot-rolled steel.",
+          "block_id": [
+            "b0059"
+          ]
+        }
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": {
+        "value": "room temperature; L–T and T–L specimen orientations",
+        "source": {
+          "reason": "Room-temperature notch toughness was measured in the L–T and T–L orientations.",
+          "block_id": [
+            "b0059"
+          ]
+        }
+      },
+      "purpose": {
+        "value": "Measure room-temperature notch toughness (breaking energy) of the as-hot-rolled steel.",
+        "source": {
+          "reason": "The test quantifies the as-hot-rolled breaking energy.",
+          "block_id": [
+            "b0059"
+          ]
+        }
+      },
+      "key_findings": {
+        "value": "Breaking energy 23 J (L–T) and 22 J (T–L); fracture mainly transgranular cleavage-type with little evidence of ductility.",
+        "source": {
+          "reason": "Reported breaking energy and fracture mode of the as-hot-rolled specimen.",
+          "block_id": [
+            "b0059"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "SEM fractography characterizing the as-hot-rolled fracture surface.",
+        "block_id": [
+          "b0059",
+          "b0060",
+          "b0070",
+          "figure_013"
+        ]
+      },
+      "characterization_id": "char_sem",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Scanning electron microscopy (SEM) secondary-electron fractography",
+        "source": {
+          "reason": "Fracture surfaces of the as-hot-rolled CVN specimens were examined by SEM.",
+          "block_id": [
+            "b0059",
+            "figure_013"
+          ]
+        }
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": {
+        "value": "CVN fracture surfaces",
+        "source": {
+          "reason": "SEM imaging was performed on the CVN fracture surfaces of the as-hot-rolled specimen.",
+          "block_id": [
+            "b0059",
+            "figure_013"
+          ]
+        }
+      },
+      "purpose": {
+        "value": "Characterize the fracture mode of the as-hot-rolled CVN specimens.",
+        "source": {
+          "reason": "Imaging was used to identify the cleavage-type fracture mode.",
+          "block_id": [
+            "b0059",
+            "b0070"
+          ]
+        }
+      },
+      "key_findings": {
+        "value": "Transgranular cleavage-type fracture with {111} slip traces on cleavage facets; slip traces at roughly 60° angles; little evidence of ductility.",
+        "source": {
+          "reason": "SEM showed mainly transgranular cleavage with {111} slip traces and ~60° slip-trace angles on the as-hot-rolled fracture surface.",
+          "block_id": [
+            "b0059",
+            "b0060",
+            "b0070",
+            "figure_013"
+          ]
+        }
+      }
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Nominal composition: Fe-30Mn-9Al-2.7Si-0.9C with 0.023% P (chemistry values in weight percent) [b0059].",
+    "Room-temperature Charpy V-notch (CVN) breaking energy in the as-hot-rolled condition: 23 J in the L–T orientation and 22 J in the T–L orientation [b0059]."
+  ]
+}

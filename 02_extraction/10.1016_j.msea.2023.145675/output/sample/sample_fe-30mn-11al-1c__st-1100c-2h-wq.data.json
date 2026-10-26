@@ -1,0 +1,145 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-11al-1c__st-1100c-2h-wq",
+      "paper_id": "10.1016_j.msea.2023.145675",
+      "alloy_id": "alloy_fe-30mn-11al-1c",
+      "process_id": "proc_st-1100c-2h-wq",
+      "sample_label": "Al-11 (1100 °C)",
+      "aliases": [
+        "Fe30Mn11Al1C after 1100 °C/2 h solution treatment"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_melting_casting",
+      "sequence": "1",
+      "type": "melting and casting",
+      "method": "high-frequency vacuum induction melting followed by casting into an ingot",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum (vacuum induction melting)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Furnace capacity 50 kg; ingot diameter 150 mm."
+    },
+    {
+      "processing_step_id": "step_2_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": "5 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_3_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling into rods",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air-cooled to room temperature",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Rolled rod diameter 16 mm (from a 150 mm ingot)."
+    },
+    {
+      "processing_step_id": "step_4_solution_treatment_1100c",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Applied to specimens with different Al content to reveal the influence of solution temperature (terminal state 1100 °C–2 h–WQ)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_al11_solution_treated",
+      "overall_structure": "After solution treatment the Fe30Mn11Al1C (Al-11) alloy consists of a single FCC austenite matrix containing fine κ-carbide precipitates; increasing the solution-treatment temperature from 1050 to 1100 °C coarsens the austenite grains (the grain size of the 1100 °C state was not quantified in the paper).",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_al11_matrix",
+          "region": null,
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ, FCC)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains containing twin boundaries (Σ3)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "fine, uniformly distributed precipitates",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_carbide",
+              "type": "κ-carbide",
+              "size": null,
+              "distribution": "uniformly distributed in the austenite matrix",
+              "coherency": "coherent with the austenite matrix"
+            }
+          ],
+          "block_id": [
+            "b0051",
+            "b0052",
+            "b0057",
+            "b0068"
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "intf_kappa_austenite",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_kappa_gamma",
+          "microstructure_id": "micro_al11_matrix",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "austenite (γ)",
+          "coherence": "coherent ((001)κ || (001)γ orientation relationship reported for the κ/γ couple)"
+        }
+      ]
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

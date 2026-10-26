@@ -1,0 +1,251 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-15al-2v-1c__as-cast",
+      "paper_id": "10.1016_j.intermet.2004.05.010",
+      "alloy_id": "alloy_fe-15al-2v-1c",
+      "process_id": "proc_as-cast",
+      "sample_label": "Fe-15Al-2V-1C",
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1",
+      "sequence": "1",
+      "type": "melting and casting",
+      "method": "vacuum induction melting and casting into cylindrical copper moulds",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": "copper mould",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cylindrical copper moulds 32 mm in diameter by 186 mm in length; no further heat treatment reported for the as-cast state."
+    },
+    {
+      "processing_step_id": "step_2",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "spark erosion cutting and surface grinding",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Samples cut in the direction of the longitudinal axis of the ingot (casting direction); compression samples (6 × 6 × 10) mm^3; tensile flat samples (3.5 × 5) mm^2 cross-section with 15 mm gauge length."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_1",
+      "overall_structure": "Two-phase Fe-Al matrix with MC carbide (VC) precipitates; the Fe-Al matrix is A2 bcc disordered for 15 at.% Al alloys.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": "matrix (as-cast ingot)",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "Fe-Al matrix",
+              "crystal_structure": "A2 bcc disordered",
+              "volume_fraction": null,
+              "morphology": "Columnar grains",
+              "grain_size": "350×2000 μm",
+              "texture": null
+            },
+            {
+              "phase_name": "VC",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "Plate-like (needle-like)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "350×2000",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_1",
+              "type": "VC",
+              "size": {
+                "value": "1×8",
+                "unit": "μm"
+              },
+              "distribution": null,
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_1_1",
+          "microstructure_id": "micro_1",
+          "phase_1_name": "Fe-Al matrix",
+          "phase_2_name": "VC",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": "Parabolic work hardening behaviour, typical for most disordered polycrystalline metallic materials",
+      "phase_evolution": null,
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_rt",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-4 s^-1",
+        "specimen_geometry": "compression: (6 × 6 × 10) mm^3; tension: (3.5 × 5) mm^2 cross-section with 15 mm gauge length",
+        "test_standard": null,
+        "other_conditions": "Specimens cut along the longitudinal axis of the ingot (casting direction); surfaces ground; ZWICK 1474 universal testing machine."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "compression",
+              "value": "396",
+              "unit": "MPa",
+              "uncertainty": null
+            },
+            {
+              "direction": "tension",
+              "value": "374",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [],
+          "elongation": [
+            {
+              "direction": "tension",
+              "value": "0.6",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Room-temperature compression curve (curve 3) shows parabolic work hardening; room-temperature tension curve rises almost linearly then falls nearly vertically (fracture with negligible uniform elongation, peak between 300 and 400 MPa gridlines).",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "matrix",
+            "value": "191",
+            "scale": "Brinell",
+            "unit": "HB",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_1",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Matrix Brinell hardness and yield stress in compression relative to binary Fe-15Al",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_1",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM) fractography",
+      "instrument_or_setup": "Hitachi S-530, 20 kV, working distance 15 mm",
+      "measurement_conditions": "secondary electrons (SE)",
+      "purpose": "Investigation of fracture surfaces of tensile specimens",
+      "key_findings": "Coarse blocky transgranular cleavage with a smooth step-like facet for Fe-15Al-2V-1C (fracture mode TGC)."
+    },
+    {
+      "characterization_id": "char_2",
+      "microstructure_id": null,
+      "technique": "Brinell hardness",
+      "instrument_or_setup": "load 62.5 g, indentation ball 2.5 mm diameter",
+      "measurement_conditions": null,
+      "purpose": "Measurement of matrix hardness",
+      "key_findings": "Matrix Brinell hardness of Fe-15Al-2V-1C is 191 HB."
+    },
+    {
+      "characterization_id": "char_3",
+      "microstructure_id": null,
+      "technique": "uniaxial compression and tension testing",
+      "instrument_or_setup": "ZWICK 1474 universal testing machine",
+      "measurement_conditions": "deformation rate 10^-4 s^-1",
+      "purpose": "Determination of yield stress, total elongation and stress-strain curves",
+      "key_findings": "Fe-15Al-2V-1C: compression yield stress 396 MPa, tension yield stress 374 MPa, total elongation 0.6%."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Fe-15Al-2V-1C exhibits strengthening of the Fe-Al matrix compared to the binary Fe-15Al alloy, based on hardness and compression tests [b0021].",
+    "At room temperature, the Fe-15Al-2V-1C compression curve (curve 3) shows parabolic work hardening, while its tension curve fails with negligible uniform elongation between the 300 and 400 MPa gridlines [b0025][figure_002][figure_003].",
+    "In Fig. 5, the compressive yield stress of Fe-15Al-2V-1C lies slightly below the 400 MPa gridline at the lowest temperature, decreases monotonically with increasing temperature, and by 800 °C converges low between the 0 and 100 MPa gridlines (no numeric value labels printed) [b0038][figure_005].",
+    "At 650 °C and 800 °C, Fe-15Al-2V-1C shows tension-compression asymmetry (compression yield stress exceeds tension yield stress), consistent with all investigated alloys; no numeric value labels are printed in Figs 7 and 8 [b0040][figure_007][figure_008].",
+    "Fe-15Al-2V-1C fractured by coarse transgranular cleavage (TGC) at room temperature, corresponding to its brittle behaviour [b0031][b0035]."
+  ]
+}

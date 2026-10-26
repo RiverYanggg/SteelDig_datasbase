@@ -1,0 +1,110 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_004",
+  "family": "generalist",
+  "image_type": "chart_plot",
+  "description": "Single-panel scatter/categorical plot (no micrographs, spectra or schematics; no legend, no error bars, no printed data labels). The vertical axis is labelled \"Cross-validation scores\" and spans 0.2 to 1.4 in 0.2 increments with dashed horizontal gridlines; the horizontal axis is labelled \"Numbers of Features\" with integer ticks 1, 2, 3, 4, 5 and dashed vertical gridlines. Above each feature count sits a vertical column of filled light-blue circular markers representing every candidate feature-subset combination: five markers at 1 feature, about six at 2, about four at 3, three at 4 and a single marker at 5. The 1-feature column is by far the most dispersed, reaching from just above the 0.2 gridline up to just below the 1.3 level (between the 1.2 and 1.4 gridlines). Columns for 2-5 features are tightly clustered in the lower part of the axis, roughly between the 0.2 and 0.45 gridlines, with 2 features additionally containing one isolated marker near 0.7. The lowest marker of each column appears at 3 features. The figure demonstrates that adding features up to three collapses the scatter of cross-validation scores, whereas four and five features bring no further decrease.",
+  "confidence": "high",
+  "subfigures": [
+    {
+      "panel": "(single panel)",
+      "description": "One scatter plot only: 'Cross-validation scores' (y, 0.2-1.4, step 0.2, dashed gridlines) versus 'Numbers of Features' (x, integer ticks 1-5). Light-blue circular markers form descending vertical stacks at each feature number; the stack is tallest/most dispersed at 1 feature and compresses to a narrow band near 0.25-0.35 for 3-5 features.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "The plot axes are labelled 'Cross-validation scores' (y, 0.2 to 1.4 with dashed gridlines at 0.2 intervals) and 'Numbers of Features' (x, ticks 1, 2, 3, 4, 5).",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Each feature number is represented by a vertical column of filled light-blue circular markers: about five markers at 1 feature, about six at 2 features, about four at 3 features, three at 4 features and one at 5 features.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "At 1 feature the markers are the most widely spread, spanning from just above the 0.2 gridline to a highest point lying between the 1.2 and 1.4 gridlines.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "At 2 features one isolated marker sits near 0.7 while the remaining markers lie below the 0.45 gridline.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "For 3, 4 and 5 features all markers are confined to a narrow band between roughly the 0.2 and 0.35 levels, i.e. the spread of cross-validation scores is strongly compressed relative to 1 feature.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "No numeric data labels, legend, error bars or fitted line are printed; values can only be read approximately against the 0.2-spaced gridlines.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption states the figure presents 'Exhaustive screening results with different numbers of features'.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "caption"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states minimum RMSE values of 0.341, 0.267, 0.257, 0.271 and 0.281 for 1, 2, 3, 4 and 5 features respectively, indicating 3 features as the optimal prediction accuracy.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "citing_sentences"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text identifies the feature combination {δ_Ec, D_Ec, G} as giving the smallest RMSE value (0.257) within the 3-feature set, naming the local cohesive energy mismatch δ_EC, the cohesive energy difference D_EC and the shear modulus G as the key factors.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "citing_sentences"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The y-axis is labelled 'Cross-validation scores' while the citing text reports the same set of minima as 'RMSE' values; the image itself does not print which metric the ordinate is, so the two readings are not reconciled by the pixels.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "low"
+    },
+    {
+      "observation": "The single marker at 5 features lies lowest in its own column at approximately the 0.28 level, while the lowest marker overall appears in the 3-feature column, consistent with the cited minimum RMSE of 0.257 at 3 features.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    }
+  ],
+  "measured_quantities": [
+    "cross-validation score / RMSE (dimensionless, y-axis 0.2-1.4)",
+    "number of features (integer, 1-5)"
+  ],
+  "sample_hints": [],
+  "unreadable_items": [
+    "No numeric values are printed on any marker, so individual cross-validation scores (RMSE) can only be estimated against the 0.2-spaced gridlines, not read exactly",
+    "The ordinate metric is only labelled 'Cross-validation scores'; the image does not confirm that these values are RMSE as the citing text states"
+  ],
+  "image_paths": [
+    "images/769c7ddbd526d191aaa9f3dbc5325b0b282b77438227f058958fc2d31f128ffa.jpg"
+  ]
+}

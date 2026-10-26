@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% from "_macros.html" import family_badge %}
+{% block title %}{{ p.title | truncate(40, true) }}{% endblock %}
+
+{% block content %}
+<div class="page-head">
+  <div style="max-width:900px">
+    <h1 style="font-size:19px;line-height:1.45">{{ p.title }}</h1>
+    <p style="margin-top:6px">
+      {{ p.year or '—' }} · {{ p.journal or '—' }} ·
+      <span class="mono" style="font-size:12px">{{ p.doi or p.paper_id }}</span>
+    </p>
+  </div>
+</div>
+
+<div class="grid g4" style="margin-bottom:16px">
+  <div class="card kpi"><span class="label">样品</span><span class="value">{{ p.n_samples }}</span></div>
+  <div class="card kpi"><span class="label">图表</span><span class="value">{{ p.n_figures }}</span></div>
+  <div class="card kpi"><span class="label">公式</span><span class="value">{{ p.n_equations }}</span></div>
+  <div class="card kpi"><span class="label">证据块</span><span class="value">{{ p.block_count }}</span>
+    <span class="foot">{{ p.page_count }} 页 · {{ p.run_id }}</span></div>
+</div>
+
+{% if p.abstract %}
+<div class="card" style="margin-bottom:16px">
+  <div class="section-title"><span class="dot"></span>摘要</div>
+  <p style="margin:0;color:var(--ink-2)">{{ p.abstract }}</p>
+  {% if p.keywords %}<div class="chips" style="margin-top:12px">{% for k in p.keywords %}<span class="badge">{{ k }}</span>{% endfor %}</div>{% endif %}
+</div>
+{% endif %}
+
+<div class="grid" style="grid-template-columns: minmax(0,1.2fr) minmax(0,1fr); gap:16px; margin-bottom:16px">
+  <div class="card">
+    <div class="card-head"><div><h3>合金</h3><div class="sub">{{ alloys | length }} 个</div></div></div>
+    <div class="table-wrap">
+      <table class="data">
+        <thead><tr><th>合金</th><th>化学式</th><th>体系</th><th class="num">样品</th></tr></thead>
+        <tbody>
+        {% for a in alloys %}
+          <tr>
+            <td>{{ a.name | truncate(48, true) if a.name else a.alloy_id }}<div class="muted mono" style="font-size:11px">{{ a.alloy_id }}</div></td>
+            <td class="mono" style="font-size:12px">{{ a.formula or '—' }}</td>
+            <td class="mono" style="font-size:12px">{{ a.chemsys or '—' }}</td>
+            <td class="num">{{ a.n_samples }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div><h3>样品</h3><div class="sub">点击查看成分 / 工艺 / 性能 / 溯源</div></div></div>
+    <div class="table-wrap">
+      <table class="data">
+        <thead><tr><th>样品</th><th class="num">YS</th><th class="num">EL</th></tr></thead>
+        <tbody>
+        {% for s in samples %}
+          <tr>
+            <td><a href="/samples/{{ s.paper_id }}/{{ s.sample_id }}">{{ s.sample_id | replace('sample_','') | truncate(30, true) }}</a>
+              <div style="margin-top:2px">{{ family_badge(s.family_key) }}</div></td>
+            <td class="num">{{ s.yield_strength_mpa | round(0) | int if s.yield_strength_mpa else '—' }}</td>
+            <td class="num">{{ s.elongation_pct | round(1) if s.elongation_pct is not none else '—' }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="card" style="margin-bottom:16px">
+  <div class="card-head"><div><h3>图表</h3><div class="sub">{{ figures | length }} 个 · 描述由视觉模型生成</div></div></div>
+  <div class="fig-grid">
+    {% for f in figures %}
+    <div class="fig-card">
+      <div class="thumb" style="background-image:url('/media/figure/{{ paper_id }}/{{ f.figure_id }}'); background-size:contain; background-repeat:no-repeat; background-color:#fff">{{ '' }}</div>
+      <div class="body">
+        <div class="lbl">{{ f.label or f.figure_id }}</div>
+        <div class="meta">{{ f.figure_id }} · {{ f.n_observations }} 观察 · {{ f.block_ids | length }} 证据</div>
+      </div>
+    </div>
+    {% else %}<div class="empty">无图表</div>{% endfor %}
+  </div>
+</div>
+
+{% if equations %}
+<div class="card">
+  <div class="card-head"><div><h3>公式</h3><div class="sub">{{ equations | length }} 个</div></div></div>
+  <div class="table-wrap">
+    <table class="data">
+      <thead><tr><th>编号</th><th>LaTeX</th><th>用途</th><th>证据块</th></tr></thead>
+      <tbody>
+      {% for e in equations %}
+        <tr>
+          <td class="mono">{{ e.equation_id }}<div class="muted" style="font-size:11px">eq. {{ e.equation_number or '—' }}</div></td>
+          <td class="mono" style="font-size:12px;max-width:420px">{{ (e.latex or '') | truncate(90, true) }}</td>
+          <td>{{ (e.purpose or '') | truncate(80, true) }}</td>
+          <td>{% if e.block_id %}<a class="badge blue" href="/evidence/{{ paper_id }}/{{ e.block_id }}">{{ e.block_id }}</a>{% else %}<span class="muted">—</span>{% endif %}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+{% endblock %}

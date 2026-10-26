@@ -1,0 +1,435 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-25.14mn-10al-1.46c__1150c-1s-1",
+      "paper_id": "10.1016_j.jmrt.2021.08.079",
+      "alloy_id": "alloy_fe-25.14mn-10al-1.46c",
+      "process_id": "proc_1150c-1s-1",
+      "sample_label": "1150 °C/1 s^-1",
+      "aliases": [
+        "T=1150 °C",
+        "ε̇=1 s^-1",
+        "(d) T=1150 °C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_heating",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "heating",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": "10 °C/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Heating stage of the hot-compression schedule."
+    },
+    {
+      "processing_step_id": "step_2_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization (holding)",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "120 s",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenization hold at 1200 °C for 120 s."
+    },
+    {
+      "processing_step_id": "step_3_cooling_to_set_T",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "cooling",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": "5 °C/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cooled from 1200 °C to the set deformation temperature of 1150 °C at 5 °C/s."
+    },
+    {
+      "processing_step_id": "step_4_holding_15s",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "holding (temperature equilibration)",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": "15 s",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Held for 15 s at 1150 °C so that the temperature difference between the inside and outside of the sample was the same."
+    },
+    {
+      "processing_step_id": "step_5_hot_compression",
+      "sequence": "5",
+      "type": "mechanical processing",
+      "method": "isothermal constant-strain-rate hot compression",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "60% (corresponding to the maximum true strain 0.92)",
+      "processing_steps_notes": "Isothermal constant strain rate compression at 1 s^-1 to 60% (true strain 0.92); mica foils with high-temperature lubricants were affixed to both end faces to reduce friction and deformation non-uniformity."
+    },
+    {
+      "processing_step_id": "step_6_water_spray_cooling",
+      "sequence": "6",
+      "type": "heat treatment",
+      "method": "quenching (water-spray cooling)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water (sprayed)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Post-compression water-spray quenching."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_1150c_1s-1",
+      "overall_structure": "After 60% hot compression at 1150 °C and 1 s^-1 the deformation-zone microstructures differ: zone 1 (difficult deformation) consists of large grains, whereas zones 2 (small deformation) and 3 (large deformation) consist of uniform equiaxed dynamically recrystallized grains that appear coarser than those formed at 1050 °C/1 s^-1. The DRX volume fraction increases with temperature, and the recrystallized grain size grows significantly as temperature rises.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_zone1_difficult",
+          "region": "Zone 1 - difficult deformation zone (top and bottom centre near loading surfaces)",
+          "related_sequence": "5",
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "Large grains",
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_zone2_small_deformation",
+          "region": "Zone 2 - small deformation zone (left and right ends adjacent to the horizontal centre line)",
+          "related_sequence": "5",
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "Uniform equiaxed recrystallized grains, appearing coarser than at 1050 °C/1 s^-1",
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_zone3_large_deformation",
+          "region": "Zone 3 - large deformation zone (central band / core of the compressed sample)",
+          "related_sequence": "5",
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "Uniform equiaxed recrystallized grains, appearing coarser than at 1050 °C/1 s^-1; DRX is more complete in the large-deformation zone",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "props_1150c_1s-1",
+      "measurement_conditions": {
+        "temperature": "1150 °C",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "1 s^-1",
+        "specimen_geometry": "cylindrical Φ8 mm × 12 mm",
+        "test_standard": null,
+        "other_conditions": "Isothermal constant-strain-rate compression to 60% (maximum true strain 0.92); mica foils with high-temperature lubricants affixed to both end faces; heated to 1200 °C at 10 °C/s, homogenized 120 s, cooled to 1150 °C at 5 °C/s, held 15 s before compression, water-spray quenched after."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_hot_working_window",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "950 °C",
+          "max": "1100 °C",
+          "unit": "°C"
+        },
+        "stress_state": "compression (isothermal constant strain rate)",
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Fine and uniform DRX grain structure; the 1150 °C/1 s^-1 condition lies outside the recommended fine-grain windows",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_optical_microscopy",
+      "microstructure_id": null,
+      "technique": "laser confocal optical microscopy",
+      "instrument_or_setup": "LEXT OLS4000 laser confocal microscope",
+      "measurement_conditions": "Compressed sample split in half along the axial axis; ground, polished and etched with 30% nitric acid alcohol solution (volume fraction); micrographs with 100 µm scale bars",
+      "purpose": "Observe the initial microstructure and the microstructure evolution in the three deformation zones after hot compression",
+      "key_findings": "For the 1150 °C/1 s^-1 sample (figure_009 panel f): zone 1 shows large grains, zones 2 and 3 show uniform equiaxed recrystallized grains that appear coarser than at 1050 °C/1 s^-1."
+    },
+    {
+      "characterization_id": "char_gleeble_thermomechanical",
+      "microstructure_id": null,
+      "technique": "isothermal constant-strain-rate hot compression (thermo-mechanical simulation)",
+      "instrument_or_setup": "Gleeble-3500 thermo-mechanical simulator",
+      "measurement_conditions": "T = 1150 °C, ε̇ = 1 s^-1, 60% compression (true strain 0.92), cylindrical Φ8 mm × 12 mm sample",
+      "purpose": "Determine the rheological/flow stress behaviour and construct constitutive/DRX models",
+      "key_findings": "The steel is a negative temperature-sensitive and positive strain-rate-sensitive material; the flow stress curve of this condition exhibits a peak followed by softening."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_constitutive_activation_energy",
+      "simulation_method": "Arrhenius hyperbolic sine constitutive analysis with Zener-Hollomon parameter; linear regression fitting",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "The fitted straight lines in Fig. 4 show poor parallelism, indicating the deformation conditions significantly affect the activation energy; the calculated value is therefore only the average over the experimental range.",
+      "analytical_models": [
+        {
+          "model_name": "Arrhenius hyperbolic sine function equation (Eq. 1)",
+          "equation_role": "Relate peak stress, temperature and strain rate to determine the DRX activation energy",
+          "parameters": [
+            {
+              "name": "α (stress level factor)",
+              "value": "0.00599",
+              "unit": null
+            },
+            {
+              "name": "Q_p (DRX activation energy)",
+              "value": "669.844 kJ mol^-1",
+              "unit": "kJ mol^-1"
+            },
+            {
+              "name": "R (gas constant)",
+              "value": "8.314",
+              "unit": "J (mol K)^-1"
+            },
+            {
+              "name": "k1 (average slope, Fig. 4a)",
+              "value": "5.135",
+              "unit": null
+            },
+            {
+              "name": "k2 (average slope, Fig. 4b)",
+              "value": "15.690",
+              "unit": null
+            }
+          ],
+          "model_note": "Activation energy computed as Q_p = 1000·R·k1·k2; applicable to the whole steel over 900-1150 °C and 0.01-10 s^-1."
+        },
+        {
+          "model_name": "Zener-Hollomon parameter (Eq. 3)",
+          "equation_role": "Characterize the combined influence of T and strain rate on rheological stress",
+          "parameters": [
+            {
+              "name": "Q_p",
+              "value": "669.844",
+              "unit": "kJ mol^-1"
+            }
+          ],
+          "model_note": "Z = ε̇ exp(Q_p/RT); lnZ for this sample (1150 °C, 1 s^-1) is 56.62 (Table 1)."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_drx_characteristic_values",
+      "simulation_method": "Cingara-McQueen equation and multiple linear regression to relate DRX characteristic values (εc/σc, εp/σp, εs/σs) to lnZ",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "εc/εp ≈ 0.452, similar to literature values obtained from the θ-σ inflection-point method, indicating the method is reliable.",
+      "analytical_models": [
+        {
+          "model_name": "Cingara-McQueen equation (Eq. 4-5)",
+          "equation_role": "Determine the material constant C and the critical strain for DRX",
+          "parameters": [
+            {
+              "name": "C (at 1050 °C, 0.01 s^-1)",
+              "value": "0.1461",
+              "unit": null
+            },
+            {
+              "name": "R (fit correlation)",
+              "value": "0.9728",
+              "unit": null
+            },
+            {
+              "name": "εc/εp",
+              "value": "0.452",
+              "unit": null
+            }
+          ],
+          "model_note": "εc/εp = (√(1-C) - (1-C))/C (Eq. 9)."
+        },
+        {
+          "model_name": "DRX characteristic value models (Eq. 10)",
+          "equation_role": "Express critical, peak and steady-state stress/strain as functions of lnZ",
+          "parameters": [
+            {
+              "name": "εc",
+              "value": "0.0093 lnZ - 0.43",
+              "unit": null
+            },
+            {
+              "name": "σc",
+              "value": "1.0048 (lnZ)^2 - 97.23 lnZ + 2379.08",
+              "unit": null
+            },
+            {
+              "name": "εp",
+              "value": "0.020 lnZ - 0.94",
+              "unit": null
+            },
+            {
+              "name": "σp",
+              "value": "0.98 (lnZ)^2 - 94.21 lnZ + 2291.34",
+              "unit": null
+            },
+            {
+              "name": "εs",
+              "value": "0.034 lnZ - 1.53",
+              "unit": null
+            },
+            {
+              "name": "σs",
+              "value": "0.55 (lnZ)^2 - 46.96 lnZ + 984.67",
+              "unit": null
+            }
+          ],
+          "model_note": "Regression fits R between 0.911 and 0.957; applicable to the whole steel over the studied T and ε̇ ranges."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_grain_size_model",
+      "simulation_method": "Finite element (DEFORM-3D) setup with Levenberg-Marquardt optimization algorithm for mathematical regression of DRX average grain size",
+      "software_used": "DEFORM-3D; Levenberg-Marquardt optimization algorithm",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Billet set as a rigid plastic body and die indenter as a rigid body; material parameters given to the die; semi-symmetric specimen model; friction of the billet-die contact interface set to shear type with value 0.3; convection coefficient between billet and air set to 0.02 N/(s·mm·°C); simulation in line with the thermal compression experimental conditions.",
+      "validation_against_experiment": "Correlation coefficient R = 0.996 and MRE = 4.53% for all samples; absolute error between predicted and experimental grain size mostly within 3 µm.",
+      "analytical_models": [
+        {
+          "model_name": "DRX average grain size prediction model (Eq. 12)",
+          "equation_role": "Predict DRX average grain size as a function of strain rate and temperature",
+          "parameters": [
+            {
+              "name": "pre-exponential constant",
+              "value": "807743.63",
+              "unit": null
+            },
+            {
+              "name": "ε̇ exponent q",
+              "value": "-0.1903",
+              "unit": null
+            },
+            {
+              "name": "Q (activation term)",
+              "value": "120648.47",
+              "unit": null
+            },
+            {
+              "name": "b (constant)",
+              "value": "4.338",
+              "unit": null
+            },
+            {
+              "name": "R (correlation coefficient)",
+              "value": "0.996",
+              "unit": null
+            },
+            {
+              "name": "MRE",
+              "value": "4.53%",
+              "unit": "%"
+            }
+          ],
+          "model_note": "Form: d_rex = 807743.63 ε̇^-0.1903 exp(-120648.47/RT) + 4.338 (Eq. 12); R defined by Eq. 13, MRE by Eq. 14."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Zener-Hollomon parameter for this sample (1150 °C, 1 s^-1): lnZ = 56.62 (Table 1). Table 1 reports lnZ decreasing with increasing T and increasing with strain rate across 900-1150 °C and 0.01-10 s^-1.",
+    "Dynamic recrystallization activation energy of the steel Q_p = 669.844 kJ mol^-1, determined from the Arrhenius hyperbolic sine function equation with k1 = 5.135 and k2 = 15.690 and α = 0.00599; this is only an average value over the experimental range because the fitted lines show poor parallelism.",
+    "The DRX average grain size of the steel increases with decreasing strain rate or increasing temperature; the study reports that at 1150 °C and 0.01 s^-1 (not this sample) the grain size exceeds 70 µm, indicating rapid recrystallized grain growth.",
+    "Recommended hot-working windows for a fine and uniform grain structure: 950-1000 °C/0.01-0.1 s^-1 and 1050-1100 °C/1-10 s^-1; the 1150 °C/1 s^-1 condition of this sample lies outside these fine-grain windows.",
+    "The steel is a negative temperature-sensitive and positive strain-rate-sensitive material; decreasing strain rate or increasing temperature lowers the peak/flow stress. Peak stress at 1150 °C, 0.01 s^-1 (not this sample) is 53.8 MPa.",
+    "No direct numeric peak stress, hardness, tensile or grain-size value is reported for the specific 1150 °C/1 s^-1 condition; only qualitative zone-resolved microstructures (figure_009 panel f) are provided for this sample.",
+    "The compression experiments used mica foils with high-temperature lubricants on both end faces to reduce friction and non-uniform deformation; the same batch/composition confirmed reproducibility under identical conditions."
+  ]
+}

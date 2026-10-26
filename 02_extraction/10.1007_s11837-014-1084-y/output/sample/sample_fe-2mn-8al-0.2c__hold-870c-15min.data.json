@@ -1,0 +1,115 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-2mn-8al-0.2c__hold-870c-15min",
+      "paper_id": "10.1007_s11837-014-1084-y",
+      "alloy_id": "alloy_fe-2mn-8al-0.2c",
+      "process_id": "proc_hold-870c-15min",
+      "sample_label": null,
+      "aliases": "Fig. 7c"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "isothermal treatment (hold)",
+      "temperature": "870",
+      "temperature_unit": "°C",
+      "duration": "15 min",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Isothermal treatment in the two-phase ferrite + j-phase (κ) domain; promotes complete decomposition of austenite, leaving a κ-phase cocoon."
+    },
+    {
+      "processing_step_id": "step_2",
+      "sequence": "2",
+      "type": "sample preparation",
+      "method": "deep etching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Deep etching used to expose the three-dimensional κ-phase cocoon morphology for SEM observation."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_1",
+      "overall_structure": "Complete decomposition of austenite; ferrite (α) matrix containing hollow κ-phase (j-phase) cocoon shells with evacuated cores",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": null,
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (α)",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "matrix (α) surrounding the κ cocoon shell",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-phase (j-phase)",
+              "crystal_structure": "perovskite E2_1",
+              "volume_fraction": null,
+              "morphology": "hollow cocoon shell with evacuated core",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "intf_set_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_1",
+          "microstructure_id": "micro_1",
+          "phase_1_name": "ferrite (α)",
+          "phase_2_name": "κ-phase (j-phase)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "Complete decomposition of austenite into κ-phase, leaving a hollow κ cocoon shell (former austenite site evacuated) within ferrite.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_1",
+      "microstructure_id": "micro_1",
+      "technique": "scanning electron microscopy (SEM), deep etched",
+      "instrument_or_setup": "SEM; Mag = 2.00 K X; EHT = 20.00 kV",
+      "measurement_conditions": "deep etched; 10 µm scale bar",
+      "purpose": "Reveal the three-dimensional κ-phase morphology after isothermal treatment at 870 °C for 15 min.",
+      "key_findings": "Hollow κ-phase cocoon shell with evacuated core inside α, the residue of fully decomposed austenite."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": []
+}

@@ -1,0 +1,351 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-12al-10mn-1c__600c-30min-wq",
+      "paper_id": "10.1016_j.jmrt.2020.02.088",
+      "alloy_id": "alloy_fe-12al-10mn-1c",
+      "process_id": "proc_600c-30min-wq",
+      "sample_label": "12Al-10Mn-1C 600 °C — Tempered",
+      "aliases": [
+        "12Al-10Mn-1C tempered at 600 °C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_casting",
+      "sequence": "1",
+      "type": "casting",
+      "method": "vacuum induction furnace casting (100 kW)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "0.5 kg ingots"
+    },
+    {
+      "processing_step_id": "step_2_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot-rolling",
+      "temperature": "1150",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "ingots hot-rolled to 5 mm flat-products",
+      "processing_steps_notes": "hot-rolled at 1150 °C obtaining 5 mm flat-products"
+    },
+    {
+      "processing_step_id": "step_3_water_quench_hot_rolled",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "water quenching applied after hot-rolling"
+    },
+    {
+      "processing_step_id": "step_4_tempering_600c_30min",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "tempering (heat treatment)",
+      "temperature": "600",
+      "temperature_unit": "°C",
+      "duration": "30 min",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "samples heat treated at 600 °C for 30 min; hardness Table 4 and precipitation-transformation text refer to this 600 °C tempered state"
+    },
+    {
+      "processing_step_id": "step_5_water_quench_tempered",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "water quenching applied after the 600 °C tempering"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_12al10mn1c_600c_precipitation_transformation",
+      "overall_structure": "Precipitation transformation (labelled 'generic precipitation transformation'): γ passed through a more complex random-like transformation, not as ordered and defined as discontinuous precipitation; reactions involved the whole γ volume. γ + κ-carbide lamellar structures were NOT detected; instead an austenite matrix featured by carbon-depleted γ regions with globular κ-carbides, plus alternated bands of two different austenite grades.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_600c_precip_transform",
+          "region": "whole γ volume (bulk)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "γ (austenite)",
+              "crystal_structure": "f.c.c. (FCC_A1)",
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "carbon-depleted γ (γ0)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "alternated bands of two austenite grades",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "globular κ-carbide",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "globular κ-carbide nodules embedded in the matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "b.c.c. (δ)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_kappa_globular_600c",
+              "type": "κ-carbide (globular)",
+              "size": null,
+              "distribution": "globular κ-carbides precipitated within carbon-depleted γ regions (and not in the other γ grade); strong κ-carbide precipitation along δ/γ boundaries; poor κ-carbide precipitation within ferrite",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_600c_fig4_banded",
+          "region": "banded, lath-like structure (Fig. 4, BSE-SEM, 100 µm scale bar)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "γ+κ lamellae",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "light elongated parallel bands",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "γα + coarse κ",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "darker matrix regions alternating with the lamellae bands",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_coarse_kappa_fig4",
+              "type": "coarse κ-carbide",
+              "size": null,
+              "distribution": "coarse κ in darker matrix regions of the banded structure",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_12al10mn1c_600c",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_delta_gamma_600c",
+          "microstructure_id": "micro_600c_precip_transform",
+          "phase_1_name": "δ-ferrite",
+          "phase_2_name": "γ (austenite)",
+          "coherence": null
+        },
+        {
+          "interface_id": "int_gamma_gamma_600c",
+          "microstructure_id": "micro_600c_precip_transform",
+          "phase_1_name": "γ (austenite)",
+          "phase_2_name": "carbon-depleted γ (γ0)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "γ → γ0 (carbon-depleted) + κ-carbide (generic precipitation transformation); alternated bands of two different austenite grades form; globular κ-carbides precipitate only in the carbon-depleted austenite variant.",
+      "interface_notes": "Strong κ-carbide precipitation along δ/γ boundaries; poor κ-carbide precipitation within ferrite. The precipitation transformation involved the whole γ volume at 12% Al."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_12al10mn1c_600c_hardness",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "through-thickness embedded, ground and polished samples",
+        "test_standard": "Vickers macro-hardness",
+        "other_conditions": "5 kg load applied for all indentations; 5 indentations per sample"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk (macro-hardness)",
+            "value": "420 HV",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_12al10mn1c_600c_vs_hotrolled",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-12al-10mn-1c",
+        "benchmark_process_id": "proc_hot-rolled-1150c",
+        "benchmark_sample_id": null,
+        "comparison_metric": "Vickers hardness (HV): hot-rolled 401 HV vs 600 °C tempered 420 HV (increase of 19 HV); the transformation was linked only to slight hardening effects",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om_600c",
+      "microstructure_id": null,
+      "technique": "Optical microscopy",
+      "instrument_or_setup": null,
+      "measurement_conditions": "through-thickness embedding, grinding and polishing performed separately for hot-rolled and heat-treated samples",
+      "purpose": "microstructure analysis of all alloys at the different processing conditions",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_sem_600c",
+      "microstructure_id": "micro_600c_precip_transform",
+      "technique": "Scanning electron microscopy (Secondary Electron Images, SEI; back-scattered-electron imaging)",
+      "instrument_or_setup": "SEM",
+      "measurement_conditions": "Fig. 3(b) at 20 kV, ×10,000 with 1 µm scale bar; Fig. 4 BSE-SEM with 100 µm scale bar",
+      "purpose": "analyse phase morphologies of the selected (precipitation-transformed) microstructures",
+      "key_findings": "Fig. 3(b) shows a banded lamellar microstructure; Fig. 4 shows banded γ+κ lamellae alternating with γα+coarse κ regions."
+    },
+    {
+      "characterization_id": "char_eds_600c",
+      "microstructure_id": null,
+      "technique": "Energy Dispersive X-rays (EDX/EDS) spectroscopy",
+      "instrument_or_setup": "SEM-EDS",
+      "measurement_conditions": null,
+      "purpose": "provide qualitative information on the local phase composition and analyse phase morphologies and chemical compositions",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_vickers_600c",
+      "microstructure_id": null,
+      "technique": "Vickers macro-hardness testing",
+      "instrument_or_setup": "Vickers macro-hardness tester",
+      "measurement_conditions": "5 kg load applied for all indentations; 5 indentations per sample",
+      "purpose": "hardness measurement supporting microstructure characterisation",
+      "key_findings": "12Al-10Mn-1C 600 °C tempered hardness = 420 HV (vs 401 HV hot-rolled)."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "For 12Al-10Mn-1C tempered at 600 °C the γ phase underwent a 'generic precipitation transformation' (complex random-like, not as ordered as discontinuous precipitation) that was linked to only slight/incipient hardening (Table 4: hot-rolled 401 HV → 600 °C tempered 420 HV, i.e. +19 HV).",
+    "In 12Al-10Mn-1C tempered at 600 °C, γ + κ-carbide lamellar structures were NOT detected; instead an austenite matrix with carbon-depleted γ regions and globular κ-carbides formed, accompanied by strong κ-carbide precipitation along δ/γ boundaries and poor κ-carbide precipitation within ferrite. The absence of random lamellar phases was stated to ensure a more solid microstructure configuration.",
+    "At 12% Al the 600 °C reactions involved the whole γ volume (contrasted with the corresponding 9% Al heat-treated alloy, Fig. 1(a), where austenite grains only partially transformed).",
+    "Fig. 4 is captioned as precipitation transformation in 600 °C tempered 12Al-10Mn-1C and its BSE-SEM panel labels read 'γ+κ lamellae' and 'γα+coarse κ'; however, the paired EDS table in the same figure group is titled 'EDS for Al and Mn in 9Al-10Mn-1C tempered at 600 °C', so the figure caption alloy and the table-title alloy disagree (data ambiguity noted, not assigned to this sample).",
+    "The paper reports that precipitation transformation produced microstructures featuring fine/coarse γ + κ-carbide lamellae and carbon-depleted γ-bands + κ-carbide nodules (conclusions, general to the transformation type).",
+    "Minitab18® software was used to verify consistency of the acquired data and outliers were excluded from the investigation.",
+    "No tensile, ductility, density, thermal, corrosion or other quantitative property values were reported specifically for the 12Al-10Mn-1C alloy in the 600 °C tempered condition; only Vickers hardness (420 HV) is given."
+  ]
+}

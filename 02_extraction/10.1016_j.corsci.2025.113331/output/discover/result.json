@@ -1,0 +1,236 @@
+{
+  "schema_version": "sample-discover-v1",
+  "paper_id": "10.1016_j.corsci.2025.113331",
+  "domain": "materials",
+  "paper": {
+    "paper_id": "10.1016_j.corsci.2025.113331",
+    "doi": "10.1016/j.corsci.2025.113331",
+    "title": "Enhancing the corrosion resistance of low-density steels via Al-rich oxide film formation by grain size optimization",
+    "authors": [
+      "Guang Yang",
+      "Li Wang",
+      "Xiaoqian Fu",
+      "Yucheng Ji",
+      "Wenquan Cao",
+      "Cunyu Wang",
+      "Jianxiong Liang",
+      "Chaofang Dong"
+    ],
+    "publication_year": "2025",
+    "journal": "Corrosion Science",
+    "keywords": [
+      "Low-density steels",
+      "Grain size",
+      "Microstructure",
+      "Oxide film",
+      "Corrosion resistance"
+    ],
+    "research_type": "experimental",
+    "paper_scope": "Investigates how grain size (8.7–32 μm), controlled by solution treatment temperature (950–1150 °C), affects the formation of Al-rich oxide films and the corrosion resistance of Fe-Mn-Al-C low-density steels (S0/S950/S1050/S1150)."
+  },
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe-30.34mn-8.93al-0.9c",
+      "alloy_name": "Fe-Mn-Al-C low-density steel",
+      "aliases": [
+        "Fe-Mn-Al-C LDSs",
+        "LDSs",
+        "LDS"
+      ],
+      "description": "Fe-Mn-Al-C low-density austenitic steel prepared by vacuum melting, used to investigate grain-size effects on Al-rich oxide film formation and corrosion resistance; single-phase FCC austenite after solution treatment.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "30.34",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "8.93",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.9",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Balance Fe; the reported composition (30.34% Mn, 8.93% Al, 0.9% C) applies to all samples; solution treatment eliminates the κ-carbide precipitates that are present in the as-hot-rolled S0 condition.",
+      "source": {
+        "reason": "b0019 reports the Fe-Mn-Al-C low-density steel composition (including 30.34% Mn, 8.93% Al, and 0.9% C) prepared via vacuum melting, and this single composition is used for all S0/S950/S1050/S1150 samples; b0008 refers to the material as Fe-Mn-Al-C low-density steels.",
+        "block_id": [
+          "b0019",
+          "b0008"
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_hot-rolled-wq",
+      "alloy_id": "alloy_fe-30.34mn-8.93al-0.9c",
+      "process_name": "Hot rolled + water quenched (no solution treatment)",
+      "state_label": "S0",
+      "aliases": [
+        "S0",
+        "original samples without solution treatment",
+        "as-hot-rolled"
+      ],
+      "parent_process_ids": [],
+      "description": "Steel ingot homogenized at 1200 °C for 2 h, hot rolled at 1200–950 °C into 20 mm-thick slabs, and water quenched; no subsequent solution treatment.",
+      "processes_notes": "S0 retains uneven/deformed grains and κ-carbide precipitates and serves as the baseline condition before solution treatment.",
+      "source": {
+        "reason": "b0019 describes homogenization at 1200 °C for 2 h, hot rolling at 1200–950 °C into 20 mm slabs, water quenching, and labels the original samples without solution treatment as S0.",
+        "block_id": [
+          "b0019"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_solution-950c-2h-wq",
+      "alloy_id": "alloy_fe-30.34mn-8.93al-0.9c",
+      "process_name": "Solution treatment at 950 °C for 2 h + water quenching",
+      "state_label": "S950",
+      "aliases": [
+        "S950",
+        "fine-grained sample",
+        "solution treated at 950 °C"
+      ],
+      "parent_process_ids": [
+        "proc_hot-rolled-wq"
+      ],
+      "description": "After hot rolling and water quenching, solution treated at 950 °C for 2 h followed by water quenching to room temperature; fine-grained condition (grain size about 8.7 μm).",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0019 reports solution treatment at 950 °C for 2 h with water quenching to room temperature and labels the resulting sample S950; b0008 identifies S950 as the fine-grained sample.",
+        "block_id": [
+          "b0019",
+          "b0008"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_solution-1050c-2h-wq",
+      "alloy_id": "alloy_fe-30.34mn-8.93al-0.9c",
+      "process_name": "Solution treatment at 1050 °C for 2 h + water quenching",
+      "state_label": "S1050",
+      "aliases": [
+        "S1050",
+        "solution treated at 1050 °C"
+      ],
+      "parent_process_ids": [
+        "proc_hot-rolled-wq"
+      ],
+      "description": "After hot rolling and water quenching, solution treated at 1050 °C for 2 h followed by water quenching to room temperature; intermediate grain size.",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0019 reports solution treatment at 1050 °C for 2 h with water quenching to room temperature and labels the resulting sample S1050.",
+        "block_id": [
+          "b0019"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_solution-1150c-2h-wq",
+      "alloy_id": "alloy_fe-30.34mn-8.93al-0.9c",
+      "process_name": "Solution treatment at 1150 °C for 2 h + water quenching",
+      "state_label": "S1150",
+      "aliases": [
+        "S1150",
+        "coarse-grained sample",
+        "solution treated at 1150 °C"
+      ],
+      "parent_process_ids": [
+        "proc_hot-rolled-wq"
+      ],
+      "description": "After hot rolling and water quenching, solution treated at 1150 °C for 2 h followed by water quenching to room temperature; coarse-grained condition (grain size about 32 μm).",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0019 reports solution treatment at 1150 °C for 2 h with water quenching to room temperature and labels the resulting sample S1150; b0008 identifies S1150 as the coarse-grained sample with a grain size of 32 μm.",
+        "block_id": [
+          "b0019",
+          "b0008"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe-30.34mn-8.93al-0.9c__hot-rolled-wq",
+      "alloy_id": "alloy_fe-30.34mn-8.93al-0.9c",
+      "process_id": "proc_hot-rolled-wq",
+      "sample_label": "S0",
+      "aliases": [
+        "S0",
+        "original sample without solution treatment"
+      ],
+      "source": {
+        "reason": "b0019 labels the original samples without solution treatment as S0, formed from the Fe-Mn-Al-C LDS composition in the hot-rolled and water-quenched condition.",
+        "block_id": [
+          "b0019"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-30.34mn-8.93al-0.9c__solution-950c-2h-wq",
+      "alloy_id": "alloy_fe-30.34mn-8.93al-0.9c",
+      "process_id": "proc_solution-950c-2h-wq",
+      "sample_label": "S950",
+      "aliases": [
+        "S950",
+        "fine-grained sample"
+      ],
+      "source": {
+        "reason": "b0019 labels the sample solution treated at 950 °C for 2 h as S950; b0008 refers to S950 as the fine-grained sample.",
+        "block_id": [
+          "b0019",
+          "b0008"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-30.34mn-8.93al-0.9c__solution-1050c-2h-wq",
+      "alloy_id": "alloy_fe-30.34mn-8.93al-0.9c",
+      "process_id": "proc_solution-1050c-2h-wq",
+      "sample_label": "S1050",
+      "aliases": [
+        "S1050"
+      ],
+      "source": {
+        "reason": "b0019 labels the sample solution treated at 1050 °C for 2 h as S1050.",
+        "block_id": [
+          "b0019"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-30.34mn-8.93al-0.9c__solution-1150c-2h-wq",
+      "alloy_id": "alloy_fe-30.34mn-8.93al-0.9c",
+      "process_id": "proc_solution-1150c-2h-wq",
+      "sample_label": "S1150",
+      "aliases": [
+        "S1150",
+        "coarse-grained sample"
+      ],
+      "source": {
+        "reason": "b0019 labels the sample solution treated at 1150 °C for 2 h as S1150; b0008 refers to S1150 as the coarse-grained sample with a grain size of 32 μm.",
+        "block_id": [
+          "b0019",
+          "b0008"
+        ]
+      }
+    }
+  ],
+  "unmapped_findings": []
+}

@@ -1,0 +1,302 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-8al-1c__cr-30pct",
+      "paper_id": "10.1002_srin.202400447",
+      "alloy_id": "alloy_fe-28mn-8al-1c",
+      "process_id": "proc_cr-30pct",
+      "sample_label": "CR 30%",
+      "aliases": [
+        "CR30%",
+        "30% CR reduction sample",
+        "CR 30"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1000",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Plate-shaped specimens with thicknesses of 1.5, 2, 3.5, and 10 mm were excised from the center of the billet in alignment with the forging direction; prior to CR, all specimens underwent solution treatment at 1000 °C for 1 h and were water-quenched to room temperature."
+    },
+    {
+      "processing_step_id": "step_cryogenic_rolling_30pct",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "cryogenic rolling (CR)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": "3–5 min",
+      "atmosphere": null,
+      "cooling_medium": "liquid nitrogen",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "30%",
+      "processing_steps_notes": "Using an LG-300 two-high rolling mill; after cooling in liquid nitrogen, the specimen was rapidly removed for a single-pass rolling with a thickness reduction of about 2%, then promptly re-immersed in liquid nitrogen; steps repeated until the cumulative thickness reduction reached 30% (CR 30%)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_cr30",
+      "overall_structure": "Single-phase austenitic (FCC) structure retained; equiaxed austenite grains elongate along RD with numerous slip bands in grain interiors; slip bands intersect in certain grains; a substantial rise in dislocation density gives rise to Taylor lattice structure; no deformation-induced martensitic transformation.",
+      "number_of_phases": 1,
+      "microstructure_counts": 1,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_cr30",
+          "region": "cross-section along rolling direction (RD)",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "elongated grains along RD with numerous slip bands in grain interiors",
+              "grain_size": null,
+              "texture": "copper {112}<111> texture component appears"
+            }
+          ],
+          "defects": [
+            {
+              "type": "slip bands",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "Taylor lattice (dislocation substructure)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "6.2 × 10^14 m^-2",
+              "lattice_distortion": null
+            },
+            {
+              "type": "low-angle grain boundaries (LAGBs)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": "copper {112}<111> texture component"
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interfaces_cr30",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "interaction_id": "interaction_slipband_intersection",
+          "microstructure_id": "micro_cr30",
+          "interaction_type": "slip band intersection → Taylor lattice",
+          "qualitative_or_quantitative_description": "In certain grains, slip bands of different orientations intersect, indicating nonuniform plastic deformation at 30% CR; their interaction produces the Taylor lattice structure."
+        },
+        {
+          "interaction_id": "interaction_lagb_grainboundary",
+          "microstructure_id": "micro_cr30",
+          "interaction_type": "LAGB formation / deformation concentration near grain boundaries",
+          "qualitative_or_quantitative_description": "Higher KAM values are seen near the prior grain boundaries after 30% CR, suggesting that deformation concentration first occurs near grain boundaries; the LAGB fraction reaches 89.4%."
+        }
+      ],
+      "slip_behavior": "Planar slip of dislocations is the primary deformation mechanism at low strain (30% CR), producing slip bands; no deformation twinning is reported at this stage.",
+      "phase_evolution": "Single-phase austenite is retained; no deformation-induced martensitic phase transformation occurs during CR.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_cr30",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "0.2 mm min^-1",
+        "specimen_geometry": "dog-bone-shaped tensile specimens with standard distance segment of 20 × 5 × 1 mm machined along RD",
+        "test_standard": null,
+        "other_conditions": "Tensile tests were conducted in a temperature-controlled environment using a universal tensile testing machine; microhardness was measured with a loading of 500 g and a dwelling time of 15 s (values averaged from at least 5 measurements)."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "1092 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "1261 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "13.6%",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "An engineering stress–strain curve for CR 30% is included among five colour-coded curves in Figure 8a; its peak stress is higher than the undeformed condition and lower than the higher CR reductions.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "435 HV",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": "6.82 g cm^-3",
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om_cr30",
+      "microstructure_id": "micro_cr30",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": "OLYMPUS PMG3 optical microscope",
+      "measurement_conditions": "Cross-sections ground and polished along RD, etched with hydrochloric acid (100 mL), alcohol (100 mL), and copper chloride (5 g) etchant.",
+      "purpose": "Observe cross-sectional metallographic microstructure.",
+      "key_findings": "At 30% CR, equiaxed grains elongate along RD with numerous slip bands; in certain grains slip bands intersect (Figure 2b)."
+    },
+    {
+      "characterization_id": "char_sem_fracture_cr30",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM)",
+      "instrument_or_setup": "JSM-7800F field-emission SEM",
+      "measurement_conditions": null,
+      "purpose": "Examine tensile fracture morphologies.",
+      "key_findings": "CR 30% fracture shows a network of dimples that are smaller and more numerous than the undeformed condition, with less prominent deep voids (Figure 9b)."
+    },
+    {
+      "characterization_id": "char_ebsd_cr30",
+      "microstructure_id": "micro_cr30",
+      "technique": "Electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "JSM7200F SEM equipped with an EBSD system",
+      "measurement_conditions": "Samples prepared by electrochemical polishing in an electrolyte containing perchlorate acid (5%) and acetic acid (95%) at 50 V for 30 s.",
+      "purpose": "Characterize texture, grain boundaries (HAGB/LAGB) and kernel average misorientation (KAM).",
+      "key_findings": "After 30% CR: copper {112}<111> texture component appears; LAGB proportion significantly increases to 89.4%; higher KAM values near prior grain boundaries; IPF map shows grains roughly equiaxed but subdivided into colour-banded subgrains."
+    },
+    {
+      "characterization_id": "char_tem_cr30",
+      "microstructure_id": "micro_cr30",
+      "technique": "Transmission electron microscopy (TEM)",
+      "instrument_or_setup": "JEM-2100 TEM",
+      "measurement_conditions": "Samples mechanically ground to 60 μm slices, punched into Ф3 mm disks, and thinned using a Gatan 691 ion milling machine.",
+      "purpose": "Characterize dislocation substructure evolution.",
+      "key_findings": "CR 30%: dark mottled dislocation substructure with intersecting dashed yellow lines outlining a Taylor lattice (Figure 3b)."
+    },
+    {
+      "characterization_id": "char_xrd_cr30",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "D8 ADVANCE X-ray diffractometer with Cu-Kα radiation (wavelength λ = 0.15406 nm)",
+      "measurement_conditions": "Cu-Kα radiation, wavelength λ = 0.15406 nm.",
+      "purpose": "Phase identification and peak broadening analysis (FWHM, microstrain, dislocation density).",
+      "key_findings": "Single-phase austenitic structure, no deformation-induced martensitic transformation; CR 30% austenitic (220) peak FWHM = 0.686°; microstrain = 3.6 × 10^-3; dislocation density = 6.2 × 10^14 m^-2."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_wh_xrd_cr30",
+      "simulation_method": null,
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "The dislocation density trend from XRD calculation aligns with TEM observations (Figure 3).",
+      "analytical_models": [
+        {
+          "model_name": "Williamson–Hall theory",
+          "equation_role": "β_τ = Kλ/(D cosθ) + 4ε tanθ; total broadening from grain refinement plus microstrain.",
+          "parameters": [
+            {
+              "name": "K (shape factor)",
+              "value": "0.9",
+              "unit": null
+            },
+            {
+              "name": "λ (wavelength)",
+              "value": "0.15406 nm",
+              "unit": "nm"
+            },
+            {
+              "name": "ε (microstrain)",
+              "value": "3.6 × 10^-3",
+              "unit": null
+            }
+          ],
+          "model_note": "Through fitting analysis, microstrain and dislocation density were obtained for rolled specimens."
+        },
+        {
+          "model_name": "Dislocation density calculation (Equation 2)",
+          "equation_role": "Calculate dislocation density from microstrain and grain size.",
+          "parameters": [
+            {
+              "name": "(ε²)^(1/2) (microstrain)",
+              "value": "3.6 × 10^-3",
+              "unit": null
+            },
+            {
+              "name": "D (grain size)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "b (Burgers vector)",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "ρ (dislocation density)",
+              "value": "6.2 × 10^14 m^-2",
+              "unit": "m^-2"
+            }
+          ],
+          "model_note": "The number of corresponding dislocation density is calculated using the average grain size and microstrain."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "SFE of this steel: 72 mJ m^-2 at room temperature and 51 mJ m^-2 at cryogenic temperature (block b0044); the cryogenic SFE is still higher than the ~20–40 mJ m^-2 range typically associated with twinning plasticity, but restraint of dislocation motion at low temperatures and accumulated dislocations promote deformation twinning at moderate strains.",
+    "Short-range order (SRO) clusters or κ-carbides, facilitated by the high Al and C content, can soften slip planes and facilitate planar slip (block b0043) — relevant to the 30% CR planar-slip mechanism."
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-11al-1.2c__cr-70",
+      "paper_id": "10.1016_j.matchar.2021.111013",
+      "alloy_id": "alloy_fe-30mn-11al-1.2c",
+      "process_id": "proc_cr-70",
+      "sample_label": "70% rolling reduction",
+      "aliases": [
+        "70% cold rolled",
+        "Fig. 3(d)",
+        "Fig. 6(a,b)"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_solution",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution treatment applied to the sheets before cold rolling."
+    },
+    {
+      "processing_step_id": "step_cold_rolling_70",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "70%",
+      "processing_steps_notes": "Belongs to the second (high reduction) stage of 70%–90%; sheets of appropriate thickness cold rolled to 70% thickness reduction. 'When the reduction reached 70%, the size of twins increased to 19.2 nm and many shear bands appeared'."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_70cr",
+      "overall_structure": "Stage II (70%–90% reduction) cold-rolled deformation structure: strongly banded structure with a plenty of dark etched shear bands cutting many grains, and grains visibly elongated along the rolling direction (RD). The deformation substructure of the 70% sample comprises nano-twins, shear bands made of ultrafine grains and dislocation tangles.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_70_overall",
+          "region": "longitudinal section (RD×ND), bulk",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC (austenite)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": "Weak overall texture; transition from 'copper-type' to 'brass-type' after 50% rolling reduction; α-fiber increases up to 90%"
+            },
+            {
+              "phase_name": "κ'-carbides",
+              "crystal_structure": "L'12 (perovskite)",
+              "volume_fraction": null,
+              "morphology": "nano-sized, uniformly distributed in austenitic matrix (from as-quenched state)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "shear bands (dark etched, cutting many grains; banded structure)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": "grains visibly elongated along RD; weak texture with transition to brass-type; α-fiber monotonously increases; weak {552}<115> CuT component detected at 70% rolling reduction"
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_70_nanotwins",
+          "region": "grain interiors (twin-matrix lamellae)",
+          "related_sequence": "2",
+          "phases_present": [],
+          "defects": [
+            {
+              "type": "deformation twins (nano-twins); average thickness 19.2 nm at 70% reduction (increased from ~5.1 nm at 50%)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "high dislocation density within twins (different diffraction contrast within a single twin)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_70_shear_bands",
+          "region": "shear bands traversing the deformed matrix",
+          "related_sequence": "2",
+          "phases_present": [],
+          "defects": [
+            {
+              "type": "micro-shear bands comprising ultrafine grains (confirmed by continuous diffraction ring pattern)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_70_dislocation_tangles",
+          "region": "dislocation tangles/cells",
+          "related_sequence": "2",
+          "phases_present": [],
+          "defects": [
+            {
+              "type": "dislocation tangles; average size 0.49 μm",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_70cr",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_70_twinmatrix",
+          "microstructure_id": "micro_70_nanotwins",
+          "phase_1_name": "deformation twin",
+          "phase_2_name": "austenite matrix",
+          "coherence": "coherent twin-matrix (T-M) lamella with nano-scale spacing; twin boundaries identified by SAED (twin reflections (111)_T/M and (-111)_T)"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "int_70_dislocation_tangles",
+          "microstructure_id": "micro_70_dislocation_tangles",
+          "interaction_type": "dislocation entanglement / tangles and cell walls",
+          "qualitative_or_quantitative_description": "Dislocation tangles with average size 0.49 μm develop; at the highest stress (~2.1 GPa) a dislocation cell structure is observed, indicating that dislocation cross slip operates."
+        }
+      ],
+      "slip_behavior": "The dislocation multiple planar glide dominates the rolling deformation (one of the striking features of the steel); at higher rolling degrees dislocation cross slip is activated (dislocation cell structure). The weak texture is related to the dislocation planar glide.",
+      "phase_evolution": null,
+      "interface_notes": "Nano-twins form fine twin-matrix (T-M) lamellae; because the T-M lamella spacing is very small, dislocations are constrained to the common {111} twinning plane, leading to abnormal rotation of twins and matrix, higher Φ values, and eventually generation of micro shear bands by local strain concentration."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_70cr_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": "dog-bone-shaped tensile specimen cut along the rolling direction, gauge length 16 mm, width 4 mm",
+        "test_standard": null,
+        "other_conditions": "SHIMADZU AG-X50KN universal testing machine; three parallel tensile tests per condition"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering and true stress–strain curves are reported for the 70% reduction condition (Fig. 1, orange curve); the necking true stress sharply increases in the further rolling process (>50%).",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om_70",
+      "microstructure_id": "micro_70_overall",
+      "technique": "optical microscopy (OM)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "longitudinal section (RD×ND); electrolytically polished and etched (1 g ferric chloride + 10 ml hydrochloric acid + 10 ml deionized water)",
+      "purpose": "observe the morphology of the cold rolled microstructure",
+      "key_findings": "70% reduction (Fig. 3(d)): strongly banded structure with dark etched shear bands cutting many grains, grains elongated along RD."
+    },
+    {
+      "characterization_id": "char_tem_70",
+      "microstructure_id": "micro_70_nanotwins",
+      "technique": "transmission electron microscopy (TEM)",
+      "instrument_or_setup": "JEOM 2100 transmission electron microscope",
+      "measurement_conditions": "twin jet electro-polishing (30% nitric acid + 70% methyl alcohol); longitudinal section",
+      "purpose": "characterize the deformation substructure in detail (twins, shear bands)",
+      "key_findings": "At 70% reduction, nano-twins with average size 19.2 nm (Fig. 6(a)) and many shear bands comprised of ultrafine grains (Fig. 6(b)) are observed."
+    },
+    {
+      "characterization_id": "char_xrd_70",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Rigaku D/MAX 2500PC x-ray diffractometer",
+      "measurement_conditions": "incomplete pole figures {111}, {200} and {220} measured on the RD × TD plane; ODFs and Fmax calculated by the Arbitrarily Defined Cells method",
+      "purpose": "characterize texture evolution during cold rolling",
+      "key_findings": "Weak texture; a weak {552}<115> CuT component detected at 70% rolling reduction; the β-fiber 70% curve peaks near the 6.0 gridline around φ2≈70°; copper-type to brass-type transition."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_70_twinning_critical_stress",
+      "simulation_method": "analytical calculation of critical shear stress for deformation twinning",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "The calculated critical twinning stress (~1.48 GPa) is much higher than the maximum resolved shear stress (~0.75 GPa), yet twinning indeed occurs; this discrepancy is explained by (I) the actual critical shear stress being lower than eq. (1) when dislocation–short range order (SRO) interaction is considered, and (II) inhomogeneous strain distribution causing local stress concentration that promotes twinning.",
+      "analytical_models": [
+        {
+          "model_name": "Critical shear stress for deformation twinning",
+          "equation_role": "τ_c = 2γ_SF / b_p (eq. 1), relating critical shear stress to stacking fault energy and partial-dislocation Burgers vector",
+          "parameters": [
+            {
+              "name": "γ_SF (stacking fault energy, SFE)",
+              "value": "108",
+              "unit": "mJ/m²"
+            },
+            {
+              "name": "b_p (Burgers vector of a partial dislocation)",
+              "value": "0.146",
+              "unit": "nm"
+            },
+            {
+              "name": "τ_c (calculated critical stress)",
+              "value": "1.48",
+              "unit": "GPa"
+            },
+            {
+              "name": "maximum resolved shear stress",
+              "value": "0.75",
+              "unit": "GPa"
+            }
+          ],
+          "model_note": "SFE ~108 mJ/m² and b_p 0.146 nm are estimates for the present steel; the resulting critical stress ~1.48 GPa far exceeds the maximum resolved shear stress ~0.75 GPa, so SRO and local stress concentration are invoked to explain the observed nano-twinning. This is an alloy-level calculation relevant to rationalizing the twinning observed in the 70% cold-rolled sample."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The deformation substructure evolution during cold rolling approximately follows the sequence Taylor lattice → microbands → twins → shear bands → dislocation tangles, which differs from the tensile deformation sequence for this steel.",
+    "The deformation twins are activated at a stress much lower than the calculated critical stress, which may be due to short range order (SRO) and local stress concentration.",
+    "For the 70% reduction condition only engineering/true stress–strain curves are provided (Fig. 1, orange curve); no numerical yield strength, UTS or elongation value is reported specifically for the 70% reduction in the text. The dark dashed line and red 'trade-off' arrow indicate strength increases and ductility decreases with increasing reduction.",
+    "The rolling texture of the steel is weak and characterized by the transition from 'copper-type' to 'brass-type' after 50% rolling reduction; the transition is attributed both to dislocation planar glide and deformation twinning."
+  ]
+}

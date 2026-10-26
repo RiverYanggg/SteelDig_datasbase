@@ -1,0 +1,169 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-9al-20mn-1c__hot-rolled-1150c",
+      "paper_id": "10.1016_j.jmrt.2020.02.088",
+      "alloy_id": "alloy_fe-9al-20mn-1c",
+      "process_id": "proc_hot-rolled-1150c",
+      "sample_label": "9Al-20Mn-1C Hot-rolled",
+      "aliases": [
+        "9Al-20Mn-1C hot-rolled"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "1",
+      "type": "casting",
+      "method": "casting in a 100 kW vacuum induction furnace into 0.5 kg ingots",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum (vacuum induction furnace)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Different alloyed steels produced by casting using a 100 kW vacuum induction furnace, resulting in 0,5 kg ingots (Table 1)."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing (hot deformation)",
+      "method": "hot-rolling",
+      "temperature": "1150",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "to 5 mm flat products",
+      "processing_steps_notes": "Ingots hot-rolled at 1150 °C, obtaining 5 mm flat-products."
+    },
+    {
+      "processing_step_id": "step_water_quenching",
+      "sequence": "3",
+      "type": "cooling / post-rolling quench",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled product followed by water quenching (as-received reference condition)."
+    }
+  ],
+  "structures": [],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_hardness_hot_rolled",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Vickers macro-hardness method; a 5 kg load was applied for all indentations; 5 indentations per sample were made."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "hot-rolled (as-received) condition",
+            "value": "233 HV",
+            "scale": "Vickers (HV)",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_optical_microscopy",
+      "microstructure_id": null,
+      "technique": "optical microscopy",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Through-thickness embedding, grinding and polishing performed separately for hot-rolled and heat-treated samples.",
+      "purpose": "Analysis of all the alloys at the different processing conditions (hot-rolling and tempering).",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_sem_eds",
+      "microstructure_id": null,
+      "technique": "Scanning Electron Microscopy - Secondary Electron Images (SEI) and Energy Dispersive X-ray spectroscopy (EDX/EDS)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "SEM analysis performed only on selected microstructures.",
+      "purpose": "To analyse phase morphologies and chemical compositions; EDS to provide qualitative information on local phase composition.",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_vickers_macrohardness",
+      "microstructure_id": null,
+      "technique": "Vickers macro-hardness testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "5 kg load applied for all indentations; 5 indentations per sample.",
+      "purpose": "Macro-hardness measurement supporting the microstructural analysis.",
+      "key_findings": "Hot-rolled 9Al-20Mn-1C measures 233 HV (Table 8)."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_calphad_phase_fraction_9al20mn1c",
+      "simulation_method": "CALPHAD thermodynamic equilibrium phase-fraction calculation",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Equilibrium calculation over the temperature range 0-1300 °C; plotted as 'Amount of all phases [mol]' vs 'Temperature [°C]'.",
+      "validation_against_experiment": null,
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "The hot-rolled condition is used as the shared as-received reference state for all tested alloys in this study (Experimental procedure, b0026); the paper reports no dedicated micrograph or microstructural description of the 9Al-20Mn-1C hot-rolled sample itself.",
+    "In the 9Al-xMn-1C series, hot-rolled Vickers hardness decreases monotonically as Mn rises: 273 HV (9Al-10Mn-1C), 233 HV (9Al-20Mn-1C) and 216 HV (9Al-30Mn-1C) (Table 8). For the 9Al-20Mn-1C sample the hot-rolled reference hardness is therefore 233 HV."
+  ]
+}

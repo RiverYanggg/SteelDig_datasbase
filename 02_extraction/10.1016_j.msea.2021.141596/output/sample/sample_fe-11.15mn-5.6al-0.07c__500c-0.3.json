@@ -1,0 +1,962 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-11.15mn-5.6al-0.07c__500c-0.3",
+      "paper_id": "10.1016_j.msea.2021.141596",
+      "alloy_id": "alloy_fe-11.15mn-5.6al-0.07c",
+      "process_id": "proc_500c-0.3",
+      "sample_label": "500 °C, ε=0.3",
+      "aliases": [
+        "interrupted strain of 0.3 at 500 °C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "b0016 描述 ESR 材料的均匀化步骤，为到达本样本状态的前置工艺。",
+        "block_id": [
+          "b0016"
+        ]
+      },
+      "processing_step_id": "step_homogenization",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "homogenization"
+      },
+      "temperature": {
+        "source": {
+          "reason": "论文 b0016 给出 ESR 材料在 1200 °C 保温 1 h 均匀化以消除偏析，属于该材料/样本的工艺链。",
+          "block_id": [
+            "b0016"
+          ]
+        },
+        "value": {
+          "value": "1200"
+        },
+        "unit": {
+          "value": "°C"
+        }
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": {
+        "value": "1 h",
+        "source": {
+          "reason": "b0016 明确均匀化时间为 1 h。",
+          "block_id": [
+            "b0016"
+          ]
+        }
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Elimination of any probable segregation in the ESR material."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0016 描述热轧+空冷步骤，为该材料工艺链的一部分。",
+        "block_id": [
+          "b0016"
+        ]
+      },
+      "processing_step_id": "step_hot_rolling",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "mechanical processing"
+      },
+      "method": {
+        "value": "hot rolling"
+      },
+      "temperature": {
+        "source": {
+          "reason": "b0016 给出 5 道次热轧温度区间 1100–1200 °C。",
+          "block_id": [
+            "b0016"
+          ]
+        },
+        "value": {
+          "value": "1100-1200"
+        },
+        "unit": {
+          "value": "°C"
+        }
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": {
+        "value": "air quenching",
+        "source": {
+          "reason": "b0016 说明热轧后空气淬火。",
+          "block_id": [
+            "b0016"
+          ]
+        }
+      },
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": {
+        "value": "5 passes",
+        "source": {
+          "reason": "b0016 说明经 5 道次热轧。",
+          "block_id": [
+            "b0016"
+          ]
+        }
+      },
+      "processing_steps_notes": {
+        "value": "Hot rolled through 5 passes in the temperature range of 1100-1200 °C followed by air quenching."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0016 与 b0018 描述获得三相初始组织的退火，为 proc_500c-0.3 的父工艺。",
+        "block_id": [
+          "b0016",
+          "b0018"
+        ]
+      },
+      "processing_step_id": "step_annealing_950c",
+      "sequence": {
+        "value": "3"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "annealing"
+      },
+      "temperature": {
+        "source": {
+          "reason": "b0016 给出最终退火温度 950 °C。",
+          "block_id": [
+            "b0016"
+          ]
+        },
+        "value": {
+          "value": "950"
+        },
+        "unit": {
+          "value": "°C"
+        }
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": {
+        "value": "1 h",
+        "source": {
+          "reason": "b0016 给出退火时间 1 h。",
+          "block_id": [
+            "b0016"
+          ]
+        }
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Annealed at 950 °C for 1 h to attain a triplex (ferrite + austenite + martensite) microstructure; this is the parent process proc_annealed-950c-1h."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0016 的浸泡步骤，针对本样本 500 °C 变形。",
+        "block_id": [
+          "b0016"
+        ]
+      },
+      "processing_step_id": "step_soaking_500c",
+      "sequence": {
+        "value": "4"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "soaking at deformation temperature"
+      },
+      "temperature": {
+        "source": {
+          "reason": "b0016 说明试样在变形温度浸泡以达热平衡，本样本变形温度为 500 °C。",
+          "block_id": [
+            "b0016",
+            "b0021"
+          ]
+        },
+        "value": {
+          "value": "500"
+        },
+        "unit": {
+          "value": "°C"
+        }
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": {
+        "value": "5 min",
+        "source": {
+          "reason": "b0016 明确测试前在变形温度浸泡 5 min。",
+          "block_id": [
+            "b0016"
+          ]
+        }
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Specimen soaked 5 min at 500 °C before testing to reach thermal equilibrium condition."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0016 给出压缩设备与应变速率，b0021/b0029 给出 500 °C 中断真应变 0.3 条件。",
+        "block_id": [
+          "b0016",
+          "b0021",
+          "b0029",
+          "figure_003"
+        ]
+      },
+      "processing_step_id": "step_warm_compression_500c",
+      "sequence": {
+        "value": "5"
+      },
+      "type": {
+        "value": "mechanical processing"
+      },
+      "method": {
+        "value": "warm compression"
+      },
+      "temperature": {
+        "source": {
+          "reason": "b0021/b0029 明确本样本在 500 °C 于中断真应变 0.3 下压缩。",
+          "block_id": [
+            "b0021",
+            "b0029"
+          ]
+        },
+        "value": {
+          "value": "500"
+        },
+        "unit": {
+          "value": "°C"
+        }
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": {
+        "value": "true strain 0.3 (interrupted)",
+        "source": {
+          "reason": "b0021 与 b0029 说明变形在中断真应变 0.3 停止以研究变形组织。",
+          "block_id": [
+            "b0021",
+            "b0029"
+          ]
+        }
+      },
+      "processing_steps_notes": {
+        "value": "Compression by Gotech AI-7000 universal testing machine with a programmable furnace at a strain rate of 0.001 s^-1; interrupted at true strain 0.3."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0016 描述水淬步骤，属于本样本工艺链。",
+        "block_id": [
+          "b0016"
+        ]
+      },
+      "processing_step_id": "step_water_quench",
+      "sequence": {
+        "value": "6"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "water quenching"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": {
+        "value": "water",
+        "source": {
+          "reason": "b0016 说明试样压缩后立即水淬以保留高温变形组织。",
+          "block_id": [
+            "b0016"
+          ]
+        }
+      },
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Immediately water quenched to preserve the deformed microstructure."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "综合 b0021、b0022、b0029 与 figure_003 对 500 °C、中断真应变 0.3 变形组织的描述。",
+        "block_id": [
+          "b0021",
+          "b0022",
+          "b0029",
+          "figure_003"
+        ]
+      },
+      "structure_id": "struct_500c-0.3",
+      "overall_structure": {
+        "value": "Triplex (ferrite-based) low density steel deformed in compression at 500 °C to interrupted true strain 0.3: ferrite accommodates strain through cell-structure formation and high dislocation density walls (HDDWs) with a starting planar slip-like character, and fresh ferrite grains form within prior austenite islands via strain-induced austenite-to-ferrite transformation; deformation bands begin to develop in ferrite."
+      },
+      "number_of_phases": {
+        "value": "3",
+        "source": {
+          "reason": "b0018/figure_001 说明初始为 triplex (ferrite + austenite + martensite) 三相组织。",
+          "block_id": [
+            "b0018",
+            "figure_001"
+          ]
+        }
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "b0021/b0022/b0029 与 figure_003 描述 500 °C、ε=0.3 下铁素体相的位错胞、HDDWs 与滑移带变形组织。",
+            "block_id": [
+              "b0021",
+              "b0022",
+              "b0029",
+              "figure_003"
+            ]
+          },
+          "microstructure_id": "micro_ferrite_500c-0.3",
+          "region": {
+            "value": "ferrite (matrix) phase"
+          },
+          "related_sequence": {
+            "value": "5"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "b0027 指出 BCC_A2 代表铁素体；b0021/b0022 描述 500 °C 下铁素体相的变形组织。",
+                "block_id": [
+                  "b0027",
+                  "b0021",
+                  "b0022"
+                ]
+              },
+              "phase_name": {
+                "value": "ferrite (α, BCC_A2)"
+              },
+              "crystal_structure": {
+                "value": "BCC"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "matrix phase"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "source": {
+                "reason": "b0021 明确在中断真应变 0.3 时铁素体内大量位错缠结形成胞结构。",
+                "block_id": [
+                  "b0021"
+                ]
+              },
+              "type": {
+                "value": "dislocation cells (cell structures)"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "source": {
+                "reason": "b0022 与 figure_003 指出可在组织中发现 HDDWs。",
+                "block_id": [
+                  "b0022",
+                  "figure_003"
+                ]
+              },
+              "type": {
+                "value": "high dislocation density walls (HDDWs)"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "source": {
+                "reason": "figure_003 标注 'Tangled Dislocations'。",
+                "block_id": [
+                  "figure_003"
+                ]
+              },
+              "type": {
+                "value": "tangled dislocations"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "source": {
+                "reason": "b0021 指出已开始形成 planar slip-like character；b0022 描述多滑移系激活形成滑移带。",
+                "block_id": [
+                  "b0021",
+                  "b0022"
+                ]
+              },
+              "type": {
+                "value": "planar slip / slip bands"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "source": {
+            "reason": "b0022/b0029 与 figure_003 描述 ε=0.3 时奥氏体内的新鲜铁素体晶粒形成。",
+            "block_id": [
+              "b0022",
+              "b0029",
+              "figure_003"
+            ]
+          },
+          "microstructure_id": "micro_austenite_500c-0.3",
+          "region": {
+            "value": "prior austenite islands"
+          },
+          "related_sequence": {
+            "value": "5"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "b0027 指出 FCC_A1 代表奥氏体；b0022/b0029 描述变形组织中的母相奥氏体岛。",
+                "block_id": [
+                  "b0027",
+                  "b0022",
+                  "b0029"
+                ]
+              },
+              "phase_name": {
+                "value": "austenite (γ, FCC_A1)"
+              },
+              "crystal_structure": {
+                "value": "FCC"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "prior austenite islands/bands"
+              },
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "b0022/b0029 与 figure_003(b) 明确在母相奥氏体内形成新鲜铁素体晶粒（应变诱导奥氏体→铁素体转变）。",
+                "block_id": [
+                  "b0022",
+                  "b0029",
+                  "figure_003"
+                ]
+              },
+              "phase_name": {
+                "value": "fresh ferrite (α, newly formed)"
+              },
+              "crystal_structure": {
+                "value": "BCC"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "fresh ferrite grains formed within the parent austenite (strain-induced austenite-to-ferrite transformation)"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "source": {
+                "reason": "b0022 指出同一 0.3 应变下奥氏体位错组态与铁素体明显不同（母相奥氏体严重变形）。",
+                "block_id": [
+                  "b0022"
+                ]
+              },
+              "type": {
+                "value": "heavily deformed parent austenite (dislocation configuration different from ferrite at same strain)"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "source": {
+        "reason": "综合 b0021、b0022 与 figure_003 关于 500 °C、ε=0.3 下铁素体滑移行为、位错胞及奥氏体→铁素体转变的描述。",
+        "block_id": [
+          "b0021",
+          "b0022",
+          "figure_003"
+        ]
+      },
+      "interface_set_id": "interf_500c-0.3",
+      "phase_interfaces": [
+        {
+          "source": {
+            "reason": "b0022/b0029 描述在母相奥氏体内形成应变诱导新鲜铁素体，形成 α/γ 相界面。",
+            "block_id": [
+              "b0022",
+              "b0029"
+            ]
+          },
+          "interface_id": "if_alpha_gamma_500c-0.3",
+          "microstructure_id": "micro_austenite_500c-0.3",
+          "phase_1_name": {
+            "value": "ferrite (α)"
+          },
+          "phase_2_name": {
+            "value": "austenite (γ)"
+          },
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "source": {
+            "reason": "b0022 与 figure_003(a) 描述多滑移系、主/次滑移迹线相交于一点及位错胞形成。",
+            "block_id": [
+              "b0022",
+              "figure_003"
+            ]
+          },
+          "interaction_id": "di_slip_trace_intersection",
+          "microstructure_id": "micro_ferrite_500c-0.3",
+          "interaction_type": {
+            "value": "intersection of primary and secondary slip traces"
+          },
+          "qualitative_or_quantitative_description": {
+            "value": "Within ferrite, strain is accommodated by multiple slip systems {110}<111> and {112}<111>; primary and secondary {110} and {112} slip traces intersect at a single point, and the wavy character of dislocation movement with high dislocation maneuverability promotes dislocation cell/HDDW formation."
+          }
+        },
+        {
+          "source": {
+            "reason": "b0022 明确在 0.3 应变时奥氏体→铁素体应变诱导转变作为应变补偿机制。",
+            "block_id": [
+              "b0022",
+              "b0029"
+            ]
+          },
+          "interaction_id": "di_transformation_strain_compensation",
+          "microstructure_id": "micro_austenite_500c-0.3",
+          "interaction_type": {
+            "value": "strain-induced austenite-to-ferrite transformation as strain compensation"
+          },
+          "qualitative_or_quantitative_description": {
+            "value": "At the imposed strain of 0.3, fresh ferrite grains form within prior austenite islands; the deformation-induced austenite to ferrite transformation acts as a strain compensation mechanism and justifies the observed flow softening at this low temperature."
+          }
+        }
+      ],
+      "slip_behavior": {
+        "value": "Strain within ferrite is mainly accommodated by activation of multiple slip systems {110}<111> and {112}<111>; formation and intersection of slip bands is highly probable; a planar slip-like character starts to form; wavy dislocation movement and high dislocation maneuverability enable dislocation cell formation and HDDWs."
+      },
+      "phase_evolution": {
+        "value": "Strain-induced austenite to ferrite transformation: fresh ferrite grains form within the prior austenite at the imposed strain of 0.3, acting as a strain compensation mechanism."
+      },
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "source": {
+        "reason": "为 500 °C、ε=0.3 中断压缩样本建立力学测量条件记录；论文未针对该中断态报道具体屈服/抗拉/延伸数值（流量曲线为 0.6 全程测试，见 unmapped_findings）。",
+        "block_id": [
+          "b0016",
+          "b0021",
+          "b0029"
+        ]
+      },
+      "property_set_id": "prop_500c-0.3_compression",
+      "measurement_conditions": {
+        "temperature": {
+          "source": {
+            "reason": "b0016/b0021 给出本样本测试温度为 500 °C。",
+            "block_id": [
+              "b0016",
+              "b0021"
+            ]
+          },
+          "value": {
+            "value": "500"
+          },
+          "unit": {
+            "value": "°C"
+          }
+        },
+        "temperature_unit": {
+          "value": "°C"
+        },
+        "environment": {
+          "value": "programmable furnace (soaked 5 min before test)",
+          "source": {
+            "reason": "b0016 说明使用带程序炉的万能试验机并在测试前浸泡 5 min。",
+            "block_id": [
+              "b0016"
+            ]
+          }
+        },
+        "strain_rate": {
+          "source": {
+            "reason": "b0016 给出压缩应变速率为 0.001 s^-1。",
+            "block_id": [
+              "b0016"
+            ]
+          },
+          "value": {
+            "value": "0.001"
+          },
+          "unit": {
+            "value": "s^-1"
+          }
+        },
+        "specimen_geometry": {
+          "value": "compression specimen",
+          "source": {
+            "reason": "b0016 说明采用压缩模式测试。",
+            "block_id": [
+              "b0016"
+            ]
+          }
+        },
+        "test_standard": null,
+        "other_conditions": {
+          "value": "interrupted at true strain 0.3; water quenched",
+          "source": {
+            "reason": "b0021/b0029 说明在真应变 0.3 中断；b0016 说明随即水淬。",
+            "block_id": [
+              "b0016",
+              "b0021",
+              "b0029"
+            ]
+          }
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "b0016 给出 TEM 设备参数；b0022/b0029 与 figure_003 明确该 TEM 观察针对 500 °C、ε=0.3 变形组织。",
+        "block_id": [
+          "b0016",
+          "b0022",
+          "b0029",
+          "figure_003"
+        ]
+      },
+      "characterization_id": "char_tem_500c-0.3",
+      "microstructure_id": "micro_ferrite_500c-0.3",
+      "technique": {
+        "value": "Transmission Electron Microscopy (TEM) bright-field imaging"
+      },
+      "instrument_or_setup": {
+        "value": "JEM-2100-F with acceleration voltage 200 kV equipped with field-emission gun (JEOL Ltd, Japan); thin foils prepared by twin-jet polishing in HClO4 (10%) + methyl alcohol (90%) at -30 °C and applied potential 16 V"
+      },
+      "measurement_conditions": {
+        "value": "deformed at 500 °C to interrupted true strain 0.3 (Fig. 3a-b)"
+      },
+      "purpose": {
+        "value": "Examine the dislocation configuration and multiple slip traces within the ferrite phase and the formation of fresh ferrite grains within the parent austenite islands"
+      },
+      "key_findings": {
+        "value": "Iron ferrite: HDDWs and tangled dislocations with primary and secondary {110} and {112} slip traces intersecting at one point; austenite: fresh ferrite grains (white arrows) formed within prior austenite islands."
+      }
+    },
+    {
+      "source": {
+        "reason": "figure_003 与 b0029 描述针对 500 °C、0.3 应变试样拍摄的 SAED 花样及标定。",
+        "block_id": [
+          "figure_003",
+          "b0029"
+        ]
+      },
+      "characterization_id": "char_saed_500c-0.3",
+      "microstructure_id": "micro_austenite_500c-0.3",
+      "technique": {
+        "value": "Selected Area Electron Diffraction (SAED)"
+      },
+      "instrument_or_setup": {
+        "value": "JEM-2100-F TEM, 200 kV; SAED patterns with 2 1/nm scale bars"
+      },
+      "measurement_conditions": {
+        "value": "deformed at 500 °C to interrupted true strain 0.3"
+      },
+      "purpose": {
+        "value": "Phase identification of ferrite and austenite to confirm fresh ferrite formation in parent austenite"
+      },
+      "key_findings": {
+        "value": "Ferrite patterns ('F ferrite' and 'ferrite 1') indexed Z=[113] with reflections (000), {110} and (2̄11)/(11̄0); austenite pattern ('austenite 2') indexed Z=[1̄11] with (000), (0̄22), (202), (2̄20)."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0016 给出 FE-SEM/EBSD 设备与步长；b0021/b0025 与 figure_002 说明 500 °C 变形组织的相图用于区分三相组织。",
+        "block_id": [
+          "b0016",
+          "b0021",
+          "b0025",
+          "figure_002"
+        ]
+      },
+      "characterization_id": "char_sem_ebsd_500c",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Field-emission scanning electron microscopy (FE-SEM) with electron backscatter diffraction (EBSD)"
+      },
+      "instrument_or_setup": {
+        "value": "FE-SEM CZ/MIRA I LMH, TESCAN, Czech; EBSD detector Hikari, AMETEK EDAX, USA; step size 200 nm"
+      },
+      "measurement_conditions": {
+        "value": "500 °C compressed microstructure (phase maps)"
+      },
+      "purpose": {
+        "value": "Phase mapping of the deformed low density steel (triplex phases / BCC-FCC)"
+      },
+      "key_findings": {
+        "value": "Banded triplex (ferrite + martensite + austenite) microstructure in the 500 °C condition."
+      }
+    }
+  ],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "b0016/b0028/b0033 与 figure_004 描述用 Thermo-Calc 与 TCFE9 数据库进行的 Gibbs 自由能/元素分配计算。",
+        "block_id": [
+          "b0016",
+          "b0028",
+          "b0033",
+          "figure_004"
+        ]
+      },
+      "computation_id": "comp_thermocalc_500c",
+      "simulation_method": {
+        "value": "CALPHAD thermodynamic modeling / Gibbs free energy model"
+      },
+      "software_used": {
+        "value": "Thermo-Calc"
+      },
+      "potential_model_or_database": {
+        "value": "TCFE9 database"
+      },
+      "boundary_and_initial_conditions": {
+        "value": "Fe-11.15Mn-5.6Al-0.07C (wt.%) system; equilibrium mass percentages of Mn and Al in constituent phases; isothermal Gibbs free energy of BCC and FCC versus %Mn (6-20) and %Al (2-10) at 500 and 550 °C"
+      },
+      "validation_against_experiment": {
+        "value": "Predicted partitioning (Mn enriched in austenite, Al enriched in ferrite) is compared with the SEM-EDS composition analysis (Table 1); at 500 °C the partitioned compositions of BCC and FCC give exactly the same Gibbs energy, supporting the bidirectional transformation."
+      },
+      "analytical_models": [
+        {
+          "source": {
+            "reason": "b0028 与 figure_004 描述 500 °C 下利用 Gibbs 自由能模型分析 BCC/FCC 相稳定性。",
+            "block_id": [
+              "b0028",
+              "figure_004"
+            ]
+          },
+          "model_name": {
+            "value": "Gibbs free energy model (BCC vs FCC)"
+          },
+          "equation_role": {
+            "value": "Determine phase stability: the phase with lower Gibbs free energy is more stable at equilibrium; point A marks the composition where BCC and FCC have equal Gibbs energy."
+          },
+          "parameters": [
+            {
+              "source": {
+                "reason": "figure_004(c) 标出 500 °C 下 BCC/FCC 曲线交于点 A，约 -40900 J/mol。",
+                "block_id": [
+                  "figure_004"
+                ]
+              },
+              "name": {
+                "value": "Gibbs free energy at BCC/FCC intersection (point A) at 500 °C"
+              },
+              "value": {
+                "value": "~-40900"
+              },
+              "unit": {
+                "value": "J/mol"
+              }
+            },
+            {
+              "source": {
+                "reason": "figure_004(c) 显示 BCC 与 FCC 曲线在约 14.5 %Mn 相交。",
+                "block_id": [
+                  "figure_004"
+                ]
+              },
+              "name": {
+                "value": "Mn content at BCC/FCC intersection (point A) at 500 °C"
+              },
+              "value": {
+                "value": "~14.5"
+              },
+              "unit": {
+                "value": "%Mn"
+              }
+            },
+            {
+              "source": {
+                "reason": "figure_004(c) 标出 BCC 上 C 点约 10.5 %Mn。",
+                "block_id": [
+                  "figure_004"
+                ]
+              },
+              "name": {
+                "value": "Mn content in BCC (point C) at 500 °C"
+              },
+              "value": {
+                "value": "~10.5"
+              },
+              "unit": {
+                "value": "%Mn"
+              }
+            },
+            {
+              "source": {
+                "reason": "figure_004(c) 标出 FCC 上 B 点约 13 %Mn。",
+                "block_id": [
+                  "figure_004"
+                ]
+              },
+              "name": {
+                "value": "Mn content in FCC (point B) at 500 °C"
+              },
+              "value": {
+                "value": "~13"
+              },
+              "unit": {
+                "value": "%Mn"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "At 500 °C, considering the elemental partitioning according to Fig. 4a-b and Table 1, the same Gibbs free energies are obtained for both ferrite and austenite (dashed line in Fig. 4c); Al content change does not remarkably influence phase stability, and Mn partitioning mainly dictates the Gibbs energy and phase stability."
+          }
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The compressive true stress-strain curve of this material at 500 °C and 0.001 s^-1 peaks near the 550-560 MPa level and shows appreciable flow softening after a true strain of 0.3 (Fig. 1c); note the curve corresponds to the full compression test to true strain 0.6, of which the present sample is the interruption at ε=0.3.",
+    "The starting microstructure before deformation is a triplex (ferrite + austenite + thermally induced martensite) obtained by annealing at 950 °C/1 h, with extremely low dislocation density in the ferrite and austenite phases (Fig. 1a-b).",
+    "The SEM-EDS compositional partitioning reported in Table 1 (Mn 10.3±0.1 wt% in ferrite vs 12.8±0.1 wt% in austenite; Al 6.0±0.1 wt% in ferrite vs 4.7±0.1 wt% in austenite) is stated for deformation at 500 °C up to a true strain of 0.6, so it nominally belongs to the ε=0.6 sibling sample rather than this ε=0.3 sample.",
+    "The steel has a high stacking fault energy of 80-110 mJ/m^2, which makes the austenite-to-martensite transformation theoretically impossible and rules out a classical TRIP effect.",
+    "Deformation-induced ferrite transformation (DIFT) and deformation-induced austenite transformation (DIAT) occur simultaneously at 500 °C (a phenomenon only observed at this low temperature regime and not at 600 °C), acting as an effective strain compensation mechanism."
+  ]
+}

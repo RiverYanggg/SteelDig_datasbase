@@ -1,0 +1,223 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-8mn-5al-0.2c__cast",
+      "paper_id": "10.1016_j.mtla.2025.102360",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_id": "proc_cast",
+      "sample_label": "cast specimen",
+      "aliases": [
+        "cast",
+        "casting",
+        "as-cast"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "1",
+      "type": "melting and casting",
+      "method": "melting-casting route in an open-air induction furnace (Power Trak 250-10 R Inductotherm)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "open-air",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The developed steel was produced by the conventional melting-casting route in an open-air induction furnace; the as-solidified cast ingot constitutes the cast specimen (state_label 'cast specimen'). No further thermal/mechanical step is applied to this state."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_cast",
+      "overall_structure": "Dual-phase microstructure of delta ferrite (δ) and austenite (γ) in the cast specimen, confirmed by XRD and optical microscopy; the austenite in the cast specimen has a dendritic type structure.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_cast",
+          "region": "cast ingot (bulk)",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "delta ferrite (δ)",
+              "crystal_structure": "BCC",
+              "volume_fraction": "~70 volume%",
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~26 volume%",
+              "morphology": "dendritic",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_cast_density",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "measured based on Archimedes' principle"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.91455 g/cc",
+          "unit": "g/cc"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_cast_xrd",
+      "microstructure_id": "micro_cast",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Bruker D8 advanced X-ray diffractometer, Co-Kα (1.79 Å) target",
+      "measurement_conditions": "step size 0.02°, 2θ in the range 20°-120°",
+      "purpose": "To identify the major phases present in the developed steel after casting (and hot forging)",
+      "key_findings": "XRD of the cast specimen (Fig. 2a, black pattern) shows the presence of ferrite and austenite; reflections indexed α110, γ111, γ200, α200, γ220, α211, γ311 and γ222 (α: ferrite (δ/α), γ: austenite)."
+    },
+    {
+      "characterization_id": "char_cast_om",
+      "microstructure_id": "micro_cast",
+      "technique": "Optical microscopy",
+      "instrument_or_setup": "Leica optical microscope",
+      "measurement_conditions": "specimens prepared by standard metallography + colloidal polishing (0.25 µm) and etched with Villella's Reagent (5 ml HCl + 1 g picric acid + 100 ml ethanol) for 10-15 s",
+      "purpose": "To confirm the phases/microstructure of the cast specimen",
+      "key_findings": "Optical images (Fig. 2b,c) confirm a dual-phase microstructure in the cast specimen; the austenite in the cast specimen has a dendritic type structure (indicated by blue arrow in Fig. 2b,c)."
+    },
+    {
+      "characterization_id": "char_cast_rietveld",
+      "microstructure_id": "micro_cast",
+      "technique": "Rietveld refinement of XRD data",
+      "instrument_or_setup": "Rietveld analysis of XRD patterns",
+      "measurement_conditions": null,
+      "purpose": "To calculate the volume fraction of phases in the cast specimen",
+      "key_findings": "~26% (volume %) of austenite in the cast sample; unchanged to ~29% in the forged sample, showing only ~3% difference."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermocalc",
+      "simulation_method": "CALPHAD equilibrium thermodynamic calculation",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": "TCFE9 database",
+      "boundary_and_initial_conditions": "Equilibrium phase fractions versus temperature (Fig. 1b); duplex ferrite (δ) + austenite (γ) region measured to be ~650 °C to ~1350 °C; equilibrium transformation sequence L → L+δ → L+δ+γ → γ+δ; BCC phase remains on cooling from liquid (>~1500 °C) to room temperature.",
+      "validation_against_experiment": "Used to identify that ferrite present in the cast specimen is δ-ferrite; dilatometry conducted on the forged sample showed no significant transformation-related contraction, consistent with the thermocalc prediction.",
+      "analytical_models": []
+    },
+    {
+      "computation_id": "comp_sfe",
+      "simulation_method": "Thermodynamic stacking fault energy (SFE) calculation",
+      "software_used": null,
+      "potential_model_or_database": "Olson and Cohen thermodynamic model",
+      "boundary_and_initial_conditions": "Variables include grain size (initial finer austenite grain assumed 40 µm), temperature and alloy composition; interfacial surface energy σ^{γ/ε} taken as 10 mJ/m² (literature range 5-15 mJ/m²).",
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "SFE (Olson and Cohen)",
+          "equation_role": "γ_SFE = 2ρΔG^{γ→ε} + 2σ^{γ/ε}, with ΔG^{γ→ε} = ΔG_chem + ΔG_mag + ΔG_ex",
+          "parameters": [
+            {
+              "name": "ΔG_chem^{γ→ε}",
+              "value": "245.267",
+              "unit": "J/mole"
+            },
+            {
+              "name": "ΔG_mag^{γ→ε}",
+              "value": "0.0029319",
+              "unit": "J/mole"
+            },
+            {
+              "name": "ΔG_ex^{γ→ε}",
+              "value": "19.6842",
+              "unit": "J/mole"
+            },
+            {
+              "name": "molar surface density ρ",
+              "value": "2.9328×10^-5",
+              "unit": "mol/m^2"
+            },
+            {
+              "name": "interfacial surface energy σ^{γ/ε}",
+              "value": "10",
+              "unit": "mJ/m^2"
+            },
+            {
+              "name": "theoretical SFE of designed steel",
+              "value": "~35",
+              "unit": "mJ/m^2"
+            }
+          ],
+          "model_note": "The theoretical SFE of the designed steel is ~35 mJ/m² (within the 20-40 mJ/m² TWIP range). This computation is for the designed alloy (cast is its base state)."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Measured bulk chemical composition of the developed steel (Table 1, wt.%): Fe bal., Mn 7.79, Al 4.88, Si 0.84, C 0.2, P 0.03, S 0.03; measured by XRF and OES (b0014, b0016).",
+    "The designed grade is Fe-8Mn-5Al-0.2C (wt.%) low-density medium Mn steel; the cast specimen is the as-solidified state of this alloy (b0014).",
+    "The developed steel shows ~11.35% density reduction compared to conventional steel (~7.8 g/cc), achieved by the addition of ~5 (wt.%) Al and ~1 (wt.%) Si (b0034).",
+    "XRD of the cast specimen (Fig. 2a, black 'Cast Specimen' pattern) is indexed with reflections α110, γ111, γ200, α200, γ220, α211, γ311 and γ222; legend 'α: ferrite (δ/α), γ: austenite' (figure_002)."
+  ]
+}

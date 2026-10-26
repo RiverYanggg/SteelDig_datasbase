@@ -1,0 +1,464 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-9al-1.5c-2ni-3cr__mht",
+      "paper_id": "10.1016_j.jmrt.2024.01.272",
+      "alloy_id": "alloy_fe-20mn-9al-1.5c-2ni-3cr",
+      "process_id": "proc_mht",
+      "sample_label": "MHT",
+      "aliases": [
+        "multi-stage heat treatment steel",
+        "MHT steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "melting / casting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum (vacuum induction melting)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingot of nominal Fe–20Mn–9Al-1.5C–2Ni–3Cr (analyzed Fe-20.3Mn-8.6Al-1.4C-2.1Ni-2.9Cr wt.%) produced by vacuum induction melting; density 6.78 g/cm3."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenizing",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingot homogenized at 1200 °C for 2 h before hot rolling (shared fabrication step for the MHT sample)."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1050–950 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air cooling",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "rolled to a 6 mm sheet",
+      "processing_steps_notes": "Hot rolled at 1050–950 °C to produce a 6 mm sheet, followed by air cooling to room temperature."
+    },
+    {
+      "processing_step_id": "step_1_first_stage",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "first-stage heat treatment (MHT stage I)",
+      "temperature": "1000 °C",
+      "temperature_unit": "°C",
+      "duration": "3 min",
+      "atmosphere": null,
+      "cooling_medium": "water quenching to room temperature",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "First stage of the multi-stage heat treatment: 1000 °C for 3 min then quenched to room temperature."
+    },
+    {
+      "processing_step_id": "step_2_secondary_stage",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "secondary-stage heat treatment (MHT stage II, intermediate 750 °C treatment)",
+      "temperature": "750 °C",
+      "temperature_unit": "°C",
+      "duration": "15 min",
+      "atmosphere": null,
+      "cooling_medium": "water quenching to room temperature",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Intermediate stage: 750 °C for 15 min then quenched to room temperature. This stage produced many closely spaced grain-boundary precipitates (Fig. 9) that increased twin nucleation sites."
+    },
+    {
+      "processing_step_id": "step_3_tertiary_stage",
+      "sequence": "6",
+      "type": "heat treatment",
+      "method": "tertiary-stage heat treatment (MHT stage III)",
+      "temperature": "1050 °C",
+      "temperature_unit": "°C",
+      "duration": "3 min",
+      "atmosphere": null,
+      "cooling_medium": "water quenching to room temperature",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Final stage: 1050 °C for 3 min then quenched to room temperature, dissolving the intergranular Cr7C3 precipitates."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_mht",
+      "overall_structure": "Fully austenitic matrix of equiaxed grains containing annealing twins; nanoscale κ-carbides co-gridded with austenite and a small amount of B2 particles; no intergranular Cr7C3 (dissolved by the 1050 °C final stage). Effective grain size 7.31 μm; 71.2 % special (Σ≤29) low-energy boundaries.",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_mht",
+          "region": "bulk / matrix (cross-section)",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc (indexed by SAED of austenite)",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains with annealing twins; matrix phase",
+              "grain_size": "7.31 μm (effective grain size, twins included)",
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "co-gridded with austenite (superlattice reflections in SAED)",
+              "volume_fraction": null,
+              "morphology": "nanoscale particles co-gridded with austenite; orientation relationship [011]γ//[011]κ",
+              "grain_size": "3–10 nm",
+              "texture": null
+            },
+            {
+              "phase_name": "B2",
+              "crystal_structure": "B2 (ordered bcc, indexed [1-13]B2)",
+              "volume_fraction": null,
+              "morphology": "dark faceted particles within austenite grains",
+              "grain_size": "slightly smaller than the 20–160 nm B2 in S1050",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "rounded micropores / microvoids",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "7.31",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "Coarser than S1000 (3.17 μm) and S1050 (3.84 μm)",
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_mht",
+              "type": "κ-carbide",
+              "size": {
+                "value": "3–10",
+                "unit": "nm"
+              },
+              "distribution": "nanoscale, co-gridded with the austenite matrix",
+              "coherency": "coherent/co-gridded with austenite; [011]γ//[011]κ"
+            },
+            {
+              "precipitate_id": "ppt_B2_mht",
+              "type": "B2",
+              "size": {
+                "value": "slightly smaller than 20–160 nm (S1050)",
+                "unit": "nm"
+              },
+              "distribution": "within austenite grains",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_mht",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_kappa_austenite_mht",
+          "microstructure_id": "micro_mht",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "austenite (γ)",
+          "coherence": "coherent (co-gridded) with austenite; orientation relationship [011]γ//[011]κ"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "crack_deflection_mht",
+          "microstructure_id": "micro_mht",
+          "interaction_type": "crack deflection / zigzag cracking across special boundaries and twins",
+          "qualitative_or_quantitative_description": "MHT has a larger number of special boundaries and larger grain size that impede dislocations from the crack tip; the crack paths constantly cross the special (low-energy) boundaries with constant deflection ('zigzag cracking'), increasing the effective crack-propagation length and energy dissipation (impact toughness +29 % vs S1050)."
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": "Intergranular Cr7Cr3 precipitates present in S1000 dissolve during the 1050 °C stage of MHT; the intermediate 750 °C stage leaves closely spaced grain-boundary precipitates that increase twin nucleation sites; final state contains κ-carbide and B2 (B2 slightly smaller than in S1050). 71.2 % special (Σ≤29) boundaries are retained.",
+      "interface_notes": "Special (low-energy, Σ≤29) boundaries such as annealing twins and their variants provide lower interfacial energy and resistance to grain-boundary damage; in MHT they interfere with random high-angle boundaries (RHABs) and deflect propagating cracks."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_mht",
+      "measurement_conditions": {
+        "temperature": "25 °C (room temperature)",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "3 mm/min (tensile test crosshead speed)",
+        "specimen_geometry": "Tensile: gauge length 25 mm, gauge width 4 mm, gauge thickness 5 mm, machined along the rolling direction; Impact: standard Charpy V-notch specimen 5 mm × 10 mm × 55 mm",
+        "test_standard": null,
+        "other_conditions": "Room-temperature tensile and impact tests; tensile strength defined as maximum stress and yield strength as 0.2 % offset; properties are averages of three tests per condition"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction (RD)",
+              "value": "910 ± 7 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 7 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction (RD)",
+              "value": "1076 ± 2 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 2 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction (RD)",
+              "value": "50.9 ± 3.0 %",
+              "unit": "%",
+              "uncertainty": "± 3.0 %",
+              "type": "total elongation (EI/TEL)"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering and true stress–strain curves and strain-hardening-rate curves for MHT shown in Fig. 4(a,b) (MHT = black curve; MHT peaks slightly lower than S1000/S1050 and ends near ~50 % strain)",
+          "stress_strain_distribution": null,
+          "strain_hardening_rate": [
+            {
+              "direction": null,
+              "value": "maximum 2000 MPa at true strain 0.20–0.22",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "55.1 ± 2.2 J",
+          "unit": "J"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.78",
+          "unit": "g/cm^3"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_mht_service",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "25",
+          "max": "25",
+          "unit": "°C"
+        },
+        "stress_state": "uniaxial tensile loading and Charpy V-notch impact loading",
+        "environment": "ambient / room temperature"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-20mn-9al-1.5c-2ni-3cr",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": "S1000",
+        "comparison_metric": "half-size Charpy impact energy",
+        "improvement_percentage": "88.6 %"
+      }
+    },
+    {
+      "performance_id": "perf_mht_vs_s1050",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "25",
+          "max": "25",
+          "unit": "°C"
+        },
+        "stress_state": "impact loading (crack propagation)",
+        "environment": "ambient / room temperature"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-20mn-9al-1.5c-2ni-3cr",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": "S1050",
+        "comparison_metric": "impact toughness",
+        "improvement_percentage": "29 %"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_sem_mht",
+      "microstructure_id": "micro_mht",
+      "technique": "field-emission scanning electron microscopy (SEM)",
+      "instrument_or_setup": "Zeiss Ultra 55 field-emission SEM",
+      "measurement_conditions": "Cross-sectional specimens mechanically polished and etched with 40 ml HNO3 + 100 ml ethyl alcohol",
+      "purpose": "Observe matrix microstructure/grain-boundary precipitates, crack propagation zones, and tensile/impact fracture surfaces for MHT",
+      "key_findings": "MHT matrix is austenite with twins and no elongated grain-boundary precipitates (unlike S1000); MHT impact fracture is fully dimpled (ductile), crack path shows zigzag deflection; tensile fracture shows shallower, more equiaxed, less developed dimples"
+    },
+    {
+      "characterization_id": "char_ebsd_mht",
+      "microstructure_id": "micro_mht",
+      "technique": "electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "EBSD probe on the Zeiss Ultra 55 SEM",
+      "measurement_conditions": "Chemically polished with colloidal silica without etching",
+      "purpose": "Measure effective grain size (twins included) by intercept lengths and quantify grain-boundary character (Σ≤29 special vs RHABs)",
+      "key_findings": "MHT effective grain size 7.31 μm; misorientation histogram dominated by a ~60° peak; proportion of special (Σ≤29) boundaries 71.2 %"
+    },
+    {
+      "characterization_id": "char_tem_mht",
+      "microstructure_id": "micro_mht",
+      "technique": "transmission electron microscopy (TEM) with selected-area electron diffraction (SAED)",
+      "instrument_or_setup": "FEI Tecnai G2 F20 TEM; specimens 0.5 mm thick ground to 80 μm and twin-jet electropolished in 10 % perchloric acid + 90 % methanol",
+      "measurement_conditions": "TEM/SAED with dark-field imaging",
+      "purpose": "Identify phase composition and precipitate types/sizes in MHT",
+      "key_findings": "κ-carbide co-gridded with austenite (3–10 nm, [011]γ//[011]κ) and B2 particles present in MHT (B2 slightly smaller than in S1050); no intergranular Cr7C3"
+    },
+    {
+      "characterization_id": "char_eds_mht",
+      "microstructure_id": "micro_mht",
+      "technique": "energy dispersive spectroscopy (EDS)",
+      "instrument_or_setup": "EDS in SEM mode on the Zeiss Ultra 55",
+      "measurement_conditions": "C content not reliable by EDS and was calculated from lattice-parameter equations (1) and (2)",
+      "purpose": "Measure Mn, Al, Ni and Cr contents of the austenite in MHT",
+      "key_findings": "MHT austenite: Mn 20.76 ± 0.61, Al 9.46 ± 0.33, Ni 2.01 ± 0.25, Cr 3.10 ± 0.57, C 1.15 ± 0.07, Fe Bal."
+    },
+    {
+      "characterization_id": "char_impact_mht",
+      "microstructure_id": null,
+      "technique": "instrumented Charpy impact test",
+      "instrument_or_setup": "L222.4452-DE pendulum impact test instrument",
+      "measurement_conditions": "Standard Charpy V-notch specimens (5 mm × 10 mm × 55 mm) tested at ambient temperature; average of three tests",
+      "purpose": "Measure impact energy and separate crack initiation and propagation energies for MHT",
+      "key_findings": "MHT impact energy 55.1 ± 2.2 J; crack propagation energy 36.78 J; displacement 8.04 mm; MHT curve decays most slowly in the propagation stage"
+    },
+    {
+      "characterization_id": "char_tensile_mht",
+      "microstructure_id": null,
+      "technique": "uniaxial tensile test",
+      "instrument_or_setup": "AI-7000-LAU10 testing machine",
+      "measurement_conditions": "Room temperature, constant strain rate of 3 mm/min; gauge length 25 mm, width 4 mm, thickness 5 mm; average of three tests",
+      "purpose": "Measure yield strength, ultimate tensile strength and total elongation of MHT",
+      "key_findings": "MHT: YS 910 ± 7 MPa, UTS 1076 ± 2 MPa, total elongation 50.9 ± 3.0 %"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_strengthening_mht",
+      "simulation_method": "analytical yield-strength summation (solid-solution + grain-boundary + precipitation strengthening)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "The calculated contributions are used to explain the measured MHT yield strength of 910 MPa; the similar σ_PPT values among conditions are argued to explain why ductility/work-hardening are not significantly changed.",
+      "analytical_models": [
+        {
+          "model_name": "σ_YS = σ_0 + σ_GR + σ_PPT",
+          "equation_role": "decompose measured yield strength into strengthening contributions",
+          "parameters": [
+            {
+              "name": "σ_0 (solid-solution strengthening, MHT)",
+              "value": "599",
+              "unit": "MPa"
+            },
+            {
+              "name": "σ_GR (grain-boundary strengthening, MHT)",
+              "value": "63",
+              "unit": "MPa"
+            },
+            {
+              "name": "σ_PPT (precipitation strengthening, MHT, = σ_YS − σ_0 − σ_GR)",
+              "value": "248",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "σ_0, σ_GR and σ_PPT for S1000/S1050/MHT are similar in magnitude; the fine κ-carbide could not be quantified separately."
+        },
+        {
+          "model_name": "σ_0 = 97 + 279 wt% C + 1.5 wt% Mn + 20.5 wt% Al + 2.9 wt% Ni + 3.9 wt% Cr",
+          "equation_role": "compute lattice friction + solid-solution strengthening",
+          "parameters": [],
+          "model_note": "Coefficients/expression as printed; σ_0 = 97 + 279 wt% C + 1.5 wt% Mn + 20.5 wt% Al + 2.9 wt% Ni + 3.9 wt% Cr."
+        },
+        {
+          "model_name": "σ_GR = K · d_eff^(−1/2) (Hall–Petch)",
+          "equation_role": "compute grain-boundary strengthening",
+          "parameters": [
+            {
+              "name": "K (Hall–Petch slope)",
+              "value": "461",
+              "unit": "MPa μm^1/2"
+            },
+            {
+              "name": "d_eff (MHT effective grain size)",
+              "value": "7.31",
+              "unit": "μm"
+            }
+          ],
+          "model_note": "Hall–Petch slope K = 461 MPa μm^1/2 (from refs [12,43]); grain-boundary strengths of S1000/S1050/MHT computed as 145, 120, 63 MPa."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "MHT Charpy impact: crack propagation energy = 36.78 J (vs 9.87 J for S1000 and 26.64 J for S1050); the crack initiation energy of MHT is comparable to S1000 and higher than S1050, and the fracture displacement is 8.04 mm.",
+    "Austenite composition of the MHT specimen measured by EDS (Table 2, wt.%): Mn 20.76 ± 0.61, Al 9.46 ± 0.33, Ni 2.01 ± 0.25, Cr 3.10 ± 0.57, C 1.15 ± 0.07, Fe Bal. (C calculated from lattice-parameter equations since EDS is unreliable for C).",
+    "Solid-solution strengthening of MHT from its austenite C content = 599 MPa; grain-boundary strengthening = 63 MPa; precipitation strengthening (σ_YS − σ_0 − σ_GR) = 248 MPa.",
+    "Impact fracture of the MHT specimen is fully ductile: dimples increase and microcracks disappear, with no quasi-cleavage plane observed (unlike S1000/S1050 which show quasi-cleavage and slip bands).",
+    "Tensile fracture of MHT shows shallower, more equiaxed and less developed dimples, consistent with a slightly reduced plasticity (TEL down 4.6 % relative to S1050).",
+    "The intermediate 750 °C/15 min stage of MHT produced many closely spaced grain-boundary precipitates (Fig. 9) that raised the stress in non-twinned regions, increasing twin nucleation sites and yielding more special boundaries that interfere with RHAGBs.",
+    "MHT retains a high proportion of special (Σ≤29) grain boundaries at 71.2 % (compared with 71.7 % for S1000 and 68.3 % for S1050), while intergranular Cr7C3 precipitates dissolve.",
+    "The 750 °C intermediate heat treatment did not significantly change the austenite chemistry relative to S1000/S1050 (Mn ≈ 21, Al ≈ 9, Ni ≈ 2, Cr ≈ 3.1–3.2, C ≈ 1.15–1.22 wt.%)."
+  ]
+}

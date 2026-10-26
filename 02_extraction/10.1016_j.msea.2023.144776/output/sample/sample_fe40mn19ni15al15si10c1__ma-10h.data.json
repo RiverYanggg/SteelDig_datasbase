@@ -1,0 +1,90 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__ma-10h",
+      "paper_id": "10.1016_j.msea.2023.144776",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_ma-10h",
+      "sample_label": "10 h milled",
+      "aliases": [
+        "10 h",
+        "milled 10 h"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_ma_10h",
+      "sequence": "1",
+      "type": "mechanical processing",
+      "method": "mechanical alloying / ball milling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": "10 h",
+      "atmosphere": "toluene (process control reagent)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Elemental Fe, Ni, Mn, Al, Si and C powders (99.2% pure) in the proportion Fe40Mn19Ni15Al15Si10C1 (at.%) were milled in a planetary ball mill (Model no. PM 400/2, Retsch) at 200 rpm; ball-to-powder ratio 10:1; WC vials and WC balls; toluene process control reagent; milling stopped intermittently for 20 min after every 1 h to avoid overheating; 2-3 g of milled powder sampled after every 5 h for phase-evolution study. The 10 h state is an intermediate milling stage (parent process: 5 h milling)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_ma10h",
+      "overall_structure": "Powder milled for 10 h (intermediate milling stage). The powder is still a partially alloyed mixture of elemental Fe, Mn, Ni, Al, Si and C: the diffraction peak intensity of all elements decreases with milling time (low intensity elemental peaks vanish after 5 h, and Al intensity only diminishes after 15 h, indicating the highest alloying rate for Al, so Al is still largely present at 10 h). Alloying is in progress and the uniform solid solution (BCC + γ-brass type) is only formed after 25 h of milling; BCC and γ-brass type phase markers begin to appear and grow during milling. SEM shows bulky, irregular, coarse particles of widely varying size.",
+      "number_of_phases": null,
+      "microstructure_counts": "average powder particle size ~10 ± 2 µm at 10 h (Fig. 2f histogram)",
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_ma10h_powder_particles",
+          "region": "powder particles",
+          "related_sequence": "1",
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "Particle size distribution of the 10 h milled powder (Gaussian-fitted histogram, Fig. 2f): average size ~10 ± 2 µm",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_ma10h_sem",
+      "microstructure_id": "micro_ma10h_powder_particles",
+      "technique": "Scanning electron microscopy (SEM)",
+      "instrument_or_setup": "Evo 18 Carl Zeiss SEM; field emission SEM (FEI model no. Nova Nano SEM 450), both with EDS detector",
+      "measurement_conditions": "Secondary-electron imaging of the milled powder; the 10 h powder is shown in Fig. 2(a) (2 µm scale bar)",
+      "purpose": "Examine size, shape and morphology of the milled powder at different milling times",
+      "key_findings": "At 10 h the particle size and shape are random and bulky; particles are coarse, irregular, angular and heavily deformed with widely varying sizes (SEM micrograph labelled '10 h MM')."
+    },
+    {
+      "characterization_id": "char_ma10h_psd",
+      "microstructure_id": "micro_ma10h_powder_particles",
+      "technique": "Particle size distribution analysis of SEM images",
+      "instrument_or_setup": "ImageJ software",
+      "measurement_conditions": "Gaussian-fitted particle-size histogram (Fig. 2f) for the 10 h milled powder",
+      "purpose": "Determine the distribution of powder particle size with milling time",
+      "key_findings": "Average particle size at 10 h ~10 ± 2 µm (Fig. 2f)."
+    },
+    {
+      "characterization_id": "char_ma10h_xrd",
+      "microstructure_id": "micro_ma10h_powder_particles",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "EMPYREAN, PANALYTICAL, Co-Kα source (operating voltage 40 kV; current 40 mA), scan rate 5° min⁻¹",
+      "measurement_conditions": "XRD pattern of the powder milled for 10 h among the stacked 0-35 h patterns (Fig. 1a)",
+      "purpose": "Study alloying behavior and phase evolution during milling",
+      "key_findings": "The diffraction peak intensity of all elements decreases with milling time; the pattern at 10 h still shows diminishing elemental peaks while BCC and γ-brass type phase reflections begin to appear and grow."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The 10 h milled powder (aliases '10 h', 'milled 10 h'; SEM label '10 h MM') is characterised in this work only by SEM powder morphology (Fig. 2a) and the particle-size-distribution histogram (~10 ± 2 µm, Fig. 2f). All other quantitative measurements reported in the paper (Rietveld phase/lattice/crystallite data in Tables 2 and 4, DTA/thermal stability, annealing XRD, SPS processing, microhardness 7.8 ± 0.3 GPa, elastic modulus 184 ± 5 GPa, compressive strength 2046 ± 160 MPa with ~19% ductility, EDS/EPMA/WDS and CALPHAD modelling) pertain to the 35 h milled and/or spark-plasma-sintered states, NOT to the 10 h milled powder, so they are not assigned to this sample."
+  ]
+}

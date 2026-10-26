@@ -1,0 +1,133 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-0.59si-0.9c__aged-490c",
+      "paper_id": "10.1007_s11837-014-1068-y",
+      "alloy_id": "alloy_fe-30mn-9al-0.59si-0.9c",
+      "process_id": "proc_aged-490c",
+      "sample_label": "0.59% Si aged at 490°C",
+      "aliases": [
+        "0.59% Si aged 63 h at 490°C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_solution_treatment_1050c_2h",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Parent solution-treatment step (proc_st-1050c-2h) preceding the 490°C aging of the 0.59% Si sample."
+    },
+    {
+      "processing_step_id": "step_aging_490c_63h",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "aging (age hardening)",
+      "temperature": "490",
+      "temperature_unit": "°C",
+      "duration": "63 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Age hardening at 490°C for 63 h used to compare κ-carbide size/number density between 0.59% and 1.56% Si steels."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_aged_490c",
+      "overall_structure": "Dark austenite matrix with relatively sparse nanoscale κ-carbide precipitates arranged in patchy clusters (dark-field TEM)",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": null,
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "dark, uniformly textured matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide (j-carbide), (Fe,Mn)3AlCx, carbon-deficient (x<1)",
+              "crystal_structure": "E21 cubic perovskite",
+              "volume_fraction": null,
+              "morphology": "nanosized bright precipitates, sparse and patchy clusters",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_1",
+              "type": "κ-carbide (j-carbide)",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "homogeneous coherent precipitation in austenite; in this 0.59% Si sample the precipitates are sparse and patchy, appearing smaller/fewer than in the 1.56% Si steel",
+              "coherency": "coherent"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_kappa_austenite_1",
+          "microstructure_id": "micro_1",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "κ-carbide (j-carbide)",
+          "coherence": "coherent"
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "κ-carbide precipitation during aging; homogeneous coherent precipitation of nanosized κ-carbide in the austenite matrix",
+      "interface_notes": "κ-carbide has cube-on-cube orientation relationship with austenite: ⟨100⟩κ // ⟨100⟩γ and {001}κ // {001}γ."
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_dark_field_tem_1",
+      "microstructure_id": "micro_1",
+      "technique": "dark-field transmission electron microscopy (TEM)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "aged 63 h at 490°C; 10 nm scale bar; selected-area electron diffraction (SAED) pattern inset",
+      "purpose": "compare κ-carbide precipitate size and number density between 0.59% and 1.56% Si steels",
+      "key_findings": "0.59% Si steel shows relatively sparse, patchy nanoscale κ-carbide precipitates; precipitate size and number density appear smaller/fewer than in the 1.56% Si steel"
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Alloy-level porosity note (Fig. 15, b0079): the 0.59% Si low-P steel had a total inclusion density similar to the 1.07% and 1.56% Si steels (62–78 inclusions/mm²), but its porosity (micro-defects) was more than twice that of the 1.07% Si steel and almost double that of the 1.56% Si steel; this higher porosity was proposed as the reason for the 0.59% Si steel's lower aged dynamic fracture toughness. This is a casting/material-level observation, not specific to the 490°C/63 h aging."
+  ]
+}

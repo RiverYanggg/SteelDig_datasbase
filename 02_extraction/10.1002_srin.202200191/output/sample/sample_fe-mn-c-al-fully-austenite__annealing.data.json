@@ -1,0 +1,185 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-mn-c-al-fully-austenite__annealing",
+      "paper_id": "10.1002_srin.202200191",
+      "alloy_id": "alloy_fe-mn-c-al-fully-austenite",
+      "process_id": "proc_annealing",
+      "sample_label": "annealed fully austenite low-density steel",
+      "aliases": "fully austenite low-density steel"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_annealing",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Annealing produces the fully austenite (single-phase austenite) microstructure; the annealed grains are fully recovered and contain abundant annealing twins."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_fully_austenite",
+      "overall_structure": "fully austenite (single-phase austenite) structure with equiaxed polygonal austenite grains containing abundant straight, parallel-sided annealing twins; grains are fully recovered",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": null,
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "face-centered cubic (fcc)",
+              "volume_fraction": null,
+              "morphology": "equiaxed polygonal austenite grains containing straight, parallel-sided annealing twins",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_1",
+      "microstructure_id": "micro_1",
+      "technique": "optical microscope (OM)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Observe the microstructure of the annealed fully austenite low-density steel",
+      "key_findings": "Abundant annealing twins are observed in the fully recovered austenite grains; the grains are equiaxed and polygonal (50 µm scale bar)."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_empirical_formulas",
+      "simulation_method": null,
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "density–composition empirical formula for Fe–Mn–C–Al austenite steel",
+          "equation_role": "predicts the density of Fe–Mn–C–Al austenite steel from alloying composition",
+          "parameters": [
+            {
+              "name": "intercept",
+              "value": "8.15",
+              "unit": null
+            },
+            {
+              "name": "Al coefficient",
+              "value": "-0.101",
+              "unit": null
+            },
+            {
+              "name": "C coefficient",
+              "value": "-0.41",
+              "unit": null
+            },
+            {
+              "name": "Mn coefficient",
+              "value": "-0.0085",
+              "unit": null
+            }
+          ],
+          "model_note": "ρ_Fe-Mn-C-Al = 8.15 − 0.101(wt%Al) − 0.41(wt%C) − 0.0085(wt%Mn) (equation 1); C addition gives the most obvious density reduction, followed by Al and Mn."
+        },
+        {
+          "model_name": "Al solute yield strength formula for Fe–Mn–C–Al austenite",
+          "equation_role": "relates austenite yield strength to Al solute content",
+          "parameters": [
+            {
+              "name": "intercept",
+              "value": "351.5",
+              "unit": null
+            },
+            {
+              "name": "Al slope",
+              "value": "10.5",
+              "unit": null
+            }
+          ],
+          "model_note": "σγ = 10.5 Al_wt% + 351.5 (equation 3)."
+        },
+        {
+          "model_name": "Mn solute yield strength formula for Fe–Mn–C–Al austenite",
+          "equation_role": "relates austenite yield strength to Mn solute content",
+          "parameters": [
+            {
+              "name": "intercept",
+              "value": "328.0",
+              "unit": null
+            },
+            {
+              "name": "Mn slope",
+              "value": "0.58",
+              "unit": null
+            }
+          ],
+          "model_note": "σγ = 0.58 Mn_wt% + 328.0 (equation 4)."
+        },
+        {
+          "model_name": "C solute yield strength formula for Fe–Mn–C–Al austenite",
+          "equation_role": "relates austenite yield strength to C solute content",
+          "parameters": [
+            {
+              "name": "intercept",
+              "value": "250.7",
+              "unit": null
+            },
+            {
+              "name": "C slope",
+              "value": "180.7",
+              "unit": null
+            }
+          ],
+          "model_note": "σγ = 180.7 C_wt% + 250.7 (equation 5)."
+        },
+        {
+          "model_name": "lattice constant–composition empirical formula for Fe–Mn–C–Al austenite",
+          "equation_role": "relates austenite lattice constant to alloying composition",
+          "parameters": [
+            {
+              "name": "intercept",
+              "value": "0.35721",
+              "unit": null
+            },
+            {
+              "name": "C coefficient",
+              "value": "0.0002771",
+              "unit": null
+            }
+          ],
+          "model_note": "α_Fe-Mn-C-Al = 0.35721 + 0.0002771(wt%...) (equation 2); the equation is truncated in the source text, so the Al and Mn terms are not shown. C plays a more positive role in austenite lattice constant expansion than Al and Mn."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Fully austenite Fe–Mn–C–Al low-density steel composition: Mn 12–30 wt%, Al 5–12 wt%, C 0.6–1.2 wt%, to stabilize the austenite structure at room temperature (b0033).",
+    "To stabilize the austenite matrix of Fe–Mn–C–(Al) low-density steel and suppress ferrite formation, higher contents of Mn and C are needed to tolerate Al addition up to >10 wt% (b0011).",
+    "Class-level mechanical properties of Fe–Mn–C–Al low-density steel (not specific to this annealed sample): yield strength up to 950 MPa, tensile strength up to 1.1 GPa, and plastic ductility not less than 40% (b0010).",
+    "Density of Fe–Mn–C–Al low-density steel exhibits between 6.2 and 7.0 g cm^-3 with Al addition from 2 to 12 wt% (b0010).",
+    "Aging (not the annealing process of this sample) of the full austenite Fe–Mn–C–Al steel at 400–650 °C for 0.5–100 h leads to decomposition γ → γ′ + γ″ → γ′ + L12(SRO) → γ + κ (b0039, b0040).",
+    "With sufficient aging or slow cooling, κ and Fe(Mn)C precipitations form within austenite grains and along grain boundaries; Fe(Mn)C carbide is common in low-Al-containing steel (<7 wt% Al), while κ precipitation occurs in high-Al-containing steel (≥7 wt% Al) (b0045)."
+  ]
+}

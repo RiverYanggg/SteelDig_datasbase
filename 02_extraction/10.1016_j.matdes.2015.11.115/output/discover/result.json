@@ -1,0 +1,453 @@
+{
+  "schema_version": "sample-discover-v1",
+  "paper_id": "10.1016_j.matdes.2015.11.115",
+  "domain": "materials",
+  "paper": {
+    "paper_id": "10.1016_j.matdes.2015.11.115",
+    "doi": "10.1016/j.matdes.2015.11.115",
+    "title": "Effect of annealing temperature on the microstructure and tensile properties of Fe–10Mn–10Al–0.7C low-density steel",
+    "authors": [
+      "Chao Zhao",
+      "Renbo Song",
+      "Leifeng Zhang",
+      "Fuqiang Yang",
+      "Tai Kang"
+    ],
+    "publication_year": "2015",
+    "journal": "Materials & Design",
+    "keywords": [
+      "Low-density steel",
+      "Annealing",
+      "κ-Carbide",
+      "Tensile properties"
+    ],
+    "research_type": "experimental",
+    "paper_scope": "Investigates the microstructure evolution and tensile properties of a single Mn-lean Fe–10Mn–10Al–0.7C low-density steel (Fe–Mn–Al–C) annealed at 700–1200 °C for 1 h followed by water quenching, examining how annealing temperature governs the α/γ/κ-carbide phase fractions, grain size, and the resulting strength–ductility balance."
+  },
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "alloy_name": "Fe–10Mn–10Al–0.7C low-density steel",
+      "aliases": [
+        "Fe-10Mn-10Al-0.7C",
+        "present steel",
+        "Fe-10Mn-10Al-0.7C (present steel)",
+        "Mn-lean Fe–Mn–Al–C low-density steel"
+      ],
+      "description": "A low-density high-strength Fe–Mn–Al–C steel designed to have a relatively low Mn content (10 wt.%) together with a high Al content (10 wt.%) and 0.7 wt.% C; prepared as a 20 kg ingot by vacuum induction melting to study microstructure and tensile properties after annealing at various temperatures.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "10",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "10",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.7",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Nominal composition Fe–10Mn–10Al–0.7C (wt.%). Measured composition of the hot-rolled steel: 10.4 wt.% Mn, 9.7 wt.% Al, 0.70 wt.% C, Fe balance. Measured density about 6.80 g/cm³, about 13% lower than pure Fe. The chemical composition is given in wt.%.",
+      "source": {
+        "reason": "The design of the dedicated steel 'a low-density steel Fe–10Mn–10Al–0.7C is designed' (b0013) and its preparation 'A 20 kg ingot of a Fe–10Mn–10Al–0.7C steel was prepared by vacuum induction melting' (b0015), with the measured composition given in b0016, define the single alloy system studied.",
+        "block_id": [
+          "b0013",
+          "b0015",
+          "b0016"
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_hr",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_name": "hot-rolled and water-quenched",
+      "state_label": "HR",
+      "aliases": [
+        "hot rolled specimen",
+        "as-hot-rolled plate"
+      ],
+      "parent_process_ids": [],
+      "description": "20 kg ingot forged, homogenized at 1200 °C for 1 h, then hot-rolled to a 3 mm thick plate with finishing rolling temperature around 880 °C, followed by water quenching to about 300 °C (reference state before annealing).",
+      "processes_notes": "This hot-rolled + water-quenched plate is the common precursor for all subsequent annealing treatments.",
+      "source": {
+        "reason": "'The ingot was heated to 1200 °C and then forged...hot-rolled to the plate of 3 mm thickness, with the finishing rolling temperature around 880 °C, and then water quenched to about 300 °C' (b0015); the state is explicitly marked 'HR' in 'The microstructure of hot rolled specimen (marked as \"HR\")' (b0024).",
+        "block_id": [
+          "b0015",
+          "b0024"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_700c-1h-wq",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_name": "annealed at 700 °C for 1 h and water quenched",
+      "state_label": "700 °C",
+      "aliases": [
+        "specimen annealed at 700 °C"
+      ],
+      "parent_process_ids": [
+        "proc_hr"
+      ],
+      "description": "Hot-rolled plate annealed at 700 °C for 1 h followed by water quenching; γ phase almost totally decomposed to lamellar κ-carbide and α matrix by eutectoid reaction; no γ phase detected by XRD.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Annealing condition 'The hot-rolled plate was annealed at various temperatures ranging from 700 °C to 1200 °C for the same time, 1 h, followed by water quenching' (b0015); specimen-specific behaviors described in b0030 and Table 1 (b0065).",
+        "block_id": [
+          "b0015",
+          "b0030",
+          "b0065"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_800c-1h-wq",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_name": "annealed at 800 °C for 1 h and water quenched",
+      "state_label": "800 °C",
+      "aliases": [
+        "specimen annealed at 800 °C"
+      ],
+      "parent_process_ids": [
+        "proc_hr"
+      ],
+      "description": "Hot-rolled plate annealed at 800 °C for 1 h followed by water quenching; microstructure of α + γ + κ-carbide with γ phase fraction about 29%, κ-carbide coarsened.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Annealing condition from b0015; γ fraction ~29% and κ behavior given in b0047 and microstructure in b0028/b0030; tensile data in Table 1 (b0065).",
+        "block_id": [
+          "b0015",
+          "b0028",
+          "b0047",
+          "b0065"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_850c-1h-wq",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_name": "annealed at 850 °C for 1 h and water quenched",
+      "state_label": "850 °C",
+      "aliases": [
+        "specimen annealed at 850 °C"
+      ],
+      "parent_process_ids": [
+        "proc_hr"
+      ],
+      "description": "Hot-rolled plate annealed at 850 °C for 1 h followed by water quenching; γ phase fraction about 39%, κ-carbide still present (κ in γ area disappeared, boundary κ along α/α remains).",
+      "processes_notes": null,
+      "source": {
+        "reason": "Annealing condition from b0015; γ fraction ~39% in b0047, κ evolution in b0028/b0049, tensile data in Table 1 (b0065).",
+        "block_id": [
+          "b0015",
+          "b0028",
+          "b0047",
+          "b0065"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_900c-1h-wq",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_name": "annealed at 900 °C for 1 h and water quenched",
+      "state_label": "900 °C",
+      "aliases": [
+        "specimen annealed at 900 °C"
+      ],
+      "parent_process_ids": [
+        "proc_hr"
+      ],
+      "description": "Hot-rolled plate annealed at 900 °C for 1 h followed by water quenching; κ-carbide almost fully dissolved (only small boundary κ formed during quenching), γ phase fraction about 60%; best product of strength and ductility (855 MPa, 651 MPa, 36.6%, 31 GPa%).",
+      "processes_notes": "Threshold above which κ-carbide dissolves (dissolution temperature between 850 and 900 °C).",
+      "source": {
+        "reason": "Annealing condition from b0015; dissolution of κ and γ~60% in b0028/b0033, best tensile properties in b0037 and Table 1 (b0065).",
+        "block_id": [
+          "b0015",
+          "b0028",
+          "b0033",
+          "b0037",
+          "b0065"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_950c-1h-wq",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_name": "annealed at 950 °C for 1 h and water quenched",
+      "state_label": "950 °C",
+      "aliases": [
+        "specimen annealed at 950 °C"
+      ],
+      "parent_process_ids": [
+        "proc_hr"
+      ],
+      "description": "Hot-rolled plate annealed at 950 °C for 1 h followed by water quenching; no obvious matrix κ-carbide, boundary κ along α grains, grains coarsening begins.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Annealing condition from b0015; behavior discussed in b0030, b0057, b0067 and tensile data in Table 1 (b0065).",
+        "block_id": [
+          "b0015",
+          "b0030",
+          "b0065"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_1000c-1h-wq",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_name": "annealed at 1000 °C for 1 h and water quenched",
+      "state_label": "1000 °C",
+      "aliases": [
+        "specimen annealed at 1000 °C"
+      ],
+      "parent_process_ids": [
+        "proc_hr"
+      ],
+      "description": "Hot-rolled plate annealed at 1000 °C for 1 h followed by water quenching; γ phase fraction highest (~63%), grains grow quickly, fracture still mixed ductile α/γ.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Annealing condition from b0015; γ fraction maximum near 1000 °C in b0033/b0053, fracture in b0041, tensile data in Table 1 (b0065).",
+        "block_id": [
+          "b0015",
+          "b0033",
+          "b0041",
+          "b0065"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_1100c-1h-wq",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_name": "annealed at 1100 °C for 1 h and water quenched",
+      "state_label": "1100 °C",
+      "aliases": [
+        "specimen annealed at 1100 °C"
+      ],
+      "parent_process_ids": [
+        "proc_hr"
+      ],
+      "description": "Hot-rolled plate annealed at 1100 °C for 1 h followed by water quenching; boundary κ-carbide along large α grains confirmed by TEM, significant grain growth.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Annealing condition from b0015; boundary κ TEM evidence in b0030/b0032/b0051 and tensile data in Table 1 (b0065).",
+        "block_id": [
+          "b0015",
+          "b0032",
+          "b0051",
+          "b0065"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_1200c-1h-wq",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_name": "annealed at 1200 °C for 1 h and water quenched",
+      "state_label": "1200 °C",
+      "aliases": [
+        "specimen annealed at 1200 °C"
+      ],
+      "parent_process_ids": [
+        "proc_hr"
+      ],
+      "description": "Hot-rolled plate annealed at 1200 °C for 1 h followed by water quenching; largest grains (γ up to 36.0 μm, α₂ up to 68.4 μm), needle/plate-like FCC particles formed in large α grains during quenching.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Annealing condition from b0015; grain sizes in b0054, needle/plate-like particles in b0032/b0053/b0070, tensile data in Table 1 (b0065).",
+        "block_id": [
+          "b0015",
+          "b0032",
+          "b0054",
+          "b0065"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe-10mn-10al-0.7c__hr",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_id": "proc_hr",
+      "sample_label": "HR",
+      "aliases": [
+        "hot rolled specimen",
+        "as-hot-rolled plate"
+      ],
+      "source": {
+        "reason": "The hot-rolled, water-quenched specimen of the Fe–10Mn–10Al–0.7C steel (marked 'HR') is characterized in Fig. 3 and Fig. 4, forming the reference research object.",
+        "block_id": [
+          "b0015",
+          "b0024",
+          "b0027"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-10mn-10al-0.7c__700c-1h-wq",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_id": "proc_700c-1h-wq",
+      "sample_label": null,
+      "aliases": [
+        "specimen annealed at 700 °C",
+        "700 °C specimen"
+      ],
+      "source": {
+        "reason": "Combination of the Fe–10Mn–10Al–0.7C alloy with annealing at 700 °C for 1 h + water quench, a distinct terminal state reported (XRD Fig. 4, SEM Fig. 6, tensile Table 1).",
+        "block_id": [
+          "b0027",
+          "b0030",
+          "b0065"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-10mn-10al-0.7c__800c-1h-wq",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_id": "proc_800c-1h-wq",
+      "sample_label": null,
+      "aliases": [
+        "specimen annealed at 800 °C",
+        "800 °C specimen"
+      ],
+      "source": {
+        "reason": "Combination of the Fe–10Mn–10Al–0.7C alloy with annealing at 800 °C for 1 h + water quench, a distinct terminal state (OM Fig. 5, SEM Fig. 6(b), tensile Table 1).",
+        "block_id": [
+          "b0028",
+          "b0030",
+          "b0065"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-10mn-10al-0.7c__850c-1h-wq",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_id": "proc_850c-1h-wq",
+      "sample_label": null,
+      "aliases": [
+        "specimen annealed at 850 °C",
+        "850 °C specimen"
+      ],
+      "source": {
+        "reason": "Combination of the Fe–10Mn–10Al–0.7C alloy with annealing at 850 °C for 1 h + water quench, a distinct terminal state (OM Fig. 5, SEM Fig. 6(c), tensile Table 1).",
+        "block_id": [
+          "b0028",
+          "b0030",
+          "b0065"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-10mn-10al-0.7c__900c-1h-wq",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_id": "proc_900c-1h-wq",
+      "sample_label": null,
+      "aliases": [
+        "specimen annealed at 900 °C",
+        "900 °C specimen"
+      ],
+      "source": {
+        "reason": "Combination of the Fe–10Mn–10Al–0.7C alloy with annealing at 900 °C for 1 h + water quench, the best-performing terminal state (Fig. 6(d), Fig. 10(a), Table 1).",
+        "block_id": [
+          "b0028",
+          "b0033",
+          "b0065"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-10mn-10al-0.7c__950c-1h-wq",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_id": "proc_950c-1h-wq",
+      "sample_label": null,
+      "aliases": [
+        "specimen annealed at 950 °C",
+        "950 °C specimen"
+      ],
+      "source": {
+        "reason": "Combination of the Fe–10Mn–10Al–0.7C alloy with annealing at 950 °C for 1 h + water quench, a distinct terminal state (Fig. 6(e), tensile Table 1).",
+        "block_id": [
+          "b0030",
+          "b0035",
+          "b0065"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-10mn-10al-0.7c__1000c-1h-wq",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_id": "proc_1000c-1h-wq",
+      "sample_label": null,
+      "aliases": [
+        "specimen annealed at 1000 °C",
+        "1000 °C specimen"
+      ],
+      "source": {
+        "reason": "Combination of the Fe–10Mn–10Al–0.7C alloy with annealing at 1000 °C for 1 h + water quench, a distinct terminal state (Fig. 6(f), Fig. 17(e)(f), Table 1).",
+        "block_id": [
+          "b0030",
+          "b0041",
+          "b0065"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-10mn-10al-0.7c__1100c-1h-wq",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_id": "proc_1100c-1h-wq",
+      "sample_label": null,
+      "aliases": [
+        "specimen annealed at 1100 °C",
+        "1100 °C specimen"
+      ],
+      "source": {
+        "reason": "Combination of the Fe–10Mn–10Al–0.7C alloy with annealing at 1100 °C for 1 h + water quench, a distinct terminal state (Fig. 6(g), Fig. 10(c), Fig. 11, Table 1).",
+        "block_id": [
+          "b0030",
+          "b0032",
+          "b0051",
+          "b0065"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-10mn-10al-0.7c__1200c-1h-wq",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_id": "proc_1200c-1h-wq",
+      "sample_label": null,
+      "aliases": [
+        "specimen annealed at 1200 °C",
+        "1200 °C specimen"
+      ],
+      "source": {
+        "reason": "Combination of the Fe–10Mn–10Al–0.7C alloy with annealing at 1200 °C for 1 h + water quench, a distinct terminal state (Fig. 6(h), Fig. 10(d), Fig. 12, Table 1).",
+        "block_id": [
+          "b0030",
+          "b0032",
+          "b0054",
+          "b0065"
+        ]
+      }
+    }
+  ],
+  "unmapped_findings": [
+    "A Thermo-Calc equilibrium phase diagram calculation (database TCFE7) was performed for the Fe–10Mn–10Al–0.7C steel, predicting κ-carbide formation by eutectoid reaction γ→α+κ below about 823 °C; the steel is not in equilibrium so measured phase fractions/dissolution temperature differ from the calculation (b0022, b0033, b0052).",
+    "Table 2 compares tensile properties of the present Fe–10Mn–10Al–0.7C steel with literature Fe–Mn–Al–C steels (Fe-28Mn-10Al-1.0C, Fe-20Mn-9Al-0.6C, Fe-18Mn-10Al-1.2C, Fe-18Mn-10Al-0.8C, Fe-12Mn-8.0Al-0.8C); these literature steels are cited comparisons, not research objects of this study (b0071, b0072, b0073).",
+    "Study methods: phase identification by XRD (Cu target, 40 kV/150 mA), OM, FE-SEM (20 kV) with EDS, and TEM (200 kV); phase volume fractions determined from XRD by the direct comparison method; room-temperature tensile tests at initial strain rate 3×10⁻⁴ s⁻¹ with tensile axis parallel to the rolling direction (b0017, b0018)."
+  ]
+}

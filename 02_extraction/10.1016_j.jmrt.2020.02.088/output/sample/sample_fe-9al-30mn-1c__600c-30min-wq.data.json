@@ -1,0 +1,279 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-9al-30mn-1c__600c-30min-wq",
+      "paper_id": "10.1016_j.jmrt.2020.02.088",
+      "alloy_id": "alloy_fe-9al-30mn-1c",
+      "process_id": "proc_600c-30min-wq",
+      "sample_label": "9Al-30Mn-1C 600 °C — Tempered",
+      "aliases": [
+        "9Al-30Mn-1C tempered at 600 °C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "1",
+      "type": "solidification / casting",
+      "method": "casting in a 100 kW vacuum induction furnace",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Resulted in 0.5 kg ingots (Table 1); applied to all the alloyed steels including 9Al-30Mn-1C."
+    },
+    {
+      "processing_step_id": "step_hot_rolling_1150c",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingots were hot-rolled at 1150 °C obtaining 5 mm flat-products; this is the parent process proc_hot-rolled-1150c."
+    },
+    {
+      "processing_step_id": "step_water_quench_after_hot_rolling",
+      "sequence": "3",
+      "type": "cooling",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Water quenching applied after hot rolling."
+    },
+    {
+      "processing_step_id": "step_tempering_600c_30min",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "tempering / heat treatment",
+      "temperature": "600 °C",
+      "temperature_unit": "°C",
+      "duration": "30 min",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Samples were heat treated at 600 °C for 30 min; at 600 °C only slight/incipient reactions are triggered, and for 9Al-30Mn-1C no austenite transformation was detected."
+    },
+    {
+      "processing_step_id": "step_water_quench_after_tempering",
+      "sequence": "5",
+      "type": "cooling",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Heat treatment was followed by water quenching."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_9al30mn1c_600c_tempered",
+      "overall_structure": "Austenitic (γ) matrix whose grains feature fine parallel striations (each grain shows a single striation direction that changes from grain to grain); κ-carbides are the only secondary phase detected, lying along grain boundaries. After 600 °C tempering no austenite transformation was detected for 9Al-30Mn-1C.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_9al30mn1c_600c",
+          "region": "bulk / overall",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "γ-austenite",
+              "crystal_structure": "fcc (FCC_A1)",
+              "volume_fraction": null,
+              "morphology": "matrix grains featuring fine parallel striations whose direction differs from grain to grain",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "E2₁ (KAPPA_E21)",
+              "volume_fraction": null,
+              "morphology": "secondary phase located along grain boundaries (only κ-carbides detected)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_gb_9al30mn1c_600c",
+              "type": "κ-carbide (grain-boundary)",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "along grain boundaries",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "intf_9al30mn1c_600c",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_kappa_gamma_gb_9al30mn1c",
+          "microstructure_id": "micro_9al30mn1c_600c",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "γ-austenite",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "For 9Al-30Mn-1C tempered at 600 °C no austenite transformation was detected; the only secondary phases detected were κ-carbides along γ grain boundaries. This contrasts with 9Al-10Mn-1C at 600 °C, where austenite decomposed by discontinuous precipitation into γ + κ lamellae.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_9al30mn1c_600c",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Vickers macro-hardness, 5 kg load applied for all indentations, 5 indentations per sample"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk (macro-hardness)",
+            "value": "330 HV",
+            "scale": "HV (Vickers macro-hardness, 5 kg load)",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_9al30mn1c_600c_hardening",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": "proc_hot-rolled-1150c",
+        "benchmark_sample_id": null,
+        "comparison_metric": "Vickers hardness of 9Al-30Mn-1C: 330 HV after 600 °C tempering versus 216 HV in the hot-rolled state (Table 8)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_optical_microscopy",
+      "microstructure_id": "micro_9al30mn1c_600c",
+      "technique": "optical microscopy",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Through-thickness embedding, grinding and polishing performed separately for hot-rolled and heat-treated samples",
+      "purpose": "analyse the alloys at the different processing conditions (hot-rolling and tempering)",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_sem_sei",
+      "microstructure_id": "micro_9al30mn1c_600c",
+      "technique": "Scanning Electron Microscopy (Secondary Electron Images, SEI)",
+      "instrument_or_setup": "20 kV; e.g. Fig. 10 panel shows a 20 µm scale bar",
+      "measurement_conditions": "Performed only on selected microstructures",
+      "purpose": "analyse the phase morphologies",
+      "key_findings": "Austenite grains show fine parallel striations with different directions in each grain; only κ-carbides are detected as secondary phases along grain boundaries for 9Al-30Mn-1C at 600 °C (Fig. 10(b))."
+    },
+    {
+      "characterization_id": "char_eds",
+      "microstructure_id": "micro_9al30mn1c_600c",
+      "technique": "Energy Dispersive X-ray spectroscopy (EDX/EDS)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "provide qualitative information on the local phase composition",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_vickers_macrohardness",
+      "microstructure_id": "micro_9al30mn1c_600c",
+      "technique": "Vickers macro-hardness testing",
+      "instrument_or_setup": "Vickers indenter, 5 kg load",
+      "measurement_conditions": "5 kg load applied for all indentations; 5 indentations per sample; Minitab18 software used to verify data consistency and exclude outliers",
+      "purpose": "macro-hardness measurement of each alloy/processing condition",
+      "key_findings": "9Al-30Mn-1C tempered at 600 °C shows a macro-hardness of 330 HV (Table 8)"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_calphad_9al30mn1c",
+      "simulation_method": "CALPHAD equilibrium phase-fraction calculation (phase amount vs temperature)",
+      "software_used": "Thermo-Calc / CALPHAD"
+    }
+  ],
+  "unmapped_findings": []
+}

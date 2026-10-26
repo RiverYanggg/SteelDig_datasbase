@@ -1,0 +1,191 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-15mn-9al-0.9c-5ni__hr-cr-873k",
+      "paper_id": "10.1016_j.msea.2022.144324",
+      "alloy_id": "alloy_fe-15mn-9al-0.9c-5ni",
+      "process_id": "proc_hr-cr-873k",
+      "sample_label": null,
+      "aliases": [
+        "15Mn5Ni",
+        "HR+CR+873 K",
+        "15Mn5Ni heat treated at 873 K"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_vim_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "vacuum induction melting (VIM)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Three low-density steel grades (including 15Mn5Ni) were prepared by vacuum induction melting route; a 30 kg ingot was produced and its sound portion was used."
+    },
+    {
+      "processing_step_id": "step_2_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1423 K",
+      "temperature_unit": "K",
+      "duration": "2.5 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Sound portion of the 30 kg ingot homogenized at 1423 K for 2.5 h."
+    },
+    {
+      "processing_step_id": "step_3_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling (HR)",
+      "temperature": "1323 K",
+      "temperature_unit": "K",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot rolled at 1323 K; final thickness of hot rolled plate about 13 mm. This condition is referred to as HR."
+    },
+    {
+      "processing_step_id": "step_4_cold_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "cold rolling (CR)",
+      "temperature": "room temperature",
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "~50% reduction in thickness",
+      "processing_steps_notes": "Samples cut from hot-rolled plates were cold rolled at room temperature to ~50% reduction in thickness (~6 mm thick sheets) in several passes; 15Mn5Ni cracked beyond 50% cold reduction so further reduction was not carried out. The cold rolled condition is denoted HR+CR."
+    },
+    {
+      "processing_step_id": "step_5_heat_treatment_873K",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "heat treatment at 873 K followed by water quenching",
+      "temperature": "873 K",
+      "temperature_unit": "K",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cold rolled sheets were heat treated in the temperature range 873 K–1273 K for 1 h followed by water quenching; heat-treated samples are referred to by the heat treatment temperature. This sample corresponds to the 873 K condition, which is documented for hardness only."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_15mn5ni",
+      "overall_structure": "Fe–15Mn–9Al-0.9C–5Ni (15Mn5Ni) is a Ni-containing lower-Mn austenitic low-density steel whose microstructure consists of a γ-austenite matrix together with ordered B2 (Fe(Ni)Al-type) phase and κ-carbide precipitates; in the hot-rolled (HR) condition the B2 fraction (~12%) is higher than in the higher-Mn 28Mn5Ni alloy (~4%), and the alloy possesses the highest κ-carbide volume fraction among the three alloys.",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_15mn5ni_hr",
+          "region": "bulk (hot-rolled plate)",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains",
+              "grain_size": "~5–7 μm (d)",
+              "texture": "nearly random"
+            },
+            {
+              "phase_name": "B2 (ordered Fe(Ni)Al-type)",
+              "crystal_structure": "ordered BCC (B2)",
+              "volume_fraction": "~12%",
+              "morphology": "elongated stringers (bamboo-like morphology) and polygonal particles",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "annealing twins (lower fraction than higher-Mn LDS alloys)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~5–7",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "nearly random"
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_15mn5ni_hrcr",
+          "region": "bulk (cold-rolled sheet, precursor state to 873 K heat treatment)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "deformed, with parallel planar slip bands",
+              "grain_size": null,
+              "texture": "banded/elongated along ND"
+            },
+            {
+              "phase_name": "B2",
+              "crystal_structure": "ordered BCC (B2)",
+              "volume_fraction": null,
+              "morphology": "elongated stringers that underwent concurrent deformation with austenite; average thickness reduced from ~8 μm to ~2 μm and eventually sheared and fragmented (~35–45° to rolling direction)",
+              "grain_size": null,
+              "texture": "near <100> orientation stringers"
+            }
+          ],
+          "defects": [
+            {
+              "type": "planar slip bands (parallel slip bands); no deformation twinning or martensite transformation",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

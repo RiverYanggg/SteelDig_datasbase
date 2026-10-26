@@ -1,0 +1,454 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-16al__q-1100-anneal-300c-14d",
+      "paper_id": "10.1016_S1359-6454_03_00089-2",
+      "alloy_id": "alloy_fe-16al",
+      "process_id": "proc_q-1100-anneal-300c-14d",
+      "sample_label": "Fe-16%Al monocrystal, 1100 °C Q + 300 °C/14 d",
+      "aliases": [
+        "1100 °C Q + 300 °C/14 Fe-16%Al"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "Process definition (water quench from 1100 °C) plus the experimental details on 1100 °C heat-treatment duration/capsule (b0015) and the Q* definition in the Fig. 1 caption (b0033).",
+        "block_id": [
+          "b0015",
+          "b0033",
+          "b0034",
+          "b0047"
+        ]
+      },
+      "processing_step_id": "step_quench_from_1100c",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "high-temperature treatment (solution treatment) followed by water quench"
+      },
+      "temperature": {
+        "value": "1100 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": {
+        "value": "15 min"
+      },
+      "atmosphere": {
+        "value": "evacuated (10^-6 bar) SiO2 capsule"
+      },
+      "cooling_medium": {
+        "value": "water"
+      },
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "This is the 'Q*' condition (water quench from 1100 °C) applied to the (111)/[112] Fe-16%Al monocrystal. Per b0015, heat treatments at 1100 °C were usually only 15 min and (except for short treatments up to 300 °C) specimens were enclosed in evacuated (10^-6 bar) SiO2 capsules. Quenching from 1100 °C suppresses short-range order nearly completely and traps excess vacancies."
+      }
+    },
+    {
+      "source": {
+        "reason": "Process definition (annealing at 300 °C for 14 days after the 1100 °C quench); b0034 defines '1100 °C Q + 300 °C/14' as water quench from 1100 °C with subsequent annealing at 300 °C for 14 days; b0055 describes the effect/kinetics of this anneal; b0015 gives the atmosphere used for treatments up to 300 °C.",
+        "block_id": [
+          "b0015",
+          "b0034",
+          "b0050",
+          "b0055"
+        ]
+      },
+      "processing_step_id": "step_anneal_300c_14d",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "annealing (after quenching)"
+      },
+      "temperature": {
+        "value": "300 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": {
+        "value": "14 days"
+      },
+      "atmosphere": {
+        "value": "argon, 99.99% purity"
+      },
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Anneal after the 1100 °C water quench, intended to heal out excess vacancies. Reported to only slightly reduce the quenched hardness; 14 days at 300 °C may not be sufficient for complete elimination of the excess vacancies. (b0015 states that heat treatments at temperatures up to 300 °C were performed in argon of 99.99% purity.)"
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "The Fe-16%Al monocrystals were grown by the Bridgman method (b0014); b0026 reports the monocrystals contain rare globular AlN inclusions up to 30 µm identified by EDX; b0055 describes the quenched-in excess vacancies whose healing-out is slow in these quenched Fe-Al alloys.",
+        "block_id": [
+          "b0014",
+          "b0026",
+          "b0055"
+        ]
+      },
+      "structure_id": "struct_fe16al_monocrystal",
+      "overall_structure": {
+        "value": "Single-crystal (Bridgman-grown) Fe-16%Al monocrystal; no grain boundaries; contains rare globular AlN inclusions; after 1100 °C quench + 300 °C/14 d anneal it retains quenched-in excess vacancies (only partially healed out)."
+      },
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_monocrystal_matrix",
+          "region": {
+            "value": "bulk monocrystal"
+          },
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": {
+                "value": "Fe-16%Al solid solution (monocrystalline)"
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": {
+                "value": "(111)-oriented (hardness specimens) and [112]-oriented (compression specimens) single crystal"
+              }
+            }
+          ],
+          "defects": [
+            {
+              "type": {
+                "value": "quenched-in excess vacancies"
+              },
+              "porosity": null,
+              "inclusions": [
+                "rare globular AlN inclusions with diameters up to 30 µm"
+              ],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": {
+              "value": "(111)- and [112]-oriented single crystals"
+            }
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "source": {
+        "reason": "b0026 reports the AlN inclusions in the Fe-16%Al monocrystal; b0055 describes the hardening role of quenched-in excess vacancies (immobile obstacles to dislocations) and their slow healing-out during the 300 °C anneal.",
+        "block_id": [
+          "b0026",
+          "b0055"
+        ]
+      },
+      "interface_set_id": "interface_fe16al_monocrystal",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_aln_matrix",
+          "microstructure_id": "micro_monocrystal_matrix",
+          "phase_1_name": {
+            "value": "AlN inclusion"
+          },
+          "phase_2_name": {
+            "value": "Fe-16%Al monocrystal matrix"
+          },
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "int_excess_vacancy_dislocation",
+          "microstructure_id": "micro_monocrystal_matrix",
+          "interaction_type": {
+            "value": "excess vacancies acting as obstacles to dislocation movement"
+          },
+          "qualitative_or_quantitative_description": {
+            "value": "Excess vacancies produced by the 1100 °C quench are immobile at low temperature, are effective obstacles to dislocation movement and contribute to hardening; they are only slowly healed out by the 300 °C/14 d anneal."
+          }
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": null,
+      "interface_notes": {
+        "value": "The sample is a monocrystal with no grain boundaries; the only second phase are rare globular AlN inclusions (up to 30 µm). Interfaces were not further characterized in this work."
+      }
+    }
+  ],
+  "properties": [
+    {
+      "source": {
+        "reason": "Microhardness (Fig. 1) of the (111)-oriented Fe-16%Al monocrystal as a function of prior heat treatment, including the 1100 °C Q + 300 °C/14 d condition (Q*+300°C/14d).",
+        "block_id": [
+          "figure_001",
+          "b0029",
+          "b0050",
+          "b0055"
+        ]
+      },
+      "property_set_id": "props_hardness_q1100_300c14d",
+      "measurement_conditions": {
+        "temperature": {
+          "value": "room temperature"
+        },
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": {
+          "value": "(111)-oriented Fe-16%Al monocrystal"
+        },
+        "test_standard": null,
+        "other_conditions": {
+          "value": "prior heat treatment: water quench from 1100 °C (Q*) + 300 °C/14 d anneal; HU defined as HU = F/(26.43·h²) [N/mm²]; values are averages of >40 measurements"
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "source": {
+              "reason": "Fig. 1 plots microhardness HU at room temperature for (111)-oriented Fe-16%Al monocrystals vs prior heat treatment; the quench-related conditions Q* and Q*+300°C/14d are the highest points, both plotted above the 2050 N/mm² gridline. b0050 states that higher hardness values were obtained by quenching from 1100 °C without and with subsequent anneal, and b0055 notes the quenched hardness is slightly reduced by the 300 °C anneal after quenching.",
+              "block_id": [
+                "figure_001",
+                "b0029",
+                "b0050",
+                "b0053",
+                "b0055"
+              ]
+            },
+            "region": {
+              "value": "(111)-oriented Fe-16%Al monocrystal"
+            },
+            "value": {
+              "value": "> 2050 N/mm² (highest of the plotted heat-treatment conditions; above the 2050 N/mm² gridline)"
+            },
+            "scale": {
+              "value": "HU (universal hardness)"
+            },
+            "unit": {
+              "value": "N/mm²"
+            },
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "source": {
+        "reason": "Compressive stress-strain behaviour (Fig. 2) of the [112]-oriented Fe-16%Al monocrystal at room temperature, showing the '1100°C Q + 300°C/14d' curve as the highest of the prior heat treatments.",
+        "block_id": [
+          "figure_002",
+          "b0031",
+          "b0034",
+          "b0051"
+        ]
+      },
+      "property_set_id": "props_compression_q1100_300c14d",
+      "measurement_conditions": {
+        "temperature": {
+          "value": "room temperature"
+        },
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": {
+          "value": "10^-4 s^-1"
+        },
+        "specimen_geometry": {
+          "value": "[112]-oriented Fe-16%Al monocrystal (compression)"
+        },
+        "test_standard": null,
+        "other_conditions": {
+          "value": "uniaxial compression; prior heat treatment: water quench from 1100 °C + 300 °C/14 d anneal; 0.2% proof-stress method with total straining of at least 5%"
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "source": {
+                "reason": "Fig. 2 shows the compressive stress-strain curves of [112]-oriented Fe-16%Al monocrystals at RT (10^-4 s^-1); the '1100°C Q + 300°C/14d' curve is the upper curve and its plateau sits between the 450 and 500 MPa gridlines. b0051 states that a higher yield stress was produced by quenching from 1100 °C and subsequent anneal.",
+                "block_id": [
+                  "figure_002",
+                  "b0031",
+                  "b0034",
+                  "b0051"
+                ]
+              },
+              "direction": {
+                "value": "[112]"
+              },
+              "value": {
+                "value": "≈ 450–500 MPa (plateau of the highest curve, between the 450 and 500 MPa gridlines)"
+              },
+              "unit": {
+                "value": "MPa"
+              },
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": {
+            "value": "Compressive stress-strain curve at RT and 10^-4 s^-1 for the [112]-oriented Fe-16%Al monocrystal after 1100 °C Q + 300 °C/14 d: steep elastic rise, knee at roughly 1.5–2% strain, then a nearly flat plateau with only slight hardening out to ~5.5% strain, at the highest stress level of the four heat-treatment curves (~450–500 MPa)."
+          },
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "b0018 describes the Fischerscope H100 microhardness method and the HU formula; Fig. 1 / b0050 report the hardness vs heat-treatment results.",
+        "block_id": [
+          "b0018",
+          "figure_001",
+          "b0050"
+        ]
+      },
+      "characterization_id": "char_microhardness",
+      "microstructure_id": "micro_monocrystal_matrix",
+      "technique": {
+        "value": "microhardness testing / universal hardness (HU)"
+      },
+      "instrument_or_setup": {
+        "value": "Fischerscope H100 microhardness tester (maximum load 1 N)"
+      },
+      "measurement_conditions": {
+        "value": "room temperature; HU = F/(26.43·h²) [N/mm²] with indentation force F and depth h; reported HU values are averages of more than 40 measurements"
+      },
+      "purpose": {
+        "value": "Determine the effect of prior heat treatment (including 1100 °C Q + 300 °C/14 d) on the hardness of (111)-oriented Fe-16%Al monocrystals"
+      },
+      "key_findings": {
+        "value": "Heat treatment changes HU by only about 5–10% around 2000 N/mm²; the 1100 °C Q + 300 °C/14 d condition shows the highest hardness (>2050 N/mm²). Short-range ordering has no major impact on hardness."
+      }
+    },
+    {
+      "source": {
+        "reason": "b0019 describes the compression-test procedure (0.2% proof stress, rates, specimen dimensions); Fig. 2 / b0031 report the compressive stress-strain results.",
+        "block_id": [
+          "b0019",
+          "b0031",
+          "figure_002"
+        ]
+      },
+      "characterization_id": "char_compression_testing",
+      "microstructure_id": "micro_monocrystal_matrix",
+      "technique": {
+        "value": "uniaxial compression testing (yield stress / stress-strain)"
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": {
+        "value": "room temperature, compression rate 10^-4 s^-1; specimen dimensions 5×5×10 mm; monocrystals polished with 3 µm diamond paste; 0.2% proof stress"
+      },
+      "purpose": {
+        "value": "Study the compressive stress-strain behaviour of the [112]-oriented Fe-16%Al monocrystal as a function of prior heat treatment"
+      },
+      "key_findings": {
+        "value": "The '1100°C Q + 300°C/14d' condition gives the highest plateau stress (~450–500 MPa); the effect of heat treatment on the flow stress is only modest."
+      }
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Sample composition (Table 1, monocrystal nominal 16 at.% Al): real Al content 16.0 at.% (8.4 wt.-%), impurities C 45 wt.ppm, Si 40 wt.ppm, O 60 wt.ppm.",
+    "Quenching from 1100 °C produces excess vacancies that contribute to hardening; the 300 °C anneal after quenching reduces the quenched hardness only slightly, and even 14 days at 300 °C may not be sufficient for complete elimination of the excess vacancies (slow healing-out kinetics).",
+    "The present results contrast with Davies, who reported a 25% increase of the yield stress of a quenched Fe-16.5%Al alloy by a short 1 h anneal at 300 °C (alloy preparation and impurity content not given).",
+    "Related but distinct treatment (NOT this sample's 300 °C anneal): no carbides were detected in the Fe-16%Al monocrystal with 45 ppm C after a heat treatment of 14 days at 320 °C; without any heat treatment no carbides were found in any monocrystal (b0026)."
+  ]
+}

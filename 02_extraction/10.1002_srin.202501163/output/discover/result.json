@@ -1,0 +1,542 @@
+{
+  "schema_version": "sample-discover-v1",
+  "paper_id": "10.1002_srin.202501163",
+  "domain": "materials",
+  "paper": {
+    "paper_id": "10.1002_srin.202501163",
+    "doi": "10.1002/srin.202501163",
+    "title": "Microstructural Modulation through Process Control Leading to Ultrastrong Ductile Fe–10Al–15Mn–0.8C–5Ni wt% Low-Density Steel",
+    "authors": [
+      "Sadhan Ghosh",
+      "Sourav Das"
+    ],
+    "publication_year": null,
+    "journal": null,
+    "keywords": [
+      "B2 stringer bands",
+      "fracture",
+      "lighter steel",
+      "precipitation analysis",
+      "rolling"
+    ],
+    "research_type": "mixed",
+    "paper_scope": "Investigation of microstructural modulation of Fe–10Al–15Mn–0.8C–5Ni wt% low-density austenitic steel through hot rolling, cold rolling, and annealing process control, aiming to refine B2 stringer bands and control intra-/intergranular B2 precipitation for ultrastrong, ductile, crack-resistant steel for automotive body-in-white applications."
+  },
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "alloy_name": "Fe–10Al–15Mn–0.8C–5Ni wt% low-density steel",
+      "aliases": [
+        "Fe–15Mn–10Al–0.8C–5Ni",
+        "Fe–10Al–15Mn–0.8C–5Ni wt% austenitic (γ) steel",
+        "low-density steel",
+        "lighter steel"
+      ],
+      "description": "Low-density austenitic (γ) steel designed by partially substituting Fe with lighter Al to reduce density; Ni addition catalyzes ordered B2 (Fe-Al) second-phase particles in the γ-matrix for precipitation strengthening, intended for automotive body-in-white sheet applications.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Al",
+        "Mn",
+        "C",
+        "Ni"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "10",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "15",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.8",
+          "atomic_percent": null
+        },
+        {
+          "element": "Ni",
+          "weight_percent": "5",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Fe is the balance and is not separately quantified in the text. The high Al content (10 wt%) stabilizes ~27% δ-ferrite during solidification-casting. The B2 second phase was characterized as Fe(Ni,Mn)Al with negligible carbon solubility.",
+      "source": {
+        "reason": "全文唯一研究对象合金成分；摘要(b0003)与实验部分(b0010)明确给出 Fe–10Al–15Mn–0.8C–5Ni wt%（等价写法 Fe–15Mn–10Al–0.8C–5Ni）。",
+        "block_id": [
+          "b0003",
+          "b0010",
+          "b0006"
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_as-cast",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_name": "As-cast (solidification-casting)",
+      "state_label": "as-cast",
+      "aliases": [
+        "as-cast sample",
+        "solidification-casting"
+      ],
+      "parent_process_ids": [],
+      "description": "Solidification-casting (vacuum arc melting) state containing ~27% δ-ferrite retained in the austenite matrix at room temperature, with significant dendrite fractions.",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0017/b0042 报告铸态组织含 27% δ-铁素体；b0020(Figure 2a)展示 as-cast 中 δ-铁素体。",
+        "block_id": [
+          "b0017",
+          "b0020",
+          "b0042"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_homog-1150c-2h",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_name": "Homogenization at 1150 °C for 2 h",
+      "state_label": null,
+      "aliases": [
+        "homogenization treatment"
+      ],
+      "parent_process_ids": [
+        "proc_as-cast"
+      ],
+      "description": "Homogenization of the as-cast alloy at 1150 °C for 2 h in a muffle furnace, promoting solute partitioning from γ to δ and transforming δ toward B2.",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0010 给出均质化工艺(1150 °C/2 h)；b0017 说明均质化使 δ 向 B2 转变。",
+        "block_id": [
+          "b0010",
+          "b0017"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_hr-std",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_name": "Hot rolling (HR), 9 passes at 1050–900 °C, air-cooled",
+      "state_label": "HR",
+      "aliases": [
+        "HR",
+        "hot rolling",
+        "hot rolled",
+        "sole HR sample"
+      ],
+      "parent_process_ids": [
+        "proc_homog-1150c-2h"
+      ],
+      "description": "Standard hot rolling reducing ingot thickness from 14 to 3 mm by nine passes at 1050 °C (finish rolling temperature 900 °C), air-cooled; mill speed 1 rpm (the 'previous case').",
+      "processes_notes": "Standard (slow, 1 rpm) HR used in the first processing route; dendrite fraction reduces from 27% (as-cast) to ~19% after HR.",
+      "source": {
+        "reason": "b0010 给出标准 HR 工艺(14→3 mm、9 道次、1050→900 °C、空冷)；b0018 说明 HR 使枝晶变为条带；b0032 提及此为标准 1 rpm 情形。",
+        "block_id": [
+          "b0010",
+          "b0018",
+          "b0032"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_cr-std",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_name": "Cold rolling (CR), 3 to 2 mm at room temperature",
+      "state_label": "CR",
+      "aliases": [
+        "CR",
+        "cold rolling",
+        "cold rolled"
+      ],
+      "parent_process_ids": [
+        "proc_hr-std"
+      ],
+      "description": "Cold rolling at room temperature reducing plate thickness from 3 to 2 mm after standard HR.",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0010 给出标准 CR 工艺(室温、3→2 mm)；b0018 说明 CR 进一步减薄 B2 条带。",
+        "block_id": [
+          "b0010",
+          "b0018"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ann-900c-5min",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_name": "Annealing at 900 °C for 5 min + water quench",
+      "state_label": "A5",
+      "aliases": [
+        "A5",
+        "annealed 5 min",
+        "5 min annealing"
+      ],
+      "parent_process_ids": [
+        "proc_cr-std"
+      ],
+      "description": "Annealing of the standard-route CR sheet at 900 °C for 5 min followed by water quenching.",
+      "processes_notes": "Standard annealing route (HR + CR + 900 °C/5–30 min + WQ); samples denoted A5/A10/A15/A30 by annealing time.",
+      "source": {
+        "reason": "b0010 给出 900 °C/5–30 min 退火+水淬及 A5 命名；b0019/b0021 提及 5 min 退火样品。",
+        "block_id": [
+          "b0010",
+          "b0019",
+          "b0021"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ann-900c-10min",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_name": "Annealing at 900 °C for 10 min + water quench",
+      "state_label": "A10",
+      "aliases": [
+        "A10",
+        "annealed 10 min"
+      ],
+      "parent_process_ids": [
+        "proc_cr-std"
+      ],
+      "description": "Annealing of the standard-route CR sheet at 900 °C for 10 min followed by water quenching.",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0010 列出 A5/A10/A15/A30 样品；b0029 提及 A10 与 A15 的拉伸强度对比。",
+        "block_id": [
+          "b0010",
+          "b0029"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ann-900c-15min",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_name": "Annealing at 900 °C for 15 min + water quench",
+      "state_label": "A15",
+      "aliases": [
+        "A15",
+        "annealed 15 min"
+      ],
+      "parent_process_ids": [
+        "proc_cr-std"
+      ],
+      "description": "Annealing of the standard-route CR sheet at 900 °C for 15 min followed by water quenching.",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0010 列出 A15；b0021(Figure 3)展示 15 min 退火样品；b0029 提及 A15 拉伸强度高于 A10。",
+        "block_id": [
+          "b0010",
+          "b0021",
+          "b0029"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ann-900c-30min",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_name": "Annealing at 900 °C for 30 min + water quench",
+      "state_label": "A30",
+      "aliases": [
+        "A30",
+        "longer annealed A30",
+        "annealed 30 min"
+      ],
+      "parent_process_ids": [
+        "proc_cr-std"
+      ],
+      "description": "Annealing of the standard-route CR sheet at 900 °C for 30 min followed by water quenching.",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0010 列出 A30；b0021(Figure 3)展示 30 min 退火样品；b0023 描述 longer annealed A30 的 TEM 组织。",
+        "block_id": [
+          "b0010",
+          "b0021",
+          "b0023"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_hr-mod-10rpm",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_name": "Modified high-speed hot rolling at 10 rpm",
+      "state_label": "modified HR",
+      "aliases": [
+        "high speed HR",
+        "10 rpm HR",
+        "modified hot rolling"
+      ],
+      "parent_process_ids": [
+        "proc_homog-1150c-2h"
+      ],
+      "description": "High-speed hot rolling at 10 rpm (versus 1 rpm in the previous case), reducing plate thickness from 14 to 2 mm (slightly more).",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0032 描述改进工艺采用 10 rpm 高速 HR，将厚度由 14 减至 2 mm(略多)。",
+        "block_id": [
+          "b0032"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_cr-mod",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_name": "Cold rolling with 1 mm thickness reduction (modified route)",
+      "state_label": "modified CR",
+      "aliases": [
+        "modified CR"
+      ],
+      "parent_process_ids": [
+        "proc_hr-mod-10rpm"
+      ],
+      "description": "Cold rolling with a 1 mm thickness reduction applied after the high-speed HR in the modified route.",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0032 描述改进工艺在高速 HR 后进行 1 mm 减薄的 CR。",
+        "block_id": [
+          "b0032"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ann-mod-900c-5min",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_name": "Annealing at 900 °C for 5 min + water quench (modified route)",
+      "state_label": "A5 (modified)",
+      "aliases": [
+        "modified A5",
+        "less annealed A5"
+      ],
+      "parent_process_ids": [
+        "proc_cr-mod"
+      ],
+      "description": "Annealing at 900 °C for 5 min followed by water quenching after modified high-speed HR + CR.",
+      "processes_notes": "Modified route annealing was performed for 5–30 min; explicitly labeled samples are A5, A15, A30.",
+      "source": {
+        "reason": "b0032 说明改进工艺采用与前述相同的 5–30 min 退火，且 less annealed A5 强度更高；b0036(Figure 6)标注 modified A5。",
+        "block_id": [
+          "b0032",
+          "b0036"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ann-mod-900c-15min",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_name": "Annealing at 900 °C for 15 min + water quench (modified route)",
+      "state_label": "A15 (modified)",
+      "aliases": [
+        "modified A15"
+      ],
+      "parent_process_ids": [
+        "proc_cr-mod"
+      ],
+      "description": "Annealing at 900 °C for 15 min followed by water quenching after modified high-speed HR + CR.",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0036(Figure 6)标注 modified A15；b0032 说明改进工艺采用 5–30 min 退火。",
+        "block_id": [
+          "b0032",
+          "b0036"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ann-mod-900c-30min",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_name": "Annealing at 900 °C for 30 min + water quench (modified route)",
+      "state_label": "A30 (modified)",
+      "aliases": [
+        "modified A30",
+        "longer annealed A30 (modified)"
+      ],
+      "parent_process_ids": [
+        "proc_cr-mod"
+      ],
+      "description": "Annealing at 900 °C for 30 min followed by water quenching after modified high-speed HR + CR, giving the best ductility and toughness.",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0032 说明 longer annealed A30 韧性最佳；b0036(Figure 6)标注 modified A30。",
+        "block_id": [
+          "b0032",
+          "b0036"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe-10al-15mn-0.8c-5ni__as-cast",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_id": "proc_as-cast",
+      "sample_label": "as-cast",
+      "aliases": [
+        "as-cast sample"
+      ],
+      "source": {
+        "reason": "铸态样品由同一合金经凝固铸造得到；b0017 描述 as-cast 组织，b0020(Figure 2a)展示其 δ-铁素体。",
+        "block_id": [
+          "b0017",
+          "b0020"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-10al-15mn-0.8c-5ni__hr-std",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_id": "proc_hr-std",
+      "sample_label": "HR",
+      "aliases": [
+        "HR sample",
+        "sole HR sample",
+        "hot rolled sheet"
+      ],
+      "source": {
+        "reason": "标准热轧态样品；b0010 描述 HR 板，b0012/b0029 报告对 HR 样品进行拉伸测试。",
+        "block_id": [
+          "b0010",
+          "b0012",
+          "b0029"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-10al-15mn-0.8c-5ni__cr-std",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_id": "proc_cr-std",
+      "sample_label": "CR",
+      "aliases": [
+        "CR sample",
+        "cold rolled sheet"
+      ],
+      "source": {
+        "reason": "标准冷轧态样品；b0010 描述 CR 板，b0012/b0029 报告对 CR 样品进行拉伸测试。",
+        "block_id": [
+          "b0010",
+          "b0012",
+          "b0029"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-10al-15mn-0.8c-5ni__ann-900c-5min",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_id": "proc_ann-900c-5min",
+      "sample_label": "A5",
+      "aliases": [],
+      "source": {
+        "reason": "标准路线 900 °C/5 min 退火样品 A5；b0010 命名，b0021(Figure 3)展示。",
+        "block_id": [
+          "b0010",
+          "b0021"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-10al-15mn-0.8c-5ni__ann-900c-10min",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_id": "proc_ann-900c-10min",
+      "sample_label": "A10",
+      "aliases": [],
+      "source": {
+        "reason": "标准路线 900 °C/10 min 退火样品 A10；b0010 命名，b0029 提及 A10。",
+        "block_id": [
+          "b0010",
+          "b0029"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-10al-15mn-0.8c-5ni__ann-900c-15min",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_id": "proc_ann-900c-15min",
+      "sample_label": "A15",
+      "aliases": [],
+      "source": {
+        "reason": "标准路线 900 °C/15 min 退火样品 A15；b0010 命名，b0021(Figure 3)展示，b0029 提及 A15。",
+        "block_id": [
+          "b0010",
+          "b0021",
+          "b0029"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-10al-15mn-0.8c-5ni__ann-900c-30min",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_id": "proc_ann-900c-30min",
+      "sample_label": "A30",
+      "aliases": [
+        "longer annealed A30"
+      ],
+      "source": {
+        "reason": "标准路线 900 °C/30 min 退火样品 A30；b0010 命名，b0021(Figure 3)展示，b0023 进行 TEM 分析。",
+        "block_id": [
+          "b0010",
+          "b0021",
+          "b0023"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-10al-15mn-0.8c-5ni__ann-mod-900c-5min",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_id": "proc_ann-mod-900c-5min",
+      "sample_label": "A5 (modified)",
+      "aliases": [
+        "modified A5",
+        "less annealed A5"
+      ],
+      "source": {
+        "reason": "改进路线(高速 HR+CR)900 °C/5 min 退火样品；b0032 提及 less annealed A5，b0036(Figure 6)标注 modified A5。",
+        "block_id": [
+          "b0032",
+          "b0036"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-10al-15mn-0.8c-5ni__ann-mod-900c-15min",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_id": "proc_ann-mod-900c-15min",
+      "sample_label": "A15 (modified)",
+      "aliases": [
+        "modified A15"
+      ],
+      "source": {
+        "reason": "改进路线 900 °C/15 min 退火样品；b0036(Figure 6)标注 modified A15。",
+        "block_id": [
+          "b0036"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-10al-15mn-0.8c-5ni__ann-mod-900c-30min",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_id": "proc_ann-mod-900c-30min",
+      "sample_label": "A30 (modified)",
+      "aliases": [
+        "modified A30",
+        "longer annealed A30 (modified)"
+      ],
+      "source": {
+        "reason": "改进路线 900 °C/30 min 退火样品；b0032 说明 longer annealed A30 韧性最佳，b0036(Figure 6)标注 modified A30。",
+        "block_id": [
+          "b0032",
+          "b0036"
+        ]
+      }
+    }
+  ],
+  "unmapped_findings": [
+    "Reported final mechanical properties after process control: nearly 1 GPa yield strength, 28% total elongation, and toughness up to 1.72 kJ/mol (238 J/cm³).",
+    "The B2 second phase (Fe-Al-based intermetallic) was characterized as Fe(Ni,Mn)Al, enriched in Fe, Mn, Al, and Ni with negligible carbon solubility.",
+    "High-speed HR refines B2 stringer bands, reducing the stringer band fraction from 16% to 11%, thereby enhancing the austenite fraction and delaying crack propagation."
+  ]
+}

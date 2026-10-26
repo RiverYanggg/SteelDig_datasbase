@@ -1,0 +1,579 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-9al-1.5c-3cr__hr-ufc",
+      "paper_id": "10.1016_j.jmrt.2024.07.188",
+      "alloy_id": "alloy_fe-20mn-9al-1.5c-3cr",
+      "process_id": "proc_hr-ufc",
+      "sample_label": "3Cr",
+      "aliases": [
+        "3Cr steel",
+        "UFCed 3Cr steel",
+        "Fe-20Mn-9Al-1.5C-3Cr"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "high-purity Ar atmosphere",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Four ingots with nominal compositions Fe–20Mn–9Al-1.5C-xNi-yCr (x = 0, 2 wt%, y = 0, 3, 5 wt%) prepared by vacuum induction melting under high-purity Ar; the 3Cr ingot corresponds to x=0, y=3."
+    },
+    {
+      "processing_step_id": "step_2_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "As-cast ingots homogenized at 1200 °C for 2 h."
+    },
+    {
+      "processing_step_id": "step_3_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling (HR)",
+      "temperature": "initial 1040–1060 °C; finishing 950–970 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "95% thickness reduction",
+      "processing_steps_notes": "Ingots were hot-rolled to 4 mm-thick sheets with 95% thickness reduction; initial rolling temperature 1040–1060 °C and finishing temperature 950–970 °C."
+    },
+    {
+      "processing_step_id": "step_4_ufc",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "online ultrafast cooling (UFC)",
+      "temperature": "ambient temperature",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water (efficient-use-water ultrafast-cooled device ADCOS-PM)",
+      "heating_or_cooling_rate": "~40 °C/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Plate was online ultrafast cooled to ambient temperature at ~40 °C/s using the in-house ADCOS-PM device."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_overall_3cr",
+      "overall_structure": "Single equiaxed face-centred cubic (FCC) γ austenite phase, fully recrystallized, with a high fraction of Σ3 twin boundaries; no B2 (BCC) phase detected by EBSD or XRD.",
+      "number_of_phases": "1 (single γ austenite)",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_grains_3cr",
+          "region": "bulk (hot-rolled + UFCed sheet)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite (FCC)",
+              "crystal_structure": "face-centred cubic (FCC)",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains with high fraction of Σ3 twin boundaries",
+              "grain_size": null,
+              "texture": "no strong texture (mixed-colour IPF, equiaxed)"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "7.63 μm (excluding twin boundaries); 3.51 μm (including twin boundaries)",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "no strong texture observed in EBSD IPF map"
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_lro_3cr",
+          "region": "γ matrix (bulk)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "long-range ordered (LRO) domains / ordered γ (E21-related superlattice)",
+              "crystal_structure": null,
+              "volume_fraction": "very low (superlattice diffraction intensity low; quantitative estimate not possible from DF)",
+              "morphology": "ellipsoidal, spatially localized domains with interconnected morphology typical of spinodal decomposition, homogeneously distributed in the γ matrix",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_lro_3cr",
+              "type": "LRO nanodomains (ordered domains; the 3Cr steel forms LRO domains rather than κ-carbides)",
+              "size": {
+                "value": "~1.75 nm",
+                "unit": "nm"
+              },
+              "distribution": "homogeneously distributed in the γ matrix",
+              "coherency": "coherent with the γ austenite matrix (faint superlattice reflections at 1/2{0-22}γ and/or 1/2{200}γ positions)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_3cr",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_lro_matrix",
+          "microstructure_id": "micro_lro_3cr",
+          "phase_1_name": "LRO domains / ordered structure",
+          "phase_2_name": "γ austenite matrix",
+          "coherence": "coherent (faint superlattice reflections at 1/2{0-22}γ and/or 1/2{200}γ; interconnected spinodal-like morphology)"
+        },
+        {
+          "interface_id": "iface_twin_boundary",
+          "microstructure_id": "micro_grains_3cr",
+          "phase_1_name": "γ austenite grain",
+          "phase_2_name": "Σ3 twin boundary (twin/matrix)",
+          "coherence": "coherent Σ3 annealing twin boundaries"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "def_inter_1",
+          "microstructure_id": "micro_grains_3cr",
+          "interaction_type": "dislocation slip constrained within planar slip bands; dislocation multipoles localized within {111} slip bands",
+          "qualitative_or_quantitative_description": "At 3% strain, [011](1-11) slip system Schmid factor 0.52; dislocation multipoles localized within {111} slip bands, dislocations constrained within planar (1-11) slip bands and interacting (1-11)/(11-1) slip bands."
+        },
+        {
+          "interaction_id": "def_inter_2",
+          "microstructure_id": "micro_grains_3cr",
+          "interaction_type": "high-density dislocation arrays (HDDA) restricted by intersecting planar slip bands; dynamic slip band refinement (DSBR)",
+          "qualitative_or_quantitative_description": "At 10% strain, slip-band spacing narrows, slip-band number increases, dislocation density increases; (1-11) and (11-1) slip bands carry high-density dislocation arrays (HDDA) restricted by the (1-11) and (11-1) planar slip bands."
+        },
+        {
+          "interaction_id": "def_inter_3",
+          "microstructure_id": "micro_grains_3cr",
+          "interaction_type": "deformation twinning and stacking faults near fracture",
+          "qualitative_or_quantitative_description": "At ~54% strain (LD), nanometre-width deformation twins and dozens of nanometre-width stacking faults observed; twins appear only near the fracture surfaces so their contribution to overall ductility/strain hardening is expected to be very limited; 3Cr steel deformation dominated by HDDA and dislocation slip with strain hardenability mainly from HDDA densification and DSBR."
+        }
+      ],
+      "slip_behavior": "Planar dislocation slip dominates the whole deformation of 3Cr steel: at 3% strain planar slip bands/multipoles; at 10% strain (1-11) and (11-1) intersecting planar slip bands with HDDA; at ~54% (LD) high-density dislocations, very fine slip bands, nanometre-width deformation twins and stacking faults.",
+      "phase_evolution": "No B2/second phase in the as-processed state; Cr addition suppresses κ-carbide formation and, at high Cr content, stabilizes LRO domains instead of κ-carbides; the 3Cr steel forms LRO domains homogeneously distributed in the γ matrix.",
+      "interface_notes": "The 3Cr steel (x=0 Ni, y=3 Cr) contains LRO domains rather than κ-carbides; κ-carbide/LRO domain size decreases with increasing Cr content (largest in 2Ni, smallest in 3Cr)."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_tensile_3cr",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": "air (ambient)",
+        "strain_rate": "crosshead speed 3 mm/min",
+        "specimen_geometry": "EDM-cut tensile specimens along rolling direction (RD), gauge length 25 mm, thickness 3 mm, width 7 mm; laser extensometer to monitor strain; at least three specimens",
+        "test_standard": null,
+        "other_conditions": "Interrupted tensile tests to engineering strains of 3% (or 5%) and 10% were also performed"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction (RD)",
+              "value": "969 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction (RD)",
+              "value": "1141 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction (RD)",
+              "value": "54.4%",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering and true stress–strain curves for 3Cr shown in Fig. 4a and Fig. 4b; 3Cr (black curve) shows the longest elongation (~0.55 engineering strain) with a lower flow plateau near 1100 MPa, reaching the highest true stresses (~1600–1800 MPa band) at the largest strains",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "value": "3Cr strain-hardening curve shows a sharp minimum at low strain, a maximum just above 2000 MPa near true strain 0.2–0.25, then decline to zero shortly before true strain 0.4; three stages I, II, III identified",
+              "unit": "MPa"
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "props_fracture_3cr",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "fractured tensile specimens",
+        "test_standard": null,
+        "other_conditions": "SEM fractography of the fibre zone and macroscopic fracture surface"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_3cr_benchmark",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "uniaxial tension (room temperature)",
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-20mn-9al-1.5c-2ni3cr",
+        "benchmark_process_id": "proc_hr-ufc",
+        "benchmark_sample_id": "sample_fe-20mn-9al-1.5c-2ni3cr__hr-ufc",
+        "comparison_metric": "yield strength (comparison between 3Cr and higher-Ni 2Ni3Cr steel with equivalent grain size)",
+        "improvement_percentage": "~141 MPa (2Ni3Cr higher than 3Cr)"
+      }
+    },
+    {
+      "performance_id": "perf_3cr_ductility_strength_balance",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "uniaxial tension",
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "TS × TEL = 62.07 GPa-% (product of tensile strength and total elongation) placing it above literature Fe-Al, Fe-Mn, Fe-Mn-C, Fe-Mn-Al-C, 301LN and 304 stainless steels in the YS vs TS×TEL plot",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_ebsd_3cr",
+      "microstructure_id": "micro_grains_3cr",
+      "technique": "Electron back-scatter diffraction (EBSD)",
+      "instrument_or_setup": "Zeiss Ultra55 scanning electron microscope; specimens prepared by vibration polishing with 50 nm colloidal silica for 2.5–24 h in a Buehler-VibroMet 2",
+      "measurement_conditions": "IPF and phase maps; 20 µm scale bars",
+      "purpose": "Reveal grain structure, phase constitution and grain size of the UFCed 3Cr steel",
+      "key_findings": "Fully recrystallized single equiaxed FCC γ phase with high fraction of Σ3 twin boundaries and no B2 phase; average grain size excluding twins 7.63 μm, including twins 3.51 μm; no strong texture"
+    },
+    {
+      "characterization_id": "char_xrd_3cr",
+      "microstructure_id": "micro_grains_3cr",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "2θ = 30–100°",
+      "purpose": "Phase identification of the 3Cr steel",
+      "key_findings": "Only five FCC austenite reflections γ(111), γ(200), γ(220), γ(311), γ(222); no B2/BCC reflection — confirms single-phase FCC γ austenite"
+    },
+    {
+      "characterization_id": "char_tem_bf_3cr",
+      "microstructure_id": "micro_grains_3cr",
+      "technique": "Transmission electron microscopy (TEM) bright-field imaging",
+      "instrument_or_setup": "FEI Tecnai G2 F20 operating at 200 kV; specimens prepared by EDM, ground to <80 μm, thinned with Struers TenuPol-3 (10 vol% perchloric acid + 90 vol% ethanol, 20 V, −30 °C)",
+      "measurement_conditions": "along [011]γ zone axis; 1 µm scale bars",
+      "purpose": "Confirm the γ austenite microstructure of the 3Cr steel",
+      "key_findings": "γ grains with annealing twins, dislocation lines and stacking-fault-like fringes; microstructure all γ austenite"
+    },
+    {
+      "characterization_id": "char_tem_df_3cr",
+      "microstructure_id": "micro_lro_3cr",
+      "technique": "TEM dark-field (DF) imaging",
+      "instrument_or_setup": "FEI Tecnai G2 F20 at 200 kV",
+      "measurement_conditions": "DF taken from a {110} LRO-type reflection; 20 nm scale bar",
+      "purpose": "Image the ordered LRO domains in the 3Cr steel",
+      "key_findings": "Very fine, faintly bright ordered domains (LRO domains) homogeneously dispersed in the γ matrix; the smallest of the four steels"
+    },
+    {
+      "characterization_id": "char_saed_3cr",
+      "microstructure_id": "micro_lro_3cr",
+      "technique": "Selected area electron diffraction (SAED)",
+      "instrument_or_setup": "FEI Tecnai G2 F20 at 200 kV",
+      "measurement_conditions": "along [011]γ (patterns labelled [011]γ//[011]LRO)",
+      "purpose": "Identify the ordered structure in the 3Cr steel",
+      "key_findings": "Very faint superlattice reflections at 1/2{0-22}γ and/or 1/2{200}γ positions but no satellite spots around γ reflections, indicating formation of LRO domains (not κ'-carbides) in the UFCed 3Cr steel; primary γ spots 000γ, 111γ, 100γ with weak 100LRO/011LRO superlattice spots"
+    },
+    {
+      "characterization_id": "char_hrtem_3cr",
+      "microstructure_id": "micro_lro_3cr",
+      "technique": "High-resolution TEM (HRTEM) and inverse-FFT (IFFT)",
+      "instrument_or_setup": "HRTEM along [011]γ zone axis; IFFT reconstructed using {011} and {100} superlattice reflections",
+      "measurement_conditions": "10 nm scale bars; FFT insets labelled 000, 111γ, 200γ, 100LRO, 011LRO",
+      "purpose": "Resolve the LRO domains at atomic scale and measure their size",
+      "key_findings": "LRO domains are ellipsoidal with interconnected morphology typical of spinodal decomposition; average size ~1.75 nm for the 3Cr steel (measured over >200 domains by Image-Pro Plus)"
+    },
+    {
+      "characterization_id": "char_sem_fracture_3cr",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM) fractography",
+      "instrument_or_setup": "SEM; secondary-electron images; 200 µm scale bars",
+      "measurement_conditions": "fibre zone of the fracture surface plus macroscopic fracture surface inset",
+      "purpose": "Characterize the fracture mode of the 3Cr steel",
+      "key_findings": "Dimpled microvoid-coalescence morphology with fine tear ridges and several larger deep circular holes plus a coarser elongated void region; ductile fracture mode"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_dft_formation_energy",
+      "simulation_method": "First-principles density functional theory (DFT) calculation of formation energies of possible (κ-)carbide structures in Fe–20Mn–9Al-1.5C steel",
+      "software_used": "Materials Project database (https://legacy.materialsproject.org/)",
+      "potential_model_or_database": "DFT with generalized gradient approximation (GGA) and Perdew-Burke-Ernzerhof (PBE) functional",
+      "boundary_and_initial_conditions": "Crystal structures considered: disordered γ, ordered γ (L12), κ-carbide (E21, (Fe,Mn)3AlC), AlNi3C, Cr21(FeC3)2, Fe2NiC",
+      "validation_against_experiment": "Calculated formation energies used to rationalize the observed κ-carbide/LRO domain size trend (Ni promotes, Cr suppresses) observed by TEM/DF for the 3Cr steel",
+      "analytical_models": []
+    },
+    {
+      "computation_id": "comp_strengthening_model_3cr",
+      "simulation_method": "Analytical yield-strength superposition model (linear combination of strengthening mechanisms)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Calculated total yield-strength contributions are compared with the measured yield strengths in Fig. 11; experimental values exceed the summed calculated contributions for all samples",
+      "analytical_models": [
+        {
+          "model_name": "Yield strength superposition (Equation 1)",
+          "equation_role": "σys = σ0 + σss + σgb + σprep; dislocation strengthening neglected for fully recrystallized Fe–Mn–Al–C steel",
+          "parameters": [
+            {
+              "name": "σ0 (friction stress)",
+              "value": "42",
+              "unit": "MPa"
+            },
+            {
+              "name": "G (shear modulus of austenite)",
+              "value": "70",
+              "unit": "GPa"
+            },
+            {
+              "name": "τ0",
+              "value": "2×10^-4 G",
+              "unit": null
+            }
+          ],
+          "model_note": "σ0 = 3τ0 with τ0 = 2×10^-4 G; with G = 70 GPa, σ0 = 42 MPa"
+        },
+        {
+          "model_name": "Hall–Petch grain-boundary strengthening",
+          "equation_role": "σgb = KHP · d_eff^-0.5",
+          "parameters": [
+            {
+              "name": "KHP (Hall–Petch coefficient)",
+              "value": "446.8",
+              "unit": "MPa·μm^0.5"
+            },
+            {
+              "name": "d_eff (3Cr, including twins)",
+              "value": "3.51",
+              "unit": "μm"
+            },
+            {
+              "name": "calculated σgb for 3Cr",
+              "value": "238.5",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "d_eff values from EBSD: 3.51, 3.73, 3.72, 2.2 μm for 3Cr, 2Ni, 2Ni3Cr, 2Ni5Cr; calculated σgb = 238.5, 231.3, 231.7, 301.2 MPa respectively"
+        },
+        {
+          "model_name": "Solid-solution strengthening (empirical)",
+          "equation_role": "σss = 279[C] + 1.5[Mn] + 20.5[Al] + 2.9[Ni] + 3.9[Cr]",
+          "parameters": [
+            {
+              "name": "calculated σss for 3Cr",
+              "value": "515.4",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "Computed σss for 3Cr, 2Ni, 2Ni3Cr, 2Ni5Cr = 515.4, 509.5, 557.2, 554.1 MPa respectively; bracket terms are wt% of dissolved elements"
+        },
+        {
+          "model_name": "Precipitation strengthening — ordering (Equation 2)",
+          "equation_role": "σ_order = Σ As·M·0.81·(γAPB/2b)·(3πfi/8)^(1/2)",
+          "parameters": [
+            {
+              "name": "As (strong obstacle factor)",
+              "value": "0.64",
+              "unit": null
+            },
+            {
+              "name": "M (Taylor factor)",
+              "value": "3.06",
+              "unit": null
+            },
+            {
+              "name": "γAPB (antiphase boundary energy)",
+              "value": "0.35",
+              "unit": "J/m^2"
+            },
+            {
+              "name": "b (Burgers vector)",
+              "value": "0.264",
+              "unit": "nm"
+            }
+          ],
+          "model_note": "For 3Cr, σ_order also contributes because some LRO nanodomains are smaller than the critical size; σ_order bars span ~0.5–1.0 nm with peak approaching ~15 MPa"
+        },
+        {
+          "model_name": "Precipitation strengthening — coherency + modulus mismatch (Equations 3 and 4)",
+          "equation_role": "σcoh = Σ As·M·αε·(Gεc)^(3/2)·(ri·fi/0.5Gb)^(1/2); σmod = Σ As·M·0.0055·(ΔG)^(3/2)·(2fi/G)^(1/2)·(ri/b)^((3m/2)-1)",
+          "parameters": [
+            {
+              "name": "ΔG (shear-modulus difference austenite/κ-carbide)",
+              "value": "23.3",
+              "unit": "GPa"
+            },
+            {
+              "name": "αε",
+              "value": "2.6",
+              "unit": null
+            },
+            {
+              "name": "m",
+              "value": "0.85",
+              "unit": null
+            },
+            {
+              "name": "εc (lattice mismatch)",
+              "value": "0.9",
+              "unit": "%"
+            }
+          ],
+          "model_note": "σprep taken as the larger of σ_order and σcoh+σmod; for the 3Cr steel σcoh+σmod is dominant (orange bars span ~1.0–2.3 nm, tallest near 15 MPa)"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The UFCed 3Cr steel (Fe-20Mn-9Al-1.5C-3Cr; measured composition C 1.31, Si 0.36, Mn 20.1, P 0.011, S 0.002, Al 8.21, Mo 0.51, Ni 0.18, Cr 2.88, Ti 0.01, Nb 0.03, Fe Bal. wt.%) has the highest total elongation (54.4%) among the four steels of the study but the lowest yield strength (969 MPa) and tensile strength (1141 MPa).",
+    "3Cr steel forms nanoscale long-range-ordering (LRO) domains instead of κ-carbides because of its high Cr content; Cr increases the κ-carbide formation energy and nucleation barrier, suppressing κ-carbide growth.",
+    "For the 3Cr steel the calculated formation energy of the Cr-rich carbide Cr21(FeC3)2 is −0.049 eV/atom (favourable but 0.111 eV/atom higher than the ideal κ-carbide (Fe,Mn)3AlC at −0.160 eV/atom), increasing the nucleation energy barrier.",
+    "Product of tensile strength and total elongation for the 3Cr steel is TS × TEL = 62.07 GPa-%, the highest among the four present steels (Table 2).",
+    "3Cr steel strain hardenability is mainly contributed by HDDA densification and dynamic slip band refinement (DSBR); deformation twins and stacking faults appear only near the fracture surfaces at very high strain (~54%, LD) and contribute very limited overall ductility.",
+    "For the 3Cr steel, the strengthening contributions calculated are σ0 = 42 MPa, σgb = 238.5 MPa and σss = 515.4 MPa, with precipitation strengthening (σcoh+σmod dominant, plus a non-negligible σ_order contribution) completing the σys superposition; experimental YS exceeds the summed calculated contributions (Fig. 11)."
+  ]
+}

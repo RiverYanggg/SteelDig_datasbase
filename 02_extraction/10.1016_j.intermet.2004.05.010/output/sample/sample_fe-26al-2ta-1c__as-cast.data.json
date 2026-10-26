@@ -1,0 +1,233 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-26al-2ta-1c__as-cast",
+      "paper_id": "10.1016_j.intermet.2004.05.010",
+      "alloy_id": "alloy_fe-26al-2ta-1c",
+      "process_id": "proc_as-cast",
+      "sample_label": "Fe-26Al-2Ta-1C",
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1",
+      "sequence": "1",
+      "type": "melting and casting",
+      "method": "vacuum induction melting and casting into cylindrical copper moulds",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": "cylindrical copper mould",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Moulds 32 mm diameter × 186 mm length; no further heat treatment reported (as-cast terminal state)."
+    },
+    {
+      "processing_step_id": "step_2",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "spark erosion cutting and surface grinding",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Mechanical test specimens were cut from cast ingots by spark erosion in the direction of the longitudinal axis of the ingot (casting direction); specimen surfaces were ground."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_1",
+      "overall_structure": "Fe3Al matrix with TaC precipitates (cube-like, script-like)",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": "bulk (matrix grains with precipitates)",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "Fe3Al",
+              "crystal_structure": "D0₃",
+              "volume_fraction": null,
+              "morphology": "Polygonal and partially zig-zag grains",
+              "grain_size": {
+                "value": "200",
+                "unit": "μm"
+              },
+              "texture": null
+            },
+            {
+              "phase_name": "TaC",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "Cube-like, script-like",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "200",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_1",
+              "type": "TaC (cube-like)",
+              "size": {
+                "value": "5",
+                "unit": "μm"
+              },
+              "distribution": null,
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_2",
+              "type": "TaC (script-like)",
+              "size": {
+                "value": "1",
+                "unit": "μm"
+              },
+              "distribution": null,
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "intfset_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_1",
+          "microstructure_id": "micro_1",
+          "phase_1_name": "Fe3Al",
+          "phase_2_name": "TaC",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": null,
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_rt",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-4 s^-1",
+        "specimen_geometry": "compression samples (6×6×10) mm³; tensile flat samples (3.5×5) mm² cross-section with 15 mm gauge length",
+        "test_standard": null,
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "compression",
+              "value": "594",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering compression stress-strain curve (curve 12 in Fig. 2b) for Fe-26Al-2Ta-1C shows nearly constant hardening rate over long strain intervals, in the group of carbide-forming alloys that harden at nearly constant rate.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "matrix",
+            "value": "288",
+            "scale": "Brinell",
+            "unit": "HB",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_1",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "650",
+          "max": "800",
+          "unit": "°C"
+        },
+        "stress_state": "uniaxial compression and tension",
+        "environment": "protective argon atmosphere"
+      },
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Yield stress in compression/tension vs binary Fe-26Al reference; at elevated temperatures all Fe-Al-M-C alloys show strengthening effects relative to the corresponding binary reference alloys.",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": "micro_1",
+      "technique": "Brinell hardness",
+      "instrument_or_setup": "load 62.5 g, indentation ball 2.5 mm diameter",
+      "measurement_conditions": "matrix hardness at room temperature",
+      "purpose": "Provide preliminary information on mechanical properties of the matrix.",
+      "key_findings": "Fe-26Al-2Ta-1C matrix hardness = 288 HB."
+    },
+    {
+      "characterization_id": "char_mech_testing",
+      "microstructure_id": null,
+      "technique": "uniaxial compression and tension testing",
+      "instrument_or_setup": "ZWICK 1474 universal testing machine",
+      "measurement_conditions": "deformation rate 10^-4 s^-1; elevated-temperature tests in protective argon atmosphere within a radiation furnace; specimens held 30 min at testing temperature before loading; temperature checked by NiCr-Ni thermocouple on specimen surface",
+      "purpose": "Determine yield stress in compression/tension, ductility, and hardening behaviour at room and elevated temperatures.",
+      "key_findings": "Fe-26Al-2Ta-1C: room-temperature compressive yield stress 594 MPa; tensile yield stress and total elongation not determined ('-'); brittle behaviour with IGD+TGC fracture."
+    },
+    {
+      "characterization_id": "char_sem_fracture",
+      "microstructure_id": null,
+      "technique": "SEM fractography (secondary electrons)",
+      "instrument_or_setup": "SEM-Hitachi S-530, 20 kV, working distance 15 mm",
+      "measurement_conditions": "secondary electrons (SE), 10 μm scale bar in fractographs",
+      "purpose": "Investigate fracture surfaces of ruptured tensile specimens.",
+      "key_findings": "Fe-26Al-2Ta-1C fracture surface is partially intergranular (smooth) and partially transgranular (facetted), corresponding to IGD+TGC."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Room-temperature tensile yield stress and total elongation for Fe-26Al-2Ta-1C are reported as '-' (not determined) in Table 2, so no tensile strength/ductility values are available for this as-cast sample.",
+    "Fracture mode of Fe-26Al-2Ta-1C at room temperature is IGD+TGC (intergranular decohesion + transgranular cleavage); the SEM fractograph (Fig. 4l) shows partially intergranular (smooth) and partially transgranular (facetted) fracture.",
+    "In elevated-temperature compression tests, Fe-26Al-2Ta-1C (like other Nb/Ta-containing Fe-26Al alloys) shows its yield-stress-anomaly peak shifted towards lower temperatures and higher stresses compared with binary Fe-26Al; no numeric peak temperature/stress is reported for this specific alloy.",
+    "At 650 °C and 800 °C, the compressive yield stress of Fe-26Al-2Ta-1C exceeds its tensile yield stress, consistent with the tension-compression asymmetry reported for all investigated alloys (Figs. 7 and 8).",
+    "Fe-26Al-2Ta-1C is one of the Nb/Ta-containing alloys reported to show the highest strengthening effects at room temperature and at elevated temperatures relative to other Fe-Al-M-C alloys."
+  ]
+}

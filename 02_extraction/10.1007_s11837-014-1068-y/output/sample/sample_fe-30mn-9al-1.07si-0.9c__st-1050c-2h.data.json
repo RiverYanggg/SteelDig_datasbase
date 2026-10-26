@@ -1,0 +1,294 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-1.07si-0.9c__st-1050c-2h",
+      "paper_id": "10.1007_s11837-014-1068-y",
+      "alloy_id": "alloy_fe-30mn-9al-1.07si-0.9c",
+      "process_id": "proc_st-1050c-2h",
+      "sample_label": "1.07% Si solution treated",
+      "aliases": [
+        "1.07% Si",
+        "0.001% P solution treated",
+        "1% Si solution treated"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_solution_treatment",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "water quench",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution treatment at 1050°C for 2 h followed by water quench to produce a fully austenitic matrix. The cast steel was calcium treated with Ar stirring (melt practice) prior to this heat treatment."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_1_solution_treated",
+      "overall_structure": "Fully austenitic single-phase matrix in the solution-treated condition; XRD and TEM confirmed that no spinodal decomposition or short-range ordering had taken place in the austenite.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1_bulk",
+          "region": "bulk (cast material)",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "fully austenitic matrix",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "nonmetallic inclusions",
+              "porosity": "lowest micro-defect/porosity density among the 0.59/1.07/1.56% Si low-phosphorus steels",
+              "inclusions": [
+                "AlN",
+                "MnS",
+                "Al-N-Mn-O"
+              ],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_1",
+      "phase_interfaces": [],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": null,
+      "interface_notes": "Single-phase fully austenitic matrix; no second phase or internal phase interfaces present in the solution-treated condition."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_tensile_solution_treated",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Percent elongation measured on a 25.4-mm (1-in.) gage length; hardness Brinell (3000 kg) converted from Rockwell B and C scale measurements. Material is calcium treated with Ar stirring (melt practice)."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "452",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "737",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "64",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "197",
+            "scale": "Brinell (3000 kg)",
+            "unit": "BHN",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_cvn_solution_treated",
+      "measurement_conditions": {
+        "temperature": "25",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "Charpy V-notch (CVN) specimen",
+        "test_standard": null,
+        "other_conditions": "Average CVN energy reported in ft-lbs and J; hardness in BHN."
+      },
+      "mechanical": {
+        "tensile_properties": null,
+        "hardness": [
+          {
+            "region": null,
+            "value": "192",
+            "scale": "Brinell",
+            "unit": "BHN",
+            "uncertainty": "± 10"
+          }
+        ],
+        "fracture_toughness": {
+          "value": "199",
+          "unit": "J"
+        },
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_dft_solution_treated",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "high strain rate (instrumented Charpy impact)",
+        "specimen_geometry": "fatigue precracked Charpy specimen",
+        "test_standard": "Schindler single-specimen method; ASTM E 1820 / ASTM E 813",
+        "other_conditions": "Dynamic fracture toughness (DFT) defined as the critical J-integral value near onset of stable crack growth."
+      },
+      "mechanical": {
+        "tensile_properties": null,
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "~700",
+          "unit": "kJ/m²"
+        },
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_vs_cast_4130",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "SAE 4130 (cast, quenched and tempered Cr-Mo steel)",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "dynamic fracture toughness and density",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Tensile test (uniaxial)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Percent elongation measured on a 25.4-mm (1-in.) gage length",
+      "purpose": "Determine 0.2% offset yield strength, ultimate tensile strength, and elongation",
+      "key_findings": "0.2% YS 452 MPa, UTS 737 MPa, 64% elongation (solution treated 2 h, calcium treated with Ar stirring)"
+    },
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": null,
+      "technique": "Brinell hardness",
+      "instrument_or_setup": "Brinell hardness (3000 kg), converted from Rockwell B and C scale measurements",
+      "measurement_conditions": null,
+      "purpose": "Measure hardness of solution-treated sample",
+      "key_findings": "197 BHN (Table II, solution treated)"
+    },
+    {
+      "characterization_id": "char_cvn",
+      "microstructure_id": null,
+      "technique": "Charpy V-notch impact test",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Test temperature 25°C",
+      "purpose": "Measure room-temperature Charpy V-notch impact/breaking energy",
+      "key_findings": "199 J (147 ± 17 ft-lbs); hardness 192 ± 10 BHN"
+    },
+    {
+      "characterization_id": "char_sem_fracture",
+      "microstructure_id": null,
+      "technique": "SEM secondary-electron fractography",
+      "instrument_or_setup": "SEM",
+      "measurement_conditions": "As-solution treated and quenched Charpy V-notch fracture surface",
+      "purpose": "Characterize fracture mode of the 0.001% P solution-treated specimen",
+      "key_findings": "Ductile micro-void coalescence (equiaxed dimples and tear ridges); no flat cleavage facets"
+    },
+    {
+      "characterization_id": "char_xrd_tem",
+      "microstructure_id": "micro_1_bulk",
+      "technique": "X-ray diffraction (XRD) and transmission electron microscopy (TEM)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Solution-treated specimens",
+      "purpose": "Check for spinodal decomposition or short-range ordering in the austenite",
+      "key_findings": "No spinodal decomposition or short-range ordering within the austenite, regardless of Si content"
+    },
+    {
+      "characterization_id": "char_inclusion_analysis",
+      "microstructure_id": "micro_1_bulk",
+      "technique": "Automated inclusion analysis (feature analysis)",
+      "instrument_or_setup": "ASPEX SEM with PICA 1020 automated feature analysis software",
+      "measurement_conditions": null,
+      "purpose": "Determine inclusion type and distribution and their effect on CVN impact energy",
+      "key_findings": "AlN is the dominant inclusion in the 0.001% P calcium-treated, argon-stirred alloy; total inclusion density 62-78 inclusions/mm² across the low-P Si steels"
+    },
+    {
+      "characterization_id": "char_dft",
+      "microstructure_id": null,
+      "technique": "Instrumented Charpy impact test (dynamic fracture toughness)",
+      "instrument_or_setup": "Instrumented Charpy impact on fatigue precracked specimens",
+      "measurement_conditions": "Schindler single-specimen method; inputs: peak load, energy to peak load, total fracture energy",
+      "purpose": "Measure dynamic fracture toughness (critical J-integral near onset of stable crack growth)",
+      "key_findings": "Solution-treated low-P 1.07% Si DFT ~700 kJ/m²"
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Measured chemistry from Table I (wt.%): Si 1.07, C 0.90, Mn 30.42, P 0.001, S 0.006, Mo 0.53, Al 8.83, Cu 0.006 (balance Fe). [b0013]",
+    "The solution-treated 0.001% P Charpy V-notch specimen failed by ductile micro-void coalescence, in contrast to the 0.07% P specimen's low-energy cleavage-like fracture producing a dendritic pattern (Fig. 8). [b0043, figure_008]",
+    "Solution-treated notch toughness is stated in the text as 200 J for the 0.001% P sample, while Table III lists 199 J for the same condition (147 ± 17 ft-lbs). [b0043, b0048]",
+    "AlN is the dominant inclusion type in the 0.001% P calcium-treated, argon-stirred alloy; higher AlN density correlates with lower CVN energy (Fig. 10). [b0056, figure_010]",
+    "Total inclusion density was 62–78 inclusions/mm² across the three low-phosphorus Si steels; the 1.07% Si steel had the lowest micro-defect/porosity density among 0.59/1.07/1.56% Si steels (Fig. 15). [b0079, b0081, figure_015]",
+    "Silicon additions (0.59–1.56% Si) have no significant effect on solution-treated mechanical properties; this sample's solution-treated strengths reach 737 MPa with 64% elongation. [b0004, b0035, b0085]",
+    "The lightweight Fe-Mn-Al-C steels are ~15% less dense than quenched and tempered SAE 4130 Cr-Mo steel. [b0004, b0085]"
+  ]
+}

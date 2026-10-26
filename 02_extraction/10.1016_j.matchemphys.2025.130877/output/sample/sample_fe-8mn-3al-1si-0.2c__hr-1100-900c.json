@@ -1,0 +1,632 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-8mn-3al-1si-0.2c__hr-1100-900c",
+      "paper_id": "10.1016_j.matchemphys.2025.130877",
+      "alloy_id": "alloy_fe-8mn-3al-1si-0.2c",
+      "process_id": "proc_hr-1100-900c",
+      "sample_label": "M2-HR",
+      "aliases": [
+        "M2 hot rolled"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "Fabrication route of the M2 alloy ingot prior to homogenization/hot rolling.",
+        "block_id": [
+          "b0023"
+        ]
+      },
+      "processing_step_id": "step_1_casting",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "solidification / melting"
+      },
+      "method": {
+        "value": "vacuum arc melting followed by 4× remelting (ingot flipped before each remelt)"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "The two steel compositions (Fe–8Mn–3Al-0.2C = M1 and Fe–8Mn–3Al–1Si-0.2C = M2) were fabricated using a vacuum arc melting furnace; the melted ingot was remelted 4 times by flipping the ingot before each remelt to ensure complete and uniform melting of the raw materials throughout the ingot."
+      }
+    },
+    {
+      "source": {
+        "reason": "Homogenization step of the processing route preceding hot rolling.",
+        "block_id": [
+          "b0023",
+          "b0037"
+        ]
+      },
+      "processing_step_id": "step_2_homogenization",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "homogenization followed by water quenching"
+      },
+      "temperature": {
+        "value": "1100 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": {
+        "value": "2 h"
+      },
+      "atmosphere": null,
+      "cooling_medium": {
+        "value": "water"
+      },
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Homogenization of as-cast samples at 1100 °C for 2 h followed by water quenching; this condition is designated M2-HQ. This is the parent process (proc_hq-1100c-2h) of proc_hr-1100-900c."
+      }
+    },
+    {
+      "source": {
+        "reason": "Hot-rolling step defining the M2-HR condition; nomenclature table lists 'Hot rolled (~50 % thickness reduction at 1100-900 °C)' as M2-HR.",
+        "block_id": [
+          "b0023",
+          "b0034",
+          "b0037"
+        ]
+      },
+      "processing_step_id": "step_3_hot_rolling",
+      "sequence": {
+        "value": "3"
+      },
+      "type": {
+        "value": "mechanical processing"
+      },
+      "method": {
+        "value": "hot rolling"
+      },
+      "temperature": {
+        "value": "1100 °C (soak/start), finish rolling temperature reaching around 900 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": {
+        "value": "~50 % thickness reduction"
+      },
+      "processing_steps_notes": {
+        "value": "Samples were hot-rolled at 1100 °C to reduce the thickness by 50 %, with finish rolling temperatures reaching around 900 °C. δ-ferrite in M2 forms while soaking at 1100 °C before hot rolling, and some fraction of α-ferrite forms from γ during finish rolling."
+      }
+    },
+    {
+      "source": {
+        "reason": "Post-hot-rolling cooling step that produces the as-hot-rolled (M2-HR) microstructure.",
+        "block_id": [
+          "b0023",
+          "b0041"
+        ]
+      },
+      "processing_step_id": "step_4_air_cooling",
+      "sequence": {
+        "value": "4"
+      },
+      "type": {
+        "value": "cooling"
+      },
+      "method": {
+        "value": "air cooling"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": {
+        "value": "air"
+      },
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Hot rolling was followed by air cooling. Martensite forms in M2 during air cooling after hot rolling (calculated Ms = 296 °C), giving the final M2-HR state."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_M2-HR",
+      "overall_structure": {
+        "value": "Hot-rolled M2 (Fe–8Mn–3Al–1Si–0.2C) microstructure comprising multiple phases: δ-ferrite, α-ferrite, and a very fine martensitic-austenitic (α′ + γ) phase. A significantly higher amount of ferrite, especially δ-ferrite, is present in M2 compared to the Si-free M1 steel, as expected from thermodynamic predictions owing to the presence of Si. XRD confirms the presence of ferrite/martensite and only a small austenite fraction (fγ = 5.7 %) in M2-HR."
+      },
+      "number_of_phases": {
+        "value": "4 (δ-ferrite, α-ferrite, austenite, martensite)",
+        "source": {
+          "reason": "M2-HR is reported to contain δ-ferrite, α-ferrite and a martensitic-austenitic (α′+γ) phase, i.e. four distinct phases.",
+          "block_id": [
+            "b0034",
+            "b0080"
+          ]
+        }
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "SEM (Fig. 4b1–b3) and XRD (Fig. 4c) description of the M2-HR sample showing δ-ferrite, α-ferrite and a fine α′+γ constituent.",
+            "block_id": [
+              "b0034",
+              "b0038",
+              "figure_004"
+            ]
+          },
+          "microstructure_id": "micro_M2-HR_overall",
+          "region": null,
+          "related_sequence": {
+            "value": "4"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "SEM of M2-HR shows δ-ferrite; δ-ferrite present in M2 due to Si and expected from thermodynamic predictions; coarse band-type δ-ferrite morphology reported in M2.",
+                "block_id": [
+                  "b0034",
+                  "b0043"
+                ]
+              },
+              "phase_name": {
+                "value": "δ-ferrite"
+              },
+              "crystal_structure": {
+                "value": "BCC (bcc/ferrite-family; δ-ferrite field)"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "coarse band-type / blocky δ-ferrite"
+              },
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "Presence of α-ferrite in M2-HR reported by SEM; α-ferrite also forms from γ during finish rolling at ~900 °C.",
+                "block_id": [
+                  "b0034"
+                ]
+              },
+              "phase_name": {
+                "value": "α-ferrite"
+              },
+              "crystal_structure": {
+                "value": "BCC"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "blocky / fine ferrite regions adjacent to α′+γ"
+              },
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "Fraction of γ phase calculated as 5.7 % for M2 (HR) from XRD; austenite present as part of the fine martensitic-austenitic (α′+γ) phase.",
+                "block_id": [
+                  "b0038"
+                ]
+              },
+              "phase_name": {
+                "value": "austenite (γ)"
+              },
+              "crystal_structure": {
+                "value": "FCC"
+              },
+              "volume_fraction": {
+                "value": "5.7 %"
+              },
+              "morphology": {
+                "value": "very fine lath/lamellar morphology within the α′ + γ constituent"
+              },
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "Martensitic-austenitic (α′+γ) phase observed in M2-HR; martensite formed during air cooling after hot rolling (Ms = 296 °C).",
+                "block_id": [
+                  "b0034",
+                  "b0041"
+                ]
+              },
+              "phase_name": {
+                "value": "martensite (α′)"
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": {
+                "value": "very fine lath-type within the martensitic-austenitic (α′+γ) phase"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "source": {
+        "reason": "Uniaxial tensile test results of the hot-rolled M2 sample.",
+        "block_id": [
+          "b0061"
+        ]
+      },
+      "property_set_id": "prop_M2-HR_tensile",
+      "measurement_conditions": {
+        "source": {
+          "reason": "Tensile test parameters: dog-bone specimen geometry with 2 mm gauge length, 1 mm thickness, 1 mm width; tested at room temperature at a strain rate of 10^-3 s^-1.",
+          "block_id": [
+            "b0030",
+            "b0031"
+          ]
+        },
+        "temperature": {
+          "value": "room temperature"
+        },
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": {
+          "value": "10^-3 s^-1"
+        },
+        "specimen_geometry": {
+          "value": "dog-bone shaped specimen, gauge length 2 mm, thickness 1 mm, width 1 mm (machined by wire electric discharge machining, wire-EDM)"
+        },
+        "test_standard": null,
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "source": {
+            "reason": "Reported UTS (1055 + 15 MPa) and total elongation (15.4 ± 0.8 %) for the M2 steel in the HR condition; brittle behaviour with significantly high UTS and very low total elongation.",
+            "block_id": [
+              "b0061",
+              "figure_010"
+            ]
+          },
+          "yield_strength": null,
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": {
+                "value": "1055 ± 15 MPa"
+              },
+              "unit": {
+                "value": "MPa"
+              },
+              "uncertainty": {
+                "value": "± 15 MPa"
+              }
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": {
+                "value": "15.4 ± 0.8 %"
+              },
+              "unit": {
+                "value": "%"
+              },
+              "uncertainty": {
+                "value": "± 0.8 %"
+              }
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": {
+            "value": "Engineering stress–strain curve of M2-HR (Fig. 10d): rises to a peak near ~1000 MPa at ~15 % strain then fractures abruptly (brittle), with very low total elongation."
+          },
+          "stress_strain_distribution": null,
+          "strain_hardening_rate": null
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "source": {
+        "reason": "The paper contrasts the HR and IA conditions of M2 steel (Fig. 10a/10d): HR samples are brittle with significantly high UTS and very low total elongation, while IA samples are ductile.",
+        "block_id": [
+          "b0061",
+          "figure_010"
+        ]
+      },
+      "performance_id": "perf_M2-HR_vs_M2-IA",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": {
+          "value": "alloy_fe-8mn-3al-1si-0.2c"
+        },
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": {
+          "value": "Hot-rolled M2 (M2-HR) is brittle with high UTS (1055 ± 15 MPa) and very low total elongation (15.4 ± 0.8 %), whereas the intercritically annealed condition of the same steel (M2-IA) is ductile with 698 ± 20 MPa UTS and 59.4 ± 0.6 % TE. High strength and poor elongation of the HR sample are attributed to the presence of martensite."
+        },
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "SEM microstructures of M2-HR sample (Fig. 4b1–b3) taken in secondary electron mode.",
+        "block_id": [
+          "b0034",
+          "figure_004"
+        ]
+      },
+      "characterization_id": "char_M2-HR_SEM",
+      "microstructure_id": "micro_M2-HR_overall",
+      "technique": {
+        "value": "Scanning electron microscopy (SEM) in secondary electron (SE) mode"
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Observe the microstructure and identify the phases present in the M2-HR (hot-rolled) sample"
+      },
+      "key_findings": {
+        "value": "M2-HR shows the presence of δ-ferrite, α-ferrite and a very fine martensitic-austenitic (α′+γ) phase; the 500 nm panel resolves a fine lath/lamellar α′+γ morphology alongside blocky δ/α-ferrite. A significantly higher amount of ferrite, especially δ-ferrite, is observed in M2 compared to M1."
+      }
+    },
+    {
+      "source": {
+        "reason": "XRD scans performed on M2-HR (Fig. 4c) with the stated instrument and 2θ range/step size; fγ = 5.7 % for M2.",
+        "block_id": [
+          "b0027",
+          "b0038",
+          "figure_004"
+        ]
+      },
+      "characterization_id": "char_M2-HR_XRD",
+      "microstructure_id": "micro_M2-HR_overall",
+      "technique": {
+        "value": "X-ray diffraction (XRD)"
+      },
+      "instrument_or_setup": {
+        "value": "PANalytical Empyrean instrument with Cu-Kα radiation (λ = 1.542 Å)"
+      },
+      "measurement_conditions": {
+        "value": "2θ range 40–115°, step size 0.03°"
+      },
+      "purpose": {
+        "value": "Phase identification and determination of the austenite volume fraction in the hot-rolled M2 sample"
+      },
+      "key_findings": {
+        "value": "XRD confirms the presence of ferrite/martensite and austenite in M2-HR; the fraction of γ phase is calculated as 5.7 % for M2 steel. Reflections labelled α 110, α 200, α 211, α 220, γ 111, γ 200."
+      }
+    },
+    {
+      "source": {
+        "reason": "Tensile testing performed on M2-HR using the ST25 UTM with the stated geometry/conditions.",
+        "block_id": [
+          "b0030",
+          "b0031",
+          "b0061"
+        ]
+      },
+      "characterization_id": "char_M2-HR_tensile",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Uniaxial tensile testing"
+      },
+      "instrument_or_setup": {
+        "value": "Tinius Olsen ST25 universal testing machine (UTM) equipped with a 25 kN load cell"
+      },
+      "measurement_conditions": {
+        "value": "Room temperature, strain rate 10^-3 s^-1; dog-bone specimen with gauge length 2 mm, thickness 1 mm, width 1 mm"
+      },
+      "purpose": {
+        "value": "Determine the tensile properties (strength and ductility) of the hot-rolled M2 sample"
+      },
+      "key_findings": {
+        "value": "M2-HR shows UTS of 1055 ± 15 MPa and total elongation of 15.4 ± 0.8 %, with a brittle fracture behaviour."
+      }
+    },
+    {
+      "source": {
+        "reason": "SEM fractography of the fractured tensile sample; river markings observed for M2-HR (Fig. 10e).",
+        "block_id": [
+          "b0031",
+          "b0066",
+          "figure_010"
+        ]
+      },
+      "characterization_id": "char_M2-HR_fractography",
+      "microstructure_id": null,
+      "technique": {
+        "value": "SEM fractography of tensile-fractured samples"
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Understand the fracture behaviour of the hot-rolled M2 sample"
+      },
+      "key_findings": {
+        "value": "Observation of cleavage fracture features such as river markings (plateaus and ledges) in the fractograph of the HR sample, supporting its brittle nature."
+      }
+    }
+  ],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "Ms temperature of the M2 hot-rolled sample calculated from the empirical equation using the austenite composition at hot-rolling temperature.",
+        "block_id": [
+          "b0040",
+          "b0041"
+        ]
+      },
+      "computation_id": "comp_Ms_M2-HR",
+      "simulation_method": {
+        "value": "Empirical Ms (martensite start) temperature calculation"
+      },
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": {
+        "value": "Individual elemental concentrations (C, Mn, Si, Al) taken corresponding to the austenite phase at hot-rolling temperatures, in wt.%"
+      },
+      "validation_against_experiment": {
+        "value": "The calculated Ms of 296 °C for M2-HR (319 °C for M1) indicates transformation of some austenite into martensite during cooling, supporting the observation of martensite in the M2-HR sample."
+      },
+      "analytical_models": [
+        {
+          "source": {
+            "reason": "Ms equation and its coefficients are given, and the resulting Ms temperature for the M2-HR sample is reported as 296 °C.",
+            "block_id": [
+              "b0040",
+              "b0041"
+            ]
+          },
+          "model_name": {
+            "value": "Ms temperature empirical equation"
+          },
+          "equation_role": {
+            "value": "Predicts the martensite start temperature from the austenite composition at hot-rolling temperature"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "constant"
+              },
+              "value": {
+                "value": "539"
+              },
+              "unit": {
+                "value": "°C"
+              }
+            },
+            {
+              "name": {
+                "value": "C coefficient (per wt.% C)"
+              },
+              "value": {
+                "value": "-423"
+              },
+              "unit": {
+                "value": "°C/wt.%"
+              }
+            },
+            {
+              "name": {
+                "value": "Mn coefficient (per wt.% Mn)"
+              },
+              "value": {
+                "value": "-30.4"
+              },
+              "unit": {
+                "value": "°C/wt.%"
+              }
+            },
+            {
+              "name": {
+                "value": "Si coefficient (per wt.% Si)"
+              },
+              "value": {
+                "value": "-7.5"
+              },
+              "unit": {
+                "value": "°C/wt.%"
+              }
+            },
+            {
+              "name": {
+                "value": "Al coefficient (per wt.% Al)"
+              },
+              "value": {
+                "value": "+30"
+              },
+              "unit": {
+                "value": "°C/wt.%"
+              }
+            },
+            {
+              "name": {
+                "value": "Calculated Ms (M2-HR)"
+              },
+              "value": {
+                "value": "296"
+              },
+              "unit": {
+                "value": "°C"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "Ms(°C) = 539 - 423C - 30.4Mn - 7.5Si + 30Al. Values calculated as 319 and 296 °C for M1 and M2 respectively."
+          }
+        }
+      ]
+    },
+    {
+      "source": {
+        "reason": "Thermo-Calc (TCFE9) predictions for the 3Al-1Si (M2) composition, showing δ-ferrite in the ICT range, used to rationalize the δ-ferrite observed in M2-HR.",
+        "block_id": [
+          "b0021",
+          "b0034",
+          "figure_001"
+        ]
+      },
+      "computation_id": "comp_calphad_M2",
+      "simulation_method": {
+        "value": "CALPHAD thermodynamic equilibrium calculation"
+      },
+      "software_used": {
+        "value": "Thermo-Calc"
+      },
+      "potential_model_or_database": {
+        "value": "TCFE9 steel database"
+      },
+      "boundary_and_initial_conditions": {
+        "value": "Equilibrium phase fractions as a function of temperature for the Fe–8Mn–3Al–1Si–0.2C (M2) composition; lower critical temperature taken as 600 °C considering the limited diffusion capacity of Mn at lower temperatures"
+      },
+      "validation_against_experiment": {
+        "value": "Predicts δ-ferrite as an equilibrium phase in the intercritical temperature (ICT) range for the 3Al–1Si system, consistent with the δ-ferrite observed in the M2-HR hot-rolled sample (a significantly higher amount of ferrite, especially δ-ferrite, is expected according to the thermodynamic predictions owing to the presence of Si)."
+      },
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "The hot-rolled M2 sample (M2-HR) contains martensite, which formed in the steel during air cooling after hot rolling; this is supported by the calculated Ms temperature of 296 °C for M2-HR, which lies above room temperature.",
+    "The hot-rolled M2 sample shows brittle behaviour with a significantly high UTS (1055 ± 15 MPa) and very low total elongation (15.4 ± 0.8 %); its fractograph exhibits cleavage fracture features (river markings, plateaus and ledges) indicating crack propagation along parallel planes.",
+    "δ-ferrite in the M2 steel forms while soaking at 1100 °C before hot rolling, and some fraction of α-ferrite forms from γ when the steel is subjected to finish rolling temperatures around 900 °C.",
+    "Grain size distribution (Fig. 8b) reports M2 grains mostly in the ~0.25–0.5 μm bin (~92 %) with a small (~3 %) population near 1.5 μm, but this distribution is reported for the intercritically annealed samples (M2-IA), not for the M2-HR sample."
+  ]
+}

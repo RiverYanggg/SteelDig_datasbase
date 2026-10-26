@@ -1,0 +1,224 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-7al__aim-hot-rolled",
+      "paper_id": "10.1007_s11837-014-1065-1",
+      "alloy_id": "alloy_fe-7al",
+      "process_id": "proc_aim-hot-rolled",
+      "sample_label": "Fe-7Al AIM",
+      "aliases": [
+        "Fe-7Al (AIM)",
+        "AIM Fe-7 wt.% Al",
+        "Fe-7Al AIM hot-rolled"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_aim_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "air induction melting (AIM)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "air",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "80-mm-diameter Fe-7Al AIM ingot; the Fe-7Al AIM ingot was sound, free from hydrogen gas porosity and free from microcracks."
+    },
+    {
+      "processing_step_id": "step_hot_forging",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot forging",
+      "temperature": "1373 K",
+      "temperature_unit": "K",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "80-mm-diameter ingot preheated in a hearth furnace at 1373 K for 1 h, then hot-forged in a 1-tonne pneumatic forge hammer with die platens at room temperature."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1373 K",
+      "temperature_unit": "K",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "50%",
+      "processing_steps_notes": "24-mm-thick forged billets preheated at 1373 K for 1 h and hot rolled by 50% with 1-mm reduction in thickness per pass; samples reheated after every six rolling passes under similar conditions as preheating; final hot-rolled plate thickness 12 mm."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_aim_hr",
+      "overall_structure": "Annealed microstructure with coarse grain size: very coarse equiaxed polygonal grains with a few straight parallel annealing twin bands and scattered dark pores (residual porosity/second-phase particles).",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_aim_hr",
+          "region": "bulk (hot-rolled plate)",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "disordered Fe-Al solid solution",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "coarse equiaxed polygonal grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "residual porosity (dark rounded pores/second-phase particles)",
+              "porosity": "scattered dark pores observed in the optical micrograph",
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "190",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_aim_hr_rt",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Hot-rolled plate with final thickness 12 mm; each hardness data point is the average of five measurements; each tensile data point is the average of three tests."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "428 ± 6.5",
+              "unit": "MPa",
+              "uncertainty": "± 6.5"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "472 ± 5.4",
+              "unit": "MPa",
+              "uncertainty": "± 5.4"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "8 ± 1.4",
+              "unit": "%",
+              "uncertainty": "± 1.4"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk",
+            "value": "193 ± 7.9",
+            "scale": "HV",
+            "unit": null,
+            "uncertainty": "± 7.9"
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_aim_hr_ductility",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-7al",
+        "benchmark_process_id": "AIMFC (air induction melting with flux cover) and VIM",
+        "benchmark_sample_id": null,
+        "comparison_metric": "room-temperature tensile ductility (total elongation)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om",
+      "microstructure_id": "micro_aim_hr",
+      "technique": "optical microscopy",
+      "instrument_or_setup": "bright-field optical microscope (etched)",
+      "measurement_conditions": "hot-rolled plate",
+      "purpose": "microstructure characterization",
+      "key_findings": "Very coarse equiaxed polygonal grains with a few straight parallel annealing twin bands and scattered dark pores; annealed microstructure with coarse grain size."
+    },
+    {
+      "characterization_id": "char_chem",
+      "microstructure_id": null,
+      "technique": "chemical analysis (gas analysis)",
+      "instrument_or_setup": "RH-444 Leco Gas analyzer (for hydrogen)",
+      "measurement_conditions": "as-cast ingot",
+      "purpose": "determine alloy chemical composition including H, O, N",
+      "key_findings": "Fe-7Al AIM composition: Al 7.22, Si 0.20, Mn 0.056, S 0.0075, C 0.021, O 0.0200, H 0.0052, N 0.02 wt.%."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "tensile testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "room temperature",
+      "purpose": "measure tensile properties",
+      "key_findings": "UTS 472 ± 5.4 MPa, YS 428 ± 6.5 MPa, total elongation 8 ± 1.4% (average of three tests)."
+    },
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": null,
+      "technique": "Vickers hardness testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "room temperature",
+      "purpose": "measure hardness",
+      "key_findings": "193 ± 7.9 HV (average of five measurements)."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Measured chemical composition of the Fe-7Al AIM ingot (Table I): Al 7.22, Si 0.20, Mn 0.056, S 0.0075, C 0.021, O 0.0200, H 0.0052, N 0.02 wt.%.",
+    "The Fe-7Al alloy ingots produced by AIM were sound and free from hydrogen gas porosity and microcracks, unlike Fe-9Al AIM ingots which exhibited extensive gas porosity.",
+    "Hardness data indicate that the melting process (AIM, AIMFC, VIM) has no influence on the hardness of both Fe-7 wt.% and 9 wt.% Al alloys.",
+    "Aluminum recovery was excellent (95-98%) during AIMFC and VIM compared with plain AIM (the AIM recovery value itself is not reported)."
+  ]
+}

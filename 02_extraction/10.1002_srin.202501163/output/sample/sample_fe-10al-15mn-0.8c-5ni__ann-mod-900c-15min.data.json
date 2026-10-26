@@ -1,0 +1,309 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-10al-15mn-0.8c-5ni__ann-mod-900c-15min",
+      "paper_id": "10.1002_srin.202501163",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_id": "proc_ann-mod-900c-15min",
+      "sample_label": "A15 (modified)",
+      "aliases": [
+        "modified A15"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_arc_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "vacuum arc melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "10^-5 mbar pressure, backfilled with argon gas atmosphere",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Remelted 5–6 times inside the arc melter (AM500-Edmund Buhler GmbH, Germany) without breaking vacuum for better elemental intermixing"
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenization in a muffle furnace"
+    },
+    {
+      "processing_step_id": "step_high_speed_hr",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "14 to 2 mm (slightly more)",
+      "processing_steps_notes": "Relatively high-speed hot rolling at 10 rpm (vs 1 rpm in the previous case)"
+    },
+    {
+      "processing_step_id": "step_cr_mod",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "1 mm thickness reduction",
+      "processing_steps_notes": "Cold rolling reduces thickness by 1 mm after high-speed HR"
+    },
+    {
+      "processing_step_id": "step_annealing_900c_15min_wq",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": "900 °C",
+      "temperature_unit": "°C",
+      "duration": "15 min",
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Annealing at 900 °C for 15 min followed by water quenching (modified route after high-speed HR + CR)"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_A15_mod",
+      "overall_structure": "Modified A15 (900 °C/15 min anneal): refined B2 stringer bands in a softer γ-matrix (64% γ); B2 present as stringer bands (11%), intragranular IG-B2 (3.7%) and intergranular GB-B2 (16%).",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "gamma_matrix_mod",
+          "region": "bulk matrix",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "γ (austenite)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "64%",
+              "morphology": "matrix; URE-γ pancake-shaped grains elongated along prior RD retained after annealing",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "IG_B2_mod",
+              "type": "B2 (Fe(Ni,Mn)Al) intermetallic",
+              "size": null,
+              "distribution": "intragranular needle-shaped IG-B2; 3.7% phase fraction",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "GB_B2_mod",
+              "type": "B2 (Fe(Ni,Mn)Al) intermetallic",
+              "size": null,
+              "distribution": "intergranular coarse/irregular GB-B2 at grain boundaries; 16%",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "B2_stringer_bands_mod",
+          "region": "bulk, aligned along rolling direction",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "B2 (Fe(Ni,Mn)Al)",
+              "crystal_structure": "BCC",
+              "volume_fraction": "11%",
+              "morphology": "lamellar stringer bands (refined)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interfaces_A15_mod",
+      "phase_interfaces": [
+        {
+          "interface_id": "gamma_B2_interface",
+          "microstructure_id": "gamma_matrix_mod",
+          "phase_1_name": "γ (austenite)",
+          "phase_2_name": "B2 (Fe(Ni,Mn)Al)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "GND_localization_gamma_B2",
+          "microstructure_id": "gamma_matrix_mod",
+          "interaction_type": "geometrically necessary dislocation (GND) localization",
+          "qualitative_or_quantitative_description": "Strain and GND localize preferentially in softer γ and at γ/B2 interfaces; higher dislocation density in γ than in B2 after interrupted tensile at e=0.05"
+        }
+      ],
+      "slip_behavior": "Both γ and B2 co-deform; strain concentration higher in softer γ; two-stage strain hardening with weak yield point elongation",
+      "phase_evolution": null,
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "mech_A15_mod",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1 mm/min crosshead velocity",
+        "specimen_geometry": "ASTM E8; gauge length 12.5 mm, gauge width 3 mm, thickness 2 mm; rolling direction (RD)",
+        "test_standard": "ASTM E8",
+        "other_conditions": "Interrupted tensile tests at engineering strain = 0.05 for A15"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "≈1 GPa",
+              "unit": "GPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress–strain curves of modified HR/CR/annealed samples shown in Figure 6a (panel not supplied in provided text)",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            "n = 0.064 (initial stage)",
+            "n = 0.25 (second stage)"
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_A15_mod",
+      "service_conditions": {
+        "operating_temperature": null,
+        "stress_state": "uniaxial tensile (RD)",
+        "environment": "room temperature"
+      },
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": "A15 (unmodified)",
+        "comparison_metric": "B2 stringer band fraction reduced from 16% to 11%; softer γ dominates (64%); reduced crack susceptibility in deformed tensile gauge",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_tensile_test",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile test",
+      "instrument_or_setup": "100 kN Instron 5982 with 10 mm gauge extensometer",
+      "measurement_conditions": "room temperature, 1 mm/min crosshead velocity, ASTM E8, rolling direction (RD)",
+      "purpose": "Extract tensile stress-strain response",
+      "key_findings": "Modified series YS ≈ 1 GPa"
+    },
+    {
+      "characterization_id": "char_opt_deformed_gauge",
+      "microstructure_id": null,
+      "technique": "Optical microscopy",
+      "instrument_or_setup": "Leica – DM2700 M",
+      "measurement_conditions": "deformed tensile gauge",
+      "purpose": "Fracture/crack analysis of deformed tensile gauge",
+      "key_findings": "B2 stringer bands aligned along RD; microcrack at specimen edge; reduced crack susceptibility in modified A15"
+    },
+    {
+      "characterization_id": "char_tem_interrupted",
+      "microstructure_id": "gamma_matrix_mod",
+      "technique": "Transmission electron microscopy (TEM)",
+      "instrument_or_setup": "JEOL JEM 3200 FS operated at 300 kV",
+      "measurement_conditions": "A15 after interrupted tensile at engineering strain = 0.05",
+      "purpose": "Compare dislocation density in γ vs B2",
+      "key_findings": "Higher dislocation density in γ than in B2; ellipsoidal B2 particles embedded in deformed γ matrix"
+    },
+    {
+      "characterization_id": "char_ebsd_kam",
+      "microstructure_id": "gamma_matrix_mod",
+      "technique": "EBSD phase map + Kernel average misorientation (KAM) map",
+      "instrument_or_setup": "FESEM (Apreo S) with routine EBSD setup",
+      "measurement_conditions": "A15 after interrupted tensile at e=0.05",
+      "purpose": "Phase distribution and strain/GND localization",
+      "key_findings": "GND localization at γ/B2 interfaces; strain concentration higher in γ"
+    },
+    {
+      "characterization_id": "char_holloman",
+      "microstructure_id": null,
+      "technique": "Holloman's plot (ln σ vs ln ε) analysis",
+      "instrument_or_setup": null,
+      "measurement_conditions": "true stress-true strain curves converted from tensile data",
+      "purpose": "Determine two-stage strain hardening exponent n",
+      "key_findings": "A15: n = 0.064 (initial, due to YPE) then n = 0.25 (second stage)"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermocalc_alloy",
+      "simulation_method": "Thermodynamic CALPHAD calculation",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": "TCFE7 database",
+      "boundary_and_initial_conditions": "Pseudo-binary phase diagram for the Fe-10Al-15Mn-0.8C-5Ni multicomponent system; temperature 600–1400 °C, C 0–1.6 wt%",
+      "validation_against_experiment": "Outputs consistent with Ref. [15] for the same alloy composition",
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "For modified A15 specifically, individual YS/UTS/elongation/toughness values are not tabulated in the supplied text; only the two-stage strain-hardening exponents (n = 0.064 then n = 0.25) are explicitly A15-specific."
+  ]
+}

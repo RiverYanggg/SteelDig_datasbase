@@ -1,0 +1,339 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-8al-1c__st-1050c-2h-wq",
+      "paper_id": "10.1016_j.msea.2023.145675",
+      "alloy_id": "alloy_fe-30mn-8al-1c",
+      "process_id": "proc_st-1050c-2h-wq",
+      "sample_label": "Al-8",
+      "aliases": [
+        "Fe30Mn8Al1C after 1050 °C/2 h solution treatment"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "melting / casting",
+      "method": "high-frequency vacuum induction melting and casting into ingot",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Each steel composition melted in a high-frequency vacuum induction furnace of 50 kg capacity and cast into an ingot of 150 mm diameter."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": "5 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingots were homogenized at 1200 °C for 5 h prior to hot rolling."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling into rods, followed by air cooling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air-cooled to room temperature",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "rolled from 150 mm diameter ingot into 16 mm diameter rods",
+      "processing_steps_notes": "Homogenized ingots were hot rolled into rods of 16 mm diameter and air-cooled to room temperature (this is the parent proc_hot-rolled process)."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "solution treatment followed by water quenching",
+      "temperature": "1050",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled rods were solution-treated at 1050 °C for 2 h followed by water quenching; this is the terminal state of the sample used for tensile, Charpy and EBSD/TEM characterization."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_al8_st1050",
+      "overall_structure": "After solution treatment at 1050 °C for 2 h + water quenching the Fe30Mn8Al1C (Al-8) steel consists of a single-phase FCC austenite (γ); no BCC ferrite and no κ-carbide precipitation are present (SAED shows only γ reflections).",
+      "number_of_phases": 1,
+      "microstructure_counts": "1 (austenite)",
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_al8_austenite",
+          "region": null,
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains intersected by abundant straight, parallel twin boundaries",
+              "grain_size": "28.3 ± 12 μm"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "28.3 ± 12 μm",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "twin boundary fraction f_Tw = 50.3% (fractional twin boundary length, twin boundary length / total boundary length with misorientation >15°)"
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_al8_tensile_1050c_2h",
+      "measurement_conditions": {
+        "temperature": "ambient (room temperature)",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1.1 × 10^-3 s^-1",
+        "specimen_geometry": "standard tensile specimen, gauge length 25 mm, diameter 5 mm, tensile axis parallel to rod axis",
+        "test_standard": null,
+        "other_conditions": "Specimens solution-treated at 1050 °C for 2 h + water quenching; two specimens tested and data given as the average value of two specimens."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "548 ± 4 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 4 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "826 ± 2 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 2 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "74 ± 1.1%",
+              "unit": "%",
+              "uncertainty": "± 1.1%",
+              "note": "uniform elongation UE"
+            },
+            {
+              "direction": null,
+              "value": "74.0 ± 1%",
+              "unit": "%",
+              "uncertainty": "± 1%",
+              "note": "total elongation A"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve of Al-8 after 1050 °C/2 h solution treatment is shown in Fig. 2(c)/figure_001 (Fe30Mn(x)Al1C series); increasing Al raises strength and reduces elongation. The curve is not numerically digitized.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "direction": null,
+              "value": null,
+              "description": "Work hardening rate decreases with increasing Al content (Fig. 8(c)); the Al-8 curve is among the lower WH curves of the Al series, with the highest WH rate (~2100 MPa) found for the 6% Al steel."
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "294 ± 11 J",
+          "unit": "J",
+          "note": "Charpy V-notch impact energy Akv measured at −40 °C (V-notch perpendicular to rod axis); this is impact toughness, not a plane-strain fracture toughness."
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.90 g/cm³",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {},
+      "radiation_properties": {}
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_al8_toughness_comparison",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Charpy impact toughness at −40 °C (Akv-40, J)",
+        "improvement_percentage": null,
+        "note": "Al-8 (Fe30Mn8Al1.0C, 294 J) is one of only three of the thirteen designed low-density steels with high impact toughness; the others are Fe30Mn6Al1.0C (354 J) and Fe30Mn10Al1.0C (237 J)."
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_al8_austenite",
+      "technique": "Electron back-scattered diffraction (EBSD)",
+      "instrument_or_setup": "EBSD system on a field emission gun SEM (FEI Quanta 650, Thermo Fisher Scientific); 20 kV; step size 0.5 μm; specimens mechanically ground and electro-polished in 7% Nital at room temperature; Channel 5 post-processing software; grain size by linear intercept with 15° boundary misorientation definition.",
+      "measurement_conditions": "Operating voltage 20 kV, step size 0.5 μm",
+      "purpose": "Determine phase distribution, grain size and twin boundary fraction as a function of alloying content.",
+      "key_findings": "For Al-8 only FCC austenite is present (no BCC ferrite); equiaxed austenite grains densely intersected by straight parallel twin boundaries; average austenite grain size ~28.3 μm, twin boundary fraction f_Tw = 50.3%."
+    },
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": "micro_al8_austenite",
+      "technique": "Transmission electron microscopy (bright-field imaging with SAED; dark-field imaging of κ phase)",
+      "instrument_or_setup": "TEM (Tecnai G2 F20 S-TWIN, Thermo Fisher Scientific) at 200 kV; thin foils twin-jet electro-polished in 10% perchloric acid + 90% ethanol at 20 V and −20 °C.",
+      "measurement_conditions": "200 kV, foils electro-polished at −20 °C",
+      "purpose": "Examine κ-carbide precipitation in the solution-treated samples.",
+      "key_findings": "No κ-carbides were observed in the Fe30Mn(x)Al1C steel with 8% Al (Fig. 5(e)); bright-field image and inset SAED show only γ reflections ((000), (020)γ, (200)γ) with no κ spots."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "MTS tensile machine",
+      "measurement_conditions": "Ambient temperature, initial strain rate 1.1 × 10^-3 s^-1; gauge length 25 mm, diameter 5 mm",
+      "purpose": "Obtain engineering stress-strain response and corresponding strain hardening rate of the solution-treated specimens.",
+      "key_findings": "Al-8: UTS 826 ± 2 MPa, YS 548 ± 4 MPa, uniform elongation 74 ± 1.1%, total elongation 74.0 ± 1%."
+    },
+    {
+      "characterization_id": "char_charpy",
+      "microstructure_id": null,
+      "technique": "Charpy V-notch impact testing",
+      "instrument_or_setup": "MTS impact tester (500 J capacity)",
+      "measurement_conditions": "Test temperature −40 °C; V-notch perpendicular to the rod axis",
+      "purpose": "Measure impact toughness of the solution-treated samples.",
+      "key_findings": "Al-8: Akv-40 = 294 ± 11 J, one of only three designed alloys with high impact toughness."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_density_model",
+      "simulation_method": "Empirical analytical model (linear least-squares fit of measured density vs alloy content)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "For Al-8 (Fe30Mn8Al1C: C 0.98, Al 8.08, Mn 30.22 mass%) the model gives ρ ≈ 6.89 g/cm³, matching the measured density of 6.90 g/cm³ (Table 1).",
+      "analytical_models": [
+        {
+          "model_name": "density–alloy content relationship",
+          "equation_role": "predict alloy mass density from mass% of C, Al and Mn",
+          "parameters": [
+            {
+              "name": "intercept",
+              "value": "8.1",
+              "unit": "g/cm³"
+            },
+            {
+              "name": "C coefficient",
+              "value": "-0.102",
+              "unit": "g/cm³ per mass% C"
+            },
+            {
+              "name": "Al coefficient",
+              "value": "-0.10",
+              "unit": "g/cm³ per mass% Al"
+            },
+            {
+              "name": "Mn coefficient",
+              "value": "-0.01",
+              "unit": "g/cm³ per mass% Mn"
+            }
+          ],
+          "model_note": "Eq. (3): ρ = 8.10 − 0.102C − 0.10Al − 0.01Mn (g/cm³), with C, Al, Mn in mass%."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_stress_equations",
+      "simulation_method": "Analytical equations converting engineering tensile quantities to true stresses",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "For Al-8, Table 2 lists UTS^a (σ_TS, maximum true stress just before necking) = 1370 MPa and FRS^a (σ_FS, fracture strength) = 2154 MPa.",
+      "analytical_models": [
+        {
+          "model_name": "ultimate true strength",
+          "equation_role": "σ_TS = σ_UTS (1 + UE): maximum true stress just before necking / crack nucleation",
+          "parameters": [
+            {
+              "name": "UE",
+              "value": "0.74",
+              "unit": "-"
+            }
+          ],
+          "model_note": "Eq. (1); σ_UTS is the ultimate tensile strength and UE the uniform elongation."
+        },
+        {
+          "model_name": "fracture strength",
+          "equation_role": "σ_FS = σ_EF / (1 − A): highest local (true) strength during tensile deformation",
+          "parameters": [
+            {
+              "name": "A",
+              "value": "0.74",
+              "unit": "-"
+            }
+          ],
+          "model_note": "Eq. (2); σ_EF is the engineering fracture stress at sample breakage and A the maximum area reduction."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Al-8 alloy (Fe30Mn8Al1C) measured chemical composition: C 0.98, Mn 30.22, Al 8.08, Fe Bal. (mass%), with measured density 6.90 g/cm³ (Table 1).",
+    "For the Al-8 steel the maximum true stress just before necking (UTS^a, σ_TS) was 1370 MPa and the fracture strength (FRS^a, σ_FS) was 2154 MPa (Table 2).",
+    "Across all investigated low-density steels σ_TS and σ_FS were nearly constant at about 1350 MPa and about 2150 MPa, respectively, independent of C, Mn and Al content.",
+    "No κ-carbides were observed in the Fe30Mn(x)Al1C steel with 8% Al (Fig. 5(e)); κ-carbide size increases strongly with Al, from ~0.5 nm at 8% Al to ~1 nm at 10% Al, ~1.5 nm at 11% Al and ~15 nm at 12% Al (Table 3 gives D_κ-carbides = 0^a for Al-8).",
+    "The κ-carbide strengthening was described by a particle-shear model σ_shear = α f^(1/2) d_Car^(1/2) (Eq. 4); a yield-strength fit R_p0.2 = 478 + 97.1 d_Car^0.5 (slope 97.1 MPa/nm^1/2) was obtained across the designed steels, with flow stress in the absence of κ-carbides of about 478 MPa.",
+    "The overall alloy density follows ρ = 8.1 − 0.102C − 0.10Al − 0.01Mn g/cm³ (Eq. 3), differing from previously reported coefficients (0.101 g/cm³ per mass% Al, 0.0085 g/cm³ per mass% Mn, and 0.41 g/cm³ per 1% C).",
+    "Engineering stress-strain jumps after yielding in Fig. 2 were caused by removal of the extensometer to allow tests to continue to high plastic strain and do not affect the mechanical property measurements or work hardening rate calculations."
+  ]
+}

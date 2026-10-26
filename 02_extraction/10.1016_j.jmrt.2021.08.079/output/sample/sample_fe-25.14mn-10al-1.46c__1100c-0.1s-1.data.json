@@ -1,0 +1,250 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-25.14mn-10al-1.46c__1100c-0.1s-1",
+      "paper_id": "10.1016_j.jmrt.2021.08.079",
+      "alloy_id": "alloy_fe-25.14mn-10al-1.46c",
+      "process_id": "proc_1100c-0.1s-1",
+      "sample_label": "1100 °C/0.1 s^-1",
+      "aliases": [
+        "T=1100 °C",
+        "ε̇=0.1 s^-1",
+        "(b)"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_heating",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "heating",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": "10 °C/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cylindrical specimen (Ø 8 mm × 12 mm) heated to 1200 °C at a rate of 10 °C/s."
+    },
+    {
+      "processing_step_id": "step_2_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization (holding)",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "120 s",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenized by holding at 1200 °C for 120 s."
+    },
+    {
+      "processing_step_id": "step_3_cooling_to_T",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "cooling",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": "5 °C/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cooled from 1200 °C to the set deformation temperature of 1100 °C at 5 °C/s."
+    },
+    {
+      "processing_step_id": "step_4_holding",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "holding (temperature equilibration)",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "15 s",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Held 15 s at the set temperature (1100 °C) before compression so the temperature difference between the inside and outside of the sample was the same."
+    },
+    {
+      "processing_step_id": "step_5_compression",
+      "sequence": "5",
+      "type": "mechanical processing",
+      "method": "isothermal constant-strain-rate hot compression (Gleeble-3500)",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "60% (corresponding to maximum true strain 0.92)",
+      "processing_steps_notes": "Isothermal constant strain rate compression at 0.1 s⁻¹ to 60% compression (true strain 0.92). Mica foils with high-temperature lubricants affixed to both end faces to reduce friction/deformation non-uniformity. This sample is panel (b) of Fig. 9 at T = 1100 °C, ε̇ = 0.1 s⁻¹."
+    },
+    {
+      "processing_step_id": "step_6_water_spray_cooling",
+      "sequence": "6",
+      "type": "heat treatment",
+      "method": "water-spray cooling (quenching)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water (spray)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "After compression the sample was sprayed with water to cool the steel down."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_initial_predeformation",
+      "overall_structure": "Initial microstructure of the as-forged Fe–Mn–Al–C steel: large polygonal grains delimited by a bright, continuous, slightly etched boundary network with dark grey grain interiors, containing abundant fine, closely spaced, parallel light-grey striations (dendritic/interdendritic segregation banding rather than a uniform solid solution). Isolated grains are almost featureless while others are densely striped, indicating chemical heterogeneity.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "ms_initial",
+          "region": "bulk (as-forged billet, pre-deformation reference)",
+          "related_sequence": null,
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": "large polygonal grains, individual grains spanning roughly one to a few times the 100 µm scale bar",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_after_compression_1100c_0.1s-1",
+      "overall_structure": "Microstructure after 60% compression at 1100 °C and 0.1 s⁻¹ (Fig. 9(b)), observed in three deformation zones of the sectioned specimen; the degree of dynamic recrystallization follows the order zone 3 (large deformation) > zone 2 (small deformation) > zone 1 (difficult deformation). With decreasing strain rate the recrystallized grains grew and the degree of microstructure heterogeneity improved relative to the higher-strain-rate condition.",
+      "number_of_phases": null,
+      "microstructure_counts": "3 deformation zones (1 difficult deformation zone, 2 small deformation zone, 3 large deformation zone)",
+      "microstructure_list": [
+        {
+          "microstructure_id": "ms_1100c_0.1s-1_zone1",
+          "region": "difficult deformation zone (zone 1)",
+          "related_sequence": "5",
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": "large grains with straight, annealing-twin-like boundaries",
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "ms_1100c_0.1s-1_zone2",
+          "region": "small deformation zone (zone 2)",
+          "related_sequence": "5",
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": "similar to zone 1 but slightly finer mixed structure",
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "ms_1100c_0.1s-1_zone3",
+          "region": "large deformation zone (zone 3, core of the compressed sample)",
+          "related_sequence": "5",
+          "phases_present": [],
+          "defects": [
+            {
+              "type": "elongated/flattened original grains (banded deformation structure)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": "strongly elongated, banded/flattened grain structure of flattened original grains with fine grains between the bands (partial DRX)",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_1100c_0.1s-1",
+      "measurement_conditions": {
+        "temperature": "1100 °C",
+        "temperature_unit": "°C",
+        "environment": "isothermal constant-strain-rate hot compression (Gleeble-3500 thermo-mechanical simulator)",
+        "strain_rate": "0.1 s^-1",
+        "specimen_geometry": "cylindrical sample Ø 8 mm × 12 mm",
+        "test_standard": null,
+        "other_conditions": "60% compression (true strain 0.92); peak flow stress from true stress–true strain curve",
+        "mechanical": {
+          "tensile_properties": {
+            "yield_strength": [],
+            "ultimate_tensile_strength": [],
+            "elongation": [],
+            "youngs_modulus": null,
+            "stress_strain_curves": "True stress–true strain curve at 1100 °C / 0.1 s⁻¹ rises to a peak near 100 MPa then softens to an almost flat plateau (Fig. 3(b))",
+            "stress_strain_distribution": [],
+            "strain_hardening_rate": []
+          },
+          "hardness": [],
+          "fracture_toughness": null,
+          "fatigue_properties": {
+            "fatigue_limit": null,
+            "cycles_to_failure": null
+          },
+          "creep_properties": {
+            "steady_state_creep_rate": null,
+            "rupture_life": null
+          }
+        },
+        "physical": {
+          "density": {
+            "value": null,
+            "unit": null
+          },
+          "thermal_properties": {},
+          "electrical_properties": {},
+          "magnetic_properties": {}
+        },
+        "chemical": {
+          "corrosion_resistance": {},
+          "oxidation_resistance": {}
+        },
+        "radiation_properties": {
+          "void_swelling": null,
+          "irradiation_hardening": null,
+          "helium_embrittlement": null
+        }
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

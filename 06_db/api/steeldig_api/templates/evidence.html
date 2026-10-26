@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}证据块 {{ b.block_id }}{% endblock %}
+
+{% block content %}
+<div class="page-head">
+  <div>
+    <h1>原文证据 <span class="badge blue mono">{{ b.block_id }}</span></h1>
+    <div class="mono muted">{{ paper_id }}</div>
+    <p>{{ b.kind }} · 第 {{ b.page_idx }} 页 · {{ b.section or '未标注章节' }} · {{ b.char_len }} 字符</p>
+  </div>
+</div>
+
+<div class="grid g2" style="align-items:start">
+  <div class="card">
+    <div class="section-title"><span class="dot"></span>原文</div>
+    {% if source_table %}
+    <div class="evidence-table table-wrap">{{ source_table | safe }}</div>
+    <p class="muted" style="font-size:12px;margin:12px 0">表格来自抽取的原文证据块；数值与符号保持原样。</p>
+    <details class="source-raw"><summary>查看原始文本</summary><pre>{{ b.text }}</pre></details>
+    {% else %}
+    <p class="evidence-text">{{ b.text }}</p>
+    {% endif %}
+  </div>
+
+  <div class="grid" style="gap:16px">
+    <div class="card">
+      <div class="card-head"><div><h3>被引用为</h3><div class="sub">这个证据块支撑了哪些事实</div></div></div>
+      {% if trace %}
+      <table class="data">
+        <tbody>
+        {% for t in trace %}
+          <tr>
+            <td><a href="/samples/{{ paper_id }}/{{ t.sample_id }}">{{ t.sample_id | replace('sample_','') | truncate(30, true) }}</a>
+              <div class="mono muted" style="font-size:11px">{{ t.path }}</div></td>
+            <td class="num"><span class="badge {{ 'green' if t.status == 'ok' else 'ghost' }}">{{ t.status }}</span></td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      {% else %}<div class="empty">没有溯源记录引用此块</div>{% endif %}
+    </div>
+
+    <div class="card">
+      <div class="card-head"><div><h3>相关图表</h3></div></div>
+      {% for f in figures %}
+        <div class="prop-row"><div>{{ f.kind }} {{ f.figure_id }}</div><div class="prop-val">{{ (f.label or '') | truncate(48, true) }}</div></div>
+      {% else %}<div class="empty">未作为图表题注/引用</div>{% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

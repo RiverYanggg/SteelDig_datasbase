@@ -1,0 +1,68 @@
+{
+  "identity": {
+    "paper_id": "10.1016_j.matdes.2024.113473",
+    "equation_id": "equation_001",
+    "block_id": "b0034",
+    "equation_number": "1",
+    "is_image": false,
+    "latex_hint": "$$\nP C C = \\sum_ {i = 1} ^ {n} (y _ {i} - \\frac {\\overline {{y _ {i}}}) (\\widehat {y _ {i}} - \\widehat {\\overline {{y _ {i}}}})}{\\sqrt {\\sum_ {i = 1} ^ {n} (y _ {i} - \\overline {{y _ {i}}}) ^ {2} \\sum_ {i = 1} ^ {n} (\\widehat {y _ {i}} - \\widehat {\\overline {{y _ {i}}}}) ^ {2}}}\\tag{1}\n$$"
+  },
+  "latex": "PCC = \\sum_ {i = 1} ^ {n} (y _ {i} - \\frac {\\overline {{y _ {i}}}) (\\widehat {y _ {i}} - \\widehat {\\overline {{y _ {i}}}})}{\\sqrt {\\sum_ {i = 1} ^ {n} (y _ {i} - \\overline {{y _ {i}}}) ^ {2} \\sum_ {i = 1} ^ {n} (\\widehat {y _ {i}} - \\widehat {\\overline {{y _ {i}}}}) ^ {2}}}\\tag{1}",
+  "purpose": "计算候选特征之间的Pearson相关系数（PCC），用于特征相关性分析，以判断两个特征是否高度相关。",
+  "applicability_conditions": "用于N-samples数据集中两个特征之间的相关性分析；当两个特征的PCC绝对值大于或等于0.95时，判定为高相关特征。",
+  "symbols": [
+    {
+      "symbol": "PCC",
+      "meaning": "Pearson Correlation Coefficient（皮尔逊相关系数）",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "y_{i}",
+      "meaning": "N-samples数据集中第i个样本的某一特征",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "\\widehat{y_{i}}",
+      "meaning": "N-samples数据集中第i个样本的另一个（与之比较的）特征",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "\\overline{y_{i}}",
+      "meaning": "y_i的平均值",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "\\widehat{\\overline{y_{i}}}",
+      "meaning": "\\widehat{y_i}的平均值",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "n",
+      "meaning": "样本数量（N-samples数据集中的样本数）",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "i",
+      "meaning": "样本索引（第i个样本）",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    }
+  ],
+  "unmapped": [
+    "原文where从句写作\"y and \\widehat{\\overline{y_{i}}} are their average values\"（OCR存在缺失），实际对应 y_i 与 \\widehat{y_i} 各自的平均值 \\overline{y_{i}} 与 \\widehat{\\overline{y_{i}}}",
+    "判定准则：两特征PCC绝对值 ≥ 0.95 视为高相关特征"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-8.5al-1c-1.2si__fast-cooling-air-spray",
+      "paper_id": "10.1002_srin.202200191",
+      "alloy_id": "alloy_fe-28mn-8.5al-1c-1.2si",
+      "process_id": "proc_fast-cooling-air-spray",
+      "sample_label": null,
+      "aliases": [
+        "fast cooled Fe–28Mn–8.5Al–1C–1.2Si steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1",
+      "sequence": "1",
+      "type": "cooling",
+      "method": "air assisted spraying cooling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air assisted spraying",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Fast cooling by air assisted spraying cooling suppresses austenite decomposition and κ precipitation in Fe–28Mn–8.5Al–1C–1.2Si; κ precipitates from the austenite matrix only when the cooling rate is slower than -4.4 °C/h."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "Fast-cooled Fe–28Mn–8.5Al–1C–1.2Si retains austenite (γ); κ-carbide precipitation is suppressed.",
+      "number_of_phases": 1,
+      "microstructure_counts": 1,
+      "microstructure_list": [
+        {
+          "microstructure_id": "microstructure_1",
+          "region": null,
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interfaces_1",
+      "phase_interfaces": [],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "Austenite (γ) decomposes to κ-carbide only when the cooling rate is slower than -4.4 °C/h; fast cooling (air assisted spraying) suppresses this decomposition and retains austenite.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_1",
+      "microstructure_id": null,
+      "technique": "Schematic temperature–time transformation (TTT) style diagram of γ-phase decomposition",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Temperature 300–1000 °C; time 0.01–1000 h (logarithmic)",
+      "purpose": "Illustrate γ-phase decomposition and κ precipitation of Fe–28Mn–8.5Al–1C–1.2Si during cooling",
+      "key_findings": "κ precipitates from the austenite matrix when the cooling rate is slower than -4.4 °C/h; the fast-cooling side contains gamma and gamma+kappa' fields, while the slow-cooling side contains gamma+kappa*, gamma+kappa*+alpha(E2/DO3) and gamma+kappa+B2/DO3."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_1",
+      "simulation_method": null,
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "γ-phase decomposition sequence",
+          "equation_role": "Empirical prediction of austenite decomposition during aging/slow cooling: γ → γ′ + γ″ → γ′ + L12(SRO) → γ + κ",
+          "parameters": [
+            {
+              "name": "critical cooling rate below which κ precipitates",
+              "value": "-4.4 °C/h",
+              "unit": null
+            }
+          ],
+          "model_note": "Composition validity range: Mn 12–30 wt%, Al up to 12 wt%, C 0.6–2.0 wt%; Fe–28Mn–8.5Al–1C–1.2Si falls within this range."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Figure 3 (b0048) caption writes the alloy as Fe–28Mn–8.5Al–1C–1.2S, a typographical error for Fe–28Mn–8.5Al–1C–1.2Si.",
+    "On the fast-cooling side of Figure 3, the reaction fields are '1: gamma' and '2: gamma+kappa''; the right-hand ordered-phase bar marks B2, B2+DO3 and DO3 ranges.",
+    "The paper is a review; no sample-specific tensile, hardness, density, or other mechanical property values are reported for the fast-cooled Fe–28Mn–8.5Al–1C–1.2Si condition."
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-0.35c-4.5al__rolled-850c-ac",
+      "paper_id": "10.1016_j.msea.2026.149799",
+      "alloy_id": "alloy_fe-0.35c-4.5al",
+      "process_id": "proc_rolled-850c-ac",
+      "sample_label": "R850",
+      "aliases": [
+        "R850 specimen",
+        "R850 steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "4 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Steel ingot fabricated by VIM was homogenized at 1200 °C for 4 h prior to hot forging; upstream step of the tested steel's route."
+    },
+    {
+      "processing_step_id": "step_hot_forging",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot forging",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot forged to a thickness of 40 mm followed by air cooling to room temperature (parent forging route)."
+    },
+    {
+      "processing_step_id": "step_reheat_850c",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "reheating and holding",
+      "temperature": "850 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Specimen placed in a box furnace, heated to 850 °C and held for 2 h before rolling (sample named R850)."
+    },
+    {
+      "processing_step_id": "step_hot_rolling_850c",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "850 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "60 %",
+      "processing_steps_notes": "Hot rolling deformation with a 60 % reduction ratio, reducing plate thickness from 40 mm to 16 mm."
+    },
+    {
+      "processing_step_id": "step_air_cooling",
+      "sequence": "5",
+      "type": "cooling",
+      "method": "air cooling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "After rolling the sample was air cooled to room temperature."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_R850",
+      "overall_structure": "Duplex lamellar (banded) structure of light δ-ferrite lamellae alternating with dark honeycomb martensite lamellae; numerous equiaxed ferrite grains formed by DIFT (DIF) are enclosed within the honeycomb martensite lamellae. Spherical carbides are completely dissolved at this rolling temperature.",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_R850_lamellar",
+          "region": "overall (RD-ND plane)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": "66.8 ± 3.6 vol%",
+              "morphology": "light lamellae",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "martensite",
+              "crystal_structure": null,
+              "volume_fraction": "33.2 ± 3.6 vol%",
+              "morphology": "dark honeycomb lamellae enclosing equiaxed ferrite grains",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "DIF (deformation-induced ferrite)",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains enclosed within honeycomb martensite lamellae (submicron level)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "high dislocation density",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "2.1 × 10^14 m-2",
+              "lattice_distortion": null
+            },
+            {
+              "type": "equiaxed DIF grains acting as pre-existing defects / crack propagation shortcuts",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": "Dominant orientation shifts from <001> (low-temperature rolling zone) to <101> in the high-temperature rolling zone (R850/R950)."
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_R850",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_df_m_R850",
+          "microstructure_id": "micro_R850_lamellar",
+          "phase_1_name": "δ-ferrite",
+          "phase_2_name": "martensite",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_stress_concentration_R850",
+          "microstructure_id": "micro_R850_lamellar",
+          "interaction_type": "phase-interface stress concentration",
+          "qualitative_or_quantitative_description": "Significant hardness differences between martensite (5.98–6.50 GPa), DIF (2.84–2.98 GPa) and δ-ferrite (2.64–2.77 GPa) weaken phase-interface bonding and concentrate stress at the crack tip; the maximum hardness difference in the high-temperature rolling zone reaches 3.86 GPa. These interfaces become preferential crack-initiation sites."
+        },
+        {
+          "interaction_id": "di_DIF_crack_shortcut_R850",
+          "microstructure_id": "micro_R850_lamellar",
+          "interaction_type": "crack propagation shortcut",
+          "qualitative_or_quantitative_description": "Equiaxed DIF grains enclosed in honeycomb martensite lamellae act as pre-existing defects, guiding cracks to propagate rapidly in a cleavage mode and significantly reducing energy consumption."
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": "At the 850 °C high-temperature rolling condition carbides dissolve completely; the δ+γ two-phase region stabilizes austenite and promotes carbide dissolution, and after rolling residual austenite transforms to martensite, with DIFT producing equiaxed ferrite grains surrounded by martensite.",
+      "interface_notes": "The δ-ferrite/martensite phase-boundary hardness mismatch and the DIF 'crack propagation shortcut' jointly cause brittle fracture in this high-temperature-rolled sample."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_R850",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "crosshead speed 1.5 mm/min (tensile)",
+        "specimen_geometry": "Tensile: rod-shaped, gauge length 25 mm, diameter 5 mm, sampled along RD; Charpy impact: V-notch bars 10 mm × 10 mm × 55 mm, notch on rolled surface, impact direction perpendicular to RD",
+        "test_standard": null,
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "1160.0 ± 15.4 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 15.4 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "8.3 ± 0.1 %",
+              "unit": "%",
+              "uncertainty": "± 0.1 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "martensite",
+            "value": "6.0 ± 0.5 GPa",
+            "scale": "nanoindentation (Oliver-Pharr)",
+            "unit": "GPa",
+            "uncertainty": "± 0.5 GPa"
+          },
+          {
+            "region": "ferrite (δ-ferrite)",
+            "value": "2.6 ± 0.3 GPa",
+            "scale": "nanoindentation (Oliver-Pharr)",
+            "unit": "GPa",
+            "uncertainty": "± 0.3 GPa"
+          },
+          {
+            "region": "DIF (deformation-induced ferrite)",
+            "value": "3.0 ± 0.3 GPa",
+            "scale": "nanoindentation (Oliver-Pharr)",
+            "unit": "GPa",
+            "uncertainty": "± 0.3 GPa"
+          }
+        ],
+        "fracture_toughness": {
+          "value": "5.6 ± 0.6 J (Charpy V-notch impact absorption energy, IAE)",
+          "unit": "J"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_R850_vs_lowT",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-0.35c-4.5al",
+        "benchmark_process_id": "proc_rolled-650c-ac",
+        "benchmark_sample_id": "sample_fe-0.35c-4.5al__rolled-650c-ac",
+        "comparison_metric": "Charpy impact absorption energy (IAE) and total elongation",
+        "improvement_percentage": "R850 IAE 5.6 ± 0.6 J versus R650 IAE 207.5 ± 29.3 J; R850 TE 8.3 ± 0.1 % versus R650 19.0 ± 3.2 %"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_OM_R850",
+      "microstructure_id": "micro_R850_lamellar",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": "Optical microscope; image analysis with Image-J software; samples etched with 5 vol% HNO3-ethanol",
+      "measurement_conditions": "RD-ND plane, 50 µm scale bar",
+      "purpose": "Reveal the lamellar macrostructure and quantify M, δ-F and C/F proportions",
+      "key_findings": "R850 shows alternating δ-ferrite (light) and honeycomb martensite (dark) lamellae with equiaxed ferrite grains enclosed in the martensite; M = 33.2 ± 3.6 vol%, δ-F = 66.8 ± 3.6 vol%, C/F = 0."
+    },
+    {
+      "characterization_id": "char_SEM_R850",
+      "microstructure_id": "micro_R850_lamellar",
+      "technique": "Scanning electron microscopy (SEM)",
+      "instrument_or_setup": "Apreo S HiVac SEM with Oxford Aztec EBSD detector; RD-ND plane",
+      "measurement_conditions": "RD-ND plane, etched with 5 vol% HNO3-ethanol",
+      "purpose": "Characterize the lamellar/honeycomb morphology and carbide distribution",
+      "key_findings": "Honeycomb-like morphology labelled δ-ferrite (upper), martensite (middle) and ferrite (arrowed); no spherical carbide contrast (carbides dissolved)."
+    },
+    {
+      "characterization_id": "char_EBSD_R850",
+      "microstructure_id": "micro_R850_lamellar",
+      "technique": "Electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "Apreo S HiVac SEM equipped with Oxford Aztec EBSD detector; electro-polished with 5 vol% HClO4-ethanol",
+      "measurement_conditions": "RD-ND plane, 20 µm scale bar",
+      "purpose": "Quantify GB character (HAGB), KAM, GOS, texture and dislocation density",
+      "key_findings": "R850: HAGBs 60.1 %, GOS≤2° 19.4 %, dislocation density 2.1 × 10^14 m-2, KAM 0.3–0.4°; IPF shows coarse, more equiaxed multi-coloured grains with lamellar remnants."
+    },
+    {
+      "characterization_id": "char_TEM_R850",
+      "microstructure_id": "micro_R850_lamellar",
+      "technique": "Transmission electron microscopy (TEM)",
+      "instrument_or_setup": "JEM-F200 (CF-HR) TEM; specimens ground to 80 µm, punched into 3 mm discs, twin-jet electropolished in 5 vol% HClO4-acetic acid",
+      "measurement_conditions": "1 µm and 500 nm scale bars",
+      "purpose": "High-resolution microstructure observation of phases and secondary phases",
+      "key_findings": "R850 shows light equiaxed ferrite grains embedded in martensite with internal dislocation structure; no spherical carbides present."
+    },
+    {
+      "characterization_id": "char_nanoindentation_R850",
+      "microstructure_id": "micro_R850_lamellar",
+      "technique": "Nanoindentation",
+      "instrument_or_setup": "G200X nanoindenter, peak load 5 mN, loading/unloading rate 500 µN/s, Oliver-Pharr method; indentation positions validated by EBSD",
+      "measurement_conditions": "Peak load 5 mN",
+      "purpose": "Measure local phase hardness",
+      "key_findings": "R850: martensite 6.0 ± 0.5 GPa, ferrite 2.6 ± 0.3 GPa, DIF 3.0 ± 0.3 GPa."
+    },
+    {
+      "characterization_id": "char_mech_tests_R850",
+      "microstructure_id": null,
+      "technique": "Tensile testing and Charpy V-notch impact testing",
+      "instrument_or_setup": "Tensile: rod-shaped specimen (gauge 25 mm, dia 5 mm), crosshead speed 1.5 mm/min; Charpy V-notch bars 10 mm × 10 mm × 55 mm, notch on rolled surface",
+      "measurement_conditions": "Room temperature; tensile along RD; impact direction perpendicular to RD",
+      "purpose": "Measure tensile and impact properties",
+      "key_findings": "R850: UTS 1160.0 ± 15.4 MPa, TE 8.3 ± 0.1 %, IAE 5.6 ± 0.6 J, with Ei = 3.91 J and Ep = 2.10 J showing an unstable single-peak brittle impact curve."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermocalc_R850",
+      "simulation_method": "CALPHAD thermodynamic equilibrium calculation",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Equilibrium phase diagram and phase composition determined at each temperature for the tested steel composition",
+      "validation_against_experiment": "Predicted carbide stability range (≤750 °C) is consistent with the observed retained carbide/ferrite composite lamellae at low rolling temperature and complete carbide dissolution at 850 °C.",
+      "analytical_models": [
+        {
+          "model_name": "Orowan mechanism",
+          "equation_role": "Explains dislocation pinning by carbides (applicable to the carbide-containing low-temperature-rolled samples rather than R850)",
+          "parameters": [],
+          "model_note": "In the low-temperature rolling zone, carbide particles pin dislocations via the Orowan mechanism; not active in the carbide-free R850 sample."
+        },
+        {
+          "model_name": "Dislocation density from KAM",
+          "equation_role": "ρ = 2θ/(µb) used to calculate dislocation density from average KAM value θ, step size µ and Burgers vector b",
+          "parameters": [
+            {
+              "name": "θ",
+              "value": "0.3–0.4°",
+              "unit": "°"
+            },
+            {
+              "name": "µ",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "b",
+              "value": null,
+              "unit": null
+            }
+          ],
+          "model_note": "Applied to EBSD KAM data to obtain the dislocation density reported for R850 (2.1 × 10^14 m-2)."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "R850 strength–plasticity product (SPP = Rm × A) is 9.6 ± 0.1 GPa% (Table 4).",
+    "R850 instrumented Charpy impact: crack initiation energy Ei = 3.91 J and crack propagation energy Ep = 2.10 J (Fig. 5c), with a steep single impact-load peak (~17 kN) that decays within about 1 mm of displacement.",
+    "R850 EBSD: HAGB fraction 60.1 % and fraction of grains with GOS ≤ 2° = 19.4 % (Table 3 / Fig. 4c,g,k,o).",
+    "R850 work-hardening rate (θ) curve decreases monotonically with true strain without a hump, extending to about 0.08 true strain (Fig. 5f), indicating lack of coordinated multi-phase deformation.",
+    "R850 room-temperature impact energy is essentially zero (~5 J) in Fig. 5a, consistent with the tabulated IAE of 5.6 ± 0.6 J.",
+    "In the high-temperature rolling zone (R850/R950) the maximum phase nano-hardness difference reaches 3.86 GPa (martensite 5.98–6.50 GPa > DIF 2.84–2.98 GPa > δ-ferrite 2.64–2.77 GPa), which is larger than the abstract's stated >3.3 GPa martensite/ferrite difference.",
+    "Thermo-Calc predicts carbides vanish (dissolve to zero fraction) at about 710 °C, explaining the complete carbide dissolution in the R850 sample rolled at 850 °C."
+  ]
+}

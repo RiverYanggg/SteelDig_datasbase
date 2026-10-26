@@ -1,0 +1,526 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-1.56si-0.9c__aged-530c",
+      "paper_id": "10.1007_s11837-014-1068-y",
+      "alloy_id": "alloy_fe-30mn-9al-1.56si-0.9c",
+      "process_id": "proc_aged-530c",
+      "sample_label": "1.56% Si aged at 530°C",
+      "aliases": [
+        "1.56% Si aged 10 h/40 h at 530°C",
+        "1.56% Si 12 h/30 h aged"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_solution_treatment_1050c",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Parent solution treatment for the cast 1.56% Si, low-P steel before 530°C aging."
+    },
+    {
+      "processing_step_id": "step_aging_530c",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "aging (age hardening)",
+      "temperature": "530",
+      "temperature_unit": "°C",
+      "duration": "10 h, 12 h, 20 h, 30 h, 40 h, 60 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Age hardening at 530°C precipitates homogeneous coherent nano-sized κ-carbide. Reported aging times for this 1.56% Si sample: 10 h (DFT), 12 h (CVN), 20 h (tensile), 30 h (CVN), 40 h (DFT), 60 h (tensile)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_aged_1.56si",
+      "overall_structure": "Fully austenitic matrix with homogeneous coherent nano-sized κ-carbide (j-carbide) precipitates formed during 530°C aging.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_austenite_kappa",
+          "region": "overall (bulk)",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide (j-carbide), (Fe,Mn)3AlCx",
+              "crystal_structure": "E2₁ cubic perovskite",
+              "volume_fraction": null,
+              "morphology": "nano-sized coherent precipitates",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "porosity (micro-defects)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_carbide",
+              "type": "κ-carbide (j-carbide), (Fe,Mn)3AlCx",
+              "size": {
+                "value": "nanosized",
+                "unit": null
+              },
+              "distribution": "homogeneous in austenitic matrix",
+              "coherency": "coherent"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_kappa_austenite",
+      "phase_interfaces": [
+        {
+          "interface_id": "interface_kappa_gamma",
+          "microstructure_id": "micro_austenite_kappa",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "κ-carbide (j-carbide)",
+          "coherence": "coherent"
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": "Planar slip; κ-carbide precipitation contributes to planar slip, and shearing of κ-carbides concentrates slip on relatively few slip bands.",
+      "phase_evolution": "During 530°C aging, coherent nano-sized κ-carbide precipitates homogeneously; silicon increases κ-carbide formation kinetics, carbon content and volume fraction, while silicon partitions to austenite.",
+      "interface_notes": "κ-carbide has a cube-on-cube orientation relationship with austenite: <100>κ // <100>γ and {001}κ // {001}γ."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_tensile_20h_530c",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "25.4-mm (1-in.) gage length",
+        "test_standard": null,
+        "other_conditions": "Cast 1.56% Si, 0.002% P steel, calcium treated with Ar stirring, aged at 530°C for 20 h."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "800 ± 21",
+              "unit": "MPa",
+              "uncertainty": "± 21"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "834 ± 20",
+              "unit": "MPa",
+              "uncertainty": "± 20"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "30.2 ± 9.6",
+              "unit": "%",
+              "uncertainty": "± 9.6"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "309 ± 5",
+            "scale": "Brinell hardness number (BHN)",
+            "unit": "BHN",
+            "uncertainty": "± 5"
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_tensile_60h_530c",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "25.4-mm (1-in.) gage length",
+        "test_standard": null,
+        "other_conditions": "Cast 1.56% Si low-phosphorus steel (<0.007% P), calcium treated with Ar stirring, aged at 530°C for 60 h (Table II lists P as 0.001 for this row)."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "937 ± 8.9",
+              "unit": "MPa",
+              "uncertainty": "± 8.9"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1016 ± 2.5",
+              "unit": "MPa",
+              "uncertainty": "± 2.5"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "13.2 ± 4.2",
+              "unit": "%",
+              "uncertainty": "± 4.2"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "360 ± 6",
+            "scale": "Brinell hardness number (BHN)",
+            "unit": "BHN",
+            "uncertainty": "± 6"
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_dft_10h_530c",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "fatigue precracked Charpy specimens (instrumented Charpy)",
+        "test_standard": "Schindler single-specimen method (ASTM E 1820, ASTM E 813 referenced)",
+        "other_conditions": "1.56% Si, 0.002% P steel aged at 530°C for 10 h."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "318 ± 14",
+            "scale": "Brinell hardness number (BHN)",
+            "unit": "BHN",
+            "uncertainty": "± 14"
+          }
+        ],
+        "fracture_toughness": {
+          "value": "265 ± 66",
+          "unit": "kJ/m²"
+        },
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_dft_40h_530c",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "fatigue precracked Charpy specimens (instrumented Charpy)",
+        "test_standard": "Schindler single-specimen method (ASTM E 1820, ASTM E 813 referenced)",
+        "other_conditions": "1.56% Si, 0.002% P steel aged at 530°C for 40 h."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "375 ± 6",
+            "scale": "Brinell hardness number (BHN)",
+            "unit": "BHN",
+            "uncertainty": "± 6"
+          }
+        ],
+        "fracture_toughness": {
+          "value": "144 ± 50",
+          "unit": "kJ/m²"
+        },
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_hardness_age_curve_530c",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Low-phosphorus (<0.003% P) Fe-30Mn-9Al-1.56Si-0.9C steel aged at 530°C."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "rises from ~205–225 BHN at 1 h to a plateau near 350 BHN at 50–100 h",
+            "scale": "Brinell hardness number (BHN)",
+            "unit": "BHN",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_si_effect_toughness",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-30mn-9al-1.07si-0.9c",
+        "benchmark_process_id": "proc_aged-530c",
+        "benchmark_sample_id": null,
+        "comparison_metric": "Room-temperature CVN breaking energy and dynamic fracture toughness in the aged condition (~310 BHN)",
+        "improvement_percentage": "CVN decreased from 92 J to 68 J; dynamic fracture toughness decreased from 376 kJ/m² to 265 kJ/m²"
+      }
+    },
+    {
+      "performance_id": "perf_si_effect_cvn_12h_30h",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-30mn-9al-1.07si-0.9c",
+        "benchmark_process_id": "proc_aged-530c",
+        "benchmark_sample_id": null,
+        "comparison_metric": "Room-temperature CVN breaking energy for 12 h and 30 h aged low-P (<0.003% P) steels",
+        "improvement_percentage": "12 h: decreased from 93 J to 68 J; 30 h: decreased from 58 J to 35 J"
+      }
+    },
+    {
+      "performance_id": "perf_si_effect_tensile_60h",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-30mn-9al-1.07si-0.9c",
+        "benchmark_process_id": "proc_aged-530c",
+        "benchmark_sample_id": null,
+        "comparison_metric": "Tensile properties of low-P (<0.007% P) steels aged 60 h at 530°C",
+        "improvement_percentage": "YS 873 → 937 MPa; UTS 953 → 1016 MPa; elongation decreased from 20% to 13%"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_tem_darkfield",
+      "microstructure_id": "micro_austenite_kappa",
+      "technique": "Transmission electron microscopy (TEM), dark-field imaging",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Aged 60 h at 530°C (Bartlett et al. Si-effect study)",
+      "purpose": "Study κ-carbide precipitation and the effect of silicon",
+      "key_findings": "Increasing silicon accelerated κ-carbide formation and appeared to increase its volume fraction."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_austenite_kappa",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Confirm absence/presence of spinodal decomposition and short-range ordering; monitor lattice parameters",
+      "key_findings": "No spinodal decomposition or SRO in solution-treated specimens regardless of Si; silicon partitions to austenite during aging and decreases the austenite lattice parameter."
+    },
+    {
+      "characterization_id": "char_apt",
+      "microstructure_id": "micro_austenite_kappa",
+      "technique": "3-D atom probe tomography (APT)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Aged 60 h at 530°C",
+      "purpose": "Measure carbon partitioning and composition of κ-carbide",
+      "key_findings": "Silicon increased the carbon partitioning coefficient in κ-carbide from 2.1 (0.59% Si) to 2.9 (1.56% Si)."
+    },
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": null,
+      "technique": "Brinell hardness testing",
+      "instrument_or_setup": "Hardness Brinell (3000 kg), converted from Rockwell B and C scale measurements",
+      "measurement_conditions": null,
+      "purpose": "Measure age-hardening response of the 1.56% Si steel at 530°C",
+      "key_findings": "1.56% Si hardens to a plateau near 350 BHN (Fig. 2a); specific values 309 ± 5 (20 h), 318 ± 14 (10 h), 360 ± 6 (60 h), 375 ± 6 (40 h)."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Tensile testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "25.4-mm (1-in.) gage length for elongation",
+      "purpose": "Measure yield strength, ultimate tensile strength and elongation",
+      "key_findings": "Aged 20 h: YS 800 ± 21 MPa, UTS 834 ± 20 MPa, elongation 30.2 ± 9.6%; aged 60 h: YS 937 ± 8.9 MPa, UTS 1016 ± 2.5 MPa, elongation 13.2 ± 4.2%."
+    },
+    {
+      "characterization_id": "char_cvn",
+      "microstructure_id": null,
+      "technique": "Charpy V-notch (CVN) impact testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Room temperature (25°C) and -40°C",
+      "purpose": "Measure notch toughness (breaking energy)",
+      "key_findings": "Room temperature: 68 J (12 h aged), 35 J (30 h aged); -40°C: ~20 J (12 h), ~12 J (30 h) (Fig. 11)."
+    },
+    {
+      "characterization_id": "char_dft",
+      "microstructure_id": null,
+      "technique": "Instrumented Charpy impact testing (dynamic fracture toughness via Schindler single-specimen method)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Fatigue-precracked Charpy specimens; aged 10 h and 40 h at 530°C",
+      "purpose": "Measure dynamic fracture toughness JId",
+      "key_findings": "DFT 265 ± 66 kJ/m² (10 h, 318 ± 14 BHN) and 144 ± 50 kJ/m² (40 h, 375 ± 6 BHN)."
+    },
+    {
+      "characterization_id": "char_sem_fractography",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM) fractography (secondary-electron imaging)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "12 h aged specimen broken at -40°C; specimens aged to ~300 and ~350 BHN",
+      "purpose": "Fracture surface analysis",
+      "key_findings": "12 h aged broken at -40°C: transgranular cleavage-like fracture with slip traces on favorably oriented facets; at ~350 BHN: brittle transgranular cleavage facets with {111} slip traces."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_abinitio_si_kappa",
+      "simulation_method": "First-principles (ab initio) calculations",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Predicted yield-strength increase in reasonable agreement with previously reported mechanical properties",
+      "analytical_models": [
+        {
+          "model_name": "Spinodal hardening mechanism (derived from Kato et al.)",
+          "equation_role": "Predict yield strength increase with Si content for specimens aged 60 h at 530°C",
+          "parameters": [
+            {
+              "name": "yield strength increase",
+              "value": "120",
+              "unit": "MPa/wt.% Si"
+            }
+          ],
+          "model_note": "Silicon increases the activity of carbon in austenite and stabilizes κ-carbide at higher temperatures; repulsive Si-C interaction increases carbon partitioning into κ-carbide."
+        }
+      ],
+      "block_id": [
+        "b0021"
+      ]
+    }
+  ],
+  "unmapped_findings": []
+}

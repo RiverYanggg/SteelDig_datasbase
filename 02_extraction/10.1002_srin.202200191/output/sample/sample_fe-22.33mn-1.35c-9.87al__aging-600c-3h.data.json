@@ -1,0 +1,128 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-22.33mn-1.35c-9.87al__aging-600c-3h",
+      "paper_id": "10.1002_srin.202200191",
+      "alloy_id": "alloy_fe-22.33mn-1.35c-9.87al",
+      "process_id": "proc_aging-600c-3h",
+      "sample_label": "600 °C aged steel",
+      "aliases": "600 °C for 3 h aged steel"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_aging_600c_3h",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "600 °C",
+      "temperature_unit": "°C",
+      "duration": "3 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Aging at 600 °C for 3 h; incoherent κ particles form within the austenite matrix after higher aging temperature and longer time."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_1",
+      "overall_structure": "austenite matrix with incoherent κ particles",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": null,
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide (κ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "incoherent particles",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_1",
+              "type": "κ-carbide (incoherent κ particles)",
+              "size": null,
+              "distribution": "within the austenite matrix",
+              "coherency": "incoherent"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_1",
+          "microstructure_id": "micro_1",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "κ-carbide (κ)",
+          "coherence": "incoherent"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_1",
+          "microstructure_id": "micro_1",
+          "interaction_type": "incoherent κ particles inhibit crack nucleation during wear test",
+          "qualitative_or_quantitative_description": "The incoherent κ particles within the austenite matrix, after higher aging temperature and longer time, inhibited crack nucleation during the wear test."
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": "Incoherent κ particles form within the austenite matrix after higher aging temperature and longer time.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [],
+  "performance": [
+    {
+      "performance_id": "perf_1",
+      "service_conditions": {
+        "operating_temperature": null,
+        "stress_state": null,
+        "environment": "wear test"
+      },
+      "lifetime_prediction": null,
+      "comparative_performance": null
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_1",
+      "microstructure_id": null,
+      "technique": "scanning electron microscopy (SEM)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "observation of worn surface and wear debris",
+      "purpose": "observe the worn surface and wear debris of the 600 °C aged steel",
+      "key_findings": "Worn surface shows craters; wear debris consist of irregular flaky fragments; the observation supports that the 600 °C aged steel has good wear resistance."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Wear-rate vs aging-time data for Fe–22.33Mn–1.35C–9.87Al (wt%) steel (Figure 8a): for 600 °C aging the linear fit is y = −0.0374x + 0.2146 (R² = 0.99), where y = wear rate ×10³ (mm³/Nm) and x = aging time (h); the 600 °C line lies lowest among the 500 °C (y = −0.0426x + 0.332, R² = 0.97) and 550 °C (y = −0.0399x + 0.2804, R² = 0.93) series. [figure_008]",
+    "The 600 °C for 3 h aged steel corresponds to the 3 h endpoint of the 600 °C series in Figure 8a, and is described as having good wear resistance. [b0080, b0081]",
+    "SEM of the worn surface of the 600 °C for 3 h aged steel shows craters (100 µm scale bar; 10 µm inset). [figure_008, b0081]",
+    "SEM of the wear debris of the 600 °C for 3 h aged steel shows irregular flaky fragments (100 µm scale bar; 10 µm inset of a single plate). [figure_008, b0081]"
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-7al-0.002c__aimfc-hot-rolled",
+      "paper_id": "10.1007_s11837-014-1065-1",
+      "alloy_id": "alloy_fe-7al-0.002c",
+      "process_id": "proc_aimfc-hot-rolled",
+      "sample_label": "Fe-7Al-.002C",
+      "aliases": [
+        "Fe-7Al-0.012C (Fig. 5)",
+        "Fe-7Al-0.02C (text)"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1",
+      "sequence": "1",
+      "type": "melting",
+      "method": "air induction melting with flux cover (AIMFC)",
+      "temperature": "1900 K",
+      "temperature_unit": "K",
+      "duration": "2 min",
+      "atmosphere": "air (protective flux cover)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Forty-kilogram melts of five Fe-7Al-C alloys (Table IV) were prepared by AIMFC; the general AIMFC description mentions flux containing Al2O3, CaO, MgO and CaF2 and top pouring into split cast iron molds."
+    },
+    {
+      "processing_step_id": "step_2",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot forging",
+      "temperature": "1373 K",
+      "temperature_unit": "K",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-forged in a 1-tonne pneumatic forge hammer with die platens at room temperature; 24-mm-thick forged billets were then produced."
+    },
+    {
+      "processing_step_id": "step_3",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1373 K",
+      "temperature_unit": "K",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "50%",
+      "processing_steps_notes": "Samples were reheated after every six rolling passes under preheating conditions; final hot-rolled plate thickness was 12 mm."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "single-phase structure with no precipitates; coarse equiaxed grains",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": "hot-rolled plate (bulk)",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "Fe3Al (disordered bcc α-Fe(Al) solid solution)",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "coarse equiaxed single-phase grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "porosity/pits (isolated dark dots)",
+              "porosity": "few isolated dark dots/pits",
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "props_tableV_baseline",
+      "measurement_conditions": {
+        "temperature": "room temperature (RT)",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "hot-rolled plate",
+        "test_standard": null,
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "382 ± 6.3",
+              "unit": "MPa",
+              "uncertainty": "± 6.3"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "425 ± 4.5",
+              "unit": "MPa",
+              "uncertainty": "± 4.5"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "21 ± 2.2",
+              "unit": "%",
+              "uncertainty": "± 2.2"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk",
+            "value": "193 ± 5.8 HV",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": "± 5.8"
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om",
+      "microstructure_id": "micro_1",
+      "technique": "optical microscopy",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Characterize the microstructure of hot-rolled Fe-7Al-C plates with increasing carbon content.",
+      "key_findings": "The 0.012 wt.% C (baseline) plate shows coarse equiaxed single-phase grains with clean boundaries and only isolated dark dots/pits; no resolvable precipitates."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_1",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Philips 3710 x-ray diffractometer, Cu-Kα radiation",
+      "measurement_conditions": "Cu-Kα radiation",
+      "purpose": "Identify phases present in the Fe-7Al carbon-series alloys.",
+      "key_findings": "Only Fe3Al reflections ((111), (220), (400), (422), (440)) are present in the 0.012 wt.% C baseline; no Fe3AlC0.5 peaks."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "tensile testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "room temperature",
+      "purpose": "Determine room-temperature tensile properties of the hot-rolled carbon-series alloys.",
+      "key_findings": "Fe-7Al-.002C: UTS 425 ± 4.5 MPa, YS 382 ± 6.3 MPa, EL 21 ± 2.2%."
+    },
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": null,
+      "technique": "hardness testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "bulk hardness (HV)",
+      "purpose": "Measure bulk hardness of the hot-rolled carbon-series alloys.",
+      "key_findings": "Fe-7Al-.002C bulk hardness = 193 ± 5.8 HV."
+    },
+    {
+      "characterization_id": "char_chem",
+      "microstructure_id": null,
+      "technique": "chemical composition analysis",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Determine chemical composition of the AIMFC carbon-series alloys.",
+      "key_findings": "Fe-7Al-.002C composition (wt.%): Al 6.86, Si 0.18, Mn 0.16, S 0.004, C 0.002."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The carbon level of this baseline alloy is inconsistently reported: Table IV gives 0.002 wt.% C, Fig. 5 caption labels it 0.012 wt.% C, and the section text (b0061) refers to 0.02 C.",
+    "This sample is serial no. 1 (the carbon-free baseline) of the five Fe-7Al-C alloys prepared as 40-kg AIMFC melts; the Fig. 5 and Table V captions label the melting route 'AIM' although the section text (b0060) states the alloys were prepared by air induction melting with a flux cover (AIMFC)."
+  ]
+}

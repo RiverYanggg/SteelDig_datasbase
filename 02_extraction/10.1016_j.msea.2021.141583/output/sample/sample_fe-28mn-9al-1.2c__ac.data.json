@@ -1,0 +1,241 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-9al-1.2c__ac",
+      "paper_id": "10.1016_j.msea.2021.141583",
+      "alloy_id": "alloy_fe-28mn-9al-1.2c",
+      "process_id": "proc_ac",
+      "sample_label": "as-cast 0Cr strip",
+      "aliases": [
+        "0Cr as-cast",
+        "as-cast 0Cr",
+        "as-cast Cr-free strip"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_centrifugal_casting",
+      "sequence": "1",
+      "type": "solidification/casting",
+      "method": "centrifugal casting under near-rapid solidification condition — liquid metal poured into a copper mold at 600 r/min",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "Ar",
+      "cooling_medium": "copper mold",
+      "heating_or_cooling_rate": "5×10^3 K/s (calculated maximum cooling rate)",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Alloy ingot made from high purity Fe (99.99%), Mn (99.9%), Al (99.9%), C (99.8%), Cr (99.9%); reheated to melt by an induction coil; liquid metal poured into a copper mold rotating at 600 r/min in Ar atmosphere; obtained strip size (60–80) mm × 60 mm × 2.5 mm. This as-cast strip is the un-annealed terminal condition and received no post-solidification heat treatment."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_as_cast_0Cr",
+      "overall_structure": "Two-phase microstructure composed of austenite (γ, major matrix phase) and ferrite (δ) uniformly distributed in the austenite matrix, together with nano-scale κ-carbide precipitates in the austenite; δ-ferrite first nucleated and grew from the melt according to the FA (ferrite-to-austenite) solidification mode.",
+      "number_of_phases": "2 (austenite γ + ferrite δ), plus κ-carbide precipitates",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_austenite_matrix",
+          "region": "matrix (austenite) of the strip",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC (indexed γ reflections (111),(200),(220),(311),(222))",
+              "volume_fraction": "major matrix phase",
+              "morphology": "continuous matrix",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "a few dislocations in austenite of 0Cr strip",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_kappa_carbide",
+              "type": "κ-carbide",
+              "size": {
+                "value": "8",
+                "unit": "nm"
+              },
+              "distribution": "clear superlattice present in austenite matrix of 0Cr strip; κ-carbides are only visible at the austenite/ferrite phase boundary in the DF image because sizes in the austenite are too small to identify",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_ferrite_particles",
+          "region": "dispersed uniformly in the austenite matrix (located at the centre of austenite grains)",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (δ)",
+              "crystal_structure": null,
+              "volume_fraction": "10.2 vol%",
+              "morphology": "rod-like (rodlike) particles",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_as_cast_0Cr",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_austenite_ferrite",
+          "microstructure_id": "micro_ferrite_particles",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "ferrite (δ)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "def_int_kappa_dislocation",
+          "microstructure_id": "micro_austenite_matrix",
+          "interaction_type": "obstruction of dislocation glide by κ-carbides (glide plane softening)",
+          "qualitative_or_quantitative_description": "Nano-scale κ-carbides obstruct dislocation glide; the glide plane softening effect of nano κ-carbides yields a lower strain hardening rate of the as-cast Cr-free strip. Reduced κ-carbide precipitation in Cr-containing strips results in a high strain hardening rate."
+        }
+      ],
+      "slip_behavior": "Slip bands in austenite are observed during deformation of the strips. In the as-cast 0Cr strip the average spacing between slip bands is ~90 nm and the average width of slip bands is 13.4 nm after tensile fracture. The slip spacing is relatively wide in the 0Cr strip due to localization of shearing caused by the higher obstruction of larger κ-carbides to dislocations.",
+      "phase_evolution": null,
+      "interface_notes": "FA (ferrite-to-austenite) solidification mode applies: L → L+δ → L+δ+γ → δ+γ; all ferrites are located in the centre of austenite grains, indicating δ-ferrite first nucleated and grew from the melt during near-rapid solidification."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_as_cast_0Cr",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1×10^-3 s^-1",
+        "specimen_geometry": "gauge 20 mm × 4 mm × 1 mm",
+        "test_standard": null,
+        "other_conditions": "tensile tests by MTS Criterion Model 44 with 10 kN capacity; each test data supported by more than three tensile specimens; values averaged over 3 measurements"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "724 ± 16",
+              "unit": "MPa",
+              "uncertainty": "± 16"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "924 ± 24",
+              "unit": "MPa",
+              "uncertainty": "± 24"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "40.8 ± 8",
+              "unit": "%",
+              "uncertainty": "± 8"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "value": "1626",
+              "unit": "MPa",
+              "note": "average strain hardening rate in the steady hardening stage (first of the four values 1626, 2048, 2266, 2385 MPa for 0Cr, 3Cr, 6Cr, 9Cr)"
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.49",
+          "unit": "g/cm3",
+          "uncertainty": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_0Cr_vs_Cr_added",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "uniaxial tensile loading",
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-28mn-9al-1.2c",
+        "benchmark_process_id": "proc_ac",
+        "benchmark_sample_id": "sample_fe-28mn-9al-1.2c__ac",
+        "comparison_metric": "Effect of Cr addition on as-cast strip properties: Cr addition nonlinearly changes yield strength (first reduces to 617 MPa at 3Cr then increases to 740 MPa at 9Cr, both relative to the 724 MPa of Cr-free 0Cr) and clearly decreases total elongation of as-cast strips; it increases ultimate tensile strength and strain hardening rate.",
+        "improvement_percentage": null
+      }
+    },
+    "source"
+  ],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

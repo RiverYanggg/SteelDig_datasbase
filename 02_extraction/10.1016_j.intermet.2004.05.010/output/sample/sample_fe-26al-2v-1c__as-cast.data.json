@@ -1,0 +1,268 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-26al-2v-1c__as-cast",
+      "paper_id": "10.1016_j.intermet.2004.05.010",
+      "alloy_id": "alloy_fe-26al-2v-1c",
+      "process_id": "proc_as-cast",
+      "sample_label": "Fe-26Al-2V-1C",
+      "aliases": []
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1",
+      "sequence": "1",
+      "type": "melting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_2",
+      "sequence": "2",
+      "type": "casting",
+      "method": "casting into cylindrical copper moulds",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "copper mould",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Moulds 32 mm in diameter by 186 mm in length; as-cast terminal state (no further heat treatment reported)."
+    },
+    {
+      "processing_step_id": "step_3",
+      "sequence": "3",
+      "type": "specimen preparation",
+      "method": "spark erosion cutting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Samples cut from cast ingots by spark erosion in the direction of the longitudinal axis of the ingot (casting direction); specimen surfaces ground."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_1",
+      "overall_structure": "Two-phase Fe3Al matrix with MC carbide (VC) precipitates",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": "matrix (as-cast columnar grains)",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "Fe3Al (matrix)",
+              "crystal_structure": "D03 (ordered)",
+              "volume_fraction": null,
+              "morphology": "Columnar grains",
+              "grain_size": "450×3000 μm",
+              "texture": null
+            },
+            {
+              "phase_name": "VC (vanadium carbide)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "Plate-like (needle-like)",
+              "grain_size": "0.5×15 μm",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "450×3000",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_1",
+              "type": "VC",
+              "size": {
+                "value": "0.5×15",
+                "unit": "μm"
+              },
+              "distribution": null,
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_1",
+          "microstructure_id": "micro_1",
+          "phase_1_name": "Fe3Al (matrix)",
+          "phase_2_name": "VC",
+          "coherence": "(001) matrix planes parallel to (001) precipitate planes (orientation relationship)"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_1",
+          "microstructure_id": "micro_1",
+          "interaction_type": "Precipitate notch sensitivity / tension-compression asymmetry",
+          "qualitative_or_quantitative_description": "Relatively thin (about 0.5 mm as printed in b0029; Table 1 gives 0.5 μm) and sharp plate-like VC precipitates cause notch sensitivity of the matrix and a pronounced tension–compression asymmetry (≈36%)."
+        }
+      ],
+      "slip_behavior": "Screw dislocation glide with nonplanar (delocalised) core structure contributes to the tension–compression asymmetry.",
+      "phase_evolution": "D03/B2 order–disorder transition at around 550 °C; B2/A2 at around 800 °C before melting.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_rt",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-4 s^-1",
+        "specimen_geometry": "compression: (6×6×10) mm^3; tension: flat (3.5×5) mm^2 cross-section with 15 mm gauge length",
+        "test_standard": null,
+        "other_conditions": "Specimens cut along the longitudinal axis (casting direction); surfaces ground; ZWICK 1474 universal testing machine."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "compression",
+              "value": "544",
+              "unit": "MPa",
+              "uncertainty": null
+            },
+            {
+              "direction": "tension",
+              "value": "350",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [],
+          "elongation": [
+            {
+              "direction": "tension",
+              "value": "0.5",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "matrix",
+            "value": "286",
+            "scale": "Brinell",
+            "unit": "HB",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_elevated",
+      "measurement_conditions": {
+        "temperature": "up to 800 °C",
+        "temperature_unit": "°C",
+        "environment": "protective argon atmosphere",
+        "strain_rate": "10^-4 s^-1",
+        "specimen_geometry": "compression (6×6×10) mm^3; tension flat (3.5×5) mm^2 cross-section, 15 mm gauge length",
+        "test_standard": null,
+        "other_conditions": "Elevated-temperature tests in radiation furnace; samples held 30 min at testing temperature before loading; temperature checked by NiCr–Ni thermocouple on the specimen surface."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "compression",
+              "value": "about 400",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": "micro_1",
+      "technique": "Brinell hardness",
+      "instrument_or_setup": "load of 62.5 g (as printed) with an indentation ball of 2.5 mm diameter",
+      "measurement_conditions": null,
+      "purpose": "Measure matrix hardness",
+      "key_findings": "Matrix hardness of Fe-26Al-2V-1C is 286 HB."
+    },
+    {
+      "characterization_id": "char_mech_test",
+      "microstructure_id": null,
+      "technique": "Uniaxial compression and tension testing",
+      "instrument_or_setup": "ZWICK 1474 universal testing machine",
+      "measurement_conditions": "Deformation rate 10^-4 s^-1; compression samples (6×6×10) mm^3; tensile flat samples (3.5×5) mm^2 cross-section, 15 mm gauge length; specimens cut along casting direction and ground; elevated-temperature tests in protective argon within a radiation furnace.",
+      "purpose": "Determine yield stress in compression/tension and total elongation at room and elevated temperatures.",
+      "key_findings": "Room temperature: compression yield 544 MPa, tension yield 350 MPa, elongation 0.5%; pronounced tension–compression asymmetry ≈36%. Elevated temperature: yield stress anomaly peak at about 550 °C with about 400 MPa; tension–compression asymmetry at 650 and 800 °C."
+    },
+    {
+      "characterization_id": "char_sem",
+      "microstructure_id": "micro_1",
+      "technique": "Scanning electron microscopy (SEM) with secondary electrons (SE)",
+      "instrument_or_setup": "SEM-Hitachi S-530, 20 kV, working distance 15 mm",
+      "measurement_conditions": "Fracture surfaces of tensile specimens",
+      "purpose": "Observe fracture mode after tensile testing",
+      "key_findings": "Uniform step-like transgranular fracture (TGC) with plate-like (needle-shaped) VC precipitates; fracture facets formed on (001) matrix planes parallel to (001) precipitate planes."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "At 650 °C and 800 °C, Fe-26Al-2V-1C exhibits tension–compression asymmetry (compression yield stress > tension yield stress); no numeric value labels are printed for individual bars in Fig. 7/Fig. 8 [b0040][figure_007][figure_008].",
+    "In b0029 the VC precipitate thickness is printed as 'about 0.5 mm', while Table 1 lists the VC size as 0.5×15 μm; the precipitates are described as thin and sharp plate-like and cause notch sensitivity of the matrix [b0029][b0015].",
+    "Room-temperature compression stress–strain curve of Fe-26Al-2V-1C (curve 9, Fig. 2b) shows nearly constant hardening rate over long strain intervals before a final parabolic stage [b0027][figure_002]."
+  ]
+}

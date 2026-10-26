@@ -1,0 +1,258 @@
+{
+  "schema_version": "sample-discover-v1",
+  "paper_id": "10.1016_j.mtcomm.2024.108270",
+  "domain": "materials",
+  "paper": {
+    "paper_id": "10.1016_j.mtcomm.2024.108270",
+    "doi": "10.1016/j.mtcomm.2024.108270",
+    "title": "A modified Johnson-Cook model to determine plastic flow behavior of Fe-30Mn-9Al-0.8 C low-density steel during warm multiaxial forging",
+    "authors": [
+      "Hemant Kumar",
+      "Manish Tiwari",
+      "R. Manna",
+      "Debashis Khan"
+    ],
+    "publication_year": "2024",
+    "journal": "Materials Today Communications",
+    "keywords": [
+      "Low-density steel",
+      "MAF",
+      "Electron microscopy",
+      "Modified J-C model",
+      "Dislocation density",
+      "Grain refinement",
+      "Tensile strength"
+    ],
+    "research_type": "mixed",
+    "paper_scope": "Experimental (XRD/EBSD/tensile) and finite-element (modified J-C constitutive model with dislocation density and grain size) investigation of the microstructural evolution and tensile strengthening of Fe-30Mn-9Al-0.8C low-density steel during warm multiaxial forging (MAF) at 250 °C up to 5 passes (equivalent strain 2.3)."
+  },
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe-30mn-9al-0.8c",
+      "alloy_name": "Fe-30Mn-9Al-0.8 C low-density steel",
+      "aliases": [
+        "Fe-30Mn-9Al-0.8C",
+        "Fe-30Mn-9Al-0.8 C steel",
+        "Fe-Mn-Al-C low-density steel",
+        "low-density steel",
+        "Fe-Mn-Al-C steel"
+      ],
+      "description": "Austenite-based Fe-Mn-Al-C low-density steel prepared by vacuum induction melting, intended for automotive lightweighting; possesses very high ductility (>70% at room temperature) and high formability, and is processed by warm multiaxial forging.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "30",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "9",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.8",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Nominal composition Fe-30Mn-9Al-0.8C; the actual composition after solutionization is reported as Fe-30.6Mn-9.1Al-0.79C. The alloy is mainly single-phase austenite. Density measured as 6.8 g/cm3 by Archimedes' principle. k (grain-size strengthening constant) = 2374 MPa·μm^0.5; α = 0.24, M = 3.0, G = 61 GPa.",
+      "source": {
+        "reason": "The paper studies a single compositional system throughout: a low-density Fe-30Mn-9Al-0.8C austenitic steel. Nominal composition Fe-30Mn-9Al-0.8C is stated, and the actual measured composition after solutionization is Fe-30.6Mn-9.1Al-0.79C. All processing variants (MAF passes) are based on this same alloy, so only one alloy entity is defined.",
+        "block_id": [
+          "b0022",
+          "b0018",
+          "b0059",
+          "b0008"
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_solutionized-wq-1050c-1h",
+      "alloy_id": "alloy_fe-30mn-9al-0.8c",
+      "process_name": "Solution treated and water quenched (0 MAF pass)",
+      "state_label": "MAF-0",
+      "aliases": [
+        "MAF-0",
+        "0 pass",
+        "0 Pass",
+        "solutionized",
+        "solutionized and quenched",
+        "solution annealed",
+        "initial annealed state"
+      ],
+      "parent_process_ids": [],
+      "description": "Ingot homogenized at 1200 °C for 2 h, hot forged between 1200–900 °C with >60% deformation and water quenched, then solutionized at 1050 °C for 1 h and water quenched to retain maximum austenite; coarse-grained (~50 μm) initial state prior to MAF (equivalent strain 0).",
+      "processes_notes": "MAF-0 denotes the annealed/solutionized starting state (0 MAF pass) and is the reference against which strengthening contributions are measured.",
+      "source": {
+        "reason": "The paper labels the 0-pass solutionized-and-quenched condition as MAF-0, distinguishing it from the forged states; it is a distinct终态 used for characterization and tensile testing.",
+        "block_id": [
+          "b0022",
+          "b0030",
+          "b0074",
+          "b0067"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_maf-250c-1pass",
+      "alloy_id": "alloy_fe-30mn-9al-0.8c",
+      "process_name": "Warm multiaxial forging at 250 °C, 1 pass",
+      "state_label": "MAF-1",
+      "aliases": [
+        "MAF-1",
+        "1 pass",
+        "one pass"
+      ],
+      "parent_process_ids": [
+        "proc_solutionized-wq-1050c-1h"
+      ],
+      "description": "Multiaxial forging at 250 °C, 1 pass with 33% normal strain per pass (equivalent strain ≈ 0.47), ram speed 1 mm/s on a 100-ton hydraulic press.",
+      "processes_notes": "All MAF passes share the same warm-forging conditions (250 °C, 33% normal strain per pass, 1 mm/s ram speed); passes accumulate cumulatively as 0→1→3→5.",
+      "source": {
+        "reason": "The 1-pass forged state is denoted MAF-1, obtained by warm MAF (250 °C) with equivalent strain 0.47; it is a distinct终态 with its own measured microstructure and properties.",
+        "block_id": [
+          "b0030",
+          "b0027",
+          "b0029",
+          "b0032"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_maf-250c-3pass",
+      "alloy_id": "alloy_fe-30mn-9al-0.8c",
+      "process_name": "Warm multiaxial forging at 250 °C, 3 passes",
+      "state_label": "MAF-3",
+      "aliases": [
+        "MAF-3",
+        "3 pass",
+        "three passes"
+      ],
+      "parent_process_ids": [
+        "proc_maf-250c-1pass"
+      ],
+      "description": "Multiaxial forging at 250 °C, 3 passes with 33% normal strain per pass (cumulative equivalent strain ≈ 1.4), ram speed 1 mm/s.",
+      "processes_notes": "Cumulative pass number increasing from 1 to 3; same warm-forging conditions as the other passes.",
+      "source": {
+        "reason": "The 3-pass forged state is denoted MAF-3, obtained by warm MAF (250 °C) to cumulative equivalent strain 1.4; it is a distinct终态 characterized by XRD, EBSD and tensile testing.",
+        "block_id": [
+          "b0030",
+          "b0032",
+          "b0074"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_maf-250c-5pass",
+      "alloy_id": "alloy_fe-30mn-9al-0.8c",
+      "process_name": "Warm multiaxial forging at 250 °C, 5 passes",
+      "state_label": "MAF-5",
+      "aliases": [
+        "MAF-5",
+        "5 pass",
+        "five passes"
+      ],
+      "parent_process_ids": [
+        "proc_maf-250c-3pass"
+      ],
+      "description": "Multiaxial forging at 250 °C, 5 passes with 33% normal strain per pass (cumulative equivalent strain ≈ 2.3), ram speed 1 mm/s; maximum number of passes achieved before failure.",
+      "processes_notes": "The sample could only be forged a total of five times before breaking on the sixth attempt; highest strain state studied.",
+      "source": {
+        "reason": "The 5-pass forged state is denoted MAF-5, obtained by warm MAF (250 °C) to cumulative equivalent strain 2.3; it is a distinct终态 with the highest dislocation density and refined grain size.",
+        "block_id": [
+          "b0030",
+          "b0029",
+          "b0060",
+          "b0106"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-0.8c__solutionized-wq-1050c-1h",
+      "alloy_id": "alloy_fe-30mn-9al-0.8c",
+      "process_id": "proc_solutionized-wq-1050c-1h",
+      "sample_label": "MAF-0",
+      "aliases": [
+        "0 pass",
+        "solutionized and quenched"
+      ],
+      "source": {
+        "reason": "Combination of the Fe-30Mn-9Al-0.8C alloy in the solutionized-and-water-quenched (0 MAF pass) state; characterized by XRD/EBSD and tensile tested as the reference condition.",
+        "block_id": [
+          "b0030",
+          "b0074",
+          "b0067"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-30mn-9al-0.8c__maf-250c-1pass",
+      "alloy_id": "alloy_fe-30mn-9al-0.8c",
+      "process_id": "proc_maf-250c-1pass",
+      "sample_label": "MAF-1",
+      "aliases": [
+        "1 pass"
+      ],
+      "source": {
+        "reason": "Combination of the Fe-30Mn-9Al-0.8C alloy forged by warm MAF for 1 pass at 250 °C; distinct sample with its own dislocation density (5.57e15 m-2), grain size (35 μm) and yield strength (1040 MPa).",
+        "block_id": [
+          "b0030",
+          "b0074"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-30mn-9al-0.8c__maf-250c-3pass",
+      "alloy_id": "alloy_fe-30mn-9al-0.8c",
+      "process_id": "proc_maf-250c-3pass",
+      "sample_label": "MAF-3",
+      "aliases": [
+        "3 pass"
+      ],
+      "source": {
+        "reason": "Combination of the Fe-30Mn-9Al-0.8C alloy forged by warm MAF for 3 passes at 250 °C; distinct sample with dislocation density 7.5e15 m-2, grain size 20 μm and yield strength 1279/1289 MPa.",
+        "block_id": [
+          "b0030",
+          "b0075"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-30mn-9al-0.8c__maf-250c-5pass",
+      "alloy_id": "alloy_fe-30mn-9al-0.8c",
+      "process_id": "proc_maf-250c-5pass",
+      "sample_label": "MAF-5",
+      "aliases": [
+        "5 pass"
+      ],
+      "source": {
+        "reason": "Combination of the Fe-30Mn-9Al-0.8C alloy forged by warm MAF for 5 passes at 250 °C; distinct sample with dislocation density 8.98e15 m-2, grain size 13 μm and yield strength 1528 MPa.",
+        "block_id": [
+          "b0030",
+          "b0075"
+        ]
+      }
+    }
+  ],
+  "unmapped_findings": [
+    "Warm MAF experiments were carried out at 250 °C because the steel has the highest malleability between 150 °C and 450 °C (below recrystallization temperature); deformation above 450 °C causes carbide precipitation that increases hardness and decreases ductility.",
+    "A 3-D finite element model (ABAQUS/Explicit, VUMAT subroutine) of a 30×20×20 mm workpiece was built with 41382 C3D8R hex elements (mesh size 0.6 mm), friction coefficient 0.15, to simulate the MAF process with the modified J-C model (six state-dependent variables SDV1–SDV6).",
+    "Modified Johnson-Cook constitutive model (Eq. 6) incorporates grain-boundary strengthening (Hall-Petch, Eq. 4) and dislocation (Taylor) strengthening (Eq. 5) plus strain hardening, strain-rate sensitivity and thermal softening.",
+    "Dislocation density evolution follows ρf = ρ0 + k1(1 - exp(-k2 ε)) with k1 = 7.9e15 m-2 and k2 = 1.813; grain size evolution follows df = d0 exp(-k3 ε) with k3 = 0.639."
+  ]
+}

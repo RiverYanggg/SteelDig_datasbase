@@ -1,0 +1,238 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-mn-c-al__annealing",
+      "paper_id": "10.1002_srin.202200191",
+      "alloy_id": "alloy_fe-mn-c-al",
+      "process_id": "proc_annealing",
+      "sample_label": null,
+      "aliases": [
+        "annealed Fe–Mn–C–Al low-density steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_annealing",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Annealing controls the microstructure of Fe–Mn–C–Al low-density steel, yielding either fully austenite or austenite-based duplex (ferrite + austenite) microstructures."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_annealed_fully_austenite",
+      "overall_structure": "Annealed fully austenite (single-phase γ) low-density steel with abundant annealing twins and fully recovered grains; fully austenite composition range: Mn 12–30 wt%, Al 5–12 wt%, C 0.6–1.2 wt%.",
+      "number_of_phases": 1,
+      "microstructure_counts": 1,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_annealed_fully_austenite",
+          "region": null,
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": "equiaxed polygonal grains containing straight, parallel-sided annealing twins",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "annealing twins",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "structure_annealed_duplex",
+      "overall_structure": "Annealed austenite-based duplex (mixture of austenite matrix and elongated ferrite grains along rolling direction); duplex composition range: Al 5–10 wt%, Mn 5–30 wt%, C 0.4–0.7 wt%.",
+      "number_of_phases": 2,
+      "microstructure_counts": 1,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_annealed_duplex",
+          "region": null,
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite matrix (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": "light grey austenite matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "ferrite (α)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "dark, thin, elongated worm-/lentil-shaped grains roughly aligned with RD",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interfaces_annealed_fully_austenite",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "interaction_id": "twin_boundary_fully_austenite",
+          "microstructure_id": "micro_annealed_fully_austenite",
+          "interaction_type": "annealing twin boundary",
+          "qualitative_or_quantitative_description": "Abundant annealing twins observed within fully recovered austenite grains"
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": null,
+      "interface_notes": "Optical micrograph shows equiaxed polygonal austenite grains with straight, parallel-sided annealing twin bands (50 µm scale bar)."
+    },
+    {
+      "interface_set_id": "interfaces_annealed_duplex",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_austenite_ferrite_duplex",
+          "microstructure_id": "micro_annealed_duplex",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "ferrite (α)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": null,
+      "interface_notes": "Elongated ferrite grains are embedded in the austenite matrix and roughly aligned with RD."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_annealed_general",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "up to 950 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "up to 1.1 GPa",
+              "unit": "GPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "not less than 40%",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.2–7.0 g cm^-3",
+          "unit": "g cm^-3"
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om_annealed_fully_austenite",
+      "microstructure_id": "micro_annealed_fully_austenite",
+      "technique": "optical microscopy (OM)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "50 µm scale bar",
+      "purpose": "Observe the microstructure of annealed fully austenite low-density steel",
+      "key_findings": "Equiaxed polygonal austenite grains with abundant annealing twins; grains are fully recovered."
+    },
+    {
+      "characterization_id": "char_om_annealed_duplex",
+      "microstructure_id": "micro_annealed_duplex",
+      "technique": "optical microscopy (OM)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "20 µm scale bar",
+      "purpose": "Observe the microstructure of annealed austenite-based duplex low-density steel",
+      "key_findings": "Light grey austenite matrix (γ) containing dark, thin, elongated ferrite grains roughly aligned with RD."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": []
+}

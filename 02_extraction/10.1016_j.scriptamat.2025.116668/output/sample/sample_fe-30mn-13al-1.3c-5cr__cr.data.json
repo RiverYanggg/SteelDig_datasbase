@@ -1,0 +1,295 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-13al-1.3c-5cr__cr",
+      "paper_id": "10.1016_j.scriptamat.2025.116668",
+      "alloy_id": "alloy_fe-30mn-13al-1.3c-5cr",
+      "process_id": "proc_cr",
+      "sample_label": "CR",
+      "aliases": [
+        "CR specimen",
+        "cold rolled specimen"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "melting/casting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "argon",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Melted in a vacuum induction furnace under argon atmosphere and cast into ingot."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenization at 1200 °C for 2 h, performed before forging/hot rolling."
+    },
+    {
+      "processing_step_id": "step_forging",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "forging",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cast ingot forged to thick slab."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Forged slab hot rolled (HR) to 6 mm thickness."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050 °C",
+      "temperature_unit": "°C",
+      "duration": "0.5 h",
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "HR plates heated to 1050 °C, isothermally held for 0.5 h, then quenched in water."
+    },
+    {
+      "processing_step_id": "step_cold_rolling",
+      "sequence": "6",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cold rolled (CR) to 3 mm thickness, producing the CR (cold rolled) specimen."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_cr",
+      "overall_structure": "Austenite (FCC) - ferrite (BCC) duplex microstructure in the cold-rolled specimen. XRD shows clear austenite (FCC) and ferrite (BCC) diffraction peaks. The austenite matrix is largely deformed (cold rolled; GROD of austenite mostly 2°–180°) with only 7.9% recrystallized. Ferrite occurs in two morphologies: granular α ferrite at triple points of austenite grain boundaries and band-like δ ferrite elongated along the RD.",
+      "number_of_phases": 2,
+      "microstructure_counts": {
+        "recrystallized_austenite_fraction": "7.9%",
+        "ferrite_fraction_by_XRD": "12.6%",
+        "alpha_ferrite_fraction_by_EBSD": "5.7%",
+        "delta_ferrite_fraction_by_EBSD": "5.4%"
+      },
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_cr_austenite",
+          "region": "matrix",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ, FCC)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "Rex-γ 7.9% (recrystallized austenite fraction)",
+              "morphology": "deformed (cold-rolled), largely unrecrystallized matrix",
+              "grain_size": "15.38 ± 16.47 µm (γ grain size)",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "shear bands",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": "Largely deformed austenite: GROD map dominated by pink/red (GROD 2°–180°), i.e. highly strained/deformed"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "15.38 ± 16.47",
+              "unit": "µm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_cr_granular_alpha_ferrite",
+          "region": "triple points of austenite grain boundaries",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "α ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": "α fraction by EBSD 5.7%",
+              "morphology": "granular, located at triple points of austenite grain boundaries",
+              "grain_size": "0.6–1.8 µm",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "0.6–1.8",
+              "unit": "µm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_cr_banded_delta_ferrite",
+          "region": "banded along the rolling direction (RD)",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "δ ferrite",
+              "crystal_structure": "BCC",
+              "volume_fraction": "δ fraction by EBSD 5.4%",
+              "morphology": "band-like, elongated along the RD; traced to the preceding HR structure and still present after solution treatment",
+              "grain_size": "length 12–30 µm, thickness 2–6 µm",
+              "texture": "oriented along RD"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "length 12–30 µm, thickness 2–6 µm",
+              "unit": "µm"
+            },
+            "grain_size_distribution": null,
+            "texture": "elongated along the rolling direction (RD)"
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_cr",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": "Flat dog-bone-shaped tensile specimens with a gage length of 25 mm, length direction along the rolling direction (RD)",
+        "test_standard": null,
+        "other_conditions": "Tensile tests at strain rate 10^-3 s^-1 at room temperature; three measurements per heat treatment, average taken. No tensile data reported for the CR specimen (Table 1 shows '-')."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.36",
+          "unit": "g·cm^-3"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_cr",
+      "microstructure_id": "struct_cr",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Phase constituent identification of the CR structure and annealed structures",
+      "key_findings": "Diffraction peaks of austenite (FCC) and ferrite (BCC) were clearly observed in the CR sample; the CR sample shows FCC (111) near 43°, (200) near 50°, (220) near 74° and BCC (110) near 44.5° with a weak BCC (200) near 65°."
+    },
+    {
+      "characterization_id": "char_ebsd_cr",
+      "microstructure_id": "struct_cr",
+      "technique": "Electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "Scanning Auger Nanoprobe, PHI 710",
+      "measurement_conditions": "Phase (PH) mappings and grain-reference-orientation-deviation (GROD) mappings of austenite; GROD threshold < 2° used to define recrystallized fraction; dark lines are high-angle austenite grain boundaries > 15°",
+      "purpose": "Phase mapping and determination of recrystallized austenite fraction, austenite grain size, and α/δ ferrite fractions",
+      "key_findings": "CR phase map: light-blue FCC matrix with red BCC regions and shear bands (elongated red features); CR GROD map: dominated by pink/red (GROD 2°–180°) indicating largely deformed austenite. Measured CR values: Rex-γ fraction 7.9%, γ grain size 15.38 ± 16.47 µm, α fraction 5.7%, δ fraction 5.4%."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermo_equilibrium",
+      "simulation_method": "Thermodynamic equilibrium phase fraction calculation (CALPHAD-type)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Temperature range 550–1400 °C for the designed duplex steel",
+      "validation_against_experiment": "Calculated ferrite fraction remains almost constant at about 33% between 991 °C and 1250 °C and increases to a maximum as temperature decreases from 991 °C to 854 °C; in contrast the largest ferrite fraction measured by XRD appears at 900 °C and decreases above 900 °C, suggesting ferrite-to-austenite transformation.",
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "The CR (cold rolled) specimen is the 3 mm thick cold-rolled sheet obtained by hot rolling the ingot to 6 mm, solution treating at 1050 °C for 0.5 h and water quenching, then cold rolling to 3 mm; it is the precursor/parent state from which all annealed DP specimens (DP950-1, DP950-5, DP1000-1, DP1000-5, DP1000-5-TD, DP1050-1) were produced (b0012).",
+    "No tensile properties are reported for the CR specimen: Table 1 lists '-' for YS, UTS, TE, SYS and SUTS of CR (b0019).",
+    "At 600 °C (a typical κ-carbide ageing temperature) no κ-carbide was detected in the XRD due to its limited fraction; β-Mn phase was found at 700–900 °C; κ-carbides and Cr7C3 carbides appeared at 950–1000 °C and disappeared at 1050 °C; annealing at 900 °C for 5 min gave the strongest BCC peaks (b0015).",
+    "The measured ultralow density of the developed material is 6.36 g·cm^-3 (buoyancy balance, Archimedes Principle), close to the previous record of 6.34 g·cm^-3 (b0012).",
+    "The ductile-to-brittle behavior related to α/γ and δ/γ interfaces, crack nucleation/deflection and δ-ferrite band orientation (Figs. 3–4) is reported for the annealed specimens (DP1000-5, DP1000-5-TD), not specifically for the CR specimen (b0027)."
+  ]
+}

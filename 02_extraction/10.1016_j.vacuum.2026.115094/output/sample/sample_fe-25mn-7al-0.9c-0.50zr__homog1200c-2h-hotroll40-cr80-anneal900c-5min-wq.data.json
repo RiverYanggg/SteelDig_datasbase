@@ -1,0 +1,501 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-25mn-7al-0.9c-0.50zr__homog1200c-2h-hotroll40-cr80-anneal900c-5min-wq",
+      "paper_id": "10.1016_j.vacuum.2026.115094",
+      "alloy_id": "alloy_fe-25mn-7al-0.9c-0.50zr",
+      "process_id": "proc_homog1200c-2h-hotroll40-cr80-anneal900c-5min-wq",
+      "sample_label": "Zr0.50 steel",
+      "aliases": "Zr0.50"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_vacuum_arc_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "vacuum arc melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "high vacuum (pressure below 10^-6 bar) then high-purity argon (pressure below 1 bar)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Raw materials >99.8 wt% pure placed in water-cooled copper crucible; remelting repeated at least five times to promote uniform composition and reduce gas contamination (O 12-89 ppm, N ~18 ppm, H ~2 ppm)."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Applied to as-cast steels; Fig. S1 shows oxygen segregation to grain boundaries does not occur."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "40 %",
+      "processing_steps_notes": "Hot-rolling with a thickness reduction of 40 %, followed by water quenching."
+    },
+    {
+      "processing_step_id": "step_cold_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "80 %",
+      "processing_steps_notes": "The hot-rolled plates were subjected to cold rolling with an 80 % reduction; micro shear bands produced act as preferred nucleation sites for recrystallization."
+    },
+    {
+      "processing_step_id": "step_annealing",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "short-time annealing",
+      "temperature": "900",
+      "temperature_unit": "°C",
+      "duration": "5 min",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The Zr-alloyed cold-rolled plates were annealed at 900 °C for 5 min, followed by water quenching; this is the pre-deformation terminal state in which the bimodal heterogeneous grain structure forms."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_zr050_bimodal",
+      "overall_structure": "Single-phase bimodal heterogeneous FCC grain structure comprising coarse grain (CG) zones and fine grain (FG) zones, with a high density of nanoscale ZrC carbide particles; FG zones carry a high dislocation density (high KAM).",
+      "number_of_phases": "2 (FCC matrix + ZrC)",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_CG_zone",
+          "region": "coarse grain (CG) zones",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "FCC",
+              "crystal_structure": "FCC",
+              "volume_fraction": "65 %",
+              "morphology": "coarse recrystallized equiaxed grains",
+              "grain_size": "~5 μm",
+              "texture": "random grain orientations"
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "low (low KAM value relative to FG zones)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~5",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "bimodal histogram with a mode near 5 μm",
+            "texture": "random"
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_FG_zone",
+          "region": "fine grain (FG) zones",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "FCC",
+              "crystal_structure": "FCC",
+              "volume_fraction": "35 %",
+              "morphology": "fine recrystallized grains, banded arrangement",
+              "grain_size": "~1 μm",
+              "texture": "random grain orientations"
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "high (high KAM value, dense dislocations decorate fine FCC grains)",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~1",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "bimodal histogram with a mode near 2.5-3 μm / ~1 μm",
+            "texture": "random"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_ZrC",
+              "type": "ZrC carbide",
+              "size": {
+                "value": "~30",
+                "unit": "nm"
+              },
+              "distribution": "high density of fine particles uniformly distributed in FG regions and inside FCC grain interiors",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_zr050_fg_cg",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_CG_FG",
+          "microstructure_id": "micro_FG_zone",
+          "phase_1_name": "FCC (coarse grain CG zone)",
+          "phase_2_name": "FCC (fine grain FG zone)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "int_disl_nanotwin",
+          "microstructure_id": "micro_FG_zone",
+          "interaction_type": "dislocation - nanotwin interaction",
+          "qualitative_or_quantitative_description": "A high density of dislocations is decorated around the nanotwinned region, contributing to dislocation-nanotwin interaction that reduces the mean free paths of mobile dislocations (twinning-induced plasticity); twin boundaries decorated by multiple stacking faults."
+        },
+        {
+          "interaction_id": "int_disl_ZrC",
+          "microstructure_id": "micro_FG_zone",
+          "interaction_type": "dislocation - ZrC particle interaction",
+          "qualitative_or_quantitative_description": "Numerous ~30 nm ZrC particles distributed in FCC grain interior effectively inhibit dislocation movement (precipitation/Orowan strengthening)."
+        }
+      ],
+      "slip_behavior": "At minor plastic deformation planar slip (dislocations) is initially activated in the FCC matrix; after severe deformation a high density of slip bands forms along {111} planes, and nanotwins (~20 nm in size) form during heavy deformation.",
+      "phase_evolution": "Partial recrystallization during 900 °C/5 min annealing; Zr solute drag and Zener pinning of ZrC retard recrystallization, producing the bimodal FCC (CG+FG) heterogeneous grain structure.",
+      "interface_notes": "At 2 % global strain the CG zones and FG/CG hetero-interfaces experience high local strain while FG zones remain nearly undeformed (strain partitioning); at 8 % global strain FG zones also accumulate strain. Hardness difference between soft CG and hard FG zones drives geometrically necessary dislocation (GND) generation and HDI strengthening."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_zr050_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": "flat dog-bone-shaped sample, gauge length 14 mm and width 4 mm, prepared along the rolling direction (RD)",
+        "test_standard": null,
+        "other_conditions": "Uniaxial tensile testing using Instron 5892 with a contact extensometer."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "~505",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "~855",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "58",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve of Zr0.50 (Fig. 4a), plus true stress-strain curve in the inset (true stress up to ~1200 MPa, true strain 0-0.5).",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_zr050_vs_zr0_zr001",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": "proc_homog1200c-2h-hotroll40-cr80-anneal900c-5min-wq",
+        "benchmark_sample_id": null,
+        "comparison_metric": "Zr0.50 (YS ~505 MPa, UTS ~855 MPa, fracture ductility 58 %) vs Zr0 (YS ~435 MPa, UTS 820 MPa, ductility 52 %) and vs Zr0.01 (YS ~450 MPa, UTS ~832 MPa, ductility 55 %); the Zr0.50 steel shows the best strength-ductility synergy and the largest, deepest and densest ductile dimples.",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_bse_sem",
+      "microstructure_id": "micro_FG_zone",
+      "technique": "Backscatter electron (BSE) imaging (SEM)",
+      "instrument_or_setup": "Scanning electron microscope (SEM)",
+      "measurement_conditions": "Prior to tensile deformation",
+      "purpose": "Reveal the microstructure of the Zr0.50 steel showing CG and FG zones and fine FCC particles.",
+      "key_findings": "Zr0.50 steel exhibits a typical heterogeneous banded structure of coarse FCC grains (CG) and fine FCC grains (FG); a high density of fine FCC particles is uniformly distributed in the FG regions."
+    },
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_FG_zone",
+      "technique": "Electron backscatter diffraction (EBSD): IPF, IQ and KAM maps",
+      "instrument_or_setup": "SEM equipped with an EBSD detector (accelerating voltage 30 kV, step size 500 nm)",
+      "measurement_conditions": "Prior to deformation; KAM color bar 0-5",
+      "purpose": "Reveal grain structure, grain size and local misorientation (dislocation density) of the Zr0.50 steel.",
+      "key_findings": "Zr0.50 exhibits a distinct heterostructure of CG and FG zones; FG zones exhibit high KAM values (high dislocation density) while CG zones show low KAM; grain orientations are random; fraction of CGs adjacent to FGs ~37 %."
+    },
+    {
+      "characterization_id": "char_quasi_in_situ_dic",
+      "microstructure_id": "micro_FG_zone",
+      "technique": "Quasi-in-situ tensile testing with EBSD and μ-DIC (von Mises local strain mapping)",
+      "instrument_or_setup": "Instron 5892 universal testing machine; SEM Hitachi SU7000; VIC-2D software; monolayer of nanoscale SiO2 particles as speckle pattern",
+      "measurement_conditions": "Global strain levels of 0 %, 2 % and 8 %",
+      "purpose": "Reveal local strain evolution/partitioning between FG and CG zones in the Zr0.50 steel.",
+      "key_findings": "Significant strain partitioning at 2 % global strain: CG zones and FG/CG hetero-interfaces experience high strain while FG zones remain nearly undeformed; at 8 % global strain the FG zones accumulate more strain, indicating persistent partitioning that generates GNDs and HDI strengthening."
+    },
+    {
+      "characterization_id": "char_fractography",
+      "microstructure_id": null,
+      "technique": "SEM fracture surface (fractography)",
+      "instrument_or_setup": "Scanning electron microscope (SEM)",
+      "measurement_conditions": "After tensile fracture; 10 µm scale bar",
+      "purpose": "Examine the fracture morphology of the Zr0.50 tensile specimen.",
+      "key_findings": "Zr0.50 fracture surface shows the largest, deepest and densest dimples with tearing ridges, consistent with high ductility."
+    },
+    {
+      "characterization_id": "char_tem_hrtem",
+      "microstructure_id": "micro_FG_zone",
+      "technique": "TEM / HRTEM / SAED / FFT",
+      "instrument_or_setup": "JEOL F200 operated at 200 kV; TEM foils prepared by twin-jet electro-polishing in 5 % perchloric acid + 95 % ethanol (vol%).",
+      "measurement_conditions": "During/after tensile deformation (minor to severe deformation)",
+      "purpose": "Reveal deformation mechanisms (dislocations, slip bands, nanotwins) and identify ZrC particles in the Zr0.50 steel.",
+      "key_findings": "Dislocations activated first; slip bands along {111} after severe deformation; nanotwins ~20 nm with twin boundaries decorated by stacking faults; ~30 nm ZrC carbides confirmed by HRTEM/FFT (indexed <110>ZrC) distributed in FCC grain interior."
+    },
+    {
+      "characterization_id": "char_thermocalc",
+      "microstructure_id": null,
+      "technique": "Thermodynamic phase-fraction calculation (Thermo-Calc)",
+      "instrument_or_setup": "Thermo-Calc software",
+      "measurement_conditions": "Temperature range 500-1000 °C",
+      "purpose": "Calculate equilibrium phase fractions of the Zr0.50 steel, particularly the ZrC fraction.",
+      "key_findings": "Above ~700 °C the matrix is single-phase FCC with a small, temperature-insensitive ZrC fraction (~0.6 % after annealing at 900 °C); BCC and κ carbide present only below ~700 °C."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermocalc_zr050",
+      "simulation_method": "Thermodynamic (CALPHAD) equilibrium phase-fraction calculation",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Temperature range 500-1000 °C; Fe-25Mn-7Al-0.9C-0.50Zr composition",
+      "validation_against_experiment": "Calculated ZrC fraction ~0.6 % at 900 °C is consistent with the TEM-observed nanoscale ZrC precipitates in the annealed Zr0.50 steel.",
+      "analytical_models": []
+    },
+    {
+      "computation_id": "comp_analytical_strengthening",
+      "simulation_method": "Analytical strengthening/mechanism models",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Model predictions compared with the measured Zr0.50 yield strength (~505 MPa) and with EBSD grain-size/zone data.",
+      "analytical_models": [
+        {
+          "model_name": "Grain-boundary + HDI strengthening (Eq. 2)",
+          "equation_role": "Describes the yield-strength contribution from FG and CG zones including back-stress-strengthened CGs adjacent to FGs",
+          "parameters": [
+            {
+              "name": "f_CG,b (fraction of CGs adjacent to FGs)",
+              "value": "~37",
+              "unit": "%"
+            },
+            {
+              "name": "sigma_GB-HDI (combined GB + HDI strengthening)",
+              "value": "~300",
+              "unit": "MPa"
+            },
+            {
+              "name": "l_Hbar (width of hetero-boundary affected region)",
+              "value": "2.45",
+              "unit": "μm"
+            }
+          ],
+          "model_note": "Based on Eqs. (2)-(4)."
+        },
+        {
+          "model_name": "Hall-Petch equation (Eq. 3)",
+          "equation_role": "Estimation of sigma_CG and sigma_FG used in Eq. 2",
+          "parameters": [
+            {
+              "name": "sigma_0 (friction stress)",
+              "value": "~97",
+              "unit": "MPa"
+            },
+            {
+              "name": "k (coarse FCC grains)",
+              "value": "14.55",
+              "unit": "MPa mm^1/2"
+            },
+            {
+              "name": "k (fine FCC grains)",
+              "value": "9.1",
+              "unit": "MPa mm^1/2"
+            }
+          ],
+          "model_note": null
+        },
+        {
+          "model_name": "Back-stress strengthening of CG adjacent to FG (Eq. 4)",
+          "equation_role": "Expresses sigma_CG,b, the back-stress strengthened CGs adjacent to FGs",
+          "parameters": [
+            {
+              "name": "l_Hbar",
+              "value": "2.45",
+              "unit": "μm"
+            }
+          ],
+          "model_note": "l_Hbar calculated by [1-(sigma_CG-sigma_FG)^2] d_CG."
+        },
+        {
+          "model_name": "Orowan precipitation strengthening (Eq. 5)",
+          "equation_role": "Calculates strengthening from nanoscale ZrC carbides",
+          "parameters": [
+            {
+              "name": "f (fraction of precipitates)",
+              "value": "0.006",
+              "unit": "-"
+            },
+            {
+              "name": "a (average precipitate size)",
+              "value": "30",
+              "unit": "nm"
+            },
+            {
+              "name": "sigma_p (precipitation strengthening)",
+              "value": "108",
+              "unit": "MPa"
+            }
+          ],
+          "model_note": "Based on Figs. 6 and 7."
+        },
+        {
+          "model_name": "Strain-hardening / dislocation density model (Eqs. 6-7)",
+          "equation_role": "Describes strain hardening in terms of SSD and GND densities and its decomposition into dislocation and HDI hardening",
+          "parameters": [],
+          "model_note": "Increased GND density in the heterostructured Zr0.50 steel gives extra HDI hardening and HDI ductility."
+        },
+        {
+          "model_name": "Critical twinning stress (Eq. 8)",
+          "equation_role": "Estimates the critical stress for deformation twinning in FCC alloys",
+          "parameters": [
+            {
+              "name": "M (Taylor factor)",
+              "value": "3.06",
+              "unit": "-"
+            },
+            {
+              "name": "b (Burgers vector)",
+              "value": "0.147",
+              "unit": "nm"
+            },
+            {
+              "name": "SFE (stacking fault energy)",
+              "value": "~55",
+              "unit": "mJ/m^2"
+            },
+            {
+              "name": "sigma_tw (critical twinning stress)",
+              "value": "~1.14",
+              "unit": "GPa"
+            }
+          ],
+          "model_note": "Critical twinning stress ~1.14 GPa is lower than the true ultimate tensile strength of Zr0.50, enabling deformation twinning."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The Zr0.50 steel exhibits a true ultimate tensile strength (Fig. 4a inset) that exceeds its critical twinning stress of ~1.14 GPa; the exact true UTS value is not reported numerically.",
+    "Strengthening budget of the Zr0.50 steel: grain-boundary strengthening + HDI strengthening ~300 MPa and ZrC precipitation (Orowan) strengthening 108 MPa.",
+    "Stacking fault energy (SFE) of the FCC matrix in the Zr0.50 steel is estimated to be ~55 mJ/m^2 (Supplementary text S1).",
+    "Deformation nanotwins in the Zr0.50 steel are ~20 nm in size, with twin boundaries decorated by multiple stacking faults, indicating formation from multiple Shockley partial dislocations.",
+    "ZrC precipitates in the Zr0.50 steel are ~30 nm in size with a fraction of 0.006 (~0.6 %) after 900 °C annealing, consistent with the Thermo-Calc calculation.",
+    "The {111} slip bands and nanotwinning in the deformed Zr0.50 steel provide additional strengthening and enable twinning-induced plasticity (TWIP)."
+  ]
+}

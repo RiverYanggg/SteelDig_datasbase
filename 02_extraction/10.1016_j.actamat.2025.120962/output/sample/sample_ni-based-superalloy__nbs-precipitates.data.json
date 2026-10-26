@@ -1,0 +1,146 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_ni-based-superalloy__nbs-precipitates",
+      "paper_id": "10.1016_j.actamat.2025.120962",
+      "alloy_id": "alloy_ni-based-superalloy",
+      "process_id": "proc_nbs-precipitates",
+      "sample_label": "NBS-1",
+      "aliases": [
+        "NBS-2",
+        "Super-2",
+        "Super-4"
+      ]
+    }
+  ],
+  "processing_steps": [],
+  "structures": [
+    {
+      "structure_id": "structure_nbs1",
+      "overall_structure": "single crystal & multiphase nickel-based superalloy microstructure containing a regular matrix with multiple precipitates of significantly different sizes; tertiary precipitates are particularly small and blurry with low contrast; NBS-1 shows a coarse blocky precipitate network",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "nbs1_microstructure",
+          "region": null,
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "matrix",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "regular matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "precipitates",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "multiple precipitates of significantly different sizes; coarse blocky precipitate network",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_secondary",
+              "type": "secondary precipitate",
+              "size": null,
+              "distribution": "well recognized; significantly different sizes relative to tertiary precipitates",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "precip_tertiary",
+              "type": "tertiary precipitate",
+              "size": null,
+              "distribution": "particularly small and blurry, with low contrast",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [
+    {
+      "performance_id": "perf_nbs1_segmentation",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": [
+        {
+          "benchmark_alloy_id": null,
+          "benchmark_process_id": null,
+          "benchmark_sample_id": null,
+          "comparison_metric": "IoU: MatSAM 0.91 (±1.2 %) vs SAM 0.85 (±7.6 %) vs OTSU 0.75 (±3.2 %) vs Adaptive 0.45 (±1.6 %) vs specialist method 0.77",
+          "improvement_percentage": null
+        },
+        {
+          "benchmark_alloy_id": null,
+          "benchmark_process_id": null,
+          "benchmark_sample_id": null,
+          "comparison_metric": "F1: MatSAM 0.96 (±0.4 %) vs SAM 0.91 (±4.6 %) vs OTSU 0.86 (±3.6 %) vs Adaptive 0.52 (±1.9 %)",
+          "improvement_percentage": null
+        },
+        {
+          "benchmark_alloy_id": null,
+          "benchmark_process_id": null,
+          "benchmark_sample_id": null,
+          "comparison_metric": "Recall: MatSAM 0.94 (±0.4 %) vs SAM 0.89 (±6.5 %) vs OTSU 0.87 (±8.4 %) vs Adaptive 0.38 (±1.9 %)",
+          "improvement_percentage": null
+        },
+        {
+          "benchmark_alloy_id": null,
+          "benchmark_process_id": null,
+          "benchmark_sample_id": null,
+          "comparison_metric": "Inference time per image: MatSAM 1812.67 ms vs SAM 1575.24 ms vs OTSU 0.53 ms vs Adaptive 0.58 ms",
+          "improvement_percentage": null
+        }
+      ]
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_sem_nbs1",
+      "microstructure_id": "nbs1_microstructure",
+      "technique": "SEM",
+      "instrument_or_setup": null,
+      "measurement_conditions": "512 × 512 pixels; 4 test images; public dataset",
+      "purpose": "phase (precipitate) segmentation evaluation of nickel-based superalloy NBS-1",
+      "key_findings": "single crystal & multiphase microstructure; secondary and tertiary precipitates of significantly different sizes; tertiary precipitates are particularly small, blurry and of low contrast"
+    },
+    {
+      "characterization_id": "char_segmentation_eval_nbs1",
+      "microstructure_id": "nbs1_microstructure",
+      "technique": "MatSAM / SAM / OTSU / Adaptive / specialist model segmentation evaluation (IoU, F1, Recall, inference time)",
+      "instrument_or_setup": "Nvidia RTX3090 24 GB GPU; PyTorch 1.13.1",
+      "measurement_conditions": null,
+      "purpose": "quantitative evaluation of segmentation performance on NBS-1 phase masks against expert labels",
+      "key_findings": "MatSAM achieves IoU 0.91 (±1.2 %) [F1 0.96 (±0.4 %), Recall 0.94 (±0.4 %)], outperforming SAM IoU 0.85 (±7.6 %) and specialist model IoU 0.77; inference time 1812.67 ms per image"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_matsam_nbs1",
+      "simulation_method": "MatSAM (training-free SAM-based microstructure segmentation)",
+      "software_used": "PyTorch 1.13.1",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "NBS-1 images at 512 × 512 pixels (4 test images); multiphase phase segmentation using structure-aware prompt points (OTSU pre-segmentation plus modulated grid points)",
+      "validation_against_experiment": "MatSAM IoU 0.91 vs expert labels, compared with SAM 0.85 and specialist model 0.77",
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "NBS-1 corresponds to Super-2 in the original article [16]; NBS-2 corresponds to Super-4 (b0074).",
+    "The specific heat treatment / processing history that produced the NBS-1 secondary and tertiary precipitates is not reported in this paper (process snapshot note; b0075 only states that NBS-1/NBS-2 contain multiple precipitates of significantly different sizes)."
+  ]
+}

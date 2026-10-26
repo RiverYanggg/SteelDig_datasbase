@@ -1,0 +1,138 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_009",
+  "family": "generalist",
+  "image_type": "chart_flow",
+  "description": "Composite workflow-comparison schematic (process flow, not a data plot). A left column headed \"Micrograph\" shows a greyscale grain-boundary micrograph of \"Pure iron\" — equiaxed grains outlined in dark on a light matrix — which feeds into four stacked centre rows, one per extraction mode, and all rows converge on a right column headed \"Final output\" sub-labelled \"Boundaries\" (a binary grain-boundary network). (Mode 1) \"Fully manual annotation\" carries a full-width dark segmented time bar and three annotator icons. (Mode 2) \"Rule-based (OTSU)\" starts with a short four-segment bar, passes through an intermediate segmented grain image, and ends in \"Manual correction\" with one annotator icon and a medium-length teal bar. (Mode 3) \"Learning-based (UNet)\" is shown in grey with an intermediate image, \"Manual correction\" and a short grey bar. (Mode 4) \"VLM-based (MatSAM)\" is shown in red with an almost empty bar before and after \"Manual correction\". A legend at top right defines the segmented horizontal bar as \"Time consumption\". The figure's argument: the same grain-boundary output is reached by all four modes, but required annotation time (bar length) drops progressively from Mode 1 to Mode 4.",
+  "confidence": "high",
+  "subfigures": [
+    {
+      "panel": "left",
+      "description": "Column headed \"Micrograph\" containing a greyscale optical/electron micrograph of equiaxed grains with dark boundaries, labelled \"Pure iron\"; this is the common input to all four modes.",
+      "confidence": "high"
+    },
+    {
+      "panel": "Mode 1",
+      "description": "Row titled \"Mode 1\": \"Fully manual annotation\" with a full-width dark segmented \"Time consumption\" bar and three annotator (person) icons; arrow leads directly to the final output.",
+      "confidence": "high"
+    },
+    {
+      "panel": "Mode 2",
+      "description": "Row titled \"Mode 2\": \"Rule-based (OTSU)\" with a short four-segment bar, an arrow to an intermediate segmentation image, then an arrow to \"Manual correction\" (one person icon) with a medium-length teal bar.",
+      "confidence": "high"
+    },
+    {
+      "panel": "Mode 3",
+      "description": "Row titled \"Mode 3\": \"Learning-based (UNet)\" in grey, with a short grey time bar, an intermediate segmentation image, then \"Manual correction\" (one person icon) with a short grey bar.",
+      "confidence": "high"
+    },
+    {
+      "panel": "Mode 4",
+      "description": "Row titled \"Mode 4\": \"VLM-based (MatSAM)\" in red, with a nearly empty red time bar, an intermediate segmentation image, then \"Manual correction\" (one person icon) with a nearly empty red bar — the least human time of the four.",
+      "confidence": "high"
+    },
+    {
+      "panel": "right",
+      "description": "Column headed \"Final output\" sub-labelled \"Boundaries\": black-and-white grain-boundary network extracted from the input micrograph; a single arrow from the input bracket serves all modes.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "The input image of the workflow is a greyscale micrograph of equiaxed grains with dark boundaries, labelled \"Pure iron\" beneath the column heading \"Micrograph\".",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The final output column is headed \"Final output\" and sub-labelled \"Boundaries\", and shows a black-on-white grain-boundary network of the same equiaxed grain structure.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "A legend at the top right pairs the text \"Time consumption\" with a segmented horizontal bar symbol, which is used in every mode row as a relative time indicator.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Mode 1 is labelled \"Fully manual annotation\" and shows the longest (full-width) dark time-consuming bar together with three annotator icons.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Mode 2 is labelled \"Rule-based (OTSU)\"; it shows a short four-segment bar before an intermediate segmentation image and a medium-length teal bar at the \"Manual correction\" step with one annotator icon.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Mode 3 is labelled \"Learning-based (UNet)\" and is colour-coded grey, with an intermediate segmentation image and a short grey time bar at the \"Manual correction\" step (one annotator icon).",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Mode 4 is labelled \"VLM-based (MatSAM)\" and is colour-coded red; both its pre- and post-correction time bars are almost empty, indicating the shortest human time of all four modes.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Modes 2, 3 and 4 each contain an intermediate segmentation image, whereas Mode 1 has no intermediate stage and is drawn as a single full-width annotation block.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "No numeric time values are printed on any time-consumption bar; the comparison is purely by relative bar length.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption states the figure is a comparison of four modes of microstructure extraction.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_009"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption text accompanying the figure contains the fragments \"Key structure (d) Overlay (b) NBS-3 (nickel-based superalloy) TCP phase\", which describe content (an overlay panel and an NBS-3 superalloy TCP phase) that is not visible in this composite workflow figure — the caption appears to be mis-assembled or to mix text from another figure.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_009"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "observation": "The extraction is presented as a single shared input micrograph feeding all four modes and a single shared \"Boundaries\" output, i.e. all four modes are claimed to reach the same segmentation product.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    }
+  ],
+  "measured_quantities": [
+    "relative time consumption of each extraction mode (segmented-bar length, arbitrary units; no numeric scale printed)"
+  ],
+  "sample_hints": [
+    "Pure iron"
+  ],
+  "unreadable_items": [
+    "Time-consumption bars carry no printed numeric values or units — only relative lengths are shown",
+    "Caption fragments \"Key structure (d) Overlay (b) NBS-3 (nickel-based superalloy) TCP phase\" refer to material/panels not present in this figure",
+    "Individual segment counts of the small grey and teal bars in Modes 2 and 3 are not reliably countable at the supplied resolution"
+  ],
+  "image_paths": [
+    "images/94493ccf2586ce3b4a32f16631bb85ebc2936e93a4bff7a9f4a6fc08700c83cb.jpg"
+  ]
+}

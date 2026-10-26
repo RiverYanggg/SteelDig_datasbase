@@ -1,0 +1,325 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-35mn-11al-1c__st-1050c-2h-wq",
+      "paper_id": "10.1016_j.msea.2023.145675",
+      "alloy_id": "alloy_fe-35mn-11al-1c",
+      "process_id": "proc_st-1050c-2h-wq",
+      "sample_label": "Mn-35",
+      "aliases": [
+        "Fe35Mn11Al1C after 1050 °C/2 h solution treatment"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_melting_casting",
+      "sequence": "1",
+      "type": "melting / casting",
+      "method": "high-frequency vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Each steel composition was melted in a high-frequency vacuum induction furnace with a 50 kg capacity, then cast into an ingot with a diameter of 150 mm. Applies to all designed compositions including the Fe(x)Mn11Al1C series (Mn-35)."
+    },
+    {
+      "processing_step_id": "step_2_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "5 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingots were homogenized at 1200 °C for 5 h prior to hot rolling."
+    },
+    {
+      "processing_step_id": "step_3_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air-cooled",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot rolled into rods with a diameter of 16 mm, then air-cooled to room temperature (this is the parent hot-rolled process proc_hot-rolled)."
+    },
+    {
+      "processing_step_id": "step_4_solution_treatment",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled rods solution-treated at 1050 °C for 2 h followed by water quenching; this is the main終態 (state_label 1050 °C–2 h–WQ) used for tensile tests, Charpy impact toughness and EBSD/TEM characterization."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_Mn35_st_1050c",
+      "overall_structure": "After solution treatment at 1050 °C for 2 h followed by water quenching the Mn-35 steel (Fe34.23Mn11.10Al1.00C) consists of a single austenite (FCC) phase — no ferrite — with a coarse austenite grain size of about 33 μm, a twin boundary fraction of about 60% and uniformly distributed nano-scale κ-carbides of about 2 nm.",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_Mn35_austenite",
+          "region": null,
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (FCC)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "equiaxed grains with abundant Σ3 twin boundaries",
+              "grain_size": "33 ± 1.6 μm",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "twin boundaries (Σ3)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "33 ± 1.6 μm",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_carbide",
+              "type": "κ-carbide",
+              "size": {
+                "value": "2.0 ± 1.1 nm",
+                "unit": "nm"
+              },
+              "distribution": "uniformly distributed in the austenite matrix",
+              "coherency": "coherent with the austenite matrix (orientation relationship (001)κ || (001)γ)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_Mn35_kappa_austenite",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_kappa_gamma",
+          "microstructure_id": "micro_Mn35_austenite",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "austenite (γ)",
+          "coherence": "coherent, with orientation relationship (001)κ || (001)γ"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "defect_twins_Mn35",
+          "microstructure_id": "micro_Mn35_austenite",
+          "interaction_type": "twin boundaries (Σ3) within austenite grains",
+          "qualitative_or_quantitative_description": "Twin boundary fraction f_Tw = 59.6% (about 60%) for the 35%Mn steel."
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": "No ferrite present at 35%Mn; only a single austenite phase after solution treatment. κ-carbide precipitation originates from spinodal decomposition and ordering of C and Al in the austenite; κ-carbide size decreases with increasing Mn content (5 nm at 25%Mn to 2 nm at 35%Mn).",
+      "interface_notes": "The κ-carbides assume a coherent interface with the austenite matrix as evidenced by SAED observations; strengthening therefore follows a particle shear model rather than Orowan."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_Mn35_st_1050c",
+      "measurement_conditions": {
+        "temperature": "ambient temperature (tensile tests); −40 °C (Charpy impact tests)",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "1.1 × 10^-3 s^-1 (tensile)",
+        "specimen_geometry": "Tensile specimens with gauge length 25 mm and diameter 5 mm cut with tensile axis parallel to rod axis; Charpy specimens with V-notch perpendicular to the rod axis",
+        "test_standard": null,
+        "other_conditions": "Two solution-treated specimens tested; data reported as average value of two specimens; MTS tensile machine and MTS impact tester (500 J capacity)"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "parallel to rod axis",
+              "value": "401",
+              "unit": "MPa",
+              "uncertainty": "± 5 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "parallel to rod axis",
+              "value": "849",
+              "unit": "MPa",
+              "uncertainty": "± 1 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "parallel to rod axis",
+              "type": "uniform elongation (UE)",
+              "value": "60",
+              "unit": "%",
+              "uncertainty": "± 0.4%"
+            },
+            {
+              "direction": "parallel to rod axis",
+              "type": "total elongation to failure (A)",
+              "value": "75.0",
+              "unit": "%",
+              "uncertainty": "± 1%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "direction": "parallel to rod axis",
+              "value": "~2300 MPa",
+              "unit": "MPa",
+              "note": "maximum work hardening rate, obtained in the 35%Mn steel"
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "19.3 ± 2.1 J (Charpy V-notch impact energy Akv at −40 °C)",
+          "unit": "J"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.53",
+          "unit": "g/cm3"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_Mn35_vs_other_Mn",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Within the Fe(x)Mn11Al1C series after 1050 °C/2 h + WQ, increasing Mn content from 20% to 35% decreases yield strength from 896 MPa to 401 MPa while total elongation increases from 28.5% to 60% and the work hardening rate increases; the Mn-35 grade (YS 401 MPa, UTS 849 MPa) is the softest grade studied and higher Mn content improves impact toughness relative to lower-Mn high-C/high-Al grades.",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_EBSD",
+      "microstructure_id": "micro_Mn35_austenite",
+      "technique": "Electron back-scatter diffraction (EBSD)",
+      "instrument_or_setup": "EBSD system attached to field emission gun SEM (FEI Quanta 650, Thermo Fisher Scientific)",
+      "measurement_conditions": "Operating voltage 20 kV, step size 0.5 μm; specimens mechanically ground and electro-polished in 7% Nital at room temperature; grain size by linear intercept with boundary misorientation angle definition of 15°, using Channel 5 software",
+      "purpose": "Determine phase distribution and grain size as a function of alloying content; measure austenite grain size and twin boundary fraction",
+      "key_findings": "For the 35%Mn steel only a single austenite phase is present (no ferrite; ferrite listed as '-' in Table 3), with average grain size D_FCC-G/T of 33 ± 1.6 μm and twin boundary fraction f_Tw of 59.6% (about 60%)."
+    },
+    {
+      "characterization_id": "char_TEM",
+      "microstructure_id": "micro_Mn35_austenite",
+      "technique": "Transmission electron microscopy (TEM), dark-field imaging with SAED",
+      "instrument_or_setup": "TEM, Tecnai G2 F20 S-TWIN, Thermo Fisher Scientific",
+      "measurement_conditions": "Operated at 200 kV; thin foils prepared by twin-jet electro-polishing in a mixture of 10% perchloric acid and 90% ethanol at 20 V and −20 °C; dark-field images taken along the [001]γ zone axis using a κ-carbide diffraction spot",
+      "purpose": "Characterize the variation in κ-carbide size and distribution with alloying content",
+      "key_findings": "κ-carbides are uniformly distributed in the austenite matrix; the average κ-carbide size for 35%Mn is about 2 nm (Table 3: 2.0 ± 1.1 nm) — the finest of the Mn series; SAED shows the coherent γ/κ orientation relationship (001)κ || (001)γ."
+    },
+    {
+      "characterization_id": "char_density_archimedes",
+      "microstructure_id": null,
+      "technique": "Archimedes drainage (density) method",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Measure experimental density of the steels as a function of alloying content",
+      "key_findings": "Density of the Mn-35 steel is 6.53 g/cm3 (Table 1)."
+    },
+    {
+      "characterization_id": "char_tensile_test",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "MTS tensile machine",
+      "measurement_conditions": "Initial strain rate 1.1 × 10^-3 s^-1 at ambient temperature; gauge length 25 mm, diameter 5 mm specimens cut with tensile axis parallel to rod axis; average of two specimens",
+      "purpose": "Measure room-temperature stress-strain response, yield strength, tensile strength, elongation and strain hardening rate after solution treatment",
+      "key_findings": "Mn-35: YS 401 MPa, UTS 849 MPa, UE 60%, A 75.0%; σ_TS 1313 MPa and σ_FS 2200 MPa; maximum work hardening rate ~2300 MPa."
+    },
+    {
+      "characterization_id": "char_charpy_impact",
+      "microstructure_id": null,
+      "technique": "Charpy V-notch impact testing",
+      "instrument_or_setup": "MTS impact tester (500 J capacity)",
+      "measurement_conditions": "Tested at −40 °C; specimens cut from solution-treated rods with the V-notch perpendicular to the rod axis; average of two specimens",
+      "purpose": "Measure impact toughness of the solution-treated low-density steels",
+      "key_findings": "Mn-35 Charpy impact energy Akv at −40 °C = 19.3 ± 2.1 J."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "For the Mn-35 sample the maximum true stress just before necking σ_TS (UTS^a) is 1313 MPa and the fracture strength σ_FS (FRS^a) is 2200 MPa (Table 2); text states σ_TS ≈ 1350 MPa and σ_FS ≈ 2150 MPa are nearly constant for all investigated compositions and do not vary significantly with C, Mn and Al content.",
+    "Nominal/measured chemical composition of the Mn-35 steel (Table 1): C 1.00, Mn 34.23, Al 11.10, Fe Bal., density 6.53 g/cm3.",
+    "The Mn-35 steel shows the largest austenite grain size (~33 μm) and the softest grade (YS ~401 MPa) among the investigated compositions.",
+    "The κ-carbide size decreases with increasing Mn content: 5 nm at 25%Mn to 2 nm at 35%Mn; the 35%Mn sample shows the finest and most sparsely resolved κ-carbide particles of the Mn series.",
+    "Except for the 0.6%C and 30%Mn steels, the work hardening rate vs true strain of the other steels (including 35%Mn) shows a typical behaviour: a rapid decline followed by a slow rise and then another decline (the 0.6%C and 30%Mn steels show a monotonic decrease).",
+    "Density can be described by ρ = 8.10 − 0.102C − 0.10Al − 0.01Mn (g/cm3, mass%); this gives 6.99... not directly for Mn-35 but the measured density of Mn-35 is 6.53 g/cm3."
+  ]
+}

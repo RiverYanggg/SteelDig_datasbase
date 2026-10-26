@@ -1,0 +1,90 @@
+{
+  "identity": {
+    "paper_id": "10.1016_j.ijplas.2025.104353",
+    "equation_id": "equation_028",
+    "block_id": "b0109",
+    "equation_number": "28",
+    "is_image": false,
+    "latex_hint": "$$\nd \\rho_ {W H} ^ {r} (i, j, k) = C d \\rho_ {W H} \\left(\\frac {d _ {r}}{d _ {\\text { ave }}}\\right) \\left[ \\frac {1}{k _ {b d} ^ {r}} \\sum_ {p = 1} ^ {k _ {b d} ^ {r}} \\left(\\frac {L _ {p} ^ {r} (i , j , k)}{L _ {0}}\\right) ^ {- 2} + r a n d (i, j, k) \\right]\\tag{28}\n$$"
+  },
+  "latex": "d \\rho_{WH}^{r}(i,j,k) = C d \\rho_{WH} \\left(\\frac{d_r}{d_{ave}}\\right) \\left[ \\frac{1}{k_{bd}^{r}} \\sum_{p=1}^{k_{bd}^{r}} \\left(\\frac{L_p^{r}(i,j,k)}{L_0}\\right)^{-2} + rand(i,j,k) \\right]",
+  "purpose": "Calculates the increment of dislocation density caused by work hardening (WH) for a cell at coordinates (i,j,k) in grain r of the RVE, accounting for grain-size effects and the inhomogeneous distribution of dislocation density with distance from grain boundaries.",
+  "applicability_conditions": "Applicable to a representative volume element (RVE) with a mixed-grain microstructure; assumes dislocation density decreases with increasing distance from the grain boundary (based on Guan and Yu, 2017), and rand(i,j,k) is a random variable between 0 and 1 representing deformed microstructure effects.",
+  "symbols": [
+    {
+      "symbol": "d \\rho_{WH}^{r}(i,j,k)",
+      "meaning": "Increment of dislocation density caused by work hardening (WH) for the cell at coordinates (i,j,k) in grain r, per strain increment",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "C",
+      "meaning": "Normalization coefficient used to ensure that the average accumulation of all dislocation density caused by WH equals d\\rho_{WH} in each strain increment",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "d \\rho_{WH}",
+      "meaning": "Average accumulation of dislocation density caused by work hardening (WH) in each strain increment",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "d_r",
+      "meaning": "Grain size of grain r",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "d_{ave}",
+      "meaning": "Average grain size (AGS) calculated by Eq. (24)",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "d_r / d_{ave}",
+      "meaning": "Effect of intense strain localizations brought by different grain sizes in mixed grains on the dislocation density",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "k_{bd}^{r}",
+      "meaning": "Number of cells belonging to the grain boundary of grain r",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "L_p^{r}(i,j,k)",
+      "meaning": "Distance from the cell with coordinates (i,j,k) to the p-th grain boundary in grain r",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "L_0",
+      "meaning": "Size of a cell",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "rand(i,j,k)",
+      "meaning": "Random variable representing the influence of deformed microstructure (including microbands and cellular structures) on the distribution of dislocation density; defined as a random variable between 0 and 1",
+      "unit": null,
+      "value": "between 0 and 1",
+      "is_constant": false
+    }
+  ],
+  "unmapped": [
+    "The term (1/k_{bd}^{r}) \\sum_{p=1}^{k_{bd}^{r}} (L_p^{r}(i,j,k)/L_0)^{-2} represents the distribution of dislocation density in grain r and decreases with increasing distance from the grain boundary.",
+    "rand(i,j,k) is defined in reference to the definition of non-uniform stored energy in the Monte Carlo model proposed by Wang et al. (2009).",
+    "d_{ave} is the average grain size (AGS) calculated by Eq. (24)."
+  ]
+}

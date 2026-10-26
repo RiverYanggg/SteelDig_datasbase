@@ -1,0 +1,156 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_005",
+  "family": "generalist",
+  "image_type": "chart_flow",
+  "description": "Composite multi-region flowchart (chart_flow) of a 3D cellular-automaton (CA) DRX model built on inhomogeneous dislocation density, for low-alloy steel under varying deformation conditions. The upper \"Inputs\" band contains three boxes: \"Load condition\" (Temperatures of both stages; Strain rates of both stages; Start strain of second stage; End strain), illustrated by two schematic specimens labelled \"First stage\" (red) and \"Second stage\" (blue) separated by a red double arrow; \"Initial microstructure\" (Grain orientation; Grain size; Dislocation density; ……), shown as a 3D cube of multicoloured polyhedral grains; and \"Model parameters\" (Initial WH rate in Eq.(2) and (3); Saturation stress in Eq.(6); DRX activation energy in Eq.(12); ……). A blue \"Parameters by constitutive calibration\" box prints θ₀ = μ/K_T and σ_s = σ_ns sinh⁻¹[(Z_p/A_s)^{m_s}]. The lower half is the CA loop: \"Step n\" → diamond \"ε ≥ ε₁\", whose Y branch applies Stress softening coefficient k_s and Varying saturation stress σ_s^(v) → \"Average dislocation density evolution based on Eq.(26)\" → dashed \"Inhomogeneous dislocation density evolution\" block (Eq.(28); Eq.(30),(31); Eq.(29),(32)) beside a 3D contour cube → diamond \"ρ ≥ ρ_c\" → nucleation (Eq.35,36) → update dislocation density/grain orientation → grain-boundary migration (Eq.37–41) → update all state variables → \"Last step\" → \"Output simulation results\" (Grain orientation distribution; Dislocation density distribution). \"Next step n=n+1\" closes the cycle. The figure maps an algorithmic sequence and reports no data values.",
+  "confidence": "high",
+  "subfigures": [
+    {
+      "panel": "top",
+      "description": "Inputs band: three side-by-side boxes 'Load condition', 'Initial microstructure', 'Model parameters', each with check-box items, plus a blue 'Parameters by constitutive calibration' box printing θ₀ = μ/K_T and σ_s = σ_ns sinh⁻¹[(Z_p/A_s)^{m_s}]. Under Load condition two schematic cylinders show the first and second deformation stages; under Initial microstructure a 3D Voronoi cube shows coloured grains.",
+      "confidence": "high"
+    },
+    {
+      "panel": "middle-left",
+      "description": "Main CA loop: 'Next step n=n+1' feedback block, 'Step n' ellipse, decision diamond 'ε ≥ ε₁', a blue constitutive-calibration box (stress softening coefficient k_s, varying saturation stress σ_s^(v)) on the Y branch, and 'Average dislocation density evolution based on Eq.(26)' where both branches merge.",
+      "confidence": "high"
+    },
+    {
+      "panel": "bottom",
+      "description": "Dashed 'Inhomogeneous dislocation density evolution' block with three sequential equation-labelled steps and a 3D cube contour-mapped in blue-green-yellow; downstream ρ ≥ ρ_c diamond, nucleation, grain-boundary migration, cell-state update, 'Last step' diamond and terminal 'Output simulation results' box.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "The figure is a flowchart with an 'Inputs' band at the top and a CA simulation loop below, joined by arrows that form a closed cycle.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The 'Load condition' input box lists four check-box items: Temperatures of both stages, Strain rates of both stages, Start strain of second stage, End strain.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Two schematic cylindrical specimens labelled 'First stage' (red) and 'Second stage' (blue) are drawn under the Load condition box, separated by a vertical red double arrow indicating a change of deformation condition.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The 'Initial microstructure' box lists Grain orientation, Grain size and Dislocation density, and is accompanied by a 3D cube of multicoloured polyhedral (Voronoi-type) grains.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The 'Model parameters' box lists Initial WH rate in Eq.(2) and (3), Saturation stress in Eq.(6) and DRX activation energy in Eq.(12).",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "A blue 'Parameters by constitutive calibration' box prints the equations θ₀ = μ/K_T and σ_s = σ_ns sinh⁻¹[(Z_p/A_s)^{m_s}].",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "A decision diamond labelled 'ε ≥ ε₁' has a Y branch to a box listing 'Stress softening coefficient k_s' and 'Varying saturation stress σ_s^(v)'; both Y and N branches converge on 'Average dislocation density evolution based on Eq.(26)'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "A dashed block labelled 'Inhomogeneous dislocation density evolution' contains three sequential steps (Eq.(28); Eq.(30) and (31); Eq.(29) and (32)) beside a 3D cube contour-mapped in blue, green and yellow representing the inhomogeneous dislocation-density field.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "A decision diamond 'ρ ≥ ρ_c' branches: N returns to the loop, Y leads to 'Inhomogeneous nucleation happens based on Eq.(35) and (36)'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Downstream of nucleation the flow passes through 'Update dislocation density and grain orientation of nucleation sites', 'Calculate the migrations of grain boundaries based on Eq.(37)-(41)' and 'Update all state variables of cells' to a 'Last step' diamond.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The 'Last step' diamond's Y branch reaches the terminal box 'Output simulation results' listing 'Grain orientation distribution' and 'Dislocation density distribution'; its N branch returns to 'Next step n=n+1'.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption states the figure is the flowchart of a 3D CA model based on inhomogeneous dislocation density.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b0001"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states the RVE used in the DRX simulation is 550 µm × 550 µm × 550 µm and the cell size L₀ is 2.5 µm.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b0002"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states the model parameters (initial WH rate, saturation stress, DRX activation energy and others) were calibrated from the constitutive model in Section 3.1.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b0003"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states the CA loop continues until the end strain and then outputs grain orientation distribution and dislocation density distribution.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "b0004"
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "measured_quantities": [
+    "RVE size (µm)",
+    "cell size L₀ (µm)",
+    "strain ε and ε₁ (-)",
+    "dislocation density ρ and critical ρ_c"
+  ],
+  "sample_hints": [
+    "low-alloy steel",
+    "First stage",
+    "Second stage"
+  ],
+  "unreadable_items": [
+    "Small blue inset curve inside the left 'Parameters by constitutive calibration' box is too low-resolution to read its axes or trend",
+    "Several input/parameter lists end with '……' so the full set of variables is truncated on the figure",
+    "Fine subscripts/superscripts of the printed equations (θ₀, σ_s, σ_ns, Z_p, A_s, m_s, K_T) are small and only partially readable"
+  ],
+  "image_paths": [
+    "images/0d8a523bdd8a027f64bf7c81864228f11d291ef88ea409955a5c125e029d00e2.jpg"
+  ]
+}

@@ -1,0 +1,507 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-15mn-9al-5ni-0.9c__hot-rolled-1323k",
+      "paper_id": "10.1016_j.mtla.2021.101198",
+      "alloy_id": "alloy_fe-15mn-9al-5ni-0.9c",
+      "process_id": "proc_hot-rolled-1323k",
+      "sample_label": "15Mn5Ni",
+      "aliases": [
+        "15Mn5Ni hot-rolled",
+        "B2-containing alloy"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_homogenisation",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenisation",
+      "temperature": "1423 K",
+      "temperature_unit": "K",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Defect-free portions of the 30 kg ingots were homogenised at 1423 K for two hours."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1323 K",
+      "temperature_unit": "K",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "~85% total thickness reduction (~15% per pass)",
+      "processing_steps_notes": "Hot rolling of the homogenised ingots carried out at 1323 K; total thickness reduction of nearly 85% achieved with ~15% reduction per pass. The same schedule was applied to all three LDS grades; the final hot-rolled plate was studied mechanically and microstructurally."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_hot_rolled_15mn5ni",
+      "overall_structure": "Hot-rolled two-phase/multi-constituent microstructure: austenite (γ) matrix containing κ-carbides, intergranular B2 particles, coarse polycrystalline B2 stringers aligned along the rolling direction (bamboo-like), and a DO3 ordered phase.",
+      "number_of_phases": "4",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_gamma_matrix",
+          "region": "matrix (mid-section, RD-ND plane)",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc (austenite)",
+              "volume_fraction": null,
+              "morphology": "equiaxed matrix grains",
+              "grain_size": "5.7 ± 1.3 μm",
+              "texture": "near-random"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "5.7 ± 1.3 μm",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "grain sizes of the three alloys similar, in the range of 5–7 μm after hot-rolling",
+            "texture": "near-random"
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_b2_stringers",
+          "region": "elongated along the rolling direction, crossing several γ-grains",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "B2 ordered Fe(Ni)Al",
+              "crystal_structure": "ordered B2 (BCC-based)",
+              "volume_fraction": "~12%",
+              "morphology": "elongated polycrystalline stringers with bamboo-like morphology",
+              "grain_size": "width 1–5 μm",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_do3",
+              "type": "DO3 ordered Fe3Al",
+              "size": null,
+              "distribution": "inside B2 stringers/particles",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_b2_particles",
+          "region": "intergranular (at γ-grain boundaries)",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "B2 ordered Fe(Ni)Al",
+              "crystal_structure": "ordered B2",
+              "volume_fraction": null,
+              "morphology": "fine polygonal particles",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_kappa_carbides",
+          "region": "within the γ-matrix grains and along grain boundaries",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "κ-carbide, L1_2 ordered (Fe,Mn)3AlC",
+              "crystal_structure": "L1_2 ordered (fcc-based)",
+              "volume_fraction": "highest among the three alloys (15Mn5Ni)",
+              "morphology": "cuboidal",
+              "grain_size": "10 to 40 nm",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_deformed_0.15",
+          "region": "γ-grains and γ/B2 interfaces after tensile deformation to ε~0.15",
+          "related_sequence": null,
+          "phases_present": null,
+          "defects": [
+            {
+              "type": "slip bands (planar glide), inhomogeneous spacing 400–600 nm",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "high (dislocation pile-up around B2 particles)",
+              "lattice_distortion": null
+            },
+            {
+              "type": "deformation twins (sparse, misorientation ~55–60°)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "B2 stringer cracking (cracks perpendicular to tensile axis)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": null,
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_15mn5ni",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_gamma_b2_favourable",
+          "microstructure_id": "micro_b2_stringers",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "B2 ordered Fe(Ni)Al",
+          "coherence": "favourable orientation relationship (e.g. ZA [011]Al||[111]B2) enabling slip transfer"
+        },
+        {
+          "interface_id": "if_gamma_b2_nonfavourable",
+          "microstructure_id": "micro_b2_stringers",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "B2 ordered Fe(Ni)Al",
+          "coherence": "non-favourable (no shared OR); strain accumulation and slip restriction"
+        },
+        {
+          "interface_id": "if_b2_b2",
+          "microstructure_id": "micro_b2_stringers",
+          "phase_1_name": "B2",
+          "phase_2_name": "B2",
+          "coherence": "slip restriction at B2/B2 interface"
+        },
+        {
+          "interface_id": "if_b2_do3",
+          "microstructure_id": "micro_b2_stringers",
+          "phase_1_name": "B2",
+          "phase_2_name": "DO3",
+          "coherence": "orientation relationship [011]B2||[011]DO3"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_slip_transfer",
+          "microstructure_id": "micro_deformed_0.15",
+          "interaction_type": "slip transfer across favourable γ/B2 interface",
+          "qualitative_or_quantitative_description": "Slip transfer across favourable γ/B2 interfaces suggests substantial load sharing; γ-matrix and B2 grains deform simultaneously near yield as confirmed by nanoindentation and TEM."
+        },
+        {
+          "interaction_id": "di_slip_restriction_b2b2",
+          "microstructure_id": "micro_deformed_0.15",
+          "interaction_type": "slip restriction at B2/B2 interface",
+          "qualitative_or_quantitative_description": "Slip transfer was not observed across all γ/B2 interfaces; slip bands stopped at the B2/B2 interface."
+        },
+        {
+          "interaction_id": "di_strain_accumulation_nfb2",
+          "microstructure_id": "micro_deformed_0.15",
+          "interaction_type": "strain accumulation at non-favourable γ/B2 interfaces",
+          "qualitative_or_quantitative_description": "Substantial strain accumulation observed at interfaces without OR (hard orientations); KAM and misorientation profiles indicate high local misorientation and promote deformation twinning."
+        },
+        {
+          "interaction_id": "di_dislocation_pileup_around_b2",
+          "microstructure_id": "micro_deformed_0.15",
+          "interaction_type": "dislocation pile-up around B2 particles/stringers",
+          "qualitative_or_quantitative_description": "Non-shearable B2 particles increase strength by dislocation pile-up around them; significant dislocation pile-up noted around B2 particles."
+        }
+      ],
+      "slip_behavior": "Planar dislocation glide dominates, with dynamic slip band refinement; slip bands coarse and inhomogeneous (spacing ~400–600 nm at ε~0.15) in 15Mn5Ni; slip transfer across favourable γ/B2 interfaces, restriction/strain accumulation at non-favourable interfaces; deformation twinning nucleates in reoriented γ grains.",
+      "phase_evolution": "B2 phase fraction decreased from ~15% in the as-cast condition to ~12% after hot rolling at 1323 K, suggesting partial B2 dissolution under hot-rolling conditions.",
+      "interface_notes": "Cracks formed in B2 stringers that exhibit no OR with the austenite grain, indicating that restricted slip transfer at the γ/B2 interface adversely affects the overall ductility; the nature of the γ/B2 interface (favourable vs non-favourable OR) controls strength and ductility."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_15mn5ni_hot_rolled",
+      "measurement_conditions": {
+        "temperature": "298 K (room temperature)",
+        "temperature_unit": "K",
+        "environment": null,
+        "strain_rate": "1×10^-3 s^-1",
+        "specimen_geometry": "cylindrical tensile specimens, gauge diameter 6 mm, gauge length 30 mm",
+        "test_standard": "ASTM E8M (tensile); ASTM E140–02 (macrohardness)",
+        "other_conditions": "Macrohardness: Vickers indenter, 300 N peak load, average of ten readings. Nanoindentation: 5 mN peak load, 500 μN/s loading/unloading rate, 5 s dwell, average of ~50 grains per phase. Tensile specimens cut along RD, and selected 15Mn5Ni samples along TD for in-plane anisotropy; three samples tested per condition."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "1110 ± 8",
+              "unit": "MPa",
+              "uncertainty": "± 8"
+            },
+            {
+              "direction": "TD",
+              "value": "1150 ± 5",
+              "unit": "MPa",
+              "uncertainty": "± 5"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "1260 ± 5",
+              "unit": "MPa",
+              "uncertainty": "± 5"
+            },
+            {
+              "direction": "TD",
+              "value": "1261 ± 10",
+              "unit": "MPa",
+              "uncertainty": "± 10"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "20 ± 2",
+              "unit": "%",
+              "uncertainty": "± 2"
+            },
+            {
+              "direction": "TD",
+              "value": "16 ± 2",
+              "unit": "%",
+              "uncertainty": "± 2"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "True stress–true strain curves along RD and TD nearly coincident ending near 1500 MPa at true strain ~0.15; inset of the yield region (true strain 0.005–0.020) shows no plateau. Tensile test at T = 300 K, ε̇ = 1×10^-3 s^-1.",
+          "stress_strain_distribution": null,
+          "strain_hardening_rate": "Initial sharp fall in stage III strain hardening followed by a constant (serrated) strain hardening rate just above 1500 MPa; strain hardening exponent n ≈ 0.16 at higher tensile strains (vs ~0.30 for 28Mn0Ni/28Mn5Ni)."
+        },
+        "hardness": [
+          {
+            "region": "bulk (macro)",
+            "value": "375 ± 6",
+            "scale": "Vickers (HV)",
+            "unit": "VHN",
+            "uncertainty": "± 6"
+          },
+          {
+            "region": "γ-matrix",
+            "value": "6.7 ± 0.5",
+            "scale": "nanoindentation",
+            "unit": "GPa",
+            "uncertainty": "± 0.5"
+          },
+          {
+            "region": "B2 stringer",
+            "value": "6.8 ± 0.3",
+            "scale": "nanoindentation",
+            "unit": "GPa",
+            "uncertainty": "± 0.3"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_15mn5ni_vs_28mn",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": [
+        {
+          "benchmark_alloy_id": "28Mn0Ni",
+          "benchmark_process_id": "proc_hot-rolled-1323k",
+          "benchmark_sample_id": null,
+          "comparison_metric": "hardness difference ~HV120 and yield strength difference ~450 MPa (15Mn5Ni higher than 28Mn0Ni)",
+          "improvement_percentage": null
+        },
+        {
+          "benchmark_alloy_id": "28Mn(0,5)Ni",
+          "benchmark_process_id": "proc_hot-rolled-1323k",
+          "benchmark_sample_id": null,
+          "comparison_metric": "total elongation to failure: 20% (15Mn5Ni) vs 55–68% (28Mn(0,5)Ni)",
+          "improvement_percentage": null
+        }
+      ]
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_macrohardness",
+      "microstructure_id": null,
+      "technique": "Vickers macrohardness",
+      "instrument_or_setup": "Vickers indenter, peak load 300 N",
+      "measurement_conditions": "ASTM E140–02; average of ten hardness readings at random locations per sample",
+      "purpose": "measure bulk hardness of the hot-rolled alloys",
+      "key_findings": "15Mn5Ni average hardness HV375, higher than 28Mn0Ni (HV256) and 28Mn5Ni (HV268)."
+    },
+    {
+      "characterization_id": "char_nanoindentation",
+      "microstructure_id": null,
+      "technique": "Localised nanoindentation",
+      "instrument_or_setup": "peak load 5 mN, constant loading/unloading rate 500 μN s^-1, dwell 5 s; hardness and reduced modulus via Oliver-Pharr model; EBSD-guided selection of γ and B2 grains; average of ~50 grains per phase",
+      "measurement_conditions": "room temperature (298 K)",
+      "purpose": "measure hardness and reduced modulus of the γ-matrix and B2 grains",
+      "key_findings": "γ-matrix and B2 have nearly similar hardness (6.7–6.8 GPa) and reduced elastic moduli 169–172 GPa; B2 grains show pop-in events (first pop-in loads ~50–200 μN) indicating incipient plasticity, absent for γ-matrix."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "LF200 Walter+Bai AG testing machine; cylindrical specimens gauge diameter 6 mm and gauge length 30 mm; elongation measured by punch marks and extensometer",
+      "measurement_conditions": "room temperature, initial strain rate 1×10^-3 s^-1, ASTM E8M; specimens along RD and (for 15Mn5Ni) TD; three samples per condition; interrupted tests for microstructural evolution",
+      "purpose": "evaluate tensile behaviour and in-plane tensile anisotropy",
+      "key_findings": "15Mn5Ni YS 1110 ± 8 MPa (RD), 1150 ± 5 MPa (TD); UTS 1260 ± 5 MPa (RD), 1261 ± 10 MPa (TD); elongation 20 ± 2% (RD), 16 ± 2% (TD); minimal tensile anisotropy; no plateau near yield."
+    },
+    {
+      "characterization_id": "char_optical",
+      "microstructure_id": null,
+      "technique": "Optical microscopy",
+      "instrument_or_setup": "Olympus optical microscope",
+      "measurement_conditions": "samples polished and vibratory polished with colloidal silica",
+      "purpose": "observe as-cast/homogenised and hot-rolled microstructures",
+      "key_findings": "15Mn5Ni shows two-phase structure with long bright B2 stringers elongated along the rolling direction."
+    },
+    {
+      "characterization_id": "char_ebsd_oim",
+      "microstructure_id": null,
+      "technique": "Electron channelling contrast imaging (ECCI) and orientation imaging microscopy (OIM)/EBSD",
+      "instrument_or_setup": "FEI scanning electron microscope (SEM) with EDAX electron backscattered diffraction (EBSD) detector; EDAX TSL-OIM v8 software",
+      "measurement_conditions": "large-area 500×500 μm² scans, step 0.2 μm; high-resolution 100×100 μm² scans, step 0.1 μm; GOS cut-off 2° for recrystallised fraction; Σ3 CSL boundaries for twin fraction",
+      "purpose": "evaluate grain orientations, phase fractions, grain size, twin fraction and recrystallisation",
+      "key_findings": "15Mn5Ni: B2 phase fraction ~12%, twin fraction ~7%, near-random γ texture, banded/elongated grains; B2 stringers polycrystalline with bamboo-like morphology."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Rigaku SmartLab X-ray diffractometer, cobalt Kα radiation, 135 mA current, 40 kV voltage",
+      "measurement_conditions": "hot-rolled samples",
+      "purpose": "phase identification",
+      "key_findings": "Confirms formation of B2 phase in the γ-matrix in Ni-added alloys."
+    },
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": null,
+      "technique": "Transmission electron microscopy (TEM)",
+      "instrument_or_setup": "Tecnai 20T G2 (FEI) TEM operated at 200 kV; twin-jet electropolishing in nitric/hydrofluoric/sulfuric/lactic acid in methanol at 243 K, 18 V",
+      "measurement_conditions": "hot-rolled and selected deformed tensile samples",
+      "purpose": "examine detailed microstructural features and dislocation substructure",
+      "key_findings": "Coarse B2 stringers connected across γ-grains with finer B2 at grain boundaries; SAED confirms ordered B2 with DO3 secondary reflections ([011]B2||[011]DO3); cuboidal κ-carbides 10–40 nm; slip transfer at favourable γ/B2 interfaces, slip restriction at B2/B2 interfaces."
+    },
+    {
+      "characterization_id": "char_acom",
+      "microstructure_id": null,
+      "technique": "Automated crystal orientation mapping (ACOM) in TEM",
+      "instrument_or_setup": "Nanomegas ASTAR hardware and software; precession angle 0.5°; step size 10 nm",
+      "measurement_conditions": "deformed tensile specimens of 15Mn5Ni (ε~0.015 and ~0.15); multiple regions examined",
+      "purpose": "map phase distribution, orientations and KAM to assess slip transfer and strain distribution",
+      "key_findings": "Slip transfer across favourable γ/B2 interfaces (f-B2); strain accumulation at non-favourable interfaces (nf-B2); strain localization around B2 particles/stringers; deformation twins with misorientation ~55–60°."
+    },
+    {
+      "characterization_id": "char_fractography",
+      "microstructure_id": null,
+      "technique": "SEM fractography",
+      "instrument_or_setup": "Zeiss EVO 18 SEM",
+      "measurement_conditions": "failed tensile specimens",
+      "purpose": "examine fracture surfaces to understand failure mode",
+      "key_findings": "15Mn5Ni shows quasi-cleavage fracture with numerous micro-cleavage facets connected by dimples on a nearly flat macroscale surface; crack-initiation-controlled, triggered by B2 stringers."
+    },
+    {
+      "characterization_id": "char_eds",
+      "microstructure_id": null,
+      "technique": "Energy dispersive spectroscopy (EDS)",
+      "instrument_or_setup": "SEM-EDS and TEM-EDS",
+      "measurement_conditions": "B2 stringers/particles and adjacent γ-matrix grains",
+      "purpose": "determine phase composition and solute partitioning",
+      "key_findings": "Clear solute partitioning between γ and B2: e.g. B2 stringer Fe-11.3Mn-12.2Al-7.4Ni (SEM-EDS, wt%) richer in Al and Ni but deficient in Mn vs γ-matrix Fe-15.2Mn-9.1Al-4.7Ni."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Analysed chemical composition of 15Mn5Ni (wt%): Mn 14.7, Al 9.8, C 0.9, Ni 4.1, Fe balance (Table 1).",
+    "Reduced elastic moduli of the γ-matrix and B2 phase in hot-rolled 15Mn5Ni are 169–172 GPa (nanoindentation, Oliver-Pharr model).",
+    "Nanoindentation load-depth curves of B2 grains showed characteristic pop-in events with first pop-in loads of ~50–200 μN, absent in γ-grains.",
+    "B2 stringers in hot-rolled 15Mn5Ni are polycrystalline with bamboo-like morphology and widths in the range 1–5 μm.",
+    "SEM-EDS composition: B2 stringers Fe-11.3Mn-12.2Al-7.4Ni (wt%) vs γ-matrix Fe-15.2Mn-9.1Al-4.7Ni (wt%) in 15Mn5Ni; no compositional gradients within B2 grains.",
+    "TEM-EDS composition of B2 in 15Mn5Ni is Fe-10.1Mn-9.7Al-8.3Ni (wt%); γ-matrix Fe-14Mn-7.6Al-4.9Ni (wt%) (Table 2).",
+    "Deformation twins in 15Mn5Ni at ε~0.15 have misorientation angles of ~55–60°.",
+    "Slip band spacing at ε~0.15: ~400–600 nm (inhomogeneous) in 15Mn5Ni, versus ~100–200 nm (uniform) in 28Mn0Ni.",
+    "Fracture of 15Mn5Ni tensile specimens is crack-initiation-controlled quasi-cleavage, with micro-cleavage facets connected by dimples, triggered by B2 stringers.",
+    "SAED from a B2 stringer showed, in addition to ordered B2 spots, DO3-type secondary reflections with orientation relationship [011]B2||[011]DO3.",
+    "κ-carbides in 15Mn5Ni are cuboidal and 10–40 nm in size, with the highest volume fraction among the three alloys; the alloy also has a wide κ-particle size distribution of 5–40 nm overall."
+  ]
+}

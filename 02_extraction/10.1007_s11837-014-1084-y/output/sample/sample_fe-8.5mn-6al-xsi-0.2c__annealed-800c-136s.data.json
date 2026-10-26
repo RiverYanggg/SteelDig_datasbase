@@ -1,0 +1,176 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-8.5mn-6al-xsi-0.2c__annealed-800c-136s",
+      "paper_id": "10.1007_s11837-014-1084-y",
+      "alloy_id": "alloy_fe-8.5mn-6al-xsi-0.2c",
+      "process_id": "proc_annealed-800c-136s",
+      "sample_label": "annealed for 136 s at 800 degrees C",
+      "aliases": [
+        "Fig. 11a/c"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": "800 °C",
+      "temperature_unit": "°C",
+      "duration": "136 s",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Annealing of the two-phase austenite-ferrite 8.5Mn-6Al-XSi-0.2C (wt.%) alloy; the corresponding EBSD maps are Fig. 11a/c."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "Banded, partially recrystallized two-phase austenite-ferrite microstructure",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_ferrite_800c",
+          "region": "ferrite matrix (overall)",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "pancake-shaped (elongated) grains; bimodal with a few large, comparatively uniformly coloured interior grains and dense bands of fine, randomly oriented grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "bimodal: a few large interior grains together with dense bands of fine grains",
+            "texture": "IPF maps show a higher degree of variation in orientations at the lower annealing temperatures"
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_austenite_800c",
+          "region": "banded stringers within ferrite matrix",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": "strongly elongated (banded) stringers lying along horizontal bands",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "heavily dislocated austenite",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": null,
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_aust_ferr_1",
+          "microstructure_id": "micro_austenite_800c",
+          "phase_1_name": "austenite",
+          "phase_2_name": "ferrite",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": null,
+      "interface_notes": "Elongated austenite stringers are embedded in the grey ferrite matrix and separated by thick black unindexed bands (EBSD Fig. 11a)."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_tensile_fig10",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Tensile strength (TS) measured as a function of annealing temperature/time; this sample corresponds to the '6Al+XSi 136sec' series at 800 °C in Fig. 10."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "ebsd_fig11",
+      "microstructure_id": "structure_1",
+      "technique": "Electron backscattered diffraction (EBSD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "EBSD phase maps (band contrast + IPF) at 800 °C/136 s; 10 µm scale bar (Fig. 11a/c)",
+      "purpose": "Map austenite (red) and ferrite IPF to assess recrystallization state and phase distribution",
+      "key_findings": "Ferrite recrystallization is incomplete at 800 °C; ferrite grains are pancake-shaped; austenite forms elongated stringers and is not easily indexed."
+    },
+    {
+      "characterization_id": "tem_austenite_800c",
+      "microstructure_id": "micro_austenite_800c",
+      "technique": "Transmission electron microscopy (TEM)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Confirm the nature of the austenite that was not easily indexed by EBSD in the 800 °C annealed sample",
+      "key_findings": "Austenite is heavily dislocated (TEM confirmed heavily dislocated austenite rather than martensite)."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "In Fig. 10, tensile strength (TS) of this sample is represented by the '6Al+XSi 136sec' series at 800 °C; TS decreases with increasing annealing temperature/time, but no numeric TS value is printed for individual points in the figure or text. [b0055, b0064, figure_010]",
+    "At the lower annealing temperature of 800 °C, recovery has probably already taken place to a certain degree, and ferrite recrystallization is not complete. [b0056]"
+  ]
+}

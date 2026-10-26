@@ -1,0 +1,160 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-9al-30mn-1c__hot-rolled-1150c",
+      "paper_id": "10.1016_j.jmrt.2020.02.088",
+      "alloy_id": "alloy_fe-9al-30mn-1c",
+      "process_id": "proc_hot-rolled-1150c",
+      "sample_label": "9Al-30Mn-1C Hot-rolled",
+      "aliases": [
+        "9Al-30Mn-1C hot-rolled"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "1",
+      "type": "casting",
+      "method": "vacuum induction casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The alloyed steels were produced by casting using a 100 kW vacuum induction furnace, resulting in 0.5 kg ingots."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot-rolling",
+      "temperature": "1150",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The ingots were hot-rolled at 1150 °C, obtaining 5 mm flat-products."
+    },
+    {
+      "processing_step_id": "step_water_quenching",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolling at 1150 °C was followed by water quenching; this hot-rolled state is used as the reference (as-received) condition in all hardness tables."
+    }
+  ],
+  "structures": [],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "props_9al-30mn-1c_hot-rolled",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Hot-rolled (as-received) condition at 1150 °C + water quenching, before any tempering heat treatment"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk (hot-rolled)",
+            "value": "216",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_vickers_hardness",
+      "microstructure_id": null,
+      "technique": "Vickers macro-hardness testing",
+      "instrument_or_setup": "Vickers method; 5 kg load",
+      "measurement_conditions": "A 5 kg load was applied for all the indentations; 5 indentations per sample were made.",
+      "purpose": "macro-hardness measurement of the processing conditions (hot-rolled and tempered)",
+      "key_findings": "Hot-rolled 9Al-30Mn-1C hardness = 216 HV (Table 8)."
+    },
+    {
+      "characterization_id": "char_optical_microscopy",
+      "microstructure_id": null,
+      "technique": "optical microscopy",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Through-thickness embedding, grinding and polishing performed separately for hot-rolled and heat-treated samples.",
+      "purpose": "analyse all the alloys at the different processing conditions (hot-rolling and tempering)",
+      "key_findings": null
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_calphad_9al-30mn-1c",
+      "simulation_method": "CALPHAD thermodynamic equilibrium calculation (phase amount [mol] vs temperature)",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Composition 9Al-30Mn-1C (wt%); temperature range 0–1300 °C; phases considered: FCC_A1, BCC_2SL, LIQUID, KAPPA_E21, BCC_A2. FCC_A1 rises to a 1.00 mol plateau (~800–1050 °C) then declines; BCC_A2 vanishes near 500 °C; KAPPA_E21 (~0.20 mol) falls to zero near 520 °C.",
+      "validation_against_experiment": "Used qualitatively to explain the thermodynamic gradient in austenite (FCC_A1) stability between hot-rolling (1150 °C) and tempering temperatures for this composition.",
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "Ambiguity/inconsistency in Table 5: the raw table row is printed as '9Al-30Mn1C' (hot-rolled 324 HV, 800 °C tempered 352 HV) whereas the figure description reads the same row as '12Al-30Mn1C'; this hot-rolled value (324 HV) conflicts with the 216 HV reported for 9Al-30Mn-1C in Table 8, so the hot-rolled hardness of the 9Al-30Mn-1C composition is not fully consistent across the two tables.",
+    "Table 8 shows the hot-rolled hardness of the 9Al-xMn-1C series decreases monotonically with increasing Mn: 9Al-10Mn-1C = 273 HV, 9Al-20Mn-1C = 233 HV, 9Al-30Mn-1C = 216 HV."
+  ]
+}

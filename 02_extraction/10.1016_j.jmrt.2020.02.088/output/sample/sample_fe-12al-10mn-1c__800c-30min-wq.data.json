@@ -1,0 +1,259 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-12al-10mn-1c__800c-30min-wq",
+      "paper_id": "10.1016_j.jmrt.2020.02.088",
+      "alloy_id": "alloy_fe-12al-10mn-1c",
+      "process_id": "proc_800c-30min-wq",
+      "sample_label": "12Al-10Mn-1C 800 °C — Tempered",
+      "aliases": [
+        "12Al-10Mn-1C tempered at 800 °C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "1",
+      "type": "casting",
+      "method": "vacuum induction furnace casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "0.5 kg ingots produced by casting in a 100 kW vacuum induction furnace (compositions within Table 1 ranges)."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing / thermomechanical processing",
+      "method": "hot-rolling into 5 mm flat-products",
+      "temperature": "1150",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Parent process proc_hot-rolled-1150c; produces the hot-rolled reference state (401 HV for 12Al-10Mn-1C)."
+    },
+    {
+      "processing_step_id": "step_tempering_800c",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "tempering (heat treatment)",
+      "temperature": "800",
+      "temperature_unit": "°C",
+      "duration": "30 min",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Sample-defining step (proc_800c-30min-wq): 800 °C for 30 min + water quenching. Tempering at 800 °C triggered complete and widespread transformations such as cellular transformation coupled with spinodal decomposition; 800 °C provided the maximum acceleration of reaction kinetics, allowing strong transformations even for the short 30 min tempering."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_12al10mn1c_800c",
+      "overall_structure": "12Al-10Mn-1C tempered at 800 °C: austenite underwent full cellular transformation into α + κ-carbide coarse lamellae with high (wide) inter-lamellar spacing; reactions involved the whole austenite volume; microstructure additionally features scattered thin band-shaped δ-ferrite grains within the α + κ-carbide lamellae matrix.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_12al10mn1c_800c_bulk",
+          "region": null,
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "α-ferrite",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "coarse lamellae (α + κ-carbide lamellar structure / ferrite matrix)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "E21 (kappa-carbide)",
+              "volume_fraction": null,
+              "morphology": "coarse lamellae / wide thick lath-like strips",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "scattered thin band-shaped grains within a matrix of α + κ-carbide lamellae",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": "Banded/lamellar microstructure elongated along the rolling direction"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_cellular_12al10mn1c_800c",
+              "type": "κ-carbide (cellular-transformation lamellae)",
+              "size": null,
+              "distribution": "cellular-transformation lamellae with high (wide) inter-lamellar spacing",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_12al10mn1c_800c",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_alpha_kappa_cellular",
+          "microstructure_id": "micro_12al10mn1c_800c_bulk",
+          "phase_1_name": "α-ferrite",
+          "phase_2_name": "κ-carbide",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "Austenite of 12Al-10Mn-1C underwent full cellular transformation into α + κ-carbide coarse lamellae (high inter-lamellar spacing) during 800 °C tempering; 800 °C tempering triggered complete and widespread transformations such as cellular transformation coupled with spinodal decomposition; reactions involved the whole austenite volume.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_12al10mn1c_800c",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": "Vickers macro-hardness method, 5 kg load",
+        "other_conditions": "5 indentations per sample; Minitab18® used to verify data consistency (outliers excluded)."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk",
+            "value": "399 HV",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_12al10mn1c_800c_vs_hotrolled",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-12al-10mn-1c",
+        "benchmark_process_id": "proc_hot-rolled-1150c",
+        "benchmark_sample_id": null,
+        "comparison_metric": "Vickers hardness: hot-rolled 401 HV vs 800 °C tempered 399 HV (essentially unchanged; already the hardest in the hot-rolled state)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_optical_microscopy",
+      "microstructure_id": null,
+      "technique": "Optical microscopy",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Through-thickness embedding, grinding and polishing performed separately for hot-rolled and heat-treated samples",
+      "purpose": "Microstructural analysis of each processing condition",
+      "key_findings": "Banded/lamellar microstructures elongated along the rolling direction (Table 9 optical micrographs)."
+    },
+    {
+      "characterization_id": "char_sem_eds",
+      "microstructure_id": "micro_12al10mn1c_800c_bulk",
+      "technique": "Scanning Electron Microscopy (Secondary Electron Imaging) and Energy Dispersive X-ray spectroscopy (EDS)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "20 kV; the 12Al-10Mn-1C 800 °C SEM image is at X5,000 with a 5 µm scale bar",
+      "purpose": "Analysis of phase morphologies and (qualitative) local chemical composition",
+      "key_findings": "Dense fine lamellar structure typical of full cellular transformation in 12Al-10Mn-1C tempered at 800 °C (Fig. 5(b)); cellular transformation produced α + κ-carbide coarse lamellae."
+    },
+    {
+      "characterization_id": "char_vickers_hardness",
+      "microstructure_id": null,
+      "technique": "Vickers macro-hardness testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "5 kg load; 5 indentations per sample; Minitab18® for data consistency",
+      "purpose": "Macro-hardness measurement of the tested alloy conditions",
+      "key_findings": "12Al-10Mn-1C: 399 HV after 800 °C tempering vs 401 HV in the hot-rolled state (essentially unchanged)."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "For 12Al-10Mn-1C tempered at 800 °C the Vickers hardness is essentially unchanged relative to the hot-rolled state (401 HV -> 399 HV), despite full cellular transformation into α + κ-carbide coarse lamellae; Table 9 links this to the 'Wide' inter-lamellar spacing, whereas the 9Al-10Mn-1C 600 °C state with 'Narrow' spacing reaches 439 HV (b0051, b0096, b0107).",
+    "There is internal inconsistency in the paper's attribution of some 600 °C data: the Fig. 4 caption names 12Al-10Mn-1C while the accompanying Table 3 title names 9Al-10Mn-1C, and Table 4/Fig. 4 concern the 600 °C (not 800 °C) tempering of 12Al-10Mn-1C; these 600 °C data do not pertain to the 800 °C tempered sample (b0030, b0037, b0041, b0093).",
+    "The description of the 12Al-10Mn-1C 800 °C microstructure is partly conflicting in the text: b0107 states 'full cellular transformation into α + κ-carbide coarse lamellae, featuring high inter-lamellar spacing', whereas b0048 states γ grains present 'only early cellular transformed α + κ-carbide lamellae at their boundaries' (Fig. 5(b)); the Fig. 5(b) SEM image is separately described as a 'dense fine lamellar structure' (b0048, b0107, figure_005).",
+    "The paper hypothesises that 800 °C tempering triggered 'cellular transformation coupled with spinodal decomposition', and describes metallic δ-ferrite branches linked to δ + κ-carbide lamellar grains extending inside spinodal decomposed γ grains, but this mixed-grain feature is reported specifically for 12Al-20Mn-1C (Fig. 14), not confirmed for 12Al-10Mn-1C (b0113, b0117, figure_014).",
+    "No CALPHAD phase-fraction diagram (Fig. 9, Fig. 12) was computed for the 12Al-10Mn-1C composition; the available diagrams cover 9Al-10Mn-0.4, 9Al-10Mn-1C, 9Al-20Mn-1C, 9Al-30Mn-1C, 12Al-20Mn-1C and 12Al-30Mn-1C, so no computational/thermodynamic data could be attributed to this sample (b0063, b0087, b0094)."
+  ]
+}

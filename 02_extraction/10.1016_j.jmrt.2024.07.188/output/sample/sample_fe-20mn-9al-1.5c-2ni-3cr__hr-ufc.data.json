@@ -1,0 +1,471 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-20mn-9al-1.5c-2ni-3cr__hr-ufc",
+      "paper_id": "10.1016_j.jmrt.2024.07.188",
+      "alloy_id": "alloy_fe-20mn-9al-1.5c-2ni-3cr",
+      "process_id": "proc_hr-ufc",
+      "sample_label": "2Ni3Cr",
+      "aliases": [
+        "2Ni3Cr steel",
+        "UFCed 2Ni3Cr steel",
+        "Fe-20Mn-9Al-1.5C-2Ni3Cr"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_melting",
+      "sequence": "1",
+      "type": "melting / casting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "high-purity Ar",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Four ingots of the Fe–20Mn–9Al-1.5C-xNi-yCr series (x = 0, 2 wt%; y = 0, 3, 5 wt%) were prepared; the 2Ni3Cr ingot is one of them."
+    },
+    {
+      "processing_step_id": "step_2_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "As-cast ingots homogenized at 1200 °C for 2 h."
+    },
+    {
+      "processing_step_id": "step_3_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling (HR)",
+      "temperature": "initial 1040–1060 °C; finishing 950–970 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "95%",
+      "processing_steps_notes": "Hot-rolled to 4 mm-thick sheets with 95% thickness reduction."
+    },
+    {
+      "processing_step_id": "step_4_ultrafast_cooling",
+      "sequence": "4",
+      "type": "cooling",
+      "method": "online ultrafast cooling (UFC)",
+      "temperature": "to ambient temperature",
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water (efficient-use-water ultrafast-cooled device ADCOS-PM, developed in-house)",
+      "heating_or_cooling_rate": "~40 °C/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Plate online ultrafast cooled to ambient temperature at ~40 °C/s."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "Fully recrystallized single equiaxed FCC γ (austenite) structure with a high fraction of Σ3 twin boundaries, plus nanoscale κ-carbide/LRO ordered domains; no B2 phase with BCC structure was found by EBSD or XRD.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "ms_1_gamma_matrix",
+          "region": "bulk",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "γ austenite (FCC)",
+              "crystal_structure": "face-centred cubic (FCC)",
+              "volume_fraction": null,
+              "morphology": "equiaxed",
+              "grain_size": "8.57 μm (excluding twin boundaries); 3.72 μm (including twin boundaries)",
+              "texture": "no strong texture (EBSD IPF)"
+            }
+          ],
+          "defects": [
+            {
+              "type": "high fraction of Σ3 twin boundaries",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "8.57",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "no strong texture"
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "ms_2_kappa_precipitates",
+          "region": "intragranular (within the γ matrix)",
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "κ-carbide (ordered E21-type structure) / LRO ordered domains",
+              "crystal_structure": "orthorhombic (as stated for the 2Ni3Cr κ-carbides); perovskite E21 structure for κ-carbide",
+              "volume_fraction": "very low (not quantified; DF thickness uncertain prevented quantitative estimate)",
+              "morphology": "cuboidal",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_1_kappa",
+              "type": "κ-carbide / LRO ordered domains (Ni-rich)",
+              "size": {
+                "value": "~5.46",
+                "unit": "nm"
+              },
+              "distribution": "distributed in the γ matrix; homogeneous fine bright particles in dark-field TEM",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_1_gamma_kappa",
+      "phase_interfaces": [
+        {
+          "interface_id": "pi_1_gamma_kappa",
+          "microstructure_id": "ms_2_kappa_precipitates",
+          "phase_1_name": "γ austenite (FCC)",
+          "phase_2_name": "κ-carbide (ordered E21-type)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "Cr added to the Fe–Mn–Al–C matrix takes the place of Al to form (Fe, Mn)CrC and raises the formation energy of κ-carbides as well as the interfacial and elastic strain energies between κ-carbides and the γ austenite matrix, increasing the nucleation energy barrier and thereby decreasing κ-carbide size; Ni lowers the formation energy and nucleation barrier of κ-carbides (AlNi3C), promoting their growth. In 2Ni3Cr both effects coexist.",
+      "interface_notes": "Quantitative volume fraction of κ-carbides could not be estimated from dark-field imaging because the sheet thickness is uncertain."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "ps_1_tensile_2Ni3Cr",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "gauge length 25 mm, thickness 3 mm, width 7 mm",
+        "test_standard": null,
+        "other_conditions": "crosshead speed 3 mm/min on a Gotech electronic universal testing machine with laser extensometer; specimens cut by EDM along the rolling direction (RD); at least three specimens per steel deformed to fracture"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "1110",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "1206",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "45.9",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_1_ys_vs_3Cr",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-20mn-9al-1.5c-3cr (3Cr steel, no added Ni, same HR+UFC process)",
+        "benchmark_process_id": "proc_hr-ufc",
+        "benchmark_sample_id": null,
+        "comparison_metric": "yield strength (YS): 2Ni3Cr steel has a yield strength increase of ~141 MPa compared to 3Cr steel",
+        "improvement_percentage": null
+      }
+    },
+    {
+      "performance_id": "perf_2_meets_targets",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "2Ni3Cr steel achieves YS exceeding 1100 MPa, UTS surpassing 1200 MPa and TEL greater than 45%, breaking the conventional strength–ductility trade-off",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "cm_1_ebsd",
+      "microstructure_id": "ms_1_gamma_matrix",
+      "technique": "electron back-scatter diffraction (EBSD)",
+      "instrument_or_setup": "Zeiss Ultra55 scanning electron microscope; specimens vibration polished with 50 nm colloidal silica for 2.5–24 h (Buehler-VibroMet 2)",
+      "measurement_conditions": null,
+      "purpose": "determine phase constitution and average grain size (with/without twin boundaries)",
+      "key_findings": "2Ni3Cr steel is fully recrystallized single equiaxed FCC γ (phase map uniformly red) with a high fraction of Σ3 twin boundaries; average grain size 8.57 μm (excluding twins) and 3.72 μm (including twins); no B2/BCC phase."
+    },
+    {
+      "characterization_id": "cm_2_xrd",
+      "microstructure_id": "ms_1_gamma_matrix",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "2θ range ~30–100°",
+      "purpose": "phase identification",
+      "key_findings": "Only five FCC γ reflections (γ(111), γ(200), γ(220), γ(311), γ(222)); no reflection attributable to a B2/BCC phase, confirming single-phase γ austenite for 2Ni3Cr."
+    },
+    {
+      "characterization_id": "cm_3_tem",
+      "microstructure_id": "ms_2_kappa_precipitates",
+      "technique": "transmission electron microscopy (TEM) bright-field and dark-field, selected area diffraction (SAED)",
+      "instrument_or_setup": "FEI Tecnai G2 F20 operating at 200 kV; specimens thinned with Struers TenuPol-3 double-jet (10 vol% perchloric acid + 90 vol% ethanol, 20 V, -30 °C)",
+      "measurement_conditions": "zone axis [011]γ",
+      "purpose": "reveal γ grains, twins, and nanoscale κ-carbide/LRO ordered domains",
+      "key_findings": "2Ni3Cr microstructure is γ austenite; SAED shows weak κ superlattice spots (011κ, 100κ); dark-field ({110}κ reflection) reveals fine bright κ-carbide/ordered particles of intermediate size; κ-carbides are orthorhombic with cuboidal morphology."
+    },
+    {
+      "characterization_id": "cm_4_hrtem",
+      "microstructure_id": "ms_2_kappa_precipitates",
+      "technique": "high-resolution TEM (HRTEM) and inverse-FFT (IFFT)",
+      "instrument_or_setup": "FEI Tecnai G2 F20 (200 kV)",
+      "measurement_conditions": "[011]γ zone axis; FFT patterns; IFFT reconstructed using {011} and {100} LRO superlattice reflections",
+      "purpose": "image and size the κ-carbides/LRO domains",
+      "key_findings": "2Ni3Cr κ-carbides/LRO domains have an average size of ~5.46 nm (measured over >200 domains by Image-Pro Plus)."
+    },
+    {
+      "characterization_id": "cm_5_sem_fractography",
+      "microstructure_id": null,
+      "technique": "scanning electron microscopy (SEM) fractography",
+      "instrument_or_setup": "SEM of fracture surface fibre zone",
+      "measurement_conditions": "200 μm scale bar",
+      "purpose": "characterize fracture mode",
+      "key_findings": "2Ni3Cr fracture surface shows a dimpled microvoid-coalescence morphology (ductile fracture), with the finest and most uniform dimple population of the four steels."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_1_dft_formation_energy",
+      "simulation_method": "density functional theory (DFT)",
+      "software_used": "Materials Project database (https://legacy.materialsproject.org/)",
+      "potential_model_or_database": "GGA with Perdew-Burke-Ernzerhof (PBE) functional",
+      "boundary_and_initial_conditions": "calculation of possible (κ-)carbide structures and their formation energies for the Fe-20Mn-9Al-1.5C steel family",
+      "validation_against_experiment": "Trends (Cr raises and Ni lowers κ-carbide formation energy / nucleation barrier) used to explain the dark-field TEM sizes (Fig. 1i-1l) and κ-carbide size sequence.",
+      "analytical_models": [
+        {
+          "model_name": "First-principles formation energies of possible (κ-)carbides structures",
+          "equation_role": "assess stability and equilibrium of κ-carbides and Ni/Cr-rich carbides",
+          "parameters": [
+            {
+              "name": "formation energy of (Fe, Mn)3AlC (κ-carbide)",
+              "value": "-0.160",
+              "unit": "eV/atom"
+            },
+            {
+              "name": "formation energy of Cr21(FeC3)2 (Cr-rich carbide)",
+              "value": "-0.049",
+              "unit": "eV/atom"
+            },
+            {
+              "name": "formation energy of Fe2NiC (Ni-rich carbide)",
+              "value": "0.082",
+              "unit": "eV/atom"
+            },
+            {
+              "name": "formation energy of AlNi3C (Ni-rich κ-carbide)",
+              "value": "-0.181",
+              "unit": "eV/atom"
+            }
+          ],
+          "model_note": "Cr-rich carbide Cr21(FeC3)2 (−0.049) is 0.111 eV/atom higher than the common (Fe, Mn)AlC κ-carbide, increasing the nucleation energy barrier; AlNi3C (−0.181) is lower than ideal κ-carbide, lowering the barrier and promoting κ-carbide formation."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_2_strengthening_model",
+      "simulation_method": "analytical strengthening model (linear superposition of strengthening mechanisms)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "fully recrystallized Fe–Mn–Al–C steel; contribution of dislocation strengthening disregarded; precipitation strengthening taken as the larger of σ_order and (σ_coh + σ_mod)",
+      "validation_against_experiment": "Calculated yield strengths compared with measured tensile yield strengths (Fig. 11); good agreement with experimental values.",
+      "analytical_models": [
+        {
+          "model_name": "Yield strength linear superposition",
+          "equation_role": "σ_ys = σ_0 + σ_ss + σ_gb + σ_prep",
+          "parameters": [
+            {
+              "name": "σ_0 (friction stress, = 3τ0)",
+              "value": "42",
+              "unit": "MPa"
+            },
+            {
+              "name": "σ_gb (grain-boundary strengthening) for 2Ni3Cr",
+              "value": "231.7",
+              "unit": "MPa"
+            },
+            {
+              "name": "σ_ss (solid-solution strengthening) for 2Ni3Cr",
+              "value": "557.2",
+              "unit": "MPa"
+            },
+            {
+              "name": "Hall–Petch coefficient K_HP",
+              "value": "446.8",
+              "unit": "MPa·μm^0.5"
+            },
+            {
+              "name": "d_eff (grain size incl. twins) for 2Ni3Cr",
+              "value": "3.72",
+              "unit": "μm"
+            },
+            {
+              "name": "Taylor factor M",
+              "value": "3.06",
+              "unit": null
+            },
+            {
+              "name": "shear modulus G of austenite (Fe–Mn–Al–C)",
+              "value": "70",
+              "unit": "GPa"
+            },
+            {
+              "name": "Burgers vector b",
+              "value": "0.264",
+              "unit": "nm"
+            },
+            {
+              "name": "ΔG (shear modulus difference austenite/κ-carbide)",
+              "value": "23.3",
+              "unit": "GPa"
+            },
+            {
+              "name": "A_s (strong-obstacle factor)",
+              "value": "0.64",
+              "unit": null
+            },
+            {
+              "name": "ε_c (lattice mismatch parameter)",
+              "value": "0.9",
+              "unit": "%"
+            },
+            {
+              "name": "γ_APB (antiphase boundary energy)",
+              "value": "0.35",
+              "unit": "J/m^2"
+            }
+          ],
+          "model_note": "σ_prep for 2Ni3Cr is dominated by σ_coh + σ_mod (Fig. 10c: dense cluster ~1.5–2.6 nm peaking near 23 MPa plus isolated taller bars near 3.6 and 3.9 nm reaching ~27 and ~29 MPa)."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Measured chemical composition of 2Ni3Cr steel (wt.%, Table 1): C 1.41, Si 0.35, Mn 20.3, P 0.009, S 0.002, Al 8.63, Mo 0.53, Ni 2.11, Cr 2.89, Ti 0.01, Nb 0.03, Fe Bal.",
+    "TS × TEL (product of tensile strength and total elongation) for the 2Ni3Cr steel = 55.36 GPa-% (Table 2).",
+    "Average size of the κ-carbide/LRO ordered domains in 2Ni3Cr steel ≈ 5.46 nm (measured over more than 200 domains using Image-Pro Plus software).",
+    "κ-carbides in 2Ni3Cr steel are described as orthorhombic with a cuboidal morphology distributed in the γ matrix.",
+    "Average grain size of 2Ni3Cr steel is 8.57 μm excluding twin boundaries and 3.72 μm including twin boundaries; the effective grain size d_eff used in the strengthening model is 3.72 μm.",
+    "Across 2Ni → 2Ni3Cr → 2Ni5Cr, Cr addition decreases yield strength from 1202 to 1071 MPa and tensile strength from 1283 to 1187 MPa, while total elongation increases from 34.1% to 54.5%.",
+    "In strain-hardening behavior, Stage II is prolonged and Stage III shows a higher work-hardening rate for 2Ni3Cr steel than for the 2Ni steel with increasing Cr content; with increasing Ni (3Cr → 2Ni3Cr), Stages II and III are shortened and lowered.",
+    "The 2Ni3Cr steel was one of a 4-ingot series Fe–20Mn–9Al-1.5C-xNi-yCr (x = 0, 2 wt%; y = 0, 3, 5 wt%) all subject to the identical hot-rolling + online ultrafast cooling (UFC) route with ~40 °C/s cooling and 95% hot-rolling reduction to 4 mm sheets."
+  ]
+}

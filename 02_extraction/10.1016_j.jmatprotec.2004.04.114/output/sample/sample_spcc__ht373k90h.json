@@ -1,0 +1,347 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_spcc__ht373k90h",
+      "paper_id": "10.1016_j.jmatprotec.2004.04.114",
+      "alloy_id": "alloy_spcc",
+      "process_id": "proc_ht373k90h",
+      "sample_label": "D",
+      "aliases": [
+        "Heat-treated after received",
+        "Species D"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "Table 1 defines species D as the heat-treated-after-received specimen, so the as-received SPCC material (row A) is the starting state, and the text describes mild steel with Cottrell-locked dislocations before deformation.",
+        "block_id": [
+          "b0029",
+          "b0027",
+          "b0028",
+          "b0022"
+        ]
+      },
+      "processing_step_id": "step_as_received",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "as-received"
+      },
+      "method": {
+        "value": "as received (cold-rolled SPCC sheet)"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Condition D starts from the as-received SPCC sheet (same starting state as condition A 'As received'); no pre-strain is applied before the heat treatment. Material is mild steel in which dislocations are locked by carbon and other solutes through the Cottrell effect."
+      }
+    },
+    {
+      "source": {
+        "reason": "The text specifies the particular heat-treatment condition (373 K for 90 h) chosen to recover only the Cottrell atmosphere, and Table 1 lists species D as 'Heat-treated after received' with no prior pre-strain.",
+        "block_id": [
+          "b0022",
+          "b0029"
+        ]
+      },
+      "processing_step_id": "step_ht_373K_90h",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "heat treatment"
+      },
+      "temperature": {
+        "value": "373 K"
+      },
+      "temperature_unit": {
+        "value": "K"
+      },
+      "duration": {
+        "value": "90 h"
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Heat treatment at 373 K for 90 h applied to the as-received material to recover only the Cottrell atmosphere by diffusion of C whilst keeping the dislocations stationary; the condition was calculated from the average diffusion distance of solute C in an Fe matrix, x = (2Dt)^(1/2)."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "The paper describes mild steel with Cottrell-locked dislocations and states that the heat treatment of specimen D was intended to restore the Cottrell atmosphere and restrain movable dislocations.",
+        "block_id": [
+          "b0022",
+          "b0032",
+          "b0029"
+        ]
+      },
+      "structure_id": "struct_D_cottrell",
+      "overall_structure": {
+        "value": "Mild steel (SPCC) with an Fe matrix in which dislocations are locked by carbon and other solutes via the Cottrell effect in the as-received state; the 373 K/90 h heat treatment applied to specimen D recovers the Cottrell atmosphere by C diffusion while keeping the dislocations stationary, thereby restraining the movable dislocations."
+      },
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "Specimen D is the as-received SPCC given the 373 K/90 h heat treatment; the described feature is the Fe matrix with Cottrell-locked/restrained dislocations in mild steel.",
+            "block_id": [
+              "b0029",
+              "b0022"
+            ]
+          },
+          "microstructure_id": "micro_D_matrix",
+          "region": null,
+          "related_sequence": {
+            "value": "2"
+          },
+          "phases_present": [],
+          "defects": [
+            {
+              "source": {
+                "reason": "The text states that in mild steel dislocations may be locked by carbon and other solutes due to the Cottrell effect, and that the 373 K/90 h treatment was used to recover the Cottrell atmosphere while keeping the dislocations stationary, thereby restraining movable dislocations.",
+                "block_id": [
+                  "b0022",
+                  "b0032"
+                ]
+              },
+              "type": {
+                "value": "dislocations (locked by carbon/solutes via the Cottrell effect; Cottrell atmosphere recovered and dislocations restrained by the 373 K/90 h heat treatment)"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "source": {
+        "reason": "Table 2 of the paper lists the elastic modulus of species D (Heat-treated after received) measured at the 0–0.05% strain region.",
+        "block_id": [
+          "b0034",
+          "b0031"
+        ]
+      },
+      "property_set_id": "prop_D_modulus_0_005",
+      "measurement_conditions": {
+        "source": {
+          "reason": "The text states the stress–strain curve was measured with a load cell and strain gauge up to 1% strain, the elastic moduli were calculated from the initial stage (strain < 0.1%) and the whole elastic region, and the material is SPCC of 1.2 mm thickness.",
+          "block_id": [
+            "b0026",
+            "b0031",
+            "b0028"
+          ]
+        },
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": {
+          "value": "SPCC sheet, thickness 1.2 mm"
+        },
+        "test_standard": null,
+        "other_conditions": {
+          "value": "Elastic modulus calculated from the initial stage (strain < 0.1%); value listed for the region of strain 0–0.05%. Stress–strain curve measured with a load cell and strain gauge up to ~1% strain."
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": {
+            "value": "189",
+            "source": {
+              "reason": "Table 2 lists species D (Heat-treated after received) with elastic modulus 189 for the strain region 0–0.05%.",
+              "block_id": [
+                "b0034",
+                "b0031"
+              ]
+            }
+          },
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "source": {
+        "reason": "Table 2 of the paper lists the elastic modulus of species D (Heat-treated after received) measured over the whole elastic range.",
+        "block_id": [
+          "b0034",
+          "b0031"
+        ]
+      },
+      "property_set_id": "prop_D_modulus_whole_elastic",
+      "measurement_conditions": {
+        "source": {
+          "reason": "The text states the elastic moduli were calculated from the initial stage (strain < 0.1%) and from the whole elastic region, with the stress–strain curve measured using a load cell and strain gauge.",
+          "block_id": [
+            "b0026",
+            "b0031",
+            "b0030"
+          ]
+        },
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": {
+          "value": "SPCC sheet, thickness 1.2 mm"
+        },
+        "test_standard": null,
+        "other_conditions": {
+          "value": "Elastic modulus calculated from the whole elastic region (Fig. 4, strain up to 0.3% plotted; modulus from the stress–strain curves within the elastic deformation region)."
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": {
+            "value": "189",
+            "source": {
+              "reason": "Table 2 lists species D (Heat-treated after received) with elastic modulus 189 for the whole elastic range.",
+              "block_id": [
+                "b0034",
+                "b0031"
+              ]
+            }
+          },
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "The text describes the tensile test using a load cell and strain gauge up to 1% strain, from which the elastic moduli (Table 2) were calculated, and specifies that modulus values are reported for the initial stage and the whole elastic region.",
+        "block_id": [
+          "b0026",
+          "b0031",
+          "b0030",
+          "b0034"
+        ]
+      },
+      "characterization_id": "char_tensile_D",
+      "microstructure_id": null,
+      "technique": {
+        "value": "tensile test (stress–strain measurement with strain gauge)"
+      },
+      "instrument_or_setup": {
+        "value": "load cell and strain gauge (a precision extensometer was also developed by the authors for the earlier large-deformation measurement of SPCE)"
+      },
+      "measurement_conditions": {
+        "value": "stress–strain curve measured up to ~1% strain; elastic modulus obtained from the stress–strain curves within the elastic deformation region (Fig. 4); SPCC sheet of 1.2 mm thickness"
+      },
+      "purpose": {
+        "value": "to confirm the effect of movable dislocations by comparing specimen conditions A–E, and to measure the elastic modulus of the heat-treated (D) specimen before/after the 373 K/90 h heat treatment"
+      },
+      "key_findings": {
+        "value": "Species D (Heat-treated after received) gives elastic modulus 189 for the strain region 0–0.05% and 189 for the whole elastic range, i.e. essentially unchanged between the two strain regions, unlike A, B and C which show a gap between the two ranges."
+      }
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The nano-indentation experiments (spherical tip, nominal R = 50 μm; Figs 7–12) are described only for 'the specimens' and the marker schematic in Fig. 10 labels the specimen 'SPCE', so these microscopic elastic-modulus results are not attributed to the SPCC species D.",
+    "Table 2 and Fig. 4 print no units for the elastic-modulus values; the numbers reported for species D (189 for 0–0.05% strain and 189 for the whole elastic range) are therefore recorded without any unit.",
+    "For species D the modulus measured over the narrow 0–0.05% strain window (189) equals that measured over the whole elastic range (189), whereas species A, B and C show a gap between the two ranges (A: 182 vs 173; B: 188 vs 162; C: 186 vs 162).",
+    "The 373 K/90 h heat-treatment condition was selected using the average diffusion distance of solute C in an Fe matrix, x = (2Dt)^(1/2), to recover only the Cottrell atmosphere while keeping dislocations stationary."
+  ]
+}

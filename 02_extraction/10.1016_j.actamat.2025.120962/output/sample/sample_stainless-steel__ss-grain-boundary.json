@@ -1,0 +1,312 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_stainless-steel__ss-grain-boundary",
+      "paper_id": "10.1016_j.actamat.2025.120962",
+      "alloy_id": "alloy_stainless-steel",
+      "process_id": "proc_ss-grain-boundary",
+      "sample_label": "SS",
+      "aliases": [
+        "stainless steel (SS)"
+      ]
+    }
+  ],
+  "processing_steps": [],
+  "structures": [
+    {
+      "source": {
+        "reason": "SS (stainless steel) is an in-house OM dataset of polycrystalline single-phase grain-boundary microstructure",
+        "block_id": [
+          "b0024",
+          "figure_001"
+        ]
+      },
+      "structure_id": "structure_ss",
+      "overall_structure": {
+        "value": "Polycrystalline single-phase austenitic stainless steel microstructure; equiaxed grains with moderately fine, wavy grain boundaries (boundary-type segmentation target)",
+        "source": {
+          "reason": "figure_001 classifies SS as polycrystalline single phase (austenite); figure_007 describes SS as an equiaxed grained grayscale micrograph with moderately fine, wavy boundaries",
+          "block_id": [
+            "figure_001",
+            "figure_007"
+          ]
+        }
+      },
+      "number_of_phases": {
+        "value": 1,
+        "source": {
+          "reason": "SS is listed under 'Polycrystalline & Single phase' (blue background) in Fig. 1 and b0024",
+          "block_id": [
+            "figure_001",
+            "b0024"
+          ]
+        }
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "The SS micrograph is a single polycrystalline single-phase (austenite) field imaged by OM",
+            "block_id": [
+              "figure_001",
+              "b0024"
+            ]
+          },
+          "microstructure_id": "micro_ss",
+          "region": null,
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "source": {
+                "reason": "SS is a polycrystalline single-phase austenite material; only phase name and grain morphology are reported",
+                "block_id": [
+                  "figure_001",
+                  "figure_007"
+                ]
+              },
+              "phase_name": {
+                "value": "austenite",
+                "source": {
+                  "reason": "figure_001 labels the SS card 'AlFe stainless steel (austenite)'",
+                  "block_id": [
+                    "figure_001"
+                  ]
+                }
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": {
+                "value": "equiaxed grains with moderately fine, wavy boundaries",
+                "source": {
+                  "reason": "figure_007 describes SS as equiaxed grained grayscale micrograph with moderately fine, wavy boundaries",
+                  "block_id": [
+                    "figure_007"
+                  ]
+                }
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "source": {
+        "reason": "For SS, the grain boundaries are the target objects of analysis (boundary-type segmentation)",
+        "block_id": [
+          "b0036",
+          "b0062",
+          "b0045"
+        ]
+      },
+      "interface_set_id": "interface_ss_gb",
+      "phase_interfaces": [
+        {
+          "source": {
+            "reason": "Polycrystalline single-phase material: grain boundaries separate closely adhering austenite grains with no voids between them",
+            "block_id": [
+              "b0027",
+              "figure_001"
+            ]
+          },
+          "interface_id": "gb_ss",
+          "microstructure_id": "micro_ss",
+          "phase_1_name": {
+            "value": "austenite",
+            "source": {
+              "reason": "SS is austenitic stainless steel",
+              "block_id": [
+                "figure_001"
+              ]
+            }
+          },
+          "phase_2_name": {
+            "value": "austenite",
+            "source": {
+              "reason": "Single-phase material; grain boundaries separate adjacent austenite grains",
+              "block_id": [
+                "figure_001",
+                "b0027"
+              ]
+            }
+          },
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": null,
+      "interface_notes": {
+        "value": "Polycrystalline images contain grains and their boundaries with no background/voids between grains; grain-boundary masks were extracted from segmented grain regions using a contour-finding approach for evaluation",
+        "source": {
+          "reason": "b0027 explains polycrystalline images have no voids between grains and boundaries; b0045 describes grain-boundary mask extraction from segmented grains",
+          "block_id": [
+            "b0027",
+            "b0045"
+          ]
+        }
+      }
+    }
+  ],
+  "properties": [],
+  "performance": [
+    {
+      "source": {
+        "reason": "SS is one of the polycrystalline datasets on which MatSAM's segmentation performance is quantitatively evaluated (Table 2)",
+        "block_id": [
+          "b0058",
+          "b0065"
+        ]
+      },
+      "performance_id": "perf_ss_segmentation",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": {
+          "value": "Grain-boundary segmentation metrics on 44 SS test images: ARI, F1, Recall (mean ± relative deviation %)",
+          "source": {
+            "reason": "Table 2 reports ARI/F1/Recall for SS across MatSAM, SAM, Canny, OTSU and Watershed",
+            "block_id": [
+              "b0058",
+              "figure_unlabelled_003"
+            ]
+          }
+        },
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "SS images were captured using OM; Fig. 1 gives the real size and pixel resolution of the SS micrograph",
+        "block_id": [
+          "b0024",
+          "figure_001"
+        ]
+      },
+      "characterization_id": "char_ss_om",
+      "microstructure_id": "micro_ss",
+      "technique": {
+        "value": "Optical microscopy (OM)",
+        "source": {
+          "reason": "b0024 states stainless steel (SS) images were captured using OM",
+          "block_id": [
+            "b0024"
+          ]
+        }
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": {
+        "value": "field of view 247*247 µm; 1024*1024 pixels; 44 test images",
+        "source": {
+          "reason": "figure_001 gives SS real size 247*247 µm and 1024*1024 pix; Table 1 gives 1024 × 1024 pixels and 44 test images",
+          "block_id": [
+            "figure_001",
+            "b0036"
+          ]
+        }
+      },
+      "purpose": {
+        "value": "Imaging of stainless steel polycrystalline grain boundaries for segmentation evaluation",
+        "source": {
+          "reason": "SS is a boundary-type microstructure segmentation dataset",
+          "block_id": [
+            "b0036",
+            "b0045"
+          ]
+        }
+      },
+      "key_findings": {
+        "value": "Polycrystalline single-phase austenite with equiaxed grains; uneven illumination gradient across the field; non-ideal imaging quality with blurry regions, scratches and impurities",
+        "source": {
+          "reason": "figure_001 notes uneven illumination gradient; b0065 notes blurry regions, scratches and impurities",
+          "block_id": [
+            "figure_001",
+            "b0065"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "SS grain-boundary segmentation results are quantitatively evaluated in Table 2 and visually in Fig. 4",
+        "block_id": [
+          "b0058",
+          "figure_004"
+        ]
+      },
+      "characterization_id": "char_ss_segmentation_eval",
+      "microstructure_id": "micro_ss",
+      "technique": {
+        "value": "Image segmentation performance evaluation (ARI, F1, Recall)",
+        "source": {
+          "reason": "b0048 lists ARI, F1 and recall as evaluation metrics for polycrystalline images",
+          "block_id": [
+            "b0048"
+          ]
+        }
+      },
+      "instrument_or_setup": {
+        "value": "Nvidia RTX3090 24 GB GPU; PyTorch 1.13.1",
+        "source": {
+          "reason": "b0055 states all validation experiments were conducted on a single Nvidia RTX3090 24 GB GPU using PyTorch 1.13.1",
+          "block_id": [
+            "b0055"
+          ]
+        }
+      },
+      "measurement_conditions": {
+        "value": "44 test images, 1024 × 1024 pixels, boundary-type grain segmentation; methods compared: MatSAM, SAM, Canny, OTSU, Watershed",
+        "source": {
+          "reason": "Table 1 gives 44 test images at 1024 × 1024; Table 2 compares MatSAM, SAM, Canny, OTSU, Watershed on SS",
+          "block_id": [
+            "b0036",
+            "b0058"
+          ]
+        }
+      },
+      "purpose": {
+        "value": "Quantitatively compare MatSAM with SAM and rule-based methods for SS grain-boundary segmentation",
+        "source": {
+          "reason": "b0056/b0064 present performance comparison of methods on polycrystalline datasets",
+          "block_id": [
+            "b0056",
+            "b0064"
+          ]
+        }
+      },
+      "key_findings": {
+        "value": "MatSAM ARI 0.56 (±6.6%), F1 0.65 (±5.0%), Recall 0.59 (±6.0%); MatSAM achieves the best ARI among the compared methods on SS",
+        "source": {
+          "reason": "Table 2 SS row gives MatSAM metrics; b0065 states MatSAM achieves ARI 0.56 on 44 test images",
+          "block_id": [
+            "b0058",
+            "b0065"
+          ]
+        }
+      }
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "SS (stainless steel) is an in-house, boundary-type microstructure segmentation dataset: optical microscopy (OM), polycrystalline single phase (austenite / AlFe stainless steel), 1024 × 1024 pixels, real size 247 × 247 µm, 44 test images, primary metric F1↑ (source: b0036, figure_001, figure_unlabelled_002).",
+    "SS was collected under non-ideal imaging conditions with an uneven illumination gradient, more blurry regions, scratches, and impurities (source: b0040, b0065, figure_001).",
+    "Table 2 SS row metrics (mean ± relative deviation): MatSAM ARI 0.56 (±6.6%), F1 0.65 (±5.0%), Recall 0.59 (±6.0%); SAM ARI 0.54 (±1.1%), F1 0.66 (±1.7%), Recall 0.60 (±5.5%); Canny ARI 0.34 (±7.2%), F1 0.51 (±7.9%), Recall 0.41 (±8.2%); OTSU ARI 0.23 (±5.8%), F1 0.46 (±5.7%), Recall 0.48 (±7.9%); Watershed ARI 0.24 (±4.3%), F1 0.41 (±5.6%), Recall 0.33 (±6.6%) (source: b0058, figure_unlabelled_003).",
+    "MatSAM achieves ARI 0.56 on 44 SS test images, outperforming SAM (0.54) and Canny (0.34); visually, OTSU traces the illumination gradient (a large circular region) rather than grains, Canny over-segments into cluttered broken boundaries, Watershed leaves large blank areas, while MatSAM reproduces the expert grain boundaries (source: b0065, figure_004).",
+    "In the SS OM images, grayscale values vary little between adjacent grains but largely across regions, and Canny is significantly affected by blurred or incomplete grain boundaries (source: b0062, b0063)."
+  ]
+}

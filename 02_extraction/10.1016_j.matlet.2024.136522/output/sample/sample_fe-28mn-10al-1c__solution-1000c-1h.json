@@ -1,0 +1,272 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-10al-1c__solution-1000c-1h",
+      "paper_id": "10.1016_j.matlet.2024.136522",
+      "alloy_id": "alloy_fe-28mn-10al-1c",
+      "process_id": "proc_solution-1000c-1h",
+      "sample_label": "0Cu steel under solid solution treatment",
+      "aliases": [
+        "0Cu steel (solution treated)"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "Materials and methods describes solution treatment at 1000 °C for 1 h applied to the Fe-28Mn-10Al-1C-(0,3)Cu steel, defining the solution-treated state of the 0Cu steel.",
+        "block_id": [
+          "b0011"
+        ]
+      },
+      "processing_step_id": "step_solution_treatment",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "solution treatment (solid solution treatment)"
+      },
+      "temperature": {
+        "value": "1000 ℃",
+        "source": {
+          "reason": "The paper states the Fe-28Mn-10Al-1C-(0,3)Cu steel is processed by solution treatment at 1000 °C; this is the process defining this 0Cu sample's state.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "temperature_unit": {
+        "value": "℃",
+        "source": {
+          "reason": "Unit of the solution treatment temperature given in the Materials and methods section.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "duration": {
+        "value": "1 h",
+        "source": {
+          "reason": "Solution treatment duration given as 1 h in the processing description.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Solution treatment applied to both the 0Cu and 3Cu steels; it is the parent state preceding the subsequent aging treatment (550 °C for 3 h), which is NOT part of this solution-treated sample.",
+        "source": {
+          "reason": "The paper describes the sequential processing (solution treatment then aging) shared by both steels, and the sample of interest is the solution-treated state.",
+          "block_id": [
+            "b0011"
+          ]
+        }
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "The only structure-specific data reported for the 0Cu steel under solid solution treatment is the austenitic matrix and its XRD lattice parameter a = 0.3687 nm.",
+        "block_id": [
+          "b0022"
+        ]
+      },
+      "structure_id": "struct_0cu_solution_austenite",
+      "overall_structure": {
+        "value": "Solution-treated austenitic matrix of the 0Cu steel (Fe-28Mn-10Al-1C); XRD-determined lattice parameter a = 0.3687 nm.",
+        "source": {
+          "reason": "The paper reports the XRD lattice parameter of the 0Cu steel under solid solution treatment as a = 0.3687 nm, describing the austenitic matrix state.",
+          "block_id": [
+            "b0022",
+            "b0011"
+          ]
+        }
+      },
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "The solution-treated 0Cu steel consists of an austenitic matrix with no reported precipitates; its lattice parameter is reported by XRD, and the critical lattice parameter concept confirms κ-carbide can precipitate from it upon further treatment.",
+            "block_id": [
+              "b0022",
+              "b0011"
+            ]
+          },
+          "microstructure_id": "micro_0cu_solution_matrix",
+          "region": {
+            "value": "overall (bulk)"
+          },
+          "related_sequence": {
+            "value": "1"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "The 0Cu steel under solution treatment is an austenitic matrix whose lattice parameter (a = 0.3687 nm) was determined by XRD; austenite is FCC.",
+                "block_id": [
+                  "b0022"
+                ]
+              },
+              "phase_name": {
+                "value": "austenite (γ)"
+              },
+              "crystal_structure": {
+                "value": "FCC (lattice parameter a = 0.3687 nm)"
+              },
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "XRD was used to obtain the lattice parameter of the 0Cu steel under solid solution treatment, the only reported measurement for this sample.",
+        "block_id": [
+          "b0022"
+        ]
+      },
+      "characterization_id": "char_xrd_0cu_solution",
+      "microstructure_id": "micro_0cu_solution_matrix",
+      "technique": {
+        "value": "X-ray diffraction (XRD)"
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Determine the lattice parameter of the austenitic matrix of the 0Cu steel under solid solution treatment.",
+        "source": {
+          "reason": "The paper states 'According to XRD calculations, the lattice parameter of 0Cu steel ... under solid solution treatment are a = 0.3687 nm'.",
+          "block_id": [
+            "b0022"
+          ]
+        }
+      },
+      "key_findings": {
+        "value": "The 0Cu steel under solid solution treatment has an austenitic matrix lattice parameter a = 0.3687 nm, which is higher than the critical lattice parameter (~0.3670 nm) required for κ-carbide precipitation.",
+        "source": {
+          "reason": "The XRD result for the 0Cu steel is reported and compared against the critical lattice parameter of the austenitic matrix.",
+          "block_id": [
+            "b0022"
+          ]
+        }
+      }
+    }
+  ],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "The composition-boundary formula (Eq. 2) and its computed critical Al content specifically reported for the 0Cu steel constitute an analytical calculation belonging to this sample.",
+        "block_id": [
+          "b0022",
+          "b0023",
+          "b0024"
+        ]
+      },
+      "computation_id": "comp_critical_al_0cu",
+      "simulation_method": {
+        "value": "analytical/empirical calculation"
+      },
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "source": {
+            "reason": "The critical Al content of 6.52 wt% for the 0Cu steel is derived from this composition boundary formula reported in the paper.",
+            "block_id": [
+              "b0023",
+              "b0024"
+            ]
+          },
+          "model_name": {
+            "value": "Composition boundary formula for intragranular κ-carbide precipitation in Fe-Mn-Al-C steel"
+          },
+          "equation_role": {
+            "value": "Empirical formula relating C, Al and Mn contents (wt.%) that defines the composition boundary for intragranular κ-carbide precipitation; used to compute the critical Al content for the 0Cu steel."
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "wt.% C (0Cu steel)"
+              },
+              "value": {
+                "value": "1"
+              },
+              "unit": {
+                "value": "wt%"
+              }
+            },
+            {
+              "name": {
+                "value": "wt.% Al (0Cu steel)"
+              },
+              "value": {
+                "value": "10"
+              },
+              "unit": {
+                "value": "wt%"
+              }
+            },
+            {
+              "name": {
+                "value": "wt.% Mn (0Cu steel)"
+              },
+              "value": {
+                "value": "28"
+              },
+              "unit": {
+                "value": "wt%"
+              }
+            },
+            {
+              "name": {
+                "value": "critical Al content for κ-carbide precipitation in 0Cu steel"
+              },
+              "value": {
+                "value": "6.52"
+              },
+              "unit": {
+                "value": "wt%"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "Formula: 0.208(wt.%C) + 0.098(wt.%Al) = 1 - 0.0054(wt.%Mn). Applying it gives a critical Al content of 6.52 wt% for the 0Cu steel; the actual Al content (10 wt%) exceeds this, so κ-carbide has sufficient precipitation ability in this steel."
+          }
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The lattice parameter of the austenitic matrix of 0Cu steel under solid solution treatment, determined by XRD, is a = 0.3687 nm.",
+    "The critical lattice parameter of the austenitic matrix for κ-carbide precipitation is about a = 0.3670 nm; below this value intragranular κ-carbide cannot precipitate. The 0Cu steel lattice parameter (0.3687 nm) exceeds this critical value, so κ-carbide can precipitate from the 0Cu steel.",
+    "The critical Al content for κ-carbide precipitation in the 0Cu steel, calculated from the composition boundary formula 0.208(wt.%C) + 0.098(wt.%Al) = 1 - 0.0054(wt.%Mn), is 6.52 wt%; the Al content in 0Cu steel (nominal 10 wt%) exceeds this.",
+    "The nominal composition of the 0Cu steel is Fe-28Mn-10Al-1C austenitic low-density steel (Cu-free variant of Fe-28Mn-10Al-1C-(0,3)Cu; Fe balance)."
+  ]
+}

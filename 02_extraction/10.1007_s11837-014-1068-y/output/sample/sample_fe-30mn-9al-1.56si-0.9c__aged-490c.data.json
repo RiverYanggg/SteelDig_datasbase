@@ -1,0 +1,134 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-1.56si-0.9c__aged-490c",
+      "paper_id": "10.1007_s11837-014-1068-y",
+      "alloy_id": "alloy_fe-30mn-9al-1.56si-0.9c",
+      "process_id": "proc_aged-490c",
+      "sample_label": "1.56% Si aged at 490°C",
+      "aliases": [
+        "1.56% Si aged 63 h at 490°C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_solution_treatment",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Parent solution-treatment step preceding the 490°C aging; the material is a cast Fe-30Mn-9Al-1.56Si-0.9C-0.5Mo steel."
+    },
+    {
+      "processing_step_id": "step_2_aging_490c",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "490",
+      "temperature_unit": "°C",
+      "duration": "63 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Age hardening at 490°C for 63 h used to compare κ-carbide size in 0.59% and 1.56% Si steels."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_aged_490c",
+      "overall_structure": "Aged austenite matrix with nanoscale κ-carbide precipitates",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_aged_490c",
+          "region": null,
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "dark, uniformly textured matrix in dark-field TEM",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide ((Fe,Mn)₃AlCₓ)",
+              "crystal_structure": "E2₁ cubic perovskite",
+              "volume_fraction": null,
+              "morphology": "nanoscale precipitates appearing as scattered bright dots and short bright clusters",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_1",
+              "type": "κ-carbide",
+              "size": null,
+              "distribution": "dense, numerous, and uniformly dispersed; greater size and number density than in the 0.59% Si steel aged identically",
+              "coherency": "coherent"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_set_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_kappa_gamma",
+          "microstructure_id": "micro_aged_490c",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "κ-carbide",
+          "coherence": "coherent; cube-on-cube orientation relationship: ⟨100⟩κ // ⟨100⟩γ and {001}κ // {001}γ"
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "κ-carbide precipitation during aging; increasing silicon (0.59% to 1.56%) accelerates κ-carbide formation and increases its apparent size and number density.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_tem_df",
+      "microstructure_id": "micro_aged_490c",
+      "technique": "Dark-field transmission electron microscopy (TEM)",
+      "instrument_or_setup": "FEI Tecnai F20 scanning/transmission electron microscope",
+      "measurement_conditions": "Aged 63 h at 490°C; dark-field imaging with a 10 nm scale bar",
+      "purpose": "Compare κ-carbide precipitate size and number density between 0.59% Si and 1.56% Si steels aged identically",
+      "key_findings": "The 1.56% Si steel shows denser, more numerous and more uniformly dispersed κ-carbide precipitates than the 0.59% Si steel."
+    },
+    {
+      "characterization_id": "char_saed",
+      "microstructure_id": "micro_aged_490c",
+      "technique": "Selected-area electron diffraction (SAED)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "SAED pattern inset in dark-field TEM image (Fig. 3b)",
+      "purpose": "Identify the crystalline precipitate phase",
+      "key_findings": "Regular array of bright diffraction spots indicates crystalline κ-carbide; the spot arrays of the 0.59% and 1.56% Si specimens appear to be of the same type."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": []
+}

@@ -1,0 +1,390 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-35mn-17al-5cu__aging-575c-6h",
+      "paper_id": "10.1016_j.matchar.2025.114761",
+      "alloy_id": "alloy_fe-35mn-17al-5cu",
+      "process_id": "proc_aging-575c-6h",
+      "sample_label": "17Al aged at 575 °C for 6 h",
+      "aliases": "17Al 575 °C aging 6 h"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_melting",
+      "sequence": "1",
+      "type": "melting / casting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "argon atmosphere",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingots with nominal composition Fe-35Mn-17Al-5Cu (at.%) produced by melting high-purity (>99.9 %) raw materials in a vacuum induction furnace under an argon atmosphere"
+    },
+    {
+      "processing_step_id": "step_2_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "24 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingots homogenized at 1200 °C for 24 h"
+    },
+    {
+      "processing_step_id": "step_3_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "rolled into plates with a thickness of 4 mm",
+      "processing_steps_notes": "Hot-rolled into plates with a thickness of 4 mm"
+    },
+    {
+      "processing_step_id": "step_4_cutting",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "electrical discharge machining",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Plates cut into 10 × 5 × 2 mm3 samples for Vickers hardness measurements and microstructure characterizations"
+    },
+    {
+      "processing_step_id": "step_5_solution_treatment",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "10 min",
+      "atmosphere": "argon atmosphere",
+      "cooling_medium": "oil quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution treated at 1100 °C for 10 min under argon followed by oil quenching; this is the parent process (proc_st-1100c-10min-oq) of the aging treatment"
+    },
+    {
+      "processing_step_id": "step_6_aging",
+      "sequence": "6",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "575 °C",
+      "temperature_unit": "°C",
+      "duration": "6 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution-treated 17Al alloy aged at 575 °C for 6 h followed by water quenching; this is the peak-hardness condition for the 17Al alloy (924.9 HV)"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_17al_575c_6h",
+      "overall_structure": "After aging the 17Al alloy at 575 °C for 6 h the α (BCC) matrix had almost completely transformed into near-equiaxed β-Mn; a large amount of fine FCC Cu-rich particles (containing FCC twins) was distributed at the β-Mn interfaces and a small amount of a new BCC phase was present within the β-Mn.",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_beta_mn_matrix",
+          "region": "bulk / matrix",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "β-Mn",
+              "crystal_structure": "β-Mn (SAED indexed in [012] and [111] beams)",
+              "volume_fraction": null,
+              "morphology": "near-equiaxed grains; phase map almost entirely green (β-Mn)",
+              "grain_size": null,
+              "texture": "equiaxed, randomly oriented grains"
+            },
+            {
+              "phase_name": "FCC Cu-rich phase",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "fine elongated/rectangular particles at β-Mn interfaces",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "BCC phase (new)",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "fine particles within the β-Mn",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": "equiaxed randomly oriented multicoloured grain structure"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_fcc_cu_rich",
+              "type": "FCC Cu-rich phase",
+              "size": null,
+              "distribution": "at the interfaces between the β-Mn",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_bcc",
+              "type": "new BCC phase",
+              "size": "comparable to that of the FCC Cu-rich phase",
+              "distribution": "within the β-Mn / at β-Mn interfaces",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_17al_575c6h",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_beta_mn_fcc_cu",
+          "microstructure_id": "micro_beta_mn_matrix",
+          "phase_1_name": "β-Mn",
+          "phase_2_name": "FCC Cu-rich phase",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_fcc_twins",
+          "microstructure_id": "micro_beta_mn_matrix",
+          "interaction_type": "FCC twins within Cu-rich particles",
+          "qualitative_or_quantitative_description": "FCC twin structure was frequently observed within the Cu-rich particles (SAED pattern labelled 'FCC twin' with two superimposed twin-related patterns)"
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": "α → α + FCC Cu-rich phase → α-Mn + β-Mn + BCC phase → β-Mn + BCC phase + FCC Cu-rich phase",
+      "interface_notes": "A large amount of fine FCC Cu-rich particles was distributed at the interfaces of β-Mn; the interface between β-Mn and the FCC Cu-rich phase was characterized by HRTEM/FFT."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_17al_575c6h",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "10 × 5 × 2 mm3",
+        "test_standard": null,
+        "other_conditions": "Vickers microhardness measured with a load of 9.8 N for 15 s, average of 5 measurements; nanoindentation depth 200 nm with test points spaced ≥5 μm"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": "175 GPa",
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk (aged at 575 °C for 6 h)",
+            "value": "924.9",
+            "scale": "Vickers (HV)",
+            "unit": "HV",
+            "uncertainty": "± 25.8"
+          },
+          {
+            "region": "bulk (solution-treated baseline)",
+            "value": "259.8",
+            "scale": "Vickers (HV)",
+            "unit": "HV",
+            "uncertainty": "± 1.5"
+          },
+          {
+            "region": "bulk (nanoindentation, hardest 17Al sample)",
+            "value": "11.1",
+            "scale": "nanoindentation",
+            "unit": "GPa",
+            "uncertainty": "± 0.6"
+          },
+          {
+            "region": "β-Mn (intrinsic hardness, hardest 17Al sample)",
+            "value": "12.2",
+            "scale": "nanoindentation (intrinsic β-Mn)",
+            "unit": "GPa",
+            "uncertainty": "± 0.1"
+          }
+        ],
+        "fracture_toughness": {
+          "value": "6.6 MPa·m1/2",
+          "unit": "MPa·m1/2"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.76 g·cm-3",
+          "unit": "g·cm-3"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_17al_specific_hardness_comparison",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "specific hardness (hardness/density, HV·cm3/g)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_vickers",
+      "microstructure_id": null,
+      "technique": "Vickers microhardness testing",
+      "instrument_or_setup": "HVS-1000 digital microhardness tester",
+      "measurement_conditions": "load of 9.8 N for 15 s; each sample tested 5 times and averaged",
+      "purpose": "Measure Vickers hardness after aging treatments",
+      "key_findings": "17Al aged at 575 °C for 6 h reaches the peak hardness of 924.9 ± 25.8 HV (vs 259.8 ± 1.5 HV solution-treated)"
+    },
+    {
+      "characterization_id": "char_nanoindentation",
+      "microstructure_id": "micro_beta_mn_matrix",
+      "technique": "Nanoindentation",
+      "instrument_or_setup": "Agilent G200 Nanoindenter",
+      "measurement_conditions": "indentation depth 200 nm; test points spaced 5 μm or more apart; samples mechanically polished",
+      "purpose": "Measure micro-hardness and intrinsic hardness of β-Mn in the hardest sample",
+      "key_findings": "Average nanoindentation hardness of the hardest 17Al sample = 11.1 ± 0.6 GPa; intrinsic hardness of β-Mn = 12.2 ± 0.1 GPa"
+    },
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_beta_mn_matrix",
+      "technique": "EBSD (inverse pole figure + phase mapping)",
+      "instrument_or_setup": "GeminiSEM 300 SEM",
+      "measurement_conditions": "scanning step size 1.5 μm for low magnification and 0.05 μm for high magnification observations; samples electrolytically polished (10 % perchloric acid + 90 % ethanol)",
+      "purpose": "Characterize phase evolution (α → β-Mn) and the new BCC and FCC precipitates",
+      "key_findings": "For 17Al aged at 575 °C for 6 h the phase map is almost entirely green β-Mn with 'New FCC phase' particles; at 525 °C/10 h only 20.5 % β-Mn formed"
+    },
+    {
+      "characterization_id": "char_sem_se",
+      "microstructure_id": "micro_beta_mn_matrix",
+      "technique": "Secondary electron SEM imaging",
+      "instrument_or_setup": "ZEISS Sigma 300 SEM",
+      "measurement_conditions": "operated at 5 kV",
+      "purpose": "Identify precipitation of secondary phases (α-Mn, β-Mn) in aged samples",
+      "key_findings": "For 17Al aged at 575 °C for 6 h the matrix is uniform with an inset ('New precipitates') showing dense fine dot-like particles"
+    },
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": "micro_beta_mn_matrix",
+      "technique": "TEM (BF/DF imaging, SAED, HRTEM, EDS elemental mapping)",
+      "instrument_or_setup": "FEI Talos F200X microscope equipped with an EDS detector",
+      "measurement_conditions": "operated at 200 kV; TEM foils ground to ~90 μm, punched to 3 mm diameter and ion thinned",
+      "purpose": "Elucidate microstructures of the ultra-hard 17Al alloy; identify the FCC Cu-rich phase and its interface with β-Mn",
+      "key_findings": "A large amount of fine FCC Cu-rich particles at β-Mn interfaces; FCC twins within Cu-rich particles; HRTEM/FFT confirmed β-Mn and FCC Cu-rich at the interface"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_KIC_indentation",
+      "simulation_method": "analytical indentation fracture-toughness model (Eq. 1)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Indentation load P = 9.8 N; average crack length c measured from the indentation corner to the crack tip (c = 0.25 Σ li); Vickers hardness HV = 924.9 for the 17Al hardest sample; elastic modulus E = 175 GPa for 17Al",
+      "validation_against_experiment": "Calculated KIC of the hardest 17Al sample = 6.6 MPa·m1/2 (average crack length 22 μm)",
+      "analytical_models": [
+        {
+          "model_name": "Indentation fracture-toughness equation (Eq. 1)",
+          "equation_role": "Calculate fracture toughness KIC from elastic modulus E, Vickers hardness HV, indentation load P and average crack length c",
+          "parameters": [
+            {
+              "name": "E (elastic modulus, 17Al)",
+              "value": "175",
+              "unit": "GPa"
+            },
+            {
+              "name": "HV (Vickers hardness)",
+              "value": "924.9",
+              "unit": "HV"
+            },
+            {
+              "name": "P (indentation load)",
+              "value": "9.8",
+              "unit": "N"
+            },
+            {
+              "name": "c (average crack length)",
+              "value": "22",
+              "unit": "μm"
+            }
+          ],
+          "model_note": "KIC = 0.016 (E/HV)^(1/2) · P/c^(2/3), as presented in Eq. (1) [28]"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The β-Mn in the hardest 17Al sample (aged 575 °C for 6 h) had an SEM-EDS micro-area composition of Mn 36.2 at.%, Al 16.3 at.%, and Cu 2.6 at.% (Fig. 14 / b0060).",
+    "XRD (D8 Discover diffractometer) was performed on the 17Al alloy only in the 575 °C × 1 h condition (not the 6 h condition of this sample); the pattern showed α/D0₃ together with both α-Mn and β-Mn, indicating α-Mn and β-Mn co-precipitated before the α matrix fully transformed to β-Mn (b0026, b0053, figure_010).",
+    "The β-Mn of the hardest 17Al sample was indexed by SAED in [012] and [111] beams, with the [111]-beam pattern described as hexagonal β-Mn reflections; HRTEM/FFT confirmed a hexagonal spot array for β-Mn (figure_011, figure_012).",
+    "Increasing the nominal Al content of the alloy raised the Al dissolved in β-Mn (14.3 → 16.3 → 17.5 at.% for 15Al/17Al/19Al) while Mn (36.8/36.2/36.2 at.%) and Cu (2.8/2.6/2.6 at.%) stayed essentially unchanged, which the authors link to solid-solution strengthening of β-Mn (b0060, figure_014).",
+    "The α→β-Mn transformation in 17Al was complete after 6 h at 550 °C, but after only 1 h at 600 °C and above (b0053, b0065, figure_008)."
+  ]
+}

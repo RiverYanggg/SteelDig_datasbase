@@ -1,0 +1,140 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe40mn19ni15al15si10c1__anneal-500c-1h-wq",
+      "paper_id": "10.1016_j.msea.2023.144776",
+      "alloy_id": "alloy_fe40mn19ni15al15si10c1",
+      "process_id": "proc_anneal-500c-1h-wq",
+      "sample_label": "500 °C annealed",
+      "aliases": [
+        "500 °C",
+        "500 °C annealed powder"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_ma_35h",
+      "sequence": "1",
+      "type": "mechanical processing",
+      "method": "mechanical alloying (planetary ball milling)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": "35 h",
+      "atmosphere": "toluene as process control reagent (to avoid oxidation)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Parent process (proc_ma-35h). Starting elemental powder Fe, Ni, Mn, Al, Si and C (99.2% pure) in Fe40Mn19Ni15Al15Si10C1 proportion; planetary ball mill Retsch PM 400/2 at 200 rpm, ball-to-powder ratio 10:1, tungsten carbide (WC) vials and WC balls; milling stopped intermittently for 20 min after every 1 h to avoid overheating. This 35 h milled powder is the starting material for the 500 °C anneal."
+    },
+    {
+      "processing_step_id": "step_anneal_500c_1h_wq",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "annealing followed by water quenching",
+      "temperature": "500",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": "argon (35 h milled powder encapsulated in a quartz tube back-filled with argon)",
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "35 h milled powder was annealed for 1 h at 500 °C (one of 400, 500, 600 and 800 °C conditions) followed by water quenching, to study thermal stability. ~500 °C is the upper bound of thermal stability of the milled powder."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_500c_annealed",
+      "overall_structure": "Multiphase structure retained at 500 °C: BCC (major phase) + γ-brass type + partially ordered B2-type, with a trace amount of undissolved Si. The metastable milled alloy remains thermally stable at 500 °C; no Fe5Si3-type silicide is formed (it appears only from 600 °C onward).",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_500c_annealed",
+          "region": "bulk annealed powder",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "BCC (ferrite)",
+              "crystal_structure": "cI2 (BCC); a = 0.286 nm; unit cell volume 23.39 Å³",
+              "volume_fraction": "47.70%",
+              "morphology": null,
+              "grain_size": "23 nm (crystallite size from Rietveld refinement)"
+            },
+            {
+              "phase_name": "γ-brass type",
+              "crystal_structure": "cI52 (γ-brass type); a = 0.872 nm; unit cell volume 663.05 Å³",
+              "volume_fraction": "36.30%",
+              "morphology": null,
+              "grain_size": "16 nm (crystallite size from Rietveld refinement)"
+            },
+            {
+              "phase_name": "B2-type (partially ordered)",
+              "crystal_structure": "cP2 (partially ordered B2); a = 0.289 nm; unit cell volume 24.13 Å³",
+              "volume_fraction": "16.00%",
+              "morphology": null,
+              "grain_size": "20 nm (crystallite size from Rietveld refinement)"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_annealed_500c",
+      "microstructure_id": "micro_500c_annealed",
+      "technique": "X-ray diffraction (ex-situ XRD)",
+      "instrument_or_setup": "Rigaku X-ray diffractometer, Cu-Kα source, 40 kV, 15 mA, scan rate 5° min⁻¹",
+      "measurement_conditions": "Ex-situ XRD of 35 h milled powders annealed at 400, 500, 600 and 800 °C; 2θ range 20-100°, with enlarged 2θ = 42°-46° region and deconvolution around the BCC (110) peak",
+      "purpose": "Determine the phase evolution/thermal stability of the 35 h milled powder upon annealing",
+      "key_findings": "At 500 °C the phases remain BCC + γ-brass type + B2-type (deconvolution of the (110) region resolves BCC, B2 and γ-brass components); the Fe5Si3-type silicide is absent at 500 °C and only appears at 600 °C."
+    },
+    {
+      "characterization_id": "char_rietveld",
+      "microstructure_id": "micro_500c_annealed",
+      "technique": "Rietveld refinement",
+      "instrument_or_setup": "GSAS-II (general structural analysis system)",
+      "measurement_conditions": "Chebyschev-I background function with 10 coefficients; pseudo-Voigt profile function (Lorentzian + Gaussian broadening); uniaxial model for crystallite size and isotropic microstrain",
+      "purpose": "Determine phase fraction, lattice parameter and crystallite size of the annealed samples",
+      "key_findings": "500 °C: BCC 47.70%, γ-brass type 36.30%, B2 16.00%; lattice parameters BCC 0.286 nm, γ-brass type 0.872 nm, B2 0.289 nm; crystallite sizes BCC 23 nm, γ-brass type 16 nm, B2 20 nm; fit quality wR = 2.279, GoF = 1.04, χ² = 1.07."
+    },
+    {
+      "characterization_id": "char_dta",
+      "microstructure_id": null,
+      "technique": "Differential thermal analysis (DSC/DTA)",
+      "instrument_or_setup": "Netzsch DSC404 Pegasus differential scanning calorimeter",
+      "measurement_conditions": "35 h milled powder heated up to 1000 °C at 20 K/min under nitrogen (N2) atmosphere",
+      "purpose": "Study the thermal stability of the milled powder and locate exothermic events that guided the annealing temperatures",
+      "key_findings": "Exothermic events at ~420 °C (693 K) attributed to ordering and/or texturing of the γ-brass type phase and at ~520 °C (793 K) attributed to Fe5Si3-type silicide formation; the 500 °C annealing condition lies below the 520 °C silicide event."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_calphad",
+      "simulation_method": "CALPHAD thermodynamic modelling (property diagram and single-point equilibrium calculation)",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": "TCFE8 database",
+      "boundary_and_initial_conditions": "Pressure = 100000.0 Pa; system size = 1.0 mol; mole fraction Mn = 0.19, Ni = 0.15, Al = 0.15, Si = 0.10, C = 0.01 (balance Fe). Single-point equilibrium at 1200, 1100, 800, 500 and 300 °C — at 500 °C (773 K) predicted phases: BCC_A2#1 = 0.69, B2 = 0.28, BCC_A2#2 = 0.02, M3Si = 0.01 mol.",
+      "validation_against_experiment": "CALPHAD-predicted phases (BCC, partially ordered B2, γ-brass type) were correlated with the experimentally observed phases of the annealed/SPSed samples; differences between prediction and experiment are attributed to use of the TCFE8 database instead of TCHEA3.",
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "The 35 h milled powder is thermally stable up to ~500 °C; at the 500 °C annealing condition the phases BCC + γ-brass type + B2-type are retained and no Fe5Si3-type silicide is formed (the silicide appears only from 600 °C onward).",
+    "DTA of the 35 h milled powder shows two exothermic events, at ~420 °C (693 K) assigned to ordering and/or texturing of the γ-brass type phase and at ~520 °C (793 K) assigned to the formation of the Fe5Si3-type phase; the 500 °C annealing temperature is below the 520 °C silicide-formation event.",
+    "Rietveld refinement quality for the 500 °C annealed sample: wR = 2.279, GoF = 1.04, χ² = 1.07.",
+    "Room-temperature phase assemblage of the milled/annealed alloy is reported as BCC + γ-brass type + B2 + Si (undissolved). At 500 °C the γ-brass type phase fraction increased relative to the as-milled powder, and some new peaks evolved (Fig. 5 deconvolution around the BCC (110) peak).",
+    "No mechanical/physical property measurements (microhardness, elastic modulus, compressive strength, density) were performed on the 500 °C annealed powder; the reported values 7.8 ± 0.3 GPa microhardness, 184 ± 5 GPa elastic modulus and 2046 ± 160 MPa compressive strength with ~19% ductility belong to the SPSed sample, not to this annealed-powder sample."
+  ]
+}

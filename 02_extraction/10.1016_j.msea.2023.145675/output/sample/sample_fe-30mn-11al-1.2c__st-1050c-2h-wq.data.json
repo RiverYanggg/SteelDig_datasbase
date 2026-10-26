@@ -1,0 +1,343 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-11al-1.2c__st-1050c-2h-wq",
+      "paper_id": "10.1016_j.msea.2023.145675",
+      "alloy_id": "alloy_fe-30mn-11al-1.2c",
+      "process_id": "proc_st-1050c-2h-wq",
+      "sample_label": "C-1.2",
+      "aliases": [
+        "Fe30Mn11Al1.2C after 1050 °C/2 h solution treatment"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_melting_casting",
+      "sequence": "1",
+      "type": "melting and casting",
+      "method": "melted in a high-frequency vacuum induction furnace and cast into an ingot",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum induction melting",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "50 kg capacity furnace; ingot diameter 150 mm."
+    },
+    {
+      "processing_step_id": "step_2_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": "5 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Applied to the cast ingots before hot rolling."
+    },
+    {
+      "processing_step_id": "step_3_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling into rods followed by air cooling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot rolled into rods with a diameter of 16 mm, then air-cooled to room temperature."
+    },
+    {
+      "processing_step_id": "step_4_solution_treatment_wq",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "solution treatment followed by water quenching",
+      "temperature": "1050",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "This is the terminal processing step defining the sample (process_id proc_st-1050c-2h-wq); the water-quenched state was used for tensile, Charpy impact, EBSD and TEM characterization."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_C-1.2",
+      "overall_structure": "After 1050 °C/2 h solution treatment + water quenching the C-1.2 steel (Fe30Mn11Al1.2C) is fully austenitic (single FCC phase) with no ferrite/BCC phase, containing a fine dispersion of κ-carbides precipitated in the austenite matrix.",
+      "number_of_phases": 1,
+      "microstructure_counts": {
+        "twin_boundary_fraction_f_Tw": {
+          "value": "51.8",
+          "unit": "%"
+        }
+      },
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_C-1.2_austenite",
+          "region": "bulk (rod)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ, FCC)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "equiaxed austenite grains with abundant twin boundaries",
+              "grain_size": "22.5 ± 1.4 μm",
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "twin boundaries",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "22.5",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_kappa_C-1.2",
+              "type": "κ-carbide",
+              "size": {
+                "value": "20",
+                "unit": "nm",
+                "uncertainty": "± 6 nm"
+              },
+              "distribution": "uniformly distributed in the austenite matrix",
+              "coherency": "coherent with the austenite matrix (SAED evidence)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "intf_C-1.2",
+      "phase_interfaces": [
+        {
+          "interface_id": "kappa_gamma_interface",
+          "microstructure_id": "micro_C-1.2_austenite",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "austenite (γ)",
+          "coherence": "coherent interface with the austenite matrix (evidenced by SAED); orientation relationship (001)κ || (001)γ"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "twin_boundaries_C-1.2",
+          "microstructure_id": "micro_C-1.2_austenite",
+          "interaction_type": "twin boundaries in austenite",
+          "qualitative_or_quantitative_description": "Fractional twin boundary length f_Tw = 51.8% for C-1.2; twin boundaries are present within the coarse austenite grains."
+        }
+      ],
+      "slip_behavior": "κ-carbide strengthening operates by a particle shear (shear hardening) mechanism rather than Orowan; shear deformation facilitates glide of dislocations across κ-carbide shear planes, weakening the work hardening rate (relevant to the coarse κ-carbides in the higher-C steels).",
+      "phase_evolution": "κ-carbides coarsen with increasing C content (from <1 nm at 0.6 %C, about 2.0 nm at 1.0 %C, ~20–25 nm at 1.2 %C, to ~50–80 nm at 1.5 %C).",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_C-1.2",
+      "measurement_conditions": {
+        "temperature": "ambient temperature (room temperature)",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1.1×10^-3 s^-1",
+        "specimen_geometry": "round tensile specimen, gauge length 25 mm and diameter 5 mm, tensile axis parallel to the rod axis; Charpy impact specimen with V-notch perpendicular to the rod axis (10×10 mm cross-section, 2 mm deep notch)",
+        "test_standard": null,
+        "other_conditions": "Charpy impact tests performed at −40 °C using an MTS impact tester (500 J capacity); data are average values of two specimens."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "parallel to rod axis",
+              "value": "936",
+              "unit": "MPa",
+              "uncertainty": "± 1 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "type": "ultimate tensile strength (UTS)",
+              "direction": "parallel to rod axis",
+              "value": "1017",
+              "unit": "MPa",
+              "uncertainty": "± 4 MPa"
+            },
+            {
+              "type": "ultimate true stress σ_TS (maximum true stress just before necking)",
+              "direction": "parallel to rod axis",
+              "value": "1270",
+              "unit": "MPa",
+              "uncertainty": null
+            },
+            {
+              "type": "fracture strength σ_FS (FRS)",
+              "direction": "parallel to rod axis",
+              "value": "2226",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "type": "uniform elongation (UE)",
+              "direction": "parallel to rod axis",
+              "value": "37",
+              "unit": "%",
+              "uncertainty": "± 2.1%"
+            },
+            {
+              "type": "total elongation (A)",
+              "direction": "parallel to rod axis",
+              "value": "65.5",
+              "unit": "%",
+              "uncertainty": "± 4%"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        },
+        "impact_toughness": {
+          "type": "Charpy V-notch impact energy (Akv-40)",
+          "value": "2.5",
+          "unit": "J",
+          "uncertainty": "± 0.2 J",
+          "test_temperature": "−40 °C"
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.58",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_C-1.2",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": null,
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_EBSD",
+      "microstructure_id": "micro_C-1.2_austenite",
+      "technique": "Electron back-scattered diffraction (EBSD)",
+      "instrument_or_setup": "EBSD system attached to a field emission gun SEM (FEI Quanta 650, Thermo Fisher Scientific); Channel 5 post-processing software",
+      "measurement_conditions": "Operating voltage 20 kV, step size 0.5 μm; specimens mechanically ground then electro-polished in 7% Nital; grain size by linear intercept with 15° misorientation boundary definition",
+      "purpose": "Determine phase distribution (FCC austenite / BCC ferrite), grain size and twin boundaries as a function of alloying content",
+      "key_findings": "C-1.2 shows only austenite (no ferrite); average austenite grain size 22.5 ± 1.4 μm; fractional twin boundary length f_Tw = 51.8%."
+    },
+    {
+      "characterization_id": "char_TEM",
+      "microstructure_id": "micro_C-1.2_austenite",
+      "technique": "Transmission electron microscopy (TEM) incl. dark-field imaging and SAED",
+      "instrument_or_setup": "TEM Tecnai G2 F20 S-TWIN, Thermo Fisher Scientific, operated at 200 kV",
+      "measurement_conditions": "Thin foils prepared by twin-jet electro-polishing in a mixture of 10% perchloric acid and 90% ethanol at 20 V and −20 °C; dark-field images taken along [001]γ zone axis using a κ-carbide reflection",
+      "purpose": "Characterize the size, distribution and orientation relationship of κ-carbide precipitates in the austenite matrix",
+      "key_findings": "κ-carbides present and coarsen with C content; for the 1.2 %C steel resolvable bright κ-carbide particles are uniformly distributed (Table 3 gives 20 ± 6 nm); orientation relationship (001)κ || (001)γ."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "MTS tensile machine",
+      "measurement_conditions": "Initial strain rate 1.1×10^-3 s^-1 at ambient temperature; round specimens 25 mm gauge length / 5 mm diameter with axis parallel to rod axis",
+      "purpose": "Measure engineering stress-strain response, yield strength, tensile strength and ductility",
+      "key_findings": "For C-1.2: UTS 1017 ± 4 MPa, YS 936 ± 1 MPa, UE 37 ± 2.1%, A 65.5 ± 4%."
+    },
+    {
+      "characterization_id": "char_charpy",
+      "microstructure_id": null,
+      "technique": "Charpy V-notch impact testing",
+      "instrument_or_setup": "MTS impact tester (500 J capacity)",
+      "measurement_conditions": "Tested at −40 °C; V-notch perpendicular to the rod axis; average of two specimens",
+      "purpose": "Measure impact toughness of the solution-treated steels",
+      "key_findings": "Akv-40 = 2.5 ± 0.2 J for C-1.2."
+    },
+    {
+      "characterization_id": "char_density",
+      "microstructure_id": null,
+      "technique": "Archimedes drainage method (density measurement)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Measure alloy mass density",
+      "key_findings": "Density of C-1.2 = 6.58 g/cm³."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "κ-carbide size reported for the 1.2 %C steel: text (b0044) states 'The average diameter of the κ-carbides was measured as about 25 nm for the 1.2%C steel', whereas Table 3 (b0047) lists 20 ± 6 nm for C-1.2; the text value (25 nm) and the tabulated value (20 ± 6 nm) differ.",
+    "Only austenite (no BCC ferrite) is present in the 1.2 %C steel after 1050 °C/2 h solution treatment (b0043).",
+    "For the Fe30Mn11Al(x)C series the yield strength increases from 542 MPa to 1125 MPa as C is raised from 0.6% to 1.5%, accompanied by a decrease in tensile elongation from ~60% to ~20% (b0025).",
+    "The κ-carbides in the 1.2 %C steel show a resolvable bright contrast in dark-field TEM (panels (g) of Fig. 3) with stronger κ reflections in the SAED pattern than at lower C (figure_003).",
+    "General finding across all compositions: σ_TS (ultimate true stress) ≈ 1350 MPa and σ_FS (fracture strength) ≈ 2150 MPa are nearly independent of C, Mn and Al content (b0040, b0075, b0083).",
+    "General density relationship: ρ = 8.1 − 0.102C − 0.10Al − 0.01Mn (g/cm³, alloy content in mass%) (b0063, b0081)."
+  ]
+}

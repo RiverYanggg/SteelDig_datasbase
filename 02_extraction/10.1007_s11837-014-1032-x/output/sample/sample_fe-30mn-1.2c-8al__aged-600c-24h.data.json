@@ -1,0 +1,343 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-1.2c-8al__aged-600c-24h",
+      "paper_id": "10.1007_s11837-014-1032-x",
+      "alloy_id": "alloy_fe-30mn-1.2c-8al",
+      "process_id": "proc_aged-600c-24h",
+      "sample_label": null,
+      "aliases": [
+        "Fe-30Mn-1.2C-8Al after 24 h at 600 °C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_vim_melting",
+      "sequence": "1",
+      "type": "melting and casting",
+      "method": "vacuum induction melting (VIM) furnace, casting into Cu molds",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "400 mbar Ar pressure",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Five different alloys synthesized in one operation; melt from a 4-kg ingot; Al charged through an air lock after each cast."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1100 °C",
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "10×50×130 mm³ blocks to 2±0.1 mm thick, ~500 mm long sheets",
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_reheat_wq",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "reheating + water quenching",
+      "temperature": "1100 °C",
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_cutting_segments",
+      "sequence": "4",
+      "type": "mechanical processing (sample preparation)",
+      "method": "cutting perpendicular to the rolling direction into sets of nine segments",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "2×60×55 mm³",
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100 °C",
+      "temperature_unit": null,
+      "duration": "2 h",
+      "atmosphere": "Ar",
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_aging",
+      "sequence": "6",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "600 °C",
+      "temperature_unit": null,
+      "duration": "24 h",
+      "atmosphere": "air",
+      "cooling_medium": "oil",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_sandblasting",
+      "sequence": "7",
+      "type": "surface treatment",
+      "method": "low-pressure, fine-grit sandblasting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_aged_600c_24h",
+      "overall_structure": "Fully recrystallized austenitic (γ) matrix containing nm-sized κ-carbide (L′1₂) precipitates formed during aging; κ-carbides appear as elongated, roughly parallel rods/platelets.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_aged_matrix",
+          "region": null,
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "L′1₂ (ordered fcc, non-oxide perovskite)",
+              "volume_fraction": null,
+              "morphology": "elongated, roughly parallel rods/platelets (cuboidal nanoprecipitates)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~20",
+              "unit": "µm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_kappa",
+              "type": "κ-carbide, approximate stoichiometry (Fe,Mn)3AlC",
+              "size": {
+                "value": "nm-sized",
+                "unit": null
+              },
+              "distribution": "regularly arranged, periodically spaced (~8 κ bands over 100 nm traverse)",
+              "coherency": "lattice mismatch below 3% with respect to austenitic Fe-Mn-C matrix"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_set_kappa_gamma",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_kappa_gamma",
+          "microstructure_id": "micro_aged_matrix",
+          "phase_1_name": "κ-carbide (L′1₂)",
+          "phase_2_name": "austenite (γ)",
+          "coherence": "lattice mismatch below 3% with respect to austenitic Fe-Mn-C matrix; forms cuboidal nanoprecipitates (near-coherent)"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "inter_orowan",
+          "microstructure_id": "micro_aged_matrix",
+          "interaction_type": "Orowan bypassing of longitudinal κ-carbide rods and dislocation loop expansion, assisted by cross-slip; minor shearing of κ-carbides",
+          "qualitative_or_quantitative_description": "Higher dislocation densities within dislocation bundles arise from minor topological differences in spacing between κ-carbide rods; dislocations follow preferential soft paths in widest channels; stress can be high enough to shear κ-carbide interfaces."
+        }
+      ],
+      "slip_behavior": "planar slip localization linked to κ-carbides",
+      "phase_evolution": "κ-carbides are thermally very stable at 600 °C and prevail after 100 h heat treatment with only modest coarsening",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_mechanical_aged_600c_24h",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-3 s^-1",
+        "specimen_geometry": "tensile specimens prepared from segments by package spark erosion",
+        "test_standard": null,
+        "other_conditions": "All plotted values represent averages of three measurements for every material state"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "~10",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "~375",
+            "scale": "HBW",
+            "unit": "HBW",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_aging_strengthening_8al",
+      "service_conditions": {
+        "operating_temperature": null,
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "YS, UTS, and hardness after 24 h aging compared with the as-homogenized state of Fe-30Mn-1.2C-8Al",
+        "improvement_percentage": "twice as high as in the as-homogenized state (~2×)"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_apt",
+      "microstructure_id": "micro_aged_matrix",
+      "technique": "Atom Probe Tomography (APT)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "κ-carbide (L′1₂) iso-surface at 9 at.% C",
+      "purpose": "3D composition and morphology of κ-carbides",
+      "key_findings": "κ-carbide (L′1₂) appears as elongated, roughly parallel rods/platelets; Fe is low and C high inside κ, Mn nearly flat (~22–25 at.%), Al slightly enriched (~15–18 at.%); ~8 periodic κ bands over 100 nm traverse."
+    },
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": "micro_aged_matrix",
+      "technique": "Transmission Electron Microscopy (TEM)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "20 nm scale bar",
+      "purpose": "Morphology of κ-carbide precipitates",
+      "key_findings": "Fine checkerboard/tweed contrast of dark, roughly perpendicular lamellae; individual lamellae are narrower than 20 nm."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "rolling plane of samples ground to a thickness of 1 mm",
+      "purpose": "phase characterization",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Tensile testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "room temperature, initial strain rate 10^-3 s^-1; averages of three measurements",
+      "purpose": "measurement of YS, UTS, and total elongation",
+      "key_findings": "TE ~10% at 8Al for the 600 °C/24 h condition."
+    },
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": null,
+      "technique": "Hardness measurement (HBW)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "hardness screening",
+      "key_findings": "hardness rises to ~375 HBW at 8Al."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Aging of Fe-30Mn-1.2C-8Al for 24 h further increases YS, UTS, and hardness to levels twice as high as in the as-homogenized state and drastically reduces ductility (b0024).",
+    "For Fe-30Mn-1.2C-8Al, aging for 1 h leads to an increase in YS, UTS, and hardness (increasing with temperature) and only a minor reduction in TE; the 24 h aging produces the strongest strengthening but drastically reduced ductility (b0024).",
+    "The observed strengthening effects in the ~8 wt.% Al variant are attributed to the formation of nm-sized κ-carbides during aging (b0025).",
+    "κ-carbides are thermally very stable at 600 °C and even prevail after 100 h heat treatment with only modest coarsening (b0025).",
+    "The 8Al (purple) series in Fig. 4 reaches the highest tensile strength (~800–950 MPa) among the Fe-30Mn-1.2C-xAl alloys, with higher Al content and aging shifting the alloy toward higher strength at reduced elongation (figure_004).",
+    "After aging at 500–600 °C, twinning is reduced and strain hardening is essentially associated with κ-carbide and solid-solution strengthening (b0031).",
+    "Proposed deformation mechanism for steels strengthened by regularly arranged nanosized κ-carbides: Orowan bypassing of longitudinal κ-carbide rods, subsequent expansion of dislocation loops assisted by cross-slip, and to a minor extent shearing of κ-carbides (b0032)."
+  ]
+}

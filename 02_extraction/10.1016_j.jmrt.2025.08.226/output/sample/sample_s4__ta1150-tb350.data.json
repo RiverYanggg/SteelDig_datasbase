@@ -1,0 +1,484 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_s4__ta1150-tb350",
+      "paper_id": "10.1016_j.jmrt.2025.08.226",
+      "alloy_id": "alloy_s4",
+      "process_id": "proc_ta1150-tb350",
+      "sample_label": "S4, TA: 1150 °C, TB: 350 °C",
+      "aliases": [
+        "S4 TA1150/TB350",
+        "S4 austempered at 350 °C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "1",
+      "type": "casting / solidification",
+      "method": "vacuum arc furnace casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Steel blocks were cast via vacuum arc furnace."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "24 h",
+      "atmosphere": "inert argon protection",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Promotes uniform composition and microstructure throughout the steel blocks."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "step-by-step hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "thickness reduced to ~11 mm",
+      "processing_steps_notes": "Homogenized steel is subjected to step-by-step hot rolling reducing its thickness to ~11 mm."
+    },
+    {
+      "processing_step_id": "step_slow_cooling_oven",
+      "sequence": "4",
+      "type": "cooling",
+      "method": "slow cooling in the oven",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "oven (slow cooling)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "After hot rolling, slow cooling in the oven."
+    },
+    {
+      "processing_step_id": "step_water_jet_cutting",
+      "sequence": "5",
+      "type": "machining",
+      "method": "water jet cutting (OMAX 2626, Kent, Washington, USA)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Samples fabricated using a water jet cutting machine to allow accurate geometries and minimize thermal distortion."
+    },
+    {
+      "processing_step_id": "step_austenitization",
+      "sequence": "6",
+      "type": "heat treatment",
+      "method": "austenitization (isothermal hold)",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": "15 min",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": "10 K s-1",
+      "reduction_ratio": null,
+      "processing_steps_notes": "1150 °C applied for S1, S2, S4 and S5 (Fig. 1a: S4 1150 °C, 15 min). Specimens (cylinders 5x10 mm3) heat-treated by DIL 805A dilatometer."
+    },
+    {
+      "processing_step_id": "step_cooling_to_TB",
+      "sequence": "7",
+      "type": "cooling",
+      "method": "cooling from austenitization to the austempering temperature",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": "100 K s-1",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cooling rate sufficiently fast to suppress intermediate phase transformations and ensure fine bainitic transformation."
+    },
+    {
+      "processing_step_id": "step_austempering",
+      "sequence": "8",
+      "type": "heat treatment",
+      "method": "austempering (isothermal bainitic hold) to the bainitic transformation finish time Bt",
+      "temperature": "350 °C",
+      "temperature_unit": "°C",
+      "duration": "3000 s",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Complete bainitic transformation time for S4 = 3000 s at 1150 °C austenitization and 350 °C austempering; incubation time 50–60 s. TB chosen slightly above measured Ms (305 °C)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_s4_1150_350",
+      "overall_structure": "Predominantly bainitic (nano-bainitic, nB) microstructure consisting of bainitic ferrite laths with retained austenite (γr); only a trace level of polygonal ferrite (αp < 1.0 %). TiMoC complex carbides (self-nucleated) and AlN present; (Fe,M)xCy and MoC less present than in S1–S3. Broad featureless matrix areas with bright elongated TiMoC precipitates aligned in near-horizontal rows (SEM).",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_s4_1150_350",
+          "region": "bulk",
+          "related_sequence": "8",
+          "phases_present": [
+            {
+              "phase_name": "bainitic ferrite (α)",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "bainitic lath/needle (sheaf) structure",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "retained austenite (γr)",
+              "crystal_structure": "fcc",
+              "volume_fraction": "25 %",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "polygonal ferrite (αp)",
+              "crystal_structure": "bcc",
+              "volume_fraction": "<1.0 %",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "micro-strain / lattice distortion (dislocation distribution)",
+              "porosity": null,
+              "inclusions": "No micro-voids detected associated with TiMoC precipitates (Fig. 10); no micro-defects within the complex carbides",
+              "dislocation_density": null,
+              "lattice_distortion": "εα = 0.44 %, εγ = 0.31 %"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_TiMoC",
+              "type": "TiMoC complex carbide (Ti–Mo–C)",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "Bright elongated particles strung out along near-horizontal rows in the matrix; nucleate at phase and grain boundaries; longitudinal alignment indicating formation during cooling after casting followed by hot-forming deformation",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_AlN",
+              "type": "AlN",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "Dark angular particle observed in the S4 matrix (Fig. 10b)",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_FeMC",
+              "type": "(Fe,M)xCy carbide (cementite-like)",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "Less present in S4 than in S1, S2 and S3 due to the suppressing effect of TiMoC",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "intf_s4_1150_350",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_bf_gr_s4",
+          "microstructure_id": "micro_s4_1150_350",
+          "phase_1_name": "bainitic ferrite (α)",
+          "phase_2_name": "retained austenite (γr)",
+          "coherence": null
+        },
+        {
+          "interface_id": "intf_TiMoC_matrix_s4",
+          "microstructure_id": "micro_s4_1150_350",
+          "phase_1_name": "TiMoC",
+          "phase_2_name": "matrix (bainitic ferrite/austenite) at phase and grain boundaries",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_sheaf_impingement_s4",
+          "microstructure_id": "micro_s4_1150_350",
+          "interaction_type": "bainitic sheaf impingement (increased density of phase boundaries)",
+          "qualitative_or_quantitative_description": "Progression of bainite transformation after the incubation period was gradually suppressed in S4 compared to S1 and S2 due to impingement of bainite sheaves caused by an increased number of various phase boundaries."
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": "TiMoC nucleates rapidly during cooling (700–950 °C) but is subsequently suppressed by counter-coarsening of the Ti–Mo–C system; secondary precipitation during austempering requires extremely long times and no new secondary precipitates were detected during austempering (within SEM resolution), consistent with TTP calculation. Ti-rich carbides suppress formation of more deleterious (Fe,M)xCy or unmodified MoC.",
+      "interface_notes": "EDX mapping shows Fe depletion within the TiMoC complex carbides, confirming their composition; no micro-defects within the carbides."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_s4_1150_350",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "ASTM E8 sub-size round specimens (12.5 mm gauge length, 2.5 mm diameter, 7 mm shoulder length)",
+        "test_standard": "ASTM E8",
+        "other_conditions": "Tensile specimens heat-treated using the DIL 805A dilatometer applying the thermal cycle of Fig. 1(a); tests on a Zwick/Roell universal testing machine (250 kN load cell)"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1360 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "10 %",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "464 HV30",
+            "scale": "HV30",
+            "unit": "HV30",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_s4_1150_350",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_s1",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "strength–ductility balance (product of strength and elongation, PSE) at equivalent thermal conditions",
+        "improvement_percentage": null
+      }
+    },
+    {
+      "performance_id": "perf_s4_pse_best",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_s2",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "PSE ≈ 13.6 GPa·% (13,600 MPa·%) claimed as the best among the studied steels under optimal conditions (TA 1150 °C, TB 350 °C)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "cm_dilatometry_ms_s4",
+      "microstructure_id": null,
+      "technique": "dilatometry (cooling RLC–T, tangent-intersection analysis)",
+      "instrument_or_setup": "DIL 805A dilatometer (TA Instruments, New Castle, DE, USA)",
+      "measurement_conditions": "cooling at 100 K/s from the applied austenitizing temperature",
+      "purpose": "Determination of the martensite-start temperature (Ms) of S4",
+      "key_findings": "Ms = 305 °C after austenitizing at 1150 °C (vs 310 °C after 1250 °C; Δ ≈ 5 °C, within experimental scatter). No clear effect of Ti microalloying on Ms."
+    },
+    {
+      "characterization_id": "cm_dilatometry_bt_s4",
+      "microstructure_id": null,
+      "technique": "dilatometry (isothermal RLC–time, bainite finish time determination)",
+      "instrument_or_setup": "DIL 805A dilatometer",
+      "measurement_conditions": "isothermal hold at TB = 350 °C",
+      "purpose": "Determination of the bainitic transformation finish time (Bt)",
+      "key_findings": "Bt = 3000 s for S4 at TA 1150 °C/TB 350 °C; incubation time 50–60 s."
+    },
+    {
+      "characterization_id": "cm_sem_edx_s4",
+      "microstructure_id": "micro_s4_1150_350",
+      "technique": "SEM and EDX",
+      "instrument_or_setup": "Carl Zeiss SEM and Oxford Instruments EDX (gold sputter coating applied to etched samples)",
+      "measurement_conditions": "etched samples, SE imaging and EDX elemental mapping",
+      "purpose": "Morphology and chemistry of precipitates in S4",
+      "key_findings": "S4 (TA 1150 °C/TB 350 °C) shows broad featureless matrix areas with bright elongated TiMoC precipitates aligned in near-horizontal rows plus a dark angular AlN particle; EDX mapping confirms Ti, Mo and C enrichment with Fe depletion in the needle-shaped precipitates; no micro-defects."
+    },
+    {
+      "characterization_id": "cm_xrd_s4",
+      "microstructure_id": "micro_s4_1150_350",
+      "technique": "X-ray diffraction (XRD) with Rietveld refinement",
+      "instrument_or_setup": "Malvern Panalytical Empyrean diffractometer, Cu Kα radiation, 40 kV/40 mA, PIXcel 1D detector",
+      "measurement_conditions": "mechanically grinded and polished samples; (111)γ, (200)γ, (220)γ, (311)γ peaks",
+      "purpose": "Determination of retained austenite volume fraction (Vγ) and micro-strains (εγ, εα)",
+      "key_findings": "For S4 (1150/350): Vγ = 25 %, εγ = 0.31 %, εα = 0.44 % (per Table 3)."
+    },
+    {
+      "characterization_id": "cm_matcalc_ttp_s4",
+      "microstructure_id": "micro_s4_1150_350",
+      "technique": "MatCalc thermodynamic and precipitation-kinetics (TTP) simulation",
+      "instrument_or_setup": "MatCalc Version 6.01 (rel 1.003), Institute of Materials Science and Technology, TU Wien",
+      "measurement_conditions": "cooling rate 100 K/s; systems fcc, bcc, liquid, κ-carbide, hcp carbide, AlN, TiCN–TiMoC; Ti-Mo-C and (Fe,M)xCy carbide systems kinetically simulated",
+      "purpose": "Precipitation behaviour and phase-transformation calculation for S4",
+      "key_findings": "For S4, initial (Fe,M)xCy nucleation between 700 and 950 °C is suppressed by counter-coarsening of the Ti–Mo–C system; secondary precipitation during austempering requires extremely long times; TiMoC band ≈1000–1100 °C at long times."
+    },
+    {
+      "characterization_id": "cm_lom_s4",
+      "microstructure_id": "micro_s4_1150_350",
+      "technique": "light optical microscopy (LOM)",
+      "instrument_or_setup": "Carl Zeiss AG, Jena, Germany; samples etched with 6 % Nital",
+      "measurement_conditions": "light-optical micrographs (100 µm scale bars)",
+      "purpose": "Inspection of polygonal ferrite (αp) distribution at the selected austenitizing temperature",
+      "key_findings": "S4 contained a visibly higher amount of αp at 1050 °C but only trace level (< 1 %) at 1150 °C, consistent with the derivative-based TA and simulation."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_matcalc_s4",
+      "simulation_method": "MatCalc equilibrium phase-fraction calculation and precipitation-kinetics (Time-Temperature-Precipitation, TTP) simulation",
+      "software_used": "MatCalc Version 6.01 (rel 1.003), Institute of Materials Science and Technology, TU Wien, Wien, Austria",
+      "potential_model_or_database": "Standard step calculation method; synergy of fcc, bcc, liquid, κ-carbide, hcp carbide, AlN, TiCN–TiMoC system considered; for S4, Ti-Mo-C and (Fe,M)xCy carbide systems kinetically simulated",
+      "boundary_and_initial_conditions": "Cooling rate 100 K/s; heat treatment defined for bainitic transformation; heterogeneous nucleation theory considering only dislocation and grain-boundary sites; ortho-equilibrium transformation; volumetric misfit considered due to lattice-parameter mismatch; κ-carbides treated as fixed phase fractions",
+      "validation_against_experiment": "MatCalc equilibrium phase-fraction diagrams rationalize the measured/most-effective austenitizing temperatures and Ms; TTP predictions for S4 are consistent with SEM/EDX observations (TiMoC present, no new secondary precipitates during austempering within SEM resolution)",
+      "analytical_models": [
+        {
+          "model_name": "Eq. 1 (retained austenite volume fraction)",
+          "equation_role": "determination of retained austenite volume fraction Vγ from XRD integrated intensities corrected for carbide fraction",
+          "parameters": [
+            {
+              "name": "Vγ",
+              "value": null,
+              "unit": "-"
+            },
+            {
+              "name": "Vc (volume fraction of carbides)",
+              "value": null,
+              "unit": "-"
+            },
+            {
+              "name": "Iα, Iγ (integrated intensities of α and γ)",
+              "value": null,
+              "unit": "-"
+            },
+            {
+              "name": "Rα, Rγ (theoretical relative intensities)",
+              "value": null,
+              "unit": "-"
+            }
+          ],
+          "model_note": "Vγ = (1 − Vc)(Iγ/Rγ) / [(Iα/Rα) + (Iγ/Rγ)]; applied per ASTM E975-13."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Internal inconsistency in S4 tensile data across TB 320 °C and 350 °C: Section 3.3 pairs UTS 1360 MPa/El 10 %/PSE 13,600 MPa·% with 320 °C and UTS 1470 MPa/El 9.1 %/PSE 13,380 MPa·% with 350 °C by word order, yet it then states 'At austenitization at 1150 °C followed by austempering at 350 °C, S4 steel demonstrated a slight improvement in El (10 %)', the conclusion states the best PSE (≈13.6 GPa·%) is at TA 1150 °C/TB 350 °C, and Fig. 7 shows the tallest El column for S4 TA 1150 °C/TB 350 °C. This extraction records the 350 °C condition as UTS 1360 MPa and El 10 % (PSE 13,600 MPa·%; alternative reading UTS 1470 MPa/El 9.1 %/PSE 13,380 MPa·% retained here for transparency).",
+    "S4 PSE under optimal conditions (TA 1150 °C, TB 350 °C) ≈ 13.6 GPa·% (13,600 MPa·%), claimed as the best product of strength and elongation among the studied steels.",
+    "S4 exhibited the best average and maximum elongation, 10 % and 12 %, at TA 1150 °C and TB 350 °C (slightly higher than S1 and S2).",
+    "S4 Ms decreased only marginally from 310 °C (1250 °C austenitization) to 305 °C (1150 °C austenitization); Δ = 5 °C, within experimental scatter, and no clear effect of Ti microalloying on Ms was evident.",
+    "For S4, the true lamellar thickness Lt(t) was not significantly influenced by the variations in austenitization temperature and correlated micro-alloying, remaining within the range of 56–58 nm.",
+    "The longitudinal alignment of TiMoC precipitates in S4 indicates their formation during the cooling phase after casting, followed by deformation during subsequent hot forming, implying secondary precipitation played a negligible role; an austenitization temperature of 1250 °C was selected to suppress partially the sheaf impingement associated with extremely small prior austenite grain sizes observed at 1150 °C.",
+    "S4 austempering temperatures were chosen slightly above the measured Ms (305 °C at 1150 °C austenitization) to promote bainitic transformation while suppressing martensite.",
+    "Overall conclusion (iv): Ti + Ni alloying in S4 compensates for its lower C (0.87 wt.%) by elevating elongation and thus PSE, offering the best overall strength–ductility balance among the studied steels."
+  ]
+}

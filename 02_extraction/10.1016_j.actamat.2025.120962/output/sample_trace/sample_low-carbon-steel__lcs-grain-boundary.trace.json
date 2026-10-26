@@ -1,0 +1,174 @@
+[
+  {
+    "path": "$.structures[0]",
+    "reason": "LCS 为多晶单相低碳钢 OM 图像，晶界为分析目标（figure_001/figure_004/figure_006/b0024）。",
+    "block_id": [
+      "figure_001",
+      "figure_004",
+      "figure_006",
+      "b0024"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].overall_structure",
+    "reason": "figure_001 将 LCS 归为 Polycrystalline & Single phase 的 OM 低碳钢图像；figure_006 描述 LCS 为 polycrystalline grains，大而亮的晶粒被深色晶界分隔。",
+    "block_id": [
+      "figure_001",
+      "figure_006"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].number_of_phases",
+    "reason": "figure_001 将 LCS 归为 Polycrystalline & Single phase（单相）。",
+    "block_id": [
+      "figure_001"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0]",
+    "reason": "figure_004 与 figure_006 描述了 LCS 多晶晶粒形貌（大晶粒、深色晶界、少量晶界交点）。",
+    "block_id": [
+      "figure_004",
+      "figure_006"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].phases_present[0].morphology",
+    "reason": "figure_006 描述 LCS 为 polycrystalline grains：大而亮的晶粒被深色晶界分隔；figure_001 将其归为 single phase。",
+    "block_id": [
+      "figure_006",
+      "figure_001"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].phases_present[0].grain_size",
+    "reason": "figure_004 指出 LCS 行具有 the largest grains and few boundary intersections。",
+    "block_id": [
+      "figure_004"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].grain_structure.grain_size_distribution",
+    "reason": "figure_004 描述 LCS 原始图为 light gray micrograph with the largest grains and few boundary intersections。",
+    "block_id": [
+      "figure_004"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.interfaces[0]",
+    "reason": "LCS 为多晶单相晶界数据集，晶界是分割与分析的对象。",
+    "block_id": [
+      "b0045",
+      "b0062"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.interfaces[0].interface_notes",
+    "reason": "b0062 说明多晶图像由紧密排列的晶粒组成、晶界为分析目标；b0027 说明多晶图像中晶界分隔紧密贴合的晶粒且无空隙、包含 grain 与 boundary 两类且无背景。",
+    "block_id": [
+      "b0062",
+      "b0027"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0]",
+    "reason": "LCS 的 OM 成像与晶界分割评估设置来自 b0024/b0036/b0045。",
+    "block_id": [
+      "b0024",
+      "b0036",
+      "b0045"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0].technique",
+    "reason": "b0024 说明 LCS 图像采用 OM 采集；figure_001 卡片标注 LCS (OM) low carbon steel。",
+    "block_id": [
+      "b0024",
+      "figure_001"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0].measurement_conditions",
+    "reason": "b0024 说明 LCS 为公共数据集、未提供标签、部分原始图像被标注用于评估；b0036 (Table 1) 给出 LCS 分辨率为 1360 × 600、图像数 16。",
+    "block_id": [
+      "b0024",
+      "b0036"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0].purpose",
+    "reason": "b0045 说明对多晶图像（含 LCS）从分割的晶粒区域提取晶界掩膜以比较不同方法与人工标签的差异。",
+    "block_id": [
+      "b0045"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0].key_findings",
+    "reason": "b0066 说明 LCS 数据集成像条件良好，且该数据集内图像分辨率差异大。",
+    "block_id": [
+      "b0066"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0]",
+    "reason": "MatSAM 对 LCS 数据集的无训练晶界分割实验及其验证结果来自 b0020/b0038/b0039/b0055/b0058/b0066。",
+    "block_id": [
+      "b0020",
+      "b0038",
+      "b0039",
+      "b0055",
+      "b0058",
+      "b0066"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].simulation_method",
+    "reason": "b0020 提出 MatSAM 为基于 SAM 的无训练方法，通过结构感知点提示引导 VLM 输出分割结果；b0045 说明 LCS 晶界掩膜由分割晶粒区域经 contour-finding 提取。",
+    "block_id": [
+      "b0020",
+      "b0045"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].software_used",
+    "reason": "b0055 说明所有验证实验在单块 Nvidia RTX3090 24GB GPU 上使用 PyTorch 1.13.1 库进行。",
+    "block_id": [
+      "b0055"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].boundary_and_initial_conditions",
+    "reason": "b0038 说明多晶图像用 Canny 提取晶界并生成 ROI 点；b0039 说明去除与 ROI 点过近（<3 像素）的网格点以减少冗余。",
+    "block_id": [
+      "b0038",
+      "b0039"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].validation_against_experiment",
+    "reason": "b0058 (Table 2) 给出 LCS 五种方法在 ARI/F1/Recall 上的数值；b0066 说明 MatSAM 在 16 张测试图像上取得 ARI 0.96、优于 SAM 0.86。",
+    "block_id": [
+      "b0058",
+      "b0066"
+    ],
+    "status": "ok"
+  }
+]

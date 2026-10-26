@@ -1,0 +1,229 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-9al-1.2c-3cr__550c-5h",
+      "paper_id": "10.1016_j.msea.2021.141583",
+      "alloy_id": "alloy_fe-28mn-9al-1.2c-3cr",
+      "process_id": "proc_550c-5h",
+      "sample_label": "annealed 3Cr strip",
+      "aliases": [
+        "3Cr annealed",
+        "3Cr annealed at 550 °C for 5 h"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_near_rapid_solidification",
+      "sequence": "1",
+      "type": "solidification / casting",
+      "method": "near-rapid solidification centrifugal casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "Ar",
+      "cooling_medium": "copper mold",
+      "heating_or_cooling_rate": "calculated maximum cooling rate at about 5×10^3 K/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Alloy ingot from high purity Fe (99.99%), Mn (99.9%), Al (99.9%), C (99.8%), Cr (99.9%); reheated to melt by an induction coil then poured into a copper mold at a rotating speed of 600 r/min in Ar atmosphere; strip size (60–80) mm × 60 mm × 2.5 mm. This is the parent (as-cast) step producing the 3Cr strip subsequently annealed."
+    },
+    {
+      "processing_step_id": "step_annealing_550c_5h",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": "550",
+      "temperature_unit": "°C",
+      "duration": "5 h",
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Heat-treated in a vacuum electric resistance furnace at 550 °C for 5 h; this defines the annealed 3Cr strip sample."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_3cr_annealed_550c_5h",
+      "overall_structure": "After annealing at 550 °C for 5 h the 3Cr strip is still composed of an austenite (γ) matrix plus δ-ferrite; κ-carbide precipitation remains suppressed (SADP superlattice very weak/absent), the δ-ferrite contains DO3 ordered domains, and the austenite dislocation density is reduced relative to the as-cast 3Cr strip but still higher than the annealed 0Cr strip. SEM shows a smooth grey matrix with dispersed dark second-phase particles and no resolvable grain boundary/dendritic network.",
+      "number_of_phases": "2 main phases (austenite + ferrite), with minor κ-carbide in austenite and DO3 ordering in ferrite",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_austenite_3cr_annealed",
+          "region": "matrix",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "continuous major matrix phase",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_3cr_annealed",
+              "type": "κ-carbide (SADP superlattice still very weak; XRD κ(111) peak not observed)",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "austenite matrix",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_ferrite_3cr_annealed",
+          "region": "dispersed second-phase particles in austenite matrix",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (δ)",
+              "crystal_structure": "BCC",
+              "volume_fraction": "11.4 vol% (as-cast 3Cr value; ferrite size/fraction in annealed strips almost unchanged)",
+              "morphology": "fine dots plus short elongated/angular fragments (SEM of annealed 3Cr)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "DO3",
+              "crystal_structure": "ordered BCC (DO3)",
+              "volume_fraction": null,
+              "morphology": "nano-scale ordered domains giving angular/blocky DF contrast",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_3cr_annealed_550c_5h_tensile",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1 × 10^-3 s^-1",
+        "specimen_geometry": "gauge size 20 mm × 4 mm × 1 mm",
+        "test_standard": null,
+        "other_conditions": "Annealed condition (550 °C for 5 h); averaged over 3 measurements (each test supported by more than three tensile specimens)"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "768 ± 9 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 9 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "915 ± 23 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 23 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "37.4 ± 5 %",
+              "unit": "%",
+              "uncertainty": "± 5 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress–strain and true stress/strain-hardening-rate curves of annealed 3Cr strip shown in Fig. 8 (a,b)",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "value": "reduction in strain hardening rate of annealed 3Cr strip is the largest, about 500 MPa (relative to as-cast 3Cr)",
+              "unit": "MPa",
+              "note": "Strain hardening rate increases with Cr content among annealed strips"
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.45",
+          "unit": "g/cm^3"
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    "source"
+  ],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

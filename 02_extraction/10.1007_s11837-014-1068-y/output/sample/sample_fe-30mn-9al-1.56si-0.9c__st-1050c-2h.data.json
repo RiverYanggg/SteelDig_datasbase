@@ -1,0 +1,262 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-1.56si-0.9c__st-1050c-2h",
+      "paper_id": "10.1007_s11837-014-1068-y",
+      "alloy_id": "alloy_fe-30mn-9al-1.56si-0.9c",
+      "process_id": "proc_st-1050c-2h",
+      "sample_label": "1.56% Si solution treated",
+      "aliases": [
+        "1.56% Si, 0.002% P solution treated"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_cast",
+      "sequence": "1",
+      "type": "casting",
+      "method": "casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cast lightweight steel (fully austenitic cast steel) of nominal composition Fe-30Mn-9Al-XSi-0.9C-0.5Mo."
+    },
+    {
+      "processing_step_id": "step_ca_ar",
+      "sequence": "2",
+      "type": "melt treatment",
+      "method": "calcium treatment with Ar stirring",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Calcium treatment with argon stirring was used as the melt practice for the 1.56% Si, 0.002% P heat, improving cleanliness/ductility."
+    },
+    {
+      "processing_step_id": "step_st",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "water quench",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution treated at 1050°C for 2 h followed by water quench to produce a fully austenitic matrix."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_ST_austenite",
+      "overall_structure": "Fully austenitic matrix (solution-treated condition); no spinodal decomposition or short-range ordering in the austenite.",
+      "number_of_phases": 1,
+      "microstructure_counts": 1,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_ST_austenite",
+          "region": null,
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "fully austenitic matrix",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "props_ST_tensile",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Percent elongation measured in a 25.4-mm (1-in.) gage length; hardness Brinell (3000 kg) converted from Rockwell B and C scale measurements."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "450",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "733",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "64",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "208",
+            "scale": "Brinell",
+            "unit": "HBW",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "props_ST_dft",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Dynamic fracture toughness (J_Id) determined by the Schindler single-specimen technique using instrumented Charpy impact tests on fatigue precracked specimens."
+      },
+      "mechanical": {
+        "tensile_properties": null,
+        "hardness": [
+          {
+            "region": null,
+            "value": "208",
+            "scale": "BHN",
+            "unit": null,
+            "uncertainty": "± 10"
+          }
+        ],
+        "fracture_toughness": {
+          "value": "700",
+          "unit": "kJ/m2"
+        },
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_ST_density_vs_SAE4130",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "SAE 4130 (quenched and tempered Cr-Mo steel)",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "density",
+        "improvement_percentage": "up to 15% reduction in density"
+      }
+    },
+    {
+      "performance_id": "perf_ST_dft_vs_cast4130",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "Cast 4130 (quenched and tempered)",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "dynamic fracture toughness (DFT): 700 kJ/m2 (1.56% Si, solution treated) vs 94–136 kJ/m2 (Cast 4130 quenched and tempered)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_XRD_ST",
+      "microstructure_id": "micro_ST_austenite",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Confirm whether spinodal decomposition or short-range ordering occurred in the solution-treated austenite.",
+      "key_findings": "No spinodal decomposition or short-range ordering within the austenite in solution-treated specimens, regardless of Si content."
+    },
+    {
+      "characterization_id": "char_TEM_ST",
+      "microstructure_id": "micro_ST_austenite",
+      "technique": "Transmission electron microscopy (TEM)",
+      "instrument_or_setup": "FEI Tecnai F20 scanning/transmission electron microscope",
+      "measurement_conditions": null,
+      "purpose": "Confirm whether spinodal decomposition or short-range ordering occurred in the solution-treated austenite.",
+      "key_findings": "No spinodal decomposition or short-range ordering within the austenite in solution-treated specimens, regardless of Si content."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_ab_initio_Si_C_austenite",
+      "simulation_method": "first-principles (ab initio) calculations",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Ab initio calculations were combined with experimental results (XRD, TEM, APT) to explain the Si–C interaction.",
+      "analytical_models": [
+        {
+          "model_name": "Si–C repulsive interaction / carbon activity in austenite",
+          "equation_role": "Explains increased carbon partitioning into κ-carbide and stabilization of κ-carbide with Si addition.",
+          "parameters": [
+            {
+              "name": "carbon partitioning coefficient in κ-carbide (1.56% Si steel, aged 60 h at 530°C)",
+              "value": "2.9",
+              "unit": null
+            },
+            {
+              "name": "predicted yield strength increase (spinodal hardening mechanism)",
+              "value": "120 MPa/wt.% Si",
+              "unit": null
+            }
+          ],
+          "model_note": "Silicon partitions to austenite during aging and decreases the austenite lattice parameter; the repulsive Si–C interaction forces increased carbon content in κ-carbide. In solution-treated specimens, no spinodal decomposition or short-range ordering occurred."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Measured chemistry of the 1.56% Si, 0.002% P heat (Table I, wt%): Si 1.56, C 0.89, Mn 29.97, P 0.002, S 0.007, Mo 0.53, Al 8.81, Cu 0.006.",
+    "In the solution-treated condition, cast steels have high work-hardening rates (with elongations up to 64%).",
+    "Silicon additions in the range 0.59–1.56% Si have no significant effect on the mechanical properties of solution-treated steels (but increase tensile strength and hardness during aging).",
+    "Inclusion analysis (Fig. 15): total inclusion density for the three low-phosphorus silicon-containing steels (0.59%, 1.07%, 1.56% Si) was similar at 62–78 inclusions/mm2; porosity in the 0.59% Si steel was almost double that of the 1.56% Si steel."
+  ]
+}

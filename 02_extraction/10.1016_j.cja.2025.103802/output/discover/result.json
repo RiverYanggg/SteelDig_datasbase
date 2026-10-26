@@ -1,0 +1,432 @@
+{
+  "schema_version": "sample-discover-v1",
+  "paper_id": "10.1016_j.cja.2025.103802",
+  "domain": "materials",
+  "paper": {
+    "paper_id": "10.1016_j.cja.2025.103802",
+    "doi": "10.1016/j.cja.2025.103802",
+    "title": "Strong yet ductile low-density steel via multiphase heterogeneous microstructure",
+    "authors": [
+      "Jiahe YAN",
+      "Zhinan YANG",
+      "Jinliang DU",
+      "Yunli FENG",
+      "Minghe ZHANG",
+      "Xiaoyong FENG",
+      "Fucheng ZHANG"
+    ],
+    "publication_year": "2025",
+    "journal": "Chinese Journal of Aeronautics",
+    "keywords": [
+      "Constitutive model",
+      "Low-density steel",
+      "Multiphase heterogeneous microstructure",
+      "Strength and ductility",
+      "Stress concentration relieving"
+    ],
+    "research_type": "mixed",
+    "paper_scope": "Developed a novel low-density Fe-0.25C-3Mn-2Al-0.4Si steel with a multiphase heterogeneous microstructure via intercritical annealing and low bainite aging, and investigated its strength-ductility balance and stress-concentration-mitigation mechanisms using experimental characterization and a phase mechanical response constitutive model."
+  },
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe-0.25c-3mn-2al-0.4si",
+      "alloy_name": "low-density steel",
+      "aliases": [
+        "novel low-density steel",
+        "Fe-0.25C-3Mn-2Al-0.4Si-0.009S-0.009P",
+        "multiphase steel",
+        "experimental steel"
+      ],
+      "description": "A novel low-density steel designed for lightweight structural applications; it eliminates costly alloying elements Nb, Mo and Ni while slightly increasing Al and Mn content, and develops a multi-level multiphase microstructure through mechanical-metallurgical processing.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "C",
+        "Mn",
+        "Al",
+        "Si"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.25",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "3",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "2",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "0.4",
+          "atomic_percent": null
+        },
+        {
+          "element": "S",
+          "weight_percent": "0.009",
+          "atomic_percent": null
+        },
+        {
+          "element": "P",
+          "weight_percent": "0.009",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "S and P are trace impurities (0.009 wt% each). The steel eliminates costly alloying elements Nb, Mo, and Ni while slightly increasing Al and Mn content (b0015, b0148).",
+      "source": {
+        "reason": "The paper studies a single low-density steel composition, reported in b0018 as 'Fe-0.25C-3Mn-2Al-0.4Si-0.009S-0.009P'; all heat-treatment states derive from this same composition.",
+        "block_id": [
+          "b0018",
+          "b0015",
+          "b0148"
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_hot-rolled",
+      "alloy_id": "alloy_fe-0.25c-3mn-2al-0.4si",
+      "process_name": "Hot rolling",
+      "state_label": "HR",
+      "aliases": [
+        "Hot Rolling",
+        "HR",
+        "hot-rolled"
+      ],
+      "parent_process_ids": [],
+      "description": "39 kg vacuum-induction-melted ingot hot forged into billets (90×70×40 mm), heated to 1200 °C and held for 60 min, hot rolled in six passes with 90% cumulative reduction (starting at ~1100 °C, finish rolling at 880 °C), then air cooled to 4 mm-thick plates.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Hot-rolled state (HR) produced from billets heated to 1200 °C/60 min and hot rolled with 90% reduction; finish rolling at 880 °C followed by air cooling; labeled HR in Fig. 2/Fig. 3.",
+        "block_id": [
+          "b0018",
+          "b0026",
+          "b0027",
+          "b0037"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_cold-rolled",
+      "alloy_id": "alloy_fe-0.25c-3mn-2al-0.4si",
+      "process_name": "Cold rolling",
+      "state_label": "Cold rolling",
+      "aliases": [
+        "Cold rolling",
+        "CR",
+        "cold-rolled"
+      ],
+      "parent_process_ids": [
+        "proc_hot-rolled"
+      ],
+      "description": "Hot-rolled plate cold rolled on a four-roll reversible mill with 60% reduction to 1.6 mm thickness.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Cold-rolled state produced by 60% cold reduction of the hot-rolled plate to 1.6 mm; labeled 'Cold rolling' in Fig. 2(b).",
+        "block_id": [
+          "b0018",
+          "b0026",
+          "b0028"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_an750",
+      "alloy_id": "alloy_fe-0.25c-3mn-2al-0.4si",
+      "process_name": "Intercritical annealing at 750 °C for 30 min + air cooling",
+      "state_label": "AN750",
+      "aliases": [
+        "AN750"
+      ],
+      "parent_process_ids": [
+        "proc_cold-rolled"
+      ],
+      "description": "Cold-rolled sample intercritically annealed at 750 °C for 30 min and air-cooled to room temperature.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Labeled AN750: cold-rolled samples were annealed at 750 °C for 30 min within the critical region and air-cooled to room temperature (b0018).",
+        "block_id": [
+          "b0018",
+          "b0026",
+          "b0029",
+          "b0038"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_an800",
+      "alloy_id": "alloy_fe-0.25c-3mn-2al-0.4si",
+      "process_name": "Intercritical annealing at 800 °C for 30 min + air cooling",
+      "state_label": "AN800",
+      "aliases": [
+        "AN800"
+      ],
+      "parent_process_ids": [
+        "proc_cold-rolled"
+      ],
+      "description": "Cold-rolled sample intercritically annealed at 800 °C for 30 min and air-cooled to room temperature.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Labeled AN800: cold-rolled samples were annealed at 800 °C for 30 min within the critical region and air-cooled to room temperature (b0018).",
+        "block_id": [
+          "b0018",
+          "b0026",
+          "b0030",
+          "b0039"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_an850",
+      "alloy_id": "alloy_fe-0.25c-3mn-2al-0.4si",
+      "process_name": "Intercritical annealing at 850 °C for 30 min + air cooling",
+      "state_label": "AN850",
+      "aliases": [
+        "AN850"
+      ],
+      "parent_process_ids": [
+        "proc_cold-rolled"
+      ],
+      "description": "Cold-rolled sample intercritically annealed at 850 °C for 30 min and air-cooled to room temperature.",
+      "processes_notes": null,
+      "source": {
+        "reason": "Labeled AN850: cold-rolled samples were annealed at 850 °C for 30 min within the critical region and air-cooled to room temperature (b0018).",
+        "block_id": [
+          "b0018",
+          "b0026",
+          "b0031",
+          "b0040"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_an750-t",
+      "alloy_id": "alloy_fe-0.25c-3mn-2al-0.4si",
+      "process_name": "AN750 + low bainite aging at 400 °C for 30 min",
+      "state_label": "AN750-T",
+      "aliases": [
+        "AN750-T"
+      ],
+      "parent_process_ids": [
+        "proc_an750"
+      ],
+      "description": "AN750 sample further aged in the lower bainite region at 400 °C for 30 min (low bainite aging).",
+      "processes_notes": null,
+      "source": {
+        "reason": "Labeled AN750-T: the AN750 samples underwent low bainite aging by holding at 400 °C for 30 min (b0018, b0035).",
+        "block_id": [
+          "b0018",
+          "b0032",
+          "b0035"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_an800-t",
+      "alloy_id": "alloy_fe-0.25c-3mn-2al-0.4si",
+      "process_name": "AN800 + low bainite aging at 400 °C for 30 min",
+      "state_label": "AN800-T",
+      "aliases": [
+        "AN800-T"
+      ],
+      "parent_process_ids": [
+        "proc_an800"
+      ],
+      "description": "AN800 sample further aged in the lower bainite region at 400 °C for 30 min (low bainite aging).",
+      "processes_notes": null,
+      "source": {
+        "reason": "Labeled AN800-T: the AN800 samples underwent low bainite aging by holding at 400 °C for 30 min (b0018, b0035).",
+        "block_id": [
+          "b0018",
+          "b0033",
+          "b0035"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_an850-t",
+      "alloy_id": "alloy_fe-0.25c-3mn-2al-0.4si",
+      "process_name": "AN850 + low bainite aging at 400 °C for 30 min",
+      "state_label": "AN850-T",
+      "aliases": [
+        "AN850-T"
+      ],
+      "parent_process_ids": [
+        "proc_an850"
+      ],
+      "description": "AN850 sample further aged in the lower bainite region at 400 °C for 30 min (low bainite aging).",
+      "processes_notes": null,
+      "source": {
+        "reason": "Labeled AN850-T: the AN850 samples underwent low bainite aging by holding at 400 °C for 30 min (b0018, b0035).",
+        "block_id": [
+          "b0018",
+          "b0034",
+          "b0035"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe-0.25c-3mn-2al-0.4si__hot-rolled",
+      "alloy_id": "alloy_fe-0.25c-3mn-2al-0.4si",
+      "process_id": "proc_hot-rolled",
+      "sample_label": "HR",
+      "aliases": [
+        "Hot Rolling",
+        "hot-rolled"
+      ],
+      "source": {
+        "reason": "Hot-rolled low-density steel plate (Fe-0.25C-3Mn-2Al-0.4Si after hot rolling); its microstructure is shown in Fig. 2(a)/Fig. 3(a).",
+        "block_id": [
+          "b0018",
+          "b0026",
+          "b0027",
+          "b0037"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-0.25c-3mn-2al-0.4si__cold-rolled",
+      "alloy_id": "alloy_fe-0.25c-3mn-2al-0.4si",
+      "process_id": "proc_cold-rolled",
+      "sample_label": "Cold rolling",
+      "aliases": [
+        "CR",
+        "cold-rolled"
+      ],
+      "source": {
+        "reason": "Cold-rolled low-density steel plate after 60% reduction; its microstructure is shown in Fig. 2(b).",
+        "block_id": [
+          "b0018",
+          "b0026",
+          "b0028"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-0.25c-3mn-2al-0.4si__an750",
+      "alloy_id": "alloy_fe-0.25c-3mn-2al-0.4si",
+      "process_id": "proc_an750",
+      "sample_label": "AN750",
+      "aliases": [
+        "AN750"
+      ],
+      "source": {
+        "reason": "Cold-rolled steel annealed at 750 °C for 30 min and air-cooled; microstructure and RA distribution in Fig. 2(c) and Fig. 3(b).",
+        "block_id": [
+          "b0018",
+          "b0026",
+          "b0029",
+          "b0038"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-0.25c-3mn-2al-0.4si__an800",
+      "alloy_id": "alloy_fe-0.25c-3mn-2al-0.4si",
+      "process_id": "proc_an800",
+      "sample_label": "AN800",
+      "aliases": [
+        "AN800"
+      ],
+      "source": {
+        "reason": "Cold-rolled steel annealed at 800 °C for 30 min and air-cooled; microstructure and RA distribution in Fig. 2(d) and Fig. 3(c).",
+        "block_id": [
+          "b0018",
+          "b0026",
+          "b0030",
+          "b0039"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-0.25c-3mn-2al-0.4si__an850",
+      "alloy_id": "alloy_fe-0.25c-3mn-2al-0.4si",
+      "process_id": "proc_an850",
+      "sample_label": "AN850",
+      "aliases": [
+        "AN850"
+      ],
+      "source": {
+        "reason": "Cold-rolled steel annealed at 850 °C for 30 min and air-cooled; microstructure and RA distribution in Fig. 2(e) and Fig. 3(d).",
+        "block_id": [
+          "b0018",
+          "b0026",
+          "b0031",
+          "b0040"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-0.25c-3mn-2al-0.4si__an750-t",
+      "alloy_id": "alloy_fe-0.25c-3mn-2al-0.4si",
+      "process_id": "proc_an750-t",
+      "sample_label": "AN750-T",
+      "aliases": [
+        "AN750-T"
+      ],
+      "source": {
+        "reason": "Aged low-density steel sample (AN750 + 400 °C/30 min aging); its mechanical properties and microstructure are reported (b0044-b0046).",
+        "block_id": [
+          "b0018",
+          "b0032",
+          "b0035",
+          "b0046"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-0.25c-3mn-2al-0.4si__an800-t",
+      "alloy_id": "alloy_fe-0.25c-3mn-2al-0.4si",
+      "process_id": "proc_an800-t",
+      "sample_label": "AN800-T",
+      "aliases": [
+        "AN800-T"
+      ],
+      "source": {
+        "reason": "Aged low-density steel sample (AN800 + 400 °C/30 min aging); its mechanical properties and microstructure are reported (b0044-b0046).",
+        "block_id": [
+          "b0018",
+          "b0033",
+          "b0035",
+          "b0046"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-0.25c-3mn-2al-0.4si__an850-t",
+      "alloy_id": "alloy_fe-0.25c-3mn-2al-0.4si",
+      "process_id": "proc_an850-t",
+      "sample_label": "AN850-T",
+      "aliases": [
+        "AN850-T"
+      ],
+      "source": {
+        "reason": "Aged low-density steel sample (AN850 + 400 °C/30 min aging); its mechanical properties and microstructure are reported (b0044-b0046).",
+        "block_id": [
+          "b0018",
+          "b0034",
+          "b0035",
+          "b0046"
+        ]
+      }
+    }
+  ],
+  "unmapped_findings": [
+    "Critical transformation temperatures of the experimental steel: Ac1=705 °C, Ac3=950 °C, Bf=380 °C, Ms=346 °C (b0149).",
+    "Mechanical properties of aged samples: AN750-T (yield 697 MPa, tensile 1068 MPa, elongation 34.0%, PSE 36.3 GPa%); AN800-T (yield 985 MPa, tensile 1295 MPa, elongation 18.7%); AN850-T (yield 991 MPa, tensile 1269 MPa, elongation 13.9%) (b0044, b0046).",
+    "Retained austenite contents after aging: AN750-T 7.4%, AN800-T 2.4%, AN850-T 0.6% (b0036)."
+  ]
+}

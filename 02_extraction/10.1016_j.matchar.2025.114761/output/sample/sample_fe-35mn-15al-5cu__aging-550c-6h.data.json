@@ -1,0 +1,223 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-35mn-15al-5cu__aging-550c-6h",
+      "paper_id": "10.1016_j.matchar.2025.114761",
+      "alloy_id": "alloy_fe-35mn-15al-5cu",
+      "process_id": "proc_aging-550c-6h",
+      "sample_label": "15Al aged at 550 °C for 6 h",
+      "aliases": [
+        "15Al 550 °C aging 6 h"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "melting / casting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "argon",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Alloy ingots with nominal composition Fe-35Mn-15Al-5Cu (at.%) produced by melting high-purity (>99.9%) raw materials using a vacuum induction furnace under an argon atmosphere; alloy referred to as 15Al."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "24 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingots homogenized at 1200 °C for 24 h."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "rolled into plates with a thickness of 4 mm",
+      "processing_steps_notes": "Hot-rolled into plates with a thickness of 4 mm."
+    },
+    {
+      "processing_step_id": "step_cutting",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "electrical discharge machining",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Plates cut into 10 × 5 × 2 mm³ samples using electrical discharge machining for Vickers hardness measurements and microstructure characterizations."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "10 min",
+      "atmosphere": "argon",
+      "cooling_medium": "oil quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution treated at 1100 °C for 10 min under an argon atmosphere, followed by oil quenching (this is the parent process proc_st-1100c-10min-oq)."
+    },
+    {
+      "processing_step_id": "step_aging",
+      "sequence": "6",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "550 °C",
+      "temperature_unit": "°C",
+      "duration": "6 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The solution-treated sample was aged at 550 °C for 6 h, followed by water quenching (process proc_aging-550c-6h)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_15Al_550C_6h",
+      "overall_structure": "After aging at 550 °C for 6 h, the α matrix of the 15Al alloy had almost entirely transformed into β-Mn, and a new fine BCC phase was present within the β-Mn.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_15Al_550C_6h_bulk",
+          "region": "bulk (aged sample)",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "β-Mn",
+              "crystal_structure": null,
+              "volume_fraction": "α matrix had almost entirely transformed into β-Mn (near-complete β-Mn)",
+              "morphology": "near-equiaxed matrix (uniformly green β-Mn in the EBSD phase map)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "new BCC phase",
+              "crystal_structure": "BCC (body-centered cubic)",
+              "volume_fraction": null,
+              "morphology": "fine phase present within the β-Mn; elongated red network in the phase map",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": "coarse grains (IPF map b1 of figure_004 shows coarse elongated grains for the 550 °C/6 h condition)",
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_new_BCC_phase",
+              "type": "new BCC phase",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "within the β-Mn (at/growing from the β-Mn interfaces)",
+              "coherency": null
+            }
+          ]
+        }
+      ],
+      "interfaces": [
+        {
+          "interface_set_id": "iface_set_15Al_550C_6h",
+          "phase_interfaces": [
+            {
+              "interface_id": "iface_betaMn_BCC",
+              "microstructure_id": "micro_15Al_550C_6h_bulk",
+              "phase_1_name": "β-Mn",
+              "phase_2_name": "new BCC phase",
+              "coherence": null
+            }
+          ],
+          "defect_interactions": [],
+          "slip_behavior": null,
+          "phase_evolution": "The microstructure evolution during aging of the Fe-Mn-Al-Cu low-density steels followed the sequence α → α + FCC Cu-rich phase → α-Mn + β-Mn + BCC phase → β-Mn + BCC phase + FCC Cu-rich phase. For the 15Al alloy aged at 550 °C for 6 h, the α matrix had almost entirely transformed into β-Mn with a new fine BCC phase within the β-Mn.",
+          "interface_notes": "In the peak-hardness Fe-Mn-Al-Cu alloys, new BCC phase and FCC Cu-rich phase formed at the interfaces between the β-Mn (b0068). TEM of the 15Al alloy aged at 600 °C for 6 h showed fine FCC Cu-rich particles (with FCC twins) at the β-Mn interfaces (b0057/figure_011); for the 550 °C/6 h condition only the new BCC phase is explicitly resolved in the EBSD phase map (figure_004)."
+        }
+      ],
+      "properties": [
+        {
+          "property_set_id": "props_15Al_550C_6h",
+          "measurement_conditions": {
+            "temperature": null,
+            "temperature_unit": null,
+            "environment": null,
+            "strain_rate": null,
+            "specimen_geometry": "10 × 5 × 2 mm³",
+            "test_standard": null,
+            "other_conditions": "Vickers hardness measured with an HVS-1000 digital microhardness tester at a load of 9.8 N for 15 s; each sample repeatedly tested 5 times and the hardness given by the average of 5 measurements."
+          },
+          "mechanical": {
+            "tensile_properties": {
+              "yield_strength": [],
+              "ultimate_tensile_strength": [],
+              "elongation": [],
+              "youngs_modulus": "164 GPa",
+              "stress_strain_curves": null,
+              "stress_strain_distribution": [],
+              "strain_hardening_rate": []
+            },
+            "hardness": [
+              {
+                "region": null,
+                "value": "957.1 ± 15.5 HV",
+                "scale": "Vickers",
+                "unit": "HV",
+                "uncertainty": "± 15.5 HV"
+              }
+            ],
+            "unit": null
+          },
+          "fatigue_properties": {
+            "fatigue_limit": null,
+            "cycles_to_failure": null
+          },
+          "creep_properties": {
+            "steady_state_creep_rate": null,
+            "rupture_life": null
+          }
+        },
+        "physical"
+      ]
+    },
+    "thermal_properties"
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

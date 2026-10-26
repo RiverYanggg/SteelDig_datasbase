@@ -1,0 +1,61 @@
+name: steeldig
+
+# ============================================================================
+# SteelDig 材料知识库 —— 本地/单机编排
+# ----------------------------------------------------------------------------
+# 生产可直接平移到托管 PG（RDS / 阿里云 RDS / 自建主从）：
+#   本文件只声明"事实源 + 对象存储"两个有状态组件，无状态部分（ETL / API）
+#   由 CLI 与容器镜像分别部署，见 docs/RUNBOOK.md。
+# ============================================================================
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: steeldig-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-steeldig}
+      POSTGRES_USER: ${POSTGRES_USER:-steeldig}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-steeldig_dev_pw}
+      # 中文全文检索的排序/分词由应用层（jieba）完成，DB 侧保持 C collation 以稳定索引
+      LANG: C.UTF-8
+    ports:
+      - "${POSTGRES_PORT:-5435}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-steeldig} -d ${POSTGRES_DB:-steeldig}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    command:
+      - postgres
+      - -c
+      - shared_buffers=512MB
+      - -c
+      - work_mem=64MB
+      - -c
+      - maintenance_work_mem=256MB
+      - -c
+      - max_parallel_workers_per_gather=2
+      - -c
+      - jit=off
+
+  # 可选：S3 兼容的对象存储，用于把资产湖从本地 FS 平移到 MinIO。
+  # 默认不启动；`docker compose --profile objectstore up -d` 启用。
+  minio:
+    image: minio/minio:latest
+    container_name: steeldig-minio
+    profiles: ["objectstore"]
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_USER:-steeldig}
+      MINIO_ROOT_PASSWORD: ${MINIO_PASSWORD:-steeldig_dev_pw}
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - miniodata:/data
+
+volumes:
+  pgdata:
+  miniodata:

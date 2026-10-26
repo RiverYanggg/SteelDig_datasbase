@@ -1,0 +1,445 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-9al-5ni-0.9c__hot-rolled-1323k",
+      "paper_id": "10.1016_j.mtla.2021.101198",
+      "alloy_id": "alloy_fe-28mn-9al-5ni-0.9c",
+      "process_id": "proc_hot-rolled-1323k",
+      "sample_label": "28Mn5Ni",
+      "aliases": [
+        "28Mn5Ni hot-rolled",
+        "Ni containing LDS"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_vacuum_induction_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Three austenitic LDS grades were prepared by vacuum induction melting route; defect-free portions of the 30 kg ingots were used."
+    },
+    {
+      "processing_step_id": "step_homogenisation",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenisation",
+      "temperature": "1423",
+      "temperature_unit": "K",
+      "duration": "2 hours",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Defect-free portions of the 30 kg ingots were homogenised at 1423 K for two hours."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1323",
+      "temperature_unit": "K",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "~85% total thickness reduction (~15% per pass)",
+      "processing_steps_notes": "Hot rolling of the homogenised ingots at 1323 K; total thickness reduction of nearly 85% achieved with ~15% reduction per pass. Same schedule applied to all three LDS grades."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_28mn5ni_hotrolled",
+      "overall_structure": "Multi-constituent microstructure of a γ (austenite) matrix containing fine κ-carbides, together with intergranular B2 (ordered Fe(Ni)Al) particles and DO3 ordered Fe3Al. Table 2 lists the phases present as γ + κ + intergranular B2 particles + DO3.",
+      "number_of_phases": 4,
+      "microstructure_counts": {
+        "B2_phase_fraction": "~4%",
+        "twin_fraction": "40%"
+      },
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_gamma_matrix",
+          "region": "RD-ND plane, mid-section",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "γ (austenite)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "matrix (balance)",
+              "morphology": "equiaxed polygonal grains",
+              "grain_size": "6.9 ± 1.7 μm",
+              "texture": "near-random"
+            },
+            {
+              "phase_name": "κ-carbide (L12 ordered (FeMn)3AlC)",
+              "crystal_structure": "L12 ordered",
+              "volume_fraction": null,
+              "morphology": "fine particles within matrix grains and along grain boundaries",
+              "grain_size": "5–40 nm",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "6.9 ± 1.7",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "5–7 μm after hot rolling (range reported for the three alloys)",
+            "texture": "near-random crystallographic texture, similar among the three alloys"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "kappa_carbide",
+              "type": "κ-carbide (L12 ordered (FeMn)3AlC)",
+              "size": {
+                "value": "5–40",
+                "unit": "nm"
+              },
+              "distribution": "within γ grains and along grain boundaries; 28Mn5Ni shows finer κ-carbides than 15Mn5Ni",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_B2_DO3_particles",
+          "region": "intergranular (γ-grain boundaries) and grain interiors",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "B2 (ordered Fe(Ni)Al)",
+              "crystal_structure": "B2 (ordered BCC)",
+              "volume_fraction": "~4%",
+              "morphology": "intergranular polygonal particles (~300 nm at γ-grain boundaries)",
+              "grain_size": "~300 nm",
+              "texture": null
+            },
+            {
+              "phase_name": "DO3 (ordered Fe3Al)",
+              "crystal_structure": "DO3 (ordered BCC)",
+              "volume_fraction": null,
+              "morphology": "secondary ordered phase associated with B2",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "~300",
+              "unit": "nm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "DO3_in_B2",
+              "type": "DO3 ordered Fe3Al",
+              "size": {
+                "value": null,
+                "unit": null
+              },
+              "distribution": "within B2 (secondary SAED reflections; [011]B2||[011]DO3 orientation relationship)",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_28mn5ni_gamma_B2",
+      "phase_interfaces": [
+        {
+          "interface_id": "gamma_B2",
+          "microstructure_id": "micro_B2_DO3_particles",
+          "phase_1_name": "γ (austenite)",
+          "phase_2_name": "B2 (ordered Fe(Ni)Al)",
+          "coherence": "A favourable orientation relationship (OR) between the γ-matrix and B2 facilitates slip transfer while non-favourable OR restricts slip, causing strain accumulation and B2-cracking."
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "dislocation_pileup_B2",
+          "microstructure_id": "micro_B2_DO3_particles",
+          "interaction_type": "dislocation pile-up / strain accumulation at γ/B2 interfaces",
+          "qualitative_or_quantitative_description": "Non-shearable B2 particles increase strength via dislocation pile-up; interface orientation determines whether slip is transmitted (favourable OR) or accumulates strain (non-favourable OR)."
+        }
+      ],
+      "slip_behavior": "Slip transfer occurs across γ/B2 interfaces with favourable OR, allowing γ-matrix and B2 to co-deform near yield; slip restriction and strain accumulation occur at non-favourable OR interfaces.",
+      "phase_evolution": null,
+      "interface_notes": "Table 2 shows 28Mn5Ni contains intergranular B2 particles (no B2 stringers, unlike 15Mn5Ni). Detailed OR/slip-transfer analyses (TEM, ACOM) in this study were performed on the 15Mn5Ni alloy; the γ/B2 interface behaviour is here reported as the general conclusion for B2-containing hot-rolled LDS, which includes 28Mn5Ni."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_28mn5ni_mechanical",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "tensile test figure box states T = 300 K",
+        "environment": null,
+        "strain_rate": "1 × 10^-3 s^-1",
+        "specimen_geometry": "cylindrical tensile specimen, gauge diameter 6 mm, gauge length 30 mm",
+        "test_standard": "ASTM E8M (tensile); ASTM E140-02 (macrohardness)",
+        "other_conditions": "tensile specimens cut along the rolling direction (RD); three samples tested per condition"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "730 ± 20",
+              "unit": "MPa",
+              "uncertainty": "± 20 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "1028 ± 20",
+              "unit": "MPa",
+              "uncertainty": "± 20 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "55 ± 3",
+              "unit": "%",
+              "uncertainty": "± 3 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Fig. 5a: true stress–true strain curve of 28Mn5Ni (RD) is shown; no noticeable plateau near yield; curve extends beyond true strain 0.3, nearly overlapping with 28Mn0Ni",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "direction": "RD",
+              "value": "strain hardening exponent n ≈ 0.30 (higher-strain regime)",
+              "unit": null,
+              "uncertainty": null
+            }
+          ]
+        },
+        "hardness": [
+          {
+            "region": "bulk (macro-hardness)",
+            "value": "268 ± 5",
+            "scale": "Vickers (HV)",
+            "unit": "VHN",
+            "uncertainty": "± 5"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_28mn5ni_vs_28mn0ni",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Compared with the B2-free hot-rolled 28Mn0Ni alloy (Fe-28Mn-9Al-0.9C) along RD: differences in tensile properties between 28Mn0Ni and 28Mn5Ni were minor; the Ni-containing 28Mn5Ni exhibited slightly higher strength (YS 730 vs 670 MPa; UTS 1028 vs 980 MPa) and lower ductility (55% vs 68% elongation).",
+        "improvement_percentage": null
+      }
+    },
+    {
+      "performance_id": "perf_28mn5ni_vs_15mn5ni",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Compared with the B2 stringer-rich hot-rolled 15Mn5Ni alloy: the 15Mn5Ni alloy displayed higher yield/UTS and much lower elongation (20%) than 28Mn5Ni; the 28Mn(0,5)Ni alloys exhibited 55–68% total elongation against 20% for 15Mn5Ni; the hardness and yield strength difference between 28Mn0Ni/28Mn5Ni and 15Mn5Ni is about HV120 and 450 MPa.",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_optical",
+      "microstructure_id": "micro_B2_DO3_particles",
+      "technique": "Optical microscopy",
+      "instrument_or_setup": "Olympus optical microscope",
+      "measurement_conditions": "As-cast plus homogenised and hot-rolled samples; RD-ND plane",
+      "purpose": "General microstructural observation of the hot-rolled alloys",
+      "key_findings": "28Mn5Ni microstructure consists of two phases: bright white B2 particles decorating grain boundaries and grain interiors of the grey γ matrix (Fig. 1c,d)."
+    },
+    {
+      "characterization_id": "char_ebsd_oim",
+      "microstructure_id": null,
+      "technique": "Electron backscattered diffraction / Orientation imaging microscopy (EBSD/OIM)",
+      "instrument_or_setup": "FEI SEM with EDAX EBSD detector; EDAX TSL-OIM v8 software",
+      "measurement_conditions": "Large-area scans 500×500 μm² with 0.2 μm step; high-resolution scans 100×100 μm² with 0.1 μm step; RD-ND plane; GOS cut-off of 2° for recrystallisation fraction; σ3 (CSL) boundaries for twin fraction",
+      "purpose": "Evaluate grain orientations, phase fractions, grain size, twin boundary fraction and recrystallisation",
+      "key_findings": "28Mn5Ni hot-rolled: equiaxed polygonal grains; B2 phase fraction ~4%; twin fraction ~40%; average grain size 6.9 ± 1.7 μm; γ-matrix texture near-random (Fig. 2c,d)."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Rigaku smart lab X-ray diffractometer; cobalt Kα radiation, 135 mA current, 40 kV voltage",
+      "measurement_conditions": "Hot-rolled samples",
+      "purpose": "Phase identification",
+      "key_findings": "Confirms formation of the B2 phase in the γ-matrix in the Ni-added alloys (28Mn5Ni, 15Mn5Ni)."
+    },
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": "micro_B2_DO3_particles",
+      "technique": "Transmission electron microscopy (bright-field, dark-field and SAED)",
+      "instrument_or_setup": "Tecnai 20T G2 (FEI) TEM operated at 200 kV",
+      "measurement_conditions": "Hot-rolled samples; twin-jet electropolished thin foils",
+      "purpose": "Examine detailed microstructural features (B2 particles, κ-carbides, twins, DO3 reflections)",
+      "key_findings": "In 28Mn5Ni alloy, B2 particles of ~300 nm are located at γ-grain boundaries (Fig. 3b); κ-carbides are present (dark-field images)."
+    },
+    {
+      "characterization_id": "char_eds",
+      "microstructure_id": "micro_B2_DO3_particles",
+      "technique": "Energy dispersive spectroscopy (SEM-EDS and TEM-EDS)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Analyse the composition of the phases (γ matrix and B2)",
+      "key_findings": "In 28Mn5Ni: γ-matrix Fe-27.8Mn-7.5Al-5.7Ni and B2 Fe-16.3Mn-13.6Al-21.5Ni (wt%); no compositional gradients within B2 grains; clear solute partitioning between γ and B2."
+    },
+    {
+      "characterization_id": "char_macrohardness",
+      "microstructure_id": null,
+      "technique": "Vickers macrohardness",
+      "instrument_or_setup": "Vickers indenter, peak load 300 N",
+      "measurement_conditions": "ASTM E140-02; average of ten readings at random locations",
+      "purpose": "Macrohardness measurement of the hot-rolled samples",
+      "key_findings": "28Mn5Ni macrohardness is HV268 ± 5; nickel addition has only a marginal effect on hardness."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Tensile testing",
+      "instrument_or_setup": "LF200 Walter+Bai AG testing machine",
+      "measurement_conditions": "Room temperature, initial strain rate 1 × 10^-3 s^-1, ASTM E8M cylindrical specimens (gauge diameter 6 mm, gauge length 30 mm); RD orientation; elongation measured by punch marks and extensometer; three samples per condition",
+      "purpose": "Evaluate the tensile behaviour of the hot-rolled alloys",
+      "key_findings": "28Mn5Ni (RD): YS 730 ± 20 MPa, UTS 1028 ± 20 MPa, elongation 55 ± 3%."
+    },
+    {
+      "characterization_id": "char_fractography",
+      "microstructure_id": null,
+      "technique": "SEM fractography",
+      "instrument_or_setup": "Zeiss EVO 18 SEM",
+      "measurement_conditions": "Failed tensile specimens",
+      "purpose": "Examine fracture surfaces after tensile testing",
+      "key_findings": "28Mn5Ni exhibits a dimpled, fibrous fracture surface with microvoid coalescence and cup-and-cone geometry (ductile failure)."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_hall_petch_ystrength",
+      "simulation_method": "Analytical mean-field estimate using the Hall-Petch relationship",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "The estimated yield strength of recrystallised austenite with grain size 5–7 μm (as in the present LDS alloys) is about 460–500 MPa; this is about 170–200 MPa less than the experimentally observed yield strength of the 28Mn0Ni alloy, with the difference attributed to the κ-carbide volume fraction.",
+      "analytical_models": [
+        {
+          "model_name": "Hall-Petch equation: σ_y,Rx-aust = σ0 + k_HP · d^(-1/2)",
+          "equation_role": "Estimate the yield strength of the recrystallised austenite",
+          "parameters": [
+            {
+              "name": "σ0 (lattice frictional stress)",
+              "value": "288",
+              "unit": "MPa"
+            },
+            {
+              "name": "k_HP (Hall-Petch coefficient)",
+              "value": "461",
+              "unit": "MPa μm^1/2"
+            },
+            {
+              "name": "d (average recrystallised grain size)",
+              "value": "5–7",
+              "unit": "μm"
+            }
+          ],
+          "model_note": "σ0 and k_HP values were determined from experimental results reported by Etienne et al. for Fe-28.8Mn-9.4Al-0.92C."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Analysed chemical composition of the 28Mn5Ni alloy (wt%, Table 1): Mn 28.1, Al 8.6, C 0.9, Ni 4.8, Fe balance.",
+    "Phase compositions of hot-rolled 28Mn5Ni (wt%, Table 2): γ-matrix Fe-27.8Mn-7.5Al-5.7Ni; B2 Fe-16.3Mn-13.6Al-21.5Ni, indicating solute partitioning between γ and B2.",
+    "In the 28Mn5Ni alloy, B2 particles of ~300 nm were observed at γ-grain boundaries (yellow arrows, Fig. 3b).",
+    "The crystallographic texture of the γ-matrix in the three hot-rolled alloys is similar and near-random.",
+    "Nickel addition has only a marginal effect on hardness: the 28Mn0Ni and 28Mn5Ni alloys display hardness of HV256 and HV268, respectively.",
+    "The B2 phase fraction slightly decreased upon hot rolling at 1323 K (e.g., 15Mn5Ni dropped from ~15% as-cast to ~12% after hot rolling), suggesting possible B2 dissolution; the same hot-rolling schedule (~85% total reduction, ~15% per pass at 1323 K) was applied to all three LDS grades.",
+    "The 28Mn5Ni alloy fails predominantly by ductile microvoid coalescence with cup-and-cone fracture geometry and dimples (Fig. 6b), unlike the quasi-cleavage fracture of 15Mn5Ni.",
+    "The strain hardening behaviour of the 28Mn5Ni alloy was found to be similar to that of 28Mn0Ni and was not plotted in Fig. 5c for brevity."
+  ]
+}

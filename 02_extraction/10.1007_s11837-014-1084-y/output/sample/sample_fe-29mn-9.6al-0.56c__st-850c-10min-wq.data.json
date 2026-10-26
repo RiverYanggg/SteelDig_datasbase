@@ -1,0 +1,97 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-29mn-9.6al-0.56c__st-850c-10min-wq",
+      "paper_id": "10.1007_s11837-014-1084-y",
+      "alloy_id": "alloy_fe-29mn-9.6al-0.56c",
+      "process_id": "proc_st-850c-10min-wq",
+      "sample_label": "as-quenched",
+      "aliases": "Fig. 9a"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "850 °C",
+      "temperature_unit": "°C",
+      "duration": "10 min",
+      "atmosphere": null,
+      "cooling_medium": "water quench",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution treatment at 850 °C for 10 min followed by water quench (as-quenched state, Fig. 9a)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_as-quenched",
+      "overall_structure": "As-quenched microstructure with ferrite showing partial ordering: {111} reflections indicate DO3, {200} reflections could be DO3 or B2, and the intensity difference indicates the initial ferrite is a mix of B2- and DO3-ordered structures; dark-field {200} image is nearly featureless with no resolvable ordered domains.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_as-quenched_ferrite",
+          "region": null,
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (α)",
+              "crystal_structure": "bcc with partial B2/DO3 ordering (mix of B2- and DO3-ordered structures)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_as-quenched",
+      "phase_interfaces": [
+        {
+          "interface_id": "interface_austenite_ferrite",
+          "microstructure_id": "micro_as-quenched_ferrite",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "ferrite (α)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "Partitioning between austenite and ferrite leads to a level of Al in ferrite higher than the nominal composition; this partitioning (together with the high Al level) contributes to ferrite ordering (B2/DO3).",
+      "interface_notes": null
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_tem_ferrite_ordering",
+      "microstructure_id": "micro_as-quenched_ferrite",
+      "technique": "TEM (transmission electron microscopy) with selected area electron diffraction (SAED) and dark-field imaging",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Ferrite oriented in the [011]α ([110]) zone axis; SAED indexed 000, 0–22, 1̄11, 2̄00 and 400 reflections; dark-field image formed with the {200} reflection; scale bar 100 nm.",
+      "purpose": "Observe ordered structures (B2/DO3) in ferrite of the as-quenched sample",
+      "key_findings": "Extra superlattice spots present; {111} reflections indicate DO3; {200} reflections could correspond to DO3 or B2; intensity difference between {111} and {200} indicates initial ferrite is a mix of B2- and DO3-ordered structures; dark-field {200} image is nearly featureless, finely speckled, with no individual ordered domains resolvable."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": []
+}

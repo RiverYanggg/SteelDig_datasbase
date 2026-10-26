@@ -1,0 +1,114 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-10al-15mn-0.8c-5ni__as-cast",
+      "paper_id": "10.1002_srin.202501163",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_id": "proc_as-cast",
+      "sample_label": "as-cast",
+      "aliases": "as-cast sample"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "1",
+      "type": "casting",
+      "method": "vacuum arc melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "10^-5 mbar pressure, backfilled with argon gas atmosphere",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Remelted 5–6 times inside the arc melter (AM500-Edmund Buhler GmbH, Germany) without breaking the vacuum for better elemental intermixing."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_as-cast",
+      "overall_structure": "As-cast solidified microstructure consisting of δ-ferrite dendrites embedded in an austenite (γ) matrix; dendrite fractions are significant and 27% δ-ferrite remains at room temperature in equilibrium with the γ phase.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "microstructure_as-cast_bulk",
+          "region": "bulk (overall as-cast sample)",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": null,
+              "volume_fraction": "27%",
+              "morphology": "blocky/elongated dendrites",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "γ austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "lighter matrix surrounding δ-ferrite dendrites",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_as-cast",
+      "phase_interfaces": [
+        {
+          "interface_id": "interface_gamma_delta_as-cast",
+          "microstructure_id": "microstructure_as-cast_bulk",
+          "phase_1_name": "γ austenite",
+          "phase_2_name": "δ-ferrite",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "δ-ferrite nucleates directly from the liquid phase at high temperature; during the next stage, liquid and δ-ferrite combine to form γ by peritectic reaction; thickening of γ-solid at liquid/δ-ferrite phase interfaces blocks solute exchange, causing cessation of δ-ferrite decomposition by incomplete peritectic reaction, leaving 27% δ-ferrite in equilibrium with γ at room temperature.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_optical_as-cast",
+      "microstructure_id": "microstructure_as-cast_bulk",
+      "technique": "optical microscopy",
+      "instrument_or_setup": "Leica DM2700 M",
+      "measurement_conditions": "etched in 3% nital",
+      "purpose": "reveal the as-cast solidified microstructure (δ-ferrite dendrites in γ austenite matrix)",
+      "key_findings": "Dark blocky/elongated δ-ferrite dendrites embedded in a lighter γ austenite matrix; significant dendrite fractions; 27% δ-ferrite retained at room temperature."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermocalc_phase_diagram",
+      "simulation_method": "Thermodynamic calculation (pseudo-binary phase diagram and phase-fraction evolution)",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": "TCFE7 database",
+      "boundary_and_initial_conditions": "Pseudo-binary phase diagram for the multicomponent system at the alloy composition (0.8 wt% C), temperature range 600–1400 °C.",
+      "validation_against_experiment": "Outputs are consistent with Ref. [15] for the same alloy composition.",
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "Rough estimation with software reveals that dendrite fractions reduce from 27% in the as-cast microstructure to 19% after hot rolling (b0018).",
+    "The as-cast sample contains δ-ferrite rather than B2; B2 forms subsequently when δ-ferrite transforms to B2 through the order-disordered transition at 1125 °C during homogenization at 1150 °C for 2 h (b0017)."
+  ]
+}

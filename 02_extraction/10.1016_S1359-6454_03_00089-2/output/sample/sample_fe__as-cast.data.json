@@ -1,0 +1,212 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe__as-cast",
+      "paper_id": "10.1016_S1359-6454_03_00089-2",
+      "alloy_id": "alloy_fe",
+      "process_id": "proc_as-cast",
+      "sample_label": "pure iron (remelted)",
+      "aliases": [
+        "pure iron specimens",
+        "coarse-grained iron specimens"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_electron_beam_remelting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "electron-beam remelting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The pure iron used as the 0 at.% Al reference was prepared by electron-beam remelting; specimens were taken with perpendicular orientations in the original ingot."
+    },
+    {
+      "processing_step_id": "step_as_cast",
+      "sequence": "2",
+      "type": "heat treatment / terminal state",
+      "method": "as-cast (used without any subsequent heat treatment)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Tested in the as-cast condition; the as-cast material contained no second phases. No subsequent heat treatment was applied (in contrast to the annealed/quenched Fe-Al monocrystal specimens)."
+    },
+    {
+      "processing_step_id": "step_specimen_preparation",
+      "sequence": "3",
+      "type": "specimen preparation",
+      "method": "electrostatic discharge machining, mechanical polishing, ultrasonic cleaning in acetone, and surface grinding before compression testing",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Specimens were cut by electrostatic discharge machining, mechanically polished and cleansed by ultrasound in acetone (except the monocrystals); the surfaces of the 5x5x10 mm3 compression specimens were cleansed by grinding."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_fe_ascast_polycrystal",
+      "overall_structure": "Polycrystalline pure iron, coarse-grained (rather coarse-grained specimens), as-cast condition with no second phases",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_fe_coarse_grains",
+          "region": "bulk (original ingot; specimens with perpendicular orientations)",
+          "related_sequence": "2",
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "coarse-grained (grain size of the order of 1 mm for the polycrystalline Fe-Al alloys)",
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_fe_compression_yield",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "10^-2 s^-1 and 10^-4 s^-1",
+        "specimen_geometry": "5 x 5 x 10 mm3 (compression)",
+        "test_standard": null,
+        "other_conditions": "Yield stress determined as 0.2% proof stress in compression with total straining of at least 5%; yield stress of pure iron obtained by averaging the data for 3 rather coarse-grained specimens (perpendicular orientations in the original ingot); yield-stress data were reproducible to within 3% at most"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "~100 MPa (compression at 10^-2 s^-1)",
+              "unit": "MPa",
+              "uncertainty": null
+            },
+            {
+              "direction": null,
+              "value": "between 0 and 100 MPa (compression at 10^-4 s^-1)",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": [],
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_icp",
+      "microstructure_id": null,
+      "technique": "inductively coupled plasma (ICP) analysis",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "determine the chemical compositions of the alloys",
+      "key_findings": "Alloy compositions were usually determined by ICP; the nominal 0 at.% Al polycrystal (pure iron) is listed as n.d. (not determined) with 100 wt.ppm C in Table 1."
+    },
+    {
+      "characterization_id": "char_om",
+      "microstructure_id": "micro_fe_coarse_grains",
+      "technique": "optical microscopy (after etching in alcoholic 10% nitric acid)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "reveal grain boundaries and precipitates",
+      "key_findings": "Polycrystalline material shows a coarse grain structure with grain sizes of the order of 1 mm; the as-cast material contained no second phases."
+    },
+    {
+      "characterization_id": "char_sem_edx",
+      "microstructure_id": null,
+      "technique": "scanning electron microscopy (SEM) with energy-dispersive X-ray (EDX) analysis",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "study fracture surfaces and perform qualitative precipitate analysis",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": null,
+      "technique": "transmission electron microscopy (TEM) of thin foils prepared by electrolytic twin-jet polishing (and ion milling if necessary)",
+      "instrument_or_setup": "Philips CM20 instrument with 200 kV; twin-jet polishing at -30 °C and 12 V in 7:3 methanol:nitric acid",
+      "measurement_conditions": null,
+      "purpose": "study the dislocation distribution after deformation",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_compression_test",
+      "microstructure_id": null,
+      "technique": "uniaxial compression testing (0.2% proof stress)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Room temperature; rates 10^-2 s^-1 and 10^-4 s^-1; specimens 5 x 5 x 10 mm3",
+      "purpose": "determine the compressive yield stress as a function of Al content (pure iron = 0 at.% baseline)",
+      "key_findings": "At 0 at.% Al the compressive yield stress is ~100 MPa at 10^-2 s^-1 and between 0 and 100 MPa at 10^-4 s^-1."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Pure iron corresponds to the polycrystalline alloy with nominal 0 at.% Al in Table 1; its real Al content was not determined (n.d.) and its carbon content is 100 wt.ppm, with Si and other impurities not listed.",
+    "The yield stress of pure iron was obtained by averaging the data for 3 rather coarse-grained specimens (with perpendicular orientations in the original ingot) of iron prepared by electron-beam remelting (b0032).",
+    "Pure iron provides the 0 at.% Al anchor point of the linear yield-stress vs Al-content relationship; the interpolating straight lines indicate a yield-stress increase of 21 MPa per at.% Al at 10^-2 s^-1 and 23 MPa per at.% Al at 10^-4 s^-1 (b0032).",
+    "The overall solid-solution hardening coefficient of the polycrystalline as-cast alloys with 0-18 at.% Al is about 2.2 GPa, which is not sensitive to deformation rate or temperature; the linear increase is described by Suzuki's theory of solid-solution hardening for bcc alloys (b0058).",
+    "In Fig. 3 at 0 at.% Al the open circle (10^-2 s^-1) lies on the 100 MPa gridline and the filled circle (10^-4 s^-1) sits between the 0 and 100 MPa lines (figure_003).",
+    "Pure iron was tested in compression (both strain rates) at room temperature as part of the composition-dependent yield-stress study; no tensile ductility, hardness or fracture data are reported specifically for the pure iron specimen."
+  ]
+}

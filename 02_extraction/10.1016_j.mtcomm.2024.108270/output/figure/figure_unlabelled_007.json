@@ -1,0 +1,89 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_unlabelled_007",
+  "family": "generalist",
+  "image_type": "calculation_fe",
+  "description": "Single-panel image: a stand-alone FE post-processing contour key (Abaqus-style), with no field map, specimen outline, axes or scale bar included in the supplied crop. The legend header reads \"SDV3\" with a second line \"(Avg: 75%)\", i.e. the mapped quantity is solution-dependent state variable 3, nodal-averaged at a 75% threshold. The colour bar consists of thirteen discrete bands running from red at the top through orange, yellow, green and cyan to dark blue at the bottom, each band carrying a printed value on its right; the values decrease monotonically downwards: +8.230e+15, +7.687e+15, +7.144e+15, +6.602e+15, +6.059e+15, +5.516e+15, +4.973e+15, +4.431e+15, +3.888e+15, +3.345e+15, +2.802e+15, +2.260e+15, +1.717e+15. Successive labels differ by ~5.4e+14, so the increments are evenly spaced and the displayed range spans 1.717e+15 to 8.230e+15 of an unstated unit (magnitudes numerically consistent with a dislocation density in m^-2, which the caption does not confirm). The panel therefore only documents the colour-to-value mapping used to render the SDV3 field in the accompanying Johnson-Cook/warm multiaxial-forging simulation; the spatial distribution of SDV3 cannot be read from these pixels.",
+  "confidence": "medium",
+  "subfigures": [
+    {
+      "panel": "(a)",
+      "description": "Stand-alone contour legend/key: header 'SDV3' over '(Avg: 75%)', above a thirteen-band colour bar (red top to dark blue bottom) with printed values from +8.230e+15 (top, red) down to +1.717e+15 (bottom, dark blue) in even ~5.4e+14 steps. No field map is shown.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "The legend header reads 'SDV3' and a second line reads '(Avg: 75%)', identifying the plotted quantity as solution-dependent state variable 3 with 75% nodal averaging.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The colour bar has thirteen discrete bands, from red at the top through orange, yellow, green and cyan to dark blue at the bottom.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The highest printed value on the bar is +8.230e+15 and is associated with the top red band.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The lowest printed value on the bar is +1.717e+15 and is associated with the bottom dark blue band.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The thirteen printed values are +8.230e+15, +7.687e+15, +7.144e+15, +6.602e+15, +6.059e+15, +5.516e+15, +4.973e+15, +4.431e+15, +3.888e+15, +3.345e+15, +2.802e+15, +2.260e+15, +1.717e+15, in descending order.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Consecutive printed values differ by approximately 5.4e+14, so the legend increments are evenly spaced.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "No unit is printed for SDV3 anywhere on the panel.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "No contour field map, specimen outline, axis, or scale bar appears in the supplied image; only the colour key is present.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The 'Avg: 75%' annotation is the standard finite-element post-processor notation for the percentage of elements/nodes averaged into a nodal contour value, indicating this key belongs to a numerical simulation result rather than measured data.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    }
+  ],
+  "measured_quantities": [
+    "SDV3 (solution-dependent state variable 3, contour-averaged; unit not stated, range 1.717e+15 to 8.230e+15)"
+  ],
+  "sample_hints": [
+    "Fe-30Mn-9Al-0.8 C",
+    "0 pass",
+    "1 pass",
+    "3 pass",
+    "5 pass"
+  ],
+  "unreadable_items": [
+    "The contour field map that this legend belongs to is absent/cropped from the supplied image, so which specimen, pass or simulation step the SDV3 scale refers to cannot be determined",
+    "No unit for SDV3 is printed (physical identity, e.g. dislocation density, is not stated in the image)",
+    "No caption was extracted for this figure group"
+  ],
+  "image_paths": [
+    "images/69d83929e0a2a5526b763cb5a2d9936831e59975b9044926a9d6d51fe59e23ed.jpg"
+  ]
+}

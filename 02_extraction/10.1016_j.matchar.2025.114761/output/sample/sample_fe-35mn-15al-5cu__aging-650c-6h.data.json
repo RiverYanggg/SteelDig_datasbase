@@ -1,0 +1,284 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-35mn-15al-5cu__aging-650c-6h",
+      "paper_id": "10.1016_j.matchar.2025.114761",
+      "alloy_id": "alloy_fe-35mn-15al-5cu",
+      "process_id": "proc_aging-650c-6h",
+      "sample_label": "15Al aged at 650 °C for 6 h",
+      "aliases": [
+        "15Al 650 °C aging 6 h"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "alloy preparation",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "argon",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingots with the nominal composition Fe-35Mn-15Al-5Cu (at.%) produced by melting raw materials with high purity (>99.9 %) in a vacuum induction furnace under an argon atmosphere."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": "24 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled into plates with a thickness of 4 mm."
+    },
+    {
+      "processing_step_id": "step_cutting",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "electrical discharge machining",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Plates cut into 10 × 5 × 2 mm³ samples for Vickers hardness measurements and microstructure characterizations."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "solution treatment (then oil quenching)",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": "10 min",
+      "atmosphere": "argon",
+      "cooling_medium": "oil quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_aging",
+      "sequence": "6",
+      "type": "heat treatment",
+      "method": "aging (then water quenching)",
+      "temperature": "650",
+      "temperature_unit": "°C",
+      "duration": "6 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The solution-treated 15Al alloy was aged at 650 °C for 6 h, followed by water quenching; 650 °C aging is one of the six aging temperatures (525–650 °C) studied at 1, 3, 6 and 10 h."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "str_15al_aged_650c_6h",
+      "overall_structure": "After aging at 650 °C for 6 h the 15Al alloy's α matrix has almost completely transformed into β-Mn, and abundant fine precipitates (identified as BCC and FCC phases) are present within the β-Mn. Hardness at this condition is stabilized in the 800–900 HV range (625 °C and 650 °C plateau).",
+      "number_of_phases": 3,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_15al_650c_6h",
+          "region": "bulk aged sample",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "β-Mn",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "dominant/matrix phase; near-equiaxed β-Mn after complete α→β-Mn transformation",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "BCC phase",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "fine particles ('New BCC phase') at the interfaces between β-Mn",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "FCC Cu-rich phase",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "fine particles distributed at the interfaces between the β-Mn; FCC twins frequently observed within the particles",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_bcc_650c_6h",
+              "type": "BCC phase (new precipitate)",
+              "size": null,
+              "distribution": "at the interfaces between β-Mn",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_fcc_curich_650c_6h",
+              "type": "FCC Cu-rich phase",
+              "size": null,
+              "distribution": "at the interfaces of β-Mn",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_15al_650c_6h",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_beta_mn_fcc",
+          "microstructure_id": "micro_15al_650c_6h",
+          "phase_1_name": "β-Mn",
+          "phase_2_name": "FCC Cu-rich phase",
+          "coherence": null
+        },
+        {
+          "interface_id": "int_beta_mn_bcc",
+          "microstructure_id": "micro_15al_650c_6h",
+          "phase_1_name": "β-Mn",
+          "phase_2_name": "BCC phase",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "α → α + FCC Cu-rich phase → α-Mn + β-Mn + BCC phase → β-Mn + BCC phase + FCC Cu-rich phase",
+      "interface_notes": "For the ultra-hard Fe-Mn-Al-Cu alloys, new BCC phase and FCC Cu-rich phase form at the interfaces between the β-Mn. As β-Mn is an Mn-rich phase, its nucleation/growth enriches Mn while expelling Fe, Al and Cu into the surrounding matrix; the BCC phase is attributed to Al enrichment (a BCC stabilizer) around β-Mn interfaces, while the Cu-rich phase forms due to the limited solubility of Cu in Fe-based alloys. TEM of a fully transformed 15Al condition shows the fine particles at the β-Mn interfaces are FCC and rich in Cu, depleted in Fe and Mn and slightly poor in Al."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_15al_650c_6h_vickers",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "10 × 5 × 2 mm³ samples",
+        "test_standard": null,
+        "other_conditions": "Vickers microhardness measured on an HVS-1000 digital microhardness tester with a load of 9.8 N for 15 s; each sample tested 5 times and the values averaged"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk (aged sample)",
+            "value": "862.8 HV",
+            "scale": "Vickers (HV)",
+            "unit": "HV",
+            "uncertainty": "± 11.3 HV"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": "6.85 g/cm³",
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_vickers_hardness",
+      "microstructure_id": "micro_15al_650c_6h",
+      "technique": "Vickers microhardness testing",
+      "instrument_or_setup": "HVS-1000 digital microhardness tester",
+      "measurement_conditions": "load of 9.8 N for 15 s; each sample tested 5 times and averaged",
+      "purpose": "Measure the Vickers hardness (HV) of the solution-treated and aged samples",
+      "key_findings": "The 15Al alloy aged at 650 °C for 6 h has a Vickers hardness of 862.8 ± 11.3 HV; hardness at 625 and 650 °C stabilized between 800 and 900 HV with prolonged aging time."
+    },
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_15al_650c_6h",
+      "technique": "Electron backscattered diffraction (EBSD)",
+      "instrument_or_setup": "GeminiSEM 300 SEM; scanning step size 1.5 μm for low magnification and 0.05 μm for high magnification",
+      "measurement_conditions": "Electrolytically polished samples (10 % perchloric acid + 90 % ethanol); phase maps interpreted with legend BCC(red), α-Mn(blue), β-Mn(green), FCC(magenta)",
+      "purpose": "Identify the constituent phases and the α → β-Mn transformation in the aged alloys",
+      "key_findings": "The solution-treated alloys are single-phase α (BCC); during aging the α matrix transforms to β-Mn and new BCC and FCC phases precipitate within the β-Mn. For the 15Al alloy the α → β-Mn transformation is complete within 1 h at 600 °C and above (so also at 650 °C)."
+    },
+    {
+      "characterization_id": "char_sem_se",
+      "microstructure_id": "micro_15al_650c_6h",
+      "technique": "Scanning electron microscopy (secondary-electron imaging)",
+      "instrument_or_setup": "ZEISS Sigma 300 SEM operated at 5 kV",
+      "measurement_conditions": "Electrolytically polished samples; SE images used to identify α-Mn and β-Mn precipitates",
+      "purpose": "Reveal the precipitation/transformation of second phases in the aged 15Al alloy",
+      "key_findings": "For the 15Al alloy the α → β-Mn transformation accelerates with aging temperature; at 600 °C and above the α matrix is almost completely transformed into β-Mn even after short aging times."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The paper reports a volume fraction of 3.9 % for the FCC Cu-rich and BCC phases in the 15Al alloy aged at 650 °C for 3 h (hardness 852.3 HV, b0069); this value corresponds to the 3 h condition and no such value is reported for the 650 °C / 6 h condition, so it is not assigned to this sample.",
+    "The 15Al alloy's flagship performance figures — the ultra-high specific hardness of 141 HV·cm³/g, the fracture toughness KIC of 8.6 MPa·m^1/2 and the nanoindentation hardnesses (11.7 ± 0.4 GPa average, 12.1 ± 0.3 GPa intrinsic β-Mn) — belong to its peak-hardness condition (600 °C / 6 h, 965.6 HV) and are therefore not assigned to this 650 °C / 6 h sample (b0021, b0023, b0060, b0061, b0077)."
+  ]
+}

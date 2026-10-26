@@ -1,0 +1,123 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-mn-c-al__overaging-625c-192h",
+      "paper_id": "10.1002_srin.202200191",
+      "alloy_id": "alloy_fe-mn-c-al",
+      "process_id": "proc_overaging-625c-192h",
+      "sample_label": "overaged",
+      "aliases": [
+        "long time aged sample"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_overaging_625c_192h",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "overaging",
+      "temperature": "625 °C",
+      "temperature_unit": "°C",
+      "duration": "192 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Overaging treatment (625 °C) for 192 h; κ-carbide particles are observed and sheared by the planar dislocation band. The large size and high-volume fraction of κ-carbide particles limit the chances of particles being sheared by planar dislocations, resulting in lower work hardening capacity compared with the short-time aging treated sample (aging time less than 10 h)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_overaged_625c_192h",
+      "overall_structure": "Austenite matrix with κ-carbide particles (large size and high volume fraction); the κ-carbide particles are sheared by planar dislocation bands",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_overaged_625c_192h",
+          "region": null,
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": null,
+              "volume_fraction": "high volume fraction",
+              "morphology": "particles",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_1",
+              "type": "κ-carbide",
+              "size": "large size",
+              "distribution": null,
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_overaged_625c_192h",
+      "phase_interfaces": [
+        {
+          "interface_id": "interface_gamma_kappa",
+          "microstructure_id": "micro_overaged_625c_192h",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "κ-carbide",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "interaction_planar_dislocation_kappa",
+          "microstructure_id": "micro_overaged_625c_192h",
+          "interaction_type": "shearing of κ-carbide particles by planar dislocation bands",
+          "qualitative_or_quantitative_description": "κ-carbide particles are observed and sheared by the planar dislocation band"
+        }
+      ],
+      "slip_behavior": "planar dislocation band shearing of κ-carbide particles",
+      "phase_evolution": null,
+      "interface_notes": null
+    }
+  ],
+  "properties": [],
+  "performance": [
+    {
+      "performance_id": "performance_overaged_work_hardening",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "work hardening capacity (lower than short-time aging treated sample, aging time less than 10 h)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": [
+    "For the overaged sample (overaging treatment at 625 °C for 192 h), the κ-carbide particles are observed and sheared by the planar dislocation band; the large size and high-volume fraction of the κ-carbide particles introduce limited chances of particles being sheared by planar dislocations, resulting in lower work hardening capacity compared with that of the short-time aging treated sample (aging time less than 10 h). The review concludes that the SRO strengthening mechanism is strongly influenced by the κ phase precipitation, thus the longtime aging treatment shall be avoided. (b0071)"
+  ]
+}

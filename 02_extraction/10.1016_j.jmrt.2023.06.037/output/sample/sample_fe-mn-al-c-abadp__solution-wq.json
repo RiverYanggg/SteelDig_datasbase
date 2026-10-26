@@ -1,0 +1,476 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-mn-al-c-abadp__solution-wq",
+      "paper_id": "10.1016_j.jmrt.2023.06.037",
+      "alloy_id": "alloy_fe-mn-al-c-abadp",
+      "process_id": "proc_solution-wq",
+      "sample_label": null,
+      "aliases": [
+        "quenched A-BDP steel",
+        "solution-treated and water-quenched A-BDP steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "Paragraph b0047 describes the general thermal-mechanical processing (homogenization + hot rolling) of Fe–Mn–Al–C steels, which precedes the solution/water-quenching step of this sample.",
+        "block_id": [
+          "b0047"
+        ]
+      },
+      "processing_step_id": "step_hot_rolling",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "mechanical processing"
+      },
+      "method": {
+        "value": "hot rolling"
+      },
+      "temperature": {
+        "value": "1100 and 850 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": {
+        "value": "hot-rolled to 2–5 mm thickness"
+      },
+      "processing_steps_notes": {
+        "value": "General processing of Fe–Mn–Al–C low-density steels: forging ingot homogenized at 1100–1250 °C for 1–3 h, then hot-rolled to 2–5 mm thickness between 1100 and 850 °C; a large rolling reduction provides recrystallization driving force."
+      }
+    },
+    {
+      "source": {
+        "reason": "Fig. 3 (injected figure description) labels the solution plateau 1100–1200 °C in the Fe-Mn-Al-C processing route, and b0045 gives the resulting A-BDP quenched state.",
+        "block_id": [
+          "figure_003",
+          "b0045",
+          "b0047"
+        ]
+      },
+      "processing_step_id": "step_solution",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "solution treatment"
+      },
+      "temperature": {
+        "value": "1100–1200 °C"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Solution-treatment plateau (1100–1200 °C) of the Fe–Mn–Al–C processing route (Fig. 3). The quenched microstructure of A-BDP steels is reported to be full austenite."
+      }
+    },
+    {
+      "source": {
+        "reason": "Table 2 lists the process 'Solution-water quenching', and b0045 states the quenched microstructure of A-BDP steels is full austenite.",
+        "block_id": [
+          "b0063",
+          "b0062",
+          "b0045"
+        ]
+      },
+      "processing_step_id": "step_water_quench",
+      "sequence": {
+        "value": "3"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "water quenching"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": {
+        "value": "water"
+      },
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Solution treatment followed by water quenching (listed as 'Solution-water quenching' in Table 2, row for Fe-21Mn-10Al-1C-5Ni), producing a fully austenitic (quenched) matrix."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "b0045 states the quenched microstructure of A-BDP steels is full austenite; Table 1 (b0041) lists the A-BDP constituent phases (α, B2, DO3, γ, κ, β-Mn) for this steel family, and b0101 reports nano κ-carbide precipitating in austenite of a Fe-27Mn-12Al-0.8C A-BDP steel under quenching conditions.",
+        "block_id": [
+          "b0045",
+          "b0041",
+          "b0101"
+        ]
+      },
+      "structure_id": "struct_abadp_quenched",
+      "overall_structure": {
+        "value": "Quenched (solution-treated + water-quenched) A-BDP (austenite-base duplex phase) Fe–Mn–Al–C low-density steel. The quenched microstructure of A-BDP steels is full austenite (γ)."
+      },
+      "number_of_phases": {
+        "value": 1
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_full_austenite",
+          "region": {
+            "value": "bulk / matrix"
+          },
+          "related_sequence": {
+            "value": "3"
+          },
+          "phases_present": [
+            {
+              "phase_name": {
+                "value": "austenite (γ)"
+              },
+              "crystal_structure": {
+                "value": "FCC"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "full austenite (single-phase quenched matrix)"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_nano_kappa_aus",
+              "type": {
+                "value": "nano κ-carbide"
+              },
+              "size": null,
+              "distribution": {
+                "value": "precipitated in austenite under quenching / quenching-ordering annealing conditions"
+              },
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "source": {
+        "reason": "Table 2 lists the row 'Fe-21Mn-10Al-1C-5Ni [54]' with Density 7.0 g·cm⁻³, TE 80%, UTS 775 MPa, and process 'Solution-water quenching'; this composition falls within the A-BDP composition window and matches this sample's process.",
+        "block_id": [
+          "b0063",
+          "b0062"
+        ]
+      },
+      "property_set_id": "prop_table2_solution_water_quenching",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": {
+          "value": "Compiled mechanical properties from Table 2 for the A-BDP-type composition Fe-21Mn-10Al-1C-5Ni [54] processed by 'Solution-water quenching'; UTS and TE represent ultimate tensile strength and total elongation."
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": {
+                "value": "775 MPa"
+              },
+              "unit": {
+                "value": "MPa"
+              },
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": {
+                "value": "80%"
+              },
+              "unit": {
+                "value": "%"
+              },
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": {
+            "value": "7.0 g·cm⁻³"
+          },
+          "unit": {
+            "value": "g·cm⁻³"
+          }
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "source": {
+        "reason": "b0121 and Fig. 15a state that A-BDP steels after solution treatment show much higher room-temperature impact energy (even exceeding typical austenite stainless steel), which drops significantly after aging at 550 °C/16 h; b0123 states the impact toughness of Fe-Mn-Al-C austenite steels is higher under solution treatment + water quenching than under aging treatment.",
+        "block_id": [
+          "b0121",
+          "b0123",
+          "figure_015"
+        ]
+      },
+      "performance_id": "perf_impact_toughness_solution_vs_aged",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": {
+            "value": "°C"
+          }
+        },
+        "stress_state": {
+          "value": "impact loading (Charpy impact)"
+        },
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": {
+          "value": "Charpy impact absorbed energy (room temperature)"
+        },
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "These analytical models (Eqs. 1–5) are the composition–property relations given in section 1.1 for Fe–Mn–Al–C low-density steels, the alloy system of this A-BDP sample; the density model is directly relevant as Table 2 reports density for the solution-water-quenched A-BDP composition.",
+        "block_id": [
+          "b0022",
+          "b0023",
+          "b0026",
+          "b0027",
+          "b0029",
+          "b0030",
+          "b0031",
+          "b0032"
+        ]
+      },
+      "computation_id": "comp_analytical_models_femnAlC",
+      "simulation_method": {
+        "value": "analytical / empirical composition–property models"
+      },
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": {
+            "value": "Density model (Eq. 1)"
+          },
+          "equation_role": {
+            "value": "predict density of Fe–Mn–Al–C steel from Al, C and Mn mass fractions"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "ω(Al)"
+              },
+              "value": null,
+              "unit": {
+                "value": "wt%"
+              }
+            },
+            {
+              "name": {
+                "value": "ω(C)"
+              },
+              "value": null,
+              "unit": {
+                "value": "wt%"
+              }
+            },
+            {
+              "name": {
+                "value": "ω(Mn)"
+              },
+              "value": null,
+              "unit": {
+                "value": "wt%"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "ρ = 8.15 − 0.101ω(Al) − 0.41ω(C) − 0.0085ω(Mn); C content most strongly reduces density, but density is mainly controlled by Al and Mn."
+          }
+        },
+        {
+          "model_name": {
+            "value": "Austenite lattice constant model (Eq. 2)"
+          },
+          "equation_role": {
+            "value": "compute austenite lattice constant from Al, C and Mn mass fractions"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "ω(Al)"
+              },
+              "value": null,
+              "unit": {
+                "value": "wt%"
+              }
+            },
+            {
+              "name": {
+                "value": "ω(C)"
+              },
+              "value": null,
+              "unit": {
+                "value": "wt%"
+              }
+            },
+            {
+              "name": {
+                "value": "ω(Mn)"
+              },
+              "value": null,
+              "unit": {
+                "value": "wt%"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "a = 0.35721 + 0.0002771ω(Al) + 0.0044089ω(C) + 0.0001166ω(Mn); C expands the austenite lattice most strongly."
+          }
+        },
+        {
+          "model_name": {
+            "value": "Yield strength increment models (Eqs. 3–5)"
+          },
+          "equation_role": {
+            "value": "relate yield-strength increment of austenite to individual Al, Mn and C contents (wt.%)"
+          },
+          "parameters": [
+            {
+              "name": {
+                "value": "ω(Al)"
+              },
+              "value": null,
+              "unit": {
+                "value": "wt%"
+              }
+            },
+            {
+              "name": {
+                "value": "ω(Mn)"
+              },
+              "value": null,
+              "unit": {
+                "value": "wt%"
+              }
+            },
+            {
+              "name": {
+                "value": "ω(C)"
+              },
+              "value": null,
+              "unit": {
+                "value": "wt%"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "σ_yield = 10.5ω(Al) + 351.5 (Eq.3); σ_yield = 0.58ω(Mn) + 328.0 (Eq.4); σ_yield = 180.7ω(C) + 250.7 (Eq.5); C and Al raise yield strength more than Mn."
+          }
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "A-BDP steel composition window (Table 1): 10.0 < X_Mn < 25.0 wt%, 5.0 < X_Al < 12.0 wt%, 0.6 < X_C < 1.0 wt%.",
+    "A-BDP steel constituent phases listed in Table 1: α, B2, DO3, γ, κ, β-Mn (the austenite-base duplex phase assemblage of the alloy family).",
+    "After aging at 500–800 °C, lath-like ferrite forms along the austenite grain boundaries of A-BDP steels, with B2 phase found within the lath-like ferrite (b0045).",
+    "The deformation mechanism of A-BDP steels is strongly affected by the δ-ferrite fraction, the hardness difference between austenite and ferrite, and the ordered phases in ferrite (b0093); austenite generally determines the deformation mechanism when the δ-ferrite fraction is less than 10% (b0094).",
+    "In a Fe-27Mn-12Al-0.8C A-BDP steel (27% δ-ferrite fraction), nano κ-carbide also precipitated in austenite under quenching or quenching-ordering annealing conditions, and its size increased with rising ordering annealing temperature; coarse B2 and ultrafine DO3 particles precipitated in ferrite (b0101).",
+    "Room-temperature impact energy of A-BDP steels after solution treatment was much higher, even exceeding typical austenite stainless steel, with an obvious ductile-brittle transition below about −100 °C; after aging at 550 °C for 16 h the room-temperature impact energy dropped sharply (e.g. Fe-30Mn-10Al-1C close to 0 J), attributed to κ-carbide precipitation (b0121).",
+    "The impact toughness of Fe-Mn-Al-C austenite steels is higher under solution treatment + water quenching than under aging treatment (b0123).",
+    "A-BDP microstructure in the quenched state is full austenite; the room-temperature microstructure of single austenite Fe-Mn-Al-C steels is composed of equiaxed austenite together with annealing twins (b0044)."
+  ]
+}

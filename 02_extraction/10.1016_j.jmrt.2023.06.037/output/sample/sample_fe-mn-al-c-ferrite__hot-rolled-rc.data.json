@@ -1,0 +1,229 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-mn-al-c-ferrite__hot-rolled-rc",
+      "paper_id": "10.1016_j.jmrt.2023.06.037",
+      "alloy_id": "alloy_fe-mn-al-c-ferrite",
+      "process_id": "proc_hot-rolled-rc",
+      "sample_label": "single ferrite steel",
+      "aliases": [
+        "single ferrite Fe-Mn-Al-C steel (hot rolled + rapidly cooled)",
+        "δ-ferrite steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100-1250 °C",
+      "temperature_unit": "°C",
+      "duration": "1-3 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The forging ingot is homogenized at 1100-1250 °C for 1-3 h."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "between 1100 and 850 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "hot-rolled to 2-5 mm thickness",
+      "processing_steps_notes": "Hot-rolled to 2-5 mm thickness between 1100 and 850 °C; in some cases reheating among different rolling-passes is needed to avoid crack generation during hot rolling. A large rolling reduction can provide enough recrystallization driving force, thus inhibiting the segregation of FeAl. For single ferrite steel, a high Al content raises the ferrite recrystallization temperature so the δ-ferrite grains are hard to refine, and δ-ferrite elongates along the rolling direction into banded morphology."
+    },
+    {
+      "processing_step_id": "step_rapid_cooling",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "rapid cooling to room temperature",
+      "temperature": "room temperature",
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The hot-rolled steel is rapidly cooled to room temperature. The cooling rate after hot rolling strongly influences intergranular κ-carbide formation; for single ferrite steel, κ-carbide precipitates along the δ-ferrite grain boundary if the cooling rate is slow."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_single_ferrite_hot_rolled_rc",
+      "overall_structure": "Room-temperature microstructure of single ferrite Fe-Mn-Al-C steel is δ-ferrite. A high Al content increases the ferrite recrystallization temperature, so δ-ferrite grains are hard to refine due to limited dynamic or static recrystallizations; δ-ferrite elongates along the rolling direction and presents a banded morphology under hot rolling conditions.",
+      "number_of_phases": "4",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_delta_ferrite_matrix",
+          "region": "bulk / room-temperature matrix",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "δ-ferrite",
+              "crystal_structure": "BCC (disordered α/δ; disordered FeAl with A2 possible when Al content differs)",
+              "volume_fraction": null,
+              "morphology": "banded, elongated along the rolling direction",
+              "grain_size": "coarse; hard to refine due to limited dynamic or static recrystallizations",
+              "texture": null
+            },
+            {
+              "phase_name": "B2",
+              "crystal_structure": "ordered body-centered cubic, CsCl type (ordered FeAl)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "DO3",
+              "crystal_structure": "ordered superlattice structure (ordered Fe3Al)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": "L'12 ordered crystal structure (perovskite-like, (Fe,Mn)3AlC)",
+              "volume_fraction": null,
+              "morphology": "precipitated along the δ-ferrite grain boundary",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "δ-ferrite grains are hard to be refined because of the limited dynamic or static recrystallizations caused by the high Al content raising the ferrite recrystallization temperature",
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_gb",
+              "type": "κ-carbide",
+              "size": null,
+              "distribution": "along the δ-ferrite grain boundary (formed during cooling when the cooling rate is slow)",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_kappa_delta_ferrite",
+      "phase_interfaces": [
+        {
+          "interface_id": "int_kappa_delta_ferrite_gb",
+          "microstructure_id": "micro_delta_ferrite_matrix",
+          "phase_1_name": "κ-carbide",
+          "phase_2_name": "δ-ferrite",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": "In single ferrite Fe-Mn-Al-C steels the shear of mobile dislocations on ordered phases and dislocation slips mainly control the strain hardening. As Al content increases to 11-19 wt%, the number of active mobile dislocations decreases under low deformation temperature due to a limited number of dislocation slip systems; after fracture, dense dislocation bundles and undeformed B2 phase were observed in ferrite, indicating uneven plastic deformation.",
+      "phase_evolution": "Due to the difference in Al content, the disordered FeAl phase with A2, the ordered FeAl phase with B2, or the ordered Fe3Al phase with DO3 structures can act as the matrix phases of single ferrite Fe-Mn-Al-C steel. When Al content reaches 6 wt%, the κ phase with a short-range ordering crystal structure gradually forms.",
+      "interface_notes": "During the subsequent cooling process after hot rolling, κ-carbide will precipitate along the δ-ferrite grain boundary if the cooling rate is slow. Al content can significantly influence the crystal structures of the matrix phases."
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [
+    {
+      "computation_id": "comp_density_model",
+      "simulation_method": "analytical/empirical model",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "density model for Fe-Mn-Al-C steel (Eq. 1)",
+          "equation_role": "Computes the density of Fe-Mn-Al-C low-density steel from the mass fractions of Al, C and Mn.",
+          "parameters": [
+            {
+              "name": "constant term",
+              "value": "8.15",
+              "unit": "g/cm3"
+            },
+            {
+              "name": "ω(Al) coefficient",
+              "value": "-0.101",
+              "unit": null
+            },
+            {
+              "name": "ω(C) coefficient",
+              "value": "-0.41",
+              "unit": null
+            },
+            {
+              "name": "ω(Mn) coefficient",
+              "value": "-0.0085",
+              "unit": null
+            }
+          ],
+          "model_note": "ρ = 8.15 − 0.101·ω(Al) − 0.41·ω(C) − 0.0085·ω(Mn); ω(Al), ω(C) and ω(Mn) are the mass fractions of Al, C and Mn. C content plays the most significant role in reducing density, but the density of Fe-Mn-Al-C steel is mainly related to Al and Mn contents."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_sfe_mechanism_map",
+      "simulation_method": "empirical composition–SFE–deformation mechanism map",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "composition–deformation mechanism–SFE map (Fig. 7)",
+          "equation_role": "Relates C, Mn and Al contents to the deformation mechanism (TRIP/TWIP/MBIP/κ-carbide forming border) and stacking fault energy, used to interpret the deformation behaviour of Fe-Mn-Al-C steels including single ferrite steel.",
+          "parameters": [
+            {
+              "name": "C content axis",
+              "value": "0–1.2",
+              "unit": "wt.%"
+            },
+            {
+              "name": "Mn content axis",
+              "value": "0–35",
+              "unit": "wt.%"
+            },
+            {
+              "name": "Al content axis",
+              "value": "0–12",
+              "unit": "wt.%"
+            },
+            {
+              "name": "Iso-SFE contour",
+              "value": "50",
+              "unit": "mJ/m2"
+            },
+            {
+              "name": "Iso-SFE contour",
+              "value": "20",
+              "unit": "mJ/m2"
+            }
+          ],
+          "model_note": "Fig. 7 relates composition, deformation mechanism and SFE in Fe-Mn-Al-C steel at room temperature; cited in the single ferrite steel section (b0084) to describe how Al content changes crystal structures and tensile properties."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Table 1 composition window for the single ferrite Fe-Mn-Al-C steel type: X_Mn < 5.0 wt.%, 5.0 < X_Al < 12.0 wt.%, X_C < 0.1 wt.%, with constituent phases δ, B2, DO3 and κ (block b0040/b0041).",
+    "Single ferrite Fe-Mn-Al-C steels contain no austenite, so martensite transformation is absent."
+  ]
+}

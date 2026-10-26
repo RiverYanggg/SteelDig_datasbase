@@ -1,0 +1,175 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_004",
+  "family": "generalist",
+  "image_type": "chart_plot",
+  "description": "Seven-panel composite figure of machine-learning goodness-of-fit scatter plots, each comparing predicted against actual yield strength (YS). All panels share identical axes — x \"Actual Value/MPa\" (0–3000) and y \"Predicted Value/MPa\" (0–3000) — plus a red dashed x = y diagonal reference line; panels differ only by model name, printed metrics and marker colour. (a) \"DT Fitting Performance\", magenta markers: R²=0.944, RMSE=123.0, MAPE=19.0%. (b) \"XGBoost Fitting Performance\", gold markers: R²=0.969, RMSE=90.4, MAPE=13.4%. (c) \"LightGBM Fitting Performance\", green markers: R²=0.959, RMSE=104.8, MAPE=12.7%. (d) \"CatBoost Fitting Performance\", orange markers: R²=0.970, RMSE=89.5, MAPE=10.2%. (e) \"Extra Trees Fitting Performance\", light-blue markers: R²=0.978, RMSE=76.2, MAPE=9.80%. (f) \"KNN Fitting Performance\", cyan markers: R²=0.973, RMSE=85.2, MAPE=10.4%. (g) \"AdaBoost Fitting Performance\", lavender markers: R²=0.901, RMSE=162.5, MAPE=33.1%. Data points are dense below roughly 1000 MPa and sparse above 2000 MPa in every panel; no individual point labels are printed. The figure demonstrates that all seven models reproduce the YS trend with points clustering along the x = y diagonal, Extra Trees being the most accurate and AdaBoost clearly the least.",
+  "confidence": "high",
+  "subfigures": [
+    {
+      "panel": "(a)",
+      "description": "Scatter plot titled \"DT Fitting Performance\": Predicted Value/MPa vs Actual Value/MPa, 0–3000 on both axes, red dashed x=y line, magenta/violet circular markers; inset metrics R²=0.944, RMSE=123.0, MAPE=19.0%.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(b)",
+      "description": "Scatter plot titled \"XGBoost Fitting Performance\" with gold/yellow circular markers, red dashed x=y line; inset metrics R²=0.969, RMSE=90.4, MAPE=13.4%.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(c)",
+      "description": "Scatter plot titled \"LightGBM Fitting Performance\" with green circular markers, red dashed x=y line; inset metrics R²=0.959, RMSE=104.8, MAPE=12.7%.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(d)",
+      "description": "Scatter plot titled \"CatBoost Fitting Performance\" with orange/peach circular markers, red dashed x=y line; inset metrics R²=0.970, RMSE=89.5, MAPE=10.2%.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(e)",
+      "description": "Scatter plot titled \"Extra Trees Fitting Performance\" with light-blue circular markers, red dashed x=y line; inset metrics R²=0.978, RMSE=76.2, MAPE=9.80% — the best metrics of the seven panels.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(f)",
+      "description": "Scatter plot titled \"KNN Fitting Performance\" with cyan circular markers, red dashed x=y line; inset metrics R²=0.973, RMSE=85.2, MAPE=10.4%.",
+      "confidence": "high"
+    },
+    {
+      "panel": "(g)",
+      "description": "Scatter plot titled \"AdaBoost Fitting Performance\" with pale lavender/purple circular markers, red dashed x=y line; inset metrics R²=0.901, RMSE=162.5, MAPE=33.1% — the poorest metrics of the seven panels.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "All seven panels are parity (goodness-of-fit) scatter plots with identical axes: x = \"Actual Value/MPa\" and y = \"Predicted Value/MPa\", both spanning 0 to 3000 with ticks at 0, 500, 1000, 1500, 2000, 2500, 3000.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Each panel contains a red dashed diagonal line representing the ideal x = y agreement, and circular markers of a different colour per model.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panel (a) DT prints R²=0.944, RMSE=123.0, MAPE=19.0%.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panel (b) XGBoost prints R²=0.969, RMSE=90.4, MAPE=13.4%.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panel (c) LightGBM prints R²=0.959, RMSE=104.8, MAPE=12.7%.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panel (d) CatBoost prints R²=0.970, RMSE=89.5, MAPE=10.2%.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panel (e) Extra Trees prints the best metrics of the group: R²=0.978, RMSE=76.2, MAPE=9.80%.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panel (f) KNN prints R²=0.973, RMSE=85.2, MAPE=10.4%.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Panel (g) AdaBoost prints the worst metrics of the group: R²=0.901, RMSE=162.5, MAPE=33.1%.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "In every panel the scatter is dense between roughly 0 and 1000 MPa and sparse above 2000 MPa, and the points lie close to the red dashed diagonal, more tightly for Extra Trees than for AdaBoost.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Marker colour distinguishes the models: magenta for DT, gold for XGBoost, green for LightGBM, orange for CatBoost, light blue for Extra Trees, cyan for KNN and lavender for AdaBoost.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption maps the seven panels to models: (a) DT, (b) XGBoost, (c) LightGBM, (d) CatBoost, (e) Extra Trees, (f) KNN, (g) AdaBoost; the supplied caption string is partially garbled and out of order but its panel–model list matches the printed panel titles.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_004"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states that the four strengthening-mechanism values quantified from the GMM data-augmented dataset were used as model inputs with the corresponding YS as output, and the dataset was split into training and testing sets at a 7:3 ratio.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_004"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states that the seven selected models all showed good predictive performance for YS, with test-set points largely aligning with the x = y diagonal.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "figure",
+          "id": "figure_004"
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "measured_quantities": [
+    "coefficient of determination R² (-)",
+    "RMSE (MPa)",
+    "MAPE (%)",
+    "actual yield strength (MPa)",
+    "predicted yield strength (MPa)"
+  ],
+  "sample_hints": [
+    "DT",
+    "XGBoost",
+    "LightGBM",
+    "CatBoost",
+    "Extra Trees",
+    "KNN",
+    "AdaBoost"
+  ],
+  "unreadable_items": [
+    "Caption text as supplied is partially garbled/out of order ('(b) (c) (d) (e) (f) (g) Fig, 4 ...'), although the panel titles printed inside each panel are fully legible",
+    "Individual data-point coordinates are not labelled and cannot be read numerically"
+  ],
+  "image_paths": [
+    "images/dd16a16a7718d38dbe01fe2dcdb14de1d5c6ca2f3d03155cd8d1b466ea84a53e.jpg",
+    "images/e95250011bad6e39860c0da8cbd41b13a9ca1a1256c9e18a0331f37bf6dc1a61.jpg",
+    "images/fd34955ae76124f27e9147fba461acf204263d9cb243ae81b1bed4507ca4170c.jpg",
+    "images/e9d2471d3d78d7a3b039bba52a9cdf5bee0ab42507aee0648744fb7de2de05b6.jpg",
+    "images/aa6f544327c2b2d9178e31f2042f7fdc671a38df5bdf19ba56ce9c83af8574a3.jpg",
+    "images/5a85f967b75a6b05f6446c4cc2637b102fb9b9d741b297d1e56e14dac897f798.jpg",
+    "images/cf3192b23897bdec15f62e250ceb624970d0d6bc7d24692f6f789d1dac04a0cd.jpg"
+  ]
+}

@@ -1,0 +1,636 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-mn-c-al__aging-400-650c",
+      "paper_id": "10.1002_srin.202200191",
+      "alloy_id": "alloy_fe-mn-c-al",
+      "process_id": "proc_aging-400-650c",
+      "sample_label": "(无)",
+      "aliases": {
+        "value": "aging treated Fe–Mn–C–Al steel"
+      }
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "This processing step is the aging treatment defined for the sample (400–650 °C, 0.5–100 h), from b0039.",
+        "block_id": [
+          "b0039"
+        ]
+      },
+      "processing_step_id": "step_aging",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "heat treatment",
+        "source": {
+          "reason": "b0039 states that full austenite and austenite-based duplex Fe–Mn–C–Al steel is aging treated, which is a heat treatment.",
+          "block_id": [
+            "b0039"
+          ]
+        }
+      },
+      "method": {
+        "value": "aging",
+        "source": {
+          "reason": "b0039 explicitly describes the aging treatment at 400–650 °C for 0.5–100 h.",
+          "block_id": [
+            "b0039"
+          ]
+        }
+      },
+      "temperature": {
+        "value": "400–650 °C",
+        "source": {
+          "reason": "b0039 states the aging treatment temperature range is 400–650 °C.",
+          "block_id": [
+            "b0039"
+          ]
+        }
+      },
+      "temperature_unit": {
+        "value": "°C",
+        "source": {
+          "reason": "b0039 gives the aging temperature in °C.",
+          "block_id": [
+            "b0039"
+          ]
+        }
+      },
+      "duration": {
+        "value": "0.5–100 h",
+        "source": {
+          "reason": "b0039 states the aging time is 0.5–100 h.",
+          "block_id": [
+            "b0039"
+          ]
+        }
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Aging of fully austenite and austenite-based duplex Fe–Mn–C–Al steel causes modulation of C and Al within the austenite and stepwise decomposition.",
+        "source": {
+          "reason": "b0039 states that aging at 400–650 °C for 0.5–100 h gives the chance of modulation of C and Al within the austenite and then decomposition step by step.",
+          "block_id": [
+            "b0039"
+          ]
+        }
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "The structure object captures the aging-decomposition microstructure of the Fe–Mn–C–Al steel from b0039/b0040/b0045.",
+        "block_id": [
+          "b0039",
+          "b0040",
+          "b0045"
+        ]
+      },
+      "structure_id": "struct_aging_decomposition",
+      "overall_structure": {
+        "value": "Aging of fully austenite and austenite-based duplex Fe–Mn–C–Al steel causes modulation of C and Al within the austenite and stepwise decomposition, forming κ phase and Fe(Mn)C carbide within austenite grains and along grain boundaries.",
+        "source": {
+          "reason": "b0039/b0040 give the aging-induced decomposition sequence and b0045 states that κ and Fe(Mn)C precipitations form within austenite grains and along the grain boundary.",
+          "block_id": [
+            "b0039",
+            "b0040",
+            "b0045"
+          ]
+        }
+      },
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "This microstructure summarizes the aging-induced austenite decomposition and precipitation (κ and Fe(Mn)C) described in b0040 and b0045.",
+            "block_id": [
+              "b0040",
+              "b0045"
+            ]
+          },
+          "microstructure_id": "micro_aging_gamma_kappa",
+          "region": {
+            "value": "austenite grains and grain boundaries",
+            "source": {
+              "reason": "b0045 states that κ and Fe(Mn)C precipitations form within austenite grains and along the grain boundary.",
+              "block_id": [
+                "b0045"
+              ]
+            }
+          },
+          "related_sequence": {
+            "value": "1"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "The austenite phase is the matrix of the aging-treated steel described in b0040/b0045.",
+                "block_id": [
+                  "b0040",
+                  "b0045"
+                ]
+              },
+              "phase_name": {
+                "value": "γ (austenite)",
+                "source": {
+                  "reason": "b0040/b0045 describe the austenite matrix (γ) during aging decomposition and precipitation.",
+                  "block_id": [
+                    "b0040",
+                    "b0045"
+                  ]
+                }
+              },
+              "crystal_structure": {
+                "value": "fcc",
+                "source": {
+                  "reason": "b0085 states the Fe–Mn–C–Al low-density steel has fcc matrix microstructure.",
+                  "block_id": [
+                    "b0085"
+                  ]
+                }
+              },
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "L1₂ (SRO) is the short-range-ordered intermediate in the aging decomposition sequence (b0040).",
+                "block_id": [
+                  "b0040"
+                ]
+              },
+              "phase_name": {
+                "value": "L1₂ (SRO)",
+                "source": {
+                  "reason": "b0040 lists L1₂ (SRO) as an intermediate product in the austenite decomposition sequence during aging.",
+                  "block_id": [
+                    "b0040"
+                  ]
+                }
+              },
+              "crystal_structure": {
+                "value": "L1₂",
+                "source": {
+                  "reason": "b0040 labels the intermediate as L1₂ (SRO).",
+                  "block_id": [
+                    "b0040"
+                  ]
+                }
+              },
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "κ-carbide is the precipitate formed by aging, per b0040/b0045.",
+                "block_id": [
+                  "b0040",
+                  "b0045"
+                ]
+              },
+              "phase_name": {
+                "value": "κ-carbide",
+                "source": {
+                  "reason": "b0040 and b0045 describe κ phase formation as the end product of aging decomposition/precipitation.",
+                  "block_id": [
+                    "b0040",
+                    "b0045"
+                  ]
+                }
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "Fe(Mn)C carbide is an alternative aging precipitate in low-Al steels, per b0045.",
+                "block_id": [
+                  "b0045"
+                ]
+              },
+              "phase_name": {
+                "value": "Fe(Mn)C carbide",
+                "source": {
+                  "reason": "b0045 states Fe(Mn)C precipitations form within austenite grains and along grain boundaries, commonly in low Al-containing steel (<7 wt%).",
+                  "block_id": [
+                    "b0045"
+                  ]
+                }
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "source": {
+                "reason": "b0071 reports planar dislocation bands interacting with κ-carbide particles in the aged/overaged steel.",
+                "block_id": [
+                  "b0071"
+                ]
+              },
+              "type": {
+                "value": "planar dislocation bands",
+                "source": {
+                  "reason": "b0071 states κ-carbide particles are sheared by the planar dislocation band in the overaged condition.",
+                  "block_id": [
+                    "b0071"
+                  ]
+                }
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "source": {
+                "reason": "κ-carbide is the aging-induced precipitate described in b0045.",
+                "block_id": [
+                  "b0045"
+                ]
+              },
+              "precipitate_id": "ppt_kappa",
+              "type": {
+                "value": "κ-carbide",
+                "source": {
+                  "reason": "b0045 identifies κ precipitation in the aged Fe–Mn–C–Al steel.",
+                  "block_id": [
+                    "b0045"
+                  ]
+                }
+              },
+              "size": null,
+              "distribution": {
+                "value": "within austenite grains and along grain boundaries; occurs in high Al-containing steel (≥7 wt%)",
+                "source": {
+                  "reason": "b0045 states κ and Fe(Mn)C precipitations form within austenite grains and along the grain boundary, and that κ precipitation occurs in high Al-containing steel (≥7 wt%).",
+                  "block_id": [
+                    "b0045"
+                  ]
+                }
+              },
+              "coherency": null
+            },
+            {
+              "source": {
+                "reason": "Fe(Mn)C carbide is an aging precipitate in low-Al steels, per b0045.",
+                "block_id": [
+                  "b0045"
+                ]
+              },
+              "precipitate_id": "ppt_feMnC",
+              "type": {
+                "value": "Fe(Mn)C carbide",
+                "source": {
+                  "reason": "b0045 states Fe(Mn)C precipitation forms within austenite grains and along the grain boundary.",
+                  "block_id": [
+                    "b0045"
+                  ]
+                }
+              },
+              "size": null,
+              "distribution": {
+                "value": "within austenite grains and along the grain boundary; commonly observed in low Al-containing steel (<7 wt%)",
+                "source": {
+                  "reason": "b0045 states Fe(Mn)C carbide is commonly observed in low Al-containing steel (<7 wt%) and forms within austenite grains and along the grain boundary.",
+                  "block_id": [
+                    "b0045"
+                  ]
+                }
+              },
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "source": {
+        "reason": "The interface set captures phase interfaces, defect interactions, slip behavior and phase evolution of the aging-treated Fe–Mn–C–Al steel from b0040/b0041/b0045/b0068/b0069/b0071/figure_003.",
+        "block_id": [
+          "b0040",
+          "b0041",
+          "b0045",
+          "b0068",
+          "b0069",
+          "b0071",
+          "figure_003"
+        ]
+      },
+      "interface_set_id": "interfaces_aging",
+      "phase_interfaces": [
+        {
+          "source": {
+            "reason": "The γ/κ interface corresponds to κ precipitation from the austenite matrix during aging (b0045).",
+            "block_id": [
+              "b0045"
+            ]
+          },
+          "interface_id": "intf_gamma_kappa",
+          "microstructure_id": "micro_aging_gamma_kappa",
+          "phase_1_name": {
+            "value": "γ (austenite)",
+            "source": {
+              "reason": "b0045 describes κ precipitation within/along the austenite matrix.",
+              "block_id": [
+                "b0045"
+              ]
+            }
+          },
+          "phase_2_name": {
+            "value": "κ-carbide",
+            "source": {
+              "reason": "b0045 describes κ precipitation within/along the austenite matrix.",
+              "block_id": [
+                "b0045"
+              ]
+            }
+          },
+          "coherence": null
+        },
+        {
+          "source": {
+            "reason": "The γ/Fe(Mn)C interface corresponds to Fe(Mn)C precipitation from the austenite matrix during aging (b0045).",
+            "block_id": [
+              "b0045"
+            ]
+          },
+          "interface_id": "intf_gamma_feMnC",
+          "microstructure_id": "micro_aging_gamma_kappa",
+          "phase_1_name": {
+            "value": "γ (austenite)",
+            "source": {
+              "reason": "b0045 describes Fe(Mn)C precipitation within/along the austenite matrix.",
+              "block_id": [
+                "b0045"
+              ]
+            }
+          },
+          "phase_2_name": {
+            "value": "Fe(Mn)C carbide",
+            "source": {
+              "reason": "b0045 describes Fe(Mn)C precipitation within/along the austenite matrix.",
+              "block_id": [
+                "b0045"
+              ]
+            }
+          },
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "source": {
+            "reason": "This defect interaction comes from the overaging discussion in b0071.",
+            "block_id": [
+              "b0071"
+            ]
+          },
+          "interaction_id": "interact_kappa_shearing",
+          "microstructure_id": "micro_aging_gamma_kappa",
+          "interaction_type": {
+            "value": "κ-carbide particles sheared by planar dislocation band",
+            "source": {
+              "reason": "b0071 states that with overaging treatment (625 °C) for 192 h, the κ-carbide particles are observed and sheared by the planar dislocation band.",
+              "block_id": [
+                "b0071"
+              ]
+            }
+          },
+          "qualitative_or_quantitative_description": {
+            "value": "With overaging (625 °C, 192 h), κ-carbide particles are sheared by planar dislocation bands; large size and high-volume fraction of κ-carbide particles lower work hardening capacity compared with short-time aging (<10 h).",
+            "source": {
+              "reason": "b0071 reports the κ-carbide shearing by planar dislocation bands and the resulting lower work hardening capacity versus short-time aged samples.",
+              "block_id": [
+                "b0071"
+              ]
+            }
+          }
+        }
+      ],
+      "slip_behavior": {
+        "value": "Planar slip induced by SRO; κ-carbide particles are sheared by planar dislocation bands.",
+        "source": {
+          "reason": "b0068/b0069 describe SRO-induced planar slip, and b0071 reports κ-carbide shearing by planar dislocation bands.",
+          "block_id": [
+            "b0068",
+            "b0069",
+            "b0071"
+          ]
+        }
+      },
+      "phase_evolution": {
+        "value": "γ → γ' + γ'' → γ' + L1₂(SRO) → γ + κ (empirical sequence within Mn 12–30 wt%, Al up to 12 wt%, C 0.6–2.0 wt%). For Fe–28Mn–8.5Al–1C–1.2Si low-density steel, κ phase decomposes from the austenite matrix when the cooling rate is slower than -4.4 °C/h.",
+        "source": {
+          "reason": "b0040 gives the decomposition sequence; b0041 gives the composition range; b0045/figure_003 give the κ decomposition cooling-rate threshold for the Fe–28Mn–8.5Al–1C–1.2Si example.",
+          "block_id": [
+            "b0040",
+            "b0041",
+            "b0045",
+            "figure_003"
+          ]
+        }
+      },
+      "interface_notes": {
+        "value": "Decomposition stops at L1₂(SRO) production in low Al-containing steel, while κ precipitation continues to react in high C and Al-containing steel. Fe(Mn)C carbide is commonly observed in low Al-containing steel (<7 wt%); κ precipitation occurs in high Al-containing steel (≥7 wt%).",
+        "source": {
+          "reason": "b0045 explains the Al-content dependence of the decomposition products (Fe(Mn)C vs κ).",
+          "block_id": [
+            "b0045"
+          ]
+        }
+      }
+    }
+  ],
+  "properties": [
+    {
+      "source": {
+        "reason": "This property set records the general mechanical property ranges and density of Fe–Mn–C–Al low-density steel reported in b0010, the base alloy of the aging-treated sample.",
+        "block_id": [
+          "b0010"
+        ]
+      },
+      "property_set_id": "props_fe_mn_c_al_general",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "source": {
+                "reason": "This yield-strength entry is the general Fe–Mn–C–Al low-density steel value from b0010.",
+                "block_id": [
+                  "b0010"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "up to 950 MPa",
+                "source": {
+                  "reason": "b0010 reports strong yield strength up to 950 MPa for Fe–Mn–C–Al low-density steel.",
+                  "block_id": [
+                    "b0010"
+                  ]
+                }
+              },
+              "unit": {
+                "value": "MPa",
+                "source": {
+                  "reason": "b0010 reports the yield strength in MPa.",
+                  "block_id": [
+                    "b0010"
+                  ]
+                }
+              },
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "source": {
+                "reason": "This ultimate tensile strength entry is the general Fe–Mn–C–Al low-density steel value from b0010.",
+                "block_id": [
+                  "b0010"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "up to 1.1 GPa",
+                "source": {
+                  "reason": "b0010 reports tensile strength up to 1.1 GPa for Fe–Mn–C–Al low-density steel.",
+                  "block_id": [
+                    "b0010"
+                  ]
+                }
+              },
+              "unit": {
+                "value": "GPa",
+                "source": {
+                  "reason": "b0010 reports the tensile strength in GPa.",
+                  "block_id": [
+                    "b0010"
+                  ]
+                }
+              },
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "source": {
+                "reason": "This elongation entry is the general Fe–Mn–C–Al low-density steel ductility value from b0010.",
+                "block_id": [
+                  "b0010"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "not less than 40%",
+                "source": {
+                  "reason": "b0010 reports high plastic ductility not less than 40% for Fe–Mn–C–Al low-density steel.",
+                  "block_id": [
+                    "b0010"
+                  ]
+                }
+              },
+              "unit": {
+                "value": "%",
+                "source": {
+                  "reason": "b0010 reports plastic ductility as a percentage.",
+                  "block_id": [
+                    "b0010"
+                  ]
+                }
+              },
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": {
+            "value": "6.2–7.0 g cm^-3",
+            "source": {
+              "reason": "b0010 reports the low-density feature of Fe–Mn–C–Al steel between 6.2 and 7.0 g cm^-3 with Al addition from 2 to 12 wt%.",
+              "block_id": [
+                "b0010"
+              ]
+            }
+          },
+          "unit": {
+            "value": "g cm^-3",
+            "source": {
+              "reason": "b0010 gives the density in g cm^-3.",
+              "block_id": [
+                "b0010"
+              ]
+            }
+          }
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Overaging treatment (625 °C for 192 h) produces large size and high-volume-fraction κ-carbide particles that are sheared by planar dislocation bands, giving lower work hardening capacity than short-time aging (<10 h) [b0071].",
+    "Aging time and temperature play an important role in the wear resistance of Fe–Mn–C–Al low-density steel; suitable aging parameters require further study [b0080].",
+    "Aging treatment optimization is needed to find the balance of strength and ductility with κ phase precipitation [b0101]."
+  ]
+}

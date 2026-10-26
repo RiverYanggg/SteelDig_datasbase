@@ -1,0 +1,136 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "table_003",
+  "family": "generalist",
+  "image_type": "chart_table",
+  "description": "Table 3, a single-panel rasterised table, tabulates elastic constants (unit stated in the caption as GPa) for six compounds: FeAl, Fe3Al, Fe3AlC(sp), Fe2AlC, FeMnAlC and Mn3AlC. The header row gives the elastic-constant components C11, C12, C44, C13, C33 and C36; the C11, C12 and C44 columns each hold two numbers per compound — an unparenthesised value followed by a parenthesised, negative value which the caption states was obtained with a second method (lattice distortion). Cubic FeAl, Fe3Al and Fe3AlC(sp) list only C11, C12 and C44 and carry dashes (—) in C13, C33 and C36; Fe2AlC, FeMnAlC and Mn3AlC additionally list C13, C33 and C36 and carry dashes in part of the unparenthesised C11, C12 and C44 cells (Mn3AlC also dashed for C13, C33, C36). Fe3AlC(sp) shows the largest tabulated C11 (450, versus 273 for FeAl and 181 for Fe3Al). Mn3AlC parenthetical values (−448, −98, −110) exceed in magnitude the corresponding Fe3AlC(sp) parenthetical values (−431, −94, −68). No temperature, pressure or uncertainty is printed anywhere in the table.",
+  "confidence": "medium",
+  "subfigures": [
+    {
+      "panel": "table",
+      "description": "Single table with columns Compound, C11, C12, C44 (each split into an unparenthesised value and a parenthesised value), C13, C33, C36; six rows: FeAl, Fe3Al, Fe3AlC(sp), Fe2AlC, FeMnAlC, Mn3AlC. Values are printed in GPa according to the caption; dashes mark components not listed for a given structure.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "The table header lists the components C11, C12, C44, C13, C33 and C36, with the Compound column naming six phases (FeAl, Fe3Al, Fe3AlC(sp), Fe2AlC, FeMnAlC, Mn3AlC).",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "C11, C12 and C44 are each split into two sub-columns: an unparenthesised value and a parenthesised value that is negative in every populated row (e.g. FeAl: 273 / −293).",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption states that the values in parentheses were calculated using the second method (lattice distortion).",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "caption"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "Cubic FeAl, Fe3Al and Fe3AlC(sp) have dashes (—) in C13, C33 and C36, whereas Fe2AlC and FeMnAlC list values in all three of these columns (−97/−471/−98 and −143/−451/−101 respectively).",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Fe3AlC(sp) has the largest tabulated C11 value, 450, compared with 273 for FeAl and 181 for Fe3Al; the citing text attributes this to C occupation of the octahedral interstitial site rigidifying Fe3AlC relative to Fe3Al.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "citation"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "observation": "For Mn3AlC the parenthesised values −448 (C11), −98 (C12) and −110 (C44) are all larger in magnitude than the corresponding parenthesised Fe3AlC(sp) values −431, −94 and −68.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The citing text states that all elastic constants of Mn3AlC are greater than those of Fe3AlC, confirming experimental hardness values, as a consequence of strong Mn-C bonds.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "citation"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "observation": "The citing text states that for the tetragonal structures Fe2AlC and FeMnAlC, C11 and C33 are predominantly greater than the other elastic constants, indicating strong Mn-C bonds in <100> directions; in the table, however, the unparenthesised C11 cell of both rows is a dash, so the positive C11 values discussed in the text are not visible in the table.",
+      "source": "citation",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "citation"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "observation": "Within each compound row, the C13, C33 and C36 values (where present) are larger in magnitude than C12 and C44; e.g. Fe2AlC: C13 −97, C33 −471, C36 −98 versus C12 −80 and C44 −96.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The caption's phrasing 'Te values in parenthesis' is a probable rendering/typographical error for 'The values in parenthesis'; the table image itself confirms only that each split column holds two entries.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "caption"
+        }
+      ],
+      "confidence": "low"
+    },
+    {
+      "observation": "The caption gives the unit of all tabulated numbers as GPa, which is not printed inside the table itself.",
+      "source": "caption",
+      "evidence": [
+        {
+          "type": "text_block",
+          "id": "caption"
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "measured_quantities": [
+    "C11 elastic constant (GPa)",
+    "C12 elastic constant (GPa)",
+    "C44 elastic constant (GPa)",
+    "C13 elastic constant (GPa)",
+    "C33 elastic constant (GPa)",
+    "C36 elastic constant (GPa)"
+  ],
+  "sample_hints": [
+    "FeAl",
+    "Fe3Al",
+    "Fe3AlC(sp)",
+    "Fe2AlC",
+    "FeMnAlC",
+    "Mn3AlC"
+  ],
+  "unreadable_items": [
+    "caption wording 'Te values in parenthesis' is ambiguous (likely 'The values in parenthesis')",
+    "the table does not state which of the two methods produced the unparenthesised column or at what temperature/pressure the constants were computed"
+  ],
+  "image_paths": [
+    "images/c4a5c9069eb981622dc1ac792603d12df9f85b2585cfd4315342472d8d1f376c.jpg"
+  ]
+}

@@ -1,0 +1,847 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-11al-1.2c__cr-10",
+      "paper_id": "10.1016_j.matchar.2021.111013",
+      "alloy_id": "alloy_fe-30mn-11al-1.2c",
+      "process_id": "proc_cr-10",
+      "sample_label": "10% rolling reduction",
+      "aliases": [
+        "10% cold rolled",
+        "Fig. 3(a)",
+        "Fig. 4(a)"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "Experimental procedure states the sheets were solution treated at 1100 °C for 1 h before cold rolling to 10%–90%.",
+        "block_id": [
+          "b0014"
+        ]
+      },
+      "processing_step_id": "step_solution_treatment",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "solution treatment"
+      },
+      "temperature": {
+        "value": "1100 °C",
+        "source": {
+          "reason": "The sheets were solution treated at 1100 °C for 1 h before cold rolling (parent process proc_solution-1100c-1h).",
+          "block_id": [
+            "b0014"
+          ]
+        }
+      },
+      "temperature_unit": {
+        "value": "°C",
+        "source": {
+          "reason": "Temperature unit for the solution treatment.",
+          "block_id": [
+            "b0014"
+          ]
+        }
+      },
+      "duration": {
+        "value": "1 h",
+        "source": {
+          "reason": "Solution treatment time stated in the experimental procedure.",
+          "block_id": [
+            "b0014"
+          ]
+        }
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Solution treatment was applied to the sheets prior to cold rolling; it is the parent process (proc_solution-1100c-1h) of the 10% cold-rolling step.",
+        "source": {
+          "reason": "Describes the solution treatment that immediately precedes cold rolling of the present sample.",
+          "block_id": [
+            "b0014"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "The experimental procedure reports sheets cold rolled to reductions of 10% to 90% (ε = 0.1–2.3); the 10% condition corresponds to this sample.",
+        "block_id": [
+          "b0014",
+          "b0031",
+          "b0032"
+        ]
+      },
+      "processing_step_id": "step_cold_rolling",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "mechanical processing"
+      },
+      "method": {
+        "value": "cold rolling"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": {
+        "value": "10% (ε = 0.1)",
+        "source": {
+          "reason": "The present sample is the 10% thickness reduction condition (ε = 0.1) among the 10%–90% cold-rolled states.",
+          "block_id": [
+            "b0014",
+            "b0031",
+            "b0032"
+          ]
+        }
+      },
+      "processing_steps_notes": {
+        "value": "Cold rolled to 10% thickness reduction (ε = 0.1) after solution treatment at 1100 °C for 1 h; grouped in the low-to-medium reduction (10%–50%) stage I producing a Taylor-lattice-type low energy dislocation structure.",
+        "source": {
+          "reason": "The paper groups 10%–50% reduction as stage I and explicitly labels Fig. 3(a)/Fig. 4(a) as the 10% condition.",
+          "block_id": [
+            "b0014",
+            "b0023",
+            "b0031",
+            "b0032"
+          ]
+        }
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "Microstructure of the 10% cold-rolled sample described in section 3.2 and Fig. 3(a)/Fig. 4(a).",
+        "block_id": [
+          "b0023",
+          "b0024",
+          "figure_003",
+          "figure_004"
+        ]
+      },
+      "structure_id": "struct_cr10",
+      "overall_structure": {
+        "value": "Taylor-lattice-type low energy dislocation structure (LEDS) produced by planar dislocation glide; consists of multiple slip bands. Characteristic of stage I (10%–50% rolling reduction), with gradual refinement of the slip-band spacing.",
+        "source": {
+          "reason": "Describes the cold-rolled microstructure of stage I (10%–50%), to which the 10% condition belongs.",
+          "block_id": [
+            "b0023",
+            "b0024"
+          ]
+        }
+      },
+      "number_of_phases": {
+        "value": "2",
+        "source": {
+          "reason": "The steel consists of an austenitic matrix with κ'-carbides; the as-quenched starting material for the 10% rolled sample was estimated as austenite + κ'-carbides.",
+          "block_id": [
+            "b0022"
+          ]
+        }
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "The 10% rolled condition lies in stage I and forms a Taylor-lattice-type LEDS of multiple planar-glide slip bands within an austenitic matrix that inherits κ'-carbides from the as-quenched state.",
+            "block_id": [
+              "b0023",
+              "b0024",
+              "b0022",
+              "figure_003",
+              "figure_004"
+            ]
+          },
+          "microstructure_id": "micro_cr10_matrix",
+          "region": {
+            "value": "bulk (longitudinal section, RD×ND)",
+            "source": {
+              "reason": "Microstructure was investigated on the longitudinal section (RD×ND).",
+              "block_id": [
+                "b0016"
+              ]
+            }
+          },
+          "related_sequence": {
+            "value": "2",
+            "source": {
+              "reason": "The Taylor-lattice structure forms during the cold-rolling step of this sample.",
+              "block_id": [
+                "b0023",
+                "b0024"
+              ]
+            }
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "Austenite (FCC) is the matrix phase of the present steel; inherited from the as-quenched state.",
+                "block_id": [
+                  "b0022"
+                ]
+              },
+              "phase_name": {
+                "value": "austenite",
+                "source": {
+                  "reason": "The matrix is austenite; the initial phase constituent was estimated as austenite plus κ'-carbides.",
+                  "block_id": [
+                    "b0022"
+                  ]
+                }
+              },
+              "crystal_structure": {
+                "value": "FCC",
+                "source": {
+                  "reason": "The steel is an austenitic (FCC) low-density steel.",
+                  "block_id": [
+                    "b0007",
+                    "b0014"
+                  ]
+                }
+              },
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": {
+                "value": "Almost random initial texture (weak)",
+                "source": {
+                  "reason": "The initial texture before cold rolling was almost random distribution.",
+                  "block_id": [
+                    "b0022",
+                    "b0029"
+                  ]
+                }
+              }
+            },
+            {
+              "source": {
+                "reason": "The phase constituent of the as-quenched starting material (before cold rolling) was estimated as austenite and κ'-carbides.",
+                "block_id": [
+                  "b0022"
+                ]
+              },
+              "phase_name": {
+                "value": "κ'-carbides",
+                "source": {
+                  "reason": "Nano-sized κ'-carbides are uniformly distributed in the austenitic matrix of the as-quenched starting material.",
+                  "block_id": [
+                    "b0022"
+                  ]
+                }
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": {
+                "value": "nano-sized particles",
+                "source": {
+                  "reason": "The κ'-carbides are nano-sized and uniformly distributed in the austenitic matrix.",
+                  "block_id": [
+                    "b0022"
+                  ]
+                }
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "source": {
+                "reason": "Slip bands of the Taylor lattice observed for 10% reduction (Fig. 3(a), Fig. 4(a)).",
+                "block_id": [
+                  "b0023",
+                  "b0024",
+                  "figure_003",
+                  "figure_004"
+                ]
+              },
+              "type": {
+                "value": "planar dislocation slip bands (Taylor lattice)",
+                "source": {
+                  "reason": "The cold-rolled microstructure of stage I is a Taylor-lattice-type LEDS of multiple slip bands from planar dislocation glide.",
+                  "block_id": [
+                    "b0023",
+                    "b0024",
+                    "b0042"
+                  ]
+                }
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "source": {
+                "reason": "Dislocation pile-ups at slip-band intersections reported for the Taylor-lattice structure.",
+                "block_id": [
+                  "b0024",
+                  "figure_004"
+                ]
+              },
+              "type": {
+                "value": "dislocation pile-ups at slip-band intersections",
+                "source": {
+                  "reason": "Dislocation pile-ups were found at the intersections of the slip bands as indicated by green arrows in Fig. 4(a).",
+                  "block_id": [
+                    "b0024",
+                    "figure_004",
+                    "figure_003"
+                  ]
+                }
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": {
+              "value": "Almost random distribution prior to cold rolling; overall rolling texture is weak",
+              "source": {
+                "reason": "Initial texture was almost random; the overall texture intensity of the steel is weak.",
+                "block_id": [
+                  "b0022",
+                  "b0051"
+                ]
+              }
+            }
+          },
+          "precipitates": [
+            {
+              "source": {
+                "reason": "κ'-carbides formed by spinodal decomposition during quenching, present in the starting material of the 10% rolled sample.",
+                "block_id": [
+                  "b0022"
+                ]
+              },
+              "precipitate_id": "ppt_kappa_cr10",
+              "type": {
+                "value": "κ'-carbides",
+                "source": {
+                  "reason": "Nano-sized κ'-carbides uniformly distributed in the austenitic matrix of the as-quenched starting material.",
+                  "block_id": [
+                    "b0022"
+                  ]
+                }
+              },
+              "size": {
+                "value": {
+                  "value": "nano-sized"
+                },
+                "unit": null
+              },
+              "distribution": {
+                "value": "uniformly distributed in the austenitic matrix",
+                "source": {
+                  "reason": "The nano-sized κ'-carbides are uniformly distributed in the austenitic matrix.",
+                  "block_id": [
+                    "b0022"
+                  ]
+                }
+              },
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "source": {
+        "reason": "Interface/defect interactions for the 10% cold-rolled Taylor-lattice structure.",
+        "block_id": [
+          "b0024",
+          "figure_004"
+        ]
+      },
+      "interface_set_id": "interface_cr10_slipbands",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "source": {
+            "reason": "Dislocation interaction at slip-band intersections in the Taylor-lattice structure of the 10% rolled sample.",
+            "block_id": [
+              "b0024",
+              "figure_004"
+            ]
+          },
+          "interaction_id": "di_cr10_pileup_intersection",
+          "microstructure_id": "micro_cr10_matrix",
+          "interaction_type": {
+            "value": "dislocation pile-up at the intersection of non-coplanar slip bands",
+            "source": {
+              "reason": "Dislocation pile-ups found at the intersections of the slip bands in Fig. 4(a).",
+              "block_id": [
+                "b0024",
+                "figure_004"
+              ]
+            }
+          },
+          "qualitative_or_quantitative_description": {
+            "value": "The interaction of the non-coplanar slip bands was not strong enough to completely impede dislocation glide, so dislocations could cross the intersection, making the slip bands run across the whole grain; dislocation cross slip might occur at the intersection.",
+            "source": {
+              "reason": "Text explains the weak interaction of intersecting slip bands and possible cross slip at intersections.",
+              "block_id": [
+                "b0024"
+              ]
+            }
+          }
+        }
+      ],
+      "slip_behavior": {
+        "value": "Planar dislocation glide dominates; Taylor-lattice structure formed by multiple slip bands. Dislocation cross slip might occur at the intersections of slip bands.",
+        "source": {
+          "reason": "The Taylor-lattice structure is attributed to planar dislocation glide and cross slip may occur at intersections.",
+          "block_id": [
+            "b0024",
+            "b0042",
+            "b0060"
+          ]
+        }
+      },
+      "phase_evolution": {
+        "value": "No phase transformation reported for 10% reduction; austenitic matrix with κ'-carbides retained from the as-quenched state.",
+        "source": {
+          "reason": "The microstructure evolution during cold rolling concerns deformation substructures (Taylor lattice) rather than phase changes; the phase constituent of the starting material is austenite plus κ'-carbides.",
+          "block_id": [
+            "b0022",
+            "b0023"
+          ]
+        }
+      },
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "source": {
+        "reason": "Tensile testing conditions apply to all cold-rolled samples including the 10% condition (Fig. 1); no numeric YS/UTS/elongation values are reported for the 10% sample specifically, so those fields are left empty/null.",
+        "block_id": [
+          "b0015",
+          "b0020",
+          "figure_001"
+        ]
+      },
+      "property_set_id": "prop_cr10_tensile",
+      "measurement_conditions": {
+        "temperature": {
+          "value": "room temperature",
+          "source": {
+            "reason": "Tensile tests were performed at room temperature.",
+            "block_id": [
+              "b0015"
+            ]
+          }
+        },
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": {
+          "value": "10^-3 s^-1",
+          "source": {
+            "reason": "Initial strain rate used for the uniaxial tensile tests.",
+            "block_id": [
+              "b0015"
+            ]
+          }
+        },
+        "specimen_geometry": {
+          "value": "dog-bone-shaped tensile specimen, gauge length 16 mm, width 4 mm, cut along the rolling direction",
+          "source": {
+            "reason": "Describes the tensile specimen geometry and orientation.",
+            "block_id": [
+              "b0015"
+            ]
+          }
+        },
+        "test_standard": null,
+        "other_conditions": {
+          "value": "Uniaxial tensile test using SHIMADZU AG-X 50KN universal testing machine; three parallel tensile tests per condition",
+          "source": {
+            "reason": "Details of the tensile testing setup and repeatability.",
+            "block_id": [
+              "b0015"
+            ]
+          }
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "Optical microscopy of the 10% cold-rolled sample.",
+        "block_id": [
+          "b0016",
+          "b0023",
+          "figure_003"
+        ]
+      },
+      "characterization_id": "char_cr10_om",
+      "microstructure_id": "micro_cr10_matrix",
+      "technique": {
+        "value": "optical microscopy (OM)",
+        "source": {
+          "reason": "Microstructure evolution was investigated by optical microscopy on the longitudinal section.",
+          "block_id": [
+            "b0016"
+          ]
+        }
+      },
+      "instrument_or_setup": {
+        "value": "electrolytically polished then etched with 1 g ferric chloride + 10 ml hydrochloric acid + 10 ml deionized water; longitudinal section RD×ND",
+        "source": {
+          "reason": "Sample preparation for OM described in the experimental procedure.",
+          "block_id": [
+            "b0016"
+          ]
+        }
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "observe and characterize the cold-rolled microstructure morphology of the 10% reduction sample (Fig. 3(a))",
+        "source": {
+          "reason": "Fig. 3(a) shows the optical micrograph of the 10% cold-rolled structure.",
+          "block_id": [
+            "b0023",
+            "b0031",
+            "figure_003"
+          ]
+        }
+      },
+      "key_findings": {
+        "value": "10% reduction: equiaxed grains crossed by sets of fine, straight, parallel slip bands whose spacing differs from grain to grain, indicating inhomogeneous deformation more pronounced in favorably oriented grains.",
+        "source": {
+          "reason": "Fig. 3(a) and associated text describe the 10% rolled optical microstructure.",
+          "block_id": [
+            "b0023",
+            "b0031",
+            "figure_003"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "TEM characterization of the 10% cold-rolled sample.",
+        "block_id": [
+          "b0016",
+          "b0024",
+          "b0032",
+          "figure_004"
+        ]
+      },
+      "characterization_id": "char_cr10_tem",
+      "microstructure_id": "micro_cr10_matrix",
+      "technique": {
+        "value": "transmission electron microscopy (TEM)",
+        "source": {
+          "reason": "TEM was used to investigate the microstructure evolution in detail (Fig. 4-6).",
+          "block_id": [
+            "b0016",
+            "b0024"
+          ]
+        }
+      },
+      "instrument_or_setup": {
+        "value": "JEOL 2100 transmission electron microscope; specimens prepared by twin jet electro-polishing with 30% nitric acid + 70% methyl alcohol",
+        "source": {
+          "reason": "TEM instrument and specimen preparation described in the experimental procedure.",
+          "block_id": [
+            "b0016"
+          ]
+        }
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "detailed investigation of the Taylor-lattice / slip-band substructure of the 10% rolled sample (Fig. 4(a))",
+        "source": {
+          "reason": "Fig. 4 shows TEM bright-field images of 10% and 30% cold-rolled samples.",
+          "block_id": [
+            "b0024",
+            "b0032",
+            "figure_004"
+          ]
+        }
+      },
+      "key_findings": {
+        "value": "The Taylor lattice consists of multiple slip bands; dislocations in the slip bands are approximately parallel and dislocation pile-ups occur at the intersections of the slip bands (green arrows, Fig. 4(a)).",
+        "source": {
+          "reason": "Description of the 10% rolled Taylor-lattice structure in Fig. 4(a).",
+          "block_id": [
+            "b0024",
+            "figure_004"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "XRD texture characterization covering the 10% cold-rolled sample.",
+        "block_id": [
+          "b0017",
+          "b0029",
+          "figure_008"
+        ]
+      },
+      "characterization_id": "char_cr10_xrd_texture",
+      "microstructure_id": null,
+      "technique": {
+        "value": "X-ray diffraction (XRD) texture analysis",
+        "source": {
+          "reason": "Texture evolution was characterized by XRD.",
+          "block_id": [
+            "b0017"
+          ]
+        }
+      },
+      "instrument_or_setup": {
+        "value": "Rigaku D/MAX 2500PC x-ray diffractometer; incomplete pole figures {111}, {200}, {220} measured on the RD×TD plane; ODF and f_max calculated by the Arbitrarily Defined Cells method",
+        "source": {
+          "reason": "Texture measurement setup described in the experimental procedure.",
+          "block_id": [
+            "b0017"
+          ]
+        }
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "characterize the texture evolution with cold rolling reduction (10% column of Fig. 8)",
+        "source": {
+          "reason": "ODF sections including the 10% reduction condition are shown in Fig. 8.",
+          "block_id": [
+            "b0029",
+            "b0052",
+            "figure_008"
+          ]
+        }
+      },
+      "key_findings": {
+        "value": "The overall texture intensity of the steel is weak; the initial texture is almost random. The α-fiber increases monotonically with rolling reduction while the Cu {112}<111> and S components increase at low-to-medium reductions before decreasing.",
+        "source": {
+          "reason": "General texture findings that include the 10% reduction condition.",
+          "block_id": [
+            "b0029",
+            "b0030",
+            "b0051"
+          ]
+        }
+      }
+    }
+  ],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "Analytical model using Eq. (1) for the critical shear stress of deformation twinning; relevant background to the cold-rolling deformation of this steel (alloy-level calculation).",
+        "block_id": [
+          "b0043",
+          "b0044",
+          "b0045"
+        ]
+      },
+      "computation_id": "comp_cr10_tau_c",
+      "simulation_method": {
+        "value": "analytical calculation of the critical shear stress for deformation twinning",
+        "source": {
+          "reason": "The critical shear stress for twinning is evaluated by an analytical equation.",
+          "block_id": [
+            "b0043",
+            "b0045"
+          ]
+        }
+      },
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": {
+        "value": "Calculated critical stress ~1.48 GPa is much higher than the maximum resolved shear stress ~0.75 GPa, yet twinning is observed; attributed to SRO-dislocation interaction and local stress concentration.",
+        "source": {
+          "reason": "Compares the calculated critical stress with the observed maximum resolved shear stress and explains twinning activation.",
+          "block_id": [
+            "b0045"
+          ]
+        }
+      },
+      "analytical_models": [
+        {
+          "source": {
+            "reason": "Analytical twinning-critical-stress model presented in the discussion.",
+            "block_id": [
+              "b0043",
+              "b0044",
+              "b0045"
+            ]
+          },
+          "model_name": {
+            "value": "critical shear stress for deformation twinning",
+            "source": {
+              "reason": "Equation (1) gives the critical shear stress for twinning.",
+              "block_id": [
+                "b0044"
+              ]
+            }
+          },
+          "equation_role": {
+            "value": "τ_c = 2γ_SF / b_p",
+            "source": {
+              "reason": "Eq. (1) relates critical shear stress to the stacking fault energy and the Burgers vector of a partial dislocation.",
+              "block_id": [
+                "b0044"
+              ]
+            }
+          },
+          "parameters": [
+            {
+              "source": {
+                "reason": "SFE of the current steel estimated as ~108 mJ/m².",
+                "block_id": [
+                  "b0045",
+                  "b0007"
+                ]
+              },
+              "name": {
+                "value": "γ_SF (stacking fault energy)",
+                "source": {
+                  "reason": "SFE of the steel used in the equation.",
+                  "block_id": [
+                    "b0045",
+                    "b0007"
+                  ]
+                }
+              },
+              "value": {
+                "value": "~108"
+              },
+              "unit": {
+                "value": "mJ/m²"
+              }
+            },
+            {
+              "source": {
+                "reason": "b_p estimated as 0.146 nm.",
+                "block_id": [
+                  "b0045"
+                ]
+              },
+              "name": {
+                "value": "b_p (Burgers vector of a partial dislocation)",
+                "source": {
+                  "reason": "Burgers vector of a partial dislocation used in the equation.",
+                  "block_id": [
+                    "b0045"
+                  ]
+                }
+              },
+              "value": {
+                "value": "0.146"
+              },
+              "unit": {
+                "value": "nm"
+              }
+            },
+            {
+              "source": {
+                "reason": "Critical stress calculated as ~1.48 GPa.",
+                "block_id": [
+                  "b0045"
+                ]
+              },
+              "name": {
+                "value": "τ_c (critical shear stress)",
+                "source": {
+                  "reason": "The calculated critical stress result.",
+                  "block_id": [
+                    "b0045"
+                  ]
+                }
+              },
+              "value": {
+                "value": "~1.48"
+              },
+              "unit": {
+                "value": "GPa"
+              }
+            }
+          ],
+          "model_note": {
+            "value": "SFE (~108 mJ/m²) and b_p (0.146 nm) are alloy-level values; the calculation concerns the twinning mechanism relevant to cold rolling of this steel.",
+            "source": {
+              "reason": "Notes that the parameters come from the alloy and about the mechanism context.",
+              "block_id": [
+                "b0045",
+                "b0007"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The 10% cold-rolled sample lies in stage I (10%–50% rolling reduction) of the two-stage microstructure evolution and is characterized as a Taylor-lattice-type low energy dislocation structure (LEDS) arising from planar dislocation glide (b0023).",
+    "For the 10% rolled condition the tensile properties are only shown as the 10% curve in Fig. 1; no numeric yield strength, ultimate tensile strength or elongation values are reported in the text for this specific sample (b0020, figure_001).",
+    "The strengthening mechanism of the steel at low rolling reduction (10–30%) is the refinement of the slip-band spacing (b0065).",
+    "The stacking fault energy of the steel is ~108 mJ/m² and the Burgers vector of a partial dislocation is 0.146 nm (alloy-level values) (b0007, b0045)."
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-8.5al-1c-1.2si__slow-cooling-air-furnace",
+      "paper_id": "10.1002_srin.202200191",
+      "alloy_id": "alloy_fe-28mn-8.5al-1c-1.2si",
+      "process_id": "proc_slow-cooling-air-furnace",
+      "sample_label": null,
+      "aliases": [
+        "slow cooled Fe–28Mn–8.5Al–1C–1.2Si steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "This sample corresponds to the slow-cooling (air/furnace cooling) condition of Fe–28Mn–8.5Al–1C–1.2Si low-density steel described in b0045.",
+        "block_id": [
+          "b0045"
+        ]
+      },
+      "processing_step_id": "step_slow_cooling",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "slow cooling (air/furnace cooling)",
+        "source": {
+          "reason": "b0045 states that air/furnace cooling is used for the slow cooling purpose, corresponding to this sample's process.",
+          "block_id": [
+            "b0045"
+          ]
+        }
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": {
+        "value": "air/furnace cooling",
+        "source": {
+          "reason": "b0045 identifies air/furnace cooling as the slow cooling route.",
+          "block_id": [
+            "b0045"
+          ]
+        }
+      },
+      "heating_or_cooling_rate": {
+        "value": "slower than -4.4 °C h⁻¹",
+        "source": {
+          "reason": "b0045 states that the κ phase decomposes from the austenite matrix of Fe–28Mn–8.5Al–1C–1.2Si low-density steel when the cooling rate is slower than -4.4 °C h⁻¹; figure_003 plots the -4.4 C/h boundary.",
+          "block_id": [
+            "b0045",
+            "figure_003"
+          ]
+        }
+      },
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Controlling the cooling rate (air-assisted spraying for fast cooling, or air/furnace cooling for slow cooling) allows prediction of austenite structure decomposition and κ precipitation for improvement of mechanical properties.",
+        "source": {
+          "reason": "b0045 explains that with control of cooling rate the austenite decomposition and κ precipitation can be predicted and used to improve mechanical properties.",
+          "block_id": [
+            "b0045"
+          ]
+        }
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "Structure information for the slow-cooled Fe–28Mn–8.5Al–1C–1.2Si sample is taken from the γ-decomposition description in b0045 and the TTT diagram in figure_003.",
+        "block_id": [
+          "b0045",
+          "figure_003"
+        ]
+      },
+      "structure_id": "structure_slow_cooled",
+      "overall_structure": {
+        "value": "Slow cooling of Fe–28Mn–8.5Al–1C–1.2Si austenite below about -4.4 °C/h causes γ decomposition with κ-carbide precipitation; the slow-cooling fields in the TTT diagram include γ+κ*, γ+κ*+α(E2/DO3), γ+κ+B2/DO3, and γ+κ+κ*+α(B2/DO3).",
+        "source": {
+          "reason": "figure_003 slow-cooling fields and b0045 text describe γ decomposition and κ precipitation from the austenite matrix of Fe–28Mn–8.5Al–1C–1.2Si under slow cooling.",
+          "block_id": [
+            "b0045",
+            "figure_003"
+          ]
+        }
+      },
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "This microstructure corresponds to the slow-cooled decomposition structure of Fe–28Mn–8.5Al–1C–1.2Si shown in figure_003 and described in b0045.",
+            "block_id": [
+              "b0045",
+              "figure_003"
+            ]
+          },
+          "microstructure_id": "micro_slow_cooled",
+          "region": null,
+          "related_sequence": {
+            "value": "1"
+          },
+          "phases_present": [
+            {
+              "phase_name": {
+                "value": "γ (austenite)",
+                "source": {
+                  "reason": "b0045 refers to the austenite matrix of Fe–28Mn–8.5Al–1C–1.2Si low-density steel.",
+                  "block_id": [
+                    "b0045"
+                  ]
+                }
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": {
+                "value": "matrix",
+                "source": {
+                  "reason": "b0045 describes the γ phase as the austenite matrix.",
+                  "block_id": [
+                    "b0045"
+                  ]
+                }
+              },
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": {
+                "value": "κ (kappa carbide)",
+                "source": {
+                  "reason": "b0045 states that κ precipitation occurs in high Al-containing steel (≥7 wt%) and figure_003 shows κ-containing fields for this alloy.",
+                  "block_id": [
+                    "b0045",
+                    "figure_003"
+                  ]
+                }
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": {
+                "value": "precipitate",
+                "source": {
+                  "reason": "b0045 describes κ precipitation forming within austenite grains and along the grain boundary.",
+                  "block_id": [
+                    "b0045"
+                  ]
+                }
+              },
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": {
+                "value": "α (B2/DO3)",
+                "source": {
+                  "reason": "figure_003 slow-cooling fields include γ+κ*+α(E2/DO3), γ+κ+B2/DO3 and γ+κ+κ*+α(B2/DO3), indicating ordered α (B2/DO3) phase.",
+                  "block_id": [
+                    "figure_003"
+                  ]
+                }
+              },
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": null,
+          "precipitates": [
+            {
+              "precipitate_id": "precip_kappa",
+              "type": {
+                "value": "κ-carbide",
+                "source": {
+                  "reason": "b0045 states that κ precipitation occurs in high Al-containing steel (≥7 wt%), which applies to this 8.5 wt% Al alloy.",
+                  "block_id": [
+                    "b0045"
+                  ]
+                }
+              },
+              "size": null,
+              "distribution": {
+                "value": "within austenite grains and along the grain boundary",
+                "source": {
+                  "reason": "b0045 states that κ precipitations form within austenite grains and along the grain boundary.",
+                  "block_id": [
+                    "b0045"
+                  ]
+                }
+              },
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The κ phase decomposes from the austenite matrix of Fe–28Mn–8.5Al–1C–1.2Si low-density steel when the cooling rate is slower than -4.4 °C h⁻¹ (Figure 3; caption in b0048 typographically writes the last alloying element as 1.2S).",
+    "For this high-Al (≥7 wt% Al) Fe–28Mn–8.5Al–1C–1.2Si steel, κ precipitation (rather than Fe(Mn)C carbide, which occurs in low-Al <7 wt% steels) forms within austenite grains and along grain boundaries.",
+    "Figure 3 slow-cooling reaction fields for Fe–28Mn–8.5Al–1C–1.2Si include: γ+κ* (field 3), γ+κ*+α(E2/DO3) (field 4), γ+κ+B2/DO3 (field 5), and γ+κ+κ*+α(B2/DO3); fast-cooling fields are γ (field 1) and γ+κ' (field 2)."
+  ]
+}

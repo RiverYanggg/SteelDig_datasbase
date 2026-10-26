@@ -1,0 +1,2927 @@
+[
+    {
+        "type": "text",
+        "text": "Full length article",
+        "bbox": [
+            58,
+            182,
+            191,
+            197
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A novel training-free approach to efficiently extracting material microstructures via visual large model",
+        "text_level": 1,
+        "bbox": [
+            57,
+            206,
+            707,
+            248
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/09be6cde894927d03969c5bd762923ae058fd4d3583938fc0765da5e401a9057.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            838,
+            184,
+            887,
+            221
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Changtai Li <sup>a,b,1</sup> , Xu Han <sup>b,1</sup> , Chao Yao <sup>c,d,e</sup> , Yu Guo <sup>a</sup>, Zixin Li <sup>a</sup>, Lei Jiang <sup>a</sup>, Wei Liu <sup>b</sup>, Haiyou Huang <sup>a</sup> , Huadong Fu <sup>a,f,\\*</sup> , Xiaojuan Ban a,b,d,e,f,\\*",
+        "bbox": [
+            57,
+            261,
+            705,
+            296
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "<sup>a</sup> Beijing Advanced Innovation Center for Materials Genome Engineering, University of Science and Technology Beijing, 100083, Beijing, China",
+        "bbox": [
+            58,
+            303,
+            710,
+            316
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "<sup>b</sup> School of Intelligence Science and Technology, University of Science and Technology Beijing, 100083, Beijing, China",
+        "bbox": [
+            58,
+            315,
+            601,
+            326
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "<sup>c</sup> School of Computer and Communication Engineering, University of Science and Technology Beijing, 100083, Beijing, China",
+        "bbox": [
+            58,
+            326,
+            631,
+            337
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "<sup>d</sup> Beijing Key Laboratory of Big Data Innovation and Application for Skeletal Health Medical Care, 100083, Beijing, China",
+        "bbox": [
+            58,
+            336,
+            623,
+            348
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "<sup>e</sup> Key Laboratory of Advanced Materials and Devices for Post-Moore Chips, Ministry of Education, 100083, Beijing, China",
+        "bbox": [
+            58,
+            346,
+            621,
+            359
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "<sup>f</sup> Institute of Materials Intelligent Technology, Liaoning Academy of Materials, 110004, Shenyang, China",
+        "bbox": [
+            58,
+            356,
+            541,
+            370
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A R T I C L E I N F O",
+        "text_level": 2,
+        "bbox": [
+            58,
+            398,
+            196,
+            411
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Keywords: Material microstructure Image recognition Visual large model Deep learning",
+        "bbox": [
+            57,
+            422,
+            179,
+            479
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A B S T R A C T",
+        "text_level": 2,
+        "bbox": [
+            334,
+            398,
+            436,
+            411
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The precise quantitative description of material microstructures is essential for deeply exploring the relationship between material composition and property. This significant understanding efficiently enables composition design, process optimization, and property enhancement. Traditionally, the analysis of material microstructures has relied heavily on professional expertise. Even with machine /deep learning (ML/DL)-based analysis methods, substantial expert annotation is required for training, and the trained models often suffer from weak general izability and poor recognition of new images. This study proposed MatSAM (Materials Segment Anything Model), a novel training-free approach for efficient material microstructure extraction based on the Segment Anything Model (SAM), a type of visual large model (VLM). Integrating region marking and microscopy-adapted points, an automated point-based prompt strategy was developed to achieve accurate and efficient material microstructure recognition. Without any manual annotations, MatSAM precisely identified 11 kinds of metallic material mi crostructures obtained through various characterization methods. Compared to optimal conventional rule-based methods that do not involve a learning process (non-ML/DL), MatSAM achieved an average relative improve ment of 35.4 % in metrics combining the adjusted Rand index (ARI) and Intersection over Union (IoU), out performing the original SAM by an average of 13.9 %. On four public microstructure segmentation datasets, the IoU of MatSAM showed an average improvement of 7.5 % over corresponding specialist deep models requiring annotations. Meanwhile. MatSAM satisfied the generalization capability of a single model for various microstructures, including grain boundaries, phases, and defects. This approach significantly reduces the labor and computational costs of quantitatively characterizing material microstructures, further accelerating the devel opment of advanced materials.",
+        "bbox": [
+            332,
+            423,
+            939,
+            654
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. Introduction",
+        "text_level": 2,
+        "bbox": [
+            58,
+            689,
+            166,
+            702
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Having long been a central pursuit in materials science research, a clear relationship between composition, microstructure, and property is essential for material design, process optimization, and property enhancement [1–5]. Notably, the microstructure of materials acts as a critical link between composition and performance, providing deep in sights into material properties [6–8]. Various characterization techniques are employed to obtain images that describe material microstructural information, including optical microscopy (OM), scan ning electron microscopy (SEM), transmission electron microscopy (TEM), and X-ray computed tomography (XCT) [9,10].",
+        "bbox": [
+            57,
+            715,
+            487,
+            796
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            507,
+            689,
+            939,
+            742
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "However, the extraction of key microstructural information—both qualitative and quantitative—from various types of micrographs heavily depends on expert experience and demands huge human and compu tational resources [11]. An even greater concern is the inconsistency when different experts handle the same images, leading to a lack of general comparability. Furthermore, with the advancement of auto mated characterization equipment and experiment robots [12,13], the volume of micrographs requiring analysis has been growing exponen tially [14,15]. Therefore, developing standardized, highly accurate, and robust models for extracting microstructural information from massive images is essential [16]. Such models are expected to significantly accelerate the extraction of microstructures, thereby enabling more efficient optimization of material processes and properties.",
+        "bbox": [
+            507,
+            742,
+            939,
+            796
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_footnote",
+        "text": "1359-6454/© 2025 Acta Materialia Inc. Published by Elsevier Inc. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+        "bbox": [
+            55,
+            911,
+            939,
+            936
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Acta Materialia 290 (2025) 120962",
+        "bbox": [
+            400,
+            42,
+            596,
+            56
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "",
+        "bbox": [
+            58,
+            75,
+            161,
+            143
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Contents lists available at ScienceDirect",
+        "bbox": [
+            379,
+            75,
+            621,
+            89
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "ELSEVIER",
+        "bbox": [
+            60,
+            145,
+            161,
+            162
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Acta Materialia",
+        "bbox": [
+            416,
+            105,
+            584,
+            124
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "journal homepage: www.elsevier.com/locate/actamat",
+        "bbox": [
+            327,
+            145,
+            673,
+            160
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "STRUCTUR PROPERTIEActaMODENMaterialiaROCESSI",
+        "bbox": [
+            838,
+            66,
+            937,
+            158
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_footnote",
+        "text": "\\* Corresponding authors at: Beijing Advanced Innovation Center for Materials Genome Engineering, University of Science and Technology Beijing, 100083, Beijing, China.",
+        "bbox": [
+            58,
+            819,
+            939,
+            843
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_footnote",
+        "text": "E-mail addresses: hdfu@ustb.edu.cn (H. Fu), banxj@ustb.edu.cn (X. Ban).",
+        "bbox": [
+            70,
+            843,
+            478,
+            856
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_footnote",
+        "text": "<sup>1</sup> These authors contributed equally: Changtai Li, Xu Han.",
+        "bbox": [
+            68,
+            854,
+            393,
+            868
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_footnote",
+        "text": "https://doi.org/10.1016/j.actamat.2025.120962",
+        "bbox": [
+            58,
+            876,
+            327,
+            889
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_footnote",
+        "text": "Received 30 September 2024; Received in revised form 7 February 2025; Accepted 20 March 2025 Available online 21 March 2025",
+        "bbox": [
+            57,
+            887,
+            601,
+            911
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/a5e1fea8dd22a2b478c73b00c80dcd5ddb65d9eaf31d97759f8d34c0e60776ca.jpg",
+        "image_caption": [
+            "Fig. 1. Microscopy datasets used in this study. Different metallic materials are demonstrated. Based on structural features, the materials are classified into polycrystalline & single-phase, polycrystalline & multiphase, and single crystal & multiphase. The characterizing methods include OM, SEM, and XCT."
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            92,
+            66,
+            902,
+            366
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            57,
+            418,
+            487,
+            537
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In recent years, conventional rule-based and deep learning-based (DL-based) image processing techniques have been increasingly applied in microstructure recognition and analysis [11,17]. Conven tional rule-based algorithms, which are non-machine learning or deep learning (non-ML/DL), work well only on high-contrast micrographs with homogeneous compositions [18–20]. Oppositely, DL methods can recognize diverse and complex structures under inconsistent imaging protocols and conditions [6,21,22]. Nonetheless, annotating (or label ing) microstructure regions demands significant expertise and substan tial manpower, making it difficult to acquire a large volume of high-quality annotations for model training. Meanwhile, most existing DL approaches struggle to achieve universal and robust microstructure recognition, i.e., weak generalizability across different microscopy datasets [16]. Those specialist models often perform optimally on the datasets they are trained on, restricting their applicability to new images with varying scales, resolutions, and complexities. To reduce the need for annotations and enhance generalizability, pre-training (acquiring robust initial feature representations) on large-scale datasets followed by fine-tuning (fitting the target data domain) has been widely utilized [23] and applied for micrographs [16]. However, these approaches still require annotations to fine-tune the model and hardly handle unseen images. In a nutshell, typical DL methods [6], trained on specific mi crographs [24–26] or borrowing pre-training and fine-tuning paradigms [27], still exhibit limited transferability and generalization or in efficiency, making achieving optimal results across different materials, scales, and conditions difficult [28].",
+        "bbox": [
+            55,
+            537,
+            487,
+            878
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "More recently, visual large models (VLMs) have been profoundly reshaping the development of image analysis [29]. Segment Anything Model (SAM) has emerged as the first VLM for recognizing any object in any image, as reported in [30]. It was trained on an unprecedented large-scale dataset (SA-1B). Notably, SAM’s everything mode automat ically generates grid points as a prompt. It identifies all objects without human intervention, which has the potential to greatly assist in effi ciently recognizing microstructures of various materials. Unfortunately, despite SAM’s strong feature representation ability, it fails to identify microstructures plausibly, mainly due to SAM’s inherent bias toward natural images [31–33].",
+        "bbox": [
+            55,
+            878,
+            487,
+            931
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            507,
+            418,
+            939,
+            510
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "To respond to the above issues and focus on efficiently recognizing material microstructures, we propose MatSAM (Materials Segment Anything Model), a training-free approach built upon SAM, which flexibly and cost-effectively recognizes microstructures in poly crystalline or multiphase micrographs by injecting domain prior knowledge of structure and characterization into the model. In partic ular, besides the native grid point prompt, MatSAM employs a structureaware point generation to adaptively provide the prompt to guide the VLM in yielding expected recognition results. Of note, the generation and adaptation of prompt points are automated; when adapting to a batch of new micrographs, users only need to provide the image cate gory (polycrystalline or multiphase for grain boundary or phase extraction), instead of prompt points for each target object.",
+        "bbox": [
+            507,
+            510,
+            939,
+            682
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Further. we evaluated MatSAM's versatility and performance across 11 in-house and public microscopy datasets, including 5 polycrystalline and 6 multiphase datasets characterized by OM, SEM, or XCT. MatSAM, without training and annotations, demonstrated notable improvements over SAM, specialist DL models and rule-based methods, validating the effectiveness of our automated structure-aware prompt strategy. Consequently, these results highlight the potential of leveraging VLM with tailored optimization to reduce human labor in microstructural information extraction, accelerating the development of advanced materials.",
+        "bbox": [
+            507,
+            682,
+            939,
+            814
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2. Materials and methods",
+        "text_level": 2,
+        "bbox": [
+            509,
+            825,
+            685,
+            839
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.1. Microscopy datasets",
+        "text_level": 2,
+        "bbox": [
+            509,
+            853,
+            660,
+            866
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "We have collected and curated 11 materials microscopy datasets (see Fig. 1), five public (solid border), and six in-house (dashed border), to explore the recognition capability of MatSAM on different materials and microstructures (distinguished by three colors) under various imaging conditions. Each card includes an example image, the names of the material and dataset, the type of microstructure, and the real size and resolution of the micrograph. Polycrystalline & single phase, poly crystalline & multiphase, and single crystal & multiphase have blue, green, and light-yellow backgrounds, respectively. The micrographs in these 11 datasets were acquired using either OM. SEM, or XCT, and all in-house datasets have manual annotations. Specifically, images of pure irons (PI-1/2), stainless steel (SS), high-entropy alloy (HEA), and low carbon steel (LCS) [11] were captured using OM; images of dual-phase steels (DP590–1/2), nickel-based superalloys (NBS-1/2) [16], and ul trahigh carbon steel (UHCS) [11] were obtained using SEM; images of AlZn alloy (AZA) [25] were generated using XCT. To be noted, for public micrograph datasets—AZA [25], NBS-1/2 [16], and UHCS [11]—we used the attached test data. For another public dataset, LCS [11], where labels were not provided, part of the raw images was annotated for evaluation.",
+        "bbox": [
+            507,
+            878,
+            939,
+            931
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "C. Li et al.",
+        "bbox": [
+            58,
+            42,
+            110,
+            52
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "Acta Materialia 290 (2025) 120962",
+        "bbox": [
+            766,
+            42,
+            939,
+            54
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "2",
+        "bbox": [
+            492,
+            952,
+            505,
+            960
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/cab727915a00b400d2105d5bb7c619d88abe41973075f70a379eece83899f10e.jpg",
+        "image_caption": [
+            "Fig. 2. Illustration of visual differences between polycrystalline and multiphase micrographs."
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            95,
+            70,
+            899,
+            271
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/c06eee81e24a62b6c1c6985bf83838eea8e6fd510fedfb617e9d93397159579e.jpg",
+        "image_caption": [
+            "Fig. 3. Schematic of MatSAM for training-free microstructure recognition."
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            95,
+            321,
+            900,
+            578
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            55,
+            617,
+            487,
+            829
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "We elucidate the characteristics of two common material micrographs, i.e., polycrystalline images and multiphase images, exemplified in Fig. 2. The conspicuous difference between them stems from whether there are voids or gaps between multiple target objects. For a poly crystalline image, boundaries separate grains that adhere closely without voids between them, containing two classes - grain and its boundary with no background. For a multiphase image, gaps usually remain between phase regions that disperse across the whole image, consisting of multiple classes - different types of phases with back ground. Despite the above diversity, we deem they share a commonality: Regions of Interest (ROIs) can be effectively segmented as long as the prompt points abide by their features and distribution, which the pro posed structure-aware prompt point generation of MatSAM can uni versally provide.",
+        "bbox": [
+            55,
+            829,
+            487,
+            935
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            507,
+            617,
+            939,
+            697
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.2. Training-free MatSAM framework",
+        "text_level": 2,
+        "bbox": [
+            509,
+            712,
+            739,
+            726
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "We implemented MatSAM based on SAM [30] which was pre-trained on the largest segmentation dataset to date. SAM used a primary ar chitecture of an image encoder, a prompt encoder, and a segmentation mask decoder. Its emergent zero-shot capability and prompt engineering flexibility have created the conditions for training-free adaptation to various downstream tasks. Based on the pre-trained parameters of SAM and the orchestrated prompt strategy, MatSAM does not require extra training and human labeling; it processes a raw image input through the encoder, tokenizes a prompt, and combines the learned image feature with prompt embedding to output segmentation masks that extract material microstructures like grains, phases, precipitates, cracks, and so on. The schematic of MatSAM is shown in Fig. 3.",
+        "bbox": [
+            507,
+            738,
+            939,
+            897
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "MatSAM utilizes SAM’s cropping strategy to generate hierarchical crop boxes for multi-scale recognition. Each image is divided into mul tiple cropped regions of three different sizes: 1/1 (original size), 1/4, and $_ { 1 / 1 6 }$ of the image, with exact pixel sizes depending on the original resolution. To ensure that objects near the crop boundaries are adequately captured in neighboring crops, overlaps were applied across different crops, with a default overlap ratio of 0.5. The image encoder compresses the input image using a pre-trained Vision Transformer (ViT) [34], handling varying resolutions and outputting embeddings. The prompt encoder receives merged structure-aware prompt points and encodes the position information (mapping the prompt to feature embedding). Along with the prompt embedding, the image embedding is refined through self-attention (SA) and cross-attention (CA) in both prompt-to-image and image-to-prompt directions [35]. The mask decoder then upsamples the fused image embedding and, via a multi layer perceptron (MLP) and linear classifier, generates multiple candi date regions. To manage the resulting ambiguity, like SAM, candidate masks (up to three) are ranked by score, retaining those with the highest confidence, and Non-Maximum Suppression (NMS) is applied first within each cropped frame and then across all frames to produce the final, non-overlapping segmentation masks.",
+        "bbox": [
+            507,
+            897,
+            939,
+            936
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "C. Li et al.",
+        "bbox": [
+            58,
+            42,
+            112,
+            52
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "Acta Materialia 290 (2025) 120962",
+        "bbox": [
+            766,
+            42,
+            939,
+            54
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "3",
+        "bbox": [
+            494,
+            952,
+            505,
+            960
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "algorithm",
+        "code_caption": [],
+        "code_body": "<div class=\"mineru-algorithm\" style=\"white-space: pre-wrap; font-family:monospace;\">\nAlgorithm of structure-aware prompt point generation.\n\nInput: I, c, threshold (preset to 3 pixels)\nOutput: Points $_{merge}$ \n1: if c = 'polycrystalline' then\n2: Points $_{ROI}$  = Centroids (Canny (I))\n3: else if c = 'multiphase' then\n4: Points $_{ROI}$  = Centroids (OTSU (I))\n5: end if\n6: Points $_{grid}$  = Grid (I, Points $_{ROI}$ )\n7: Points $_{edge}$  = Edge (I, Points $_{grid}$ )\n8: Points $_{grid}$  ← Points $_{grid}$  + Points $_{edge}$ \n9: for each point $_{g}$  ∈ Points $_{grid}$  do\n10: for each point $_{R}$  ∈ Points $_{ROI}$  do\n11: if Distance (point $_{g}$ , point $_{R}$ ) &lt; threshold then\n12: Remove (point $_{g}$ )\n13: end if\n14: end for\n15: end for\n16: Points $_{merge}$  = Points $_{ROI}$  + Points $_{grid}$ \n17: return Points $_{merge}$\n</div>",
+        "bbox": [
+            58,
+            83,
+            485,
+            305
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            55,
+            322,
+            487,
+            562
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.3. Automated structure-aware prompt generation",
+        "text_level": 2,
+        "bbox": [
+            58,
+            578,
+            354,
+            593
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The native point prompt of SAM (everything mode) provided a fixed number of points $( \\mathbf { e } . \\mathbf { g } . , \\mathbf { a } 3 2 \\times 3 2$ grid of equally spaced points over the entire image), which was enough to consider all ROIs in a natural image. Nevertheless, directly using the strategy in microscopy resulted in massive unacceptable false masks, i.e., local mis-segmentation of grain",
+        "bbox": [
+            55,
+            604,
+            487,
+            672
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Table 1",
+        "text_level": 2,
+        "bbox": [
+            58,
+            687,
+            105,
+            698
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/da2600be0825802226dec287e783d4b25c767b2ed81fc724d0a3ff231e3d256c.jpg",
+        "table_caption": [
+            "Evaluation protocols of 11 public and in-house microscopy datasets."
+        ],
+        "table_footnote": [
+            "An upward arrow indicates that a higher value of the metric corresponds to better segmentation performance"
+        ],
+        "table_body": "<table><tr><td>Type</td><td>Name</td><td>Material</td><td>Resolution (pixels)</td><td>#</td><td>Metrics</td></tr><tr><td>grain</td><td>PI-1</td><td>pure iron</td><td> $1024 \\times 1024$ </td><td>59</td><td>ARI↑</td></tr><tr><td rowspan=\"4\">boundary</td><td>SS</td><td>stainless steel</td><td> $1024 \\times 1024$ </td><td>44</td><td>F1↑</td></tr><tr><td>HEA</td><td>high-entropy alloy</td><td> $1771 \\times 1061$ </td><td>38</td><td>Recall</td></tr><tr><td>PI-2</td><td>pure iron</td><td> $1280 \\times 960$ </td><td>12</td><td></td></tr><tr><td>LCS [11]</td><td>low carbon steel</td><td> $1360 \\times 600$ </td><td>16</td><td></td></tr><tr><td rowspan=\"9\">phase</td><td>NBS-1</td><td>Ni-based</td><td> $512 \\times 512$ </td><td>4</td><td>IoU↑</td></tr><tr><td>[16]</td><td>superalloy</td><td></td><td></td><td>F1↑</td></tr><tr><td>NBS-2</td><td>Ni-based</td><td> $512 \\times 512$ </td><td>5</td><td>Recall</td></tr><tr><td>[16]</td><td>superalloy</td><td></td><td></td><td></td></tr><tr><td>AZA [25]</td><td>AlZn alloy</td><td> $852 \\times 852$ </td><td>2</td><td></td></tr><tr><td>UHCS</td><td>ultrahigh</td><td> $645 \\times 475$ </td><td>5</td><td></td></tr><tr><td>[11]</td><td>carbon steel</td><td></td><td></td><td></td></tr><tr><td>DP590–1</td><td>dual-phase steel</td><td> $512 \\times 512$ </td><td>23</td><td></td></tr><tr><td>DP590–2</td><td>dual-phase steel</td><td> $1024 \\times 768$ </td><td>21</td><td></td></tr></table>",
+        "bbox": [
+            60,
+            712,
+            482,
+            907
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "or phase regions and loss of a considerable quantity of objects at the edge of the image. Therefore, improving the prompt strategy was considered to achieve the practical training-free purpose (without manual annota tion). Based on this motivation, we constructed a novel prompt strategy that enhanced point generation by tailoring it to microscopy with proper modification. The introduced structure-aware prompt point generation module provided centroid points for each potential target, thus auto mating the process of generating appropriate points. The workflow of the point generation (Generation of ROI points and Modulation of grid points below) is described in Algorithm 1, where I is the input microscopic image, c is the category (‘polycrystalline’ or ‘multiphase’), the threshold (preset to 3 pixels) is used to determine the distance be tween two points are too close, and $\\mathrm { P o i n t s } _ { \\mathrm { m e r g e } }$ comprises adjusted ROI and grid points.",
+        "bbox": [
+            507,
+            65,
+            939,
+            250
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Generation of ROI points. Rule-based image segmentation tech niques (Canny [18] or OTSU [19]) are employed to pre-segment the visually distinct target regions. For polycrystalline, the edge detection method (Canny) is used to extract the boundary of grains; for multiphase images, the threshold method (OTSU) is employed to extract phase re gions. Then, the separated connected domain regions are obtained using the OpenCV library [36], of which the centroid points serve as part of the input to prompt encoder. It should be noted that outlier small regions are removed to eliminate the influence of impurities in the image.",
+        "bbox": [
+            507,
+            250,
+            939,
+            369
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Modulation of grid points. Providing the model with opportune points is the prerequisite to segmenting the micrograph correctly. Thus, the grid points are generated to prevent missing regions that may be overlooked during ROI extraction. Specifically, the potential inaccuracies and incompleteness of pre-segmentation, particularly in regions with subtle grayscale differences, necessitate the addition of grid points to compensate for the omission of the centroid points produced by the conventional method. To reduce redundancy, the added grid points too close to the ROI points (<3 pixels) are removed, as detailed in lines 9–15 of the algorithm.",
+        "bbox": [
+            507,
+            369,
+            939,
+            501
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "In addition, a common issue is that the micrograph exhibits uneven quality caused by unstable light or imaging conditions (See SS and PI-2 images in Fig. 1). To address the problem and cover the ROIs near the edge of the image, MatSAM also generates more dense points in the edge regions (corresponding to $\\begin{array} { r } { \\mathrm { P o i n t s } _ { \\mathrm { e d g e } } = \\mathrm { E d } \\mathrm { g e } ( I , } \\end{array}$ $\\mathrm { P o i n t s } _ { \\mathrm { g r i d } } )$ in the algo rithm), enhancing the segmentation validity of incomplete objects at edges.",
+        "bbox": [
+            507,
+            501,
+            939,
+            593
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Aggregation of points. Fusing the ROI and grid points is straight forward to attain a set of more comprehensive locations. Here, we merge the Points and $\\mathrm { P o i n t s } _ { \\mathrm { g r i d } }$ set to form $\\mathrm { P o i n t s _ { m e r g e } , }$ containing all posi tion information. SAM’s points encoder is reused to map the coordinate into latent embeddings, concretely,",
+        "bbox": [
+            507,
+            593,
+            939,
+            659
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP _ {\\text { fused }} = \\varepsilon_ {\\text { point }} (\\text { Points } _ {\\text { merge }}),\\tag{1}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            509,
+            665,
+            665,
+            682
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where $P _ { \\mathrm { f u s e d } }$ is the points embedding of size $N _ { \\mathrm { p o i n t s } } \\times 2 5 6 ~ ( N _ { \\mathrm { p o i n t s } }$ is the number of the merged points) and $\\varepsilon _ { \\mathrm { p o i n t } }$ represents the points encoder. Hereto, the structure-aware prompt points are obtained through the designed automated strategy, considering most ROIs and imaging fac tors together.",
+        "bbox": [
+            507,
+            692,
+            939,
+            757
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.4. Evaluation protocols",
+        "text_level": 2,
+        "bbox": [
+            510,
+            778,
+            663,
+            791
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "As for evaluation, conventional rule-based methods, specialist DL models, and the original SAM were selected to compare to MatSAM. For polycrystalline images (PI-1, PI-2, SS, HEA, LCS), grain boundary masks were extracted from the segmented grain regions using a contourfinding approach, enabling the calculation of discrepancies between different methods and human labels. For multiphase images (DP590–1, DP590–2, NBS-1, NBS-2, AZA, UHCS), phase masks are directly segmented for comparisons. Importantly, MatSAM’s recognition results are all under the training-free condition.",
+        "bbox": [
+            507,
+            804,
+            939,
+            923
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The corresponding evaluation settings of 11 datasets are given in",
+        "bbox": [
+            529,
+            923,
+            939,
+            936
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "C. Li et al.",
+        "bbox": [
+            58,
+            42,
+            112,
+            54
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "Acta Materialia 290 (2025) 120962",
+        "bbox": [
+            766,
+            42,
+            939,
+            54
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "4",
+        "bbox": [
+            494,
+            952,
+            505,
+            960
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/6a6f8baf0f1e79c82953935b530300adc704b6db429cf97bd485d87edb04c64c.jpg",
+        "image_caption": [
+            "Fig. 4. Visual results of MatSAM and rule-based methods on polycrystalline microscopy."
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            95,
+            69,
+            902,
+            591
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Table 1, including input resolution, the main type of microstructure, the number of test images, and evaluation metrics. Four metrics are chosen to demonstrate the performance of recognition: adjusted Rand index (ARI, exclusive for polycrystalline images), Intersection over Union (IoU, exclusive for multiphase images), F1 score, and recall. Higher values of ARI, IoU, and F1 score indicate better recognition perfor mance. Note that all numerical results are given in “mean+SD” form.",
+        "bbox": [
+            57,
+            629,
+            487,
+            721
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "ARI [37], the corrected-for-chance version of the Rand index (RI), measures the degree to which instances are correctly clustered in a given set, accounting for random chance [38]. The RI, taking values in the range [0,1], is calculated as (TP+TN) / (TP+FP+FN+TN), where TP, TN, FP, and FN are the number of true positives, true negatives, false positives, and false negatives. and the ARI penalizes incorrect classifi cations more heavily than the RI does, namely,",
+        "bbox": [
+            55,
+            721,
+            487,
+            814
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{ARI} = (\\mathrm{RI} - E [ \\mathrm{RI} ]) / (\\max (\\mathrm{RI}) + E [ \\mathrm{RI} ]),\\tag{2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            58,
+            820,
+            280,
+            834
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "where E[RI] represents the expected value of the RI, the ARI assigns different weights to correct and incorrect classifications, with a range of [− 1,1]. Image segmentation can be viewed as clustering pixels into segments. In grain boundary segmentation, a class imbalance arises with fewer pixels in boundary regions compared to grains, while boundaries exhibit complex. irregular, and multi-branch structures. The clusterbased ARI metric evaluates segmentation accuracy by comparing clus tering results with ground truth, accounting for random clustering ef fects to ensure unbiased evaluation. This makes ARI well-suited for handling class imbalance and capturing complex topological structures in grain boundary segmentation [15,39]. A higher value indicates greater similarity between the segmentation results and the ground truth.",
+        "bbox": [
+            57,
+            844,
+            487,
+            925
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            507,
+            629,
+            939,
+            721
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "IoU [40] or Jaccard index evaluation metric is a commonly used metric for assessing the performance of object detection and image segmentation models, specifically,",
+        "bbox": [
+            507,
+            721,
+            939,
+            761
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{IoU} = \\mathrm{TP} / (\\mathrm{TP} + \\mathrm{FP} + \\mathrm{FN}),\\tag{3}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            509,
+            767,
+            668,
+            780
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "which measures the overlap between the predicted region of the model and the ground truth and is used to assess the model’s localization ac curacy for the target.",
+        "bbox": [
+            507,
+            791,
+            937,
+            831
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "We conducted extensive quantitative evaluations by comparing the metrics of different methods (ARI, IoU, F1, and Recall), as well as qualitative evaluations through visual comparisons, including over laying segmentation masks and error visualizations. Conventional methods–Canny [18], OTSU [19], and Watershed [41] are implemented for polycrystalline images, and OTSU and adaptive thresholding (Adaptive) [20] for multiphase images. Additionally, for public datasets, the recognition results of MatSAM are directly compared with those of corresponding specialist DL models. All the validation experiments are conducted on a single Nvidia RTX3090 24 GB GPU using the PyTorch 1.13.1 library [42].",
+        "bbox": [
+            507,
+            832,
+            939,
+            925
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "C. Li et al.",
+        "bbox": [
+            58,
+            42,
+            110,
+            52
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "Acta Materialia 290 (2025) 120962",
+        "bbox": [
+            766,
+            42,
+            939,
+            52
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "5",
+        "bbox": [
+            494,
+            952,
+            504,
+            960
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/764359842f1b0d76c4a5cce212968d45becd347fd21b1fbc9903246f670eaec8.jpg",
+        "table_caption": [
+            "Performance comparison of MatSAM and other methods on polycrystalline datasets."
+        ],
+        "table_footnote": [
+            "For the primary metric (ARI), bold and underlined values indicate the best and second-best results, respectively."
+        ],
+        "table_body": "<table><tr><td rowspan=\"2\">Dataset</td><td rowspan=\"2\">Metric</td><td colspan=\"5\">Method</td></tr><tr><td>MatSAM</td><td>SAM</td><td>Canny</td><td>OTSU</td><td>Watershed</td></tr><tr><td rowspan=\"3\">PI-1</td><td>ARI</td><td>0.62 (±2.4 %)</td><td>0.48(±0.8%)</td><td>0.52(±4.1%)</td><td>0.50(±3.8%)</td><td>0.44 (±4.7%)</td></tr><tr><td>F1</td><td>0.71(±1.6 %)</td><td>0.37(±0.5%)</td><td>0.64(±3.0%)</td><td>0.67(±2.9%)</td><td>0.56 (±3.2%)</td></tr><tr><td>Recall</td><td>0.71(±1.5 %)</td><td>0.86(±1.4%)</td><td>0.86(±3.8%)</td><td>0.79(±3.8%)</td><td>0.63 (±9.2%)</td></tr><tr><td rowspan=\"3\">SS</td><td>ARI</td><td>0.56 (±6.6 %)</td><td>0.54(±1.1%)</td><td>0.34(±7.2%)</td><td>0.23(±5.8%)</td><td>0.24 (±4.3%)</td></tr><tr><td>F1</td><td>0.65(±5.0 %)</td><td>0.66(±1.7%)</td><td>0.51(±7.9%)</td><td>0.46(±5.7%)</td><td>0.41 (±5.6%)</td></tr><tr><td>Recall</td><td>0.59(±6.0 %)</td><td>0.60(±5.5%)</td><td>0.41(±8.2%)</td><td>0.48(±7.9%)</td><td>0.33 (±6.6%)</td></tr><tr><td rowspan=\"3\">HEA</td><td>ARI</td><td>0.59 (±10.8%)</td><td>0.56(±6.0%)</td><td>0.35(±14.3%)</td><td>0.37(±13.3%)</td><td>0.29 (±10.8%)</td></tr><tr><td>F1</td><td>0.35(±11.1%)</td><td>0.52(±11.5%)</td><td>0.42(±13.3%)</td><td>0.41(±11.9%)</td><td>0.39(±10.4%)</td></tr><tr><td>Recall</td><td>0.24(±7.8 %)</td><td>0.43(±9.3%)</td><td>0.33(±10.4%)</td><td>0.34(±9.4%)</td><td>0.33 (±8.7%)</td></tr><tr><td rowspan=\"3\">PI-2</td><td>ARI</td><td>0.75 (±2.0 %)</td><td>0.69(±3.3%)</td><td>0.42(±8.2%)</td><td>0.19(±4.0%)</td><td>0.20 (±4.6%)</td></tr><tr><td>F1</td><td>0.82(±1.7 %)</td><td>0.80(±1.6%)</td><td>0.51(±7.9%)</td><td>0.29(±4.0%)</td><td>0.28 (±5.2%)</td></tr><tr><td>Recall</td><td>0.83(±1.8 %)</td><td>0.81(±1.3%)</td><td>0.45(±9.0%)</td><td>0.26(±5.8%)</td><td>0.24 (±6.5%)</td></tr><tr><td rowspan=\"3\">LCS[11]</td><td>ARI</td><td>0.96 (±3.7 %)</td><td>0.86(±9.8%)</td><td>0.73(±5.3%)</td><td>0.64(±4.3%)</td><td>0.54 (±4.6%)</td></tr><tr><td>F1</td><td>0.96(±3.2 %)</td><td>0.88(±0.7%)</td><td>0.77(±4.8%)</td><td>0.69(±4.3%)</td><td>0.61 (±4.8%)</td></tr><tr><td>Recall</td><td>0.97(±2.5 %)</td><td>0.88(±1.8%)</td><td>0.71(±6.4%)</td><td>0.72(±7.7%)</td><td>0.69 (±4.5%)</td></tr></table>",
+        "bbox": [
+            60,
+            104,
+            480,
+            629
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            58,
+            672,
+            487,
+            726
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3. Results",
+        "text_level": 2,
+        "bbox": [
+            58,
+            738,
+            132,
+            752
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.1. Training-free microstructure recognition",
+        "text_level": 2,
+        "bbox": [
+            58,
+            765,
+            319,
+            779
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.1.1. For polycrystalline microscopy datasets",
+        "text_level": 2,
+        "bbox": [
+            58,
+            791,
+            327,
+            804
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Polycrystalline images typically comprise tightly packed grains, whose boundaries are the target objects of the analysis [43]. As shown in Fig. 4, in some micrographs imaged via OMs, grayscale values vary little between adjacent grains and largely across regions (SS, HEA, and PI-2, see the first column). MatSAM, after receiving structure-aware points, the reasonable prior knowledge of the target regions to the model de livers more accurate and refined recognition results among five datasets (see the third column). On the other hand. threshold methods (OTSU) often suffer from grayscale variations (SS and PI-2, the fourth column).",
+        "bbox": [
+            57,
+            805,
+            487,
+            925
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Canny is less affected than threshold methods and can effectively detect most grain boundaries with instinct grayscale differences. However, it is significantly affected by blurred or incomplete grain boundaries (PI-1, SS, and HEA, the fifth column).",
+        "bbox": [
+            507,
+            65,
+            939,
+            118
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Table 2 presents the numerical results of the comparison of MatSAM and other methods, including the original SAM and other rule-based methods. Overall, MatSAM achieves the best ARI results across all five datasets, consistently outperforming SAM, which validates the effec tiveness of the automated structure-aware prompt strategy. Addition ally, MatSAM significantly outperforms other conventional methods, as expected.",
+        "bbox": [
+            507,
+            118,
+            939,
+            211
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "For PI-1, MatSAM achieves an ARI of 0.62 on 59 test images, out performing SAM (0.48) and Canny (the second best, 0.52). The SS dataset, collected under relatively non-ideal imaging conditions with more blurry regions, scratches, and impurities, poses a significant challenge. MatSAM achieves an ARI of 0.56 on 44 test images, out performing SAM (0.54) and Canny (0.34). For HEA micrographs, due to the limited field of view, each image is stitched from multiple smaller ones, resulting in visible horizontal or vertical stitching artifacts caused by brightness variations. Additionally, extensive non-closed grain boundaries and protruding cracks make segmentation particularly challenging. MatSAM achieves an ARI of 0.59, higher than SAM (0.56), and the best rule-based method, OTSU (0.37).",
+        "bbox": [
+            507,
+            211,
+            939,
+            368
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "On the PI-2 dataset, MatSAM achieves an ARI of 0.75, outperforming SAM (0.69) and Canny (0.42). Uneven lighting, as shown in the fourth row of Fig. 4, leads to fatal false recognition by OTSU and Watershed. For the public LCS dataset, which benefits from good imaging condi tions, MatSAM demonstrates the greatest accuracy, achieving an ARI of 0.96 on 16 test images, compared to SAM (0.86) and other recognition techniques by a large margin. From the visual recognition results, MatSAM not only segments almost all grains in the LCS (see the fifth row of Fig. 4) but also accurately identifies the vast majority of incomplete and blurred grain boundaries. Furthermore, despite the large variation in image resolution within this dataset, MatSAM consistently outputs satisfactory results, demonstrating its strong robustness. This robustness is believed to stem from the combination of structure-aware prior knowledge (provided by rule-based methods) and universal feature representations from SAM.",
+        "bbox": [
+            507,
+            369,
+            939,
+            567
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.1.2. For multiphase microscopy datasets",
+        "text_level": 2,
+        "bbox": [
+            510,
+            578,
+            759,
+            592
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Micrographs of multiphase microstructures contain one or multiple types of phases (the secondary phase, the precipitate, etc.). Unlike grain structures, the phase regions to be segmented do not typically fill the entire image but are irregularly distributed. Also, different phases have conspicuous differences in morphology, structure, and quantity, which can be used to distinguish them after getting the segmented masks.",
+        "bbox": [
+            507,
+            593,
+            939,
+            672
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Subjective differences between MatSAM and other methods are shown in Fig. 5. Since the threshold-based Adaptive method performed poorly and lacked reference value, it is not included in the figure. To provide a more comprehensive comparison, we have also included the edge detection results from the Canny and Watershed methods. Overall, the recognition results of MatSAM are the most consistent with the expert labels, significantly outperforming other rule-based methods. MatSAM is capable of effectively identifying phase regions of various sizes in images. For the NBS-2, DP590–2, and UHCS micrographs, MatSAM can most comprehensively identify the small regions in the images (various precipitate phases), whereas the OTSU method suffers from under-segmentation due to the minimal grayscale difference be tween the phase regions and the background.",
+        "bbox": [
+            507,
+            672,
+            939,
+            843
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "When it comes to AZA, the round circle boundary is unexpectedly detected by methods such as OTSU, Canny, and Watershed. Thi discrepancy can be attributed to the nature of these algorithms. Canny and Watershed, as edge detection methods, are highly sensitive to abrupt intensity changes, making them prone to identifying the circle’s strongly contrasting boundary as a meaningful edge. Similarly, OTSU, due to the circle’s low gray value, likely includes the boundary as part of the foreground during thresholding. Without post-processing to remove noise, these methods tend to over-segment the image. In contrast, MatSAM focuses on identifying meaningful regions rather than abrupt edges, leading to the suppression of this boundary.",
+        "bbox": [
+            507,
+            843,
+            939,
+            936
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "C. Li et al.",
+        "bbox": [
+            58,
+            42,
+            110,
+            54
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "Acta Materialia 290 (2025) 120962",
+        "bbox": [
+            766,
+            42,
+            939,
+            54
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "page_number",
+        "text": "6",
+        "bbox": [
+            494,
+            952,
+            504,
+            960
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/090165c68032a7e0f79db7af96005fc839e7cc3b985e2dc1bea0aace5820a0ca.jpg",
+        "image_caption": [
+            "Fig. 5. Visual results of MatSAM and rule-based methods on multiphase microscopy."
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            95,
+            69,
+            902,
+            486
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            57,
+            525,
+            487,
+            578
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Table 3 shows the numerical segmentation results on multiphase microscopy datasets, comparing MatSAM and other methods. On the two dual-phase steel datasets (DP590–1 and DP590–2), martensite precipitates formed during cold and hot rolling are the targets of inter est. For the DP590–1 dataset, it consists of 23 hot-rolled martensitic precipitate images with relatively low definition. The precipitates exhibit low gray values and are contoured by black boundaries, with most appearing more blurred compared to the cold-rolled DP590–2 dataset (see Fig. 1), making them more difficult to distinguish. Among conventional methods, OTSU achieves an IoU of 0.64, while SAM ach ieves an IoU of 0.75. However, both results are significantly lower than MatSAM’s IoU of 0.77, which is 13.0 % higher than OTSU and out performs SAM by 2.0 %. For the DP590–2 dataset, martensite pre cipitates appear as light white streaks in the images. The IoU between MatSAM-segmented masks and annotations is 0.82, which is observ ably higher than the SAM method (0.68) and the OTSU threshold method (0.66).",
+        "bbox": [
+            55,
+            578,
+            487,
+            803
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.1.3. For public microscopy datasets",
+        "text_level": 2,
+        "bbox": [
+            58,
+            815,
+            280,
+            828
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "To validate the zero-shot generalizability of MatSAM across broader scenarios, we performed comparative experiments with conventional approaches and specialist models on 4 materials microscopy test data sets released by previous works, including NBS-1 and NBS-2 (corre sponding to Super-2 and Super-4 in the original article) [16], AZA [25], and UHCS [11]. The quantitative results are given in Table 3. LCS [11] is analyzed qualitatively in Fig. 6 due to the lack of released labels. As shown in Table 3, compared to specialist models, MatSAM acquired the best results on three datasets—NBS-1, NBS-2, and UHCS—and ranked second on AZA, slightly lower than the specialist method.",
+        "bbox": [
+            55,
+            828,
+            487,
+            934
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            507,
+            525,
+            939,
+            551
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "NBS-1 and NBS-2 contain multiple precipitates of significantly different sizes. The tertiary precipitates are particularly small and blurry, making recognition challenging. MatSAM achieves an IoU of 0.91 on NBS-1, outperforming SAM (0.85) and the specialist model (0.77); it also scores 0.82 on NBS-2, 3.0 % higher than the specialist model. Regular matrix and secondary precipitates are well recognized with few phase contour distortions. For smaller and blurred tertiary precipitates with low contrast, MatSAM also exhibits better perfor mance, as shown in the first column of Fig. 6 (yellow arrows highlight regions where MatSAM correctly segments areas that the original method under-segments). When tested on unseen images without fine tuning, the recognition performance of the specialist model dropped significantly. In contrast, when handling the same diverse unseen im ages, MatSAM can surpass their results without additional training, underscoring its superior efficiency and adaptability.",
+        "bbox": [
+            507,
+            551,
+            939,
+            749
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "AZA comprises two XCT (X-ray computed tomography) images of AlZn dendrite, with the dark precipitate phase in the foreground, located in the center of the circular region to be segmented. For this simple task, dendrites are accurately extracted (see the second column of Fig. 6), achieving an IoU of 0.96, which approaches 0.97 of the corresponding specialist model trained on over 1000 annotated image samples. Be sides, for the UHCS dataset, which contains numerous light-colored precipitates (spheroidite particles) uniformly distributed on the top surface of a rough alloy crack, MatSAM attains 0.76, outperforming the specialist model by 5.0 %, with the vast majority of cementite particles correctly identified and segmented. Due to the complex background and large grayscale differences, SAM, OTSU, and Adaptive methods perform poorly on this dataset, with IoU scores of 0.58, 0.56, and 0.46, respec tively. Additionally, for polycrystalline images of LCS (the fourth column of Fig. 6), MatSAM demonstrates a comparable recognition performance to the original method without human intervention.",
+        "bbox": [
+            507,
+            749,
+            939,
+            935
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "C. Li et al.",
+        "bbox": [
+            58,
+            42,
+            110,
+            52
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "Acta Materialia 290 (2025) 120962",
+        "bbox": [
+            766,
+            42,
+            939,
+            52
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "page_number",
+        "text": "7",
+        "bbox": [
+            494,
+            952,
+            505,
+            960
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/05ff4dde4656e253f3acda0c4e97fd906c0d55c7ed1b911913ff670316f8a4e8.jpg",
+        "table_caption": [
+            "Performance comparison of MatSAM and other methods on in-house and public and multiphase datasets."
+        ],
+        "table_footnote": [
+            "For the primary metric (IoU), bold and underlined values indicate the best and second-best results, respectively."
+        ],
+        "table_body": "<table><tr><td rowspan=\"2\">Dataset</td><td rowspan=\"2\">Metric</td><td colspan=\"5\">Method</td></tr><tr><td>MatSAM</td><td>SAM</td><td>OTSU</td><td>Adaptive</td><td>Specialist method</td></tr><tr><td rowspan=\"3\">DP590-1</td><td>IoU</td><td>0.77 (±8.2 %)</td><td>0.75(±13.4%)</td><td>0.64(±9.7%)</td><td>0.48(±5.3 %)</td><td>/</td></tr><tr><td>F1</td><td>0.79(±8.3%)</td><td>0.85(±9.2%)</td><td>0.68(±11.3%)</td><td>0.49(±8.9 %)</td><td>/</td></tr><tr><td>Recall</td><td>0.81(±14.7%)</td><td>0.66(±26.0%)</td><td>0.91(±8.6%)</td><td>0.65(±10.0%)</td><td>/</td></tr><tr><td rowspan=\"3\">DP590-2</td><td>IoU</td><td>0.82 (±3.1 %)</td><td>0.68(±6.7%)</td><td>0.66(±1.3%)</td><td>0.28(±0.9%)</td><td>/</td></tr><tr><td>F1</td><td>0.84(±3.2%)</td><td>0.81(±4.8%)</td><td>0.66(±2.0%)</td><td>0.17(±2.1 %)</td><td>/</td></tr><tr><td>Recall</td><td>0.80(±4.9%)</td><td>0.81(±2.1%)</td><td>0.58(±2.7%)</td><td>0.22(±1.9 %)</td><td>/</td></tr><tr><td rowspan=\"3\">NBS-1[16]</td><td>IoU</td><td>0.91 (±1.2 %)</td><td>0.85(±7.6%)</td><td>0.75(±3.2%)</td><td>0.45(±1.6 %)</td><td>0.77</td></tr><tr><td>F1</td><td>0.96(±0.4%)</td><td>0.91(±4.6%)</td><td>0.86(±3.6%)</td><td>0.52(±1.9 %)</td><td>-</td></tr><tr><td>Recall</td><td>0.94(±0.4%)</td><td>0.89(±6.5%)</td><td>0.87(±8.4%)</td><td>0.38(±1.9%)</td><td>-</td></tr><tr><td rowspan=\"3\">NBS-2[16]</td><td>IoU</td><td>0.82 (±6.3 %)</td><td>0.81(±6.1%)</td><td>0.67(±14.1%)</td><td>0.52(±9.2 %)</td><td>0.79</td></tr><tr><td>F1</td><td>0.89(±4.9%)</td><td>0.90(±3.8%)</td><td>0.80(±9.4%)</td><td>0.62(±9.8%)</td><td>-</td></tr><tr><td>Recall</td><td>0.84(±8.8%)</td><td>0.84(±9.0%)</td><td>0.79(±7.8%)</td><td>0.53(±10.8%)</td><td>-</td></tr><tr><td rowspan=\"3\">AZA[25]</td><td>IoU</td><td>0.96(±0.6%)</td><td>0.73(±6.8%)</td><td>0.89(±1.2%)</td><td>0.61(±2.3%)</td><td>0.97</td></tr><tr><td>F1</td><td>0.96(±0.5%)</td><td>0.84(±4.5%)</td><td>0.88(±1.7%)</td><td>0.48(±5.8 %)</td><td>-</td></tr><tr><td>Recall</td><td>0.96(±0.9%)</td><td>0.96(±0.5%)</td><td>0.97(±0.1%)</td><td>0.76(±3.2%)</td><td>-</td></tr><tr><td rowspan=\"3\">UHCS[11]</td><td>IoU</td><td>0.76 (±0.7 %)</td><td>0.58(±8.2%)</td><td>0.56(±3.1%)</td><td>0.46(±3.5%)</td><td>0.71</td></tr><tr><td>F1</td><td>0.75(±0.9%)</td><td>0.73(±6.6%)</td><td>0.72(±2.5%)</td><td>0.43(±5.6%)</td><td>-</td></tr><tr><td>Recall</td><td>0.78(±2.7%)</td><td>0.77(±3.3%)</td><td>0.59(±3.2%)</td><td>0.93(±1.3 %)</td><td>0.88</td></tr></table>",
+        "bbox": [
+            60,
+            104,
+            482,
+            737
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            58,
+            781,
+            485,
+            808
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.2. Microstructure recognition in complex scenarios",
+        "text_level": 2,
+        "bbox": [
+            58,
+            831,
+            364,
+            844
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "While validating MatSAM’s capabilities, we observed that even in challenging scenarios involving complex, variable, and difficult-to interpret micrographs, MatSAM consistently provided reasonable out puts. This effectiveness is illustrated through examples from poly crystalline and multiphase images (See Fig. 7).",
+        "bbox": [
+            58,
+            857,
+            487,
+            923
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The common issue for grains in the images is that incompleteness o non-closing occurs on the boundary, as marked on the left in Fig. 7, often due to uneven or incomplete etching during the preparation process. Most untailored approaches underperform in the situation, causing under-segmentation and further affecting statistical fidelity. By contrast, MatSAM mitigates this problem, as exemplified in (b); the grain boundaries in the region indicated by the arrow are nearly invisible, yet MatSAM can still infer the missing parts. We believe this is due to SAM’s extensive pre-training on a vast number of images, which has enabled it to effectively capture the characteristics and patterns of such imaging. Combined with the optimized point prompt in MatSAM, it can detect that a corresponding boundary should exist in this region based on the pixel distribution surrounding the area. Also, in (d), some boundaries are hard to tell at the grain interfaces. Nevertheless, MatSAM captures and reasonably recognizes the subtle changes near the boundaries, demonstrating the flexibility of MatSAM when handling this pervasive and troublesome challenge.",
+        "bbox": [
+            78,
+            923,
+            487,
+            936
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            507,
+            66,
+            939,
+            277
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "For multiphase images from (e) to (h), with phase regions containing tiny holes (e), target phase boundaries intermingled with surrounding areas (f), precipitate sizes differing amongst large, medium, and small (g), and small-sized particles scattered throughout the image (h), Mat SAM ideally identifies the difficult areas. The designed structure-aware prompt strategy enables MatSAM to recognize target regions of varying sizes without labeling accurately. This capability is highly beneficial for automated phase detection and quantitative analysis.",
+        "bbox": [
+            507,
+            277,
+            939,
+            383
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4. Discussion",
+        "text_level": 2,
+        "bbox": [
+            510,
+            395,
+            605,
+            409
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.1. Effectiveness of MatSAM",
+        "text_level": 2,
+        "bbox": [
+            510,
+            422,
+            687,
+            436
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "SAM [30] excels at extracting general features due to extensive pre-training but exhibits suboptimal performance on micrographs, where grayscale variations dominate. Besides, SAM’s foreground bias, which stems from pre-training on sparse distinct targets within natural scene images [31], does not align with the imaging features of micro scopy. While SAM performs well with human-provided prompts, its ef ficiency diminishes for large-scale tasks. MatSAM addresses these challenges and transfers the general capability of SAM to microscopy scenarios by automating prompt point generation. Using rule-based methods and optimizing grid points to guide the mask decoder effec tively, our approach thereby better handles various micrographs better.",
+        "bbox": [
+            507,
+            448,
+            939,
+            593
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "To evaluate the effectiveness of the automated structure-aware prompt strategy, we conducted comparative validation experiments against the original SAM method on representative SEM and XCT images from DP590–2 and AZA datasets, respectively. Three common types of noise frequently encountered in microscopic images—salt-and-pepper (S&P) noise, speckle noise, and Gaussian noise—were selected [44,45] and introduced into the images using the random noise generation function from the sci-kit image [46] library. The robustness of MatSAM compared to SAM was further investigated under varying levels of these noise types. Fig. 8 presents the comparative results of two microscopic images with varying levels of S&P noise processed by each method (details for the other two types of noise are provided in Supplementary Note 1). The noise levels were adjusted by the variance (Var. = 0.01, 0.05, 0.1, 0.2).",
+        "bbox": [
+            507,
+            593,
+            939,
+            778
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Overall, MatSAM demonstrates better recognition accuracy (both subjective and objective) on images with varying levels of noise compared to SAM, identifying more target regions. Additionally, the introduction of noise exacerbates the uncertainty of both methods in recognizing prominent regions within the images. The boundaries of the target regions become increasingly blurred and more easily confused with the background, which has a more detrimental impact on micro scopic images—characterized by inherently lower contrast compared to natural scene images. MatSAM’s IoU on DP590–2 images decreases from 0.822 to 0.549 (SAM drops from 0.768 to 0.485), while on AZA images, the IoU declines from 0.946 to 0.815 (SAM drops from 0.903 to 0.776). As noise intensity increases, under-segmentation gradually becomes the dominant type of error, leading to a significant decline in accuracy for both methods. These results highlight the challenge of noise in micro scopic image segmentation and demonstrate MatSAM’s relative robustness in maintaining higher accuracy compared to SAM.",
+        "bbox": [
+            507,
+            778,
+            939,
+            938
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "C. Li et al.",
+        "bbox": [
+            58,
+            42,
+            110,
+            54
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "Acta Materialia 290 (2025) 120962",
+        "bbox": [
+            766,
+            42,
+            939,
+            54
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "page_number",
+        "text": "8",
+        "bbox": [
+            494,
+            952,
+            504,
+            960
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/4f2269e41bad4ca02cf3ba787e26a077ff5f13dbe49ed2cc84b400c54f84d0fc.jpg",
+        "image_caption": [
+            "Fig. 6. Visual results of MatSAM and other specialist models. The first row shows open-sourced images: (a) NBS-2 [16], (b) AZA [25], (c) UHCS [11], and (d) LCS [11]. The second row displays the results of MatSAM, while the third row presents the results from data-specific models (the mask images are cropped from the raw figures in their respective articles). We adopt the color styles from each article: for the results of (a) and (b), pink and blue represent under- and over-segmentation, respectively; for (c), pink areas are the masks."
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            121,
+            66,
+            882,
+            466
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            55,
+            542,
+            487,
+            595
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.2. Efficiency of MatSAM",
+        "text_level": 2,
+        "bbox": [
+            58,
+            620,
+            220,
+            633
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Given MatSAM’s effective segmentation capability without the need for training, we believe it, as an out-of-the-box tool, has the potential to significantly accelerate the process in real-world quantitative charac terization of material microstructures. We qualitatively compared several common modes conducted by researchers for microstructure extraction tasks, elaborated in Fig. 9. These include \"fully manual annotation (Mode 1),\" \"rule-based methods with manual correction (Mode 2),\" \"learning-based methods with manual correction (Mode 3),\" and \"visual large models with manual correction (Mode 4).'",
+        "bbox": [
+            57,
+            646,
+            487,
+            765
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Mode 1: this mode has the longest time cost, and due to the sub jective influence of annotators, the final annotation accuracy may be affected detrimentally. Mode 2: while the runtime for general rulebased methods is minimal, significant time is often required to adjust the algorithm’s hyperparameters for new images to accommodate their visual characteristics. The complexity of the images also necessitates manual intervention for corrections, which can be time-consuming. Mode 3: researchers typically annotate a batch of data, followed by training with DL methods. The trained model is then applied to the full dataset to generate predictions, which are followed by manual adjust ments to finalize the outputs. Compared to the first two modes, this approach significantly reduces time costs while improving accuracy, both during model development and the manual correction phase. This is currently the most widely adopted approach, though it still demands substantial time and resources. Mode 4: by using an improved version of a general-purpose visual model, such as MatSAM, researchers can perform full inference on all images without adjusting method param eters. While MatSAM’s inference time per image is longer than that of classical deep learning methods and traditional methods, it requires no additional effort for model training or annotation. The segmentation results are almost immediately usable without extensive modification, allowing researchers to obtain high-quality recognition results in a significantly shorter time with minimal effort.",
+        "bbox": [
+            55,
+            765,
+            487,
+            936
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            507,
+            542,
+            939,
+            674
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "For normal micrographs, segmentation masks generated by MatSAM can meet the accuracy requirement for subsequent descriptive statistics. MatSAM can replace conventional or DL-based methods as a segmenter in challenging scenarios at inconsistent imaging conditions and various structures to give a more reliable initial result, e.g., continuous threedimensional (3D)-slice images acquired by serial sectioning techniques [47–49]. Then, the false-segmented regions are corrected for mode training through interactive correction involving human intervention. Empirically, it usually takes about 45 min to pre-segment and manually correct a microscopic image with approximately 300 grains using con ventional methods. This process is highly susceptible to the operator’s subjective biases. In contrast, using MatSAM can reduce the delineation plus correction time to within 5 min. The essential reason is that the initial results from MatSAM are already precise enough to identify and segment most grains. The operator only needs to correct the over- or under-segmentation regions caused by distinct defects or image blur ring, less susceptible to visual fatigue and distraction.",
+        "bbox": [
+            507,
+            674,
+            939,
+            897
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "In general, MatSAM’s efficiency can be attributed to the following two factors: First, because SAM has already extensively learned",
+        "bbox": [
+            509,
+            897,
+            939,
+            925
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "C. Li et al.",
+        "bbox": [
+            58,
+            42,
+            110,
+            52
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "Acta Materialia 290 (2025) 120962",
+        "bbox": [
+            766,
+            42,
+            939,
+            52
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "9",
+        "bbox": [
+            494,
+            952,
+            504,
+            960
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Raw image",
+        "bbox": [
+            173,
+            76,
+            270,
+            93
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "MatSAM",
+        "bbox": [
+            737,
+            76,
+            813,
+            92
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Raw image",
+        "bbox": [
+            547,
+            78,
+            645,
+            93
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/1814534a1f0bcde22cb64ad3299fa33e2e86467ecfbe72ea8ba2538263278c57.jpg",
+        "image_caption": [
+            "Fig. 7. Illustration of MatSAM segmenting microstructures under different morphologies. The left is polycrystalline images, and the right is multiphase images. (a) PI-1, (b) HEA, (c) SS. (d) PI-2, (e) DP590–2, (f) DP590–1, (g) NBS-1, and (h) UHCS. Arrows point to noteworthy areas (a pair of arrows shares the same color)"
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            132,
+            71,
+            863,
+            640
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "universal image features, there is no need for additional feature learning or selection when applied to material micrographs. Second, MatSAM leverages conventional methods to direct the model’s attention to ROIs. Since this step only requires a rough estimation of potential regions and does not demand high precision, there is no need to modify the model for specific image types. Therefore, MatSAM can serve as a powerful and fast tool for microscopy analysis, accelerating quantitative characterization.",
+        "bbox": [
+            55,
+            689,
+            487,
+            796
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.3. Extensibility of MatSAM",
+        "text_level": 2,
+        "bbox": [
+            58,
+            818,
+            233,
+            831
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "MatSAM’s extensibility or generalizability enables accurate and robust recognition of various microstructures at different scales and morphologies within a single micrograph. To elucidate that, we con ducted extended experiments on six additional micrographs, extracting corresponding microstructures, i.e., NBS-3 (γ’ phase), NBS-3 (TCP phase), IN939–1 (melted pool boundary), IN939–2 (cracks), C22000 and C21000 brasses (twin grain) [50]. These image samples are not provided with corresponding annotations. Fig. 10, which demonstrates MatSAM’s capability to identify different phases and key microstruc tures. See Supplementary Note 2 for results on a wider variety of images.",
+        "bbox": [
+            55,
+            844,
+            487,
+            936
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            507,
+            689,
+            939,
+            730
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "For micrographs of NBS-3, as shown in (a) and (b) of the figure, γ (small light grey areas) and TCP phases (fine needle-like) are the key objects of the analysis. Additionally, impurities, which are deeply dark in color and distinctly larger in area, are also present. MatSAM accu rately recognizes all phases, as illustrated in the Overlay columns. For micrographs of superalloy IN939–1 and IN939–2, shown in (c) and (d) of the figure, the melted pool boundary and crack are the main focus. The boundaries of melted pools and crack regions are reasonably recognized and clearly separated. For micrographs of brasses, commercial bronze (C22000) and gilding metal (C21000) shown in the (e) and (f) of the image, the twin grains—characterized by straight or planar boundaries and contrasting regions—are the primary components of interest.",
+        "bbox": [
+            507,
+            730,
+            939,
+            887
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "MatSAM, prompted by structure-aware points, segments nearly all the mentioned phases. Following the recognition process, each type of microstructure can finally be extracted by filtering all generated masks based on their morphological features, such as area, color distribution, orientation, and shape characteristics. As shown in the Key structure columns of the figure, the binary mask results of the corresponding ROIs are precisely separated. Consequently, researchers can launch autono mous parameter calculations and further statistical analyses without concerning themselves with the annotation and training processes.",
+        "bbox": [
+            507,
+            887,
+            939,
+            929
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "header",
+        "text": "C. Li et al.",
+        "bbox": [
+            58,
+            42,
+            110,
+            52
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "header",
+        "text": "Acta Materialia 290 (2025) 120962",
+        "bbox": [
+            766,
+            42,
+            939,
+            54
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "page_number",
+        "text": "10",
+        "bbox": [
+            492,
+            952,
+            507,
+            960
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/cd4f871bbf540b7c3cba0e5bb92dcf3a7567a6100b68b25daa664aa5be6758e8.jpg",
+        "image_caption": [
+            "Fig. 8. Visual results of MatSAM and SAM on micrographs with different levels of S&P noise. Pink and blue regions represent under- and over-segmentation, respectively. (a) Results visualization on an SEM image from the dual-phase steel dataset (DP590–2). (b) Results visualization on an XCT image from AlZn alloy dataset (AzA)"
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            131,
+            71,
+            858,
+            776
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            55,
+            846,
+            487,
+            926
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.4. Limitations of MatSAM",
+        "text_level": 2,
+        "bbox": [
+            509,
+            846,
+            680,
+            858
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Despite the significant advancements achieved by MatSAM in ma terial microstructure extraction tasks, several limitations persist that merit further exploration. First, MatSAM exhibits limitations in handling highly noised micrographs with smaller scales, particularly in",
+        "bbox": [
+            507,
+            872,
+            939,
+            926
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "C. Li et al.",
+        "bbox": [
+            58,
+            42,
+            112,
+            52
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "Acta Materialia 290 (2025) 120962",
+        "bbox": [
+            766,
+            42,
+            939,
+            54
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "page_number",
+        "text": "11",
+        "bbox": [
+            490,
+            952,
+            507,
+            960
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/94493ccf2586ce3b4a32f16631bb85ebc2936e93a4bff7a9f4a6fc08700c83cb.jpg",
+        "image_caption": [
+            "Key structure",
+            "(d)",
+            "Overlay",
+            "(b) NBS-3 (nickel-based superalloy) TCP phase",
+            "Fig. 9. Comparison of four modes of microstructure extraction."
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            134,
+            71,
+            862,
+            365
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/eab18d9ebec685ed24f8a5a6c40f2119e8674342aeb815a06a959455ad28af17.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            95,
+            413,
+            492,
+            532
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/d51748b75bb974f1fba2be4b6d896fd7d8bceaf58bba578d6598b273ee69be51.jpg",
+        "image_caption": [
+            "Image"
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            505,
+            430,
+            900,
+            532
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/a0c23766a57a964a8bf92c3ce0d4bed28952e75e00bedfed8ffbdb32ddba3749.jpg",
+        "image_caption": [
+            "(c) IN939-1 (nickel-based superalloy) melted pool boundary"
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            95,
+            562,
+            490,
+            664
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/78e3a8dc32252b9b6a0a46bf01193d16b7bf020494449683144377daa39e2bd0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            505,
+            562,
+            900,
+            665
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/63c15bf57686ec3603c46ac4e61cb757c7a4bdfb5bb9ae878d99339a22ff4565.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            95,
+            694,
+            490,
+            814
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/47ee72d1703d3eff0042c40d53154baf531d7aec3812c456c74ebccf45074c78.jpg",
+        "image_caption": [
+            "Fig. 10. Examples of extracting different microstructures. (a) NBS-3 (γ’ phase), (b) NBS-3 (TCP phase), (c) IN939–1 (melted pool boundary), (d) IN939–2 (cracks). (e) C22000 brass (twin grain), and (f) C21000 brass (twin grain). On each side, the first column displays raw images: the second column shows segmentation masks overlaying the raw images for better visualization; the third column presents binary images highlighting different phases (foreground)."
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            505,
+            694,
+            900,
+            814
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "challenging scenarios with inconspicuous targets, substantial noise, and fine atomic details. For the example in (a) of Fig. 11, on HRTEM images of gold nanoparticles, the model fails to comprehensively extract mul tiple particles, likely due to the size disparity between small atomic features and the overall region, as well as variations in atomic orienta tions within individual particles. These factors reduce mask confidence and lead to severe under-segmentation, highlighting MatSAM’s diffi culty in effectively handling fine-grained and noisy datasets.",
+        "bbox": [
+            57,
+            878,
+            487,
+            933
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            507,
+            878,
+            939,
+            931
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "header",
+        "text": "C. Li et al.",
+        "bbox": [
+            58,
+            42,
+            112,
+            54
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "header",
+        "text": "Acta Materialia 290 (2025) 120962",
+        "bbox": [
+            766,
+            42,
+            939,
+            54
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "page_number",
+        "text": "12",
+        "bbox": [
+            490,
+            950,
+            509,
+            960
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/a9b78b3301b5f1c7775d98be32852586847dfc18bd4b1ff54d791626d088dd3f.jpg",
+        "image_caption": [
+            "Fig. 11. Demonstrations of limitations of MatSAM. (a) the failure example on the HRTEM image of gold nanoparticles. (b) the process of filtering target twin grain regions on the brass micrograph."
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            191,
+            65,
+            800,
+            448
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "table",
+        "img_path": "images/ad371e20b212a9fba8841977e652e6c78f0e89620068de78b34f9061230434de.jpg",
+        "table_caption": [
+            "Inference time and corresponding segmentation performance of MatSAM and other methods on public LCS and NBS-1 datasets."
+        ],
+        "table_footnote": [
+            "Bold values indicate the best results."
+        ],
+        "table_body": "<table><tr><td>Dataset</td><td>Method</td><td>Metric</td><td>Segmentation performance</td><td>Inference time per image (ms)</td></tr><tr><td rowspan=\"5\">LCS (1360 × 600)(Polycrystalline)</td><td>Watershed</td><td>ARI</td><td>0.54</td><td>6.12</td></tr><tr><td>OTSU</td><td></td><td>0.64</td><td>4.54</td></tr><tr><td>Canny</td><td></td><td>0.73</td><td>16.48</td></tr><tr><td>SAM</td><td></td><td>0.86</td><td>1850.35</td></tr><tr><td>MatSAM</td><td></td><td>0.96</td><td>1926.35</td></tr><tr><td rowspan=\"4\">NBS-1 (512 × 512)(Multiphase)</td><td>OTSU</td><td>IoU</td><td>0.75</td><td>0.53</td></tr><tr><td>Adaptive</td><td></td><td>0.45</td><td>0.58</td></tr><tr><td>SAM</td><td></td><td>0.85</td><td>1575.24</td></tr><tr><td>MatSAM</td><td></td><td>0.91</td><td>1812.67</td></tr></table>",
+        "bbox": [
+            60,
+            544,
+            484,
+            677
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Second, even though MatSAM performs well in binary foreground background segmentation tasks, delivering accurate and efficient re sults for identifying regions most relevant to the analysis, it should be acknowledged that for images with relatively complex semantic com ponents, further post-processing is often required to extract specific targets. As shown in (b) of Fig. 11, in segmenting brass micrographs, parameters like circularity, contour geometry, area, and grayscale range were calculated for each mask. By setting tailored filtering conditions, elongated twin grains are effectively distinguished. This reliance on additional semantic filtering underscores a limitation of MatSAM in addressing more intricate segmentation demands.",
+        "bbox": [
+            55,
+            708,
+            487,
+            854
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Lastly, while MatSAM achieves impressive segmentation accuracy, it comes at a higher computational cost, as shown in Table 4. On the LCS dataset, it achieves an ARI score of 0.96 with an inference time of 1926.35 ms per image, compared to OTSU’s 4.54 ms. Similarly, on the NBS-1 dataset, our method obtains the highest IoU score of 0.91 but requires 1812.67 ms. Although its high accuracy significantly reduces the need for manual corrections, the trade-off in inference speed pre sents challenges for real-time applications, emphasizing the need for further optimization.",
+        "bbox": [
+            55,
+            854,
+            487,
+            934
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            507,
+            500,
+            939,
+            540
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "5. Conclusion",
+        "text_level": 2,
+        "bbox": [
+            509,
+            553,
+            608,
+            566
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "In this study, a novel training-free approach, MatSAM, was proposed to efficiently extract material microstructures based on SAM. Without the need for manual annotations, it precisely identified 11 kinds of material microstructures. Combining two key metrics, ARI (for poly crystalline images) and IoU (for multiphase images), MatSAM achieved an average relative improvement of 35.4 % over the best-performing conventional rule-based methods and 13.9 % over the original SAM. On four public microstructure segmentation datasets of various mate rials—nickel-based superalloys (NBS-1/2), ultrahigh carbon steel (UHCS), and AlZn alloy (AZA)—the average IoU attained by MatSAM was 7.5 % higher than that of the corresponding specialist DL models. The proposed MatSAM tackles the challenge of high time and labor costs in the quantitative characterization of microstructures. Meanwhile. it has obtained improved generalization capability, enabling a single model to be reused for different microstructures, including grain boundaries, phases, and defects. The methodology and empirical results of this study deliver a new perspective on addressing key challenges in large-scale, automated microstructural information extraction.",
+        "bbox": [
+            507,
+            578,
+            939,
+            819
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Data availability",
+        "text_level": 2,
+        "bbox": [
+            509,
+            829,
+            623,
+            844
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The test data of publicly released datasets can be found in the referenced articles or our code repository: https://github.com/ USTB-AI3DVIP/matsam. All the raw data of in-house datasets are stored at the University of Science and Technology Beijing and are available upon request from the corresponding author. The source code of this work is available in this repository: https://github.com/",
+        "bbox": [
+            507,
+            857,
+            939,
+            936
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "header",
+        "text": "C. Li et al.",
+        "bbox": [
+            58,
+            42,
+            112,
+            54
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "header",
+        "text": "Acta Materialia 290 (2025) 120962",
+        "bbox": [
+            766,
+            42,
+            939,
+            54
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "page_number",
+        "text": "13",
+        "bbox": [
+            490,
+            952,
+            507,
+            960
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "USTB-AI3DVIP/matsam.",
+        "bbox": [
+            58,
+            66,
+            208,
+            76
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "CRediT authorship contribution statement",
+        "text_level": 2,
+        "bbox": [
+            58,
+            92,
+            337,
+            105
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Changtai Li: Writing – original draft, Methodology, Formal analysis, Conceptualization. Xu Han: Writing – original draft, Validation, Inves tigation, Data curation. Chao Yao: Writing – review & editing, Valida tion. Yu Guo: Writing – review & editing, Conceptualization. Zixin Li: Resources, Data curation. Lei Jiang: Writing – review & editing. Wei Liu: Resources, Data curation. Haiyou Huang: Writing – review & editing, Data curation. Huadong Fu: Writing – review & editing, Su pervision, Resources, Conceptualization. Xiaojuan Ban: Writing – re view & editing, Supervision, Project administration.",
+        "bbox": [
+            57,
+            119,
+            487,
+            238
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Declaration of competing interest",
+        "text_level": 2,
+        "bbox": [
+            58,
+            250,
+            280,
+            264
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.",
+        "bbox": [
+            57,
+            277,
+            487,
+            317
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Acknowledgments",
+        "text_level": 2,
+        "bbox": [
+            58,
+            331,
+            181,
+            343
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "This work is supported by the National Major Science and Technol ogy Projects of China (2024ZD0608100), the National Natural Science Foundation of China (52425409, U22A2022, 62332017, 62303043), and Xiaomi Young Scholars Program.",
+        "bbox": [
+            57,
+            356,
+            485,
+            409
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Supplementary materials",
+        "text_level": 2,
+        "bbox": [
+            58,
+            423,
+            225,
+            435
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Supplementary material associated with this article can be found, in the online version, at doi:10.1016/j.actamat.2025.120962.",
+        "bbox": [
+            58,
+            448,
+            485,
+            476
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "References",
+        "text_level": 2,
+        "bbox": [
+            58,
+            488,
+            134,
+            501
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[1] M. Koyama, Z. Zhang, M. Wang, D. Ponge, D. Raabe, K. Tsuzaki, H. Noguchi, C. C. Tasan. Bone-like crack resistance in hierarchical metastable nanolaminate steels Science 355 (2017) 1055–1057, https://doi.org/10.1126/science.aal2766.",
+        "bbox": [
+            65,
+            514,
+            480,
+            543
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[2] D. Ren, C. Wang, X. Wei, Q. Lai, W. Xu, Building a quantitative compositionmicrostructure-property relationship of dual-phase steels via multimodal data mining, Acta. Mater. 252 (2023) 118954, https://doi.org/10.1016/j. actamat.2023.118954.",
+        "bbox": [
+            67,
+            544,
+            463,
+            583
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[3] H. Zhang, H. Fu, S. Zhu, W. Yong, J. Xie, Machine learning assisted composition effective design for precipitation strengthened copper alloys. Acta Mater. 215 (2021)117118. https://doi.org/10.1016/i.actamat.2021.117118.",
+        "bbox": [
+            67,
+            583,
+            478,
+            612
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[4] A. Khosravani, A. Cecen, S.R. Kalidindi, Development of high throughput assays for establishing process-structure-property linkages in multiphase polycrystalline metals: application to dual-phase steels, Acta. Mater. 123 (2017) 55–69, https:// doi.org/10.1016/j.actamat.2016.10.033",
+        "bbox": [
+            67,
+            614,
+            480,
+            653
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[5] L. Jiang, H. Fu, H. Zhang, J. Xie, Physical mechanism interpretation of polycrystalline metals' vield strength via a data-driven method: a novel hall-petch relationship, Acta. Mater. 231 (2022) 117868, https://doi.org/10.1016/j. actamat.2022.117868.",
+        "bbox": [
+            67,
+            655,
+            482,
+            693
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[6] A.R. Durmaz, M. Müller, B. Lei, A. Thomas, D. Britz, E.A. Holm, C. Eberl, F. Mücklich, P. Gumbsch, A deep learning approach for complex microstructure inference, Nat. Commun. 12 (2021) 6272, https://doi.org/10.1038/s41467-021- 26565-5.",
+        "bbox": [
+            67,
+            694,
+            477,
+            733
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[7] Z.-L. Wang, Y. Adachi, Property prediction and properties-to-microstructure inverse analysis of steels by a machine-learning approach, Mater. Sci. Eng. A 744 (2019) 661–670, https://doi.org/10.1016/j.msea.2018.12.049.",
+        "bbox": [
+            65,
+            735,
+            480,
+            764
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[8] X.C. Li, J.X. Zhao, J.H. Cong, R.D.K. Misra, X.M. Wang, X.L. Wang, C.J. Shang, Machine learning guided automatic recognition of crystal boundaries in bainitic/ martensitic alloy and relationship between boundary types and ductile-to-brittle transition behavior, J. Mater. Sci. Technol. 84 (2021) 49–58, https://doi.org/ 10.1016/i.imst.2020.12.024.",
+        "bbox": [
+            67,
+            765,
+            480,
+            814
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[9], M.D. Uchic, M.A. Groeber, D.M. Dimiduk, JP. Simmons, 3D microstructural characterization of nickel superalloys via serial-sectioning using a dual beam FIB-SEM, Scr. Mater. 55 (2006) 23–28, https://doi.org/10.1016/j. scriptamat.2006.02.039.",
+        "bbox": [
+            65,
+            815,
+            480,
+            853
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[10] Z. Feng, R. Fu, C. Lin, G. Wu, T. Huang, L. Zhang, X. Huang, TEM-based dislocation tomography: challenges and opportunities. Curr. Opin. Solid State Mater. Sci. 24 (2020) 100833. https://doi.org/10.1016/i.cossms.2020.100833.",
+        "bbox": [
+            60,
+            854,
+            480,
+            883
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[11] J. Na, S.-J. Kim, H. Kim, S.-H. Kang, S. Lee, A unified microstructure segmentation approach via human-in-the-loop machine learning. Acta Mater. 255 (2023) 119086, https://doi.org/10.1016/j.actamat.2023.119086.",
+        "bbox": [
+            60,
+            886,
+            480,
+            915
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[12] N.J. Szymanski, B. Rendy, Y. Fei, R.E. Kumar, T. He, D. Milsted, M.J. McDermott, M. Gallant, E.D. Cubuk, A. Merchant, H. Kim, A. Jain, C.J. Bartel, K. Persson,",
+        "bbox": [
+            60,
+            916,
+            480,
+            936
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "Y. Zeng, G. Ceder, An autonomous laboratory for the accelerated synthesis of novel materials, Nature 624 (2023) 86–91, https://doi.org/10.1038/s41586-023-06734- w.",
+        "bbox": [
+            537,
+            66,
+            934,
+            95
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[13] D.J. Rowenhorst, L. Nguyen, A.D. Murphy-Leonard, R.W. Fonda, Characterization of microstructure in additively manufactured 316L using automated serial sectioning, Curr. Opin. Solid State Mater. Sci. 24 (2020) 100819, https://doi.org/ 10.1016/i.cossms.2020.100819",
+        "bbox": [
+            512,
+            97,
+            934,
+            136
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[14] M. Wei, L. Zhao, L. Jiang, L. Yang, H. Wang, Development of high-throughput rapid heat-treatment and characterization process, Acta Mater. 261 (2023) 119365, https://doi.org/10.1016/j.actamat.2023.119365.",
+        "bbox": [
+            512,
+            137,
+            934,
+            166
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[15] B. Ma, X. Wei, C. Liu, X. Ban, H. Huang, H. Wang, W. Xue, S. Wu, M. Gao, Q. Shen, M. Mukeshimana, A.O. Abuassba, H. Shen, Y. Su, Data augmentation in microscopic images for material data mining, Npj Comput. Mater. 6 (2020) 1–9, https://doi.org/10.1038/s41524-020-00392-6",
+        "bbox": [
+            512,
+            167,
+            932,
+            206
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[16] J. Stuckner, B. Harder, T.M. Smith, Microstructure segmentation with deep learning encoders pre-trained on a large microscopy dataset, Npj Comput. Mater. 8 (2022) 200, https://doi.org/10.1038/s41524-022-00878-5",
+        "bbox": [
+            512,
+            208,
+            934,
+            235
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[17] K. Choudhary, B. DeCost, C. Chen, A. Jain, F. Tavazza, R. Cohn, C.W. Park. A. Choudhary, A. Agrawal, S.J.L. Billinge, E. Holm, S.P. Ong, C. Wolverton, Recent advances and applications of deep learning methods in materials science, Npj Comput. Mater. 8 (2022) 1–26, https://doi.org/10.1038/s41524-022-00734-6",
+        "bbox": [
+            512,
+            237,
+            934,
+            277
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[18] J. Canny, A computational approach to edge detection, IEEE Trans. Pattern Anal. Mach. Intell. PAMI-8 (1986) 679–698, https://doi.org/10.1109/ TPAMI.1986.4767851.",
+        "bbox": [
+            512,
+            278,
+            932,
+            306
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[19] N. Otsu, A threshold selection method from gray-level histograms, IEEE Trans. Syst. Man Cybern. 9 (1979) 62–66, https://doi.org/10.1109/TSMC.1979.4310076.",
+        "bbox": [
+            512,
+            307,
+            932,
+            327
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[20] P. Roy, S. Dutta, N. Dey, G. Dey, S. Chakraborty, R. Ray, Adaptive thresholding: a comparative study, in: 2014 International Conference on Control, Instrumentation, Communication and Computational Technologies (ICCICCT), 2014, pp. 1182–1186, https://doi.org/10.1109/ICCICCT.2014.6993140.",
+        "bbox": [
+            512,
+            327,
+            934,
+            366
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[21] Y. Dong, C. Su, P. Qiao, L. Sun, Microstructural crack segmentation of threedimensional concrete images based on deep convolutional neural networks, Constr. Build. Mater. 253 (2020) 119185, https://doi.org/10.1016/j. conbuildmat.2020.119185",
+        "bbox": [
+            512,
+            368,
+            932,
+            406
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[22] Y. Han, R. Li, B. Wang, L. Ruan, Q. Chen, A pseudo-labeling based weakly supervised segmentation method for few-shot texture images, Expert Syst. Appl. 238 (2024) 122110, https://doi.org/10.1016/j.eswa.2023.122110.",
+        "bbox": [
+            512,
+            408,
+            927,
+            438
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[23] K. He, R. Girshick, P. Dollar, Rethinking ImageNet pre-training, in: 2019 IEEE/CVF International Conference on Computer Vision (ICCV), Seoul, Korea (South), IEEE, 2019, pp. 4917–4926, https://doi.org/10.1109/ICCV.2019.00502.",
+        "bbox": [
+            512,
+            438,
+            934,
+            467
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[24] J. Yeom, T. Stan, S. Hong, P.W. Voorhees, Segmentation of experimental datasets via convolutional neural networks trained on phase field simulations. Acta Mater. 214 (2021)116990. https://doi.org/10.1016/i.actamat,2021.116990",
+        "bbox": [
+            512,
+            469,
+            934,
+            498
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[25] T. Stan. Z.T. Thompson. P.W. Voorhees. Optimizing convolutional neural networks to perform semantic segmentation on large materials imaging datasets: x-ray tomography and serial sectioning, Mater. Charact. 160 (2020) 110119, https://doi. org/10.1016/i.matchar.2020.110119.",
+        "bbox": [
+            512,
+            498,
+            934,
+            538
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[26] Z. Cao, Q. Liu, Q. Liu, X. Yu, J.J. Kruzic, X. Li, A machine learning method to quantitatively predict alpha phase morphology in additively manufactured Ti-6Al-4V, Npj Comput. Mater. 9 (2023) 1–15, https://doi.org/10.1038/s41524-023- 01152-y.",
+        "bbox": [
+            512,
+            539,
+            934,
+            577
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[27] Q. Luo, E.A. Holm, C. Wang, A transfer learning approach for improved classification of carbon nanomaterials from TEM images, Nanoscale Adv 3 (2021) 206–213. https://doi.org/10.1039/D0NA00634C.",
+        "bbox": [
+            512,
+            578,
+            934,
+            609
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[28] J. Na, J. Lee, S.-H. Kang, S.-J. Kim, S. Lee, Label-free grain segmentation for optical microscopy images via unsupervised image-to-image translation, Mater. Charact. 206 (2023) 113410, https://doi.org/10.1016/j.matchar.2023.113410.",
+        "bbox": [
+            512,
+            609,
+            932,
+            638
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[29] M. Awais, M. Naseer, S. Khan, R.M. Anwer, H. Cholakkal, M. Shah, M.-H. Yang, F. S. Khan, Foundation models defining a new era in vision: a survey and outlook JEEE Trans. Pattern Anal, Mach. Intell, (2025) 1–20. https://doi org/10.1109 TPAMI.2024.3506283.",
+        "bbox": [
+            512,
+            639,
+            932,
+            678
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[30] A. Kirillov, E. Mintun, N. Ravi, H. Mao, C. Rolland, L. Gustafson, T. Xiao, S. Whitehead, A.C. Berg, W.-Y. Lo, P. Dollar, R. Girshick, Segment anything, in: Proceedings of the IEEE/CVF International Conference on Computer Vision, 2023, pp. 4015–4026. https://openaccess.thecvf.com/content/ICCV2023/html/Kirillov Segment Anything ICCV 2023 paper,html. accessed November 26. 2024.",
+        "bbox": [
+            512,
+            679,
+            932,
+            728
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[31] W. Ji, J. Li, Q. Bi, T. Liu, W. Li, L. Cheng, Segment anything is not always perfect: an investigation of SAM on different real-world applications, Mach, Intell, Res. 21 (2024) 617–630. https://doi,org/10.1007/s11633-023-1385-0",
+        "bbox": [
+            512,
+            728,
+            932,
+            759
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[32] J. Ma, Y. He, F. Li, L. Han, C. You, B. Wang, Segment anything in medical images, Nat, Commun. 15 (2024) 654, https://doi.org/10.1038/s41467-024-44824-z",
+        "bbox": [
+            512,
+            760,
+            932,
+            779
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[33] X. Ma, Q. Wu, X. Zhao, X. Zhang, M.-O. Pun, B. Huang, SAM-assisted remote sensing imagery semantic segmentation with object and boundary constraints, JEEE Trans, Geosci, Remote Sens, 62 (2024) 1–16. https://doi,org/10.1109 TGRS.2024.3443420.",
+        "bbox": [
+            512,
+            780,
+            919,
+            818
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[34] S. Khan, M. Naseer, M. Hayat, S.W. Zamir, F.S. Khan, M. Shah, Transformers in Vision: a survey, ACM Comput. Surv. 54 (2022), https://doi.org/10.1145 3505244,200:1-200:41.",
+        "bbox": [
+            512,
+            820,
+            924,
+            849
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[35] M.-H. Guo, T.-X. Xu, J.-J. Liu, Z,-N. Liu, P.-T. Jiang, T.-J. Mu, S.-H. Zhang, R R. Martin. M.-M. Cheng, S.-M. Hu. Attention mechanisms in computer vision: a suryey, Comput. Vis. Media 8 (2022) 331–368, https://doi.org/10.1007/s41095- 022-0271-v.",
+        "bbox": [
+            512,
+            849,
+            929,
+            889
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[36] G. Bradski, The OpenCV Library, Dr. Dobb’s J.: Software Tools Profess. Prog. 25",
+        "bbox": [
+            512,
+            890,
+            927,
+            909
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[37] D. Steinley, Properties of the Hubert-Arable Adiusted Rand Index. Psychol. Methods 9 (2004) 386–396, https://doi.org/10.1037/1082-989X.9.3.386.",
+        "bbox": [
+            512,
+            910,
+            902,
+            930
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "header",
+        "text": "C. Li et al.",
+        "bbox": [
+            58,
+            42,
+            112,
+            52
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "header",
+        "text": "Acta Materialia 290 (2025) 120962",
+        "bbox": [
+            766,
+            42,
+            939,
+            52
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "page_number",
+        "text": "14",
+        "bbox": [
+            492,
+            952,
+            507,
+            960
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "ref_text",
+        "text": "[38] J.M. Santos, M. Embrechts, On the use of the adjusted Rand index as a metric for evaluating supervised classification, in: Artificial Neural Networks – ICANN 2009, Berlin, Heidelberg, Springer, 2009, pp. 175–184, https://doi.org/10.1007/978-3- 642-04277-5\\_18.",
+        "bbox": [
+            60,
+            66,
+            482,
+            105
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "ref_text",
+        "text": "[39] S.A. Chowdhury, M.F.N. Taufique, J. Wang, M. Masden, M. Wenzlick, R. Devanathan, A.L. Schemer-Kohrn, K.S. Kappagantula, Automated grain boundary (GB) segmentation and microstructural analysis in 347H stainless steel using deep learning and multimodal microscopy, Integr. Mater. Manuf. Innov. 13 (2024) 244–256, https://doi.org/10.1007/s40192-023-00305-7.",
+        "bbox": [
+            60,
+            107,
+            480,
+            156
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "ref_text",
+        "text": "[40] M. Levandowsky. D. Winter. Distance between sets. Nature 234 (1971) 34–35. https://doi.org/10.1038/234034a0.",
+        "bbox": [
+            60,
+            157,
+            468,
+            176
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "ref_text",
+        "text": "[41] F. Meyer, S. Beucher, Morphological segmentation, J. Vis. Commun. Image Represent. 1 (1990) 21–46, https://doi.org/10.1016/1047-3203(90)90014-M.",
+        "bbox": [
+            60,
+            177,
+            463,
+            197
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "ref_text",
+        "text": "[42] A. Paszke, S. Gross, F. Massa, A. Lerer, J. Bradbury, G. Chanan, T. Killeen, Z. Lin, N. Gimelshein, L. Antiga, A. Desmaison, A. Kopf, E. Yang, Z. DeVito, M. Raison, A. Tejani, S. Chilamkurthy, B. Steiner, L. Fang, J. Bai, S. Chintala, PyTorch: an imperative style, high-performance deep learning library, in: Advances in Neural Information Processing Systems, 2019.",
+        "bbox": [
+            62,
+            197,
+            480,
+            247
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "ref_text",
+        "text": "[43] H. Kakinuma, S. Ajito, T. Hojo, M. Koyama, E. Akiyama, In situ visualization of misorientation-dependent hydrogen diffusion at grain boundaries of pure polycrystalline Ni using a hydrogen video imaging system, Acta Mater. 263 (2024) 119536, https://doi.org/10.1016/j.actamat.2023.119536.",
+        "bbox": [
+            60,
+            248,
+            480,
+            287
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "ref_text",
+        "text": "[44] S. Mohan, R. Manzorro, J.L. Vincent, B. Tang, D.Y. Sheth, E.P. Simoncelli, D. S. Matteson, P.A. Crozier, C. Fernandez-Granda, Deep denoising for scientific",
+        "bbox": [
+            60,
+            287,
+            462,
+            307
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "ref_text",
+        "text": "discovery: a case study in electron microscopy, IEEE Trans. Comput. Imaging 8 (2022) 585–597, https://doi.org/10.1109/TCI.2022.3176536.",
+        "bbox": [
+            537,
+            66,
+            924,
+            85
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "ref_text",
+        "text": "[45] C. Lu, K. Chen, H. Qiu, X. Chen, G. Chen, X. Qi, H. Jiang, Diffusion-based deep learning method for augmenting ultrastructural imaging and volume electron microscopy, Nat. Commun. 15 (2024) 4677, https://doi.org/10.1038/s41467-024 49125-z.",
+        "bbox": [
+            512,
+            87,
+            929,
+            126
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "ref_text",
+        "text": "[46] S. van der Walt, J.L. Schonberger, ¨ J. Nunez-Iglesias, F. Boulogne, J.D. Warner, N. Yager, E. Gouillart, T. Yu, scikit-image: image processing in Python, PeerJ 2 (2014) e453, https://doi.org/10.7717/peerj.453.",
+        "bbox": [
+            512,
+            127,
+            922,
+            156
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "ref_text",
+        "text": "[47] M. Groeber, S. Ghosh. M.D. Uchic. D.M. Dimiduk. A framework for automated analysis and simulation of 3D polycrystalline microstructures.: part 1: statistical characterization, Acta Mater. 56 (2008) 1257–1273, https://doi.org/10.1016/j. actamat.2007.11.041.",
+        "bbox": [
+            512,
+            157,
+            924,
+            196
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "ref_text",
+        "text": "[48] D.J. Rowenhorst, A.C. Lewis, G. Spanos, Three-dimensional analysis of grain topology and interface curvature in a β-titanium alloy, Acta Mater. 58 (2010) 5511–5519, https://doi.org/10.1016/j.actamat.2010.06.030.",
+        "bbox": [
+            512,
+            197,
+            915,
+            226
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "ref_text",
+        "text": "[49] C. Li, R. Jiang, H. Wang, W. Xue, Y. Guo, X. Ban, DeepMMP: efficient 3D perception of microstructures from serial section microscopic images, Comput. Mater. Sci. 235 (2024) 112826, https://doi.org/10.1016/j.commatsci.2024.112826.",
+        "bbox": [
+            512,
+            226,
+            934,
+            257
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "ref_text",
+        "text": "[50] Resources: standards & properties - copper & copper alloy microstructures: brasses, (n.d.). https://www.copper.org/resources/properties/microstructure/brasses.html (accessed January 17, 2025).",
+        "bbox": [
+            512,
+            258,
+            932,
+            287
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "header",
+        "text": "C. Li et al.",
+        "bbox": [
+            60,
+            42,
+            110,
+            52
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "header",
+        "text": "Acta Materialia 290 (2025) 120962",
+        "bbox": [
+            766,
+            42,
+            939,
+            52
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "page_number",
+        "text": "15",
+        "bbox": [
+            492,
+            952,
+            507,
+            960
+        ],
+        "page_idx": 14
+    }
+]

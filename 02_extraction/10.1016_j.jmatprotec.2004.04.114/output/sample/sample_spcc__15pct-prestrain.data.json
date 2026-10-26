@@ -1,0 +1,182 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_spcc__15pct-prestrain",
+      "paper_id": "10.1016_j.jmatprotec.2004.04.114",
+      "alloy_id": "alloy_spcc",
+      "process_id": "proc_15pct-prestrain",
+      "sample_label": "B",
+      "aliases": [
+        "With 15% pre-strain",
+        "Species B",
+        "SPCC with 15% pre-strain"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_prestrain_15pct",
+      "sequence": "1",
+      "type": "mechanical processing",
+      "method": "tensile pre-straining",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "15%",
+      "processing_steps_notes": "SPCC sheet (thickness 1.2 mm) pre-strained to 15% by tensile deformation; this is specimen condition/species 'B' in Table 1. Plastic deformation releases dislocations from the Cottrell atmosphere so that they become movable."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_B_dislocation_structure",
+      "overall_structure": "15% pre-strained mild steel (SPCC) in which dislocations originally locked by carbon/solutes via the Cottrell effect have been released by plastic deformation; the dislocation structure changes with plastic strain and the released (movable) dislocations pile up near grain boundaries.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_B_dislocation",
+          "region": "near grain boundary (general microstructure)",
+          "related_sequence": "1",
+          "phases_present": [],
+          "defects": [
+            {
+              "type": "movable dislocations / dislocation pile-up",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_B_grainboundary",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "interaction_id": "B_dislocation_pileup_at_gb",
+          "microstructure_id": "micro_B_dislocation",
+          "interaction_type": "dislocation pile-up at grain boundary",
+          "qualitative_or_quantitative_description": "Dislocations released from a common source move along the same slip surface and pile up against obstacles such as grain boundaries and solutes; the pile-up causes deformation during unloading and during loading at stresses below the yield stress, so that the apparent elastic modulus decreases as a function of plastic strain (Fig. 3 pile-up model)."
+        }
+      ],
+      "slip_behavior": "Dislocations move along the same slip surface and easily pile up, the front of the dislocations being stopped by obstacles such as grain boundaries and solutes; the pile-up dislocations can move backwards when the shear stress is released during unloading.",
+      "phase_evolution": null,
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_B_modulus_initial_range",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "SPCC sheet, thickness 1.2 mm",
+        "test_standard": null,
+        "other_conditions": "Tensile test using a load cell and strain gauge; elastic modulus of species B calculated from the initial stage (strain 0–0.05%); no unit is printed for the modulus in Table 2."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": {
+            "value": "188",
+            "unit": null
+          },
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        }
+      }
+    },
+    {
+      "property_set_id": "prop_B_modulus_whole_elastic",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "SPCC sheet, thickness 1.2 mm",
+        "test_standard": null,
+        "other_conditions": "Tensile test using a load cell and strain gauge; elastic modulus of species B calculated over the whole elastic range; no unit is printed for the modulus in Table 2."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": {
+            "value": "162",
+            "unit": null
+          },
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        }
+      }
+    },
+    {
+      "property_set_id": "prop_B_modulus_strain_dependence",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "SPCC sheet, thickness 1.2 mm",
+        "test_standard": null,
+        "other_conditions": "Apparent modulus (gradient of the stress–strain curve) over the elastic/near-elastic region up to 0.3% strain, read from Fig. 4(b); values read from gridlines, no numeric data labels printed."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": {
+            "value": "from ~200 GPa (near 0.05% strain) decreasing to below 50 GPa (at 0.3% strain)",
+            "unit": "GPa"
+          },
+          "stress_strain_curves": "Fig. 4(a): stress–strain curves up to 0.3% strain for species A–E; species B is one of the fan-out curves.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        }
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_B_straingauge_tensile",
+      "microstructure_id": null,
+      "technique": "precision tensile test (stress–strain measurement) with strain gauge / precision extensometer",
+      "instrument_or_setup": "load cell and strain gauge; precision extensometer developed by the authors",
+      "measurement_conditions": "stress–strain curve measured up to 1% strain, then elastic modulus obtained from the stress–strain curves within the elastic deformation region; used for the pre-strained specimens of Table 1 (species A–E)",
+      "purpose": "measure the stress–strain curve and the elastic modulus of the pre-strained and heat-treated specimens before/after plastic deformation to confirm the effect of movable dislocations",
+      "key_findings": "the gradient of the stress–strain curve decreases from the beginning up to the macroscopic yield point, so the modulus varies significantly for the 15% pre-strain specimen B; the modulus measured over 0–0.05% strain always exceeds that over the whole elastic range"
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Table 2 of the paper does not print units for the elastic modulus; the values 188 (0–0.05% strain) and 162 (whole elastic range) for species B are unitless in the source table.",
+    "General finding reported for the (SPCE) sheet metal of section 2: Young's modulus decreases with plastic strain, the decrease being more than 20% after a deformation of 25% plastic strain; the elastic modulus variation is fitted as E = E0*(351ε² − 160ε + 93.8) (Fig. 1). This is based on SPCE, not on the SPCC specimen B.",
+    "The heat-treatment condition of 373 K for 90 h (to recover only the Cottrell atmosphere by C diffusion while keeping dislocations stationary) was applied to specimens C and D, not to species B.",
+    "The nano-indentation experiments (Figs. 7–12) were performed on the SPCE specimen (specimen outline labelled 'SPCE' in Fig. 10), not on the SPCC specimen B, so those near-grain-boundary modulus results are not attributed to this sample."
+  ]
+}

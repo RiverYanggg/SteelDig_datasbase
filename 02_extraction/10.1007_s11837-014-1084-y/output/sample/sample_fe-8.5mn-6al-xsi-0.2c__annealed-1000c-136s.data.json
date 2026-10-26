@@ -1,0 +1,173 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-8.5mn-6al-xsi-0.2c__annealed-1000c-136s",
+      "paper_id": "10.1007_s11837-014-1084-y",
+      "alloy_id": "alloy_fe-8.5mn-6al-xsi-0.2c",
+      "process_id": "proc_annealed-1000c-136s",
+      "sample_label": "annealed for 136 s at 1000 degrees C",
+      "aliases": [
+        "Fig. 11b/d"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_annealing_1000c_136s",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": "1000",
+      "temperature_unit": "°C",
+      "duration": "136 s",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1000c_136s",
+      "overall_structure": "Two-phase austenite-ferrite microstructure, fully recrystallised",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_ferrite_1000c",
+          "region": "matrix",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "ferrite",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "uniformly equiaxed, irregularly shaped ferrite grains with no residual banding",
+              "grain_size": null,
+              "texture": "strongly varied IPF colours (mixed crystallographic orientations)"
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": "mixed IPF colours, no residual banding"
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_austenite_1000c",
+          "region": "dispersed in ferrite matrix",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": "coarse, blocky, equiaxed grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interfaces_1000c_136s",
+      "phase_interfaces": [
+        {
+          "interface_id": "austenite_ferrite_interface",
+          "microstructure_id": "micro_austenite_1000c",
+          "phase_1_name": "austenite",
+          "phase_2_name": "ferrite",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": null,
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_1000c_136s",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "650-720 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_ebsd_1000c_136s",
+      "microstructure_id": null,
+      "technique": "EBSD (electron backscattered diffraction)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Phase mapping of austenite (red) and ferrite (inverse pole figure) after annealing at 1000 °C for 136 s",
+      "key_findings": "At 1000 °C/136 s, austenite forms coarse, blocky, equiaxed grains distributed through a fully recrystallised-looking ferrite matrix; ferrite is uniformly equiaxed with strongly varied IPF colours and no residual banding."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": []
+}

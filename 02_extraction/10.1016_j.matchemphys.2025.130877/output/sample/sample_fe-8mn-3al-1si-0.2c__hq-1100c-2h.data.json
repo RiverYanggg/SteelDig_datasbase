@@ -1,0 +1,99 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-8mn-3al-1si-0.2c__hq-1100c-2h",
+      "paper_id": "10.1016_j.matchemphys.2025.130877",
+      "alloy_id": "alloy_fe-8mn-3al-1si-0.2c",
+      "process_id": "proc_hq-1100c-2h",
+      "sample_label": "M2-HQ",
+      "aliases": [
+        "M2 homogenized"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_fabrication",
+      "sequence": "1",
+      "type": "fabrication",
+      "method": "vacuum arc melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The two steel compositions (M1 = Fe-8Mn-3Al-0.2C and M2 = Fe-8Mn-3Al-1Si-0.2C) were fabricated using a vacuum arc melting furnace; the melted ingot was remelted 4 times by flipping the ingot before each remelt to ensure complete and uniform melting of raw materials throughout the ingot."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization followed by water quenching",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenization of as-cast samples was carried out at 1100 °C for 2 h, followed by water quenching. This homogenized + water-quenched condition is designated M2-HQ (Nomenclature for 3Al-1Si (M2))."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_m2hq",
+      "overall_structure": "Homogenized + water-quenched M2 microstructure: the optical micrograph (500 µm scale bar) shows a lighter matrix with scattered dark features.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_m2hq",
+          "region": null,
+          "related_sequence": "2",
+          "phases_present": [],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om_m2hq",
+      "microstructure_id": "micro_m2hq",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": "Optical microscope",
+      "measurement_conditions": null,
+      "purpose": "Microstructural imaging of the homogenized + water-quenched M2 (M2-HQ) sample",
+      "key_findings": "M2-HQ optical micrograph (500 µm scale bar) shows a lighter matrix with scattered dark features."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_calphad_m2",
+      "simulation_method": "CALPHAD thermodynamic equilibrium phase-fraction calculation",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": "TCFE9 steel database",
+      "boundary_and_initial_conditions": "Fe-8Mn-3Al-1Si-0.2C (M2) composition; equilibrium phases predicted as a function of temperature; lower critical temperature taken as 600 °C; 1 % Si addition to the 3Al system introduces δ-ferrite in the intercritical temperature range (ICT band ~600-1000 °C).",
+      "validation_against_experiment": null,
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "δ-ferrite in M2 steel is stated to form while soaking at 1100 °C before hot rolling (physically the same temperature as the 1100 °C homogenization), and some fraction of α-ferrite forms from γ at finish-rolling temperatures (~900 °C); however, the paper does not explicitly assign δ-ferrite to the M2-HQ (homogenized + water-quenched) state.",
+    "No tensile, hardness, or quantitative phase-fraction (XRD/EBSD) measurement is reported specifically for the M2-HQ condition; the mechanical properties and quantitative phase analysis in this paper refer only to the M2-HR (hot-rolled) and M2-IA (intercritically annealed) conditions."
+  ]
+}

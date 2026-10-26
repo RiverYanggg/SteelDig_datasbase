@@ -1,0 +1,174 @@
+{
+  "identity": {
+    "paper_id": "10.1016_j.ijplas.2025.104353",
+    "equation_id": "equation_044",
+    "block_id": "b0177",
+    "equation_number": "44",
+    "is_image": false,
+    "latex_hint": "$$\n\\left\\{ \\begin{array}{c} \\sigma_ {0} = 1 7. 7 1 6 + 1 0 5. 4 0 8 \\sinh^ {- 1} \\left\\{\\left[ \\frac {\\dot {\\varepsilon} e x p \\left(\\frac {3 2 1 6 7 1}{R T}\\right)}{4 . 9 6 \\times 1 0 ^ {1 4}} \\right] ^ {0. 1 4 6} \\right\\} \\\\ \\sigma_ {s s} = 2 9 2. 8 4 8 \\sinh^ {- 1} \\left\\{\\left[ \\frac {\\dot {\\varepsilon} e x p \\left(\\frac {3 1 9 6 6 2}{R T}\\right)}{1 . 6 7 \\times 1 0 ^ {1 5}} \\right] ^ {0. 1 7 0} \\right\\} \\\\ \\sigma_ {s} = 1 6 0. 8 5 4 \\sinh^ {- 1} \\left\\{\\left[ \\frac {\\dot {\\varepsilon} e x p \\left(\\frac {3 1 4 3 0 0}{R T}\\right)}{6 . 2 8 \\times 1 0 ^ {1 3}} \\right] ^ {0. 1 4 6} \\right\\} \\\\ \\sigma_ {c} = 1 1 1. 6 6 1 \\left\\{\\ln \\left[ \\dot {\\varepsilon} e x p \\left(\\frac {3 7 6 4 7 5}{R T}\\right) \\right] \\right\\} ^ {0. 0 9 3} \\sinh^ {- 1} \\left\\{\\left[ \\frac {\\dot {\\varepsilon} e x p \\left(\\frac {3 1 4 3 0 0}{R T}\\right)}{6 . 2 8 \\times 1 0 ^ {1 3}} \\right] ^ {0. 1 4 6} \\right\\} \\end{array} \\right.\\tag{44}\n$$"
+  },
+  "latex": "\\left\\{ \\begin{array}{c} \\sigma_{0} = 17.716 + 105.408 \\sinh^{-1} \\left\\{\\left[ \\frac{\\dot{\\varepsilon} exp \\left(\\frac{321671}{R T}\\right)}{4.96 \\times 10^{14}} \\right]^{0.146} \\right\\} \\\\ \\sigma_{ss} = 292.848 \\sinh^{-1} \\left\\{\\left[ \\frac{\\dot{\\varepsilon} exp \\left(\\frac{319662}{R T}\\right)}{1.67 \\times 10^{15}} \\right]^{0.170} \\right\\} \\\\ \\sigma_{s} = 160.854 \\sinh^{-1} \\left\\{\\left[ \\frac{\\dot{\\varepsilon} exp \\left(\\frac{314300}{R T}\\right)}{6.28 \\times 10^{13}} \\right]^{0.146} \\right\\} \\\\ \\sigma_{c} = 111.661 \\left\\{\\ln \\left[ \\dot{\\varepsilon} exp \\left(\\frac{376475}{R T}\\right) \\right] \\right\\}^{0.093} \\sinh^{-1} \\left\\{\\left[ \\frac{\\dot{\\varepsilon} exp \\left(\\frac{314300}{R T}\\right)}{6.28 \\times 10^{13}} \\right]^{0.146} \\right\\} \\end{array} \\right.",
+  "purpose": "表达DRX本构模型中四个特征应力（σ₀、σ_ss、σ_s、σ_c）在恒变形条件下随应变速率和温度变化的拟合关系式。",
+  "applicability_conditions": "适用于恒变形条件（恒定温度和应变速率）下的特征应力描述；各参数由遗传算法(GA)优化得到（见表1），针对该文研究的材料。",
+  "symbols": [
+    {
+      "symbol": "σ_0",
+      "meaning": "特征应力（初始/屈服特征应力）",
+      "unit": "MPa",
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "σ_ss",
+      "meaning": "稳态应力",
+      "unit": "MPa",
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "σ_s",
+      "meaning": "饱和应力",
+      "unit": "MPa",
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "σ_c",
+      "meaning": "临界应力（DRX起始临界特征应力）",
+      "unit": "MPa",
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "ε̇",
+      "meaning": "应变速率",
+      "unit": "s⁻¹",
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "T",
+      "meaning": "变形温度（绝对温度）",
+      "unit": "K",
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "R",
+      "meaning": "通用气体常数",
+      "unit": "J·mol⁻¹·K⁻¹",
+      "value": "8.314",
+      "is_constant": true
+    },
+    {
+      "symbol": "17.716",
+      "meaning": "σ₀式的拟合常数（加性项）",
+      "unit": "MPa",
+      "value": "17.716",
+      "is_constant": true
+    },
+    {
+      "symbol": "105.408",
+      "meaning": "σ₀式的拟合常数（前因子）",
+      "unit": "MPa",
+      "value": "105.408",
+      "is_constant": true
+    },
+    {
+      "symbol": "321671",
+      "meaning": "σ₀式的表观激活能",
+      "unit": "J·mol⁻¹",
+      "value": "321671",
+      "is_constant": true
+    },
+    {
+      "symbol": "4.96×10^14",
+      "meaning": "σ₀式的指前因子",
+      "unit": "s⁻¹",
+      "value": "4.96 × 10^14",
+      "is_constant": true
+    },
+    {
+      "symbol": "0.146",
+      "meaning": "σ₀式的应力指数（材料常数）",
+      "unit": null,
+      "value": "0.146",
+      "is_constant": true
+    },
+    {
+      "symbol": "292.848",
+      "meaning": "σ_ss式的拟合常数（前因子）",
+      "unit": "MPa",
+      "value": "292.848",
+      "is_constant": true
+    },
+    {
+      "symbol": "319662",
+      "meaning": "σ_ss式的表观激活能",
+      "unit": "J·mol⁻¹",
+      "value": "319662",
+      "is_constant": true
+    },
+    {
+      "symbol": "1.67×10^15",
+      "meaning": "σ_ss式的指前因子",
+      "unit": "s⁻¹",
+      "value": "1.67 × 10^15",
+      "is_constant": true
+    },
+    {
+      "symbol": "0.170",
+      "meaning": "σ_ss式的应力指数（材料常数）",
+      "unit": null,
+      "value": "0.170",
+      "is_constant": true
+    },
+    {
+      "symbol": "160.854",
+      "meaning": "σ_s式的拟合常数（前因子）",
+      "unit": "MPa",
+      "value": "160.854",
+      "is_constant": true
+    },
+    {
+      "symbol": "314300",
+      "meaning": "σ_s式的表观激活能",
+      "unit": "J·mol⁻¹",
+      "value": "314300",
+      "is_constant": true
+    },
+    {
+      "symbol": "6.28×10^13",
+      "meaning": "σ_s式的指前因子",
+      "unit": "s⁻¹",
+      "value": "6.28 × 10^13",
+      "is_constant": true
+    },
+    {
+      "symbol": "111.661",
+      "meaning": "σ_c式的拟合常数（前因子）",
+      "unit": "MPa",
+      "value": "111.661",
+      "is_constant": true
+    },
+    {
+      "symbol": "376475",
+      "meaning": "σ_c式对数项中的表观激活能",
+      "unit": "J·mol⁻¹",
+      "value": "376475",
+      "is_constant": true
+    },
+    {
+      "symbol": "0.093",
+      "meaning": "σ_c式对数项的指数（材料常数）",
+      "unit": null,
+      "value": "0.093",
+      "is_constant": true
+    }
+  ],
+  "unmapped": [
+    "这些特征应力的求解过程见补充材料 Appendix A2，并表现出强烈的温度和应变速率依赖性。",
+    "本构模型参数 K_T0, Q_KT, ψ, q, Q_drs, Q_p, A, α, n, k_d0, Q_kd, n_Av0, Q_Aν, n_c 采用遗传算法(GA)优化得到，详见表1。",
+    "σ_c 式中 sinh⁻¹ 项与 σ_s 式共用相同的激活能(314300)和指前因子(6.28×10^13)及指数(0.146)。"
+  ]
+}

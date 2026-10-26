@@ -1,0 +1,62 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_in939__in939-cracks",
+      "paper_id": "10.1016_j.actamat.2025.120962",
+      "alloy_id": "alloy_in939",
+      "process_id": "proc_in939-cracks",
+      "sample_label": "IN939-2",
+      "aliases": "IN939-2 (cracks)"
+    }
+  ],
+  "processing_steps": [],
+  "structures": [
+    {
+      "structure_id": "struct_in939_2_cracks",
+      "overall_structure": "grayscale micrograph showing large grains traversed by thick, irregular dark bands (cracks)",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_in939_2",
+          "region": null,
+          "related_sequence": null,
+          "phases_present": [],
+          "defects": [
+            {
+              "type": "cracks (thick, irregular dark bands)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_in939_2_matsam",
+      "microstructure_id": "micro_in939_2",
+      "technique": "training-free microstructure segmentation via MatSAM (SAM-based visual large model); raw input is a grayscale micrograph",
+      "instrument_or_setup": null,
+      "measurement_conditions": "no manual annotations; image not provided with corresponding annotations",
+      "purpose": "extract crack regions from the IN939-2 micrograph",
+      "key_findings": "crack regions are reasonably recognized and clearly separated; the key-structure binary output renders the dark crack bands as white foreground on black"
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "IN939-2 (cracks) is one of six additional extended-experiment micrographs (NBS-3 γ' phase, NBS-3 TCP phase, IN939-1 melted pool boundary, IN939-2 cracks, C22000 and C21000 brass twin grain) used to demonstrate MatSAM's extensibility; these image samples are not provided with corresponding annotations."
+  ]
+}

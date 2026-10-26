@@ -1,0 +1,9 @@
+Use case: infographic-diagram
+Asset type: Scientific data processing workflow illustration for a Chinese materials database presentation. 1536x1024 canvas, pure white background.
+Create a beautiful precisely ordered horizontal pipeline showing PDF → document parsing → structured extraction → database ingestion. Four equally spaced stages centered in a broad horizontal strip between y=250 and y=680; all artwork and text within x=60..1476 and y=200..770. Leave top 200 and bottom 220 pixels pure white for cropping.
+Style: polished vector-like scientific infographic with gentle isometric depth, navy and royal blue with teal accents, very pale blue platforms, restrained soft shadows, elegant crisp fine lines. Use navy #123D78 cobalt #2463C5 teal #169994. Research institute presentation quality, no playful cartoons, no robots.
+Stage 1 at x=200: a small stack of scholarly paper PDFs, with abstract scientific line charts and table marks on page. Exact large caption “论文 PDF”.
+Stage 2 at x=580: one page separated into text lines, a structured table, and a tiny image frame, with soft blue bounding boxes illustrating layout recognition. Exact large caption “版面解析”.
+Stage 3 at x=950: clean nested JSON-like cards combining elemental symbols Fe Mn Al C with small colored data cells. Exact large caption “结构化抽取”.
+Stage 4 at x=1310: relational database cylinder paired with a compact archive box, one checkmark. Exact large caption “校验入库”.
+Three large clear directional arrows connecting stage 1 to 2, 2 to 3, 3 to 4, strictly left to right. Under each stage a tiny preserved-file icon, connected to a thin baseline indicating retained artifacts, but no new arrows or loops. Do not include numbers, statistics, claims or extra labels. Only four captions and elemental symbols permitted. Labels rendered in perfectly legible modern Chinese sans serif. All labels dark navy. White margin must be completely white.

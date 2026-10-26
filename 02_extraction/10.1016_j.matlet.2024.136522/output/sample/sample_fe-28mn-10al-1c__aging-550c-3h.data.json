@@ -1,0 +1,148 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-10al-1c__aging-550c-3h",
+      "paper_id": "10.1016_j.matlet.2024.136522",
+      "alloy_id": "alloy_fe-28mn-10al-1c",
+      "process_id": "proc_aging-550c-3h",
+      "sample_label": "0Cu steel (aged)",
+      "aliases": [
+        "aged 0Cu steel"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1000",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Applied to the Fe-28Mn-10Al-1C-(0,3)Cu austenitic low-density steels (0Cu steel or 3Cu steel) as the first step, before the aging treatment."
+    },
+    {
+      "processing_step_id": "step_aging",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "aging treatment",
+      "temperature": "550",
+      "temperature_unit": "°C",
+      "duration": "3 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Aging treatment applied sequentially after solution treatment, producing the aged state of the 0Cu steel. In this state κ-carbide is able to precipitate from the austenitic matrix of the 0Cu steel."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_aged_0cu_austenite",
+      "overall_structure": "Austenitic (γ) matrix of the 0Cu Fe-28Mn-10Al-1C low-density steel from which intragranular κ-carbide is able to precipitate upon aging. The solution-treated lattice parameter of the 0Cu steel (a = 0.3687 nm) exceeds the critical lattice parameter (~0.3670 nm) and the Al content exceeds the critical Al content (6.52 wt%), so κ-carbide precipitation is enabled in this steel.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_0cu_austenite_matrix",
+          "region": null,
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC (austenitic matrix; lattice parameter a = 0.3687 nm under solution treatment)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_0cu",
+              "type": "intragranular κ-carbide",
+              "size": null,
+              "distribution": null,
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_0cu",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "on the solution-treated 0Cu steel",
+      "purpose": "Determination of the lattice parameter of the austenitic matrix of the 0Cu steel.",
+      "key_findings": "The lattice parameter of the 0Cu steel under solid solution treatment is a = 0.3687 nm, which is higher than the critical lattice parameter (~0.3670 nm), enabling κ-carbide precipitation."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_0cu_critical_al",
+      "simulation_method": "empirical composition-boundary formula (analytical)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "intragranular κ-carbide precipitation boundary formula",
+          "equation_role": "Predicts the critical Al content required for intragranular κ-carbide precipitation in Fe-Mn-Al-C steel; applied to the 0Cu steel to yield a critical Al content of 6.52 wt%.",
+          "parameters": [
+            {
+              "name": "wt.% C coefficient",
+              "value": "0.208",
+              "unit": null
+            },
+            {
+              "name": "wt.% Al coefficient",
+              "value": "0.098",
+              "unit": null
+            },
+            {
+              "name": "wt.% Mn coefficient",
+              "value": "0.0054",
+              "unit": null
+            }
+          ],
+          "model_note": "0.208(wt.%C) + 0.098(wt.%Al) = 1 − 0.0054(wt.%Mn)"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "Lattice parameter of the 0Cu steel (Fe-28Mn-10Al-1C) under solution treatment is a = 0.3687 nm according to XRD calculations, compared with a = 0.3689 nm for the 3Cu steel.",
+    "The critical lattice parameter of the austenitic matrix for intragranular κ-carbide precipitation in Fe-Mn-Al-C steel is about a = 0.3670 nm; the 0Cu steel value (a = 0.3687 nm) is higher, so κ-carbide can precipitate from the 0Cu steel.",
+    "Using the composition boundary formula 0.208(wt.%C) + 0.098(wt.%Al) = 1 − 0.0054(wt.%Mn), the critical Al content for κ-carbide precipitation in the 0Cu steel is calculated to be 6.52 wt%; the Al content in the 0Cu steel exceeds 6.52 wt%, so κ-carbide has sufficient precipitation ability in this steel."
+  ]
+}

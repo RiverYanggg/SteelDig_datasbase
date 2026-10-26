@@ -1,0 +1,186 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-2mn-8al-0.2c__cool-1400c-10cps-quench-870c",
+      "paper_id": "10.1007_s11837-014-1084-y",
+      "alloy_id": "alloy_fe-2mn-8al-0.2c",
+      "process_id": "proc_cool-1400c-10cps-quench-870c",
+      "sample_label": null,
+      "aliases": "Fig. 7a, Fig. 7b (after deep etching)"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "cooling",
+      "temperature": "1400 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": "10 °C/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cooling down from 1400 °C at 10 °C/s from the two-phase domain"
+    },
+    {
+      "processing_step_id": "step_2",
+      "sequence": "2",
+      "type": "quenching",
+      "method": "quenching",
+      "temperature": "870 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Quenching at 870 °C"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "Two-phase austenite (γ)-ferrite (α) microstructure with κ-phase (j-phase) precipitated at austenite/ferrite interfaces, forming a nonlamellar eutectoid",
+      "number_of_phases": "3",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": "bulk (optical micrograph, Fig. 7a)",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (α)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "rounded/polygonal particles embedded in the ferrite matrix",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-phase (j-phase)",
+              "crystal_structure": "perovskite (E2₁)",
+              "volume_fraction": null,
+              "morphology": "dark, scalloped, lobed rim outlining each austenite particle",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_1",
+              "type": "κ-phase (j-phase)",
+              "size": null,
+              "distribution": "at austenite/ferrite interfaces, forming rims around austenite particles",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_2",
+          "region": "bulk (deep-etched SEM, Fig. 7b)",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (α)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix embedding the γ plate and κ ridge",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "flat central plate",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-phase (j-phase)",
+              "crystal_structure": "perovskite (E2₁)",
+              "volume_fraction": null,
+              "morphology": "3D ridge of plates/laths growing from and roughly perpendicular to the flat central γ plate",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_2",
+              "type": "κ-phase (j-phase)",
+              "size": null,
+              "distribution": "plates/laths growing from and roughly perpendicular to a flat central γ plate",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "interface_1",
+          "microstructure_id": "micro_1",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "ferrite (α)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "During cooling from the two-phase domain, the j-phase precipitates at the austenite/ferrite interface, with j-phase and ferrite forming a nonlamellar eutectoid",
+      "interface_notes": "In three dimensions, the j-phase grows along the long axis of austenite"
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_1",
+      "microstructure_id": "micro_1",
+      "technique": "optical microscopy",
+      "instrument_or_setup": null,
+      "measurement_conditions": "20 µm scale bar",
+      "purpose": "show κ-phase precipitation at austenite/ferrite interfaces",
+      "key_findings": "Rounded/polygonal γ (austenite) particles sit in an α (ferrite) matrix, each γ outlined by a dark, scalloped, lobed κ rim"
+    },
+    {
+      "characterization_id": "char_2",
+      "microstructure_id": "micro_2",
+      "technique": "scanning electron microscopy (SEM)",
+      "instrument_or_setup": "Mag = 1.46 K X, EHT = 20.00 kV",
+      "measurement_conditions": "deep etched, 10 µm scale bar",
+      "purpose": "reveal the three-dimensional κ-phase morphology",
+      "key_findings": "3D ridge of κ-phase plates/laths growing from and roughly perpendicular to a flat central γ plate embedded in α"
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": []
+}

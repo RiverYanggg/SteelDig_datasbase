@@ -1,0 +1,203 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-1si-0.9c-highp__st-1050c-2h",
+      "paper_id": "10.1007_s11837-014-1068-y",
+      "alloy_id": "alloy_fe-30mn-9al-1si-0.9c-highp",
+      "process_id": "proc_st-1050c-2h",
+      "sample_label": "High-P (0.07%) solution treated",
+      "aliases": [
+        "1.07% Si, 0.07% P solution treated"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_solution_treatment",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "water quench",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution treatment at 1050°C for 2 h followed by water quench to produce fully austenitic matrix."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_austenite",
+      "overall_structure": "Fully austenitic matrix in the solution-treated (1050°C, 2 h) and water-quenched condition",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_austenite_bulk",
+          "region": "bulk",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "property_set_st_mechanical",
+      "measurement_conditions": {
+        "temperature": "25",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "Charpy V-notch (CVN) specimen for impact energy; Brinell indentation for hardness",
+        "test_standard": null,
+        "other_conditions": "Solution treated (1050°C, 2 h), water quenched"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "242 ± 6",
+            "scale": "BHN",
+            "unit": "BHN",
+            "uncertainty": "± 6"
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        },
+        "charpy_v_notch_impact_energy": [
+          {
+            "value": "28",
+            "unit": "J",
+            "test_temperature": "25 °C",
+            "uncertainty": null
+          },
+          {
+            "value": "21 ± 4",
+            "unit": "ft-lbs",
+            "test_temperature": "25 °C",
+            "uncertainty": "± 4"
+          }
+        ]
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_cvn_phosphorus_effect",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "25",
+          "max": "25",
+          "unit": "°C"
+        },
+        "stress_state": "Charpy V-notch impact (room-temperature notch toughness)",
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Solution-treated CVN impact energy: 28 J for this 0.07% P sample versus 200 J (0.006% P) / 199 J (0.001% P) low-phosphorus samples",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_brinell_hardness",
+      "microstructure_id": null,
+      "technique": "Brinell hardness testing",
+      "instrument_or_setup": "Brinell (3000 kg), converted from Rockwell B and C scale measurements",
+      "measurement_conditions": "Solution treated (1050°C, 2 h)",
+      "purpose": "Measure hardness of the 0.07% P solution-treated sample",
+      "key_findings": "242 ± 6 BHN"
+    },
+    {
+      "characterization_id": "char_cvn_impact",
+      "microstructure_id": null,
+      "technique": "Charpy V-notch impact test",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Test temperature 25°C; solution treated condition",
+      "purpose": "Measure notch toughness (CVN breaking energy) of the 0.07% P solution-treated sample",
+      "key_findings": "Average CVN energy 28 J (21 ± 4 ft-lbs)"
+    },
+    {
+      "characterization_id": "char_sem_fractography",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM) fractography",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Charpy V-notch fracture surface, as-solution treated and quenched",
+      "purpose": "Characterize fracture mode of the 0.07% P solution-treated Charpy specimen",
+      "key_findings": "Low-energy cleavage-like fracture with a dendritic pattern, attributed to fracture along {001}"
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Chemical composition of this sample's heat (Table I, row 3, b0013/figure_unlabelled_001): Si 1.07, C 0.90, Mn 29.11, P 0.070, Mo 0.37, Al 9.25, Cu 0.10 wt.%; S not reported.",
+    "Tensile properties for this exact 0.07% P solution-treated sample are not explicitly tabulated; the closest Table II 'No Calcium treatment' solution-treated (2 h) rows are Si 1.0/P 0.06 (YS 458 MPa, UTS 687 MPa, 44% elongation) and Si 1.4/P 0.06 (YS 549 MPa, UTS 766 MPa, 36% elongation).",
+    "Dynamic fracture toughness (DFT) is not reported for this 0.07% P solution-treated sample; Table IV DFT values cover 0.59% Si/0.002% P, 1.07% Si/0.001% P, 1.56% Si/0.002% P, and 0.94% Si/0.043% P variants.",
+    "Phosphorus-induced short-range ordering (SRO) is suggested as the mechanism lowering the {001} cleavage strength and causing the cleavage-like dendritic fracture observed in the 0.07% P solution-treated sample (b0043)."
+  ]
+}

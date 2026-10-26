@@ -1,0 +1,369 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_spce__after-25pct-deformation",
+      "paper_id": "10.1016_j.jmatprotec.2004.04.114",
+      "alloy_id": "alloy_spce",
+      "process_id": "proc_after-25pct-deformation",
+      "sample_label": null,
+      "aliases": [
+        "SPCE after 25% plastic strain",
+        "SPCE after large deformation"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_tensile_deformation",
+      "sequence": "1",
+      "type": "mechanical processing",
+      "method": "precision tensile test (loading in tension)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "SPCE sheet metal workpiece was loaded in tension to a given plastic strain of maximum 25% during the precision tensile test using a precision extensometer and strain gages."
+    },
+    {
+      "processing_step_id": "step_2_unloading",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "unloading after tensile deformation",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The workpiece was unloaded after reaching the maximum 25% plastic strain; the elastic modulus was then measured from the unloading curve after the given plastic deformation."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_spce_after_deformation",
+      "overall_structure": "Polycrystalline SPCE (mild steel) sheet containing grains separated by grain boundaries; after large plastic deformation the dislocation structure changes so that movable dislocations and dislocation pile-up near grain boundaries govern the (reduced) apparent elastic modulus.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_grain_interior",
+          "region": "grain interior (away from the grain boundary)",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "Fe matrix (mild steel, C dissolved in Fe)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": "grains of different orientations"
+            }
+          ],
+          "defects": [
+            {
+              "type": "movable dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": "grains at different orientations give different measured modulus levels."
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_near_grain_boundary",
+          "region": "near grain boundary",
+          "related_sequence": "1",
+          "phases_present": [],
+          "defects": [
+            {
+              "type": "dislocation pile-up",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "intf_spce_after_deformation",
+      "phase_interfaces": [
+        {
+          "interface_id": "gb_1",
+          "microstructure_id": "micro_near_grain_boundary",
+          "phase_1_name": "grain",
+          "phase_2_name": "adjacent grain",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "dislocation_pileup_gb",
+          "microstructure_id": "micro_near_grain_boundary",
+          "interaction_type": "dislocation pile-up at grain boundary",
+          "qualitative_or_quantitative_description": "Dislocations released from a common source move along the same slip surface and pile up; the front of the dislocations is stopped by obstacles such as grain boundaries and solutes. The piled-up dislocations can move backwards when the shearing stress is released during unloading, which lowers the apparent elastic modulus; the decrease increases as a function of the plastic strain."
+        }
+      ],
+      "slip_behavior": "Dislocations move along the same slip surface and pile up at the grain boundary; the pile-up configuration gives a movable-dislocation population that deforms even at stresses below the yield stress.",
+      "phase_evolution": null,
+      "interface_notes": "The pile-up model (Fig. 3) is qualitative (no magnitudes printed); near the boundary the apparent elastic modulus is locally lower than in the grain interior."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_set_macroscopic_modulus",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "SPCE sheet metal specimen",
+        "test_standard": null,
+        "other_conditions": "Precision tensile test using the authors' precision extensometer and strain gages; the workpiece was loaded to a maximum plastic strain of 25% and then unloaded; elastic modulus measured from the stress–strain curve at initial elastic deformation and from the unloading curve after plastic deformation."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": {
+            "value": "variation δE = E/E0 decreases from 100% (undeformed reference) to ≈75% at true strain ≈0.25–0.27; i.e. the modulus decreases by more than 20% after a deformation of 25% plastic strain",
+            "unit": "% of E0",
+            "uncertainty": null
+          },
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_set_nanoindentation_modulus",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "SPCE specimen (Fig. 10 specimen outline labelled 'SPCE'), grain-boundary region",
+        "test_standard": null,
+        "other_conditions": "Nano-indentation with a spherical indenter tip (nominal radius R = 50 μm) along lines across a grain boundary; measurement grid with 1 μm interval and 20 × 3 points in X and Y."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": {
+            "value": "compound/indentation elastic modulus Er near the grain boundary is lower than in the interior; most values scatter between ≈150 and ≈400 GPa, with the lowest point next to the boundary falling to ≈50 GPa (values read from the scatter plots)",
+            "unit": "GPa",
+            "uncertainty": null
+          },
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_springback_prediction",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "V-bending (planar forming) before unloading",
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": "FEM simulation of spring-back after V-bending",
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Experimental V-bending spring-back (rising from a little above 0.8° to just under 1.4° as bend angle falls from 160° to 90°) compared with FE simulations using the constant initial elastic modulus (lowest, ~1.0° to ~1.2°) and using the strain-dependent varied modulus (tracks the experimental points closely)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_precision_extensometer_tensile",
+      "microstructure_id": null,
+      "technique": "Precision tensile test with a precision extensometer and strain gages",
+      "instrument_or_setup": "precision extensometer developed by the authors, plus strain gages and a load cell",
+      "measurement_conditions": "Workpiece loaded to a maximum 25% plastic strain and unloaded; stress–strain curve monitored throughout",
+      "purpose": "Measure the elastic modulus of SPCE sheet metal before and after large plastic deformation",
+      "key_findings": "Young's modulus decreases with plastic strain, by more than 20% after 25% plastic strain (Fig. 1)."
+    },
+    {
+      "characterization_id": "char_nanoindentation_spherical",
+      "microstructure_id": "micro_near_grain_boundary",
+      "technique": "Nano-indentation with a spherical indenter tip",
+      "instrument_or_setup": "Triboscope (Hysitron Inc.) mounted on an AFM stage SPM-9500J2 (Shimadzu Co.); spherical tip with nominal radius R = 50 μm; force range 1–10 mN (100 nN sensitivity), displacement range 5 μm (0.2 nm sensitivity)",
+      "measurement_conditions": "Indentation near a grain boundary (specimen labelled SPCE); nominal radius R = 50 μm; measurement grid with 1 μm interval, 20 points in X and 3 in Y; CMP treatment applied before indentation to avoid surface-roughness effects",
+      "purpose": "Measure the distribution of the elastic modulus (and hardness) within a grain, in particular near the grain boundary",
+      "key_findings": "The elastic modulus near the grain boundary has a smaller value than in other regions of the grain; the average values are smaller than the previous test because the real tip radius is smaller than the nominal value."
+    },
+    {
+      "characterization_id": "char_afm_imaging",
+      "microstructure_id": "micro_near_grain_boundary",
+      "technique": "Atomic force microscopy (AFM) imaging of the surface",
+      "instrument_or_setup": "SPM-9500J2 AFM stage (Shimadzu Co.) with 3D piezo stage controlled by an SPM controller",
+      "measurement_conditions": "Surface profile scanned before and after indentation; position axis 0–12 μm",
+      "purpose": "Locate the grain boundary and the indentation points, and measure the surface profile in situ",
+      "key_findings": "AFM height map shows a grain boundary as a dark diagonal band with three rows of indentation markers (Lines #1–#3) across it."
+    },
+    {
+      "characterization_id": "char_optical_microscopy_etching",
+      "microstructure_id": "micro_near_grain_boundary",
+      "technique": "Optical microscopy of an etched surface",
+      "instrument_or_setup": "optical microscope (green/yellow-tinted etched surface micrograph)",
+      "measurement_conditions": "Surface of the specimen etched with an etching solution to disclose the grain boundary; measurement region marked as a rectangular area",
+      "purpose": "Reveal and locate the targeted grain boundary before nano-indentation (etching forms a several-nanometre ditch at the boundary)",
+      "key_findings": "Polycrystalline region with grains delimited by dark irregular boundaries and a few small dark inclusions/pores; targeted grain boundary identified under the microscope."
+    },
+    {
+      "characterization_id": "char_vickers_markers",
+      "microstructure_id": "micro_near_grain_boundary",
+      "technique": "Vickers hardness indentation for location marking",
+      "instrument_or_setup": "Vickers hardness test machine",
+      "measurement_conditions": "Two indentation marks made near the targeted grain boundary; larger outer markers find the region, smaller inner markers fix the exact measurement point (marker spacings 300/340/300 μm)",
+      "purpose": "Mark the exact position so the targeted grain boundary can be relocated after CMP treatment",
+      "key_findings": "Marker layout permits re-location of the measurement point after CMP (Fig. 10)."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_fem_springback",
+      "simulation_method": "Finite-element (FEM) simulation of spring-back after V-bending",
+      "software_used": "an FEM code (not named in the paper)",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "V-bending test; the elastic modulus was set either to the constant initial value or to the strain-dependent (varied) modulus taken from the experimental results of Fig. 1",
+      "validation_against_experiment": "Spring-back computed with the varied elastic modulus could be predicted more accurately than with the constant initial elastic modulus when compared with the experimental spring-back (Fig. 2).",
+      "analytical_models": [
+        {
+          "model_name": "Quadratic fit of elastic modulus vs true strain",
+          "equation_role": "describes the decrease of the elastic modulus with true (plastic) strain measured by the precision extensometer",
+          "parameters": [
+            {
+              "name": "quadratic coefficient",
+              "value": "351",
+              "unit": null
+            },
+            {
+              "name": "linear coefficient",
+              "value": "−160",
+              "unit": null
+            },
+            {
+              "name": "constant",
+              "value": "93.8",
+              "unit": "%"
+            }
+          ],
+          "model_note": "E = E0*(351ε² − 160ε + 93.8), as annotated on Fig. 1."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The nano-indentation (microscopic) specimens are labelled only as SPCE in Fig. 10; the text does not restate that they were tested specifically after the 25% tensile deformation, so the near-grain-boundary modulus reduction (Figs. 9 and 12) cannot be unambiguously tied to the as-deformed (after-25%) state rather than to the general SPCE material.",
+    "A post-tensile-test heat treatment of 373 K for 90 h was applied to some workpieces to recover only the Cottrell atmosphere (diffusion of C in the Fe matrix) while keeping dislocations stationary; the condition was calculated from the average diffusion distance X = (2Dt)^(1/2). This defines a separate heat-treated condition, not the as-deformed after-25% sample.",
+    "Table 1 (specimens A–E: as received, with 15% pre-strain, heat-treated after 15% pre-strain, heat-treated after received, annealed), Table 2, and Fig. 4 concern a different material, SPCC sheet of 1.2 mm thickness with 15% pre-strain, and are excluded from the SPCE after-25%-deformation sample.",
+    "The paper attributes the decrease of the elastic modulus after plastic deformation to three reasons: increase of residual stress (which disturbs elastic recovery), increase of micro-cracks (which decrease density; the density reduction due to plastic deformation is less than 1%), and variation in the dislocation structure (movable/piled-up dislocations).",
+    "In mild steel, dislocations may be locked by carbon and other solutes (Cottrell effect) before plastic deformation; during plastic deformation they are released and move with lower internal stress, and the Cottrell atmosphere is not recovered at room temperature because the diffusion rate of C in the Fe matrix is very low."
+  ]
+}

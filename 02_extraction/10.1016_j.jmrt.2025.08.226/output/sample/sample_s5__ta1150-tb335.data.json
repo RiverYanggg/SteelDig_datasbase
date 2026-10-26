@@ -1,0 +1,269 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_s5__ta1150-tb335",
+      "paper_id": "10.1016_j.jmrt.2025.08.226",
+      "alloy_id": "alloy_s5",
+      "process_id": "proc_ta1150-tb335",
+      "sample_label": "S5, TA: 1150 °C, TB: 335 °C",
+      "aliases": [
+        "S5 TA1150/TB335",
+        "S5 austempered at 335 °C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_casting",
+      "sequence": "1",
+      "type": "casting",
+      "method": "vacuum arc furnace casting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "24 h",
+      "atmosphere": "inert argon protection",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "promotes uniform composition and microstructure throughout the steel blocks"
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "step-by-step hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "slow cooling in the oven",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "thickness reduced to ~11 mm",
+      "processing_steps_notes": "Hot rolling reduced thickness to ~11 mm followed by slow cooling in the oven; samples then fabricated by water jet cutting (OMAX 2626)."
+    },
+    {
+      "processing_step_id": "step_austenitization",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "austenitization",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": "15 min",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": "10 K/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "TA = 1150 °C is an optimized austenitizing temperature for S5 (carbide dissolution advanced, αp suppressed to a very small residual fraction ≲1 %). MatCalc ferrite-free TA for S5 = 986 °C; measured operational TA ~900 °C."
+    },
+    {
+      "processing_step_id": "step_cooling_to_TB",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "controlled cooling from austenitization to austempering temperature",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": "100 K/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "100 K/s is sufficiently fast to suppress intermediate phase transformations and ensure fine bainitic transformation."
+    },
+    {
+      "processing_step_id": "step_austempering",
+      "sequence": "6",
+      "type": "heat treatment",
+      "method": "austempering (isothermal bainitic hold)",
+      "temperature": "335 °C",
+      "temperature_unit": "°C",
+      "duration": "700 s",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "TB = 335 °C is ~4 °C above the measured Ms (331 °C) for S5; incubation period completed within 10 s; TB 335 °C is the lowest of the two S5 austempering temperatures."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_s5_ta1150_tb335",
+      "overall_structure": "Predominantly bainitic microstructure produced by austempering S5 at 335 °C; fine, well-connected bainitic ferrite network with minimal impingement, film-like retained austenite at bainite lath boundaries, only sparse lenticular martensite (below XRD detectability) and a trace (<1 %) of polygonal ferrite; no SEM-resolvable (Fe,M)xCy after austempering.",
+      "number_of_phases": "4",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_s5_tb335",
+          "region": "bulk (austempered specimen)",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "bainitic ferrite (α)",
+              "crystal_structure": "bcc",
+              "volume_fraction": null,
+              "morphology": "fine parallel bainitic lamellae in narrow packets with intra-packet orientation clustering separated by high-angle packet/block boundaries",
+              "grain_size": "Lt(t) = 41 nm (true lamellar thickness); SD(Lt(t)) = 14",
+              "texture": null
+            },
+            {
+              "phase_name": "retained austenite (film-like γr)",
+              "crystal_structure": "fcc",
+              "volume_fraction": "19 %",
+              "morphology": "film-like at bainite lath boundaries",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "lenticular martensite (M)",
+              "crystal_structure": null,
+              "volume_fraction": "below XRD detectability (only sporadically observed)",
+              "morphology": "sporadic lenticular plates; fine bainitic lamellae wrapped inside larger martensite units",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "polygonal ferrite (αp)",
+              "crystal_structure": "bcc",
+              "volume_fraction": "<1.0 %",
+              "morphology": "trace polygonal ferrite (αp on grain boundaries seen in SEM)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "local misorientation / geometrically necessary dislocations (KAM hot-spots)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": "εγ 0.51 %, εα 0.45 %"
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "41 nm",
+              "unit": "nm"
+            },
+            "grain_size_distribution": "SD(Lt(t)) = 14 nm",
+            "texture": "narrow bainitic-ferrite lath packets with intra-packet orientation clustering; high-angle packet/block boundaries"
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_s5_tb335",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_bf_gamma",
+          "microstructure_id": "micro_s5_tb335",
+          "phase_1_name": "bainitic ferrite",
+          "phase_2_name": "retained austenite (film-like)",
+          "coherence": null
+        },
+        {
+          "interface_id": "if_lath_packet",
+          "microstructure_id": "micro_s5_tb335",
+          "phase_1_name": "bainitic ferrite lath",
+          "phase_2_name": "bainitic ferrite packet",
+          "coherence": null
+        },
+        {
+          "interface_id": "if_m_lath",
+          "microstructure_id": "micro_s5_tb335",
+          "phase_1_name": "lenticular martensite (M)",
+          "phase_2_name": "bainitic ferrite lath",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_kam_martensite",
+          "microstructure_id": "micro_s5_tb335",
+          "interaction_type": "dislocation accumulation / local misorientation hot-spots adjacent to martensite plates",
+          "qualitative_or_quantitative_description": "KAM hot-spots near M at 335 °C; mean KAM ~0.825° at 335 °C (median 0.692°); bands of elevated misorientation along lath/packet boundaries and at sheaf tips"
+        }
+      ],
+      "phase_evolution": "Lowering TB from 365 °C to 335 °C refines the bainitic plates, concentrates local lattice curvature near martensite and lath interfaces, and reduces/stiffens γr; sporadic lenticular martensite forms at 335 °C (Ms 331 °C + 4 K) via stress-assisted transformation and local heterogeneities.",
+      "interface_notes": "S5 shows a clean interface network: film-like γr at bainite lath boundaries; because films are near/below the EBSD step size, EBSD under-counts γr relative to XRD, so XRD is taken as quantitative for phase fractions."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_s5_tb335_tensile",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "ASTM E8 sub-size round specimens (12.5 mm gauge length, 2.5 mm diameter, 7 mm shoulder length)",
+        "test_standard": "ASTM E8",
+        "other_conditions": "Specimen austenitized at TA = 1150 °C and austempered at TB = 335 °C (T_A/T_B condition for this sample); tensile test at room temperature (not explicitly stated)"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1530 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "7.0 %",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk",
+            "value": {
+              "value": "493 HV30",
+              "unit": "HV30",
+              "uncertainty": null
+            }
+          }
+        ],
+        "unit": null
+      },
+      "fatigue_properties": {
+        "fatigue_limit": null,
+        "cycles_to_failure": null
+      },
+      "creep_properties": {
+        "steady_state_creep_rate": null,
+        "rupture_life": null
+      }
+    },
+    "physical"
+  ],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

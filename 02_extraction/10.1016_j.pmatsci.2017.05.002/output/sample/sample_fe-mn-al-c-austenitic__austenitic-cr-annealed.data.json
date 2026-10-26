@@ -1,0 +1,375 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-mn-al-c-austenitic__austenitic-cr-annealed",
+      "paper_id": "10.1016_j.pmatsci.2017.05.002",
+      "alloy_id": "alloy_fe-mn-al-c-austenitic",
+      "process_id": "proc_austenitic-cr-annealed",
+      "sample_label": "cold rolled + annealed",
+      "aliases": [
+        "non-age hardenable austenitic steel (cold rolled + annealed)"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_cold_rolling",
+      "sequence": "1",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "50%",
+      "processing_steps_notes": "For non-age hardenable austenitic Fe-Mn-Al-C steels (Al < 7%), cold rolling is combined with subsequent annealing to obtain high strength and formability simultaneously. An effective grain refinement is caused by the generation of a large number of nanoscale twin boundaries during cold rolling. The Fig. 32b example (Fe-22Mn-7Al-0.8C) used a 50% thickness reduction; the Fig. 32a examples (Fe-22.5Mn-1.2Al-0.3C) used 30% and 50% cold rolling reductions."
+    },
+    {
+      "processing_step_id": "step_recovery_recrystallization_annealing",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "recovery or recrystallization annealing",
+      "temperature": "600 to 900",
+      "temperature_unit": "°C",
+      "duration": "1–5 min",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Applied after cold rolling to restore ductility or to obtain grain refinement; in this case the continuous annealing line for producing conventional steel strips can be used. With increasing annealing time and/or temperature the yield behaviour changes from continuous to discontinuous yielding due to the increasing recrystallized volume fraction; a lower degree of recrystallization gives relatively higher strength but lower elongation."
+    },
+    {
+      "processing_step_id": "step_alternative_annealing_500_1000",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "short-time annealing above the M7C3 formation temperature",
+      "temperature": "500–1000",
+      "temperature_unit": "°C",
+      "duration": "short period of time",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Alternative annealing window: after cold rolling, annealing in the 500–1000°C range for a short period of time above the M7C3 formation temperature can partially recover ductility or yield fine recrystallized austenitic grains; this annealing can also be applied for age hardenable austenitic steels."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "str_cr_annealed_recrystallized_austenite",
+      "overall_structure": "Cold rolled and annealed non-age hardenable austenitic Fe-Mn-Al-C steel: after cold rolling the material contains a large number of nanoscale deformation-twin boundaries; subsequent recovery/recrystallization annealing leaves the deformation twins thermally stable while the dislocation density is reduced, producing fine recrystallized austenitic grains and enabling cold formability together with high strength by extreme grain refinement. With increasing annealing time/temperature the recrystallized volume fraction increases, changing the yield behaviour from continuous to discontinuous yielding; a lower degree of recrystallization provides relatively high strength but lower elongation.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_recrystallized_austenite",
+          "region": null,
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "fine recrystallized austenitic grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "deformation twins (nanoscale twin boundaries generated during cold rolling, thermally stable after recovery annealing)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "reduced by recovery annealing",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_fe22mn7al08c_50cr_annealed",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Fe-22Mn-7Al-0.8C steel (non-age hardenable austenitic, cold rolled + annealed condition) after 50% cold rolling thickness reduction followed by recrystallization annealing at 800°C/1min, 850°C/1min, 850°C/3min, 900°C/5min, 950°C/5min or 975°C/25min"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "~1000 MPa (800°C/1min)",
+              "unit": "MPa",
+              "uncertainty": null
+            },
+            {
+              "direction": null,
+              "value": "~760 MPa (975°C/25min)",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "> 50% (975°C/25min)",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress–strain curves for Fe-22Mn-7Al-0.8C after 50% cold rolling and annealing at 800°C/1min, 850°C/1min, 850°C/3min, 900°C/5min, 950°C/5min and 975°C/25min; increasing annealing temperature/time lowers the peak stress and raises elongation.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_fe225mn12al03c_cr_annealed",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Fe-22.5Mn-1.2Al-0.3C non-age hardenable austenitic steel after different cold rolling reductions and annealing treatments: CR30%, CR50%, CR30%+630°C/10m, CR50%+550°C/30m, CR30%+700°C/15m, CR50%+700°C/10m"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "~930 MPa (CR30%)",
+              "unit": "MPa",
+              "uncertainty": null
+            },
+            {
+              "direction": null,
+              "value": "> 1200 MPa (CR50%)",
+              "unit": "MPa",
+              "uncertainty": null
+            },
+            {
+              "direction": null,
+              "value": "~870 MPa (CR30%+630°C/10m)",
+              "unit": "MPa",
+              "uncertainty": null
+            },
+            {
+              "direction": null,
+              "value": "~1100 MPa (CR50%+550°C/30m)",
+              "unit": "MPa",
+              "uncertainty": null
+            },
+            {
+              "direction": null,
+              "value": "~700 MPa (CR30%+700°C/15m)",
+              "unit": "MPa",
+              "uncertainty": null
+            },
+            {
+              "direction": null,
+              "value": "~750 MPa (CR50%+700°C/10m)",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "~22% (CR30%)",
+              "unit": "%",
+              "uncertainty": null
+            },
+            {
+              "direction": null,
+              "value": "~5% (CR50%)",
+              "unit": "%",
+              "uncertainty": null
+            },
+            {
+              "direction": null,
+              "value": "~34% (CR30%+630°C/10m)",
+              "unit": "%",
+              "uncertainty": null
+            },
+            {
+              "direction": null,
+              "value": "~20% (CR50%+550°C/30m)",
+              "unit": "%",
+              "uncertainty": null
+            },
+            {
+              "direction": null,
+              "value": "~65% (CR30%+700°C/15m)",
+              "unit": "%",
+              "uncertainty": null
+            },
+            {
+              "direction": null,
+              "value": "~62% (CR50%+700°C/10m)",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress–strain curves of Fe-22.5Mn-1.2Al-0.3C after 30%/50% cold rolling with and without annealing at 630°C/10m, 550°C/30m, 700°C/15m and 700°C/10m.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "cm_optical_microscopy",
+      "microstructure_id": "micro_recrystallized_austenite",
+      "technique": "optical microscopy",
+      "instrument_or_setup": null,
+      "measurement_conditions": "hot-rolled, cold-rolled and annealed conditions",
+      "purpose": "Characterize the optical microstructures of low density steels in the hot-rolled, cold-rolled and annealed conditions",
+      "key_findings": "The cold rolled + annealed condition of austenitic low density steels generally shows equiaxed/recrystallized austenitic grains (the austenitic (γ) example in Fig. 12 was Fe-29Mn-6Al-0.9C); alloy class controls the hot-rolled microstructure."
+    },
+    {
+      "characterization_id": "cm_tensile_testing",
+      "microstructure_id": "micro_recrystallized_austenite",
+      "technique": "engineering stress–strain tensile testing",
+      "instrument_or_setup": null,
+      "measurement_conditions": "room temperature, tensile direction parallel to the strip rolling direction",
+      "purpose": "Measure the tensile properties of cold rolled + annealed non-age hardenable austenitic Fe-Mn-Al-C steels as a function of annealing parameters",
+      "key_findings": "With increasing annealing time and/or temperature, peak stress decreases and elongation increases; a lower degree of recrystallization gives higher strength but lower elongation."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_hall_petch_non_age_hardenable",
+      "simulation_method": "analytical model (Hall–Petch relationship)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Hall–Petch relationship for yield strength",
+          "equation_role": "Relates the yield strength of non-age hardenable Fe-Mn-Al-C austenitic alloys to austenitic grain size for grain-refinement strengthening (combined cold rolling + recrystallization annealing)",
+          "parameters": [
+            {
+              "name": "sigma_y0 (initial strength)",
+              "value": "288",
+              "unit": "MPa"
+            },
+            {
+              "name": "K (Hall-Petch parameter)",
+              "value": "461",
+              "unit": "MPa μm^1/2"
+            }
+          ],
+          "model_note": "Applied to non-age hardenable Fe-Mn-Al-C alloys, whose austenitic grain size can be refined by a combination of cold rolling and recrystallization annealing"
+        },
+        {
+          "model_name": "Hall–Petch relationship for ultimate tensile strength",
+          "equation_role": "Relates the ultimate tensile strength of non-age hardenable Fe-Mn-Al-C austenitic alloys to austenitic grain size",
+          "parameters": [
+            {
+              "name": "sigma_uts0 (initial strength)",
+              "value": "742",
+              "unit": "MPa"
+            },
+            {
+              "name": "K (Hall-Petch parameter)",
+              "value": "351",
+              "unit": "MPa μm^1/2"
+            }
+          ],
+          "model_note": "Grain-refinement strengthening of the cold rolled + recrystallization annealed non-age hardenable austenitic alloys"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "For non-age hardenable austenitic Fe-Mn-Al-C steels, the cold rolling + recovery/recrystallization annealing route can be run on the continuous annealing line used for producing conventional steel strips (b0107).",
+    "Strengthening in the non-precipitation hardenable (non-age hardenable) austenitic Fe-Mn-Al-C alloys is effected through solid solution hardening and by grain refinement through cold rolling and recrystallization annealing (b0304).",
+    "For the non-age hardenable austenitic cold rolled + annealed condition, effective grain refinement is caused by the generation of a large number of nanoscale twin boundaries during cold rolling; subsequent recovery annealing leaves the deformation twins thermally stable while the dislocation density is reduced, giving cold formability on the one hand and high strength by extreme grain refinement on the other (b0258)."
+  ]
+}

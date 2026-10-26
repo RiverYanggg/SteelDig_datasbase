@@ -1,0 +1,435 @@
+{
+  "schema_version": "sample-discover-v1",
+  "paper_id": "10.1016_j.mtla.2025.102360",
+  "domain": "materials",
+  "paper": {
+    "paper_id": "10.1016_j.mtla.2025.102360",
+    "doi": "10.1016/j.mtla.2025.102360",
+    "title": "Phase transformation and austenite stability during thermomechanical processing of high (~5%) Al added low-density medium Mn steel",
+    "authors": [
+      "Mukesh Kumar Yadav",
+      "Deepak Kumar",
+      "Navanit Kumar",
+      "Tapas Kumar Bandyopadhyay"
+    ],
+    "publication_year": "2025",
+    "journal": null,
+    "keywords": [
+      "Al added medium Mn steel",
+      "Delta ferrite",
+      "Austenite stability",
+      "Phase transformation",
+      "Stacking fault energy"
+    ],
+    "research_type": "experimental",
+    "paper_scope": "A high (~5 wt.%) Al added low-density medium Mn steel (Fe-8Mn-5Al-0.2C, measured Fe-7.79Mn-4.88Al-0.84Si-0.2C) was developed via melting-casting, hot forging, hot rolling+water quenching, and intercritical annealing at 750°C for 5-180 min; the work correlates thermomechanical processing and annealing time with phase transformation (delta ferrite, martensite, reverted austenite, intercritical ferrite), austenite mechanical stability, and tensile/work-hardening behavior (TRIP effect)."
+  },
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "alloy_name": "Fe-8Mn-5Al-0.2C (wt.%) high Al added low-density medium Mn steel",
+      "aliases": [
+        "Al added low density medium Mn steel",
+        "low-density high Al (~5 wt.%) added medium Mn steel",
+        "developed steel",
+        "Fe-7.79Mn-4.88Al-0.84Si-0.2C"
+      ],
+      "description": "Low-density medium Mn steel designed with a high Al addition (~5 wt.%) to reduce density; developed by the conventional melting-casting route in an open-air induction furnace. The high Al and Si stabilize delta ferrite whereas Mn and C stabilize austenite.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "Si",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "Bal.",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "7.79",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "4.88",
+          "atomic_percent": null
+        },
+        {
+          "element": "Si",
+          "weight_percent": "0.84",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "0.2",
+          "atomic_percent": null
+        },
+        {
+          "element": "P",
+          "weight_percent": "0.03",
+          "atomic_percent": null
+        },
+        {
+          "element": "S",
+          "weight_percent": "0.03",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Designed/nominal composition is Fe-8Mn-5Al-0.2C (wt.%). The final measured composition (XRF and OES, Table 1) is Fe-7.79Mn-4.88Al-0.84Si-0.2C (wt.%) with P 0.03 and S 0.03 wt.%. Measured density 6.91455 g/cc (~11.35% lower than conventional steel ~7.8 g/cc). Theoretical SFE of the designed steel ~35 mJ/m².",
+      "source": {
+        "reason": "The paper designs and develops one steel: 'the proposed/designed Al added low density Fe-8Mn-5Al-0.2C (wt.%) medium Mn steel' [b0014]. Its final measured composition (Table 1) is Fe bal., Mn 7.79, Al 4.88, Si 0.84, C 0.2, P 0.03, S 0.03 wt.% [b0016]. The conclusion restates the developed steel as Fe-7.79Mn-4.88Al-0.84Si-0.2C [b0075]. The designed and measured compositions refer to the same single alloy, hence defined once.",
+        "block_id": [
+          "b0014",
+          "b0016",
+          "b0075"
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_cast",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_name": "As-cast (solidification)",
+      "state_label": "cast specimen",
+      "aliases": [
+        "cast",
+        "casting",
+        "as-cast specimen"
+      ],
+      "parent_process_ids": [],
+      "description": "As-solidified cast ingot produced by the melting-casting route in an open-air induction furnace, air cooled to room temperature; dual-phase delta ferrite + austenite (dendritic austenite) microstructure.",
+      "processes_notes": null,
+      "source": {
+        "reason": "The developed steel was produced 'by melting-casting route in an open-air induction furnance' [b0014]; the cast specimen is characterized (XRD/optical) as a dual-phase delta ferrite + austenite with dendritic austenite [b0036]. This is the first studied state.",
+        "block_id": [
+          "b0014",
+          "b0036"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_hot-forged",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_name": "Homogenization and hot forging",
+      "state_label": "hot forged specimen",
+      "aliases": [
+        "hot forged",
+        "forged specimen",
+        "hot-forged sample"
+      ],
+      "parent_process_ids": [
+        "proc_cast"
+      ],
+      "description": "Cast ingot homogenized at 1100°C for 2 h, then hot forged to 50% thickness reduction in the temperature range 1050-800°C, followed by air cooling to room temperature.",
+      "processes_notes": "Dilatometry was additionally performed on the hot-forged specimen [b0018], but that is a characterization test rather than a distinct state.",
+      "source": {
+        "reason": "The cast ingot 'has been homogenized at 1100°C for 2hr and hot forged to 50% thickness reduction in the temperature range of 1050-800°C following air cooling to room temperature' [b0014]. The hot forged specimen is characterized as a distinct studied state [b0036, b0037].",
+        "block_id": [
+          "b0014",
+          "b0036",
+          "b0037"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_hrq",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_name": "Hot rolling and water quenching",
+      "state_label": "HRQ",
+      "aliases": [
+        "hot rolled & quenched",
+        "hot rolled and quenched",
+        "HRQ specimen",
+        "hot rolled",
+        "HRO"
+      ],
+      "parent_process_ids": [
+        "proc_hot-forged"
+      ],
+      "description": "Hot forged sample hot rolled (soaking 1100°C, 2 h) in the temperature range 1050-800°C in two passes (reheating at 1100°C for 5 min between passes) with 50% thickness reduction in each pass, followed by water quenching to room temperature from the finish rolling temperature (~800°C).",
+      "processes_notes": "Converts part of the austenite to lenticular martensite due to the high cooling rate (water quenching); remaining austenite is termed untransformed austenite. Also referred to as 'hot rolled' in Table 3.",
+      "source": {
+        "reason": "Hot forged samples 'have been further hot rolled (soaking, 1100°C, 2hr) in the temperature range of 1050-800°C in two passes ... followed by finally water quenching to room temperature from finish rolling temperature' [b0014]. The hot rolled & quenched (HRQ) state is a distinct studied specimen containing martensite [b0038].",
+        "block_id": [
+          "b0014",
+          "b0038"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ia750-5min",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_name": "Intercritical annealing at 750°C for 5 min",
+      "state_label": "IA750_5 Min",
+      "aliases": [
+        "IA750_5Min",
+        "IA750_5 Min specimen",
+        "intercritically annealed at 750°C for 5 minutes"
+      ],
+      "parent_process_ids": [
+        "proc_hrq"
+      ],
+      "description": "Hot rolled & quenched 3 mm sheet intercritically annealed at 750°C for 5 min, followed by air cooling to room temperature.",
+      "processes_notes": "Part of a series of IA750 annealing conditions (5, 30, 60, 120, 180 min) all sharing the same 750°C intercritical annealing temperature and HRQ precursor.",
+      "source": {
+        "reason": "The HRQ sheet 'has been intercritically annealed at 750°C (IA750) for different duration of annealing time (i.e. 5, 30, 60, 120 and 180 minutes), followed by air cooling to room temperature' [b0014]; the 5 min condition is labeled IA750_5 Min [b0039].",
+        "block_id": [
+          "b0014",
+          "b0039"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ia750-30min",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_name": "Intercritical annealing at 750°C for 30 min",
+      "state_label": "IA750_30 Min",
+      "aliases": [
+        "IA750_30Min",
+        "IA750_30 Min specimen",
+        "intercritically annealed at 750°C for 30 minutes"
+      ],
+      "parent_process_ids": [
+        "proc_hrq"
+      ],
+      "description": "Hot rolled & quenched 3 mm sheet intercritically annealed at 750°C for 30 min, followed by air cooling to room temperature.",
+      "processes_notes": "Part of the IA750 annealing series (5-180 min) sharing the same 750°C temperature and HRQ precursor.",
+      "source": {
+        "reason": "Annealing series at 750°C for 5-180 min [b0014]; the 30 min condition is labeled IA750_30 Min [b0039] and its properties reported [b0046, b0051].",
+        "block_id": [
+          "b0014",
+          "b0039",
+          "b0046"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ia750-60min",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_name": "Intercritical annealing at 750°C for 60 min",
+      "state_label": "IA750_60 Min",
+      "aliases": [
+        "IA750_60Min",
+        "IA750_60 Min specimen",
+        "intercritically annealed at 750°C for 60 minutes"
+      ],
+      "parent_process_ids": [
+        "proc_hrq"
+      ],
+      "description": "Hot rolled & quenched 3 mm sheet intercritically annealed at 750°C for 60 min, followed by air cooling to room temperature; produces needle and globular reverted austenite with optimum mechanical stability.",
+      "processes_notes": "Part of the IA750 annealing series (5-180 min) sharing the same 750°C temperature and HRQ precursor; this condition shows the highest PSE and enhanced TRIP effect.",
+      "source": {
+        "reason": "Annealing series at 750°C for 5-180 min [b0014]; the 60 min condition is labeled IA750_60 Min and reveals optimum mechanical stability of reverted austenite and highest PSE [b0078, b0066].",
+        "block_id": [
+          "b0014",
+          "b0039",
+          "b0066"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ia750-120min",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_name": "Intercritical annealing at 750°C for 120 min",
+      "state_label": "IA750_120 Min",
+      "aliases": [
+        "IA750_120Min",
+        "IA750_120 Min specimen",
+        "intercritically annealed at 750°C for 120 minutes"
+      ],
+      "parent_process_ids": [
+        "proc_hrq"
+      ],
+      "description": "Hot rolled & quenched 3 mm sheet intercritically annealed at 750°C for 120 min, followed by air cooling to room temperature; most reverted austenite dissolved into intercritical ferrite.",
+      "processes_notes": "Part of the IA750 annealing series (5-180 min) sharing the same 750°C temperature and HRQ precursor.",
+      "source": {
+        "reason": "Annealing series at 750°C for 5-180 min [b0014]; the 120 min condition is labeled IA750_120 Min, showing few needle/globular reverted austenite and reduced properties [b0042, b0046].",
+        "block_id": [
+          "b0014",
+          "b0039",
+          "b0042"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_ia750-180min",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_name": "Intercritical annealing at 750°C for 180 min",
+      "state_label": "IA750_180 Min",
+      "aliases": [
+        "IA750_180Min",
+        "IA750_180 Min specimen",
+        "intercritically annealed at 750°C for 180 minutes"
+      ],
+      "parent_process_ids": [
+        "proc_hrq"
+      ],
+      "description": "Hot rolled & quenched 3 mm sheet intercritically annealed at 750°C for 180 min, followed by air cooling to room temperature; reverted austenite almost completely dissolved into intercritical ferrite leaving mostly intercritical ferrite and untransformed austenite.",
+      "processes_notes": "Part of the IA750 annealing series (5-180 min) sharing the same 750°C temperature and HRQ precursor.",
+      "source": {
+        "reason": "Annealing series at 750°C for 5-180 min [b0014]; the 180 min condition is labeled IA750_180 Min with almost complete dissolution of reverted austenite [b0042, b0050].",
+        "block_id": [
+          "b0014",
+          "b0039",
+          "b0042"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe-8mn-5al-0.2c__cast",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_id": "proc_cast",
+      "sample_label": "cast specimen",
+      "aliases": [
+        "cast",
+        "casting",
+        "as-cast"
+      ],
+      "source": {
+        "reason": "Combination of the developed Fe-8Mn-5Al-0.2C alloy in the as-cast state; XRD and optical characterization of the cast specimen is reported [b0014, b0036].",
+        "block_id": [
+          "b0014",
+          "b0036"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-8mn-5al-0.2c__hot-forged",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_id": "proc_hot-forged",
+      "sample_label": "hot forged specimen",
+      "aliases": [
+        "hot forged",
+        "forged specimen"
+      ],
+      "source": {
+        "reason": "Combination of the developed alloy with the hot forging state; the hot forged specimen is characterized (XRD/optical/SEM/EBSD) [b0014, b0036, b0037].",
+        "block_id": [
+          "b0014",
+          "b0036"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-8mn-5al-0.2c__hrq",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_id": "proc_hrq",
+      "sample_label": "HRQ",
+      "aliases": [
+        "hot rolled & quenched",
+        "hot rolled",
+        "HRO",
+        "HRQ specimen"
+      ],
+      "source": {
+        "reason": "Combination of the developed alloy with the hot rolled & water quenched state; extensively characterized and tested (microstructure, nanoindentation, tensile, fractography) [b0038, b0046, b0057].",
+        "block_id": [
+          "b0038",
+          "b0046"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-8mn-5al-0.2c__ia750-5min",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_id": "proc_ia750-5min",
+      "sample_label": "IA750_5 Min",
+      "aliases": [
+        "IA750_5Min",
+        "IA750_5 Min specimen"
+      ],
+      "source": {
+        "reason": "Combination of the developed alloy with intercritical annealing at 750°C for 5 min; microstructural and mechanical data reported [b0039, b0044, b0057].",
+        "block_id": [
+          "b0039",
+          "b0044"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-8mn-5al-0.2c__ia750-30min",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_id": "proc_ia750-30min",
+      "sample_label": "IA750_30 Min",
+      "aliases": [
+        "IA750_30Min",
+        "IA750_30 Min specimen"
+      ],
+      "source": {
+        "reason": "Combination of the developed alloy with intercritical annealing at 750°C for 30 min; microstructure, WHR and tensile properties reported [b0042, b0057, b0051].",
+        "block_id": [
+          "b0042",
+          "b0051"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-8mn-5al-0.2c__ia750-60min",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_id": "proc_ia750-60min",
+      "sample_label": "IA750_60 Min",
+      "aliases": [
+        "IA750_60Min",
+        "IA750_60 Min specimen"
+      ],
+      "source": {
+        "reason": "Combination of the developed alloy with intercritical annealing at 750°C for 60 min; the optimum condition with highest PSE, analyzed by nanoindentation, HRTEM and APT [b0042, b0066, b0078].",
+        "block_id": [
+          "b0042",
+          "b0066",
+          "b0078"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-8mn-5al-0.2c__ia750-120min",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_id": "proc_ia750-120min",
+      "sample_label": "IA750_120 Min",
+      "aliases": [
+        "IA750_120Min",
+        "IA750_120 Min specimen"
+      ],
+      "source": {
+        "reason": "Combination of the developed alloy with intercritical annealing at 750°C for 120 min; microstructure and tensile properties reported [b0042, b0046, b0057].",
+        "block_id": [
+          "b0042",
+          "b0057"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-8mn-5al-0.2c__ia750-180min",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_id": "proc_ia750-180min",
+      "sample_label": "IA750_180 Min",
+      "aliases": [
+        "IA750_180Min",
+        "IA750_180 Min specimen"
+      ],
+      "source": {
+        "reason": "Combination of the developed alloy with intercritical annealing at 750°C for 180 min; microstructure, WHR and tensile properties reported [b0042, b0050, b0057].",
+        "block_id": [
+          "b0042",
+          "b0050"
+        ]
+      }
+    }
+  ],
+  "unmapped_findings": [
+    "The theoretical stacking fault energy (SFE) of the designed steel was calculated as ~35 mJ/m² (within the 20-40 mJ/m² TWIP range) using the Olson-Cohen thermodynamic model; the SFE of reverted austenite in the IA750_60 Min specimen was recalculated as ~27 mJ/m² based on its measured Mn (7.58 wt.%) and Al (3.96 wt.%) contents.",
+    "The developed steel density was measured as 6.91455 g/cc by Archimedes' principle, corresponding to a ~11.35% reduction relative to conventional steel (~7.8 g/cc), achieved by adding ~5 wt.% Al and ~1 wt.% Si.",
+    "No k-carbide precipitation was observed in the IA750_60 Min specimen; SEM, HRTEM and 3D atom probe tomography found no evidence of precipitates or elemental clustering.",
+    "APT atomic composition: reverted austenite contains Fe 72.92±0.33, Mn 12.41±0.24, Al 11.74±0.32, Si 1.34±0.08, C 1.59±0.09 (at.%); intercritical ferrite contains Fe 77.94±0.35, Mn 5.65±0.36, Al 14.41±0.14, Si 1.76±0.12, C 0.24±0.12 (at.%).",
+    "The martensite start temperature was calculated as ~350°C, supporting the transformation of austenite to lenticular martensite during water quenching from the finish rolling temperature (~800°C).",
+    "Tensile tests were performed at room temperature at a strain rate of 2.67×10⁻⁴ s⁻¹ on ASTM E8/E8M subsize specimens machined along the rolling direction; nanoindentation was performed with a Berkovich tip at 30 mN load.",
+    "No TWIP effect was observed in the high-SFE alloy, and the plastic region of the stress-strain curves showed no serrations; the balance of size and chemical composition was concluded to determine the mechanical stability of the reverted austenite."
+  ]
+}

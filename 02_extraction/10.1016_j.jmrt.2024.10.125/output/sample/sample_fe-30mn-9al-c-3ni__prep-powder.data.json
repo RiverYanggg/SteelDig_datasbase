@@ -1,0 +1,131 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-c-3ni__prep-powder",
+      "paper_id": "10.1016_j.jmrt.2024.10.125",
+      "alloy_id": "alloy_fe-30mn-9al-c-3ni",
+      "process_id": "proc_prep-powder",
+      "sample_label": "PREP powder",
+      "aliases": [
+        "Fe–30Mn–9Al–C–3Ni powder",
+        "PREP-prepared Fe–30Mn–9Al–C–3Ni powder"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_prep",
+      "sequence": "1",
+      "type": "powder production / manufacturing",
+      "method": "plasma rotating electrode process (PREP)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Spherical Fe–30Mn–9Al–C–3Ni powder (particle diameter 15–53 μm) was PREP-prepared using equipment from Advanced Corporation for Materials and Equipments (PREP-22). The PREP-prepared powder was cooled relatively slowly, so a small amount of carbon remained dissolved in the α-Fe phase."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_powder",
+      "overall_structure": "Highly spherical Fe–30Mn–9Al–C–3Ni powder with no satellites or irregular particles; solid (non-hollow) particles; Fe, Mn, Al and Ni uniformly distributed across particles.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_powder_particles",
+          "region": "powder particle (surface and cross-section)",
+          "related_sequence": "1",
+          "phases_present": [
+            {
+              "phase_name": "γ-Fe(M)",
+              "crystal_structure": "fcc (austenite)",
+              "volume_fraction": null,
+              "morphology": "dominant phase",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "α-Fe(M)",
+              "crystal_structure": "bcc (ferrite)",
+              "volume_fraction": null,
+              "morphology": "minor phase",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "no internal pores or hollow core; particles are solid",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_psd",
+      "microstructure_id": null,
+      "technique": "laser particle-size analysis",
+      "instrument_or_setup": "Bettersize 3000Plus laser particle-size analyzer",
+      "measurement_conditions": null,
+      "purpose": "Determine the particle-size distribution of the PREP-prepared Fe–30Mn–9Al–C–3Ni powder",
+      "key_findings": "Particles mainly distributed in the 15–53 μm range; median particle size (D50) = 35.69 μm; unimodal, narrow distribution."
+    },
+    {
+      "characterization_id": "char_flowability",
+      "microstructure_id": null,
+      "technique": "powder flowability measurement (Hall flow)",
+      "instrument_or_setup": "powder comprehensive performance tester",
+      "measurement_conditions": null,
+      "purpose": "Characterize the flowability of the PREP-prepared powder",
+      "key_findings": "Powder exhibited excellent flowability with a Hall value of 14 s/50 g, suitable for SLM."
+    },
+    {
+      "characterization_id": "char_xrd_powder",
+      "microstructure_id": "micro_powder_particles",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Bruker D8 Advance X-ray diffractometer",
+      "measurement_conditions": "continuous scanning, 2θ range 30–100°, Cu target, 2°/min",
+      "purpose": "Determine the crystal structure / phase constitution of the powder",
+      "key_findings": "Diffraction peaks for both γ-Fe(M) and α-Fe(M) phases; γ-Fe(M) dominates."
+    },
+    {
+      "characterization_id": "char_sem_powder",
+      "microstructure_id": "micro_powder_particles",
+      "technique": "scanning electron microscopy (SEM) with EDS elemental mapping",
+      "instrument_or_setup": "ZEISS Sigma300 scanning electron microscope",
+      "measurement_conditions": null,
+      "purpose": "Observe powder morphology, element distribution, and particle cross-section",
+      "key_findings": "Powder is highly spherical with no satellites or irregular particles; Fe, Mn, Al and Ni are uniformly distributed; cross-section reveals solid particles (no hollow/pores). The C distribution was not mapped because the conductive tape contains a large amount of C."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Powder particle diameter is 15–53 μm and the median particle size (D50) was determined to be 35.69 μm (Fig. 3).",
+    "Powder flowability: Hall value of 14 s/50 g, which is suitable for SLM.",
+    "The PREP-prepared Fe–30Mn–9Al–C–3Ni powder is highly spherical with no satellites or irregular particles observed, and lacks hollow particles.",
+    "The particle-size distribution is unimodal and narrow, consistent with the reported good flowability.",
+    "The cross-sectional image of a particle reveals the solid nature of the powder, showing a cellular/dendritic solidification network and a distinct outer rim, with no internal pores.",
+    "Elemental C distribution is not included in the EDS maps because the conductive tape holding the powder contains a large amount of C.",
+    "γ-Fe(M) phase dominates because the PREP-prepared powder was cooled relatively slowly, resulting in a small amount of carbon dissolved in the α-Fe phase that promotes the formation of the ferrite phase.",
+    "Chemical composition of the Fe–30Mn–9Al–C–3Ni powder (ICP-OES, wt%): Mn 29.95, Al 8.63, C 1.20, Ni 3.45, O 0.01, Fe Bal. (Table 1)."
+  ]
+}

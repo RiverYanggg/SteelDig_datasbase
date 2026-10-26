@@ -1,0 +1,264 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-9al__vim-hot-rolled",
+      "paper_id": "10.1007_s11837-014-1065-1",
+      "alloy_id": "alloy_fe-9al",
+      "process_id": "proc_vim-hot-rolled",
+      "sample_label": "Fe-9Al VIM",
+      "aliases": [
+        "Fe-9Al (VIM)",
+        "VIM Fe-9Al",
+        "Fe-9Al VIM hot-rolled"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_vim",
+      "sequence": "1",
+      "type": "melting",
+      "method": "vacuum induction melting",
+      "temperature": "1893 K",
+      "temperature_unit": "K",
+      "duration": null,
+      "atmosphere": "vacuum (10^-4 torr)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "50-kg capacity, 125-kW medium-frequency chamber vacuum induction furnace (G.C.A., USA); alumina-lined crucible of approximately 150 mm diameter and 300 mm height; soft iron pieces charged at the bottom with aluminum pieces on top; melt poured into 80-mm-diameter split cast iron molds kept inside the vacuum chamber."
+    },
+    {
+      "processing_step_id": "step_2_preheat_ingot",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "preheating",
+      "temperature": "1373 K",
+      "temperature_unit": "K",
+      "duration": "1 h",
+      "atmosphere": "hearth furnace (air)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "80-mm-diameter VIM ingot preheated in a hearth furnace before hot forging."
+    },
+    {
+      "processing_step_id": "step_3_hot_forge",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot forging",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-forged in a 1-tonne pneumatic forge hammer with die platens at room temperature."
+    },
+    {
+      "processing_step_id": "step_4_preheat_billet",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "preheating",
+      "temperature": "1373 K",
+      "temperature_unit": "K",
+      "duration": "1 h",
+      "atmosphere": "hearth furnace (air)",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "24-mm-thick sections of forged billets preheated at 1373 K for 1 h before hot rolling."
+    },
+    {
+      "processing_step_id": "step_5_hot_roll",
+      "sequence": "5",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "50%",
+      "processing_steps_notes": "Hot rolled by 50% with 1-mm reduction in thickness per pass; samples reheated after every six rolling passes under similar conditions as preheating (1373 K/1 h); final thickness of hot-rolled plate 12 mm."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_1",
+      "overall_structure": "Annealed microstructure with coarse, fully recrystallised equiaxed grains; the VIM 9 wt.% Al hot-rolled plate shows the coarsest grains of the group with strongly developed parallel twin-boundary bands.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": "bulk (hot-rolled plate)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "disordered Fe-Al solid solution (expected to exhibit short-range ordering)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "218",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "strongly developed parallel twin-boundary bands (annealing twins)"
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_1",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "hot-rolled plate (final thickness 12 mm)",
+        "test_standard": null,
+        "other_conditions": "Hardness data are an average of five measurements; tensile data are an average of three tests."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "517 ± 9.0",
+              "unit": "MPa",
+              "uncertainty": "± 9.0"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "568 ± 7.0",
+              "unit": "MPa",
+              "uncertainty": "± 7.0"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "09 ± 2.16",
+              "unit": "%",
+              "uncertainty": "± 2.16"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "250 ± 9.8",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": "± 9.8"
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_1",
+      "service_conditions": null,
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-9al",
+        "benchmark_process_id": "AIMFC (air induction melting with flux cover)",
+        "benchmark_sample_id": "Fe-9Al AIMFC hot-rolled",
+        "comparison_metric": "Fe-9Al VIM exhibited about 9% total elongation and is the strongest alloy tabulated (UTS 568 MPa), whereas Fe-9Al AIMFC failed at very low stress levels without significant elongation (0.1% EL).",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om",
+      "microstructure_id": "micro_1",
+      "technique": "optical microscopy (bright-field)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Microstructure/grain structure of hot-rolled plates",
+      "key_findings": "Annealed, coarse equiaxed fully recrystallised grains; coarsest grains of the group with strongly developed parallel twin-boundary bands."
+    },
+    {
+      "characterization_id": "char_chem",
+      "microstructure_id": null,
+      "technique": "chemical analysis (hydrogen by RH-444 Leco gas analyzer)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Alloy composition determination",
+      "key_findings": "Al 9.10, Si 0.11, Mn 0.042, S 0.0027, C 0.014, O 0.0023, H 0.0021, N <0.001 (wt.%)."
+    },
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": null,
+      "technique": "Vickers hardness",
+      "instrument_or_setup": null,
+      "measurement_conditions": "room temperature; average of five measurements",
+      "purpose": "Bulk hardness measurement",
+      "key_findings": "250 ± 9.8 HV."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "tensile test (room temperature)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "room temperature; average of three tests",
+      "purpose": "Room-temperature tensile property measurement",
+      "key_findings": "UTS 568 ± 7.0 MPa, YS 517 ± 9.0 MPa, total elongation 09 ± 2.16%."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Fe-9 wt.% Al alloy is expected to exhibit short-range ordering (in contrast to Fe-7Al, which is a totally disordered solid solution) [b0009].",
+    "Fe-9Al VIM ingots were sound and completely free from microcracks as well as hydrogen gas porosity [b0018].",
+    "Fe-9Al produced by VIM exhibited excellent hot workability, in contrast to the poor hot-working response (microcracks) of Fe-9Al produced by AIMFC [b0041].",
+    "Measured composition of Fe-9Al VIM (wt.%): Al 9.10, Si 0.11, Mn 0.042, S 0.0027, C 0.014, O 0.0023, H 0.0021, N <0.001 [b0036/Table I].",
+    "Aluminum recovery during VIM was 96-98% [b0025].",
+    "It has been demonstrated that Fe-9 wt.% Al alloy can be produced by VIM only; AIM gave gas porosity and AIMFC gave microcracks [b0064]."
+  ]
+}

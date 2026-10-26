@@ -1,0 +1,266 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-10al-15mn-0.8c-5ni__hr-std",
+      "paper_id": "10.1002_srin.202501163",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_id": "proc_hr-std",
+      "sample_label": "HR",
+      "aliases": [
+        "HR sample",
+        "sole HR sample",
+        "hot rolled sheet"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_homog_1150c_2h",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenization of the ingot at 1150 °C for 2 h in a muffle furnace before hot rolling (parent process of the HR route)."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1050–900 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "14 to 3 mm (nine passes)",
+      "processing_steps_notes": "Standard (slow, 1 rpm) hot rolling in a 75-ton rolling mill; nine passes at 1050 °C until finish rolling temperature of 900 °C, then air-cooled. Repeated HR in nine stages causes shape deformation and partial dissolution of dendrites."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_hr",
+      "overall_structure": "Hot-rolled γ (austenite) matrix containing lamellar B2 stringer bands transformed from δ-ferrite dendrites; shear bands form in the γ matrix and fine intragranular B2 (IG-B2) precipitates nucleate at those shear bands.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_hr_bulk",
+          "region": "bulk (hot rolled sheet)",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ (austenite)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "matrix, plastically deformed with shear bands",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "B2 (Fe(Ni,Mn)Al)",
+              "crystal_structure": "ordered BCC (B2)",
+              "volume_fraction": "~19% (dendrite/B2 stringer fraction after HR)",
+              "morphology": "lamellar stringer bands spanning over multiple austenite grains",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "shear bands in γ matrix",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "prec_ig-b2_hr",
+              "type": "IG-B2 (intragranular B2)",
+              "size": null,
+              "distribution": "Fine-scale B2 tends to nucleate at shear bands in the γ matrix",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interfaces_hr",
+      "phase_interfaces": [
+        {
+          "interface_id": "interface_gamma-b2",
+          "microstructure_id": "micro_hr_bulk",
+          "phase_1_name": "γ (austenite)",
+          "phase_2_name": "B2",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "interaction_shearband_igb2",
+          "microstructure_id": "micro_hr_bulk",
+          "interaction_type": "heterogeneous nucleation",
+          "qualitative_or_quantitative_description": "Fine-scale B2 nucleates at shear bands in γ, alleviating lattice strain."
+        }
+      ],
+      "slip_behavior": "Strain localization in the γ matrix via shear band formation during hot deformation",
+      "phase_evolution": "δ-ferrite dendrites transform into lamellar B2 stringer bands during hot rolling between 1050 and 900 °C",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_hr_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1 mm min⁻¹ crosshead velocity",
+        "specimen_geometry": "gauge length 12.5 mm, gauge width 3 mm, thickness 2 mm",
+        "test_standard": "ASTM E8",
+        "other_conditions": "rolling direction (RD); 100 kN Instron 5982 with 10 mm gauge extensometer"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "between 900 and 1200 MPa (peak stress)",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "nearly 6.8%",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress–strain curve for the HR condition is shown in Figure 5a",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "0.48 kJ mol⁻¹ (66.5 J cm⁻³)",
+          "unit": "kJ mol⁻¹ / J cm⁻³"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_hr_standard",
+      "service_conditions": {
+        "operating_temperature": null,
+        "stress_state": "uniaxial tension (rolling direction)",
+        "environment": "room temperature"
+      },
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "strength–ductility balance / tensile toughness",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om_hr",
+      "microstructure_id": "micro_hr_bulk",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": "Leica DM2700 M",
+      "measurement_conditions": "3% nital etch",
+      "purpose": "Reveal the transformation of δ-ferrite dendrites into lamellar B2 stringer bands after HR",
+      "key_findings": "After HR, dendrites become near-horizontal light lamellar B2 stringer bands separated by γ matrix"
+    },
+    {
+      "characterization_id": "char_fesem_hr",
+      "microstructure_id": "micro_hr_bulk",
+      "technique": "FESEM",
+      "instrument_or_setup": "Apreo S",
+      "measurement_conditions": null,
+      "purpose": "Observe shear bands in γ and IG-B2 precipitation in the HR state",
+      "key_findings": "Bright linear shear bands in γ and small IG-B2 particles; fine B2 nucleates at shear bands"
+    },
+    {
+      "characterization_id": "char_tensile_hr",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile test",
+      "instrument_or_setup": "100 kN Instron 5982 with 10 mm gauge extensometer",
+      "measurement_conditions": "room temperature; ASTM E8; RD; gauge length 12.5 mm, width 3 mm, thickness 2 mm; 1 mm min⁻¹ crosshead velocity",
+      "purpose": "Obtain engineering stress–strain and toughness of the HR sample",
+      "key_findings": "HR exhibits nearly 6.8% ductility; toughness 0.48 kJ mol⁻¹ (66.5 J cm⁻³)"
+    },
+    {
+      "characterization_id": "char_image_analysis_hr",
+      "microstructure_id": "micro_hr_bulk",
+      "technique": "Image analysis (software)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Estimate dendrite/B2 stringer band fraction after HR",
+      "key_findings": "Dendrite fraction reduces from 27% (as-cast) to ~19% after HR"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_thermocalc",
+      "simulation_method": "Thermodynamic calculation (CALPHAD)",
+      "software_used": "Thermo-Calc (TCFE database)",
+      "potential_model_or_database": "TCFE (Thermo-Calc) database",
+      "boundary_and_initial_conditions": "Pseudo-binary phase diagram for the multicomponent Fe–10Al–15Mn–0.8C–5Ni system; alloy line at 0.8 wt% C",
+      "validation_against_experiment": "Outputs are consistent with Ref. [15] for the same alloy composition; predicts δ→B2 order-disorder transition at 1125 °C and eutectoid at 851 °C",
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "The standard (1 rpm) HR sample shows a poor strength–ductility balance (nearly 6.8% ductility and 0.48 kJ mol⁻¹ / 66.5 J cm⁻³ toughness); a modified high-speed HR (10 rpm) route with subsequent annealing raised YS to 1 GPa, elongation to 30% and toughness to 1.72 kJ mol⁻¹ (238 J cm⁻³).",
+    "HR is key for refining B2 stringer bands without metal sheet cracking, compared to CR.",
+    "Fracture analysis of the standard processed samples shows macrovoid nucleation inside B2 stringer bands, microcrack coalescence and B2 stringer de-cohesion; thicker stringer bands promote crack formation, a mechanism relevant to the premature failure of B2-stringer-containing samples including the sole HR sample."
+  ]
+}

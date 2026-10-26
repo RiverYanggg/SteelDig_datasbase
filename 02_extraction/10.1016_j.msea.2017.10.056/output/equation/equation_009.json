@@ -1,0 +1,92 @@
+{
+  "identity": {
+    "paper_id": "Fe-6.8Al",
+    "equation_id": "equation_009",
+    "block_id": "b0082",
+    "equation_number": "9",
+    "is_image": false,
+    "latex_hint": "$$\n\\begin{array}{l} \\tau_ {\\mathrm{ss}} = \\frac {\\mathrm{G} \\varepsilon_ {\\mathrm{s}} ^ {3 / 2} \\mathrm{c} ^ {1 / 2}}{7 0 0}, \\\\ \\varepsilon_ {\\mathrm{s}} = | \\varepsilon_ {\\mathrm{G}} ^ {\\prime} - \\beta \\varepsilon_ {\\mathrm{b}} |, \\varepsilon_ {\\mathrm{G}} ^ {\\prime} = \\frac {\\varepsilon_ {\\mathrm{G}}}{(1 + \\frac {1}{2} | \\varepsilon_ {\\mathrm{G}} |)}, \\varepsilon_ {\\mathrm{b}} = \\frac {1}{a} \\frac {d a}{d c} \\text {and} \\varepsilon_ {\\mathrm{G}} = \\frac {1}{G} \\frac {d G}{d c} \\end{array}\\tag{9}\n$$"
+  },
+  "latex": "\\tau_{\\mathrm{ss}} = \\frac{G \\varepsilon_{\\mathrm{s}}^{3/2} c^{1/2}}{700}, \\quad \\varepsilon_{\\mathrm{s}} = \\left| \\varepsilon_{\\mathrm{G}}^{\\prime} - \\beta \\varepsilon_{\\mathrm{b}} \\right|, \\quad \\varepsilon_{\\mathrm{G}}^{\\prime} = \\frac{\\varepsilon_{\\mathrm{G}}}{(1 + \\frac{1}{2}|\\varepsilon_{\\mathrm{G}}|)}, \\quad \\varepsilon_{\\mathrm{b}} = \\frac{1}{a}\\frac{da}{dc}, \\quad \\varepsilon_{\\mathrm{G}} = \\frac{1}{G}\\frac{dG}{dc}",
+  "purpose": "计算固溶强化对屈服强度的贡献（固溶强化应力 τ_ss），采用经验公式由剪切模量、溶质浓度及错配应变参数求解。",
+  "applicability_conditions": "经验公式（源自 Ref. [43]）；假设剪切模量随成分线性增加；仅计入 Fe-Al 基体的固溶强化贡献（按 Fe-Al 相体积分数计算）；对于极细小的畴区，固溶强化与有序相强化难以区分，此时忽略固溶强化贡献。应用于 Fe-6.8Al 低密度钢的固溶强化计算。",
+  "symbols": [
+    {
+      "symbol": "\\tau_{\\mathrm{ss}}",
+      "meaning": "固溶强化（来自固溶的强度贡献）",
+      "unit": "MPa",
+      "value": "95.6 MPa（Fe-6.8Al 合金计算值）",
+      "is_constant": false
+    },
+    {
+      "symbol": "G",
+      "meaning": "剪切模量 (shear modulus)",
+      "unit": "GPa",
+      "value": "82 GPa",
+      "is_constant": true
+    },
+    {
+      "symbol": "\\varepsilon_{\\mathrm{s}}",
+      "meaning": "固溶强化应变参数（错配应变参数，论文未在 where 从句中定义，直接取文献值）",
+      "unit": null,
+      "value": "0.45 [43]",
+      "is_constant": false
+    },
+    {
+      "symbol": "c",
+      "meaning": "溶质的浓度 (concentration of the solute)",
+      "unit": "wt%",
+      "value": "6.8 wt%",
+      "is_constant": false
+    },
+    {
+      "symbol": "a",
+      "meaning": "晶格参数 (lattice parameter)",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "\\varepsilon_{\\mathrm{G}}",
+      "meaning": "剪切模量随溶质浓度单位变化的变化量（每单位浓度变化引起的剪切模量变化）",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "\\varepsilon_{\\mathrm{b}}",
+      "meaning": "晶格参数随浓度变化的变化量",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "\\varepsilon_{\\mathrm{G}}^{\\prime}",
+      "meaning": "由 ε_G 归一化/修正得到的应变项（论文未在 where 从句中单独定义）",
+      "unit": null,
+      "value": null,
+      "is_constant": false
+    },
+    {
+      "symbol": "\\beta",
+      "meaning": "公式中与 ε_b 相乘的常数（论文未给出定义）",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    },
+    {
+      "symbol": "700",
+      "meaning": "分母中的数值（经验）常数（论文未给出定义）",
+      "unit": null,
+      "value": null,
+      "is_constant": true
+    }
+  ],
+  "unmapped": [
+    "该固溶强化公式引用自 Ref. [43]。",
+    "使用 Ref. [15] 中 XRD 测得的 Fe-Al 合金晶格参数值，Fe-Al 合金固溶强化从 5 wt% Al 的 67.8 MPa 增加到 9 wt% Al 的 127.2 MPa。",
+    "论文未在 where 从句中解释符号 ε_s、ε_G′ 及常数 β 与分母常数 700 的含义。",
+    "在 Eq.(9) 与 Eq.(10) 之间，文献 [b0086] 提到 Fe-Al 低密度钢体系的常数取值 G = 82 GPa、ν = 0.33、a = 2.02 Å、b = 2.48 Å，并称代入 Eq.(9) 得到 τ ~154.34 MPa（该描述疑为针对另一公式 Eq.(10) 的晶格摩擦应力）。",
+    "由于缺乏 Fe-Al 合金的晶格摩擦应力数据，采用了 Speich 和 Swann [46] 对 0.4 wt% C 钢使用的 41 MPa。"
+  ]
+}

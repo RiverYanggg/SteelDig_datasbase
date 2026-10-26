@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "steeldig-db"
+version = "1.0.0"
+description = "SteelDig 材料知识库 ETL：资产湖 → PostgreSQL 事实层 → 检索层"
+requires-python = ">=3.11"
+dependencies = [
+    "psycopg[binary]>=3.1",
+    "orjson>=3.9",
+    "jieba>=0.42",
+]
+
+[project.optional-dependencies]
+embed = ["fastembed>=0.3"]
+dev = ["pytest>=8", "httpx>=0.27"]
+
+[project.scripts]
+steeldig-db = "steeldig_db.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["steeldig_db*"]

@@ -1,0 +1,182 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-2.7si-0.9c__st-1100c-10min",
+      "paper_id": "10.1007_s11837-014-1068-y",
+      "alloy_id": "alloy_fe-30mn-9al-2.7si-0.9c",
+      "process_id": "proc_st-1100c-10min",
+      "sample_label": "2.7% Si hot-rolled + solution treated (1100°C)",
+      "aliases": "hot-rolled, solution-treated, and quenched 2.7% Si steel"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "1",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The as-hot-rolled material was slow cooled after deformation, which is stated to have caused short-range ordering (SRO) and j-carbide precipitation in the as-hot-rolled condition."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1100°C",
+      "temperature_unit": "°C",
+      "duration": "10 min",
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Water quenched after solution treatment; fracture mode changes from cleavage to completely ductile."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_solution_treated",
+      "overall_structure": "fully austenitic",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_austenite",
+          "region": null,
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "50 µm",
+              "unit": "µm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_cvn_solution_treated",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "Charpy V-notch (CVN)",
+        "test_standard": null,
+        "other_conditions": "L-T orientation; impact loading"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "160 J",
+          "unit": "J"
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_solution_treatment_effect",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "notch impact (Charpy V-notch)",
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-30mn-9al-2.7si-0.9c",
+        "benchmark_process_id": "proc_hot-rolled",
+        "benchmark_sample_id": null,
+        "comparison_metric": "Room-temperature CVN breaking energy (L-T orientation)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_cvn_test",
+      "microstructure_id": null,
+      "technique": "Charpy V-notch (CVN) impact test",
+      "instrument_or_setup": null,
+      "measurement_conditions": "Room temperature; L-T orientation",
+      "purpose": "Measure notch toughness (CVN breaking energy) of the solution-treated 2.7% Si steel",
+      "key_findings": "Solution treatment at 1100°C for 10 min and water quenching improved CVN toughness to an average of 160 J (L-T orientation); fracture was completely ductile."
+    },
+    {
+      "characterization_id": "char_sem_fracture",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM), secondary-electron imaging",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Characterize the CVN fracture surface of the solution-treated specimen",
+      "key_findings": "Fracture surface is fully ductile: rounded, roughly equiaxed units separated by a network of fine dimples and tear ridges, with no large flat cleavage facets."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Baseline for comparison (parent as-hot-rolled condition, not this solution-treated sample): the same Fe-30Mn-9Al-2.7Si-0.9C steel (0.023% P, 50 µm average grain size) had room-temperature CVN breaking energies of 23 J (L-T orientation) and 22 J (T-L orientation), with mainly transgranular cleavage-type fracture; the cleavage facets displayed slip traces at roughly 60° angles from one another, indicating fracture by decohesion of active slip planes.",
+    "The large CVN energy difference between the hot-rolled and solution-treated conditions is related to short-range ordering (SRO) and precipitation of j-carbide, because the hot-rolled material was slow cooled after deformation."
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "figure-evidence-v1",
+  "figure_id": "figure_unlabelled_003",
+  "family": "generalist",
+  "image_type": "calculation_fe",
+  "description": "This image is a single isolated Abaqus-style contour-plot legend, not a plot with axes. A vertically stacked discrete colour bar runs from red at the top through orange, yellow, light green, dark green, cyan, medium blue, to dark blue at the bottom, in twelve visible bands. Each band is bracketed by two printed boundary values in scientific notation, giving thirteen labels: +2.600e+00, +2.394e+00, +2.187e+00, +1.981e+00, +1.775e+00, +1.569e+00, +1.362e+00, +1.156e+00, +9.499e-01, +7.437e-01, +5.374e-01, +3.312e-01 and +1.249e-01. Above the bar the header text reads \"SDV1\" with a second line \"(Avg: 75%)\", the standard finite-element contour-legend annotation indicating that the field is solution-dependent variable 1, averaged over element nodal values at 75%. No units are printed anywhere; no spatial field map, model geometry, scale bar or axis accompanies the legend in the supplied crop. Consequently the panel supplies only the colour-to-value mapping for a simulated field — presumably the equivalent plastic strain or another solution-dependent variable computed for the warm multiaxial forging passes — the physical quantity and the region of the forging to which it applies cannot be confirmed from these pixels alone.",
+  "confidence": "medium",
+  "subfigures": [
+    {
+      "panel": "single image",
+      "description": "A vertical discrete colour-bar legend labelled \"SDV1\" / \"(Avg: 75%)\", with twelve colour bands from red (highest) to dark blue (lowest) and thirteen printed boundary values ranging from +2.600e+00 at the top to +1.249e-01 at the bottom. No axes, units, geometry or spatial field map are present in the supplied crop.",
+      "confidence": "high"
+    }
+  ],
+  "observations": [
+    {
+      "observation": "The legend header reads \"SDV1\" with a second line \"(Avg: 75%)\", the Abaqus convention for solution-dependent variable 1 averaged over nodal values at 75%.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The colour bar contains twelve discrete bands ordered red, orange, yellow, light green, dark green, cyan, medium blue, dark blue from top to bottom.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Thirteen boundary values are printed, the topmost being +2.600e+00 and the bottom-most +1.249e-01.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The printed intermediate values are +2.394e+00, +2.187e+00, +1.981e+00, +1.775e+00, +1.569e+00, +1.362e+00, +1.156e+00, +9.499e-01, +7.437e-01, +5.374e-01 and +3.312e-01.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "Values decrease monotonically downward in approximately equal steps, so the legend represents a linear scale from about 0.125 to 2.600 in the units of SDV1.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    },
+    {
+      "observation": "No unit string is printed next to any legend value or in the header, so the physical dimensions of SDV1 are not stated in the figure.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "The image contains only the legend; no contoured specimen geometry, mesh, model schematic or spatial field is shown, so the legend cannot be tied to a specific region or forging pass from these pixels alone.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "high"
+    },
+    {
+      "observation": "A legend titled SDV1 with an \"(Avg: 75%)\" annotation is characteristic output of a finite-element simulation (Abaqus) rather than an experimental measurement.",
+      "source": "visual",
+      "evidence": [],
+      "confidence": "medium"
+    }
+  ],
+  "measured_quantities": [
+    "SDV1 contour value (dimensionless, legend range +1.249e-01 to +2.600e+00)"
+  ],
+  "sample_hints": [],
+  "unreadable_items": [
+    "The spatial field map to which this legend belongs is not present in the supplied crop; the contoured geometry, its mesh and any pass/condition labels are unavailable.",
+    "The physical meaning and unit of SDV1 (e.g. equivalent plastic strain versus another solution-dependent variable) are not printed and cannot be confirmed from the pixels."
+  ],
+  "image_paths": [
+    "images/d121fdbcf7ac8bbd26c30ae14992e5a71dcfb954e17917918b5fba072d853fea.jpg"
+  ]
+}

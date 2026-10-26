@@ -1,0 +1,677 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-35mn-6al-0.1c__rt-tensile",
+      "paper_id": "10.1016_j.msea.2024.147741",
+      "alloy_id": "alloy_fe-35mn-6al-0.1c",
+      "process_id": "proc_rt-tensile",
+      "sample_label": "RT tensile specimen",
+      "aliases": [
+        "RT tensile sample",
+        "room temperature tensile specimen",
+        "RT"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_melting",
+      "sequence": "1",
+      "type": "casting / melting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "high purity Ar atmosphere",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "50 kg ingot with nominal composition Fe-35Mn-6Al-0.1C-0.1Nb-0.1V-1Mo-1W (wt.%) prepared by vacuum induction melting."
+    },
+    {
+      "processing_step_id": "step_2_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1150",
+      "temperature_unit": "°C",
+      "duration": "4 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "As-cast ingot homogenized at 1150 °C for 4 h."
+    },
+    {
+      "processing_step_id": "step_3_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Subsequently hot-rolled (HR) into rods with a diameter of 16.5 mm."
+    },
+    {
+      "processing_step_id": "step_4_solution_treatment",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": "oil quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "HR rods solution-treated at 1050 °C for 2 h followed by oil quenching to obtain equiaxed grain structures (parent process proc_st-1050c-2h-oq shared by both RT and LNT states)."
+    },
+    {
+      "processing_step_id": "step_5_rt_tensile",
+      "sequence": "5",
+      "type": "mechanical processing / deformation",
+      "method": "uniaxial tensile testing (tensile deformation)",
+      "temperature": "room temperature (RT; 20 °C)",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Tensile tests on standard specimens (gauge length 25 mm, diameter 5 mm, tensile axis parallel to rod axis) at an initial strain rate of 1.0 × 10⁻³ s⁻¹ at room temperature using an MTS machine; interrupted tests to engineering strains of 3 %, 10 %, 20 %, 28 %, 38 % and 55 %; at least three specimens deformed to fracture."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_initial_solution_treated",
+      "overall_structure": "Equiaxed FCC γ-austenite matrix embedded with a small fraction of BCC α ferrite uniformly distributed along the austenite grain boundaries; many annealing twin boundaries; very weak texture; L1₂-type short-range order and faint superlattice/satellite reflections; MC carbide present.",
+      "number_of_phases": "2 (γ austenite FCC + α ferrite BCC)",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_initial",
+          "region": "bulk (starting material before tensile deformation)",
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite (FCC)",
+              "crystal_structure": "face-centered cubic (FCC)",
+              "volume_fraction": "~97 %",
+              "morphology": "equiaxed grains with many annealing twin boundaries (white lines)",
+              "grain_size": "average grain size about 10.8 μm (misorientation ≥15°)",
+              "texture": "very weak texture"
+            },
+            {
+              "phase_name": "α ferrite (BCC)",
+              "crystal_structure": "body-centered cubic (BCC)",
+              "volume_fraction": "~3 %",
+              "morphology": "small particles uniformly distributed along the austenite grain boundaries",
+              "grain_size": "average grain size about 4.7 μm",
+              "texture": "weak"
+            }
+          ],
+          "defects": [
+            {
+              "type": "geometrically necessary dislocations (KAM)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "1.6 × 10^13 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "10.8",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": "very weak texture along the forging direction"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_MC",
+              "type": "MC carbide (containing Nb, Mo, W; V fully dissolved)",
+              "size": null,
+              "distribution": null,
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_rt_deformed",
+      "overall_structure": "RT tensile deformation is controlled by planar dislocation slip and dislocation substructure refinement (Taylor lattices → cell blocks (CBs) and dislocation cells (DCs) → refinement) with a small amount of deformation twinning appearing only just before necking (~28 % strain). No phase transformation occurs in the austenite.",
+      "number_of_phases": "2 (γ austenite + α ferrite) with no phase transformation during RT deformation",
+      "microstructure_counts": "5 interrupted strain states examined at RT (3, 10, 20, 28, 38 % engineering strain)",
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_rt_3",
+          "region": "bulk (gauge section)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite (FCC)",
+              "crystal_structure": "face-centered cubic (FCC)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "α ferrite (BCC)",
+              "crystal_structure": "body-centered cubic (BCC)",
+              "volume_fraction": "~3 %",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "complex dislocation configurations: dislocation nodes, multiple dislocations and dislocation pairs (planar slip)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "ρ^GND (RT-EBSD-α) 0.71 × 10^14 m^-2; ρ (RT-XRD) 0.64 × 10^14 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_rt_10",
+          "region": "bulk (gauge section)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite (FCC)",
+              "crystal_structure": "face-centered cubic (FCC)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "Lomer-Cottrell (LC) locks and high-density dislocation walls (HDDWs)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "ρ^GND (RT-EBSD-α) 3.05 × 10^14 m^-2; ρ (RT-XRD) 2.42 × 10^14 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_rt_20",
+          "region": "bulk (gauge section)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite (FCC)",
+              "crystal_structure": "face-centered cubic (FCC)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "Taylor lattices, cell blocks (CBs) and dislocation cells (DCs) along {111} slip planes; type I grains form dislocation cells, type II/III grains form cell blocks",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "ρ^GND (RT-EBSD-α) 5.64 × 10^14 m^-2; ρ (RT-XRD) 4.96 × 10^14 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "CBs or DCs size (RT) 448 ± 74 nm",
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_rt_28",
+          "region": "bulk (gauge section)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite (FCC)",
+              "crystal_structure": "face-centered cubic (FCC)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "refined cell blocks and dislocation cells; a small amount of deformation twinning formed along cell block walls (CBWs); a few microbands (stress localization)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "ρ^GND (RT-EBSD-α) 7.92 × 10^14 m^-2; ρ (RT-XRD) 6.96 × 10^14 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": "CBs or DCs size (RT) 282 ± 56 nm",
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_rt_38",
+          "region": "bulk (gauge section)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "γ austenite (FCC)",
+              "crystal_structure": "face-centered cubic (FCC)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "deformation twins parallel to the primary slip plane further developed but proportion still very low; cell blocks and twins",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "ρ^GND (RT-EBSD-α) 8.99 × 10^14 m^-2; ρ (RT-XRD) 8.03 × 10^14 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": "strong <111>//TA texture and weak <100>//TA texture developed at RT"
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "intf_rt_deformed",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_gamma_alpha",
+          "microstructure_id": "micro_initial",
+          "phase_1_name": "γ austenite (FCC)",
+          "phase_2_name": "α ferrite (BCC)",
+          "coherence": "FCC/BCC interfaces are incoherent; in duplex low-density steels the main crack sources originate from the FCC/BCC interfaces"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "int_dislocation_twinboundary",
+          "microstructure_id": "micro_rt_deformed",
+          "interaction_type": "dislocation / twin boundary interaction",
+          "qualitative_or_quantitative_description": "Deformation twin boundaries act as effective barriers to dislocation motion, reducing the dislocation mean free path (dynamic Hall-Petch effect); at RT this contributes only at the highest strains as very few twins form."
+        },
+        {
+          "interaction_id": "int_cbw_stress_concentration",
+          "microstructure_id": "micro_rt_deformed",
+          "interaction_type": "stress concentration at cell-block walls (planar slip)",
+          "qualitative_or_quantitative_description": "Type II and III grains form cell block walls with planar-slip characteristics that create the stress concentration required for twinning nucleation/growth, whereas type I grains form uniform dislocation cells that disperse macroscopic shear stress."
+        }
+      ],
+      "slip_behavior": "At RT the early stage of deformation favours dislocation slip over twinning (the average {111}<110>_γ Schmid factor reaches its maximum near 3 % tensile strain, while the average {111}<112>_γ Schmid factor decreases at that strain). Planar slip dominates, with single glide traces in type II grains, double glide traces in type III grains and few slip traces in type I grains; type I grains form dislocation cells while type II and III grains form cell blocks.",
+      "phase_evolution": "No phase transformation occurs during RT tensile deformation; the austenite (γ) fraction stays essentially constant (~97 %) and the ~3 vol.% BCC α ferrite is stable, even after large tensile strain.",
+      "interface_notes": "Deformation twinning at RT is first observed after ~28 % tensile strain and remains of very low fraction up to 38 %; twinning occurs preferentially in type II and type III grains oriented away from <100>//TA."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_rt_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature (RT; 20 °C)",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "1.0 × 10⁻³ s⁻¹",
+        "specimen_geometry": "standard tensile specimens, gauge length 25 mm and diameter 5 mm, tensile axis parallel to the rod axis",
+        "test_standard": null,
+        "other_conditions": "MTS tensile machine; at least three specimens deformed until fracture to confirm reproducibility; interrupted tests to engineering strains of 3 %, 10 %, 20 %, 28 %, 38 % and 55 %"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "tensile axis (TA)",
+              "value": "251",
+              "unit": "MPa",
+              "uncertainty": "± 3 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "tensile axis (TA)",
+              "value": "580",
+              "unit": "MPa",
+              "uncertainty": "± 6 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "tensile axis (TA)",
+              "elongation_type": "uniform elongation (UEL)",
+              "value": "38.5",
+              "unit": "%",
+              "uncertainty": "± 0.5 %"
+            },
+            {
+              "direction": "tensile axis (TA)",
+              "elongation_type": "total elongation (TEL)",
+              "value": "52.0",
+              "unit": "%",
+              "uncertainty": "± 0.5 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "RT engineering stress-strain curve (Fig. 2a) and RT true stress-strain curve (Fig. 2b); RT curve yields near 250 MPa and peaks just under 600 MPa with failure around engineering strain 0.52",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            "RT strain hardening curve divided into two stages (stage markers A and A'); RT hardening rate descends from about 2500 MPa; RT hardening behaviour governed mainly by dislocation substructure refinement"
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": {
+          "value": "7.18",
+          "unit": "g·cm⁻³"
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "uniaxial tensile testing",
+      "instrument_or_setup": "MTS tensile machine",
+      "measurement_conditions": "room temperature (RT), initial strain rate 1.0 × 10⁻³ s⁻¹; gauge length 25 mm, diameter 5 mm; interrupted tests at 3/10/20/28/38/55 % engineering strain",
+      "purpose": "measure tensile properties (YS, UTS, uniform/total elongation) and strain hardening response of the RT specimen",
+      "key_findings": "RT: YS 251 ± 3 MPa, UTS 580 ± 6 MPa, UEL 38.5 ± 0.5 %, TEL 52.0 ± 0.5 %; two-stage strain hardening at RT."
+    },
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_rt_deformed",
+      "technique": "electron back-scattered diffraction (EBSD) in SEM",
+      "instrument_or_setup": "JSM-7800 F SEM; HKL Channel 5 analysis software",
+      "measurement_conditions": "step size of 1 μm, 300 nm, 100 nm and 30 nm",
+      "purpose": "determine phases, grain size, GND (KAM) and texture evolution during RT tensile deformation",
+      "key_findings": "RT: weak initial texture developing into a strong <111>//TA texture and weak <100>//TA texture; GND density increases with strain (0.71 → 8.99 × 10^14 m^-2); no phase transformation."
+    },
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": "micro_rt_deformed",
+      "technique": "transmission electron microscopy (TEM)",
+      "instrument_or_setup": "FEI-Tecnai G2 F20 operated at 200 kV",
+      "measurement_conditions": "bright-field imaging with selected-area electron diffraction",
+      "purpose": "examine deformation substructures of the RT tensile specimen as a function of strain",
+      "key_findings": "RT: dislocation nodes/pairs at 3 %, LC locks and HDDWs at 10 %, Taylor lattices/cell blocks/dislocation cells at 20 %, refined CBs/DCs plus a few twins and microbands at 28 %, cell blocks and twins at 38 %."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Bruker D8 Focus",
+      "measurement_conditions": null,
+      "purpose": "determine phase fractions and austenite stability after tensile deformation",
+      "key_findings": "Austenite γ fraction stays essentially constant (~95.6–97.3 %) and a small BCC α fraction persists; XRD also used to estimate dislocation density via Williamson-Hall."
+    },
+    {
+      "characterization_id": "char_epma_wetchem",
+      "microstructure_id": null,
+      "technique": "electron probe microanalysis (EPMA) and wet-chemical analysis",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "determine compositions of the specimen, austenite and ferrite",
+      "key_findings": "Specimen (wt.%): Mn 35.14, Al 5.97, C 0.095, Nb 0.11, V 0.10, Mo 1.24, W 0.95, Fe Bal.; α is Mn-depleted and Al-, V-, Mo-, W-enriched relative to γ."
+    },
+    {
+      "characterization_id": "char_density",
+      "microstructure_id": null,
+      "technique": "Archimedes density measurement",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "measure the density of the investigated steel",
+      "key_findings": "Density 7.18 g·cm⁻³."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_sfe",
+      "simulation_method": "thermodynamic calculation of stacking fault energy (SFE) and γ→ε Gibbs energy",
+      "software_used": null,
+      "potential_model_or_database": "well-accepted thermodynamic approach (Eqs. 3–8) using literature parameters",
+      "boundary_and_initial_conditions": "test temperature T = 293 K (RT) or 77 K (LNT)",
+      "validation_against_experiment": "SFE 62.64 mJ·m⁻² (RT) is higher than the 20–45 mJ·m⁻² range where deformation twinning is expected, yet twinning is observed experimentally — a controversy discussed in the paper.",
+      "analytical_models": [
+        {
+          "model_name": "SFE equation",
+          "equation_role": "γ_SFE = 2ρΔG^{γ→ε} + 2σ links stacking fault energy to the γ→ε molar Gibbs energy",
+          "parameters": [
+            {
+              "name": "γ_SFE (RT)",
+              "value": "62.64",
+              "unit": "mJ·m⁻²"
+            },
+            {
+              "name": "ΔG^{γ→ε} (RT)",
+              "value": "804.22",
+              "unit": "J·mol⁻¹"
+            }
+          ],
+          "model_note": "Fe-Mn-Al-C Gibbs energy expression (Eq. 4) with magnetic term (Eqs. 5–8)."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_thermocalc",
+      "simulation_method": "equilibrium phase diagram calculation",
+      "software_used": "Thermo-Calc",
+      "potential_model_or_database": "TCFE12 database",
+      "boundary_and_initial_conditions": "temperature 950–1200 °C",
+      "validation_against_experiment": "Calculated diagram shows a small BCC (ferrite) fraction at the solution-treatment temperature, consistent with the ~3 vol.% α observed experimentally and with the stability of the two phases.",
+      "analytical_models": []
+    },
+    {
+      "computation_id": "comp_gnd",
+      "simulation_method": "geometrically necessary dislocation (GND) density estimation from EBSD KAM",
+      "software_used": null,
+      "potential_model_or_database": "Eq. (1) ρ^GND = 2θ/(u·b)",
+      "boundary_and_initial_conditions": "u = EBSD unit length; b = Burgers vector; θ = average KAM value of the selected area",
+      "validation_against_experiment": "GND densities rise from 0.71 to 8.99 × 10^14 m^-2 for RT deformation.",
+      "analytical_models": [
+        {
+          "model_name": "GND density from KAM",
+          "equation_role": "ρ^GND = 2θ / (u b)",
+          "parameters": [
+            {
+              "name": "b",
+              "value": "0.26",
+              "unit": "nm"
+            }
+          ],
+          "model_note": null
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_williamsonhall",
+      "simulation_method": "dislocation density estimation from XRD peak broadening (Williamson-Hall)",
+      "software_used": null,
+      "potential_model_or_database": "Eq. (2) ρ = 3√(2π)⟨ε²⟩^{1/2}/(D b)",
+      "boundary_and_initial_conditions": "profiles of (111)_γ, (200) and (220) diffraction peaks after Gaussian fitting; b = 0.26 nm",
+      "validation_against_experiment": "Total dislocation density ρ (RT-XRD) increases from 0.64 to 8.03 × 10^14 m^-2 with RT strain, consistent with the GND trend.",
+      "analytical_models": [
+        {
+          "model_name": "Williamson-Hall dislocation density",
+          "equation_role": "ρ = 3√(2π)⟨ε²⟩^{1/2} / (D b)",
+          "parameters": [
+            {
+              "name": "b (Burgers vector)",
+              "value": "0.26",
+              "unit": "nm"
+            }
+          ],
+          "model_note": "D = average crystallite size; ⟨ε²⟩^{1/2} = average micro-strain."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_critical_twinning_stress",
+      "simulation_method": "critical twinning stress estimation (mean-field and Hall-Petch-type models)",
+      "software_used": null,
+      "potential_model_or_database": "Eqs. (9) and (10)",
+      "boundary_and_initial_conditions": "M = 2.2 (Sachs), 2.7 (CPFEM), 3.06 (Taylor), 3.64 (<111>//TA & <110>//TA); G = 68 GPa; b(partial) = 0.147 nm; D ≈ 10.8 μm; m = 0.326; K = 0.350 MPa·m^0.5; γ = SFE",
+      "validation_against_experiment": "Experimental critical twinning stress at RT (~723 MPa) is far smaller than the estimates (939/1153/1306/1096 MPa at RT); at LNT the experimental value (778 MPa) approaches the Sachs-model prediction.",
+      "analytical_models": [
+        {
+          "model_name": "Mean-field twinning stress",
+          "equation_role": "σ_t = M(Γ/b + Gb/D)",
+          "parameters": [
+            {
+              "name": "G (shear modulus)",
+              "value": "68",
+              "unit": "GPa"
+            },
+            {
+              "name": "b (partial Burgers vector)",
+              "value": "0.147",
+              "unit": "nm"
+            },
+            {
+              "name": "D (grain size)",
+              "value": "10.8",
+              "unit": "μm"
+            }
+          ],
+          "model_note": "Γ = SFE."
+        },
+        {
+          "model_name": "Hall-Petch-type twinning stress",
+          "equation_role": "σ_t = (1/m)(γ/b + K/D^0.5)",
+          "parameters": [
+            {
+              "name": "m (Schmid factor)",
+              "value": "0.326",
+              "unit": null
+            },
+            {
+              "name": "b",
+              "value": "2.5 × 10^-10",
+              "unit": "m"
+            },
+            {
+              "name": "K (Hall-Petch constant)",
+              "value": "0.350",
+              "unit": "MPa·m^0.5"
+            }
+          ],
+          "model_note": null
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_flow_stress_model",
+      "simulation_method": "flow-stress / strengthening-contribution modelling",
+      "software_used": null,
+      "potential_model_or_database": "Eqs. (12)–(20)",
+      "boundary_and_initial_conditions": "φ_ferrite ≈ 3 % (neglected in final calculation); austenite parameters M = 3.06, α = 0.4, G = 68 GPa, b = 0.26 nm; ferrite M = 2.8, α = 0.2, G = 80.7 GPa, b = 0.248 nm",
+      "validation_against_experiment": "Calculated dislocation (σ_dis) and twin (σ_twin) contributions agree well with measured flow stress at RT (Fig. 13a); α = 0.4 gives the smallest σ_diff (15 and 25 MPa at 10 % and 20 % RT strain).",
+      "analytical_models": [
+        {
+          "model_name": "Taylor dislocation hardening",
+          "equation_role": "σ_dis(γ or α) = M α G b ρ^0.5",
+          "parameters": [
+            {
+              "name": "M (austenite)",
+              "value": "3.06",
+              "unit": null
+            },
+            {
+              "name": "α (austenite)",
+              "value": "0.4",
+              "unit": null
+            },
+            {
+              "name": "G (austenite)",
+              "value": "68",
+              "unit": "GPa"
+            },
+            {
+              "name": "b (austenite)",
+              "value": "0.26",
+              "unit": "nm"
+            }
+          ],
+          "model_note": "σ_diff verified against α = 0.136, 0.26, 0.4 at 10 % and 20 % RT strain (Table 7)."
+        },
+        {
+          "model_name": "Twin strengthening",
+          "equation_role": "Δσ_twin(γ) = 0.8 F K_twin l^-0.5",
+          "parameters": [
+            {
+              "name": "K_twin(γ)",
+              "value": "0.350",
+              "unit": "MPa·m^0.5"
+            },
+            {
+              "name": "l (twin spacing, 55 % LNT)",
+              "value": "182",
+              "unit": "nm"
+            },
+            {
+              "name": "e (twin thickness, 55 % LNT)",
+              "value": "72",
+              "unit": "nm"
+            }
+          ],
+          "model_note": "RT twin strengthening is negligible (only σ_twin appears at 55 % LNT = 290 MPa)."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "CVN (Charpy V-notch) impact energy at RT is 331 ± 4 J (Table 2) — measured by Charpy V-notch impact test on separate standard impact specimens (55 mm × 10 mm × 10 mm, V-notch depth 2 mm), not on the RT tensile specimen itself.",
+    "Instrumented Charpy impact at RT: crack initiation energy Wm = 79.28 J and crack propagation energy Wp = 251.33 J (Fig. 2c); total impact energy at RT is governed by crack propagation energy.",
+    "Reduction of area at RT is 78 ± 0.5 % (Table 2).",
+    "True stress of the RT tensile specimen (Table 3): 339 MPa at 3.0 % engineering strain (3.0 % true strain), 483 MPa at 10.0 % (9.5 % true), 635 MPa at 20.0 % (18.2 % true), 723 MPa at 28.0 % (24.7 % true) and 800 MPa at 38.0 % (32.2 % true); not measured at 55 %.",
+    "Lattice friction stress of the austenite at RT is 143 MPa (calculated by Eq. 16 from the RT yield strength minus grain-boundary strengthening).",
+    "Experimental critical twinning stress at RT is about 723 MPa (Table 5), far smaller than the model estimates of 939 MPa (M = 2.2), 1153 MPa (M = 2.7), 1306 MPa (M = 3.06) and 1096 MPa (Hall-Petch-type relation).",
+    "At RT, deformation twinning is first observed after about 28 % tensile strain (a small fraction along cell-block walls), confirming that RT twinning occurs only just before necking.",
+    "Hardness is not reported for the RT tensile specimen (no hardness testing was performed)."
+  ]
+}

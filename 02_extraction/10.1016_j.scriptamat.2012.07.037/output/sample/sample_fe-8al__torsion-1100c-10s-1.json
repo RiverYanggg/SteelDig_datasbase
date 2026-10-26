@@ -1,0 +1,473 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-8al__torsion-1100c-10s-1",
+      "paper_id": "10.1016_j.scriptamat.2012.07.037",
+      "alloy_id": "alloy_fe-8al",
+      "process_id": "proc_torsion-1100c-10s-1",
+      "sample_label": null,
+      "aliases": [
+        "Fe–8% Al deformed at 1100 °C, 10 s−1"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "Identifies the hot torsion deformation condition (1100 °C, 10 s−1, ε = 2) uniquely defining this sample.",
+        "block_id": [
+          "b0035",
+          "b0024",
+          "b0014",
+          "b0029"
+        ]
+      },
+      "processing_step_id": "step_hot_torsion_1100c_10s-1",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "mechanical processing"
+      },
+      "method": {
+        "value": "hot torsion"
+      },
+      "temperature": {
+        "value": "1100"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": null,
+      "atmosphere": {
+        "value": "argon"
+      },
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": {
+        "value": "ε = 2"
+      },
+      "processing_steps_notes": {
+        "value": "Hot torsion test to a cumulative strain ε = 2 at 1100 °C and strain rate 10 s−1; second of two high strain rate conditions (5 and 10 s−1) examined at 1100 °C to study the DDRX mechanism. Tests were performed in a direction involving a negative shear and under argon atmosphere to reduce oxidation."
+      }
+    },
+    {
+      "source": {
+        "reason": "Post-deformation quenching applied to all torsion tests, needed to retain the DDRX microstructure; general test procedure.",
+        "block_id": [
+          "b0014"
+        ]
+      },
+      "processing_step_id": "step_quench",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "quenching"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": {
+        "value": "0.5 s"
+      },
+      "atmosphere": {
+        "value": "argon"
+      },
+      "cooling_medium": {
+        "value": "argon"
+      },
+      "heating_or_cooling_rate": {
+        "value": "~200 °C s−1"
+      },
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "After deformation, samples were quenched immediately (0.5 s) with argon in order to retain the microstructures and avoid post-dynamic recrystallization. The cooling rate is ~200 °C s−1 during the first seconds."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "Overall DDRX microstructure at 1100 °C / 10 s−1 (ε = 2) combining the freshly recrystallized grains and old deformed grains, with boundary misorientation statistics from the MDF.",
+        "block_id": [
+          "b0037",
+          "b0024",
+          "b0027",
+          "b0035"
+        ]
+      },
+      "structure_id": "struct_ddrx_1100c_10s",
+      "overall_structure": {
+        "value": "DDRX microstructure: a mixture of 'young' small equiaxed freshly recrystallized grains free of substructure and 'old' large elongated original grains displaying internal misorientations (red subgrain boundary lines); a pronounced elongated band with a high density of fine boundaries surrounded by coarse grains. Grain boundaries (HABs, θ ≥ 15°) are dominant (HAB : 78%), with a sharp low-angle (subgrain) peak near 5° (LAB : 22%)."
+      },
+      "number_of_phases": {
+        "value": 1
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "EBSD observation of freshly recrystallized grains free of substructure and their weak {110} texture at 1100 °C, 10 s−1.",
+            "block_id": [
+              "b0037",
+              "b0039",
+              "b0040",
+              "b0028"
+            ]
+          },
+          "microstructure_id": "micro_recrystallized_grains",
+          "region": {
+            "value": "near surface (0.9 radius)"
+          },
+          "related_sequence": {
+            "value": "1"
+          },
+          "phases_present": [
+            {
+              "phase_name": {
+                "value": "ferrite (A2)"
+              },
+              "crystal_structure": {
+                "value": "bcc (non-ordered A2)"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "small, equiaxed freshly recrystallized grains free of substructure"
+              },
+              "grain_size": null,
+              "texture": {
+                "value": "no preferred orientations (very low intensity of texture)"
+              }
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": {
+              "value": "{110} pole figure of selected recrystallized grains (internal misorientation below 2°) at 10 s−1: max = 1.66 (weak, broad diffuse lobes)"
+            }
+          },
+          "precipitates": []
+        },
+        {
+          "source": {
+            "reason": "EBSD maps (Fig. 4b, 10 s−1) show old elongated original grains displaying internal misorientations coexisting with recrystallized grains.",
+            "block_id": [
+              "b0037",
+              "b0024",
+              "b0036"
+            ]
+          },
+          "microstructure_id": "micro_old_deformed_grains",
+          "region": {
+            "value": "near surface (0.9 radius)"
+          },
+          "related_sequence": {
+            "value": "1"
+          },
+          "phases_present": [
+            {
+              "phase_name": {
+                "value": "ferrite (A2)"
+              },
+              "crystal_structure": {
+                "value": "bcc (non-ordered A2)"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "large and elongated original grains"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": {
+                "value": "internal misorientations / subgrain boundaries (red lines, 2° ≤ θ < 15°)"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": {
+              "value": "equiaxed old grains with relatively straight boundaries in the upper map"
+            },
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "source": {
+            "reason": "Fig. 4 column b (Ė = 10 s−1) lower map description of a banded, boundary-decorated structure.",
+            "block_id": [
+              "b0024",
+              "b0036"
+            ]
+          },
+          "microstructure_id": "micro_shear_band",
+          "region": {
+            "value": "near surface (0.9 radius)"
+          },
+          "related_sequence": {
+            "value": "1"
+          },
+          "phases_present": [
+            {
+              "phase_name": {
+                "value": "ferrite (A2)"
+              },
+              "crystal_structure": {
+                "value": "bcc (non-ordered A2)"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "pronounced elongated band structure"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": {
+              "value": "pronounced elongated band containing a high density of fine, red-marked (low-angle) boundaries, surrounded by coarse grains"
+            },
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "source": {
+        "reason": "Boundary-type statistics, DDRX nucleation at original grain boundaries, and CDRX-to-DDRX transition for the 1100 °C / 10 s−1 condition.",
+        "block_id": [
+          "b0037",
+          "b0038",
+          "b0027",
+          "b0043",
+          "b0044"
+        ]
+      },
+      "interface_set_id": "iface_ddrx_1100c_10s",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_grain_boundaries",
+          "microstructure_id": "micro_recrystallized_grains",
+          "phase_1_name": {
+            "value": "ferrite (A2)"
+          },
+          "phase_2_name": {
+            "value": "ferrite (A2)"
+          },
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "int_ddrx_nucleation",
+          "microstructure_id": "micro_old_deformed_grains",
+          "interaction_type": {
+            "value": "DDRX nucleation near original grain boundaries"
+          },
+          "qualitative_or_quantitative_description": {
+            "value": "Nuclei (small volumes of low dislocation density separated from the matrix by HABs) usually appear near original grain boundaries; several mechanisms such as accelerated rotation of a particular subgrain, coalescence of adjacent subgrains or local migration of a grain boundary are likely. New grains grow at the expense of old hardened grains."
+          }
+        },
+        {
+          "interaction_id": "int_boundary_misorientation",
+          "microstructure_id": "micro_recrystallized_grains",
+          "interaction_type": {
+            "value": "grain boundary (HAB) vs subgrain boundary (LAB) fractions"
+          },
+          "qualitative_or_quantitative_description": {
+            "value": "At 1100 °C / 10 s−1: LAB : 22%, HAB : 78%, average misorientation angle : 32.9°. A pronounced low-angle peak near 5° (subgrain population intensified relative to 5 s−1); measured distribution is close to the MacKenzie random distribution with a maximum number of HABs near 45°."
+          }
+        }
+      ],
+      "slip_behavior": {
+        "value": "High stacking fault energy material: cross-slip of dislocations is easy and dynamic recovery is very efficient (relevant to CDRX regime; at 10 s−1 the higher strain rate shortens the test so dynamic recovery is less effective and strain hardening is stronger, enabling DDRX)."
+      },
+      "phase_evolution": {
+        "value": "At high temperature and high strain rate (1100 °C, 10 s−1) the alloy undergoes discontinuous dynamic recrystallization (DDRX) instead of continuous dynamic recrystallization (CDRX); there is a competition between the two mechanisms as a function of deformation conditions, with a transition occurring between them."
+      },
+      "interface_notes": {
+        "value": "Black lines = grain boundaries (misorientations θ ≥ 15°); red lines = subgrain boundaries (2° ≤ θ < 15°)."
+      }
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "EBSD is the primary characterization technique (SEM, EBSD system, HKL Channel 5) used near the surface for all torsion conditions.",
+        "block_id": [
+          "b0015",
+          "b0026",
+          "b0027",
+          "b0038"
+        ]
+      },
+      "characterization_id": "char_ebsd",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Electron backscatter diffraction (EBSD)"
+      },
+      "instrument_or_setup": {
+        "value": "Scanning electron microscope (JEOL 6500) equipped with an EBSD system; HKL Channel 5 system software"
+      },
+      "measurement_conditions": {
+        "value": "Analyses performed near the surface (0.9 radius); observation plane hz, z-axis parallel to the vertical direction in the EBSD maps; black lines for grain boundaries (θ ≥ 15°) and red lines for subgrain boundaries (2° ≤ θ < 15°); arrows indicate the shear direction"
+      },
+      "purpose": {
+        "value": "Characterize the microstructures and misorientation distributions produced by hot torsion and identify whether DDRX or CDRX operates"
+      },
+      "key_findings": {
+        "value": "At 1100 °C / 10 s−1 a mixture of young equiaxed recrystallized grains free of substructure and old elongated grains with internal misorientations; LAB : 22%, HAB : 78%, average misorientation angle : 32.9°; MDF close to MacKenzie random distribution with maximum number of HABs near 45°"
+      }
+    },
+    {
+      "source": {
+        "reason": "Fig. 5b (panel for 10 s−1) reports the misorientation distribution function values for this condition.",
+        "block_id": [
+          "b0026",
+          "b0028",
+          "b0038"
+        ]
+      },
+      "characterization_id": "char_misorientation_distribution",
+      "microstructure_id": "micro_recrystallized_grains",
+      "technique": {
+        "value": "Misorientation distribution function (MDF) analysis (EBSD-derived)"
+      },
+      "instrument_or_setup": {
+        "value": "HKL Channel 5 system software; comparison with MacKenzie distribution [13]"
+      },
+      "measurement_conditions": {
+        "value": "1100 °C, strain rate 10 s−1; frequency (0–0.1) vs misorientation angle (0–65°); LAB/HAB divider at 15°"
+      },
+      "purpose": {
+        "value": "Quantitatively evidence the operating recrystallization mechanism via boundary misorientation statistics"
+      },
+      "key_findings": {
+        "value": "LAB : 22%, HAB : 78%, Average angle : 32.9°; pronounced sharp low-angle peak near 5° (between 0.05 and 0.075 gridlines) with a broader shoulder near 45°; distribution close to MacKenzie reference"
+      }
+    },
+    {
+      "source": {
+        "reason": "Fig. 6b ({110} pole figure for 10 s−1) reports max = 1.66 for the recrystallized grains.",
+        "block_id": [
+          "b0028",
+          "b0039",
+          "b0040"
+        ]
+      },
+      "characterization_id": "char_pole_figure",
+      "microstructure_id": "micro_recrystallized_grains",
+      "technique": {
+        "value": "{110} pole figure (texture analysis, EBSD-derived)"
+      },
+      "instrument_or_setup": {
+        "value": "EBSD recrystallized-grain selection (internal misorientation below 2°)"
+      },
+      "measurement_conditions": {
+        "value": "1100 °C, strain rate 10 s−1, ε = 2; recrystallized grains selected with internal misorientation < 2°"
+      },
+      "purpose": {
+        "value": "Assess whether the DDRX recrystallized grains carry a preferred orientation"
+      },
+      "key_findings": {
+        "value": "{110} pole figure (max = 1.66): broad, diffuse, irregular contour lobes (low intensity), i.e. no strong preferred orientation of the recrystallized grains"
+      }
+    },
+    {
+      "source": {
+        "reason": "Description of the hot torsion test setup and conditions applied to this sample.",
+        "block_id": [
+          "b0014",
+          "b0035",
+          "b0029"
+        ]
+      },
+      "characterization_id": "char_hot_torsion_test",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Hot torsion testing"
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": {
+        "value": "1100 °C, strain rate 10 s−1, cumulative strain ε = 2; direction involving a negative shear; argon atmosphere; immediate quenching (0.5 s)"
+      },
+      "purpose": {
+        "value": "Deform the Fe–8% Al alloy under controlled temperature/strain rate to study the DDRX mechanism"
+      },
+      "key_findings": {
+        "value": "Supports DDRX activation at high temperature and high strain rate"
+      }
+    }
+  ],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "The MacKenzie random distribution is used as a theoretical reference for the misorientation distribution of the DDRX sample.",
+        "block_id": [
+          "b0038",
+          "b0026",
+          "b0027"
+        ]
+      },
+      "computation_id": "comp_mackenzie_reference",
+      "simulation_method": {
+        "value": "Analytical/theoretical reference misorientation distribution"
+      },
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": {
+        "value": "The measured MDF at 1100 °C / 10 s−1 is close to the MacKenzie distribution derived for cubic crystals uniformly distributed in orientation space (randomly oriented crystals), with few LABs and a maximum number of HABs close to 45°."
+      },
+      "analytical_models": [
+        {
+          "model_name": {
+            "value": "MacKenzie distribution"
+          },
+          "equation_role": {
+            "value": "reference misorientation distribution for randomly oriented cubic crystals (blue curve comparison)"
+          },
+          "parameters": [],
+          "model_note": {
+            "value": "[13]; used to compare against the measured DDRX misorientation distribution"
+          }
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "At 1100 °C and 10 s−1 (ε = 2), the EBSD maps (Fig. 4b) show a pronounced elongated band containing a high density of fine, red-marked (low-angle) boundaries surrounded by coarse grains, consistent with a changing dynamic-recrystallization mechanism between the 5 and 10 s−1 conditions.",
+    "DDRX-produced recrystallized grains have no preferred orientations (very low texture intensity); this is considered a promising result toward decreasing the roping phenomenon, since favouring DDRX during hot rolling yields a microstructure with randomly oriented recrystallized grains (relevant to the Fe–8% Al roping problem).",
+    "Although ferritic alloys are high stacking fault energy materials, two types of dynamic recrystallization may operate during hot deformation: DDRX at high temperature and high strain rate and CDRX at lower temperature and strain rate, with a competition between them depending on deformation conditions.",
+    "The strain rate–temperature map (Fig. 7) shows the DDRX-activated domain lies above a temperature-dependent threshold strain rate (descending from ~2–3 s−1 at 900 °C to near 0.1–0.2 s−1 at 1100 °C), consistent with DDRX for this 1100 °C, 10 s−1 sample."
+  ]
+}

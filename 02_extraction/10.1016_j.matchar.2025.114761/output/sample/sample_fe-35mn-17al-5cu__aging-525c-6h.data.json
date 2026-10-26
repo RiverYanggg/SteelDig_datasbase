@@ -1,0 +1,284 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-35mn-17al-5cu__aging-525c-6h",
+      "paper_id": "10.1016_j.matchar.2025.114761",
+      "alloy_id": "alloy_fe-35mn-17al-5cu",
+      "process_id": "proc_aging-525c-6h",
+      "sample_label": "17Al aged at 525 °C for 6 h",
+      "aliases": [
+        "17Al 525 °C aging 6 h"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "melt processing",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "argon atmosphere",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Alloy ingots with nominal composition Fe-35Mn-17Al-5Cu (at.%) produced by melting raw materials with high purity (>99.9 %) using a vacuum induction furnace under an argon atmosphere."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "24 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The ingots were homogenized at 1200 °C for 24 h prior to hot rolling."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot-rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "After homogenization, the ingots were hot-rolled into plates with a thickness of 4 mm, then cut into 10 × 5 × 2 mm3 samples by electrical discharge machining."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1100 °C",
+      "temperature_unit": "°C",
+      "duration": "10 min",
+      "atmosphere": "argon atmosphere",
+      "cooling_medium": "oil quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Samples were solution treated at 1100 °C for 10 min under an argon atmosphere, followed by oil quenching."
+    },
+    {
+      "processing_step_id": "step_aging",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "aging",
+      "temperature": "525 °C",
+      "temperature_unit": "°C",
+      "duration": "6 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution-treated samples were aged at 525 °C for 6 h, followed by water quenching. This is the terminal state of the sample."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_17al_525c6h",
+      "overall_structure": "α (BCC) matrix of the 17Al alloy with only a small amount of β-Mn precipitated after aging at 525 °C for 6 h; the α matrix largely remains untransformed (β-Mn precipitation kinetics strongly slowed down at 525 °C).",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_17al_525c6h",
+          "region": null,
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "α (BCC)",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "matrix, largely untransformed",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "β-Mn",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "primarily precipitated along α grain boundaries; a small amount of short rod-shaped β-Mn observed within the α grains",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "α-Mn",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "small particles in the α matrix",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_betamn_17al_525c6h",
+              "type": "β-Mn",
+              "size": null,
+              "distribution": "along α grain boundaries (grain-boundary network) and short rod-shaped within α grains",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_alphamn_17al_525c6h",
+              "type": "α-Mn",
+              "size": null,
+              "distribution": "small particles within the α matrix",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_17al_525c6h",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_alpha_betamn_17al_525c6h",
+          "microstructure_id": "micro_17al_525c6h",
+          "phase_1_name": "α (BCC)",
+          "phase_2_name": "β-Mn",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "During aging at 525 °C the β-Mn precipitation in the 17Al alloy is kinetically slow: only a small amount of β-Mn forms (primarily along α grain boundaries plus a little short rod-shaped β-Mn within α grains), so the α matrix is not yet fully transformed at 6 h. Sequence followed: α → α + FCC Cu-rich phase → α-Mn + β-Mn + BCC phase → β-Mn + BCC phase + FCC Cu-rich phase.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_17al_525c6h_hardness",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "10 × 5 × 2 mm3 samples",
+        "test_standard": null,
+        "other_conditions": "Vickers hardness measured with an HVS-1000 digital microhardness tester at a load of 9.8 N for 15 s; each sample tested 5 times and the hardness is the average of 5 measurements. Samples prepared by electrolytic polishing in 10 % perchloric acid + 90 % ethanol."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "598.9 ± 10.4 HV",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": "± 10.4"
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_17al_525c6h_slow_aging",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": "525",
+          "max": "525",
+          "unit": "°C"
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-35mn-15al-5cu",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "β-Mn precipitation kinetics at 525 °C aging (rate of α→β-Mn transformation)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_vickers_17al_525c6h",
+      "microstructure_id": null,
+      "technique": "Vickers hardness testing",
+      "instrument_or_setup": "HVS-1000 digital microhardness tester, load 9.8 N for 15 s",
+      "measurement_conditions": "Each sample repeatedly tested 5 times; hardness given by the average of 5 measurements; specimens electrolytically polished in 10 % perchloric acid + 90 % ethanol",
+      "purpose": "Measure the Vickers hardness of the 17Al alloy after aging at 525 °C for 6 h",
+      "key_findings": "The 17Al alloy aged at 525 °C for 6 h has a Vickers hardness of 598.9 ± 10.4 HV (Table 3)."
+    },
+    {
+      "characterization_id": "char_sem_17al_525c6h",
+      "microstructure_id": "micro_17al_525c6h",
+      "technique": "Secondary electron scanning electron microscopy (SE-SEM)",
+      "instrument_or_setup": "ZEISS Sigma 300 SEM operated at 5 kV; main fields with 50 µm scale bars and higher-magnification insets (2 µm)",
+      "measurement_conditions": "Electrolytically polished specimens",
+      "purpose": "Identify the precipitation of secondary phases (α-Mn and β-Mn) in the 17Al alloy after different aging treatments including 525 °C for 6 h",
+      "key_findings": "In the 525 °C – 6 h panel, a β-Mn grain-boundary feature is labelled (green) and an inset (2 µm) is labelled α-Mn (blue); at 525 °C β-Mn precipitation is sparse, occurring mostly along α grain boundaries with some short rod-shaped β-Mn within α grains."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Table 3: The solution-treated (parent) state of the 17Al alloy has a Vickers hardness of 259.8 ± 1.5 HV, a common baseline for all aging temperatures (b0030).",
+    "The 17Al alloy aged at 525 °C shows a monotonically increasing but slow hardening with time: 566.9 ± 9.7 HV (1 h), 585.0 ± 6.1 HV (3 h), 598.9 ± 10.4 HV (6 h) and 616.8 ± 12.3 HV (10 h) (b0030, Table 3).",
+    "At 525 °C the 17Al alloy fails to reach peak hardness within 10 h of aging; the optimal aging window for ultra-high hardness of the 17Al alloy is 550 °C–600 °C (b0038).",
+    "Composition of the 17Al alloy (EDS): Fe 43.2, Mn 34.8, Al 17.0, Cu 5.0 (at.%) and measured density 6.76 g·cm⁻³ (b0013, b0017)."
+  ]
+}

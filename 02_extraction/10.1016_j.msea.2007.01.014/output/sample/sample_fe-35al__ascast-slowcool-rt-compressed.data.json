@@ -1,0 +1,281 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-35al__ascast-slowcool-rt-compressed",
+      "paper_id": "10.1016_j.msea.2007.01.014",
+      "alloy_id": "alloy_fe-35al",
+      "process_id": "proc_ascast-slowcool-rt-compressed",
+      "sample_label": "Fe–35% Al",
+      "aliases": [
+        "Fe-35Al deformed 2–3%"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_induction_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "standard induction melting in an alumina crucible",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "inert gas",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Fe–Al base alloys were prepared by standard induction melting in an alumina crucible under inert gas."
+    },
+    {
+      "processing_step_id": "step_drop_casting",
+      "sequence": "2",
+      "type": "casting",
+      "method": "drop casting into a 25 mm diameter cylindrical copper mould",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "copper mould",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Drop casting into a 25 mm diameter cylindrical copper mould produced samples with grain size of the order of 0.25 mm."
+    },
+    {
+      "processing_step_id": "step_slow_cooling",
+      "sequence": "3",
+      "type": "heat treatment (cooling)",
+      "method": "slow cooling after solidification",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cooling after solidification was sufficiently slow to allow a high degree of B2 order for Al-rich alloys (the Fe–35% Al alloy) and a good degree of DO3 order for alloys containing 25–30% Al."
+    },
+    {
+      "processing_step_id": "step_spark_machining",
+      "sequence": "4",
+      "type": "mechanical processing (specimen preparation)",
+      "method": "spark machining",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Compression samples were cut from the ingots by spark machining, either as 3 mm diameter or as 5 mm × 5 mm square cross-section samples, of height twice the diameter or width; flat surfaces polished on 1500 grade abrasive paper before testing."
+    },
+    {
+      "processing_step_id": "step_rt_compression",
+      "sequence": "5",
+      "type": "mechanical processing (room-temperature compression)",
+      "method": "room-temperature compression",
+      "temperature": "room temperature",
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "2–3% strain",
+      "processing_steps_notes": "Tested at room temperature to a strain of 2–3% at a nominal strain rate of 3×10⁻⁴ s⁻¹; compression axis parallel to the cylinder axis of the cast samples; smooth onset of plasticity with no discrete yield points and slightly curved stress–strain behaviour."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_fe35al_deformed",
+      "overall_structure": "After 2–3% room-temperature compression, the Fe–35% Al alloy (B2 ordered with some degree of DO3 order) deforms by B2 superdislocations composed of two (1/2)⟨111⟩ partials lying close together; the dislocation substructure consists of many straight, near-screw superdislocations together with edge dipole segments and loops, plus weak remnant (APBII) fringes from partial destruction of DO3 order.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_fe35al_dislocations",
+          "region": "thin foils cut from the centre of the deformed samples, perpendicular to the stress axis",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "B2 ordered phase",
+              "crystal_structure": "B2 (ordered bcc)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "DO3 order (partial)",
+              "crystal_structure": "DO3 (ordered bcc)",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "B2 superdislocations consisting of two (1/2)⟨111⟩ partials lying close together",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "straight, near-screw superdislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "edge dipole segments (large number) and dipole loops",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "APBII remnant (weak) fringes from destruction of DO3 order",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "0.25 mm",
+              "unit": "mm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "int_fe35al",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_fe35al_dipole_drag",
+          "microstructure_id": "micro_fe35al_dislocations",
+          "interaction_type": "dipole formation on moving screw superdislocations at obstacles",
+          "qualitative_or_quantitative_description": "Several dipole segments are pulled out of the moving screw superdislocations where these encounter some obstacle (Fig. 17, right); the resulting large number of dipole segments is clearly seen in the ±g pair of images (Fig. 18), where short dipole segments reverse contrast."
+        }
+      ],
+      "slip_behavior": "Deformation is carried by B2 superdislocations, each composed of two (1/2)⟨111⟩ partials; these partials lie close together (small separation, not widely dissociated) because of the higher APBI fault energy in this Al-rich alloy, and the dislocations are generally straight and mostly in near-screw orientations.",
+      "phase_evolution": "Movement of the paired-partial B2 superdislocations destroys some of the DO3 order in the Fe–35% Al alloy, leaving weak remnant (APBII) fringes (Fig. 19).",
+      "interface_notes": "In contrast to Fe–25% Al (loosely coupled partials due to low APB energies), the higher APBI fault energy of Fe–35% Al keeps the two (1/2)⟨111⟩ partials closely spaced."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_fe35al_compression",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "3×10⁻⁴ s⁻¹",
+        "specimen_geometry": "3 mm diameter or 5 mm × 5 mm square cross-section, of height twice the diameter or width",
+        "test_standard": null,
+        "other_conditions": "Compression axis parallel to the cylinder axis of the cast samples; tested to a strain of 2–3%; smooth onset of plasticity with no discrete yield points and slightly curved stress–strain behaviour."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "compression (parallel to the casting cylinder axis)",
+              "value": "~300–350 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "~2–3%",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "direction": null,
+              "value": "~5–6 GPa",
+              "unit": "GPa",
+              "uncertainty": null
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_fe35al_tem_bf_wb",
+      "microstructure_id": "micro_fe35al_dislocations",
+      "technique": "Transmission electron microscopy (TEM)",
+      "instrument_or_setup": "JEOL 2010 microscope; dislocations imaged in Bright Field and Weak Beam modes, planar (shear or thermal) faults in various dark field modes",
+      "measurement_conditions": "Thin foils prepared from the centre of the deformed samples perpendicular to the stress axis; dislocation Burgers vectors identified by imaging with a variety of g vectors, generally in Bright Field mode (e.g. g = 1 1 0, 2 0 0; ±g pairs)",
+      "purpose": "Examine the dislocation structures produced by 2–3% room-temperature deformation of Fe–35% Al",
+      "key_findings": "Fe–35% Al deforms by B2 superdislocations composed of two closely spaced (1/2)⟨111⟩ partials that are generally straight and near-screw oriented, with many edge dipole segments and loops; weak remnant (APBII) fringes indicate partial destruction of DO3 order."
+    },
+    {
+      "characterization_id": "char_fe35al_foil_prep",
+      "microstructure_id": null,
+      "technique": "Twin-jet electropolishing (TEM specimen preparation)",
+      "instrument_or_setup": "twin-jet electropolishing unit",
+      "measurement_conditions": "25% nitric acid in methanol mixture, about 20 V, -30 °C",
+      "purpose": "Prepare thin foils for TEM from the deformed samples",
+      "key_findings": null
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Fe–35% Al (at.%) was one of the binary alloys prepared with Al contents of 15, 20, 25, 28, 30 and 35% Al by induction melting and drop casting (b0022).",
+    "The higher APBI fault energy of the Al-rich Fe–35% Al alloy keeps the two (1/2)⟨111⟩ partials of the B2 superdislocation closely spaced, in contrast to the loosely coupled partials in the lower-APB-energy Fe–25% Al alloy (b0046).",
+    "For Fe–35% Al, the movement of the paired-partial B2 superdislocations destroys some of the DO3 order, producing the weak remnant fringes seen in Fig. 19 (b0046).",
+    "Work hardening rate increases in the ordered state and shows a sharp maximum near 28% Al, falling to a moderate value (~5–6 GPa over 35–40% Al); the addition of about 0.1% B caused little consistent change in work hardening rate (b0012, b0029, figure_002).",
+    "APB energies used to interpret the Fe–35% Al structures: the APBI energy in B2 order rises strongly with Al content (up to ~120 mJ/m² near 36% Al), while the DO3 APBI and APBII energies fall with Al content, all three crossing near 27–29% Al at ~60–80 mJ/m² (figure_003)."
+  ]
+}

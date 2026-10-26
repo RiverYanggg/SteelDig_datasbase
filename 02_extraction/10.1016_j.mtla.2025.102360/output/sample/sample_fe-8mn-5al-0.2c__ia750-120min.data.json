@@ -1,0 +1,226 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-8mn-5al-0.2c__ia750-120min",
+      "paper_id": "10.1016_j.mtla.2025.102360",
+      "alloy_id": "alloy_fe-8mn-5al-0.2c",
+      "process_id": "proc_ia750-120min",
+      "sample_label": "IA750_120 Min",
+      "aliases": [
+        "IA750_120Min",
+        "IA750_120 Min specimen"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": "2 hr",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cast ingot homogenized at 1100 °C for 2 hr prior to hot forging."
+    },
+    {
+      "processing_step_id": "step_hot_forging",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot forging",
+      "temperature": "1050-800",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air cooling",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "50% thickness reduction",
+      "processing_steps_notes": "Hot forged to 50% thickness reduction in the temperature range 1050-800 °C followed by air cooling to room temperature."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1050-800",
+      "temperature_unit": "°C",
+      "duration": "soaking 1100 °C for 2hr (reheating 5 min between passes)",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "50% thickness reduction in each pass (two passes)",
+      "processing_steps_notes": "Hot forged samples hot rolled (soaking 1100 °C, 2hr) in the range 1050-800 °C in two passes (reheating 1100 °C, 5 min between passes), 50% thickness reduction each pass, finally water quenched to RT from finish rolling temperature (~800 °C)."
+    },
+    {
+      "processing_step_id": "step_surface_machining",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "surface machining",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "1 mm depth on both sides (final sheet thickness 3 mm)",
+      "processing_steps_notes": "Surface machining up to 1 mm depth on both sides of hot rolled sheet to remove the surface oxide layer, leaving a 3 mm thick sheet."
+    },
+    {
+      "processing_step_id": "step_intercritical_annealing",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "intercritical annealing",
+      "temperature": "750",
+      "temperature_unit": "°C",
+      "duration": "120 min",
+      "atmosphere": null,
+      "cooling_medium": "air cooling",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "HRQ 3 mm sheet intercritically annealed at 750 °C (IA750) for 120 min, followed by air cooling to room temperature; this is the defining step for the IA750_120 Min specimen."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_ia750_120min_bulk",
+      "overall_structure": "Intercritically annealed (750 °C, 120 min then air cooled) specimen showing few needle and globular types of reverted austenite, which are largely dissolved into intercritical ferrite (α), resulting in a microstructure of mostly intercritical ferrite (α) and untransformed austenite together with highly stable δ-ferrite; martensite present in the HRQ precursor has been largely transformed/dissolved.",
+      "number_of_phases": 4,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_ia750_120min",
+          "region": "bulk (overall annealed specimen)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "δ-ferrite (delta ferrite)",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "highly stable, formed during solidification; structure/morphology remains unchanged after intercritical annealing; Al-enriched",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "intercritical ferrite (α-ferrite)",
+              "crystal_structure": "BCC",
+              "volume_fraction": null,
+              "morphology": "matrix phase that increases with annealing as reverted austenite dissolves into it",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "untransformed austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": "~30% (retained austenite, untransformed + reverted, before tensile test); ~28% after tensile test",
+              "morphology": "blocky/coarse retained austenite; Mn and C enriched",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "reverted austenite (γ rev)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "few needle and globular types (SEM Fig. 4D2); progressively dissolving into intercritical ferrite with increasing annealing time",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_tensile_ia750_120min",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "2.67×10^-4 s^-1",
+        "specimen_geometry": "subsize tensile specimens machined by wire EDM along the rolling direction",
+        "test_standard": "ASTM E8/E8M",
+        "other_conditions": "at least three samples tested; average values reported"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "433±4.5 MPa",
+              "unit": "MPa",
+              "uncertainty": "±4.5 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "rolling direction",
+              "value": "571±7 MPa",
+              "unit": "MPa",
+              "uncertainty": "±7 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "rolling direction",
+              "value": "5±0.4 %",
+              "unit": "%",
+              "uncertainty": "±0.4 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    "source"
+  ],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

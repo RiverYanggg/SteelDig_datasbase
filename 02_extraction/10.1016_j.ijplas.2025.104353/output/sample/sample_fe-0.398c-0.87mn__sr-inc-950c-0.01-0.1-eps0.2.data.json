@@ -1,0 +1,519 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-0.398c-0.87mn__sr-inc-950c-0.01-0.1-eps0.2",
+      "paper_id": "10.1016_j.ijplas.2025.104353",
+      "alloy_id": "alloy_fe-0.398c-0.87mn",
+      "process_id": "proc_sr-inc-950c-0.01-0.1-eps0.2",
+      "sample_label": "950 °C, 0.01–0.1 s-1 (0.2 strain)",
+      "aliases": "0.01–0.1 s-1 (0.2 strain)"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_heating",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "heating",
+      "temperature": "1250 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": "10 °C/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Heating to 1250 °C for austenitization"
+    },
+    {
+      "processing_step_id": "step_2_austenitization_holding",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "austenitization holding",
+      "temperature": "1250 °C",
+      "temperature_unit": "°C",
+      "duration": "180 s",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Holding at 1250 °C for 180 s to homogenize the austenite phase"
+    },
+    {
+      "processing_step_id": "step_3_cooling_to_deformation_temp",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "cooling",
+      "temperature": "950 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": "10 °C/s",
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cooling from 1250 °C to 950 °C at 10 °C/s"
+    },
+    {
+      "processing_step_id": "step_4_holding_at_deformation_temp",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "temperature stabilization holding",
+      "temperature": "950 °C",
+      "temperature_unit": "°C",
+      "duration": "60 s",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Holding at 950 °C for 60 s to reduce temperature fluctuations"
+    },
+    {
+      "processing_step_id": "step_5_stage1_compression",
+      "sequence": "5",
+      "type": "mechanical processing",
+      "method": "hot compression (first stage)",
+      "temperature": "950 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "First stage: deformed at strain rate ε̇_I = 0.01 s^-1 to fixed strain ε_I = 0.2"
+    },
+    {
+      "processing_step_id": "step_6_stage2_compression",
+      "sequence": "6",
+      "type": "mechanical processing",
+      "method": "hot compression (second stage)",
+      "temperature": "950 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Second stage: strain rate transiently increased to ε̇_II = 0.1 s^-1 and compressed to final strain ε_total = 0.9"
+    },
+    {
+      "processing_step_id": "step_7_water_quenching",
+      "sequence": "7",
+      "type": "heat treatment",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Water quenching immediately after deformation to freeze the high-temperature microstructure"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_initial_mixed_grain",
+      "overall_structure": "Initial mixed-grain prior-austenite-grain (PAG) microstructure before hot compression; representative areas 550 µm × 550 µm",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_initial_mixed_grain",
+          "region": "bulk (three orthogonal sections: top/right/left faces)",
+          "related_sequence": "0",
+          "phases_present": [
+            {
+              "phase_name": "prior austenite grains (austenite)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "mixed-grain (coarse and fine grains)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "141.66",
+              "unit": "µm"
+            },
+            "grain_size_distribution": "SD 54.54 µm; Min 10.22 µm; Max 265.20 µm",
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    },
+    {
+      "structure_id": "struct_deformed_sr-inc-eps0.2",
+      "overall_structure": "Multi-stage DRX microstructure after hot compression with transient strain-rate increase (950 °C, 0.01→0.1 s^-1 at ε=0.2, ε_total=0.9): first-stage DRX grains (DRXGs_I) and second-stage DRX grains (DRXGs_II) with a small residual matrix",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_final_0.9_sr-inc-eps0.2",
+          "region": "final deformed microstructure at 0.9 strain (3D CA simulation)",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "first-stage DRX grains (DRXGs_I)",
+              "crystal_structure": null,
+              "volume_fraction": "0.07",
+              "morphology": null,
+              "grain_size": "36.82 µm",
+              "texture": null
+            },
+            {
+              "phase_name": "second-stage DRX grains (DRXGs_II)",
+              "crystal_structure": null,
+              "volume_fraction": "0.91",
+              "morphology": null,
+              "grain_size": "32.93 µm",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "33.77",
+              "unit": "µm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_0.4_strain_YZ_sim",
+          "region": "YZ surface (3D CA simulation)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "first-stage DRX grains (DRXGs_I)",
+              "crystal_structure": null,
+              "volume_fraction": "28.3%",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "second-stage DRX grains (DRXGs_II)",
+              "crystal_structure": null,
+              "volume_fraction": "10.1%",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation density distribution (simulated)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "1×10^11–2.615×10^14 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": null,
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_0.6_strain_YZ_sim",
+          "region": "YZ surface (3D CA simulation)",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "first-stage DRX grains (DRXGs_I)",
+              "crystal_structure": null,
+              "volume_fraction": "29.4%",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "second-stage DRX grains (DRXGs_II)",
+              "crystal_structure": null,
+              "volume_fraction": "58.2%",
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation density distribution (simulated)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "1×10^11–1.777×10^14 m^-2",
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": null,
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interf_sr-inc-eps0.2",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_matrix_drx",
+          "microstructure_id": "micro_final_0.9_sr-inc-eps0.2",
+          "phase_1_name": "matrix austenite",
+          "phase_2_name": "DRX grain",
+          "coherence": "high-angle grain boundary (θ ≥ 10°)"
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": "Grain boundary sliding (GBS) is incorporated into the CA model to quantify dislocation-density evolution; GBS strain rate follows Eq. (30).",
+      "phase_evolution": null,
+      "interface_notes": "DRX nucleation takes place only on grain boundaries; second-stage DRX grains nucleate at the grain boundaries of matrix and first-stage DRX grains."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_flow_sr-inc-eps0.2",
+      "measurement_conditions": {
+        "temperature": "950 °C",
+        "temperature_unit": "°C",
+        "environment": "Tantalum foil (0.1 mm thick) between specimen ends and indenter to prevent interfacial melting and minimize friction",
+        "strain_rate": "0.01 s^-1 (first stage) → 0.1 s^-1 (second stage, transiently increased at ε=0.2)",
+        "specimen_geometry": "cylinder φ6 mm × 9 mm",
+        "test_standard": "Gleeble 1500 thermomechanical simulator",
+        "other_conditions": "total true strain 0.9; water quenched after deformation"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Hot-compression true stress–true strain curves: first stage follows the 0.01 s^-1 constant curve; after strain-rate increase to 0.1 s^-1 at ε=0.2, the experimental stress gradually reaches a second-stage peak lower than the constant 0.1 s^-1 condition, then decreases to a steady-state stress lower than the corresponding constant condition. 3D CA simulation shows the second-stage stress stepping up at ε≈0.2 to a plateau near 105–108 MPa.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om_pag",
+      "microstructure_id": "micro_final_0.9_sr-inc-eps0.2",
+      "technique": "Optical microscopy",
+      "instrument_or_setup": "Olympus GX71 optical microscope; Image Pro Plus software",
+      "measurement_conditions": "Side sections ground with SiC papers, polished with 1 µm and 0.25 µm diamond pastes, chemically etched with saturated picric acid solution",
+      "purpose": "Prior austenite grain (PAG) observation and equivalent diameter measurement",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_ebsd_pag_reconstruction",
+      "microstructure_id": "micro_final_0.9_sr-inc-eps0.2",
+      "technique": "Electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "SU5000 SEM equipped with EBSD detector; ARPGE software; AZtecCrystal software",
+      "measurement_conditions": "EBSD samples electrolytically polished with 10% perchlorate alcohol solution at 30 V and 0.25 A for 30 s; step size 0.65–1.3 µm; PAG reconstruction via Greninger-Troiano (GT) orientation relationship; GOS threshold 3°; boundaries with misorientation >10°",
+      "purpose": "As-quenched martensitic microstructure characterization and prior austenite grain (PAG) reconstruction; distinguishing recrystallized from deformed grains",
+      "key_findings": null
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_ca3d_inhom_dd",
+      "simulation_method": "3D cellular automaton (CA) with inhomogeneous dislocation density, incorporating dislocation density gradients and grain boundary sliding (GBS)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "RVE 550 µm × 550 µm × 550 µm; cell size L0 = 2.5 µm; initial uniform dislocation density 1×10^11 m^-2; initial mixed-grain microstructure from 2D section",
+      "validation_against_experiment": "Under varying deformation conditions, 3D CA accuracy: flow stress RMSE 3.3118 MPa, R² 0.9589, AARE 4.57%; AGS RMSE 4.0169 µm, R² 0.9777, AARE 4.11%; DRX fraction RMSE 0.0229, R² 0.9784, AARE 2.47% (Table 5).",
+      "analytical_models": [
+        {
+          "model_name": "3D CA material parameters (Table 4)",
+          "equation_role": "CA model constants for GBS, nucleation, grain boundary migration and dislocation-density evolution",
+          "parameters": [
+            {
+              "name": "K (Boltzmann constant)",
+              "value": "1.38 × 10^-23",
+              "unit": "J/K"
+            },
+            {
+              "name": "C_drx",
+              "value": "1.99 × 10^10",
+              "unit": null
+            },
+            {
+              "name": "b (Burgers vector)",
+              "value": "2.45 × 10^-10",
+              "unit": "m"
+            },
+            {
+              "name": "ν (Poisson's ratio)",
+              "value": "0.33",
+              "unit": null
+            },
+            {
+              "name": "E (diffusion activation energy)",
+              "value": "305,200",
+              "unit": "J/mol"
+            },
+            {
+              "name": "δD_ob",
+              "value": "5 × 10^-10",
+              "unit": "m³/s"
+            },
+            {
+              "name": "A_GB",
+              "value": "37.5",
+              "unit": null
+            },
+            {
+              "name": "H₀",
+              "value": "2.63 × 10^-7",
+              "unit": null
+            },
+            {
+              "name": "P_GB",
+              "value": "2",
+              "unit": null
+            },
+            {
+              "name": "n_GB",
+              "value": "2",
+              "unit": null
+            },
+            {
+              "name": "V_m (molar volume)",
+              "value": "7.18 × 10^-6",
+              "unit": null
+            },
+            {
+              "name": "α_dis",
+              "value": "0.5",
+              "unit": null
+            }
+          ],
+          "model_note": "Parameters for the 3D CA model; values from Table 4."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_constitutive_model2",
+      "simulation_method": "Phenomenological constitutive model (Model 2) with modified t_0.5 and stress softening coefficient k_s",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Under varying deformation conditions, Model 2: RMSE 3.0399 MPa, R² 0.9507, AARE 3.11% (Table 3); Model 1: RMSE 6.4554 MPa, R² 0.8239, AARE 7.36%.",
+      "analytical_models": [
+        {
+          "model_name": "Constitutive model parameters (Table 1)",
+          "equation_role": "Characteristic stresses, DRX kinetics and softening coefficient",
+          "parameters": [
+            {
+              "name": "μ0",
+              "value": "7.89 × 10^10",
+              "unit": "MPa"
+            },
+            {
+              "name": "T_m",
+              "value": "1800",
+              "unit": "K"
+            },
+            {
+              "name": "K_T0",
+              "value": "680.912",
+              "unit": null
+            },
+            {
+              "name": "Q_KT",
+              "value": "23,134.8",
+              "unit": null
+            },
+            {
+              "name": "ψ",
+              "value": "9.92 × 10^-3",
+              "unit": null
+            },
+            {
+              "name": "q",
+              "value": "0.867",
+              "unit": null
+            },
+            {
+              "name": "Q_drx",
+              "value": "326,922",
+              "unit": "J/mol"
+            },
+            {
+              "name": "Q_p",
+              "value": "314,300",
+              "unit": "J/mol"
+            },
+            {
+              "name": "A",
+              "value": "7.3214 × 10^11",
+              "unit": null
+            },
+            {
+              "name": "α",
+              "value": "0.0089",
+              "unit": null
+            },
+            {
+              "name": "n",
+              "value": "6.3742",
+              "unit": null
+            },
+            {
+              "name": "k_d0",
+              "value": "4.442",
+              "unit": null
+            },
+            {
+              "name": "Q_kd",
+              "value": "728.468",
+              "unit": null
+            },
+            {
+              "name": "n_Av0",
+              "value": "18.097",
+              "unit": null
+            },
+            {
+              "name": "Q_Av",
+              "value": "21,895.1",
+              "unit": null
+            },
+            {
+              "name": "n_c",
+              "value": "55.563",
+              "unit": null
+            }
+          ],
+          "model_note": "Constitutive model parameters determined by genetic algorithm optimization (Table 1)."
+        }
+      ]
+    },
+    {
+      "computation_id": "comp_fem_deform3d",
+      "simulation_method": "Finite element method (FEM) hot compression simulation",
+      "software_used": "DEFORM 3D; constitutive model embedded using Fortran",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "FEM simulation of hot compression under varying deformation conditions compared with experimental force-stroke results (Fig. 10).",
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    "When the strain rate was transiently increased from 0.01 s^-1 to 0.1 s^-1 at ε_I=0.2 (950 °C), the experimental stress gradually reached a lower peak than under the constant 0.1 s^-1 condition; as deformation continued the flow curve exhibited a significant decrease and the steady-state stress was lower than the corresponding constant condition. The greater the strain at which the strain rate transiently increased, the lower the peak and steady-state stress in the second stage.",
+    "For this sample (ε_I=0.2), the AGS in the second stage was slightly higher than that under the constant 0.1 s^-1 condition at 0.9 strain; the GOS maps indicate DRX fractions exceeded 94% under constant and increasing strain rates, indicating near-complete recrystallization.",
+    "After transiently increasing strain rate at 0.2 strain, the stress softening in the initial part of the second stage was mostly attributed to refinement of the matrix by DRX grains (consistent with the reason for stress decline under constant deformation conditions); the 3D CA model captured the peak stress and subsequent stress decline better than Model 2.",
+    "The 3D CA simulation (Fig. 23a) shows that for the transient strain-rate increase at ε_I=0.2, second-stage DRX grains first nucleate at matrix grain boundaries at 0.4 strain, and later (0.6 strain) begin to refine the first-stage DRX grains, consistent with the two-population DRX evolution of this sample.",
+    "Per the conclusions, a transient increase in Z_P significantly increases the final AGS with rising ε_I; DRXGs_I cannot be refined completely because of delayed DRXGs_II nucleation, and more/larger DRXGs_I remain as ε_I increases (Table 6 gives the simulated values for this sample)."
+  ]
+}

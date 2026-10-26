@@ -1,0 +1,222 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-7al-0.15c__aimfc-hot-rolled",
+      "paper_id": "10.1007_s11837-014-1065-1",
+      "alloy_id": "alloy_fe-7al-0.15c",
+      "process_id": "proc_aimfc-hot-rolled",
+      "sample_label": "Fe-7Al-0.15C",
+      "aliases": [
+        "Fe-7Al-0.15C"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1",
+      "sequence": "1",
+      "type": "melting/casting",
+      "method": "air induction melting with flux cover (AIMFC)",
+      "temperature": "1900 K",
+      "temperature_unit": null,
+      "duration": "2 min",
+      "atmosphere": "air",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Forty-kilogram melts of the five carbon-series alloys (Table IV) prepared by air induction melting with a flux cover (Al2O3, CaO, MgO, CaF2). Note: Table V and Fig. 5 captions label the carbon-series route 'AIM', while the section text states air induction melting with a flux cover."
+    },
+    {
+      "processing_step_id": "step_2",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot forging",
+      "temperature": "1373 K",
+      "temperature_unit": null,
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-forged in a 1-tonne pneumatic forge hammer with die platens at room temperature."
+    },
+    {
+      "processing_step_id": "step_3",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1373 K",
+      "temperature_unit": null,
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "50%",
+      "processing_steps_notes": "Hot rolled 50% with 1-mm reduction per pass; reheated after every six passes; final plate thickness 12 mm."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_fe7al015c_hotrolled",
+      "overall_structure": "Equiaxed grains with fine dark speckles (Fe3AlC0.5 precipitates) inside the grains; grain boundaries largely clean.",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_fe7al015c",
+          "region": "bulk hot-rolled plate",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "Fe3Al",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix (equiaxed grains)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "Fe3AlC0.5",
+              "crystal_structure": "perovskite-based",
+              "volume_fraction": null,
+              "morphology": "fine dark speckles (intragranular precipitates)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_fe3alc05",
+              "type": "Fe3AlC0.5",
+              "size": null,
+              "distribution": "fine dark speckles inside grains; grain boundaries largely clean",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_fe7al015c",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_fe3al_fe3alc05",
+          "microstructure_id": "micro_fe7al015c",
+          "phase_1_name": "Fe3Al",
+          "phase_2_name": "Fe3AlC0.5",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": "Volume fraction of Fe3AlC0.5 precipitates increases significantly with increasing carbon content.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_fe7al015c_hotrolled",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "hot-rolled plate",
+        "test_standard": null,
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "452",
+              "unit": "MPa",
+              "uncertainty": "± 6.8"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "481",
+              "unit": "MPa",
+              "uncertainty": "± 5.2"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "16",
+              "unit": "%",
+              "uncertainty": "± 1.8"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk",
+            "value": "221",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": "± 6.9"
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd_fe7al015c",
+      "microstructure_id": "micro_fe7al015c",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Philips 3710 x-ray diffractometer; Cu-Kα radiation",
+      "measurement_conditions": "Cu-Kα radiation; 2θ span roughly 20–100°",
+      "purpose": "Confirm Fe3AlC0.5 precipitate phase in Fe-7Al-0.15C.",
+      "key_findings": "Fe3Al (111),(220),(400),(422),(440) reflections plus Fe3AlC0.5 (200) near 44° and (311) near 84°."
+    },
+    {
+      "characterization_id": "char_om_fe7al015c",
+      "microstructure_id": "micro_fe7al015c",
+      "technique": "Optical microscopy",
+      "instrument_or_setup": null,
+      "measurement_conditions": "hot-rolled plate; etched; scale bar 250 µm in panel (e) only",
+      "purpose": "Observe microstructure and precipitate distribution as a function of carbon content.",
+      "key_findings": "At 0.15 wt.% C, equiaxed grains with fine dark speckles inside grains; grain boundaries largely clean."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Measured composition (Table IV): Al 6.92, Si 0.17, Mn 0.18, S 0.005, C 0.15 wt.% [b0051,b0052].",
+    "The volume fraction of Fe3AlC0.5 precipitates increases significantly with increasing carbon content [b0061].",
+    "The increase in bulk hardness with carbon suggests precipitation hardening by hard Fe3AlC0.5 is the predominant strengthening mechanism [b0062].",
+    "Text b0062 states carbon addition to Fe-7 wt.% Al improved room-temperature strength (396–610 MPa) and decreased room-temperature tensile elongation (18–3%); these text ranges do not exactly match Table V values.",
+    "Conclusion (b0064): increasing carbon in Fe-7 wt.% Al significantly improves strength but adversely affects ductility."
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-10mn-10al-0.7c__900c-1h-wq",
+      "paper_id": "10.1016_j.matdes.2015.11.115",
+      "alloy_id": "alloy_fe-10mn-10al-0.7c",
+      "process_id": "proc_900c-1h-wq",
+      "sample_label": null,
+      "aliases": [
+        "specimen annealed at 900 °C",
+        "900 °C specimen"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_vacuum_induction_melting",
+      "sequence": "1",
+      "type": "melting / casting",
+      "method": "vacuum induction melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "A 20 kg ingot of a Fe–10Mn–10Al–0.7C steel was prepared by vacuum induction melting method."
+    },
+    {
+      "processing_step_id": "step_forging",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "forging",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The ingot was heated to 1200 °C and then forged to forging blank with cross section of about 40 mm × 60 mm."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "homogenizing",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenized at 1200 °C for 1 h."
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "finishing rolling temperature around 880 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The forging blank was hot-rolled to the plate of 3 mm thickness, with the finishing rolling temperature around 880 °C."
+    },
+    {
+      "processing_step_id": "step_water_cooled_to_300",
+      "sequence": "5",
+      "type": "cooling",
+      "method": "water cooling",
+      "temperature": "about 300 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Water quenched to about 300 °C then air cooled (Fig. 1)."
+    },
+    {
+      "processing_step_id": "step_annealing_900c_1h",
+      "sequence": "6",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": "900 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Annealed at 900 °C for 1 h; at this temperature κ-carbide has almost fully dissolved (only a small amount of boundary κ forms during quenching)."
+    },
+    {
+      "processing_step_id": "step_water_quenching",
+      "sequence": "7",
+      "type": "cooling",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Followed by water quenching (final step of the thermo-mechanical schedule, Fig. 1)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_900c_annealed",
+      "overall_structure": "Banded duplex microstructure of ferrite (α) and austenite (γ), with κ-carbide almost fully dissolved; only a small amount of boundary κ-carbide formed during quenching along some boundaries between large α grains. The banded structure persists after annealing.",
+      "number_of_phases": "3 (ferrite α, austenite γ, boundary κ-carbide)",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_900c_RDND",
+          "region": "RD–ND section (rolling direction–normal direction)",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (α)",
+              "crystal_structure": "BCC (body-centered cubic)",
+              "volume_fraction": "~40%",
+              "morphology": "elongated bright α strips forming a banded structure; bands become less continuous and coarser at 900 °C",
+              "grain_size": "α2 (banded, continuous): 26.1 μm at 900 °C",
+              "texture": null
+            },
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC (face-centered cubic)",
+              "volume_fraction": "about 60%",
+              "morphology": "γ grains; banded structure becomes less contiguous and grains coarser/equiaxed at 900 °C",
+              "grain_size": "5.5 μm at 900 °C",
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "γ: 5.5 μm; α2 (banded shape): 26.1 μm; α1 (mainly among γ grains): 3.2 μm at 900 °C",
+              "unit": "μm"
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_boundary_kappa_900c",
+              "type": "κ-carbide (boundary κ)",
+              "size": "very small size",
+              "distribution": "along some boundaries between large α grains in the α area",
+              "coherency": "N–W (Nishiyama–Wasserman) orientation relationship reported between boundary κ and α matrix at high annealing temperatures (1100–1200 °C)"
+            }
+          ],
+          "block_id": [
+            "b0028",
+            "b0030",
+            "figure_005"
+          ]
+        }
+      ]
+    },
+    {
+      "microstructure_id": "micro_900c_RDTD",
+      "region": "RD–TD section (rolling direction–transverse direction)",
+      "related_sequence": "6",
+      "phases_present": [
+        {
+          "phase_name": "ferrite (α)",
+          "crystal_structure": "BCC (body-centered cubic)",
+          "volume_fraction": "~40%",
+          "morphology": "coarser, more equiaxed α grains; a large continuous α band with small α grains inside γ regions",
+          "grain_size": "α2 (banded): 26.1 μm; α1 (among γ grains): 3.2 μm at 900 °C",
+          "texture": null
+        },
+        {
+          "phase_name": "austenite (γ)",
+          "crystal_structure": "FCC (face-centered cubic)",
+          "volume_fraction": "about 60%",
+          "morphology": "coarser, more equiaxed γ grains; no obvious κ-carbide resolvable in the matrix",
+          "grain_size": "5.5 μm at 900 °C",
+          "texture": null
+        }
+      ],
+      "defects": [],
+      "grain_structure": {
+        "average_grain_size": {
+          "value": "γ: 5.5 μm; α2 (banded shape): 26.1 μm; α1 (mainly among γ grains): 3.2 μm at 900 °C",
+          "unit": "μm"
+        },
+        "grain_size_distribution": null,
+        "texture": null
+      },
+      "precipitates": []
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

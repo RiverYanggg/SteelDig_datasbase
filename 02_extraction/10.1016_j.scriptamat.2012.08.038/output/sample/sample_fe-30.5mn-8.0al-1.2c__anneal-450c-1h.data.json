@@ -1,0 +1,383 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30.5mn-8.0al-1.2c__anneal-450c-1h",
+      "paper_id": "10.1016_j.scriptamat.2012.08.038",
+      "alloy_id": "alloy_fe-30.5mn-8.0al-1.2c",
+      "process_id": "proc_anneal-450c-1h",
+      "sample_label": "8Al, 1 h/450 °C",
+      "aliases": [
+        "8Al short annealed",
+        "short annealed 8Al",
+        "8Al",
+        "450 °C/1 h"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "melted in an induction furnace",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "Ar",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Material melted in an induction furnace under Ar atmosphere."
+    },
+    {
+      "processing_step_id": "step_2_casting",
+      "sequence": "2",
+      "type": "casting",
+      "method": "cast to round bars, 25 mm in diameter",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cast ingots 25 mm in diameter."
+    },
+    {
+      "processing_step_id": "step_3_reheating",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "reheating of cast ingots",
+      "temperature": "1200",
+      "temperature_unit": "°C",
+      "duration": "30 min",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Cast ingots reheated to 1200 °C for 30 min prior to hot rolling."
+    },
+    {
+      "processing_step_id": "step_4_hot_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water quenched",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "75% thickness reduction",
+      "processing_steps_notes": "Hot-rolled to 75% thickness reduction at 1100 °C and water quenched."
+    },
+    {
+      "processing_step_id": "step_5_solution_treatment",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1100",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": "Ar",
+      "cooling_medium": "water quenched",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Hot-rolled material solution-treated for 2 h at 1100 °C under Ar, then quenched in water. This is the parent process (proc_solution-1100c-2h) of the short annealing."
+    },
+    {
+      "processing_step_id": "step_6_short_annealing",
+      "sequence": "6",
+      "type": "heat treatment",
+      "method": "short annealing treatment",
+      "temperature": "450",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Short annealing treatment (450 °C/1 h) applied after solution treatment; defines this sample's state (8Al, 1 h/450 °C)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_8Al_short_annealed",
+      "overall_structure": "Austenitic (γ) matrix containing a heterogeneous distribution of intragranular nanosized shearable κ-carbides; upon tensile deformation the alloy develops planar dislocation substructures (Taylor lattice structures and highly dense dislocation walls) that remain stable to high stress levels, giving a single, nearly constant strain-hardening regime.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_precipitated_matrix",
+          "region": "grain interior",
+          "related_sequence": "6",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "κ-carbide (Fe,Mn)3AlC",
+              "crystal_structure": "L0_1-type structure (as reported in text)",
+              "volume_fraction": null,
+              "morphology": "intragranular nanosized",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_kappa_short_annealed",
+              "type": "κ-carbide ((Fe,Mn)3AlC)",
+              "size": {
+                "value": "2–5 nm",
+                "unit": "nm"
+              },
+              "distribution": "heterogeneous, intragranular",
+              "coherency": "cube/cube orientation relationship with the austenite matrix; weak obstacles, crystallographically sheared"
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_deformed_planar_dislocation",
+          "region": "grain interior (tensile deformed to 0.3 true strain)",
+          "related_sequence": null,
+          "phases_present": [],
+          "defects": [
+            {
+              "type": "Planar dislocation substructure consisting of Taylor lattice structures and highly dense dislocation walls (HDDWs) lying on the primary slip system, with HDDW spacing between 100 and 200 nm",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "intf_8Al_short_annealed",
+      "phase_interfaces": [
+        {
+          "interface_id": "intf_kappa_austenite",
+          "microstructure_id": "micro_precipitated_matrix",
+          "phase_1_name": "κ-carbide ((Fe,Mn)3AlC)",
+          "phase_2_name": "austenite (γ)",
+          "coherence": "cube/cube orientation relationship with the austenite matrix"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "int1_dislocation_particle",
+          "microstructure_id": "micro_deformed_planar_dislocation",
+          "interaction_type": "dislocation–precipitate interaction (shearing of κ-carbides)",
+          "qualitative_or_quantitative_description": "Detailed TEM observations of the dislocation configurations do not reveal dislocation–particle pinning events; the κ-carbides are considered weak obstacles and, due to their tiny size, are crystallographically sheared, producing a moderate yield-strength increment and planar dislocation substructures."
+        }
+      ],
+      "slip_behavior": "Planar slip; planar dislocation substructures formed by Taylor lattice structures and HDDWs are stable up to high stress levels (true stress of 1.1 GPa), with the enhancement of planar slip attributed to the nanosized and shearable κ-carbides.",
+      "phase_evolution": null,
+      "interface_notes": "In the short annealed 8Al state the κ-carbide/matrix interfaces result from heterogeneous intragranular precipitation of shearable nanosized κ-carbides."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "props_tensile_8Al_450C_1h",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "5 × 10^-4 s^-1",
+        "specimen_geometry": "cylindrical tensile samples with gauges of 6 mm diameter and 40 mm length",
+        "test_standard": null,
+        "other_conditions": "longitudinal sections examined (observation direction perpendicular to tensile axis)"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "540",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "895",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "65",
+              "unit": "% (uniform elongation)",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "engineering stress–strain curve for 8Al-450°C/1h (green curve in Figure 1); the 8Al curve is nearly linear after yielding, does not show a concave shape, indicating a single hardening regime",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": [
+            {
+              "value": "~2",
+              "unit": "GPa",
+              "uncertainty": null,
+              "note": "early stages of deformation; single, fairly constant hardening regime"
+            }
+          ]
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_8Al_vs_2Al_solid_solution",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-30.5mn-2.1al-1.2c",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Yield strength increment from κ-carbide precipitation: 2Al steel in solid solution YS = 420 MPa vs short annealed 8Al steel YS = 540 MPa (moderate increment attributed to nanosized shearable κ-carbides)",
+        "improvement_percentage": null
+      }
+    },
+    {
+      "performance_id": "perf_8Al_short_vs_long_hardening",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-30.5mn-8.0al-1.2c",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Strain hardening capacity: the short annealed 8Al steel exhibits greater hardening than the long annealed 8Al steel; both exhibit a single, fairly constant hardening regime (~2 GPa at early stages)",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_ECCI",
+      "microstructure_id": "micro_deformed_planar_dislocation",
+      "technique": "Electron channeling contrast imaging (ECCI) using an EBSD-based set-up under controlled diffraction conditions",
+      "instrument_or_setup": "Zeiss Crossbeam instrument (XB 1540, Carl Zeiss SMT AG, Germany)",
+      "measurement_conditions": "Short annealed 8Al sample tensile deformed to 0.3 true strain; longitudinal section, observation direction perpendicular to tensile axis",
+      "purpose": "Characterize the dislocation substructure (planar configurations, Taylor lattice structures, highly dense dislocation walls)",
+      "key_findings": "Short annealed 8Al steel develops planar dislocation configurations formed by Taylor lattice structures and highly dense dislocation walls (HDDWs) spaced between 100 and 200 nm; planar dislocation substructures are stable up to a true stress of 1.1 GPa."
+    },
+    {
+      "characterization_id": "char_dark_field_TEM",
+      "microstructure_id": "micro_precipitated_matrix",
+      "technique": "Dark-field transmission electron microscopy (TEM)",
+      "instrument_or_setup": "Phillips CM20 microscope",
+      "measurement_conditions": "Short annealed 8Al sample; thin foils prepared by electropolishing using 30% nitric acid in methanol at -30 °C and 10 V",
+      "purpose": "Characterize the precipitation state (size and distribution of κ-carbides)",
+      "key_findings": "Heterogeneous distribution of intragranular nanosized precipitates with sizes between 2 and 5 nm in the short annealed 8Al steel."
+    },
+    {
+      "characterization_id": "char_SADP",
+      "microstructure_id": "micro_precipitated_matrix",
+      "technique": "Selected area electron diffraction (SADP)",
+      "instrument_or_setup": "Phillips CM20 microscope",
+      "measurement_conditions": "Short annealed 8Al sample",
+      "purpose": "Identify the crystal structure and orientation relationship of the nanosized precipitates",
+      "key_findings": "Precipitates are κ-carbides containing an L0_1-type structure with a cube/cube orientation relationship with the austenite matrix."
+    },
+    {
+      "characterization_id": "char_tensile_testing",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing (to failure and interrupted to different strain levels)",
+      "instrument_or_setup": "Zwick ZH 100 tensile machine",
+      "measurement_conditions": "Room temperature; initial strain rate 5×10^-4 s^-1; cylindrical samples with gauges of 6 mm diameter and 40 mm length",
+      "purpose": "Measure mechanical properties (YS, UTS, UE) and study microstructural evolution as a function of strain",
+      "key_findings": "Short annealed 8Al steel: YS = 540 MPa, UTS = 895 MPa, UE = 65%."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The short annealed 8Al steel (450 °C/1 h) exhibits a single hardening regime with a strain-hardening capacity at the early stages of deformation (~2 GPa) that is lower than that of the 2Al steels (~2.6 GPa), and its flow curve is nearly linear (no concave shape) after yielding, in contrast to the multiple-stage hardening behavior of the 2Al steel.",
+    "The enhancement of planar slip in the short annealed 8Al steel is attributed to the nanosized and shearable κ-carbides, an effect linked to the high Al content (8 wt.%) that strongly modifies the strain-hardening behavior of Fe–Mn–Al–C steels."
+  ]
+}

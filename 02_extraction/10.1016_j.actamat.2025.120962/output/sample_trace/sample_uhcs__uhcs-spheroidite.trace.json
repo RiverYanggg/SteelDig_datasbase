@@ -1,0 +1,378 @@
+[
+  {
+    "path": "$.samples[0].aliases",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.structures[0]",
+    "reason": "UHCS spheroidite microstructure is described in Fig.1 and Figs.5-7 and in text b0076: dense light-coloured cementite/spheroidite particles on a dark matrix of a rough alloy crack surface.",
+    "block_id": [
+      "figure_001",
+      "figure_005",
+      "figure_006",
+      "figure_007",
+      "b0076"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].overall_structure",
+    "reason": "figure_001 classifies UHCS as 'single crystal & multiphase' and describes 'dense fine speckled cementite contrast'; figure_005/006/007 describe a dark matrix with bright spheroidite particles.",
+    "block_id": [
+      "figure_001",
+      "figure_005",
+      "figure_006",
+      "figure_007"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0]",
+    "reason": "UHCS SEM image shows a dark rough alloy crack surface densely covered by light-coloured spheroidite (cementite) particles.",
+    "block_id": [
+      "b0076",
+      "figure_006",
+      "figure_007"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].region",
+    "reason": "b0076 states the UHCS dataset contains light-colored precipitates (spheroidite particles) uniformly distributed on the top surface of a rough alloy crack.",
+    "block_id": [
+      "b0076"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].phases_present[0]",
+    "reason": "Cementite/spheroidite particles are the target phase in the UHCS multiphase image.",
+    "block_id": [
+      "figure_001",
+      "b0076"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].phases_present[0].phase_name",
+    "reason": "figure_001 labels UHCS as cementite; b0076 refers to light-colored precipitates (spheroidite particles) and cementite particles.",
+    "block_id": [
+      "figure_001",
+      "b0076"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].phases_present[0].morphology",
+    "reason": "figure_005 describes 'dense bright globular particles and a few large faceted particles'; figure_007 describes 'dense small bright spheroidal particles'.",
+    "block_id": [
+      "figure_005",
+      "figure_007"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].phases_present[1]",
+    "reason": "The dark matrix is the background phase surrounding the cementite particles.",
+    "block_id": [
+      "figure_005",
+      "figure_007"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].phases_present[1].phase_name",
+    "reason": "figure_005, figure_006 and figure_007 all describe the UHCS background as a dark matrix/background.",
+    "block_id": [
+      "figure_005",
+      "figure_006",
+      "figure_007"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].phases_present[1].morphology",
+    "reason": "figure_007 describes 'dark matrix with thin dark grain boundaries and dense small bright spheroidal particles'.",
+    "block_id": [
+      "figure_007"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].precipitates[0]",
+    "reason": "The cementite/spheroidite particles constitute the precipitate population to be segmented in the UHCS dataset.",
+    "block_id": [
+      "b0076",
+      "figure_001"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].precipitates[0].type",
+    "reason": "figure_001 labels the UHCS feature as cementite; b0076 calls them light-colored precipitates (spheroidite particles).",
+    "block_id": [
+      "figure_001",
+      "b0076"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.structures[0].microstructure_list[0].precipitates[0].distribution",
+    "reason": "b0076 states numerous light-colored precipitates uniformly distributed on the crack surface; figure_005/007 describe dense small bright globular particles plus a few large faceted particles.",
+    "block_id": [
+      "b0076",
+      "figure_005",
+      "figure_007"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.interfaces[0]",
+    "reason": "The UHCS multiphase image consists of cementite/spheroidite particles dispersed in a dark matrix, implying particle/matrix interfaces; no coherence information is reported.",
+    "block_id": [
+      "b0076",
+      "figure_005",
+      "figure_007"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.interfaces[0].phase_interfaces[0]",
+    "reason": "The two visually distinct constituents (light cementite particles and dark matrix) coexist in the UHCS microstructure; interface coherence is not reported.",
+    "block_id": [
+      "figure_005",
+      "figure_007"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.interfaces[0].phase_interfaces[0].phase_1_name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.interfaces[0].phase_interfaces[0].phase_2_name",
+    "reason": null,
+    "block_id": [],
+    "status": "insufficient"
+  },
+  {
+    "path": "$.performance[0]",
+    "reason": "b0076 reports MatSAM IoU 0.76 on UHCS, outperforming the specialist model (0.71) by 5.0%.",
+    "block_id": [
+      "b0076"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[0].comparative_performance",
+    "reason": "Comparison of MatSAM vs the specialist DL model on UHCS phase segmentation.",
+    "block_id": [
+      "b0076",
+      "b0079"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[0].comparative_performance.comparison_metric",
+    "reason": "b0076 states MatSAM attains 0.76, outperforming the specialist model by 5.0%; Table 3 gives specialist IoU 0.71.",
+    "block_id": [
+      "b0076",
+      "b0079"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[0].comparative_performance.improvement_percentage",
+    "reason": "b0076 explicitly states MatSAM outperforms the specialist model by 5.0% on UHCS.",
+    "block_id": [
+      "b0076"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[1]",
+    "reason": "b0076 gives MatSAM IoU 0.76 vs SAM 0.58 on UHCS.",
+    "block_id": [
+      "b0076"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[1].comparative_performance",
+    "reason": "Comparison of MatSAM vs original SAM on UHCS.",
+    "block_id": [
+      "b0076",
+      "b0079"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[1].comparative_performance.comparison_metric",
+    "reason": "b0076 reports SAM performs poorly on UHCS with IoU 0.58, below MatSAM's 0.76.",
+    "block_id": [
+      "b0076",
+      "b0079"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[2]",
+    "reason": "b0076 gives MatSAM IoU 0.76 vs OTSU 0.56 on UHCS.",
+    "block_id": [
+      "b0076"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[2].comparative_performance",
+    "reason": "Comparison of MatSAM vs OTSU on UHCS.",
+    "block_id": [
+      "b0076",
+      "b0079"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[2].comparative_performance.comparison_metric",
+    "reason": "b0076 reports OTSU performs poorly on UHCS with IoU 0.56.",
+    "block_id": [
+      "b0076",
+      "b0079"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[3]",
+    "reason": "b0076 gives MatSAM IoU 0.76 vs Adaptive thresholding 0.46 on UHCS.",
+    "block_id": [
+      "b0076"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[3].comparative_performance",
+    "reason": "Comparison of MatSAM vs adaptive thresholding on UHCS.",
+    "block_id": [
+      "b0076",
+      "b0079"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.performance[3].comparative_performance.comparison_metric",
+    "reason": "b0076 reports Adaptive performs poorly on UHCS with IoU 0.46.",
+    "block_id": [
+      "b0076",
+      "b0079"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0]",
+    "reason": "SEM imaging and segmentation evaluation of the UHCS spheroidite/cementite microstructure.",
+    "block_id": [
+      "b0024",
+      "b0076"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0].technique",
+    "reason": "b0024 states images of ultrahigh carbon steel (UHCS) [11] were obtained using SEM.",
+    "block_id": [
+      "b0024"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0].measurement_conditions",
+    "reason": "b0024 states UHCS is a public dataset with attached test data; Table 1 (b0034/b0036) lists UHCS [11] as phase type, 645×475 pixels, 5 images, metrics IoU/F1/Recall; figure_001 lists 768×768 pix.",
+    "block_id": [
+      "b0024",
+      "b0034",
+      "b0036",
+      "figure_001",
+      "figure_unlabelled_002"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0].purpose",
+    "reason": "b0045 states phase masks are directly segmented for multiphase images (including UHCS); b0074 states comparative experiments were performed on UHCS.",
+    "block_id": [
+      "b0045",
+      "b0074"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.characterization_methods[0].key_findings",
+    "reason": "b0076 and Table 3 (b0079) report the UHCS segmentation metrics for MatSAM, SAM, OTSU, Adaptive and the specialist method.",
+    "block_id": [
+      "b0076",
+      "b0079",
+      "figure_unlabelled_004"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0]",
+    "reason": "MatSAM training-free segmentation was applied to the UHCS dataset for phase (multiphase) segmentation, using the pipeline and validation setup described in the paper.",
+    "block_id": [
+      "b0030",
+      "b0038",
+      "b0055",
+      "b0076"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].simulation_method",
+    "reason": "b0038 states OTSU is used to pre-segment phase regions for multiphase images and centroid points serve as prompts; b0029/b0030 describe the MatSAM/SAM pipeline.",
+    "block_id": [
+      "b0038",
+      "b0029",
+      "b0030"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].software_used",
+    "reason": "b0055 states all validation experiments (including UHCS) were conducted using PyTorch 1.13.1.",
+    "block_id": [
+      "b0055"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].potential_model_or_database",
+    "reason": "b0029 states MatSAM is based on the pre-trained parameters of SAM.",
+    "block_id": [
+      "b0029"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].boundary_and_initial_conditions",
+    "reason": "b0030/b0037/b0038 describe the multiphase prompt generation and cropping parameters applied in the UHCS evaluation.",
+    "block_id": [
+      "b0030",
+      "b0037",
+      "b0038"
+    ],
+    "status": "ok"
+  },
+  {
+    "path": "$.computational_details[0].validation_against_experiment",
+    "reason": "b0074/b0076 report the comparison of MatSAM results with expert labels and specialist models on UHCS.",
+    "block_id": [
+      "b0074",
+      "b0076"
+    ],
+    "status": "ok"
+  }
+]

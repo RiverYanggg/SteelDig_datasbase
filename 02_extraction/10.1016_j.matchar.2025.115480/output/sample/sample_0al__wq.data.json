@@ -1,0 +1,177 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_0al__wq",
+      "paper_id": "10.1016_j.matchar.2025.115480",
+      "alloy_id": "alloy_0al",
+      "process_id": "proc_wq",
+      "sample_label": "0Al,WQ",
+      "aliases": [
+        "0Al,WQ"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_vim_var",
+      "sequence": "1",
+      "type": "melting / alloy production",
+      "method": "vacuum induction melting followed by vacuum arc remelting (VIM + VAR)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "VIM + VAR used to obtain 500 kg ingots of the 0Al steel."
+    },
+    {
+      "processing_step_id": "step_forging",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "forging",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingots forged into billets of Φ170 mm; characterization specimens extracted from the quarter-radius position."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "3",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "970 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution treatment performed to dissolve carbides, applied identically to the 0Al and 1.3Al steels."
+    },
+    {
+      "processing_step_id": "step_water_quenching",
+      "sequence": "4",
+      "type": "heat treatment",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Water quenching after solution treatment; the resulting as-quenched sample of the 0Al steel is denoted 0Al,WQ (before tempering)."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_0al_wq_martensite",
+      "overall_structure": "As-quenched martensitic structure of the low alloy ultrahigh strength 0Al steel (martensitic matrix); the paper reports detailed microstructural quantification for the tempered condition rather than the WQ state.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": []
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "props_0al_wq",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "0.001 s^-1",
+        "specimen_geometry": "tensile: diameter 5 mm, gauge length 25 mm; Charpy U-notch impact: 10 × 10 × 55 mm3",
+        "test_standard": null,
+        "other_conditions": "Three tests per sample condition were performed; impact specimen surfaces and notches were mechanically polished."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "1234 ± 22 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 22 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "2294 ± 9 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 9 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "9.5 ± 0.6 %",
+              "unit": "%",
+              "uncertainty": "± 0.6 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve of 0Al,WQ (Fig. 1a): rises steeply above the 2000 MPa gridline, peaks at ~2300 MPa (UTS 2294 ± 9 MPa) between engineering strain ~8 and ~9, then falls to ~2100 MPa at ~10% strain.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "cm_tensile_rt",
+      "microstructure_id": null,
+      "technique": "Room temperature uniaxial tensile testing",
+      "instrument_or_setup": "Instron 5985 testing machine",
+      "measurement_conditions": "Room temperature; strain rate 0.001 s^-1; specimens of 5 mm diameter and 25 mm gauge length; three tests per sample condition.",
+      "purpose": "Measure the as-quenched yield strength, ultimate tensile strength and total elongation of the 0Al steel (0Al,WQ).",
+      "key_findings": "0Al,WQ: YS 1234 ± 22 MPa, UTS 2294 ± 9 MPa, TE 9.5 ± 0.6 %."
+    },
+    {
+      "characterization_id": "cm_charpy_impact",
+      "microstructure_id": null,
+      "technique": "Charpy U-notch impact toughness testing (KU2)",
+      "instrument_or_setup": "Instron 750MPX impact tester",
+      "measurement_conditions": "Specimens 10 × 10 × 55 mm3; surfaces and notches mechanically polished; three tests per sample condition.",
+      "purpose": "Measure the impact absorption energy (KU2) of the 0Al steel in the as-quenched condition.",
+      "key_findings": "0Al,WQ: KU2 = 33 ± 6 J (Fig. 1b and Table 2)."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Impact absorption energy (Charpy U-notch, KU2) of 0Al,WQ = 33 ± 6 J (Fig. 1b and Table 2); the schema provides no dedicated slot for impact absorption energy.",
+    "Fracture toughness KIC was not measured for the as-quenched 0Al,WQ condition (shown as a dash in Table 2); KIC is only reported for the tempered 0Al,2h condition (97.6 MPa·m^1/2).",
+    "Matrix composition of the 0Al steel (mass fraction, wt%, Table 1): C 0.32, Si 1.98, Mn 1.02, Cr 1.00, Ni 3.41, Mo 0.56, V 0.09, Al 0.03.",
+    "Specimens for microstructural and mechanical characterization of the 0Al steel were extracted from the quarter-radius position of the Φ170 mm forged billet.",
+    "In the as-quenched (WQ) state the 0Al reference steel is stronger and tougher than the 1.3Al steel: 0Al,WQ YS 1234 ± 22 MPa, UTS 2294 ± 9 MPa, TE 9.5 ± 0.6 %, KU2 33 ± 6 J versus 1.3Al,WQ YS 1113 ± 11 MPa, UTS 2145 ± 144 MPa, TE 4.3 ± 0.9 %, KU2 23 ± 2 J; the 1.3Al steel fractured before reaching its maximum tensile strength.",
+    "The 0Al,WQ sample is the as-quenched baseline/reference condition of the 0Al steel prior to the 180 °C / 2 h tempering that produces the 0Al,2h condition (the tempered condition carries the retained austenite, dislocation-density and NiAl-cluster data)."
+  ]
+}

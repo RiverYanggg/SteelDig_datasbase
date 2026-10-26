@@ -1,0 +1,202 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-7al-1.0c__aimfc-hot-rolled",
+      "paper_id": "10.1007_s11837-014-1065-1",
+      "alloy_id": "alloy_fe-7al-1.0c",
+      "process_id": "proc_aimfc-hot-rolled",
+      "sample_label": "Fe-7Al-1.0C",
+      "aliases": "Fe-7Al-1.0C"
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_1",
+      "sequence": "1",
+      "type": "melting",
+      "method": "air induction melting with flux cover (AIMFC)",
+      "temperature": "1900 K",
+      "temperature_unit": "K",
+      "duration": "2 min",
+      "atmosphere": "air",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Forty-kilogram melts of the carbon-series alloys were prepared by air induction melting with a flux cover (Al2O3, CaO, MgO, CaF2); melt top poured into split cast iron molds."
+    },
+    {
+      "processing_step_id": "step_2",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "hot forging",
+      "temperature": "1373 K",
+      "temperature_unit": "K",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Ingots preheated in a hearth furnace at 1373 K for 1 h and hot-forged in a 1-tonne pneumatic forge hammer with die platens at room temperature."
+    },
+    {
+      "processing_step_id": "step_3",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1373 K",
+      "temperature_unit": "K",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "50%",
+      "processing_steps_notes": "24-mm-thick sections preheated at 1373 K for 1 h, hot rolled 50% with 1-mm reduction in thickness per pass; samples reheated after every six rolling passes; final thickness 12 mm."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "Hot-rolled Fe-7Al-1.0C consists of an Fe3Al matrix with a high density of Fe3AlC0.5 precipitates (bright lenticular/needle-shaped and rounded particles in a darker matrix).",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": "bulk",
+          "related_sequence": "3",
+          "phases_present": [
+            {
+              "phase_name": "Fe3Al",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "matrix (darker grey matrix hosting precipitates)",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "Fe3AlC0.5",
+              "crystal_structure": "perovskite",
+              "volume_fraction": null,
+              "morphology": "bright lenticular/needle-shaped and rounded particles; highest precipitate density at 1.0 wt.% C",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_1",
+              "type": "Fe3AlC0.5",
+              "size": null,
+              "distribution": "high density of bright lenticular/needle-shaped and rounded particles dispersed in a darker matrix; volume fraction highest at 1.0 wt.% C",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_tableV_hot_rolled",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "hot-rolled plate (Table V caption labels route 'AIM'; text b0060 states air induction melting with flux cover)"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "891",
+              "unit": "MPa",
+              "uncertainty": "± 9.2"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1120",
+              "unit": "MPa",
+              "uncertainty": "± 8.2"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "1.5",
+              "unit": "%",
+              "uncertainty": "± 0.5"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "bulk",
+            "value": "338",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": "± 9.8"
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_chem",
+      "microstructure_id": null,
+      "technique": "chemical composition analysis",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Determine measured composition of Fe-7Al-1.0C.",
+      "key_findings": "Fe-7Al-1.0C: Al 7.10, Si 0.18, Mn 0.13, S 0.002, C 1.00 wt.%"
+    },
+    {
+      "characterization_id": "char_om",
+      "microstructure_id": "micro_1",
+      "technique": "optical microscopy",
+      "instrument_or_setup": null,
+      "measurement_conditions": "hot-rolled plate; etched; scale bar 250 µm in panel (e)",
+      "purpose": "Reveal microstructure and precipitate distribution as a function of carbon.",
+      "key_findings": "Fe-7Al-1.0C shows the highest precipitate density: bright lenticular/needle-shaped and rounded particles in a darker matrix."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_1",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Philips 3710 x-ray diffractometer, Cu-Kα radiation",
+      "measurement_conditions": "Cu-Kα radiation",
+      "purpose": "Confirm the precipitate phase Fe3AlC0.5 in the carbon-series alloys.",
+      "key_findings": "Fe3Al and Fe3AlC0.5 peaks; similar peaks observed in alloys with 0.35–1 wt.% C, confirming Fe3AlC0.5 in Fe-7Al-1.0C."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The volume fraction of Fe3AlC0.5 precipitates increases significantly with increasing carbon content, being highest in Fe-7Al-1.0C (b0061, figure_005).",
+    "The room-temperature ductility decrease with increasing carbon is attributed solely to the increase in the volume fraction of hard and brittle Fe3AlC0.5 precipitates; Fe-7Al alloys are not susceptible to environmental embrittlement (b0062).",
+    "Table V and Fig. 5 captions for the carbon-series alloys label the melting route 'AIM', while the section text (b0060) states the alloys were prepared by air induction melting with a flux cover (AIMFC)."
+  ]
+}

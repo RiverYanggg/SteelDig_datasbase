@@ -1,0 +1,315 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-8al-1c__cr-70pct",
+      "paper_id": "10.1002_srin.202400447",
+      "alloy_id": "alloy_fe-28mn-8al-1c",
+      "process_id": "proc_cr-70pct",
+      "sample_label": "CR 70%",
+      "aliases": [
+        "CR70%",
+        "70% CR reduction sample"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1000 °C",
+      "temperature_unit": "°C",
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": "water (water-quenched to room temperature)",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Prior to CR, all specimens underwent solution treatment at 1000 °C for 1 h and were then water-quenched to room temperature."
+    },
+    {
+      "processing_step_id": "step_cryogenic_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "cryogenic rolling",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "liquid nitrogen",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "70%",
+      "processing_steps_notes": "Specimens were immersed in liquid nitrogen for 3–5 min; after cooling, each specimen was rapidly removed for a single-pass rolling with ~2% thickness reduction, then promptly re-immersed; these steps were repeated until the cumulative thickness reduction reached 70%."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_cr70",
+      "overall_structure": "Heavily elongated austenite grains along RD with dense slip bands; larger dislocation cells and dislocation walls form as dislocation density increases while twin density decreases; single-phase austenitic (FCC) structure maintained with no deformation-induced martensitic transformation.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_cr70_om",
+          "region": "cross-section (along RD)",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "heavily elongated grains along RD",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "slip bands",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_cr70_tem",
+          "region": "grain interiors",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation cells and dislocation walls",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "12.9 × 10^14 m^-2",
+              "lattice_distortion": "6.2 × 10^-3 (microstrain)"
+            },
+            {
+              "type": "deformation twins (density decreases)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": null,
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_cr70",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_cr70_dislocation",
+          "microstructure_id": "micro_cr70_tem",
+          "interaction_type": "dislocation-dislocation interactions forming dislocation walls and cells",
+          "qualitative_or_quantitative_description": "Larger dislocation cells form as dislocation density increases; dislocation walls emerge; the density of deformation twins decreases."
+        }
+      ],
+      "slip_behavior": "Dislocation slip predominates as the primary deformation mechanism rather than deformation twinning at 70% CR reduction.",
+      "phase_evolution": "Single-phase austenite maintained; no deformation-induced martensitic transformation during CR.",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_cr70_mechanical",
+      "measurement_conditions": {
+        "temperature": "temperature-controlled environment",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "0.2 mm min^-1",
+        "specimen_geometry": "Dog-bone-shaped tensile specimens with standard distance segment of 20 × 5 × 1 mm, machined along RD",
+        "test_standard": null,
+        "other_conditions": null
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "1588 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "1693 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "7.2%",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "530 HV",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": {
+          "value": "6.82 g cm^-3",
+          "unit": "g cm^-3"
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_cr70_om",
+      "microstructure_id": "micro_cr70_om",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": "OLYMPUS PMG3 optical microscope",
+      "measurement_conditions": "Samples progressively ground and polished along RD, etched with hydrochloric acid (100 mL), alcohol (100 mL), copper chloride (5 g) etchant",
+      "purpose": "Observe cross-sectional metallographic structure",
+      "key_findings": "CR70%: heavily elongated grains along RD with denser, darker slip bands (Figure 2d; 20 µm scale bar)"
+    },
+    {
+      "characterization_id": "char_cr70_tem",
+      "microstructure_id": "micro_cr70_tem",
+      "technique": "Transmission electron microscopy (TEM)",
+      "instrument_or_setup": "JEM-2100 TEM (samples mechanically ground to 60 μm slices, punched into Φ3 mm disks, thinned with Gatan 691 ion milling)",
+      "measurement_conditions": null,
+      "purpose": "Observe dislocation substructure",
+      "key_findings": "CR70%: dislocation cells and dislocation walls delineating a cellular substructure (Figure 3d; 500 nm scale bar)"
+    },
+    {
+      "characterization_id": "char_cr70_xrd",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "D8 ADVANCE X-ray diffractometer with Cu-Kα radiation (λ = 0.15406 nm)",
+      "measurement_conditions": null,
+      "purpose": "Phase identification; quantify peak broadening, microstrain and dislocation density",
+      "key_findings": "CR70%: single-phase austenite with no martensite; FWHM(220) = 0.913°; microstrain = 6.2 × 10^-3; dislocation density = 12.9 × 10^14 m^-2"
+    },
+    {
+      "characterization_id": "char_cr70_hardness",
+      "microstructure_id": null,
+      "technique": "Microhardness testing",
+      "instrument_or_setup": "microhardness tester",
+      "measurement_conditions": "Loading 500 g, dwelling time 15 s; average of at least 5 measurements",
+      "purpose": "Measure microhardness",
+      "key_findings": "CR70%: 530 HV"
+    },
+    {
+      "characterization_id": "char_cr70_tensile",
+      "microstructure_id": null,
+      "technique": "Tensile testing",
+      "instrument_or_setup": "universal tensile testing machine",
+      "measurement_conditions": "Strain rate 0.2 mm min^-1; temperature-controlled environment; dog-bone specimens (20 × 5 × 1 mm) machined along RD",
+      "purpose": "Measure tensile properties",
+      "key_findings": "CR70%: UTS 1693 MPa, YS 1588 MPa, elongation 7.2%"
+    },
+    {
+      "characterization_id": "char_cr70_fractography",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM) fractography",
+      "instrument_or_setup": "JSM-7800F SEM",
+      "measurement_conditions": null,
+      "purpose": "Examine fractured morphologies after tensile failure",
+      "key_findings": "CR70%: fine, dense, relatively shallow dimples with a more homogeneous appearance (Figure 9d; 10 µm scale bar)"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "calc_cr70_xrd",
+      "simulation_method": null,
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Williamson-Hall theory",
+          "equation_role": "β = Kλ/(D cosθ) + 4ε tanθ; relates XRD peak broadening to grain size and microstrain, used to fit microstrain from peak broadening.",
+          "parameters": [
+            {
+              "name": "K (shape factor)",
+              "value": "0.9",
+              "unit": null
+            },
+            {
+              "name": "λ (wavelength)",
+              "value": "0.15406 nm",
+              "unit": "nm"
+            },
+            {
+              "name": "ε (microstrain, CR70%)",
+              "value": "6.2 × 10^-3",
+              "unit": null
+            },
+            {
+              "name": "FWHM (220), CR70%",
+              "value": "0.913°",
+              "unit": "°"
+            }
+          ],
+          "model_note": "For CR70%, the (220) peak FWHM of 0.913° and fitted microstrain of 6.2 × 10^-3 were obtained."
+        },
+        {
+          "model_name": "Dislocation density equation",
+          "equation_role": "ρ = 2√3 (ε²)^(1/2) / (D b); calculates dislocation density from microstrain, grain size and Burgers vector.",
+          "parameters": [
+            {
+              "name": "ρ (dislocation density, CR70%)",
+              "value": "12.9 × 10^14 m^-2",
+              "unit": "m^-2"
+            }
+          ],
+          "model_note": "Dislocation density for the CR70% sample calculated from average grain size and microstrain."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The stacking fault energy (SFE) of this steel is 72 mJ m^-2 at room temperature and 51 mJ m^-2 at cryogenic temperature; the cryogenic SFE is still higher than the ~20–40 mJ m^-2 typically associated with twinning plasticity, but low-temperature dislocation restraint promotes deformation twinning at moderate CR strains before dislocation slip becomes predominant at 70% CR (b0044, b0047)."
+  ]
+}

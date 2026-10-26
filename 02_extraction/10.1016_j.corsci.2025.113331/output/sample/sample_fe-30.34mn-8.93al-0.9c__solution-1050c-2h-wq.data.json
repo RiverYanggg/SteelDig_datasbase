@@ -1,0 +1,606 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30.34mn-8.93al-0.9c__solution-1050c-2h-wq",
+      "paper_id": "10.1016_j.corsci.2025.113331",
+      "alloy_id": "alloy_fe-30.34mn-8.93al-0.9c",
+      "process_id": "proc_solution-1050c-2h-wq",
+      "sample_label": "S1050",
+      "aliases": [
+        "S1050"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_vacuum_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "vacuum melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Fe-Mn-Al-C LDSs (30.34% Mn, 8.93% Al, 0.9% C) were prepared via a vacuum melting furnace."
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1200 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1200–950 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "hot rolled at 1200–950 °C into slabs with a thickness of 20 mm"
+    },
+    {
+      "processing_step_id": "step_hot_rolling_water_quench",
+      "sequence": "4",
+      "type": "cooling",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "quenched in water after hot rolling"
+    },
+    {
+      "processing_step_id": "step_solution_treatment_1050",
+      "sequence": "5",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1050 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "solution treated at 1050 °C for 2 h followed by water quenching to room temperature; sample labelled S1050"
+    },
+    {
+      "processing_step_id": "step_solution_water_quench",
+      "sequence": "6",
+      "type": "cooling",
+      "method": "water quenching",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "water",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "water quenching to room temperature"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "structure_1",
+      "overall_structure": "Single-phase face-centered cubic (FCC) austenitic structure with recrystallized equiaxed grains, abundant annealing twin boundaries (ATBs, Σ3, 60°) and high-angle grain boundaries (HAGBs, >10°); no significant preferred orientation.",
+      "number_of_phases": 1,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_1",
+          "region": "bulk (rolling-direction section)",
+          "related_sequence": "5",
+          "phases_present": [
+            {
+              "phase_name": "austenite",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "equiaxed polygonal grains crossed by long straight parallel annealing-twin lamellae; grain size larger than S950",
+              "grain_size": "21.1 µm",
+              "texture": "random crystallographic orientation distribution (no significant preferred orientation)"
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "21.1 µm",
+              "unit": "µm"
+            },
+            "grain_size_distribution": "peak near 21% relative proportion at a few µm with a tail up to ~100 µm",
+            "texture": "random crystallographic orientation distribution"
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_1",
+      "phase_interfaces": [
+        {
+          "interface_id": "interface_1",
+          "microstructure_id": "micro_1",
+          "phase_1_name": "austenite",
+          "phase_2_name": "austenite",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "interaction_1",
+          "microstructure_id": "micro_1",
+          "interaction_type": "grain boundary density (ATB/HAGB)",
+          "qualitative_or_quantitative_description": "ATB density 0.061 µm/µm²; HAGB density 0.029 µm/µm²"
+        },
+        {
+          "interaction_id": "interaction_2",
+          "microstructure_id": "micro_1",
+          "interaction_type": "residual stress (KAM)",
+          "qualitative_or_quantitative_description": "average KAM value approximately 0.4 after solution treatment"
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": "complete recrystallization; S1050 has intermediate GB density (ATB 0.061, HAGB 0.029 µm/µm²) between S950 and S1150",
+      "interface_notes": "S1050 shows sparse red HAGB traces outlining grains plus abundant straight parallel twin-boundary lines; very few blue LAGB lines."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_polarization",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": "3.5 wt% NaCl solution (deoxygenated with pure N₂ for 2 h)",
+        "strain_rate": null,
+        "specimen_geometry": "working area 1 cm²",
+        "test_standard": null,
+        "other_conditions": "three-electrode system: Pt counter, saturated calomel reference, LDS working electrode; potentiodynamic scan from 0.4 V below OCP to 5 mA/cm² at 0.3333 mV/s"
+      },
+      "mechanical": null,
+      "physical": null,
+      "chemical": {
+        "corrosion_resistance": {
+          "breakdown_current_density": "6.55 µA/cm²"
+        },
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_eis_bulk",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": "3.5 wt% NaCl solution (deoxygenated)",
+        "strain_rate": null,
+        "specimen_geometry": "working area 1 cm²",
+        "test_standard": null,
+        "other_conditions": "OCP measured 3600 s; EIS frequency 10^5 Hz to 0.01 Hz; excitation voltage 10 mV; fitted with equivalent circuit Rs + [Q1‖(R1 + R2‖Q2)]"
+      },
+      "mechanical": null,
+      "physical": null,
+      "chemical": {
+        "corrosion_resistance": {
+          "polarization_resistance_Rp": "8014 Ω·cm²",
+          "Rs": "6.52 Ω·cm²",
+          "Q1": "2.40 × 10⁻⁴ Ω⁻¹·cm⁻²·sⁿ",
+          "n1": "0.86",
+          "R1": "1261 Ω·cm²",
+          "Q2": "1.07 × 10⁻⁴ Ω⁻¹·cm⁻²·sⁿ",
+          "n2": "0.59",
+          "R2": "6753 Ω·cm²"
+        },
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_immersion_corrosion_rate",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": "3.5 wt% NaCl solution",
+        "strain_rate": null,
+        "specimen_geometry": "30 × 25 × 3 mm",
+        "test_standard": null,
+        "other_conditions": "immersion period 30 days; solution replaced every 7 days; corrosion rate calculated by Eq. (1)"
+      },
+      "mechanical": null,
+      "physical": null,
+      "chemical": {
+        "corrosion_resistance": {
+          "corrosion_rate": "0.248 mm/y"
+        },
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_potentiostatic",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": "3.5 wt% NaCl solution",
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "cathodically polarized at -1.0 V_SCE for 300 s to remove air-formed oxide film, then polarized at -0.5 V_SCE for 7200 s"
+      },
+      "mechanical": null,
+      "physical": null,
+      "chemical": {
+        "corrosion_resistance": {
+          "stable_current_density": "4.52 µA/cm²"
+        },
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_eis_oxide_film",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": "3.5 wt% NaCl solution",
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "after potentiostatic polarization at -0.5 V_SCE for 7200 s; fitted with equivalent circuit Rs + [Q1‖(R1 + (Q2‖R2))]"
+      },
+      "mechanical": null,
+      "physical": null,
+      "chemical": {
+        "corrosion_resistance": {
+          "oxide_film_Rp": "14144 Ω·cm²",
+          "Rs": "6.45 Ω·cm²",
+          "Q1": "4.82 × 10⁻⁴ Ω⁻¹·cm⁻²·sⁿ",
+          "n1": "0.79",
+          "R1": "4703 Ω·cm²",
+          "Q2": "1.53 × 10⁻³ Ω⁻¹·cm⁻²·sⁿ",
+          "n2": "0.83",
+          "R2": "9441 Ω·cm²"
+        },
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_mott_schottky",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": "3.5 wt% NaCl solution",
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "Mott-Schottky testing potential from -0.5 V to -1.1 V; scan step 30 mV/s; duplex n-type (Region 1: -1.13 to -0.93 V_SCE) and p-type (Region 2: -0.93 to -0.67 V_SCE) behavior"
+      },
+      "mechanical": null,
+      "physical": null,
+      "chemical": {
+        "corrosion_resistance": {
+          "carrier_density_N_D": "0.38 × 10²¹ /cm³",
+          "carrier_density_N_A": "1.03 × 10²¹ /cm³"
+        },
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_aes_oxide_film",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": "3.5 wt% NaCl solution (oxide film formed at -0.5 V_SCE for 7200 s)",
+        "strain_rate": null,
+        "specimen_geometry": "Auger collection area 70 × 70 µm",
+        "test_standard": null,
+        "other_conditions": "AES accelerating voltage 5 kV; sputtering rate 3.6 nm/min (relative to thermally oxidized SiO₂ on single-crystal Si)"
+      },
+      "mechanical": null,
+      "physical": null,
+      "chemical": {
+        "corrosion_resistance": {
+          "oxide_film_thickness": "21.6 ± 1 nm"
+        },
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_cv_al_oxidation",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": "3.5 wt% NaCl solution",
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "cyclic voltammetry scanning potential range -1.2 V to -0.3 V; scanning rate 5 mV/s; first cycle"
+      },
+      "mechanical": null,
+      "physical": null,
+      "chemical": {
+        "corrosion_resistance": {
+          "Al_oxidation_charge_density": "1.80 × 10⁻⁵ C/cm²"
+        },
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    },
+    {
+      "property_set_id": "prop_immersion_Rp_time",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": "3.5 wt% NaCl solution",
+        "strain_rate": null,
+        "specimen_geometry": null,
+        "test_standard": null,
+        "other_conditions": "immersion periods 0.5 to 168 h under identical testing conditions; Rp from EIS measurements"
+      },
+      "mechanical": null,
+      "physical": null,
+      "chemical": {
+        "corrosion_resistance": {
+          "Rp_at_168h": "approximately 8 × 10⁴ Ω·cm² (plateau, read from Fig. 18)"
+        },
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_1",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": "3.5 wt% NaCl solution"
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-30.34mn-8.93al-0.9c",
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "corrosion rate and breakdown current density: S1050 (0.248 mm/y; i_bre 6.55 µA/cm²) is intermediate, worse than fine-grained S950 (0.160 mm/y; 2.72 µA/cm²) but better than coarse-grained S1150 (0.281 mm/y; 8.84 µA/cm²).",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_sem",
+      "microstructure_id": "micro_1",
+      "technique": "SEM",
+      "instrument_or_setup": "JSM 7200 F SEM with matched EDS",
+      "measurement_conditions": "samples 10×10×3 mm sectioned along rolling direction; ground with SiC abrasive paper; mirror-polished with diamond suspension; etched with 4% nitric acid",
+      "purpose": "microstructure characterization",
+      "key_findings": "S1050 shows a further coarsened structure of large polygonal grains crossed by long straight parallel twin lamellae; grain size larger than S950."
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_1",
+      "technique": "XRD",
+      "instrument_or_setup": "Cu Kα radiation",
+      "measurement_conditions": "scanning range 30–90°, scan rate 4°/min",
+      "purpose": "crystal structure and phase composition",
+      "key_findings": "single-phase FCC austenite with (111), (200), (220), (311) peaks; S1050 (111) peak intensity increases while (220) weakens."
+    },
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_1",
+      "technique": "EBSD",
+      "instrument_or_setup": "AZtecCrystal software for data processing",
+      "measurement_conditions": "samples electrolytically polished in 10% CH3COOH + 90% C2H5OH",
+      "purpose": "crystallographic characteristics, grain size, KAM, grain-boundary distribution",
+      "key_findings": "S1050: average grain size 21.1 µm; random crystallographic orientation; KAM ~0.4; ATB density 0.061 µm/µm²; HAGB density 0.029 µm/µm²; sparse red HAGB traces plus abundant twin boundaries."
+    },
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": "micro_1",
+      "technique": "TEM",
+      "instrument_or_setup": "FEI Tecnai G2 F20",
+      "measurement_conditions": "samples prepared by double jet electropolishing using 10% perchloric acid + 90% ethanol",
+      "purpose": "microstructure, dislocations, precipitates",
+      "key_findings": "after solution treatment the dislocation density decreases; dislocation tangles adjacent to ATBs; κ-carbides present in S0 are eliminated by solution treatment."
+    },
+    {
+      "characterization_id": "char_skpfm",
+      "microstructure_id": "micro_1",
+      "technique": "SKPFM",
+      "instrument_or_setup": "Bruker MultiMode8 Scanning Kelvin Probe Force Microscope with PFQNE AL Kelvin probe",
+      "measurement_conditions": null,
+      "purpose": "potential difference between grain boundaries and steel substrate",
+      "key_findings": "ATBs exhibit higher potential than matrix (~30 mV difference); HAGBs show the lowest potential (general GB potential behavior)."
+    },
+    {
+      "characterization_id": "char_eis",
+      "microstructure_id": null,
+      "technique": "EIS (electrochemical impedance spectroscopy)",
+      "instrument_or_setup": "Solartron Modulab XM electrochemical workstation",
+      "measurement_conditions": "3.5 wt% NaCl; OCP 3600 s; frequency 10^5 Hz to 0.01 Hz; excitation 10 mV",
+      "purpose": "corrosion resistance of bulk sample",
+      "key_findings": "S1050 Rp=8014 Ω·cm² (intermediate between S950 and S1150)."
+    },
+    {
+      "characterization_id": "char_polarization",
+      "microstructure_id": null,
+      "technique": "potentiodynamic polarization",
+      "instrument_or_setup": "Solartron Modulab XM electrochemical workstation",
+      "measurement_conditions": "3.5 wt% NaCl; scan from 0.4 V below OCP to 5 mA/cm²; 0.3333 mV/s",
+      "purpose": "corrosion behavior / breakdown current density",
+      "key_findings": "S1050 i_bre = 6.55 µA/cm²; surface after polarization to 5 mA/cm² shows three isolated corrosion pits."
+    },
+    {
+      "characterization_id": "char_immersion",
+      "microstructure_id": null,
+      "technique": "immersion test",
+      "instrument_or_setup": null,
+      "measurement_conditions": "3.5 wt% NaCl; 30 days; solution replaced every 7 days; sample 30×25×3 mm",
+      "purpose": "corrosion rate",
+      "key_findings": "S1050 corrosion rate = 0.248 mm/y."
+    },
+    {
+      "characterization_id": "char_potentiostatic",
+      "microstructure_id": null,
+      "technique": "potentiostatic polarization",
+      "instrument_or_setup": "Solartron Modulab XM",
+      "measurement_conditions": "cathodic polarization -1.0 V_SCE for 300 s, then -0.5 V_SCE for 7200 s in 3.5 wt% NaCl",
+      "purpose": "oxide film formation and stability",
+      "key_findings": "S1050 stable current density 4.52 µA/cm²."
+    },
+    {
+      "characterization_id": "char_xps",
+      "microstructure_id": null,
+      "technique": "XPS",
+      "instrument_or_setup": "ThermoFisher ESCALAB 250Xi with Al Kα anode (72 W); Avantage software; carbon peak 284.8 eV correction",
+      "measurement_conditions": "oxide film formed by polarization at -0.5 V_SCE for 7200 s in 3.5 wt% NaCl",
+      "purpose": "oxide film composition and valence states",
+      "key_findings": "S1050 oxide film: Fe2p has Fe2+ (709.8 eV), Fe3+_OX (711.5 eV), Fe3+_hy (713.3 eV); Mn2p has Mn2+ (640.4 eV), Mn4+ (641.8 eV), Mn2+_sat (646.2 eV); Al2p single Al3+ (74.1 eV); O1s OH- (531.6 eV), H2O (533.2 eV), O2- (529.7 eV)."
+    },
+    {
+      "characterization_id": "char_aes",
+      "microstructure_id": null,
+      "technique": "AES",
+      "instrument_or_setup": "ULVAC-PHI PHI-700 nanometer scanning Auger probe",
+      "measurement_conditions": "accelerating voltage 5 kV; sputtering rate 3.6 nm/min (SiO₂ reference); collection area 70×70 µm",
+      "purpose": "oxide film depth profile and thickness",
+      "key_findings": "S1050 oxide film thickness 21.6 ± 1 nm; Al high in outer film, Fe increases and Al decreases with depth."
+    },
+    {
+      "characterization_id": "char_mott_schottky",
+      "microstructure_id": null,
+      "technique": "Mott-Schottky analysis",
+      "instrument_or_setup": null,
+      "measurement_conditions": "potential -0.5 V to -1.1 V; scan step 30 mV/s; 3.5 wt% NaCl",
+      "purpose": "semiconductor properties and defect density of oxide film",
+      "key_findings": "S1050 duplex n-type/p-type behavior; N_D=0.38×10²¹/cm³, N_A=1.03×10²¹/cm³."
+    },
+    {
+      "characterization_id": "char_cv",
+      "microstructure_id": null,
+      "technique": "cyclic voltammetry (CV)",
+      "instrument_or_setup": "Solartron Modulab XM",
+      "measurement_conditions": "scanning potential -1.2 V to -0.3 V; scan rate 5 mV/s; 3.5 wt% NaCl",
+      "purpose": "Al and Fe oxidation behavior",
+      "key_findings": "S1050 first-cycle Al oxidation peak near -0.81 V_SCE with charge density 1.80×10⁻⁵ C/cm²; second-cycle Fe oxidation peak near -0.56 V_SCE substantially enhanced."
+    },
+    {
+      "characterization_id": "char_eis_oxide",
+      "microstructure_id": null,
+      "technique": "EIS after potentiostatic polarization",
+      "instrument_or_setup": "Solartron Modulab XM",
+      "measurement_conditions": "after potentiostatic polarization -0.5 V_SCE for 7200 s in 3.5 wt% NaCl",
+      "purpose": "oxide film protectiveness",
+      "key_findings": "S1050 oxide film Rp=14144 Ω·cm²; intermediate capacitive arc between S950 and S1150."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_pourbaix",
+      "simulation_method": "thermodynamic E-pH (Pourbaix) diagram calculation",
+      "software_used": "HSC Chemistry 9",
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": "Fe-Mn-Al-H2O system at 25 °C; activities Fe 1×10⁻¹⁰ M, Mn 1×10⁻¹⁰ M, Al 1×10⁻¹⁰ M, 1 atm",
+      "validation_against_experiment": "pink circles mark experimental conditions (pH ~6-8, potential just above -0.5 V vs SHE); Al in Al2O3(H2O) field, Fe in Fe2+ field, Mn in Mn2+ field",
+      "analytical_models": []
+    },
+    {
+      "computation_id": "comp_grain_growth",
+      "simulation_method": "analytical grain growth model",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "classic grain growth model",
+          "equation_role": "D² − D₀² = k t; k = k₀ exp(−Q/(R T))",
+          "parameters": [
+            {
+              "name": "D",
+              "value": "average grain size after solution treatment",
+              "unit": "µm"
+            },
+            {
+              "name": "D₀",
+              "value": "initial grain size",
+              "unit": "µm"
+            },
+            {
+              "name": "k",
+              "value": "diffusion coefficient (grain-growth rate constant)",
+              "unit": null
+            },
+            {
+              "name": "k₀",
+              "value": "material constant",
+              "unit": null
+            },
+            {
+              "name": "Q",
+              "value": "activation energy for diffusion",
+              "unit": null
+            },
+            {
+              "name": "R",
+              "value": "gas constant",
+              "unit": null
+            },
+            {
+              "name": "T",
+              "value": "Kelvin temperature",
+              "unit": "K"
+            }
+          ],
+          "model_note": "used to explain grain growth with increasing solution temperature"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "S1050 surface corrosion morphology after potentiodynamic polarization to 5 mA/cm²: three isolated corrosion pits, with one magnified inset showing a dark irregular pit with a bright halo (Fig. 7c, b0041).",
+    "S1050 EIS Nyquist plot shows a single capacitive arc intermediate between S950 (largest) and S0 (smallest), with S1050 and S1150 falling between (Fig. 8, b0042).",
+    "S1050 Al content in the surface oxide film is approximately just below 80 at% (read from Fig. 14); the precise printed value is not given, while S950 is 90.17 at% and S1150 is 69.91 at% (b0075, b0132).",
+    "S1050 grain-size histogram (Fig. 4c): peak near 21% relative proportion at a few µm with a tail up to ~100 µm; average grain size 21.1 µm.",
+    "S1050 Rp versus immersion time (Fig. 18): plateaus near 8×10⁴ Ω·cm² after ~24 h (no numeric label printed for S1050; text gives S950 = 114.9 kΩ·cm² and S1150 = 50.6 kΩ·cm² at 168 h).",
+    "S1050 second-cycle CV shows substantially enhanced Fe/Mn anodic peak near -0.56 V_SCE compared with S950, indicating an incompletely formed surface film (b0123).",
+    "Solution treatment at 1050 °C dissolves the κ-carbide precipitates present in the as-hot-rolled S0 condition (alloy snapshot; b0038 shows κ-carbides only in S0)."
+  ]
+}

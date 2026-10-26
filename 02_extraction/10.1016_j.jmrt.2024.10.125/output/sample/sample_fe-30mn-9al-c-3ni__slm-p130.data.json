@@ -1,0 +1,386 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-c-3ni__slm-p130",
+      "paper_id": "10.1016_j.jmrt.2024.10.125",
+      "alloy_id": "alloy_fe-30mn-9al-c-3ni",
+      "process_id": "proc_slm-p130",
+      "sample_label": "P-130",
+      "aliases": [
+        "P-130",
+        "SLM-printed at 130 W"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_prep",
+      "sequence": "1",
+      "type": "powder preparation",
+      "method": "plasma rotating electrode process (PREP)",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Spherical Fe–30Mn–9Al–C–3Ni powder (particle diameter 15–53 μm) was PREP-prepared (Advanced Corporation for Materials and Equipments, PREP-22) and used as SLM feedstock; measured composition (wt%, ICP-OES): Mn 29.95, Al 8.63, C 1.20, Ni 3.45, O 0.01, Fe Bal."
+    },
+    {
+      "processing_step_id": "step_slm_130w",
+      "sequence": "2",
+      "type": "additive manufacturing / laser melting",
+      "method": "selective laser melting (SLM) at laser power 130 W",
+      "temperature": "200 °C",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": "argon (99.99% pure); oxygen content in forming chamber maintained below 300 ppm",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Laser power 130 W corresponds to laser energy density 108.33 J/mm³; spot diameter 0.1 mm, layer thickness 0.02 mm, hatch space 0.08 mm, scanning speed 750 mm/s; a 67° rotation angle was applied to each layer; samples (75×12×12 mm and 10×10×10 mm) printed on an SLM Solutions SLM280 printer; laser-scanning strategy involved overlapping strips."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_p130",
+      "overall_structure": "SLM-printed Fe–30Mn–9Al–C–3Ni alloy mainly comprises the austenite (γ-Fe(M)) phase without any α-Fe(M) phase; the transverse cross-section reveals fine equiaxed grains with random orientations.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_p130_xsection",
+          "region": "transverse cross-section (x-y)",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ-Fe(M) austenite",
+              "crystal_structure": "fcc",
+              "volume_fraction": null,
+              "morphology": "fine equiaxed grains with random orientations (different colors in IPF)",
+              "grain_size": "13.9 μm average"
+            },
+            {
+              "phase_name": "κ carbide",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "nano-sized particles uniformly distributed in the austenite matrix (reported for the SLM-printed alloy)",
+              "grain_size": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "porosity (pores)",
+              "porosity": "0.28",
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "13.9",
+              "unit": "μm"
+            },
+            "grain_size_distribution": "Right-skewed distribution with modal bar near the 12% level, broader tail with bars up to ~38 μm and a secondary peak around 16–18 μm.",
+            "texture": "Random orientations, no dominant hue (equiaxed grains)"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "precip_p130_kappa",
+              "type": "κ carbide",
+              "size": "nanoscale",
+              "distribution": "uniformly distributed in the austenite matrix",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_p130_tensile",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": "loading rate of 1 mm/min",
+        "specimen_geometry": "dog-bone-shaped tensile sample with a gauge length of 25 mm and a diameter of 5 mm",
+        "test_standard": null,
+        "other_conditions": "Sun's universal testing machine; Reliant electronic extensometer"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "782.2 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "1039.6 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "39.72 %",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Green curve for P-130 in Fig. 12, steep elastic rise followed by a long nearly flat plastic plateau above 1000 MPa ending in a sharp vertical fracture drop.",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_p130_hardness",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": "°C",
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "horizontal and vertical cross-sections",
+        "test_standard": null,
+        "other_conditions": "Microhardness tester at a load of 0.5 kg for 10 s; each value is the arithmetic mean of five measurement points"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "longitudinal section",
+            "value": "284",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": null
+          },
+          {
+            "region": "cross-section",
+            "value": "283",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    },
+    {
+      "property_set_id": "prop_p130_surface_roughness",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "printed surface",
+        "test_standard": null,
+        "other_conditions": "Measured with a laser confocal microscope (Zeiss LSM 900)"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": "micro_p130_xsection",
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "Bruker D8 Advance X-ray diffractometer, Cu target, continuous scanning, 2°/min",
+      "measurement_conditions": "scanning angle range 30–100°",
+      "purpose": "Identify phase constitution of the SLM-printed samples",
+      "key_findings": "P-130 contains only γ-Fe(M) austenite reflections (no α-Fe(M)); FWHM of the (111) peak = 0.255."
+    },
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_p130_xsection",
+      "technique": "Electron backscatter diffraction (EBSD) / inverse pole figures",
+      "instrument_or_setup": "Oxford Symmetry S2 EBSD detector; data analyzed with TSL OIM software",
+      "measurement_conditions": "step size 0.3–0.7 μm, accelerator voltage 15–20 kV",
+      "purpose": "Characterize grain morphology and orientation in the cross-section",
+      "key_findings": "P-130 (Fig. 7(d)) shows coarse equiaxed grains with larger magenta/pink and blue grains separated by fine-grained bands, random orientations."
+    },
+    {
+      "characterization_id": "char_om",
+      "microstructure_id": "micro_p130_xsection",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": "Leica DMi8 M/C/A optical microscope; samples electrolytically polished in perchloric-acid/ethanol solution",
+      "measurement_conditions": "transverse cross-sections",
+      "purpose": "Assess porosity and melt-pool morphology",
+      "key_findings": "P-130 (Fig. 6(d)) shows very few small dark defects and one slightly elongated dark feature; porosity 0.28%."
+    },
+    {
+      "characterization_id": "char_sem_surface",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM)",
+      "instrument_or_setup": "ZEISS Sigma300 scanning electron microscope",
+      "measurement_conditions": "surface morphology",
+      "purpose": "Evaluate surface quality and defects at different laser powers",
+      "key_findings": "P-130 (Fig. 11(d)) shows a melt-tracked surface with several distinct spherical droplets labelled 'Balling'."
+    },
+    {
+      "characterization_id": "char_sem_fracture",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM) of fracture surfaces",
+      "instrument_or_setup": "ZEISS Sigma300 scanning electron microscope",
+      "measurement_conditions": "tensile fracture surfaces",
+      "purpose": "Determine fracture mode",
+      "key_findings": "P-130 (Fig. 13(d)) shows a mixed morphology with 'Dimple' and 'Cleavage'; internal defects (pores and cracks) and spheroidization were observed."
+    },
+    {
+      "characterization_id": "char_roughness",
+      "microstructure_id": null,
+      "technique": "Laser confocal microscopy (surface topography/roughness)",
+      "instrument_or_setup": "Zeiss LSM 900 laser confocal microscope",
+      "measurement_conditions": "2D and 3D surface topography",
+      "purpose": "Measure surface roughness (Sa) of printed samples",
+      "key_findings": "P-130 (Fig. 10(d)) exhibited a surface roughness Sa of 4.65 μm."
+    },
+    {
+      "characterization_id": "char_density",
+      "microstructure_id": null,
+      "technique": "Archimedes principle (relative density)",
+      "instrument_or_setup": "Archimedes principle",
+      "measurement_conditions": null,
+      "purpose": "Determine relative density of each sample",
+      "key_findings": "P-130 relative density was 99.12%."
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "Sun's universal testing machine; Reliant electronic extensometer",
+      "measurement_conditions": "room temperature, loading rate 1 mm/min; dog-bone specimen gauge length 25 mm, diameter 5 mm",
+      "purpose": "Evaluate room-temperature tensile properties",
+      "key_findings": "P-130: YS 782.2 MPa, TS 1039.6 MPa, EL 39.72%, Z 34.84% (Table 2)."
+    },
+    {
+      "characterization_id": "char_hardness",
+      "microstructure_id": null,
+      "technique": "Microhardness testing (Vickers)",
+      "instrument_or_setup": "Microhardness tester",
+      "measurement_conditions": "load 0.5 kg for 10 s; five points averaged",
+      "purpose": "Measure cross-sectional and longitudinal hardness",
+      "key_findings": "P-130: 284 HV (longitudinal) and 283 HV (cross-section)."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "P-130: relative density 99.12% (relative density first increases then decreases with increasing laser power).",
+    "P-130: porosity 0.28% (porosity first decreases then increases with increasing laser power).",
+    "P-130: surface roughness Sa = 4.65 μm (surface becomes smoother with increasing laser power).",
+    "P-130: FWHM of the (111) γ-Fe(M) diffraction peak = 0.255 (FWHM decreases with increasing energy density).",
+    "P-130: reduction of area Z = 34.84% (Table 2, in addition to elongation 39.72%).",
+    "P-130: tensile fracture surface shows a mixed dimple + cleavage morphology together with internal pores/cracks and spheroidization (Fig. 13(d)).",
+    "P-130: 3D surface topography of the sample shows a maximum height label of 36.05 μm (Fig. 10(d)).",
+    "The minimum density among the samples prepared with different parameters is 6.78 g/cm³, much lighter than 304 stainless steel (7.93 g/cm³); this value is only reported for the overall sample set, not specifically for P-130.",
+    "Each SLM-printed sample (including P-130) contained austenite as the predominant phase with a small amount of nano-sized κ carbide; TEM evidence of κ carbide with a [011]γ∥[011]κ relationship was obtained for P-110 only."
+  ]
+}

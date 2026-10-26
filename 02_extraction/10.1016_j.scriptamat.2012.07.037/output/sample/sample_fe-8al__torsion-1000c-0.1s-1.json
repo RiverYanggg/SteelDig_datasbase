@@ -1,0 +1,249 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-8al__torsion-1000c-0.1s-1",
+      "paper_id": "10.1016_j.scriptamat.2012.07.037",
+      "alloy_id": "alloy_fe-8al",
+      "process_id": "proc_torsion-1000c-0.1s-1",
+      "sample_label": null,
+      "aliases": [
+        "Fe–8% Al deformed at 1000 °C, 0.1 s−1"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "Distinct hot torsion deformation condition (1000 °C + 0.1 s−1) defining this sample; deformation direction, atmosphere and strain range stated for the torsion series.",
+        "block_id": [
+          "b0014",
+          "b0018",
+          "b0019",
+          "b0020"
+        ]
+      },
+      "processing_step_id": "step_hot_torsion",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "mechanical processing (high-temperature deformation)"
+      },
+      "method": {
+        "value": "hot torsion"
+      },
+      "temperature": {
+        "value": "1000"
+      },
+      "temperature_unit": {
+        "value": "°C"
+      },
+      "duration": null,
+      "atmosphere": {
+        "value": "argon"
+      },
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Hot torsion test performed in a direction involving a negative shear, under argon atmosphere to reduce oxidation phenomena. This condition (1000 °C, 0.1 s−1) is one of a series of torsion tests over 900–1100 °C and 0.1–10 s−1; at this condition strain levels of approximately ε = 1 to ε = 25 were examined (Fig. 1 shows ε = 1, 2, 5, 25). Condition under which continuous dynamic recrystallization (CDRX) operates."
+      }
+    },
+    {
+      "source": {
+        "reason": "Post-deformation quench applied to all torsion samples to retain the high-temperature microstructure.",
+        "block_id": [
+          "b0014"
+        ]
+      },
+      "processing_step_id": "step_quenching",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "heat treatment (rapid cooling / quenching)"
+      },
+      "method": {
+        "value": "quenching with argon"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": {
+        "value": "0.5 s"
+      },
+      "atmosphere": {
+        "value": "argon"
+      },
+      "cooling_medium": {
+        "value": "argon"
+      },
+      "heating_or_cooling_rate": {
+        "value": "~200 °C s−1"
+      },
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "After deformation, samples were quenched immediately (0.5 s) with argon in order to retain the microstructures and avoid post-dynamic recrystallization. The cooling rate is ~200 °C s−1 during the first seconds."
+      }
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_fe-8al_1000C_0.1s",
+      "overall_structure": {
+        "value": "Hot-torsion deformed Fe–8% Al ferritic alloy in which continuous dynamic recrystallization (CDRX) operates. The original large grains are progressively elongated along the shear direction and subdivided by subgrain boundaries. Subgrain boundaries progressively transform into grain boundaries with increasing strain, so the initial large-grain microstructure is progressively replaced by a much finer 'recrystallized' one and the volume fraction of grain boundaries strongly increases. Fragmentation is selective (some grains more fragmented than others). At intermediate strain the material is an 'aggregate of crystallites' bounded partly by low angle boundaries (LABs) and partly by high angle boundaries (HABs)."
+      },
+      "number_of_phases": {
+        "value": "1"
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "Microstructure at ε = 1 for torsion at 1000 °C and 0.1 s−1.",
+            "block_id": [
+              "b0020",
+              "figure_001"
+            ]
+          },
+          "microstructure_id": "micro_1000C_0.1s_eps1",
+          "region": {
+            "value": "Near surface (0.9 radius)"
+          },
+          "related_sequence": {
+            "value": "1"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "Fig. 1a (ε = 1) shows large original grains elongated along the shear direction; the alloy is a single-phase A2 ferritic solid solution.",
+                "block_id": [
+                  "b0020",
+                  "figure_001",
+                  "b0010"
+                ]
+              },
+              "phase_name": {
+                "value": "ferrite (Fe–8% Al, A2 non-ordered bcc solid solution)"
+              },
+              "crystal_structure": {
+                "value": "bcc (A2)"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "Large original grains, clearly visible, elongated in the direction of the shear"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "source": {
+                "reason": "Subgrains form preferentially close to the initial grain boundaries, which exhibit serrations; red lines denote subgrain boundaries.",
+                "block_id": [
+                  "b0020",
+                  "b0015",
+                  "figure_001"
+                ]
+              },
+              "type": {
+                "value": "subgrains / low angle boundaries (LABs, 2° ≤ θ < 15°)"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "source": {
+              "reason": "Fig. 2a (low strain, 1000 °C, 0.1 s−1) gives the LAB/HAB fractions and average misorientation angle.",
+              "block_id": [
+                "b0021",
+                "figure_002",
+                "b0031"
+              ]
+            },
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": {
+              "value": "Misorientation distribution at low strain (Fig. 2a): LAB (θ < 15°) = 85%, HAB (θ ≥ 15°) = 15%, average misorientation angle = 9.4°"
+            }
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_1000C_0.1s_eps2",
+          "region": {
+            "value": "Near surface (0.9 radius)"
+          },
+          "related_sequence": {
+            "value": "1"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "Fig. 1b (ε = 2) description of the evolving microstructure.",
+                "block_id": [
+                  "b0020",
+                  "figure_001"
+                ]
+              },
+              "phase_name": {
+                "value": "ferrite (Fe–8% Al, A2 non-ordered bcc solid solution)"
+              },
+              "crystal_structure": {
+                "value": "bcc (A2)"
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "Original grains more elongated along the direction of the shear; a network of subgrains forms progressively and invades the interior of the original grains"
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "source": {
+                "reason": "Subgrain network becomes denser and invades grain interiors at ε = 2.",
+                "block_id": [
+                  "b0020",
+                  "figure_001"
+                ]
+              },
+              "type": {
+                "value": "subgrains / low angle boundaries (LABs) forming an increasingly dense network"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "source": {
+              "reason": "Fig. 3b reports a {110} pole figure max of 2.50 at ε = 2 for the torsion-deformed Fe–8% Al alloy.",
+              "block_id": [
+                "b0022",
+                "b0023",
+                "figure_003"
+              ]
+            },
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": {
+              "value": "{110} pole figure maximum intensity 2.50 (Fig. 3b, ε = 2)"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [],
+  "computational_details": [],
+  "unmapped_findings": []
+}

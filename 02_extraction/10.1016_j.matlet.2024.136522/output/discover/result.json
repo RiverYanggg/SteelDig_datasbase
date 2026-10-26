@@ -1,0 +1,255 @@
+{
+  "schema_version": "sample-discover-v1",
+  "paper_id": "10.1016_j.matlet.2024.136522",
+  "domain": "materials",
+  "paper": {
+    "paper_id": "10.1016_j.matlet.2024.136522",
+    "doi": "10.1016/j.matlet.2024.136522",
+    "title": "Co-precipitation mechanism of Cu-rich phase and κ-carbide precipitates in Fe-28Mn-10Al-1C-3Cu austenitic low-density steel",
+    "authors": [
+      "Xiqiang Ren",
+      "Yanfei Qi",
+      "Yungang Li",
+      "Jingyi Zhou",
+      "Jiahao Gu"
+    ],
+    "publication_year": "2024",
+    "journal": "Materials Letters",
+    "keywords": [
+      "Austenitic low-density steel",
+      "Particles",
+      "Nanosize",
+      "Microstructure",
+      "Co-precipitation mechanism"
+    ],
+    "research_type": "experimental",
+    "paper_scope": "Investigates the co-precipitation behavior and mechanism of Cu-rich phase and κ-carbide precipitates in Fe-28Mn-10Al-1C-(0,3)Cu austenitic low-density steel after solution treatment (1000°C/1h) and aging (550°C/3h), focusing on how Cu addition and κ-carbide affect Cu-rich phase precipitation and the orientation relationship with the austenitic matrix."
+  },
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe-28mn-10al-1c",
+      "alloy_name": "Fe-28Mn-10Al-1C austenitic low-density steel",
+      "aliases": [
+        "0Cu steel",
+        "Fe-28Mn 10Al-1C austenitic low-density steel",
+        "Fe-Mn-Al-C steel (0Cu)"
+      ],
+      "description": "Copper-free Fe-Mn-Al-C austenitic low-density steel used as the reference/baseline material to which Cu is added; investigated to compare κ-carbide and Cu-rich phase precipitation with the Cu-bearing steel.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "28",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "10",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1",
+          "atomic_percent": null
+        },
+        {
+          "element": "Cu",
+          "weight_percent": "0",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Nominal composition notation Fe-28Mn-10Al-1C-(0,3)Cu with 0 corresponding to the 0Cu steel. Fe is the balance element not explicitly quantified in the text.",
+      "source": {
+        "reason": "The paper defines the Fe-28Mn-10Al-1C-(0,3)Cu austenitic low-density steel and refers to the Cu-free variant as '0Cu steel'; its lattice parameter under solution treatment is reported separately from the 3Cu steel, identifying it as an independent composition system.",
+        "block_id": [
+          "b0007",
+          "b0011",
+          "b0022"
+        ]
+      }
+    },
+    {
+      "alloy_id": "alloy_fe-28mn-10al-1c-3cu",
+      "alloy_name": "Fe-28Mn-10Al-1C-3Cu austenitic low-density steel",
+      "aliases": [
+        "3Cu steel",
+        "Fe-28Mn 10Al-1C-3Cu austenitic low-density steel"
+      ],
+      "description": "Cu-alloyed Fe-Mn-Al-C austenitic low-density steel and the primary material of this study, in which the co-precipitation of Cu-rich phase and κ-carbide is investigated.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C",
+        "Cu"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "28",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "10",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1",
+          "atomic_percent": null
+        },
+        {
+          "element": "Cu",
+          "weight_percent": "3",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": "Nominal composition notation Fe-28Mn-10Al-1C-(0,3)Cu with 3 corresponding to the 3Cu steel. Fe is the balance element not explicitly quantified in the text.",
+      "source": {
+        "reason": "The paper repeatedly names the Fe-28Mn-10Al-1C-3Cu austenitic low-density steel as the studied material and refers to it as '3Cu steel'; its lattice parameter under solution treatment is reported separately from the 0Cu steel, identifying it as an independent composition system.",
+        "block_id": [
+          "b0001",
+          "b0007",
+          "b0011",
+          "b0022"
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_solution-1000c-1h",
+      "alloy_id": null,
+      "process_name": "solution treatment",
+      "state_label": "solution treated",
+      "aliases": [
+        "solid solution treatment",
+        "solution treatment at 1000°C for 1 h"
+      ],
+      "parent_process_ids": [],
+      "description": "Solution treatment at 1000°C for 1 h applied to the Fe-28Mn-10Al-1C-(0,3)Cu steel prior to aging, resulting in the solution-treated austenitic matrix.",
+      "processes_notes": "This process is applied to both the 0Cu and 3Cu steels and is the parent state for the subsequent aging treatment.",
+      "source": {
+        "reason": "The paper states the steels are processed by solution treatment (at 1000°C for 1 h) and reports the lattice parameter of 0Cu and 3Cu steel under solid solution treatment, establishing solution treatment as a distinct terminal state.",
+        "block_id": [
+          "b0011",
+          "b0022"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_aging-550c-3h",
+      "alloy_id": null,
+      "process_name": "aging treatment",
+      "state_label": "aged",
+      "aliases": [
+        "aging treatment at 550°C for 3 h",
+        "aged-3Cu steel"
+      ],
+      "parent_process_ids": [
+        "proc_solution-1000c-1h"
+      ],
+      "description": "Aging treatment at 550°C for 3 h applied after solution treatment, producing the aged state in which κ-carbide and Cu-rich phase co-precipitate from the austenitic matrix.",
+      "processes_notes": "Applied sequentially after solution treatment; the aged 3Cu steel is the primary state characterized by SAED/TEM/HRTEM/EDS.",
+      "source": {
+        "reason": "The paper states the steels are processed by solution treatment and aging treatment (at 550°C for 3 h) sequentially, and it studies the aged 3Cu steel in which κ-carbide and Cu-rich phases precipitate.",
+        "block_id": [
+          "b0011",
+          "b0015",
+          "b0016"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-10al-1c__solution-1000c-1h",
+      "alloy_id": "alloy_fe-28mn-10al-1c",
+      "process_id": "proc_solution-1000c-1h",
+      "sample_label": "0Cu steel under solid solution treatment",
+      "aliases": [
+        "0Cu steel (solution treated)"
+      ],
+      "source": {
+        "reason": "The paper reports the lattice parameter of the 0Cu steel under solid solution treatment, identifying this alloy+process combination as a distinct sample.",
+        "block_id": [
+          "b0022"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-28mn-10al-1c__aging-550c-3h",
+      "alloy_id": "alloy_fe-28mn-10al-1c",
+      "process_id": "proc_aging-550c-3h",
+      "sample_label": "0Cu steel (aged)",
+      "aliases": [
+        "aged 0Cu steel"
+      ],
+      "source": {
+        "reason": "The Fe-28Mn-10Al-1C-(0,3)Cu steels are processed by solution treatment and aging treatment sequentially, so the Cu-free steel in the aged state constitutes a sample; the paper discusses κ-carbide precipitation behavior in this steel.",
+        "block_id": [
+          "b0011",
+          "b0024"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-28mn-10al-1c-3cu__solution-1000c-1h",
+      "alloy_id": "alloy_fe-28mn-10al-1c-3cu",
+      "process_id": "proc_solution-1000c-1h",
+      "sample_label": "3Cu steel under solid solution treatment",
+      "aliases": [
+        "3Cu steel (solution treated)"
+      ],
+      "source": {
+        "reason": "The paper reports the lattice parameter of the 3Cu steel under solid solution treatment (a = 0.3689 nm), identifying this alloy+process combination as a distinct sample.",
+        "block_id": [
+          "b0014",
+          "b0022"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-28mn-10al-1c-3cu__aging-550c-3h",
+      "alloy_id": "alloy_fe-28mn-10al-1c-3cu",
+      "process_id": "proc_aging-550c-3h",
+      "sample_label": "aged 3Cu steel",
+      "aliases": [
+        "aged-3Cu steel",
+        "3Cu steel (aged)"
+      ],
+      "source": {
+        "reason": "The paper's main characterization (SAED, TEM, HRTEM, EDS) is performed on the aged 3Cu steel, where κ-carbide and Cu-rich phase co-precipitate, making this alloy+process combination the primary sample.",
+        "block_id": [
+          "b0015",
+          "b0016",
+          "b0025"
+        ]
+      }
+    }
+  ],
+  "unmapped_findings": [
+    "Adding Cu to Fe-28Mn-10Al-1C austenitic low-density steel increases the austenitic matrix lattice parameter, which is beneficial for κ-carbide precipitation; Cu-rich phase and κ-carbide are the main precipitates of the Fe-Mn-Al-C-Cu low-density steel.",
+    "Under solution treatment the austenitic matrix lattice parameter is a = 0.3687 nm for 0Cu steel and a = 0.3689 nm for 3Cu steel, both higher than the critical lattice parameter (~0.3670 nm) required for intragranular κ-carbide precipitation.",
+    "According to formula 0.208(wt.%C) + 0.098(wt.%Al) = 1 - 0.0054(wt.%Mn), the critical Al content for κ-carbide precipitation in 0Cu steel is 6.52 wt%, which the steel's Al content exceeds.",
+    "The Cu-rich phase was determined to have an FCC structure (crystal plane spacing (002) = 0.182 nm, lattice parameter a = 0.3652 nm), while the κ-carbide lattice parameter is a = 0.3775 nm; SAED indicated the Cu-rich phase has BCC structure in Fig. 1 (inset).",
+    "Lattice misfits: κ-carbide/Cu-rich phase = 3.4%, κ-carbide/austenite = 2.3%, Cu-rich phase/austenite = 1.0%, all below 5% indicating coherent relationships.",
+    "The κ-carbide and Cu-rich phase have a cube-on-cube orientation relationship with the austenitic matrix: [110]γ//[110]κ//[110]Cu and (111)γ//(111)κ//(111)Cu; κ-carbide precipitates earlier than Cu-rich phase during aging and promotes its precipitation."
+  ]
+}

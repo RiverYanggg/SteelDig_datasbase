@@ -1,0 +1,349 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-8al-1c__cr-90pct",
+      "paper_id": "10.1002_srin.202400447",
+      "alloy_id": "alloy_fe-28mn-8al-1c",
+      "process_id": "proc_cr-90pct",
+      "sample_label": "CR 90%",
+      "aliases": [
+        "CR90%",
+        "90% CR reduction sample",
+        "90% CR"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "1",
+      "type": "heat treatment",
+      "method": "solution treatment",
+      "temperature": "1000 °C",
+      "temperature_unit": null,
+      "duration": "1 h",
+      "atmosphere": null,
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": null
+    },
+    {
+      "processing_step_id": "step_cryogenic_rolling",
+      "sequence": "2",
+      "type": "mechanical processing",
+      "method": "cryogenic rolling",
+      "temperature": "liquid nitrogen (cryogenic)",
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "liquid nitrogen immersion",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "90%",
+      "processing_steps_notes": "Immersed in liquid nitrogen for 3–5 min; rolled about 2% per pass using an LG-300 two-high rolling mill; promptly re-immersed after each pass until cumulative 90% reduction."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_cr90",
+      "overall_structure": "Fibrous, banded nanocrystalline austenite grains elongated along RD with random orientation",
+      "number_of_phases": "1",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_cr90",
+          "region": "cross-section along rolling direction (RD)",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "fibrous/banded grains elongated along RD; nanocrystalline",
+              "grain_size": "58.8 nm",
+              "texture": "brass {110}<112>"
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocation tangles and subgrain boundaries (dislocation cells)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": "2.36 × 10^15 m^-2",
+              "lattice_distortion": "microstrain 7 × 10^-3"
+            },
+            {
+              "type": "deformation twins (density decreased)",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            },
+            {
+              "type": "slip bands and wave-like microshear bands",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": "58.8 nm",
+              "unit": "nm"
+            },
+            "grain_size_distribution": "nanoscale grains with random orientation (continuous SAED rings); DF-TEM histogram gives average 58.8 nm",
+            "texture": "brass {110}<112>"
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_set_cr90",
+      "phase_interfaces": [],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_cr90_1",
+          "microstructure_id": "micro_cr90",
+          "interaction_type": "dislocation–dislocation and dislocation–twin interactions",
+          "qualitative_or_quantitative_description": "Dislocation interactions create numerous cutting steps and twists; immobilized dislocations form tangles that transform into subgrain boundaries, increasing dislocation cell density and refining the substructure."
+        }
+      ],
+      "slip_behavior": "interface shear slip facilitated by the distinct fibrous morphology; numerous rolling bands",
+      "phase_evolution": "single-phase austenite maintained throughout CR; no deformation-induced martensitic transformation",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_cr90",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": "temperature-controlled environment",
+        "strain_rate": "0.2 mm min^-1",
+        "specimen_geometry": "dog-bone-shaped tensile specimens with standard distance segment 20 × 5 × 1 mm, machined along RD",
+        "test_standard": null,
+        "other_conditions": "Microhardness: loading 500 g, dwelling time 15 s, HV values averaged from at least 5 measurements"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": "RD",
+              "value": "1791 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "1861 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "6.6%",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "CR 90% engineering stress–strain curve peaks between the 1800 and 1900 MPa gridlines below about 5% strain",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": null,
+            "value": "578",
+            "scale": "HV",
+            "unit": "HV",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": null,
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": "6.82 g cm^-3",
+          "unit": "g cm^-3"
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_cr90",
+      "service_conditions": {
+        "operating_temperature": null,
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": "alloy_fe-28mn-8al-1c",
+        "benchmark_process_id": "proc_st-1000c-1h-wq",
+        "benchmark_sample_id": null,
+        "comparison_metric": "UTS, YS, and microhardness relative to the undeformed (original) state",
+        "improvement_percentage": "UTS +111%, YS +255%, microhardness +104%"
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om",
+      "microstructure_id": "micro_cr90",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": "OLYMPUS PMG3 optical microscope",
+      "measurement_conditions": "Cross-section prepared by progressive grinding and polishing along RD; etched with hydrochloric acid (100 mL) + alcohol (100 mL) + copper chloride (5 g)",
+      "purpose": "Observe microstructural evolution with CR",
+      "key_findings": "CR 90%: fibrous, heavily banded microstructure ('Fiber textures'); intersecting slip bands of two orientations at higher magnification"
+    },
+    {
+      "characterization_id": "char_sem_fracture",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM) - fractography",
+      "instrument_or_setup": "JSM-7800F field-emission SEM",
+      "measurement_conditions": null,
+      "purpose": "Examine tensile fracture morphology",
+      "key_findings": "CR 90% fracture: finest dimple structure (very small shallow dimples, no large voids) with a vertical crack/tear line; partial cleavage features indicate ductile-brittle mixed fracture"
+    },
+    {
+      "characterization_id": "char_ebsd",
+      "microstructure_id": "micro_cr90",
+      "technique": "Electron backscatter diffraction (EBSD)",
+      "instrument_or_setup": "JSM7200F SEM equipped with EBSD system",
+      "measurement_conditions": "Electrochemical polishing in perchloric acid (5%) + acetic acid (95%) at 50 V for 30 s",
+      "purpose": "Analyze grain orientation, grain boundaries and local misorientation",
+      "key_findings": "CR 90%: equiaxed grains completely fragmented into banded RD-elongated austenite; LAGBs account for 94.1%; brass {110}<112> texture; higher KAM in rolling bands, lower in grains surrounded by LAGBs"
+    },
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": "micro_cr90",
+      "technique": "Transmission electron microscopy (TEM)",
+      "instrument_or_setup": "JEM-2100 TEM; samples mechanically ground to 60 μm, punched into Ф3 mm disks, thinned with Gatan 691 ion milling",
+      "measurement_conditions": "Dark-field (DF) and bright-field imaging; selected-area electron diffraction (SAED)",
+      "purpose": "Characterize nanoscale grains, dislocation substructure and twins",
+      "key_findings": "CR 90%: refined dislocation substructure/subgrain boundaries with SAED continuous rings (randomly oriented nanoscale grains); DF-TEM shows nanocrystalline grains with average 58.8 nm; deformation twins present"
+    },
+    {
+      "characterization_id": "char_xrd",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "D8 ADVANCE X-ray diffractometer with Cu-Kα radiation (λ = 0.15406 nm)",
+      "measurement_conditions": "Cu-Kα radiation, λ = 0.15406 nm",
+      "purpose": "Determine phase constitution, peak broadening, microstrain and dislocation density",
+      "key_findings": "Single-phase austenite maintained; no deformation-induced martensitic transformation; FWHM(220) = 1.022° after 90% CR; microstrain 7 × 10^-3; dislocation density 2.36 × 10^15 m^-2"
+    },
+    {
+      "characterization_id": "char_microhardness",
+      "microstructure_id": null,
+      "technique": "Microhardness testing",
+      "instrument_or_setup": "microhardness tester",
+      "measurement_conditions": "Loading 500 g, dwelling time 15 s; HV values are average of at least 5 measurements",
+      "purpose": "Measure microhardness",
+      "key_findings": "578 HV at 90% CR (highest microhardness)"
+    },
+    {
+      "characterization_id": "char_tensile",
+      "microstructure_id": null,
+      "technique": "Tensile testing",
+      "instrument_or_setup": "universal tensile testing machine",
+      "measurement_conditions": "Temperature-controlled environment; strain rate 0.2 mm min^-1; dog-bone specimens with standard distance segment 20 × 5 × 1 mm along RD",
+      "purpose": "Measure tensile properties (UTS, YS, elongation)",
+      "key_findings": "CR 90%: UTS 1861 MPa, YS 1791 MPa, elongation 6.6%"
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_xrd_wh",
+      "simulation_method": "Williamson–Hall peak broadening analysis; dislocation density calculation",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": "Dislocation density trend from XRD aligns with TEM observations (Figure 3)",
+      "analytical_models": [
+        {
+          "model_name": "Williamson–Hall equation",
+          "equation_role": "relates XRD diffraction peak broadening (βτ) to grain size (D) and microstrain (ε)",
+          "parameters": [
+            {
+              "name": "K",
+              "value": "0.9",
+              "unit": null
+            },
+            {
+              "name": "λ",
+              "value": "0.15406 nm",
+              "unit": "nm"
+            },
+            {
+              "name": "θ",
+              "value": "diffraction peak angle",
+              "unit": null
+            }
+          ],
+          "model_note": "βτ = Kλ/(D cosθ) + 4ε tanθ"
+        },
+        {
+          "model_name": "dislocation density equation",
+          "equation_role": "calculates dislocation density (ρ) from microstrain ((ε²)^1/2), grain size (D) and Burgers vector (b)",
+          "parameters": [
+            {
+              "name": "(ε²)^(1/2)",
+              "value": "7 × 10^-3 (CR 90%)",
+              "unit": null
+            },
+            {
+              "name": "D",
+              "value": "58.8 nm (CR 90%)",
+              "unit": "nm"
+            },
+            {
+              "name": "b",
+              "value": null,
+              "unit": null
+            }
+          ],
+          "model_note": "ρ = 2√3(ε²)^(1/2)/(D b)"
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "The stacking fault energy (SFE) of this steel at room temperature and cryogenic temperature is 72 and 51 mJ m^-2, respectively (used to discuss the difficulty of deformation twinning).",
+    "At 90% CR, the tensile fracture surface reveals partial cleavage fracture features, indicating a transition from ductile to ductile-brittle mixed fracture mode (significantly brittle fracture)."
+  ]
+}

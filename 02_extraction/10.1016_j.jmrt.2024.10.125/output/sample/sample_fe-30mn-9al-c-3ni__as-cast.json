@@ -1,0 +1,286 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-30mn-9al-c-3ni__as-cast",
+      "paper_id": "10.1016_j.jmrt.2024.10.125",
+      "alloy_id": "alloy_fe-30mn-9al-c-3ni",
+      "process_id": "proc_as-cast",
+      "sample_label": "As-cast",
+      "aliases": [
+        "As-cast",
+        "as-cast Fe–30Mn–9Al–C–3Ni alloy",
+        "cast sample"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "The sample's process entity is 'As-cast' (state_label As-cast); Table 2 and Fig. 12 present the as-cast sample's mechanical data and it is described as the cast comparison sample. No casting parameters are reported, only the as-cast state.",
+        "block_id": [
+          "b0050",
+          "b0068",
+          "b0070"
+        ]
+      },
+      "processing_step_id": "step_as-cast",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "casting"
+      },
+      "method": {
+        "value": "as-cast (conventional casting)"
+      },
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "As-cast Fe–30Mn–9Al–C–3Ni alloy used solely as the control/benchmark state against the SLM-printed samples for tensile property comparison (Table 2, Fig. 12). The paper does not report any specific casting process details (melt temperature, mold material, cooling conditions) for this sample; it is only described as the conventional 'as-cast' condition."
+      }
+    }
+  ],
+  "structures": [],
+  "interfaces": [],
+  "properties": [
+    {
+      "source": {
+        "reason": "Table 2 and Fig. 12 (and the composite Fig. 14 table) give the tensile properties of the as-cast Fe–30Mn–9Al–C–3Ni alloy; the mechanical testing section gives the testing conditions for the room-temperature tensile tests.",
+        "block_id": [
+          "b0027",
+          "b0050",
+          "b0068",
+          "b0070",
+          "figure_012",
+          "figure_014"
+        ]
+      },
+      "property_set_id": "prop_as-cast_tensile",
+      "measurement_conditions": {
+        "temperature": {
+          "value": "room temperature",
+          "source": {
+            "reason": "The tensile properties (Fig. 12, Table 2) were evaluated at room temperature; the mechanical testing section states room-temperature tensile properties were measured.",
+            "block_id": [
+              "b0027",
+              "b0050"
+            ]
+          }
+        },
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": {
+          "value": "dog-bone-shaped tensile sample, gauge length 25 mm, diameter 5 mm",
+          "source": {
+            "reason": "The paper describes the tensile specimen geometry used for the room-temperature tensile tests; Table 2/Fig. 12 report the as-cast sample among the tensile-tested samples.",
+            "block_id": [
+              "b0027"
+            ]
+          }
+        },
+        "test_standard": null,
+        "other_conditions": {
+          "value": "loading rate 1 mm/min; Suns universal testing machine with Reliant electronic extensometer",
+          "source": {
+            "reason": "The mechanical testing section reports the testing machine, extensometer and loading rate used for the room-temperature tensile tests.",
+            "block_id": [
+              "b0027"
+            ]
+          }
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "source": {
+                "reason": "Table 2 (and Fig. 14(c) table) list the As-cast row yield strength YS = 772.3 MPa.",
+                "block_id": [
+                  "b0070",
+                  "figure_014"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "772.3 MPa"
+              },
+              "unit": {
+                "value": "MPa"
+              },
+              "uncertainty": null
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "source": {
+                "reason": "Table 2 (and Fig. 14(c) table) list the As-cast row tensile strength TS = 879.0 MPa.",
+                "block_id": [
+                  "b0070",
+                  "figure_014"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "879.0 MPa"
+              },
+              "unit": {
+                "value": "MPa"
+              },
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "source": {
+                "reason": "Table 2 (and Fig. 14(c) table) list the As-cast row elongation EL = 20.53%.",
+                "block_id": [
+                  "b0070",
+                  "figure_014"
+                ]
+              },
+              "direction": null,
+              "value": {
+                "value": "20.53%"
+              },
+              "unit": {
+                "value": "%"
+              },
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": {
+            "value": "As-cast (orange) engineering stress–strain curve: steep elastic rise then a plateau between 800 and 900 MPa, terminating just past 20% strain (Fig. 12).",
+            "source": {
+              "reason": "Fig. 12's description explicitly characterizes the orange as-cast curve as the weakest, plateauing between the 800 and 900 MPa gridlines and ending just past the 20% strain gridline.",
+              "block_id": [
+                "figure_012",
+                "b0050",
+                "b0068"
+              ]
+            }
+          },
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "source": {
+        "reason": "The paper states that compared to the cast sample the SLM samples have higher strength and plasticity (due to rapid-cooling grain-refinement strengthening), making the as-cast sample the baseline/benchmark in this comparison; the as-cast curve in Fig. 12 is explicitly described as the weakest.",
+        "block_id": [
+          "b0050",
+          "b0068",
+          "figure_012",
+          "figure_014",
+          "b0070"
+        ]
+      },
+      "performance_id": "perf_as-cast_vs_slm",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": null,
+        "environment": null
+      },
+      "lifetime_prediction": {
+        "model_used": null,
+        "predicted_lifetime": null,
+        "confidence_interval": null
+      },
+      "comparative_performance": {
+        "benchmark_alloy_id": {
+          "value": "alloy_fe-30mn-9al-c-3ni"
+        },
+        "benchmark_process_id": null,
+        "benchmark_sample_id": {
+          "value": "SLM-printed Fe–30Mn–9Al–C–3Ni samples (e.g., P-110, 110 W)"
+        },
+        "comparison_metric": {
+          "value": "tensile strength and plasticity (yield strength, ultimate tensile strength, elongation)"
+        },
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "The mechanical testing section describes the tensile testing method (machine, extensometer, specimen geometry, loading rate, room temperature); Table 2 and Fig. 12 report the as-cast sample's tensile results obtained by this method.",
+        "block_id": [
+          "b0027",
+          "b0050",
+          "b0068",
+          "b0070",
+          "figure_012",
+          "figure_014"
+        ]
+      },
+      "characterization_id": "char_tensile_as-cast",
+      "microstructure_id": null,
+      "technique": {
+        "value": "room-temperature uniaxial tensile testing"
+      },
+      "instrument_or_setup": {
+        "value": "Suns universal testing machine with Reliant electronic extensometer"
+      },
+      "measurement_conditions": {
+        "value": "loading rate 1 mm/min; dog-bone-shaped specimen, gauge length 25 mm, diameter 5 mm; room temperature"
+      },
+      "purpose": {
+        "value": "to evaluate the room-temperature tensile properties (yield strength, tensile strength, elongation) of the as-cast Fe–30Mn–9Al–C–3Ni alloy for comparison with SLM-printed samples"
+      },
+      "key_findings": {
+        "value": "As-cast exhibited YS = 772.3 MPa, TS = 879.0 MPa, EL = 20.53% and Z = 17.10% (Table 2); its stress–strain curve plateaus between 800 and 900 MPa and ends just past 20% strain, lower in strength and plasticity than the SLM-printed samples (Fig. 12)."
+      }
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The as-cast Fe–30Mn–9Al–C–3Ni sample's reduction of area (Z) = 17.10% is reported in Table 2 (and Fig. 14(c)) but has no dedicated slot in the tensile_properties schema (which covers yield strength, tensile strength and elongation).",
+    "The as-cast sample is the weakest of the compared conditions: its tensile strength (879.0 MPa) is well below all SLM samples, and its elongation (20.53%) and reduction of area (17.10%) are the lowest of the group (Table 2, Fig. 12).",
+    "No microstructural (XRD/EBSD/TEM/OM), density, hardness, porosity or surface-roughness characterization is reported in the paper for the as-cast sample; all such data concern the SLM-printed samples only."
+  ]
+}

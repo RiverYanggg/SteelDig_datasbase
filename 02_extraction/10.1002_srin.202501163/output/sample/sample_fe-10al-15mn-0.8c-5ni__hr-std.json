@@ -1,0 +1,883 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-10al-15mn-0.8c-5ni__hr-std",
+      "paper_id": "10.1002_srin.202501163",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_id": "proc_hr-std",
+      "sample_label": "HR",
+      "aliases": [
+        "HR sample",
+        "sole HR sample",
+        "hot rolled sheet"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "source": {
+        "reason": "Parent homogenization step of the standard HR fabrication route",
+        "block_id": [
+          "b0010"
+        ]
+      },
+      "processing_step_id": "step_homog_1150c_2h",
+      "sequence": {
+        "value": "1"
+      },
+      "type": {
+        "value": "heat treatment"
+      },
+      "method": {
+        "value": "homogenization"
+      },
+      "temperature": {
+        "value": "1150 °C",
+        "source": {
+          "reason": "Homogenization of the alloy at 1150 °C for 2 h before hot rolling",
+          "block_id": [
+            "b0010"
+          ]
+        }
+      },
+      "temperature_unit": {
+        "value": "°C",
+        "source": {
+          "reason": "Temperature unit as given in the text",
+          "block_id": [
+            "b0010"
+          ]
+        }
+      },
+      "duration": {
+        "value": "2 h",
+        "source": {
+          "reason": "Homogenization for 2 h",
+          "block_id": [
+            "b0010"
+          ]
+        }
+      },
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": {
+        "value": "Homogenization of the ingot at 1150 °C for 2 h in a muffle furnace before hot rolling (parent process of the HR route).",
+        "source": {
+          "reason": "b0010 states homogenization at 1150 °C for 2 h in a muffle furnace",
+          "block_id": [
+            "b0010"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "Standard hot rolling step producing the sole HR sample",
+        "block_id": [
+          "b0010",
+          "b0032"
+        ]
+      },
+      "processing_step_id": "step_hot_rolling",
+      "sequence": {
+        "value": "2"
+      },
+      "type": {
+        "value": "mechanical processing"
+      },
+      "method": {
+        "value": "hot rolling"
+      },
+      "temperature": {
+        "value": "1050–900 °C",
+        "source": {
+          "reason": "Hot rolling at 1050 °C until finish rolling temperature of 900 °C",
+          "block_id": [
+            "b0010",
+            "b0018"
+          ]
+        }
+      },
+      "temperature_unit": {
+        "value": "°C",
+        "source": {
+          "reason": "Temperature unit as given in the text",
+          "block_id": [
+            "b0010"
+          ]
+        }
+      },
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": {
+        "value": "air",
+        "source": {
+          "reason": "The HR sheet was air-cooled",
+          "block_id": [
+            "b0010"
+          ]
+        }
+      },
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": {
+        "value": "14 to 3 mm (nine passes)",
+        "source": {
+          "reason": "Hot rolling reduces ingot thickness from 14 to 3 mm by nine passes",
+          "block_id": [
+            "b0010"
+          ]
+        }
+      },
+      "processing_steps_notes": {
+        "value": "Standard (slow, 1 rpm) hot rolling in a 75-ton rolling mill; nine passes at 1050 °C until finish rolling temperature of 900 °C, then air-cooled. Repeated HR in nine stages causes shape deformation and partial dissolution of dendrites.",
+        "source": {
+          "reason": "b0010 gives the mill and passes; b0032 identifies this as the 1 rpm previous case; b0018 describes the effect of nine-stage HR",
+          "block_id": [
+            "b0010",
+            "b0018",
+            "b0032"
+          ]
+        }
+      }
+    }
+  ],
+  "structures": [
+    {
+      "source": {
+        "reason": "Microstructure of the standard hot-rolled sample",
+        "block_id": [
+          "b0018",
+          "figure_002"
+        ]
+      },
+      "structure_id": "structure_hr",
+      "overall_structure": {
+        "value": "Hot-rolled γ (austenite) matrix containing lamellar B2 stringer bands transformed from δ-ferrite dendrites; shear bands form in the γ matrix and fine intragranular B2 (IG-B2) precipitates nucleate at those shear bands.",
+        "source": {
+          "reason": "Figure 2b,d and b0018 describe the HR microstructure: B2 stringer bands in γ, shear bands in γ, and IG-B2 at shear bands",
+          "block_id": [
+            "b0018",
+            "figure_002"
+          ]
+        }
+      },
+      "number_of_phases": {
+        "value": 2,
+        "source": {
+          "reason": "Two main constituents identified in the HR state: γ matrix and B2 (stringer bands/IG-B2)",
+          "block_id": [
+            "b0018",
+            "figure_002"
+          ]
+        }
+      },
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "source": {
+            "reason": "Bulk microstructure of the hot-rolled (HR) sample",
+            "block_id": [
+              "b0018",
+              "figure_002"
+            ]
+          },
+          "microstructure_id": "micro_hr_bulk",
+          "region": {
+            "value": "bulk (hot rolled sheet)"
+          },
+          "related_sequence": {
+            "value": "2"
+          },
+          "phases_present": [
+            {
+              "source": {
+                "reason": "γ austenite matrix of the HR sample",
+                "block_id": [
+                  "b0018",
+                  "figure_002"
+                ]
+              },
+              "phase_name": {
+                "value": "γ (austenite)"
+              },
+              "crystal_structure": {
+                "value": "FCC",
+                "source": {
+                  "reason": "γ austenite is face centered cubic (FCC)",
+                  "block_id": [
+                    "b0019"
+                  ]
+                }
+              },
+              "volume_fraction": null,
+              "morphology": {
+                "value": "matrix, plastically deformed with shear bands",
+                "source": {
+                  "reason": "γ-matrix undergoes rigorous plastic deformation; strain localization tracked with shear band formations",
+                  "block_id": [
+                    "b0018"
+                  ]
+                }
+              },
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "source": {
+                "reason": "B2 stringer band phase in the HR sample; B2 characterized as Fe(Ni,Mn)Al",
+                "block_id": [
+                  "b0018",
+                  "b0024",
+                  "b0041",
+                  "figure_002"
+                ]
+              },
+              "phase_name": {
+                "value": "B2 (Fe(Ni,Mn)Al)"
+              },
+              "crystal_structure": {
+                "value": "ordered BCC (B2)",
+                "source": {
+                  "reason": "B2 has a body centered cubic (BCC) crystal structure",
+                  "block_id": [
+                    "b0019"
+                  ]
+                }
+              },
+              "volume_fraction": {
+                "value": "~19% (dendrite/B2 stringer fraction after HR)",
+                "source": {
+                  "reason": "Rough estimation shows dendrite fraction reduces from 27% as-cast to 19% after HR; these dendrites become B2 stringer bands",
+                  "block_id": [
+                    "b0018"
+                  ]
+                }
+              },
+              "morphology": {
+                "value": "lamellar stringer bands spanning over multiple austenite grains",
+                "source": {
+                  "reason": "HR transforms dendrites into lamellar stringer bands spanning over multiple austenite grains",
+                  "block_id": [
+                    "b0018"
+                  ]
+                }
+              },
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "source": {
+                "reason": "Localization of strain in γ tracked with shear band formations inside the matrix phase during hot deformation",
+                "block_id": [
+                  "b0018",
+                  "figure_002"
+                ]
+              },
+              "type": {
+                "value": "shear bands in γ matrix"
+              },
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "source": {
+                "reason": "IG-B2 precipitation at shear bands of HR-γ",
+                "block_id": [
+                  "b0018",
+                  "b0020",
+                  "figure_002"
+                ]
+              },
+              "precipitate_id": "prec_ig-b2_hr",
+              "type": {
+                "value": "IG-B2 (intragranular B2)"
+              },
+              "size": null,
+              "distribution": {
+                "value": "Fine-scale B2 tends to nucleate at shear bands in the γ matrix",
+                "source": {
+                  "reason": "Fine-scale B2 tends to nucleate at those shear bands, alleviating lattice strain",
+                  "block_id": [
+                    "b0018",
+                    "figure_002"
+                  ]
+                }
+              },
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "source": {
+        "reason": "Interfaces and defect interactions in the hot-rolled sample",
+        "block_id": [
+          "b0018",
+          "figure_002"
+        ]
+      },
+      "interface_set_id": "interfaces_hr",
+      "phase_interfaces": [
+        {
+          "source": {
+            "reason": "γ/B2 phase boundaries present in the HR lamellar microstructure",
+            "block_id": [
+              "b0018",
+              "figure_002"
+            ]
+          },
+          "interface_id": "interface_gamma-b2",
+          "microstructure_id": "micro_hr_bulk",
+          "phase_1_name": {
+            "value": "γ (austenite)"
+          },
+          "phase_2_name": {
+            "value": "B2"
+          },
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "source": {
+            "reason": "Shear band–IG-B2 interaction in the HR sample",
+            "block_id": [
+              "b0018",
+              "figure_002"
+            ]
+          },
+          "interaction_id": "interaction_shearband_igb2",
+          "microstructure_id": "micro_hr_bulk",
+          "interaction_type": {
+            "value": "heterogeneous nucleation"
+          },
+          "qualitative_or_quantitative_description": {
+            "value": "Fine-scale B2 nucleates at shear bands in γ, alleviating lattice strain.",
+            "source": {
+              "reason": "b0018 states fine-scale B2 tends to nucleate at shear bands, alleviating lattice strain",
+              "block_id": [
+                "b0018"
+              ]
+            }
+          }
+        }
+      ],
+      "slip_behavior": {
+        "value": "Strain localization in the γ matrix via shear band formation during hot deformation",
+        "source": {
+          "reason": "The γ-matrix undergoes rigorous plastic deformation; localization of strain in γ tracked with shear band formations",
+          "block_id": [
+            "b0018"
+          ]
+        }
+      },
+      "phase_evolution": {
+        "value": "δ-ferrite dendrites transform into lamellar B2 stringer bands during hot rolling between 1050 and 900 °C",
+        "source": {
+          "reason": "b0018 describes the transformation of dendrites into B2 stringer bands during HR",
+          "block_id": [
+            "b0018"
+          ]
+        }
+      },
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "source": {
+        "reason": "Room-temperature uniaxial tensile properties of the HR sample",
+        "block_id": [
+          "b0012",
+          "b0029",
+          "figure_005"
+        ]
+      },
+      "property_set_id": "props_hr_tensile",
+      "measurement_conditions": {
+        "temperature": {
+          "value": "room temperature",
+          "source": {
+            "reason": "Uniaxial tensile tests were performed at room temperature",
+            "block_id": [
+              "b0012"
+            ]
+          }
+        },
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": {
+          "value": "1 mm min⁻¹ crosshead velocity",
+          "source": {
+            "reason": "Data extracted at 1 mm min⁻¹ crosshead velocity",
+            "block_id": [
+              "b0012"
+            ]
+          }
+        },
+        "specimen_geometry": {
+          "value": "gauge length 12.5 mm, gauge width 3 mm, thickness 2 mm",
+          "source": {
+            "reason": "Tensile specimens machined with gauge length 12.5 mm, gauge width 3 mm, thickness 2 mm",
+            "block_id": [
+              "b0012"
+            ]
+          }
+        },
+        "test_standard": {
+          "value": "ASTM E8",
+          "source": {
+            "reason": "Tensile specimens machined as per the ASTM E8 standard",
+            "block_id": [
+              "b0012"
+            ]
+          }
+        },
+        "other_conditions": {
+          "value": "rolling direction (RD); 100 kN Instron 5982 with 10 mm gauge extensometer",
+          "source": {
+            "reason": "Tests performed in rolling direction on a 100 kN Instron 5982 with 10 mm gauge extensometer",
+            "block_id": [
+              "b0012"
+            ]
+          }
+        }
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "source": {
+                "reason": "Figure 5a HR curve peaks between the 900 and 1200 MPa gridlines",
+                "block_id": [
+                  "figure_005"
+                ]
+              },
+              "direction": {
+                "value": "RD"
+              },
+              "value": {
+                "value": "between 900 and 1200 MPa (peak stress)"
+              },
+              "unit": {
+                "value": "MPa"
+              },
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "source": {
+                "reason": "The HR condition exhibits nearly 6.8% ductility",
+                "block_id": [
+                  "b0029"
+                ]
+              },
+              "direction": {
+                "value": "RD"
+              },
+              "value": {
+                "value": "nearly 6.8%"
+              },
+              "unit": {
+                "value": "%"
+              },
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": {
+            "value": "Engineering stress–strain curve for the HR condition is shown in Figure 5a",
+            "source": {
+              "reason": "Figure 5a includes the HR engineering stress–strain curve",
+              "block_id": [
+                "figure_005"
+              ]
+            }
+          },
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "source": {
+            "reason": "Toughness inset in Figure 5a lists HR: 0.48 kJ/mol (66.5 J/cm³); this is tensile energy absorbed before fracture",
+            "block_id": [
+              "figure_004",
+              "figure_005"
+            ]
+          },
+          "value": {
+            "value": "0.48 kJ mol⁻¹ (66.5 J cm⁻³)"
+          },
+          "unit": {
+            "value": "kJ mol⁻¹ / J cm⁻³"
+          }
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": null,
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": null,
+        "oxidation_resistance": null
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [
+    {
+      "source": {
+        "reason": "Performance of the standard (1 rpm) HR sample relative to the modified processing route",
+        "block_id": [
+          "b0032",
+          "b0029"
+        ]
+      },
+      "performance_id": "perf_hr_standard",
+      "service_conditions": {
+        "operating_temperature": null,
+        "stress_state": {
+          "value": "uniaxial tension (rolling direction)",
+          "source": {
+            "reason": "Tensile tests performed in rolling direction",
+            "block_id": [
+              "b0012"
+            ]
+          }
+        },
+        "environment": {
+          "value": "room temperature",
+          "source": {
+            "reason": "Tests performed at room temperature",
+            "block_id": [
+              "b0012"
+            ]
+          }
+        }
+      },
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "source": {
+          "reason": "b0032 states the standard HR (1 rpm, previous case) has a poor strength–ductility balance, motivating the modified high-speed (10 rpm) HR route",
+          "block_id": [
+            "b0032"
+          ]
+        },
+        "benchmark_alloy_id": {
+          "value": "alloy_fe-10al-15mn-0.8c-5ni"
+        },
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": {
+          "value": "strength–ductility balance / tensile toughness"
+        },
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "source": {
+        "reason": "Optical microscopy characterization of the HR sample",
+        "block_id": [
+          "b0012",
+          "b0018",
+          "figure_002"
+        ]
+      },
+      "characterization_id": "char_om_hr",
+      "microstructure_id": "micro_hr_bulk",
+      "technique": {
+        "value": "Optical microscopy (OM)"
+      },
+      "instrument_or_setup": {
+        "value": "Leica DM2700 M",
+        "source": {
+          "reason": "Optical microscopy performed with Leica DM2700 M after 3% nital etching",
+          "block_id": [
+            "b0012"
+          ]
+        }
+      },
+      "measurement_conditions": {
+        "value": "3% nital etch",
+        "source": {
+          "reason": "Etching was done in 3% nital for optical microscopy",
+          "block_id": [
+            "b0012"
+          ]
+        }
+      },
+      "purpose": {
+        "value": "Reveal the transformation of δ-ferrite dendrites into lamellar B2 stringer bands after HR",
+        "source": {
+          "reason": "Figure 2b shows the HR optical image of B2 stringer bands in γ",
+          "block_id": [
+            "b0018",
+            "figure_002"
+          ]
+        }
+      },
+      "key_findings": {
+        "value": "After HR, dendrites become near-horizontal light lamellar B2 stringer bands separated by γ matrix",
+        "source": {
+          "reason": "Figure 2b and b0018 describe the HR lamellar band microstructure",
+          "block_id": [
+            "b0018",
+            "figure_002"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "FESEM characterization of the HR sample",
+        "block_id": [
+          "b0012",
+          "b0018",
+          "figure_002"
+        ]
+      },
+      "characterization_id": "char_fesem_hr",
+      "microstructure_id": "micro_hr_bulk",
+      "technique": {
+        "value": "FESEM"
+      },
+      "instrument_or_setup": {
+        "value": "Apreo S",
+        "source": {
+          "reason": "FESEM performed in Apreo S",
+          "block_id": [
+            "b0012"
+          ]
+        }
+      },
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Observe shear bands in γ and IG-B2 precipitation in the HR state",
+        "source": {
+          "reason": "Figure 2d shows an FESEM image of HR with shear bands and IG-B2",
+          "block_id": [
+            "b0018",
+            "figure_002"
+          ]
+        }
+      },
+      "key_findings": {
+        "value": "Bright linear shear bands in γ and small IG-B2 particles; fine B2 nucleates at shear bands",
+        "source": {
+          "reason": "Figure 2d shows 'shear band in γ' and 'IG-B2' precipitation",
+          "block_id": [
+            "b0018",
+            "figure_002"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "Mechanical testing of the HR sample",
+        "block_id": [
+          "b0012",
+          "b0029",
+          "figure_005"
+        ]
+      },
+      "characterization_id": "char_tensile_hr",
+      "microstructure_id": null,
+      "technique": {
+        "value": "Uniaxial tensile test"
+      },
+      "instrument_or_setup": {
+        "value": "100 kN Instron 5982 with 10 mm gauge extensometer",
+        "source": {
+          "reason": "Uniaxial tensile tests performed on a 100 kN Instron 5982 with 10 mm gauge extensometer",
+          "block_id": [
+            "b0012"
+          ]
+        }
+      },
+      "measurement_conditions": {
+        "value": "room temperature; ASTM E8; RD; gauge length 12.5 mm, width 3 mm, thickness 2 mm; 1 mm min⁻¹ crosshead velocity",
+        "source": {
+          "reason": "b0012 gives the tensile test conditions",
+          "block_id": [
+            "b0012"
+          ]
+        }
+      },
+      "purpose": {
+        "value": "Obtain engineering stress–strain and toughness of the HR sample",
+        "source": {
+          "reason": "Tensile tests performed on HR sample",
+          "block_id": [
+            "b0012"
+          ]
+        }
+      },
+      "key_findings": {
+        "value": "HR exhibits nearly 6.8% ductility; toughness 0.48 kJ mol⁻¹ (66.5 J cm⁻³)",
+        "source": {
+          "reason": "b0029 and Figure 5a inset give HR ductility and toughness",
+          "block_id": [
+            "b0029",
+            "figure_005"
+          ]
+        }
+      }
+    },
+    {
+      "source": {
+        "reason": "Quantitative microstructure estimation for the HR sample",
+        "block_id": [
+          "b0018"
+        ]
+      },
+      "characterization_id": "char_image_analysis_hr",
+      "microstructure_id": "micro_hr_bulk",
+      "technique": {
+        "value": "Image analysis (software)"
+      },
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": {
+        "value": "Estimate dendrite/B2 stringer band fraction after HR",
+        "source": {
+          "reason": "Rough estimation with software of dendrite fraction reduction after HR",
+          "block_id": [
+            "b0018"
+          ]
+        }
+      },
+      "key_findings": {
+        "value": "Dendrite fraction reduces from 27% (as-cast) to ~19% after HR",
+        "source": {
+          "reason": "b0018 reports the fraction reduction from 27% as-cast to 19% after HR",
+          "block_id": [
+            "b0018"
+          ]
+        }
+      }
+    }
+  ],
+  "computational_details": [
+    {
+      "source": {
+        "reason": "Thermodynamic calculations underpinning the δ→B2 transformation relevant to the HR sample",
+        "block_id": [
+          "b0014",
+          "b0015",
+          "figure_001"
+        ]
+      },
+      "computation_id": "comp_thermocalc",
+      "simulation_method": {
+        "value": "Thermodynamic calculation (CALPHAD)"
+      },
+      "software_used": {
+        "value": "Thermo-Calc (TCFE database)",
+        "source": {
+          "reason": "Thermodynamic calculations using the TCFE Thermo-Calc database",
+          "block_id": [
+            "b0014"
+          ]
+        }
+      },
+      "potential_model_or_database": {
+        "value": "TCFE (Thermo-Calc) database",
+        "source": {
+          "reason": "b0014 mentions the TCFE Thermo-Calc database",
+          "block_id": [
+            "b0014"
+          ]
+        }
+      },
+      "boundary_and_initial_conditions": {
+        "value": "Pseudo-binary phase diagram for the multicomponent Fe–10Al–15Mn–0.8C–5Ni system; alloy line at 0.8 wt% C",
+        "source": {
+          "reason": "b0014 and Figure 1a describe the pseudo-binary phase diagram with the alloy line at 0.8 wt% C",
+          "block_id": [
+            "b0014",
+            "figure_001"
+          ]
+        }
+      },
+      "validation_against_experiment": {
+        "value": "Outputs are consistent with Ref. [15] for the same alloy composition; predicts δ→B2 order-disorder transition at 1125 °C and eutectoid at 851 °C",
+        "source": {
+          "reason": "b0015 states outputs are consistent with Ref. [15]; b0014 gives the 1125 °C order-disorder transition and 851 °C eutectoid",
+          "block_id": [
+            "b0014",
+            "b0015"
+          ]
+        }
+      },
+      "analytical_models": []
+    }
+  ],
+  "unmapped_findings": [
+    {
+      "value": "The standard (1 rpm) HR sample shows a poor strength–ductility balance (nearly 6.8% ductility and 0.48 kJ mol⁻¹ / 66.5 J cm⁻³ toughness); a modified high-speed HR (10 rpm) route with subsequent annealing raised YS to 1 GPa, elongation to 30% and toughness to 1.72 kJ mol⁻¹ (238 J cm⁻³).",
+      "source": {
+        "reason": "b0032 and b0044 contrast the standard HR with the modified high-speed HR route",
+        "block_id": [
+          "b0032",
+          "b0044"
+        ]
+      }
+    },
+    {
+      "value": "HR is key for refining B2 stringer bands without metal sheet cracking, compared to CR.",
+      "source": {
+        "reason": "b0045 conclusion states HR refines B2 stringer bands without sheet cracking",
+        "block_id": [
+          "b0045"
+        ]
+      }
+    },
+    {
+      "value": "Fracture analysis of the standard processed samples shows macrovoid nucleation inside B2 stringer bands, microcrack coalescence and B2 stringer de-cohesion; thicker stringer bands promote crack formation, a mechanism relevant to the premature failure of B2-stringer-containing samples including the sole HR sample.",
+      "source": {
+        "reason": "b0030 and b0043 describe B2 stringer band decohesion and premature failure; the HR sample contains these B2 stringer bands",
+        "block_id": [
+          "b0030",
+          "b0043",
+          "figure_004"
+        ]
+      }
+    }
+  ]
+}

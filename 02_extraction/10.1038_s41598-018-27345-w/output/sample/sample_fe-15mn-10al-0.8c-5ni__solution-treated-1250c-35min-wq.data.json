@@ -1,0 +1,280 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-15mn-10al-0.8c-5ni__solution-treated-1250c-35min-wq",
+      "paper_id": "10.1038_s41598-018-27345-w",
+      "alloy_id": "alloy_fe-15mn-10al-0.8c-5ni",
+      "process_id": "proc_solution-treated-1250c-35min-wq",
+      "sample_label": "Fe-15Mn-10Al-0.8C-5Ni, Solution Treated",
+      "aliases": [
+        "solution-treated Ni-containing sample",
+        "solution-treated 5 wt.% Ni sample",
+        "ST (Ni-containing)"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_induction_melting",
+      "sequence": "1",
+      "type": "melting",
+      "method": "induction furnace melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The experimental alloy Fe-15Mn-10Al-0.8C-5Ni was melted in an induction furnace prior to solution treatment."
+    },
+    {
+      "processing_step_id": "step_solution_treatment",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "solution heat treatment",
+      "temperature": "1250 °C",
+      "temperature_unit": "°C",
+      "duration": "35 min",
+      "atmosphere": "protective argon atmosphere",
+      "cooling_medium": "water quenching",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Solution heat-treated for 35 min at 1250 °C in a protective argon atmosphere and then water quenched; this is the defining process of this sample (state_label 'Solution Treated')."
+    },
+    {
+      "processing_step_id": "step_cutting",
+      "sequence": "3",
+      "type": "sample preparation",
+      "method": "cutting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "The solution-treated material was cut into 3-mm (length), 3-mm (width) and 1-mm (thickness) samples for testing."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_solution_treated_duplex",
+      "overall_structure": "In the solution-treated (as-quenched) condition the Ni-containing Fe-15Mn-10Al-0.8C-5Ni alloy has a duplex austenite (γ) + ferrite (α) microstructure, characterised as the bulk γ and α phases measured without ordered precipitates.",
+      "number_of_phases": "2",
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_gamma_solution_treated",
+          "region": null,
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "γ (austenite)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        },
+        {
+          "microstructure_id": "micro_alpha_solution_treated",
+          "region": null,
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "α (ferrite)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": null,
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [],
+  "properties": [
+    {
+      "property_set_id": "prop_nanoindentation_solution_treated",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": null,
+        "specimen_geometry": "3-mm (length) × 3-mm (width) × 1-mm (thickness) samples",
+        "test_standard": null,
+        "other_conditions": "Nano-indentation at a constant loading/unloading rate of 500 μN s−1 up to a maximum load of 10000 μN with a hold time of 20 s; each measurement in a particular phase repeated at least 25 times and in arrays of 50–70 indentations."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [],
+          "elongation": [],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [
+          {
+            "region": "γ (austenite), solution-treated",
+            "value": "4.2",
+            "scale": "nanoindentation",
+            "unit": "GPa",
+            "uncertainty": null
+          },
+          {
+            "region": "α (ferrite), solution-treated",
+            "value": "3.1",
+            "scale": "nanoindentation",
+            "unit": "GPa",
+            "uncertainty": null
+          }
+        ],
+        "fracture_toughness": {
+          "value": null,
+          "unit": null
+        },
+        "fatigue_properties": {
+          "fatigue_limit": null,
+          "cycles_to_failure": null
+        },
+        "creep_properties": {
+          "steady_state_creep_rate": null,
+          "rupture_life": null
+        }
+      },
+      "physical": {
+        "density": {
+          "value": null,
+          "unit": null
+        },
+        "thermal_properties": {},
+        "electrical_properties": {},
+        "magnetic_properties": {}
+      },
+      "chemical": {
+        "corrosion_resistance": {},
+        "oxidation_resistance": {}
+      },
+      "radiation_properties": {
+        "void_swelling": null,
+        "irradiation_hardening": null,
+        "helium_embrittlement": null
+      }
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_nanoindentation",
+      "microstructure_id": null,
+      "technique": "nano-indentation",
+      "instrument_or_setup": null,
+      "measurement_conditions": "constant loading/unloading rate of 500 μN s−1 up to a maximum load of 10000 μN with a hold time of 20 s; each measurement in a particular phase repeated at least 25 times, in arrays of 50–70 indentations",
+      "purpose": "determine the nano-hardness of the solution-treated γ and α phases (and of phase combinations) for the Ni-containing alloy",
+      "key_findings": "Solution-treated Ni-containing alloy: γ = 4.2 GPa and α = 3.1 GPa."
+    },
+    {
+      "characterization_id": "char_sem",
+      "microstructure_id": null,
+      "technique": "field-emission scanning electron microscopy (FE-SEM) with X-ray energy dispersive spectroscopy (EDS)",
+      "instrument_or_setup": "Carl Zeiss Sigma Field Emission SEM operated at 20 kV, fitted with high-speed X-ray EDS; specimens polished and etched in 5% nital",
+      "measurement_conditions": "20 kV",
+      "purpose": "microstructural observation and imaging of nano-indentation indents",
+      "key_findings": null
+    },
+    {
+      "characterization_id": "char_tem",
+      "microstructure_id": null,
+      "technique": "transmission electron microscopy (TEM): selected-area diffraction patterns (SADP) and bright-field (BF) imaging",
+      "instrument_or_setup": "JEOL 2000FX TEM; thin foils prepared by twin-jet electro-polishing in a mixture of 10% perchloric acid and 90% ethanol with an applied potential of 25 V",
+      "measurement_conditions": "applied potential of 25 V for twin-jet electro-polishing",
+      "purpose": "characterise the ordered phases (κ-carbide and B2) in the microstructures",
+      "key_findings": null
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_dft_ordered_phases",
+      "simulation_method": "First-principles (ab-initio) density functional theory (DFT) calculations of the ordered phases (κ-carbide and FeAl-B2) studied in both duplex low-density steels",
+      "software_used": "Quantum-ESPRESSO",
+      "potential_model_or_database": "Ultrasoft pseudo-potentials created on a modified Rappe-Rabe-Kaxiras-Joannopoulos (RRKJ) scheme; spin-polarized generalized gradient approximation (GGA) of Perdew-Burke-Ernzerhof (PBE) exchange-correlation functional",
+      "boundary_and_initial_conditions": "Structure optimization with Brillouin-zone integration on an 18×18×18 Monkhorst-Pack grid; real-space grid with a 50 Ryd energy cut-off for charge density; augmentation charges expanded up to 600 Ryd; 30×30×30 grid with a 60 Ryd energy cut-off for electronic density of states and formation energy; Murnaghan equation of state for bulk modulus; dynamical matrices from linear response in the harmonic approximation; DOS by the tetrahedron method on a 30×30×30 mesh.",
+      "validation_against_experiment": "The calculated lattice parameter of the ordered FeAl-B2 precipitate (with and without spin effects) was slightly less than the experimental value but in good agreement with reported experimental values.",
+      "analytical_models": [
+        {
+          "model_name": "Murnaghan equation of state",
+          "equation_role": "fit simulated unit-cell volumes to obtain the bulk modulus B0",
+          "parameters": [],
+          "model_note": null
+        },
+        {
+          "model_name": "Acoustic-branch elasticity equations (Eqs. 1–3)",
+          "equation_role": "obtain C11 = ρ·(v_l[100])^2, C44 = ρ·(v_t[100])^2, and C12 via the [111] longitudinal sound velocity",
+          "parameters": [
+            {
+              "name": "density ρ (FeAl)",
+              "value": "5839",
+              "unit": "kg/m3"
+            },
+            {
+              "name": "density ρ (Fe3Al)",
+              "value": "6612",
+              "unit": "kg/m3"
+            },
+            {
+              "name": "density ρ (Fe3AlC)",
+              "value": "6527",
+              "unit": "kg/m3"
+            }
+          ],
+          "model_note": "Longitudinal/transverse sound velocities in the [100] and [111] directions used with the compound density."
+        },
+        {
+          "model_name": "Lattice-distortion method (Eqs. 4–7)",
+          "equation_role": "volume-conserving orthorhombic and monoclinic distortions to determine (C11−C12) and C44 from total-energy changes",
+          "parameters": [],
+          "model_note": null
+        },
+        {
+          "model_name": "Practical elastic parameter equations (Eqs. 8–12)",
+          "equation_role": "compute B0, anisotropy factor Cα, shear modulus G, and Young's moduli E100 and E111 from the elastic constants",
+          "parameters": [],
+          "model_note": null
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "For the Ni-containing Fe-15Mn-10Al-0.8C-5Ni alloy, the solution-treated (as-quenched) state is measured as γ and α phases; nano-indentation gives ≈4.2 GPa for the solution-treated γ phase and ≈3.1 GPa for the solution-treated α phase (Table 2 'Solution Treated' row), consistent with the text's ≈4 GPa (γ) and ≈3 GPa (α) for solution-treated material.",
+    "Tables 1 and 2 label the Ni-containing alloy as Fe-15Mn-10Al-0.5C-5Ni (0.5 C), whereas the abstract, introduction, results and methods give Fe-15Mn-10Al-0.8C-5Ni (0.8 C); this appears to be a typographical inconsistency in the carbon content (0.5 vs 0.8).",
+    "Load–depth curves for the solution-treated Ni-containing alloy are shown in Fig. 4 (panels a and c): the α and γ solution-treated curves rise to a flat plateau at a load of ≈10000 (µN) reached at depths of roughly 200–310 nm, with near-vertical unloading branches.",
+    "The nano-indentation technique as performed cannot measure the hardness of isolated nano-sized precipitates; it yields a compound (matrix + particle) hardness value, and changing the indentation size/volume would introduce a nano-indentation size-effect — a methodological limitation stated for the study."
+  ]
+}

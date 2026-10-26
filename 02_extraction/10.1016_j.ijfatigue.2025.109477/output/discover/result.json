@@ -1,0 +1,237 @@
+{
+  "schema_version": "sample-discover-v1",
+  "paper_id": "10.1016_j.ijfatigue.2025.109477",
+  "domain": "materials",
+  "paper": {
+    "paper_id": "10.1016_j.ijfatigue.2025.109477",
+    "doi": "10.1016/j.ijfatigue.2025.109477",
+    "title": "Fatigue properties of Fe-30.5Mn-8Al-1C austenitic low-density steel: Critical impact of κ-carbide precipitation state",
+    "authors": [
+      "J.H. Du",
+      "P. Chen",
+      "Z.P. Jia",
+      "X.W. Li"
+    ],
+    "publication_year": "2025",
+    "journal": "International Journal of Fatigue",
+    "keywords": [
+      "Fe-Mn-Al-C austenitic low-density steel",
+      "κ-carbide",
+      "Precipitation state",
+      "Fatigue property",
+      "Micromechanism"
+    ],
+    "research_type": "experimental",
+    "paper_scope": "Systematic investigation of the tension–tension fatigue behavior and deformation mechanisms of solution-treated and aging-treated Fe-30.5Mn-8Al-1C (wt%) austenitic low-density steel, focusing on the critical role of intragranular and intergranular κ-carbide precipitation state in controlling fatigue properties."
+  },
+  "alloys": [
+    {
+      "alloy_id": "alloy_fe-30.5mn-8al-1c",
+      "alloy_name": "Fe-30.5Mn-8Al-1C austenitic low-density steel",
+      "aliases": [
+        "Fe-30.5Mn-8Al-1C",
+        "Fe-30.5Mn-8Al-1C (wt%)",
+        "Fe-Mn-Al-C austenitic low-density steel"
+      ],
+      "description": "Investigated austenitic low-density steel with nominal composition Fe-30.5Mn-8Al-1C (wt%); prepared by vacuum melting, forged into a billet, and hot-rolled to 4 mm thickness. All ST and aged samples in the study are based on this single composition.",
+      "base_element": "Fe",
+      "alloying_elements": [
+        "Mn",
+        "Al",
+        "C"
+      ],
+      "nominal_composition": [
+        {
+          "element": "Fe",
+          "weight_percent": "balance",
+          "atomic_percent": null
+        },
+        {
+          "element": "Mn",
+          "weight_percent": "30.5",
+          "atomic_percent": null
+        },
+        {
+          "element": "Al",
+          "weight_percent": "8",
+          "atomic_percent": null
+        },
+        {
+          "element": "C",
+          "weight_percent": "1",
+          "atomic_percent": null
+        }
+      ],
+      "alloys_notes": null,
+      "source": {
+        "reason": "论文明确报告研究材料的名义成分为 Fe-30.5Mn-8Al-1C (wt%)，全文所有 ST 与时效样品均基于此单一成分体系。",
+        "block_id": [
+          "b0015",
+          "b0007",
+          "b0012"
+        ]
+      }
+    }
+  ],
+  "processes": [
+    {
+      "process_id": "proc_st-1050c-1h-wq",
+      "alloy_id": "alloy_fe-30.5mn-8al-1c",
+      "process_name": "Solution treatment at 1050°C for 1 h followed by water quenching",
+      "state_label": "ST",
+      "aliases": [
+        "ST",
+        "solution-treated",
+        "ST condition"
+      ],
+      "parent_process_ids": [],
+      "description": "Solution treatment at 1050°C for 1 h, followed by water quenching to room temperature; fully austenitic reference condition without aging-induced κ-carbides.",
+      "processes_notes": "Reference condition; serves as the precursor for all aged conditions.",
+      "source": {
+        "reason": "b0015 明确给出固溶处理工艺为 1050°C/1 h 后水淬至室温，并命名为 ST。",
+        "block_id": [
+          "b0015",
+          "b0024"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_aged-550c-6h",
+      "alloy_id": "alloy_fe-30.5mn-8al-1c",
+      "process_name": "Aging at 550°C for 6 h",
+      "state_label": "550-6",
+      "aliases": [
+        "550-6",
+        "aged at 550°C for 6 h"
+      ],
+      "parent_process_ids": [
+        "proc_st-1050c-1h-wq"
+      ],
+      "description": "Aging of solution-treated samples at 550°C for 6 h; produces a high density of nanoscale intragranular κ-carbides (~11 nm) with no coarse grain-boundary precipitation.",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0015 规定将 ST 样品在 550°C 时效 6 h，记为 550-6；b0024 进一步给出该态晶内 κ 碳化物尺寸约 11 nm。",
+        "block_id": [
+          "b0015",
+          "b0024"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_aged-600c-6h",
+      "alloy_id": "alloy_fe-30.5mn-8al-1c",
+      "process_name": "Aging at 600°C for 6 h",
+      "state_label": "600-6",
+      "aliases": [
+        "600-6",
+        "aged at 600°C for 6 h"
+      ],
+      "parent_process_ids": [
+        "proc_st-1050c-1h-wq"
+      ],
+      "description": "Aging of solution-treated samples at 600°C for 6 h; intragranular κ-carbides coarsen to ~18 nm, with concurrent observable intergranular κ-carbide precipitation.",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0015 规定将 ST 样品在 600°C 时效 6 h，记为 600-6；b0024 给出该态晶内 κ 碳化物约 18 nm 并出现晶间析出。",
+        "block_id": [
+          "b0015",
+          "b0024"
+        ]
+      }
+    },
+    {
+      "process_id": "proc_aged-650c-6h",
+      "alloy_id": "alloy_fe-30.5mn-8al-1c",
+      "process_name": "Aging at 650°C for 6 h",
+      "state_label": "650-6",
+      "aliases": [
+        "650-6",
+        "aged at 650°C for 6 h"
+      ],
+      "parent_process_ids": [
+        "proc_st-1050c-1h-wq"
+      ],
+      "description": "Aging of solution-treated samples at 650°C for 6 h; intragranular κ-carbides coarsen to ~24 nm, accompanied by more pronounced intergranular κ-carbide precipitation.",
+      "processes_notes": null,
+      "source": {
+        "reason": "b0015 规定将 ST 样品在 650°C 时效 6 h，记为 650-6；b0024 给出该态晶内 κ 碳化物约 24 nm 且晶间析出更显著。",
+        "block_id": [
+          "b0015",
+          "b0024"
+        ]
+      }
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "sample_fe-30.5mn-8al-1c__st-1050c-1h-wq",
+      "alloy_id": "alloy_fe-30.5mn-8al-1c",
+      "process_id": "proc_st-1050c-1h-wq",
+      "sample_label": "ST",
+      "aliases": [
+        "ST sample",
+        "solution-treated sample"
+      ],
+      "source": {
+        "reason": "固溶处理态 Fe-30.5Mn-8Al-1C 钢样品，即 ST 条件，为全文参照研究对象。",
+        "block_id": [
+          "b0015",
+          "b0024"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-30.5mn-8al-1c__aged-550c-6h",
+      "alloy_id": "alloy_fe-30.5mn-8al-1c",
+      "process_id": "proc_aged-550c-6h",
+      "sample_label": "550-6",
+      "aliases": [
+        "550-6 sample"
+      ],
+      "source": {
+        "reason": "550°C/6 h 时效态的 Fe-30.5Mn-8Al-1C 钢样品，即 550-6 条件。",
+        "block_id": [
+          "b0015",
+          "b0024"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-30.5mn-8al-1c__aged-600c-6h",
+      "alloy_id": "alloy_fe-30.5mn-8al-1c",
+      "process_id": "proc_aged-600c-6h",
+      "sample_label": "600-6",
+      "aliases": [
+        "600-6 sample"
+      ],
+      "source": {
+        "reason": "600°C/6 h 时效态的 Fe-30.5Mn-8Al-1C 钢样品，即 600-6 条件。",
+        "block_id": [
+          "b0015",
+          "b0024"
+        ]
+      }
+    },
+    {
+      "sample_id": "sample_fe-30.5mn-8al-1c__aged-650c-6h",
+      "alloy_id": "alloy_fe-30.5mn-8al-1c",
+      "process_id": "proc_aged-650c-6h",
+      "sample_label": "650-6",
+      "aliases": [
+        "650-6 sample"
+      ],
+      "source": {
+        "reason": "650°C/6 h 时效态的 Fe-30.5Mn-8Al-1C 钢样品，即 650-6 条件。",
+        "block_id": [
+          "b0015",
+          "b0024"
+        ]
+      }
+    }
+  ],
+  "unmapped_findings": [
+    "Fatigue strength (maximum stress amplitude sustained for 10^7 cycles without failure): ST 157.5 MPa, 550-6 162 MPa, 600-6 175.5 MPa, 650-6 171 MPa (b0035).",
+    "Intragranular κ-carbide sizes after 6 h aging: ~11 nm (550-6), ~18 nm (600-6), ~24 nm (650-6) (b0024).",
+    "Tensile properties (YS/UTS, MPa): ST 337±32/784±15; 550-6 829±17/1045±8; 600-6 776±19/1104±17; 650-6 579±14/978±4 (b0038)."
+  ]
+}

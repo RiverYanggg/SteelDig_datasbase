@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "steeldig-api"
+version = "1.0.0"
+description = "SteelDig 材料知识库只读查询 API"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.29",
+    "psycopg[binary]>=3.1",
+    "psycopg-pool>=3.2",
+    "steeldig-db",
+]
+
+[project.optional-dependencies]
+embed = ["fastembed>=0.3"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["steeldig_api*"]

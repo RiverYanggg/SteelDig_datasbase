@@ -1,0 +1,123 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_c21000-brass__c21000-twin-grain",
+      "paper_id": "10.1016_j.actamat.2025.120962",
+      "alloy_id": "alloy_c21000-brass",
+      "process_id": "proc_c21000-twin-grain",
+      "sample_label": "C21000",
+      "aliases": [
+        "gilding metal (C21000)"
+      ]
+    }
+  ],
+  "processing_steps": [],
+  "structures": [
+    {
+      "structure_id": "struct_c21000_twin_grain",
+      "overall_structure": "Twin grain microstructure in C21000 brass (gilding metal): a few large grains containing long, straight parallel-sided twin lamellae; twin grains characterized by straight or planar boundaries and contrasting regions.",
+      "number_of_phases": null,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_c21000_twin",
+          "region": null,
+          "related_sequence": null,
+          "phases_present": [
+            {
+              "phase_name": "C21000 brass (gilding metal)",
+              "crystal_structure": null,
+              "volume_fraction": null,
+              "morphology": "few large grains containing long, straight parallel-sided twin lamellae",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": []
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "interface_c21000_twin",
+      "phase_interfaces": [],
+      "defect_interactions": [],
+      "slip_behavior": null,
+      "phase_evolution": null,
+      "interface_notes": "Twin grains are characterized by straight or planar boundaries and contrasting regions; the twin lamellae are long, straight and parallel-sided."
+    }
+  ],
+  "properties": [],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om_c21000",
+      "microstructure_id": "micro_c21000_twin",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Acquire the twin-grain micrograph of C21000 brass (gilding metal) for microstructure extraction.",
+      "key_findings": "Orange/pink optical micrograph of a few large grains containing long, straight parallel-sided twin lamellae."
+    },
+    {
+      "characterization_id": "char_matsam_c21000",
+      "microstructure_id": "micro_c21000_twin",
+      "technique": "MatSAM (training-free microstructure segmentation based on Segment Anything Model)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Segment and extract the twin-grain (twin lamellae) microstructure of C21000 brass without manual annotations.",
+      "key_findings": "MatSAM's overlay colours the whole grains, and its binary/key-structure panel extracts the twin lamellae as elongated white strips."
+    }
+  ],
+  "computational_details": [
+    {
+      "computation_id": "comp_matsam_c21000",
+      "simulation_method": "MatSAM training-free microstructure segmentation (built on Segment Anything Model with structure-aware prompt point generation)",
+      "software_used": null,
+      "potential_model_or_database": null,
+      "boundary_and_initial_conditions": null,
+      "validation_against_experiment": null,
+      "analytical_models": [
+        {
+          "model_name": "Morphological feature filtering to isolate twin grains",
+          "equation_role": null,
+          "parameters": [
+            {
+              "name": "circularity",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "contour geometry",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "area",
+              "value": null,
+              "unit": null
+            },
+            {
+              "name": "grayscale range",
+              "value": null,
+              "unit": null
+            }
+          ],
+          "model_note": "For brass micrographs, parameters like circularity, contour geometry, area, and grayscale range were calculated for each mask; by setting tailored filtering conditions, elongated twin grains are effectively distinguished."
+        }
+      ]
+    }
+  ],
+  "unmapped_findings": [
+    "C21000 brass (gilding metal) twin grain is one of six extended-experiment micrographs (Fig. 10(f)) referenced as [50]; unlike the annotated in-house datasets, this image sample is not provided with corresponding annotations.",
+    "For brass micrographs (including C21000), MatSAM's segmentation requires additional post-processing/morphological filtering to isolate elongated twin grains (as demonstrated in Fig. 11(b)); parameters such as circularity, contour geometry, area, and grayscale range are calculated per mask.",
+    "The C21000 micrograph is an orange/pink optical micrograph; MatSAM's overlay colours whole grains and its binary/key-structure panel extracts the twin lamellae as elongated white strips."
+  ]
+}

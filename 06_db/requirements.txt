@@ -1,0 +1,12 @@
+# 运行期依赖（pip install -r requirements.txt）
+# 也可直接 `pip install -e etl -e api`，以 pyproject 为唯一事实源
+psycopg[binary]>=3.1
+psycopg-pool>=3.2
+orjson>=3.9
+jieba>=0.42
+fastapi>=0.110
+jinja2>=3.1
+uvicorn[standard]>=0.29
+fastembed>=0.3          # 可选：语义检索；不装则自动降级为全文+模糊
+pytest>=8
+httpx>=0.27

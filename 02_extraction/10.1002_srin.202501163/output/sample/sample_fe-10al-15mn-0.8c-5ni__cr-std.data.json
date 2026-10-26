@@ -1,0 +1,230 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-10al-15mn-0.8c-5ni__cr-std",
+      "paper_id": "10.1002_srin.202501163",
+      "alloy_id": "alloy_fe-10al-15mn-0.8c-5ni",
+      "process_id": "proc_cr-std",
+      "sample_label": "CR",
+      "aliases": [
+        "CR sample",
+        "cold rolled sheet"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_melting",
+      "sequence": "1",
+      "type": "melting/casting (primary processing)",
+      "method": "vacuum arc melting",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "10^-5 mbar pressure, backfilled with argon gas atmosphere",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Remelted 5-6 times without breaking vacuum for better elemental intermixing (AM500-Edmund Buhler GmbH, Germany)"
+    },
+    {
+      "processing_step_id": "step_homogenization",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "homogenization",
+      "temperature": "1150 °C",
+      "temperature_unit": "°C",
+      "duration": "2 h",
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Homogenization performed in a muffle furnace"
+    },
+    {
+      "processing_step_id": "step_hot_rolling",
+      "sequence": "3",
+      "type": "mechanical processing",
+      "method": "hot rolling",
+      "temperature": "1050 °C (start) to 900 °C (finish)",
+      "temperature_unit": "°C",
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": "air cooling",
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "14 to 3 mm",
+      "processing_steps_notes": "Nine passes in a 75-ton rolling mill; finish rolling temperature 900 °C"
+    },
+    {
+      "processing_step_id": "step_cold_rolling",
+      "sequence": "4",
+      "type": "mechanical processing",
+      "method": "cold rolling",
+      "temperature": "room temperature",
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": null,
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": "3 to 2 mm",
+      "processing_steps_notes": "Air-cooled HR sheet was sectioned into smaller pieces; CR further thins B2 stringer bands and pancakes γ"
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_cr",
+      "overall_structure": "Banded two-phase microstructure: thinner, more closely spaced B2 stringer bands alternating with pancaked/deformed γ matrix",
+      "number_of_phases": 2,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_cr",
+          "region": null,
+          "related_sequence": "4",
+          "phases_present": [
+            {
+              "phase_name": "γ (austenite) matrix",
+              "crystal_structure": "FCC",
+              "volume_fraction": null,
+              "morphology": "pancaked/deformed γ bands",
+              "grain_size": null,
+              "texture": null
+            },
+            {
+              "phase_name": "B2 stringer bands (Fe(Ni,Mn)Al)",
+              "crystal_structure": "BCC (ordered B2)",
+              "volume_fraction": null,
+              "morphology": "thin, elongated, more closely spaced deformed stringer bands",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [],
+          "grain_structure": {
+            "average_grain_size": null,
+            "grain_size_distribution": null,
+            "texture": "RD-aligned lamellar/banded structure; γ pancaked along prior RD"
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_ig_b2_cr",
+              "type": "IG-B2 (intragranular B2, Fe(Ni,Mn)Al)",
+              "size": null,
+              "distribution": "Precipitated IG-B2 undergoes shape deformation during CR",
+              "coherency": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_cr",
+      "phase_interfaces": [
+        {
+          "interface_id": "if_cr_1",
+          "microstructure_id": "micro_cr",
+          "phase_1_name": "γ (austenite)",
+          "phase_2_name": "B2 (Fe(Ni,Mn)Al)",
+          "coherence": null
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_cr_1",
+          "microstructure_id": "micro_cr",
+          "interaction_type": "strain localization / co-deformation",
+          "qualitative_or_quantitative_description": "EBSD phase and KAM maps show co-deformation of B2 stringer bands and γ during CR, with higher local misorientation (strain) in the softer γ bands than in the B2 stringer bands"
+        }
+      ],
+      "slip_behavior": "co-deformation of γ and B2 stringer bands during cold rolling; strain concentrates preferentially in softer γ",
+      "phase_evolution": "CR further thins B2 stringer bands, pancakes γ, and shape-deforms precipitated IG-B2",
+      "interface_notes": null
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_cr",
+      "measurement_conditions": {
+        "temperature": "room temperature",
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1 mm/min crosshead velocity",
+        "specimen_geometry": "rolling direction (RD); gauge length 12.5 mm, gauge width 3 mm, thickness 2 mm",
+        "test_standard": "ASTM E8",
+        "other_conditions": "100 kN Instron 5982 with 10 mm gauge extensometer"
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [],
+          "ultimate_tensile_strength": [
+            {
+              "direction": "RD",
+              "value": "at or just above 1500 MPa",
+              "unit": "MPa",
+              "uncertainty": null
+            }
+          ],
+          "elongation": [
+            {
+              "direction": "RD",
+              "value": "below ~2% (fractures below ~2% strain)",
+              "unit": "%",
+              "uncertainty": null
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": "Engineering stress-strain curve for CR shown in Figure 5a; CR peaks at or just above 1500 MPa below 2% strain and then drops steeply (strongest and least ductile condition)",
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": {
+          "value": "0.11 kJ/mol (15.2 J/cm^3)",
+          "unit": null
+        },
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": null,
+      "chemical": null,
+      "radiation_properties": null
+    }
+  ],
+  "performance": [],
+  "characterization_methods": [
+    {
+      "characterization_id": "char_om_cr",
+      "microstructure_id": "micro_cr",
+      "technique": "Optical microscopy (OM)",
+      "instrument_or_setup": "Leica DM2700 M",
+      "measurement_conditions": "3% nital etch; ground and polished (emery paper, cloth polishing with SiC abrasive)",
+      "purpose": "reveal CR microstructure: thinner, more closely spaced B2 stringer bands and pancaked γ",
+      "key_findings": "CR shows the same lamellar architecture as HR but with thinner, denser B2 stringer bands and flattened/pancaked γ"
+    },
+    {
+      "characterization_id": "char_ebsd_cr",
+      "microstructure_id": "micro_cr",
+      "technique": "Electron back-scattered diffraction (EBSD)",
+      "instrument_or_setup": "FESEM (Apreo S) with routine EBSD setup",
+      "measurement_conditions": "electropolished in 10% perchloric acid 90% acetic acid solution at 20 V and 5 °C",
+      "purpose": "EBSD phase map and KAM map of the CR condition",
+      "key_findings": "Banded two-phase structure of deformed B2 stringer bands and deformed γ; higher local misorientation (strain) in γ than in B2 stringer bands"
+    },
+    {
+      "characterization_id": "char_tensile_cr",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile test",
+      "instrument_or_setup": "100 kN Instron 5982 with 10 mm gauge extensometer",
+      "measurement_conditions": "room temperature, ASTM E8, RD, gauge length 12.5 mm, gauge width 3 mm, thickness 2 mm, crosshead velocity 1 mm/min",
+      "purpose": "measure mechanical properties of the CR sheet",
+      "key_findings": "CR is the strongest (peak at or just above 1500 MPa) and least ductile (fracture below ~2% strain); toughness 0.11 kJ/mol (15.2 J/cm^3)"
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "The CR sample (cold-rolled sheet, standard process) is the strongest (peak at or just above 1500 MPa) but least ductile (fracture below ~2% strain) among the HR/CR/annealed conditions; CR reduces ductility even further relative to HR (~6.8% ductility). [b0029, figure_004, figure_005]",
+    "A minimum cold rolling (CR) at room temperature was applied after intense hot rolling to restore metal sheets free from cracking. [b0017, b0018]"
+  ]
+}

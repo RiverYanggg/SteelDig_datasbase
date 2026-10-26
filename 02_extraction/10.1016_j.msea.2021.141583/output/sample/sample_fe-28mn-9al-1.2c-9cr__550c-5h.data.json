@@ -1,0 +1,349 @@
+{
+  "samples": [
+    {
+      "sample_id": "sample_fe-28mn-9al-1.2c-9cr__550c-5h",
+      "paper_id": "10.1016_j.msea.2021.141583",
+      "alloy_id": "alloy_fe-28mn-9al-1.2c-9cr",
+      "process_id": "proc_550c-5h",
+      "sample_label": "annealed 9Cr strip",
+      "aliases": [
+        "9Cr annealed",
+        "9Cr annealed at 550 °C for 5 h"
+      ]
+    }
+  ],
+  "processing_steps": [
+    {
+      "processing_step_id": "step_near_rapid_solidification",
+      "sequence": "1",
+      "type": "solidification / casting",
+      "method": "centrifugal casting into a copper mold under near-rapid solidification",
+      "temperature": null,
+      "temperature_unit": null,
+      "duration": null,
+      "atmosphere": "Ar",
+      "cooling_medium": "copper mold (rotating at 600 r/min)",
+      "heating_or_cooling_rate": "~5 × 10^3 K/s (calculated maximum cooling rate)",
+      "reduction_ratio": null,
+      "processing_steps_notes": "The alloy ingot was reheated to melt by an induction coil and the liquid metal was poured into a copper mold at a rotating speed of 600 r/min in Ar atmosphere. Obtained strip size was (60–80) mm × 60 mm × 2.5 mm. This near-rapid solidification step produced the as-cast 9Cr strip that was subsequently annealed."
+    },
+    {
+      "processing_step_id": "step_annealing_550c_5h",
+      "sequence": "2",
+      "type": "heat treatment",
+      "method": "annealing",
+      "temperature": "550",
+      "temperature_unit": "°C",
+      "duration": "5 h",
+      "atmosphere": "vacuum",
+      "cooling_medium": null,
+      "heating_or_cooling_rate": null,
+      "reduction_ratio": null,
+      "processing_steps_notes": "Some near-rapidly solidified strips (including 9Cr) were heat-treated in a vacuum electric resistance furnace at 550 °C for 5 h to compare with the as-cast state; constituent phases after annealing were still austenite and ferrite."
+    }
+  ],
+  "structures": [
+    {
+      "structure_id": "struct_annealed_9cr",
+      "overall_structure": "After annealing at 550 °C for 5 h, the 9Cr strip still consists of austenite (γ) matrix plus ferrite (δ); XRD shows only γ and δ reflections with no κ(111) peak, TEM shows no κ-carbide superlattice but Cr23C6 carbides (width about 200 nm) at austenite grain boundaries, and DO3 ordered domains appear in the ferrite.",
+      "number_of_phases": 4,
+      "microstructure_counts": null,
+      "microstructure_list": [
+        {
+          "microstructure_id": "micro_austenite",
+          "region": "austenite matrix",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "austenite (γ)",
+              "crystal_structure": "FCC (austenite)",
+              "volume_fraction": null,
+              "morphology": "major matrix phase",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_cr23c6",
+              "type": "Cr23C6 carbide",
+              "size": {
+                "value": "~200 nm",
+                "unit": "width"
+              },
+              "distribution": "at austenite grain boundaries",
+              "coherency": null
+            },
+            {
+              "precipitate_id": "ppt_kappa",
+              "type": "κ-carbide",
+              "size": null,
+              "distribution": "absent: no κ-carbide superlattice is found in the SADP of the annealed 9Cr austenite",
+              "coherency": null
+            }
+          ]
+        },
+        {
+          "microstructure_id": "micro_ferrite",
+          "region": "ferrite (δ) particles dispersed in the austenite matrix",
+          "related_sequence": "2",
+          "phases_present": [
+            {
+              "phase_name": "ferrite (δ)",
+              "crystal_structure": "BCC",
+              "volume_fraction": "19.6 vol%",
+              "morphology": "block-like, angular second-phase particles (coarser and blockier in the annealed 9Cr SEM image)",
+              "grain_size": null,
+              "texture": null
+            }
+          ],
+          "defects": [
+            {
+              "type": "dislocations",
+              "porosity": null,
+              "inclusions": [],
+              "dislocation_density": null,
+              "lattice_distortion": null
+            }
+          ],
+          "grain_structure": {
+            "average_grain_size": {
+              "value": null,
+              "unit": null
+            },
+            "grain_size_distribution": null,
+            "texture": null
+          },
+          "precipitates": [
+            {
+              "precipitate_id": "ppt_do3",
+              "type": "DO3 ordered phase (nano-scale)",
+              "size": null,
+              "distribution": "in ferrite; δ+DO3 ordered domains appear in all annealed strips including 9Cr",
+              "coherency": "ordered superlattice within ferrite (SADP [011]δ+[011]DO3)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_set_id": "iface_annealed_9cr",
+      "phase_interfaces": [
+        {
+          "interface_id": "iface_gb_cr23c6",
+          "microstructure_id": "micro_austenite",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "Cr23C6",
+          "coherence": null
+        },
+        {
+          "interface_id": "iface_aus_ferrite",
+          "microstructure_id": "micro_ferrite",
+          "phase_1_name": "austenite (γ)",
+          "phase_2_name": "ferrite (δ)",
+          "coherence": null
+        },
+        {
+          "interface_id": "iface_ferrite_do3",
+          "microstructure_id": "micro_ferrite",
+          "phase_1_name": "ferrite (δ)",
+          "phase_2_name": "DO3",
+          "coherence": "ordered superlattice within the ferrite (δ+DO3)"
+        }
+      ],
+      "defect_interactions": [
+        {
+          "interaction_id": "di_intergranular_cracking",
+          "microstructure_id": "micro_austenite",
+          "interaction_type": "inter-granular cracking",
+          "qualitative_or_quantitative_description": "Cr23C6 carbides in granular or banded shapes at austenite grain boundaries may lead to inter-granular cracking along coarsening carbides at the grain boundary; the appearance of Cr23C6 carbide particles at the grain boundary is the main reason for the poor ductility and high strain hardening rate of as-cast and annealed 9Cr strips."
+        }
+      ],
+      "slip_behavior": null,
+      "phase_evolution": "With 9 wt.% Cr addition, Cr23C6 carbides form at austenite grain boundaries instead of κ-carbides; annealing at 550 °C for 5 h still does not produce a κ-carbide superlattice in the 9Cr strip, while DO3 ordered domains appear in the ferrite of all annealed strips including 9Cr.",
+      "interface_notes": "Under SEM, the grain boundary could not be observed in the Cr-containing strips (including annealed 9Cr) under the same conditions where it is clearly visible in the annealed 0Cr strip, which is attributed to the Cr addition improving corrosion resistance of the steel strips."
+    }
+  ],
+  "properties": [
+    {
+      "property_set_id": "prop_tensile_annealed_9cr",
+      "measurement_conditions": {
+        "temperature": null,
+        "temperature_unit": null,
+        "environment": null,
+        "strain_rate": "1 × 10^-3 s^-1",
+        "specimen_geometry": "gauge size 20 mm × 4 mm × 1 mm",
+        "test_standard": null,
+        "other_conditions": "Tested with a MTS Criterion Model 44 mechanical property tester (10 kN capacity); each test data supported by more than three tensile specimens; values averaged over 3 measurements."
+      },
+      "mechanical": {
+        "tensile_properties": {
+          "yield_strength": [
+            {
+              "direction": null,
+              "value": "805 ± 11 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 11 MPa"
+            }
+          ],
+          "ultimate_tensile_strength": [
+            {
+              "direction": null,
+              "value": "994 ± 21 MPa",
+              "unit": "MPa",
+              "uncertainty": "± 21 MPa"
+            }
+          ],
+          "elongation": [
+            {
+              "direction": null,
+              "value": "22.8 ± 4 %",
+              "unit": "%",
+              "uncertainty": "± 4 %"
+            }
+          ],
+          "youngs_modulus": null,
+          "stress_strain_curves": null,
+          "stress_strain_distribution": [],
+          "strain_hardening_rate": []
+        },
+        "hardness": [],
+        "fracture_toughness": null,
+        "fatigue_properties": null,
+        "creep_properties": null
+      },
+      "physical": {
+        "density": {
+          "value": "6.43",
+          "unit": "g/cm³"
+        },
+        "thermal_properties": null,
+        "electrical_properties": null,
+        "magnetic_properties": null
+      },
+      "chemical": {
+        "corrosion_resistance": {
+          "value": null,
+          "description": "Cr addition improves the corrosion resistance of the steel strips; in the annealed condition the grain boundaries could not be observed by SEM in the Cr-containing strips (including 9Cr) where they are clearly visible in the Cr-free strip."
+        },
+        "oxidation_resistance": null
+      },
+      "radiation_properties": null
+    }
+  ],
+  "performance": [
+    {
+      "performance_id": "perf_annealed_9cr",
+      "service_conditions": {
+        "operating_temperature": {
+          "min": null,
+          "max": null,
+          "unit": null
+        },
+        "stress_state": "uniaxial tensile loading",
+        "environment": null
+      },
+      "lifetime_prediction": null,
+      "comparative_performance": {
+        "benchmark_alloy_id": null,
+        "benchmark_process_id": null,
+        "benchmark_sample_id": null,
+        "comparison_metric": "Among the annealed strips, the 9Cr strip has the highest ultimate tensile strength (994 ± 21 MPa) but the lowest total elongation (22.8 ± 4 %). With increasing Cr content, the total elongation of as-cast strips gradually decreases while that of annealed strips gradually increases except for the strip containing 9 wt.% Cr. The formation of Cr23C6 carbides causes the lowest ductility of the as-cast and annealed 9Cr strips.",
+        "improvement_percentage": null
+      }
+    }
+  ],
+  "characterization_methods": [
+    {
+      "characterization_id": "cm_xrd_annealed_9cr",
+      "microstructure_id": null,
+      "technique": "X-ray diffraction (XRD)",
+      "instrument_or_setup": "D/Max-2200, Cu target, operated at 40 kV and 40 mA, scan rate 4°/min",
+      "measurement_conditions": "2θ range 30–100°; annealed at 550 °C for 5 h",
+      "purpose": "Phase identification of the annealed 9Cr strip",
+      "key_findings": "The annealed 9Cr strip shows only γ (austenite) and δ (ferrite) reflections; the κ(111) peak at ~41.4° seen in the annealed 0Cr strip is absent."
+    },
+    {
+      "characterization_id": "cm_sem_annealed_9cr",
+      "microstructure_id": null,
+      "technique": "Scanning electron microscopy (SEM)",
+      "instrument_or_setup": null,
+      "measurement_conditions": "20 µm scale bar; annealed at 550 °C for 5 h",
+      "purpose": "Observe the microstructure of the annealed 9Cr strip",
+      "key_findings": "Fig. 7(d): grey matrix with coarser, blockier and angular dark second-phase particles dispersed throughout; grain boundaries not resolvable."
+    },
+    {
+      "characterization_id": "cm_tem_austenite_annealed_9cr",
+      "microstructure_id": "micro_austenite",
+      "technique": "Transmission electron microscopy (TEM) bright-field imaging and selected-area diffraction (SADP)",
+      "instrument_or_setup": "JEM-2100F operated at a voltage of 200 kV",
+      "measurement_conditions": "500 nm scale bar; annealed at 550 °C for 5 h",
+      "purpose": "Characterize austenite dislocations and carbides in the annealed 9Cr strip",
+      "key_findings": "Fig. 9(d): BF image with dislocations arrowed; SADP indexed [001]γ showing no superlattice reflections. Fig. 9(f): DF image along (1̄14)Cr23C6 showing one coarse Cr23C6 particle (SADP zone [1̄14]Cr23C6)."
+    },
+    {
+      "characterization_id": "cm_tem_ferrite_annealed_9cr",
+      "microstructure_id": "micro_ferrite",
+      "technique": "TEM dark-field (DF) imaging with SADP",
+      "instrument_or_setup": "JEM-2100F, 200 kV",
+      "measurement_conditions": "500 nm scale bar; annealed at 550 °C for 5 h",
+      "purpose": "Characterize the ferrite/DO3 structure of the annealed 9Cr strip",
+      "key_findings": "Fig. 10(d): DF imaged along (200)_DO3; SADP indexed [011]δ+[011]DO3; broad oval region of fine, mottled δ+DO3 grains."
+    },
+    {
+      "characterization_id": "cm_tensile_annealed_9cr",
+      "microstructure_id": null,
+      "technique": "Uniaxial tensile testing",
+      "instrument_or_setup": "MTS Criterion Model 44 mechanical property tester, 10 kN capacity",
+      "measurement_conditions": "strain rate 1 × 10^-3 s^-1; gauge 20 mm × 4 mm × 1 mm; more than three specimens per test, averaged over 3 measurements",
+      "purpose": "Measure tensile properties of the annealed 9Cr strip",
+      "key_findings": "Annealed 9Cr strip: YS 805 ± 11 MPa, UTS 994 ± 21 MPa, TE 22.8 ± 4 %."
+    },
+    {
+      "characterization_id": "cm_icp_9cr",
+      "microstructure_id": null,
+      "technique": "Inductively Coupled Plasma mass spectrometry (ICP)",
+      "instrument_or_setup": null,
+      "measurement_conditions": null,
+      "purpose": "Determine the actual composition of the 9Cr strip",
+      "key_findings": "Measured 9Cr strip composition (wt.%): Fe Bal., Mn 27.7, Al 9.5, C 1.3, Cr 9.3."
+    },
+    {
+      "characterization_id": "cm_density_9cr",
+      "microstructure_id": null,
+      "technique": "Electronic water displacement density measurement",
+      "instrument_or_setup": "SJ-600G Electronic Water Displacement Density Analyzer",
+      "measurement_conditions": null,
+      "purpose": "Measure the average density of the 9Cr strip",
+      "key_findings": "Measured average density of the 9Cr strip was 6.43 g/cm³."
+    }
+  ],
+  "computational_details": [],
+  "unmapped_findings": [
+    "Increment of yield strength after annealing (annealed 9Cr minus as-cast 9Cr) is +65 MPa, and increment of total elongation after annealing is +2.5 % (Table 2).",
+    "The addition of 9 wt.% Cr improves the solid solubility of C and inhibits the precipitation of κ-carbides, while the precipitation of Cr23C6 in the 9Cr sample reduces the formation of dislocations, leading to fewer dislocations in the austenite of the 9Cr strip than of the 6Cr strip.",
+    "The appearance of Cr23C6 carbide particles at the grain boundary is the main reason for the poor ductility and high strain hardening rate of as-cast and annealed 9Cr strips.",
+    "Compared with as-cast strips, the strain hardening rate of all annealed strips except the 9Cr strip clearly decreases (i.e., the annealed 9Cr strain hardening rate does not clearly decrease); the strain hardening rate of annealed strips increases with increasing Cr content.",
+    "The grain boundaries and dendritic structure of the annealed 0Cr strip are clearly observed by SEM, while the grain boundary could not be observed in the Cr-containing strips (including 9Cr) under the same conditions, indicating that Cr addition improves the corrosion resistance of the steel strips.",
+    "As-cast 6Cr and 9Cr ferrite shows a DO3 superlattice (nano-scale DO3 phases) that is absent in the as-cast 0Cr and 3Cr ferrite (Fig. 5c,d)."
+  ]
+}
